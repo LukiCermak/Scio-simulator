@@ -232,6 +232,7 @@
     body.focus-mode .sidebar { display:none; }
     body.focus-mode .app { grid-template-columns:1fr; }
     body.focus-mode #questionText { font-size:32px; }
+    body.focus-mode .focus-only-actions { display:flex !important; }
 
     /* ── Results ── */
     .results { display:grid; gap:16px; }
@@ -395,11 +396,11 @@
         </div>
         <div class="question-grid" id="questionGrid"></div>
         <div class="side-actions">
-          <button class="btn btn-light btn-sm" id="focusModeBtn" type="button">⊞ Focus mode</button>
+          <button class="btn btn-light btn-sm" id="focusModeBtn" type="button">⊞ Režim soustředění</button>
           <button class="btn btn-outline btn-sm" id="changeBatteryBtn" type="button">Vybrat jinou baterii</button>
           <button class="btn btn-danger btn-sm" id="finishBtn" type="button">Vyhodnotit test</button>
         </div>
-        <div class="warning" style="margin-top:10px; font-size:13px;">Klávesy: A–D odpověď · ←→ navigace · F označit · 1/2/3 jistota · R odkrýt odpovědi · Mezerník focus</div>
+        <div class="warning" style="margin-top:10px; font-size:13px;">Klávesy: A–D odpověď · ←→ navigace · F označit · 1/2/3 jistota · R odkrýt odpovědi · Mezerník režim soustředění</div>
       </aside>
 
       <main class="panel main">
@@ -410,7 +411,13 @@
                 <div class="small" id="questionMeta">Otázka 1 z 50</div>
                 <h3 id="questionText"></h3>
               </div>
-              <div class="active-battery-pill" id="activeBatteryPill">—</div>
+              <div style="display:flex; flex-direction:column; align-items:flex-end; gap:8px;">
+                <div class="active-battery-pill" id="activeBatteryPill">—</div>
+                <div class="focus-only-actions" style="display:none; gap:8px;">
+                  <button class="btn btn-outline btn-sm" id="fmChangeBatteryBtn" type="button">Ukončit baterii</button>
+                  <button class="btn btn-light btn-sm" id="fmExitFocusBtn" type="button">⊟ Zrušit soustředění</button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="question-body">
@@ -6087,7 +6094,7 @@
     const s=appState.currentSession;
     document.body.classList.toggle("focus-mode",s?.ui?.focusMode||false);
     const btn=$("focusModeBtn");
-    if(btn) btn.textContent=s?.ui?.focusMode?"⊟ Opustit focus":"⊞ Focus mode";
+    if(btn) btn.textContent=s?.ui?.focusMode?"⊟ Zrušit soustředění":"⊞ Režim soustředění";
   }
 
   // ═══════════════════════════════════════════
@@ -6269,6 +6276,8 @@
   $("showReviewBtn").addEventListener("click",showReview);
   $("hideReviewBtn").addEventListener("click",hideReview);
   $("focusModeBtn").addEventListener("click",toggleFocusMode);
+  $("fmChangeBatteryBtn")?.addEventListener("click",backToSelection);
+  $("fmExitFocusBtn")?.addEventListener("click",toggleFocusMode);
   $("revealOptionsBtn").addEventListener("click",revealOptions);
   $("clearSessionBtn").addEventListener("click",()=>{clearCurrentSession();backToSelection();});
   $("repairBtn").addEventListener("click",()=>{
