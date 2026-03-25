@@ -233,6 +233,8 @@
     body.focus-mode .app { grid-template-columns:1fr; }
     body.focus-mode #questionText { font-size:32px; }
     body.focus-mode .focus-only-actions { display:flex !important; }
+    body.focus-mode #quickActionsWrap,
+    body.focus-mode #noteWrap { display:none !important; }
 
     /* ── Results ── */
     .results { display:grid; gap:16px; }
@@ -5744,7 +5746,7 @@
       mode:"repair", goal:srcSession.goal||"attention", batteryId:srcSession.batteryId, batteryLabel:srcSession.batteryLabel, batteryTitle:`Opravná sada – ${srcSession.batteryLabel}`,
       activeTest:{ id:srcSession.batteryId, label:srcSession.batteryLabel, title:`Opravná sada (${repairQs.length} otázek)`, durationMinutes:dur, questions:repairQs, sessionDistribution:dist },
       timing:{ startedAt:now.toISOString(), endsAt:endsAt.toISOString(), finishedAt:null },
-      ui:{ currentQuestionIndex:0, reviewVisible:false, focusMode:false, optionsHiddenUntilReady:false, showKeywordHighlights:true, requireConfidence:true },
+      ui:{ currentQuestionIndex:0, reviewVisible:false, focusMode:false, optionsHiddenUntilReady:false, showKeywordHighlights:true, requireConfidence:appState.settings.requireConfidence },
       metrics:{ totalViews:0, totalAnswerChanges:0, totalFlagged:0 },
       questionStates:repairQs.map((_,i)=>createQuestionState(i)),
       results:{ finished:false, timeExpired:false, score:null, analytics:null, repairCandidateIndexes:[] }
@@ -5989,8 +5991,13 @@
     ow.querySelectorAll(".option-btn").forEach(b=>{b.addEventListener("click",()=>selectAnswer(Number(b.dataset.index)));});
   }
   function renderConfidenceControls(qs,ci) {
+    const s=appState.currentSession; if(!s) return;
     const cw=$("confidenceWrap");
-    if(qs.selectedAnswer===null){cw.classList.add("hidden");return;}
+    const required = s.ui.requireConfidence;
+    if(qs.selectedAnswer===null || (!required && qs.confidence === null)){
+      cw.classList.add("hidden");
+      return;
+    }
     cw.classList.remove("hidden");
     const levels=[{key:"high",label:"Jistý"},{key:"medium",label:"Spíš jistý"},{key:"guess",label:"Tip"}];
     cw.innerHTML=`<div class="confidence-wrap"><div class="conf-label">Jak si jistý odpovědí?</div><div class="confidence-btns">${levels.map(l=>`<button class="conf-btn ${qs.confidence===l.key?"active-"+l.key:""}" data-conf="${l.key}" type="button">${l.label}</button>`).join("")}</div></div>`;
