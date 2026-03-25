@@ -321,9 +321,8 @@
           <h2>Vyber si jednu z 8 tréninkových baterií pro přijímací test UPOL</h2>
           <p>Aplikace pracuje s bankou 7 profilových baterií a 1 finální syntetické baterie. Každý modul zachovává rámec 50 otázek a 30 minut, ale má vlastní tematické těžiště, přesahy a cílenou obtížnost.</p>
           <div class="hero-note">
-            <strong>Představení aplikace:</strong> jednotlivé baterie pokrývají disciplíny speciální pedagogiky, charakteristiky znevýhodnění, intervence, komunikaci, školské poradenství, sociálně-zdravotní přesahy i poradenské uvažování. Díky tomu lze trénovat jak izolovaná témata, tak finální syntetické propojení.
-            <br><br>
-            Při každém spuštění se automaticky promíchá pořadí možností odpovědí. Současně je v rámci konkrétního pokusu hlídáno vyvážené rozložení správných odpovědí mezi A–D, aby test působil přirozeně a nebyl mechanicky čitelný.
+            <strong>Představení aplikace:</strong> Tento webový simulátor tě efektivně připraví na přijímací zkoušky UPOL prostřednictvím 8 tréninkových baterií (400 otázek). Nová verze nabízí 3 unikátní režimy: <strong>Simulace testu</strong> (klasický průběh), <strong>Trénink čtení</strong> (odpovědi přes zadání zprvu nevidíš, abys ho nepřelétl) a interaktivní <strong>Opravný režim</strong>.<br><br>
+            Aplikace přímo ve tvém prohlížeči trvale ukládá tvůj postup, takže po opuštění stránky se můžeš kdykoliv vrátit tam, kde jsi přestal. Pokročilý analytický dashboard ti navíc po každém testu odhalí nejen tvé skóre, ale i skryté mezery v pozornosti (impulzivní kliky do 5 vteřin, slepé tipy, překombinované odpovědi).
           </div>
           <div class="stats">
             <div class="stat-card"><div class="stat-label">Otázky v bance</div><div class="stat-value" id="statQuestions">400</div><div class="stat-sub">Celkový součet všech 8 baterií vložených do simulátoru.</div></div>
@@ -344,13 +343,13 @@
       <div class="config-panel" id="configPanel">
         <h4>Jak dnes poběžím</h4>
         <div class="config-row">
-          <div class="config-section"><div class="config-section-label">Režim</div><div class="config-options" id="configMode"><button class="config-opt active" data-mode="simulation" type="button">Simulace</button><button class="config-opt" data-mode="reading-training" type="button">Trénink čtení</button><button class="config-opt" data-mode="repair" type="button" disabled id="repairModeOpt">Opravný režim</button></div></div>
+          <div class="config-section"><div class="config-section-label">Režim</div><div class="config-options" id="configMode"><button class="config-opt active" data-mode="simulation" type="button">Simulace testu</button><button class="config-opt" data-mode="reading-training" type="button">Trénink čtení</button><button class="config-opt" data-mode="repair" type="button" disabled id="repairModeOpt">Opravný režim</button></div></div>
           <div class="config-section"><div class="config-section-label">Cíl</div><div class="config-options" id="configGoal"><button class="config-opt" data-goal="speed" type="button">Rychlost</button><button class="config-opt" data-goal="accuracy" type="button">Přesnost</button><button class="config-opt active" data-goal="attention" type="button">Pozornost</button></div></div>
         </div>
         <div class="config-checks" id="configChecks">
           <label class="config-check"><input type="checkbox" id="optShowQuestionFirst"> zobrazit nejprve jen zadání</label>
-          <label class="config-check"><input type="checkbox" id="optHighlightKeywords" checked> zvýrazňovat riziková slova</label>
-          <label class="config-check"><input type="checkbox" id="optRequireConfidence" checked> po odpovědi vyžadovat jistotu</label>
+          <label class="config-check"><input type="checkbox" id="optHighlightKeywords"> zvýrazňovat riziková slova</label>
+          <label class="config-check"><input type="checkbox" id="optRequireConfidence"> po odpovědi vyžadovat jistotu</label>
           <label class="config-check"><input type="checkbox" id="optAutoSave" checked> automaticky ukládat stav</label>
           <label class="config-check"><input type="checkbox" id="optRestoreSession" checked> při návratu obnovit session</label>
         </div>
@@ -5686,7 +5685,7 @@
   // 5. APP STATE
   // ═══════════════════════════════════════════
   function getDefaultSettings() {
-    return { schemaVersion:SCHEMA_VERSION, restoreSessionOnLoad:true, defaultMode:"simulation", defaultGoal:"attention", showKeywordHighlights:true, requireConfidence:true, hideSidebarDuringReading:false, focusModeDefault:false, showQuestionFirst:false, autoSave:true };
+    return { schemaVersion:SCHEMA_VERSION, restoreSessionOnLoad:true, defaultMode:"simulation", defaultGoal:"attention", showKeywordHighlights:false, requireConfidence:false, hideSidebarDuringReading:false, focusModeDefault:false, showQuestionFirst:false, autoSave:true };
   }
   const appState = { schemaVersion:SCHEMA_VERSION, appMode:"start", selectedBatteryId:null, currentSession:null, history:[], settings:null };
 
@@ -5917,6 +5916,7 @@
   }
   function renderConfigPanel() {
     const s=appState.settings;
+    if(s.defaultMode==="reading-training") s.showQuestionFirst=true;
     document.querySelectorAll("#configMode .config-opt").forEach(b=>{b.classList.toggle("active",b.dataset.mode===s.defaultMode);b.addEventListener("click",()=>{s.defaultMode=b.dataset.mode;saveSettings();renderConfigPanel();});});
     document.querySelectorAll("#configGoal .config-opt").forEach(b=>{b.classList.toggle("active",b.dataset.goal===s.defaultGoal);b.addEventListener("click",()=>{s.defaultGoal=b.dataset.goal;saveSettings();renderConfigPanel();});});
     $("optShowQuestionFirst").checked=s.showQuestionFirst;$("optHighlightKeywords").checked=s.showKeywordHighlights;$("optRequireConfidence").checked=s.requireConfidence;$("optAutoSave").checked=s.autoSave;$("optRestoreSession").checked=s.restoreSessionOnLoad;
@@ -5958,7 +5958,7 @@
     $("sidebarBatteryLabel").textContent=`Aktivní baterie: ${s.activeTest.label} – ${s.activeTest.title}`;
     $("activeBatteryPill").textContent=s.activeTest.label;
     const mb=$("sidebarModeBadge");
-    mb.innerHTML=`<span class="mode-badge ${s.mode}">${s.mode==="reading-training"?"trénink čtení":s.mode==="repair"?"opravný režim":"simulace"}</span>`;
+    mb.innerHTML=`<span class="mode-badge ${s.mode}">${s.mode==="reading-training"?"trénink čtení":s.mode==="repair"?"opravný režim":"simulace testu"}</span>`;
   }
   function renderQuestion() {
     const s=appState.currentSession; if(!s) return;
