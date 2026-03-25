@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SCIO simulátor v2</title>
+  <title>SCIO simulátor v3 (Adaptivní Tutor)</title>
+  <script src="data_metadata.js"></script>
   <style>
     :root {
       --bg: #edf1f5;
@@ -281,7 +282,15 @@
     .review-meta-item { padding:8px 10px; border-radius:8px; background:#f8fafc; border:1px solid #e2ebf2; }
     .review-meta-item strong { display:block; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:#60758a; margin-bottom:2px; }
     .error-type-select { padding:6px 10px; border-radius:8px; border:1px solid #dbe5ec; font-size:13px; color:var(--text); background:white; }
-    .review-explanation { padding:10px 14px; border-radius:10px; background:#f8fbfe; border:1px solid #e2ebf2; font-size:14px; line-height:1.6; color:#425469; }
+    .review-tabs { display:flex; gap:2px; background:#eef3f7; padding:2px; border-radius:12px; margin-bottom:12px; }
+    .review-tab { flex:1; padding:8px; border:none; background:transparent; border-radius:10px; cursor:pointer; font-size:13px; font-weight:700; color:#516578; transition:0.14s ease; }
+    .review-tab.active { background:white; color:var(--blue-dark); box-shadow:0 2px 8px rgba(15,23,42,0.05); }
+    .review-explanation { padding:14px 16px; border-radius:12px; background:#f4fafd; border:1px solid #d5e7f2; font-size:14px; line-height:1.6; color:#2a4358; }
+    .review-explanation strong { color:#17597a; display:block; margin-bottom:4px; font-size:12px; text-transform:uppercase; letter-spacing:0.04em; }
+    .tutor-lesson { background:#fdf9f0; border:1px solid #f2e4c1; }
+    .tutor-lesson strong { color:#8a6d1c; }
+    .tutor-recall { background:#f5f3ff; border:1px solid #e5deff; border-left:4px solid #7c5cbf; }
+    .tutor-recall strong { color:#5b3d99; }
 
     /* ── Responsive ── */
     @media (max-width:1040px) {
@@ -309,7 +318,7 @@
           <div class="sq2"></div>
           <div class="sq3"></div>
         </div>
-        <h1>SCIO simulátor <span style="font-size:14px;color:var(--blue);vertical-align:super;">v2</span></h1>
+        <h1>SCIO simulátor <span style="font-size:14px;color:var(--blue);vertical-align:super;">v3</span></h1>
       </div>
       <p class="sub">UPOL – SPP adaptivní trenažér pozornosti a přesnosti čtení</p>
     </div>
@@ -370,7 +379,10 @@
         </div>
       </div>
 
-      <!-- History panel (conditionally populated by JS) -->
+      <!-- Progress and Weakness Map (NEW) -->
+      <div id="weaknessPanel" class="hidden"></div>
+      
+      <!-- History panel -->
       <div id="historyPanel" class="hidden"></div>
     </section>
 
@@ -446,6 +458,8 @@
           </div>
           <div id="performanceSummary"></div>
           <div id="attentionDashboard"></div>
+          <div id="thematicWeaknesses"></div>
+          <div id="recommendationsPanel"></div>
           <div id="repairPanel" class="hidden"></div>
           <div class="result-actions" id="resultActions">
             <button class="btn btn-light" id="showReviewBtn">Zobrazit rozbor</button>
@@ -5609,9 +5623,9 @@
   // ═══════════════════════════════════════════
   // 1. CONSTANTS & SCHEMA
   // ═══════════════════════════════════════════
-  const SCHEMA_VERSION = 2;
+  const SCHEMA_VERSION = 3;
   const LETTERS = ["A","B","C","D"];
-  const STORAGE_KEYS = { CURRENT_SESSION:"sciosim_v2_currentSession", HISTORY:"sciosim_v2_history", SETTINGS:"sciosim_v2_settings" };
+  const STORAGE_KEYS = { CURRENT_SESSION:"sciosim_v3_currentSession", HISTORY:"sciosim_v3_history", SETTINGS:"sciosim_v3_settings", PROGRESS:"sciosim_v3_progress" };
   const SLOW_THRESHOLD_MS = 60000;
   const FAST_THRESHOLD_MS = 5000;
   const REVISIT_THRESHOLD = 3;
@@ -5620,20 +5634,77 @@
   const ERROR_LABELS = {"knowledge-gap":"Neznalost","inattention":"Nepozornost","missed-negation":"Přehlédnutí negace","institution-confusion":"Záměna institucí","distractor-trap":"Past distraktoru","time-pressure":"Časový tlak","overthinking":"Přemýšlení","impulsive-click":"Impulzivní klik","no-answer":"Bez odpovědi"};
 
   // ═══════════════════════════════════════════
-  // 2. DATA NORMALIZATION
+  // 2. DATA NORMALIZATION (WITH METADATA V3)
   // ═══════════════════════════════════════════
   const RAW_BATTERIES = JSON.parse(document.getElementById("questionData").textContent);
-  function normalizeQuestion(q, i) {
+  
+  const METADATA_INDEX = {};
+  if (window.metadataExport && Array.isArray(window.metadataExport.items)) {
+    window.metadataExport.items.forEach(item => { if (item.globalId) METADATA_INDEX[item.globalId] = item; });
+  }
+  const BATTERY8_MAP = {};
+  if (window.battery8Map && Array.isArray(window.battery8Map.items)) {
+    window.battery8Map.items.forEach(item => {
+      if (item.questionNumber) BATTERY8_MAP[`B08Q${String(item.questionNumber).padStart(2, '0')}`] = item;
+    });
+  }
+
+  function buildReviewFallbacks(qText, bLabel) {
+    return {
+      discipline: "Speciální pedagogika",
+      subtopic: "Obecné téma",
+      conceptTags: [bLabel || "Neznámá baterie"],
+      questionType: "Neznámý typ",
+      distractorType: "Neznámý distraktor",
+      trapPattern: "Neznámá past",
+      requiredDiscrimination: "Rozlišení správné a chybné odpovědi",
+      signalPattern: ["Klíčová slova"],
+      signalHint: "Zkuste si v textu otázky všimnout klíčových slov měnících význam.",
+      questionCore: "Určit nejsprávnější odpověď z nabízených možností.",
+      explanationCorrect: "Odpověď je správná na základě oborových standardů.",
+      explanationDistractor: "Ostatní možnosti obsahují nepřesnosti nebo se nevztahují přímo k jádru problému.",
+      commonMisconception: "Častou chybou je nepozorné přečtení zadání nebo unáhlený závěr na základě povrchní podoby slov.",
+      whyWrongCategory: "Typicky záměna pojmů nebo přehlédnutí podstaty.",
+      microLesson: "Vždy si pečlivě přečti celé zadání a srovnej ho s možnostmi. Hledej slova ukotvující kontext jako 'první krok', 'nejlépe', 'výhradně' nebo naopak negace.",
+      recommendedRecallPrompt: "Zkuste si vlastními slovy zopakovat, co přesně otázka po vás žádala rozhodnout."
+    };
+  }
+
+  function normalizeQuestion(q, qi, bId, bLabel) {
     const opts = Array.isArray(q?.options) ? q.options.slice(0,4).map(o => String(o??"").trim()) : [];
-    if (opts.length !== 4) throw new Error(`Otázka ${i+1} nemá přesně 4 možnosti.`);
+    if (opts.length !== 4) throw new Error(`Otázka ${qi+1} nemá přesně 4 možnosti.`);
     const c = Number.isInteger(q?.correct) ? q.correct : 0;
-    if (c < 0 || c > 3) throw new Error(`Otázka ${i+1} má neplatný index správné odpovědi.`);
-    return { number: Number.isInteger(q?.number)?q.number:i+1, text:String(q?.text??"").trim(), options:opts, correct:c, correctLetter:LETTERS[c] };
+    if (c < 0 || c > 3) throw new Error(`Otázka ${qi+1} má neplatný index správné odpovědi.`);
+    
+    const qNum = Number.isInteger(q?.number) ? q.number : qi+1;
+    const globalId = `B${String(bId).padStart(2, '0')}Q${String(qNum).padStart(2, '0')}`;
+    let m = null;
+    
+    if (bId === 8 && BATTERY8_MAP[globalId]) {
+      m = BATTERY8_MAP[globalId].resolvedMetadata;
+    } else if (METADATA_INDEX[globalId]) {
+      m = METADATA_INDEX[globalId];
+    }
+    if (!m) m = buildReviewFallbacks(q?.text??"", bLabel);
+    
+    return { 
+      number: qNum, 
+      globalId,
+      text: String(q?.text??"").trim(), 
+      options: opts, 
+      correct: c, 
+      correctLetter: LETTERS[c],
+      metadata: m
+    };
   }
+  
   function normalizeBattery(b, i) {
-    const questions = Array.isArray(b?.questions) ? b.questions.map((q,qi) => normalizeQuestion(q,qi)) : [];
-    return { id:Number.isInteger(b?.id)?b.id:i+1, label:String(b?.label??`Baterie ${i+1}`).trim(), title:String(b?.title??"").trim(), subtitle:String(b?.subtitle??"").trim(), purpose:String(b?.purpose??"").trim(), difficulty:String(b?.difficulty??"střední").trim(), dominant:Array.isArray(b?.dominant)?b.dominant.map(x=>String(x).trim()):[], breakdown:Array.isArray(b?.breakdown)?b.breakdown.map(x=>String(x).trim()):[], tags:Array.isArray(b?.tags)?b.tags.map(x=>String(x).trim()):[], durationMinutes:Number.isFinite(Number(b?.durationMinutes))?Number(b.durationMinutes):30, questionCount:questions.length, questions, validation:b?.validation??null };
+    const bId = Number.isInteger(b?.id) ? b.id : i+1;
+    const bLabel = String(b?.label??`Baterie ${i+1}`).trim();
+    const questions = Array.isArray(b?.questions) ? b.questions.map((q,qi) => normalizeQuestion(q, qi, bId, bLabel)) : [];
+    return { id: bId, label: bLabel, title:String(b?.title??"").trim(), subtitle:String(b?.subtitle??"").trim(), purpose:String(b?.purpose??"").trim(), difficulty:String(b?.difficulty??"střední").trim(), dominant:Array.isArray(b?.dominant)?b.dominant.map(x=>String(x).trim()):[], breakdown:Array.isArray(b?.breakdown)?b.breakdown.map(x=>String(x).trim()):[], tags:Array.isArray(b?.tags)?b.tags.map(x=>String(x).trim()):[], durationMinutes:Number.isFinite(Number(b?.durationMinutes))?Number(b.durationMinutes):30, questionCount:questions.length, questions, validation:b?.validation??null };
   }
+  
   const BATTERIES = RAW_BATTERIES.map((b,i) => normalizeBattery(b,i)).sort((a,b) => a.id - b.id);
   const BATTERY_MAP = Object.fromEntries(BATTERIES.map(b => [b.id, b]));
 
@@ -5673,6 +5744,8 @@
   function loadHistory() { return safeParse(localStorage.getItem(STORAGE_KEYS.HISTORY), []).slice(0, MAX_HISTORY); }
   function saveHistory() { try { localStorage.setItem(STORAGE_KEYS.HISTORY, JSON.stringify(appState.history.slice(0, MAX_HISTORY))); } catch(e){} }
   function addHistoryEntry(entry) { appState.history.unshift(entry); if(appState.history.length>MAX_HISTORY) appState.history.length=MAX_HISTORY; saveHistory(); }
+  function loadProgress() { return safeParse(localStorage.getItem(STORAGE_KEYS.PROGRESS), { subtopics: {}, errorTypes: {}, testCount: 0 }); }
+  function saveProgress() { try { localStorage.setItem(STORAGE_KEYS.PROGRESS, JSON.stringify(appState.progress)); } catch(e){} }
   function loadCurrentSession() {
     const raw = localStorage.getItem(STORAGE_KEYS.CURRENT_SESSION);
     const s = safeParse(raw, null);
@@ -5681,7 +5754,16 @@
   }
   function saveCurrentSession() { if(!appState.currentSession) return; try { appState.currentSession.updatedAt=new Date().toISOString(); localStorage.setItem(STORAGE_KEYS.CURRENT_SESSION, JSON.stringify(appState.currentSession)); } catch(e){} }
   function clearCurrentSession() { appState.currentSession=null; try { localStorage.removeItem(STORAGE_KEYS.CURRENT_SESSION); } catch(e){} }
-  function migrateStorageIfNeeded() { /* placeholder for future schema migrations */ }
+  function migrateStorageIfNeeded() { 
+    if (!localStorage.getItem(STORAGE_KEYS.SETTINGS) && localStorage.getItem("sciosim_v2_settings")) {
+      const oldSettings = safeParse(localStorage.getItem("sciosim_v2_settings"), null);
+      if (oldSettings) { oldSettings.schemaVersion = SCHEMA_VERSION; localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(oldSettings)); }
+    }
+    if (!localStorage.getItem(STORAGE_KEYS.HISTORY) && localStorage.getItem("sciosim_v2_history")) {
+      const oldHistory = safeParse(localStorage.getItem("sciosim_v2_history"), null);
+      if (oldHistory) { localStorage.setItem(STORAGE_KEYS.HISTORY, JSON.stringify(oldHistory)); }
+    }
+  }
 
   // ═══════════════════════════════════════════
   // 5. APP STATE
@@ -5689,7 +5771,7 @@
   function getDefaultSettings() {
     return { schemaVersion:SCHEMA_VERSION, restoreSessionOnLoad:true, defaultMode:"simulation", defaultGoal:"attention", showKeywordHighlights:false, requireConfidence:false, hideSidebarDuringReading:false, focusModeDefault:false, showQuestionFirst:false, autoSave:true };
   }
-  const appState = { schemaVersion:SCHEMA_VERSION, appMode:"start", selectedBatteryId:null, currentSession:null, history:[], settings:null };
+  const appState = { schemaVersion:SCHEMA_VERSION, appMode:"start", selectedBatteryId:null, currentSession:null, history:[], settings:null, progress:null };
 
   function createQuestionState(index) {
     return { questionIndex:index, selectedAnswer:null, firstAnswer:null, confidence:null, flagged:false, revisitLater:false, note:"", viewedAtLeastOnce:false, viewCount:0, firstViewedAt:null, lastViewedAt:null, timeSpentMs:0, currentViewStartedAt:null, answerChanges:0, optionsWereInitiallyHidden:false, optionsRevealedAt:null, resolvedStatus:"unanswered", autoErrorType:null, manualErrorType:null };
@@ -5715,7 +5797,7 @@
     const targets = buildBalancedTargetIndexes(battery.questions.length);
     const sessionQs = battery.questions.map((q,i) => {
       const remapped = remapQuestionOptions(q, targets[i]);
-      return {...remapped, sourceBatteryId:battery.id, sourceQuestionNumber:q.number, tags:battery.tags||[], signalHint:"", explanationCorrect:"", explanationDistractor:""};
+      return {...remapped, sourceBatteryId:battery.id, sourceQuestionNumber:q.number, tags:battery.tags||[]};
     });
     const dist = sessionQs.reduce((a,q)=>{a[LETTERS[q.correct]]++;return a;},{A:0,B:0,C:0,D:0});
     const mode = modeConfig?.mode || "simulation";
@@ -5824,11 +5906,44 @@
       if(hasNeg) { qs.autoErrorType="missed-negation"; return; }
       if(t<FAST_THRESHOLD_MS) { qs.autoErrorType="impulsive-click"; return; }
       if(t>=SLOW_THRESHOLD_MS&&qs.answerChanges>=2) { qs.autoErrorType="overthinking"; return; }
+      
+      const m = q.metadata || {};
+      const trap = m.trapPattern || "";
+      if (trap === "near-category" || trap === "distractor-trap") { qs.autoErrorType = "distractor-trap"; return; }
+      
       if(qs.confidence==="high") { qs.autoErrorType="knowledge-gap"; return; }
       if(qs.flagged) { qs.autoErrorType="inattention"; return; }
       if(/\bv rámci\b/i.test(q.text)) { qs.autoErrorType="institution-confusion"; return; }
-      qs.autoErrorType="distractor-trap";
+      
+      const likely = Array.isArray(m.likelyErrorTypes) ? m.likelyErrorTypes[0] : null;
+      if (likely && likely !== "concept-confusion" && likely !== "terminology-confusion") {
+        qs.autoErrorType = likely; 
+        return;
+      }
+      
+      qs.autoErrorType="knowledge-gap";
     });
+  }
+  function updateProgressFromSession() {
+    const s = appState.currentSession; if (!s || s.mode === "repair") return;
+    const p = appState.progress;
+    p.testCount++;
+    s.questionStates.forEach((qs, i) => {
+      const q = s.activeTest.questions[i];
+      const subtopic = q.metadata?.subtopic || "Neznámé";
+      if (!p.subtopics[subtopic]) p.subtopics[subtopic] = { seen: 0, correct: 0 };
+      p.subtopics[subtopic].seen++;
+      if (qs.selectedAnswer === q.correct) {
+        p.subtopics[subtopic].correct++;
+      } else {
+        const err = qs.manualErrorType || qs.autoErrorType;
+        if (err) {
+          if (!p.errorTypes[err]) p.errorTypes[err] = 0;
+          p.errorTypes[err]++;
+        }
+      }
+    });
+    saveProgress();
   }
   function buildRepairCandidateIndexes(filterType) {
     const s=appState.currentSession; if(!s) return [];
@@ -5909,6 +6024,88 @@
     $("newSessionBtn")?.addEventListener("click",()=>{clearCurrentSession();renderRestorePanel();});
     $("deleteSessionBtn")?.addEventListener("click",()=>{clearCurrentSession();renderRestorePanel();});
   }
+  function startTargetedPractice(type, param) {
+    let allQs = [];
+    BATTERIES.forEach(b => {
+      if (b.id === 8) return; 
+      b.questions.forEach(q => { allQs.push({ ...q, sourceBatteryId: b.id }); });
+    });
+    let filtered = []; let title = "";
+    if (type === "weakest-subtopic") {
+      filtered = allQs.filter(q => q.metadata?.subtopic === param);
+      title = `Slabina: ${param}`;
+    } else if (type === "error-type") {
+      filtered = allQs.filter(q => {
+        const m = q.metadata || {};
+        if (param === "distractor-trap" && (m.trapPattern === "near-category" || m.trapPattern === "distractor-trap")) return true;
+        if (m.likelyErrorTypes && m.likelyErrorTypes.includes(param)) return true;
+        if (param === "missed-negation" && /\\bnenì\\b|\\bnení\\b|\\bnesprávně\\b|\\bneplatí\\b|\\bneodpovídá\\b/i.test(q.text)) return true;
+        return false;
+      });
+      title = `Typ chyby: ${ERROR_LABELS[param] || param}`;
+    }
+    if (filtered.length === 0) { alert("Nenalezeny žádné otázky pro tento filtr."); return; }
+    const sessionQs = shuffleArray(filtered).slice(0, 20);
+    const dummyBattery = { id: "tgt-" + Date.now(), label: "Cílený trénink", title: title, durationMinutes: Math.max(5, Math.ceil(sessionQs.length * 0.6)), questions: sessionQs };
+    const s = appState.settings;
+    appState.currentSession = buildSessionBattery(dummyBattery, { mode: "simulation", goal: "accuracy", showQuestionFirst: false, showKeywordHighlights: true, requireConfidence: s.requireConfidence });
+    appState.selectedBatteryId = null;
+    saveCurrentSession(); setAppMode("test");
+    renderQuestionGrid(); updateMeta();
+    beginQuestionView(0); renderQuestion();
+    applyFocusMode(); startTimer();
+  }
+  function renderWeaknessPanel() {
+    const wp = $("weaknessPanel");
+    const summary = buildWeaknessSummary();
+    const p = appState.progress;
+    
+    if (!p || p.testCount === 0) {
+      wp.classList.add("hidden");
+      return;
+    }
+    wp.classList.remove("hidden");
+    const recs = buildRecommendations();
+    const recsHtml = recs.map(r => `<li>${escapeHtml(r)}</li>`).join("");
+    
+    const subsHtml = summary.weakestSubtopics.length > 0
+      ? summary.weakestSubtopics.map(s => {
+          return `<div class="dash-card"><div class="dash-value" style="font-size:18px;">${s.rate}%</div><div class="dash-label" style="font-size:13px; font-weight:700; color:#355266; margin-bottom:8px;">${escapeHtml(s.subtopic)}</div><div class="dash-label" style="margin-bottom:12px;">Úspěšnost (z ${s.seen} otázek)</div><button class="btn btn-primary btn-sm btn-practice" data-type="weakest-subtopic" data-param="${escapeHtml(s.subtopic)}">Procvičit téma</button></div>`;
+        }).join("")
+      : "<p style='color:#60758a; font-size:13px;'>Zatím nemáte dostatek dat z konkrétních témat.</p>";
+
+    const errsHtml = summary.topErrors.length > 0
+      ? summary.topErrors.map(e => {
+          return `<div class="dash-card"><div class="dash-value" style="font-size:18px;">${e.count}×</div><div class="dash-label" style="font-size:13px; font-weight:700; color:#9a2f2f; margin-bottom:12px;">${escapeHtml(e.label)}</div><button class="btn btn-outline btn-sm btn-practice" data-type="error-type" data-param="${escapeHtml(e.type)}">Opravit chybu</button></div>`;
+        }).join("")
+      : "";
+
+    wp.innerHTML = `
+      <div class="dashboard" style="margin-top: 20px; border-color: #b9dff2;">
+        <h4 style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+          <div>Mapa slabin a doporučení</div>
+          <div class="badge" style="font-size:11px;">Odehráno testů: ${p.testCount}</div>
+        </h4>
+        <div style="margin-bottom:16px;">
+          <strong style="font-size:13px; color:#183b54;">Doporučený postup:</strong>
+          <ul class="compact-list" style="margin-top:8px;">${recsHtml}</ul>
+        </div>
+        
+        <strong style="font-size:13px; color:#183b54;">Nejslabší témata:</strong>
+        <div class="dash-grid" style="margin-top:10px; margin-bottom: 16px;">
+          ${subsHtml}
+        </div>
+        
+        ${errsHtml ? `<strong style="font-size:13px; color:#183b54;">Nejčastější diagnostikované chyby:</strong>
+        <div class="dash-grid" style="margin-top:10px;">
+          ${errsHtml}
+        </div>` : ""}
+      </div>
+    `;
+    wp.querySelectorAll(".btn-practice").forEach(b => {
+      b.addEventListener("click", () => startTargetedPractice(b.dataset.type, b.dataset.param));
+    });
+  }
   function renderHistoryPanel() {
     const panel=$("historyPanel"); const h=appState.history;
     if(!h.length){panel.classList.add("hidden");return;}
@@ -5967,7 +6164,8 @@
     const ci=s.ui.currentQuestionIndex;
     const q=s.activeTest.questions[ci];
     const qs=s.questionStates[ci];
-    $("questionMeta").textContent=`Otázka ${ci+1} z ${s.activeTest.questions.length}`;
+    const sub = q.metadata?.subtopic ? ` · ${q.metadata.subtopic}` : "";
+    $("questionMeta").textContent=`Otázka ${ci+1} z ${s.activeTest.questions.length}${sub}`;
     $("questionText").innerHTML=highlightRiskKeywords(q.text);
     const optionsHidden=s.ui.optionsHiddenUntilReady&&!qs.optionsRevealedAt&&qs.selectedAnswer===null;
     const ow=$("optionsWrap"), rw=$("revealWrap");
@@ -6010,11 +6208,38 @@
     $("revisitBtn").addEventListener("click",toggleRevisitLater);
     $("clearBtn").addEventListener("click",clearAnswer);
   }
+  function buildWeaknessSummary() {
+    const p = appState.progress;
+    if (!p || p.testCount === 0) return { weakestSubtopics: [], topErrors: [] };
+    const subs = Object.keys(p.subtopics).map(k => {
+      const s = p.subtopics[k];
+      return { subtopic: k, seen: s.seen, correct: s.correct, rate: Math.round(s.correct/s.seen * 100) };
+    }).filter(s => s.seen >= 3).sort((a,b) => a.rate - b.rate);
+    const errs = Object.keys(p.errorTypes).map(k => {
+      return { type: k, count: p.errorTypes[k], label: ERROR_LABELS[k] || k };
+    }).sort((a,b) => b.count - a.count);
+    return { weakestSubtopics: subs.slice(0, 5), topErrors: errs.slice(0, 3) };
+  }
+  function buildRecommendations() {
+    const w = buildWeaknessSummary();
+    if (!w.weakestSubtopics.length && !w.topErrors.length) return ["Zatím nemáme dostatek dat. Dokonči alespoň jeden test."];
+    const recs = [];
+    if (w.weakestSubtopics.length > 0) {
+      recs.push(`Zaměř se na téma: ${w.weakestSubtopics[0].subtopic} (úspěšnost ${w.weakestSubtopics[0].rate}%).`);
+    }
+    if (w.topErrors.length > 0) {
+      if (w.topErrors[0].type === "impulsive-click") recs.push("Nejčastěji chybuješ kvůli zbrklosti. Zpomal a čti všechny možnosti.");
+      else if (w.topErrors[0].type === "inattention" || w.topErrors[0].type === "missed-negation") recs.push("Dávej větší pozor na klíčová slova a negace v zadání.");
+      else recs.push(`Nejčastější typ chyby je: ${w.topErrors[0].label}.`);
+    }
+    return recs;
+  }
   function renderResults(timeExpired) {
     const s=appState.currentSession; if(!s) return;
     const score=calculateScore();
     const metrics=calculateAttentionMetrics();
     inferAutoErrorTypes();
+    updateProgressFromSession();
     s.results.score=score; s.results.analytics=metrics;
     s.results.repairCandidateIndexes=buildRepairCandidateIndexes("all");
     const un=score.total-score.answered;
@@ -6024,6 +6249,8 @@
     $("resultsBatteryLabel").textContent=`Vyhodnocená baterie: ${s.activeTest.label} – ${s.activeTest.title}`;
     renderPerformanceSummary(score,metrics);
     renderAttentionDashboard(metrics);
+    renderThematicWeaknesses();
+    renderRecommendationsPanel();
     renderRepairPanel();
     saveCurrentSession();
   }
@@ -6036,6 +6263,58 @@
     const slowList=metrics.slowIdxs?.map(i=>`#${i+1}`).join(", ")||"—";
     const fastList=metrics.fastWrongIdxs?.map(i=>`#${i+1}`).join(", ")||"—";
     el.innerHTML=`<div class="dashboard"><h4>Pozornostní dashboard</h4><div class="dash-grid"><div class="dash-card"><div class="dash-value">${(metrics.avgTime/1000).toFixed(1)}s</div><div class="dash-label">Průměrný čas</div></div><div class="dash-card"><div class="dash-value">${(metrics.medTime/1000).toFixed(1)}s</div><div class="dash-label">Medián času</div></div><div class="dash-card"><div class="dash-value">${metrics.changes||0}</div><div class="dash-label">Změny odpovědi</div></div><div class="dash-card"><div class="dash-value">${metrics.flagged||0}</div><div class="dash-label">Označené</div></div><div class="dash-card"><div class="dash-value">${metrics.revisits||0}</div><div class="dash-label">Návraty k otázkám</div></div><div class="dash-card"><div class="dash-value">${metrics.highConf||0}</div><div class="dash-label">Jistých odpovědí</div></div></div><div class="dash-detail"><strong>Nejpomalejší:</strong> ${slowList}<br><strong>Rychlé špatné kliky:</strong> ${fastList}<br><strong>Chyby po dlouhém čtení:</strong> ${metrics.longReadErrors||0}</div></div>`;
+  }
+  function renderThematicWeaknesses() {
+    const s = appState.currentSession; if (!s) return;
+    const el = $("thematicWeaknesses");
+    const subtopics = {}; const errorTypes = {};
+    s.questionStates.forEach((qs, i) => {
+      const q = s.activeTest.questions[i];
+      if (qs.selectedAnswer === null) return;
+      const sub = q.metadata?.subtopic || "Neznámé téma";
+      if (!subtopics[sub]) subtopics[sub] = { seen: 0, correct: 0 };
+      subtopics[sub].seen++;
+      if (qs.selectedAnswer === q.correct) subtopics[sub].correct++;
+      else {
+        const err = qs.manualErrorType || qs.autoErrorType;
+        if (err) { if (!errorTypes[err]) errorTypes[err] = 0; errorTypes[err]++; }
+      }
+    });
+    const subs = Object.keys(subtopics)
+      .map(k => ({ subtopic: k, seen: subtopics[k].seen, correct: subtopics[k].correct, rate: Math.round(subtopics[k].correct/subtopics[k].seen*100) }))
+      .filter(x => x.rate < 80)
+      .sort((a,b) => a.rate - b.rate);
+    const errs = Object.keys(errorTypes)
+      .map(k => ({ type: k, count: errorTypes[k], label: ERROR_LABELS[k] || k }))
+      .sort((a,b) => b.count - a.count);
+    if (subs.length === 0 && errs.length === 0) {
+      el.innerHTML = `<div class="dashboard"><h4>Tematická mapa (z tohoto testu)</h4><div class="dash-detail" style="border-color:#bfe2ca; background:#edf9f1; color:#1c6f44;">V tomto testu nemáte žádné výrazné slabiny. Cíle bylo dosaženo!</div></div>`;
+      return;
+    }
+    const subsHtml = subs.map(s => `<div class="dash-card"><div class="dash-value" style="font-size:18px;">${s.rate}%</div><div class="dash-label" style="font-size:13px; font-weight:700; color:#355266;">${escapeHtml(s.subtopic)}</div><div class="dash-label" style="font-size:11px;">Úspěšnost (z ${s.seen})</div></div>`).join("");
+    const errsHtml = errs.map(e => `<div class="dash-card"><div class="dash-value" style="font-size:18px;">${e.count}×</div><div class="dash-label" style="font-size:13px; font-weight:700; color:#9a2f2f;">${escapeHtml(e.label)}</div></div>`).join("");
+    el.innerHTML = `<div class="dashboard"><h4>Tematická mapa (z tohoto testu)</h4>${subs.length > 0 ? `<div class="dash-grid" style="margin-bottom:12px;">${subsHtml}</div>` : ""}${errs.length > 0 ? `<strong style="font-size:13px; color:#183b54;">Identifikované chyby:</strong><div class="dash-grid" style="margin-top:8px;">${errsHtml}</div>` : ""}</div>`;
+  }
+  function renderRecommendationsPanel() {
+    const s = appState.currentSession; if (!s) return;
+    const el = $("recommendationsPanel");
+    const metrics = s.results.analytics || calculateAttentionMetrics();
+    const wrong = s.questionStates.filter((qs,i) => qs.selectedAnswer !== null && qs.selectedAnswer !== s.activeTest.questions[i].correct);
+    let recs = [];
+    if (metrics.fastWrongIdxs?.length > 2) {
+      recs.push("Máš hodně rychlých chyb. Zkus v dalším testu přepnout na <strong>Trénink čtení zkráceného textu</strong>, abys zpomalil a lépe vnímal zadání.");
+    }
+    const knowledgeGaps = wrong.filter(qs => qs.autoErrorType === "knowledge-gap" || qs.confidence === "high").length;
+    if (knowledgeGaps > 3) {
+      recs.push(`Udělal(a) jsi ${knowledgeGaps} chyb u otázek, kde sis byl(a) relativně jistý(á). U těchto otázek si po testu vždy pečlivě projdi <em>Výklad učitele</em> v sekci rozbor.`);
+    } else if (wrong.length === 0 && metrics.revisits > 3 && metrics.avgTime < 45000) {
+      recs.push("Výborný výsledek! Dobré tempo a vysoká přesnost. Zkus pro příště <strong>zkrátit časový záměr</strong> a test si projet pod tlakem.");
+    } else if (wrong.length > 0) {
+      recs.push("Doporučujeme využít <strong>Opravný režim</strong> (tlačítko níže) a podat si chybné s sady otázek znovu, dokud si text zadání ještě pamatuješ.");
+    }
+    if (recs.length === 0) recs.push("Pokračuj stejným tempem a s rozvahou do další baterie.");
+
+    el.innerHTML = `<div class="dashboard" style="background:#f4fafd; border-color:#d5e7f2;"><h4 style="color:#17597a; margin-bottom:8px;">Doporučení pro další postup</h4><ul class="compact-list" style="margin-top:0;">${recs.map(r => `<li style="color:#2a4358; margin-bottom:6px;">${r}</li>`).join("")}</ul></div>`;
   }
   function renderRepairPanel() {
     const s=appState.currentSession; if(!s) return;
@@ -6058,43 +6337,101 @@
     s.activeTest.questions.forEach((_,i)=>{ rw.appendChild(renderReviewItem(i)); });
   }
   function renderReviewItem(qIndex) {
-    const s=appState.currentSession;
-    const q=s.activeTest.questions[qIndex];
-    const qs=s.questionStates[qIndex];
-    const isCorrect=qs.selectedAnswer===q.correct;
-    const isUnanswered=qs.selectedAnswer===null;
-    const userLabel=isUnanswered?"bez odpovědi":LETTERS[qs.selectedAnswer];
-    const errType=qs.manualErrorType||qs.autoErrorType||"";
-    const item=document.createElement("div"); item.className="review-item";
-    const statusClass=isUnanswered?"unanswered":isCorrect?"correct":"incorrect";
-    const statusText=isUnanswered?"bez odpovědi":isCorrect?"správně":"chybně";
-    const statusPill=isUnanswered?"neutral":isCorrect?"correct":"wrong";
-    let head=`<div class="review-head ${statusClass}"><span>Otázka ${qIndex+1}</span><span class="pill ${statusPill}">${statusText}</span></div>`;
-    let body='<div class="review-body">';
-    body+=`<div>${highlightRiskKeywords(q.text)}</div>`;
-    body+='<div class="review-options">';
-    q.options.forEach((opt,oi)=>{
-      let cls="review-option";
-      if(oi===q.correct) cls+=" correct";
-      if(qs.selectedAnswer===oi&&qs.selectedAnswer!==q.correct) cls+=" user-wrong";
-      let extra="";
-      if(oi===q.correct) extra+=' <span class="pill correct">správná odpověď</span>';
-      if(qs.selectedAnswer===oi&&qs.selectedAnswer!==q.correct) extra+=' <span class="pill wrong">tvá odpověď</span>';
-      body+=`<div class="${cls}"><strong>${LETTERS[oi]})</strong> ${escapeHtml(opt)}${extra}</div>`;
+    const s = appState.currentSession;
+    const q = s.activeTest.questions[qIndex];
+    const qs = s.questionStates[qIndex];
+    const isCorrect = qs.selectedAnswer === q.correct;
+    const isUnanswered = qs.selectedAnswer === null;
+    const statusClass = isUnanswered ? "unanswered" : (isCorrect ? "correct" : "incorrect");
+    const statusText = isUnanswered ? "bez odpovědi" : (isCorrect ? "správně" : "chybně");
+    const statusPill = isUnanswered ? "neutral" : (isCorrect ? "correct" : "wrong");
+
+    const item = document.createElement("div");
+    item.className = "review-item";
+    
+    const head = `<div class="review-head ${statusClass}"><span>Otázka ${qIndex + 1}</span><span class="pill ${statusPill}">${statusText}</span></div>`;
+    
+    // TAB BUTTONS
+    const tabs = `
+      <div class="review-tabs">
+        <button class="review-tab active" data-tab="qa" type="button">Zadání a odpověď</button>
+        <button class="review-tab" data-tab="tutor" type="button">Výklad učitele (Tutor)</button>
+      </div>
+    `;
+
+    // TAB 1: QA
+    let tabQA = `<div class="review-content" data-content="qa">`;
+    tabQA += `<div style="margin-bottom:12px;">${highlightRiskKeywords(q.text)}</div>`;
+    tabQA += `<div class="review-options">`;
+    q.options.forEach((opt, oi) => {
+      let cls = "review-option";
+      if (oi === q.correct) cls += " correct";
+      if (qs.selectedAnswer === oi && qs.selectedAnswer !== q.correct) cls += " user-wrong";
+      let extra = "";
+      if (oi === q.correct) extra += ' <span class="pill correct">správná odpověď</span>';
+      if (qs.selectedAnswer === oi && qs.selectedAnswer !== q.correct) extra += ' <span class="pill wrong">tvá odpověď</span>';
+      tabQA += `<div class="${cls}"><strong>${LETTERS[oi]})</strong> ${escapeHtml(opt)}${extra}</div>`;
     });
-    body+='</div>';
-    body+=`<div class="review-meta-grid"><div class="review-meta-item"><strong>Odpověď</strong>${userLabel}</div><div class="review-meta-item"><strong>Správně</strong>${LETTERS[q.correct]}</div><div class="review-meta-item"><strong>Čas</strong>${(qs.timeSpentMs/1000).toFixed(1)}s</div><div class="review-meta-item"><strong>Jistota</strong>${qs.confidence||"—"}</div><div class="review-meta-item"><strong>Změny</strong>${qs.answerChanges}</div><div class="review-meta-item"><strong>Návštěvy</strong>${qs.viewCount}</div></div>`;
-    if(!isCorrect&&!isUnanswered) {
-      body+=`<div class="review-meta-item" style="margin-top:6px"><strong>Typ chyby</strong><select class="error-type-select" data-qi="${qIndex}">${Object.entries(ERROR_LABELS).map(([k,v])=>`<option value="${k}" ${(qs.manualErrorType||qs.autoErrorType)===k?"selected":""}>${v}</option>`).join("")}</select></div>`;
+    tabQA += `</div>`;
+    tabQA += `<div class="review-meta-grid" style="margin-top:12px;">
+      <div class="review-meta-item"><strong>Tvá volba</strong>${isUnanswered ? "—" : LETTERS[qs.selectedAnswer]}</div>
+      <div class="review-meta-item"><strong>Správně</strong>${LETTERS[q.correct]}</div>
+      <div class="review-meta-item"><strong>Čas</strong>${(qs.timeSpentMs / 1000).toFixed(1)}s</div>
+      <div class="review-meta-item"><strong>Jistota</strong>${qs.confidence || "—"}</div>
+    </div>`;
+    tabQA += `</div>`;
+
+    // TAB 2: TUTOR
+    let tabTutor = `<div class="review-content hidden" data-content="tutor">`;
+    
+    const m = q.metadata || {};
+    
+    // Core & Signal
+    if (m.explanationCore) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Podstata otázky:</strong> ${escapeHtml(m.explanationCore)}</div>`;
+    if (m.signalHint) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Signální slovo:</strong> <span style="color:#d4820a; font-weight:700;">${escapeHtml(m.signalHint)}</span></div>`;
+    
+    // Why Correct / Why Distractor
+    if (m.explanationCorrect) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Proč je ${LETTERS[q.correct]} správně:</strong> ${escapeHtml(m.explanationCorrect)}</div>`;
+    if (m.explanationDistractor && !isCorrect && !isUnanswered) {
+      tabTutor += `<div class="review-explanation" style="margin-bottom:10px; border-color:#f3c9c9;"><strong>Lákavý distraktor:</strong> ${escapeHtml(m.explanationDistractor)}</div>`;
     }
-    if(q.signalHint) body+=`<div class="review-explanation"><strong>Signál:</strong> ${escapeHtml(q.signalHint)}</div>`;
-    if(q.explanationCorrect) body+=`<div class="review-explanation"><strong>Proč správně:</strong> ${escapeHtml(q.explanationCorrect)}</div>`;
-    if(q.explanationDistractor) body+=`<div class="review-explanation"><strong>Proč lákavý distraktor:</strong> ${escapeHtml(q.explanationDistractor)}</div>`;
-    if(qs.note) body+=`<div class="review-explanation"><strong>Tvá poznámka:</strong> ${escapeHtml(qs.note)}</div>`;
-    body+='</div>';
-    item.innerHTML=head+body;
-    const sel=item.querySelector(".error-type-select");
-    if(sel) sel.addEventListener("change",function(){s.questionStates[qIndex].manualErrorType=this.value;saveCurrentSession();});
+
+    // Micro-lesson & Recall
+    if (m.microLesson) tabTutor += `<div class="review-explanation tutor-lesson" style="margin-bottom:10px;"><strong>Teoretické okénko:</strong> ${escapeHtml(m.microLesson)}</div>`;
+    if (m.recallPrompt) tabTutor += `<div class="review-explanation tutor-recall" style="margin-bottom:10px;"><strong>Otázka k zapamatování:</strong> ${escapeHtml(m.recallPrompt)}</div>`;
+
+    // Diagnostic Diagnosis
+    if (!isCorrect && !isUnanswered) {
+      const autoErr = qs.autoErrorType ? ERROR_LABELS[qs.autoErrorType] : "nezjištěno";
+      tabTutor += `<div class="review-explanation" style="background:#fffcf5; border-style:dashed;">`;
+      tabTutor += `<strong>Diagnostika trenažéru:</strong> Pravděpodobný důvod chyby: <em>${autoErr}</em>`;
+      tabTutor += `<div style="margin-top:8px;"><strong>Manuální oprava:</strong> <select class="error-type-select" data-qi="${qIndex}">${Object.entries(ERROR_LABELS).map(([k, v]) => `<option value="${k}" ${(qs.manualErrorType || qs.autoErrorType) === k ? "selected" : ""}>${v}</option>`).join("")}</select></div>`;
+      tabTutor += `</div>`;
+    }
+
+    if (qs.note) tabTutor += `<div class="review-explanation" style="margin-top:10px;"><strong>Tvá poznámka:</strong> ${escapeHtml(qs.note)}</div>`;
+    
+    tabTutor += `</div>`;
+
+    item.innerHTML = head + `<div class="review-body">` + tabs + tabQA + tabTutor + `</div>`;
+
+    // Event Listeners for Tabs
+    const btns = item.querySelectorAll(".review-tab");
+    const contents = item.querySelectorAll(".review-content");
+    btns.forEach(b => {
+      b.addEventListener("click", () => {
+        const target = b.dataset.tab;
+        btns.forEach(x => x.classList.toggle("active", x.dataset.tab === target));
+        contents.forEach(c => c.classList.toggle("hidden", c.dataset.content !== target));
+      });
+    });
+
+    const sel = item.querySelector(".error-type-select");
+    if (sel) sel.addEventListener("change", function () {
+      s.questionStates[qIndex].manualErrorType = this.value;
+      saveCurrentSession();
+    });
+
     return item;
   }
   function applyFocusMode() {
@@ -6164,7 +6501,7 @@
     const s=appState.currentSession;
     if(s&&!s.results.finished) { if(!confirm("Opravdu se chceš vrátit? Rozpracovaný test bude uložen.")) return; saveCurrentSession(); }
     stopTimer(); document.body.classList.remove("focus-mode");
-    setAppMode("start"); renderBatteryCards(); renderRestorePanel(); renderHistoryPanel();
+    setAppMode("start"); renderBatteryCards(); renderRestorePanel(); renderWeaknessPanel(); renderHistoryPanel();
   }
   function goToQuestion(index) {
     const s=appState.currentSession; if(!s||s.results.finished) return;
@@ -6337,11 +6674,13 @@
     migrateStorageIfNeeded();
     appState.settings=loadSettings();
     appState.history=loadHistory();
+    appState.progress=loadProgress();
     if($("statQuestions")) $("statQuestions").textContent=String(BATTERIES.reduce((s,b)=>s+b.questions.length,0));
     renderConfigPanel();
     renderBatteryCards();
     renderBatteryDetail(null);
     renderRestorePanel();
+    renderWeaknessPanel();
     renderHistoryPanel();
     // Auto-restore session
     if(appState.settings.restoreSessionOnLoad) {
