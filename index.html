@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SCIO simulátor</title>
+  <title>SCIO simulátor v2</title>
   <style>
     :root {
       --bg: #edf1f5;
@@ -21,884 +21,279 @@
       --red-line: #c94b4b;
       --amber-soft: #fff7df;
       --amber-line: #e0b84d;
+      --purple-soft: #f3eeff;
+      --purple-line: #7c5cbf;
+      --orange-soft: #fff4e6;
+      --orange-line: #d4820a;
       --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
       --radius: 18px;
     }
-
     * { box-sizing: border-box; }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: Inter, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-    }
-
-    button, input {
-      font: inherit;
-    }
-
-    .hidden { display: none !important; }
-
-    .top-wrap {
-      background: linear-gradient(180deg, #f8fbfd 0%, #f2f7fa 100%);
-      border-bottom: 1px solid #d7e4ed;
-      padding: 18px 0 14px;
-    }
-
-    .container {
-      width: min(1240px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .logo-box {
-      position: relative;
-      width: 46px;
-      height: 46px;
-      flex: 0 0 auto;
-    }
-
-    .sq1, .sq2, .sq3 {
-      position: absolute;
-      border-radius: 4px;
-    }
-
-    .sq1 { width: 22px; height: 22px; left: 0; top: 14px; background: #2b92c9; }
-    .sq2 { width: 10px; height: 10px; left: 24px; top: 6px; background: #79c3e6; }
-    .sq3 { width: 10px; height: 10px; left: 28px; top: 20px; background: #4aa9d6; }
-
-    .brand h1 {
-      margin: 0;
-      font-size: 31px;
-      line-height: 1.02;
-      color: #30475a;
-      letter-spacing: 0.1px;
-      font-weight: 800;
-    }
-
-    .sub {
-      margin: 8px 0 0;
-      color: var(--blue-dark);
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-    }
-
-    .page {
-      padding: 24px 0 34px;
-    }
-
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .btn {
-      border: none;
-      border-radius: 12px;
-      padding: 12px 16px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: 0.16s ease;
-    }
-
-    .btn:disabled {
-      opacity: 0.55;
-      cursor: not-allowed;
-    }
-
-    .btn-primary {
-      color: white;
-      background: var(--blue);
-    }
-
-    .btn-primary:hover:not(:disabled) {
-      background: #237cad;
-    }
-
-    .btn-light {
-      color: var(--text);
-      background: #edf3f8;
-    }
-
-    .btn-light:hover:not(:disabled) {
-      background: #e3ebf2;
-    }
-
-    .btn-outline {
-      color: var(--blue-dark);
-      background: white;
-      border: 1px solid #b7d8ea;
-    }
-
-    .btn-outline:hover:not(:disabled) {
-      background: #f8fcff;
-    }
-
-    .btn-danger {
-      color: white;
-      background: #c94b4b;
-    }
-
-    .btn-danger:hover:not(:disabled) {
-      background: #b13d3d;
-    }
-
-    .start-screen {
-      padding: 26px;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(330px, 0.9fr);
-      gap: 20px;
-      margin-bottom: 22px;
-    }
-
-    .hero-card {
-      padding: 24px;
-    }
-
-    .hero h2 {
-      margin: 0 0 10px;
-      font-size: 31px;
-      line-height: 1.2;
-    }
-
-    .hero p {
-      margin: 0 0 14px;
-      line-height: 1.6;
-      color: #475569;
-      font-size: 16px;
-    }
-
-    .hero-note {
-      background: linear-gradient(180deg, #f8fbfe 0%, #f4f9fc 100%);
-      border: 1px solid #d8ebf6;
-      border-radius: 16px;
-      padding: 16px 18px;
-      color: #335a6f;
-      line-height: 1.68;
-      font-size: 14px;
-    }
-
-    .stats {
-      margin-top: 16px;
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-    }
-
-    .stat-card {
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 16px;
-      background: #fbfdff;
-    }
-
-    .stat-label {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-
-    .stat-value {
-      font-size: 27px;
-      font-weight: 800;
-      color: #124a66;
-      line-height: 1.05;
-    }
-
-    .stat-sub {
-      margin-top: 8px;
-      font-size: 13px;
-      line-height: 1.4;
-      color: #475569;
-    }
-
-    .detail-card {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
-    }
-
-    .detail-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      align-items: flex-start;
-      padding-bottom: 14px;
-      border-bottom: 1px solid #e4edf3;
-    }
-
-    .detail-top h3 {
-      margin: 0 0 8px;
-      font-size: 22px;
-      line-height: 1.25;
-      font-weight: 800;
-      color: #183b54;
-    }
-
-    .detail-top p {
-      margin: 0;
-      color: #516578;
-      line-height: 1.65;
-      font-size: 15px;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 42px;
-      height: 32px;
-      padding: 0 12px;
-      border-radius: 999px;
-      background: var(--blue-soft);
-      color: var(--blue-dark);
-      border: 1px solid #cae7f5;
-      font-weight: 800;
-      font-size: 13px;
-      flex: 0 0 auto;
-    }
-
-    .detail-block {
-      display: grid;
-      gap: 10px;
-      padding: 14px 16px;
-      border-radius: 16px;
-      border: 1px solid #e2ebf2;
-      background: #f9fbfd;
-    }
-
-    .detail-label {
-      font-size: 11px;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: #60758a;
-      font-weight: 800;
-    }
-
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      border-radius: 999px;
-      border: 1px solid #dbe5ec;
-      padding: 8px 12px;
-      background: white;
-      color: #355266;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .chip.warn {
-      background: var(--amber-soft);
-      border-color: var(--amber-line);
-      color: #7b5d09;
-    }
-
-    .chip.ok {
-      background: var(--green-soft);
-      border-color: #bfe2ca;
-      color: #1c6f44;
-    }
-
-    .compact-list {
-      display: grid;
-      gap: 10px;
-      margin: 0;
-      padding-left: 20px;
-      color: #334155;
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
-    .compact-list li::marker {
-      color: #2b92c9;
-    }
-
-    .detail-copy,
-    .detail-purpose {
-      color: #334155;
-      line-height: 1.72;
-      font-size: 15px;
-      font-weight: 500;
-    }
-
-    .detail-copy p,
-    .detail-purpose p {
-      margin: 0 0 12px;
-    }
-
-    .detail-copy p:last-child,
-    .detail-purpose p:last-child {
-      margin-bottom: 0;
-    }
-
-    .battery-select-wrap {
-      display: grid;
-      gap: 16px;
-    }
-
-    .section-title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .section-title h3 {
-      margin: 0;
-      font-size: 22px;
-    }
-
-    .section-title p {
-      margin: 4px 0 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .battery-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .battery-card {
-      position: relative;
-      overflow: hidden;
-      text-align: left;
-      border: 1px solid #dbe5ec;
-      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
-      border-radius: 18px;
-      padding: 18px;
-      cursor: pointer;
-      transition: 0.18s ease;
-      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
-    }
-
-    .battery-card::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto auto 0;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(90deg, #b9dff2 0%, #e9f6fc 100%);
-    }
-
-    .battery-card:hover {
-      border-color: #8fc7e4;
-      background: #fcfeff;
-      transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(20, 58, 89, 0.08);
-    }
-
-    .battery-card:focus-visible {
-      outline: 3px solid rgba(43, 146, 201, 0.22);
-      outline-offset: 2px;
-    }
-
-    .battery-card.selected {
-      background: linear-gradient(180deg, #eef8fd 0%, #e6f3fb 100%);
-      border-color: #5daed6;
-      box-shadow: 0 14px 30px rgba(23, 89, 122, 0.12);
-      transform: translateY(-1px);
-    }
-
-    .battery-card.selected::before {
-      background: linear-gradient(90deg, #2b92c9 0%, #6cc0e6 100%);
-    }
-
-    .battery-card-head {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 10px;
-    }
-
-    .battery-label {
-      font-size: 18px;
-      line-height: 1.28;
-      font-weight: 800;
-      color: #183b54;
-    }
-
-    .battery-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 36px;
-      height: 30px;
-      padding: 0 10px;
-      border-radius: 999px;
-      background: #edf6fb;
-      color: var(--blue-dark);
-      font-size: 12px;
-      font-weight: 800;
-      border: 1px solid #cfe7f4;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
-    }
-
-    .battery-card.selected .battery-badge {
-      background: #2b92c9;
-      color: white;
-      border-color: #2b92c9;
-    }
-
-    .battery-subtitle {
-      margin: 0 0 14px;
-      color: #516578;
-      line-height: 1.58;
-      min-height: 44px;
-      font-size: 14px;
-    }
-
-    .battery-card.selected .battery-subtitle {
-      color: #34556e;
-    }
-
-    .battery-card.selected .chip {
-      background: rgba(255, 255, 255, 0.78);
-      border-color: #bddff0;
-      color: #244a63;
-    }
-
-    .battery-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .start-actions {
-      display: flex;
-      gap: 14px;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 4px;
-    }
-
-    .selection-note {
-      padding: 13px 14px;
-      border-radius: 14px;
-      border: 1px solid #dfe7ee;
-      background: #f8fafc;
-      color: #46556a;
-      line-height: 1.45;
-      flex: 1 1 400px;
-      min-width: 280px;
-    }
-
-    .warning {
-      padding: 14px 15px;
-      border-radius: 14px;
-      background: var(--amber-soft);
-      border: 1px solid #f0d78f;
-      color: #6c5608;
-      line-height: 1.5;
-      font-size: 14px;
-    }
-
-    .app {
-      display: grid;
-      grid-template-columns: 340px minmax(0, 1fr);
-      gap: 20px;
-      align-items: start;
-    }
-
-    .sidebar {
-      padding: 20px;
-      position: sticky;
-      top: 18px;
-    }
-
-    .sidebar-head {
-      display: grid;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-
-    .sidebar-head h2 {
-      margin: 0;
-      font-size: 24px;
-    }
-
-    .sidebar-battery {
-      color: var(--blue-dark);
-      font-weight: 700;
-      line-height: 1.45;
-    }
-
-    .meta {
-      display: grid;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-
-    .meta-box {
-      border: 1px solid #dfe8ef;
-      border-radius: 14px;
-      padding: 12px 14px;
-      background: #fbfdff;
-      line-height: 1.5;
-      color: #425469;
-    }
-
-    .timer {
-      font-size: 30px;
-      line-height: 1.1;
-      font-weight: 800;
-      color: var(--blue-dark);
-      margin-top: 4px;
-    }
-
-    .legend {
-      display: grid;
-      gap: 8px;
-      margin-bottom: 16px;
-      color: #4d6074;
-      font-size: 14px;
-    }
-
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .legend-box {
-      width: 16px;
-      height: 16px;
-      border-radius: 5px;
-      border: 1px solid #c5d2dd;
-      background: white;
-      flex: 0 0 auto;
-    }
-
-    .legend-box.curr {
-      background: #d8eef9;
-      border-color: var(--blue);
-    }
-
-    .legend-box.ans {
-      background: #e7f6ed;
-      border-color: #6cbc89;
-    }
-
-    .question-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-
-    .q-nav {
-      border: 1px solid #cfdae4;
-      background: white;
-      min-height: 42px;
-      border-radius: 10px;
-      font-weight: 700;
-      color: #475569;
-      cursor: pointer;
-    }
-
-    .q-nav.current {
-      background: #dff1fb;
-      border-color: var(--blue);
-      color: var(--blue-dark);
-    }
-
-    .q-nav.answered {
-      background: #ebf8ef;
-      border-color: #82c39a;
-      color: #225c3a;
-    }
-
-    .side-actions {
-      display: grid;
-      gap: 10px;
-    }
-
-    .main {
-      padding: 22px;
-      min-height: 700px;
-    }
-
-    .main-header {
-      margin-bottom: 16px;
-    }
-
-    .main-header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 16px;
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    #questionText {
-      margin: 0;
-      font-size: 29px;
-      line-height: 1.28;
-      max-width: 960px;
-    }
-
-    .active-battery-pill {
-      white-space: nowrap;
-      border: 1px solid #d5e7f2;
-      background: #f4fafd;
-      color: var(--blue-dark);
-      border-radius: 999px;
-      padding: 10px 14px;
-      font-weight: 700;
-      font-size: 13px;
-    }
-
-    .question-body {
-      margin-top: 18px;
-    }
-
-    .options {
-      display: grid;
-      gap: 12px;
-    }
-
-    .option-btn {
-      width: 100%;
-      text-align: left;
-      padding: 16px 18px;
-      border-radius: 16px;
-      border: 1px solid #dce5ed;
-      background: white;
-      color: #27364a;
-      cursor: pointer;
-      transition: 0.14s ease;
-    }
-
-    .option-btn:hover {
-      border-color: #a5cfe6;
-      background: #fbfeff;
-    }
-
-    .option-btn.selected {
-      background: #eaf5fb;
-      border-color: var(--blue);
-      box-shadow: 0 0 0 1px rgba(43, 146, 201, 0.1);
-    }
-
-    .option-label {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      border-radius: 999px;
-      background: #eef3f7;
-      color: #365166;
-      font-weight: 800;
-      margin-right: 12px;
-      vertical-align: top;
-      flex: 0 0 auto;
-    }
-
-    .option-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 0;
-      line-height: 1.55;
-      font-size: 16px;
-    }
-
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-
-    .results {
-      display: grid;
-      gap: 16px;
-    }
-
-    .score-box {
-      border: 1px solid #dce8ef;
-      border-radius: 18px;
-      padding: 22px;
-      background: #fbfdff;
-    }
-
-    .score-main {
-      font-size: 34px;
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 8px;
-    }
-
-    .score-sub {
-      color: #475569;
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
-    .results-battery {
-      margin-top: 10px;
-      font-weight: 700;
-      color: var(--blue-dark);
-    }
-
-    .result-actions {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    #reviewWrap {
-      display: grid;
-      gap: 14px;
-    }
-
-    .review-item {
-      border: 1px solid #dfe8ef;
-      border-radius: 16px;
-      overflow: hidden;
-      background: white;
-    }
-
-    .review-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      padding: 12px 16px;
-      font-weight: 800;
-    }
-
-    .review-head.correct {
-      background: var(--green-soft);
-      border-bottom: 1px solid #c5e5d0;
-      color: #1f6a42;
-    }
-
-    .review-head.incorrect {
-      background: var(--red-soft);
-      border-bottom: 1px solid #f0c6c6;
-      color: #9a2f2f;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      border-radius: 999px;
-      padding: 5px 10px;
-      font-size: 12px;
-      font-weight: 800;
-      border: 1px solid transparent;
-    }
-
-    .pill.correct {
-      background: #edf9f1;
-      border-color: #bfe2ca;
-      color: #236844;
-    }
-
-    .pill.wrong {
-      background: #fff1f1;
-      border-color: #f3c9c9;
-      color: #a23535;
-    }
-
-    .review-body {
-      padding: 16px;
-      display: grid;
-      gap: 14px;
-      line-height: 1.55;
-      color: #324457;
-    }
-
-    .review-options {
-      display: grid;
-      gap: 10px;
-    }
-
-    .review-option {
-      border-radius: 12px;
-      border: 1px solid #e0e8ef;
-      padding: 11px 13px;
-      background: #fafcfe;
-    }
-
-    .review-option.correct {
-      border-color: #88c8a0;
-      background: #edf9f1;
-    }
-
-    .review-option.user-wrong {
-      border-color: #e6a3a3;
-      background: #fff3f3;
-    }
-
-    @media (max-width: 1040px) {
-      .hero, .app {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar {
-        position: static;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .start-screen, .sidebar, .main {
-        padding: 18px;
-      }
-
-      .battery-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .stats {
-        grid-template-columns: 1fr;
-      }
-
-      .main-header-top {
-        flex-direction: column;
-      }
-
-      #questionText {
-        font-size: 24px;
-      }
-
-      .question-grid {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-      }
+    html, body { margin:0; padding:0; font-family: Inter,"Segoe UI",Roboto,Arial,Helvetica,sans-serif; color:var(--text); background:var(--bg); }
+    button, input, textarea { font:inherit; }
+    .hidden { display:none !important; }
+
+    /* ── Top bar ── */
+    .top-wrap { background:linear-gradient(180deg,#f8fbfd 0%,#f2f7fa 100%); border-bottom:1px solid #d7e4ed; padding:18px 0 14px; }
+    .container { width:min(1240px,calc(100% - 32px)); margin:0 auto; }
+    .brand { display:flex; align-items:center; gap:14px; }
+    .logo-box { position:relative; width:46px; height:46px; flex:0 0 auto; }
+    .sq1,.sq2,.sq3 { position:absolute; border-radius:4px; }
+    .sq1 { width:22px; height:22px; left:0; top:14px; background:#2b92c9; }
+    .sq2 { width:10px; height:10px; left:24px; top:6px; background:#79c3e6; }
+    .sq3 { width:10px; height:10px; left:28px; top:20px; background:#4aa9d6; }
+    .brand h1 { margin:0; font-size:31px; line-height:1.02; color:#30475a; letter-spacing:0.1px; font-weight:800; }
+    .sub { margin:8px 0 0; color:var(--blue-dark); font-size:16px; font-weight:700; letter-spacing:0.01em; }
+    .page { padding:24px 0 34px; }
+
+    /* ── Panels & buttons ── */
+    .panel { background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); }
+    .btn { border:none; border-radius:12px; padding:12px 16px; font-weight:700; cursor:pointer; transition:0.16s ease; }
+    .btn:disabled { opacity:0.55; cursor:not-allowed; }
+    .btn-primary { color:white; background:var(--blue); }
+    .btn-primary:hover:not(:disabled) { background:#237cad; }
+    .btn-light { color:var(--text); background:#edf3f8; }
+    .btn-light:hover:not(:disabled) { background:#e3ebf2; }
+    .btn-outline { color:var(--blue-dark); background:white; border:1px solid #b7d8ea; }
+    .btn-outline:hover:not(:disabled) { background:#f8fcff; }
+    .btn-danger { color:white; background:#c94b4b; }
+    .btn-danger:hover:not(:disabled) { background:#b13d3d; }
+    .btn-sm { padding:8px 12px; font-size:13px; border-radius:10px; }
+    .btn-success { color:white; background:#2d8b57; }
+    .btn-success:hover:not(:disabled) { background:#246e46; }
+    .btn-purple { color:white; background:#7c5cbf; }
+    .btn-purple:hover:not(:disabled) { background:#6a4daa; }
+
+    /* ── Start screen ── */
+    .start-screen { padding:26px; }
+    .hero { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(330px,0.9fr); gap:20px; margin-bottom:22px; }
+    .hero-card { padding:24px; }
+    .hero h2 { margin:0 0 10px; font-size:31px; line-height:1.2; }
+    .hero p { margin:0 0 14px; line-height:1.6; color:#475569; font-size:16px; }
+    .hero-note { background:linear-gradient(180deg,#f8fbfe 0%,#f4f9fc 100%); border:1px solid #d8ebf6; border-radius:16px; padding:16px 18px; color:#335a6f; line-height:1.68; font-size:14px; }
+    .stats { margin-top:16px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .stat-card { border:1px solid var(--line); border-radius:14px; padding:16px; background:#fbfdff; }
+    .stat-label { font-size:13px; color:var(--muted); margin-bottom:8px; }
+    .stat-value { font-size:27px; font-weight:800; color:#124a66; line-height:1.05; }
+    .stat-sub { margin-top:8px; font-size:13px; line-height:1.4; color:#475569; }
+
+    /* Detail card */
+    .detail-card { padding:24px; display:flex; flex-direction:column; gap:16px; background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%); }
+    .detail-top { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; padding-bottom:14px; border-bottom:1px solid #e4edf3; }
+    .detail-top h3 { margin:0 0 8px; font-size:22px; line-height:1.25; font-weight:800; color:#183b54; }
+    .detail-top p { margin:0; color:#516578; line-height:1.65; font-size:15px; }
+    .badge { display:inline-flex; align-items:center; justify-content:center; min-width:42px; height:32px; padding:0 12px; border-radius:999px; background:var(--blue-soft); color:var(--blue-dark); border:1px solid #cae7f5; font-weight:800; font-size:13px; flex:0 0 auto; }
+    .detail-block { display:grid; gap:10px; padding:14px 16px; border-radius:16px; border:1px solid #e2ebf2; background:#f9fbfd; }
+    .detail-label { font-size:11px; letter-spacing:0.09em; text-transform:uppercase; color:#60758a; font-weight:800; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; }
+    .chip { display:inline-flex; align-items:center; border-radius:999px; border:1px solid #dbe5ec; padding:8px 12px; background:white; color:#355266; font-size:12px; font-weight:700; }
+    .chip.warn { background:var(--amber-soft); border-color:var(--amber-line); color:#7b5d09; }
+    .chip.ok { background:var(--green-soft); border-color:#bfe2ca; color:#1c6f44; }
+    .compact-list { display:grid; gap:10px; margin:0; padding-left:20px; color:#334155; line-height:1.6; font-size:15px; }
+    .compact-list li::marker { color:#2b92c9; }
+    .detail-copy, .detail-purpose { color:#334155; line-height:1.72; font-size:15px; font-weight:500; }
+    .detail-copy p, .detail-purpose p { margin:0 0 12px; }
+    .detail-copy p:last-child, .detail-purpose p:last-child { margin-bottom:0; }
+
+    /* Battery grid */
+    .battery-select-wrap { display:grid; gap:16px; }
+    .section-title { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .section-title h3 { margin:0; font-size:22px; }
+    .section-title p { margin:4px 0 0; color:var(--muted); font-size:14px; }
+    .battery-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .battery-card { position:relative; overflow:hidden; text-align:left; border:1px solid #dbe5ec; background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%); border-radius:18px; padding:18px; cursor:pointer; transition:0.18s ease; box-shadow:0 4px 14px rgba(15,23,42,0.04); }
+    .battery-card::before { content:""; position:absolute; inset:0 auto auto 0; width:100%; height:4px; background:linear-gradient(90deg,#b9dff2 0%,#e9f6fc 100%); }
+    .battery-card:hover { border-color:#8fc7e4; background:#fcfeff; transform:translateY(-2px); box-shadow:0 10px 24px rgba(20,58,89,0.08); }
+    .battery-card:focus-visible { outline:3px solid rgba(43,146,201,0.22); outline-offset:2px; }
+    .battery-card.selected { background:linear-gradient(180deg,#eef8fd 0%,#e6f3fb 100%); border-color:#5daed6; box-shadow:0 14px 30px rgba(23,89,122,0.12); transform:translateY(-1px); }
+    .battery-card.selected::before { background:linear-gradient(90deg,#2b92c9 0%,#6cc0e6 100%); }
+    .battery-card-head { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:10px; }
+    .battery-label { font-size:18px; line-height:1.28; font-weight:800; color:#183b54; }
+    .battery-badge { display:inline-flex; align-items:center; justify-content:center; min-width:36px; height:30px; padding:0 10px; border-radius:999px; background:#edf6fb; color:var(--blue-dark); font-size:12px; font-weight:800; border:1px solid #cfe7f4; box-shadow:inset 0 1px 0 rgba(255,255,255,0.7); }
+    .battery-card.selected .battery-badge { background:#2b92c9; color:white; border-color:#2b92c9; }
+    .battery-subtitle { margin:0 0 14px; color:#516578; line-height:1.58; min-height:44px; font-size:14px; }
+    .battery-card.selected .battery-subtitle { color:#34556e; }
+    .battery-card.selected .chip { background:rgba(255,255,255,0.78); border-color:#bddff0; color:#244a63; }
+    .battery-meta { display:flex; flex-wrap:wrap; gap:8px; }
+    .start-actions { display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap; margin-top:4px; }
+    .selection-note { padding:13px 14px; border-radius:14px; border:1px solid #dfe7ee; background:#f8fafc; color:#46556a; line-height:1.45; flex:1 1 400px; min-width:280px; }
+    .warning { padding:14px 15px; border-radius:14px; background:var(--amber-soft); border:1px solid #f0d78f; color:#6c5608; line-height:1.5; font-size:14px; }
+
+    /* ── Config panel (NEW) ── */
+    .config-panel { margin-top:20px; padding:20px; border-radius:16px; border:1px solid #e2ebf2; background:#f9fbfd; display:grid; gap:16px; }
+    .config-panel h4 { margin:0; font-size:17px; color:#183b54; font-weight:800; }
+    .config-row { display:flex; flex-wrap:wrap; gap:16px; align-items:flex-start; }
+    .config-section { display:grid; gap:8px; min-width:180px; }
+    .config-section-label { font-size:11px; letter-spacing:0.09em; text-transform:uppercase; color:#60758a; font-weight:800; }
+    .config-options { display:flex; gap:6px; flex-wrap:wrap; }
+    .config-opt { padding:8px 14px; border-radius:10px; border:1px solid #dbe5ec; background:white; color:#355266; font-size:13px; font-weight:700; cursor:pointer; transition:0.14s ease; }
+    .config-opt:hover { border-color:#a5cfe6; }
+    .config-opt.active { background:var(--blue); color:white; border-color:var(--blue); }
+    .config-checks { display:flex; flex-wrap:wrap; gap:10px 18px; }
+    .config-check { display:flex; align-items:center; gap:6px; font-size:13px; color:#475569; cursor:pointer; }
+    .config-check input { accent-color:var(--blue); }
+
+    /* ── Restore panel (NEW) ── */
+    .restore-panel { margin-top:16px; padding:16px 18px; border-radius:16px; border:1px solid #d8ebf6; background:linear-gradient(180deg,#f4fafd 0%,#eef6fb 100%); }
+    .restore-panel h4 { margin:0 0 10px; font-size:15px; color:#17597a; }
+    .restore-info { font-size:14px; color:#425469; line-height:1.6; margin-bottom:12px; }
+    .restore-actions { display:flex; gap:8px; flex-wrap:wrap; }
+
+    /* ── History panel (NEW) ── */
+    .history-panel { margin-top:16px; }
+    .history-panel h4 { margin:0 0 10px; font-size:15px; color:#183b54; font-weight:800; }
+    .history-list { display:grid; gap:8px; }
+    .history-item { display:flex; justify-content:space-between; align-items:center; padding:10px 14px; border-radius:12px; border:1px solid #e2ebf2; background:white; font-size:13px; color:#425469; gap:12px; }
+    .history-score { font-weight:800; color:#124a66; }
+
+    /* ── Test screen ── */
+    .app { display:grid; grid-template-columns:340px minmax(0,1fr); gap:20px; align-items:start; }
+    .sidebar { padding:20px; position:sticky; top:18px; transition:0.2s ease; }
+    .sidebar-head { display:grid; gap:8px; margin-bottom:16px; }
+    .sidebar-head h2 { margin:0; font-size:24px; }
+    .sidebar-battery { color:var(--blue-dark); font-weight:700; line-height:1.45; }
+    .mode-badge { display:inline-block; padding:4px 10px; border-radius:8px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; margin-top:6px; }
+    .mode-badge.simulation { background:var(--blue-soft); color:var(--blue-dark); }
+    .mode-badge.reading-training { background:var(--purple-soft); color:#5a3d99; }
+    .mode-badge.repair { background:var(--orange-soft); color:#8a5600; }
+    .meta { display:grid; gap:10px; margin-bottom:16px; }
+    .meta-box { border:1px solid #dfe8ef; border-radius:14px; padding:12px 14px; background:#fbfdff; line-height:1.5; color:#425469; }
+    .timer { font-size:30px; line-height:1.1; font-weight:800; color:var(--blue-dark); margin-top:4px; }
+    .timer.urgent { color:var(--red-line); }
+    .legend { display:grid; gap:8px; margin-bottom:16px; color:#4d6074; font-size:14px; }
+    .legend-item { display:flex; align-items:center; gap:8px; }
+    .legend-box { width:16px; height:16px; border-radius:5px; border:1px solid #c5d2dd; background:white; flex:0 0 auto; }
+    .legend-box.curr { background:#d8eef9; border-color:var(--blue); }
+    .legend-box.ans { background:#e7f6ed; border-color:#6cbc89; }
+    .legend-box.flag { background:#fff1f1; border-color:#e6a3a3; }
+    .legend-box.slow-q { background:var(--amber-soft); border-color:var(--amber-line); }
+    .legend-box.guess-q { background:var(--purple-soft); border-color:var(--purple-line); }
+
+    /* Question grid */
+    .question-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px; margin-bottom:16px; }
+    .q-nav { border:1px solid #cfdae4; background:white; min-height:42px; border-radius:10px; font-weight:700; color:#475569; cursor:pointer; transition:0.12s ease; position:relative; }
+    .q-nav.current { background:#dff1fb; border-color:var(--blue); color:var(--blue-dark); }
+    .q-nav.answered { background:#ebf8ef; border-color:#82c39a; color:#225c3a; }
+    .q-nav.flagged { background:#fff1f1; border-color:#e6a3a3; color:#9a2f2f; }
+    .q-nav.answered-flagged { background:#fff1f1; border-color:#e6a3a3; color:#9a2f2f; }
+    .q-nav.answered-flagged::after { content:""; position:absolute; top:3px; right:3px; width:6px; height:6px; border-radius:50%; background:#2d8b57; }
+    .q-nav.slow { border-color:var(--amber-line); }
+    .q-nav.low-confidence { border-color:var(--purple-line); }
+    .side-actions { display:grid; gap:10px; }
+
+    /* ── Main question area ── */
+    .main { padding:22px; min-height:700px; }
+    .main-header { margin-bottom:16px; }
+    .main-header-top { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+    .small { color:var(--muted); font-size:13px; font-weight:700; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.05em; }
+    #questionText { margin:0; font-size:29px; line-height:1.28; max-width:960px; }
+    .active-battery-pill { white-space:nowrap; border:1px solid #d5e7f2; background:#f4fafd; color:var(--blue-dark); border-radius:999px; padding:10px 14px; font-weight:700; font-size:13px; }
+    .question-body { margin-top:18px; }
+    .options { display:grid; gap:12px; }
+    .option-btn { width:100%; text-align:left; padding:16px 18px; border-radius:16px; border:1px solid #dce5ed; background:white; color:#27364a; cursor:pointer; transition:0.14s ease; }
+    .option-btn:hover { border-color:#a5cfe6; background:#fbfeff; }
+    .option-btn.selected { background:#eaf5fb; border-color:var(--blue); box-shadow:0 0 0 1px rgba(43,146,201,0.1); }
+    .option-label { display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:999px; background:#eef3f7; color:#365166; font-weight:800; margin-right:12px; vertical-align:top; flex:0 0 auto; }
+    .option-row { display:flex; align-items:flex-start; gap:0; line-height:1.55; font-size:16px; }
+
+    /* Risk keyword highlight */
+    .risk-word { background:var(--amber-soft); border-bottom:2px solid var(--amber-line); padding:0 2px; border-radius:3px; font-weight:inherit; }
+
+    /* ── Confidence controls (NEW) ── */
+    .confidence-wrap { margin-top:16px; padding:14px 16px; border-radius:14px; border:1px solid #e2ebf2; background:#f9fbfd; }
+    .confidence-wrap .conf-label { font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; color:#60758a; margin-bottom:8px; }
+    .confidence-btns { display:flex; gap:8px; }
+    .conf-btn { padding:8px 16px; border-radius:10px; border:1px solid #dbe5ec; background:white; color:#475569; font-weight:700; font-size:13px; cursor:pointer; transition:0.14s ease; }
+    .conf-btn:hover { border-color:#a5cfe6; }
+    .conf-btn.active-high { background:var(--green-soft); border-color:var(--green-line); color:#1c6f44; }
+    .conf-btn.active-medium { background:var(--amber-soft); border-color:var(--amber-line); color:#7b5d09; }
+    .conf-btn.active-guess { background:var(--red-soft); border-color:var(--red-line); color:#9a2f2f; }
+
+    /* ── Quick actions (NEW) ── */
+    .quick-actions { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+    .action-btn { padding:7px 12px; border-radius:10px; border:1px solid #dbe5ec; background:white; color:#475569; font-size:13px; font-weight:600; cursor:pointer; transition:0.14s ease; }
+    .action-btn:hover { border-color:#a5cfe6; background:#fbfeff; }
+    .action-btn.is-active { background:var(--red-soft); border-color:var(--red-line); color:#9a2f2f; }
+
+    /* ── Question note (NEW) ── */
+    .note-wrap { margin-top:12px; }
+    .note-input { width:100%; padding:10px 12px; border-radius:10px; border:1px solid #dbe5ec; background:white; color:var(--text); font-size:13px; resize:vertical; min-height:36px; max-height:80px; }
+    .note-input::placeholder { color:var(--muted); }
+    .note-input:focus { outline:2px solid var(--blue); outline-offset:-1px; border-color:var(--blue); }
+
+    /* ── Reveal options (reading-training) ── */
+    .reveal-wrap { text-align:center; padding:30px 20px; }
+    .reveal-wrap .btn { font-size:15px; padding:14px 28px; }
+
+    /* ── Navigation ── */
+    .nav { display:flex; justify-content:space-between; gap:12px; margin-top:20px; flex-wrap:wrap; }
+
+    /* ── Focus mode ── */
+    body.focus-mode .sidebar { display:none; }
+    body.focus-mode .app { grid-template-columns:1fr; }
+    body.focus-mode #questionText { font-size:32px; }
+
+    /* ── Results ── */
+    .results { display:grid; gap:16px; }
+    .score-box { border:1px solid #dce8ef; border-radius:18px; padding:22px; background:#fbfdff; }
+    .score-main { font-size:34px; font-weight:800; line-height:1.2; margin-bottom:8px; }
+    .score-sub { color:#475569; line-height:1.6; font-size:15px; }
+    .results-battery { margin-top:10px; font-weight:700; color:var(--blue-dark); }
+    .result-actions { display:flex; gap:10px; flex-wrap:wrap; }
+
+    /* ── Dashboard (NEW) ── */
+    .dashboard { border:1px solid #e2ebf2; border-radius:16px; padding:18px; background:#f9fbfd; }
+    .dashboard h4 { margin:0 0 14px; font-size:17px; color:#183b54; font-weight:800; }
+    .dash-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:10px; }
+    .dash-card { border:1px solid #e2ebf2; border-radius:12px; padding:12px 14px; background:white; }
+    .dash-value { font-size:22px; font-weight:800; color:#124a66; line-height:1.1; }
+    .dash-label { font-size:12px; color:var(--muted); margin-top:4px; }
+    .dash-detail { margin-top:12px; font-size:13px; color:#475569; line-height:1.6; padding:12px 14px; border-radius:12px; border:1px solid #e2ebf2; background:white; }
+
+    /* ── Repair panel (NEW) ── */
+    .repair-panel { border:1px solid var(--orange-line); border-radius:16px; padding:18px; background:var(--orange-soft); }
+    .repair-panel h4 { margin:0 0 12px; font-size:17px; color:#8a5600; font-weight:800; }
+    .repair-filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+    .repair-filter { padding:8px 14px; border-radius:10px; border:1px solid #d4820a; background:white; color:#8a5600; font-size:13px; font-weight:700; cursor:pointer; transition:0.14s ease; }
+    .repair-filter.active { background:#d4820a; color:white; }
+    .repair-info { font-size:13px; color:#8a5600; margin-bottom:12px; }
+
+    /* ── Review ── */
+    #reviewWrap { display:grid; gap:14px; }
+    .review-item { border:1px solid #dfe8ef; border-radius:16px; overflow:hidden; background:white; }
+    .review-head { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:12px 16px; font-weight:800; }
+    .review-head.correct { background:var(--green-soft); border-bottom:1px solid #c5e5d0; color:#1f6a42; }
+    .review-head.incorrect { background:var(--red-soft); border-bottom:1px solid #f0c6c6; color:#9a2f2f; }
+    .review-head.unanswered { background:#f8fafc; border-bottom:1px solid #e2ebf2; color:#64748b; }
+    .pill { display:inline-flex; align-items:center; border-radius:999px; padding:5px 10px; font-size:12px; font-weight:800; border:1px solid transparent; }
+    .pill.correct { background:#edf9f1; border-color:#bfe2ca; color:#236844; }
+    .pill.wrong { background:#fff1f1; border-color:#f3c9c9; color:#a23535; }
+    .pill.neutral { background:#f0f4f8; border-color:#d7e0e8; color:#475569; }
+    .review-body { padding:16px; display:grid; gap:14px; line-height:1.55; color:#324457; }
+    .review-options { display:grid; gap:10px; }
+    .review-option { border-radius:12px; border:1px solid #e0e8ef; padding:11px 13px; background:#fafcfe; }
+    .review-option.correct { border-color:#88c8a0; background:#edf9f1; }
+    .review-option.user-wrong { border-color:#e6a3a3; background:#fff3f3; }
+    .review-meta-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:8px; font-size:13px; }
+    .review-meta-item { padding:8px 10px; border-radius:8px; background:#f8fafc; border:1px solid #e2ebf2; }
+    .review-meta-item strong { display:block; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:#60758a; margin-bottom:2px; }
+    .error-type-select { padding:6px 10px; border-radius:8px; border:1px solid #dbe5ec; font-size:13px; color:var(--text); background:white; }
+    .review-explanation { padding:10px 14px; border-radius:10px; background:#f8fbfe; border:1px solid #e2ebf2; font-size:14px; line-height:1.6; color:#425469; }
+
+    /* ── Responsive ── */
+    @media (max-width:1040px) {
+      .hero, .app { grid-template-columns:1fr; }
+      .sidebar { position:static; }
+    }
+    @media (max-width:760px) {
+      .start-screen, .sidebar, .main { padding:18px; }
+      .battery-grid { grid-template-columns:1fr; }
+      .stats { grid-template-columns:1fr; }
+      .main-header-top { flex-direction:column; }
+      #questionText { font-size:24px; }
+      .question-grid { grid-template-columns:repeat(5,minmax(0,1fr)); }
+      .config-row { flex-direction:column; }
+      .dash-grid { grid-template-columns:1fr 1fr; }
     }
   </style>
 </head>
@@ -911,133 +306,100 @@
           <div class="sq2"></div>
           <div class="sq3"></div>
         </div>
-        <h1>SCIO simulátor</h1>
+        <h1>SCIO simulátor <span style="font-size:14px;color:var(--blue);vertical-align:super;">v2</span></h1>
       </div>
-      <p class="sub">UPOL - SPP tréninkové baterie otázek</p>
+      <p class="sub">UPOL – SPP adaptivní trenažér pozornosti a přesnosti čtení</p>
     </div>
   </div>
 
   <div class="container page">
+    <!-- ════ START SCREEN ════ -->
     <section class="panel start-screen" id="startScreen">
       <div class="hero">
         <div class="hero-card panel">
           <h2>Vyber si jednu z 8 tréninkových baterií pro přijímací test UPOL</h2>
-          <p>
-            Aplikace pracuje s bankou 7 profilových baterií a 1 finální syntetické baterie. Každý modul
-            zachovává rámec 50 otázek a 30 minut, ale má vlastní tematické těžiště, přesahy a cílenou obtížnost.
-          </p>
+          <p>Aplikace pracuje s bankou 7 profilových baterií a 1 finální syntetické baterie. Každý modul zachovává rámec 50 otázek a 30 minut, ale má vlastní tematické těžiště, přesahy a cílenou obtížnost.</p>
           <div class="hero-note">
-            <strong>Představení aplikace:</strong> jednotlivé baterie pokrývají disciplíny speciální pedagogiky,
-            charakteristiky znevýhodnění, intervence, komunikaci, školské poradenství, sociálně-zdravotní přesahy
-            i poradenské uvažování. Díky tomu lze trénovat jak izolovaná témata, tak finální syntetické propojení.
+            <strong>Představení aplikace:</strong> jednotlivé baterie pokrývají disciplíny speciální pedagogiky, charakteristiky znevýhodnění, intervence, komunikaci, školské poradenství, sociálně-zdravotní přesahy i poradenské uvažování. Díky tomu lze trénovat jak izolovaná témata, tak finální syntetické propojení.
             <br><br>
-            Při každém spuštění se automaticky promíchá pořadí možností odpovědí. Současně je v rámci konkrétního
-            pokusu hlídáno vyvážené rozložení správných odpovědí mezi A–D, aby test působil přirozeně a nebyl
-            mechanicky čitelný.
+            Při každém spuštění se automaticky promíchá pořadí možností odpovědí. Současně je v rámci konkrétního pokusu hlídáno vyvážené rozložení správných odpovědí mezi A–D, aby test působil přirozeně a nebyl mechanicky čitelný.
           </div>
-
           <div class="stats">
-            <div class="stat-card">
-              <div class="stat-label">Otázky v bance</div>
-              <div class="stat-value" id="statQuestions">400</div>
-              <div class="stat-sub">Celkový součet všech 8 baterií vložených do simulátoru.</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Čas na test</div>
-              <div class="stat-value">30 min</div>
-              <div class="stat-sub">Stejný rámec jako oficiálně popsaný UPOL SPP test.</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Počet baterií</div>
-              <div class="stat-value">8</div>
-              <div class="stat-sub">7 profilových baterií + 1 finální syntetická.</div>
-            </div>
+            <div class="stat-card"><div class="stat-label">Otázky v bance</div><div class="stat-value" id="statQuestions">400</div><div class="stat-sub">Celkový součet všech 8 baterií vložených do simulátoru.</div></div>
+            <div class="stat-card"><div class="stat-label">Čas na test</div><div class="stat-value">30 min</div><div class="stat-sub">Stejný rámec jako oficiálně popsaný UPOL SPP test.</div></div>
+            <div class="stat-card"><div class="stat-label">Počet baterií</div><div class="stat-value">8</div><div class="stat-sub">7 profilových baterií + 1 finální syntetická.</div></div>
           </div>
         </div>
-
         <aside class="panel detail-card" id="batteryDetail">
-          <div class="detail-top">
-            <div>
-              <h3>Vyber baterii</h3>
-              <p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie v celé bance.</p>
-            </div>
-            <span class="badge">—</span>
-          </div>
-
-          <div class="detail-block">
-            <div class="detail-label">Účel</div>
-            <div class="detail-copy detail-purpose" id="detailPurpose"><p>Zatím není vybraná žádná baterie.</p></div>
-          </div>
-
-          <div class="detail-block">
-            <div class="detail-label">Dominantní obsah</div>
-            <div class="chips" id="detailDominant"></div>
-          </div>
-
-          <div class="detail-block">
-            <div class="detail-label">Tematický rozpis</div>
-            <ul class="compact-list" id="detailBreakdown"></ul>
-          </div>
-
-          <div class="detail-block">
-            <div class="detail-label">Profil baterie</div>
-            <div class="detail-copy" id="detailProfile"></div>
-          </div>
+          <div class="detail-top"><div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie v celé bance.</p></div><span class="badge">—</span></div>
+          <div class="detail-block"><div class="detail-label">Účel</div><div class="detail-copy detail-purpose" id="detailPurpose"><p>Zatím není vybraná žádná baterie.</p></div></div>
+          <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips" id="detailDominant"></div></div>
+          <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list" id="detailBreakdown"></ul></div>
+          <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy" id="detailProfile"></div></div>
         </aside>
       </div>
 
-      <div class="battery-select-wrap">
-        <div class="section-title">
-          <div>
-            <h3>Výběr baterie</h3>
-            <p>Vyber modul, zkontroluj jeho profil a spusť test.</p>
-          </div>
+      <!-- Config panel -->
+      <div class="config-panel" id="configPanel">
+        <h4>Jak dnes poběžím</h4>
+        <div class="config-row">
+          <div class="config-section"><div class="config-section-label">Režim</div><div class="config-options" id="configMode"><button class="config-opt active" data-mode="simulation" type="button">Simulace</button><button class="config-opt" data-mode="reading-training" type="button">Trénink čtení</button><button class="config-opt" data-mode="repair" type="button" disabled id="repairModeOpt">Opravný režim</button></div></div>
+          <div class="config-section"><div class="config-section-label">Cíl</div><div class="config-options" id="configGoal"><button class="config-opt" data-goal="speed" type="button">Rychlost</button><button class="config-opt" data-goal="accuracy" type="button">Přesnost</button><button class="config-opt active" data-goal="attention" type="button">Pozornost</button></div></div>
         </div>
+        <div class="config-checks" id="configChecks">
+          <label class="config-check"><input type="checkbox" id="optShowQuestionFirst"> zobrazit nejprve jen zadání</label>
+          <label class="config-check"><input type="checkbox" id="optHighlightKeywords" checked> zvýrazňovat riziková slova</label>
+          <label class="config-check"><input type="checkbox" id="optRequireConfidence" checked> po odpovědi vyžadovat jistotu</label>
+          <label class="config-check"><input type="checkbox" id="optAutoSave" checked> automaticky ukládat stav</label>
+          <label class="config-check"><input type="checkbox" id="optRestoreSession" checked> při návratu obnovit session</label>
+        </div>
+      </div>
 
+      <!-- Restore panel (conditionally populated by JS) -->
+      <div id="restorePanel" class="hidden"></div>
+
+      <!-- Battery selection -->
+      <div class="battery-select-wrap" style="margin-top:20px;">
+        <div class="section-title"><div><h3>Výběr baterie</h3><p>Vyber modul, zkontroluj jeho profil a spusť test.</p></div></div>
         <div class="battery-grid" id="batteryGrid"></div>
-
         <div class="start-actions">
-          <div class="selection-note" id="selectionNote">
-            <strong>Vybraná baterie:</strong> zatím není zvolena žádná varianta.
-          </div>
+          <div class="selection-note" id="selectionNote"><strong>Vybraná baterie:</strong> zatím není zvolena žádná varianta.</div>
           <button class="btn btn-primary" id="startTestBtn" disabled>Spustit vybranou baterii</button>
         </div>
       </div>
+
+      <!-- History panel (conditionally populated by JS) -->
+      <div id="historyPanel" class="hidden"></div>
     </section>
 
+    <!-- ════ TEST SCREEN ════ -->
     <section class="app hidden" id="testScreen">
-      <aside class="panel sidebar">
+      <aside class="panel sidebar" id="sidebar">
         <div class="sidebar-head">
           <h2>Testovací panel</h2>
           <div class="sidebar-battery" id="sidebarBatteryLabel">Aktivní baterie: —</div>
+          <div id="sidebarModeBadge"></div>
         </div>
-
         <div class="meta">
           <div class="meta-box"><strong>Počet otázek:</strong> <span id="metaCount">50</span></div>
-          <div class="meta-box">
-            <div><strong>Časový limit:</strong></div>
-            <div class="timer" id="timer">30:00</div>
-          </div>
+          <div class="meta-box"><div><strong>Časový limit:</strong></div><div class="timer" id="timer">30:00</div></div>
           <div class="meta-box"><strong>Zodpovězeno:</strong> <span id="answeredCount">0</span> / <span id="answeredTotal">50</span></div>
         </div>
-
         <div class="legend">
           <div class="legend-item"><span class="legend-box curr"></span> aktuální otázka</div>
-          <div class="legend-item"><span class="legend-box ans"></span> zodpovězená otázka</div>
-          <div class="legend-item"><span class="legend-box"></span> nezodpovězená otázka</div>
+          <div class="legend-item"><span class="legend-box ans"></span> zodpovězená</div>
+          <div class="legend-item"><span class="legend-box flag"></span> označená</div>
+          <div class="legend-item"><span class="legend-box slow-q"></span> pomalá</div>
+          <div class="legend-item"><span class="legend-box guess-q"></span> tip</div>
+          <div class="legend-item"><span class="legend-box"></span> nezodpovězená</div>
         </div>
-
         <div class="question-grid" id="questionGrid"></div>
-
         <div class="side-actions">
-          <button class="btn btn-light" id="clearCurrentBtn">Smazat odpověď u aktuální otázky</button>
-          <button class="btn btn-outline" id="changeBatteryBtn">Vybrat jinou baterii</button>
-          <button class="btn btn-danger" id="finishBtn">Vyhodnotit test</button>
+          <button class="btn btn-light btn-sm" id="focusModeBtn" type="button">⊞ Focus mode</button>
+          <button class="btn btn-outline btn-sm" id="changeBatteryBtn" type="button">Vybrat jinou baterii</button>
+          <button class="btn btn-danger btn-sm" id="finishBtn" type="button">Vyhodnotit test</button>
         </div>
-
-        <div class="warning">
-          Klávesové zkratky: A–D pro odpověď, šipky vlevo/vpravo pro pohyb mezi otázkami.
-        </div>
+        <div class="warning" style="margin-top:10px; font-size:13px;">Klávesy: A–D odpověď · ←→ navigace · F označit · 1/2/3 jistota · R odkrýt odpovědi · Mezerník focus</div>
       </aside>
 
       <main class="panel main">
@@ -1051,11 +413,17 @@
               <div class="active-battery-pill" id="activeBatteryPill">—</div>
             </div>
           </div>
-
           <div class="question-body">
-            <div class="options" id="options"></div>
+            <div id="revealWrap" class="hidden">
+              <div class="reveal-wrap"><button class="btn btn-primary" id="revealOptionsBtn" type="button">Rozumím zadání, zobrazit odpovědi</button></div>
+            </div>
+            <div class="options" id="optionsWrap"></div>
           </div>
-
+          <div id="confidenceWrap" class="hidden"></div>
+          <div class="quick-actions" id="quickActionsWrap"></div>
+          <div class="note-wrap" id="noteWrap" style="display:none;">
+            <textarea class="note-input" id="noteInput" placeholder="Poznámka k otázce (nepovinné)…" rows="1"></textarea>
+          </div>
           <div class="nav">
             <button class="btn btn-light" id="prevBtn">← Předchozí otázka</button>
             <button class="btn btn-primary" id="nextBtn">Další otázka →</button>
@@ -1068,14 +436,17 @@
             <div class="score-sub" id="scoreSub"></div>
             <div class="results-battery" id="resultsBatteryLabel"></div>
           </div>
-
-          <div class="result-actions">
-            <button class="btn btn-light" id="showReviewBtn">Zobrazit rozbor odpovědí</button>
-            <button class="btn btn-primary hidden" id="hideReviewBtn">Skrýt rozbor odpovědí</button>
-            <button class="btn btn-light" id="restartBtn">Spustit stejnou baterii znovu</button>
-            <button class="btn btn-outline" id="backToSelectionBtn">Vybrat jinou baterii</button>
+          <div id="performanceSummary"></div>
+          <div id="attentionDashboard"></div>
+          <div id="repairPanel" class="hidden"></div>
+          <div class="result-actions" id="resultActions">
+            <button class="btn btn-light" id="showReviewBtn">Zobrazit rozbor</button>
+            <button class="btn btn-primary hidden" id="hideReviewBtn">Skrýt rozbor</button>
+            <button class="btn btn-purple" id="repairBtn">Spustit opravný režim</button>
+            <button class="btn btn-light" id="restartBtn">Restartovat baterii</button>
+            <button class="btn btn-outline" id="backToSelectionBtn">Zpět na výběr</button>
+            <button class="btn btn-outline btn-sm" id="clearSessionBtn">Vyčistit session</button>
           </div>
-
           <div id="reviewWrap" class="hidden"></div>
         </section>
       </main>
@@ -6224,651 +5595,746 @@
     }
   }
 ]</script>
+
   <script>
+  "use strict";
+  // ═══════════════════════════════════════════
+  // 1. CONSTANTS & SCHEMA
+  // ═══════════════════════════════════════════
+  const SCHEMA_VERSION = 2;
+  const LETTERS = ["A","B","C","D"];
+  const STORAGE_KEYS = { CURRENT_SESSION:"sciosim_v2_currentSession", HISTORY:"sciosim_v2_history", SETTINGS:"sciosim_v2_settings" };
+  const SLOW_THRESHOLD_MS = 60000;
+  const FAST_THRESHOLD_MS = 5000;
+  const REVISIT_THRESHOLD = 3;
+  const MAX_HISTORY = 50;
+  const RISK_PATTERNS = [/\bnenì\b/gi,/\bnení\b/gi,/\bnejspíše\b/gi,/\bprimárně\b/gi,/\bnejpřesněji\b/gi,/\bnejčastěji\b/gi,/\btypicky\b/gi,/\bv rámci školství\b/gi,/\bv rámci zdravotnictví\b/gi,/\bv rámci sociální oblasti\b/gi,/\bprvní krok\b/gi,/\bnejvhodnější\b/gi,/\bnejvýrazněji\b/gi,/\bnejlépe\b/gi,/\bnesprávně\b/gi,/\bneplatí\b/gi,/\bneodpovídá\b/gi];
+  const ERROR_LABELS = {"knowledge-gap":"Neznalost","inattention":"Nepozornost","missed-negation":"Přehlédnutí negace","institution-confusion":"Záměna institucí","distractor-trap":"Past distraktoru","time-pressure":"Časový tlak","overthinking":"Přemýšlení","impulsive-click":"Impulzivní klik","no-answer":"Bez odpovědi"};
 
-    const LETTERS = ["A", "B", "C", "D"];
-    const RAW_BATTERIES = JSON.parse(document.getElementById("questionData").textContent);
+  // ═══════════════════════════════════════════
+  // 2. DATA NORMALIZATION
+  // ═══════════════════════════════════════════
+  const RAW_BATTERIES = JSON.parse(document.getElementById("questionData").textContent);
+  function normalizeQuestion(q, i) {
+    const opts = Array.isArray(q?.options) ? q.options.slice(0,4).map(o => String(o??"").trim()) : [];
+    if (opts.length !== 4) throw new Error(`Otázka ${i+1} nemá přesně 4 možnosti.`);
+    const c = Number.isInteger(q?.correct) ? q.correct : 0;
+    if (c < 0 || c > 3) throw new Error(`Otázka ${i+1} má neplatný index správné odpovědi.`);
+    return { number: Number.isInteger(q?.number)?q.number:i+1, text:String(q?.text??"").trim(), options:opts, correct:c, correctLetter:LETTERS[c] };
+  }
+  function normalizeBattery(b, i) {
+    const questions = Array.isArray(b?.questions) ? b.questions.map((q,qi) => normalizeQuestion(q,qi)) : [];
+    return { id:Number.isInteger(b?.id)?b.id:i+1, label:String(b?.label??`Baterie ${i+1}`).trim(), title:String(b?.title??"").trim(), subtitle:String(b?.subtitle??"").trim(), purpose:String(b?.purpose??"").trim(), difficulty:String(b?.difficulty??"střední").trim(), dominant:Array.isArray(b?.dominant)?b.dominant.map(x=>String(x).trim()):[], breakdown:Array.isArray(b?.breakdown)?b.breakdown.map(x=>String(x).trim()):[], tags:Array.isArray(b?.tags)?b.tags.map(x=>String(x).trim()):[], durationMinutes:Number.isFinite(Number(b?.durationMinutes))?Number(b.durationMinutes):30, questionCount:questions.length, questions, validation:b?.validation??null };
+  }
+  const BATTERIES = RAW_BATTERIES.map((b,i) => normalizeBattery(b,i)).sort((a,b) => a.id - b.id);
+  const BATTERY_MAP = Object.fromEntries(BATTERIES.map(b => [b.id, b]));
 
-    function normalizeQuestion(question, index) {
-      const safeOptions = Array.isArray(question?.options) ? question.options.slice(0, 4).map((item) => String(item ?? "").trim()) : [];
-      if (safeOptions.length !== 4) {
-        throw new Error(`Otázka ${index + 1} nemá přesně 4 možnosti odpovědi.`);
-      }
+  const BATTERY_DETAIL_COPY = {
+    1:{purposeText:"Baterie buduje pevnou orientaci v klasickém disciplinárním členění speciální pedagogiky a v současném širším rámci oboru.",profileParagraphs:["V celé bance funguje jako vstupní základ. Kdo tady chybuje v rozlišení psychopedie, somatopedie, tyflopedie, surdopedie, etopedie a logopedie, přenáší tyto chyby i do intervencí, poradenství a komunikace.","Smyslem není encyklopedie názvů, ale stabilní oborová orientace."]},
+    2:{purposeText:"Baterie přesouvá pozornost od názvů ke konkrétním projevům a funkčním dopadům znevýhodnění.",profileParagraphs:["Je to most mezi definicí a praxí. Nestačí poznat skupinu; musíš rozumět tomu, jak se charakteristiky promítají do učení a adaptivního fungování.","Silná stránka je diferenciální rozlišování: podobné jevy vypadají blízce, ale mají jinou podstatu."]},
+    3:{purposeText:"Tato baterie testuje intervenční uvažování: ne jen co daný problém je, ale co se s ním odborně dělá.",profileParagraphs:["Je klíčová pro převod znalosti do podpory.","Baterie hlídá profesní přesnost: správný postup není libovolná dobrá vůle."]},
+    4:{purposeText:"Baterie ověřuje komunikaci jako profesní kompetenci speciálního pedagoga.",profileParagraphs:["Zkouší komunikaci s osobami s různým typem znevýhodnění i s rodiči.","V přípravě je důležitá proto, že komunikační chyba nevzniká jen neznalostí diagnózy."]},
+    5:{purposeText:"Baterie cílí na školské poradenství a orientaci v systému MŠMT.",profileParagraphs:["Je to systémová osa celé banky.","Smyslem není memorovat zkratky, ale chápat poradenský proces."]},
+    6:{purposeText:"Tato baterie rozšiřuje přípravu mimo školství směrem k sociálním službám a zdravotnictví.",profileParagraphs:["Patří sem raná péče, osobní asistence, OSPOD, ale i hranice mezi školskou, sociální a zdravotnickou oblastí.","V praxi právě tady často vznikají záměny."]},
+    7:{purposeText:"Tato profilová baterie staví speciální pedagogiku jako poradenský obor.",profileParagraphs:["Těžiště je v poradenském procesu, interpretaci potřeb klienta.","Baterie sleduje etiku, hranice kompetencí a meziresortní orientaci."]},
+    8:{purposeText:"Finální syntetická baterie je nejtvrdší simulace přijímačkového testu.",profileParagraphs:["Je postavená na rozlišování velmi podobných možností a na práci s distraktory.","V přípravě funguje jako závěrečný stres test."]}
+  };
 
-      const safeCorrect = Number.isInteger(question?.correct) ? question.correct : 0;
-      if (safeCorrect < 0 || safeCorrect > 3) {
-        throw new Error(`Otázka ${index + 1} má neplatný index správné odpovědi.`);
-      }
+  // ═══════════════════════════════════════════
+  // 3. UTILITIES
+  // ═══════════════════════════════════════════
+  function generateId() { return Date.now().toString(36)+Math.random().toString(36).slice(2,8); }
+  function escapeHtml(t) { const d=document.createElement("div"); d.textContent=t; return d.innerHTML; }
+  function formatTime(s) { const m=Math.floor(s/60),sec=s%60; return `${String(m).padStart(2,"0")}:${String(sec).padStart(2,"0")}`; }
+  function formatDate(iso) { if(!iso) return "—"; try{const d=new Date(iso); return d.toLocaleDateString("cs-CZ",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});}catch(e){return "—";} }
+  function median(arr) { if(!arr.length) return 0; const s=[...arr].sort((a,b)=>a-b); const m=Math.floor(s.length/2); return s.length%2?s[m]:(s[m-1]+s[m])/2; }
+  function safeParse(json, fb) { if(!json) return fb; try { const r = JSON.parse(json); return r!==null ? r : fb; } catch(e) { return fb; } }
+  function shuffleArray(items) { const a=[...items]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+  function $(id) { return document.getElementById(id); }
 
-      return {
-        number: Number.isInteger(question?.number) ? question.number : index + 1,
-        text: String(question?.text ?? "").trim(),
-        options: safeOptions,
-        correct: safeCorrect,
-        correctLetter: LETTERS[safeCorrect]
-      };
-    }
+  // ═══════════════════════════════════════════
+  // 4. STORAGE API
+  // ═══════════════════════════════════════════
+  function loadSettings() {
+    const raw = localStorage.getItem(STORAGE_KEYS.SETTINGS);
+    const s = safeParse(raw, null);
+    if (s && s.schemaVersion === SCHEMA_VERSION) return s;
+    return getDefaultSettings();
+  }
+  function saveSettings() { try { localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(appState.settings)); } catch(e){} }
+  function loadHistory() { return safeParse(localStorage.getItem(STORAGE_KEYS.HISTORY), []).slice(0, MAX_HISTORY); }
+  function saveHistory() { try { localStorage.setItem(STORAGE_KEYS.HISTORY, JSON.stringify(appState.history.slice(0, MAX_HISTORY))); } catch(e){} }
+  function addHistoryEntry(entry) { appState.history.unshift(entry); if(appState.history.length>MAX_HISTORY) appState.history.length=MAX_HISTORY; saveHistory(); }
+  function loadCurrentSession() {
+    const raw = localStorage.getItem(STORAGE_KEYS.CURRENT_SESSION);
+    const s = safeParse(raw, null);
+    if (s && s.schemaVersion === SCHEMA_VERSION) return s;
+    return null;
+  }
+  function saveCurrentSession() { if(!appState.currentSession) return; try { appState.currentSession.updatedAt=new Date().toISOString(); localStorage.setItem(STORAGE_KEYS.CURRENT_SESSION, JSON.stringify(appState.currentSession)); } catch(e){} }
+  function clearCurrentSession() { appState.currentSession=null; try { localStorage.removeItem(STORAGE_KEYS.CURRENT_SESSION); } catch(e){} }
+  function migrateStorageIfNeeded() { /* placeholder for future schema migrations */ }
 
-    function normalizeBattery(battery, index) {
-      const questions = Array.isArray(battery?.questions)
-        ? battery.questions.map((question, qIndex) => normalizeQuestion(question, qIndex))
-        : [];
+  // ═══════════════════════════════════════════
+  // 5. APP STATE
+  // ═══════════════════════════════════════════
+  function getDefaultSettings() {
+    return { schemaVersion:SCHEMA_VERSION, restoreSessionOnLoad:true, defaultMode:"simulation", defaultGoal:"attention", showKeywordHighlights:true, requireConfidence:true, hideSidebarDuringReading:false, focusModeDefault:false, showQuestionFirst:false, autoSave:true };
+  }
+  const appState = { schemaVersion:SCHEMA_VERSION, appMode:"start", selectedBatteryId:null, currentSession:null, history:[], settings:null };
 
-      return {
-        id: Number.isInteger(battery?.id) ? battery.id : index + 1,
-        label: String(battery?.label ?? `Baterie ${index + 1}`).trim(),
-        title: String(battery?.title ?? "").trim(),
-        subtitle: String(battery?.subtitle ?? "").trim(),
-        purpose: String(battery?.purpose ?? "").trim(),
-        difficulty: String(battery?.difficulty ?? "střední").trim(),
-        dominant: Array.isArray(battery?.dominant) ? battery.dominant.map((item) => String(item).trim()) : [],
-        breakdown: Array.isArray(battery?.breakdown) ? battery.breakdown.map((item) => String(item).trim()) : [],
-        tags: Array.isArray(battery?.tags) ? battery.tags.map((item) => String(item).trim()) : [],
-        durationMinutes: Number.isFinite(Number(battery?.durationMinutes)) ? Number(battery.durationMinutes) : 30,
-        questionCount: questions.length,
-        questions,
-        validation: battery?.validation ?? null
-      };
-    }
+  function createQuestionState(index) {
+    return { questionIndex:index, selectedAnswer:null, firstAnswer:null, confidence:null, flagged:false, revisitLater:false, note:"", viewedAtLeastOnce:false, viewCount:0, firstViewedAt:null, lastViewedAt:null, timeSpentMs:0, currentViewStartedAt:null, answerChanges:0, optionsWereInitiallyHidden:false, optionsRevealedAt:null, resolvedStatus:"unanswered", autoErrorType:null, manualErrorType:null };
+  }
 
-    const BATTERIES = RAW_BATTERIES.map((battery, index) => normalizeBattery(battery, index)).sort((a, b) => a.id - b.id);
-    const BATTERY_MAP = Object.fromEntries(BATTERIES.map((battery) => [battery.id, battery]));
-
-const BATTERY_DETAIL_COPY = {
-      1: {
-        purposeText: "Baterie buduje pevnou orientaci v klasickém disciplinárním členění speciální pedagogiky a v současném širším rámci oboru. Ověřuje, že bezpečně rozlišíš disciplínu, cílovou skupinu i základní terminologii bez mechanického zaměňování blízkých oblastí.",
-        profileParagraphs: [
-          "V celé bance funguje jako vstupní základ. Kdo tady chybuje v rozlišení psychopedie, somatopedie, tyflopedie, surdopedie, etopedie a logopedie, přenáší tyto chyby i do intervencí, poradenství a komunikace.",
-          "Smyslem není encyklopedie názvů, ale stabilní oborová orientace: vědět, co která disciplína primárně řeší, kde jsou její hranice a jak do současného pojetí oboru vstupují PAS, kombinovaná postižení nebo dvojí výjimečnost."
-        ]
-      },
-      2: {
-        purposeText: "Baterie přesouvá pozornost od pouhých názvů ke konkrétním projevům a funkčním dopadům znevýhodnění. Sleduje, zda umíš z charakteristik odvodit, co je pro vzdělávání, komunikaci a každodenní fungování skutečně podstatné.",
-        profileParagraphs: [
-          "Je to most mezi definicí a praxí. Nestačí poznat skupinu; musíš rozumět tomu, jak se její charakteristiky promítají do učení, kontaktu s prostředím, samostatnosti a adaptivního fungování.",
-          "Silná stránka této baterie je diferenciální rozlišování: podobné jevy vypadají navenek blízce, ale mají jinou podstatu a jiné důsledky pro školní i poradenskou práci."
-        ]
-      },
-      3: {
-        purposeText: "Tato baterie testuje intervenční uvažování: ne jen co daný problém je, ale co se s ním odborně dělá. Ověřuje správné přiřazení metod, podpůrných opatření, kompenzačních prostředků a nevhodných postupů.",
-        profileParagraphs: [
-          "Je klíčová pro převod znalosti do podpory. Uchazeč tu musí rozlišit reedukaci, kompenzaci, rehabilitaci, strukturování prostředí, AAK, orientaci a mobilitu nebo práci s pomůckami.",
-          "Baterie zároveň hlídá profesní přesnost: správný postup není libovolná dobrá vůle, ale volba podpory, která odpovídá charakteru obtíže, funkčním dopadům a vzdělávací situaci."
-        ]
-      },
-      4: {
-        purposeText: "Baterie ověřuje komunikaci jako profesní kompetenci speciálního pedagoga, poradce a učitele. Nejde o obecné fráze o empatii, ale o to, zda umíš volit srozumitelný, citlivý a profesně přiměřený komunikační postup.",
-        profileParagraphs: [
-          "Zkouší komunikaci s osobami s různým typem znevýhodnění i s rodiči a pečujícími. Těžiště je v přístupnosti sdělení, ověřování porozumění, citlivém sdělování informací a udržení profesních hranic.",
-          "V přípravě je důležitá proto, že komunikační chyba nevzniká jen neznalostí diagnózy, ale i nevhodnou formulací instrukce, špatně vedeným rozhovorem nebo neudrženou rolí odborníka."
-        ]
-      },
-      5: {
-        purposeText: "Baterie cílí na školské poradenství a orientaci v systému MŠMT. Ověřuje, že rozumíš rolím školy, školního poradenského pracoviště, PPP, SPC, SVP i návaznosti mezi prvotním zachycením obtíží a podpůrnými opatřeními.",
-        profileParagraphs: [
-          "Je to systémová osa celé banky. Uchazeč musí poznat, kdo co dělá, kdo vydává doporučení, kdo realizuje podporu ve výuce a jak do procesu vstupují PLPP, IVP a další dokumenty.",
-          "Smyslem není memorovat zkratky, ale chápat poradenský proces ve školství jako logický sled kroků od zachycení potřeby přes vyšetření až po reálnou podporu žáka ve škole."
-        ]
-      },
-      6: {
-        purposeText: "Tato baterie rozšiřuje přípravu mimo školství směrem k sociálním službám a zdravotnictví. Sleduje, zda dokážeš rozlišit resortní logiku podpory a orientovat se v meziresortní spolupráci kolem dítěte a rodiny.",
-        profileParagraphs: [
-          "Patří sem raná péče, osobní asistence, role sociálního pracovníka, OSPOD, ale i hranice mezi školskou, sociální a zdravotnickou oblastí. Důležité je rozpoznat, co je ještě školská podpora a co už spadá jinam.",
-          "V praxi právě tady často vznikají záměny. Baterie proto testuje, zda umíš správně zasadit služby a profese do systému podpory, nikoli jen mechanicky přiřadit definici."
-        ]
-      },
-      7: {
-        purposeText: "Tato profilová baterie staví speciální pedagogiku jako poradenský obor. Ověřuje, že chápeš speciálního pedagoga nejen jako znalce diagnóz, ale jako odborníka, který převádí závěry do konkrétní podpory dítěte, rodiny a školy.",
-        profileParagraphs: [
-          "Těžiště je v poradenském procesu, interpretaci potřeb klienta, přenosu odborného závěru do opatření a metodické opoře školy. Nestačí znát pojmy; musíš rozumět logice poradenského rozhodování.",
-          "Baterie zároveň sleduje etiku, hranice kompetencí a meziresortní orientaci. Je nejvíc profilová pro samotné zaměření programu, protože testuje poradenské uvažování jako aplikační rovinu oboru."
-        ]
-      },
-      8: {
-        purposeText: "Finální syntetická baterie je nejtvrdší simulace přijímačkového testu. Neslouží jako další tematický blok, ale jako prověření schopnosti propojit disciplíny, charakteristiky, intervence, komunikaci, poradenství a systémové rozlišení v jednom kroku.",
-        profileParagraphs: [
-          "Je postavená na rozlišování velmi podobných možností, na aplikačním úsudku a na práci s distraktory. Otázky tu nesmí být recyklací lehkých definic z dřívějších baterií.",
-          "V přípravě funguje jako závěrečný stres test: ukazuje, zda umíš své znalosti použít v komplexní smíšené situaci, která připomíná reálnou obtížnost a tempo přijímacího testu."
-        ]
-      }
+  // ═══════════════════════════════════════════
+  // 6. SESSION BUILDER
+  // ═══════════════════════════════════════════
+  function buildBalancedTargetIndexes(total) {
+    const base=Math.floor(total/LETTERS.length), rem=total%LETTERS.length;
+    const counts=Array(LETTERS.length).fill(base);
+    shuffleArray([0,1,2,3]).slice(0,rem).forEach(i=>{counts[i]++;});
+    return shuffleArray(counts.flatMap((c,i)=>Array(c).fill(i)));
+  }
+  function remapQuestionOptions(question, targetIdx) {
+    const correctOpt = question.options[question.correct];
+    const wrongOpts = shuffleArray(question.options.filter((_,i)=>i!==question.correct));
+    const mapped=[]; let wp=0;
+    for(let i=0;i<LETTERS.length;i++){if(i===targetIdx){mapped.push(correctOpt);}else{mapped.push(wrongOpts[wp]);wp++;}}
+    return {...question, options:mapped, correct:targetIdx, correctLetter:LETTERS[targetIdx]};
+  }
+  function buildSessionBattery(battery, modeConfig) {
+    const targets = buildBalancedTargetIndexes(battery.questions.length);
+    const sessionQs = battery.questions.map((q,i) => {
+      const remapped = remapQuestionOptions(q, targets[i]);
+      return {...remapped, sourceBatteryId:battery.id, sourceQuestionNumber:q.number, tags:battery.tags||[], signalHint:"", explanationCorrect:"", explanationDistractor:""};
+    });
+    const dist = sessionQs.reduce((a,q)=>{a[LETTERS[q.correct]]++;return a;},{A:0,B:0,C:0,D:0});
+    const mode = modeConfig?.mode || "simulation";
+    const goal = modeConfig?.goal || "attention";
+    const now = new Date();
+    const endsAt = new Date(now.getTime() + (battery.durationMinutes||30)*60*1000);
+    return {
+      schemaVersion:SCHEMA_VERSION, sessionId:generateId(), createdAt:now.toISOString(), updatedAt:now.toISOString(),
+      mode, goal, batteryId:battery.id, batteryLabel:battery.label, batteryTitle:battery.title,
+      activeTest:{ id:battery.id, label:battery.label, title:battery.title, durationMinutes:battery.durationMinutes||30, questions:sessionQs, sessionDistribution:dist },
+      timing:{ startedAt:now.toISOString(), endsAt:endsAt.toISOString(), finishedAt:null },
+      ui:{ currentQuestionIndex:0, reviewVisible:false, focusMode:false, optionsHiddenUntilReady:modeConfig?.showQuestionFirst||mode==="reading-training", showKeywordHighlights:modeConfig?.showKeywordHighlights!==false, requireConfidence:modeConfig?.requireConfidence!==false },
+      metrics:{ totalViews:0, totalAnswerChanges:0, totalFlagged:0 },
+      questionStates: sessionQs.map((_,i)=>createQuestionState(i)),
+      results:{ finished:false, timeExpired:false, score:null, analytics:null, repairCandidateIndexes:[] }
     };
+  }
+  function buildRepairSessionFromResults(srcSession, candidateIndexes) {
+    if(!srcSession || !candidateIndexes.length) return null;
+    const srcQs = srcSession.activeTest.questions;
+    const repairQs = candidateIndexes.map((ci,i) => ({...srcQs[ci], number:i+1, sourceBatteryId:srcSession.batteryId, sourceQuestionNumber:srcQs[ci].number}));
+    const now = new Date();
+    const dur = Math.max(10, Math.ceil(repairQs.length * 0.6));
+    const endsAt = new Date(now.getTime()+dur*60*1000);
+    const dist = repairQs.reduce((a,q)=>{a[LETTERS[q.correct]]++;return a;},{A:0,B:0,C:0,D:0});
+    return {
+      schemaVersion:SCHEMA_VERSION, sessionId:generateId(), createdAt:now.toISOString(), updatedAt:now.toISOString(),
+      mode:"repair", goal:srcSession.goal||"attention", batteryId:srcSession.batteryId, batteryLabel:srcSession.batteryLabel, batteryTitle:`Opravná sada – ${srcSession.batteryLabel}`,
+      activeTest:{ id:srcSession.batteryId, label:srcSession.batteryLabel, title:`Opravná sada (${repairQs.length} otázek)`, durationMinutes:dur, questions:repairQs, sessionDistribution:dist },
+      timing:{ startedAt:now.toISOString(), endsAt:endsAt.toISOString(), finishedAt:null },
+      ui:{ currentQuestionIndex:0, reviewVisible:false, focusMode:false, optionsHiddenUntilReady:false, showKeywordHighlights:true, requireConfidence:true },
+      metrics:{ totalViews:0, totalAnswerChanges:0, totalFlagged:0 },
+      questionStates:repairQs.map((_,i)=>createQuestionState(i)),
+      results:{ finished:false, timeExpired:false, score:null, analytics:null, repairCandidateIndexes:[] }
+    };
+  }
 
+  // ═══════════════════════════════════════════
+  // 7. TIMER
+  // ═══════════════════════════════════════════
+  let timerHandle = null;
+  function getRemainingSeconds() {
+    const s = appState.currentSession;
+    if(!s || !s.timing.endsAt) return 0;
+    return Math.max(0, Math.floor((new Date(s.timing.endsAt).getTime()-Date.now())/1000));
+  }
+  function tickTimer() {
+    const rem = getRemainingSeconds();
+    const el = $("timer");
+    if(el) { el.textContent=formatTime(rem); el.classList.toggle("urgent",rem<120); }
+    if(rem<=0) { stopTimer(); finishTest(true); }
+  }
+  function startTimer() { stopTimer(); tickTimer(); timerHandle=setInterval(tickTimer,1000); }
+  function stopTimer() { if(timerHandle){clearInterval(timerHandle);timerHandle=null;} }
 
-    
-const startScreen = document.getElementById("startScreen");
-    const testScreen = document.getElementById("testScreen");
-    const testPane = document.getElementById("testPane");
-    const resultsPane = document.getElementById("resultsPane");
-
-    const batteryGrid = document.getElementById("batteryGrid");
-    const selectionNote = document.getElementById("selectionNote");
-    const startTestBtn = document.getElementById("startTestBtn");
-    const batteryDetail = document.getElementById("batteryDetail");
-
-    const detailPurpose = document.getElementById("detailPurpose");
-    const detailDominant = document.getElementById("detailDominant");
-    const detailBreakdown = document.getElementById("detailBreakdown");
-    const detailProfile = document.getElementById("detailProfile");
-    const statQuestions = document.getElementById("statQuestions");
-
-    const sidebarBatteryLabel = document.getElementById("sidebarBatteryLabel");
-    const metaCount = document.getElementById("metaCount");
-    const timerEl = document.getElementById("timer");
-    const answeredCount = document.getElementById("answeredCount");
-    const answeredTotal = document.getElementById("answeredTotal");
-    const questionGrid = document.getElementById("questionGrid");
-
-    const questionMeta = document.getElementById("questionMeta");
-    const questionText = document.getElementById("questionText");
-    const optionsWrap = document.getElementById("options");
-    const activeBatteryPill = document.getElementById("activeBatteryPill");
-
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    const clearCurrentBtn = document.getElementById("clearCurrentBtn");
-    const changeBatteryBtn = document.getElementById("changeBatteryBtn");
-    const finishBtn = document.getElementById("finishBtn");
-
-    const scoreMain = document.getElementById("scoreMain");
-    const scoreSub = document.getElementById("scoreSub");
-    const resultsBatteryLabel = document.getElementById("resultsBatteryLabel");
-    const showReviewBtn = document.getElementById("showReviewBtn");
-    const hideReviewBtn = document.getElementById("hideReviewBtn");
-    const restartBtn = document.getElementById("restartBtn");
-    const backToSelectionBtn = document.getElementById("backToSelectionBtn");
-    const reviewWrap = document.getElementById("reviewWrap");
-
-    
-
-    if (statQuestions) {
-      statQuestions.textContent = String(BATTERIES.reduce((sum, battery) => sum + battery.questions.length, 0));
-    }
-
-let selectedBatteryId = null;
-    let activeTest = null;
-    let answers = [];
-    let currentQuestion = 0;
-    let remainingSeconds = 0;
-    let timerHandle = null;
-    let finished = false;
-    let reviewRendered = false;
-
-    function formatTime(seconds) {
-      const mins = Math.floor(seconds / 60);
-      const secs = seconds % 60;
-      return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
-    }
-
-    function stopTimer() {
-      if (timerHandle) {
-        clearInterval(timerHandle);
-        timerHandle = null;
+  // ═══════════════════════════════════════════
+  // 8. ANALYTICS / TRACKING
+  // ═══════════════════════════════════════════
+  function beginQuestionView(idx) {
+    const s=appState.currentSession; if(!s) return;
+    const qs=s.questionStates[idx]; if(!qs) return;
+    const now=Date.now();
+    qs.viewCount++; qs.viewedAtLeastOnce=true;
+    if(!qs.firstViewedAt) qs.firstViewedAt=new Date(now).toISOString();
+    qs.lastViewedAt=new Date(now).toISOString();
+    qs.currentViewStartedAt=now;
+    s.metrics.totalViews++;
+  }
+  function endQuestionView(idx) {
+    const s=appState.currentSession; if(!s) return;
+    const qs=s.questionStates[idx]; if(!qs||!qs.currentViewStartedAt) return;
+    qs.timeSpentMs+=Date.now()-qs.currentViewStartedAt;
+    qs.currentViewStartedAt=null;
+  }
+  function getAnsweredCount() {
+    const s=appState.currentSession; if(!s) return 0;
+    return s.questionStates.filter(qs=>qs.selectedAnswer!==null).length;
+  }
+  function calculateScore() {
+    const s=appState.currentSession; if(!s) return {correct:0,total:0,answered:0,percentage:0};
+    let correct=0; const qs=s.activeTest.questions;
+    qs.forEach((q,i)=>{ if(s.questionStates[i].selectedAnswer===q.correct) correct++; });
+    return { correct, total:qs.length, answered:getAnsweredCount(), percentage:Math.round(correct/qs.length*100) };
+  }
+  function calculateAttentionMetrics() {
+    const s=appState.currentSession; if(!s) return {};
+    const states=s.questionStates; const times=states.map(q=>q.timeSpentMs).filter(t=>t>0);
+    const avgTime=times.length?Math.round(times.reduce((a,b)=>a+b,0)/times.length):0;
+    const medTime=Math.round(median(times));
+    const slowIdxs=states.map((q,i)=>({i,t:q.timeSpentMs})).filter(x=>x.t>=SLOW_THRESHOLD_MS).sort((a,b)=>b.t-a.t).slice(0,5).map(x=>x.i);
+    const fastWrongIdxs=states.map((q,i)=>({i,t:q.timeSpentMs,ans:q.selectedAnswer})).filter(x=>x.t>0&&x.t<FAST_THRESHOLD_MS&&x.ans!==null&&x.ans!==s.activeTest.questions[x.i].correct).map(x=>x.i);
+    const changes=states.reduce((a,q)=>a+q.answerChanges,0);
+    const flagged=states.filter(q=>q.flagged).length;
+    const guesses=states.filter(q=>q.confidence==="guess").length;
+    const highConf=states.filter(q=>q.confidence==="high").length;
+    const revisits=states.filter(q=>q.viewCount>1).length;
+    const longReadErrors=states.filter((q,i)=>q.timeSpentMs>=SLOW_THRESHOLD_MS&&q.selectedAnswer!==null&&q.selectedAnswer!==s.activeTest.questions[i].correct).length;
+    return { avgTime, medTime, slowIdxs, fastWrongIdxs, changes, flagged, guesses, highConf, revisits, longReadErrors, totalAnswered:getAnsweredCount() };
+  }
+  function inferAutoErrorTypes() {
+    const s=appState.currentSession; if(!s) return;
+    s.questionStates.forEach((qs,i)=>{
+      const q=s.activeTest.questions[i]; if(qs.selectedAnswer===null){qs.autoErrorType="no-answer";return;}
+      if(qs.selectedAnswer===q.correct){qs.autoErrorType=null;return;}
+      const t=qs.timeSpentMs; const hasNeg=/\bnenì\b|\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/i.test(q.text);
+      if(hasNeg) { qs.autoErrorType="missed-negation"; return; }
+      if(t<FAST_THRESHOLD_MS) { qs.autoErrorType="impulsive-click"; return; }
+      if(t>=SLOW_THRESHOLD_MS&&qs.answerChanges>=2) { qs.autoErrorType="overthinking"; return; }
+      if(qs.confidence==="high") { qs.autoErrorType="knowledge-gap"; return; }
+      if(qs.flagged) { qs.autoErrorType="inattention"; return; }
+      if(/\bv rámci\b/i.test(q.text)) { qs.autoErrorType="institution-confusion"; return; }
+      qs.autoErrorType="distractor-trap";
+    });
+  }
+  function buildRepairCandidateIndexes(filterType) {
+    const s=appState.currentSession; if(!s) return [];
+    const qs=s.questionStates; const questions=s.activeTest.questions;
+    let candidates=[];
+    qs.forEach((q,i)=>{
+      const isWrong=q.selectedAnswer!==null&&q.selectedAnswer!==questions[i].correct;
+      const isUnanswered=q.selectedAnswer===null;
+      const isGuess=q.confidence==="guess";
+      const isSlow=q.timeSpentMs>=SLOW_THRESHOLD_MS;
+      const isChanged=q.answerChanges>=1;
+      const isFlagged=q.flagged;
+      let include=false;
+      switch(filterType||"errors") {
+        case "errors": include=isWrong||isUnanswered; break;
+        case "errors-guesses": include=isWrong||isUnanswered||isGuess; break;
+        case "errors-guesses-slow": include=isWrong||isUnanswered||isGuess||isSlow; break;
+        case "flagged": include=isFlagged; break;
+        case "all": include=isWrong||isUnanswered||isGuess||isSlow||isChanged||isFlagged; break;
+        default: include=isWrong||isUnanswered;
       }
+      if(include) candidates.push(i);
+    });
+    return candidates;
+  }
+
+  // ═══════════════════════════════════════════
+  // 9. RENDERING
+  // ═══════════════════════════════════════════
+  function highlightRiskKeywords(text) {
+    let safe=escapeHtml(text);
+    if(appState.currentSession?.ui?.showKeywordHighlights) {
+      RISK_PATTERNS.forEach(p=>{ safe=safe.replace(p,'<span class="risk-word">$&</span>'); });
     }
-
-    function startTimer() {
-      stopTimer();
-      timerEl.textContent = formatTime(remainingSeconds);
-
-      timerHandle = setInterval(() => {
-        remainingSeconds -= 1;
-        timerEl.textContent = formatTime(Math.max(remainingSeconds, 0));
-
-        if (remainingSeconds <= 0) {
-          stopTimer();
-          finishTest(true);
-        }
-      }, 1000);
+    return safe;
+  }
+  function setAppMode(mode) {
+    appState.appMode=mode;
+    const ss=$("startScreen"), ts=$("testScreen"), tp=$("testPane"), rp=$("resultsPane");
+    if(mode==="start"){ss.classList.remove("hidden");ts.classList.add("hidden");}
+    else{ss.classList.add("hidden");ts.classList.remove("hidden");}
+    if(mode==="test"){tp.classList.remove("hidden");rp.classList.add("hidden");}
+    if(mode==="results"){tp.classList.add("hidden");rp.classList.remove("hidden");}
+  }
+  function renderBatteryCards() {
+    const grid=$("batteryGrid");
+    grid.innerHTML=BATTERIES.map(b=>{
+      const sel=b.id===appState.selectedBatteryId?"selected":"";
+      return `<button type="button" class="battery-card ${sel}" data-battery="${b.id}"><div class="battery-card-head"><span class="battery-label">${escapeHtml(b.label)} – ${escapeHtml(b.title)}</span><span class="battery-badge">${b.id===8?"+1":b.id}</span></div><p class="battery-subtitle">${escapeHtml(b.subtitle)}</p><div class="battery-meta"><span class="chip">${b.questionCount} otázek</span><span class="chip">${b.durationMinutes} minut</span><span class="chip">${escapeHtml(b.difficulty)}</span></div></button>`;
+    }).join("");
+    grid.querySelectorAll(".battery-card").forEach(c=>{c.addEventListener("click",()=>selectBattery(Number(c.dataset.battery)));});
+  }
+  function renderBatteryDetail(battery) {
+    const top=$("batteryDetail").querySelector(".detail-top");
+    if(!battery){
+      top.innerHTML='<div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie.</p></div><span class="badge">—</span>';
+      $("detailPurpose").innerHTML="<p>Zatím není vybraná žádná baterie.</p>";
+      $("detailDominant").innerHTML="";$("detailBreakdown").innerHTML="";
+      $("detailProfile").innerHTML="<p>Vybraná baterie tady dostane svůj profil.</p>";
+      return;
     }
-
-    function getAnsweredCount() {
-      return answers.filter(value => value !== null).length;
+    top.innerHTML=`<div><h3>${escapeHtml(battery.label)} – ${escapeHtml(battery.title)}</h3><p>${escapeHtml(battery.subtitle)}</p></div><span class="badge">${battery.id===8?"+1":battery.id}</span>`;
+    const dc=BATTERY_DETAIL_COPY[battery.id]||{};
+    $("detailPurpose").innerHTML=`<p>${escapeHtml(dc.purposeText||battery.purpose)}</p>`;
+    $("detailDominant").innerHTML=battery.dominant.map(x=>`<span class="chip">${escapeHtml(x)}</span>`).join("");
+    $("detailBreakdown").innerHTML=battery.breakdown.map(x=>`<li>${escapeHtml(x)}</li>`).join("");
+    $("detailProfile").innerHTML=(dc.profileParagraphs||[]).map(x=>`<p>${escapeHtml(x)}</p>`).join("");
+  }
+  function renderRestorePanel() {
+    const panel=$("restorePanel");
+    const saved=loadCurrentSession();
+    if(!saved){panel.classList.add("hidden");panel.innerHTML="";return;}
+    panel.classList.remove("hidden");
+    const status=saved.results?.finished?"dokončeno":"rozpracováno";
+    const remaining=saved.results?.finished?"":", zbývá "+formatTime(Math.max(0,Math.floor((new Date(saved.timing.endsAt).getTime()-new Date(saved.updatedAt).getTime())/1000)));
+    panel.innerHTML=`<div class="restore-panel"><h4>Poslední session</h4><div class="restore-info"><strong>${escapeHtml(saved.batteryLabel)}</strong> – ${escapeHtml(saved.batteryTitle||"")}<br>Režim: ${escapeHtml(saved.mode)} · Stav: ${status}${remaining}<br>Uloženo: ${formatDate(saved.updatedAt)}</div><div class="restore-actions"><button class="btn btn-primary btn-sm" id="restoreSessionBtn">Obnovit session</button><button class="btn btn-light btn-sm" id="newSessionBtn">Nový pokus</button><button class="btn btn-danger btn-sm" id="deleteSessionBtn">Smazat session</button></div></div>`;
+    $("restoreSessionBtn")?.addEventListener("click",resumeSession);
+    $("newSessionBtn")?.addEventListener("click",()=>{clearCurrentSession();renderRestorePanel();});
+    $("deleteSessionBtn")?.addEventListener("click",()=>{clearCurrentSession();renderRestorePanel();});
+  }
+  function renderHistoryPanel() {
+    const panel=$("historyPanel"); const h=appState.history;
+    if(!h.length){panel.classList.add("hidden");return;}
+    panel.classList.remove("hidden");
+    const items=h.slice(0,3).map(e=>`<div class="history-item"><span>${escapeHtml(e.batteryLabel||"")} · ${escapeHtml(e.mode||"")} · ${formatDate(e.date)}</span><span class="history-score">${e.score}/${e.total} (${e.percentage}%)</span></div>`).join("");
+    panel.innerHTML=`<div class="history-panel"><h4>Poslední pokusy</h4><div class="history-list">${items}</div></div>`;
+  }
+  function renderConfigPanel() {
+    const s=appState.settings;
+    document.querySelectorAll("#configMode .config-opt").forEach(b=>{b.classList.toggle("active",b.dataset.mode===s.defaultMode);b.addEventListener("click",()=>{s.defaultMode=b.dataset.mode;saveSettings();renderConfigPanel();});});
+    document.querySelectorAll("#configGoal .config-opt").forEach(b=>{b.classList.toggle("active",b.dataset.goal===s.defaultGoal);b.addEventListener("click",()=>{s.defaultGoal=b.dataset.goal;saveSettings();renderConfigPanel();});});
+    $("optShowQuestionFirst").checked=s.showQuestionFirst;$("optHighlightKeywords").checked=s.showKeywordHighlights;$("optRequireConfidence").checked=s.requireConfidence;$("optAutoSave").checked=s.autoSave;$("optRestoreSession").checked=s.restoreSessionOnLoad;
+    $("optShowQuestionFirst").onchange=function(){s.showQuestionFirst=this.checked;saveSettings();};
+    $("optHighlightKeywords").onchange=function(){s.showKeywordHighlights=this.checked;saveSettings();};
+    $("optRequireConfidence").onchange=function(){s.requireConfidence=this.checked;saveSettings();};
+    $("optAutoSave").onchange=function(){s.autoSave=this.checked;saveSettings();};
+    $("optRestoreSession").onchange=function(){s.restoreSessionOnLoad=this.checked;saveSettings();};
+    const repBtn=$("repairModeOpt");
+    const hasCandidates=appState.history.length>0||loadCurrentSession()?.results?.finished;
+    if(repBtn){repBtn.disabled=!hasCandidates;}
+  }
+  function renderQuestionGrid() {
+    const s=appState.currentSession; if(!s) return;
+    const grid=$("questionGrid");
+    grid.innerHTML=s.activeTest.questions.map((_,i)=>`<button class="q-nav" data-index="${i}" type="button">${i+1}</button>`).join("");
+    grid.querySelectorAll(".q-nav").forEach(b=>{b.addEventListener("click",()=>goToQuestion(Number(b.dataset.index)));});
+    refreshQuestionGrid();
+  }
+  function refreshQuestionGrid() {
+    const s=appState.currentSession; if(!s) return;
+    const ci=s.ui.currentQuestionIndex;
+    $("questionGrid").querySelectorAll(".q-nav").forEach((b,i)=>{
+      const qs=s.questionStates[i];
+      b.className="q-nav";
+      if(i===ci) b.classList.add("current");
+      if(qs.selectedAnswer!==null&&qs.flagged) b.classList.add("answered-flagged");
+      else if(qs.flagged) b.classList.add("flagged");
+      else if(qs.selectedAnswer!==null) b.classList.add("answered");
+      if(qs.timeSpentMs>=SLOW_THRESHOLD_MS) b.classList.add("slow");
+      if(qs.confidence==="guess") b.classList.add("low-confidence");
+    });
+  }
+  function updateMeta() {
+    const s=appState.currentSession; if(!s) return;
+    $("answeredCount").textContent=String(getAnsweredCount());
+    $("answeredTotal").textContent=String(s.activeTest.questions.length);
+    $("metaCount").textContent=String(s.activeTest.questions.length);
+    $("sidebarBatteryLabel").textContent=`Aktivní baterie: ${s.activeTest.label} – ${s.activeTest.title}`;
+    $("activeBatteryPill").textContent=s.activeTest.label;
+    const mb=$("sidebarModeBadge");
+    mb.innerHTML=`<span class="mode-badge ${s.mode}">${s.mode==="reading-training"?"trénink čtení":s.mode==="repair"?"opravný režim":"simulace"}</span>`;
+  }
+  function renderQuestion() {
+    const s=appState.currentSession; if(!s) return;
+    const ci=s.ui.currentQuestionIndex;
+    const q=s.activeTest.questions[ci];
+    const qs=s.questionStates[ci];
+    $("questionMeta").textContent=`Otázka ${ci+1} z ${s.activeTest.questions.length}`;
+    $("questionText").innerHTML=highlightRiskKeywords(q.text);
+    const optionsHidden=s.ui.optionsHiddenUntilReady&&!qs.optionsRevealedAt&&qs.selectedAnswer===null;
+    const ow=$("optionsWrap"), rw=$("revealWrap");
+    if(optionsHidden){ow.classList.add("hidden");rw.classList.remove("hidden");}
+    else{ow.classList.remove("hidden");rw.classList.add("hidden");renderOptions(q,qs,ci);}
+    renderConfidenceControls(qs,ci);
+    renderQuickActions(qs,ci);
+    const nw=$("noteWrap"), ni=$("noteInput");
+    nw.style.display="block"; ni.value=qs.note||"";
+    ni.oninput=function(){setQuestionNote(this.value);};
+    $("prevBtn").disabled=ci===0;
+    $("nextBtn").disabled=ci===s.activeTest.questions.length-1;
+    updateMeta(); refreshQuestionGrid();
+  }
+  function renderOptions(q,qs,ci) {
+    const ow=$("optionsWrap");
+    ow.innerHTML=q.options.map((opt,i)=>{
+      const sel=qs.selectedAnswer===i?"selected":"";
+      return `<button class="option-btn ${sel}" data-index="${i}" type="button"><div class="option-row"><span class="option-label">${LETTERS[i]}</span><span>${escapeHtml(opt)}</span></div></button>`;
+    }).join("");
+    ow.querySelectorAll(".option-btn").forEach(b=>{b.addEventListener("click",()=>selectAnswer(Number(b.dataset.index)));});
+  }
+  function renderConfidenceControls(qs,ci) {
+    const cw=$("confidenceWrap");
+    if(qs.selectedAnswer===null){cw.classList.add("hidden");return;}
+    cw.classList.remove("hidden");
+    const levels=[{key:"high",label:"Jistý"},{key:"medium",label:"Spíš jistý"},{key:"guess",label:"Tip"}];
+    cw.innerHTML=`<div class="confidence-wrap"><div class="conf-label">Jak si jistý odpovědí?</div><div class="confidence-btns">${levels.map(l=>`<button class="conf-btn ${qs.confidence===l.key?"active-"+l.key:""}" data-conf="${l.key}" type="button">${l.label}</button>`).join("")}</div></div>`;
+    cw.querySelectorAll(".conf-btn").forEach(b=>{b.addEventListener("click",()=>setConfidence(b.dataset.conf));});
+  }
+  function renderQuickActions(qs,ci) {
+    const qa=$("quickActionsWrap");
+    qa.innerHTML=`<button class="action-btn ${qs.flagged?"is-active":""}" id="flagBtn" type="button">${qs.flagged?"★ Označeno":"☆ Označit"}</button><button class="action-btn ${qs.revisitLater?"is-active":""}" id="revisitBtn" type="button">${qs.revisitLater?"↻ Vrátit se":"↻ Vrátit se později"}</button><button class="action-btn" id="clearBtn" type="button">✕ Smazat odpověď</button>`;
+    $("flagBtn").addEventListener("click",toggleFlag);
+    $("revisitBtn").addEventListener("click",toggleRevisitLater);
+    $("clearBtn").addEventListener("click",clearAnswer);
+  }
+  function renderResults(timeExpired) {
+    const s=appState.currentSession; if(!s) return;
+    const score=calculateScore();
+    const metrics=calculateAttentionMetrics();
+    inferAutoErrorTypes();
+    s.results.score=score; s.results.analytics=metrics;
+    s.results.repairCandidateIndexes=buildRepairCandidateIndexes("all");
+    const un=score.total-score.answered;
+    const prefix=timeExpired?"Časový limit vypršel. ":"";
+    $("scoreMain").textContent=`${score.correct} / ${score.total} bodů (${score.percentage} %)`;
+    $("scoreSub").textContent=`${prefix}Zodpovězeno: ${score.answered} z ${score.total}. Nezodpovězené: ${un}.`;
+    $("resultsBatteryLabel").textContent=`Vyhodnocená baterie: ${s.activeTest.label} – ${s.activeTest.title}`;
+    renderPerformanceSummary(score,metrics);
+    renderAttentionDashboard(metrics);
+    renderRepairPanel();
+    saveCurrentSession();
+  }
+  function renderPerformanceSummary(score,metrics) {
+    const el=$("performanceSummary");
+    el.innerHTML=`<div class="dashboard"><h4>Výkon</h4><div class="dash-grid"><div class="dash-card"><div class="dash-value">${score.correct}</div><div class="dash-label">Správně</div></div><div class="dash-card"><div class="dash-value">${score.total-score.answered}</div><div class="dash-label">Nezodpovězeno</div></div><div class="dash-card"><div class="dash-value">${score.percentage}%</div><div class="dash-label">Úspěšnost</div></div><div class="dash-card"><div class="dash-value">${metrics.guesses||0}</div><div class="dash-label">Tipy</div></div></div></div>`;
+  }
+  function renderAttentionDashboard(metrics) {
+    const el=$("attentionDashboard");
+    const slowList=metrics.slowIdxs?.map(i=>`#${i+1}`).join(", ")||"—";
+    const fastList=metrics.fastWrongIdxs?.map(i=>`#${i+1}`).join(", ")||"—";
+    el.innerHTML=`<div class="dashboard"><h4>Pozornostní dashboard</h4><div class="dash-grid"><div class="dash-card"><div class="dash-value">${(metrics.avgTime/1000).toFixed(1)}s</div><div class="dash-label">Průměrný čas</div></div><div class="dash-card"><div class="dash-value">${(metrics.medTime/1000).toFixed(1)}s</div><div class="dash-label">Medián času</div></div><div class="dash-card"><div class="dash-value">${metrics.changes||0}</div><div class="dash-label">Změny odpovědi</div></div><div class="dash-card"><div class="dash-value">${metrics.flagged||0}</div><div class="dash-label">Označené</div></div><div class="dash-card"><div class="dash-value">${metrics.revisits||0}</div><div class="dash-label">Návraty k otázkám</div></div><div class="dash-card"><div class="dash-value">${metrics.highConf||0}</div><div class="dash-label">Jistých odpovědí</div></div></div><div class="dash-detail"><strong>Nejpomalejší:</strong> ${slowList}<br><strong>Rychlé špatné kliky:</strong> ${fastList}<br><strong>Chyby po dlouhém čtení:</strong> ${metrics.longReadErrors||0}</div></div>`;
+  }
+  function renderRepairPanel() {
+    const s=appState.currentSession; if(!s) return;
+    const candidates=buildRepairCandidateIndexes("errors");
+    const el=$("repairPanel");
+    if(candidates.length===0){el.classList.add("hidden");return;}
+    el.classList.remove("hidden");
+    const filters=[{key:"errors",label:`Jen chyby (${buildRepairCandidateIndexes("errors").length})`},{key:"errors-guesses",label:`Chyby+tipy (${buildRepairCandidateIndexes("errors-guesses").length})`},{key:"errors-guesses-slow",label:`+pomalé (${buildRepairCandidateIndexes("errors-guesses-slow").length})`},{key:"flagged",label:`Označené (${buildRepairCandidateIndexes("flagged").length})`},{key:"all",label:`Vše (${buildRepairCandidateIndexes("all").length})`}];
+    el.innerHTML=`<div class="repair-panel"><h4>Opravný režim</h4><div class="repair-filters">${filters.map(f=>`<button class="repair-filter" data-filter="${f.key}" type="button">${f.label}</button>`).join("")}</div><div class="repair-info">Vyberte filtr a spusťte opravnou sadu.</div><button class="btn btn-purple btn-sm" id="startRepairBtn" type="button">Spustit opravný režim</button></div>`;
+    let selectedFilter="errors";
+    el.querySelectorAll(".repair-filter").forEach(b=>{
+      b.addEventListener("click",()=>{selectedFilter=b.dataset.filter;el.querySelectorAll(".repair-filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");});
+    });
+    el.querySelector(".repair-filter").classList.add("active");
+    $("startRepairBtn")?.addEventListener("click",()=>startRepairModeFromResults(selectedFilter));
+  }
+  function renderReview() {
+    const s=appState.currentSession; if(!s) return;
+    const rw=$("reviewWrap"); rw.innerHTML="";
+    s.activeTest.questions.forEach((_,i)=>{ rw.appendChild(renderReviewItem(i)); });
+  }
+  function renderReviewItem(qIndex) {
+    const s=appState.currentSession;
+    const q=s.activeTest.questions[qIndex];
+    const qs=s.questionStates[qIndex];
+    const isCorrect=qs.selectedAnswer===q.correct;
+    const isUnanswered=qs.selectedAnswer===null;
+    const userLabel=isUnanswered?"bez odpovědi":LETTERS[qs.selectedAnswer];
+    const errType=qs.manualErrorType||qs.autoErrorType||"";
+    const item=document.createElement("div"); item.className="review-item";
+    const statusClass=isUnanswered?"unanswered":isCorrect?"correct":"incorrect";
+    const statusText=isUnanswered?"bez odpovědi":isCorrect?"správně":"chybně";
+    const statusPill=isUnanswered?"neutral":isCorrect?"correct":"wrong";
+    let head=`<div class="review-head ${statusClass}"><span>Otázka ${qIndex+1}</span><span class="pill ${statusPill}">${statusText}</span></div>`;
+    let body='<div class="review-body">';
+    body+=`<div>${highlightRiskKeywords(q.text)}</div>`;
+    body+='<div class="review-options">';
+    q.options.forEach((opt,oi)=>{
+      let cls="review-option";
+      if(oi===q.correct) cls+=" correct";
+      if(qs.selectedAnswer===oi&&qs.selectedAnswer!==q.correct) cls+=" user-wrong";
+      let extra="";
+      if(oi===q.correct) extra+=' <span class="pill correct">správná odpověď</span>';
+      if(qs.selectedAnswer===oi&&qs.selectedAnswer!==q.correct) extra+=' <span class="pill wrong">tvá odpověď</span>';
+      body+=`<div class="${cls}"><strong>${LETTERS[oi]})</strong> ${escapeHtml(opt)}${extra}</div>`;
+    });
+    body+='</div>';
+    body+=`<div class="review-meta-grid"><div class="review-meta-item"><strong>Odpověď</strong>${userLabel}</div><div class="review-meta-item"><strong>Správně</strong>${LETTERS[q.correct]}</div><div class="review-meta-item"><strong>Čas</strong>${(qs.timeSpentMs/1000).toFixed(1)}s</div><div class="review-meta-item"><strong>Jistota</strong>${qs.confidence||"—"}</div><div class="review-meta-item"><strong>Změny</strong>${qs.answerChanges}</div><div class="review-meta-item"><strong>Návštěvy</strong>${qs.viewCount}</div></div>`;
+    if(!isCorrect&&!isUnanswered) {
+      body+=`<div class="review-meta-item" style="margin-top:6px"><strong>Typ chyby</strong><select class="error-type-select" data-qi="${qIndex}">${Object.entries(ERROR_LABELS).map(([k,v])=>`<option value="${k}" ${(qs.manualErrorType||qs.autoErrorType)===k?"selected":""}>${v}</option>`).join("")}</select></div>`;
     }
+    if(q.signalHint) body+=`<div class="review-explanation"><strong>Signál:</strong> ${escapeHtml(q.signalHint)}</div>`;
+    if(q.explanationCorrect) body+=`<div class="review-explanation"><strong>Proč správně:</strong> ${escapeHtml(q.explanationCorrect)}</div>`;
+    if(q.explanationDistractor) body+=`<div class="review-explanation"><strong>Proč lákavý distraktor:</strong> ${escapeHtml(q.explanationDistractor)}</div>`;
+    if(qs.note) body+=`<div class="review-explanation"><strong>Tvá poznámka:</strong> ${escapeHtml(qs.note)}</div>`;
+    body+='</div>';
+    item.innerHTML=head+body;
+    const sel=item.querySelector(".error-type-select");
+    if(sel) sel.addEventListener("change",function(){s.questionStates[qIndex].manualErrorType=this.value;saveCurrentSession();});
+    return item;
+  }
+  function applyFocusMode() {
+    const s=appState.currentSession;
+    document.body.classList.toggle("focus-mode",s?.ui?.focusMode||false);
+    const btn=$("focusModeBtn");
+    if(btn) btn.textContent=s?.ui?.focusMode?"⊟ Opustit focus":"⊞ Focus mode";
+  }
 
-
-    function shuffleArray(items) {
-      const array = [...items];
-      for (let i = array.length - 1; i > 0; i -= 1) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
-    }
-
-    function buildBalancedTargetIndexes(totalQuestions) {
-      const base = Math.floor(totalQuestions / LETTERS.length);
-      const remainder = totalQuestions % LETTERS.length;
-      const counts = Array(LETTERS.length).fill(base);
-      const boostedLetters = shuffleArray([0, 1, 2, 3]).slice(0, remainder);
-
-      boostedLetters.forEach((index) => {
-        counts[index] += 1;
-      });
-
-      return shuffleArray(
-        counts.flatMap((count, index) => Array(count).fill(index))
-      );
-    }
-
-    function remapQuestionOptions(question, targetCorrectIndex) {
-      const correctOption = question.options[question.correct];
-      const wrongOptions = shuffleArray(
-        question.options.filter((_, index) => index !== question.correct)
-      );
-
-      const remappedOptions = [];
-      let wrongPointer = 0;
-
-      for (let i = 0; i < LETTERS.length; i += 1) {
-        if (i === targetCorrectIndex) {
-          remappedOptions.push(correctOption);
-        } else {
-          remappedOptions.push(wrongOptions[wrongPointer]);
-          wrongPointer += 1;
-        }
-      }
-
-      return {
-        ...question,
-        options: remappedOptions,
-        correct: targetCorrectIndex,
-        correctLetter: LETTERS[targetCorrectIndex]
-      };
-    }
-
-    function buildSessionBattery(battery) {
-      const targetIndexes = buildBalancedTargetIndexes(battery.questions.length);
-      const sessionQuestions = battery.questions.map((question, index) => {
-        return remapQuestionOptions(question, targetIndexes[index]);
-      });
-
-      const sessionDistribution = sessionQuestions.reduce((acc, question) => {
-        const key = LETTERS[question.correct];
-        acc[key] += 1;
-        return acc;
-      }, { A: 0, B: 0, C: 0, D: 0 });
-
-      return {
-        ...battery,
-        sessionDistribution,
-        questions: sessionQuestions
-      };
-    }
-
-    function renderBatteryCards() {
-      batteryGrid.innerHTML = BATTERIES.map((battery) => {
-        const stateClass = battery.id === selectedBatteryId ? "selected" : "";
-
-        return `
-          <button type="button" class="battery-card ${stateClass}" data-battery="${battery.id}">
-            <div class="battery-card-head">
-              <span class="battery-label">${battery.label} – ${battery.title}</span>
-              <span class="battery-badge">${battery.id === 8 ? "+1" : battery.id}</span>
-            </div>
-            <p class="battery-subtitle">${battery.subtitle}</p>
-            <div class="battery-meta">
-              <span class="chip">${battery.questionCount} otázek</span>
-              <span class="chip">${battery.durationMinutes} minut</span>
-              <span class="chip">${battery.difficulty}</span>
-              <span class="chip">automatické promíchání odpovědí</span>
-            </div>
-          </button>
-        `;
-      }).join("");
-
-      batteryGrid.querySelectorAll(".battery-card").forEach((card) => {
-        card.addEventListener("click", () => {
-          selectBattery(Number(card.dataset.battery));
-        });
-      });
-    }
-
-    function renderBatteryDetail(battery) {
-      const top = batteryDetail.querySelector(".detail-top");
-      if (!battery) {
-        top.innerHTML = `
-          <div>
-            <h3>Vyber baterii</h3>
-            <p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie v celé bance.</p>
-          </div>
-          <span class="badge">—</span>
-        `;
-        detailPurpose.innerHTML = "<p>Zatím není vybraná žádná baterie.</p>";
-        detailDominant.innerHTML = "";
-        detailBreakdown.innerHTML = "";
-        detailProfile.innerHTML = "<p>Vybraná baterie tady dostane nejen stručný účel, ale i vysvětlení, proč má v celé bance samostatné místo a co přesně v přípravě testuje.</p>";
-        return;
-      }
-
-      top.innerHTML = `
-        <div>
-          <h3>${battery.label} – ${battery.title}</h3>
-          <p>${battery.subtitle}</p>
-        </div>
-        <span class="badge">${battery.id === 8 ? "+1" : battery.id}</span>
-      `;
-
-      const detailCopy = BATTERY_DETAIL_COPY[battery.id] || {};
-      detailPurpose.innerHTML = `<p>${detailCopy.purposeText || battery.purpose}</p>`;
-      detailDominant.innerHTML = battery.dominant.map(item => `<span class="chip">${item}</span>`).join("");
-      detailBreakdown.innerHTML = battery.breakdown.map(item => `<li>${item}</li>`).join("");
-      detailProfile.innerHTML = (detailCopy.profileParagraphs || []).map(item => `<p>${item}</p>`).join("");
-    }
-
-    function selectBattery(id) {
-      selectedBatteryId = id;
-      const battery = BATTERY_MAP[id];
-      const label = battery ? `${battery.label} – ${battery.title}` : "žádná varianta";
-
-      selectionNote.innerHTML = battery
-        ? `<strong>Vybraná baterie:</strong> ${label}`
-        : `<strong>Vybraná baterie:</strong> zatím není zvolena žádná varianta.`;
-
-      startTestBtn.disabled = !battery;
-      renderBatteryCards();
-      renderBatteryDetail(battery);
-    }
-
-    function setAppMode(mode) {
-      if (mode === "start") {
-        startScreen.classList.remove("hidden");
-        testScreen.classList.add("hidden");
-      } else {
-        startScreen.classList.add("hidden");
-        testScreen.classList.remove("hidden");
-      }
-
-      if (mode === "test") {
-        testPane.classList.remove("hidden");
-        resultsPane.classList.add("hidden");
-      }
-
-      if (mode === "results") {
-        testPane.classList.add("hidden");
-        resultsPane.classList.remove("hidden");
-      }
-    }
-
-    function buildGrid() {
-      questionGrid.innerHTML = activeTest.questions.map((question, index) => {
-        return `<button class="q-nav" data-index="${index}" type="button">${index + 1}</button>`;
-      }).join("");
-
-      questionGrid.querySelectorAll(".q-nav").forEach((button) => {
-        button.addEventListener("click", () => {
-          currentQuestion = Number(button.dataset.index);
-          renderQuestion();
-        });
-      });
-    }
-
-    function refreshGrid() {
-      questionGrid.querySelectorAll(".q-nav").forEach((button, index) => {
-        button.classList.toggle("current", index === currentQuestion);
-        button.classList.toggle("answered", answers[index] !== null);
-      });
-    }
-
-    function updateMeta() {
-      answeredCount.textContent = String(getAnsweredCount());
-      answeredTotal.textContent = String(activeTest.questions.length);
-      metaCount.textContent = String(activeTest.questions.length);
-      sidebarBatteryLabel.textContent = `Aktivní baterie: ${activeTest.label} – ${activeTest.title}`;
-      activeBatteryPill.textContent = activeTest.label;
-    }
-
-    function renderQuestion() {
-      const question = activeTest.questions[currentQuestion];
-      questionMeta.textContent = `Otázka ${currentQuestion + 1} z ${activeTest.questions.length}`;
-      questionText.textContent = question.text;
-
-      optionsWrap.innerHTML = question.options.map((optionText, index) => {
-        const selectedClass = answers[currentQuestion] === index ? "selected" : "";
-        return `
-          <button class="option-btn ${selectedClass}" data-index="${index}" type="button">
-            <div class="option-row">
-              <span class="option-label">${LETTERS[index]}</span>
-              <span>${optionText}</span>
-            </div>
-          </button>
-        `;
-      }).join("");
-
-      optionsWrap.querySelectorAll(".option-btn").forEach((button) => {
-        button.addEventListener("click", () => {
-          answers[currentQuestion] = Number(button.dataset.index);
-          renderQuestion();
-        });
-      });
-
-      prevBtn.disabled = currentQuestion === 0;
-      nextBtn.disabled = currentQuestion === activeTest.questions.length - 1;
-      updateMeta();
-      refreshGrid();
-    }
-
-    function calculateScore() {
-      let correct = 0;
-      activeTest.questions.forEach((question, index) => {
-        if (answers[index] === question.correct) {
-          correct += 1;
-        }
-      });
-      return {
-        correct,
-        total: activeTest.questions.length,
-        answered: getAnsweredCount(),
-        percentage: Math.round((correct / activeTest.questions.length) * 100)
-      };
-    }
-
-    function renderResults(timeExpired = false) {
-      const score = calculateScore();
-      scoreMain.textContent = `${score.correct} / ${score.total} bodů (${score.percentage} %)`;
-      const unanswered = score.total - score.answered;
-      const prefix = timeExpired ? "Časový limit vypršel. " : "";
-      scoreSub.textContent = `${prefix}Zodpovězeno: ${score.answered} z ${score.total} otázek. Nezodpovězené: ${unanswered}.`;
-      resultsBatteryLabel.textContent = `Vyhodnocená baterie: ${activeTest.label} – ${activeTest.title}`;
-    }
-
-    function renderReview() {
-      reviewWrap.innerHTML = "";
-      activeTest.questions.forEach((question, qIndex) => {
-        const userAnswer = answers[qIndex];
-        const isCorrect = userAnswer === question.correct;
-        const userLabel = userAnswer === null ? "bez odpovědi" : LETTERS[userAnswer];
-
-        const item = document.createElement("div");
-        item.className = "review-item";
-
-        const head = document.createElement("div");
-        head.className = `review-head ${isCorrect ? "correct" : "incorrect"}`;
-        head.innerHTML = `
-          <span>Otázka ${qIndex + 1}</span>
-          <span class="pill ${isCorrect ? "correct" : "wrong"}">${isCorrect ? "správně" : "chybně"}</span>
-        `;
-
-        const body = document.createElement("div");
-        body.className = "review-body";
-
-        const qText = document.createElement("div");
-        qText.textContent = question.text;
-        body.appendChild(qText);
-
-        const options = document.createElement("div");
-        options.className = "review-options";
-
-        question.options.forEach((optionText, optionIndex) => {
-          const option = document.createElement("div");
-          option.className = "review-option";
-
-          if (optionIndex === question.correct) {
-            option.classList.add("correct");
-          }
-
-          if (userAnswer === optionIndex && userAnswer !== question.correct) {
-            option.classList.add("user-wrong");
-          }
-
-          let extra = "";
-          if (optionIndex === question.correct) {
-            extra += ' <span class="pill correct">správná odpověď</span>';
-          }
-          if (userAnswer === optionIndex && userAnswer !== question.correct) {
-            extra += ' <span class="pill wrong">tvá odpověď</span>';
-          }
-
-          option.innerHTML = `<strong>${LETTERS[optionIndex]})</strong> ${optionText}${extra}`;
-          options.appendChild(option);
-        });
-
-        const note = document.createElement("div");
-        note.innerHTML = `Tvoje odpověď: <strong>${userLabel}</strong>. Správně: <strong>${LETTERS[question.correct]}</strong>.`;
-
-        body.appendChild(options);
-        body.appendChild(note);
-        item.appendChild(head);
-        item.appendChild(body);
-        reviewWrap.appendChild(item);
-      });
-      reviewRendered = true;
-    }
-
-    function showReview() {
-      if (!reviewRendered) {
-        renderReview();
-      }
-      reviewWrap.classList.remove("hidden");
-      showReviewBtn.classList.add("hidden");
-      hideReviewBtn.classList.remove("hidden");
-    }
-
-    function hideReview() {
-      reviewWrap.classList.add("hidden");
-      showReviewBtn.classList.remove("hidden");
-      hideReviewBtn.classList.add("hidden");
-    }
-
-    function resetTestState() {
-      currentQuestion = 0;
-      answers = Array(activeTest.questions.length).fill(null);
-      remainingSeconds = (activeTest.durationMinutes || 30) * 60;
-      finished = false;
-      reviewRendered = false;
-      reviewWrap.innerHTML = "";
-      reviewWrap.classList.add("hidden");
-      showReviewBtn.classList.remove("hidden");
-      hideReviewBtn.classList.add("hidden");
-      timerEl.textContent = formatTime(remainingSeconds);
-    }
-
-    function startBattery(id) {
-      const battery = BATTERY_MAP[id];
-      if (!battery) return;
-
-      activeTest = buildSessionBattery(battery);
-      selectedBatteryId = id;
-      resetTestState();
-      buildGrid();
-      updateMeta();
-      renderQuestion();
-      setAppMode("test");
-      startTimer();
-      renderBatteryCards();
-    }
-
-    function finishTest(timeExpired = false) {
-      if (!activeTest || finished) return;
-      finished = true;
-      stopTimer();
+  // ═══════════════════════════════════════════
+  // 10. INTERACTIONS
+  // ═══════════════════════════════════════════
+  function selectBattery(id) {
+    appState.selectedBatteryId=id;
+    const b=BATTERY_MAP[id];
+    const note=$("selectionNote");
+    note.innerHTML=b?`<strong>Vybraná baterie:</strong> ${escapeHtml(b.label)} – ${escapeHtml(b.title)}`:`<strong>Vybraná baterie:</strong> zatím není zvolena žádná varianta.`;
+    $("startTestBtn").disabled=!b;
+    renderBatteryCards(); renderBatteryDetail(b);
+  }
+  function startBattery(id) {
+    const battery=BATTERY_MAP[id]; if(!battery) return;
+    const s=appState.settings;
+    const modeConfig={mode:s.defaultMode,goal:s.defaultGoal,showQuestionFirst:s.showQuestionFirst||s.defaultMode==="reading-training",showKeywordHighlights:s.showKeywordHighlights,requireConfidence:s.requireConfidence};
+    appState.currentSession=buildSessionBattery(battery,modeConfig);
+    appState.selectedBatteryId=id;
+    saveCurrentSession();
+    setAppMode("test");
+    renderQuestionGrid(); updateMeta();
+    beginQuestionView(0); renderQuestion();
+    applyFocusMode(); startTimer();
+  }
+  function resumeSession() {
+    const saved=loadCurrentSession();
+    if(!saved) return;
+    appState.currentSession=saved;
+    appState.selectedBatteryId=saved.batteryId;
+    if(saved.results.finished) {
       setAppMode("results");
-      renderResults(timeExpired);
-      hideReview();
+      renderResults(saved.results.timeExpired);
+      if(saved.ui.reviewVisible) showReview();
+    } else {
+      const rem=getRemainingSeconds();
+      if(rem<=0) { setAppMode("test"); renderQuestionGrid(); updateMeta(); finishTest(true); return; }
+      setAppMode("test");
+      renderQuestionGrid(); updateMeta();
+      beginQuestionView(saved.ui.currentQuestionIndex); renderQuestion();
+      applyFocusMode(); startTimer();
     }
+  }
+  function restartBattery() {
+    const s=appState.currentSession; if(!s) return;
+    startBattery(s.batteryId);
+  }
+  function finishTest(timeExpired=false) {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    endQuestionView(s.ui.currentQuestionIndex);
+    s.results.finished=true; s.results.timeExpired=timeExpired;
+    s.timing.finishedAt=new Date().toISOString();
+    stopTimer();
+    const score=calculateScore();
+    addHistoryEntry({sessionId:s.sessionId,date:new Date().toISOString(),batteryId:s.batteryId,batteryLabel:s.batteryLabel,mode:s.mode,score:score.correct,total:score.total,percentage:score.percentage,timeExpired,averageTimeMs:calculateAttentionMetrics().avgTime||0,guessCount:s.questionStates.filter(q=>q.confidence==="guess").length,flaggedCount:s.questionStates.filter(q=>q.flagged).length});
+    setAppMode("results"); renderResults(timeExpired);
+    saveCurrentSession();
+  }
+  function backToSelection() {
+    const s=appState.currentSession;
+    if(s&&!s.results.finished) { if(!confirm("Opravdu se chceš vrátit? Rozpracovaný test bude uložen.")) return; saveCurrentSession(); }
+    stopTimer(); document.body.classList.remove("focus-mode");
+    setAppMode("start"); renderBatteryCards(); renderRestorePanel(); renderHistoryPanel();
+  }
+  function goToQuestion(index) {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    endQuestionView(s.ui.currentQuestionIndex);
+    s.ui.currentQuestionIndex=index;
+    beginQuestionView(index); renderQuestion();
+    if(appState.settings.autoSave) saveCurrentSession();
+  }
+  function goNext() {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    if(s.ui.currentQuestionIndex<s.activeTest.questions.length-1) goToQuestion(s.ui.currentQuestionIndex+1);
+  }
+  function goPrev() {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    if(s.ui.currentQuestionIndex>0) goToQuestion(s.ui.currentQuestionIndex-1);
+  }
+  function selectAnswer(index) {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    const ci=s.ui.currentQuestionIndex, qs=s.questionStates[ci];
+    if(qs.selectedAnswer!==null&&qs.selectedAnswer!==index) qs.answerChanges++;
+    if(qs.firstAnswer===null) qs.firstAnswer=index;
+    qs.selectedAnswer=index;
+    qs.resolvedStatus=qs.flagged?"answered-flagged":"answered";
+    s.metrics.totalAnswerChanges+=qs.answerChanges>0?1:0;
+    renderQuestion();
+    if(appState.settings.autoSave) saveCurrentSession();
+  }
+  function clearAnswer() {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    const ci=s.ui.currentQuestionIndex, qs=s.questionStates[ci];
+    qs.selectedAnswer=null; qs.confidence=null;
+    qs.resolvedStatus=qs.flagged?"flagged":"unanswered";
+    renderQuestion();
+    if(appState.settings.autoSave) saveCurrentSession();
+  }
+  function setConfidence(level) {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    s.questionStates[s.ui.currentQuestionIndex].confidence=level;
+    renderQuestion();
+    if(appState.settings.autoSave) saveCurrentSession();
+  }
+  function toggleFlag() {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    const qs=s.questionStates[s.ui.currentQuestionIndex];
+    qs.flagged=!qs.flagged;
+    qs.resolvedStatus=qs.selectedAnswer!==null?(qs.flagged?"answered-flagged":"answered"):(qs.flagged?"flagged":"unanswered");
+    s.metrics.totalFlagged=s.questionStates.filter(q=>q.flagged).length;
+    renderQuestion();
+    if(appState.settings.autoSave) saveCurrentSession();
+  }
+  function toggleRevisitLater() {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    s.questionStates[s.ui.currentQuestionIndex].revisitLater=!s.questionStates[s.ui.currentQuestionIndex].revisitLater;
+    renderQuestion();
+    if(appState.settings.autoSave) saveCurrentSession();
+  }
+  function setQuestionNote(note) {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    s.questionStates[s.ui.currentQuestionIndex].note=note;
+  }
+  function revealOptions() {
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    const ci=s.ui.currentQuestionIndex, qs=s.questionStates[ci];
+    qs.optionsRevealedAt=new Date().toISOString();
+    qs.optionsWereInitiallyHidden=true;
+    renderQuestion();
+  }
+  function toggleFocusMode() {
+    const s=appState.currentSession; if(!s) return;
+    s.ui.focusMode=!s.ui.focusMode;
+    applyFocusMode();
+    if(appState.settings.autoSave) saveCurrentSession();
+  }
+  let reviewRendered=false;
+  function showReview() {
+    if(!reviewRendered){renderReview();reviewRendered=true;}
+    $("reviewWrap").classList.remove("hidden");
+    $("showReviewBtn").classList.add("hidden");
+    $("hideReviewBtn").classList.remove("hidden");
+    if(appState.currentSession){appState.currentSession.ui.reviewVisible=true;saveCurrentSession();}
+  }
+  function hideReview() {
+    $("reviewWrap").classList.add("hidden");
+    $("showReviewBtn").classList.remove("hidden");
+    $("hideReviewBtn").classList.add("hidden");
+    if(appState.currentSession){appState.currentSession.ui.reviewVisible=false;saveCurrentSession();}
+  }
+  function startRepairModeFromResults(filterType) {
+    const s=appState.currentSession; if(!s) return;
+    const candidates=buildRepairCandidateIndexes(filterType||"errors");
+    if(!candidates.length){alert("Žádné otázky pro opravu.");return;}
+    const repairSession=buildRepairSessionFromResults(s,candidates);
+    if(!repairSession) return;
+    appState.currentSession=repairSession;
+    reviewRendered=false;
+    saveCurrentSession();
+    setAppMode("test");
+    renderQuestionGrid(); updateMeta();
+    beginQuestionView(0); renderQuestion();
+    applyFocusMode(); startTimer();
+  }
 
-    function leaveRunningTest() {
-      if (!activeTest || finished) return true;
-      return window.confirm("Opravdu se chceš vrátit na výběr baterie? Rozpracovaný test bude ukončen.");
+  // ═══════════════════════════════════════════
+  // 11. EVENT HANDLERS
+  // ═══════════════════════════════════════════
+  $("startTestBtn").addEventListener("click",()=>{if(appState.selectedBatteryId) startBattery(appState.selectedBatteryId);});
+  $("prevBtn").addEventListener("click",goPrev);
+  $("nextBtn").addEventListener("click",goNext);
+  $("changeBatteryBtn").addEventListener("click",backToSelection);
+  $("finishBtn").addEventListener("click",()=>{
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    if(confirm("Opravdu chceš test vyhodnotit?")) finishTest(false);
+  });
+  $("restartBtn").addEventListener("click",()=>{reviewRendered=false;restartBattery();});
+  $("backToSelectionBtn").addEventListener("click",backToSelection);
+  $("showReviewBtn").addEventListener("click",showReview);
+  $("hideReviewBtn").addEventListener("click",hideReview);
+  $("focusModeBtn").addEventListener("click",toggleFocusMode);
+  $("revealOptionsBtn").addEventListener("click",revealOptions);
+  $("clearSessionBtn").addEventListener("click",()=>{clearCurrentSession();backToSelection();});
+  $("repairBtn").addEventListener("click",()=>{
+    const s=appState.currentSession;
+    if(!s||!s.results.finished) return;
+    startRepairModeFromResults("errors");
+  });
+
+  window.addEventListener("keydown",(e)=>{
+    const s=appState.currentSession; if(!s||s.results.finished) return;
+    if(document.activeElement&&(document.activeElement.tagName==="TEXTAREA"||document.activeElement.tagName==="INPUT")) return;
+    const key=e.key.toUpperCase();
+    if(["A","B","C","D"].includes(key)){selectAnswer(LETTERS.indexOf(key));e.preventDefault();}
+    if(e.key==="ArrowLeft"){goPrev();e.preventDefault();}
+    if(e.key==="ArrowRight"){goNext();e.preventDefault();}
+    if(key==="F"){toggleFlag();e.preventDefault();}
+    if(key==="R"){revealOptions();e.preventDefault();}
+    if(key==="1") setConfidence("high");
+    if(key==="2") setConfidence("medium");
+    if(key==="3") setConfidence("guess");
+    if(e.key===" "){toggleFocusMode();e.preventDefault();}
+    if(e.key==="Enter"){
+      const ci=s.ui.currentQuestionIndex, qs=s.questionStates[ci];
+      if(s.ui.optionsHiddenUntilReady&&!qs.optionsRevealedAt) revealOptions();
+      e.preventDefault();
     }
+  });
 
-    function backToSelection() {
-      if (!leaveRunningTest()) return;
-      stopTimer();
-      activeTest = null;
-      answers = [];
-      currentQuestion = 0;
-      remainingSeconds = 0;
-      finished = false;
-      reviewRendered = false;
-      questionGrid.innerHTML = "";
-      setAppMode("start");
+  document.addEventListener("visibilitychange",()=>{
+    if(document.hidden&&appState.currentSession&&!appState.currentSession.results.finished){
+      endQuestionView(appState.currentSession.ui.currentQuestionIndex);
+      saveCurrentSession();
+    } else if(!document.hidden&&appState.currentSession&&!appState.currentSession.results.finished){
+      beginQuestionView(appState.currentSession.ui.currentQuestionIndex);
     }
+  });
 
-    startTestBtn.addEventListener("click", () => {
-      if (selectedBatteryId) startBattery(selectedBatteryId);
-    });
+  window.addEventListener("beforeunload",(e)=>{
+    if(appState.currentSession&&!appState.currentSession.results.finished){
+      endQuestionView(appState.currentSession.ui.currentQuestionIndex);
+      saveCurrentSession();
+      e.preventDefault(); e.returnValue="";
+    }
+  });
 
-    prevBtn.addEventListener("click", () => {
-      if (!activeTest || finished || currentQuestion === 0) return;
-      currentQuestion -= 1;
-      renderQuestion();
-    });
-
-    nextBtn.addEventListener("click", () => {
-      if (!activeTest || finished || currentQuestion >= activeTest.questions.length - 1) return;
-      currentQuestion += 1;
-      renderQuestion();
-    });
-
-    clearCurrentBtn.addEventListener("click", () => {
-      if (!activeTest || finished) return;
-      answers[currentQuestion] = null;
-      renderQuestion();
-    });
-
-    finishBtn.addEventListener("click", () => {
-      if (!activeTest || finished) return;
-      if (window.confirm("Opravdu chceš test vyhodnotit?")) {
-        finishTest(false);
-      }
-    });
-
-    changeBatteryBtn.addEventListener("click", backToSelection);
-    restartBtn.addEventListener("click", () => {
-      if (activeTest) startBattery(activeTest.id);
-    });
-    backToSelectionBtn.addEventListener("click", backToSelection);
-    showReviewBtn.addEventListener("click", showReview);
-    hideReviewBtn.addEventListener("click", hideReview);
-
-    window.addEventListener("keydown", (event) => {
-      if (!activeTest || finished) return;
-      const key = event.key.toUpperCase();
-      if (["A", "B", "C", "D"].includes(key)) {
-        answers[currentQuestion] = LETTERS.indexOf(key);
-        renderQuestion();
-      }
-      if (event.key === "ArrowLeft" && currentQuestion > 0) {
-        currentQuestion -= 1;
-        renderQuestion();
-      }
-      if (event.key === "ArrowRight" && currentQuestion < activeTest.questions.length - 1) {
-        currentQuestion += 1;
-        renderQuestion();
-      }
-    });
-
-    window.addEventListener("beforeunload", (event) => {
-      if (activeTest && !finished) {
-        event.preventDefault();
-        event.returnValue = "";
-      }
-    });
-
+  // ═══════════════════════════════════════════
+  // 12. BOOTSTRAP
+  // ═══════════════════════════════════════════
+  function initApp() {
+    migrateStorageIfNeeded();
+    appState.settings=loadSettings();
+    appState.history=loadHistory();
+    if($("statQuestions")) $("statQuestions").textContent=String(BATTERIES.reduce((s,b)=>s+b.questions.length,0));
+    renderConfigPanel();
     renderBatteryCards();
     renderBatteryDetail(null);
+    renderRestorePanel();
+    renderHistoryPanel();
+    // Auto-restore session
+    if(appState.settings.restoreSessionOnLoad) {
+      const saved=loadCurrentSession();
+      if(saved) { resumeSession(); return; }
+    }
     setAppMode("start");
-  
+  }
+  initApp();
   </script>
 </body>
 </html>
