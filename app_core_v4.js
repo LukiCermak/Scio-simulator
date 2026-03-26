@@ -690,12 +690,24 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   function formatDashboardStatus(status) {
     switch (status) {
       case "zvládnuté": return "zvládnuto";
-      case "silné": return "silné";
-      case "slabé": return "slabší";
-      case "rizikové": return "rizikové";
-      case "málo-dat": return "málo dat";
-      case "neprocvičeno": return "bez dat";
-      default: return "stabilní";
+      case "silné": return "silná stránka";
+      case "slabé": return "k posílení";
+      case "rizikové": return "vysoká priorita";
+      case "málo-dat": return "zatím málo pokusů";
+      case "neprocvičeno": return "ještě neprocvičeno";
+      default: return "průběžně stabilní";
+    }
+  }
+
+  function getDashboardStatusDescription(status) {
+    switch (status) {
+      case "zvládnuté": return "Téma má velmi vysokou úspěšnost a současně už dost pokusů, aby šlo mluvit o stabilní silné stránce.";
+      case "silné": return "Téma se dlouhodobě drží vysoko, ale stále je dobré ho občas potvrdit dalším tréninkem.";
+      case "slabé": return "Téma už má dost pokusů a současně nižší úspěšnost, proto stojí za cílené posílení.";
+      case "rizikové": return "Téma vychází dlouhodobě nejhůř a mělo by být mezi prvními na procvičení.";
+      case "málo-dat": return "Téma už se objevilo, ale zatím je pokusů málo, takže závěr je jen předběžný.";
+      case "neprocvičeno": return "Téma se ve vašich dokončených testech ještě neobjevilo, nebo na něj zatím nejsou použitelná data.";
+      default: return "Výkon je zatím bez výrazné silné nebo slabé odchylky.";
     }
   }
 
@@ -720,12 +732,54 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     }
   }
 
+  function formatDashboardTrendLabel(trend, mode) {
+    const variant = mode || "full";
+    switch (trend) {
+      case "roste": return variant === "short" ? "roste" : "výkon roste";
+      case "klesá": return variant === "short" ? "klesá" : "výkon klesá";
+      case "kolísá": return variant === "short" ? "kolísá" : "výkon kolísá";
+      case "none": return variant === "short" ? "zatím bez směru" : "zatím bez jasného směru";
+      default: return variant === "short" ? "stabilní" : "výkon je stabilní";
+    }
+  }
+
+  function getDashboardTrendDescription(trend) {
+    switch (trend) {
+      case "roste": return "V posledních dokončených testech se výkon zlepšuje.";
+      case "klesá": return "V posledních dokončených testech se výkon zhoršuje a stojí za kontrolu.";
+      case "kolísá": return "Výkon je nevyrovnaný: jednou vysoko, jindy níž.";
+      case "none": return "Na směr je zatím málo dokončených testů nebo je výsledek příliš podobný.";
+      default: return "Výkon se zatím drží bez větší změny.";
+    }
+  }
+
   function getDashboardConfidenceClass(level) {
     switch (level) {
       case "vysoká": return "high";
       case "střední": return "mid";
       default: return "low";
     }
+  }
+
+  function formatDashboardConfidenceLabel(level) {
+    switch (level) {
+      case "vysoká": return "dobře ověřeno";
+      case "střední": return "částečně ověřeno";
+      default: return "zatím předběžné";
+    }
+  }
+
+  function getDashboardConfidenceDescription(level) {
+    switch (level) {
+      case "vysoká": return "Téma už má dost pokusů a výsledek je poměrně spolehlivý.";
+      case "střední": return "Téma už má slušný základ, ale ještě se může posunout.";
+      default: return "Téma má zatím menší počet pokusů, takže závěr berte spíš orientačně.";
+    }
+  }
+
+  function renderDashboardHelp(helpText) {
+    if (!helpText) return "";
+    return `<span class="dashboard-help" tabindex="0" aria-label="${escapeAttr(helpText)}" title="${escapeAttr(helpText)}">?</span>`;
   }
 
   function getDashboardStatusColors(status) {
@@ -740,23 +794,26 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     }
   }
 
-  function renderDashboardBadge(text, status) {
-    return `<span class="dashboard-status status-${getDashboardStatusClass(status)}">${escapeHtml(text)}</span>`;
+  function renderDashboardBadge(text, status, helpText) {
+    const attrs = helpText ? ` title="${escapeAttr(helpText)}" aria-label="${escapeAttr(`${text}. ${helpText}`)}"` : "";
+    return `<span class="dashboard-status status-${getDashboardStatusClass(status)}"${attrs}>${escapeHtml(text)}</span>`;
   }
 
-  function renderDashboardTrendBadge(text, trend) {
-    return `<span class="dashboard-pill trend-${getDashboardTrendClass(trend)}">${escapeHtml(text)}</span>`;
+  function renderDashboardTrendBadge(text, trend, helpText) {
+    const attrs = helpText ? ` title="${escapeAttr(helpText)}" aria-label="${escapeAttr(`${text}. ${helpText}`)}"` : "";
+    return `<span class="dashboard-pill trend-${getDashboardTrendClass(trend)}"${attrs}>${escapeHtml(text)}</span>`;
   }
 
-  function renderDashboardMetaPill(text, tone) {
-    return `<span class="dashboard-pill ${tone ? `tone-${escapeAttr(tone)}` : ""}">${escapeHtml(text)}</span>`;
+  function renderDashboardMetaPill(text, tone, helpText) {
+    const attrs = helpText ? ` title="${escapeAttr(helpText)}" aria-label="${escapeAttr(`${text}. ${helpText}`)}"` : "";
+    return `<span class="dashboard-pill ${tone ? `tone-${escapeAttr(tone)}` : ""}"${attrs}>${escapeHtml(text)}</span>`;
   }
 
-  function renderDashboardStatCard(label, value, detail, tone) {
+  function renderDashboardStatCard(label, value, detail, tone, helpText) {
     const toneClass = tone ? ` is-${tone}` : "";
     return `<div class="dash-card dash-stat-card${toneClass}">
       <div class="dash-value">${escapeHtml(String(value))}</div>
-      <div class="dash-label">${escapeHtml(label)}</div>
+      <div class="dash-label dashboard-label-with-help"><span>${escapeHtml(label)}</span>${renderDashboardHelp(helpText)}</div>
       ${detail ? `<small>${escapeHtml(detail)}</small>` : ""}
     </div>`;
   }
@@ -787,7 +844,7 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   function renderDashboardSparkline(historyInput, status, ariaLabel) {
     const history = Array.isArray(historyInput) ? historyInput.filter(Boolean).slice(0, 8).reverse() : [];
     const values = history.map(item => Number(typeof item === "number" ? item : item.rate || 0)).filter(value => Number.isFinite(value));
-    if (values.length < 2) return `<div class="dashboard-sparkline-empty">Trend se doplní po dalších relacích.</div>`;
+    if (values.length < 2) return `<div class="dashboard-sparkline-empty">Graf vývoje se doplní po dalších dokončených testech.</div>`;
     const width = 220;
     const height = 56;
     const min = Math.min(...values, 0);
@@ -827,30 +884,34 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     const trend = item.trend || "stabilní";
     const confidence = item.confidenceLevel || "nízká";
     const recentRate = Number(item.recentRate || rate);
-    const sessionLabel = sessions === 1 ? "relace" : (sessions >= 2 && sessions <= 4 ? "relace" : "relací");
+    const sessionLabel = sessions === 1 ? "relaci" : (sessions >= 2 && sessions <= 4 ? "relacích" : "relacích");
+    const recentSessionCount = Array.isArray(item.recentSessionRates) ? item.recentSessionRates.length : 0;
+    const comparisonLine = recentSessionCount >= 2
+      ? `V posledních pokusech ${recentRate} % · celkově ${rate} %`
+      : `Zatím je k dispozici menší počet pokusů, proto ber výsledek spíš orientačně.`;
     return `<article class="dash-card dashboard-topic-card status-${getDashboardStatusClass(status)} tone-${escapeAttr(headingTone || "neutral")}">
       <div class="dashboard-topic-top">
         <div>
           <div class="dash-value dashboard-topic-rate">${rate}%</div>
           <div class="dash-label dashboard-topic-title">${escapeHtml(label)}</div>
         </div>
-        ${renderDashboardBadge(formatDashboardStatus(status), status)}
+        ${renderDashboardBadge(formatDashboardStatus(status), status, getDashboardStatusDescription(status))}
       </div>
       <div class="dashboard-chip-row">
-        ${renderDashboardMetaPill(`${seen} otázek`, "neutral")}
-        ${renderDashboardMetaPill(`${sessions} ${sessionLabel}`, "neutral")}
-        ${renderDashboardMetaPill(`jistota ${confidence}`, getDashboardConfidenceClass(confidence))}
-        ${renderDashboardTrendBadge(`trend ${trend}`, trend)}
+        ${renderDashboardMetaPill(`Vyzkoušeno v ${seen} otázkách`, "neutral", "Kolikrát se toto téma objevilo v dokončených testech.")}
+        ${renderDashboardMetaPill(`Ověřeno v ${sessions} ${sessionLabel}`, "neutral", "Počet dokončených testů, ve kterých se toto téma objevilo.")}
+        ${renderDashboardMetaPill(`Hodnocení: ${formatDashboardConfidenceLabel(confidence)}`, getDashboardConfidenceClass(confidence), getDashboardConfidenceDescription(confidence))}
+        ${renderDashboardTrendBadge(`Vývoj: ${formatDashboardTrendLabel(trend, "short")}`, trend, getDashboardTrendDescription(trend))}
       </div>
       <div class="dashboard-topic-insight">
         <div class="dashboard-topic-insight-line">
-          <strong>Poslední průchody:</strong> recentně ${recentRate} % · dlouhodobě ${rate} %
+          <strong>Srovnání výkonu:</strong> ${comparisonLine}
         </div>
       </div>
-      ${renderDashboardSparkline(item.recentSessionRates || [], status, `Trend tématu ${label}`)}
+      ${renderDashboardSparkline(item.recentSessionRates || [], status, `Vývoj tématu ${label}`)}
       ${renderDashboardMeter(item, status)}
       <div class="dashboard-topic-footer">
-        <div class="dashboard-topic-footnote">${item.lastSeenAt ? `Naposledy zaznamenáno ${escapeHtml(formatDate(item.lastSeenAt))}` : "Vyhodnocení z dokončených relací."}</div>
+        <div class="dashboard-topic-footnote">${item.lastSeenAt ? `Naposledy zaznamenáno ${escapeHtml(formatDate(item.lastSeenAt))}` : "Vyhodnocení z dokončených testů."}</div>
         <button class="btn ${status === "rizikové" || status === "slabé" ? "btn-primary" : "btn-outline"} btn-sm dashboard-topic-btn" data-kind="${escapeAttr(kind)}" data-label="${escapeAttr(label)}" type="button">${buttonLabel}</button>
       </div>
     </article>`;
@@ -862,14 +923,14 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     return `<div class="dash-card dashboard-error-card">
       <div class="dashboard-error-top">
         <div class="dash-value dashboard-topic-rate">${Number(item.count || 0)}×</div>
-        ${renderDashboardBadge("diagnostika", "rizikové")}
+        ${renderDashboardBadge("častá chyba", "rizikové", "Tento typ chyby se vrací opakovaně napříč dokončenými testy.")}
       </div>
       <div class="dash-label dashboard-topic-title dashboard-error-title">${escapeHtml(label)}</div>
       <div class="dashboard-topic-insight">
-        <div class="dashboard-topic-insight-line">Tento vzorec se vrací opakovaně napříč dokončenými relacemi a stojí za cílenou opravu.</div>
+        <div class="dashboard-topic-insight-line">Tento typ chyby se opakuje napříč dokončenými testy a vyplatí se na něj navázat opravnou sadou.</div>
       </div>
       <div class="dashboard-topic-footer">
-        <div class="dashboard-topic-footnote">Použij opravnou sadu zaměřenou na konkrétní typ chyby.</div>
+        <div class="dashboard-topic-footnote">Spusť opravnou sadu zaměřenou na tento typ chyby.</div>
         <button class="btn btn-outline btn-sm dashboard-error-btn" data-error-type="${escapeAttr(item.type || "")}" type="button">Opravit chybu</button>
       </div>
     </div>`;
@@ -893,22 +954,23 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   }
 
   function renderDashboardErrorGrid(items) {
-    if (!items.length) return `<div class="inline-muted">Zatím se nevykresluje stabilní chybový vzorec.</div>`;
+    if (!items.length) return `<div class="inline-muted">Zatím se neopakuje jeden výrazný typ chyby.</div>`;
     return `<div class="dash-grid tight dashboard-error-grid">${items.map(renderDashboardErrorCard).join("")}</div>`;
   }
 
   function renderDashboardTrend(summary) {
     const trend = summary.trend || { direction: "none", series: [] };
     const series = Array.isArray(trend.series) ? trend.series.slice().reverse() : [];
-    if (!series.length) return `<div class="inline-muted">Trend se ukáže po dokončení více relací.</div>`;
+    if (!series.length) return `<div class="inline-muted">Vývoj se zobrazí po dalších dokončených testech.</div>`;
     const chartSeries = series.map(item => ({ rate: Number(item.percentage || 0), at: item.date || "" }));
+    const trendTone = trend.direction === "klesá" ? "rizikové" : trend.direction === "roste" ? "silné" : "stabilní";
     return `
       <div class="dashboard-trend-panel">
         <div class="dashboard-trend-head">
-          ${renderDashboardTrendBadge(`Směr: ${trend.direction || "bez trendu"}`, trend.direction || "stabilní")}
-          <div class="dashboard-topic-footnote">Porovnání posledních ${series.length} dokončených relací.</div>
+          ${renderDashboardTrendBadge(`Vývoj: ${formatDashboardTrendLabel(trend.direction, "short")}`, trend.direction || "stabilní", getDashboardTrendDescription(trend.direction))}
+          <div class="dashboard-topic-footnote">Srovnání posledních ${series.length} dokončených testů.</div>
         </div>
-        ${renderDashboardSparkline(chartSeries, trend.direction === "klesá" ? "rizikové" : trend.direction === "roste" ? "silné" : "málo-dat", "Trend posledních relací")}
+        ${renderDashboardSparkline(chartSeries, trendTone, "Vývoj posledních testů")}
         <div class="dash-grid tight dashboard-trend-grid">
           ${series.map(item => `<div class="dash-card dashboard-trend-card">
             <div class="dash-value" style="font-size:18px;">${Number(item.percentage || 0)}%</div>
@@ -928,7 +990,7 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     if (repair) {
       cards.push(`<div class="action-card">
         <h5>Teď zpevnit</h5>
-        <p>Zaměř se na téma <strong>${escapeHtml(repair.subtopic || repair.discipline || repair.key || "—")}</strong>. Dlouhodobě je zde výkon ${Number(repair.rate || 0)} %.</p>
+        <p>Zaměř se na téma <strong>${escapeHtml(repair.subtopic || repair.discipline || repair.key || "—")}</strong>. Dlouhodobě tu vychází úspěšnost ${Number(repair.rate || 0)} %.</p>
         <button class="btn btn-primary btn-sm dashboard-topic-btn" data-kind="${escapeAttr(repair.subtopic ? "subtopic" : "discipline")}" data-label="${escapeAttr(repair.subtopic || repair.discipline || repair.key || "")}" type="button">Spustit cílený trénink</button>
       </div>`);
     }
@@ -944,7 +1006,7 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     if (coverage) {
       cards.push(`<div class="action-card">
         <h5>Doplnit pokrytí</h5>
-        <p>U ${escapeHtml(coverage.subtopic || coverage.discipline || coverage.key || "vybraného tématu")} je zatím málo dat. Potvrď si ho ještě dalším průchodem.</p>
+        <p>U ${escapeHtml(coverage.subtopic || coverage.discipline || coverage.key || "vybraného tématu")} zatím nemá dost pokusů. Potvrď si ho ještě dalším průchodem.</p>
         <button class="btn btn-outline btn-sm dashboard-topic-btn" data-kind="${escapeAttr(coverage.subtopic ? "subtopic" : "discipline")}" data-label="${escapeAttr(coverage.subtopic || coverage.discipline || coverage.key || "")}" type="button">Doplnit téma</button>
       </div>`);
     }
@@ -1094,7 +1156,7 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
       const quickActions = [
         { label: "Procvičit nejslabší téma", kind: weakTopics[0]?.subtopic ? "subtopic" : "", value: weakTopics[0]?.subtopic || "" , tone:"primary", help:"Zaměří se na nejproblematičtější téma."},
         { label: "Procvičit nejslabší disciplínu", kind: weakDisciplines[0]?.discipline ? "discipline" : "", value: weakDisciplines[0]?.discipline || "", tone:"primary", help:"Vezme širší problémovou oblast."},
-        { label: "Jisté chybné odpovědi", kind: summary.highConfidenceWrongCount > 0 ? "high-confidence" : "", value: "", tone:"outline", help:"Vrátí otázky s falešnou jistotou."},
+        { label: "Jistě, ale chybně", kind: summary.highConfidenceWrongCount > 0 ? "high-confidence" : "", value: "", tone:"outline", help:"Vrátí otázky, u kterých byla vysoká jistota, ale chybná odpověď."},
         { label: "Pomalé otázky", kind: analyticsBridge.startRepairModeSlowQuestions ? "slow" : "", value: "", tone:"outline", help:"Vrátí otázky s delším rozhodováním."},
         { label: "Cílené opakování", kind: analyticsBridge.startRepairModeRevisionQueue ? "revision" : "", value: "", tone:"outline", help:"Vrátí otázky z fronty opakování."}
       ].filter(item => item.kind);
@@ -1107,21 +1169,22 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
           <div class="dashboard-head">
             <div>
               <h4>Studijní dashboard</h4>
-              <p class="dashboard-headline">${summary.source === "history-only" ? "Souhrn je obnovený hlavně z historie pokusů. Detailní tematická mapa se doplní po dalších dokončených relacích." : "Dlouhodobý přehled napříč dokončenými relacemi. Ukazuje, co je stabilně silné, co potřebuje zpevnit a co ještě nemá dost dat."}</p>
+              <p class="dashboard-headline">${summary.source === "history-only" ? "Souhrn je obnovený hlavně z historie pokusů. Detailní tematická mapa se doplní po dalších dokončených relacích." : "Dlouhodobý přehled napříč dokončenými testy. Ukazuje, co máš už zvládnuté, co potřebuje posílit a co zatím ještě není dost ověřené. Na značku ? můžeš najet myší pro vysvětlení."}</p>
+            <div class="dashboard-legend-note">Na značku ? můžeš najet myší a zobrazí se vysvětlivka.</div>
             </div>
             <div class="dashboard-meta">
-              ${renderDashboardTrendBadge(`Trend ${trendDirection}`, trendDirection)}
-              ${renderDashboardMetaPill(`Odehráno testů: ${totalSessions}`, "neutral")}
+              ${renderDashboardTrendBadge(`Vývoj: ${formatDashboardTrendLabel(trendDirection, "short")}`, trendDirection, getDashboardTrendDescription(trendDirection))}
+              ${renderDashboardMetaPill(`Dokončeno testů: ${totalSessions}`, "neutral", "Počet dokončených testů, ze kterých dashboard vychází.")}
             </div>
           </div>
 
           <div class="dash-grid tight dashboard-stat-grid" style="margin-bottom:14px;">
-            ${renderDashboardStatCard("Celková úspěšnost", `${summary.overallRate}%`, `${summary.correctCount}/${answeredBase || summary.correctCount} zodpovězených správně`, "primary")}
-            ${renderDashboardStatCard("Pokrytí témat", `${summary.testedSubtopicCount}/${summary.totalKnownSubtopics || summary.testedSubtopicCount}`, `${summary.subtopicCoverageRate}% známých témat`, "neutral")}
-            ${renderDashboardStatCard("Zvládnutá témata", String((summary.masteredSubtopics || []).length), `práh ${Number(summary.thresholds.masteredRate || 95)} %`, "success")}
-            ${renderDashboardStatCard("Silné disciplíny", String((summary.strongestDisciplines || []).length), "dlouhodobě nadprůměrné", "primary")}
-            ${renderDashboardStatCard("Riziková témata", String((summary.riskySubtopics || []).length), "potřebují prioritu", "danger")}
-            ${renderDashboardStatCard("Jisté chybné odpovědi", String(summary.highConfidenceWrongCount || 0), "chyby s vysokou jistotou", "warning")}
+            ${renderDashboardStatCard("Celková úspěšnost", `${summary.overallRate}%`, `${summary.correctCount}/${answeredBase || summary.correctCount} zodpovězených správně`, "primary", "Podíl správných odpovědí ze všech zodpovězených otázek napříč dokončenými testy.")}
+            ${renderDashboardStatCard("Pokrytí témat", `${summary.testedSubtopicCount}/${summary.totalKnownSubtopics || summary.testedSubtopicCount}`, `${summary.subtopicCoverageRate}% známých témat`, "neutral", "Kolik různých témat už se objevilo v dokončených testech oproti celé bance témat.")}
+            ${renderDashboardStatCard("Zvládnutá témata", String((summary.masteredSubtopics || []).length), `práh ${Number(summary.thresholds.masteredRate || 95)} %`, "success", "Témata s velmi vysokou úspěšností a dostatečným počtem pokusů.")}
+            ${renderDashboardStatCard("Silné oblasti", String((summary.strongestDisciplines || []).length), "dlouhodobě nadprůměrné", "primary", "Širší oblasti, ve kterých se výkon drží vysoko napříč více testy.")}
+            ${renderDashboardStatCard("Témata k prioritě", String((summary.riskySubtopics || []).length), "potřebují posílit jako první", "danger", "Témata, kde je výkon dlouhodobě nejslabší a mají přednost v procvičení.")}
+            ${renderDashboardStatCard("Jistě, ale chybně", String(summary.highConfidenceWrongCount || 0), "chyby s vysokou jistotou", "warning", "Počet odpovědí, u kterých byla vysoká jistota, ale výběr byl chybný.")}
           </div>
 
           <div class="summary-section dashboard-summary-panel" style="margin-bottom:14px;">
@@ -1131,15 +1194,15 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
                 <p>Začni tím, co už má dost dat a současně drží nízkou úspěšnost. Silná témata jen potvrzuj a málo procvičené oblasti postupně doplňuj.</p>
               </div>
               <div class="dashboard-chip-row compact">
-                ${renderDashboardMetaPill(`disciplíny ${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral")}
-                ${renderDashboardMetaPill(`bez odpovědi ${summary.unansweredCount || 0}`, "neutral")}
+                ${renderDashboardMetaPill(`Pokryté oblasti ${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral", "Kolik širších oblastí už bylo v dokončených testech zastoupeno.")}
+                ${renderDashboardMetaPill(`Bez odpovědi ${summary.unansweredCount || 0}`, "neutral", "Kolikrát byla otázka ponechána bez odpovědi napříč dokončenými testy.")}
               </div>
             </div>
             <div class="dashboard-callout">
               Máš za sebou <strong>${summary.finishedSessions}</strong> dokončen${summary.finishedSessions === 1 ? "ý test" : summary.finishedSessions >= 2 && summary.finishedSessions <= 4 ? "é testy" : "ých testů"},
               celkovou úspěšnost <strong>${summary.overallRate} %</strong> a pokryto <strong>${summary.testedSubtopicCount}</strong> z
               <strong>${summary.totalKnownSubtopics || summary.testedSubtopicCount}</strong> známých témat.
-              Dlouhodobý trend je nyní <strong>${escapeHtml(trendDirection)}</strong>. ${summary.source === "history-only" ? "Detail témat se bude dál zpřesňovat po nových dokončených testech." : ""}
+              Vývoj výkonu je nyní <strong>${escapeHtml(formatDashboardTrendLabel(trendDirection, "short"))}</strong>. ${summary.source === "history-only" ? "Detail témat se bude dál zpřesňovat po nových dokončených testech." : ""}
             </div>
             ${renderDashboardPlan(summary)}
           </div>
@@ -1149,12 +1212,12 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
               <div class="dashboard-section-head">
                 <div>
                   <h5>Slabší stránky</h5>
-                  <p>Sem se promítají témata, která už mají dost dat a současně nízkou úspěšnost.</p>
+                  <p>Zde jsou témata, která už mají dost pokusů a současně nižší úspěšnost.</p>
                 </div>
                 ${weakDisciplines.length ? `<div class="dashboard-chip-row compact">${weakDisciplines.map(item => renderDashboardBadge(`${item.discipline} · ${item.rate}%`, item.status || "slabé")).join("")}</div>` : ""}
               </div>
               <h6 class="dashboard-subhead">Nejslabší témata</h6>
-              ${renderDashboardTopicGrid(weakTopics, "subtopic", weakTopics[0]?.status === "rizikové" ? "risk" : "warn", "Zatím se nevykreslila stabilní slabina s dostatkem dat.")}
+              ${renderDashboardTopicGrid(weakTopics, "subtopic", weakTopics[0]?.status === "rizikové" ? "risk" : "warn", "Zatím se neukázalo téma, které by dlouhodobě a spolehlivě vycházelo jako slabina.")}
               <div class="dashboard-divider"></div>
               <h6 class="dashboard-subhead">Nejčastější diagnostikované chyby</h6>
               ${renderDashboardErrorGrid((summary.topErrors || []).slice(0, 3))}
@@ -1164,16 +1227,16 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
               <div class="dashboard-section-head">
                 <div>
                   <h5>Silné stránky</h5>
-                  <p>Zde jsou témata a disciplíny, které se dlouhodobě drží vysoko, ne jen v jedné relaci.</p>
+                  <p>Zde jsou témata a širší oblasti, které se drží vysoko dlouhodobě, ne jen v jednom testu.</p>
                 </div>
                 ${strongDisciplines.length ? `<div class="dashboard-chip-row compact">${strongDisciplines.map(item => renderDashboardBadge(`${item.discipline} · ${item.rate}%`, item.status || "silné")).join("")}</div>` : ""}
               </div>
               <h6 class="dashboard-subhead">Zvládnutá témata</h6>
-              ${renderDashboardTopicGrid(strongTopics, "subtopic", "strong", "Zatím se ještě nevytvořila stabilně silná témata s dostatkem dat.")}
+              ${renderDashboardTopicGrid(strongTopics, "subtopic", "strong", "Zatím se ještě nevytvořila stabilně silná témata s dostatkem pokusů.")}
               <div class="dashboard-divider"></div>
               <h6 class="dashboard-subhead">Co už má stabilní základ</h6>
               <div class="dashboard-callout soft">
-                ${strongTopics.length ? `Silná témata mají smysl průběžně potvrzovat, ale nemusí být aktuální prioritou číslo jedna.` : `Silné stránky se začnou vybarvovat po dalších dokončených relacích.`}
+                ${strongTopics.length ? `Silná témata stačí průběžně potvrzovat, ale nemusí být teď nejvyšší prioritou.` : `Silné stránky se začnou ukazovat po dalších dokončených testech.`}
               </div>
             </section>
           </div>
@@ -1182,25 +1245,25 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
             <section class="summary-section">
               <div class="dashboard-section-head">
                 <div>
-                  <h5>Co ještě nemá dost dat</h5>
-                  <p>Témata zde nejsou slabina. Jen je zatím potřeba více průchodů pro spolehlivé hodnocení.</p>
+                  <h5>Co zatím není dost ověřené</h5>
+                  <p>Tato témata nejsou slabina. Jen zatím nemáme dost pokusů pro spolehlivý závěr.</p>
                 </div>
               </div>
               <div class="dash-grid tight dashboard-undertrained-stats">
-                ${renderDashboardStatCard("Málo procvičeno", String(undertrainedTopics.length), "už se objevilo, ale ještě nestačí", "neutral")}
-                ${renderDashboardStatCard("Ještě neviděno", String(notSeenTopics), "témata mimo dosavadní pokrytí", "neutral")}
-                ${renderDashboardStatCard("Pokrytí disciplín", `${summary.disciplineCoverageRate}%`, `${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral")}
+                ${renderDashboardStatCard("Jen pár otázek", String(undertrainedTopics.length), "téma se už objevilo, ale zatím málo", "neutral", "Témata, která už se objevila, ale ještě jich bylo málo pro jistý závěr.")}
+                ${renderDashboardStatCard("Ještě se neobjevilo", String(notSeenTopics), "témata mimo dosavadní pokrytí", "neutral", "Témata, která se ve vašich dokončených testech zatím vůbec neobjevila.")}
+                ${renderDashboardStatCard("Pokrytí oblastí", `${summary.disciplineCoverageRate}%`, `${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral", "Kolik širších oblastí už bylo v dokončených testech ověřeno.")}
               </div>
               <div class="dashboard-chip-cloud">
-                ${undertrainedTopics.length ? undertrainedTopics.map(item => renderDashboardMetaPill(`${item.subtopic || item.key} · ${item.seen} ot.`, "undertrained")).join("") : `<div class="inline-muted">Málo procvičená témata se začnou vybarvovat po dalších relacích.</div>`}
+                ${undertrainedTopics.length ? undertrainedTopics.map(item => renderDashboardMetaPill(`${item.subtopic || item.key} · ${item.seen} ${Number(item.seen || 0) === 1 ? "otázka" : (Number(item.seen || 0) >= 2 && Number(item.seen || 0) <= 4 ? "otázky" : "otázek")}`, "undertrained", "Téma už se objevilo, ale zatím na něj není dost pokusů pro jisté hodnocení.")).join("") : `<div class="inline-muted">Témata s malým počtem pokusů se začnou ukazovat po dalších dokončených testech.</div>`}
               </div>
             </section>
 
             <section class="summary-section">
               <div class="dashboard-section-head">
                 <div>
-                  <h5>Trend posledních relací</h5>
-                  <p>Rychlý přehled, jestli výkon roste, kolísá nebo se propadá.</p>
+                  <h5>Vývoj posledních testů</h5>
+                  <p>Rychlý přehled, jestli se výkon zlepšuje, kolísá, nebo oslabuje.</p>
                 </div>
               </div>
               ${renderDashboardTrend(summary)}
@@ -1210,11 +1273,11 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
           <div class="summary-section dashboard-summary-panel" style="margin-top:14px;">
             <div class="dashboard-section-head">
               <div>
-                <h5>Rychlé akce</h5>
-                <p>Jedním klikem navážeš cíleným procvičením podle toho, co dashboard vyhodnotil.</p>
+                <h5>Navázat dalším tréninkem</h5>
+                <p>Jedním klikem můžeš navázat cíleným procvičením podle toho, co dashboard ukázal.</p>
               </div>
             </div>
-            ${quickActions.length ? `<div class="action-grid dashboard-quick-grid">${quickActions.map(item => `<div class="action-card dashboard-quick-card"><h5>${escapeHtml(item.label)}</h5><p>${escapeHtml(item.help)}</p><button class="btn ${item.tone === "primary" ? "btn-primary" : "btn-outline"} btn-sm dashboard-quick-btn" data-kind="${escapeAttr(item.kind)}" data-value="${escapeAttr(item.value || "")}" type="button">Spustit</button></div>`).join("")}</div>` : `<div class="inline-muted">Rychlé akce se doplní s rostoucím množstvím dat.</div>`}
+            ${quickActions.length ? `<div class="action-grid dashboard-quick-grid">${quickActions.map(item => `<div class="action-card dashboard-quick-card"><h5>${escapeHtml(item.label)}</h5><p>${escapeHtml(item.help)}</p><button class="btn ${item.tone === "primary" ? "btn-primary" : "btn-outline"} btn-sm dashboard-quick-btn" data-kind="${escapeAttr(item.kind)}" data-value="${escapeAttr(item.value || "")}" type="button">Spustit</button></div>`).join("")}</div>` : `<div class="inline-muted">Navázat dalším tréninkem se doplní s rostoucím množstvím dat.</div>`}
           </div>
         </div>
       `;
@@ -1248,7 +1311,7 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
               <h5>Doporučený postup</h5>
               <p class="inline-muted">Prioritu mají témata s dostatkem dat a nízkou úspěšností. Silná témata stačí průběžně potvrzovat. Málo procvičené oblasti zatím nehodnoť jako slabinu.</p>
               <div class="dashboard-chip-cloud">
-                ${weakTopics.length ? weakTopics.map(item => renderDashboardMetaPill(`${item.subtopic || item.key} · ${item.rate}%`, "warn")).join("") : `<div class="inline-muted">Zatím se nevykreslila stabilní slabina s dostatkem dat.</div>`}
+                ${weakTopics.length ? weakTopics.map(item => renderDashboardMetaPill(`${item.subtopic || item.key} · ${item.rate}%`, "warn")).join("") : `<div class="inline-muted">Zatím se neukázalo téma, které by dlouhodobě a spolehlivě vycházelo jako slabina.</div>`}
               </div>
             </div>
             <div class="summary-section">
