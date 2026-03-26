@@ -1,6 +1,8 @@
 
 (function(){
   "use strict";
+  let booted = false;
+
   window.addEventListener("keydown", function(e){
     const active = document.activeElement;
     if (active && (active.tagName === "TEXTAREA" || active.tagName === "INPUT" || active.tagName === "SELECT")) return;
@@ -12,9 +14,20 @@
         firstItem.querySelectorAll(".review-tab").forEach(btn => btn.classList.toggle("active", btn.dataset.tab === current));
         firstItem.querySelectorAll(".review-content").forEach(content => content.classList.toggle("hidden", content.dataset.content !== current));
       }
-      saveCurrentSession();
+      if (typeof saveCurrentSession === "function") saveCurrentSession();
       e.preventDefault();
     }
   });
-  if (window.initSCIOV4) window.initSCIOV4();
+
+  function bootApp() {
+    if (booted || typeof window.initSCIOV4 !== "function") return;
+    booted = true;
+    window.initSCIOV4();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bootApp, { once: true });
+  } else {
+    bootApp();
+  }
 })();
