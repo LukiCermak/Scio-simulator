@@ -290,6 +290,7 @@
   // ═══════════════════════════════════════════
   function generateId() { return Date.now().toString(36)+Math.random().toString(36).slice(2,8); }
   function escapeHtml(t) { const d=document.createElement("div"); d.textContent=t; return d.innerHTML; }
+function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
   function formatTime(s) { const m=Math.floor(s/60),sec=s%60; return `${String(m).padStart(2,"0")}:${String(sec).padStart(2,"0")}`; }
   function formatDate(iso) { if(!iso) return "—"; try{const d=new Date(iso); return d.toLocaleDateString("cs-CZ",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});}catch(e){return "—";} }
   function formatModeLabel(mode) { return mode==="reading-training" ? "Trénink čtení zadání" : mode==="repair" ? "Opravná sada" : "Simulace"; }
@@ -997,150 +998,188 @@
       return;
     }
 
-    const weakTopics = buildDashboardTopicMix(summary, "riskySubtopics", "weakestSubtopics", 4);
-    const strongTopics = buildDashboardTopicMix(summary, "masteredSubtopics", "strongestSubtopics", 4);
-    const undertrainedTopics = (summary.undertrainedSubtopics || []).filter(item => Number(item.seen || 0) > 0).slice(0, 6);
-    const notSeenTopics = Math.max(0, Number(summary.totalKnownSubtopics || 0) - Number(summary.testedSubtopicCount || 0));
-    const strongDisciplines = (summary.masteredDisciplines && summary.masteredDisciplines.length ? summary.masteredDisciplines : summary.strongestDisciplines || []).slice(0, 4);
-    const weakDisciplines = (summary.riskyDisciplines && summary.riskyDisciplines.length ? summary.riskyDisciplines : summary.weakestDisciplines || []).slice(0, 3);
-    const trendDirection = summary.trend?.direction || "stabilní";
-    const quickActions = [
-      { label: "Procvičit nejslabší téma", kind: weakTopics[0]?.subtopic ? "subtopic" : "", value: weakTopics[0]?.subtopic || "" , tone:"primary", help:"Zaměří se na nejproblematičtější téma."},
-      { label: "Procvičit nejslabší disciplínu", kind: weakDisciplines[0]?.discipline ? "discipline" : "", value: weakDisciplines[0]?.discipline || "", tone:"primary", help:"Vezme širší problémovou oblast."},
-      { label: "Jisté chybné odpovědi", kind: summary.highConfidenceWrongCount > 0 ? "high-confidence" : "", value: "", tone:"outline", help:"Vrátí otázky s falešnou jistotou."},
-      { label: "Pomalé otázky", kind: analyticsBridge.startRepairModeSlowQuestions ? "slow" : "", value: "", tone:"outline", help:"Vrátí otázky s delším rozhodováním."},
-      { label: "Cílené opakování", kind: analyticsBridge.startRepairModeRevisionQueue ? "revision" : "", value: "", tone:"outline", help:"Vrátí otázky z fronty opakování."}
-    ].filter(item => item.kind);
+    try {
+      const weakTopics = buildDashboardTopicMix(summary, "riskySubtopics", "weakestSubtopics", 4);
+      const strongTopics = buildDashboardTopicMix(summary, "masteredSubtopics", "strongestSubtopics", 4);
+      const undertrainedTopics = (summary.undertrainedSubtopics || []).filter(item => Number(item.seen || 0) > 0).slice(0, 6);
+      const notSeenTopics = Math.max(0, Number(summary.totalKnownSubtopics || 0) - Number(summary.testedSubtopicCount || 0));
+      const strongDisciplines = (summary.masteredDisciplines && summary.masteredDisciplines.length ? summary.masteredDisciplines : summary.strongestDisciplines || []).slice(0, 4);
+      const weakDisciplines = (summary.riskyDisciplines && summary.riskyDisciplines.length ? summary.riskyDisciplines : summary.weakestDisciplines || []).slice(0, 3);
+      const trendDirection = summary.trend?.direction || "stabilní";
+      const quickActions = [
+        { label: "Procvičit nejslabší téma", kind: weakTopics[0]?.subtopic ? "subtopic" : "", value: weakTopics[0]?.subtopic || "" , tone:"primary", help:"Zaměří se na nejproblematičtější téma."},
+        { label: "Procvičit nejslabší disciplínu", kind: weakDisciplines[0]?.discipline ? "discipline" : "", value: weakDisciplines[0]?.discipline || "", tone:"primary", help:"Vezme širší problémovou oblast."},
+        { label: "Jisté chybné odpovědi", kind: summary.highConfidenceWrongCount > 0 ? "high-confidence" : "", value: "", tone:"outline", help:"Vrátí otázky s falešnou jistotou."},
+        { label: "Pomalé otázky", kind: analyticsBridge.startRepairModeSlowQuestions ? "slow" : "", value: "", tone:"outline", help:"Vrátí otázky s delším rozhodováním."},
+        { label: "Cílené opakování", kind: analyticsBridge.startRepairModeRevisionQueue ? "revision" : "", value: "", tone:"outline", help:"Vrátí otázky z fronty opakování."}
+      ].filter(item => item.kind);
 
-    const answeredBase = summary.answeredCount || (summary.correctCount + summary.wrongCount) || 0;
+      const answeredBase = summary.answeredCount || (summary.correctCount + summary.wrongCount) || 0;
 
-    wp.classList.remove("hidden");
-    wp.innerHTML = `
-      <div class="dashboard study-dashboard" style="margin-top:20px;border-color:#b9dff2;">
-        <div class="dashboard-head">
-          <div>
-            <h4>Studijní dashboard</h4>
-            <p class="dashboard-headline">Dlouhodobý přehled napříč dokončenými relacemi. Ukazuje, co je stabilně silné, co potřebuje zpevnit a co ještě nemá dost dat.</p>
-          </div>
-          <div class="dashboard-meta">
-            ${renderDashboardTrendBadge(`Trend ${trendDirection}`, trendDirection)}
-            ${renderDashboardMetaPill(`Odehráno testů: ${totalSessions}`, "neutral")}
-          </div>
-        </div>
-
-        <div class="dash-grid tight dashboard-stat-grid" style="margin-bottom:14px;">
-          ${renderDashboardStatCard("Celková úspěšnost", `${summary.overallRate}%`, `${summary.correctCount}/${answeredBase || summary.correctCount} zodpovězených správně`, "primary")}
-          ${renderDashboardStatCard("Pokrytí témat", `${summary.testedSubtopicCount}/${summary.totalKnownSubtopics || summary.testedSubtopicCount}`, `${summary.subtopicCoverageRate}% známých témat`, "neutral")}
-          ${renderDashboardStatCard("Zvládnutá témata", String((summary.masteredSubtopics || []).length), `práh ${Number(summary.thresholds.masteredRate || 95)} %`, "success")}
-          ${renderDashboardStatCard("Silné disciplíny", String((summary.strongestDisciplines || []).length), "dlouhodobě nadprůměrné", "primary")}
-          ${renderDashboardStatCard("Riziková témata", String((summary.riskySubtopics || []).length), "potřebují prioritu", "danger")}
-          ${renderDashboardStatCard("Jisté chybné odpovědi", String(summary.highConfidenceWrongCount || 0), "chyby s vysokou jistotou", "warning")}
-        </div>
-
-        <div class="summary-section dashboard-summary-panel" style="margin-bottom:14px;">
-          <div class="dashboard-section-head">
+      wp.classList.remove("hidden");
+      wp.innerHTML = `
+        <div class="dashboard study-dashboard" style="margin-top:20px;border-color:#b9dff2;">
+          <div class="dashboard-head">
             <div>
+              <h4>Studijní dashboard</h4>
+              <p class="dashboard-headline">Dlouhodobý přehled napříč dokončenými relacemi. Ukazuje, co je stabilně silné, co potřebuje zpevnit a co ještě nemá dost dat.</p>
+            </div>
+            <div class="dashboard-meta">
+              ${renderDashboardTrendBadge(`Trend ${trendDirection}`, trendDirection)}
+              ${renderDashboardMetaPill(`Odehráno testů: ${totalSessions}`, "neutral")}
+            </div>
+          </div>
+
+          <div class="dash-grid tight dashboard-stat-grid" style="margin-bottom:14px;">
+            ${renderDashboardStatCard("Celková úspěšnost", `${summary.overallRate}%`, `${summary.correctCount}/${answeredBase || summary.correctCount} zodpovězených správně`, "primary")}
+            ${renderDashboardStatCard("Pokrytí témat", `${summary.testedSubtopicCount}/${summary.totalKnownSubtopics || summary.testedSubtopicCount}`, `${summary.subtopicCoverageRate}% známých témat`, "neutral")}
+            ${renderDashboardStatCard("Zvládnutá témata", String((summary.masteredSubtopics || []).length), `práh ${Number(summary.thresholds.masteredRate || 95)} %`, "success")}
+            ${renderDashboardStatCard("Silné disciplíny", String((summary.strongestDisciplines || []).length), "dlouhodobě nadprůměrné", "primary")}
+            ${renderDashboardStatCard("Riziková témata", String((summary.riskySubtopics || []).length), "potřebují prioritu", "danger")}
+            ${renderDashboardStatCard("Jisté chybné odpovědi", String(summary.highConfidenceWrongCount || 0), "chyby s vysokou jistotou", "warning")}
+          </div>
+
+          <div class="summary-section dashboard-summary-panel" style="margin-bottom:14px;">
+            <div class="dashboard-section-head">
+              <div>
+                <h5>Doporučený postup</h5>
+                <p>Začni tím, co už má dost dat a současně drží nízkou úspěšnost. Silná témata jen potvrzuj a málo procvičené oblasti postupně doplňuj.</p>
+              </div>
+              <div class="dashboard-chip-row compact">
+                ${renderDashboardMetaPill(`disciplíny ${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral")}
+                ${renderDashboardMetaPill(`bez odpovědi ${summary.unansweredCount || 0}`, "neutral")}
+              </div>
+            </div>
+            <div class="dashboard-callout">
+              Máš za sebou <strong>${summary.finishedSessions}</strong> dokončen${summary.finishedSessions === 1 ? "ý test" : summary.finishedSessions >= 2 && summary.finishedSessions <= 4 ? "é testy" : "ých testů"},
+              celkovou úspěšnost <strong>${summary.overallRate} %</strong> a pokryto <strong>${summary.testedSubtopicCount}</strong> z
+              <strong>${summary.totalKnownSubtopics || summary.testedSubtopicCount}</strong> známých témat.
+              Dlouhodobý trend je nyní <strong>${escapeHtml(trendDirection)}</strong>.
+            </div>
+            ${renderDashboardPlan(summary)}
+          </div>
+
+          <div class="dashboard-columns">
+            <section class="summary-section">
+              <div class="dashboard-section-head">
+                <div>
+                  <h5>Slabší stránky</h5>
+                  <p>Sem se promítají témata, která už mají dost dat a současně nízkou úspěšnost.</p>
+                </div>
+                ${weakDisciplines.length ? `<div class="dashboard-chip-row compact">${weakDisciplines.map(item => renderDashboardBadge(`${item.discipline} · ${item.rate}%`, item.status || "slabé")).join("")}</div>` : ""}
+              </div>
+              <h6 class="dashboard-subhead">Nejslabší témata</h6>
+              ${renderDashboardTopicGrid(weakTopics, "subtopic", weakTopics[0]?.status === "rizikové" ? "risk" : "warn", "Zatím se nevykreslila stabilní slabina s dostatkem dat.")}
+              <div class="dashboard-divider"></div>
+              <h6 class="dashboard-subhead">Nejčastější diagnostikované chyby</h6>
+              ${renderDashboardErrorGrid((summary.topErrors || []).slice(0, 3))}
+            </section>
+
+            <section class="summary-section">
+              <div class="dashboard-section-head">
+                <div>
+                  <h5>Silné stránky</h5>
+                  <p>Zde jsou témata a disciplíny, které se dlouhodobě drží vysoko, ne jen v jedné relaci.</p>
+                </div>
+                ${strongDisciplines.length ? `<div class="dashboard-chip-row compact">${strongDisciplines.map(item => renderDashboardBadge(`${item.discipline} · ${item.rate}%`, item.status || "silné")).join("")}</div>` : ""}
+              </div>
+              <h6 class="dashboard-subhead">Zvládnutá témata</h6>
+              ${renderDashboardTopicGrid(strongTopics, "subtopic", "strong", "Zatím se ještě nevytvořila stabilně silná témata s dostatkem dat.")}
+              <div class="dashboard-divider"></div>
+              <h6 class="dashboard-subhead">Co už má stabilní základ</h6>
+              <div class="dashboard-callout soft">
+                ${strongTopics.length ? `Silná témata mají smysl průběžně potvrzovat, ale nemusí být aktuální prioritou číslo jedna.` : `Silné stránky se začnou vybarvovat po dalších dokončených relacích.`}
+              </div>
+            </section>
+          </div>
+
+          <div class="dashboard-columns dashboard-columns-secondary">
+            <section class="summary-section">
+              <div class="dashboard-section-head">
+                <div>
+                  <h5>Co ještě nemá dost dat</h5>
+                  <p>Témata zde nejsou slabina. Jen je zatím potřeba více průchodů pro spolehlivé hodnocení.</p>
+                </div>
+              </div>
+              <div class="dash-grid tight dashboard-undertrained-stats">
+                ${renderDashboardStatCard("Málo procvičeno", String(undertrainedTopics.length), "už se objevilo, ale ještě nestačí", "neutral")}
+                ${renderDashboardStatCard("Ještě neviděno", String(notSeenTopics), "témata mimo dosavadní pokrytí", "neutral")}
+                ${renderDashboardStatCard("Pokrytí disciplín", `${summary.disciplineCoverageRate}%`, `${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral")}
+              </div>
+              <div class="dashboard-chip-cloud">
+                ${undertrainedTopics.length ? undertrainedTopics.map(item => renderDashboardMetaPill(`${item.subtopic || item.key} · ${item.seen} ot.`, "undertrained")).join("") : `<div class="inline-muted">Málo procvičená témata se začnou vybarvovat po dalších relacích.</div>`}
+              </div>
+            </section>
+
+            <section class="summary-section">
+              <div class="dashboard-section-head">
+                <div>
+                  <h5>Trend posledních relací</h5>
+                  <p>Rychlý přehled, jestli výkon roste, kolísá nebo se propadá.</p>
+                </div>
+              </div>
+              ${renderDashboardTrend(summary)}
+            </section>
+          </div>
+
+          <div class="summary-section dashboard-summary-panel" style="margin-top:14px;">
+            <div class="dashboard-section-head">
+              <div>
+                <h5>Rychlé akce</h5>
+                <p>Jedním klikem navážeš cíleným procvičením podle toho, co dashboard vyhodnotil.</p>
+              </div>
+            </div>
+            ${quickActions.length ? `<div class="action-grid dashboard-quick-grid">${quickActions.map(item => `<div class="action-card dashboard-quick-card"><h5>${escapeHtml(item.label)}</h5><p>${escapeHtml(item.help)}</p><button class="btn ${item.tone === "primary" ? "btn-primary" : "btn-outline"} btn-sm dashboard-quick-btn" data-kind="${escapeAttr(item.kind)}" data-value="${escapeAttr(item.value || "")}" type="button">Spustit</button></div>`).join("")}</div>` : `<div class="inline-muted">Rychlé akce se doplní s rostoucím množstvím dat.</div>`}
+          </div>
+        </div>
+      `;
+
+      wp.querySelectorAll(".dashboard-topic-btn").forEach(btn => {
+        btn.addEventListener("click", () => runDashboardPracticeAction(btn.dataset.kind, btn.dataset.label));
+      });
+      wp.querySelectorAll(".dashboard-error-btn").forEach(btn => {
+        btn.addEventListener("click", () => runDashboardPracticeAction("error-type", btn.dataset.errorType));
+      });
+      wp.querySelectorAll(".dashboard-quick-btn").forEach(btn => {
+        btn.addEventListener("click", () => runDashboardPracticeAction(btn.dataset.kind, btn.dataset.value));
+      });
+    } catch (err) {
+      console.error("SCIO v4: chyba v renderWeaknessPanel.", err);
+      const weakTopics = (summary.riskySubtopics && summary.riskySubtopics.length ? summary.riskySubtopics : summary.weakestSubtopics || []).slice(0, 5);
+      const strongTopics = (summary.masteredSubtopics && summary.masteredSubtopics.length ? summary.masteredSubtopics : summary.strongestSubtopics || []).slice(0, 5);
+      const topErrors = (summary.topErrors || []).slice(0, 3);
+      wp.classList.remove("hidden");
+      wp.innerHTML = `
+        <div class="dashboard" style="margin-top:20px;border-color:#b9dff2;">
+          <h4>Studijní dashboard</h4>
+          <div class="dash-grid">
+            <div class="dash-card"><div class="dash-value">${summary.overallRate || 0}%</div><div class="dash-label">Celková úspěšnost</div></div>
+            <div class="dash-card"><div class="dash-value">${summary.finishedSessions || totalSessions}</div><div class="dash-label">Dokončené testy</div></div>
+            <div class="dash-card"><div class="dash-value">${summary.testedSubtopicCount || 0}</div><div class="dash-label">Vyhodnocená témata</div></div>
+            <div class="dash-card"><div class="dash-value">${summary.highConfidenceWrongCount || 0}</div><div class="dash-label">Jisté chybné odpovědi</div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:14px;">
+            <div class="summary-section">
               <h5>Doporučený postup</h5>
-              <p>Začni tím, co už má dost dat a současně drží nízkou úspěšnost. Silná témata jen potvrzuj a málo procvičené oblasti postupně doplňuj.</p>
+              <p class="inline-muted">Prioritu mají témata s dostatkem dat a nízkou úspěšností. Silná témata stačí průběžně potvrzovat. Málo procvičené oblasti zatím nehodnoť jako slabinu.</p>
+              <div class="dashboard-chip-cloud">
+                ${weakTopics.length ? weakTopics.map(item => renderDashboardMetaPill(`${item.subtopic || item.key} · ${item.rate}%`, "warn")).join("") : `<div class="inline-muted">Zatím se nevykreslila stabilní slabina s dostatkem dat.</div>`}
+              </div>
             </div>
-            <div class="dashboard-chip-row compact">
-              ${renderDashboardMetaPill(`disciplíny ${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral")}
-              ${renderDashboardMetaPill(`bez odpovědi ${summary.unansweredCount || 0}`, "neutral")}
+            <div class="summary-section">
+              <h5>Silné stránky</h5>
+              <div class="dashboard-chip-cloud">
+                ${strongTopics.length ? strongTopics.map(item => renderDashboardMetaPill(`${item.subtopic || item.key} · ${item.rate}%`, "success")).join("") : `<div class="inline-muted">Silné stránky se doplní s dalším množstvím dat.</div>`}
+              </div>
             </div>
           </div>
-          <div class="dashboard-callout">
-            Máš za sebou <strong>${summary.finishedSessions}</strong> dokončen${summary.finishedSessions === 1 ? "ý test" : summary.finishedSessions >= 2 && summary.finishedSessions <= 4 ? "é testy" : "ých testů"},
-            celkovou úspěšnost <strong>${summary.overallRate} %</strong> a pokryto <strong>${summary.testedSubtopicCount}</strong> z
-            <strong>${summary.totalKnownSubtopics || summary.testedSubtopicCount}</strong> známých témat.
-            Dlouhodobý trend je nyní <strong>${escapeHtml(trendDirection)}</strong>.
+          <div class="summary-section" style="margin-top:14px;">
+            <h5>Nejčastější diagnostikované chyby</h5>
+            ${topErrors.length ? `<div class="dash-grid">${topErrors.map(item => `<div class="dash-card"><div class="dash-value">${item.count}×</div><div class="dash-label">${escapeHtml(item.label || item.type || "—")}</div></div>`).join("")}</div>` : `<div class="inline-muted">Zatím tu nejsou diagnostikované chyby s dostatečnou četností.</div>`}
           </div>
-          ${renderDashboardPlan(summary)}
         </div>
-
-        <div class="dashboard-columns">
-          <section class="summary-section">
-            <div class="dashboard-section-head">
-              <div>
-                <h5>Slabší stránky</h5>
-                <p>Sem se promítají témata, která už mají dost dat a současně nízkou úspěšnost.</p>
-              </div>
-              ${weakDisciplines.length ? `<div class="dashboard-chip-row compact">${weakDisciplines.map(item => renderDashboardBadge(`${item.discipline} · ${item.rate}%`, item.status || "slabé")).join("")}</div>` : ""}
-            </div>
-            <h6 class="dashboard-subhead">Nejslabší témata</h6>
-            ${renderDashboardTopicGrid(weakTopics, "subtopic", weakTopics[0]?.status === "rizikové" ? "risk" : "warn", "Zatím se nevykreslila stabilní slabina s dostatkem dat.")}
-            <div class="dashboard-divider"></div>
-            <h6 class="dashboard-subhead">Nejčastější diagnostikované chyby</h6>
-            ${renderDashboardErrorGrid((summary.topErrors || []).slice(0, 3))}
-          </section>
-
-          <section class="summary-section">
-            <div class="dashboard-section-head">
-              <div>
-                <h5>Silné stránky</h5>
-                <p>Zde jsou témata a disciplíny, které se dlouhodobě drží vysoko, ne jen v jedné relaci.</p>
-              </div>
-              ${strongDisciplines.length ? `<div class="dashboard-chip-row compact">${strongDisciplines.map(item => renderDashboardBadge(`${item.discipline} · ${item.rate}%`, item.status || "silné")).join("")}</div>` : ""}
-            </div>
-            <h6 class="dashboard-subhead">Zvládnutá témata</h6>
-            ${renderDashboardTopicGrid(strongTopics, "subtopic", "strong", "Zatím se ještě nevytvořila stabilně silná témata s dostatkem dat.")}
-            <div class="dashboard-divider"></div>
-            <h6 class="dashboard-subhead">Co už má stabilní základ</h6>
-            <div class="dashboard-callout soft">
-              ${strongTopics.length ? `Silná témata mají smysl průběžně potvrzovat, ale nemusí být aktuální prioritou číslo jedna.` : `Silné stránky se začnou vybarvovat po dalších dokončených relacích.`}
-            </div>
-          </section>
-        </div>
-
-        <div class="dashboard-columns dashboard-columns-secondary">
-          <section class="summary-section">
-            <div class="dashboard-section-head">
-              <div>
-                <h5>Co ještě nemá dost dat</h5>
-                <p>Témata zde nejsou slabina. Jen je zatím potřeba více průchodů pro spolehlivé hodnocení.</p>
-              </div>
-            </div>
-            <div class="dash-grid tight dashboard-undertrained-stats">
-              ${renderDashboardStatCard("Málo procvičeno", String(undertrainedTopics.length), "už se objevilo, ale ještě nestačí", "neutral")}
-              ${renderDashboardStatCard("Ještě neviděno", String(notSeenTopics), "témata mimo dosavadní pokrytí", "neutral")}
-              ${renderDashboardStatCard("Pokrytí disciplín", `${summary.disciplineCoverageRate}%`, `${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral")}
-            </div>
-            <div class="dashboard-chip-cloud">
-              ${undertrainedTopics.length ? undertrainedTopics.map(item => renderDashboardMetaPill(`${item.subtopic || item.key} · ${item.seen} ot.`, "undertrained")).join("") : `<div class="inline-muted">Málo procvičená témata se začnou vybarvovat po dalších relacích.</div>`}
-            </div>
-          </section>
-
-          <section class="summary-section">
-            <div class="dashboard-section-head">
-              <div>
-                <h5>Trend posledních relací</h5>
-                <p>Rychlý přehled, jestli výkon roste, kolísá nebo se propadá.</p>
-              </div>
-            </div>
-            ${renderDashboardTrend(summary)}
-          </section>
-        </div>
-
-        <div class="summary-section dashboard-summary-panel" style="margin-top:14px;">
-          <div class="dashboard-section-head">
-            <div>
-              <h5>Rychlé akce</h5>
-              <p>Jedním klikem navážeš cíleným procvičením podle toho, co dashboard vyhodnotil.</p>
-            </div>
-          </div>
-          ${quickActions.length ? `<div class="action-grid dashboard-quick-grid">${quickActions.map(item => `<div class="action-card dashboard-quick-card"><h5>${escapeHtml(item.label)}</h5><p>${escapeHtml(item.help)}</p><button class="btn ${item.tone === "primary" ? "btn-primary" : "btn-outline"} btn-sm dashboard-quick-btn" data-kind="${escapeAttr(item.kind)}" data-value="${escapeAttr(item.value || "")}" type="button">Spustit</button></div>`).join("")}</div>` : `<div class="inline-muted">Rychlé akce se doplní s rostoucím množstvím dat.</div>`}
-        </div>
-      </div>
-    `;
-
-    wp.querySelectorAll(".dashboard-topic-btn").forEach(btn => {
-      btn.addEventListener("click", () => runDashboardPracticeAction(btn.dataset.kind, btn.dataset.label));
-    });
-    wp.querySelectorAll(".dashboard-error-btn").forEach(btn => {
-      btn.addEventListener("click", () => runDashboardPracticeAction("error-type", btn.dataset.errorType));
-    });
-    wp.querySelectorAll(".dashboard-quick-btn").forEach(btn => {
-      btn.addEventListener("click", () => runDashboardPracticeAction(btn.dataset.kind, btn.dataset.value));
-    });
+      `;
+    }
   }
 
   function renderHistoryPanel() {
@@ -1337,8 +1376,6 @@
     const s=appState.currentSession; if(!s) return;
     const score=calculateScore();
     const metrics=calculateAttentionMetrics();
-    inferAutoErrorTypes();
-    updateProgressFromSession();
     s.results.score=score; s.results.analytics=metrics;
     s.results.repairCandidateIndexes=buildRepairCandidateIndexes("all");
     const un=score.total-score.answered;
@@ -1346,11 +1383,20 @@
     $("scoreMain").textContent=`${score.correct} / ${score.total} bodů (${score.percentage} %)`;
     $("scoreSub").textContent=`${prefix}Zodpovězeno: ${score.answered} z ${score.total}. Nezodpovězené: ${un}.`;
     $("resultsBatteryLabel").textContent=`Vyhodnocená baterie: ${s.activeTest.label} – ${s.activeTest.title}`;
-    renderPerformanceSummary(score,metrics);
-    renderAttentionDashboard(metrics);
-    renderThematicWeaknesses();
-    renderRecommendationsPanel();
-    renderRepairPanel();
+
+    try {
+      inferAutoErrorTypes();
+      updateProgressFromSession();
+    } catch (err) {
+      console.error("SCIO v4: chyba při zápisu progressu.", err);
+    }
+
+    try { renderPerformanceSummary(score,metrics); } catch (err) { console.error("SCIO v4: chyba v renderPerformanceSummary.", err); }
+    try { renderAttentionDashboard(metrics); } catch (err) { console.error("SCIO v4: chyba v renderAttentionDashboard.", err); }
+    try { renderThematicWeaknesses(); } catch (err) { console.error("SCIO v4: chyba v renderThematicWeaknesses.", err); $("thematicWeaknesses").innerHTML = `<div class="dashboard"><h4>Tematická mapa (z tohoto testu)</h4><div class="dash-detail">Tematický rozbor se teď nepodařilo načíst, ale výsledek testu je uložený správně.</div></div>`; }
+    try { renderRecommendationsPanel(); } catch (err) { console.error("SCIO v4: chyba v renderRecommendationsPanel.", err); $("recommendationsPanel").innerHTML = `<div class="dashboard" style="background:#f4fafd; border-color:#d5e7f2;"><h4 style="color:#17597a; margin-bottom:8px;">Doporučení pro další postup</h4><div class="dash-detail">Doporučení se teď nepodařilo dopočítat. Výsledek testu je ale zapsaný.</div></div>`; }
+    try { renderRepairPanel(); } catch (err) { console.error("SCIO v4: chyba v renderRepairPanel.", err); $("repairPanel")?.classList.add("hidden"); }
+
     saveCurrentSession();
   }
   function renderPerformanceSummary(score,metrics) {
