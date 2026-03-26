@@ -21,6 +21,23 @@
     "knowledge-gap": "Obsahová slabina"
   };
 
+  const DASHBOARD_THRESHOLDS_V4 = {
+    weakRate: 70,
+    riskyRate: 50,
+    strongRate: 85,
+    masteredRate: 95,
+    minSeenWeak: 4,
+    minSeenRisky: 3,
+    minSeenStrong: 4,
+    minSeenMastered: 5,
+    minSessionStrong: 1,
+    minSessionMastered: 2,
+    undertrainedSeen: 3,
+    undertrainedSessions: 2,
+    recentWindow: 5,
+    historyWindow: 8
+  };
+
   function getErrorLabel(code) {
     return ERROR_LABELS_V4[code] || (window.SCIO_V4_SHARED?.ERROR_LABELS?.[code]) || code || "—";
   }
@@ -62,34 +79,95 @@
     try { return JSON.parse(JSON.stringify(obj)); } catch(e) { return fallback; }
   }
 
-  function migrateRegistryObject(oldObj, treatAsCorrectRate) {
+  function buildRegistryEntry() {
+    return {
+      seen: 0,
+      correct: 0,
+      wrong: 0,
+      unanswered: 0,
+      highConfidenceWrong: 0,
+      avgTimeMs: 0,
+      lastSeenAt: "",
+      relatedErrors: {},
+      sessionCount: 0,
+      sessionsPerfect: 0,
+      sessionsWithWrong: 0,
+      lastOutcome: "",
+      recentSessionRates: []
+    };
+  }
+
+  function normalizeRegistryEntry(value, treatAsCorrectRate) {
+    const base = buildRegistryEntry();
+    if (value && typeof value === "object") {
+      const seen = Number(value.seen || value.count || 0);
+      const correct = Number(value.correct || 0);
+      return {
+        ...base,
+        seen,
+        correct: treatAsCorrectRate ? (correct || seen) : correct,
+        wrong: Number(value.wrong || Math.max(0, seen - correct - Number(value.unanswered || 0))),
+        unanswered: Number(value.unanswered || 0),
+        highConfidenceWrong: Number(value.highConfidenceWrong || 0),
+        avgTimeMs: Number(value.avgTimeMs || 0),
+        lastSeenAt: value.lastSeenAt || "",
+        relatedErrors: safeClone(value.relatedErrors || {}, {}),
+        sessionCount: Number(value.sessionCount || (seen > 0 ? 1 : 0)),
+        sessionsPerfect: Number(value.sessionsPerfect || 0),
+        sessionsWithWrong: Number(value.sessionsWithWrong || 0),
+        lastOutcome: value.lastOutcome || "",
+        recentSessionRates: Array.isArray(value.recentSessionRates) ? safeClone(value.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS_V4.historyWindow), []) : []
+      };
+    }
+    const seen = Number(value || 0);
+    return {
+      ...base,
+      seen,
+      correct: treatAsCorrectRate ? seen : 0,
+      wrong: treatAsCorrectRate ? 0 : seen,
+      sessionCount: seen > 0 ? 1 : 0
+    };
+  }
+
+  function normalizeRegistryObject(oldObj, treatAsCorrectRate) {
     const out = {};
     Object.entries(oldObj || {}).forEach(([key, value]) => {
-      if (value && typeof value === "object") {
-        out[key] = {
-          seen: Number(value.seen || value.count || 0),
-          correct: Number(value.correct || 0),
-          wrong: Number(value.wrong || Math.max(0, Number(value.seen || value.count || 0) - Number(value.correct || 0))),
-          unanswered: Number(value.unanswered || 0),
-          highConfidenceWrong: Number(value.highConfidenceWrong || 0),
-          avgTimeMs: Number(value.avgTimeMs || 0),
-          lastSeenAt: value.lastSeenAt || "",
-          relatedErrors: safeClone(value.relatedErrors || {}, {})
-        };
-      } else {
-        out[key] = {
-          seen: Number(value || 0),
-          correct: treatAsCorrectRate ? Number(value || 0) : 0,
-          wrong: treatAsCorrectRate ? 0 : Number(value || 0),
-          unanswered: 0,
-          highConfidenceWrong: 0,
-          avgTimeMs: 0,
-          lastSeenAt: "",
-          relatedErrors: {}
-        };
-      }
+      out[key] = normalizeRegistryEntry(value, treatAsCorrectRate);
     });
     return out;
+  }
+
+  function normalizeProgressV4(progress) {
+    const src = progress && typeof progress === "object" ? progress : {};
+    const normalized = getEmptyProgressV4();
+    normalized.schemaVersion = 4;
+    normalized.testCount = Number(src.testCount || src.totals?.finishedSessions || 0);
+    normalized.totals = {
+      ...normalized.totals,
+      ...(src.totals || {})
+    };
+    normalized.disciplines = normalizeRegistryObject(src.disciplines || {}, false);
+    normalized.subtopics = normalizeRegistryObject(src.subtopics || {}, false);
+    normalized.errorTypes = normalizeRegistryObject(src.errorTypes || {}, false);
+    normalized.formulations = normalizeRegistryObject(src.formulations || {}, false);
+    normalized.signalPatterns = normalizeRegistryObject(src.signalPatterns || {}, false);
+    normalized.trapPatterns = normalizeRegistryObject(src.trapPatterns || {}, false);
+    normalized.distractorTypes = normalizeRegistryObject(src.distractorTypes || {}, false);
+    normalized.questionTypes = normalizeRegistryObject(src.questionTypes || {}, false);
+    normalized.institutionConfusions = normalizeRegistryObject(src.institutionConfusions || {}, false);
+    normalized.confidenceByTopic = safeClone(src.confidenceByTopic || {}, {});
+    normalized.timingByTopic = safeClone(src.timingByTopic || {}, {});
+    normalized.highConfidenceWrong = safeClone(src.highConfidenceWrong || {}, {});
+    normalized.revisionQueue = safeClone(src.revisionQueue || {}, {});
+    normalized.trends = {
+      recentSessions: Array.isArray(src.trends?.recentSessions) ? safeClone(src.trends.recentSessions.slice(0, 12), []) : []
+    };
+    return normalized;
+  }
+  window.normalizeProgressV4 = normalizeProgressV4;
+
+  function migrateRegistryObject(oldObj, treatAsCorrectRate) {
+    return normalizeRegistryObject(oldObj, treatAsCorrectRate);
   }
 
   function migrateProgressV3ToV4(oldProgress) {
@@ -100,7 +178,7 @@
     migrated.subtopics = migrateRegistryObject(src.subtopics || {}, true);
     migrated.errorTypes = migrateRegistryObject(src.errorTypes || {}, false);
     if (src.totals && typeof src.totals === "object") migrated.totals = { ...migrated.totals, ...src.totals, finishedSessions: migrated.testCount };
-    return migrated;
+    return normalizeProgressV4(migrated);
   }
   window.migrateProgressV3ToV4 = migrateProgressV3ToV4;
 
@@ -179,7 +257,7 @@
     const raw = localStorage.getItem(STORAGE_KEYS.PROGRESS);
     const parsed = safeParse(raw, null);
     if (!parsed) return getEmptyProgressV4();
-    if (parsed.schemaVersion === 4) return { ...getEmptyProgressV4(), ...parsed };
+    if (parsed.schemaVersion === 4) return normalizeProgressV4(parsed);
     return migrateProgressV3ToV4(parsed);
   }
   window.loadProgress = loadProgress;
@@ -581,24 +659,189 @@
   }
   window.inferLearningNeeds = inferLearningNeeds;
 
-  function buildRegistryEntry() {
-    return { seen:0, correct:0, wrong:0, unanswered:0, highConfidenceWrong:0, avgTimeMs:0, lastSeenAt:"", relatedErrors:{} };
+  function ensureRegistryEntry(target, key) {
+    if (!key) return null;
+    if (!target[key]) target[key] = buildRegistryEntry();
+    else target[key] = normalizeRegistryEntry(target[key], false);
+    return target[key];
   }
 
   function bumpRegistry(target, key, payload) {
     if (!key) return;
-    if (!target[key]) target[key] = buildRegistryEntry();
-    const entry = target[key];
+    const entry = ensureRegistryEntry(target, key);
+    if (!entry) return;
     entry.seen += 1;
     if (payload.correct) entry.correct += 1;
     else if (payload.answered) entry.wrong += 1;
     else entry.unanswered += 1;
     if (payload.highConfidenceWrong) entry.highConfidenceWrong += 1;
     entry.lastSeenAt = payload.at;
+    entry.lastOutcome = payload.correct ? "correct" : (payload.answered ? "wrong" : "unanswered");
     if (payload.timeSpentMs) {
       entry.avgTimeMs = entry.avgTimeMs ? Math.round(((entry.avgTimeMs * (entry.seen - 1)) + payload.timeSpentMs) / entry.seen) : payload.timeSpentMs;
     }
     if (payload.errorType) entry.relatedErrors[payload.errorType] = (entry.relatedErrors[payload.errorType] || 0) + 1;
+  }
+
+  function bumpSessionRegistry(map, key, payload) {
+    if (!key) return;
+    if (!map[key]) map[key] = { seen: 0, correct: 0, wrong: 0, unanswered: 0 };
+    map[key].seen += 1;
+    if (payload.correct) map[key].correct += 1;
+    else if (payload.answered) map[key].wrong += 1;
+    else map[key].unanswered += 1;
+  }
+
+  function applySessionStatsToRegistry(target, statsMap, sessionId, at) {
+    Object.entries(statsMap || {}).forEach(([key, stats]) => {
+      const entry = ensureRegistryEntry(target, key);
+      if (!entry) return;
+      entry.sessionCount += 1;
+      if ((stats.correct || 0) === (stats.seen || 0) && (stats.seen || 0) > 0) entry.sessionsPerfect += 1;
+      if ((stats.wrong || 0) > 0 || (stats.unanswered || 0) > 0) entry.sessionsWithWrong += 1;
+      entry.lastOutcome = (stats.correct || 0) === (stats.seen || 0) && (stats.seen || 0) > 0
+        ? "correct"
+        : ((stats.wrong || 0) > 0 ? "wrong" : ((stats.unanswered || 0) > 0 ? "unanswered" : "mixed"));
+      entry.recentSessionRates = Array.isArray(entry.recentSessionRates) ? entry.recentSessionRates : [];
+      entry.recentSessionRates.unshift({
+        sessionId: sessionId || "",
+        at: at || "",
+        seen: Number(stats.seen || 0),
+        correct: Number(stats.correct || 0),
+        wrong: Number(stats.wrong || 0),
+        unanswered: Number(stats.unanswered || 0),
+        rate: stats.seen ? Math.round((stats.correct || 0) / stats.seen * 100) : 0
+      });
+      entry.recentSessionRates = entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS_V4.historyWindow);
+    });
+  }
+
+  function getMetadataCoverageCatalog() {
+    const items = Array.isArray(window.metadataExport?.items) ? window.metadataExport.items : [];
+    const disciplines = new Set();
+    const subtopics = new Set();
+    items.forEach(item => {
+      const discipline = item?.discipline || item?.metadata?.discipline;
+      const subtopic = item?.subtopic || item?.metadata?.subtopic;
+      if (discipline) disciplines.add(discipline);
+      if (subtopic) subtopics.add(subtopic);
+    });
+    return { disciplines, subtopics };
+  }
+
+  function getEntryRecentRate(entry) {
+    const history = Array.isArray(entry?.recentSessionRates) ? entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS_V4.recentWindow) : [];
+    if (!history.length) return entry?.seen ? Math.round((entry.correct || 0) / entry.seen * 100) : 0;
+    const totalSeen = history.reduce((sum, item) => sum + Number(item.seen || 0), 0);
+    const totalCorrect = history.reduce((sum, item) => sum + Number(item.correct || 0), 0);
+    return totalSeen ? Math.round(totalCorrect / totalSeen * 100) : 0;
+  }
+
+  function getEntryTrend(entry) {
+    const history = Array.isArray(entry?.recentSessionRates) ? entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS_V4.recentWindow).reverse() : [];
+    if (history.length < 2) return "stabilní";
+    const deltas = [];
+    for (let i = 1; i < history.length; i++) deltas.push((history[i].rate || 0) - (history[i - 1].rate || 0));
+    const avgDelta = deltas.length ? deltas.reduce((sum, value) => sum + value, 0) / deltas.length : 0;
+    if (avgDelta >= 4) return "roste";
+    if (avgDelta <= -4) return "klesá";
+    if (deltas.some(value => value > 0) && deltas.some(value => value < 0)) return "kolísá";
+    return "stabilní";
+  }
+
+  function getEntryConfidenceLevel(entry) {
+    const seen = Number(entry?.seen || 0);
+    const sessions = Number(entry?.sessionCount || 0);
+    if (seen >= DASHBOARD_THRESHOLDS_V4.minSeenMastered && sessions >= DASHBOARD_THRESHOLDS_V4.minSessionMastered) return "vysoká";
+    if (seen >= DASHBOARD_THRESHOLDS_V4.minSeenStrong && sessions >= 1) return "střední";
+    return "nízká";
+  }
+
+  function classifyTopicEntry(entry) {
+    const seen = Number(entry?.seen || 0);
+    const rate = seen ? Math.round((entry.correct || 0) / seen * 100) : 0;
+    const sessionCount = Number(entry?.sessionCount || 0);
+    if (seen === 0) return "neprocvičeno";
+    if (seen < DASHBOARD_THRESHOLDS_V4.undertrainedSeen || sessionCount < DASHBOARD_THRESHOLDS_V4.undertrainedSessions) return "málo-dat";
+    if (rate >= DASHBOARD_THRESHOLDS_V4.masteredRate && seen >= DASHBOARD_THRESHOLDS_V4.minSeenMastered && sessionCount >= DASHBOARD_THRESHOLDS_V4.minSessionMastered) return "zvládnuté";
+    if (rate >= DASHBOARD_THRESHOLDS_V4.strongRate && seen >= DASHBOARD_THRESHOLDS_V4.minSeenStrong) return "silné";
+    if (rate < DASHBOARD_THRESHOLDS_V4.riskyRate && seen >= DASHBOARD_THRESHOLDS_V4.minSeenRisky) return "rizikové";
+    if (rate < DASHBOARD_THRESHOLDS_V4.weakRate && seen >= DASHBOARD_THRESHOLDS_V4.minSeenWeak) return "slabé";
+    return "stabilní";
+  }
+
+  function buildTopicInsightList(registry, labelKey, knownSet) {
+    const entries = Object.entries(registry || {});
+    const out = entries.map(([label, rawValue]) => {
+      const value = normalizeRegistryEntry(rawValue, false);
+      const seen = Number(value.seen || 0);
+      const correct = Number(value.correct || 0);
+      const wrong = Number(value.wrong || 0);
+      const unanswered = Number(value.unanswered || 0);
+      const rate = seen ? Math.round(correct / seen * 100) : 0;
+      return {
+        key: label,
+        [labelKey]: label,
+        seen,
+        correct,
+        wrong,
+        unanswered,
+        rate,
+        recentRate: getEntryRecentRate(value),
+        sessionCount: Number(value.sessionCount || 0),
+        sessionsPerfect: Number(value.sessionsPerfect || 0),
+        sessionsWithWrong: Number(value.sessionsWithWrong || 0),
+        highConfidenceWrong: Number(value.highConfidenceWrong || 0),
+        avgTimeMs: Number(value.avgTimeMs || 0),
+        confidenceLevel: getEntryConfidenceLevel(value),
+        trend: getEntryTrend(value),
+        status: classifyTopicEntry(value),
+        lastSeenAt: value.lastSeenAt || "",
+        isKnown: knownSet ? knownSet.has(label) : true
+      };
+    });
+    if (knownSet) {
+      knownSet.forEach(label => {
+        if (!registry?.[label]) {
+          out.push({
+            key: label,
+            [labelKey]: label,
+            seen: 0,
+            correct: 0,
+            wrong: 0,
+            unanswered: 0,
+            rate: 0,
+            recentRate: 0,
+            sessionCount: 0,
+            sessionsPerfect: 0,
+            sessionsWithWrong: 0,
+            highConfidenceWrong: 0,
+            avgTimeMs: 0,
+            confidenceLevel: "nízká",
+            trend: "stabilní",
+            status: "neprocvičeno",
+            lastSeenAt: "",
+            isKnown: true
+          });
+        }
+      });
+    }
+    const onlySeen = out.filter(item => item.seen > 0);
+    const sortWeak = (a, b) => (a.rate - b.rate) || (b.seen - a.seen) || String(a.key).localeCompare(String(b.key), "cs");
+    const sortStrong = (a, b) => (b.rate - a.rate) || (b.sessionCount - a.sessionCount) || (b.seen - a.seen) || String(a.key).localeCompare(String(b.key), "cs");
+    const sortUndertrained = (a, b) => {
+      const aScore = (a.seen === 0 ? -1 : a.seen);
+      const bScore = (b.seen === 0 ? -1 : b.seen);
+      return aScore - bScore || a.sessionCount - b.sessionCount || String(a.key).localeCompare(String(b.key), "cs");
+    };
+    return {
+      all: out.slice().sort((a, b) => String(a.key).localeCompare(String(b.key), "cs")),
+      weak: onlySeen.filter(item => item.status === "slabé" || item.status === "rizikové").sort(sortWeak),
+      risky: onlySeen.filter(item => item.status === "rizikové").sort(sortWeak),
+      strong: onlySeen.filter(item => item.status === "silné" || item.status === "zvládnuté").sort(sortStrong),
+      mastered: onlySeen.filter(item => item.status === "zvládnuté").sort(sortStrong),
+      undertrained: out.filter(item => item.status === "málo-dat" || item.status === "neprocvičeno").sort(sortUndertrained)
+    };
   }
 
   function buildDisciplineBreakdown(session) {
@@ -694,238 +937,188 @@
   }
 
   function buildWeaknessSummary() {
-  const p = appState.progress || getEmptyProgressV4();
-  const metadataItems = Array.isArray(window.metadataExport?.items) ? window.metadataExport.items : [];
-  const rateFor = value => value?.seen ? Math.round(((value.correct || 0) / value.seen) * 100) : 0;
-  const sortByWeakness = (a, b) => (a.rate - b.rate) || (b.seen - a.seen) || String(a.label).localeCompare(String(b.label), "cs");
-  const sortByStrength = (a, b) => (b.rate - a.rate) || (b.seen - a.seen) || String(a.label).localeCompare(String(b.label), "cs");
+    const p = normalizeProgressV4(appState.progress || getEmptyProgressV4());
+    const totals = p.totals || {};
+    const catalog = getMetadataCoverageCatalog();
+    const disciplineInsights = buildTopicInsightList(p.disciplines || {}, "discipline", catalog.disciplines);
+    const subtopicInsights = buildTopicInsightList(p.subtopics || {}, "subtopic", catalog.subtopics);
+    const overallRate = totals.answered ? Math.round((totals.correct || 0) / totals.answered * 100) : 0;
+    const testedDisciplineCount = disciplineInsights.all.filter(item => item.seen > 0).length;
+    const testedSubtopicCount = subtopicInsights.all.filter(item => item.seen > 0).length;
+    const totalKnownDisciplines = catalog.disciplines.size || testedDisciplineCount;
+    const totalKnownSubtopics = catalog.subtopics.size || testedSubtopicCount;
+    const topErrors = Object.entries(p.errorTypes || {}).map(([type, value]) => ({
+      type,
+      count: value.wrong || value.seen || 0,
+      label: getErrorLabel(type)
+    })).sort((a,b)=>b.count-a.count).slice(0, 5);
+    const topFormulations = Object.entries(p.formulations || {}).map(([flag, value]) => ({
+      flag,
+      risk: value.seen ? Math.round((value.wrong || 0) / value.seen * 100) : 0,
+      count: value.wrong || 0
+    })).filter(item => item.count > 0 || item.risk > 0).sort((a,b)=>(b.risk-a.risk) || (b.count-a.count)).slice(0, 5);
+    const topInstitutionPairs = Object.entries(p.institutionConfusions || {}).map(([pair, value]) => ({
+      pair,
+      risk: value.seen ? Math.round((value.wrong || 0) / value.seen * 100) : 0,
+      count: value.wrong || 0
+    })).filter(item => item.count > 0 || item.risk > 0).sort((a,b)=>(b.count-a.count) || (b.risk-a.risk)).slice(0, 5);
 
-  function registryToRankedList(registry, labelKey, minSeen) {
-    return Object.entries(registry || {}).map(([label, value]) => ({
-      [labelKey]: label,
-      label,
-      seen: value?.seen || 0,
-      correct: value?.correct || 0,
-      wrong: value?.wrong || 0,
-      unanswered: value?.unanswered || 0,
-      rate: rateFor(value),
-      highConfidenceWrong: value?.highConfidenceWrong || 0,
-      avgTimeMs: value?.avgTimeMs || 0
-    })).filter(item => item.seen >= minSeen);
+    return {
+      weakestDisciplines: disciplineInsights.weak.slice(0, 3),
+      weakestSubtopics: subtopicInsights.weak.slice(0, 5),
+      strongestDisciplines: disciplineInsights.strong.slice(0, 3),
+      strongestSubtopics: subtopicInsights.strong.slice(0, 5),
+      masteredDisciplines: disciplineInsights.mastered.slice(0, 5),
+      masteredSubtopics: subtopicInsights.mastered.slice(0, 8),
+      undertrainedDisciplines: disciplineInsights.undertrained.slice(0, 5),
+      undertrainedSubtopics: subtopicInsights.undertrained.slice(0, 8),
+      riskyDisciplines: disciplineInsights.risky.slice(0, 3),
+      riskySubtopics: subtopicInsights.risky.slice(0, 5),
+      disciplineInsights: disciplineInsights.all,
+      subtopicInsights: subtopicInsights.all,
+      topErrors,
+      topFormulations,
+      topInstitutionPairs,
+      highConfidenceWrongCount: totals.highConfidenceWrong || 0,
+      overallRate,
+      finishedSessions: totals.finishedSessions || p.testCount || 0,
+      answeredCount: totals.answered || 0,
+      correctCount: totals.correct || 0,
+      wrongCount: totals.wrong || 0,
+      unansweredCount: totals.unanswered || 0,
+      testedDisciplineCount,
+      testedSubtopicCount,
+      totalKnownDisciplines,
+      totalKnownSubtopics,
+      disciplineCoverageRate: totalKnownDisciplines ? Math.round(testedDisciplineCount / totalKnownDisciplines * 100) : 0,
+      subtopicCoverageRate: totalKnownSubtopics ? Math.round(testedSubtopicCount / totalKnownSubtopics * 100) : 0,
+      thresholds: { ...DASHBOARD_THRESHOLDS_V4 },
+      trend: buildTrendSummary()
+    };
   }
-
-  function buildCoverageList(labelKey, registry, datasetLabels) {
-    const sourceFrequency = {};
-    datasetLabels.forEach(label => { sourceFrequency[label] = (sourceFrequency[label] || 0) + 1; });
-    return Object.entries(sourceFrequency).map(([label, poolCount]) => {
-      const entry = registry?.[label] || {};
-      const seen = entry?.seen || 0;
-      return {
-        [labelKey]: label,
-        label,
-        seen,
-        poolCount,
-        rate: rateFor(entry),
-        missing: Math.max(0, poolCount - seen),
-        status: seen === 0 ? "netestováno" : (seen < 2 ? "málo procvičeno" : "procvičeno")
-      };
-    }).filter(item => item.poolCount > 0).sort((a, b) => {
-      if (a.seen !== b.seen) return a.seen - b.seen;
-      if (a.poolCount !== b.poolCount) return b.poolCount - a.poolCount;
-      return String(a.label).localeCompare(String(b.label), "cs");
-    });
-  }
-
-  const disciplineStats = registryToRankedList(p.disciplines, "discipline", 2);
-  const subtopicStats = registryToRankedList(p.subtopics, "subtopic", 2);
-
-  const weakestDisciplines = disciplineStats.slice().sort(sortByWeakness).slice(0, 3);
-  const weakestSubtopics = subtopicStats.slice().sort(sortByWeakness).slice(0, 5);
-  const strongestDisciplines = disciplineStats.slice().filter(item => item.rate >= 80).sort(sortByStrength).slice(0, 3);
-  const strongestSubtopics = subtopicStats.slice().filter(item => item.rate >= 80).sort(sortByStrength).slice(0, 5);
-  const masteredDisciplines = disciplineStats.slice().filter(item => item.rate >= 95).sort(sortByStrength).slice(0, 5);
-  const masteredSubtopics = subtopicStats.slice().filter(item => item.rate >= 95).sort(sortByStrength).slice(0, 8);
-
-  const undertrainedDisciplines = buildCoverageList("discipline", p.disciplines, metadataItems.map(item => String(item.discipline || "obecná disciplína"))).filter(item => item.seen < 2).slice(0, 5);
-  const undertrainedSubtopics = buildCoverageList("subtopic", p.subtopics, metadataItems.map(item => String(item.subtopic || "obecné téma"))).filter(item => item.seen < 2).slice(0, 7);
-
-  const topErrors = Object.entries(p.errorTypes || {}).map(([type, value]) => ({
-    type,
-    count: value?.wrong || value?.seen || 0,
-    label: getErrorLabel(type)
-  })).sort((a,b)=>b.count-a.count).slice(0, 5);
-
-  const topFormulations = Object.entries(p.formulations || {}).map(([flag, value]) => ({
-    flag,
-    risk: value?.seen ? Math.round(((value.wrong || 0) / value.seen) * 100) : 0,
-    count: value?.wrong || 0,
-    seen: value?.seen || 0
-  })).filter(item => item.seen > 0).sort((a,b)=>(b.risk-a.risk) || (b.count-a.count)).slice(0, 5);
-
-  const topInstitutionPairs = Object.entries(p.institutionConfusions || {}).map(([pair, value]) => ({
-    pair,
-    risk: value?.seen ? Math.round(((value.wrong || 0) / value.seen) * 100) : 0,
-    count: value?.wrong || 0,
-    seen: value?.seen || 0
-  })).filter(item => item.seen > 0).sort((a,b)=>(b.count-a.count) || (b.risk-a.risk)).slice(0, 5);
-
-  const totals = p.totals || {};
-  const testedSubtopicCount = subtopicStats.length;
-  const testedDisciplineCount = disciplineStats.length;
-  const overallRate = totals.seen ? Math.round(((totals.correct || 0) / totals.seen) * 100) : 0;
-
-  return {
-    weakestDisciplines,
-    weakestSubtopics,
-    strongestDisciplines,
-    strongestSubtopics,
-    masteredDisciplines,
-    masteredSubtopics,
-    undertrainedDisciplines,
-    undertrainedSubtopics,
-    topErrors,
-    topFormulations,
-    topInstitutionPairs,
-    highConfidenceWrongCount: totals.highConfidenceWrong || 0,
-    overallRate,
-    testedSubtopicCount,
-    testedDisciplineCount,
-    finishedSessions: totals.finishedSessions || 0,
-    answeredCount: totals.answered || 0,
-    seenCount: totals.seen || 0,
-    correctCount: totals.correct || 0,
-    wrongCount: totals.wrong || 0,
-    unansweredCount: totals.unanswered || 0,
-    totalKnownSubtopics: new Set(metadataItems.map(item => String(item.subtopic || "obecné téma"))).size,
-    totalKnownDisciplines: new Set(metadataItems.map(item => String(item.discipline || "obecná disciplína"))).size,
-    trend: buildTrendSummary()
-  };
-}
   window.buildWeaknessSummary = buildWeaknessSummary;
+  window.buildStudyDashboardSummary = buildWeaknessSummary;
 
   function buildRecommendations() {
-  const session = appState.currentSession;
-  const summary = buildWeaknessSummary();
-  const trend = buildTrendSummary();
-  const diag = session?.results?.diagnosticSummary || {};
-  const recs = [];
+    const session = appState.currentSession;
+    const weakness = buildWeaknessSummary();
+    const trend = buildTrendSummary();
+    const recs = [];
 
-  if (summary.weakestSubtopics[0]) {
-    const topic = summary.weakestSubtopics[0];
-    recs.push({
-      type: "subtopic-drill",
-      bucket: "weakness",
-      priority: "high",
-      title: "Zpevnit nejslabší podtéma",
-      message: `${topic.subtopic} má zatím ${topic.rate} % (${topic.correct}/${topic.seen}).`,
-      reason: "Je to aktuálně nejslabší dlouhodobě měřené podtéma.",
-      filters: { subtopic: topic.subtopic }
-    });
+    if (weakness.riskySubtopics[0]) {
+      recs.push({
+        type: "subtopic-drill",
+        priority: "high",
+        bucket: "repair",
+        title: "Zpevni rizikové téma",
+        message: `Začni tématem ${weakness.riskySubtopics[0].subtopic}.`,
+        reason: `V tomto tématu máš zatím jen ${weakness.riskySubtopics[0].rate} % a už dost dat pro spolehlivé hodnocení.`,
+        filters: { subtopic: weakness.riskySubtopics[0].subtopic }
+      });
+    } else if (weakness.weakestSubtopics[0]) {
+      recs.push({
+        type: "subtopic-drill",
+        priority: "high",
+        bucket: "repair",
+        title: "Procvič nejslabší téma",
+        message: `Dnes procvič hlavně téma ${weakness.weakestSubtopics[0].subtopic}.`,
+        reason: `Dlouhodobě máš v tomto tématu úspěšnost ${weakness.weakestSubtopics[0].rate} %.`,
+        filters: { subtopic: weakness.weakestSubtopics[0].subtopic }
+      });
+    }
+
+    if (weakness.undertrainedSubtopics[0] && weakness.undertrainedSubtopics[0].seen > 0) {
+      recs.push({
+        type: "coverage-drill",
+        priority: "medium",
+        bucket: "coverage",
+        title: "Doplň málo procvičené téma",
+        message: `Ještě si potvrď téma ${weakness.undertrainedSubtopics[0].subtopic}.`,
+        reason: "Zatím je o něm málo dat, takže profil není stabilní.",
+        filters: { subtopic: weakness.undertrainedSubtopics[0].subtopic }
+      });
+    }
+
+    if (weakness.topFormulations[0]) {
+      recs.push({
+        type: "formulation-drill",
+        priority: "medium",
+        bucket: "repair",
+        title: "Procvič rizikové formulace",
+        message: `Zaměř se na formulaci ${weakness.topFormulations[0].flag}.`,
+        reason: "Právě tato formulace ti dlouhodobě dělá největší potíže.",
+        filters: { formulation: weakness.topFormulations[0].flag }
+      });
+    }
+
+    if ((weakness.highConfidenceWrongCount || 0) > 0) {
+      recs.push({
+        type: "false-confidence-drill",
+        priority: "high",
+        bucket: "repair",
+        title: "Vrať se k jistým chybným odpovědím",
+        message: "Projdi otázky, kde jsi chyboval(a) s vysokou jistotou.",
+        reason: `V historii máš ${weakness.highConfidenceWrongCount} jistých chybných odpovědí.`,
+        filters: { highConfidenceWrong: true }
+      });
+    }
+
+    if (weakness.masteredSubtopics[0]) {
+      recs.push({
+        type: "maintenance",
+        priority: "low",
+        bucket: "maintain",
+        title: "Udrž silné téma aktivní",
+        message: `Téma ${weakness.masteredSubtopics[0].subtopic} už držíš velmi dobře.`,
+        reason: "Stačí ho průběžně potvrzovat lehčím návratem.",
+        filters: { subtopic: weakness.masteredSubtopics[0].subtopic }
+      });
+    }
+
+    if (session && session.results?.diagnosticSummary?.topInstitutionConfusion) {
+      recs.push({
+        type: "institution-drill",
+        priority: "medium",
+        bucket: "repair",
+        title: "Procvič záměny institucí",
+        message: `Procvič ${session.results.diagnosticSummary.topInstitutionConfusion}.`,
+        reason: "V poslední relaci se opakovala záměna institucí.",
+        filters: { institutionPair: session.results.diagnosticSummary.topInstitutionConfusion }
+      });
+    }
+
+    if (trend.direction === "zhoršení") {
+      recs.push({
+        type: "stabilization",
+        priority: "medium",
+        bucket: "stabilize",
+        title: "Zpomal a stabilizuj výkon",
+        message: "V dalších dvou relacích upřednostni přesnost před tempem.",
+        reason: "Trend posledních pokusů je klesající.",
+        filters: { mode: "reading-training" }
+      });
+    }
+
+    if (session && session.results?.diagnosticSummary?.dominantProcessWeakness) {
+      recs.push({
+        type: "process-fix",
+        priority: "medium",
+        bucket: "repair",
+        title: "Oprav procesní chybu",
+        message: `Největší procesní problém relace: ${getErrorLabel(session.results.diagnosticSummary.dominantProcessWeakness)}.`,
+        reason: "Vyplatí se nejdřív stabilizovat způsob čtení a rozhodování.",
+        filters: { errorType: session.results.diagnosticSummary.dominantProcessWeakness }
+      });
+    }
+
+    return recs.slice(0, 6);
   }
-
-  if (diag.topInstitutionConfusion) {
-    recs.push({
-      type: "institution-drill",
-      bucket: "weakness",
-      priority: "high",
-      title: "Vrátit se k záměně institucí",
-      message: `Procvič rozdíl ${diag.topInstitutionConfusion}.`,
-      reason: "Právě tato záměna se ukázala v poslední relaci.",
-      filters: { institutionPair: diag.topInstitutionConfusion }
-    });
-  }
-
-  if (summary.topFormulations[0] && summary.topFormulations[0].count > 0) {
-    recs.push({
-      type: "formulation-drill",
-      bucket: "weakness",
-      priority: "medium",
-      title: "Procvičit rizikovou formulaci",
-      message: `${summary.topFormulations[0].flag} dělá chybu v ${summary.topFormulations[0].risk} % případů.`,
-      reason: "Vyplatí se zautomatizovat čtení kritických formulací.",
-      filters: { formulation: summary.topFormulations[0].flag }
-    });
-  }
-
-  if ((summary.highConfidenceWrongCount || 0) > 0) {
-    recs.push({
-      type: "false-confidence-drill",
-      bucket: "weakness",
-      priority: "high",
-      title: "Rozebrat jisté chyby",
-      message: `V historii máš ${summary.highConfidenceWrongCount} jistých chybných odpovědí.`,
-      reason: "Tohle je nejrychlejší cesta ke zvýšení přesnosti.",
-      filters: { highConfidenceWrong: true }
-    });
-  }
-
-  if (summary.undertrainedSubtopics[0]) {
-    const topic = summary.undertrainedSubtopics[0];
-    recs.push({
-      type: "coverage-drill",
-      bucket: "coverage",
-      priority: "medium",
-      title: "Doplnit málo procvičené téma",
-      message: `${topic.subtopic} má zatím jen ${topic.seen} pokus${topic.seen === 1 ? "" : "y"}.`,
-      reason: "U tohoto tématu ještě není dost dat pro poctivý závěr.",
-      filters: { subtopic: topic.subtopic }
-    });
-  }
-
-  const strengthTopic = summary.masteredSubtopics[0] || summary.strongestSubtopics[0];
-  if (strengthTopic) {
-    recs.push({
-      type: "strength-drill",
-      bucket: "strength",
-      priority: "low",
-      title: strengthTopic.rate >= 95 ? "Potvrdit zvládnuté téma" : "Udržet silnou stránku",
-      message: `${strengthTopic.subtopic} držíš na ${strengthTopic.rate} % (${strengthTopic.correct}/${strengthTopic.seen}).`,
-      reason: strengthTopic.rate >= 95 ? "Téma už působí stabilně a stačí ho průběžně udržovat." : "Silná témata má smysl občas potvrdit i pod tlakem.",
-      filters: { subtopic: strengthTopic.subtopic }
-    });
-  }
-
-  if (trend.direction === "zhoršení") {
-    recs.push({
-      type: "stabilization",
-      bucket: "process",
-      priority: "medium",
-      title: "Stabilizovat tempo",
-      message: "V další relaci dej přednost přesnosti před tempem.",
-      reason: "Trend posledních pokusů je klesající.",
-      filters: { mode: "reading-training" }
-    });
-  }
-
-  if (diag.dominantProcessWeakness) {
-    recs.push({
-      type: "process-fix",
-      bucket: "process",
-      priority: "medium",
-      title: "Opravit procesní chybu",
-      message: `Nejčastější procesní problém: ${getErrorLabel(diag.dominantProcessWeakness)}.`,
-      reason: "Vyplatí se upravit způsob čtení a rozhodování, ne jen obsah.",
-      filters: { errorType: diag.dominantProcessWeakness }
-    });
-  }
-
-  const seen = new Set();
-  return recs.filter(item => {
-    const key = `${item.type}:${JSON.stringify(item.filters || {})}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  }).sort((a, b) => {
-    const order = { high: 0, medium: 1, low: 2 };
-    return (order[a.priority] ?? 9) - (order[b.priority] ?? 9);
-  }).slice(0, 6);
-}
   window.buildRecommendations = buildRecommendations;
 
   function updateProgressFromSession(session) {
     const s = session || appState.currentSession; if (!s || s.results?.progressCommitted) return;
     inferAutoErrorTypes();
-    const p = appState.progress || getEmptyProgressV4();
+    const p = normalizeProgressV4(appState.progress || getEmptyProgressV4());
     p.testCount = Number(p.testCount || 0) + 1;
     p.totals.finishedSessions += 1;
     if (s.mode === "repair") p.totals.repairSessions += 1;
@@ -935,6 +1128,7 @@
     const subtopicBreakdown = buildSubtopicBreakdown(s);
     const formSummary = buildFormulationRiskSummary(s);
     const institutionSummary = buildInstitutionRiskSummary(s);
+    const sessionTopicMaps = { disciplines: {}, subtopics: {} };
 
     s.questionStates.forEach((qs, idx) => {
       const q = s.activeTest.questions[idx];
@@ -950,8 +1144,12 @@
       if (correct) p.totals.correct += 1;
       else if (answered) p.totals.wrong += 1;
       if (highConfidenceWrong) p.totals.highConfidenceWrong += 1;
-      bumpRegistry(p.disciplines, metadata.discipline || "obecná disciplína", payload);
-      bumpRegistry(p.subtopics, metadata.subtopic || "obecné téma", payload);
+      const disciplineKey = metadata.discipline || "obecná disciplína";
+      const subtopicKey = metadata.subtopic || "obecné téma";
+      bumpRegistry(p.disciplines, disciplineKey, payload);
+      bumpRegistry(p.subtopics, subtopicKey, payload);
+      bumpSessionRegistry(sessionTopicMaps.disciplines, disciplineKey, payload);
+      bumpSessionRegistry(sessionTopicMaps.subtopics, subtopicKey, payload);
       bumpRegistry(p.questionTypes, metadata.questionType || "general", payload);
       bumpRegistry(p.distractorTypes, metadata.distractorType || "general", payload);
       bumpRegistry(p.trapPatterns, metadata.trapPattern || "general", payload);
@@ -971,8 +1169,8 @@
         p.highConfidenceWrong[q.globalId] = {
           globalId: q.globalId,
           count: (p.highConfidenceWrong[q.globalId]?.count || 0) + 1,
-          subtopic: metadata.subtopic || "obecné téma",
-          discipline: metadata.discipline || "obecná disciplína",
+          subtopic: subtopicKey,
+          discipline: disciplineKey,
           lastSeenAt: now
         };
       }
@@ -992,6 +1190,9 @@
         };
       }
     });
+
+    applySessionStatsToRegistry(p.disciplines, sessionTopicMaps.disciplines, s.sessionId, now);
+    applySessionStatsToRegistry(p.subtopics, sessionTopicMaps.subtopics, s.sessionId, now);
 
     const score = calculateScore();
     const sessionSummary = {
@@ -1013,7 +1214,7 @@
     };
     p.trends.recentSessions.unshift(sessionSummary);
     p.trends.recentSessions = p.trends.recentSessions.slice(0, 5);
-    appState.progress = p;
+    appState.progress = normalizeProgressV4(p);
     s.results.progressCommitted = true;
     s.results.progressCommittedAt = now;
     saveProgress();

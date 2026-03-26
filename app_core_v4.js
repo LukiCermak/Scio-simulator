@@ -31,6 +31,24 @@
     "knowledge-gap":"Obsahová slabina"
   };
 
+  const analyticsBridge = {
+    normalizeProgress: typeof window.normalizeProgressV4 === "function" ? window.normalizeProgressV4 : null,
+    buildStudyDashboardSummary: typeof window.buildStudyDashboardSummary === "function" ? window.buildStudyDashboardSummary : (typeof window.buildWeaknessSummary === "function" ? window.buildWeaknessSummary : null),
+    buildRecommendations: typeof window.buildRecommendations === "function" ? window.buildRecommendations : null,
+    updateProgressFromSession: typeof window.updateProgressFromSession === "function" ? window.updateProgressFromSession : null,
+    buildTrendSummary: typeof window.buildTrendSummary === "function" ? window.buildTrendSummary : null,
+    getErrorLabel: typeof window.getErrorLabel === "function" ? window.getErrorLabel : null,
+    startRepairModeByDiscipline: typeof window.startRepairModeByDiscipline === "function" ? window.startRepairModeByDiscipline : null,
+    startRepairModeBySubtopic: typeof window.startRepairModeBySubtopic === "function" ? window.startRepairModeBySubtopic : null,
+    startRepairModeByErrorType: typeof window.startRepairModeByErrorType === "function" ? window.startRepairModeByErrorType : null,
+    startRepairModeByFormulation: typeof window.startRepairModeByFormulation === "function" ? window.startRepairModeByFormulation : null,
+    startRepairModeByInstitutionPair: typeof window.startRepairModeByInstitutionPair === "function" ? window.startRepairModeByInstitutionPair : null,
+    startRepairModeHighConfidenceWrong: typeof window.startRepairModeHighConfidenceWrong === "function" ? window.startRepairModeHighConfidenceWrong : null,
+    startRepairModeSlowQuestions: typeof window.startRepairModeSlowQuestions === "function" ? window.startRepairModeSlowQuestions : null,
+    startRepairModeRevisionQueue: typeof window.startRepairModeRevisionQueue === "function" ? window.startRepairModeRevisionQueue : null
+  };
+
+
   // ═══════════════════════════════════════════
   // 2. DATA NORMALIZATION (WITH METADATA V3)
   // ═══════════════════════════════════════════
@@ -302,8 +320,17 @@
   function loadHistory() { return safeParse(localStorage.getItem(STORAGE_KEYS.HISTORY), []).slice(0, MAX_HISTORY); }
   function saveHistory() { try { localStorage.setItem(STORAGE_KEYS.HISTORY, JSON.stringify(appState.history.slice(0, MAX_HISTORY))); } catch(e){} }
   function addHistoryEntry(entry) { appState.history.unshift(entry); if(appState.history.length>MAX_HISTORY) appState.history.length=MAX_HISTORY; saveHistory(); }
-  function loadProgress() { return safeParse(localStorage.getItem(STORAGE_KEYS.PROGRESS), { subtopics: {}, errorTypes: {}, testCount: 0 }); }
-  function saveProgress() { try { localStorage.setItem(STORAGE_KEYS.PROGRESS, JSON.stringify(appState.progress)); } catch(e){} }
+  function loadProgress() {
+    const raw = safeParse(localStorage.getItem(STORAGE_KEYS.PROGRESS), null);
+    if (analyticsBridge.normalizeProgress) return analyticsBridge.normalizeProgress(raw || {});
+    return raw || { subtopics: {}, errorTypes: {}, testCount: 0 };
+  }
+  function saveProgress() {
+    try {
+      const payload = analyticsBridge.normalizeProgress ? analyticsBridge.normalizeProgress(appState.progress || {}) : appState.progress;
+      localStorage.setItem(STORAGE_KEYS.PROGRESS, JSON.stringify(payload));
+    } catch(e){}
+  }
   function loadCurrentSession() {
     const raw = localStorage.getItem(STORAGE_KEYS.CURRENT_SESSION);
     const s = safeParse(raw, null);
@@ -483,24 +510,22 @@
     });
   }
   function updateProgressFromSession() {
+    if (analyticsBridge.updateProgressFromSession) return analyticsBridge.updateProgressFromSession(appState.currentSession);
     const s = appState.currentSession; if (!s || s.mode === "repair") return;
-    const p = appState.progress;
-    p.testCount++;
+    const p = appState.progress || { subtopics: {}, errorTypes: {}, testCount: 0 };
+    p.testCount = Number(p.testCount || 0) + 1;
     s.questionStates.forEach((qs, i) => {
       const q = s.activeTest.questions[i];
       const subtopic = q.metadata?.subtopic || "Neznámé";
       if (!p.subtopics[subtopic]) p.subtopics[subtopic] = { seen: 0, correct: 0 };
       p.subtopics[subtopic].seen++;
-      if (qs.selectedAnswer === q.correct) {
-        p.subtopics[subtopic].correct++;
-      } else {
+      if (qs.selectedAnswer === q.correct) p.subtopics[subtopic].correct++;
+      else {
         const err = qs.manualErrorType || qs.autoErrorType;
-        if (err) {
-          if (!p.errorTypes[err]) p.errorTypes[err] = 0;
-          p.errorTypes[err]++;
-        }
+        if (err) p.errorTypes[err] = (p.errorTypes[err] || 0) + 1;
       }
     });
+    appState.progress = p;
     saveProgress();
   }
   function buildRepairCandidateIndexes(filterType) {
@@ -585,22 +610,25 @@
   function startTargetedPractice(type, param) {
     let allQs = [];
     BATTERIES.forEach(b => {
-      if (b.id === 8) return; 
+      if (b.id === 8) return;
       b.questions.forEach(q => { allQs.push({ ...q, sourceBatteryId: b.id }); });
     });
     let filtered = []; let title = "";
-    if (type === "weakest-subtopic") {
+    if (type === "weakest-subtopic" || type === "subtopic" || type === "maintain-subtopic" || type === "undertrained-subtopic") {
       filtered = allQs.filter(q => q.metadata?.subtopic === param);
-      title = `Slabina: ${param}`;
+      title = `Téma: ${param}`;
+    } else if (type === "discipline") {
+      filtered = allQs.filter(q => q.metadata?.discipline === param);
+      title = `Disciplína: ${param}`;
     } else if (type === "error-type") {
       filtered = allQs.filter(q => {
         const m = q.metadata || {};
         if (param === "distractor-trap" && (m.trapPattern === "near-category" || m.trapPattern === "distractor-trap")) return true;
         if (m.likelyErrorTypes && m.likelyErrorTypes.includes(param)) return true;
-        if (param === "missed-negation" && /\\bnenì\\b|\\bnení\\b|\\bnesprávně\\b|\\bneplatí\\b|\\bneodpovídá\\b/i.test(q.text)) return true;
+        if (param === "missed-negation" && /\bnenì\b|\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/i.test(q.text)) return true;
         return false;
       });
-      title = `Typ chyby: ${ERROR_LABELS[param] || param}`;
+      title = `Typ chyby: ${(analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(param) : (ERROR_LABELS[param] || param))}`;
     }
     if (filtered.length === 0) { alert("Nenalezeny žádné otázky pro tento filtr."); return; }
     const sessionQs = shuffleArray(filtered).slice(0, 20);
@@ -613,57 +641,508 @@
     beginQuestionView(0); renderQuestion();
     applyFocusMode(); startTimer();
   }
+  function getSummaryMetricValue(summary, key, fallback) {
+    const value = summary && summary[key];
+    return value == null || value === "" ? fallback : value;
+  }
+
+
+  function normalizeDashboardSummary(summary) {
+    const base = summary && typeof summary === "object" ? summary : {};
+    const thresholds = base.thresholds || { weakRate: 70, riskyRate: 50, strongRate: 85, masteredRate: 95 };
+    const trend = base.trend || (analyticsBridge.buildTrendSummary ? analyticsBridge.buildTrendSummary() : { direction: "none", series: [] });
+    return {
+      ...base,
+      weakestSubtopics: Array.isArray(base.weakestSubtopics) ? base.weakestSubtopics : [],
+      riskySubtopics: Array.isArray(base.riskySubtopics) ? base.riskySubtopics : [],
+      strongestSubtopics: Array.isArray(base.strongestSubtopics) ? base.strongestSubtopics : [],
+      masteredSubtopics: Array.isArray(base.masteredSubtopics) ? base.masteredSubtopics : [],
+      undertrainedSubtopics: Array.isArray(base.undertrainedSubtopics) ? base.undertrainedSubtopics : [],
+      weakestDisciplines: Array.isArray(base.weakestDisciplines) ? base.weakestDisciplines : [],
+      riskyDisciplines: Array.isArray(base.riskyDisciplines) ? base.riskyDisciplines : [],
+      strongestDisciplines: Array.isArray(base.strongestDisciplines) ? base.strongestDisciplines : [],
+      masteredDisciplines: Array.isArray(base.masteredDisciplines) ? base.masteredDisciplines : [],
+      undertrainedDisciplines: Array.isArray(base.undertrainedDisciplines) ? base.undertrainedDisciplines : [],
+      disciplineInsights: Array.isArray(base.disciplineInsights) ? base.disciplineInsights : [],
+      subtopicInsights: Array.isArray(base.subtopicInsights) ? base.subtopicInsights : [],
+      topErrors: Array.isArray(base.topErrors) ? base.topErrors : [],
+      topFormulations: Array.isArray(base.topFormulations) ? base.topFormulations : [],
+      topInstitutionPairs: Array.isArray(base.topInstitutionPairs) ? base.topInstitutionPairs : [],
+      overallRate: Number(base.overallRate || 0),
+      finishedSessions: Number(base.finishedSessions || base.testCount || 0),
+      answeredCount: Number(base.answeredCount || 0),
+      correctCount: Number(base.correctCount || 0),
+      wrongCount: Number(base.wrongCount || 0),
+      unansweredCount: Number(base.unansweredCount || 0),
+      highConfidenceWrongCount: Number(base.highConfidenceWrongCount || 0),
+      testedSubtopicCount: Number(base.testedSubtopicCount || 0),
+      totalKnownSubtopics: Number(base.totalKnownSubtopics || base.testedSubtopicCount || 0),
+      testedDisciplineCount: Number(base.testedDisciplineCount || 0),
+      totalKnownDisciplines: Number(base.totalKnownDisciplines || base.testedDisciplineCount || 0),
+      subtopicCoverageRate: Number(base.subtopicCoverageRate || 0),
+      disciplineCoverageRate: Number(base.disciplineCoverageRate || 0),
+      thresholds,
+      trend
+    };
+  }
+
+  function formatDashboardStatus(status) {
+    switch (status) {
+      case "zvládnuté": return "zvládnuto";
+      case "silné": return "silné";
+      case "slabé": return "slabší";
+      case "rizikové": return "rizikové";
+      case "málo-dat": return "málo dat";
+      case "neprocvičeno": return "bez dat";
+      default: return "stabilní";
+    }
+  }
+
+  function getDashboardStatusClass(status) {
+    switch (status) {
+      case "zvládnuté": return "mastered";
+      case "silné": return "strong";
+      case "slabé": return "weak";
+      case "rizikové": return "risky";
+      case "málo-dat": return "undertrained";
+      case "neprocvičeno": return "unseen";
+      default: return "steady";
+    }
+  }
+
+  function getDashboardTrendClass(trend) {
+    switch (trend) {
+      case "roste": return "up";
+      case "klesá": return "down";
+      case "kolísá": return "swing";
+      default: return "steady";
+    }
+  }
+
+  function getDashboardConfidenceClass(level) {
+    switch (level) {
+      case "vysoká": return "high";
+      case "střední": return "mid";
+      default: return "low";
+    }
+  }
+
+  function getDashboardStatusColors(status) {
+    switch (status) {
+      case "zvládnuté": return { line: "#2d8b57", soft: "#edf9f1", text: "#236844" };
+      case "silné": return { line: "#2b92c9", soft: "#eef7ff", text: "#17597a" };
+      case "slabé": return { line: "#d2871c", soft: "#fff7df", text: "#9c6b11" };
+      case "rizikové": return { line: "#c94b4b", soft: "#fff1f1", text: "#a23535" };
+      case "málo-dat": return { line: "#8091a3", soft: "#f5f7fa", text: "#516578" };
+      case "neprocvičeno": return { line: "#9aaaba", soft: "#f8fafc", text: "#60758a" };
+      default: return { line: "#60758a", soft: "#f5f7fa", text: "#516578" };
+    }
+  }
+
+  function renderDashboardBadge(text, status) {
+    return `<span class="dashboard-status status-${getDashboardStatusClass(status)}">${escapeHtml(text)}</span>`;
+  }
+
+  function renderDashboardTrendBadge(text, trend) {
+    return `<span class="dashboard-pill trend-${getDashboardTrendClass(trend)}">${escapeHtml(text)}</span>`;
+  }
+
+  function renderDashboardMetaPill(text, tone) {
+    return `<span class="dashboard-pill ${tone ? `tone-${escapeAttr(tone)}` : ""}">${escapeHtml(text)}</span>`;
+  }
+
+  function renderDashboardStatCard(label, value, detail, tone) {
+    const toneClass = tone ? ` is-${tone}` : "";
+    return `<div class="dash-card dash-stat-card${toneClass}">
+      <div class="dash-value">${escapeHtml(String(value))}</div>
+      <div class="dash-label">${escapeHtml(label)}</div>
+      ${detail ? `<small>${escapeHtml(detail)}</small>` : ""}
+    </div>`;
+  }
+
+  function renderDashboardMeter(item, status) {
+    const seen = Math.max(0, Number(item?.seen || 0));
+    if (!seen) return `<div class="dashboard-meter-empty">Zatím bez záznamu.</div>`;
+    const correct = Math.max(0, Number(item?.correct || 0));
+    const wrong = Math.max(0, Number(item?.wrong || 0));
+    const unanswered = Math.max(0, Number(item?.unanswered || Math.max(0, seen - correct - wrong)));
+    const correctPct = Math.round(correct / seen * 100);
+    const wrongPct = Math.round(wrong / seen * 100);
+    const unansweredPct = Math.max(0, 100 - correctPct - wrongPct);
+    return `<div class="dashboard-meter-wrap">
+      <div class="dashboard-meter status-${getDashboardStatusClass(status)}">
+        <span class="seg-correct" style="width:${correctPct}%;"></span>
+        <span class="seg-wrong" style="width:${wrongPct}%;"></span>
+        <span class="seg-empty" style="width:${unansweredPct}%;"></span>
+      </div>
+      <div class="dashboard-meter-legend">
+        <span><i class="seg-dot dot-correct"></i>správně ${correct}</span>
+        <span><i class="seg-dot dot-wrong"></i>chybně ${wrong}</span>
+        <span><i class="seg-dot dot-empty"></i>bez odpovědi ${unanswered}</span>
+      </div>
+    </div>`;
+  }
+
+  function renderDashboardSparkline(historyInput, status, ariaLabel) {
+    const history = Array.isArray(historyInput) ? historyInput.filter(Boolean).slice(0, 8).reverse() : [];
+    const values = history.map(item => Number(typeof item === "number" ? item : item.rate || 0)).filter(value => Number.isFinite(value));
+    if (values.length < 2) return `<div class="dashboard-sparkline-empty">Trend se doplní po dalších relacích.</div>`;
+    const width = 220;
+    const height = 56;
+    const min = Math.min(...values, 0);
+    const max = Math.max(...values, 100);
+    const span = Math.max(1, max - min);
+    const step = values.length > 1 ? width / (values.length - 1) : width;
+    const points = values.map((value, index) => {
+      const x = Math.round(index * step);
+      const y = Math.round(height - ((value - min) / span) * (height - 12) - 6);
+      return `${x},${y}`;
+    }).join(" ");
+    const colors = getDashboardStatusColors(status);
+    return `<div class="dashboard-sparkline" aria-label="${escapeAttr(ariaLabel || "Trend")}">
+      <svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}" role="img" aria-hidden="true">
+        <polyline fill="none" stroke="${colors.line}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="${points}"></polyline>
+        ${values.map((value, index) => {
+          const x = Math.round(index * step);
+          const y = Math.round(height - ((value - min) / span) * (height - 12) - 6);
+          return `<circle cx="${x}" cy="${y}" r="3.5" fill="${colors.line}"></circle>`;
+        }).join("")}
+      </svg>
+      <div class="dashboard-sparkline-meta">
+        <span>${values[0]} %</span>
+        <span>${values[values.length - 1]} %</span>
+      </div>
+    </div>`;
+  }
+
+  function renderDashboardTopicCard(item, kind, headingTone) {
+    if (!item) return "";
+    const label = item.subtopic || item.discipline || item.label || item.key || "Neznámé téma";
+    const rate = Number(item.rate || 0);
+    const seen = Number(item.seen || 0);
+    const sessions = Number(item.sessionCount || 0);
+    const status = item.status || (rate >= 95 ? "zvládnuté" : rate >= 85 ? "silné" : rate < 50 ? "rizikové" : rate < 70 ? "slabé" : "stabilní");
+    const buttonLabel = kind === "discipline" ? "Procvičit disciplínu" : "Procvičit téma";
+    const trend = item.trend || "stabilní";
+    const confidence = item.confidenceLevel || "nízká";
+    const recentRate = Number(item.recentRate || rate);
+    const sessionLabel = sessions === 1 ? "relace" : (sessions >= 2 && sessions <= 4 ? "relace" : "relací");
+    return `<article class="dash-card dashboard-topic-card status-${getDashboardStatusClass(status)} tone-${escapeAttr(headingTone || "neutral")}">
+      <div class="dashboard-topic-top">
+        <div>
+          <div class="dash-value dashboard-topic-rate">${rate}%</div>
+          <div class="dash-label dashboard-topic-title">${escapeHtml(label)}</div>
+        </div>
+        ${renderDashboardBadge(formatDashboardStatus(status), status)}
+      </div>
+      <div class="dashboard-chip-row">
+        ${renderDashboardMetaPill(`${seen} otázek`, "neutral")}
+        ${renderDashboardMetaPill(`${sessions} ${sessionLabel}`, "neutral")}
+        ${renderDashboardMetaPill(`jistota ${confidence}`, getDashboardConfidenceClass(confidence))}
+        ${renderDashboardTrendBadge(`trend ${trend}`, trend)}
+      </div>
+      <div class="dashboard-topic-insight">
+        <div class="dashboard-topic-insight-line">
+          <strong>Poslední průchody:</strong> recentně ${recentRate} % · dlouhodobě ${rate} %
+        </div>
+      </div>
+      ${renderDashboardSparkline(item.recentSessionRates || [], status, `Trend tématu ${label}`)}
+      ${renderDashboardMeter(item, status)}
+      <div class="dashboard-topic-footer">
+        <div class="dashboard-topic-footnote">${item.lastSeenAt ? `Naposledy zaznamenáno ${escapeHtml(formatDate(item.lastSeenAt))}` : "Vyhodnocení z dokončených relací."}</div>
+        <button class="btn ${status === "rizikové" || status === "slabé" ? "btn-primary" : "btn-outline"} btn-sm dashboard-topic-btn" data-kind="${escapeAttr(kind)}" data-label="${escapeAttr(label)}" type="button">${buttonLabel}</button>
+      </div>
+    </article>`;
+  }
+
+  function renderDashboardErrorCard(item) {
+    if (!item) return "";
+    const label = item.label || item.type || "Neznámá chyba";
+    return `<div class="dash-card dashboard-error-card">
+      <div class="dashboard-error-top">
+        <div class="dash-value dashboard-topic-rate">${Number(item.count || 0)}×</div>
+        ${renderDashboardBadge("diagnostika", "rizikové")}
+      </div>
+      <div class="dash-label dashboard-topic-title dashboard-error-title">${escapeHtml(label)}</div>
+      <div class="dashboard-topic-insight">
+        <div class="dashboard-topic-insight-line">Tento vzorec se vrací opakovaně napříč dokončenými relacemi a stojí za cílenou opravu.</div>
+      </div>
+      <div class="dashboard-topic-footer">
+        <div class="dashboard-topic-footnote">Použij opravnou sadu zaměřenou na konkrétní typ chyby.</div>
+        <button class="btn btn-outline btn-sm dashboard-error-btn" data-error-type="${escapeAttr(item.type || "")}" type="button">Opravit chybu</button>
+      </div>
+    </div>`;
+  }
+
+  function buildDashboardTopicMix(summary, primaryKey, secondaryKey, limit) {
+    const out = [];
+    const seen = new Set();
+    [ ...(summary[primaryKey] || []), ...(summary[secondaryKey] || []) ].forEach(item => {
+      const label = item?.subtopic || item?.discipline || item?.key;
+      if (!label || seen.has(label)) return;
+      seen.add(label);
+      out.push(item);
+    });
+    return out.slice(0, limit || 5);
+  }
+
+  function renderDashboardTopicGrid(items, kind, tone, emptyText) {
+    if (!items.length) return `<div class="inline-muted">${escapeHtml(emptyText)}</div>`;
+    return `<div class="dash-grid dashboard-topic-grid">${items.map(item => renderDashboardTopicCard(item, kind, tone)).join("")}</div>`;
+  }
+
+  function renderDashboardErrorGrid(items) {
+    if (!items.length) return `<div class="inline-muted">Zatím se nevykresluje stabilní chybový vzorec.</div>`;
+    return `<div class="dash-grid tight dashboard-error-grid">${items.map(renderDashboardErrorCard).join("")}</div>`;
+  }
+
+  function renderDashboardTrend(summary) {
+    const trend = summary.trend || { direction: "none", series: [] };
+    const series = Array.isArray(trend.series) ? trend.series.slice().reverse() : [];
+    if (!series.length) return `<div class="inline-muted">Trend se ukáže po dokončení více relací.</div>`;
+    const chartSeries = series.map(item => ({ rate: Number(item.percentage || 0), at: item.date || "" }));
+    return `
+      <div class="dashboard-trend-panel">
+        <div class="dashboard-trend-head">
+          ${renderDashboardTrendBadge(`Směr: ${trend.direction || "bez trendu"}`, trend.direction || "stabilní")}
+          <div class="dashboard-topic-footnote">Porovnání posledních ${series.length} dokončených relací.</div>
+        </div>
+        ${renderDashboardSparkline(chartSeries, trend.direction === "klesá" ? "rizikové" : trend.direction === "roste" ? "silné" : "málo-dat", "Trend posledních relací")}
+        <div class="dash-grid tight dashboard-trend-grid">
+          ${series.map(item => `<div class="dash-card dashboard-trend-card">
+            <div class="dash-value" style="font-size:18px;">${Number(item.percentage || 0)}%</div>
+            <div class="dash-label">${escapeHtml(formatModeLabel(item.mode || "simulation"))}</div>
+            <small>${escapeHtml(formatDate(item.date))}</small>
+          </div>`).join("")}
+        </div>
+      </div>`;
+  }
+
+  function renderDashboardPlan(summary) {
+    const cards = [];
+    const repair = summary.riskySubtopics[0] || summary.weakestSubtopics[0];
+    const maintain = summary.masteredSubtopics[0] || summary.strongestSubtopics[0];
+    const coverage = summary.undertrainedSubtopics.find(item => Number(item.seen || 0) > 0) || summary.undertrainedDisciplines.find(item => Number(item.seen || 0) > 0);
+
+    if (repair) {
+      cards.push(`<div class="action-card">
+        <h5>Teď zpevnit</h5>
+        <p>Zaměř se na téma <strong>${escapeHtml(repair.subtopic || repair.discipline || repair.key || "—")}</strong>. Dlouhodobě je zde výkon ${Number(repair.rate || 0)} %.</p>
+        <button class="btn btn-primary btn-sm dashboard-topic-btn" data-kind="${escapeAttr(repair.subtopic ? "subtopic" : "discipline")}" data-label="${escapeAttr(repair.subtopic || repair.discipline || repair.key || "")}" type="button">Spustit cílený trénink</button>
+      </div>`);
+    }
+
+    if (maintain) {
+      cards.push(`<div class="action-card">
+        <h5>Udržovat</h5>
+        <p>${(maintain.status === "zvládnuté" ? "Stabilně zvládáš" : "Dobře držíš")} téma <strong>${escapeHtml(maintain.subtopic || maintain.discipline || maintain.key || "—")}</strong>. Stačí průběžné potvrzení.</p>
+        <button class="btn btn-outline btn-sm dashboard-topic-btn" data-kind="${escapeAttr(maintain.subtopic ? "subtopic" : "discipline")}" data-label="${escapeAttr(maintain.subtopic || maintain.discipline || maintain.key || "")}" type="button">Procvičit pro udržení</button>
+      </div>`);
+    }
+
+    if (coverage) {
+      cards.push(`<div class="action-card">
+        <h5>Doplnit pokrytí</h5>
+        <p>U ${escapeHtml(coverage.subtopic || coverage.discipline || coverage.key || "vybraného tématu")} je zatím málo dat. Potvrď si ho ještě dalším průchodem.</p>
+        <button class="btn btn-outline btn-sm dashboard-topic-btn" data-kind="${escapeAttr(coverage.subtopic ? "subtopic" : "discipline")}" data-label="${escapeAttr(coverage.subtopic || coverage.discipline || coverage.key || "")}" type="button">Doplnit téma</button>
+      </div>`);
+    }
+
+    if (!cards.length) return `<div class="inline-muted">Po dokončení dalších relací se zde objeví doporučený další krok.</div>`;
+    return `<div class="action-grid">${cards.join("")}</div>`;
+  }
+
+  function runDashboardPracticeAction(kind, value) {
+    const label = String(value || "").trim();
+    if (!kind) return;
+    switch (kind) {
+      case "discipline":
+        if (analyticsBridge.startRepairModeByDiscipline) return analyticsBridge.startRepairModeByDiscipline(label);
+        return startTargetedPractice("discipline", label);
+      case "subtopic":
+      case "maintain-subtopic":
+      case "undertrained-subtopic":
+        if (analyticsBridge.startRepairModeBySubtopic) return analyticsBridge.startRepairModeBySubtopic(label);
+        return startTargetedPractice("subtopic", label);
+      case "error-type":
+        if (analyticsBridge.startRepairModeByErrorType) return analyticsBridge.startRepairModeByErrorType(label);
+        return startTargetedPractice("error-type", label);
+      case "formulation":
+        if (analyticsBridge.startRepairModeByFormulation) return analyticsBridge.startRepairModeByFormulation(label);
+        return;
+      case "institution":
+        if (analyticsBridge.startRepairModeByInstitutionPair) return analyticsBridge.startRepairModeByInstitutionPair(label);
+        return;
+      case "high-confidence":
+        if (analyticsBridge.startRepairModeHighConfidenceWrong) return analyticsBridge.startRepairModeHighConfidenceWrong();
+        return;
+      case "slow":
+        if (analyticsBridge.startRepairModeSlowQuestions) return analyticsBridge.startRepairModeSlowQuestions();
+        return;
+      case "revision":
+        if (analyticsBridge.startRepairModeRevisionQueue) return analyticsBridge.startRepairModeRevisionQueue();
+        return;
+    }
+  }
+
   function renderWeaknessPanel() {
     const wp = $("weaknessPanel");
-    const summary = buildWeaknessSummary();
-    const p = appState.progress;
-    
-    if (!p || p.testCount === 0) {
+    const summary = normalizeDashboardSummary(buildWeaknessSummary());
+    const totalSessions = Number(summary.finishedSessions || appState.progress?.testCount || 0);
+
+    if (!wp) return;
+    if (!totalSessions) {
       wp.classList.add("hidden");
+      wp.innerHTML = "";
       return;
     }
+
+    const weakTopics = buildDashboardTopicMix(summary, "riskySubtopics", "weakestSubtopics", 4);
+    const strongTopics = buildDashboardTopicMix(summary, "masteredSubtopics", "strongestSubtopics", 4);
+    const undertrainedTopics = (summary.undertrainedSubtopics || []).filter(item => Number(item.seen || 0) > 0).slice(0, 6);
+    const notSeenTopics = Math.max(0, Number(summary.totalKnownSubtopics || 0) - Number(summary.testedSubtopicCount || 0));
+    const strongDisciplines = (summary.masteredDisciplines && summary.masteredDisciplines.length ? summary.masteredDisciplines : summary.strongestDisciplines || []).slice(0, 4);
+    const weakDisciplines = (summary.riskyDisciplines && summary.riskyDisciplines.length ? summary.riskyDisciplines : summary.weakestDisciplines || []).slice(0, 3);
+    const trendDirection = summary.trend?.direction || "stabilní";
+    const quickActions = [
+      { label: "Procvičit nejslabší téma", kind: weakTopics[0]?.subtopic ? "subtopic" : "", value: weakTopics[0]?.subtopic || "" , tone:"primary", help:"Zaměří se na nejproblematičtější téma."},
+      { label: "Procvičit nejslabší disciplínu", kind: weakDisciplines[0]?.discipline ? "discipline" : "", value: weakDisciplines[0]?.discipline || "", tone:"primary", help:"Vezme širší problémovou oblast."},
+      { label: "Jisté chybné odpovědi", kind: summary.highConfidenceWrongCount > 0 ? "high-confidence" : "", value: "", tone:"outline", help:"Vrátí otázky s falešnou jistotou."},
+      { label: "Pomalé otázky", kind: analyticsBridge.startRepairModeSlowQuestions ? "slow" : "", value: "", tone:"outline", help:"Vrátí otázky s delším rozhodováním."},
+      { label: "Cílené opakování", kind: analyticsBridge.startRepairModeRevisionQueue ? "revision" : "", value: "", tone:"outline", help:"Vrátí otázky z fronty opakování."}
+    ].filter(item => item.kind);
+
+    const answeredBase = summary.answeredCount || (summary.correctCount + summary.wrongCount) || 0;
+
     wp.classList.remove("hidden");
-    const recs = buildRecommendations();
-    const recsHtml = recs.map(r => `<li>${escapeHtml(r)}</li>`).join("");
-    
-    const subsHtml = summary.weakestSubtopics.length > 0
-      ? summary.weakestSubtopics.map(s => {
-          return `<div class="dash-card"><div class="dash-value" style="font-size:18px;">${s.rate}%</div><div class="dash-label" style="font-size:13px; font-weight:700; color:#355266; margin-bottom:8px;">${escapeHtml(s.subtopic)}</div><div class="dash-label" style="margin-bottom:12px;">Úspěšnost (z ${s.seen} otázek)</div><button class="btn btn-primary btn-sm btn-practice" data-type="weakest-subtopic" data-param="${escapeHtml(s.subtopic)}">Procvičit téma</button></div>`;
-        }).join("")
-      : "<p style='color:#60758a; font-size:13px;'>Zatím nemáte dostatek dat z konkrétních témat.</p>";
-
-    const errsHtml = summary.topErrors.length > 0
-      ? summary.topErrors.map(e => {
-          return `<div class="dash-card"><div class="dash-value" style="font-size:18px;">${e.count}×</div><div class="dash-label" style="font-size:13px; font-weight:700; color:#9a2f2f; margin-bottom:12px;">${escapeHtml(e.label)}</div><button class="btn btn-outline btn-sm btn-practice" data-type="error-type" data-param="${escapeHtml(e.type)}">Opravit chybu</button></div>`;
-        }).join("")
-      : "";
-
     wp.innerHTML = `
-      <div class="dashboard" style="margin-top: 20px; border-color: #b9dff2;">
-        <h4 style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
-          <div>Mapa slabin a doporučení</div>
-          <div class="badge" style="font-size:11px;">Odehráno testů: ${p.testCount}</div>
-        </h4>
-        <div style="margin-bottom:16px;">
-          <strong style="font-size:13px; color:#183b54;">Doporučený postup:</strong>
-          <ul class="compact-list" style="margin-top:8px;">${recsHtml}</ul>
+      <div class="dashboard study-dashboard" style="margin-top:20px;border-color:#b9dff2;">
+        <div class="dashboard-head">
+          <div>
+            <h4>Studijní dashboard</h4>
+            <p class="dashboard-headline">Dlouhodobý přehled napříč dokončenými relacemi. Ukazuje, co je stabilně silné, co potřebuje zpevnit a co ještě nemá dost dat.</p>
+          </div>
+          <div class="dashboard-meta">
+            ${renderDashboardTrendBadge(`Trend ${trendDirection}`, trendDirection)}
+            ${renderDashboardMetaPill(`Odehráno testů: ${totalSessions}`, "neutral")}
+          </div>
         </div>
-        
-        <strong style="font-size:13px; color:#183b54;">Nejslabší témata:</strong>
-        <div class="dash-grid" style="margin-top:10px; margin-bottom: 16px;">
-          ${subsHtml}
+
+        <div class="dash-grid tight dashboard-stat-grid" style="margin-bottom:14px;">
+          ${renderDashboardStatCard("Celková úspěšnost", `${summary.overallRate}%`, `${summary.correctCount}/${answeredBase || summary.correctCount} zodpovězených správně`, "primary")}
+          ${renderDashboardStatCard("Pokrytí témat", `${summary.testedSubtopicCount}/${summary.totalKnownSubtopics || summary.testedSubtopicCount}`, `${summary.subtopicCoverageRate}% známých témat`, "neutral")}
+          ${renderDashboardStatCard("Zvládnutá témata", String((summary.masteredSubtopics || []).length), `práh ${Number(summary.thresholds.masteredRate || 95)} %`, "success")}
+          ${renderDashboardStatCard("Silné disciplíny", String((summary.strongestDisciplines || []).length), "dlouhodobě nadprůměrné", "primary")}
+          ${renderDashboardStatCard("Riziková témata", String((summary.riskySubtopics || []).length), "potřebují prioritu", "danger")}
+          ${renderDashboardStatCard("Jisté chybné odpovědi", String(summary.highConfidenceWrongCount || 0), "chyby s vysokou jistotou", "warning")}
         </div>
-        
-        ${errsHtml ? `<strong style="font-size:13px; color:#183b54;">Nejčastější diagnostikované chyby:</strong>
-        <div class="dash-grid" style="margin-top:10px;">
-          ${errsHtml}
-        </div>` : ""}
+
+        <div class="summary-section dashboard-summary-panel" style="margin-bottom:14px;">
+          <div class="dashboard-section-head">
+            <div>
+              <h5>Doporučený postup</h5>
+              <p>Začni tím, co už má dost dat a současně drží nízkou úspěšnost. Silná témata jen potvrzuj a málo procvičené oblasti postupně doplňuj.</p>
+            </div>
+            <div class="dashboard-chip-row compact">
+              ${renderDashboardMetaPill(`disciplíny ${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral")}
+              ${renderDashboardMetaPill(`bez odpovědi ${summary.unansweredCount || 0}`, "neutral")}
+            </div>
+          </div>
+          <div class="dashboard-callout">
+            Máš za sebou <strong>${summary.finishedSessions}</strong> dokončen${summary.finishedSessions === 1 ? "ý test" : summary.finishedSessions >= 2 && summary.finishedSessions <= 4 ? "é testy" : "ých testů"},
+            celkovou úspěšnost <strong>${summary.overallRate} %</strong> a pokryto <strong>${summary.testedSubtopicCount}</strong> z
+            <strong>${summary.totalKnownSubtopics || summary.testedSubtopicCount}</strong> známých témat.
+            Dlouhodobý trend je nyní <strong>${escapeHtml(trendDirection)}</strong>.
+          </div>
+          ${renderDashboardPlan(summary)}
+        </div>
+
+        <div class="dashboard-columns">
+          <section class="summary-section">
+            <div class="dashboard-section-head">
+              <div>
+                <h5>Slabší stránky</h5>
+                <p>Sem se promítají témata, která už mají dost dat a současně nízkou úspěšnost.</p>
+              </div>
+              ${weakDisciplines.length ? `<div class="dashboard-chip-row compact">${weakDisciplines.map(item => renderDashboardBadge(`${item.discipline} · ${item.rate}%`, item.status || "slabé")).join("")}</div>` : ""}
+            </div>
+            <h6 class="dashboard-subhead">Nejslabší témata</h6>
+            ${renderDashboardTopicGrid(weakTopics, "subtopic", weakTopics[0]?.status === "rizikové" ? "risk" : "warn", "Zatím se nevykreslila stabilní slabina s dostatkem dat.")}
+            <div class="dashboard-divider"></div>
+            <h6 class="dashboard-subhead">Nejčastější diagnostikované chyby</h6>
+            ${renderDashboardErrorGrid((summary.topErrors || []).slice(0, 3))}
+          </section>
+
+          <section class="summary-section">
+            <div class="dashboard-section-head">
+              <div>
+                <h5>Silné stránky</h5>
+                <p>Zde jsou témata a disciplíny, které se dlouhodobě drží vysoko, ne jen v jedné relaci.</p>
+              </div>
+              ${strongDisciplines.length ? `<div class="dashboard-chip-row compact">${strongDisciplines.map(item => renderDashboardBadge(`${item.discipline} · ${item.rate}%`, item.status || "silné")).join("")}</div>` : ""}
+            </div>
+            <h6 class="dashboard-subhead">Zvládnutá témata</h6>
+            ${renderDashboardTopicGrid(strongTopics, "subtopic", "strong", "Zatím se ještě nevytvořila stabilně silná témata s dostatkem dat.")}
+            <div class="dashboard-divider"></div>
+            <h6 class="dashboard-subhead">Co už má stabilní základ</h6>
+            <div class="dashboard-callout soft">
+              ${strongTopics.length ? `Silná témata mají smysl průběžně potvrzovat, ale nemusí být aktuální prioritou číslo jedna.` : `Silné stránky se začnou vybarvovat po dalších dokončených relacích.`}
+            </div>
+          </section>
+        </div>
+
+        <div class="dashboard-columns dashboard-columns-secondary">
+          <section class="summary-section">
+            <div class="dashboard-section-head">
+              <div>
+                <h5>Co ještě nemá dost dat</h5>
+                <p>Témata zde nejsou slabina. Jen je zatím potřeba více průchodů pro spolehlivé hodnocení.</p>
+              </div>
+            </div>
+            <div class="dash-grid tight dashboard-undertrained-stats">
+              ${renderDashboardStatCard("Málo procvičeno", String(undertrainedTopics.length), "už se objevilo, ale ještě nestačí", "neutral")}
+              ${renderDashboardStatCard("Ještě neviděno", String(notSeenTopics), "témata mimo dosavadní pokrytí", "neutral")}
+              ${renderDashboardStatCard("Pokrytí disciplín", `${summary.disciplineCoverageRate}%`, `${summary.testedDisciplineCount}/${summary.totalKnownDisciplines || summary.testedDisciplineCount}`, "neutral")}
+            </div>
+            <div class="dashboard-chip-cloud">
+              ${undertrainedTopics.length ? undertrainedTopics.map(item => renderDashboardMetaPill(`${item.subtopic || item.key} · ${item.seen} ot.`, "undertrained")).join("") : `<div class="inline-muted">Málo procvičená témata se začnou vybarvovat po dalších relacích.</div>`}
+            </div>
+          </section>
+
+          <section class="summary-section">
+            <div class="dashboard-section-head">
+              <div>
+                <h5>Trend posledních relací</h5>
+                <p>Rychlý přehled, jestli výkon roste, kolísá nebo se propadá.</p>
+              </div>
+            </div>
+            ${renderDashboardTrend(summary)}
+          </section>
+        </div>
+
+        <div class="summary-section dashboard-summary-panel" style="margin-top:14px;">
+          <div class="dashboard-section-head">
+            <div>
+              <h5>Rychlé akce</h5>
+              <p>Jedním klikem navážeš cíleným procvičením podle toho, co dashboard vyhodnotil.</p>
+            </div>
+          </div>
+          ${quickActions.length ? `<div class="action-grid dashboard-quick-grid">${quickActions.map(item => `<div class="action-card dashboard-quick-card"><h5>${escapeHtml(item.label)}</h5><p>${escapeHtml(item.help)}</p><button class="btn ${item.tone === "primary" ? "btn-primary" : "btn-outline"} btn-sm dashboard-quick-btn" data-kind="${escapeAttr(item.kind)}" data-value="${escapeAttr(item.value || "")}" type="button">Spustit</button></div>`).join("")}</div>` : `<div class="inline-muted">Rychlé akce se doplní s rostoucím množstvím dat.</div>`}
+        </div>
       </div>
     `;
-    wp.querySelectorAll(".btn-practice").forEach(b => {
-      b.addEventListener("click", () => startTargetedPractice(b.dataset.type, b.dataset.param));
+
+    wp.querySelectorAll(".dashboard-topic-btn").forEach(btn => {
+      btn.addEventListener("click", () => runDashboardPracticeAction(btn.dataset.kind, btn.dataset.label));
+    });
+    wp.querySelectorAll(".dashboard-error-btn").forEach(btn => {
+      btn.addEventListener("click", () => runDashboardPracticeAction("error-type", btn.dataset.errorType));
+    });
+    wp.querySelectorAll(".dashboard-quick-btn").forEach(btn => {
+      btn.addEventListener("click", () => runDashboardPracticeAction(btn.dataset.kind, btn.dataset.value));
     });
   }
+
   function renderHistoryPanel() {
     const panel=$("historyPanel"); const h=appState.history;
     if(!h.length){panel.classList.add("hidden");return;}
@@ -767,29 +1246,91 @@
     $("clearBtn").addEventListener("click",clearAnswer);
   }
   function buildWeaknessSummary() {
-    const p = appState.progress;
-    if (!p || p.testCount === 0) return { weakestSubtopics: [], topErrors: [] };
-    const subs = Object.keys(p.subtopics).map(k => {
-      const s = p.subtopics[k];
-      return { subtopic: k, seen: s.seen, correct: s.correct, rate: Math.round(s.correct/s.seen * 100) };
-    }).filter(s => s.seen >= 3).sort((a,b) => a.rate - b.rate);
-    const errs = Object.keys(p.errorTypes).map(k => {
-      return { type: k, count: p.errorTypes[k], label: ERROR_LABELS[k] || k };
-    }).sort((a,b) => b.count - a.count);
-    return { weakestSubtopics: subs.slice(0, 5), topErrors: errs.slice(0, 3) };
+    if (analyticsBridge.buildStudyDashboardSummary) return analyticsBridge.buildStudyDashboardSummary();
+    const p = appState.progress || { subtopics: {}, errorTypes: {}, testCount: 0 };
+    if (!p || Number(p.testCount || 0) === 0) {
+      return {
+        weakestSubtopics: [],
+        riskySubtopics: [],
+        strongestSubtopics: [],
+        masteredSubtopics: [],
+        undertrainedSubtopics: [],
+        weakestDisciplines: [],
+        strongestDisciplines: [],
+        masteredDisciplines: [],
+        undertrainedDisciplines: [],
+        topErrors: [],
+        topFormulations: [],
+        topInstitutionPairs: [],
+        highConfidenceWrongCount: 0,
+        overallRate: 0,
+        finishedSessions: 0,
+        answeredCount: 0,
+        correctCount: 0,
+        wrongCount: 0,
+        unansweredCount: 0,
+        testedSubtopicCount: 0,
+        totalKnownSubtopics: 0,
+        testedDisciplineCount: 0,
+        totalKnownDisciplines: 0,
+        subtopicCoverageRate: 0,
+        disciplineCoverageRate: 0,
+        thresholds: { weakRate: 70, riskyRate: 50, strongRate: 85, masteredRate: 95 },
+        trend: analyticsBridge.buildTrendSummary ? analyticsBridge.buildTrendSummary() : { direction: "none", series: [] }
+      };
+    }
+    const subtopics = Object.keys(p.subtopics || {}).map(k => {
+      const item = p.subtopics[k] || {};
+      const seen = Number(item.seen || 0);
+      const correct = Number(item.correct || 0);
+      const wrong = Math.max(0, seen - correct);
+      const rate = seen ? Math.round(correct / seen * 100) : 0;
+      const status = seen < 3 ? "málo-dat" : rate >= 95 ? "zvládnuté" : rate >= 85 ? "silné" : rate < 50 ? "rizikové" : rate < 70 ? "slabé" : "stabilní";
+      return { subtopic: k, seen, correct, wrong, unanswered: 0, rate, status, sessionCount: 1, trend: "stabilní", confidenceLevel: seen >= 5 ? "střední" : "nízká" };
+    });
+    const topErrors = Object.keys(p.errorTypes || {}).map(k => ({ type: k, count: Number(p.errorTypes[k] || 0), label: analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(k) : (ERROR_LABELS[k] || k) })).sort((a,b)=>b.count-a.count);
+    const answered = subtopics.reduce((sum, item) => sum + item.seen, 0);
+    const correct = subtopics.reduce((sum, item) => sum + item.correct, 0);
+    return {
+      weakestSubtopics: subtopics.filter(item => item.seen >= 3).sort((a,b)=>a.rate-b.rate).slice(0, 5),
+      riskySubtopics: subtopics.filter(item => item.seen >= 3 && item.rate < 50).sort((a,b)=>a.rate-b.rate).slice(0, 5),
+      strongestSubtopics: subtopics.filter(item => item.rate >= 85).sort((a,b)=>b.rate-a.rate).slice(0, 5),
+      masteredSubtopics: subtopics.filter(item => item.rate >= 95 && item.seen >= 5).sort((a,b)=>b.rate-a.rate).slice(0, 5),
+      undertrainedSubtopics: subtopics.filter(item => item.seen < 3).sort((a,b)=>a.seen-b.seen).slice(0, 5),
+      weakestDisciplines: [],
+      strongestDisciplines: [],
+      masteredDisciplines: [],
+      undertrainedDisciplines: [],
+      topErrors: topErrors.slice(0, 4),
+      topFormulations: [],
+      topInstitutionPairs: [],
+      highConfidenceWrongCount: 0,
+      overallRate: answered ? Math.round(correct / answered * 100) : 0,
+      finishedSessions: Number(p.testCount || 0),
+      answeredCount: answered,
+      correctCount: correct,
+      wrongCount: Math.max(0, answered - correct),
+      unansweredCount: 0,
+      testedSubtopicCount: subtopics.filter(item => item.seen > 0).length,
+      totalKnownSubtopics: subtopics.filter(item => item.seen > 0).length,
+      testedDisciplineCount: 0,
+      totalKnownDisciplines: 0,
+      subtopicCoverageRate: 100,
+      disciplineCoverageRate: 0,
+      thresholds: { weakRate: 70, riskyRate: 50, strongRate: 85, masteredRate: 95 },
+      trend: analyticsBridge.buildTrendSummary ? analyticsBridge.buildTrendSummary() : { direction: "none", series: [] }
+    };
   }
   function buildRecommendations() {
-    const w = buildWeaknessSummary();
-    if (!w.weakestSubtopics.length && !w.topErrors.length) return ["Zatím nemáme dostatek dat. Dokonči alespoň jeden test."];
+    if (analyticsBridge.buildRecommendations) return analyticsBridge.buildRecommendations();
+    const summary = buildWeaknessSummary();
     const recs = [];
-    if (w.weakestSubtopics.length > 0) {
-      recs.push(`Zaměř se na téma: ${w.weakestSubtopics[0].subtopic} (úspěšnost ${w.weakestSubtopics[0].rate}%).`);
-    }
-    if (w.topErrors.length > 0) {
-      if (w.topErrors[0].type === "impulsive-click") recs.push("Nejčastěji chybuješ kvůli zbrklosti. Zpomal a čti všechny možnosti.");
-      else if (w.topErrors[0].type === "inattention" || w.topErrors[0].type === "missed-negation") recs.push("Dávej větší pozor na klíčová slova a negace v zadání.");
-      else recs.push(`Nejčastější typ chyby je: ${w.topErrors[0].label}.`);
-    }
+    const repair = summary.riskySubtopics?.[0] || summary.weakestSubtopics?.[0];
+    const maintain = summary.masteredSubtopics?.[0] || summary.strongestSubtopics?.[0];
+    const coverage = summary.undertrainedSubtopics?.[0];
+    if (repair) recs.push({ title: "Zpevni rizikové téma", message: `Začni tématem ${repair.subtopic}.`, filters: { subtopic: repair.subtopic }, bucket: "repair" });
+    if (coverage) recs.push({ title: "Doplň málo procvičené téma", message: `Potvrď si ještě téma ${coverage.subtopic}.`, filters: { subtopic: coverage.subtopic }, bucket: "coverage" });
+    if (maintain) recs.push({ title: "Udrž silné téma", message: `Průběžně si potvrzuj téma ${maintain.subtopic}.`, filters: { subtopic: maintain.subtopic }, bucket: "maintain" });
     return recs;
   }
   function renderResults(timeExpired) {
