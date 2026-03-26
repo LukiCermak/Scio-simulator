@@ -46,29 +46,70 @@
 
   function renderWeaknessMap() {
   const summary = buildWeaknessSummary();
+  const masteredTopics = summary.masteredSubtopics || [];
+  const strongestDisciplines = summary.masteredDisciplines?.length ? summary.masteredDisciplines : (summary.strongestDisciplines || []);
+  const totalTests = summary.finishedSessions || 0;
+  const coverageLabel = `${summary.testedSubtopicCount || 0}/${summary.totalKnownSubtopics || 0}`;
+  const diagnosticErrors = (summary.topErrors || []).filter(item => (item.count || 0) > 0);
+
   return `
     <div class="summary-stack">
       <div class="summary-section">
-        <h5>Přehled výkonu</h5>
+        <h5>Doporučený postup</h5>
         <div class="start-mini-grid">
+          <div class="start-mini-card"><div class="label">Dokončené testy</div><div class="value">${totalTests}</div></div>
           <div class="start-mini-card"><div class="label">Celková úspěšnost</div><div class="value">${summary.overallRate || 0}%</div></div>
+          <div class="start-mini-card"><div class="label">Vyhodnocená témata</div><div class="value">${coverageLabel}</div></div>
           <div class="start-mini-card"><div class="label">Jisté chybné odpovědi</div><div class="value">${summary.highConfidenceWrongCount || 0}</div></div>
-          <div class="start-mini-card"><div class="label">Vyhodnocená podtémata</div><div class="value">${summary.testedSubtopicCount || 0}/${summary.totalKnownSubtopics || 0}</div></div>
-          <div class="start-mini-card"><div class="label">Nejčastější typ chyby</div><div class="value">${escapeHtml(summary.topErrors[0]?.label || "—")}</div></div>
+        </div>
+        <div class="dash-detail" style="margin-top:12px;">
+          ${escapeHtml(totalTests ? `Máš za sebou ${totalTests} dokončen${totalTests === 1 ? "ý test" : totalTests >= 2 && totalTests <= 4 ? "é testy" : "ých testů"}.` : "Po prvním dokončeném testu se tady objeví dlouhodobější doporučení.")} ${escapeHtml(masteredTopics.length ? `U témat s 95 % a vyšší úspěšností už se začínají rýsovat stabilní silné stránky.` : `Silné stránky se zobrazí ve chvíli, kdy se některé téma dostane aspoň na 95 % při opakovaném ověření.`)}
+        </div>
+        <div style="margin-top:12px;">
+          ${renderRecommendedTraining()}
         </div>
       </div>
-      <div class="summary-section">
-        <h5>Slabší stránky</h5>
-        <ul class="summary-list">${summary.weakestSubtopics.length ? summary.weakestSubtopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím není dost dat.</li>`}</ul>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:14px;">
+        <div class="summary-section">
+          <h5>Nejslabší témata a chyby</h5>
+          <div class="dash-detail" style="margin:0 0 12px;">
+            ${summary.weakestSubtopics.length ? `Sem spadají oblasti, které mají zatím nejnižší dlouhodobou úspěšnost.` : `Zatím se neoddělilo slabé téma s dostatkem dat.`}
+          </div>
+          <div style="display:grid; gap:12px;">
+            <div>
+              <strong style="display:block; margin-bottom:8px; color:#183b54;">Nejslabší témata</strong>
+              <ul class="summary-list">${summary.weakestSubtopics.length ? summary.weakestSubtopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím není dost dat.</li>`}</ul>
+            </div>
+            <div>
+              <strong style="display:block; margin-bottom:8px; color:#183b54;">Nejčastější diagnostikované chyby</strong>
+              <ul class="summary-list">${diagnosticErrors.length ? diagnosticErrors.map(item => `<li><strong>${escapeHtml(item.label)}</strong> · ${item.count}×</li>`).join("") : `<li>V dokončených testech se zatím neukázal opakovaný typ chyby.</li>`}</ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-section">
+          <h5>Zvládnutá témata a silné stránky</h5>
+          <div class="dash-detail" style="margin:0 0 12px;">
+            ${masteredTopics.length ? `Tady jsou témata, která držíš na 95 % a výš.` : `Jakmile se některé téma dlouhodobě ustálí na 95 % a víc, objeví se zde.`}
+          </div>
+          <div style="display:grid; gap:12px;">
+            <div>
+              <strong style="display:block; margin-bottom:8px; color:#183b54;">Zvládnutá témata</strong>
+              <ul class="summary-list">${masteredTopics.length ? masteredTopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím se ještě neukázalo stabilně zvládnuté téma.</li>`}</ul>
+            </div>
+            <div>
+              <strong style="display:block; margin-bottom:8px; color:#183b54;">Silné disciplíny</strong>
+              <ul class="summary-list">${strongestDisciplines.length ? strongestDisciplines.map(item => `<li><strong>${escapeHtml(item.discipline)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím není dost dat pro stabilně silnou disciplínu.</li>`}</ul>
+            </div>
+            <div>
+              <strong style="display:block; margin-bottom:8px; color:#183b54;">Co ještě chybí do mapy</strong>
+              <ul class="summary-list">${summary.undertrainedSubtopics.length ? summary.undertrainedSubtopics.slice(0, 4).map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.seen === 0 ? "zatím netestováno" : `${item.seen}×`}</li>`).join("") : `<li>Pokrytí témat je zatím dobré.</li>`}</ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="summary-section">
-        <h5>Silné stránky</h5>
-        <ul class="summary-list">${summary.strongestSubtopics.length ? summary.strongestSubtopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím se ještě neukázala stabilně silná oblast.</li>`}</ul>
-      </div>
-      <div class="summary-section">
-        <h5>Málo procvičeno</h5>
-        <ul class="summary-list">${summary.undertrainedSubtopics.length ? summary.undertrainedSubtopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.seen === 0 ? "zatím netestováno" : `${item.seen}×`}</li>`).join("") : `<li>Pokrytí témat je zatím dobré.</li>`}</ul>
-      </div>
+
       ${renderTrendPanel()}
     </div>`;
 }
@@ -87,10 +128,6 @@
       <div class="dashboard" style="margin-top:20px;">
         <h4>Mapa silných a slabších stránek</h4>
         ${renderWeaknessMap()}
-        <div class="summary-section" style="margin-top:14px;">
-          <h5>Doporučený dnešní trénink</h5>
-          ${renderRecommendedTraining()}
-        </div>
         <div class="summary-section" style="margin-top:14px;">
           <h5>Rychlé akce</h5>
           <div class="action-grid">

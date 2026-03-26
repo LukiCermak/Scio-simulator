@@ -743,6 +743,8 @@
   const weakestSubtopics = subtopicStats.slice().sort(sortByWeakness).slice(0, 5);
   const strongestDisciplines = disciplineStats.slice().filter(item => item.rate >= 80).sort(sortByStrength).slice(0, 3);
   const strongestSubtopics = subtopicStats.slice().filter(item => item.rate >= 80).sort(sortByStrength).slice(0, 5);
+  const masteredDisciplines = disciplineStats.slice().filter(item => item.rate >= 95).sort(sortByStrength).slice(0, 5);
+  const masteredSubtopics = subtopicStats.slice().filter(item => item.rate >= 95).sort(sortByStrength).slice(0, 8);
 
   const undertrainedDisciplines = buildCoverageList("discipline", p.disciplines, metadataItems.map(item => String(item.discipline || "obecná disciplína"))).filter(item => item.seen < 2).slice(0, 5);
   const undertrainedSubtopics = buildCoverageList("subtopic", p.subtopics, metadataItems.map(item => String(item.subtopic || "obecné téma"))).filter(item => item.seen < 2).slice(0, 7);
@@ -777,6 +779,8 @@
     weakestSubtopics,
     strongestDisciplines,
     strongestSubtopics,
+    masteredDisciplines,
+    masteredSubtopics,
     undertrainedDisciplines,
     undertrainedSubtopics,
     topErrors,
@@ -786,6 +790,12 @@
     overallRate,
     testedSubtopicCount,
     testedDisciplineCount,
+    finishedSessions: totals.finishedSessions || 0,
+    answeredCount: totals.answered || 0,
+    seenCount: totals.seen || 0,
+    correctCount: totals.correct || 0,
+    wrongCount: totals.wrong || 0,
+    unansweredCount: totals.unanswered || 0,
     totalKnownSubtopics: new Set(metadataItems.map(item => String(item.subtopic || "obecné téma"))).size,
     totalKnownDisciplines: new Set(metadataItems.map(item => String(item.discipline || "obecná disciplína"))).size,
     trend: buildTrendSummary()
@@ -862,16 +872,16 @@
     });
   }
 
-  if (summary.strongestSubtopics[0]) {
-    const topic = summary.strongestSubtopics[0];
+  const strengthTopic = summary.masteredSubtopics[0] || summary.strongestSubtopics[0];
+  if (strengthTopic) {
     recs.push({
       type: "strength-drill",
       bucket: "strength",
       priority: "low",
-      title: "Udržet silnou stránku",
-      message: `${topic.subtopic} držíš na ${topic.rate} % (${topic.correct}/${topic.seen}).`,
-      reason: "Silná témata má smysl občas potvrdit i pod tlakem.",
-      filters: { subtopic: topic.subtopic }
+      title: strengthTopic.rate >= 95 ? "Potvrdit zvládnuté téma" : "Udržet silnou stránku",
+      message: `${strengthTopic.subtopic} držíš na ${strengthTopic.rate} % (${strengthTopic.correct}/${strengthTopic.seen}).`,
+      reason: strengthTopic.rate >= 95 ? "Téma už působí stabilně a stačí ho průběžně udržovat." : "Silná témata má smysl občas potvrdit i pod tlakem.",
+      filters: { subtopic: strengthTopic.subtopic }
     });
   }
 
