@@ -65,6 +65,14 @@
     .hero h2 { margin:0 0 10px; font-size:31px; line-height:1.2; }
     .hero p { margin:0 0 14px; line-height:1.6; color:#475569; font-size:16px; }
     .hero-note { background:linear-gradient(180deg,#f8fbfe 0%,#f4f9fc 100%); border:1px solid #d8ebf6; border-radius:16px; padding:16px 18px; color:#335a6f; line-height:1.68; font-size:14px; }
+    .hero-note-rich { display:flex; flex-direction:column; gap:14px; }
+    .hero-note-head strong { display:block; margin-bottom:6px; font-size:15px; color:#173f56; }
+    .hero-note-head p { margin:0; font-size:14px; line-height:1.68; color:#3f6275; }
+    .hero-note-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 14px; }
+    .hero-note-item { display:flex; align-items:flex-start; gap:10px; padding:10px 12px; border-radius:12px; background:rgba(255,255,255,0.58); border:1px solid rgba(183,216,234,0.7); }
+    .hero-note-icon { width:28px; height:28px; flex:0 0 28px; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; background:#e8f4fb; font-size:15px; }
+    .hero-note-item strong { display:block; margin-bottom:2px; color:#173f56; font-size:13px; }
+    .hero-note-item span:last-child { display:block; color:#456579; line-height:1.5; font-size:13px; }
     .stats { margin-top:16px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
     .stat-card { border:1px solid var(--line); border-radius:14px; padding:16px; background:#fbfdff; }
     .stat-label { font-size:13px; color:var(--muted); margin-bottom:8px; }
@@ -337,3 +345,7 @@
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
 }
+
+    @media (max-width:960px){
+      .hero-note-list { grid-template-columns:1fr; }
+    }
