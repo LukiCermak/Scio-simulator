@@ -4518,7 +4518,7 @@ window.SCIO_V4_RAW_BATTERIES = [
     "id": 8,
     "label": "Baterie 8",
     "title": "Finální syntetická nejtěžší baterie",
-    "subtitle": "Hard mode: nové syntetické otázky propojující disciplínu, funkční dopad, podporu, systém, komunikaci a proces.",
+    "subtitle": "Hard mode: otázky propojující disciplínu, funkční dopad, podporu, systém, komunikaci a proces.",
     "purpose": "Ověřit skutečně selektivní připravenost na UPOL v hard modu: nepoznat správnou odpověď stylem, ale synteticky rozlišit jádro případu, zvolit funkční podporu a správně číst role školy, ŠPZ, rodiny, sociální a zdravotní oblasti.",
     "difficulty": "vysoká až velmi vysoká",
     "dominant": [
