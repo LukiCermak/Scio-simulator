@@ -14,10 +14,10 @@
   window.renderTrendPanel = renderTrendPanel;
 
   function renderRecommendedTraining() {
-    const recommendations = buildRecommendations();
-    if (!recommendations.length) return `<div class="inline-muted">Doporučení se objeví po prvních výsledcích.</div>`;
-    return `<div class="action-grid">${recommendations.map((item, idx) => `<div class="action-card"><h5>${escapeHtml(item.title)}</h5><p>${escapeHtml(item.message)}</p><button class="btn btn-primary btn-sm" data-rec-index="${idx}" type="button">Spustit</button></div>`).join("")}</div>`;
-  }
+  const recommendations = buildRecommendations();
+  if (!recommendations.length) return `<div class="inline-muted">Doporučení se objeví po prvních výsledcích.</div>`;
+  return `<div class="action-grid">${recommendations.map((item, idx) => `<div class="action-card"><h5>${escapeHtml(item.title)}</h5><p>${escapeHtml(item.message)}</p><small>${escapeHtml(item.reason || "")}</small><button class="btn btn-primary btn-sm" data-rec-index="${idx}" type="button">Spustit</button></div>`).join("")}</div>`;
+}
   window.renderRecommendedTraining = renderRecommendedTraining;
 
   function runRecommendation(item) {
@@ -45,29 +45,33 @@
   window.renderStartScreen = renderStartScreen;
 
   function renderWeaknessMap() {
-    const summary = buildWeaknessSummary();
-    return `
-      <div class="summary-stack">
-        <div class="summary-section">
-          <h5>Mapa slabých míst</h5>
-          <div class="start-mini-grid">
-            <div class="start-mini-card"><div class="label">Jisté chybné odpovědi</div><div class="value">${summary.highConfidenceWrongCount || 0}</div></div>
-            <div class="start-mini-card"><div class="label">Nejčastější typ chyby</div><div class="value">${escapeHtml(summary.topErrors[0]?.label || "—")}</div></div>
-            <div class="start-mini-card"><div class="label">Nejrizikovější formulace</div><div class="value">${escapeHtml(summary.topFormulations[0]?.flag || "—")}</div></div>
-            <div class="start-mini-card"><div class="label">Nejčastější záměna</div><div class="value">${escapeHtml(summary.topInstitutionPairs[0]?.pair || "—")}</div></div>
-          </div>
+  const summary = buildWeaknessSummary();
+  return `
+    <div class="summary-stack">
+      <div class="summary-section">
+        <h5>Přehled výkonu</h5>
+        <div class="start-mini-grid">
+          <div class="start-mini-card"><div class="label">Celková úspěšnost</div><div class="value">${summary.overallRate || 0}%</div></div>
+          <div class="start-mini-card"><div class="label">Jisté chybné odpovědi</div><div class="value">${summary.highConfidenceWrongCount || 0}</div></div>
+          <div class="start-mini-card"><div class="label">Vyhodnocená podtémata</div><div class="value">${summary.testedSubtopicCount || 0}/${summary.totalKnownSubtopics || 0}</div></div>
+          <div class="start-mini-card"><div class="label">Nejčastější typ chyby</div><div class="value">${escapeHtml(summary.topErrors[0]?.label || "—")}</div></div>
         </div>
-        <div class="summary-section">
-          <h5>3 nejslabší disciplíny</h5>
-          <ul class="summary-list">${summary.weakestDisciplines.length ? summary.weakestDisciplines.map(item => `<li><strong>${escapeHtml(item.discipline)}</strong> · ${item.rate}%</li>`).join("") : `<li>Zatím není dost dat.</li>`}</ul>
-        </div>
-        <div class="summary-section">
-          <h5>5 nejslabších podtémat</h5>
-          <ul class="summary-list">${summary.weakestSubtopics.length ? summary.weakestSubtopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.rate}%</li>`).join("") : `<li>Zatím není dost dat.</li>`}</ul>
-        </div>
-        ${renderTrendPanel()}
-      </div>`;
-  }
+      </div>
+      <div class="summary-section">
+        <h5>Slabší stránky</h5>
+        <ul class="summary-list">${summary.weakestSubtopics.length ? summary.weakestSubtopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím není dost dat.</li>`}</ul>
+      </div>
+      <div class="summary-section">
+        <h5>Silné stránky</h5>
+        <ul class="summary-list">${summary.strongestSubtopics.length ? summary.strongestSubtopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím se ještě neukázala stabilně silná oblast.</li>`}</ul>
+      </div>
+      <div class="summary-section">
+        <h5>Málo procvičeno</h5>
+        <ul class="summary-list">${summary.undertrainedSubtopics.length ? summary.undertrainedSubtopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.seen === 0 ? "zatím netestováno" : `${item.seen}×`}</li>`).join("") : `<li>Pokrytí témat je zatím dobré.</li>`}</ul>
+      </div>
+      ${renderTrendPanel()}
+    </div>`;
+}
   window.renderWeaknessMap = renderWeaknessMap;
 
   function renderWeaknessPanel() {
@@ -81,7 +85,7 @@
     panel.classList.remove("hidden");
     panel.innerHTML = `
       <div class="dashboard" style="margin-top:20px;">
-        <h4>Mapa slabých míst</h4>
+        <h4>Mapa silných a slabších stránek</h4>
         ${renderWeaknessMap()}
         <div class="summary-section" style="margin-top:14px;">
           <h5>Doporučený dnešní trénink</h5>
@@ -198,43 +202,55 @@
   window.renderAttentionDashboard = renderAttentionDashboard;
 
   function renderTopicWeaknessSummary() {
-    const s = appState.currentSession; if (!s) return;
-    const analytics = s.results.analytics || {};
-    const disciplineList = (analytics.disciplineBreakdown || []).slice(0, 5);
-    const subtopicList = (analytics.subtopicBreakdown || []).slice(0, 5);
-    const errorList = (analytics.errorSummary || []).slice(0, 5);
-    const formulationList = (analytics.formulationSummary || []).slice(0, 5);
-    const institutionList = (analytics.institutionSummary || []).slice(0, 5);
-    $("thematicWeaknesses").innerHTML = `
-      <div class="dashboard">
-        <h4>Tematická diagnostika</h4>
-        <div class="summary-stack">
-          <div class="summary-section"><h5>Nejslabší disciplíny</h5><ul class="summary-list">${disciplineList.length ? disciplineList.map(item => `<li>${escapeHtml(item.discipline)} · ${item.rate}%</li>`).join("") : `<li>Žádná výrazná slabina.</li>`}</ul></div>
-          <div class="summary-section"><h5>Nejslabší podtémata</h5><ul class="summary-list">${subtopicList.length ? subtopicList.map(item => `<li>${escapeHtml(item.subtopic)} · ${item.rate}%</li>`).join("") : `<li>Žádná výrazná slabina.</li>`}</ul></div>
-          <div class="summary-section"><h5>Nejčastější typy chyb</h5><ul class="summary-list">${errorList.length ? errorList.map(item => `<li>${escapeHtml(item.label)} · ${item.count}×</li>`).join("") : `<li>Bez výrazného vzorce.</li>`}</ul></div>
-          <div class="summary-section"><h5>Nejrizikovější formulace</h5><ul class="summary-list">${formulationList.length ? formulationList.map(item => `<li>${escapeHtml(item.flag)} · ${item.risk}%</li>`).join("") : `<li>Bez výrazného vzorce.</li>`}</ul></div>
-          <div class="summary-section"><h5>Nejčastější institucionální záměny</h5><ul class="summary-list">${institutionList.length ? institutionList.map(item => `<li>${escapeHtml(item.pair)} · ${item.risk}%</li>`).join("") : `<li>Bez výrazného vzorce.</li>`}</ul></div>
-        </div>
-      </div>`;
-  }
+  const s = appState.currentSession; if (!s) return;
+  const analytics = s.results.analytics || {};
+  const summary = buildWeaknessSummary();
+  const weakDisciplines = (analytics.disciplineBreakdown || []).slice().sort((a, b) => a.rate - b.rate).slice(0, 4);
+  const strongDisciplines = (analytics.disciplineBreakdown || []).slice().sort((a, b) => b.rate - a.rate).slice(0, 4);
+  const weakSubtopics = (analytics.subtopicBreakdown || []).slice().sort((a, b) => a.rate - b.rate).slice(0, 5);
+  const strongSubtopics = (analytics.subtopicBreakdown || []).slice().sort((a, b) => b.rate - a.rate).slice(0, 5);
+  const errorList = (analytics.errorSummary || []).slice(0, 5);
+  const formulationList = (analytics.formulationSummary || []).slice(0, 5);
+  const institutionList = (analytics.institutionSummary || []).slice(0, 5);
+  $("thematicWeaknesses").innerHTML = `
+    <div class="dashboard">
+      <h4>Mapa silných a slabších stránek</h4>
+      <div class="summary-stack">
+        <div class="summary-section"><h5>Nejslabší disciplíny v této relaci</h5><ul class="summary-list">${weakDisciplines.length ? weakDisciplines.map(item => `<li>${escapeHtml(item.discipline)} · ${item.rate}%</li>`).join("") : `<li>Bez výrazné slabiny.</li>`}</ul></div>
+        <div class="summary-section"><h5>Nejslabší podtémata v této relaci</h5><ul class="summary-list">${weakSubtopics.length ? weakSubtopics.map(item => `<li>${escapeHtml(item.subtopic)} · ${item.rate}%</li>`).join("") : `<li>Bez výrazné slabiny.</li>`}</ul></div>
+        <div class="summary-section"><h5>Silné disciplíny v této relaci</h5><ul class="summary-list">${strongDisciplines.length ? strongDisciplines.map(item => `<li>${escapeHtml(item.discipline)} · ${item.rate}%</li>`).join("") : `<li>Ještě není co vyhodnotit.</li>`}</ul></div>
+        <div class="summary-section"><h5>Silná podtémata v této relaci</h5><ul class="summary-list">${strongSubtopics.length ? strongSubtopics.map(item => `<li>${escapeHtml(item.subtopic)} · ${item.rate}%</li>`).join("") : `<li>Ještě není co vyhodnotit.</li>`}</ul></div>
+        <div class="summary-section"><h5>Dlouhodobě málo procvičeno</h5><ul class="summary-list">${summary.undertrainedSubtopics.length ? summary.undertrainedSubtopics.slice(0, 5).map(item => `<li>${escapeHtml(item.subtopic)} · ${item.seen === 0 ? "zatím netestováno" : `${item.seen}×`}</li>`).join("") : `<li>Pokrytí témat je zatím dobré.</li>`}</ul></div>
+        <div class="summary-section"><h5>Nejčastější typy chyb</h5><ul class="summary-list">${errorList.length ? errorList.map(item => `<li>${escapeHtml(item.label)} · ${item.count}×</li>`).join("") : `<li>Bez výrazného vzorce.</li>`}</ul></div>
+        <div class="summary-section"><h5>Nejrizikovější formulace</h5><ul class="summary-list">${formulationList.length ? formulationList.map(item => `<li>${escapeHtml(item.flag)} · ${item.risk}%</li>`).join("") : `<li>Bez výrazného vzorce.</li>`}</ul></div>
+        <div class="summary-section"><h5>Nejčastější institucionální záměny</h5><ul class="summary-list">${institutionList.length ? institutionList.map(item => `<li>${escapeHtml(item.pair)} · ${item.risk}%</li>`).join("") : `<li>Bez výrazného vzorce.</li>`}</ul></div>
+      </div>
+    </div>`;
+}
   window.renderTopicWeaknessSummary = renderTopicWeaknessSummary;
   window.renderThematicWeaknesses = renderTopicWeaknessSummary;
 
   function renderRecommendations() {
-    const s = appState.currentSession; if (!s) return;
-    const recommendations = s.results.recommendations || buildRecommendations();
-    const diag = s.results.diagnosticSummary || {};
-    const trend = buildTrendSummary();
-    $("recommendationsPanel").innerHTML = `
-      <div class="dashboard" style="background:#f4fafd; border-color:#d5e7f2;">
-        <h4>Doporučení další práce</h4>
-        <div class="summary-stack">
-          <div class="summary-section"><h5>Co opakovat dnes</h5><ul class="summary-list">${recommendations.length ? recommendations.map(item => `<li><strong>${escapeHtml(item.title)}</strong> – ${escapeHtml(item.message)}</li>`).join("") : `<li>Dokonči další relaci a doporučení se zpřesní.</li>`}</ul></div>
-          <div class="summary-section"><h5>Diagnostické shrnutí</h5><ul class="summary-list"><li><strong>Největší problém této relace:</strong> ${escapeHtml(getErrorLabel(diag.dominantErrorType) || "—")}</li><li><strong>Největší dlouhodobá slabina:</strong> ${escapeHtml(diag.weakestSubtopic || diag.weakestDiscipline || "—")}</li><li><strong>Trend:</strong> ${escapeHtml(trend.direction || "—")}</li></ul></div>
-          <div class="summary-section"><h5>Otázky k cílenému opakování</h5><div class="dash-detail">Do cíleného opakování patří hlavně otázky s falešnou jistotou, opakovanou záměnou institucí, kritickou formulací a ručním označením.</div></div>
-        </div>
-      </div>`;
-  }
+  const s = appState.currentSession; if (!s) return;
+  const recommendations = s.results.recommendations || buildRecommendations();
+  const diag = s.results.diagnosticSummary || {};
+  const trend = buildTrendSummary();
+  const summary = buildWeaknessSummary();
+  const weaknessItems = recommendations.filter(item => item.bucket === "weakness" || item.bucket === "process").slice(0, 3);
+  const strengthItems = recommendations.filter(item => item.bucket === "strength").slice(0, 2);
+  const coverageItems = recommendations.filter(item => item.bucket === "coverage").slice(0, 2);
+  $("recommendationsPanel").innerHTML = `
+    <div class="dashboard" style="background:#f4fafd; border-color:#d5e7f2;">
+      <h4>Doporučení další práce</h4>
+      <div class="summary-stack">
+        <div class="summary-section"><h5>Co zpevnit hned teď</h5><ul class="summary-list">${weaknessItems.length ? weaknessItems.map(item => `<li><strong>${escapeHtml(item.title)}</strong> – ${escapeHtml(item.message)}</li>`).join("") : `<li>Dokonči další relaci a doporučení se zpřesní.</li>`}</ul></div>
+        <div class="summary-section"><h5>Co už je silné</h5><ul class="summary-list">${strengthItems.length ? strengthItems.map(item => `<li><strong>${escapeHtml(item.title)}</strong> – ${escapeHtml(item.message)}</li>`).join("") : `<li>Zatím se ještě nevykreslila stabilní silná oblast.</li>`}</ul></div>
+        <div class="summary-section"><h5>Co ještě nemá dost dat</h5><ul class="summary-list">${coverageItems.length ? coverageItems.map(item => `<li><strong>${escapeHtml(item.title)}</strong> – ${escapeHtml(item.message)}</li>`).join("") : `<li>Pokrytí témat je zatím dobré.</li>`}</ul></div>
+        <div class="summary-section"><h5>Diagnostické shrnutí</h5><ul class="summary-list"><li><strong>Největší problém této relace:</strong> ${escapeHtml(getErrorLabel(diag.dominantErrorType) || "—")}</li><li><strong>Nejslabší dlouhodobé podtéma:</strong> ${escapeHtml(summary.weakestSubtopics[0]?.subtopic || diag.weakestSubtopic || diag.weakestDiscipline || "—")}</li><li><strong>Nejsilnější dlouhodobé podtéma:</strong> ${escapeHtml(summary.strongestSubtopics[0]?.subtopic || "—")}</li><li><strong>Trend:</strong> ${escapeHtml(trend.direction || "—")}</li></ul></div>
+        <div class="summary-section"><h5>Jak číst cílené opakování</h5><div class="dash-detail">Do cíleného opakování patří hlavně otázky s falešnou jistotou, opakovanou záměnou institucí, kritickou formulací a ručním označením. Silná témata se vyplatí jen průběžně potvrzovat, ne přetěžovat.</div></div>
+      </div>
+    </div>`;
+}
   window.renderRecommendations = renderRecommendations;
   window.renderRecommendationsPanel = renderRecommendations;
 
@@ -258,6 +274,96 @@
     panel.querySelectorAll("[data-repair-index]").forEach(btn => btn.addEventListener("click", () => startRepairModeFromResults(visible[Number(btn.dataset.repairIndex)].key)));
   }
   window.renderRepairPanel = renderRepairPanel;
+
+function getReviewOptionDescriptor(question, index) {
+  if (!question || !Array.isArray(question.options) || index == null || index < 0 || index >= question.options.length) return "—";
+  return `${LETTERS[index]}) ${question.options[index]}`;
+}
+
+function normalizeTutorText(text) {
+  return String(text || "").replace(/\s+/g, " ").trim();
+}
+
+function pickTutorSignal(question, metadata) {
+  const patterns = Array.isArray(metadata?.signalPattern) ? metadata.signalPattern.map(item => normalizeTutorText(item)).filter(Boolean) : [];
+  const direct = normalizeTutorText(metadata?.signalHint || "");
+  if (patterns.length) return patterns[0];
+  if (direct) {
+    const parts = direct.split(/[:;,]/).map(part => normalizeTutorText(part)).filter(Boolean);
+    return parts.find(part => part.length <= 48) || parts[0] || direct;
+  }
+  const source = String(question?.text || "");
+  const match = source.match(/\b(není|nesprávně|neplatí|nejlépe|nejpřesněji|nejvhodnější|první krok|typicky|nejčastěji)\b/i);
+  return match ? match[0] : "klíčové rozlišení";
+}
+
+function buildTutorCorrectReason(question, metadata) {
+  const correctLabel = getReviewOptionDescriptor(question, question?.correct);
+  const discrimination = normalizeTutorText(metadata?.requiredDiscrimination || metadata?.questionCore || "");
+  const theory = normalizeTutorText(metadata?.microLesson || metadata?.explanationCorrect || "");
+  const theoryTail = theory
+    .replace(/^Správně je [A-D], protože\s*/i, "")
+    .replace(/^Správná možnost\s*/i, "")
+    .replace(/^tato možnost\s*/i, "Tato možnost ");
+  const pieces = [
+    `Správně je ${correctLabel}, protože jako jediná možnost drží jádro zadání.`,
+    discrimination ? `V této otázce bylo potřeba rozlišit ${discrimination}.` : "",
+    theoryTail || ""
+  ].filter(Boolean);
+  return pieces.join(" ");
+}
+
+function buildTutorDistractorText(question, state, metadata, isCorrect, isUnanswered) {
+  const selectedLabel = state?.selectedAnswer == null ? "" : getReviewOptionDescriptor(question, state.selectedAnswer);
+  const baseTrap = normalizeTutorText(metadata?.explanationDistractor || metadata?.commonMisconception || "");
+  const discrimination = normalizeTutorText(metadata?.requiredDiscrimination || metadata?.questionCore || "");
+  if (isUnanswered) {
+    return [
+      "Otázka zůstala bez odpovědi.",
+      baseTrap ? `Nejvíc by zde mátla tato past: ${baseTrap}` : "",
+      discrimination ? `Při návratu se soustřeď hlavně na rozdíl: ${discrimination}.` : ""
+    ].filter(Boolean).join(" ");
+  }
+  if (isCorrect) {
+    return [
+      "Tentokrát jsi distraktoru odolal.",
+      baseTrap ? `Lákavý byl hlavně proto, že ${baseTrap}` : "",
+      discrimination ? `Rozhodující bylo udržet rozdíl: ${discrimination}.` : ""
+    ].filter(Boolean).join(" ");
+  }
+  return [
+    selectedLabel ? `Zvolená možnost ${selectedLabel} byla lákavá, protože patří do stejné tematické oblasti.` : "",
+    baseTrap || "",
+    discrimination ? `Nesedí ale v rozhodujícím rozlišení: ${discrimination}.` : ""
+  ].filter(Boolean).join(" ");
+}
+
+function buildTutorTheoryText(metadata) {
+  const lesson = normalizeTutorText(metadata?.microLesson || "");
+  const recall = normalizeTutorText(metadata?.recommendedRecallPrompt || "");
+  const discipline = normalizeTutorText(metadata?.discipline || "");
+  const subtopic = normalizeTutorText(metadata?.subtopic || "");
+  const parts = [
+    lesson || "Vrať se k jádru otázky a teprve potom porovnávej možnosti.",
+    recall ? `Pro upevnění: ${recall}` : "",
+    (discipline || subtopic) ? `Okruh: ${[discipline, subtopic].filter(Boolean).join(" · ")}.` : ""
+  ].filter(Boolean);
+  return parts.join(" ");
+}
+
+function buildTutorDiagnostics(question, state, metadata, isCorrect, isUnanswered) {
+  const errorLabel = getErrorLabel(state?.manualErrorType || state?.autoErrorType) || "";
+  const confidenceText = state?.confidence === "high" ? "Odpověď byla jistá." : state?.confidence === "medium" ? "Odpověď byla spíše jistá." : state?.confidence === "guess" ? "Šlo spíš o tip." : "Jistota nebyla vyplněna.";
+  const tempoText = (state?.timeSpentMs || 0) >= 60000 ? "Rozhodování bylo pomalejší." : (state?.timeSpentMs || 0) > 0 ? "Tempo bylo v normě." : "";
+  const changeText = (state?.answerChanges || 0) >= 2 ? "Odpověď se vícekrát měnila." : ((state?.answerChanges || 0) === 1 ? "Odpověď byla jednou změněna." : "");
+  if (isUnanswered) {
+    return [confidenceText, tempoText, "Trenažér to bere jako neuzavřené rozhodnutí.", errorLabel ? `Nejbližší štítek chyby: ${errorLabel}.` : ""].filter(Boolean).join(" ");
+  }
+  if (isCorrect) {
+    return [confidenceText, tempoText, changeText, "V této položce je výkon stabilní."].filter(Boolean).join(" ");
+  }
+  return [confidenceText, tempoText, changeText, errorLabel ? `Trenažér tuto chybu řadí jako: ${errorLabel}.` : "", normalizeTutorText(metadata?.whyWrongCategory || "")].filter(Boolean).join(" ");
+}
 
   function renderReview() {
     const s = appState.currentSession; if (!s) return;
@@ -309,26 +415,23 @@
   window.renderReviewResultTab = renderReviewResultTab;
 
   function renderReviewExplanationTab(item) {
-    const { q, qs, qIndex } = item;
-    const m = q.metadata || {};
-    return `
-      <div class="review-content hidden" data-content="explanation">
-        <div class="review-explainer-list">
-          <div class="review-explainer-item"><strong>Jádro otázky</strong>${escapeHtml(m.questionCore || "—")}</div>
-          <div class="review-explainer-item"><strong>Rozhodující signál</strong>${escapeHtml(m.signalHint || (m.signalPattern || []).join(", ") || "—")}</div>
-          <div class="review-explainer-item"><strong>Správná logika</strong>${escapeHtml(m.explanationCorrect || "—")}</div>
-          <div class="review-explainer-item"><strong>Proč byl distraktor lákavý</strong>${escapeHtml(m.explanationDistractor || m.commonMisconception || "—")}</div>
-          <div class="review-explainer-item"><strong>Co chyba pravděpodobně znamená</strong>${escapeHtml(m.whyWrongCategory || getErrorLabel(qs.manualErrorType || qs.autoErrorType) || "—")}</div>
-          <div class="review-explainer-item"><strong>Mikrolekce</strong>${escapeHtml(m.microLesson || "—")}</div>
-          <div class="review-explainer-item"><strong>Aktivní vybavení</strong>${escapeHtml(m.recommendedRecallPrompt || "—")}</div>
-          <div class="review-explainer-item"><strong>Disciplína a podtéma</strong>${escapeHtml(m.discipline || "—")} · ${escapeHtml(m.subtopic || "—")}</div>
-          <div class="review-explainer-item"><strong>Související opravný filtr</strong>${escapeHtml((m.recommendedRepairFilters || []).join(", ") || m.subtopic || "—")}</div>
-        </div>
-        <div class="review-actions-row">
-          <button class="btn btn-outline btn-sm add-revision-btn" data-qi="${qIndex}" type="button">${qs.addedToRevision ? "Odebrat z cíleného opakování" : "Přidat do cíleného opakování"}</button>
-        </div>
-      </div>`;
-  }
+  const { q, qs, qIndex, isCorrect, isUnanswered } = item;
+  const m = q.metadata || {};
+  return `
+    <div class="review-content hidden" data-content="explanation">
+      <div class="review-explainer-list">
+        <div class="review-explainer-item"><strong>Signální slovo / obrat</strong>${escapeHtml(pickTutorSignal(q, m) || "—")}</div>
+        <div class="review-explainer-item"><strong>Proč je správně</strong>${escapeHtml(buildTutorCorrectReason(q, m) || "—")}</div>
+        <div class="review-explainer-item"><strong>Lákavý distraktor</strong>${escapeHtml(buildTutorDistractorText(q, qs, m, isCorrect, isUnanswered) || "—")}</div>
+        <div class="review-explainer-item"><strong>Teoretické okénko</strong>${escapeHtml(buildTutorTheoryText(m) || "—")}</div>
+        <div class="review-explainer-item"><strong>Diagnostika trenažéru</strong>${escapeHtml(buildTutorDiagnostics(q, qs, m, isCorrect, isUnanswered) || "—")}</div>
+        <div class="review-explainer-item"><strong>Související opravný filtr</strong>${escapeHtml((m.recommendedRepairFilters || []).join(", ") || m.subtopic || "—")}</div>
+      </div>
+      <div class="review-actions-row">
+        <button class="btn btn-outline btn-sm add-revision-btn" data-qi="${qIndex}" type="button">${qs.addedToRevision ? "Odebrat z cíleného opakování" : "Přidat do cíleného opakování"}</button>
+      </div>
+    </div>`;
+}
   window.renderReviewExplanationTab = renderReviewExplanationTab;
 
   function renderReviewItem(qIndex) {
@@ -347,7 +450,7 @@
       <div class="review-body">
         <div class="review-tabs">
           <button class="review-tab active" data-tab="result" type="button">Výsledek</button>
-          <button class="review-tab" data-tab="explanation" type="button">Výklad</button>
+          <button class="review-tab" data-tab="explanation" type="button">Výklad učitele</button>
         </div>
         ${renderReviewResultTab(data)}
         ${renderReviewExplanationTab(data)}

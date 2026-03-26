@@ -694,111 +694,222 @@
   }
 
   function buildWeaknessSummary() {
-    const p = appState.progress || getEmptyProgressV4();
-    const weakestDisciplines = Object.entries(p.disciplines || {}).map(([discipline, value]) => ({
-      discipline,
-      seen: value.seen || 0,
-      rate: value.seen ? Math.round((value.correct || 0) / value.seen * 100) : 0
-    })).filter(item => item.seen >= 2).sort((a,b)=>a.rate-b.rate).slice(0, 3);
-    const weakestSubtopics = Object.entries(p.subtopics || {}).map(([subtopic, value]) => ({
-      subtopic,
-      seen: value.seen || 0,
-      rate: value.seen ? Math.round((value.correct || 0) / value.seen * 100) : 0
-    })).filter(item => item.seen >= 2).sort((a,b)=>a.rate-b.rate).slice(0, 5);
-    const topErrors = Object.entries(p.errorTypes || {}).map(([type, value]) => ({
-      type,
-      count: value.wrong || value.seen || 0,
-      label: getErrorLabel(type)
-    })).sort((a,b)=>b.count-a.count).slice(0, 5);
-    const topFormulations = Object.entries(p.formulations || {}).map(([flag, value]) => ({
-      flag,
-      risk: value.seen ? Math.round((value.wrong || 0) / value.seen * 100) : 0,
-      count: value.wrong || 0
-    })).sort((a,b)=>b.risk-a.risk).slice(0, 5);
-    const topInstitutionPairs = Object.entries(p.institutionConfusions || {}).map(([pair, value]) => ({
-      pair,
-      risk: value.seen ? Math.round((value.wrong || 0) / value.seen * 100) : 0,
-      count: value.wrong || 0
-    })).sort((a,b)=>b.count-a.count).slice(0, 5);
-    return {
-      weakestDisciplines,
-      weakestSubtopics,
-      topErrors,
-      topFormulations,
-      topInstitutionPairs,
-      highConfidenceWrongCount: p.totals?.highConfidenceWrong || 0,
-      trend: buildTrendSummary()
-    };
+  const p = appState.progress || getEmptyProgressV4();
+  const metadataItems = Array.isArray(window.metadataExport?.items) ? window.metadataExport.items : [];
+  const rateFor = value => value?.seen ? Math.round(((value.correct || 0) / value.seen) * 100) : 0;
+  const sortByWeakness = (a, b) => (a.rate - b.rate) || (b.seen - a.seen) || String(a.label).localeCompare(String(b.label), "cs");
+  const sortByStrength = (a, b) => (b.rate - a.rate) || (b.seen - a.seen) || String(a.label).localeCompare(String(b.label), "cs");
+
+  function registryToRankedList(registry, labelKey, minSeen) {
+    return Object.entries(registry || {}).map(([label, value]) => ({
+      [labelKey]: label,
+      label,
+      seen: value?.seen || 0,
+      correct: value?.correct || 0,
+      wrong: value?.wrong || 0,
+      unanswered: value?.unanswered || 0,
+      rate: rateFor(value),
+      highConfidenceWrong: value?.highConfidenceWrong || 0,
+      avgTimeMs: value?.avgTimeMs || 0
+    })).filter(item => item.seen >= minSeen);
   }
+
+  function buildCoverageList(labelKey, registry, datasetLabels) {
+    const sourceFrequency = {};
+    datasetLabels.forEach(label => { sourceFrequency[label] = (sourceFrequency[label] || 0) + 1; });
+    return Object.entries(sourceFrequency).map(([label, poolCount]) => {
+      const entry = registry?.[label] || {};
+      const seen = entry?.seen || 0;
+      return {
+        [labelKey]: label,
+        label,
+        seen,
+        poolCount,
+        rate: rateFor(entry),
+        missing: Math.max(0, poolCount - seen),
+        status: seen === 0 ? "netestováno" : (seen < 2 ? "málo procvičeno" : "procvičeno")
+      };
+    }).filter(item => item.poolCount > 0).sort((a, b) => {
+      if (a.seen !== b.seen) return a.seen - b.seen;
+      if (a.poolCount !== b.poolCount) return b.poolCount - a.poolCount;
+      return String(a.label).localeCompare(String(b.label), "cs");
+    });
+  }
+
+  const disciplineStats = registryToRankedList(p.disciplines, "discipline", 2);
+  const subtopicStats = registryToRankedList(p.subtopics, "subtopic", 2);
+
+  const weakestDisciplines = disciplineStats.slice().sort(sortByWeakness).slice(0, 3);
+  const weakestSubtopics = subtopicStats.slice().sort(sortByWeakness).slice(0, 5);
+  const strongestDisciplines = disciplineStats.slice().filter(item => item.rate >= 80).sort(sortByStrength).slice(0, 3);
+  const strongestSubtopics = subtopicStats.slice().filter(item => item.rate >= 80).sort(sortByStrength).slice(0, 5);
+
+  const undertrainedDisciplines = buildCoverageList("discipline", p.disciplines, metadataItems.map(item => String(item.discipline || "obecná disciplína"))).filter(item => item.seen < 2).slice(0, 5);
+  const undertrainedSubtopics = buildCoverageList("subtopic", p.subtopics, metadataItems.map(item => String(item.subtopic || "obecné téma"))).filter(item => item.seen < 2).slice(0, 7);
+
+  const topErrors = Object.entries(p.errorTypes || {}).map(([type, value]) => ({
+    type,
+    count: value?.wrong || value?.seen || 0,
+    label: getErrorLabel(type)
+  })).sort((a,b)=>b.count-a.count).slice(0, 5);
+
+  const topFormulations = Object.entries(p.formulations || {}).map(([flag, value]) => ({
+    flag,
+    risk: value?.seen ? Math.round(((value.wrong || 0) / value.seen) * 100) : 0,
+    count: value?.wrong || 0,
+    seen: value?.seen || 0
+  })).filter(item => item.seen > 0).sort((a,b)=>(b.risk-a.risk) || (b.count-a.count)).slice(0, 5);
+
+  const topInstitutionPairs = Object.entries(p.institutionConfusions || {}).map(([pair, value]) => ({
+    pair,
+    risk: value?.seen ? Math.round(((value.wrong || 0) / value.seen) * 100) : 0,
+    count: value?.wrong || 0,
+    seen: value?.seen || 0
+  })).filter(item => item.seen > 0).sort((a,b)=>(b.count-a.count) || (b.risk-a.risk)).slice(0, 5);
+
+  const totals = p.totals || {};
+  const testedSubtopicCount = subtopicStats.length;
+  const testedDisciplineCount = disciplineStats.length;
+  const overallRate = totals.seen ? Math.round(((totals.correct || 0) / totals.seen) * 100) : 0;
+
+  return {
+    weakestDisciplines,
+    weakestSubtopics,
+    strongestDisciplines,
+    strongestSubtopics,
+    undertrainedDisciplines,
+    undertrainedSubtopics,
+    topErrors,
+    topFormulations,
+    topInstitutionPairs,
+    highConfidenceWrongCount: totals.highConfidenceWrong || 0,
+    overallRate,
+    testedSubtopicCount,
+    testedDisciplineCount,
+    totalKnownSubtopics: new Set(metadataItems.map(item => String(item.subtopic || "obecné téma"))).size,
+    totalKnownDisciplines: new Set(metadataItems.map(item => String(item.discipline || "obecná disciplína"))).size,
+    trend: buildTrendSummary()
+  };
+}
   window.buildWeaknessSummary = buildWeaknessSummary;
 
   function buildRecommendations() {
-    const session = appState.currentSession;
-    const weakness = buildWeaknessSummary();
-    const trend = buildTrendSummary();
-    const recs = [];
-    if (session && session.results?.diagnosticSummary?.topInstitutionConfusion) {
-      recs.push({
-        type: "institution-drill",
-        priority: "high",
-        title: "Procvič záměny institucí",
-        message: `Procvič ${session.results.diagnosticSummary.topInstitutionConfusion}.`,
-        reason: "V relaci se opakovala záměna institucí.",
-        filters: { institutionPair: session.results.diagnosticSummary.topInstitutionConfusion }
-      });
-    }
-    if (weakness.weakestSubtopics[0]) {
-      recs.push({
-        type: "subtopic-drill",
-        priority: "high",
-        title: "Procvič nejslabší podtéma",
-        message: `Dnes procvič hlavně téma ${weakness.weakestSubtopics[0].subtopic}.`,
-        reason: `Dlouhodobě máš v tomto podtématu úspěšnost ${weakness.weakestSubtopics[0].rate} %.`,
-        filters: { subtopic: weakness.weakestSubtopics[0].subtopic }
-      });
-    }
-    if (weakness.topFormulations[0]) {
-      recs.push({
-        type: "formulation-drill",
-        priority: "medium",
-        title: "Procvič rizikové formulace",
-        message: `Zaměř se na formulaci ${weakness.topFormulations[0].flag}.`,
-        reason: "Právě tato formulace ti dělá největší potíže.",
-        filters: { formulation: weakness.topFormulations[0].flag }
-      });
-    }
-    if ((weakness.highConfidenceWrongCount || 0) > 0) {
-      recs.push({
-        type: "false-confidence-drill",
-        priority: "high",
-        title: "Procvič falešnou jistotu",
-        message: "Vrať se k jistým chybným odpovědím.",
-        reason: `V historii máš ${weakness.highConfidenceWrongCount} jistých chybných odpovědí.`,
-        filters: { highConfidenceWrong: true }
-      });
-    }
-    if (trend.direction === "zhoršení") {
-      recs.push({
-        type: "stabilization",
-        priority: "medium",
-        title: "Zpomal a stabilizuj výkon",
-        message: "V dalších dvou relacích upřednostni přesnost před tempem.",
-        reason: "Trend posledních pokusů je klesající.",
-        filters: { mode: "reading-training" }
-      });
-    }
-    if (session && session.results?.diagnosticSummary?.dominantProcessWeakness) {
-      recs.push({
-        type: "process-fix",
-        priority: "medium",
-        title: "Oprav procesní chybu",
-        message: `Největší procesní problém relace: ${getErrorLabel(session.results.diagnosticSummary.dominantProcessWeakness)}.`,
-        reason: "Vyplatí se nejdřív stabilizovat způsob čtení a rozhodování.",
-        filters: { errorType: session.results.diagnosticSummary.dominantProcessWeakness }
-      });
-    }
-    return recs.slice(0, 5);
+  const session = appState.currentSession;
+  const summary = buildWeaknessSummary();
+  const trend = buildTrendSummary();
+  const diag = session?.results?.diagnosticSummary || {};
+  const recs = [];
+
+  if (summary.weakestSubtopics[0]) {
+    const topic = summary.weakestSubtopics[0];
+    recs.push({
+      type: "subtopic-drill",
+      bucket: "weakness",
+      priority: "high",
+      title: "Zpevnit nejslabší podtéma",
+      message: `${topic.subtopic} má zatím ${topic.rate} % (${topic.correct}/${topic.seen}).`,
+      reason: "Je to aktuálně nejslabší dlouhodobě měřené podtéma.",
+      filters: { subtopic: topic.subtopic }
+    });
   }
+
+  if (diag.topInstitutionConfusion) {
+    recs.push({
+      type: "institution-drill",
+      bucket: "weakness",
+      priority: "high",
+      title: "Vrátit se k záměně institucí",
+      message: `Procvič rozdíl ${diag.topInstitutionConfusion}.`,
+      reason: "Právě tato záměna se ukázala v poslední relaci.",
+      filters: { institutionPair: diag.topInstitutionConfusion }
+    });
+  }
+
+  if (summary.topFormulations[0] && summary.topFormulations[0].count > 0) {
+    recs.push({
+      type: "formulation-drill",
+      bucket: "weakness",
+      priority: "medium",
+      title: "Procvičit rizikovou formulaci",
+      message: `${summary.topFormulations[0].flag} dělá chybu v ${summary.topFormulations[0].risk} % případů.`,
+      reason: "Vyplatí se zautomatizovat čtení kritických formulací.",
+      filters: { formulation: summary.topFormulations[0].flag }
+    });
+  }
+
+  if ((summary.highConfidenceWrongCount || 0) > 0) {
+    recs.push({
+      type: "false-confidence-drill",
+      bucket: "weakness",
+      priority: "high",
+      title: "Rozebrat jisté chyby",
+      message: `V historii máš ${summary.highConfidenceWrongCount} jistých chybných odpovědí.`,
+      reason: "Tohle je nejrychlejší cesta ke zvýšení přesnosti.",
+      filters: { highConfidenceWrong: true }
+    });
+  }
+
+  if (summary.undertrainedSubtopics[0]) {
+    const topic = summary.undertrainedSubtopics[0];
+    recs.push({
+      type: "coverage-drill",
+      bucket: "coverage",
+      priority: "medium",
+      title: "Doplnit málo procvičené téma",
+      message: `${topic.subtopic} má zatím jen ${topic.seen} pokus${topic.seen === 1 ? "" : "y"}.`,
+      reason: "U tohoto tématu ještě není dost dat pro poctivý závěr.",
+      filters: { subtopic: topic.subtopic }
+    });
+  }
+
+  if (summary.strongestSubtopics[0]) {
+    const topic = summary.strongestSubtopics[0];
+    recs.push({
+      type: "strength-drill",
+      bucket: "strength",
+      priority: "low",
+      title: "Udržet silnou stránku",
+      message: `${topic.subtopic} držíš na ${topic.rate} % (${topic.correct}/${topic.seen}).`,
+      reason: "Silná témata má smysl občas potvrdit i pod tlakem.",
+      filters: { subtopic: topic.subtopic }
+    });
+  }
+
+  if (trend.direction === "zhoršení") {
+    recs.push({
+      type: "stabilization",
+      bucket: "process",
+      priority: "medium",
+      title: "Stabilizovat tempo",
+      message: "V další relaci dej přednost přesnosti před tempem.",
+      reason: "Trend posledních pokusů je klesající.",
+      filters: { mode: "reading-training" }
+    });
+  }
+
+  if (diag.dominantProcessWeakness) {
+    recs.push({
+      type: "process-fix",
+      bucket: "process",
+      priority: "medium",
+      title: "Opravit procesní chybu",
+      message: `Nejčastější procesní problém: ${getErrorLabel(diag.dominantProcessWeakness)}.`,
+      reason: "Vyplatí se upravit způsob čtení a rozhodování, ne jen obsah.",
+      filters: { errorType: diag.dominantProcessWeakness }
+    });
+  }
+
+  const seen = new Set();
+  return recs.filter(item => {
+    const key = `${item.type}:${JSON.stringify(item.filters || {})}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).sort((a, b) => {
+    const order = { high: 0, medium: 1, low: 2 };
+    return (order[a.priority] ?? 9) - (order[b.priority] ?? 9);
+  }).slice(0, 6);
+}
   window.buildRecommendations = buildRecommendations;
 
   function updateProgressFromSession(session) {
