@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SCIO simulátor v4</title>
   <link rel="stylesheet" href="styles_v4.css" />
-  <script src="data_metadata.js" defer></script>
-  <script src="data_v4_questions.js" defer></script>
-  <script src="analytics_v4.js" defer></script>
-  <script src="render_v4.js" defer></script>
-  <script src="app_core_v4.js" defer></script>
-  <script src="bootstrap_v4.js" defer></script>
+  <script src="data_metadata.js"></script>
+  <script src="data_v4_questions.js"></script>
+  <script src="analytics_v4.js"></script>
+  <script src="render_v4.js"></script>
+  <script src="app_core_v4.js"></script>
+  <script src="bootstrap_v4.js"></script>
 </head>
 <body>
 
@@ -66,7 +66,7 @@
           <label class="config-check"><input type="checkbox" id="optHighlightKeywords"> zvýrazňovat riziková slova</label>
           <label class="config-check"><input type="checkbox" id="optRequireConfidence"> po odpovědi vyžadovat jistotu</label>
           <label class="config-check"><input type="checkbox" id="optAutoSave" checked> automaticky ukládat stav</label>
-          <label class="config-check"><input type="checkbox" id="optRestoreSession" checked> při návratu obnovit session</label>
+          <label class="config-check"><input type="checkbox" id="optRestoreSession" checked> při návratu obnovit relaci</label>
         </div>
       </div>
 
@@ -114,7 +114,7 @@
         <div class="question-grid" id="questionGrid"></div>
         <div class="side-actions">
           <button class="btn btn-light btn-sm" id="focusModeBtn" type="button">⊞ Režim soustředění</button>
-          <button class="btn btn-outline btn-sm" id="changeBatteryBtn" type="button">Vybrat jinou baterii</button>
+          <button class="btn btn-outline btn-sm" id="changeBatteryBtn" type="button">Návrat do hlavního menu</button>
           <button class="btn btn-danger btn-sm" id="finishBtn" type="button">Vyhodnotit test</button>
         </div>
         <div class="warning" style="margin-top:10px; font-size:13px;">Klávesy: A–D odpověď · ←→ navigace · F označit · 1/2/3 jistota · R odkrýt odpovědi · Mezerník režim soustředění</div>
@@ -171,7 +171,7 @@
             <button class="btn btn-purple" id="repairBtn">Spustit opravný režim</button>
             <button class="btn btn-light" id="restartBtn">Restartovat baterii</button>
             <button class="btn btn-outline" id="backToSelectionBtn">Zpět na výběr</button>
-            <button class="btn btn-outline btn-sm" id="clearSessionBtn">Vyčistit session</button>
+            <button class="btn btn-outline btn-sm" id="clearSessionBtn">Vymazat uloženou relaci</button>
           </div>
           <div id="reviewWrap" class="hidden"></div>
         </section>
