@@ -1170,7 +1170,6 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
             <div>
               <h4>Studijní dashboard</h4>
               <p class="dashboard-headline">${summary.source === "history-only" ? "Souhrn je obnovený hlavně z historie pokusů. Detailní tematická mapa se doplní po dalších dokončených relacích." : "Dlouhodobý přehled napříč dokončenými testy. Ukazuje, co máš už zvládnuté, co potřebuje posílit a co zatím ještě není dost ověřené. Na značku ? můžeš najet myší pro vysvětlení."}</p>
-            <div class="dashboard-legend-note">Na značku ? můžeš najet myší a zobrazí se vysvětlivka.</div>
             </div>
             <div class="dashboard-meta">
               ${renderDashboardTrendBadge(`Vývoj: ${formatDashboardTrendLabel(trendDirection, "short")}`, trendDirection, getDashboardTrendDescription(trendDirection))}
