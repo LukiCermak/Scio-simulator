@@ -34,43 +34,61 @@
       <div class="hero">
         <div class="hero-card panel">
           <h2>Vyber si baterii a spusť simulaci, trénink čtení zadání nebo cílenou opravnou sadu</h2>
-          <p>Aplikace pracuje s bankou 7 profilových baterií a 1 finální syntetické baterie. Každý modul zachovává rámec 50 otázek a 30 minut, ale má vlastní tematické těžiště, přesahy a cílenou obtížnost.</p>
+          <p>Simulátor obsahuje 7 profilových baterií a 1 finální syntetickou baterii. Každá pracuje s rámcem 50 otázek / 30 minut, ale zaměřuje se na jiný okruh, typ formulací a úroveň náročnosti.</p>
           <div class="hero-note hero-note-rich">
             <div class="hero-note-head">
               <strong>Co od simulátoru čekat</strong>
-              <p>Nejde jen o počítání bodů. Simulátor tě vede od prvního průchodu bateriemi až k cílenému dotrénování chyb, slabších témat a rizikových rozhodnutí.</p>
+              <p>Nejde jen o počítání bodů. Simulátor tě vede od prvního průchodu bateriemi až k cílenému dopracování chyb, slabších témat a rozhodnutí, která tě v testu zbytečně stojí body.</p>
             </div>
             <div class="hero-note-list">
               <div class="hero-note-item">
                 <span class="hero-note-icon" aria-hidden="true">🧩</span>
-                <div><strong>8 baterií a 400 otázek</strong><span>Postupně projdeš profilové okruhy i finální souhrnnou zátěž.</span></div>
+                <div class="hero-note-copy">
+                  <strong>8 baterií a 400 otázek</strong>
+                  <span>Postupně projdeš profilové okruhy i finální souhrnnou zátěž, takže můžeš střídat orientační průchod, cílený trénink i závěrečnou kontrolu.</span>
+                </div>
               </div>
               <div class="hero-note-item">
                 <span class="hero-note-icon" aria-hidden="true">🎯</span>
-                <div><strong>Tři režimy práce</strong><span>Můžeš jet ostrou simulaci, trénink čtení zadání nebo navazující opravnou sadu.</span></div>
+                <div class="hero-note-copy">
+                  <strong>Tři režimy práce</strong>
+                  <span>Můžeš jet ostrou simulaci, trénink čtení zadání nebo navazující opravnou sadu podle toho, co teď potřebuješ posílit.</span>
+                </div>
               </div>
               <div class="hero-note-item">
-                <span class="hero-note-icon" aria-hidden="true">📊</span>
-                <div><strong>Smysluplný rozbor výkonu</strong><span>Po testu uvidíš skóre, typické chyby, slabší i silné stránky a doporučení pro další krok.</span></div>
+                <span class="hero-note-icon" aria-hidden="true">🧭</span>
+                <div class="hero-note-copy">
+                  <strong>Studijní dashboard</strong>
+                  <span>Na hlavní stránce uvidíš dlouhodobý přehled silných a slabších témat, trend posledních testů a doporučení, co zpevnit jako další krok.</span>
+                </div>
               </div>
               <div class="hero-note-item">
-                <span class="hero-note-icon" aria-hidden="true">🧠</span>
-                <div><strong>Učení z konkrétních chyb</strong><span>Rozbor po otázkách a výklad učitele pomáhají rozlišit, kde šlo o nepozornost, záměnu nebo mezeru v tématu.</span></div>
+                <span class="hero-note-icon" aria-hidden="true">📘</span>
+                <div class="hero-note-copy">
+                  <strong>Rozbor po otázkách a výklad učitele</strong>
+                  <span>Po testu dostaneš přehled výsledku i rozbor jednotlivých otázek, aby bylo jasné, kde šlo o nepozornost, záměnu nebo skutečnou mezeru v tématu.</span>
+                </div>
               </div>
               <div class="hero-note-item">
                 <span class="hero-note-icon" aria-hidden="true">💾</span>
-                <div><strong>Průběžné uložení postupu</strong><span>Aplikace si v prohlížeči pamatuje rozepsanou relaci, takže se můžeš vrátit tam, kde jsi skončil(a).</span></div>
+                <div class="hero-note-copy">
+                  <strong>Průběžné uložení postupu</strong>
+                  <span>Aplikace si v prohlížeči pamatuje rozepsanou relaci, takže se můžeš vrátit tam, kde jsi skončil(a), bez ztráty průběžné práce.</span>
+                </div>
               </div>
               <div class="hero-note-item">
                 <span class="hero-note-icon" aria-hidden="true">📌</span>
-                <div><strong>Cílené procvičování dál</strong><span>Na základě výsledků můžeš navázat opravnou sadou nebo se vracet k tématům, která ještě nemáš dost upevněná.</span></div>
+                <div class="hero-note-copy">
+                  <strong>Cílené procvičování dál</strong>
+                  <span>Na základě výsledků můžeš navázat opravnou sadou nebo se vracet k tématům, která ještě nemáš dostatečně upevněná.</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="stats">
-            <div class="stat-card"><div class="stat-label">Otázky v bance</div><div class="stat-value" id="statQuestions">400</div><div class="stat-sub">Celkový součet všech 8 baterií vložených do simulátoru.</div></div>
-            <div class="stat-card"><div class="stat-label">Čas na test</div><div class="stat-value">30 min</div><div class="stat-sub">Stejný rámec jako oficiálně popsaný UPOL SPP test.</div></div>
-            <div class="stat-card"><div class="stat-label">Počet baterií</div><div class="stat-value">8</div><div class="stat-sub">7 profilových baterií + 1 finální syntetická.</div></div>
+            <div class="stat-card"><div class="stat-label">Otázky v bance</div><div class="stat-value" id="statQuestions">400</div><div class="stat-sub">Souhrn všech otázek napříč vloženými bateriemi.</div></div>
+            <div class="stat-card"><div class="stat-label">Čas na test</div><div class="stat-value">30 min</div><div class="stat-sub">Stejný rámec jako u oficiálně popsaného testu UPOL SPP.</div></div>
+            <div class="stat-card"><div class="stat-label">Počet baterií</div><div class="stat-value">8</div><div class="stat-sub">7 profilových baterií a 1 finální syntetická.</div></div>
           </div>
         </div>
         <aside class="panel detail-card" id="batteryDetail">
