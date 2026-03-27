@@ -139,6 +139,14 @@
     .config-check { display:flex; align-items:center; gap:6px; font-size:13px; color:#475569; cursor:pointer; }
     .config-check input { accent-color:var(--blue); }
 
+.config-help { margin-top:4px; font-size:12px; line-height:1.5; color:#60758a; max-width:34ch; }
+.inline-mode-chip { display:inline-flex; align-items:center; margin-left:8px; padding:2px 10px; border-radius:999px; background:#eef6fb; color:#17597a; border:1px solid #cfe7f4; font-size:12px; font-weight:800; vertical-align:middle; }
+.mode-badge.difficulty { margin-left:6px; }
+.mode-badge.difficulty.basic { background:var(--green-soft); color:#1c6f44; }
+.mode-badge.difficulty.hard { background:var(--amber-soft); color:#7b5d09; }
+
+
+
     /* ── Restore panel (NEW) ── */
     .restore-panel { margin-top:16px; padding:16px 18px; border-radius:16px; border:1px solid #d8ebf6; background:linear-gradient(180deg,#f4fafd 0%,#eef6fb 100%); }
     .restore-panel h4 { margin:0 0 10px; font-size:15px; color:#17597a; }

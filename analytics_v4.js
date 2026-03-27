@@ -75,6 +75,16 @@
   }
   window.getEmptyProgressV4 = getEmptyProgressV4;
 
+function normalizeDifficultyForProgress(value) {
+  return String(value || "").trim().toLowerCase() === "hard" ? "hard" : "basic";
+}
+function getQuestionProgressKey(question, session) {
+  const globalId = String(question?.globalId || "").trim();
+  const difficultyMode = normalizeDifficultyForProgress(question?.difficultyMode || session?.difficultyMode || session?.activeTest?.difficultyMode || appState?.settings?.difficultyMode || "basic");
+  return globalId ? `${difficultyMode}::${globalId}` : `${difficultyMode}::unknown`;
+}
+
+
   function safeClone(obj, fallback) {
     try { return JSON.parse(JSON.stringify(obj)); } catch(e) { return fallback; }
   }
@@ -404,67 +414,78 @@
   }
   window.buildSessionBattery = buildSessionBattery;
 
-  function buildRepairSessionFromResults(srcSession, candidateIndexes) {
-    const indexes = Array.isArray(candidateIndexes) ? candidateIndexes : buildRepairCandidateIndexes(candidateIndexes);
-    if (!srcSession || !indexes.length) return null;
-    const srcQuestions = srcSession.activeTest.questions;
-    const repairQuestions = indexes.map((idx, i) => ({
-      ...srcQuestions[idx],
-      number: i + 1,
-      sourceBatteryId: srcSession.batteryId,
-      sourceQuestionNumber: srcQuestions[idx].number
-    }));
-    const now = new Date();
-    const durationMinutes = Math.max(10, Math.ceil(repairQuestions.length * 0.7));
-    const endsAt = new Date(now.getTime() + durationMinutes * 60 * 1000);
-    return {
-      schemaVersion: 4,
-      sessionId: generateId(),
-      createdAt: now.toISOString(),
-      updatedAt: now.toISOString(),
-      mode: "repair",
-      goal: srcSession.goal || "attention",
-      batteryId: srcSession.batteryId,
-      batteryLabel: srcSession.batteryLabel,
-      batteryTitle: `Opravná sada – ${srcSession.batteryLabel}`,
-      activeTest: {
-        id: srcSession.batteryId,
-        label: srcSession.batteryLabel,
-        title: `Opravná sada (${repairQuestions.length} otázek)`,
-        durationMinutes,
-        questions: repairQuestions,
-        sessionDistribution: repairQuestions.reduce((acc, q) => { acc[LETTERS[q.correct]]++; return acc; }, { A:0, B:0, C:0, D:0 })
-      },
-      timing: { startedAt: now.toISOString(), endsAt: endsAt.toISOString(), finishedAt: null },
-      ui: {
-        currentQuestionIndex: 0,
-        reviewVisible: false,
-        reviewTab: "result",
-        focusMode: false,
-        optionsHiddenUntilReady: false,
-        showKeywordHighlights: true,
-        requireConfidence: appState.settings.requireConfidence
-      },
-      metrics: { totalViews:0, totalAnswerChanges:0, totalFlagged:0, totalRevisits:0 },
-      questionStates: repairQuestions.map((_, idx) => createQuestionState(idx)),
-      results: {
-        finished: false,
-        timeExpired: false,
-        score: null,
-        analytics: null,
-        diagnosticSummary: null,
-        repairCandidateIndexes: indexes.slice(),
-        recommendations: [],
-        progressCommitted: false,
-        progressCommittedAt: null
-      },
-      repairSource: {
-        sourceSessionId: srcSession.sessionId,
-        candidateIndexes: indexes.slice(),
-        createdFromMode: srcSession.mode
-      }
-    };
-  }
+  
+function buildRepairSessionFromResults(srcSession, candidateIndexes) {
+  const indexes = Array.isArray(candidateIndexes) ? candidateIndexes : buildRepairCandidateIndexes(candidateIndexes);
+  if (!srcSession || !indexes.length) return null;
+  const srcQuestions = srcSession.activeTest.questions;
+  const difficultyMode = normalizeDifficultyForProgress(srcSession.difficultyMode || srcSession.activeTest?.difficultyMode || "basic");
+  const difficultyLabel = difficultyMode === "hard" ? "Pokročilá" : "Základní";
+  const repairQuestions = indexes.map((idx, i) => ({
+    ...srcQuestions[idx],
+    number: i + 1,
+    sourceBatteryId: srcSession.batteryId,
+    sourceQuestionNumber: srcQuestions[idx].number,
+    difficultyMode,
+    difficultyLabel
+  }));
+  const now = new Date();
+  const durationMinutes = Math.max(10, Math.ceil(repairQuestions.length * 0.7));
+  const endsAt = new Date(now.getTime() + durationMinutes * 60 * 1000);
+  return {
+    schemaVersion: 4,
+    sessionId: generateId(),
+    createdAt: now.toISOString(),
+    updatedAt: now.toISOString(),
+    mode: "repair",
+    goal: srcSession.goal || "attention",
+    difficultyMode,
+    difficultyLabel,
+    batteryId: srcSession.batteryId,
+    batteryLabel: srcSession.batteryLabel,
+    batteryTitle: `Opravná sada – ${srcSession.batteryLabel}`,
+    activeTest: {
+      id: srcSession.batteryId,
+      label: srcSession.batteryLabel,
+      title: `Opravná sada (${repairQuestions.length} otázek)`,
+      durationMinutes,
+      questions: repairQuestions,
+      difficultyMode,
+      difficultyLabel,
+      sessionDistribution: repairQuestions.reduce((acc, q) => { acc[LETTERS[q.correct]]++; return acc; }, { A:0, B:0, C:0, D:0 })
+    },
+    timing: { startedAt: now.toISOString(), endsAt: endsAt.toISOString(), finishedAt: null },
+    ui: {
+      currentQuestionIndex: 0,
+      reviewVisible: false,
+      reviewTab: "result",
+      focusMode: false,
+      optionsHiddenUntilReady: false,
+      showKeywordHighlights: true,
+      requireConfidence: appState.settings.requireConfidence
+    },
+    metrics: { totalViews:0, totalAnswerChanges:0, totalFlagged:0, totalRevisits:0 },
+    questionStates: repairQuestions.map((_, idx) => createQuestionState(idx)),
+    results: {
+      finished: false,
+      timeExpired: false,
+      score: null,
+      analytics: null,
+      diagnosticSummary: null,
+      repairCandidateIndexes: indexes.slice(),
+      recommendations: [],
+      progressCommitted: false,
+      progressCommittedAt: null
+    },
+    repairSource: {
+      sourceSessionId: srcSession.sessionId,
+      candidateIndexes: indexes.slice(),
+      createdFromMode: srcSession.mode,
+      difficultyMode
+    }
+  };
+}
+
   window.buildRepairSessionFromResults = buildRepairSessionFromResults;
 
   function medianFromList(list) {
@@ -716,18 +737,23 @@
     });
   }
 
-  function getMetadataCoverageCatalog() {
-    const items = Array.isArray(window.metadataExport?.items) ? window.metadataExport.items : [];
-    const disciplines = new Set();
-    const subtopics = new Set();
-    items.forEach(item => {
-      const discipline = item?.discipline || item?.metadata?.discipline;
-      const subtopic = item?.subtopic || item?.metadata?.subtopic;
-      if (discipline) disciplines.add(discipline);
-      if (subtopic) subtopics.add(subtopic);
-    });
-    return { disciplines, subtopics };
-  }
+  
+function getMetadataCoverageCatalog() {
+  const exports = [
+    Array.isArray(window.metadataExport?.items) ? window.metadataExport.items : [],
+    Array.isArray(window.metadataExportHard?.items) ? window.metadataExportHard.items : []
+  ];
+  const disciplines = new Set();
+  const subtopics = new Set();
+  exports.flat().forEach(item => {
+    const discipline = item?.discipline || item?.metadata?.discipline;
+    const subtopic = item?.subtopic || item?.metadata?.subtopic;
+    if (discipline) disciplines.add(discipline);
+    if (subtopic) subtopics.add(subtopic);
+  });
+  return { disciplines, subtopics };
+}
+
 
   function getEntryRecentRate(entry) {
     const history = Array.isArray(entry?.recentSessionRates) ? entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS_V4.recentWindow) : [];
@@ -1203,147 +1229,153 @@
   }
   window.buildRecommendations = buildRecommendations;
 
-  function updateProgressFromSession(session) {
-    const s = session || appState.currentSession; if (!s || s.results?.progressCommitted) return;
-    inferAutoErrorTypes();
-    const p = normalizeProgressV4(appState.progress || getEmptyProgressV4());
-    p.testCount = Number(p.testCount || 0) + 1;
-    p.totals.finishedSessions += 1;
-    if (s.mode === "repair") p.totals.repairSessions += 1;
-    const now = new Date().toISOString();
-    const errorSummary = summarizeErrorTypes(s);
-    const disciplineBreakdown = buildDisciplineBreakdown(s);
-    const subtopicBreakdown = buildSubtopicBreakdown(s);
-    const formSummary = buildFormulationRiskSummary(s);
-    const institutionSummary = buildInstitutionRiskSummary(s);
-    const sessionTopicMaps = { disciplines: {}, subtopics: {} };
+  
+function updateProgressFromSession(session) {
+  const s = session || appState.currentSession; if (!s || s.results?.progressCommitted) return;
+  inferAutoErrorTypes();
+  const p = normalizeProgressV4(appState.progress || getEmptyProgressV4());
+  p.testCount = Number(p.testCount || 0) + 1;
+  p.totals.finishedSessions += 1;
+  if (s.mode === "repair") p.totals.repairSessions += 1;
+  const now = new Date().toISOString();
+  const errorSummary = summarizeErrorTypes(s);
+  const sessionTopicMaps = { disciplines: {}, subtopics: {} };
 
-    s.questionStates.forEach((qs, idx) => {
-      const q = s.activeTest.questions[idx];
-      const metadata = q.metadata || {};
-      const answered = qs.selectedAnswer !== null;
-      const correct = answered && qs.selectedAnswer === q.correct;
-      const highConfidenceWrong = answered && !correct && qs.confidence === "high";
-      const errorType = qs.manualErrorType || qs.autoErrorType;
-      const payload = { answered, correct, highConfidenceWrong, at: now, timeSpentMs: qs.timeSpentMs || 0, errorType };
-      p.totals.seen += 1;
-      if (answered) p.totals.answered += 1;
-      else p.totals.unanswered += 1;
-      if (correct) p.totals.correct += 1;
-      else if (answered) p.totals.wrong += 1;
-      if (highConfidenceWrong) p.totals.highConfidenceWrong += 1;
-      const disciplineKey = metadata.discipline || "obecná disciplína";
-      const subtopicKey = metadata.subtopic || "obecné téma";
-      bumpRegistry(p.disciplines, disciplineKey, payload);
-      bumpRegistry(p.subtopics, subtopicKey, payload);
-      bumpSessionRegistry(sessionTopicMaps.disciplines, disciplineKey, payload);
-      bumpSessionRegistry(sessionTopicMaps.subtopics, subtopicKey, payload);
-      bumpRegistry(p.questionTypes, metadata.questionType || "general", payload);
-      bumpRegistry(p.distractorTypes, metadata.distractorType || "general", payload);
-      bumpRegistry(p.trapPatterns, metadata.trapPattern || "general", payload);
-      (metadata.formulationFlags || []).forEach(flag => bumpRegistry(p.formulations, flag, payload));
-      (metadata.signalPattern || []).forEach(flag => bumpRegistry(p.signalPatterns, flag, payload));
-      if (errorType) bumpRegistry(p.errorTypes, errorType, payload);
-      if (metadata.institutionPair) bumpRegistry(p.institutionConfusions, metadata.institutionPair, payload);
-      const confidenceKey = metadata.subtopic || metadata.discipline || "obecné téma";
-      if (!p.confidenceByTopic[confidenceKey]) p.confidenceByTopic[confidenceKey] = { high:0, medium:0, guess:0, highConfidenceWrong:0 };
-      if (qs.confidence) p.confidenceByTopic[confidenceKey][qs.confidence] = (p.confidenceByTopic[confidenceKey][qs.confidence] || 0) + 1;
-      if (highConfidenceWrong) p.confidenceByTopic[confidenceKey].highConfidenceWrong += 1;
-      if (!p.timingByTopic[confidenceKey]) p.timingByTopic[confidenceKey] = { seen:0, totalMs:0, slowCount:0 };
-      p.timingByTopic[confidenceKey].seen += 1;
-      p.timingByTopic[confidenceKey].totalMs += (qs.timeSpentMs || 0);
-      if ((qs.timeSpentMs || 0) >= SLOW_THRESHOLD_MS) p.timingByTopic[confidenceKey].slowCount += 1;
-      if (highConfidenceWrong) {
-        p.highConfidenceWrong[q.globalId] = {
-          globalId: q.globalId,
-          count: (p.highConfidenceWrong[q.globalId]?.count || 0) + 1,
-          subtopic: subtopicKey,
-          discipline: disciplineKey,
-          lastSeenAt: now
-        };
-      }
-      const shouldQueue = qs.addedToRevision || highConfidenceWrong || (!correct && (metadata.revisionPriority === "high" || metadata.institutionPair || (metadata.formulationFlags || []).length));
-      if (shouldQueue) {
-        p.revisionQueue[q.globalId] = {
-          reason: Array.from(new Set([
-            ...(p.revisionQueue[q.globalId]?.reason || []),
-            ...(qs.addedToRevision ? ["manual"] : []),
-            ...(highConfidenceWrong ? ["high-confidence-wrong"] : []),
-            ...(errorType ? [errorType] : []),
-            ...(metadata.institutionPair ? [metadata.institutionPair] : [])
-          ].filter(Boolean))),
-          priority: qs.revisionPriority || metadata.revisionPriority || "medium",
-          addedAt: p.revisionQueue[q.globalId]?.addedAt || now,
-          timesReturned: (p.revisionQueue[q.globalId]?.timesReturned || 0)
-        };
-      }
-    });
+  s.questionStates.forEach((qs, idx) => {
+    const q = s.activeTest.questions[idx];
+    const metadata = q.metadata || {};
+    const answered = qs.selectedAnswer !== null;
+    const correct = answered && qs.selectedAnswer === q.correct;
+    const highConfidenceWrong = answered && !correct && qs.confidence === "high";
+    const errorType = qs.manualErrorType || qs.autoErrorType;
+    const payload = { answered, correct, highConfidenceWrong, at: now, timeSpentMs: qs.timeSpentMs || 0, errorType };
+    const progressKey = getQuestionProgressKey(q, s);
 
-    applySessionStatsToRegistry(p.disciplines, sessionTopicMaps.disciplines, s.sessionId, now);
-    applySessionStatsToRegistry(p.subtopics, sessionTopicMaps.subtopics, s.sessionId, now);
+    p.totals.seen += 1;
+    if (answered) p.totals.answered += 1;
+    else p.totals.unanswered += 1;
+    if (correct) p.totals.correct += 1;
+    else if (answered) p.totals.wrong += 1;
+    if (highConfidenceWrong) p.totals.highConfidenceWrong += 1;
 
-    const score = calculateScore();
-    const sessionSummary = {
-      sessionId: s.sessionId,
-      date: s.updatedAt || now,
-      mode: s.mode,
-      percentage: score.percentage,
-      correct: score.correct,
-      total: score.total,
-      dominantErrorType: errorSummary[0]?.type || "",
-      dominantContentWeakness: errorSummary.find(item => ["concept-confusion","terminology-confusion","institution-confusion","knowledge-gap"].includes(item.type))?.type || "",
-      dominantProcessWeakness: errorSummary.find(item => ["missed-negation","impulsive-decision","overthinking","time-pressure","attention-slip","no-answer"].includes(item.type))?.type || "",
-      weakestDiscipline: disciplineBreakdown[0]?.discipline || "",
-      weakestSubtopic: subtopicBreakdown[0]?.subtopic || "",
-      topFormulationRisk: formSummary[0]?.flag || "",
-      topInstitutionConfusion: institutionSummary[0]?.pair || "",
-      highConfidenceWrongCount: calculateAttentionMetrics().highConfidenceWrongCount || 0,
-      repairCandidateIndexes: buildRepairCandidateIndexes("all")
-    };
-    p.trends.recentSessions.unshift(sessionSummary);
-    p.trends.recentSessions = p.trends.recentSessions.slice(0, 5);
-    appState.progress = normalizeProgressV4(p);
-    s.results.progressCommitted = true;
-    s.results.progressCommittedAt = now;
-    saveProgress();
-  }
+    const disciplineKey = metadata.discipline || "obecná disciplína";
+    const subtopicKey = metadata.subtopic || "obecné téma";
+    bumpRegistry(p.disciplines, disciplineKey, payload);
+    bumpRegistry(p.subtopics, subtopicKey, payload);
+    bumpSessionRegistry(sessionTopicMaps.disciplines, disciplineKey, payload);
+    bumpSessionRegistry(sessionTopicMaps.subtopics, subtopicKey, payload);
+
+    (metadata.formulationFlags || []).forEach(flag => bumpRegistry(p.formulations, flag, payload));
+    (metadata.signalPattern || []).forEach(signal => bumpRegistry(p.signalPatterns, signal, payload));
+    if (metadata.trapPattern) bumpRegistry(p.trapPatterns, metadata.trapPattern, payload);
+    if (metadata.distractorType) bumpRegistry(p.distractorTypes, metadata.distractorType, payload);
+    if (metadata.questionType) bumpRegistry(p.questionTypes, metadata.questionType, payload);
+    if (metadata.institutionPair) bumpRegistry(p.institutionConfusions, metadata.institutionPair, payload);
+    if (errorType) bumpRegistry(p.errorTypes, errorType, payload);
+
+    const confidenceKey = metadata.subtopic || metadata.discipline || "obecné téma";
+    if (!p.timingByTopic[confidenceKey]) p.timingByTopic[confidenceKey] = { seen:0, totalMs:0, slowCount:0 };
+    p.timingByTopic[confidenceKey].seen += 1;
+    p.timingByTopic[confidenceKey].totalMs += (qs.timeSpentMs || 0);
+    if ((qs.timeSpentMs || 0) >= SLOW_THRESHOLD_MS) p.timingByTopic[confidenceKey].slowCount += 1;
+
+    if (highConfidenceWrong) {
+      p.highConfidenceWrong[progressKey] = {
+        progressKey,
+        globalId: q.globalId,
+        difficultyMode: normalizeDifficultyForProgress(s.difficultyMode),
+        count: (p.highConfidenceWrong[progressKey]?.count || 0) + 1,
+        subtopic: subtopicKey,
+        discipline: disciplineKey,
+        lastSeenAt: now
+      };
+    }
+
+    const shouldQueue = qs.addedToRevision || highConfidenceWrong || (!correct && (metadata.revisionPriority === "high" || metadata.institutionPair || (metadata.formulationFlags || []).length));
+    if (shouldQueue) {
+      p.revisionQueue[progressKey] = {
+        progressKey,
+        globalId: q.globalId,
+        difficultyMode: normalizeDifficultyForProgress(s.difficultyMode),
+        reason: Array.from(new Set([
+          ...(p.revisionQueue[progressKey]?.reason || []),
+          ...(qs.addedToRevision ? ["manual"] : []),
+          ...(highConfidenceWrong ? ["high-confidence-wrong"] : []),
+          ...(errorType ? [errorType] : []),
+          ...(metadata.institutionPair ? [metadata.institutionPair] : [])
+        ].filter(Boolean))),
+        priority: qs.revisionPriority || metadata.revisionPriority || "medium",
+        addedAt: p.revisionQueue[progressKey]?.addedAt || now,
+        timesReturned: (p.revisionQueue[progressKey]?.timesReturned || 0)
+      };
+    }
+  });
+
+  applySessionStatsToRegistry(p.disciplines, sessionTopicMaps.disciplines, s.sessionId, now);
+  applySessionStatsToRegistry(p.subtopics, sessionTopicMaps.subtopics, s.sessionId, now);
+
+  const score = calculateScore();
+  const sessionSummary = {
+    sessionId: s.sessionId,
+    date: s.updatedAt || now,
+    mode: s.mode,
+    difficultyMode: normalizeDifficultyForProgress(s.difficultyMode),
+    percentage: score.percentage,
+    correct: score.correct,
+    total: score.total,
+    dominantErrorType: errorSummary[0]?.type || "",
+    dominantContentWeakness: errorSummary.find(item => ["concept-confusion","terminology-confusion","institution-confusion","knowledge-gap"].includes(item.type))?.type || "",
+    dominantProcessWeakness: errorSummary.find(item => ["missed-negation","impulsive-decision","overthinking","time-pressure","attention-slip","no-answer","misread-question"].includes(item.type))?.type || ""
+  };
+  p.trends.recentSessions = [sessionSummary, ...(p.trends.recentSessions || []).filter(item => item?.sessionId !== s.sessionId)].slice(0, 12);
+
+  appState.progress = p;
+  s.results.progressCommitted = true;
+  s.results.progressCommittedAt = now;
+  saveProgress();
+  saveCurrentSession();
+}
+
   window.updateProgressFromSession = updateProgressFromSession;
 
-  function questionMatchesFilters(question, qs, filterConfig) {
-    const config = typeof filterConfig === "string" ? { type: filterConfig } : (filterConfig || {});
-    const metadata = question.metadata || {};
-    const isWrong = qs.selectedAnswer !== null && qs.selectedAnswer !== question.correct;
-    const isUnanswered = qs.selectedAnswer === null;
-    const isGuess = qs.confidence === "guess";
-    const isSlow = (qs.timeSpentMs || 0) >= SLOW_THRESHOLD_MS;
-    const isChanged = (qs.answerChanges || 0) > 0;
-    const isFlagged = !!qs.flagged || !!qs.revisitLater;
-    const isHighConfidenceWrong = isWrong && qs.confidence === "high";
-    const errorType = qs.manualErrorType || qs.autoErrorType;
-    switch (config.type || "errors") {
-      case "errors": return isWrong || isUnanswered;
-      case "unanswered": return isUnanswered;
-      case "guesses": return isGuess;
-      case "slow": return isSlow;
-      case "changed": return isChanged;
-      case "flagged": return isFlagged;
-      case "high-confidence-wrong": return isHighConfidenceWrong;
-      case "errors-guesses": return isWrong || isUnanswered || isGuess;
-      case "errors-guesses-slow": return isWrong || isUnanswered || isGuess || isSlow;
-      case "revisionQueue": return !!(appState.progress?.revisionQueue?.[question.globalId]);
-      case "discipline": return metadata.discipline === config.discipline;
-      case "subtopic": return metadata.subtopic === config.subtopic;
-      case "errorType": return errorType === config.errorType || (metadata.likelyErrorTypes || []).includes(config.errorType);
-      case "formulation": return (metadata.formulationFlags || []).includes(config.formulation);
-      case "signalPattern": return (metadata.signalPattern || []).includes(config.signalPattern);
-      case "trapPattern": return metadata.trapPattern === config.trapPattern;
-      case "distractorType": return metadata.distractorType === config.distractorType;
-      case "questionType": return metadata.questionType === config.questionType;
-      case "institutionPair": return metadata.institutionPair === config.institutionPair;
-      case "all": return isWrong || isUnanswered || isGuess || isSlow || isChanged || isFlagged || isHighConfidenceWrong;
-      default: return isWrong || isUnanswered;
-    }
+  
+function questionMatchesFilters(question, qs, filterConfig) {
+  const config = typeof filterConfig === "string" ? { type: filterConfig } : (filterConfig || {});
+  const metadata = question.metadata || {};
+  const isWrong = qs.selectedAnswer !== null && qs.selectedAnswer !== question.correct;
+  const isUnanswered = qs.selectedAnswer === null;
+  const isGuess = qs.confidence === "guess";
+  const isSlow = (qs.timeSpentMs || 0) >= SLOW_THRESHOLD_MS;
+  const isChanged = (qs.answerChanges || 0) > 0;
+  const isFlagged = !!qs.flagged || !!qs.revisitLater;
+  const isHighConfidenceWrong = isWrong && qs.confidence === "high";
+  const errorType = qs.manualErrorType || qs.autoErrorType;
+  const progressKey = getQuestionProgressKey(question, appState.currentSession);
+  switch (config.type || "errors") {
+    case "errors": return isWrong || isUnanswered;
+    case "unanswered": return isUnanswered;
+    case "guesses": return isGuess;
+    case "slow": return isSlow;
+    case "changed": return isChanged;
+    case "flagged": return isFlagged;
+    case "high-confidence-wrong": return isHighConfidenceWrong;
+    case "errors-guesses": return isWrong || isUnanswered || isGuess;
+    case "errors-guesses-slow": return isWrong || isUnanswered || isGuess || isSlow;
+    case "revisionQueue": return !!(appState.progress?.revisionQueue?.[progressKey]);
+    case "discipline": return metadata.discipline === config.discipline;
+    case "subtopic": return metadata.subtopic === config.subtopic;
+    case "errorType": return errorType === config.errorType || (metadata.likelyErrorTypes || []).includes(config.errorType);
+    case "formulation": return (metadata.formulationFlags || []).includes(config.formulation);
+    case "signalPattern": return (metadata.signalPattern || []).includes(config.signalPattern);
+    case "trapPattern": return metadata.trapPattern === config.trapPattern;
+    case "distractorType": return metadata.distractorType === config.distractorType;
+    case "questionType": return metadata.questionType === config.questionType;
+    case "institutionPair": return metadata.institutionPair === config.institutionPair;
+    case "all": return isWrong || isUnanswered || isGuess || isSlow || isChanged || isFlagged || isHighConfidenceWrong;
+    default: return isWrong || isUnanswered;
   }
+}
+
 
   function buildRepairCandidateIndexes(filterConfig) {
     const s = appState.currentSession; if (!s) return [];

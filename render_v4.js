@@ -20,28 +20,35 @@
 }
   window.renderRecommendedTraining = renderRecommendedTraining;
 
-  function runRecommendation(item) {
-    if (!item || !item.filters) return;
-    if (item.filters.institutionPair) return startRepairModeByInstitutionPair(item.filters.institutionPair);
-    if (item.filters.subtopic) return startRepairModeBySubtopic(item.filters.subtopic);
-    if (item.filters.formulation) return startRepairModeByFormulation(item.filters.formulation);
-    if (item.filters.errorType) return startRepairModeByErrorType(item.filters.errorType);
-    if (item.filters.highConfidenceWrong) return startRepairModeHighConfidenceWrong();
-    if (item.filters.mode === "reading-training") {
-      appState.settings.defaultMode = "reading-training";
-      saveSettings();
-      renderConfigPanel();
-      return;
-    }
+  
+function runRecommendation(item) {
+  if (!item || !item.filters) return;
+  const hasSessionQuestions = !!(appState.currentSession?.activeTest?.questions?.length);
+  if (item.filters.institutionPair) return hasSessionQuestions ? startRepairModeByInstitutionPair(item.filters.institutionPair) : undefined;
+  if (item.filters.subtopic) return hasSessionQuestions ? startRepairModeBySubtopic(item.filters.subtopic) : (typeof startTargetedPractice === "function" ? startTargetedPractice("subtopic", item.filters.subtopic) : undefined);
+  if (item.filters.formulation) return hasSessionQuestions ? startRepairModeByFormulation(item.filters.formulation) : undefined;
+  if (item.filters.errorType) return hasSessionQuestions ? startRepairModeByErrorType(item.filters.errorType) : (typeof startTargetedPractice === "function" ? startTargetedPractice("error-type", item.filters.errorType) : undefined);
+  if (item.filters.highConfidenceWrong) return hasSessionQuestions ? startRepairModeHighConfidenceWrong() : undefined;
+  if (item.filters.mode === "reading-training") {
+    appState.settings.defaultMode = "reading-training";
+    saveSettings();
+    renderConfigPanel();
+    return;
   }
+}
 
-  function renderStartScreen() {
-    renderBatteryCards();
-    renderBatteryDetail(appState.selectedBatteryId ? BATTERY_MAP[appState.selectedBatteryId] : null);
-    renderRestorePanel();
-    renderWeaknessPanel();
-    renderHistoryPanel();
-  }
+
+  
+function renderStartScreen() {
+  const activeMap = typeof getActiveBatteryMap === "function" ? getActiveBatteryMap() : BATTERY_MAP;
+  renderBatteryCards();
+  renderBatteryDetail(appState.selectedBatteryId ? activeMap[appState.selectedBatteryId] : null);
+  if (typeof updateSelectionState === "function") updateSelectionState();
+  renderRestorePanel();
+  renderWeaknessPanel();
+  renderHistoryPanel();
+}
+
   window.renderStartScreen = renderStartScreen;
 
   function renderWeaknessMap() {

@@ -49,230 +49,297 @@
   };
 
 
-  // ═══════════════════════════════════════════
-  // 2. DATA NORMALIZATION (WITH METADATA V3)
-  // ═══════════════════════════════════════════
-  const RAW_BATTERIES = Array.isArray(window.SCIO_V4_RAW_BATTERIES) ? window.SCIO_V4_RAW_BATTERIES : [];
-  
-  
-  function loadMetadataExport() {
-    return window.metadataExport || { schemaVersion: 0, items: [] };
-  }
-  function loadBattery8MetadataMap() {
-    return window.battery8Map || { schemaVersion: 0, items: [] };
-  }
-  function normalizeMetadataItem(item) {
-    const base = item && typeof item === "object" ? item : {};
-    return {
-      globalId: String(base.globalId || "").trim(),
-      batteryId: Number(base.batteryId || 0),
-      batteryLabel: String(base.batteryLabel || "").trim(),
-      batteryTitle: String(base.batteryTitle || "").trim(),
-      batterySubtitle: String(base.batterySubtitle || "").trim(),
-      questionNumber: Number(base.questionNumber || 0),
-      sourceCorrectLetter: String(base.sourceCorrectLetter || base.correctLetter || "").trim().toUpperCase(),
-      reviewedCorrectLetter: String(base.reviewedCorrectLetter || base.correctLetter || base.sourceCorrectLetter || "").trim().toUpperCase(),
-      effectiveCorrectLetter: String(base.effectiveCorrectLetter || base.reviewedCorrectLetter || base.correctLetter || base.sourceCorrectLetter || "").trim().toUpperCase(),
-      discipline: String(base.discipline || "speciální pedagogika").trim(),
-      subtopic: String(base.subtopic || "obecné téma").trim(),
-      conceptTags: Array.isArray(base.conceptTags) ? base.conceptTags.map(String) : [],
-      questionType: String(base.questionType || "general-discrimination").trim(),
-      distractorType: String(base.distractorType || "general").trim(),
-      trapPattern: String(base.trapPattern || "general").trim(),
-      requiredDiscrimination: String(base.requiredDiscrimination || "Rozlišit správné jádro otázky.").trim(),
-      signalPattern: Array.isArray(base.signalPattern) ? base.signalPattern.map(String) : [],
-      signalHint: String(base.signalHint || "").trim(),
-      attentionRisk: String(base.attentionRisk || "medium").trim(),
-      formulationFlags: Array.isArray(base.formulationFlags) ? base.formulationFlags.map(String) : [],
-      questionCore: String(base.questionCore || "").trim(),
-      explanationCorrect: String(base.explanationCorrect || "").trim(),
-      explanationDistractor: String(base.explanationDistractor || "").trim(),
-      commonMisconception: String(base.commonMisconception || "").trim(),
-      whyWrongCategory: String(base.whyWrongCategory || "").trim(),
-      microLesson: String(base.microLesson || "").trim(),
-      recommendedRecallPrompt: String(base.recommendedRecallPrompt || base.recallPrompt || "").trim(),
-      likelyErrorTypes: Array.isArray(base.likelyErrorTypes) ? base.likelyErrorTypes.map(String) : [],
-      repairTags: Array.isArray(base.repairTags) ? base.repairTags.map(String) : [],
-      institutionPair: String(base.institutionPair || "").trim(),
-      knowledgeDemandLevel: String(base.knowledgeDemandLevel || "medium").trim(),
-      processDemandLevel: String(base.processDemandLevel || "medium").trim(),
-      recommendedRepairFilters: Array.isArray(base.recommendedRepairFilters) ? base.recommendedRepairFilters.map(String) : [],
-      revisionPriority: String(base.revisionPriority || "medium").trim(),
-      answerAuditStatus: String(base.answerAuditStatus || "unknown").trim(),
-      answerAuditNote: String(base.answerAuditNote || "").trim(),
-      metadataOrigin: String(base.metadataOrigin || "metadata-export").trim(),
-      metadataSourceRef: String(base.metadataSourceRef || base.globalId || "").trim(),
-      metadataConfidence: base.metadataConfidence ?? base.matchConfidence ?? 0.5,
-      curationStatus: String(base.curationStatus || "auto-curated-v1").trim()
-    };
-  }
-  function normalizeBattery8MapItem(item) {
-    const base = item && typeof item === "object" ? item : {};
-    const globalId = `B08Q${String(base.questionNumber || 0).padStart(2, "0")}`;
-    const resolved = normalizeMetadataItem({
-      globalId,
-      batteryId: 8,
-      batteryLabel: base.batteryLabel || "Baterie 8",
-      batteryTitle: base.batteryTitle || "",
-      questionNumber: base.questionNumber || 0,
-      sourceCorrectLetter: base.correctLetter || "",
-      reviewedCorrectLetter: base.correctLetter || "",
-      effectiveCorrectLetter: base.correctLetter || "",
-      metadataOrigin: base.metadataOrigin || "battery8-bridge",
-      metadataSourceRef: base.metadataSourceRef || base.primarySourceGlobalId || globalId,
-      metadataConfidence: base.matchConfidence ?? 0.5,
-      curationStatus: (base.resolvedMetadata && base.resolvedMetadata.curationStatus) || base.curationStatus || "battery8-derived-v1",
-      ...(base.resolvedMetadata || {})
-    });
-    return { ...base, globalId, resolvedMetadata: resolved };
-  }
-  function buildMetadataIndex(metadataExport) {
-    const index = {};
-    const items = Array.isArray(metadataExport?.items) ? metadataExport.items : [];
-    items.forEach(item => {
-      const normalized = normalizeMetadataItem(item);
-      if (normalized.globalId) index[normalized.globalId] = normalized;
-    });
-    return index;
-  }
-  function buildBattery8MapIndex(battery8Map) {
-    const index = {};
-    const items = Array.isArray(battery8Map?.items) ? battery8Map.items : [];
-    items.forEach(item => {
-      const normalized = normalizeBattery8MapItem(item);
-      if (normalized.globalId) index[normalized.globalId] = normalized;
-    });
-    return index;
-  }
-  const METADATA_INDEX = buildMetadataIndex(loadMetadataExport());
-  const BATTERY8_MAP = buildBattery8MapIndex(loadBattery8MetadataMap());
 
-  function inferFormulationFlagsFromText(text) {
-    const src = String(text || "").toLowerCase();
-    const flags = [];
-    if (/není|nesprávně|neplatí|neodpovídá/.test(src)) flags.push("negace");
-    if (/nejpřesněji|nejlépe|nejvhodnější|nejvýrazněji/.test(src)) flags.push("superlativní přesnost");
-    if (/první krok/.test(src)) flags.push("první krok");
-    if (/v rámci školství|v rámci zdravotnictví|v rámci sociální oblasti/.test(src)) flags.push("systémová hranice");
-    if (/role|odpovědnost|kompetenc/.test(src)) flags.push("odpovědnost role");
-    if (/dokument|zpráva|doporučen/.test(src)) flags.push("funkce dokumentu");
-    if (/typicky|nejčastěji/.test(src)) flags.push("typičnost");
-    return flags;
-  }
-  function inferInstitutionPair(metadata, questionText) {
-    if (metadata?.institutionPair) return metadata.institutionPair;
-    const src = `${questionText || ""} ${(metadata?.questionCore) || ""} ${(metadata?.requiredDiscrimination) || ""}`;
-    const pairs = [
-      "PPP vs SPC","ŠPZ vs škola","ŠPP vs ŠPZ","škola vs rodina","škola vs sociální služba","škola vs zdravotnické zařízení",
-      "klinický logoped vs školská podpora","SVP vs PPP","SPC vs běžná školní podpora","zpráva vs doporučení","PLPP vs IVP",
-      "diagnostika vs realizace podpory","odborné posouzení vs každodenní odpovědnost školy","školství vs zdravotnictví vs sociální oblast","MŠMT vs MPSV"
-    ];
-    return pairs.find(pair => src.toLowerCase().includes(pair.toLowerCase())) || "";
-  }
-  function buildReviewFallbacks(question, batteryLabel) {
-    const qText = typeof question === "string" ? question : String(question?.text || "");
-    const battery = typeof question === "string" ? (batteryLabel || "Neznámá baterie") : (batteryLabel || question?.batteryLabel || "Neznámá baterie");
-    return {
-      globalId: "",
-      batteryId: 0,
-      questionNumber: 0,
-      discipline: "speciální pedagogika",
-      subtopic: "obecné téma",
-      conceptTags: [battery],
-      questionType: "general-discrimination",
-      distractorType: "general",
-      trapPattern: "general",
-      requiredDiscrimination: "Rozlišit, která možnost nejlépe odpovídá zadání.",
-      signalPattern: [],
-      signalHint: "Hledej výraz, který mění význam otázky.",
-      attentionRisk: "medium",
-      formulationFlags: inferFormulationFlagsFromText(qText),
-      questionCore: "Rozhodnout, která odpověď nejlépe vystihuje jádro zadání.",
-      explanationCorrect: "Správná možnost odpovídá jádru otázky přesněji než ostatní varianty.",
-      explanationDistractor: "Lákavé možnosti jsou tematicky blízké, ale posouvají význam jinam.",
-      commonMisconception: "Častou chybou je povrchní čtení nebo záměna blízkých pojmů.",
-      whyWrongCategory: "Chyba obvykle souvisí s nepřesným rozlišením významu nebo formulace.",
-      microLesson: "Vrať se k jádru otázky a nejdřív si pojmenuj, co přesně máš rozlišit.",
-      recommendedRecallPrompt: "Jaký rozdíl bylo potřeba v otázce rozlišit?",
-      likelyErrorTypes: ["concept-confusion"],
-      repairTags: [battery, "general-discrimination"],
-      institutionPair: inferInstitutionPair(null, qText),
-      knowledgeDemandLevel: "medium",
-      processDemandLevel: "medium",
-      recommendedRepairFilters: [],
-      revisionPriority: "medium",
-      sourceCorrectLetter: "",
-      reviewedCorrectLetter: "",
-      effectiveCorrectLetter: "",
-      answerAuditStatus: "fallback",
-      answerAuditNote: "",
-      metadataOrigin: "fallback",
-      metadataSourceRef: "",
-      metadataConfidence: 0.2,
-      curationStatus: "fallback"
-    };
-  }
-  function resolveQuestionEffectiveCorrect(question, metadataItem) {
-    const letter = String(metadataItem?.effectiveCorrectLetter || metadataItem?.reviewedCorrectLetter || metadataItem?.sourceCorrectLetter || question?.correctLetter || LETTERS[Number(question?.correct || 0)] || "A").toUpperCase();
-    const idx = LETTERS.indexOf(letter);
-    return idx >= 0 ? idx : Number.isInteger(question?.correct) ? question.correct : 0;
-  }
-  function normalizeQuestionMetadata(question, context) {
-    const { batteryId, batteryLabel, questionNumber, globalId } = context;
-    let metadataItem = null;
-    if (batteryId === 8 && BATTERY8_MAP[globalId]) metadataItem = BATTERY8_MAP[globalId].resolvedMetadata;
-    else if (METADATA_INDEX[globalId]) metadataItem = METADATA_INDEX[globalId];
-    const fallback = buildReviewFallbacks(question, batteryLabel);
-    const merged = { ...fallback, ...(metadataItem || {}) };
-    merged.globalId = merged.globalId || globalId;
-    merged.batteryId = merged.batteryId || batteryId;
-    merged.questionNumber = merged.questionNumber || questionNumber;
-    merged.formulationFlags = Array.from(new Set([...(merged.formulationFlags || []), ...inferFormulationFlagsFromText(question?.text || "")]));
-    merged.institutionPair = inferInstitutionPair(merged, question?.text || "");
-    if (!merged.signalPattern?.length && merged.formulationFlags.length) merged.signalPattern = merged.formulationFlags.slice(0, 3);
-    if (!merged.recommendedRepairFilters?.length) {
-      merged.recommendedRepairFilters = [merged.subtopic, merged.discipline, merged.questionType, merged.institutionPair].filter(Boolean);
-    }
-    if (!merged.likelyErrorTypes?.length) merged.likelyErrorTypes = [merged.institutionPair ? "institution-confusion" : "concept-confusion"];
-    if (!merged.repairTags?.length) merged.repairTags = [merged.discipline, merged.subtopic, merged.questionType].filter(Boolean);
-    if (!merged.questionCore) merged.questionCore = fallback.questionCore;
-    if (!merged.explanationCorrect) merged.explanationCorrect = fallback.explanationCorrect;
-    if (!merged.explanationDistractor) merged.explanationDistractor = fallback.explanationDistractor;
-    if (!merged.microLesson) merged.microLesson = fallback.microLesson;
-    if (!merged.recommendedRecallPrompt) merged.recommendedRecallPrompt = fallback.recommendedRecallPrompt;
-    return merged;
-  }
-  function attachMetadataToBatteryQuestions(questions, context) {
-    return questions.map((q, i) => {
-      const questionNumber = Number.isInteger(q?.number) ? q.number : i + 1;
-      const globalId = `B${String(context.batteryId).padStart(2, "0")}Q${String(questionNumber).padStart(2, "0")}`;
-      return { ...q, metadata: normalizeQuestionMetadata(q, { ...context, questionNumber, globalId }) };
-    });
-  }
+// ═══════════════════════════════════════════
+// 2. DATA NORMALIZATION (BASE + HARD)
+// ═══════════════════════════════════════════
+const RAW_BATTERIES_BASE = Array.isArray(window.SCIO_V4_RAW_BATTERIES) ? window.SCIO_V4_RAW_BATTERIES : [];
+const RAW_BATTERIES_HARD = Array.isArray(window.SCIO_V4_RAW_BATTERIES_HARD) ? window.SCIO_V4_RAW_BATTERIES_HARD : [];
 
-  function normalizeBattery(b, i) {
-    const bId = Number.isInteger(b?.id) ? b.id : i + 1;
-    const bLabel = String(b?.label ?? `Baterie ${i+1}`).trim();
-    const questions = Array.isArray(b?.questions) ? b.questions.map((q, qi) => normalizeQuestion(q, qi, bId, bLabel)) : [];
-    return {
-      id: bId,
-      label: bLabel,
-      title: String(b?.title ?? "").trim(),
-      subtitle: String(b?.subtitle ?? "").trim(),
-      purpose: String(b?.purpose ?? "").trim(),
-      difficulty: String(b?.difficulty ?? "střední").trim(),
-      dominant: Array.isArray(b?.dominant) ? b.dominant.map(x => String(x).trim()) : [],
-      breakdown: Array.isArray(b?.breakdown) ? b.breakdown.map(x => String(x).trim()) : [],
-      tags: Array.isArray(b?.tags) ? b.tags.map(x => String(x).trim()) : [],
-      durationMinutes: Number.isFinite(Number(b?.durationMinutes)) ? Number(b.durationMinutes) : 30,
-      questionCount: questions.length,
-      questions,
-      validation: b?.validation ?? null
-    };
-  }
+function normalizeDifficultyMode(value) {
+  return String(value || "").trim().toLowerCase() === "hard" ? "hard" : "basic";
+}
+function getDifficultyModeLabel(mode) {
+  return normalizeDifficultyMode(mode) === "hard" ? "Pokročilá" : "Základní";
+}
+function loadMetadataExport(mode = "basic") {
+  return normalizeDifficultyMode(mode) === "hard"
+    ? (window.metadataExportHard || { schemaVersion: 0, items: [] })
+    : (window.metadataExport || { schemaVersion: 0, items: [] });
+}
+function loadBattery8MetadataMap(mode = "basic") {
+  return normalizeDifficultyMode(mode) === "hard"
+    ? (window.battery8MapHard || { schemaVersion: 0, items: [] })
+    : (window.battery8Map || { schemaVersion: 0, items: [] });
+}
+function normalizeMetadataItem(item) {
+  const base = item && typeof item === "object" ? item : {};
+  return {
+    globalId: String(base.globalId || "").trim(),
+    batteryId: Number(base.batteryId || 0),
+    batteryLabel: String(base.batteryLabel || "").trim(),
+    batteryTitle: String(base.batteryTitle || "").trim(),
+    batterySubtitle: String(base.batterySubtitle || "").trim(),
+    questionNumber: Number(base.questionNumber || 0),
+    sourceCorrectLetter: String(base.sourceCorrectLetter || base.correctLetter || "").trim().toUpperCase(),
+    reviewedCorrectLetter: String(base.reviewedCorrectLetter || base.correctLetter || base.sourceCorrectLetter || "").trim().toUpperCase(),
+    effectiveCorrectLetter: String(base.effectiveCorrectLetter || base.reviewedCorrectLetter || base.correctLetter || base.sourceCorrectLetter || "").trim().toUpperCase(),
+    discipline: String(base.discipline || "speciální pedagogika").trim(),
+    subtopic: String(base.subtopic || "obecné téma").trim(),
+    conceptTags: Array.isArray(base.conceptTags) ? base.conceptTags.map(String) : [],
+    questionType: String(base.questionType || "general-discrimination").trim(),
+    distractorType: String(base.distractorType || "general").trim(),
+    trapPattern: String(base.trapPattern || "general").trim(),
+    requiredDiscrimination: String(base.requiredDiscrimination || "Rozlišit správné jádro otázky.").trim(),
+    signalPattern: Array.isArray(base.signalPattern) ? base.signalPattern.map(String) : [],
+    signalHint: String(base.signalHint || "").trim(),
+    attentionRisk: String(base.attentionRisk || "medium").trim(),
+    formulationFlags: Array.isArray(base.formulationFlags) ? base.formulationFlags.map(String) : [],
+    questionCore: String(base.questionCore || "").trim(),
+    explanationCorrect: String(base.explanationCorrect || "").trim(),
+    explanationDistractor: String(base.explanationDistractor || "").trim(),
+    commonMisconception: String(base.commonMisconception || "").trim(),
+    whyWrongCategory: String(base.whyWrongCategory || "").trim(),
+    microLesson: String(base.microLesson || "").trim(),
+    recommendedRecallPrompt: String(base.recommendedRecallPrompt || base.recallPrompt || "").trim(),
+    likelyErrorTypes: Array.isArray(base.likelyErrorTypes) ? base.likelyErrorTypes.map(String) : [],
+    repairTags: Array.isArray(base.repairTags) ? base.repairTags.map(String) : [],
+    institutionPair: String(base.institutionPair || "").trim(),
+    knowledgeDemandLevel: String(base.knowledgeDemandLevel || "medium").trim(),
+    processDemandLevel: String(base.processDemandLevel || "medium").trim(),
+    recommendedRepairFilters: Array.isArray(base.recommendedRepairFilters) ? base.recommendedRepairFilters.map(String) : [],
+    revisionPriority: String(base.revisionPriority || "medium").trim(),
+    answerAuditStatus: String(base.answerAuditStatus || "unknown").trim(),
+    answerAuditNote: String(base.answerAuditNote || "").trim(),
+    metadataOrigin: String(base.metadataOrigin || "metadata-export").trim(),
+    metadataSourceRef: String(base.metadataSourceRef || base.globalId || "").trim(),
+    metadataConfidence: base.metadataConfidence ?? base.matchConfidence ?? 0.5,
+    curationStatus: String(base.curationStatus || "auto-curated-v1").trim()
+  };
+}
+function normalizeBattery8MapItem(item) {
+  const base = item && typeof item === "object" ? item : {};
+  const globalId = `B08Q${String(base.questionNumber || 0).padStart(2, "0")}`;
+  const resolved = normalizeMetadataItem({
+    globalId,
+    batteryId: 8,
+    batteryLabel: base.batteryLabel || "Baterie 8",
+    batteryTitle: base.batteryTitle || "",
+    questionNumber: base.questionNumber || 0,
+    sourceCorrectLetter: base.correctLetter || "",
+    reviewedCorrectLetter: base.correctLetter || "",
+    effectiveCorrectLetter: base.correctLetter || "",
+    metadataOrigin: base.metadataOrigin || "battery8-bridge",
+    metadataSourceRef: base.metadataSourceRef || base.primarySourceGlobalId || globalId,
+    metadataConfidence: base.matchConfidence ?? 0.5,
+    curationStatus: (base.resolvedMetadata && base.resolvedMetadata.curationStatus) || base.curationStatus || "battery8-derived-v1",
+    ...(base.resolvedMetadata || {})
+  });
+  return { ...base, globalId, resolvedMetadata: resolved };
+}
+function buildMetadataIndex(metadataExport) {
+  const index = {};
+  const items = Array.isArray(metadataExport?.items) ? metadataExport.items : [];
+  items.forEach(item => {
+    const normalized = normalizeMetadataItem(item);
+    if (normalized.globalId) index[normalized.globalId] = normalized;
+  });
+  return index;
+}
+function buildBattery8MapIndex(battery8Map) {
+  const index = {};
+  const items = Array.isArray(battery8Map?.items) ? battery8Map.items : [];
+  items.forEach(item => {
+    const normalized = normalizeBattery8MapItem(item);
+    if (normalized.globalId) index[normalized.globalId] = normalized;
+  });
+  return index;
+}
 
-  const BATTERIES = RAW_BATTERIES.map((b,i) => normalizeBattery(b,i)).sort((a,b) => a.id - b.id);
-  const BATTERY_MAP = Object.fromEntries(BATTERIES.map(b => [b.id, b]));
+const METADATA_EXPORT_BASE = loadMetadataExport("basic");
+const METADATA_EXPORT_HARD = loadMetadataExport("hard");
+const BATTERY8_EXPORT_BASE = loadBattery8MetadataMap("basic");
+const BATTERY8_EXPORT_HARD = loadBattery8MetadataMap("hard");
+
+const METADATA_INDEX_BASE = buildMetadataIndex(METADATA_EXPORT_BASE);
+const METADATA_INDEX_HARD = buildMetadataIndex(METADATA_EXPORT_HARD);
+const BATTERY8_MAP_BASE = buildBattery8MapIndex(BATTERY8_EXPORT_BASE);
+const BATTERY8_MAP_HARD = buildBattery8MapIndex(BATTERY8_EXPORT_HARD);
+
+function inferFormulationFlagsFromText(text) {
+  const src = String(text || "").toLowerCase();
+  const flags = [];
+  if (/\bnenì\b|\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/.test(src)) flags.push("negace");
+  if (/\bnejpřesněji\b|\bnejlépe\b|\bnejvhodnější\b|\bnejvýrazněji\b/.test(src)) flags.push("superlativní přesnost");
+  if (/\bprvní krok\b/.test(src)) flags.push("první krok");
+  if (/\bv rámci školství\b|\bv rámci zdravotnictví\b|\bv rámci sociální oblasti\b/.test(src)) flags.push("systémová hranice");
+  if (/\brole\b|\bodpovědnost\b|\bkompetenc/.test(src)) flags.push("odpovědnost role");
+  if (/\bdokument\b|\bzpráva\b|\bdoporučen/.test(src)) flags.push("funkce dokumentu");
+  if (/\btypicky\b|\bnejčastěji\b/.test(src)) flags.push("typičnost");
+  return flags;
+}
+function inferInstitutionPair(metadata, questionText) {
+  if (metadata?.institutionPair) return metadata.institutionPair;
+  const src = `${questionText || ""} ${(metadata?.questionCore) || ""} ${(metadata?.requiredDiscrimination) || ""}`;
+  const pairs = [
+    "PPP vs SPC","ŠPZ vs škola","ŠPP vs ŠPZ","škola vs rodina","škola vs sociální služba","škola vs zdravotnické zařízení",
+    "klinický logoped vs školská podpora","SVP vs PPP","SPC vs běžná školní podpora","zpráva vs doporučení","PLPP vs IVP",
+    "diagnostika vs realizace podpory","odborné posouzení vs každodenní odpovědnost školy","školství vs zdravotnictví vs sociální oblast","MŠMT vs MPSV"
+  ];
+  return pairs.find(pair => src.toLowerCase().includes(pair.toLowerCase())) || "";
+}
+function buildReviewFallbacks(question, batteryLabel) {
+  const qText = typeof question === "string" ? question : String(question?.text || "");
+  const battery = typeof question === "string" ? (batteryLabel || "Neznámá baterie") : (batteryLabel || question?.batteryLabel || "Neznámá baterie");
+  return {
+    globalId: "",
+    batteryId: 0,
+    questionNumber: 0,
+    discipline: "speciální pedagogika",
+    subtopic: "obecné téma",
+    conceptTags: [battery],
+    questionType: "general-discrimination",
+    distractorType: "general",
+    trapPattern: "general",
+    requiredDiscrimination: "Rozlišit, která možnost nejlépe odpovídá zadání.",
+    signalPattern: [],
+    signalHint: "Hledej výraz, který mění význam otázky.",
+    attentionRisk: "medium",
+    formulationFlags: inferFormulationFlagsFromText(qText),
+    questionCore: "Rozhodnout, která odpověď nejlépe vystihuje jádro zadání.",
+    explanationCorrect: "Správná možnost odpovídá jádru otázky přesněji než ostatní varianty.",
+    explanationDistractor: "Lákavé možnosti jsou tematicky blízké, ale posouvají význam jinam.",
+    commonMisconception: "Častou chybou je povrchní čtení nebo záměna blízkých pojmů.",
+    whyWrongCategory: "Chyba obvykle souvisí s nepřesným rozlišením významu nebo formulace.",
+    microLesson: "Vrať se k jádru otázky a nejdřív si pojmenuj, co přesně máš rozlišit.",
+    recommendedRecallPrompt: "Jaký rozdíl bylo potřeba v otázce rozlišit?",
+    likelyErrorTypes: ["concept-confusion"],
+    repairTags: [battery, "general-discrimination"],
+    institutionPair: inferInstitutionPair(null, qText),
+    knowledgeDemandLevel: "medium",
+    processDemandLevel: "medium",
+    recommendedRepairFilters: [],
+    revisionPriority: "medium",
+    sourceCorrectLetter: "",
+    reviewedCorrectLetter: "",
+    effectiveCorrectLetter: "",
+    answerAuditStatus: "fallback",
+    answerAuditNote: "",
+    metadataOrigin: "fallback",
+    metadataSourceRef: "",
+    metadataConfidence: 0.2,
+    curationStatus: "fallback"
+  };
+}
+function resolveQuestionEffectiveCorrect(question, metadataItem) {
+  const letter = String(metadataItem?.effectiveCorrectLetter || metadataItem?.reviewedCorrectLetter || metadataItem?.sourceCorrectLetter || question?.correctLetter || LETTERS[Number(question?.correct || 0)] || "A").toUpperCase();
+  const idx = LETTERS.indexOf(letter);
+  return idx >= 0 ? idx : Number.isInteger(question?.correct) ? question.correct : 0;
+}
+function getMetadataIndexes(datasetKey = "basic") {
+  return normalizeDifficultyMode(datasetKey) === "hard"
+    ? { metadataIndex: METADATA_INDEX_HARD, battery8Map: BATTERY8_MAP_HARD }
+    : { metadataIndex: METADATA_INDEX_BASE, battery8Map: BATTERY8_MAP_BASE };
+}
+function normalizeQuestionMetadata(question, context) {
+  const { batteryId, batteryLabel, questionNumber, globalId, datasetKey } = context;
+  const indexes = getMetadataIndexes(datasetKey);
+  let metadataItem = null;
+  if (batteryId === 8 && indexes.battery8Map[globalId]) metadataItem = indexes.battery8Map[globalId].resolvedMetadata;
+  else if (indexes.metadataIndex[globalId]) metadataItem = indexes.metadataIndex[globalId];
+  const fallback = buildReviewFallbacks(question, batteryLabel);
+  const merged = { ...fallback, ...(metadataItem || {}) };
+  merged.globalId = merged.globalId || globalId;
+  merged.batteryId = merged.batteryId || batteryId;
+  merged.questionNumber = merged.questionNumber || questionNumber;
+  merged.formulationFlags = Array.from(new Set([...(merged.formulationFlags || []), ...inferFormulationFlagsFromText(question?.text || "")]));
+  merged.institutionPair = inferInstitutionPair(merged, question?.text || "");
+  if (!merged.signalPattern?.length && merged.formulationFlags.length) merged.signalPattern = merged.formulationFlags.slice(0, 3);
+  if (!merged.recommendedRepairFilters?.length) merged.recommendedRepairFilters = [merged.subtopic, merged.discipline, merged.questionType, merged.institutionPair].filter(Boolean);
+  if (!merged.likelyErrorTypes?.length) merged.likelyErrorTypes = [merged.institutionPair ? "institution-confusion" : "concept-confusion"];
+  if (!merged.repairTags?.length) merged.repairTags = [merged.discipline, merged.subtopic, merged.questionType].filter(Boolean);
+  if (!merged.questionCore) merged.questionCore = fallback.questionCore;
+  if (!merged.explanationCorrect) merged.explanationCorrect = fallback.explanationCorrect;
+  if (!merged.explanationDistractor) merged.explanationDistractor = fallback.explanationDistractor;
+  if (!merged.microLesson) merged.microLesson = fallback.microLesson;
+  if (!merged.recommendedRecallPrompt) merged.recommendedRecallPrompt = fallback.recommendedRecallPrompt;
+  return merged;
+}
+function attachMetadataToBatteryQuestions(questions, context) {
+  return questions.map((q, i) => {
+    const questionNumber = Number.isInteger(q?.number) ? q.number : i + 1;
+    const globalId = `B${String(context.batteryId).padStart(2, "0")}Q${String(questionNumber).padStart(2, "0")}`;
+    return { ...q, metadata: normalizeQuestionMetadata(q, { ...context, questionNumber, globalId }) };
+  });
+}
+
+function normalizeBattery(b, i, datasetKey = "basic") {
+  const bId = Number.isInteger(b?.id) ? b.id : i + 1;
+  const bLabel = String(b?.label ?? `Baterie ${i + 1}`).trim();
+  const questions = Array.isArray(b?.questions) ? b.questions.map((q, qi) => normalizeQuestion(q, qi, bId, bLabel, datasetKey)) : [];
+  return {
+    id: bId,
+    label: bLabel,
+    title: String(b?.title ?? "").trim(),
+    subtitle: String(b?.subtitle ?? "").trim(),
+    purpose: String(b?.purpose ?? "").trim(),
+    difficulty: String(b?.difficulty ?? "střední").trim(),
+    dominant: Array.isArray(b?.dominant) ? b.dominant.map(x => String(x).trim()) : [],
+    breakdown: Array.isArray(b?.breakdown) ? b.breakdown.map(x => String(x).trim()) : [],
+    tags: Array.isArray(b?.tags) ? b.tags.map(x => String(x).trim()) : [],
+    durationMinutes: Number.isFinite(Number(b?.durationMinutes)) ? Number(b.durationMinutes) : 30,
+    questionCount: questions.length,
+    questions,
+    validation: b?.validation ?? null,
+    datasetKey: normalizeDifficultyMode(datasetKey)
+  };
+}
+
+const BASIC_BATTERIES = RAW_BATTERIES_BASE.map((b, i) => normalizeBattery(b, i, "basic")).sort((a, b) => a.id - b.id);
+const HARD_BATTERIES = RAW_BATTERIES_HARD.map((b, i) => normalizeBattery(b, i, "hard")).sort((a, b) => a.id - b.id);
+
+const BASIC_BATTERY_MAP = Object.fromEntries(BASIC_BATTERIES.map(b => [b.id, b]));
+const HARD_BATTERY_MAP = Object.fromEntries(HARD_BATTERIES.map(b => [b.id, b]));
+
+const DATASETS = {
+  basic: {
+    key: "basic",
+    label: getDifficultyModeLabel("basic"),
+    batteries: BASIC_BATTERIES,
+    batteryMap: BASIC_BATTERY_MAP,
+    metadataExport: METADATA_EXPORT_BASE,
+    battery8Map: BATTERY8_EXPORT_BASE
+  },
+  hard: {
+    key: "hard",
+    label: getDifficultyModeLabel("hard"),
+    batteries: HARD_BATTERIES,
+    batteryMap: HARD_BATTERY_MAP,
+    metadataExport: METADATA_EXPORT_HARD,
+    battery8Map: BATTERY8_EXPORT_HARD
+  }
+};
+
+const BATTERIES = BASIC_BATTERIES;
+const BATTERY_MAP = BASIC_BATTERY_MAP;
+
+function getDatasetByMode(mode = "basic") {
+  const key = normalizeDifficultyMode(mode);
+  if (key === "hard" && DATASETS.hard.batteries.length) return DATASETS.hard;
+  return DATASETS.basic;
+}
+function getActiveDifficultyMode() {
+  const preferred = appState?.settings?.difficultyMode || appState?.currentSession?.difficultyMode || "basic";
+  return getDatasetByMode(preferred).key;
+}
+function getActiveDataset() { return getDatasetByMode(getActiveDifficultyMode()); }
+function getActiveBatteries() { return getActiveDataset().batteries; }
+function getActiveBatteryMap() { return getActiveDataset().batteryMap; }
+function getAllDatasetsQuestionCount() {
+  return Object.values(DATASETS).reduce((sum, dataset) => sum + dataset.batteries.reduce((acc, battery) => acc + battery.questions.length, 0), 0);
+}
+function getBatteryDisplayBadge(batteryId) { return batteryId === 8 ? "+1" : batteryId; }
+function formatDifficultyBadgeText(mode) { return `obtížnost: ${getDifficultyModeLabel(mode)}`; }
 
   const BATTERY_DETAIL_COPY = {
     1:{purposeText:"Baterie buduje pevnou orientaci v klasickém disciplinárním členění speciální pedagogiky a v současném širším rámci oboru.",profileParagraphs:["V celé bance funguje jako vstupní základ. Kdo tady chybuje v rozlišení psychopedie, somatopedie, tyflopedie, surdopedie, etopedie a logopedie, přenáší tyto chyby i do intervencí, poradenství a komunikace.","Smyslem není encyklopedie názvů, ale stabilní oborová orientace."]},
@@ -284,6 +351,32 @@
     7:{purposeText:"Tato profilová baterie staví speciální pedagogiku jako poradenský obor.",profileParagraphs:["Těžiště je v poradenském procesu, interpretaci potřeb klienta.","Baterie sleduje etiku, hranice kompetencí a meziresortní orientaci."]},
     8:{purposeText:"Finální syntetická baterie je nejtvrdší simulace přijímačkového testu.",profileParagraphs:["Je postavená na rozlišování velmi podobných možností a na práci s distraktory.","V přípravě funguje jako závěrečný stres test."]}
   };
+
+
+function getBatteryDetailCopy(battery) {
+  if (!battery) return null;
+  const baseCopy = BATTERY_DETAIL_COPY[battery.id] || {};
+  if ((battery.datasetKey || getActiveDifficultyMode()) !== "hard") return baseCopy;
+  return {
+    purposeText: battery.purpose || baseCopy.purposeText || "",
+    profileParagraphs: [
+      "Toto je pokročilá paralelní vrstva stejné tematické oblasti. Počítá s vyšší potřebou diferenciace, syntézy a procesního rozhodování.",
+      "Dashboard dál agreguje výsledky napříč základním i pokročilým režimem, ale výběr baterie a samotný běh čerpají jen z právě zvolené vrstvy."
+    ]
+  };
+}
+function updateSelectionState() {
+  const activeMap = getActiveBatteryMap();
+  const activeMode = getActiveDifficultyMode();
+  const battery = activeMap[appState.selectedBatteryId] || null;
+  const note = $("selectionNote");
+  if (note) {
+    note.innerHTML = battery
+      ? `<strong>Vybraná baterie:</strong> ${escapeHtml(battery.label)} – ${escapeHtml(battery.title)} <span class="inline-mode-chip">${escapeHtml(getDifficultyModeLabel(activeMode))}</span>`
+      : `<strong>Vybraná baterie:</strong> zatím není zvolena žádná varianta. <span class="inline-mode-chip">${escapeHtml(getDifficultyModeLabel(activeMode))}</span>`;
+  }
+  if ($("startTestBtn")) $("startTestBtn").disabled = !battery;
+}
 
   // ═══════════════════════════════════════════
   // 3. UTILITIES
@@ -311,12 +404,21 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   // ═══════════════════════════════════════════
   // 4. STORAGE API
   // ═══════════════════════════════════════════
-  function loadSettings() {
-    const raw = localStorage.getItem(STORAGE_KEYS.SETTINGS);
-    const s = safeParse(raw, null);
-    if (s && s.schemaVersion === SCHEMA_VERSION) return s;
-    return getDefaultSettings();
+  
+function loadSettings() {
+  const raw = localStorage.getItem(STORAGE_KEYS.SETTINGS);
+  const saved = safeParse(raw, null);
+  const defaults = getDefaultSettings();
+  if (saved && saved.schemaVersion === SCHEMA_VERSION) {
+    return {
+      ...defaults,
+      ...saved,
+      difficultyMode: getDatasetByMode(saved.difficultyMode || defaults.difficultyMode).key
+    };
   }
+  return defaults;
+}
+
   function saveSettings() { try { localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(appState.settings)); } catch(e){} }
   function loadHistory() { return safeParse(localStorage.getItem(STORAGE_KEYS.HISTORY), []).slice(0, MAX_HISTORY); }
   function saveHistory() { try { localStorage.setItem(STORAGE_KEYS.HISTORY, JSON.stringify(appState.history.slice(0, MAX_HISTORY))); } catch(e){} }
@@ -354,9 +456,23 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   // ═══════════════════════════════════════════
   // 5. APP STATE
   // ═══════════════════════════════════════════
-  function getDefaultSettings() {
-    return { schemaVersion:SCHEMA_VERSION, restoreSessionOnLoad:true, defaultMode:"simulation", defaultGoal:"attention", showKeywordHighlights:false, requireConfidence:false, hideSidebarDuringReading:false, focusModeDefault:false, showQuestionFirst:false, autoSave:true };
-  }
+  
+function getDefaultSettings() {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    difficultyMode: "basic",
+    restoreSessionOnLoad: true,
+    defaultMode: "simulation",
+    defaultGoal: "attention",
+    showKeywordHighlights: false,
+    requireConfidence: false,
+    hideSidebarDuringReading: false,
+    focusModeDefault: false,
+    showQuestionFirst: false,
+    autoSave: true
+  };
+}
+
   const appState = { schemaVersion:SCHEMA_VERSION, appMode:"start", selectedBatteryId:null, currentSession:null, history:[], settings:null, progress:null };
 
   function createQuestionState(index) {
@@ -379,28 +495,74 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     for(let i=0;i<LETTERS.length;i++){if(i===targetIdx){mapped.push(correctOpt);}else{mapped.push(wrongOpts[wp]);wp++;}}
     return {...question, options:mapped, correct:targetIdx, correctLetter:LETTERS[targetIdx]};
   }
-  function buildSessionBattery(battery, modeConfig) {
-    const targets = buildBalancedTargetIndexes(battery.questions.length);
-    const sessionQs = battery.questions.map((q,i) => {
-      const remapped = remapQuestionOptions(q, targets[i]);
-      return {...remapped, sourceBatteryId:battery.id, sourceQuestionNumber:q.number, tags:battery.tags||[]};
-    });
-    const dist = sessionQs.reduce((a,q)=>{a[LETTERS[q.correct]]++;return a;},{A:0,B:0,C:0,D:0});
-    const mode = modeConfig?.mode || "simulation";
-    const goal = modeConfig?.goal || "attention";
-    const now = new Date();
-    const endsAt = new Date(now.getTime() + (battery.durationMinutes||30)*60*1000);
+  
+function buildSessionBattery(battery, modeConfig) {
+  const targets = buildBalancedTargetIndexes(battery.questions.length);
+  const difficultyMode = getDatasetByMode(modeConfig?.difficultyMode || battery?.datasetKey || appState?.settings?.difficultyMode || "basic").key;
+  const difficultyLabel = getDifficultyModeLabel(difficultyMode);
+  const sessionQs = battery.questions.map((q, i) => {
+    const remapped = remapQuestionOptions(q, targets[i]);
     return {
-      schemaVersion:SCHEMA_VERSION, sessionId:generateId(), createdAt:now.toISOString(), updatedAt:now.toISOString(),
-      mode, goal, batteryId:battery.id, batteryLabel:battery.label, batteryTitle:battery.title,
-      activeTest:{ id:battery.id, label:battery.label, title:battery.title, durationMinutes:battery.durationMinutes||30, questions:sessionQs, sessionDistribution:dist },
-      timing:{ startedAt:now.toISOString(), endsAt:endsAt.toISOString(), finishedAt:null },
-      ui:{ currentQuestionIndex:0, reviewVisible:false, focusMode:false, optionsHiddenUntilReady:modeConfig?.showQuestionFirst||mode==="reading-training", showKeywordHighlights:modeConfig?.showKeywordHighlights!==false, requireConfidence:modeConfig?.requireConfidence!==false },
-      metrics:{ totalViews:0, totalAnswerChanges:0, totalFlagged:0 },
-      questionStates: sessionQs.map((_,i)=>createQuestionState(i)),
-      results:{ finished:false, timeExpired:false, score:null, analytics:null, repairCandidateIndexes:[] }
+      ...remapped,
+      sourceBatteryId: battery.id,
+      sourceQuestionNumber: q.number,
+      tags: battery.tags || [],
+      difficultyMode,
+      difficultyLabel
     };
-  }
+  });
+  const dist = sessionQs.reduce((a, q) => { a[LETTERS[q.correct]]++; return a; }, { A:0, B:0, C:0, D:0 });
+  const mode = modeConfig?.mode || "simulation";
+  const goal = modeConfig?.goal || "attention";
+  const now = new Date();
+  const endsAt = new Date(now.getTime() + (battery.durationMinutes || 30) * 60 * 1000);
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    sessionId: generateId(),
+    createdAt: now.toISOString(),
+    updatedAt: now.toISOString(),
+    mode,
+    goal,
+    difficultyMode,
+    difficultyLabel,
+    batteryId: battery.id,
+    batteryLabel: battery.label,
+    batteryTitle: battery.title,
+    activeTest: {
+      id: battery.id,
+      label: battery.label,
+      title: battery.title,
+      durationMinutes: battery.durationMinutes || 30,
+      questions: sessionQs,
+      sessionDistribution: dist,
+      difficultyMode,
+      difficultyLabel
+    },
+    timing: { startedAt: now.toISOString(), endsAt: endsAt.toISOString(), finishedAt: null },
+    ui: {
+      currentQuestionIndex: 0,
+      reviewVisible: false,
+      focusMode: false,
+      optionsHiddenUntilReady: modeConfig?.showQuestionFirst || mode === "reading-training",
+      showKeywordHighlights: modeConfig?.showKeywordHighlights !== false,
+      requireConfidence: modeConfig?.requireConfidence !== false
+    },
+    metrics: { totalViews: 0, totalAnswerChanges: 0, totalFlagged: 0, totalRevisits: 0 },
+    questionStates: sessionQs.map((_, idx) => createQuestionState(idx)),
+    results: {
+      finished: false,
+      timeExpired: false,
+      score: null,
+      analytics: null,
+      diagnosticSummary: null,
+      repairCandidateIndexes: [],
+      recommendations: [],
+      progressCommitted: false,
+      progressCommittedAt: null
+    }
+  };
+}
+
   function buildRepairSessionFromResults(srcSession, candidateIndexes) {
     if(!srcSession || !candidateIndexes.length) return null;
     const srcQs = srcSession.activeTest.questions;
@@ -572,76 +734,133 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     if(mode==="test"){tp.classList.remove("hidden");rp.classList.add("hidden");}
     if(mode==="results"){tp.classList.add("hidden");rp.classList.remove("hidden");}
   }
-  function renderBatteryCards() {
-    const grid=$("batteryGrid");
-    grid.innerHTML=BATTERIES.map(b=>{
-      const sel=b.id===appState.selectedBatteryId?"selected":"";
-      return `<button type="button" class="battery-card ${sel}" data-battery="${b.id}"><div class="battery-card-head"><span class="battery-label">${escapeHtml(b.label)} – ${escapeHtml(b.title)}</span><span class="battery-badge">${b.id===8?"+1":b.id}</span></div><p class="battery-subtitle">${escapeHtml(b.subtitle)}</p><div class="battery-meta"><span class="chip">${b.questionCount} otázek</span><span class="chip">${b.durationMinutes} minut</span><span class="chip">${escapeHtml(b.difficulty)}</span></div></button>`;
-    }).join("");
-    grid.querySelectorAll(".battery-card").forEach(c=>{c.addEventListener("click",()=>selectBattery(Number(c.dataset.battery)));});
+  
+function renderBatteryCards() {
+  const grid = $("batteryGrid");
+  const batteries = getActiveBatteries();
+  grid.innerHTML = batteries.map(b => {
+    const sel = b.id === appState.selectedBatteryId ? "selected" : "";
+    return `<button type="button" class="battery-card ${sel}" data-battery="${b.id}">
+      <div class="battery-card-head">
+        <span class="battery-label">${escapeHtml(b.label)} – ${escapeHtml(b.title)}</span>
+        <span class="battery-badge">${getBatteryDisplayBadge(b.id)}</span>
+      </div>
+      <p class="battery-subtitle">${escapeHtml(b.subtitle)}</p>
+      <div class="battery-meta">
+        <span class="chip">${b.questionCount} otázek</span>
+        <span class="chip">${b.durationMinutes} minut</span>
+        <span class="chip">${escapeHtml(b.difficulty)}</span>
+        <span class="chip ${b.datasetKey === "hard" ? "warn" : "ok"}">${escapeHtml(getDifficultyModeLabel(b.datasetKey))}</span>
+      </div>
+    </button>`;
+  }).join("");
+  grid.querySelectorAll(".battery-card").forEach(card => {
+    card.onclick = () => selectBattery(Number(card.dataset.battery));
+  });
+}
+
+  
+function renderBatteryDetail(battery) {
+  const top = $("batteryDetail").querySelector(".detail-top");
+  if (!battery) {
+    top.innerHTML = '<div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie.</p></div><span class="badge">—</span>';
+    $("detailPurpose").innerHTML = "<p>Zatím není vybraná žádná baterie.</p>";
+    $("detailDominant").innerHTML = "";
+    $("detailBreakdown").innerHTML = "";
+    $("detailProfile").innerHTML = "<p>Vybraná baterie tady dostane svůj profil.</p>";
+    return;
   }
-  function renderBatteryDetail(battery) {
-    const top=$("batteryDetail").querySelector(".detail-top");
-    if(!battery){
-      top.innerHTML='<div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie.</p></div><span class="badge">—</span>';
-      $("detailPurpose").innerHTML="<p>Zatím není vybraná žádná baterie.</p>";
-      $("detailDominant").innerHTML="";$("detailBreakdown").innerHTML="";
-      $("detailProfile").innerHTML="<p>Vybraná baterie tady dostane svůj profil.</p>";
-      return;
-    }
-    top.innerHTML=`<div><h3>${escapeHtml(battery.label)} – ${escapeHtml(battery.title)}</h3><p>${escapeHtml(battery.subtitle)}</p></div><span class="badge">${battery.id===8?"+1":battery.id}</span>`;
-    const dc=BATTERY_DETAIL_COPY[battery.id]||{};
-    $("detailPurpose").innerHTML=`<p>${escapeHtml(dc.purposeText||battery.purpose)}</p>`;
-    $("detailDominant").innerHTML=battery.dominant.map(x=>`<span class="chip">${escapeHtml(x)}</span>`).join("");
-    $("detailBreakdown").innerHTML=battery.breakdown.map(x=>`<li>${escapeHtml(x)}</li>`).join("");
-    $("detailProfile").innerHTML=(dc.profileParagraphs||[]).map(x=>`<p>${escapeHtml(x)}</p>`).join("");
-  }
-  function renderRestorePanel() {
-    const panel=$("restorePanel");
-    const saved=loadCurrentSession();
-    if(!saved){panel.classList.add("hidden");panel.innerHTML="";return;}
-    panel.classList.remove("hidden");
-    const status=saved.results?.finished?"dokončeno":"rozpracováno";
-    const remaining=saved.results?.finished?"":", zbývá "+formatTime(Math.max(0,Math.floor((new Date(saved.timing.endsAt).getTime()-new Date(saved.updatedAt).getTime())/1000)));
-    panel.innerHTML=`<div class="restore-panel"><h4>Poslední uložená relace</h4><div class="restore-info"><strong>${escapeHtml(saved.batteryLabel)}</strong> – ${escapeHtml(saved.batteryTitle||"")}<br>Režim: ${escapeHtml(formatModeLabel(saved.mode))} · Stav: ${status}${remaining}<br>Uloženo: ${formatDate(saved.updatedAt)}</div><div class="restore-actions"><button class="btn btn-primary btn-sm" id="restoreSessionBtn">Obnovit relaci</button><button class="btn btn-light btn-sm" id="newSessionBtn">Začít znovu</button><button class="btn btn-danger btn-sm" id="deleteSessionBtn">Smazat uloženou relaci</button></div></div>`;
-    $("restoreSessionBtn")?.addEventListener("click",resumeSession);
-    $("newSessionBtn")?.addEventListener("click",()=>{clearCurrentSession();renderRestorePanel();});
-    $("deleteSessionBtn")?.addEventListener("click",()=>{clearCurrentSession();renderRestorePanel();});
-  }
-  function startTargetedPractice(type, param) {
-    let allQs = [];
-    BATTERIES.forEach(b => {
-      if (b.id === 8) return;
-      b.questions.forEach(q => { allQs.push({ ...q, sourceBatteryId: b.id }); });
+  const detailCopy = getBatteryDetailCopy(battery);
+  top.innerHTML = `<div><h3>${escapeHtml(battery.label)} – ${escapeHtml(battery.title)}</h3><p>${escapeHtml(battery.subtitle)}</p></div><span class="badge">${getBatteryDisplayBadge(battery.id)}</span>`;
+  $("detailPurpose").innerHTML = `<p>${escapeHtml(detailCopy?.purposeText || battery.purpose)}</p>`;
+  $("detailDominant").innerHTML = (battery.dominant || []).map(item => `<span class="chip">${escapeHtml(item)}</span>`).join("");
+  $("detailBreakdown").innerHTML = (battery.breakdown || []).map(item => `<li>${escapeHtml(item)}</li>`).join("");
+  $("detailProfile").innerHTML = (detailCopy?.profileParagraphs || []).map(item => `<p>${escapeHtml(item)}</p>`).join("");
+}
+
+  
+function renderRestorePanel() {
+  const panel = $("restorePanel");
+  const saved = loadCurrentSession();
+  if (!saved) { panel.classList.add("hidden"); panel.innerHTML = ""; return; }
+  panel.classList.remove("hidden");
+  const status = saved.results?.finished ? "dokončeno" : "rozpracováno";
+  const remaining = saved.results?.finished ? "" : ", zbývá " + formatTime(Math.max(0, Math.floor((new Date(saved.timing.endsAt).getTime() - new Date(saved.updatedAt).getTime()) / 1000)));
+  const difficultyLabel = getDifficultyModeLabel(saved.difficultyMode || "basic");
+  panel.innerHTML = `<div class="restore-panel">
+    <h4>Poslední uložená relace</h4>
+    <div class="restore-info">
+      <strong>${escapeHtml(saved.batteryLabel)}</strong> – ${escapeHtml(saved.batteryTitle || "")}<br>
+      Obtížnost: ${escapeHtml(difficultyLabel)} · Režim práce: ${escapeHtml(formatModeLabel(saved.mode))} · Stav: ${status}${remaining}<br>
+      Uloženo: ${formatDate(saved.updatedAt)}
+    </div>
+    <div class="restore-actions">
+      <button class="btn btn-primary btn-sm" id="restoreSessionBtn">Obnovit relaci</button>
+      <button class="btn btn-light btn-sm" id="newSessionBtn">Začít znovu</button>
+      <button class="btn btn-danger btn-sm" id="deleteSessionBtn">Smazat uloženou relaci</button>
+    </div>
+  </div>`;
+  $("restoreSessionBtn")?.addEventListener("click", resumeSession);
+  $("newSessionBtn")?.addEventListener("click", () => { clearCurrentSession(); renderRestorePanel(); });
+  $("deleteSessionBtn")?.addEventListener("click", () => { clearCurrentSession(); renderRestorePanel(); });
+}
+
+  
+function startTargetedPractice(type, param) {
+  let allQs = [];
+  const activeDifficulty = getActiveDifficultyMode();
+  getActiveBatteries().forEach(b => {
+    if (b.id === 8) return;
+    b.questions.forEach(q => { allQs.push({ ...q, sourceBatteryId: b.id, difficultyMode: activeDifficulty, difficultyLabel: getDifficultyModeLabel(activeDifficulty) }); });
+  });
+  let filtered = [];
+  let title = "";
+  if (type === "weakest-subtopic" || type === "subtopic" || type === "maintain-subtopic" || type === "undertrained-subtopic") {
+    filtered = allQs.filter(q => q.metadata?.subtopic === param);
+    title = `Téma: ${param}`;
+  } else if (type === "discipline") {
+    filtered = allQs.filter(q => q.metadata?.discipline === param);
+    title = `Disciplína: ${param}`;
+  } else if (type === "error-type") {
+    filtered = allQs.filter(q => {
+      const m = q.metadata || {};
+      if (param === "distractor-trap" && (m.trapPattern === "near-category" || m.trapPattern === "distractor-trap")) return true;
+      if (m.likelyErrorTypes && m.likelyErrorTypes.includes(param)) return true;
+      if (param === "missed-negation" && /\bnenì\b|\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/i.test(q.text)) return true;
+      return false;
     });
-    let filtered = []; let title = "";
-    if (type === "weakest-subtopic" || type === "subtopic" || type === "maintain-subtopic" || type === "undertrained-subtopic") {
-      filtered = allQs.filter(q => q.metadata?.subtopic === param);
-      title = `Téma: ${param}`;
-    } else if (type === "discipline") {
-      filtered = allQs.filter(q => q.metadata?.discipline === param);
-      title = `Disciplína: ${param}`;
-    } else if (type === "error-type") {
-      filtered = allQs.filter(q => {
-        const m = q.metadata || {};
-        if (param === "distractor-trap" && (m.trapPattern === "near-category" || m.trapPattern === "distractor-trap")) return true;
-        if (m.likelyErrorTypes && m.likelyErrorTypes.includes(param)) return true;
-        if (param === "missed-negation" && /\bnenì\b|\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/i.test(q.text)) return true;
-        return false;
-      });
-      title = `Typ chyby: ${(analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(param) : (ERROR_LABELS[param] || param))}`;
-    }
-    if (filtered.length === 0) { alert("Nenalezeny žádné otázky pro tento filtr."); return; }
-    const sessionQs = shuffleArray(filtered).slice(0, 20);
-    const dummyBattery = { id: "tgt-" + Date.now(), label: "Cílený trénink", title: title, durationMinutes: Math.max(5, Math.ceil(sessionQs.length * 0.6)), questions: sessionQs };
-    const s = appState.settings;
-    appState.currentSession = buildSessionBattery(dummyBattery, { mode: "simulation", goal: "accuracy", showQuestionFirst: false, showKeywordHighlights: true, requireConfidence: s.requireConfidence });
-    appState.selectedBatteryId = null;
-    saveCurrentSession(); setAppMode("test");
-    renderQuestionGrid(); updateMeta();
-    beginQuestionView(0); renderQuestion();
-    applyFocusMode(); startTimer();
+    title = `Typ chyby: ${(analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(param) : (ERROR_LABELS[param] || param))}`;
   }
+  if (filtered.length === 0) { alert("Nenalezeny žádné otázky pro tento filtr."); return; }
+  const sessionQs = shuffleArray(filtered).slice(0, 20);
+  const dummyBattery = {
+    id: "tgt-" + Date.now(),
+    label: "Cílený trénink",
+    title: title,
+    durationMinutes: Math.max(5, Math.ceil(sessionQs.length * 0.6)),
+    questions: sessionQs,
+    datasetKey: activeDifficulty
+  };
+  const s = appState.settings;
+  appState.currentSession = buildSessionBattery(dummyBattery, {
+    mode: "simulation",
+    goal: "accuracy",
+    showQuestionFirst: false,
+    showKeywordHighlights: true,
+    requireConfidence: s.requireConfidence,
+    difficultyMode: activeDifficulty
+  });
+  appState.selectedBatteryId = null;
+  saveCurrentSession();
+  setAppMode("test");
+  renderQuestionGrid();
+  updateMeta();
+  beginQuestionView(0);
+  renderQuestion();
+  applyFocusMode();
+  startTimer();
+}
+
   function getSummaryMetricValue(summary, key, fallback) {
     const value = summary && summary[key];
     return value == null || value === "" ? fallback : value;
@@ -1015,38 +1234,41 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     return `<div class="action-grid">${cards.join("")}</div>`;
   }
 
-  function runDashboardPracticeAction(kind, value) {
-    const label = String(value || "").trim();
-    if (!kind) return;
-    switch (kind) {
-      case "discipline":
-        if (analyticsBridge.startRepairModeByDiscipline) return analyticsBridge.startRepairModeByDiscipline(label);
-        return startTargetedPractice("discipline", label);
-      case "subtopic":
-      case "maintain-subtopic":
-      case "undertrained-subtopic":
-        if (analyticsBridge.startRepairModeBySubtopic) return analyticsBridge.startRepairModeBySubtopic(label);
-        return startTargetedPractice("subtopic", label);
-      case "error-type":
-        if (analyticsBridge.startRepairModeByErrorType) return analyticsBridge.startRepairModeByErrorType(label);
-        return startTargetedPractice("error-type", label);
-      case "formulation":
-        if (analyticsBridge.startRepairModeByFormulation) return analyticsBridge.startRepairModeByFormulation(label);
-        return;
-      case "institution":
-        if (analyticsBridge.startRepairModeByInstitutionPair) return analyticsBridge.startRepairModeByInstitutionPair(label);
-        return;
-      case "high-confidence":
-        if (analyticsBridge.startRepairModeHighConfidenceWrong) return analyticsBridge.startRepairModeHighConfidenceWrong();
-        return;
-      case "slow":
-        if (analyticsBridge.startRepairModeSlowQuestions) return analyticsBridge.startRepairModeSlowQuestions();
-        return;
-      case "revision":
-        if (analyticsBridge.startRepairModeRevisionQueue) return analyticsBridge.startRepairModeRevisionQueue();
-        return;
-    }
+  
+function runDashboardPracticeAction(kind, value) {
+  const label = String(value || "").trim();
+  const hasSessionQuestions = !!(appState.currentSession?.activeTest?.questions?.length);
+  if (!kind) return;
+  switch (kind) {
+    case "discipline":
+      if (hasSessionQuestions && analyticsBridge.startRepairModeByDiscipline) return analyticsBridge.startRepairModeByDiscipline(label);
+      return startTargetedPractice("discipline", label);
+    case "subtopic":
+    case "maintain-subtopic":
+    case "undertrained-subtopic":
+      if (hasSessionQuestions && analyticsBridge.startRepairModeBySubtopic) return analyticsBridge.startRepairModeBySubtopic(label);
+      return startTargetedPractice("subtopic", label);
+    case "error-type":
+      if (hasSessionQuestions && analyticsBridge.startRepairModeByErrorType) return analyticsBridge.startRepairModeByErrorType(label);
+      return startTargetedPractice("error-type", label);
+    case "formulation":
+      if (hasSessionQuestions && analyticsBridge.startRepairModeByFormulation) return analyticsBridge.startRepairModeByFormulation(label);
+      return;
+    case "institution":
+      if (hasSessionQuestions && analyticsBridge.startRepairModeByInstitutionPair) return analyticsBridge.startRepairModeByInstitutionPair(label);
+      return;
+    case "high-confidence":
+      if (hasSessionQuestions && analyticsBridge.startRepairModeHighConfidenceWrong) return analyticsBridge.startRepairModeHighConfidenceWrong();
+      return;
+    case "slow":
+      if (hasSessionQuestions && analyticsBridge.startRepairModeSlowQuestions) return analyticsBridge.startRepairModeSlowQuestions();
+      return;
+    case "revision":
+      if (hasSessionQuestions && analyticsBridge.startRepairModeRevisionQueue) return analyticsBridge.startRepairModeRevisionQueue();
+      return;
   }
+}
+
 
 
   function buildHistoryOnlyDashboardSummary() {
@@ -1170,6 +1392,7 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
             <div>
               <h4>Studijní dashboard</h4>
               <p class="dashboard-headline">${summary.source === "history-only" ? "Souhrn je obnovený hlavně z historie pokusů. Detailní tematická mapa se doplní po dalších dokončených relacích." : "Dlouhodobý přehled napříč dokončenými testy. Ukazuje, co máš už zvládnuté, co potřebuje posílit a co zatím ještě není dost ověřené. Na značku ? můžeš najet myší pro vysvětlení."}</p>
+            <div class="dashboard-legend-note">Na značku ? můžeš najet myší a zobrazí se vysvětlivka.</div>
             </div>
             <div class="dashboard-meta">
               ${renderDashboardTrendBadge(`Vývoj: ${formatDashboardTrendLabel(trendDirection, "short")}`, trendDirection, getDashboardTrendDescription(trendDirection))}
@@ -1329,28 +1552,77 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     }
   }
 
-  function renderHistoryPanel() {
-    const panel=$("historyPanel"); const h=appState.history;
-    if(!h.length){panel.classList.add("hidden");return;}
-    panel.classList.remove("hidden");
-    const items=h.slice(0,3).map(e=>`<div class="history-item"><span>${escapeHtml(e.batteryLabel||"")} · ${escapeHtml(formatModeLabel(e.mode||"simulation"))} · ${formatDate(e.date)}</span><span class="history-score">${e.score}/${e.total} (${e.percentage}%)</span></div>`).join("");
-    panel.innerHTML=`<div class="history-panel"><h4>Poslední pokusy</h4><div class="history-list">${items}</div></div>`;
+  
+function renderHistoryPanel() {
+  const panel = $("historyPanel");
+  const history = appState.history;
+  if (!history.length) { panel.classList.add("hidden"); return; }
+  panel.classList.remove("hidden");
+  const items = history.slice(0, 3).map(entry => {
+    const difficultyLabel = getDifficultyModeLabel(entry.difficultyMode || "basic");
+    return `<div class="history-item">
+      <span>${escapeHtml(entry.batteryLabel || "")} · ${escapeHtml(difficultyLabel)} · ${escapeHtml(formatModeLabel(entry.mode || "simulation"))} · ${formatDate(entry.date)}</span>
+      <span class="history-score">${entry.score}/${entry.total} (${entry.percentage}%)</span>
+    </div>`;
+  }).join("");
+  panel.innerHTML = `<div class="history-panel"><h4>Poslední pokusy</h4><div class="history-list">${items}</div></div>`;
+}
+
+  
+function renderConfigPanel() {
+  const s = appState.settings;
+  s.difficultyMode = getDatasetByMode(s.difficultyMode || "basic").key;
+  if (s.defaultMode === "reading-training") s.showQuestionFirst = true;
+
+  document.querySelectorAll("#configDifficulty .config-opt").forEach(btn => {
+    const mode = getDatasetByMode(btn.dataset.difficulty || "basic").key;
+    btn.disabled = mode === "hard" && !DATASETS.hard.batteries.length;
+    btn.classList.toggle("active", mode === s.difficultyMode);
+    btn.onclick = () => {
+      const nextMode = getDatasetByMode(btn.dataset.difficulty || "basic").key;
+      if (nextMode === s.difficultyMode) return;
+      s.difficultyMode = nextMode;
+      saveSettings();
+      renderConfigPanel();
+      renderBatteryCards();
+      renderBatteryDetail(appState.selectedBatteryId ? getActiveBatteryMap()[appState.selectedBatteryId] : null);
+      updateSelectionState();
+    };
+  });
+
+  document.querySelectorAll("#configMode .config-opt").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.mode === s.defaultMode);
+    btn.onclick = () => { s.defaultMode = btn.dataset.mode; saveSettings(); renderConfigPanel(); };
+  });
+
+  document.querySelectorAll("#configGoal .config-opt").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.goal === s.defaultGoal);
+    btn.onclick = () => { s.defaultGoal = btn.dataset.goal; saveSettings(); renderConfigPanel(); };
+  });
+
+  $("optShowQuestionFirst").checked = s.showQuestionFirst;
+  $("optHighlightKeywords").checked = s.showKeywordHighlights;
+  $("optRequireConfidence").checked = s.requireConfidence;
+  $("optAutoSave").checked = s.autoSave;
+  $("optRestoreSession").checked = s.restoreSessionOnLoad;
+
+  $("optShowQuestionFirst").onchange = function(){ s.showQuestionFirst = this.checked; saveSettings(); };
+  $("optHighlightKeywords").onchange = function(){ s.showKeywordHighlights = this.checked; saveSettings(); };
+  $("optRequireConfidence").onchange = function(){ s.requireConfidence = this.checked; saveSettings(); };
+  $("optAutoSave").onchange = function(){ s.autoSave = this.checked; saveSettings(); };
+  $("optRestoreSession").onchange = function(){ s.restoreSessionOnLoad = this.checked; saveSettings(); };
+
+  const repBtn = $("repairModeOpt");
+  const hasCandidates = appState.history.length > 0 || loadCurrentSession()?.results?.finished;
+  if (repBtn) repBtn.disabled = !hasCandidates;
+
+  const difficultyHelp = $("difficultyHelp");
+  if (difficultyHelp) {
+    const activeDataset = getActiveDataset();
+    difficultyHelp.textContent = `${getDifficultyModeLabel(activeDataset.key)} režim právě zobrazuje ${activeDataset.batteries.length} baterií. Dashboard dál agreguje výsledky napříč základním i pokročilým režimem.`;
   }
-  function renderConfigPanel() {
-    const s=appState.settings;
-    if(s.defaultMode==="reading-training") s.showQuestionFirst=true;
-    document.querySelectorAll("#configMode .config-opt").forEach(b=>{b.classList.toggle("active",b.dataset.mode===s.defaultMode);b.addEventListener("click",()=>{s.defaultMode=b.dataset.mode;saveSettings();renderConfigPanel();});});
-    document.querySelectorAll("#configGoal .config-opt").forEach(b=>{b.classList.toggle("active",b.dataset.goal===s.defaultGoal);b.addEventListener("click",()=>{s.defaultGoal=b.dataset.goal;saveSettings();renderConfigPanel();});});
-    $("optShowQuestionFirst").checked=s.showQuestionFirst;$("optHighlightKeywords").checked=s.showKeywordHighlights;$("optRequireConfidence").checked=s.requireConfidence;$("optAutoSave").checked=s.autoSave;$("optRestoreSession").checked=s.restoreSessionOnLoad;
-    $("optShowQuestionFirst").onchange=function(){s.showQuestionFirst=this.checked;saveSettings();};
-    $("optHighlightKeywords").onchange=function(){s.showKeywordHighlights=this.checked;saveSettings();};
-    $("optRequireConfidence").onchange=function(){s.requireConfidence=this.checked;saveSettings();};
-    $("optAutoSave").onchange=function(){s.autoSave=this.checked;saveSettings();};
-    $("optRestoreSession").onchange=function(){s.restoreSessionOnLoad=this.checked;saveSettings();};
-    const repBtn=$("repairModeOpt");
-    const hasCandidates=appState.history.length>0||loadCurrentSession()?.results?.finished;
-    if(repBtn){repBtn.disabled=!hasCandidates;}
-  }
+}
+
   function renderQuestionGrid() {
     const s=appState.currentSession; if(!s) return;
     const grid=$("questionGrid");
@@ -1372,16 +1644,22 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
       if(qs.confidence==="guess") b.classList.add("low-confidence");
     });
   }
-  function updateMeta() {
-    const s=appState.currentSession; if(!s) return;
-    $("answeredCount").textContent=String(getAnsweredCount());
-    $("answeredTotal").textContent=String(s.activeTest.questions.length);
-    $("metaCount").textContent=String(s.activeTest.questions.length);
-    $("sidebarBatteryLabel").textContent=`Aktivní baterie: ${s.activeTest.label} – ${s.activeTest.title}`;
-    $("activeBatteryPill").textContent=s.activeTest.label;
-    const mb=$("sidebarModeBadge");
-    mb.innerHTML=`<span class="mode-badge ${s.mode}">${s.mode==="reading-training"?"trénink čtení":s.mode==="repair"?"opravný režim":"simulace testu"}</span>`;
-  }
+  
+function updateMeta() {
+  const s = appState.currentSession; if (!s) return;
+  $("answeredCount").textContent = String(getAnsweredCount());
+  $("answeredTotal").textContent = String(s.activeTest.questions.length);
+  $("metaCount").textContent = String(s.activeTest.questions.length);
+  $("sidebarBatteryLabel").textContent = `Aktivní baterie: ${s.activeTest.label} – ${s.activeTest.title}`;
+  $("activeBatteryPill").textContent = s.activeTest.label;
+  const badgeWrap = $("sidebarModeBadge");
+  const difficultyMode = s.difficultyMode || "basic";
+  badgeWrap.innerHTML = `
+    <span class="mode-badge ${s.mode}">${s.mode === "reading-training" ? "trénink čtení" : s.mode === "repair" ? "opravný režim" : "simulace testu"}</span>
+    <span class="mode-badge difficulty ${difficultyMode}">${formatDifficultyBadgeText(difficultyMode)}</span>
+  `;
+}
+
   function renderQuestion() {
     const s=appState.currentSession; if(!s) return;
     const ci=s.ui.currentQuestionIndex;
@@ -1752,65 +2030,129 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   // ═══════════════════════════════════════════
   // 10. INTERACTIONS
   // ═══════════════════════════════════════════
-  function selectBattery(id) {
-    appState.selectedBatteryId=id;
-    const b=BATTERY_MAP[id];
-    const note=$("selectionNote");
-    note.innerHTML=b?`<strong>Vybraná baterie:</strong> ${escapeHtml(b.label)} – ${escapeHtml(b.title)}`:`<strong>Vybraná baterie:</strong> zatím není zvolena žádná varianta.`;
-    $("startTestBtn").disabled=!b;
-    renderBatteryCards(); renderBatteryDetail(b);
-  }
-  function startBattery(id) {
-    const battery=BATTERY_MAP[id]; if(!battery) return;
-    const s=appState.settings;
-    const modeConfig={mode:s.defaultMode,goal:s.defaultGoal,showQuestionFirst:s.showQuestionFirst||s.defaultMode==="reading-training",showKeywordHighlights:s.showKeywordHighlights,requireConfidence:s.requireConfidence};
-    appState.currentSession=buildSessionBattery(battery,modeConfig);
-    appState.selectedBatteryId=id;
-    saveCurrentSession();
+  
+function selectBattery(id) {
+  appState.selectedBatteryId = id;
+  const battery = getActiveBatteryMap()[id] || null;
+  updateSelectionState();
+  renderBatteryCards();
+  renderBatteryDetail(battery);
+}
+
+  
+function startBattery(id, options = {}) {
+  const difficultyMode = getDatasetByMode(options.difficultyMode || appState.settings.difficultyMode || "basic").key;
+  const battery = getDatasetByMode(difficultyMode).batteryMap[id];
+  if (!battery) return;
+  const s = appState.settings;
+  s.difficultyMode = difficultyMode;
+  saveSettings();
+  const modeConfig = {
+    mode: s.defaultMode,
+    goal: s.defaultGoal,
+    difficultyMode,
+    showQuestionFirst: s.showQuestionFirst || s.defaultMode === "reading-training",
+    showKeywordHighlights: s.showKeywordHighlights,
+    requireConfidence: s.requireConfidence
+  };
+  appState.currentSession = buildSessionBattery(battery, modeConfig);
+  appState.selectedBatteryId = id;
+  saveCurrentSession();
+  setAppMode("test");
+  renderQuestionGrid();
+  updateMeta();
+  beginQuestionView(0);
+  renderQuestion();
+  applyFocusMode();
+  startTimer();
+}
+
+  
+function resumeSession() {
+  const saved = loadCurrentSession();
+  if (!saved) return;
+  const difficultyMode = getDatasetByMode(saved.difficultyMode || "basic").key;
+  appState.settings.difficultyMode = difficultyMode;
+  saveSettings();
+  appState.currentSession = saved;
+  appState.currentSession.difficultyMode = difficultyMode;
+  appState.currentSession.difficultyLabel = getDifficultyModeLabel(difficultyMode);
+  appState.selectedBatteryId = saved.batteryId;
+  renderConfigPanel();
+  if (saved.results.finished) {
+    setAppMode("results");
+    renderResults(saved.results.timeExpired);
+    if (saved.ui.reviewVisible) showReview();
+  } else {
+    const rem = getRemainingSeconds();
+    if (rem <= 0) { setAppMode("test"); renderQuestionGrid(); updateMeta(); finishTest(true); return; }
     setAppMode("test");
-    renderQuestionGrid(); updateMeta();
-    beginQuestionView(0); renderQuestion();
-    applyFocusMode(); startTimer();
+    renderQuestionGrid();
+    updateMeta();
+    beginQuestionView(saved.ui.currentQuestionIndex);
+    renderQuestion();
+    applyFocusMode();
+    startTimer();
   }
-  function resumeSession() {
-    const saved=loadCurrentSession();
-    if(!saved) return;
-    appState.currentSession=saved;
-    appState.selectedBatteryId=saved.batteryId;
-    if(saved.results.finished) {
-      setAppMode("results");
-      renderResults(saved.results.timeExpired);
-      if(saved.ui.reviewVisible) showReview();
-    } else {
-      const rem=getRemainingSeconds();
-      if(rem<=0) { setAppMode("test"); renderQuestionGrid(); updateMeta(); finishTest(true); return; }
-      setAppMode("test");
-      renderQuestionGrid(); updateMeta();
-      beginQuestionView(saved.ui.currentQuestionIndex); renderQuestion();
-      applyFocusMode(); startTimer();
-    }
-  }
-  function restartBattery() {
-    const s=appState.currentSession; if(!s) return;
-    startBattery(s.batteryId);
-  }
-  function finishTest(timeExpired=false) {
-    const s=appState.currentSession; if(!s||s.results.finished) return;
-    endQuestionView(s.ui.currentQuestionIndex);
-    s.results.finished=true; s.results.timeExpired=timeExpired;
-    s.timing.finishedAt=new Date().toISOString();
-    stopTimer();
-    const score=calculateScore();
-    addHistoryEntry({sessionId:s.sessionId,date:new Date().toISOString(),batteryId:s.batteryId,batteryLabel:s.batteryLabel,mode:s.mode,score:score.correct,total:score.total,percentage:score.percentage,timeExpired,averageTimeMs:calculateAttentionMetrics().avgTime||0,guessCount:s.questionStates.filter(q=>q.confidence==="guess").length,flaggedCount:s.questionStates.filter(q=>q.flagged).length});
-    setAppMode("results"); renderResults(timeExpired);
+}
+
+  
+function restartBattery() {
+  const session = appState.currentSession;
+  if (!session) return;
+  startBattery(session.batteryId, { difficultyMode: session.difficultyMode || appState.settings.difficultyMode || "basic" });
+}
+
+  
+function finishTest(timeExpired = false) {
+  const s = appState.currentSession; if (!s || s.results.finished) return;
+  endQuestionView(s.ui.currentQuestionIndex);
+  s.results.finished = true;
+  s.results.timeExpired = timeExpired;
+  s.timing.finishedAt = new Date().toISOString();
+  stopTimer();
+  const score = calculateScore();
+  addHistoryEntry({
+    sessionId: s.sessionId,
+    date: new Date().toISOString(),
+    batteryId: s.batteryId,
+    batteryLabel: s.batteryLabel,
+    batteryTitle: s.batteryTitle,
+    difficultyMode: s.difficultyMode || "basic",
+    difficultyLabel: s.difficultyLabel || getDifficultyModeLabel(s.difficultyMode || "basic"),
+    mode: s.mode,
+    score: score.correct,
+    total: score.total,
+    percentage: score.percentage,
+    timeExpired,
+    averageTimeMs: calculateAttentionMetrics().avgTime || 0,
+    guessCount: s.questionStates.filter(q => q.confidence === "guess").length,
+    flaggedCount: s.questionStates.filter(q => q.flagged).length
+  });
+  setAppMode("results");
+  renderResults(timeExpired);
+  saveCurrentSession();
+}
+
+  
+function backToSelection() {
+  const s = appState.currentSession;
+  if (s && !s.results.finished) {
+    if (!confirm("Opravdu se chceš vrátit? Rozpracovaný test bude uložen.")) return;
     saveCurrentSession();
   }
-  function backToSelection() {
-    const s=appState.currentSession;
-    if(s&&!s.results.finished) { if(!confirm("Opravdu se chceš vrátit? Rozpracovaný test bude uložen.")) return; saveCurrentSession(); }
-    stopTimer(); document.body.classList.remove("focus-mode");
-    setAppMode("start"); renderBatteryCards(); renderRestorePanel(); renderWeaknessPanel(); renderHistoryPanel();
-  }
+  stopTimer();
+  document.body.classList.remove("focus-mode");
+  setAppMode("start");
+  renderConfigPanel();
+  renderBatteryCards();
+  renderBatteryDetail(appState.selectedBatteryId ? getActiveBatteryMap()[appState.selectedBatteryId] : null);
+  updateSelectionState();
+  renderRestorePanel();
+  renderWeaknessPanel();
+  renderHistoryPanel();
+}
+
   function goToQuestion(index) {
     const s=appState.currentSession; if(!s||s.results.finished) return;
     endQuestionView(s.ui.currentQuestionIndex);
@@ -1978,42 +2320,85 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   // ═══════════════════════════════════════════
   // 12. BOOTSTRAP
   // ═══════════════════════════════════════════
-  function initApp() {
-    migrateStorageIfNeeded();
-    appState.settings=loadSettings();
-    appState.history=loadHistory();
-    appState.progress=loadProgress();
-    if($("statQuestions")) $("statQuestions").textContent=String(BATTERIES.reduce((s,b)=>s+b.questions.length,0));
-    renderConfigPanel();
-    renderBatteryCards();
-    renderBatteryDetail(null);
-    renderRestorePanel();
-    renderWeaknessPanel();
-    renderHistoryPanel();
-    // Auto-restore session
-    if(appState.settings.restoreSessionOnLoad) {
-      const saved=loadCurrentSession();
-      if(saved) { resumeSession(); return; }
-    }
-    setAppMode("start");
+  
+function initApp() {
+  migrateStorageIfNeeded();
+  appState.settings = loadSettings();
+  appState.history = loadHistory();
+  appState.progress = loadProgress();
+  if ($("statQuestions")) $("statQuestions").textContent = String(getAllDatasetsQuestionCount());
+  renderConfigPanel();
+  renderBatteryCards();
+  renderBatteryDetail(null);
+  updateSelectionState();
+  renderRestorePanel();
+  renderWeaknessPanel();
+  renderHistoryPanel();
+  if (appState.settings.restoreSessionOnLoad) {
+    const saved = loadCurrentSession();
+    if (saved) { resumeSession(); return; }
   }
+  setAppMode("start");
+}
+
   window.initSCIOV4 = initApp;
-  window.SCIO_V4_SHARED = { LETTERS, STORAGE_KEYS, LEGACY_STORAGE_KEYS, SLOW_THRESHOLD_MS, FAST_THRESHOLD_MS, REVISIT_THRESHOLD, MAX_HISTORY, RISK_PATTERNS, BATTERIES, BATTERY_MAP, ERROR_LABELS, loadMetadataExport, loadBattery8MetadataMap, buildMetadataIndex, buildBattery8MapIndex, normalizeMetadataItem, normalizeBattery8MapItem, normalizeQuestionMetadata, buildReviewFallbacks, attachMetadataToBatteryQuestions, resolveQuestionEffectiveCorrect };
- function normalizeQuestion(q, qi, bId, bLabel) {
-    const opts = Array.isArray(q?.options) ? q.options.slice(0,4).map(o => String(o??"").trim()) : [];
-    if (opts.length !== 4) throw new Error(`Otázka ${qi+1} nemá přesně 4 možnosti.`);
-    const qNum = Number.isInteger(q?.number) ? q.number : qi+1;
-    const globalId = `B${String(bId).padStart(2, '0')}Q${String(qNum).padStart(2, '0')}`;
-    const metadata = normalizeQuestionMetadata(q, { batteryId: bId, batteryLabel: bLabel, questionNumber: qNum, globalId });
-    const c = resolveQuestionEffectiveCorrect(q, metadata);
-    return {
-      number: qNum,
-      globalId,
-      text: String(q?.text??"").trim(),
-      options: opts,
-      correct: c,
-      correctLetter: LETTERS[c],
-      metadata
-    };
-  }
+  window.getActiveBatteries = getActiveBatteries;
+  window.getActiveBatteryMap = getActiveBatteryMap;
+  window.getActiveDataset = getActiveDataset;
+  window.getDifficultyModeLabel = getDifficultyModeLabel;
+  window.normalizeDifficultyMode = normalizeDifficultyMode;
+  window.SCIO_V4_SHARED = {
+    LETTERS,
+    STORAGE_KEYS,
+    LEGACY_STORAGE_KEYS,
+    SLOW_THRESHOLD_MS,
+    FAST_THRESHOLD_MS,
+    REVISIT_THRESHOLD,
+    MAX_HISTORY,
+    RISK_PATTERNS,
+    BATTERIES,
+    BATTERY_MAP,
+    DATASETS,
+    ERROR_LABELS,
+    loadMetadataExport,
+    loadBattery8MetadataMap,
+    buildMetadataIndex,
+    buildBattery8MapIndex,
+    normalizeMetadataItem,
+    normalizeBattery8MapItem,
+    normalizeQuestionMetadata,
+    buildReviewFallbacks,
+    attachMetadataToBatteryQuestions,
+    resolveQuestionEffectiveCorrect,
+    getActiveBatteries,
+    getActiveBatteryMap,
+    getActiveDataset,
+    getDifficultyModeLabel,
+    normalizeDifficultyMode
+  };
+  
+function normalizeQuestion(q, qi, bId, bLabel, datasetKey) {
+  const opts = Array.isArray(q?.options) ? q.options.slice(0, 4).map(o => String(o ?? "").trim()) : [];
+  if (opts.length !== 4) throw new Error(`Otázka ${qi + 1} nemá přesně 4 možnosti.`);
+  const qNum = Number.isInteger(q?.number) ? q.number : qi + 1;
+  const globalId = `B${String(bId).padStart(2, "0")}Q${String(qNum).padStart(2, "0")}`;
+  const metadata = normalizeQuestionMetadata(q, {
+    batteryId: bId,
+    batteryLabel: bLabel,
+    questionNumber: qNum,
+    globalId,
+    datasetKey: normalizeDifficultyMode(datasetKey || "basic")
+  });
+  const c = resolveQuestionEffectiveCorrect(q, metadata);
+  return {
+    number: qNum,
+    globalId,
+    text: String(q?.text ?? "").trim(),
+    options: opts,
+    correct: c,
+    correctLetter: LETTERS[c],
+    metadata
+  };
+}
+
    
