@@ -4913,9 +4913,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 30,
         "text": "S raným užitím pojmu speciální pedagogika v českém prostředí bývá spojován:",
         "options": [
-          "Erik Erikson",
-          "Alfred Adler",
-          "Maria Montessori",
+          "Josef Zeman",
+          "František Kábele",
+          "Jan Amos Komenský",
           "Bohumír Popelář"
         ],
         "correct": 3,
@@ -4928,7 +4928,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Miloš Sovák",
           "František Čáda",
           "Věra Vítková",
-          "Josef Mauer"
+          "Jan Mauer"
         ],
         "correct": 3,
         "correctLetter": "D"
