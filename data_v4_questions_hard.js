@@ -2596,8 +2596,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       "sourcePolicy": "restart-from-scratch",
       "notes": [
-        "B4 byla vytvořena nově od nuly podle autorského blueprintu pro hard mode.",
-        "Otázky nejsou převzaté ze staré hard B4; stará vrstva byla použita jen jako negativní kontrola proti duplicitě."
+        "Baterie byla vytvořena nově od nuly podle autorského blueprintu pro hard mode.",
+        "Otázky nejsou převzaté ze staré baterie, stará vrstva byla použita jen jako negativní kontrola proti duplicitě."
       ]
     }
   },
@@ -3205,7 +3205,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 48,
-        "text": "Které tvrzení o asistentovi pedagoga je v rámci B5 nejpřesnější?",
+        "text": "Které tvrzení o asistentovi pedagoga je nejpřesnější?",
         "options": [
           "Je to pracovník SPC, který automaticky vydává doporučení podpůrných opatření.",
           "Je to sociální služba poskytovaná rodině mimo školu.",
@@ -3255,7 +3255,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
     "id": 6,
     "label": "Baterie 6",
     "title": "Sociální a zdravotní přesah",
-    "subtitle": "Služby, dávky, OSPOD, zdravotnictví a hranice školy v kratších selekčních položkách bez recyklace staré hard B6.",
+    "subtitle": "Služby, dávky, OSPOD, zdravotnictví a hranice školy v kratších selekčních položkách.",
     "purpose": "Ověřit, zda uchazeč přesně rozliší sociální službu, dávku, orgán veřejné správy, zdravotnický a školní rámec, bez zkratky podle diagnózy nebo názvu instituce. Těžiště leží v meziresortní orientaci, sociálních dávkách, OSPOD a funkční volbě systému podpory.",
     "difficulty": "velmi vysoká",
     "dominant": [
@@ -4524,7 +4524,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 50,
-        "text": "Které shrnutí nejlépe vystihuje jádro B7?",
+        "text": "Které shrnutí nejlépe vystihuje jádro této baterie?",
         "options": [
           "Rychle určit kategorii, sepsat závěr a proces uzavřít.",
           "Udržet poradenskou logiku: vyjasnit zakázku, interpretovat data, převést závěr do podpory a ověřovat účinek.",
