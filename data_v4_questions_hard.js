@@ -6,7 +6,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
   {
     "id": 1,
     "label": "Baterie 1",
-    "title": "Funkční čtení obtíže a primární bariéra – nová selekční revize",
+    "title": "Funkční čtení obtíže a primární bariéra",
     "subtitle": "Krátké diferenční položky: přístup k informaci, forma výkonu, podmínky prostředí, sekundární projevy a funkční dopad.",
     "purpose": "Ověřit skutečně selekční čtení obtíže: odlišit přístup k informaci od porozumění, formu výkonu od kompetence, hlavní bariéru od sekundárního projevu a neredukovat podporu na diagnózu nebo nápadný povrchový znak.",
     "difficulty": "velmi vysoká",
@@ -655,7 +655,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
   {
     "id": 2,
     "label": "Baterie 2",
-    "title": "Blízké odborné rámce – nová ostrá diferenční revize",
+    "title": "Blízké odborné rámce",
     "subtitle": "Krátké selekční položky na rozlišení sousedních disciplín, rámců a bariér bez kazuistické omáčky.",
     "purpose": "Ověřit, zda uchazeč bezpečně rozliší blízké odborné rámce bez opory ve stylu odpovědi: logopedie × surdopedie, psychopedie × etopedie, PAS × sociálně-pragmatické jádro × nepřístupné prostředí, tyflopedie × somatopedie × kombinovaný profil a hraniční přechody k psychologickému, sociálnímu nebo zdravotnickému rámci.",
     "difficulty": "velmi vysoká",
@@ -1300,7 +1300,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
   {
     "id": 3,
     "label": "Baterie 3",
-    "title": "Intervence, metody práce a ochrana konstruktu – nová selekční revize",
+    "title": "Intervence, metody práce a ochrana konstruktu",
     "subtitle": "Krátké rozlišovací položky na reedukaci, kompenzaci, AAK, přístupnost, formu výkonu a evaluaci podpory.",
     "purpose": "Ověřit, zda uchazeč přesně rozliší typ intervence, ochrání měřený cíl úkolu před bariérou provedení, volí funkční pomůcku nebo modalitu a umí posoudit účinek podpory bez návodných kazuistik.",
     "difficulty": "velmi vysoká",
@@ -1950,7 +1950,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
   {
     "id": 4,
     "label": "Baterie 4",
-    "title": "Komunikace v poradenství a škole – nová ostrá profesní revize",
+    "title": "Komunikace v poradenství a škole",
     "subtitle": "Krátké selekční položky na aktivní naslouchání, plain language, AAK, týmovou komunikaci, hranice role a ověřování porozumění.",
     "purpose": "Ověřit, zda uchazeč v krátkých komunikačních situacích rozliší profesně přesný postup od věrohodně znějící, ale nepřesné varianty; těžiště leží v přístupnosti sdělení, AAK, práci s emocí, týmové koordinaci, respektu k roli klienta a převodu závěru do srozumitelného kroku.",
     "difficulty": "velmi vysoká",
@@ -2604,7 +2604,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
   {
     "id": 5,
     "label": "Baterie 5",
-    "title": "Školský systém, PO a dokumenty – nová selekční revize",
+    "title": "Školský systém, PO a dokumenty",
     "subtitle": "Krátké rozlišovací položky: škola, ŠPP, ŠPZ, PPP, SPC, SVP, PLPP, IVP, doporučení, zpráva a typy škol bez recyklace staré hard banky.",
     "purpose": "Ověřit, zda uchazeč přesně rozliší instituci, dokument, procesní krok a typ školy v systému školního poradenství: zvládne první školní podporu, nepoplete role školy a ŠPZ a bezpečně čte, kdy jde o PLPP, IVP, doporučení, zprávu nebo o volbu správného partnera.",
     "difficulty": "velmi vysoká",
@@ -3254,7 +3254,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
   {
     "id": 6,
     "label": "Baterie 6",
-    "title": "Sociální a zdravotní přesah – nová ostrá meziresortní revize",
+    "title": "Sociální a zdravotní přesah",
     "subtitle": "Služby, dávky, OSPOD, zdravotnictví a hranice školy v kratších selekčních položkách bez recyklace staré hard B6.",
     "purpose": "Ověřit, zda uchazeč přesně rozliší sociální službu, dávku, orgán veřejné správy, zdravotnický a školní rámec, bez zkratky podle diagnózy nebo názvu instituce. Těžiště leží v meziresortní orientaci, sociálních dávkách, OSPOD a funkční volbě systému podpory.",
     "difficulty": "velmi vysoká",
@@ -3902,7 +3902,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
   {
     "id": 7,
     "label": "Baterie 7",
-    "title": "Poradenský úsudek, etika a kvalita procesu – nová selekční revize",
+    "title": "Poradenský úsudek, etika a kvalita procesu",
     "subtitle": "Krátké rozlišovací položky na zakázku, výstup, hranice role, práci s rodinou a převod závěrů do proveditelné podpory.",
     "purpose": "Ověřit skutečně selekční poradenské uvažování: vyjasnění zakázky, práce s nejistotou, kvalita výstupu, etické hranice, metodické vedení školy a převod zjištění do konkrétní podpory bez návodného klíče.",
     "difficulty": "velmi vysoká",
@@ -4549,7 +4549,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
   {
     "id": 8,
     "label": "Baterie 8",
-    "title": "Finální selekční baterie – nová ostrá revize",
+    "title": "Finální selekční baterie",
     "subtitle": "Krátké rozlišovací položky z pojmů, institucí, dokumentů, psychologie, historie a sociálně-legislativní orientace bez návodného klíče.",
     "purpose": "Ověřit skutečně selekční připravenost na UPOL: přesně rozlišit blízké pojmy, instituce, dokumenty, role, historické orientační body a sociálně-legislativní minimum bez stylistických vodítek.",
     "difficulty": "velmi vysoká",
