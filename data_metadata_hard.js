@@ -38968,7 +38968,7 @@ window.battery8MapHard = {
         "answerAuditConfidence": "vysoká",
         "knowledgeTarget": "nápravná pedagogika a osobnosti",
         "styleParityCheck": "Možnosti jsou záměrně blízké. Rozhodovat má věcný rozdíl, nikoli délka formulace, stylistická uhlazenost nebo zdánlivě nejrozumnější tón.",
-        "keyProof": "Klíč drží v ose „nápravná pedagogika a osobnosti“ a odpovídá závěru „Josef Mauer“.",
+        "keyProof": "Klíč drží v ose „nápravná pedagogika a osobnosti“ a odpovídá závěru „Jan Mauer“.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-03-revize",
         "formulationFlags": [],
@@ -38989,7 +38989,7 @@ window.battery8MapHard = {
         "schoolLevelMatrix": "MŠ–VŠ / průřezově",
         "institutionDomain": "historie oboru",
         "historicalAnchor": "terminologický vývoj",
-        "personalityAnchor": "Josef Mauer",
+        "personalityAnchor": "Jan Mauer",
         "benefitOrEntitlementType": ""
       }
     },
