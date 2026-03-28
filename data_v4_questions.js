@@ -1,1267 +1,1272 @@
+// Kompletní kompatibilní konsolidovaný dataset základního režimu – Baterie 1 až 8.
+// Obsah baterií je zachován beze změny; původně šlo o variantu Pokročilá, nyní je přepojena jako základní dataset.
+// Zachovává runtime kompatibilitu aktivní aplikace přes window.SCIO_V4_RAW_BATTERIES.
+// Soubor je určen jako export pro základní režim v souboru data_v4_questions.js.
+
 window.SCIO_V4_RAW_BATTERIES = [
   {
     "id": 1,
     "label": "Baterie 1",
-    "title": "Disciplinární základ speciální pedagogiky",
-    "subtitle": "Disciplíny, cílové skupiny, základní pojmy, terminologický vývoj a současné pojetí oboru.",
-    "purpose": "Vybudovat pevné rozlišování klasických disciplín, širších rámců a funkčních dopadů tak, aby odpověď nešla poznat stylem, ale jen oborovou orientací.",
-    "difficulty": "střední až vyšší",
+    "title": "Funkční čtení obtíže – precizní diferenciace",
+    "subtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
+    "purpose": "Ověřit, zda uchazeč čte obtíž funkčně a diferencovaně: odliší přístup k informaci od porozumění, formu výkonu od kompetence, hlavní bariéru od sekundárního projevu a nepodlehne zkratce podle samotné diagnózy.",
+    "difficulty": "velmi vysoká",
     "dominant": [
-      "současné pojetí oboru",
-      "klasické disciplíny",
-      "terminologický vývoj",
-      "funkční rozlišení",
-      "PAS a přesahy",
-      "nadání a dvojí výjimečnost"
+      "kanál přístupu k informaci vs obsahové porozumění",
+      "forma výkonu vs kompetence",
+      "hlavní bariéra vs sekundární projev",
+      "diagnóza vs konkrétní funkční dopad",
+      "silná stránka vs celkový profil fungování",
+      "prostředí a komunikační podmínky",
+      "tempo a zátěž vs úroveň porozumění"
     ],
     "breakdown": [
-      "8× současné pojetí, cíl a terminologie oboru",
-      "10× přesná vymezení disciplín a širších rámců",
-      "10× disciplína ↔ funkční jádro podpory",
-      "10× scénáře a jemná diferenciace blízkých oblastí",
-      "12× syntetické rozlišení, přesahy a metakognitivní discriminace"
+      "14× krátká funkční diferenciace kanálu informace a porozumění",
+      "12× forma výkonu, tempo a alternativní cesta k odpovědi",
+      "10× hlavní bariéra vs sekundární behaviorální nebo regulační projev",
+      "8× podpůrné principy bez mikrokazuistické narace",
+      "6× finální syntéza nerovnoměrného profilu a maskované bariéry"
     ],
     "tags": [
-      "disciplíny",
-      "funkční rozlišení",
-      "terminologie",
-      "přesahy"
+      "hard mode",
+      "B1 revize",
+      "funkční čtení obtíže",
+      "precizní diferenciace",
+      "UPOL",
+      "poradenství"
     ],
-    "durationMinutes": 30,
-    "questionCount": 50,
     "questions": [
       {
         "number": 1,
-        "text": "Které tvrzení nejpřesněji vystihuje současné pojetí speciální pedagogiky?",
+        "text": "Žák při předčítání obsahu rozumí, ale samostatně selhává u drobného písma a hustého vizuálního rozvržení. Které jádro obtíže je nejpřesnější?",
         "options": [
-          "Sleduje hlavně správné zařazení člověka do kategorie postižení a z ní přímo odvozuje podporu.",
-          "Sleduje vztah mezi možnostmi člověka, bariérami prostředí a podobou podpory v učení i životě.",
-          "Sleduje především síť specializovaných institucí a jejich organizační členění.",
-          "Sleduje hlavně léčebné postupy a vzdělávací otázky ponechává jiným oborům."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 2,
-        "text": "Které vymezení předmětu speciální pedagogiky je nejpřesnější?",
-        "options": [
-          "Zkoumání klinických diagnóz a jejich léčby bez přímého vztahu k edukaci a participaci.",
-          "Zkoumání organizace speciálních škol, personálního řízení a administrativního členění systému.",
-          "Zkoumání vývoje, vzdělávání a podpory osob se speciálními vzdělávacími potřebami včetně bariér prostředí.",
-          "Zkoumání právních předpisů bez návaznosti na potřeby konkrétních dětí, rodin a situací."
+          "Hlavní bariéra leží ve slovní zásobě, protože obsah textu by jinak nezvládal ani po předčítání.",
+          "Hlavní bariéra leží v motivaci, protože samostatné čtení je pro většinu žáků jen otázkou vůle.",
+          "Hlavní bariéra leží v přístupu k vizuálně podanému textu, nikoli v obecném jazykovém porozumění.",
+          "Hlavní bariéra leží v chování, protože potíže se samostatným čtením ukazují hlavně na nekázeň."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 3,
-        "text": "Které tvrzení nejlépe vystihuje cíl speciální pedagogiky v současném pojetí?",
+        "number": 2,
+        "text": "V hlučné třídě žák často nereaguje na pokyny, ale při rozhovoru tváří v tvář s krátkou písemnou oporou pracuje přesně. Co je nejspíš hlavní bariéra?",
         "options": [
-          "Má především přizpůsobit žáka systému i za cenu omezení jeho samostatnosti a participace.",
-          "Má nahradit zdravotnickou léčbu a převzít rozhodování o zdravotním stavu člověka.",
-          "Má hlavně klasifikovat stupeň postižení, aby bylo možné určit typ zařízení.",
-          "Má podporovat rozvoj, samostatnost, vzdělávací možnosti a sociální začlenění navzdory bariérám."
+          "Hlavní bariéra souvisí s nízkou ochotou spolupracovat při skupinové práci.",
+          "Hlavní bariéra souvisí s dostupností mluvené informace v akusticky náročném prostředí.",
+          "Hlavní bariéra souvisí s globálně sníženým intelektem, který se při individuálním vedení lépe maskuje.",
+          "Hlavní bariéra souvisí hlavně s poruchou chování, protože žák reaguje jen na část pokynů."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
-        "number": 4,
-        "text": "Co nejlépe vyjadřuje terminologický přechod od defektologie ke speciální pedagogice?",
+        "number": 3,
+        "text": "Dítě komolí hlásky, ale dobře rozumí instrukcím, slyší i tišší řeč a v sociálním kontaktu reaguje přiměřeně. Které čtení je nejpřesnější?",
         "options": [
-          "Posun od deficitního označování člověka k pedagogickému, podpůrnému a participačnímu pojetí.",
-          "Přesun oboru z pedagogiky do práva a sociální správy.",
-          "Opuštění vzdělávacího rozměru a zaměření výhradně na dávky a služby.",
-          "Zrušení potřeby odborného rozlišování a diagnostické orientace."
+          "Těžiště obtíže je spíše v mluvní produkci než ve sluchové dostupnosti nebo sociálním porozumění.",
+          "Těžiště obtíže je spíše ve sluchové vadě, protože chybná výslovnost je jejím typickým hlavním znakem.",
+          "Těžiště obtíže je spíše v PAS, protože nepřesná řeč běžně znamená oslabenou reciprocitu.",
+          "Těžiště obtíže je spíše v globálním kognitivním oslabení, protože artikulační chyby ukazují na širší deficit."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 5,
-        "text": "Které přiřazení osobnosti a terminologického významu je nejpřesnější?",
+        "number": 4,
+        "text": "Žák ústně vysvětluje učivo přesně, ale v písemném projevu je výkon nápadně krátký, křečovitý a nečitelný. Který závěr je nejpřesnější?",
         "options": [
-          "Popelář je spojován s českým logopedickým výzkumem a Sovák s prvním užitím pojmu surdopedie.",
-          "Popelář je spojován s raným užitím pojmu speciální pedagogika a Sovák s dřívějším pojmem defektologie i pozdějším přechodem k termínu speciální pedagogika.",
-          "Popelář je spojován s vyhláškou o poradenských službách a Sovák s klasifikací MKN-11.",
-          "Popelář je spojován s výlučně sociálním pojetím oboru a Sovák s odmítnutím logopedie."
+          "Výrazně oslabená může být hlavně motivace, protože kdo látce rozumí, zapíše ji bez větších obtíží.",
+          "Výrazně oslabená může být hlavně slovní zásoba, protože písemný projev vždy nejlépe odráží jazykovou úroveň.",
+          "Výrazně oslabená může být hlavně kázeň, protože nečitelný zápis je především důsledkem nezájmu.",
+          "Výrazně oslabená může být hlavně forma grafického výstupu, ne nutně obsahové porozumění učivu."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
-        "number": 6,
-        "text": "Které tvrzení nejlépe vystihuje vztah klasického disciplinárního členění a současného pojetí oboru?",
+        "number": 5,
+        "text": "Žák používá bohatou slovní zásobu, ale nerozumí narážce, doslovně čte nepřímé sdělení a v dialogu těžko pružně mění perspektivu. Co je nejpřesnější čtení?",
         "options": [
-          "Klasické disciplíny dnes slouží jen k administrativnímu rozdělení škol a nemají odborný význam.",
-          "Klasické disciplíny jsou určeny jen pro historický výklad a v odborném uvažování už nepomáhají.",
-          "Klasické disciplíny jsou užitečné orientačně, ale v praxi je nutné sledovat i přesahy a funkční dopady.",
-          "Klasické disciplíny jsou přesnější než současné pojetí, protože každá situace patří právě do jedné z nich."
+          "Jádro obtíže může ležet spíše v technice čtení, protože doslovnost bývá hlavně důsledkem pomalé dekódace.",
+          "Jádro obtíže může ležet spíše v artikulaci, protože nepřímé významy vycházejí hlavně z přesné výslovnosti.",
+          "Jádro obtíže může ležet spíše v sociálně-pragmatickém porozumění než ve slovní zásobě nebo artikulaci.",
+          "Jádro obtíže může ležet spíše v neochotě spolupracovat, protože pružnost v dialogu je otázkou disciplíny."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 7,
-        "text": "Která řada nejlépe odpovídá klasickému disciplinárnímu členění speciální pedagogiky?",
+        "number": 6,
+        "text": "Po léčbě závažného onemocnění žák učivu rozumí, ale výrazně se unaví, hůře zvládá přesuny a odpoledne výkon prudce klesá. Které čtení je nejpřesnější?",
         "options": [
-          "psychopedie, somatopedie, tyflopedie, surdopedie, logopedie, speciálněpedagogické poradenství",
-          "psychopedie, somatopedie, tyflopedie, surdopedie, etopedie, PAS",
-          "psychopedie, somatopedie, tyflopedie, sociální pedagogika, etopedie, logopedie",
-          "psychopedie, somatopedie, tyflopedie, surdopedie, etopedie, logopedie"
+          "Jádrem je spíše nízká studijní odolnost, protože odpolední pokles bývá hlavně otázkou vůle.",
+          "Jádrem je spíše zdravotní a fyzická zátěž měnící podmínky výkonu a participace.",
+          "Jádrem je spíše nedostatek rozumových schopností, protože únava obvykle jen odkryje slabý intelekt.",
+          "Jádrem je spíše porucha chování, protože kolísání výkonu znamená nestabilní sebekontrolu."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 7,
+        "text": "Žák v diktátu a přepisu chybuje výrazně více než při ústním vysvětlení stejného učiva. Který závěr je nejpřesnější?",
+        "options": [
+          "Výrazněji může selhávat sluch, protože pravopisné chyby většinou ukazují na nedostatečné slyšení.",
+          "Výrazněji může selhávat ochota pracovat, protože ústní odpověď bývá vždy pohodlnější než písemná.",
+          "Výrazněji může selhávat celkové porozumění učivu, protože pravopis je nejspolehlivější ukazatel znalosti.",
+          "Výrazněji může selhávat kódování do psané formy, aniž by byl nutně slabý obsahový koncept."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 8,
-        "text": "Které vymezení nejlépe odpovídá psychopedii?",
+        "text": "U dítěte se objevují afekty hlavně při zahlcení řečí, změně pravidel a sociální nepředvídatelnosti. Které čtení je nejpřesnější?",
         "options": [
-          "Disciplína zaměřená na edukaci a podporu osob s poruchou intelektového vývoje a s potřebou podpory v adaptivním fungování.",
-          "Disciplína zaměřená na edukaci osob se zrakovým postižením a na přístupnost vizuálních informací.",
-          "Disciplína zaměřená na edukaci osob se sluchovým postižením a na dostupnost jazyka a komunikace.",
-          "Disciplína zaměřená na prevenci, diagnostiku a intervenci narušené komunikační schopnosti."
+          "Afekt může být spíše sekundárním projevem přetížení a regulačního selhání než samotným jádrem obtíže.",
+          "Afekt bývá nejspíše hlavním znakem poruchy chování, protože intenzita projevu rozhoduje víc než kontext.",
+          "Afekt bývá nejspíše důkazem nízkého intelektu, protože kognitivně silnější dítě se reguluje bez pomoci.",
+          "Afekt bývá nejspíše projevem rozmazlenosti, protože změna pravidel nemá odborný význam."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 9,
-        "text": "Které vymezení nejlépe odpovídá somatopedii?",
+        "text": "Žák má výrazně omezenou jemnou motoriku a pomalé manipulační tempo, ale při rozhovoru chápe souvislosti věcně přesně. Který závěr je nejpřesnější?",
         "options": [
-          "Disciplína zaměřená na poruchy chování, emoční obtíže a preventivně-výchovnou péči.",
-          "Disciplína zaměřená na tělesné postižení, chronické onemocnění a zdravotní oslabení v jejich funkčních dopadech.",
-          "Disciplína zaměřená na osoby se sluchovým postižením a na volbu komunikačního systému.",
-          "Disciplína zaměřená na narušenou komunikační schopnost v řeči, jazyce, hlasu a plynulosti."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 10,
-        "text": "Které vymezení nejlépe odpovídá tyflopedii?",
-        "options": [
-          "Disciplína zaměřená na edukaci a podporu osob s poruchou intelektového vývoje a na funkční význam vzdělávání.",
-          "Disciplína zaměřená na přístupnost jazyka a komunikace při sluchovém postižení.",
-          "Disciplína zaměřená na osoby se zrakovým postižením, funkční využití zraku, orientaci a přístup k informacím.",
-          "Disciplína zaměřená na poruchy chování, socializaci a preventivní práci."
+          "Nápadná může být hlavně lenost, protože pomalé tempo je u školních úloh většinou motivační problém.",
+          "Nápadná může být hlavně řečová porucha, protože jemná motorika obvykle souvisí s chápáním významu.",
+          "Nápadná může být hlavně bariéra v motorickém provedení, nikoli automaticky v rozumovém porozumění.",
+          "Nápadná může být hlavně porucha chování, protože zdržování úkolu bývá skrytou opozicí."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 11,
-        "text": "Které vymezení nejlépe odpovídá surdopedii?",
+        "number": 10,
+        "text": "Žák čte technicky plynule, ale selhává v odvozování významu a v odpovědích na otázky vyžadující porozumění vztahům v textu. Co je nejpřesnější čtení?",
         "options": [
-          "Disciplína zaměřená na edukaci osob se sluchovým postižením, na jazyk, komunikaci a komunikační dostupnost.",
-          "Disciplína zaměřená na edukaci osob se zrakovým postižením a na využití hmatu při čtení textu.",
-          "Disciplína zaměřená na tělesné postižení, unavitelnost a úpravu fyzických podmínek.",
-          "Disciplína zaměřená na řečové a jazykové obtíže bez ohledu na sluchové postižení."
+          "Technika dekódování sama nestačí; obtíž proto určitě leží v neochotě číst delší pasáže.",
+          "Technika dekódování sama nestačí; obtíž může ležet v porozumění významu a vztahům v textu.",
+          "Technika dekódování sama nestačí; obtíž proto musí ležet hlavně ve sluchu.",
+          "Technika dekódování sama nestačí; obtíž proto musí ležet hlavně v grafomotorice."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 11,
+        "text": "Dva žáci mají stejnou diagnózu zrakového postižení. Jeden využívá hlavně zvětšení, druhý spíše hmatové materiály. Který závěr je nejpřesnější?",
+        "options": [
+          "Název diagnózy sám neurčuje podobu podpory; rozhoduje konkrétní funkční způsob práce s informací.",
+          "Název diagnózy sám neurčuje podobu podpory; proto je nejlepší dát oběma žákům stejný soubor kompenzací.",
+          "Název diagnózy sám neurčuje podobu podpory; proto je vhodné podporu odložit, dokud se jejich výkon nesjednotí.",
+          "Název diagnózy sám neurčuje podobu podpory; proto je nejjistější vycházet jen z preferencí rodiny."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 12,
-        "text": "Které vymezení nejlépe odpovídá logopedii?",
+        "text": "Dítě v rozhovoru často opakuje část otázky, potřebuje více času na zpracování a v klidném prostředí s vizuální oporou odpovídá přesněji. Které čtení je nejpřesnější?",
         "options": [
-          "Disciplína zaměřená na zrakové postižení, orientaci v prostoru a práci s reliéfním písmem.",
-          "Disciplína zaměřená na sociální maladaptaci, výchovné vedení a prevenci rizikového chování.",
-          "Disciplína zaměřená na narušenou komunikační schopnost v oblasti řeči, jazyka, hlasu a plynulosti.",
-          "Disciplína zaměřená na tělesné postižení, polohování a sebeobsluhu."
+          "Obtíž může souviset spíše s nízkým intelektem, protože opakování otázky bývá jeho nejjistějším znakem.",
+          "Obtíž může souviset spíše s poruchou chování, protože přesnější odpověď v klidu znamená jen menší možnost odporu.",
+          "Obtíž může souviset spíše s motorikou, protože zpracování otázky je hlavně otázkou tělesného tempa.",
+          "Obtíž může souviset spíše se zpracováním mluvené informace a tempem porozumění než s nezájmem."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 13,
-        "text": "Které vymezení nejlépe odpovídá etopedii?",
+        "text": "Dítě výrazně lépe chápe postup, když je názorně rozfázovaný a opřený o konkrétní situace. Při čistě abstraktním slovním výkladu rychle selhává. Co je nejpřesnější čtení?",
         "options": [
-          "Disciplína zaměřená na osoby s poruchou intelektového vývoje a na konkretizaci učiva.",
-          "Disciplína zaměřená na osoby s emočními a behaviorálními obtížemi, poruchami chování a na preventivně-výchovnou péči.",
-          "Disciplína zaměřená na osoby se sluchovým postižením a na dostupnost jazyka.",
-          "Disciplína zaměřená na osoby se zrakovým postižením a přístup k vizuálním informacím."
+          "Jádrem může být potřeba názorného a strukturovaného zprostředkování, proto je nejlepší rezignovat na učební cíle.",
+          "Jádrem může být potřeba názorného a strukturovaného zprostředkování, ne prostá nepozornost.",
+          "Jádrem může být potřeba názorného a strukturovaného zprostředkování, proto jde vždy hlavně o sluchovou vadu.",
+          "Jádrem může být potřeba názorného a strukturovaného zprostředkování, proto je abstraktní výklad nevhodný pro všechny žáky."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 14,
-        "text": "Jak je nejpřesnější chápat PAS v rámci současné speciální pedagogiky?",
+        "text": "Žák má výbornou slovní zásobu a paměť na fakta, ale výrazně selhává v sociálním porozumění, flexibilitě a každodenním školním fungování. Který závěr je nejpřesnější?",
         "options": [
-          "Jde o podtyp logopedie, protože každá výraznější komunikační odlišnost je primárně řečový problém.",
-          "Jde o variantu etopedie, protože jádrem bývá vždy porucha chování a kázně.",
-          "Jde o širší okruh, který nelze beze zbytku zúžit na jednu klasickou disciplínu a vyžaduje funkční pohled.",
-          "Jde o téma, které už stojí výhradně mimo speciální pedagogiku a patří jen psychiatrii."
+          "Silná verbální stránka sama nevylučuje významnou bariéru, proto ale nejde o potíž hodnou podpory.",
+          "Silná verbální stránka sama nevylučuje významnou bariéru, proto je nejlepší vysvětlit vše jen jako lenost.",
+          "Silná verbální stránka sama nevylučuje významnou bariéru v adaptivním a sociálně-komunikačním fungování.",
+          "Silná verbální stránka sama nevylučuje významnou bariéru, proto je rozhodující sledovat jen známky z českého jazyka."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 15,
-        "text": "Které tvrzení nejlépe vystihuje hluchoslepotu v současném pojetí oboru?",
+        "text": "Kompenzační pomůcka umožní žákovi přístup ke stejnému obsahu jinou cestou. Které tvrzení je nejpřesnější?",
         "options": [
-          "Jde o funkčně specifickou situaci, v níž jsou komunikace a orientace ovlivněny společně a je třeba hledat vhodný komunikační kanál jako celek.",
-          "Jde pouze o součet zrakového a sluchového postižení, který není třeba samostatně interpretovat.",
-          "Jde hlavně o variantu somatopedie, protože rozhodujícím problémem bývá vždy pohyb a sebeobsluha.",
-          "Jde o problém, který spadá výhradně do zdravotnictví a nemá podstatný vztah ke vzdělávání."
+          "Pomůcka může vyrovnávat bariéru přístupu, aniž by sama o sobě zjednodušovala obsah učiva.",
+          "Pomůcka může vyrovnávat bariéru přístupu, ale tím vždy automaticky snižuje nároky na výkon.",
+          "Pomůcka může vyrovnávat bariéru přístupu, proto je vhodná jen pro žáky s nízkou motivací.",
+          "Pomůcka může vyrovnávat bariéru přístupu, proto nahrazuje potřebu pedagogického plánování."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 16,
-        "text": "Které tvrzení nejlépe vystihuje kombinované postižení?",
+        "text": "Žák při opisování z tabule ztrácí místo a vynechává řádky, ale při práci s textem položeným blízko pracuje přesněji. Které čtení je nejpřesnější?",
         "options": [
-          "Jde o označení vyhrazené jen pro souběh smyslového a tělesného postižení bez dalších variant.",
-          "Jde o totéž co dvojí výjimečnost, jen v méně používaném názvu.",
-          "Jde o stav, kdy výsledný dopad vzniká souhrou více omezení a je nutné posuzovat funkční celek.",
-          "Jde o jiný název pro školní neúspěch spojený s problémovým chováním."
+          "Obtíž může souviset spíše s nedostatkem motivace, protože opis z tabule je jen trénink pečlivosti.",
+          "Obtíž může souviset spíše s poruchou chování, protože vynechávání řádků znamená nedbalost.",
+          "Obtíž může souviset spíše s nízkou jazykovou úrovní, protože přesný opis vyžaduje hlavně slovní zásobu.",
+          "Obtíž může souviset spíše s vizuálním přístupem na vzdálenost a sledováním řádků než s neznalostí obsahu."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 17,
-        "text": "Které tvrzení nejlépe vystihuje dvojí výjimečnost?",
+        "text": "Dítě zapomíná delší ústní instrukce, ale podle krátkého vizuálního seznamu postup zvládá. Který závěr je nejpřesnější?",
         "options": [
-          "Jde o souběh nadání a současných významných obtíží, které se mohou navzájem maskovat.",
-          "Jde pouze o souběh dvou forem nadání bez přítomnosti obtíží.",
-          "Jde o označení pro kombinované postižení doplněné vysokou motivací ke škole.",
-          "Jde jen o střídání dobrého a slabého výkonu v různých předmětech."
+          "Jádro může ležet spíše v nízkém intelektu, protože vícekrokový úkol vždy odhalí slabé myšlení.",
+          "Jádro může ležet spíše v zatížení auditivně-sekvenčního zpracování než v úplném neporozumění úkolu.",
+          "Jádro může ležet spíše v motorice, protože seznam kompenzuje hlavně tělesné tempo.",
+          "Jádro může ležet spíše v nekázni, protože dítě by si správný postup mělo prostě pamatovat."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 18,
-        "text": "Která situace nejpřesněji ukazuje psychopedické těžiště podpory?",
+        "text": "V rušném prostoru s blikajícím světlem a hlukem výkon dítěte klesá, zatímco v klidném koutě se rychle stabilizuje. Co je nejpřesnější čtení?",
         "options": [
-          "Žák potřebuje akustické úpravy třídy, odezírání a dostupnost mluvené řeči.",
-          "Žák potřebuje nácvik Braillova písma, orientaci v prostoru a verbální popis vizuálních informací.",
-          "Žák potřebuje konkrétní názornost, pomalejší tempo, opakování a podporu v konceptuálních, sociálních i praktických dovednostech.",
-          "Žák potřebuje práci s impulzivitou, vztahy a preventivní výchovné vedení."
+          "Hlavním problémem může být senzorické přetížení, proto je nejlepší dítě zcela vyřadit z běžných situací.",
+          "Hlavním problémem může být senzorické přetížení, proto jde vždy hlavně o sluchové postižení.",
+          "Hlavním problémem může být senzorické přetížení a náročnost prostředí, ne automaticky slabá schopnost učit se.",
+          "Hlavním problémem může být senzorické přetížení, proto se jedná pouze o nedostatek vůle pracovat."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 19,
-        "text": "Která situace nejpřesněji ukazuje somatopedické těžiště podpory?",
+        "text": "Žák řeší úlohy správně, ale při časovém tlaku nestihne zapsat postup ani dokončit odpověď. Který závěr je nejpřesnější?",
         "options": [
-          "Žák potřebuje adaptaci pracovního místa, řešení fyzické unavitelnosti, přesunů, polohování a sebeobsluhy.",
-          "Žák potřebuje rozvoj artikulace, plynulosti a hlasové hygieny.",
-          "Žák potřebuje přepis mluvené řeči, volbu komunikačního systému a úpravu akustiky.",
-          "Žák potřebuje podporu v sociálním porozumění, reciproční komunikaci a zvládání změn."
+          "Časový limit může odhalovat bariéru v tempu a formě výkonu více než v samotném pochopení úlohy.",
+          "Časový limit může odhalovat bariéru v tempu a formě výkonu, proto je nejlepší rezignovat na hodnocení výsledku.",
+          "Časový limit může odhalovat bariéru v tempu a formě výkonu, proto jde vždy hlavně o poruchu chování.",
+          "Časový limit může odhalovat bariéru v tempu a formě výkonu, proto se tím automaticky potvrzuje nízký intelekt."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 20,
-        "text": "Která situace nejpřesněji ukazuje tyflopedické těžiště podpory?",
+        "text": "Žák plynule přečte text, ale v otázkách opakovaně mine vztah mezi postavami, časovou posloupnost nebo vyvození implicitního významu. Co je nejpřesnější závěr?",
         "options": [
-          "Žák potřebuje konkrétní strukturu, předvídatelnost a regulaci sociálního zatížení.",
-          "Žák potřebuje práci s agresivitou, vztahovými konflikty a preventivně-výchovné vedení.",
-          "Žák potřebuje funkční využití zraku nebo hmatu, přístup k textu, orientaci v prostoru a vhodné kompenzační pomůcky.",
-          "Žák potřebuje nácvik artikulace a jazykového porozumění při zachovaném zrakovém vstupu."
+          "Plynulost čtení nevylučuje obtíž v porozumění vztahům a inferencím, proto je hlavní problém vždy ve sluchu.",
+          "Plynulost čtení nevylučuje obtíž v porozumění vztahům a inferencím, proto je nejlepší zcela vypustit práci s textem.",
+          "Plynulost čtení nevylučuje obtíž v porozumění vztahům a inferencím, proto jde především o lenost.",
+          "Plynulost čtení nevylučuje obtíž v porozumění vztahům a inferencím v textu."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 21,
+        "text": "Žák slyší při individuálním hovoru dobře, ale ve skupinové debatě bez vizuální opory ztrácí nit. Které čtení je nejpřesnější?",
+        "options": [
+          "Náročnější může být přístup k mluvené informaci, proto ale není důvod upravovat komunikační podmínky.",
+          "Náročnější může být přístup k mluvené informaci, proto jde jistě o problém s kázní.",
+          "Náročnější může být přístup k mluvené informaci v dynamické skupinové komunikaci, ne nutně samotné myšlení.",
+          "Náročnější může být přístup k mluvené informaci, proto je nejpřesnější automaticky snížit obsah učiva."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 21,
-        "text": "Která situace nejpřesněji ukazuje surdopedické těžiště podpory?",
+        "number": 22,
+        "text": "Žák slovně popíše cestu po škole, ale v novém prostoru se sám neorientuje, vyhýbá se schodištím a přechodům. Které jádro obtíže je nejpřesnější?",
         "options": [
-          "Žák potřebuje práci s grafomotorikou a konkrétností zadání při poruše intelektového vývoje.",
-          "Žák potřebuje dostupnost jazyka a komunikace, akustické úpravy, případně odezírání nebo vhodný komunikační systém.",
-          "Žák potřebuje podporu sebeobsluhy a přesunů při tělesném omezení.",
-          "Žák potřebuje práci s hlasem, artikulací a plynulostí bez sluchového postižení."
+          "Jádro může ležet spíše ve funkční orientaci a pohybu, proto ale není třeba řešit samostatnost v prostředí.",
+          "Jádro může ležet spíše ve funkční orientaci a bezpečném pohybu než v jazykovém popisu trasy.",
+          "Jádro může ležet spíše ve funkční orientaci a pohybu, proto jde vždy hlavně o poruchu chování.",
+          "Jádro může ležet spíše ve funkční orientaci a pohybu, proto automaticky selhává i porozumění učivu."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 22,
-        "text": "Která situace nejpřesněji ukazuje logopedické těžiště podpory?",
-        "options": [
-          "Žák potřebuje především adaptaci sezení, přesunů a pracovního místa kvůli tělesnému omezení.",
-          "Žák potřebuje zajištění přístupu k vizuálním informacím a prostorovou orientaci při zrakovém postižení.",
-          "Žák potřebuje dlouhodobou práci s artikulací, jazykovým vývojem, porozuměním, plynulostí nebo hlasem.",
-          "Žák potřebuje preventivní vedení v oblasti vztahů, impulzivity a pravidel chování."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
         "number": 23,
-        "text": "Která situace nejpřesněji ukazuje etopedické těžiště podpory?",
+        "text": "Dítě používá jednoduché věty, ale největší obtíž se ukáže při sdílení pozornosti, pochopení záměru druhého a střídání témat. Co je nejpřesnější čtení?",
         "options": [
-          "Žák potřebuje systematickou práci s chováním, vztahy, emocemi a preventivně-výchovným vedením ve škole.",
-          "Žák potřebuje rozvoj odezírání a přizpůsobení akustických podmínek třídy.",
-          "Žák potřebuje názornost, opakování a podporu adaptivního fungování.",
-          "Žák potřebuje volbu zvětšovacích pomůcek a verbální komentář k vizuálním informacím."
+          "Jádro může ležet spíše v sociálně-komunikačním porozumění a reciprocitě než v samotné délce vět.",
+          "Jádro může ležet spíše v sociálně-komunikačním porozumění, proto ale nejde o oblast speciálněpedagogické podpory.",
+          "Jádro může ležet spíše v sociálně-komunikačním porozumění, proto je nejlepší zaměřit se jen na artikulaci.",
+          "Jádro může ležet spíše v sociálně-komunikačním porozumění, proto se automaticky potvrzuje sluchová vada."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 24,
-        "text": "Které přiřazení tematického jádra a disciplíny je správné?",
+        "text": "Rodič označuje žáka za líného, ale obtíže se zřetelně zhoršují po bolesti, léčbě nebo větší fyzické zátěži. Který závěr je nejpřesnější?",
         "options": [
-          "Akustická úprava třídy, odezírání a komunikační systém – tyflopedie",
-          "Braillovo písmo, kontrast a prostorová orientace – somatopedie",
-          "Porucha intelektového vývoje a adaptivní fungování – psychopedie",
-          "Poruchy chování a preventivně-výchovná péče – logopedie"
+          "Funkční dopad zdravotního stavu může vysvětlovat kolísání výkonu, proto ale není třeba plánovat podmínky práce.",
+          "Funkční dopad zdravotního stavu může vysvětlovat kolísání výkonu, proto je nejpřesnější automaticky snížit cíle o několik ročníků.",
+          "Funkční dopad zdravotního stavu může vysvětlovat kolísání výkonu, proto jde hlavně o problém chování rodiny.",
+          "Funkční dopad zdravotního stavu může vysvětlovat kolísání výkonu přesněji než morální soud o lenosti."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 25,
-        "text": "Které přiřazení tematického jádra a disciplíny je správné?",
+        "text": "Žák výborně zvládá uzavřené úlohy, ale při otevřených sociálních situacích se ztrácí v implicitních pravidlech a rychle rigidně ustrne. Co je nejpřesnější čtení?",
         "options": [
-          "Zraková dostupnost textu a funkční vidění – tyflopedie",
-          "Chronické onemocnění a fyzická unavitelnost – logopedie",
-          "Komunikační systém při sluchovém postižení – psychopedie",
-          "Preventivně-výchovná péče při rizikovém chování – somatopedie"
+          "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru, proto ale jde vždy hlavně o intelektový deficit.",
+          "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru ve flexibilitě a sociálním porozumění.",
+          "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru, proto je nejlepší vyřadit všechny otevřené úkoly.",
+          "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru, proto rigidita znamená hlavně neochotu."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 26,
-        "text": "Které přiřazení tematického jádra a disciplíny je správné?",
+        "text": "Žák pracuje v Braillově písmu pomaleji než spolužáci ve vizuálním textu, ale odpovědi mají stejnou obsahovou kvalitu. Který závěr je nejpřesnější?",
         "options": [
-          "Adaptivní fungování a konkretizace učiva – surdopedie",
-          "Artikulace, jazykový vývoj a plynulost – psychopedie",
-          "Český znakový jazyk, odezírání a akustické podmínky – surdopedie",
-          "Sebeobsluha, mobilita a polohování – tyflopedie"
+          "Různá cesta k informaci neznamená automaticky nižší obsahovou úroveň, proto ale není podstatné řešit časové podmínky.",
+          "Různá cesta k informaci neznamená automaticky nižší obsahovou úroveň, proto je nejlepší hodnotit jen rychlost.",
+          "Různá cesta k informaci neznamená automaticky nižší obsahovou úroveň výkonu.",
+          "Různá cesta k informaci neznamená automaticky nižší obsahovou úroveň, proto Braillovo písmo samo snižuje nároky učiva."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 27,
-        "text": "Které přiřazení tematického jádra a disciplíny je správné?",
+        "text": "Žák má normální sluchový nález, ale při vyprávění těžko hledá slova, staví věty nesouvisle a potřebuje více času na formulaci. Který závěr je nejpřesnější?",
         "options": [
-          "Vztahové konflikty, impulzivita a preventivně-výchovná práce – etopedie",
-          "Nevidomost a hmatové čtení – logopedie",
-          "Tělesné omezení, mobilita a zdravotní oslabení – psychopedie",
-          "Narušená komunikační schopnost v řeči a jazyce – somatopedie"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 28,
-        "text": "Které přiřazení tematického jádra a disciplíny je správné?",
-        "options": [
-          "Fyzická unavitelnost, přesuny a úprava pracovního místa – surdopedie",
-          "Řeč, hlas, plynulost a jazykové obtíže – logopedie",
-          "Zraková přístupnost informací – etopedie",
-          "Sluchové postižení a komunikační dostupnost – somatopedie"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 29,
-        "text": "Které přiřazení tematického jádra a disciplíny je správné?",
-        "options": [
-          "Braillovo písmo, kontrast a orientace v prostoru – surdopedie",
-          "Sociální maladaptace a preventivně-výchovná péče – psychopedie",
-          "Narušená komunikační schopnost – somatopedie",
-          "Tělesné postižení, sebeobsluha a fyzické podmínky práce – somatopedie"
+          "Těžiště může být spíše v jazykovém formulování, proto ale nejde o problém významný pro školní výkon.",
+          "Těžiště může být spíše v jazykovém formulování, proto se tím automaticky potvrzuje PAS.",
+          "Těžiště může být spíše v jazykovém formulování, proto je hlavní obtíž určitě v kázni.",
+          "Těžiště může být spíše v jazykovém formulování a organizaci výpovědi než ve slyšení samotném."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 30,
-        "text": "Které rozlišení surdopedie a logopedie je nejpřesnější?",
+        "number": 28,
+        "text": "Dítě rozumí učivu, ale při komunikaci bez možnosti odezírat a bez zřetelného obrácení mluvčího na něj ztrácí část sdělení. Které čtení je nejpřesnější?",
         "options": [
-          "Surdopedie řeší artikulaci a logopedie sluchové postižení, odezírání a komunikační systém.",
-          "Surdopedie řeší sluchové postižení a komunikační dostupnost; logopedie narušenou komunikační schopnost v širším smyslu.",
-          "Jde o dvě označení téhož oboru, která se liší jen rezortem, ne věcným zaměřením.",
-          "Surdopedie se týká zrakového postižení a logopedie tělesného omezení v řeči."
+          "Podstatná může být dostupnost mluvené informace včetně vizuálních komunikačních opor, ne jen obsah učiva.",
+          "Podstatná může být dostupnost mluvené informace, proto ale jde automaticky o nízký intelekt.",
+          "Podstatná může být dostupnost mluvené informace, proto je nejpřesnější zrušit všechny ústní situace.",
+          "Podstatná může být dostupnost mluvené informace, proto jde hlavně o neochotu dávat pozor."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 29,
+        "text": "Žák dělá mnoho pravopisných chyb, ale při ústním vysvětlení přesně popíše vztahy, důvody a pravidla. Co je nejpřesnější čtení?",
+        "options": [
+          "Pravopisně nápadný výkon nemusí znamenat oslabené porozumění, proto ale pravopis není třeba nikdy hodnotit.",
+          "Pravopisně nápadný výkon nemusí znamenat oslabené pojmové porozumění.",
+          "Pravopisně nápadný výkon nemusí znamenat oslabené porozumění, proto je hlavní obtíž vždy ve sluchu.",
+          "Pravopisně nápadný výkon nemusí znamenat oslabené porozumění, proto jde hlavně o nedbalost."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 31,
-        "text": "Které rozlišení tyflopedie a somatopedie je nejpřesnější?",
+        "number": 30,
+        "text": "Žák umí slovně popsat trasu, ale v neznámé budově zůstává bez doprovodu nejistý a nebezpečně váhá. Který závěr je nejpřesnější?",
         "options": [
-          "Tyflopedie řeší výhradně Braillovo písmo, somatopedie výhradně vozík a bezbariérovost.",
-          "Tyflopedie řeší sluchové postižení, somatopedie řeč a jazykový vývoj.",
-          "Tyflopedie řeší zrakové informace a orientaci, somatopedie pohyb, zdravotní stav a fyzické podmínky fungování.",
-          "Tyflopedie řeší poruchy chování, somatopedie adaptivní fungování při poruše intelektového vývoje."
+          "Verbální popis prostoru ještě nezaručuje orientaci, proto ale není vhodné trénovat samostatnost.",
+          "Verbální popis prostoru ještě nezaručuje orientaci, proto je hlavní problém jistě v řeči.",
+          "Verbální popis prostoru ještě nezaručuje funkční orientaci a bezpečný samostatný pohyb.",
+          "Verbální popis prostoru ještě nezaručuje orientaci, proto jde vždy o poruchu chování."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 32,
-        "text": "Které rozlišení psychopedie a etopedie je nejpřesnější?",
+        "number": 31,
+        "text": "Který závěr z totožné diagnózy u dvou žáků je odborně nejpřesnější?",
         "options": [
-          "Psychopedie se týká poruch chování a etopedie poruchy intelektového vývoje a adaptace.",
-          "Psychopedie se týká sluchového postižení a etopedie zrakového postižení.",
-          "Psychopedie a etopedie jsou jen dvě historická jména pro totožnou oblast podpory.",
-          "Psychopedie se týká poruchy intelektového vývoje a adaptivního fungování; etopedie chování, emocí a socializace."
+          "Stejná diagnóza sama nestačí k odvození stejné podpory; proto je nejlepší držet jen subjektivní přání školy.",
+          "Stejná diagnóza sama nestačí k odvození stejné podpory; proto je odborně nejbezpečnější podporu neindividualizovat.",
+          "Stejná diagnóza sama nestačí k odvození stejné podpory; proto diagnóza nemá pro podporu už žádný význam.",
+          "Stejná diagnóza sama nestačí k odvození stejné podpory; rozhoduje konkrétní funkční dopad v učení a participaci."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 33,
-        "text": "Které tvrzení nejlépe vystihuje vztah diagnózy a podpory ve speciální pedagogice?",
+        "number": 32,
+        "text": "Které tvrzení nejlépe odlišuje přístupnost od obsahového zjednodušení?",
         "options": [
-          "Diagnóza je orientační, ale rozhodující je, jak se obtíže promítají do učení, komunikace, orientace, chování a participace.",
-          "Diagnóza sama mechanicky určuje podobu podpory bez ohledu na školní a životní kontext.",
-          "Diagnóza nemá pro pedagogickou práci žádný význam a nemá být zohledněna vůbec.",
-          "Diagnóza je důležitá jen pro administrativní zařazení, nikoli pro rozumění funkčním potřebám."
+          "Přístupnost mění cestu k informaci nebo formu práce, zatímco obsahové zjednodušení mění samotný rozsah či náročnost učiva.",
+          "Přístupnost mění cestu k informaci nebo formu práce, proto se vždy rovná snížení cílů.",
+          "Přístupnost mění cestu k informaci nebo formu práce, proto je jen technickou záležitostí bez pedagogického významu.",
+          "Přístupnost mění cestu k informaci nebo formu práce, proto se používá jen u tělesného postižení."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 34,
-        "text": "Který příklad nejlépe ukazuje, že situaci nelze redukovat jen na logopedii?",
+        "number": 33,
+        "text": "Který závěr je nejpřesnější, když žák ústně prokazuje přesné porozumění, ale písemně selhává hlavně v mechanické podobě výstupu?",
         "options": [
-          "Dítě hůře vyslovuje sykavky, ale v reciprocitě, sociálním porozumění i flexibilitě funguje bez větších obtíží.",
-          "Dítě mluví gramaticky poměrně dobře, ale výrazně selhává v reciproční komunikaci, sociálním porozumění a toleranci změny.",
-          "Žák má přechodně unavený hlas po nachlazení, ale v běžném fungování je bez dalších omezení.",
-          "Žák potřebuje krátkodobě zpomalit tempo řeči kvůli nejistotě při veřejném projevu."
+          "Je třeba oddělit obsahovou kompetenci od formy produkce, proto ale mechanický výstup není třeba nikdy rozvíjet.",
+          "Je třeba oddělit obsahovou kompetenci od formy produkce, proto jde jistě o problém motivace.",
+          "Je třeba oddělit obsahovou kompetenci od formy produkce a nevyvozovat z mechanického selhání automaticky slabé porozumění.",
+          "Je třeba oddělit obsahovou kompetenci od formy produkce, proto je nejsprávnější snížit obsahové cíle."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 34,
+        "text": "Který znak spíše ukazuje na pragmatické jádro obtíže než na čistě artikulační problém?",
+        "options": [
+          "Nepřesná výslovnost jedné skupiny hlásek při jinak přiměřeném porozumění a kontaktu.",
+          "Nepřesné čtení narážek, doslovné chápání a slabší oprava nedorozumění v dialogu.",
+          "Nosní zabarvení hlasu při zachovaném sociálním porozumění a flexibilitě v hovoru.",
+          "Kolísání hlasitosti při delším mluvení bez potíží v chápání záměru druhého."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 35,
-        "text": "Které tvrzení nejlépe vystihuje význam funkční diagnostiky pro speciální pedagogiku?",
+        "text": "Žák se zdravotním oslabením látce rozumí, ale výkon výrazně kolísá podle únavy. Který krok je nejpřesnější?",
         "options": [
-          "Funkční diagnostika zkoumá hlavně to, zda dítě splňuje kritéria diagnózy, a tím její role končí.",
-          "Funkční diagnostika je jen jiný název pro administrativní zařazení žáka do kategorie.",
-          "Funkční diagnostika sleduje, jak dítě skutečně funguje v konkrétním prostředí a jak z toho odvodit podporu.",
-          "Funkční diagnostika je určena jen zdravotníkům a nemá přímý vztah k plánování vzdělávání."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 36,
-        "text": "Které tvrzení nejlépe vystihuje mimořádné nadání z pohledu speciální pedagogiky?",
-        "options": [
-          "Jde o jev, který lze spolehlivě hodnotit jen podle bezchybného prospěchu a vysokého tempa práce.",
-          "Jde o téma stojící mimo speciální pedagogiku, protože neobsahuje speciální vzdělávací potřeby.",
-          "Jde o vysoký výkon, který sám o sobě nevyžaduje žádnou pedagogickou podporu ani úpravu podmínek.",
-          "Jde o výrazný potenciál, jehož rozvoj může vyžadovat úpravu podmínek, tempa i vzdělávací nabídky."
+          "Upravit podmínky tempa a zátěže, proto ale automaticky trvale snížit všechny vzdělávací cíle.",
+          "Upravit podmínky tempa a zátěže, proto ale odložit jakékoli hodnocení na neurčito.",
+          "Upravit podmínky tempa a zátěže, proto ale předpokládat hlavně nízkou motivaci žáka.",
+          "Upravit podmínky tempa a zátěže tak, aby se posuzovalo porozumění, ne jen vyčerpanost výkonu."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 37,
-        "text": "Které tvrzení nejlépe vystihuje současnou terminologickou citlivost speciální pedagogiky?",
+        "number": 36,
+        "text": "Při opisu z tabule dítě chybuje, při práci z předlohy na lavici nikoli. Co je nejpřesnější čtení?",
         "options": [
-          "Současná terminologie hledá přesnější a citlivější jazyk než starší deficitně zabarvené označování člověka.",
-          "Současná terminologie se snaží vyhnout jakémukoli pojmenování potřeby podpory, aby nebyla hodnotící.",
-          "Současná terminologie se vrací k označení „defektní člověk“, protože je nejobecnější a nejneutralnější.",
-          "Současná terminologie se mění jen kvůli překladu cizích slov, nikoli kvůli proměně pojetí člověka."
+          "Potíž může být hlavně v přístupu k vizuální předloze na vzdálenost a v organizaci zrakové práce.",
+          "Potíž může být hlavně v lenosti, protože opis z tabule nevyžaduje skutečné porozumění.",
+          "Potíž může být hlavně v poruše chování, protože rozdíl mezi úlohami ukazuje na selektivní odpor.",
+          "Potíž může být hlavně v nízkém intelektu, protože přesný opis je základní důkaz chápání."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 38,
-        "text": "Co nejpřesněji vystihuje adaptivní fungování v psychopedickém uvažování?",
+        "number": 37,
+        "text": "Žák používá znakový či symbolový systém a pomocí něj sděluje věcně přesné myšlenky. Který závěr je nejpřesnější?",
         "options": [
-          "Jde jen o výši IQ, která sama o sobě určuje podobu vzdělávání.",
-          "Jde jen o motorické dovednosti a sebeobsluhu bez vztahu k sociální a konceptuální oblasti.",
-          "Jde o konceptuální, sociální a praktické fungování, které pomáhá určovat míru potřebné podpory.",
-          "Jde jen o schopnost plnit školní úkoly v tempu běžné třídy."
+          "Alternativní komunikační systém může být cestou vyjádření porozumění, proto ale brání rozvoji skutečné komunikace.",
+          "Alternativní komunikační systém může být cestou vyjádření porozumění, nikoli důkazem nízkého myšlení.",
+          "Alternativní komunikační systém může být cestou vyjádření porozumění, proto je vhodný jen jako krátká nouzová náhrada.",
+          "Alternativní komunikační systém může být cestou vyjádření porozumění, proto automaticky snižuje jazykové nároky."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 38,
+        "text": "Dítě je stabilní v předvídatelné rutině, ale při nečekané změně plánu nebo pravidel se rychle rozpadá. Co je nejpřesnější čtení?",
+        "options": [
+          "Podstatná může být bariéra ve flexibilitě a regulaci, proto ale není vhodné dítě seznamovat s jakoukoli změnou.",
+          "Podstatná může být bariéra ve flexibilitě a regulaci, proto jde jistě hlavně o sluchovou vadu.",
+          "Podstatná může být bariéra ve flexibilitě a regulaci při změně, ne pouze nedostatek disciplíny.",
+          "Podstatná může být bariéra ve flexibilitě a regulaci, proto je nejlepší hodnotit jen poslušnost."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 39,
-        "text": "Které tvrzení nejlépe vystihuje tyflopedické těžiště podpory?",
+        "text": "Který závěr je nejpřesnější, když žák píše velmi nečitelně, ale při ústním vysvětlení přesně propojuje pojmy a příklady?",
         "options": [
-          "Opírá se hlavně o řešení artikulace a plynulosti řeči při zachovaném sluchu a zraku.",
-          "Opírá se hlavně o práci s agresivitou a pravidly chování ve třídě.",
-          "Opírá se hlavně o snížení kognitivních nároků u poruchy intelektového vývoje.",
-          "Opírá se o přístup k vizuálním informacím, funkční využití zraku či hmatu a orientaci v prostoru."
+          "Nečitelný rukopis sám o sobě nedokazuje slabé porozumění, proto ale není vhodné rozvíjet psanou podobu práce.",
+          "Nečitelný rukopis sám o sobě nedokazuje slabé porozumění, proto jde jistě o problém sluchu.",
+          "Nečitelný rukopis sám o sobě nedokazuje slabé porozumění, proto je nejsprávnější hodnotit jen ústní výkon.",
+          "Nečitelný rukopis sám o sobě nedokazuje slabé porozumění; může jít hlavně o bariéru formy výkonu."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 40,
-        "text": "Které tvrzení nejlépe vystihuje surdopedické těžiště podpory?",
+        "text": "Žák působí velmi nadaně v úzké odborné oblasti, ale mimo ni selhává v organizaci, sociálním porozumění a běžném školním fungování. Které čtení je nejpřesnější?",
         "options": [
-          "Opírá se hlavně o dostupnost jazyka a komunikace při sluchovém postižení včetně akustických a komunikačních podmínek.",
-          "Opírá se hlavně o čtení reliéfního písma a hmatovou orientaci v prostoru.",
-          "Opírá se hlavně o konkrétní názornost a rozvoj adaptivních dovedností při poruše intelektového vývoje.",
-          "Opírá se hlavně o korekci hlasu a artikulačních odchylek bez souvislosti se sluchem."
+          "Vysoce rozvinutá dílčí silná stránka může maskovat významnou bariéru v jiných funkčních oblastech.",
+          "Vysoce rozvinutá dílčí silná stránka může maskovat bariéru, proto ale podpora ztrácí smysl.",
+          "Vysoce rozvinutá dílčí silná stránka může maskovat bariéru, proto je nejlepší sledovat jen výkon v silné oblasti.",
+          "Vysoce rozvinutá dílčí silná stránka může maskovat bariéru, proto jde vždy o problém motivace."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 41,
-        "text": "Které tvrzení nejlépe vystihuje somatopedické těžiště podpory?",
+        "text": "Dítě má nepřesnou artikulaci, ale porozumění, sociální kontakt i práce s významem jsou přiměřené. Který závěr je nejpřesnější?",
         "options": [
-          "Opírá se hlavně o akustické podmínky, odezírání a komunikační systém.",
-          "Opírá se hlavně o výuku Braillova písma a hmatové čtení textu.",
-          "Opírá se hlavně o pohyb, sebeobsluhu, unavitelnost a úpravu fyzických podmínek práce a výuky.",
-          "Opírá se hlavně o plynulost řeči, hlas a jazykový vývoj."
+          "Nápadná může být izolovanější mluvní forma, proto ale jde vždy hlavně o sluchovou vadu.",
+          "Nápadná může být izolovanější mluvní forma, nikoli automaticky širší sociálně-komunikační nebo kognitivní deficit.",
+          "Nápadná může být izolovanější mluvní forma, proto je nejpřesnější uvažovat hlavně o PAS.",
+          "Nápadná může být izolovanější mluvní forma, proto se tím potvrzuje globální mentální oslabení."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 42,
+        "text": "Který princip je při plánování podpory odborně nejpřesnější?",
+        "options": [
+          "Podpora má vycházet z konkrétního funkčního dopadu, proto ale není třeba sledovat průběžné změny situace.",
+          "Podpora má vycházet z konkrétního funkčního dopadu, proto diagnóza nemá vůbec žádný význam.",
+          "Podpora má vycházet z konkrétního funkčního dopadu obtíže v daných podmínkách, ne jen z názvu kategorie.",
+          "Podpora má vycházet z konkrétního funkčního dopadu, proto je nejlepší používat u stejné kategorie stejné balíčky podpory."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 42,
-        "text": "Které tvrzení nejlépe vystihuje logopedické těžiště podpory?",
+        "number": 43,
+        "text": "Žákův hlas se po malé zátěži rychle unaví a s delším mluvením klesá srozumitelnost, zatímco porozumění řeči zůstává dobré. Které čtení je nejpřesnější?",
         "options": [
-          "Opírá se hlavně o vztahovou práci, prevenci rizikového chování a práci se skupinovou dynamikou.",
-          "Opírá se hlavně o dostupnost jazyka při sluchovém postižení a akustické prostředí.",
-          "Opírá se hlavně o polohování, přesuny a fyzickou zátěž při tělesném omezení.",
-          "Opírá se hlavně o řeč, jazyk, porozumění, hlas, plynulost a širší komunikační profil."
+          "Těžiště může být ve hlasovém a produkčním výkonu, proto ale jde vždy hlavně o sluchové postižení.",
+          "Těžiště může být ve hlasovém a produkčním výkonu, proto je nejlepší omezit veškerou komunikaci.",
+          "Těžiště může být ve hlasovém a produkčním výkonu, proto se tím potvrzuje globální jazyková neschopnost.",
+          "Těžiště může být ve hlasovém a produkčním výkonu, ne v porozumění sdělení samotnému."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 43,
-        "text": "Které tvrzení nejlépe vystihuje etopedické těžiště podpory?",
+        "number": 44,
+        "text": "Učitel mluví při psaní na tabuli zády ke třídě a žák pak ztrácí část instrukce, ačkoli v jiných situacích látce rozumí. Co je nejpřesnější čtení?",
         "options": [
-          "Opírá se hlavně o práci s chováním, vztahy, emocemi a preventivně-výchovné vedení v kontextu školy a socializace.",
-          "Opírá se hlavně o přístupnost vizuálních informací a samostatný pohyb při zrakovém postižení.",
-          "Opírá se hlavně o konkrétní učení a adaptivní fungování při poruše intelektového vývoje.",
-          "Opírá se hlavně o hlas, artikulaci a jazykový vývoj."
+          "Problém může vznikat v komunikačních podmínkách předávání informace, ne nutně v chápání učiva.",
+          "Problém může vznikat v komunikačních podmínkách, proto ale není vhodné využívat ústní instrukce vůbec.",
+          "Problém může vznikat v komunikačních podmínkách, proto jde hlavně o nezájem žáka poslouchat.",
+          "Problém může vznikat v komunikačních podmínkách, proto se tím automaticky potvrzuje slabý intelekt."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 44,
-        "text": "Které tvrzení nejlépe vysvětluje, proč se dnes vedle klasických disciplín zdůrazňují i okruhy jako PAS, hluchoslepota nebo dvojí výjimečnost?",
-        "options": [
-          "Protože klasické disciplíny byly zcela opuštěny a nahradila je pouze sociální práce.",
-          "Protože tato témata nelze plně vystihnout jedinou tradiční disciplínou a vyžadují širší funkční pohled.",
-          "Protože současná speciální pedagogika už nesleduje funkční dopady a pracuje jen s kategoriemi diagnóz.",
-          "Protože uvedené okruhy patří výhradně do zdravotnictví a nemají vztah ke vzdělávání."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
         "number": 45,
-        "text": "Žák má při běžném sluchu výrazně sníženou srozumitelnost řeči, potíže s artikulací a plynulým verbálním projevem, ale v porozumění mluvené řeči ve třídě zásadně neselhává. Který závěr je nejpřesnější?",
+        "text": "Který závěr je nejpřesnější, když žák řeší přesně, ale potřebuje delší čas na dokončení?",
         "options": [
-          "Primárně jde o tyflopedický rámec, protože každá odchylka komunikace ukazuje na problém přístupu k informacím.",
-          "Primárně jde o logopedický rámec, protože těžištěm je narušená komunikační schopnost při zachovaném sluchovém vstupu.",
-          "Primárně jde o surdopedický rámec, protože každé výraznější oslabení mluvené komunikace ukazuje na sluchovou oblast.",
-          "Primárně jde o etopedický rámec, protože komunikační neúspěch bývá hlavně problémem chování."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 46,
-        "text": "Žák obsahově chápe učivo, ale výrazně ho omezuje fyzická unavitelnost, pomalé přesuny, obtížná manipulace s pomůckami a potřeba úpravy pracovního místa. Který rámec je nejpřesnější?",
-        "options": [
-          "Psychopedický, protože pomalejší tempo práce ukazuje hlavně na potřebu zjednodušit obsah.",
-          "Tyflopedický, protože obtíže s materiály a prostorem bývají typicky zrakového původu.",
-          "Somatopedický, protože těžiště obtíží je ve funkčních dopadech tělesného omezení, únavy a zdravotního stavu.",
-          "Etopedický, protože snížené tempo a neochota zapojit se bývají hlavně problémem chování."
+          "Pomalé tempo může měnit podobu výkonu, proto ale je nejlepší hodnotit jen rychlost jako hlavní ukazatel.",
+          "Pomalé tempo může měnit podobu výkonu, proto jde vždy hlavně o neochotu pracovat.",
+          "Pomalé tempo může měnit podobu výkonu, aniž by samo dokazovalo slabé porozumění nebo nízké nároky.",
+          "Pomalé tempo může měnit podobu výkonu, proto se tím automaticky potvrzuje intelektový deficit."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 47,
-        "text": "Dítě se dostává do konfliktů hlavně tehdy, když dojde k nejasné změně režimu, přetížení hlukem a nepředvídatelnému sociálnímu tlaku. Který závěr je nejpřesnější?",
+        "number": 46,
+        "text": "Dítě zvládá práci ve třídě, ale výrazně se vyhýbá chodbám, schodištím a nepřehledným přesunům. Které jádro obtíže je nejpřesnější?",
         "options": [
-          "Nejpřesnější je čistě etopedický závěr, protože opakovaný konflikt sám o sobě prokazuje poruchu chování.",
-          "Jádro bude pravděpodobně somatopedické, protože přetížení a únava ukazují hlavně na zdravotní oslabení.",
-          "Jádro bude pravděpodobně logopedické, protože sociální kolize ve škole většinou vyplývají z omezené výslovnosti.",
-          "Je nutné diferencovat, zda problém nesouvisí spíše s nepředvídatelností, senzorickým přetížením a sociálním neporozuměním."
+          "Jádrem může být bariéra v orientaci a pohybu, proto ale nejde o oblast školní podpory.",
+          "Jádrem může být bariéra v orientaci a bezpečném pohybu v prostoru, ne v samotném učebním obsahu.",
+          "Jádrem může být bariéra v orientaci a pohybu, proto jde hlavně o poruchu chování.",
+          "Jádrem může být bariéra v orientaci a pohybu, proto se tím potvrzuje slabé čtenářské porozumění."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 47,
+        "text": "Žák doslovně chápe instrukce, obtížně odhaduje nevyslovené sociální pravidlo a hůře opravuje komunikační nedorozumění. Které čtení je nejpřesnější?",
+        "options": [
+          "Těžiště může být spíše v sociálně-pragmatickém porozumění, proto ale jde vždy hlavně o artikulační problém.",
+          "Těžiště může být spíše v sociálně-pragmatickém porozumění, proto je nejlepší sledovat jen formální správnost řeči.",
+          "Těžiště může být spíše v sociálně-pragmatickém porozumění, proto se automaticky potvrzuje sluchová vada.",
+          "Těžiště může být spíše v sociálně-pragmatickém porozumění a flexibilitě než ve slovní zásobě samotné."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 48,
-        "text": "Které tvrzení nejlépe vystihuje roli podpory prostředí v současné speciální pedagogice?",
+        "text": "Vizuálně přehlcený pracovní list vede k vynechávkám a ztrátě řádku, zatímco přehledně upravená předloha výkon stabilizuje. Které čtení je nejpřesnější?",
         "options": [
-          "Prostředí je jen vedlejší kulisa; rozhoduje hlavně samotná diagnóza.",
-          "Prostředí je jedním z rozhodujících faktorů, protože bariéry i opory prostředí mění podobu potřebné podpory.",
-          "Prostředí má význam jen ve speciálních školách, nikoli v běžném vzdělávání.",
-          "Prostředí je důležité jen tehdy, když chybí jakákoli odborná diagnóza."
+          "Náročnost může ležet v organizaci vizuálního pole a přístupu k informaci, ne v obsahu samotném.",
+          "Náročnost může ležet v organizaci vizuálního pole, proto ale není vhodné pracovat s textem vůbec.",
+          "Náročnost může ležet v organizaci vizuálního pole, proto jde hlavně o lenost při soustředění.",
+          "Náročnost může ležet v organizaci vizuálního pole, proto je nejpřesnější automaticky snižovat učivo."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 49,
+        "text": "Který závěr je nejpřesnější o vztahu diagnózy a školního dopadu obtíže?",
+        "options": [
+          "Školní dopad se může měnit podle úkolu, prostředí a zátěže, proto diagnóza nemá pro odborné uvažování žádný význam.",
+          "Školní dopad se může měnit podle úkolu, prostředí a zátěže, proto podpora nemá vycházet jen z názvu diagnózy.",
+          "Školní dopad se může měnit podle úkolu, prostředí a zátěže, proto je nejbezpečnější zachovat pro všechny stejné podmínky.",
+          "Školní dopad se může měnit podle úkolu, prostředí a zátěže, proto je nejlepší sledovat jen jednorázový výkon v testu."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 49,
-        "text": "Který závěr je nejpřesnější u žáka s výrazným logickým potenciálem, hlubokým zájmem o téma, ale současně s nápadnými potížemi v organizaci práce, záznamu a dlouhodobé samoregulaci?",
-        "options": [
-          "Stačí pracovat jen s nadáním, protože skutečně nadaný žák nemívá významné oslabení v jiné oblasti fungování.",
-          "Jde pravděpodobně hlavně o poruchu chování, protože neplnění povinností ukazuje na odpor k autoritě.",
-          "Je vhodné uvažovat o dvojí výjimečnosti, protože silný potenciál a významné obtíže se mohou navzájem maskovat.",
-          "Nejpřesnější je závěr o poruše intelektového vývoje, protože nerovnoměrný výkon oslabuje význam nadání."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
         "number": 50,
-        "text": "Který závěr je nejpřesnější u dítěte se souběžným sluchovým a zrakovým omezením, u něhož je nutné plánovat komunikaci i orientaci jako propojený celek?",
+        "text": "Žák má velmi silné verbální uvažování, ale výrazně slabší samostatnost v praktickém a motorickém fungování. Které čtení je nejpřesnější?",
         "options": [
-          "Jde hlavně o logopedii, protože komunikace je vždy především otázkou řečové intervence.",
-          "Jde hlavně o tyflopedii, protože pro vzdělávání rozhoduje téměř vždy zraková složka.",
-          "Jde hlavně o etopedii, protože složitější komunikace obvykle vede k problémům v chování.",
-          "Je třeba uvažovat v rámci hluchoslepoty nebo kombinovaného postižení, nikoli jen odděleně po disciplínách."
+          "Výrazná verbální síla sama nevylučuje podstatnou bariéru v motoricko-adaptivním fungování.",
+          "Výrazná verbální síla sama nevylučuje bariéru, proto ale praktické fungování není pro podporu důležité.",
+          "Výrazná verbální síla sama nevylučuje bariéru, proto je nejlepší ignorovat odlišnost mezi oblastmi výkonu.",
+          "Výrazná verbální síla sama nevylučuje bariéru, proto jde jistě hlavně o neochotu být samostatný."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 0,
+        "correctLetter": "A"
       }
     ]
   },
   {
     "id": 2,
     "label": "Baterie 2",
-    "title": "Charakteristiky znevýhodnění a funkční dopady",
-    "subtitle": "Diferenciální rozlišování psychopedických, senzorických, somatopedických, PAS a etopedických profilů podle funkčního obrazu.",
-    "purpose": "Trénovat, aby student nepoznával jen název kategorie, ale z funkčního obrazu vyvozoval pravděpodobný rámec obtíží a podpory.",
-    "difficulty": "vyšší",
+    "title": "Diferenciální rozlišení blízkých rámců – pokročilá separace",
+    "subtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
+    "purpose": "Ověřit skutečně pokročilé diferenční čtení blízkých rámců: logopedie × surdopedie, psychopedie × širší vývojový rámec, PAS × nepřístupná komunikace nebo prostředí, etopedie × sekundární reakce na dlouhodobé selhávání a tyflopedie × somatopedie × kombinovaný profil. Baterie je záměrně kratší, ostřejší a méně kazuistická než předchozí hard vrstva.",
+    "difficulty": "velmi vysoká",
     "dominant": [
-      "porucha intelektového vývoje a adaptivní fungování",
-      "zrakové postižení",
-      "sluchové postižení",
-      "tělesné postižení a zdravotní oslabení",
-      "PAS",
-      "kombinovaná postižení",
-      "rizikové chování"
+      "produkce řeči × přístup k mluvené informaci",
+      "školní výkon × širší adaptivní fungování",
+      "PAS × nepřístupná komunikace a prostředí",
+      "etopedie × sekundární reakce na selhávání",
+      "tyflopedie × somatopedie × kombinovaný profil",
+      "hlavní rámec × vedlejší signál"
     ],
     "breakdown": [
-      "8× psychopedie a adaptivní fungování",
-      "8× tyflopedické funkční dopady",
-      "8× surdopedické funkční dopady",
-      "7× somatopedie a zdravotní oslabení",
-      "7× PAS a kombinovaná postižení",
-      "6× etopedie a rizikové chování",
-      "6× syntetické diferenciální rozlišení"
+      "10× logopedie × surdopedie × komunikační přístupnost",
+      "10× psychopedie × širší vývojový rámec",
+      "10× PAS × nepřístupná komunikace a prostředí",
+      "10× etopedie × sekundární reakce na dlouhodobé selhávání",
+      "10× tyflopedie × somatopedie × kombinovaný profil"
     ],
     "tags": [
-      "funkční dopady",
+      "UPOL",
+      "SPP",
+      "hard mode",
+      "baterie 2",
       "diferenciální rozlišení",
-      "aplikace",
-      "diagnostické uvažování"
+      "pokročilá vrstva"
     ],
     "durationMinutes": 30,
     "questionCount": 50,
     "questions": [
       {
         "number": 1,
-        "text": "Proč je ve speciálněpedagogickém posouzení poruchy intelektového vývoje důležité sledovat adaptivní fungování?",
+        "text": "Žák rozumí čtenému zadání, ale při rychlé řeči z větší vzdálenosti ztrácí obsah. Co je přesnější?",
         "options": [
-          "Ukazuje, jak člověk zvládá konceptuální, sociální a praktické nároky běžného života, ne jen testový výkon.",
-          "Ukazuje hlavně výsledek v inteligenčním testu a umožňuje podle něj přímo určit školní zařazení.",
-          "Nahrazuje potřebu sledovat sebeobsluhu, komunikaci a samostatnost, protože tyto oblasti z výkonu automaticky vyplývají.",
-          "Týká se především tempa psaní a úpravy sešitu, zatímco ostatní oblasti fungování sledují jiné obory."
+          "Těžiště je spíše v artikulační nepřesnosti než v přístupu k informaci.",
+          "Těžiště je spíše v přístupu k mluvené informaci než v samotné produkci řeči.",
+          "Těžiště je spíše ve slabé slovní zásobě než v komunikačních podmínkách, a to v popsané situaci.",
+          "Těžiště je spíše v tempu zápisu než v auditivním vstupu."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 2,
-        "text": "Které rozlišení nejpřesněji odlišuje poruchu intelektového vývoje a demenci?",
+        "text": "Dítě vynechává hlásky v řeči, ale obsahu sdělení rozumí i v běžných podmínkách. Který rámec je bližší?",
         "options": [
-          "Porucha intelektového vývoje se týká hlavně chování a demence hlavně výslovnosti a hlasu.",
-          "Porucha intelektového vývoje vzniká v období vývoje, zatímco demence znamená získaný úbytek již rozvinutých funkcí.",
-          "Porucha intelektového vývoje bývá vždy přechodná, zatímco demence je jen školní označení pro trvalé selhávání.",
-          "Porucha intelektového vývoje i demence označují totéž, jen v různých věkových kategoriích."
+          "Bližší je surdopedické čtení přístupu k obsahu než logopedické čtení produkce řeči.",
+          "Bližší je etopedické čtení odporu k řečové zátěži než logopedické čtení produkce.",
+          "Bližší je psychopedické čtení slabšího porozumění než logopedické čtení produkce.",
+          "Bližší je logopedické čtení produkce řeči než surdopedické čtení přístupu k obsahu."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 3,
-        "text": "Který obraz je nejvíce slučitelný s lehčí úrovní poruchy intelektového vývoje?",
+        "text": "Při diktátu žák selhává hlavně v zachycení slyšeného, při opisování výkon drží. Co je těžiště?",
         "options": [
-          "Žák má běžné abstraktní uvažování, ale izolovaně chybovost v artikulaci a hlasové hygieně.",
-          "Žák nereaguje na mluvenou řeč v hluku, jinak však bez obtíží zvládá abstraktní učivo i samostatné plánování.",
-          "Žák zvládá základní školní dovednosti při názorném a strukturovaném vedení, ale hůře zobecňuje a plánuje.",
-          "Žák potřebuje rozsáhlou podporu v sebeobsluze, komunikaci i orientaci v každodenních situacích."
+          "Těžiště je spíše v zachycení auditivně podané informace než v grafické podobě výkonu.",
+          "Těžiště je spíše v jemné motorice než v zachycení auditivně podané informace, a to v daném profilu.",
+          "Těžiště je spíše v artikulačním provedení než v auditivním vstupu.",
+          "Těžiště je spíše v pravopisném pravidle než v modalitě zadání."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 4,
-        "text": "Který vzdělávací cíl je při těžší úrovni poruchy intelektového vývoje zpravidla nejpřiměřenější?",
+        "text": "Obtíž přetrvává i při vizuální opoře; řeč je málo srozumitelná i v klidném individuálním rozhovoru. Co je bližší?",
         "options": [
-          "Maximální důraz na rychlé zvládnutí abstraktního kurikula stejného rozsahu jako u běžné třídy.",
-          "Současné odložení komunikace a sebeobsluhy, dokud nebude plně zvládnuto čtení a pravopis.",
-          "Zaměření hlavně na eliminaci všech speciálních pomůcek, aby se žák co nejrychleji přiblížil běžnému výkonu.",
-          "Rozvoj funkční komunikace, sebeobsluhy, orientace a účasti v běžných denních činnostech."
+          "Bližší je surdopedický rámec přístupu k výkladu než logopedický rámec produkce.",
+          "Bližší je psychopedický rámec globálního porozumění než logopedický rámec produkce, a to v tomto typu rozlišení.",
+          "Bližší je logopedický rámec produkce řeči než surdopedický rámec přístupu k výkladu.",
+          "Bližší je logopedický rámec dysfluence než surdopedický rámec hluku."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
         "number": 5,
-        "text": "Proč současné pojetí poruchy intelektového vývoje nestaví závažnost jen na skóru IQ?",
+        "text": "Žák využívá odezírání, titulky a psanou oporu; výslovnost má přitom dobře srozumitelnou. Co je nejpřesnější?",
         "options": [
-          "Protože o míře podpory rozhoduje i to, jak člověk reálně funguje v konceptuální, sociální a praktické oblasti.",
-          "Protože IQ je důležité pouze do předškolního věku a později už se ve speciální pedagogice vůbec nesleduje.",
-          "Protože školní známky automaticky poskytují přesnější obraz budoucí samostatnosti než jakékoli funkční hodnocení.",
-          "Protože se dnes místo psychopedie používá pouze neurologická klasifikace bez vztahu ke vzdělávání."
+          "Nejpřesnější je číst situaci přes kvalitu artikulace, ne přes dostupnost sdělení.",
+          "Nejpřesnější je číst situaci přes dostupnost mluveného sdělení, ne přes kvalitu artikulace.",
+          "Nejpřesnější je číst situaci přes slovní zásobu, ne přes modalitu vstupu.",
+          "Nejpřesnější je číst situaci přes motoriku mluvidel, ne přes komunikační podmínky, a to v daných podmínkách."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 6,
-        "text": "Které tvrzení nejlépe vystihuje dvojí výjimečnost?",
+        "text": "Který znak ukazuje spíše k logopedickému než k surdopedickému rámci?",
         "options": [
-          "Jde o označení pro těžkou kombinovanou vadu, u níž se současně vyskytují dvě různé diagnózy postižení.",
-          "Jde o souběh výrazného potenciálu a významných obtíží, které se mohou navzájem maskovat.",
-          "Jde o stav, kdy se střídá nadprůměrný a podprůměrný výkon pouze podle aktuální motivace žáka.",
-          "Jde o pojem pro dvojí školní akceleraci u mimořádně nadaného žáka bez přítomnosti obtíží."
+          "Nepřesná artikulace přetrvává i tehdy, když je sdělení dobře dostupné a srozumitelně předané.",
+          "Porozumění kolísá hlavně při hluku, vzdálenosti a bez vizuální opory.",
+          "Výkon se zhoršuje zejména při rychlém výkladu z druhé strany třídy.",
+          "Obsah se stabilizuje po zpřehlednění auditivního vstupu a po snížení hluku ve třídě, a to v uvedeném rámci."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 7,
-        "text": "Který postup nejlépe odpovídá vzdělávací práci se žákem s poruchou intelektového vývoje?",
+        "text": "Který znak ukazuje spíše k surdopedickému než k logopedickému rámci?",
         "options": [
-          "Střídat co nejvíce abstraktních úloh bez předchozího nácviku, aby se posílilo zobecňování skokem.",
-          "Minimalizovat podporu v porozumění a samostatnosti, aby se předešlo závislosti na vedení.",
-          "Opírat výuku o názornost, strukturu, opakování a propojení učiva s praktickými situacemi.",
-          "Oddělit školní učení od každodenního života, aby se žák nerozptyloval běžnými činnostmi."
+          "Potřeba menšího hluku a přímé vizuální opory pro porozumění sdělení.",
+          "Stálé obtíže s oromotorickým nastavením hlásek při zachovaném přístupu k obsahu.",
+          "Snížená plynulost řeči bez vazby na komunikační podmínky.",
+          "Nepřesná výslovnost zůstává stejná bez ohledu na hluk a vzdálenost."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 8,
-        "text": "Který závěr je nejpřesnější u člověka, který dříve fungoval samostatně, ale nyní ztrácí paměť, úsudek a zvládání běžných činností?",
+        "text": "Dítě mluví plynule, ale v kruhu vrstevníků ztrácí tok hovoru bez vizuální opory. Co je bližší?",
         "options": [
-          "Je třeba automaticky uvažovat o lehčí poruše intelektového vývoje, která se nově projeví až v dospělosti.",
-          "Je třeba primárně uvažovat o zrakovém postižení, protože to nejlépe vysvětluje oslabení úsudku a paměti.",
-          "Je třeba primárně uvažovat o poruše chování, protože ztráta běžných dovedností bývá hlavně projevem vzdoru.",
-          "Je třeba uvažovat o získaném úbytku funkcí, tedy o obrazu bližším demenci než vývojově podmíněné poruše intelektového vývoje."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 9,
-        "text": "Které tvrzení nejlépe vystihuje slabozrakost z funkčního hlediska?",
-        "options": [
-          "Zrak je využitelný, ale práce s detailem, kontrastem nebo orientací může vyžadovat úpravy podmínek a pomůcky.",
-          "Zrak není využitelný vůbec a přístup k informacím probíhá výhradně hmatem a sluchem.",
-          "Obtíže se týkají hlavně výslovnosti a plynulosti řeči při jinak běžném zrakovém fungování.",
-          "Rozhodující potíží je porucha abstrakce a adaptivního fungování bez vazby na vizuální informace."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 10,
-        "text": "Které rozlišení nejlépe odlišuje nevidomost a slabozrakost z hlediska podpory?",
-        "options": [
-          "Rozhodující je jen to, zda je žák mladší nebo starší školního věku, protože podpora se řídí hlavně věkem.",
-          "Rozhodující je míra funkční využitelnosti zraku pro práci s informacemi, orientaci a volbu kompenzačních postupů.",
-          "Rozhodující je hlavně typ sešitu a způsob klasifikace, protože funkční využití zraku se ve škole neposuzuje.",
-          "Rozhodující je, zda má žák současně poruchu chování, protože ta určuje i volbu zrakových pomůcek."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 11,
-        "text": "Jaký dopad může mít výrazně zúžené zorné pole na školní a každodenní fungování?",
-        "options": [
-          "Může vést hlavně k izolované poruše hlasu při jinak plně zachovaném vizuálním vnímání prostoru.",
-          "Může znamenat především potíže se zobecňováním pojmů při jinak běžném rozsahu vizuálního pole.",
-          "Může ztěžovat orientaci v prostoru, zachycení okolních informací i plynulé sledování dění kolem sebe.",
-          "Může vést hlavně k tomu, že žák nerozumí řeči v hluku, i když vizuální podněty zpracovává bez omezení."
+          "Bližší je logopedické čtení plynulosti než surdopedické čtení dostupnosti toku řeči.",
+          "Bližší je psychopedické čtení porozumění sociálním pravidlům než dostupnosti řeči.",
+          "Bližší je surdopedické čtení dostupnosti toku řeči než logopedické čtení plynulosti.",
+          "Bližší je etopedické čtení neochoty vstupovat do hovoru než dostupnosti řeči."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 12,
-        "text": "Které tvrzení nejpřesněji vystihuje význam kontrastu a oslnění u části žáků se zrakovým postižením?",
+        "number": 9,
+        "text": "Dítě má oromotorické potíže, ale na slyšené podněty reaguje přesně i v různých podmínkách. Co je bližší?",
         "options": [
-          "Jde hlavně o otázku kázně a motivace, protože světelné podmínky na čitelnost textu významně nepůsobí.",
-          "Jde o okrajovou záležitost, která se řeší jen při poruchách artikulace a hlasu.",
-          "Jde o faktor důležitý jen u sluchového postižení, protože orientace zrakem na něm přímo nezávisí.",
-          "Mohou zásadně měnit čitelnost, orientaci i pracovní výkon, proto je třeba promyšleně upravovat vizuální podmínky."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 13,
-        "text": "Proč je u zrakového postižení důležité funkční hodnocení, ne jen název diagnózy?",
-        "options": [
-          "Protože stejná diagnóza může mít různý dopad do čtení, orientace, práce s pomůckami i samostatnosti.",
-          "Protože funkční hodnocení nahrazuje potřebu sledovat vzdělávací situace a používá se jen ve zdravotnictví.",
-          "Protože název diagnózy automaticky přesně určuje všechny podmínky výuky, pomůcky i očekávaný výkon.",
-          "Protože ve škole se posuzuje jen psychická odolnost žáka a zrakové fungování je vedlejší."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 14,
-        "text": "Které rozlišení nejlépe odlišuje zrakové postižení a specifické obtíže ve čtení?",
-        "options": [
-          "U zrakového postižení i specifických obtíží ve čtení jde v zásadě o stejný problém, jen se jinak pojmenovává.",
-          "U zrakového postižení je jádrem přístup k vizuální informaci, kdežto u specifických obtíží může být vstup dostupný, ale zpracování oslabené.",
-          "U zrakového postižení bývá problém hlavně v adaptivním fungování, zatímco specifické obtíže vždy znamenají ztrátu zraku.",
-          "U zrakového postižení jde především o poruchu chování při práci, zatímco čtenářské obtíže jsou jen otázkou motivace."
+          "Bližší je surdopedické čtení přístupu k informaci než logopedické čtení oromotoriky, a to v popsané situaci.",
+          "Bližší je logopedické čtení oromotorické produkce než surdopedické čtení přístupu k informaci.",
+          "Bližší je tyflopedické čtení smyslové zátěže než logopedické čtení oromotoriky.",
+          "Bližší je psychopedické čtení globálního oslabení než logopedické čtení oromotoriky."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 15,
-        "text": "Který závěr je nejpřesnější u žáka s těžkým zrakovým postižením a současně omezenou motorikou?",
+        "number": 10,
+        "text": "Které pedagogické opatření je nejvíce vázáno na zpřístupnění mluvené informace, ne na nácvik výslovnosti?",
         "options": [
-          "Stačí volit čistě tyflopedické postupy, protože motorické omezení na práci s pomůckami a orientací nemá podstatný vliv.",
-          "Stačí volit čistě somatopedické postupy, protože zrakový vstup lze v těchto případech považovat za vedlejší.",
-          "Je třeba spojit tyflopedický a somatopedický pohled, protože pomůcky i orientace mohou být ovlivněny oběma oblastmi zároveň.",
-          "Je vhodné odložit podporu, dokud nebude jasné, která diagnóza je závažnější a která méně důležitá."
+          "Snížení hluku, přímý kontakt tváří a stabilní vizuální opora při instrukci.",
+          "Nácvik přesného tvoření hlásek a práce s motorikou mluvidel, a to v daném profilu.",
+          "Procvičování rytmu řeči a artikulačních kontrastů.",
+          "Opakování izolovaných hlásek před zrcadlem."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 11,
+        "text": "Který znak posouvá interpretaci blíže k psychopedii než k izolované školní neúspěšnosti?",
+        "options": [
+          "Výraznější potíže jen v jednom školním předmětu při jinak dobrém fungování.",
+          "Výraznější kolísání výkonu podle motivace a náročnosti učiva.",
+          "Výraznější obtíže pouze v psaném projevu při zachované samostatnosti.",
+          "Výraznější omezení v adaptivním fungování i mimo školní výkon."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 12,
+        "text": "Dítě má slabší školní výkon, ale v běžném fungování je samostatné, plánuje a sociálně se orientuje přiměřeně. Co je přesnější?",
+        "options": [
+          "Samotný slabší školní výkon bez širšího dopadu psychopedický rámec přímo potvrzuje, a to v tomto typu rozlišení.",
+          "Samotný slabší školní výkon ukazuje hlavně na surdopedický rámec.",
+          "Samotný slabší školní výkon bez širšího adaptivního dopadu ještě psychopedický rámec nepotvrzuje.",
+          "Samotný slabší školní výkon ukazuje hlavně na etopedický rámec."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 13,
+        "text": "Které vymezení je pro psychopedický rámec nejpřesnější?",
+        "options": [
+          "Rozhoduje především jedna školní známka v klíčovém předmětu a její aktuální zhoršení, a to v daných podmínkách.",
+          "Rozhoduje širší obraz porozumění, úsudku a adaptivního fungování, ne jediný testový výkon.",
+          "Rozhoduje především kvalita grafomotoriky v časovém tlaku a rychlost zápisu.",
+          "Rozhoduje především ochota dítěte spolupracovat v první hodině a při prvním dojmu."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 14,
+        "text": "Žák má v jedné úzce vymezené oblasti překvapivě dobrý výkon, ale v běžném rozhodování je velmi závislý na vedení. Co je nejpřesnější?",
+        "options": [
+          "Ostrůvkový dobrý výkon psychopedický rámec sám o sobě nevylučuje.",
+          "Ostrůvkový dobrý výkon psychopedický rámec automaticky vylučuje, a to v uvedeném rámci.",
+          "Ostrůvkový dobrý výkon automaticky potvrzuje PAS.",
+          "Ostrůvkový dobrý výkon automaticky potvrzuje logopedickou obtíž."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 15,
+        "text": "Která situace je bližší širšímu vývojovému zpoždění bez jasného psychopedického závěru?",
+        "options": [
+          "Vývoj je nerovnoměrný a každodenní samostatnost i úsudek jsou výrazně omezené.",
+          "Vývoj je nerovnoměrný a přístup k mluvenému sdělení je zřetelně zhoršený.",
+          "Vývoj je nerovnoměrný, ale každodenní samostatnost a sociální úsudek zůstávají poměrně zachované.",
+          "Vývoj je nerovnoměrný a artikulace je málo srozumitelná v individuálním hovoru, a to v popsané situaci."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 16,
-        "text": "Který závěr je nejpravděpodobnější u žáka, který v hovoru reaguje přiměřeně, ale nezvládá drobný tisk, detail na tabuli a práci v oslňujícím světle?",
+        "text": "Když je třeba rozlišit psychopedii a jazykovou bariéru, co rozhoduje nejvíce?",
         "options": [
-          "Potíže odpovídají hlavně poruše intelektového vývoje, protože drobný tisk bývá pro tuto skupinu typicky nečitelný.",
-          "Potíže odpovídají hlavně poruše chování, protože odmítání práce s tabulí je obvykle projev nespolupráce.",
-          "Potíže odpovídají hlavně sluchovému postižení, protože oslňující světlo zhoršuje zachycení mluvené řeči.",
-          "Potíže odpovídají spíše funkčně významnému oslabení zraku než primární poruše porozumění nebo chování."
+          "To, zda dítě v prvních týdnech nerozumí odborným výrazům v češtině, i když jinak funguje samostatně.",
+          "To, zda je ve třídě spíše tiché a méně iniciativní.",
+          "To, zda pomaleji opisuje z tabule.",
+          "To, zda se obtíže promítají i do širšího porozumění, úsudku a samostatnosti mimo jazykový vstup."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 17,
-        "text": "Který obraz nejlépe odpovídá nedoslýchavosti ve školní situaci?",
+        "text": "U žáka jsou výrazně slabé abstrakce, sociální úsudek i plánování běžných kroků mimo školu. Co je bližší?",
         "options": [
-          "Žák může při individuálním hovoru rozumět lépe než ve skupině a v hluku, kde hůře zachycuje řeč.",
-          "Žák má hlavně těžkosti s jemnou motorikou a manipulací s pomůckami při jinak bezproblémovém zachycení řeči.",
-          "Žák má hlavně obtíže se zrakovou orientací v prostoru a s využitím kontrastu při čtení.",
-          "Žák má hlavně potíže se zobecňováním a praktickým úsudkem při jinak plně dostupné komunikaci."
+          "Bližší je psychopedické čtení širšího fungování než čtení izolované školní obtíže.",
+          "Bližší je čtení izolované školní obtíže než psychopedické čtení širšího fungování.",
+          "Bližší je logopedické čtení výslovnosti než psychopedické čtení širšího fungování.",
+          "Bližší je tyflopedické čtení orientace než psychopedické čtení širšího fungování."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 18,
-        "text": "Které tvrzení nejlépe vystihuje pojem ohluchlý?",
+        "text": "Samotné pomalejší tempo práce bez širšího dopadu na samostatnost ukazuje spíše na co?",
         "options": [
-          "Jde o člověka, který nikdy neměl sluch využitelný pro rozvoj mluveného jazyka od raného dětství.",
-          "Jde o člověka, který o sluch přišel po období, kdy už měl řeč a jazyk v určité míře rozvinuté.",
-          "Jde o člověka se zrakovým postižením, u něhož se později přidala porucha orientace v prostoru.",
-          "Jde o člověka s narušenou komunikační schopností bez vztahu ke sluchové ztrátě."
+          "Na jistý psychopedický závěr i bez širšího obrazu adaptivního fungování, a to v daném profilu.",
+          "Na potřebu další diferenciace; samo o sobě nestačí k psychopedickému uzavření.",
+          "Na jistý etopedický závěr i bez dalších údajů.",
+          "Na jistý PAS závěr i bez dalších údajů."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 19,
-        "text": "Proč je u sluchového postižení důležité rozlišovat prelingvální a postlingvální vznik?",
+        "text": "Které vyjádření nejlépe rozlišuje lehké intelektové oslabení od nerovnoměrného školního výkonu?",
         "options": [
-          "Protože tento rozdíl určuje jen typ školního nábytku a nemá význam pro jazyk ani komunikaci.",
-          "Protože prelingvální vznik vždy znamená zároveň tělesné postižení a postlingvální vždy zrakové oslabení.",
-          "Protože doba vzniku výrazně ovlivňuje vývoj jazyka, komunikační strategii i podobu podpory.",
-          "Protože jde jen o technickou audiologickou poznámku bez speciálněpedagogických důsledků."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 20,
-        "text": "Který faktor je pro dopad sluchového postižení ve třídě zvlášť významný?",
-        "options": [
-          "Pouze barva pracovních listů, protože sluchové postižení se projevuje hlavně vizuální únavou při čtení textu.",
-          "Pouze délka písemných odpovědí, protože zachycení mluvené řeči se školním prostředím významně nemění.",
-          "Pouze úroveň jemné motoriky, protože ztráta sluchu se překládá především do grafomotoriky.",
-          "Akustické podmínky a organizace komunikace, zejména hluk, vzdálenost a střídání mluvčích."
+          "Rozhodující je hlavně počet chyb v diktátu, ne širší fungování.",
+          "Rozhodující je hlavně rychlost čtení nahlas, ne širší fungování.",
+          "Rozhodující je hlavně obliba konkrétního učitele, ne širší fungování, a to v tomto typu rozlišení.",
+          "Rozhodující je širší adaptivní fungování, ne jen mapa silných a slabých předmětů."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 21,
-        "text": "Které rozlišení mezi logopedickým a surdopedickým rámcem je nejpřesnější?",
+        "number": 20,
+        "text": "V běžných situacích je dítě zranitelné v penězích, čase, bezpečí a samostatném rozhodování, ale v některých úlohách překvapí dobrým výkonem. Co je přesnější?",
         "options": [
-          "Surdopedie řeší sluchové postižení a dostupnost komunikace, logopedie narušenou komunikační schopnost v širším smyslu.",
-          "Surdopedie řeší výhradně artikulaci a hlas, logopedie pak odezírání a volbu komunikačních systémů.",
-          "Surdopedie i logopedie označují tentýž obor a liší se jen podle věku klienta.",
-          "Surdopedie řeší tělesné postižení, logopedie zrakové postižení a přístup k textu."
+          "Přesnější je přeceňovat jednotlivé ostrůvky výkonu než širší adaptivní fungování, a to v daných podmínkách.",
+          "Přesnější je uzavřít situaci jen podle výsledku posledního testu.",
+          "Přesnější je sledovat širší adaptivní fungování než přeceňovat jednotlivé ostrůvky výkonu.",
+          "Přesnější je uzavřít situaci jen podle kvality rukopisu."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 21,
+        "text": "Doslovné chápání, zátěž změnou pravidel a potřeba vysoké předvídatelnosti ukazují spíše na co?",
+        "options": [
+          "Na PAS rámec kvalitativní odlišnosti sociálně-komunikačního zpracování.",
+          "Na primárně etopedický rámec záměrného porušování pravidel a vědomé provokace.",
+          "Na primárně logopedický rámec tvorby hlásek.",
+          "Na primárně somatopedický rámec motorického omezení."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 22,
-        "text": "Který závěr je nejpřesnější u žáka, který při rozhovoru zřetelně sleduje ústa mluvčího, v hluku ztrácí obsah a pomáhá mu lepší akustika?",
+        "text": "Dítě komunikuje přehledně, ale při nepřesných instrukcích a chaotickém prostředí se výkon rozpadá. Co je přesnější?",
         "options": [
-          "Potíže více odpovídají zrakovému postižení, protože sledování úst mluvčího bývá typickým znakem slabozrakosti.",
-          "Potíže více odpovídají sluchovému postižení a potřebě upravit komunikační situaci než primární poruše chování.",
-          "Potíže více odpovídají poruše intelektového vývoje, protože neporozumění v hluku ukazuje hlavně na oslabený úsudek.",
-          "Potíže více odpovídají tělesnému postižení, protože lepší akustika obvykle kompenzuje omezenou mobilitu."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 23,
-        "text": "Které tvrzení nejlépe vystihuje roli technických pomůcek u sluchového postižení?",
-        "options": [
-          "Pomůcky plně nahrazují potřebu upravovat komunikaci, akustiku a způsob práce ve třídě.",
-          "Pomůcky jsou významné jen u tělesného postižení, kde kompenzují manipulaci a přesuny.",
-          "Pomůcky mohou výrazně pomoci, ale samy neřeší celou komunikační situaci ani potřebu individualizované podpory.",
-          "Pomůcky se používají hlavně ke zlepšení zrakové ostrosti a čtení drobného tisku."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 24,
-        "text": "Co znamená heterogenita skupiny osob se sluchovým postižením pro plánování podpory?",
-        "options": [
-          "Že podpora se má ve škole nastavit všem žákům se sluchovým postižením stejným způsobem kvůli přehlednosti.",
-          "Že rozhodující je pouze formální audiologický údaj a ostatní komunikační okolnosti nejsou důležité.",
-          "Že individuální rozdíly jsou významné jen pro sport a volný čas, ne pro výuku a komunikaci.",
-          "Že nelze mechanicky vycházet z jedné kategorie, protože se liší míra ztráty, doba vzniku i komunikační preference."
+          "Přesnější je automaticky uzavírat PAS než číst bariéru v prostředí.",
+          "Přesnější je uzavírat logopedickou poruchu výslovnosti než číst bariéru v prostředí.",
+          "Přesnější je uzavírat psychopedické oslabení než číst bariéru v prostředí.",
+          "Přesnější je číst bariéru v nepřístupném prostředí než automaticky uzavírat PAS."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 25,
-        "text": "Které tvrzení nejlépe vystihuje somatopedický rámec?",
+        "number": 23,
+        "text": "Který znak sám o sobě pro PAS nestačí?",
         "options": [
-          "Sleduje tělesné postižení, chronické onemocnění i zdravotní oslabení v dopadu na pohyb, výkon a zapojení.",
-          "Sleduje hlavně ztrátu sluchu a komunikační systémy při osvojování jazyka.",
-          "Sleduje hlavně zrakovou ostrost, Braillovo písmo a prostorovou orientaci.",
-          "Sleduje hlavně poruchy chování, sankce a školní kázeň v konfliktních situacích."
+          "Současné doslovné chápání, potíž s reciproční komunikací a silná zátěž změnou.",
+          "Samotná obliba samostatné práce bez dalších kvalitativních znaků komunikace a reciprocity.",
+          "Trvalejší odlišnost v porozumění nepřímým pravidlům a neverbálním signálům.",
+          "Výrazná potřeba předvídatelnosti spolu s kvalitativními obtížemi sociální komunikace, a to v uvedeném rámci."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 24,
+        "text": "Když vizualizace a jasná struktura výrazně stabilizují výkon, co je nejpřesnější?",
+        "options": [
+          "Ukazuje to hlavně na jistý PAS závěr bez potřeby další diferenciace.",
+          "Ukazuje to hlavně na logopedickou poruchu výslovnosti bez další diferenciace, a to v popsané situaci.",
+          "Ukazuje to hlavně na význam zpřístupnění komunikace a prostředí; samo o sobě to PAS nedokazuje.",
+          "Ukazuje to hlavně na psychopedický závěr bez potřeby širšího obrazu."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 25,
+        "text": "Rigidita se objevila až po období dlouhého stresu, dříve bez nápadných kvalitativních zvláštností komunikace. Co je bližší?",
+        "options": [
+          "Bližší je číst současný stav přes stresovou a situační zátěž než automaticky přes PAS.",
+          "Bližší je číst současný stav automaticky přes PAS než přes stresovou zátěž.",
+          "Bližší je číst současný stav automaticky přes logopedii než přes stresovou zátěž.",
+          "Bližší je číst současný stav automaticky přes surdopedii než přes stresovou zátěž, a to v daném profilu."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 26,
-        "text": "Které rozlišení nejlépe odlišuje tělesné postižení a zdravotní oslabení?",
+        "text": "Která kombinace znaků ukazuje k PAS přesněji než k pouhé nepřístupnosti prostředí?",
         "options": [
-          "U zdravotního oslabení jde vždy o těžké omezení mobility, zatímco tělesné postižení se týká jen únavy.",
-          "U zdravotního oslabení může být jádrem únava, kolísání výkonu a režimová zátěž, ne nutně výrazné motorické omezení.",
-          "Oba pojmy jsou ve speciální pedagogice plně zaměnitelné a nemají odlišný funkční význam.",
-          "Tělesné postižení se týká hlavně čtení z tabule a zdravotní oslabení hlavně práce s kontrastem."
+          "Chaotická třída, rychlé instrukce a malá vizuální opora v jedné konkrétní hodině, a to v tomto typu rozlišení.",
+          "Doslovnost, slabší čtení nepřímých pravidel a obtíž reciproční komunikace napříč situacemi.",
+          "Vyšší hluk ve třídě a delší výklad od tabule v jedné hodině.",
+          "Jednorázové přetížení po změně rozvrhu bez dalšího vzorce."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 27,
-        "text": "Které tvrzení nejlépe vystihuje možný dopad chronického onemocnění na vzdělávání?",
+        "text": "Opakované konflikty v kolektivu vznikají hlavně z doslovného čtení ironie a nepřímých pravidel. Co je bližší?",
         "options": [
-          "Musí se projevovat hlavně poruchou artikulace a zhoršeným rozvojem slovní zásoby.",
-          "Musí se projevovat úplnou ztrátou zraku a nutností hmatového přístupu k textu.",
-          "Může se projevovat absencemi, únavou, kolísáním výkonnosti a potřebou režimových úprav i při zachovaném intelektu.",
-          "Musí se projevovat výhradně dlouhodobým agresivním chováním bez tělesných nebo zdravotních souvislostí."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 28,
-        "text": "Který závěr je nejpřesnější u žáka s častými absencemi, rychlou unavitelností a výrazným kolísáním výkonu během dne?",
-        "options": [
-          "Je vhodné uvažovat hlavně o poruše chování, protože kolísání výkonu bývá typicky projevem nespolupráce.",
-          "Je vhodné uvažovat hlavně o sluchovém postižení, protože únava bývá nejspolehlivějším znakem nedoslýchavosti.",
-          "Je vhodné uvažovat hlavně o nevidomosti, protože absence bývají typickým důsledkem zúženého zorného pole.",
-          "Je vhodné uvažovat o zdravotním oslabení nebo chronickém onemocnění a z toho odvozovat režimové úpravy."
+          "Bližší je etopedické čtení úmyslné provokace než sociálně-komunikační rámec PAS.",
+          "Bližší je logopedické čtení výslovnosti než sociálně-komunikační rámec PAS.",
+          "Bližší je somatopedické čtení motoriky než sociálně-komunikační rámec PAS.",
+          "Bližší je sociálně-komunikační rámec PAS než etopedické čtení úmyslné provokace."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 29,
-        "text": "Který typ podpory je nejpřesnější u žáka se zachovaným porozuměním učivu, ale omezenou mobilitou a obtížnou manipulací s pomůckami?",
+        "number": 28,
+        "text": "Zhoršení při hluku a více mluvčích může u PAS souviset nejvíce s čím?",
         "options": [
-          "Úprava pracovního místa, času, přesunů a způsobu práce tak, aby se snížila motorická zátěž a zachovala účast.",
-          "Primární je zcela odložit obsah učiva, protože motorické omezení automaticky znamená i nízké rozumové možnosti.",
-          "Primární je zaměřit se jen na nácvik odezírání a úpravu akustiky, protože tím se mobilita ve třídě kompenzuje.",
-          "Primární je zaměřit se výhradně na hlasovou hygienu, protože manipulace s pomůckami spadá do logopedie."
+          "S jistou poruchou výslovnosti bez další souvislosti, a to v daných podmínkách.",
+          "S jistou poruchou motoriky bez další souvislosti.",
+          "S nárokem na zpracování více současných sociálně-komunikačních podnětů.",
+          "S jistou zrakovou vadou bez další souvislosti."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
-        "number": 30,
-        "text": "Proč nestačí v somatopedickém plánování podpory vyjít jen z názvu diagnózy?",
+        "number": 29,
+        "text": "Která podpora je diagnosticky nejméně specifická pro PAS, protože pomáhá i v jiných rámcích?",
         "options": [
-          "Protože v somatopedii se diagnózy nesledují vůbec a rozhoduje jen školní prospěch z hlavních předmětů.",
-          "Protože je třeba sledovat konkrétní dopad na pohyb, sebeobsluhu, manipulaci, výdrž a zapojení v prostředí.",
-          "Protože tělesné obtíže mají vždy stejný dopad bez ohledu na situaci, prostředí a typ požadavků.",
-          "Protože motorické a zdravotní obtíže určují výhradně lékaři a ve vzdělávání se z nich nic nevyvozuje."
+          "Rozlišení reciprocity a nepřímých pravidel v sociální komunikaci.",
+          "Zpřehlednění instrukce a vizuální struktura prostředí.",
+          "Mapování doslovného porozumění a reakce na změnu pravidel.",
+          "Sledování kvalitativního průběhu sociální komunikace napříč situacemi."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 31,
-        "text": "Které rozlišení je nejpřesnější, když žák učivu rozumí, ale zpomaluje ho manipulace s pomůckami, přesuny a fyzická výdrž?",
+        "number": 30,
+        "text": "Když po zpřehlednění prostředí mizí většina problémů, co je nejpřesnější?",
         "options": [
-          "Jádro obtíží je pravděpodobně spíše psychopedické, protože každé zpomalení práce ukazuje na poruchu intelektového vývoje.",
-          "Jádro obtíží je pravděpodobně spíše tyflopedické, protože přesuny a práce s pomůckami vždy ukazují na ztrátu zraku.",
-          "Jádro obtíží je pravděpodobně spíše somatopedické než intelektové, protože problém je ve výkonu a účasti, ne v porozumění.",
-          "Jádro obtíží je pravděpodobně spíše etopedické, protože fyzická únava bývá typicky výrazem nespolupráce."
+          "Je vhodné nejdřív číst velký podíl bariéry v prostředí a komunikaci, ne spěchat k uzavření diagnózy.",
+          "Je vhodné spěchat k uzavření diagnózy a pominout, že po zpřehlednění prostředí potíže slábnou, a to v uvedeném rámci.",
+          "Je vhodné uzavřít logopedický rámec a prostředí neřešit.",
+          "Je vhodné uzavřít psychopedický rámec a prostředí neřešit."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
-        "number": 32,
-        "text": "Které tvrzení nejlépe vystihuje PAS ve vzdělávání?",
+        "number": 31,
+        "text": "Opakované odmítání práce po letech neúspěchu a veřejného zahanbování vyžaduje rozlišit hlavně co?",
         "options": [
-          "Jádrem jsou vždy pouze poruchy chování a sankce jsou proto hlavním nástrojem podpory.",
-          "Jádrem je vždy porucha intelektového vývoje, bez níž nelze o PAS ve škole uvažovat.",
-          "Jádrem je vždy ztráta sluchu, proto se PAS řeší hlavně odezíráním a akustikou.",
-          "Obtíže se mohou týkat sociálního porozumění, komunikace, flexibility i senzorického zpracování a profil je různorodý."
+          "Primární etopedické uzavření od jakékoli školní podpory a od kontextu selhávání.",
+          "Primární logopedické uzavření od sekundární obranné reakce.",
+          "Primární surdopedické uzavření od sekundární obranné reakce.",
+          "Sekundární obrannou reakci na selhávání od primárního etopedického uzavření."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 33,
-        "text": "Které rozlišení nejlépe odlišuje PAS a poruchu chování?",
+        "number": 32,
+        "text": "Který znak svědčí více pro etopedický rámec než pro jednorázovou situační reakci?",
         "options": [
-          "U PAS mohou reakce vycházet z neporozumění, přetížení nebo rigidity, kdežto u poruch chování sledujeme jinou funkci a kontext.",
-          "PAS a porucha chování se v praxi neliší, protože v obou případech jde hlavně o vědomé porušování pravidel.",
-          "PAS se od poruchy chování liší jen tím, že u PAS se nikdy nevyskytuje agrese ani útěk ze situace.",
-          "PAS a poruchu chování lze bezpečně odlišit jen podle známek, protože samotné projevy a kontext nejsou důležité."
+          "Izolovaný konflikt po jedné mimořádně náročné události.",
+          "Jednorázové odmítnutí úkolu po veřejném zahanbení.",
+          "Stabilnější vzorec porušování norem napříč prostředími a delším časem.",
+          "Krátké zhoršení po změně režimu v jinak stabilním profilu, a to v popsané situaci."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 33,
+        "text": "Vzdor se objevuje hlavně v úlohách s vysokou pravděpodobností neúspěchu. Co je přesnější?",
+        "options": [
+          "Přesnější je číst chování jako reakci na očekávané selhání než jako jistou disocialitu.",
+          "Přesnější je číst chování jako jistou disocialitu než jako reakci na selhání.",
+          "Přesnější je číst chování jako jistou poruchu sluchu než jako reakci na selhání, a to v daném profilu.",
+          "Přesnější je číst chování jako jistou zrakovou vadu než jako reakci na selhání."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 34,
-        "text": "Který závěr je nejpřesnější u žáka s dobrým intelektem, který se rozpadá při změně režimu, hluku a nejasných instrukcích?",
+        "text": "Samotné porušení pravidla bez širšího kontextu neumožňuje co?",
         "options": [
-          "Obtíže vylučují PAS, protože u této skupiny musí být vždy současně výrazně snížený intelekt.",
-          "Obtíže mohou dobře odpovídat PAS, protože intelekt nevylučuje vysokou zátěž při změně, přetížení a nejasné struktuře.",
-          "Obtíže ukazují hlavně na lenost, protože žák s dobrým intelektem by se měl změnám přizpůsobit bez podpory.",
-          "Obtíže ukazují hlavně na zrakové postižení, protože hluk a změna režimu bývají typické pro oslabení vidění."
+          "Neumožňuje odpovědně uzavřít surdopedický rámec bez další diferenciace.",
+          "Neumožňuje odpovědně uzavřít etopedický rámec bez další diferenciace.",
+          "Neumožňuje odpovědně uzavřít tyflopedický rámec bez další diferenciace.",
+          "Neumožňuje odpovědně uzavřít logopedický rámec bez další diferenciace."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 35,
-        "text": "Které tvrzení nejlépe vystihuje kombinované postižení?",
+        "text": "V bezpečném vztahu a předvídatelném režimu problémové chování výrazně slábne. Co je nejpřesnější?",
         "options": [
-          "Jde pouze o těžší stupeň jediné diagnózy, která se pro jednodušší práci označí jako kombinovaná.",
-          "Jde jen o součet nesouvisejících obtíží, které se mají vždy řešit odděleně bez návaznosti na celek.",
-          "Výsledný dopad vzniká souhrou více omezení, proto nestačí jen vyjmenovat diagnózy bez celkového funkčního pohledu.",
-          "Jde o pojem vyhrazený pouze pro souběh zrakového a sluchového postižení a žádné jiné varianty."
+          "Přesnější je číst chování jako neměnný rys a vztah neřešit.",
+          "Přesnější je číst chování jako poruchu výslovnosti a vztah neřešit, a to v tomto typu rozlišení.",
+          "Přesnější je sledovat podíl vztahu a prostředí než chování číst jako neměnný rys.",
+          "Přesnější je číst chování jako zrakovou bariéru a vztah neřešit."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 36,
-        "text": "Proč je u kombinovaného postižení nebezpečné plánovat podporu jen podle nejviditelnější obtíže?",
+        "text": "Pro etopedické čtení je nejdůležitější sledovat co?",
         "options": [
-          "Protože nejviditelnější obtíž bývá ve speciální pedagogice vždy jedinou skutečně podstatnou oblastí podpory.",
-          "Protože další oblasti obtíží se řeší až tehdy, když se výrazně zhorší prospěch z českého jazyka a matematiky.",
-          "Protože kombinované postižení se ve škole posuzuje jen tehdy, když všechny diagnózy patří do jedné disciplíny.",
-          "Protože méně nápadná oblast může zásadně měnit komunikaci, orientaci, sebeobsluhu nebo využitelnost pomůcek."
+          "Jen počet přestupků bez ohledu na kontext a funkci chování, a to v daných podmínkách.",
+          "Jen hlasitost projevu bez ohledu na kontext a trvání.",
+          "Jen poslední konflikt bez ohledu na předchozí vývoj.",
+          "Funkci chování, jeho trvání, kontext a odpověď na změnu podmínek."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 37,
-        "text": "Který závěr je nejpřesnější u dítěte s těžkým zrakovým postižením, omezenou motorikou a minimální funkční řečí?",
+        "text": "Po náhlé rodinné krizi se rychle objevují konflikty, dříve bez nápadných obtíží. Co je bližší?",
         "options": [
-          "Podpora musí vycházet z celkového funkčního profilu, protože komunikace, orientace i volba pomůcek se zde navzájem ovlivňují.",
-          "Stačí zvolit čistě logopedický plán, protože řeč automaticky vysvětlí i orientaci a práci s vizuálními informacemi.",
-          "Stačí zvolit čistě tyflopedický plán, protože motorika a komunikace se u těžkého zrakového postižení řeší až druhotně.",
-          "Stačí zvolit čistě etopedický plán, protože minimální řeč bývá hlavně projevem vztahového odporu k dospělým."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 38,
-        "text": "Které tvrzení nejlépe vystihuje plánování podpory u PAS a kombinovaných postižení?",
-        "options": [
-          "Název diagnózy přímo určuje přesný plán podpory, proto už není nutné sledovat fungování ve škole a doma.",
-          "Název diagnózy je orientační, ale rozhoduje konkrétní profil fungování v komunikaci, učení, orientaci a zátěži prostředí.",
-          "Podpora se má řídit hlavně tím, která oblast je pro učitele organizačně nejméně náročná.",
-          "Podpora má vycházet především z toho, jak žák působí při prvním setkání, protože další sledování bývá zbytečné."
+          "Bližší je jisté etopedické uzavření než situační a zátěžová reakce.",
+          "Bližší je situační a zátěžová reakce než jisté etopedické uzavření.",
+          "Bližší je jisté PAS uzavření než situační a zátěžová reakce.",
+          "Bližší je jisté logopedické uzavření než situační a zátěžová reakce."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 39,
-        "text": "Co nejlépe odpovídá etopedickému pohledu na rizikové chování?",
+        "number": 38,
+        "text": "Který znak posouvá výklad blíže k dlouhodobému etopedickému rámci?",
         "options": [
-          "Jde o jakékoli chování, které učitel subjektivně označí za nezdvořilé, bez ohledu na opakování a souvislosti.",
-          "Jde o pojem používaný hlavně pro tělesné postižení, kdy dítě nedodržuje doporučený pohybový režim.",
-          "Jde o projevy zvyšující pravděpodobnost negativních důsledků, u nichž je důležité chápat funkci a kontext, ne jen morálně soudit.",
-          "Jde o totožný pojem jako porucha výslovnosti, protože obě oblasti znamenají odchylku od normy."
+          "Problémové chování je stabilní napříč situacemi a jen málo reaguje na změnu podpory.",
+          "Problémové chování vzniká hlavně v jedné zátěžové hodině a jinde mizí.",
+          "Problémové chování souvisí hlavně s nejasnou instrukcí a po zpřehlednění slábne, a to v uvedeném rámci.",
+          "Problémové chování vzniká jen při úlohách s drobnou artikulační zátěží."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 39,
+        "text": "Když problémové chování ustupuje po odstranění přetížení a po jasném vedení, co je přesnější?",
+        "options": [
+          "Přesnější je spěchat k pevnému etopedickému závěru než číst podíl situace.",
+          "Přesnější je spěchat k pevnému surdopedickému závěru a pominout podíl situace a regulace, a to v popsané situaci.",
+          "Přesnější je číst velký podíl situačního a regulačního faktoru než spěchat k pevnému etopedickému závěru.",
+          "Přesnější je spěchat k pevnému tyflopedickému závěru než číst podíl situace."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 40,
-        "text": "Které tvrzení nejlépe rozlišuje poruchu chování a jednorázové selhání?",
+        "text": "Při rozlišení etopedie a PAS v sociálních konfliktech rozhoduje nejvíce co?",
         "options": [
-          "Rozhodující je pouze intenzita prvního konfliktu, protože jeden silný incident stačí k určení poruchy chování.",
-          "Rozhodující je výhradně známka z chování, protože ta nejlépe zachycuje dlouhodobý psychický stav.",
-          "Rozhodující je, zda dítě mluví spisovně, protože jazykový projev ukazuje na stabilitu chování.",
-          "Rozhodující je opakovanost, trvalejší maladaptace a širší kontext, ne izolovaný incident."
+          "Zda je dítě v konfliktu spíše hlasité, nebo spíše tiché a uzavřené.",
+          "Zda dítě zvládá lépe konflikty ráno, nebo až v odpoledním školním režimu, a to v daném profilu.",
+          "Zda píše rychleji fixem, nebo tužkou a na jakém typu papíru.",
+          "Zda jde hlavně o úmyslné porušování norem, nebo o odlišné porozumění sociální komunikaci."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 41,
-        "text": "Proč může mít stejný problémový projev u různých dětí odlišnou funkci?",
+        "text": "Žák naráží do překážek hlavně za šera, jemná motorika je přiměřená. Co je bližší?",
         "options": [
-          "Protože chování může sloužit k úniku, obraně, získání pozornosti, regulaci napětí nebo jinému účelu podle situace.",
-          "Protože všechny problémové projevy mají ve skutečnosti jednu univerzální příčinu, jen ji dospělí někdy přehlížejí.",
-          "Protože funkce chování je důležitá jen u PAS, zatímco v etopedii se sleduje hlavně formální porušení pravidla.",
-          "Protože význam chování se určuje hlavně podle věku dítěte a nezávisí na vztazích, podmínkách ani historii."
+          "Bližší je tyflopedické čtení orientace závislé na zrakových podmínkách.",
+          "Bližší je somatopedické čtení jemné motoriky a polohování, a to v tomto typu rozlišení.",
+          "Bližší je čistě etopedické čtení nepozornosti v prostoru.",
+          "Bližší je logopedické čtení tempa řeči."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 42,
-        "text": "Který závěr je nejpřesnější při opakovaných útěcích z vyučování?",
+        "text": "Žák chápe prostorové vztahy, ale hlavní obtíž je v přesunu, úchopu a polohování. Co je bližší?",
         "options": [
-          "Je třeba vycházet z toho, že útěk vždy znamená delikvenci a širší kontext nemá pro práci školy význam.",
-          "Je třeba zjišťovat, jakou funkci útěk plní a v jakém vztahovém či zátěžovém kontextu vzniká, ne jen trestat projev.",
-          "Je třeba vycházet z toho, že útěk vždy ukazuje na poruchu intelektového vývoje a nezvládnuté učivo.",
-          "Je třeba vycházet z toho, že útěk je typickým znakem zrakového postižení, protože žák ztrácí orientaci v prostoru."
+          "Bližší je tyflopedické čtení orientace závislé na zrakové ostrosti.",
+          "Bližší je somatopedické čtení motorického a posturálního omezení.",
+          "Bližší je psychopedické čtení sociálního úsudku.",
+          "Bližší je surdopedické čtení přístupu k mluvené informaci."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 43,
-        "text": "Které rozlišení je nejpřesnější u žáka, který vybuchuje hlavně při nejasných instrukcích a přetížení?",
+        "text": "Přístup k informaci je převážně hmatový a současně je omezena funkce rukou. Co je nejpřesnější?",
         "options": [
-          "Je třeba vycházet z toho, že každý výbuch při požadavku je důkazem vědomého odporu a manipulace.",
-          "Je třeba vycházet z toho, že problém se týká hlavně hlasové poruchy, protože výbuch obvykle souvisí s artikulací.",
-          "Je třeba zvažovat, zda nejde o reakci na neporozumění, přetížení nebo ztrátu kontroly, ne pouze o úmyslný vzdor.",
-          "Je třeba vycházet z toho, že jde primárně o zrakové oslabení, protože nejasné instrukce bývají důsledkem zorného pole."
+          "Nejpřesnější je situaci zúžit jen na tyflopedický profil.",
+          "Nejpřesnější je situaci zúžit jen na somatopedický profil, a to v daných podmínkách.",
+          "Nejpřesnější je uvažovat kombinovaný tyflopedicko-somatopedický profil.",
+          "Nejpřesnější je situaci zúžit jen na etopedický profil."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 44,
-        "text": "Který školní přístup nejlépe odpovídá etopedickému rámci?",
+        "text": "Který znak ukazuje více k somatopedickému než k tyflopedickému rámci?",
         "options": [
-          "Nejistá pravidla a proměnlivé reakce dospělých, aby si dítě nevybudovalo návyk na strukturu.",
-          "Výlučně sankční přístup bez vysvětlení a bez sledování spouštěčů, aby bylo jasné, kdo má moc.",
-          "Odklad jakékoli reakce až do okamžiku, kdy problém sám odezní nebo přejde do jiné třídy.",
-          "Srozumitelná pravidla, předvídatelnost, vztahová opora, včasná prevence a práce s funkcí chování."
+          "Závislost orientace na kontrastu, osvětlení a vzdálenosti.",
+          "Závislost orientace na kontrastu, osvětlení a vzdálenosti při pohybu i čtení, a to v uvedeném rámci.",
+          "Nejistota v prostoru hlavně při šeru a oslnění.",
+          "Zachovaný vizuální přístup k informaci při výrazné obtíži v polohování a manipulaci."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 45,
-        "text": "Které rozlišení je nejpřesnější u dvojice situací: potřeba odezírání a lepší akustiky versus sociálně-komunikační neporozumění a rigidita?",
+        "text": "Který znak ukazuje více k tyflopedickému než k somatopedickému rámci?",
         "options": [
-          "První obraz více odpovídá sluchovému postižení, druhý spíše PAS.",
-          "První obraz více odpovídá PAS, druhý spíše zrakovému postižení.",
-          "První obraz více odpovídá tělesnému postižení, druhý spíše chronickému onemocnění.",
-          "První obraz více odpovídá poruše intelektového vývoje, druhý spíše hlasové poruše."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 46,
-        "text": "Který závěr je nejpřesnější, když žák selhává hlavně v zobecnění, plánování a praktickém použití naučeného, nikoli v přístupu k vizuálním informacím?",
-        "options": [
-          "Obtíže více ukazují na tyflopedický rámec, protože zobecnění a plánování jsou typickým důsledkem oslabení zraku.",
-          "Obtíže více ukazují na psychopedický rámec než na primárně zrakové postižení.",
-          "Obtíže více ukazují na sluchové postižení, protože praktické použití naučeného závisí hlavně na akustice třídy.",
-          "Obtíže více ukazují na etopedický rámec, protože každé selhávání v zobecnění znamená hlavně odpor ke škole."
+          "Závislost manipulace na držení těla, postuře a rozsahu pohybu.",
+          "Závislost orientace a čtení na osvětlení, kontrastu a vzdálenosti.",
+          "Závislost přesunu na stabilitě sedu a motorickém plánování těla, a to v popsané situaci.",
+          "Závislost úchopu na posturální opoře a nastavení pomůcek."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 47,
-        "text": "Které tvrzení nejlépe vystihuje vztah diagnózy a funkčního dopadu ve vzdělávání?",
+        "number": 46,
+        "text": "Potřeba zvětšení, kontrastu a kontroly osvětlení ukazuje primárně na co?",
         "options": [
-          "Diagnóza sama o sobě stačí k přesnému určení metod, pomůcek i realistických cílů bez dalšího sledování.",
-          "Funkční dopad je důležitý jen u poruch chování, zatímco u ostatních kategorií rozhoduje pouze název diagnózy.",
-          "Stejná diagnóza může mít různý dopad, proto se podpora nesmí plánovat bez znalosti konkrétního fungování v prostředí.",
-          "Funkční dopad bývá ve škole méně důležitý než první dojem učitele a reakce třídy."
+          "Na tyflopedické řešení přístupu k vizuálně podané informaci.",
+          "Na somatopedické řešení polohování a přesunu, a to v daném profilu.",
+          "Na etopedické řešení pravidel a sankcí.",
+          "Na logopedické řešení tvorby hlásek."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
-        "number": 48,
-        "text": "Proč je v Baterii 2 důležité diferenciálně rozlišovat jevy, které se povrchově podobají?",
+        "number": 47,
+        "text": "Potřeba stabilizace sedu, polohy a přesunu při zachovaném vizuálním přístupu ukazuje primárně na co?",
         "options": [
-          "Protože přijímací test sleduje hlavně paměť terminologie a mechanismus projevu není pro správnou odpověď podstatný.",
-          "Protože všechny povrchově podobné jevy se ve speciální pedagogice řeší stejnými metodami a stejnou organizací výuky.",
-          "Protože diferenciální rozlišování je důležité jen v medicíně, ale ne ve speciálněpedagogickém uvažování.",
-          "Protože podobný projev může mít odlišný mechanismus a bez přesného rozlišení se snadno zvolí nevhodná podpora."
+          "Na tyflopedické čtení kontrastu a osvětlení, a to v tomto typu rozlišení.",
+          "Na surdopedické čtení auditivního vstupu.",
+          "Na PAS čtení reciprocity a doslovnosti.",
+          "Na somatopedické čtení motorického a posturálního fungování."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 49,
-        "text": "Který závěr je nejpřesnější, když žák s PAS při změně rozvrhu propadá úzkosti, ztrácí orientaci v úkolu a výkon prudce klesá?",
+        "number": 48,
+        "text": "Prostorová orientace kolísá podle světla a současně je manipulace zpomalená kvůli hybnosti rukou. Co je nejpřesnější?",
         "options": [
-          "Klíčová je předvídatelnost, srozumitelná struktura a podpora přechodů, ne jen opakované domlouvání po selhání.",
-          "Klíčové je ponechat situaci bez přípravy, aby si žák postupně zvykl na nepředvídatelnost bez opory.",
-          "Klíčové je hodnotit hlavně míru kázně, protože pokles výkonu při změně rozvrhu bývá projevem neochoty.",
-          "Klíčové je řešit primárně zrakovou ostrost, protože úzkost při změně rozvrhu bývá důsledkem nečitelných materiálů."
+          "Nejpřesnější je uzavřít jen tyflopedický rámec a motoriku neřešit.",
+          "Nejpřesnější je uzavřít jen somatopedický rámec a zrakové podmínky neřešit, a to v daných podmínkách.",
+          "Nejpřesnější je číst propojený kombinovaný profil, ne uzavřít jen jeden rámec.",
+          "Nejpřesnější je uzavřít jen etopedický rámec a přístup k informaci neřešit."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 49,
+        "text": "Samotná únava při delším psaní bez zrakově podmíněné orientační bariéry míří spíše k čemu?",
+        "options": [
+          "Spíše k somatopedickému nebo motorickému čtení než k tyflopedickému čtení orientace.",
+          "Spíše k tyflopedickému čtení orientace než k somatopedickému nebo motorickému čtení.",
+          "Spíše k PAS čtení reciprocity než k motorickému čtení.",
+          "Spíše k surdopedickému čtení hluku než k motorickému čtení."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 50,
-        "text": "Který princip plánování podpory je v Baterii 2 nejpřesnější napříč různými skupinami žáků?",
+        "text": "Které vyjádření nejlépe rozlišuje tyflopedický a somatopedický rámec?",
         "options": [
-          "Vyjít hlavně z toho, která diagnóza zní nejzávažněji, a ostatní oblasti považovat za druhotné.",
-          "Vyjít z toho, jak žák skutečně funguje v komunikaci, učení, pohybu, sebeobsluze a zátěži prostředí, a podle toho volit podporu.",
-          "Vyjít hlavně z toho, co je organizačně nejsnazší pro školu, protože to bývá zároveň nejúčinnější pro žáka.",
-          "Vyjít hlavně z prvního dojmu a rychle potvrdit jednu interpretaci, aby se plán podpory nemusel průběžně upravovat."
+          "Tyflopedie řeší hlavně polohu a přesun těla, somatopedie hlavně osvětlení a kontrast textu.",
+          "Tyflopedie řeší hlavně přístup k vizuální informaci a orientaci, somatopedie hlavně polohu, přesun a manipulaci.",
+          "Tyflopedie řeší hlavně auditivní vstup a hluk, somatopedie hlavně tvorbu hlásek a artikulaci, a to v uvedeném rámci.",
+          "Tyflopedie řeší hlavně pravidla chování a sociální normy, somatopedie hlavně reciprocitu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -1274,648 +1279,1304 @@ window.SCIO_V4_RAW_BATTERIES = [
         "C": 12,
         "D": 12
       },
-      "distributionTarget": "13/13/12/12 nebo 12/13/13/12 apod.",
+      "distributionTarget": "13/13/12/12 bez rytmického vzorce",
       "distributionBalanced": true,
-      "distractorAudit": {
-        "strictLongestCorrectCount": 26,
-        "strictShortestCorrectCount": 6,
-        "averageOptionLengthSpread": 21.1,
-        "maxOptionLengthSpread": 41
+      "styleParity": {
+        "correctUniquelyLongestCount": 0,
+        "correctLongestTieCount": 5,
+        "note": "Správná odpověď není unikátně nejdelší v žádné položce."
       }
     }
   },
   {
     "id": 3,
     "label": "Baterie 3",
-    "title": "Intervence, metody práce a podpůrné postupy",
-    "subtitle": "Funkční volba podpory, metod práce, pomůcek a hodnocení bez stylově prozrazeného klíče.",
-    "purpose": "Testovat, zda student umí převést typ bariéry do nejvhodnějšího intervenčního těžiště, a nenechá se svést jen učebnicově znějící odpovědí.",
-    "difficulty": "střední až vyšší",
+    "title": "Intervence, metody práce a podpůrné postupy – tvrdá diferenciace",
+    "subtitle": "Reedukace, kompenzace, AAK, přístupnost, forma výkonu a funkční volba podpory bez návodného klíče.",
+    "purpose": "Ověřit, zda uchazeč přesně rozliší typ intervence, umí z hlavní bariéry vyvodit nejvhodnější podporu a nenechá se svést obecně správně znějící, ale funkčně nepřesnou možností.",
+    "difficulty": "velmi vysoká",
     "dominant": [
-      "reedukace a kompenzace",
-      "rehabilitace a funkční samostatnost",
-      "podpůrná opatření a individualizace",
-      "pedagogická intervence",
-      "AAK a komunikační prostředky",
-      "zrakové postižení a přístupnost",
-      "sluchové postižení a dostupnost komunikace",
-      "PAS a strukturování prostředí",
-      "tělesné a kombinované postižení",
-      "hodnocení a forma výkonu"
+      "reedukace vs kompenzace",
+      "AAK a komunikační přístupnost",
+      "zraková a sluchová dostupnost informací",
+      "PAS: struktura, přechody a regulace",
+      "somatopedie a forma výkonu",
+      "hodnocení: forma vs konstrukt",
+      "funkční volba pomůcek a asistivních technologií",
+      "evaluace účinku podpory"
     ],
     "breakdown": [
-      "10× koncepty a přesná rozlišení intervenčních rámců",
-      "12× kazuistiky: bariéra → volba podpory",
-      "10× pomůcky a komunikační / technické prostředky",
-      "10× podpůrná opatření, organizace práce a hodnocení",
-      "8× nevhodný postup, přetížení nebo chybná generalizace"
+      "10× přesná rozlišení intervenčních rámců a metod",
+      "10× AAK, komunikátory a komunikační přístupnost",
+      "10× zraková a sluchová přístupnost úkolu a výkladu",
+      "8× forma výkonu, hodnocení a ochrana konstruktu úkolu",
+      "6× PAS, exekutivní obtíže a regulace prostředí",
+      "6× obecné principy funkční volby podpory a evaluace účinku"
     ],
     "tags": [
       "intervence",
-      "podpůrná opatření",
-      "pomůcky",
+      "reedukace",
+      "kompenzace",
       "AAK",
-      "hodnocení"
+      "přístupnost",
+      "hodnocení",
+      "hard mode",
+      "UPOL"
     ],
     "durationMinutes": 30,
     "questionCount": 50,
     "questions": [
       {
         "number": 1,
-        "text": "Které vymezení nejpřesněji odpovídá reedukaci ve speciálněpedagogické práci?",
+        "text": "Které vymezení nejpřesněji odpovídá reedukaci?",
         "options": [
-          "Cílený nácvik oslabené funkce s postupným ověřováním, zda se výkon skutečně zlepšuje.",
-          "Volba jiné cesty k výkonu bez očekávání, že se oslabená funkce sama výrazně posílí.",
-          "Zajištění širší podpory soběstačnosti a zapojení v běžném životě mezi více profesemi.",
-          "Úprava organizace, hodnocení a materiálů tak, aby škola snížila bariéry ve výuce."
+          "Cílený nácvik oslabené funkce s ověřováním, zda se výkon skutečně zlepšuje.",
+          "Využití jiné cesty k výsledku bez očekávání přímého posílení oslabené funkce.",
+          "Soubor zdravotnických výkonů zaměřených hlavně na léčbu základní diagnózy.",
+          "Obecné zjednodušení úkolu, aby byl pro žáka méně zatěžující. v tomto pojetí."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 2,
-        "text": "Žák s výraznou dysgrafií rozumí učivu, ale dlouhý ruční zápis mu rozpadá výkon. Které intervenční těžiště je nejvhodnější?",
+        "text": "Které vymezení nejpřesněji odpovídá kompenzaci?",
         "options": [
-          "Zachovat stejný rozsah ručního zápisu a soustředit se hlavně na vyšší pracovní tempo.",
-          "Oddělit obsah odpovědi od grafomotorické náročnosti a nabídnout přístupnější formu záznamu.",
-          "Přesunout většinu odpovědí na asistenta, aby žák nebyl zatěžován samostatným výkonem.",
-          "Plošně snížit očekávání ve všech předmětech bez vazby na konkrétní bariéru."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 3,
-        "text": "Které tvrzení nejlépe vystihuje rehabilitační přístup v širším speciálněpedagogickém kontextu?",
-        "options": [
-          "Jde hlavně o nahodilé úpravy školní práce bez návaznosti na každodenní fungování člověka.",
-          "Jde jen o dodání pomůcky bez nácviku jejího používání v různých životních situacích.",
-          "Jde o proces podpory funkční samostatnosti, soběstačnosti a zapojení, často mezioborově.",
-          "Jde pouze o návrat ke stejnému školnímu výkonu, nikoli o běžné denní činnosti a participaci."
+          "Postupné odstraňování bariéry intenzivním procvičováním oslabené funkce až do její normalizace. v tomto pojetí.",
+          "Jednorázové snížení náročnosti úkolu bez vztahu k tomu, co bariéru skutečně způsobuje. v dané situaci. podle tohoto přístupu.",
+          "Využití náhradní strategie, pomůcky nebo jiného kanálu tak, aby bylo možné dosáhnout cíle i přes trvající bariéru.",
+          "Převedení podpory výhradně do zdravotnické péče mimo vzdělávací situace. v tomto typu úkolu. bez dalšího rozlišení."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 4,
-        "text": "Který princip nejlépe odpovídá současné logice podpůrných opatření ve vzdělávání?",
+        "number": 3,
+        "text": "V jaké situaci je těžiště podpory spíše kompenzační než reedukační?",
         "options": [
-          "Opírat se především o název diagnózy a podle něj převzít hotový postup pro celou kategorii žáků.",
-          "Přistoupit k podpoře až tehdy, když žák dlouhodobě selhává ve všech předmětech bez výjimky.",
-          "Považovat podporu hlavně za úlevu od nároků, aby se omezila frustrace bez dalšího plánování.",
-          "Vycházet z funkčního dopadu obtíže a podle něj upravit metody, organizaci, komunikaci i hodnocení."
+          "Žák chybuje v násobilce a potřebuje postupný nácvik početních spojů. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
+          "Žák rozumí obsahu, ale kvůli závažné zrakové bariéře potřebuje zvětšení, kontrast nebo audio přístup k textu.",
+          "Žák má oslabené fonologické uvědomování a potřebuje systematický rozvoj této dovednosti. v tomto typu úkolu.",
+          "Žák si osvojuje nové grafomotorické tahy a potřebuje přesný model a opakování. bez dalšího rozlišení."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 4,
+        "text": "Žák rozumí předčítanému textu, ale selhává u hustě vysázené stránky s drobným písmem. Které opatření míří nejpřesněji na bariéru?",
+        "options": [
+          "Intenzivní nácvik mluvnice, protože potíž je zjevně jazyková. v tomto pojetí. v dané situaci.",
+          "Snížení obsahových nároků, protože čtení je pro žáka příliš složité. podle tohoto přístupu.",
+          "Zákaz předčítání, aby bylo jasné, co žák zvládne bez jakékoli podpory. v tomto typu úkolu. bez dalšího rozlišení.",
+          "Úprava vizuální podoby textu a způsobu jeho zpřístupnění, ne automatický závěr o slabém porozumění."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 5,
-        "text": "Které rozlišení reedukace a kompenzace je nejpřesnější?",
+        "text": "Při zjišťování znalostí z dějepisu u žáka se závažnou dysgrafií je nejpřesnější postup:",
         "options": [
-          "Reedukace se snaží oslabenou funkci zlepšovat, kompenzace hledá jinou funkční cestu k cíli.",
-          "Reedukace vždy předchází kompenzaci a kompenzace se zavádí až po úplném ukončení nácviku.",
-          "Kompenzace je určena jen pro smyslová postižení, zatímco reedukace jen pro poruchy učení.",
-          "Oba pojmy znamenají ve školní praxi totéž a liší se jen podle oblíbenosti termínu."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 6,
-        "text": "Žák s PAS zvládá obsah učiva, ale opakovaně selhává při náhlých změnách režimu a nepřímých pravidlech. Který postup je nejvhodnější?",
-        "options": [
-          "Zvyšovat náhodnost zadání, aby se naučil fungovat bez předvídatelných opor.",
-          "Zavést předvídatelnou strukturu, vizuální opory a jasně formulovaná očekávání.",
-          "Soustředit se hlavně na delší písemné rozbory pocitů po každé změně bez úprav prostředí.",
-          "Omezit podporu na častější napomínání, aby si rychleji osvojil běžný třídní režim."
+          "Trvat na ručním zápisu, protože změna formy by vždy znehodnotila srovnatelnost výsledku.",
+          "Zachovat obsahový cíl a upravit formu odpovědi tak, aby rukopis nebyl hlavní bariérou výkonu.",
+          "Snížit množství učiva, protože dysgrafie znamená i nižší porozumění obsahu. v tomto pojetí.",
+          "Hodnotit hlavně estetiku zápisu, protože ta nejlépe ukáže úroveň zvládnutí látky. v dané situaci."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 7,
-        "text": "Který postup je nejvhodnější při zavádění AAK u dítěte s těžce omezenou mluvenou řečí?",
+        "number": 6,
+        "text": "U žáka bez funkční mluvené řeči, který spolehlivě rozlišuje symboly a volí mezi nimi, je nejvhodnější těžiště podpory:",
         "options": [
-          "Vyčkat, zda se spontánně nerozvine běžná řeč, a do té doby nezavádět jiné komunikační cesty.",
-          "Vybrat systém hlavně podle toho, co je technicky nejmodernější, i kdyby neodpovídal dítěti.",
-          "Volit systém podle reálných schopností uživatele a situací, ve kterých potřebuje skutečně komunikovat.",
-          "Zúžit komunikaci jen na terapeutické situace, aby se dítě v běžném prostředí nepřetěžovalo."
+          "Zavést a systematicky rozvíjet multimodální AAK napříč výukou i běžnými situacemi.",
+          "Čekat, zda se spontánně nerozvine mluvená řeč bez jiné komunikační podpory.",
+          "Omezit komunikaci jen na jednoduché pokyny, aby se žák komunikačně nepřetěžoval.",
+          "Soustředit se výhradně na motorický trénink ruky a komunikaci odložit. v tomto pojetí."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 7,
+        "text": "Které tvrzení o AAK je nejpřesnější?",
+        "options": [
+          "AAK je vhodná jen tehdy, když je jisté, že se mluvená řeč už nikdy nerozvine. v tomto pojetí. v dané situaci.",
+          "AAK slouží hlavně ke zjednodušení výuky pro dospělé kolem dítěte. podle tohoto přístupu. v tomto typu úkolu.",
+          "AAK není jen náhradou řeči; je to prostředek funkčního porozumění a vyjadřování podle potřeb konkrétního uživatele.",
+          "AAK vždy nahrazuje všechny ostatní komunikační kanály jedním univerzálním systémem. bez dalšího rozlišení. v daném rámci práce."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 8,
-        "text": "Které opatření nejlépe odpovídá žákovi se sluchovým postižením při frontální výuce?",
+        "text": "Co je při zavádění komunikátoru nejdůležitější?",
         "options": [
-          "Opřít se hlavně o to, že si chybějící informace doplní z reakcí spolužáků.",
-          "Ponechat místo v lavici beze změny a řešit obtíže až při výrazně zhoršeném prospěchu.",
-          "Zaměřit se pouze na opis z tabule a omezit přímou interakci s učitelem.",
-          "Zajistit vizuálně dostupnou komunikaci, vhodné místo a podle potřeby i technickou poslechovou podporu."
+          "Aby pomůcka byla funkčně použitelná v reálných situacích a partneři uměli s komunikačním systémem pracovat.",
+          "Aby byla technicky co nejsložitější a měla co nejvíce funkcí bez ohledu na rutinu uživatele. v tomto pojetí.",
+          "Aby se používala jen v terapii, kde je prostředí nejvíce pod kontrolou. v dané situaci. podle tohoto přístupu.",
+          "Aby nahradila všechny jiné způsoby komunikace během jednoho týdne. v tomto typu úkolu. bez dalšího rozlišení."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 9,
-        "text": "Který cíl nejlépe odpovídá nácviku orientace a mobility u člověka se zrakovým postižením?",
+        "text": "Žák s těžkou dysartrií mluví nesrozumitelně, ale rozumí instrukcím a adekvátně reaguje. Který závěr je nejpřesnější?",
         "options": [
-          "Bezpečný a co nejvíce samostatný pohyb v prostoru a na trasách podle funkčních možností člověka.",
-          "Rozvoj mluveného projevu tak, aby mohl lépe slovně popisovat prostorová schémata druhým.",
-          "Nácvik grafomotoriky a jemné motoriky při manipulaci s běžnými školními pomůckami.",
-          "Zvýšení tolerance k vizuální zátěži při práci s drobným tiskem v běžných materiálech."
+          "Srozumitelnost řeči sama nevypovídá přímo o úrovni porozumění ani myšlení.",
+          "Nesrozumitelná řeč znamená, že je zřejmě výrazně narušené i porozumění obsahu.",
+          "U takového profilu je nejpřesnější nepokládat náročnější otázky, dokud řeč nebude čistší.",
+          "Při nesrozumitelné řeči je nejbezpečnější vycházet z toho, že žák nerozumí složitějším instrukcím."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 10,
-        "text": "Žák používající AAK potřebuje delší čas na sestavení sdělení. Který přístup je nejvhodnější?",
+        "text": "U nedoslýchavého žáka při frontálním výkladu míří nejpřesněji k bariéře:",
         "options": [
-          "Snažit se komunikaci urychlit omezením odpovědí jen na ano a ne.",
-          "Respektovat delší čas na odpověď a vytvářet prostor pro funkční využití zvoleného systému.",
-          "Považovat AAK jen za přechodný nácvik a ve výuce vyžadovat především verbální reakce.",
-          "Přenechat obsah odpovědí dospělému, pokud by vlastní sdělení dítěte trvalo déle."
+          "Dodání hotových poznámek po hodině bez úpravy živé komunikace během výuky. v tomto pojetí.",
+          "Zlepšení akustických a vizuálních podmínek komunikace a zajištění dostupného průběžného vstupu.",
+          "Přesun všech úkolů na domácí samostudium, protože výklad je pro žáka vždy nevhodný. v dané situaci.",
+          "Požadavek, aby si žák vždy domyslel chybějící části sdělení z kontextu. podle tohoto přístupu."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 11,
-        "text": "Které opatření nejlépe podporuje slabozrakého žáka, který funkčně využívá zbytky zraku při čtení?",
+        "text": "Který postup řeší u žáka se sluchovým postižením spíše následek než hlavní bariéru?",
         "options": [
-          "Přejít vždy rovnou na reliéfní čtení bez ohledu na to, jak žák zrak prakticky používá.",
-          "Ponechat běžné materiály, aby se zrak přirozeně cvičil vyšší zátěží.",
-          "Upravit kontrast, velikost, formát a způsob práce podle funkčního vidění konkrétního žáka.",
-          "Nahradit práci s textem dlouhodobě jen předčítáním učitele bez aktivního zapojení žáka."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 12,
-        "text": "Které vymezení nejlépe odpovídá pedagogické intervenci ve škole?",
-        "options": [
-          "Je to označení pro jakoukoli mimořádnou pomoc poskytovanou pouze externím specialistou.",
-          "Jejím hlavním cílem je trvale nahradit běžnou výuku individuálním doučováním doma.",
-          "Slouží jen pro žáky se smyslovým postižením a bez vazby na učební styl či domácí přípravu.",
-          "Má posílit vzdělávání tam, kde je potřeba cílená podpora učebního stylu, dovedností nebo domácí přípravy."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 13,
-        "text": "Který přístup nejlépe odpovídá žákovi s lehkým poruchou intelektového vývoje při osvojování nového učiva?",
-        "options": [
-          "Menší kroky, názornost, opakování a průběžné ověřování porozumění instrukcím.",
-          "Dlouhé abstraktní zadání s minimem opor, aby si vytvářel samostatné strategie bez vedení.",
-          "Přesun hlavní práce na spolužáka nebo asistenta, aby se žák neunavil průběhem hodiny.",
-          "Ponechání stejného postupu jako u třídy a vyhodnocení podpory až po delším selhávání."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 14,
-        "text": "Který postup je nejvhodnější u žáka, jehož znalosti odpovídají věku, ale motorická limitace výrazně zpomaluje písemný výkon?",
-        "options": [
-          "Hodnotit písemnou práci primárně podle rychlosti a grafické úpravy stejně jako u ostatních.",
-          "Nabídnout delší čas, vhodnou formu záznamu a hodnotit hlavně obsah místo motorické náročnosti.",
-          "Omezit ověřování znalostí jen na minimum, aby se snížila zátěž spojená s výkonem.",
-          "Převést žáka automaticky do méně náročného programu bez ohledu na skutečný vzdělávací potenciál."
+          "Upravit podmínky tak, aby žák měl co nejlepší přístup k mluvenému sdělení během vyučování.",
+          "Spoléhat hlavně na doplnění zápisu po hodině místo dostupné komunikace v průběhu výuky.",
+          "Průběžně ověřovat porozumění důležitým informacím a přechodům mezi činnostmi.",
+          "Pracovat s takovým uspořádáním třídy, které usnadní vizuální sledování komunikace."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 15,
-        "text": "Dítě s těžkým kombinovaným postižením reaguje nejlépe na rytmus, dotek, změnu polohy a jednoduché senzorické podněty. Hlavní těžiště podpory je",
+        "number": 12,
+        "text": "Při práci s diagramem u nevidomého žáka je nejvhodnější:",
         "options": [
-          "v rozvoji metajazykových dovedností a práci s abstraktními kategoriemi při běžné výuce",
-          "v co nejrychlejším nácviku samostatného tichého čtení delších textů bez dalších opor",
-          "v podpoře vnímání těla, kontaktu, orientace a základního zapojení prostřednictvím bazální stimulace",
-          "v ponechání podnětů bez struktury, aby dítě samo spontánně ukázalo, které strategie preferuje"
+          "Volit taktilní nebo jinak nehledové zpřístupnění informace místo prostého odkazu na vizuální schéma.",
+          "Nechat schéma beze změny a očekávat, že slovní doplnění během práce bude stačit. v tomto pojetí.",
+          "Úkol vyřadit, protože graficky podaná informace nemůže být nikdy přístupná. v dané situaci. podle tohoto přístupu.",
+          "Snížit obsahovou náročnost úkolu bez ohledu na to, zda jde informaci zpřístupnit jinou cestou."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 13,
+        "text": "U žáka se zbytky zraku a výraznou vizuální unavitelností bývá nejpřesnější první krok:",
+        "options": [
+          "Ponechat materiály stejné a prodlužovat čas bez dalších úprav vizuální podoby.",
+          "Převést všechny úkoly automaticky do Braillova písma bez ověření skutečného funkčního profilu.",
+          "Upravit kontrast, velikost, hustotu a rozvržení materiálu podle funkčního vidění žáka.",
+          "Vyřadit práci s textem, protože zraková unavitelnost znamená nemožnost číst."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 14,
+        "text": "Co nejlépe vystihuje strukturování úkolu u žáka s PAS?",
+        "options": [
+          "Zpřehlednit sled kroků, očekávaný výstup a podmínky práce tak, aby byla situace čitelná a předvídatelná.",
+          "Přidat co nejvíce verbálních vysvětlení najednou, aby měl žák dost podnětů ke zpracování. v tomto pojetí.",
+          "Střídat pravidla podle momentální situace, aby se žák učil flexibilitě bez opory. v dané situaci.",
+          "Vyhýbat se vizuální opoře, protože by na ní mohl být závislý. podle tohoto přístupu. v tomto typu úkolu."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 15,
+        "text": "Při náročných přechodech mezi činnostmi u žáka s PAS mívá nejvyšší oporu:",
+        "options": [
+          "Okamžité ukončení činnosti bez přípravy, aby si žák postupně zvykl na změny. v tomto pojetí.",
+          "Ponechání zcela otevřeného času, aby si žák mohl změnu odhadnout sám. v dané situaci. podle tohoto přístupu.",
+          "Předvídatelné oznámení změny a jasný přechodový rámec, ne improvizované přerušení bez signálu.",
+          "Nahrazení všech přechodů slovní improvizací bez stálých orientačních opor. v tomto typu úkolu."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 16,
-        "text": "Který přístup nejlépe odpovídá roli asistenta pedagoga ve třídě?",
+        "text": "Žák se při hluku rychle přetíží a přestává spolupracovat. Který další krok je nejpřesnější?",
         "options": [
-          "Přebírá hlavní odpovědnost za vzdělávání žáka a rozhoduje místo učitele o obsahu výuky.",
-          "Je určen hlavně k tomu, aby za žáka prováděl činnosti, které jsou pro něj náročnější.",
-          "Má dlouhodobě izolovat žáka od běžných třídních aktivit, aby se předešlo přetížení.",
-          "Podporuje pedagoga i žáka tak, aby se žák mohl co nejvíce samostatně a aktivně zapojovat do výuky."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 17,
-        "text": "Který postup nejlépe odpovídá kompenzaci u žáka, který kvůli těžké dysartrii nezvládá srozumitelnou mluvenou odpověď?",
-        "options": [
-          "Umožnit jinou funkční cestu sdělení, například komunikační tabulku nebo technologickou podporu.",
-          "Čekat s podporou, dokud se spontánně nezlepší artikulace natolik, aby mohl odpovídat běžně.",
-          "Zaměřit výuku hlavně na rozsáhlé procvičování psaného diktátu bez změny komunikačního režimu.",
-          "Vyřadit žáka z ústních situací a ponechat komunikaci jen mezi ním a jedním dospělým mimo třídu."
+          "Upravit senzorickou a organizační zátěž prostředí a sledovat, zda se tím mění průběh výkonu.",
+          "Vyložit situaci hlavně jako neochotu plnit pokyny a zvýšit tlak na okamžitou poslušnost.",
+          "Přidat další podněty, aby si žák na hluk a změť vjemů postupně zvykl bez podpory. v tomto pojetí.",
+          "Zcela rezignovat na náročnější činnosti, protože přetížení vždy znemožní učení. v dané situaci."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 18,
-        "text": "Které opatření nejlépe odpovídá žákovi, který se snadno ztrácí v dlouhých jazykově složitých instrukcích, ale učivo obsahově zvládá?",
+        "number": 17,
+        "text": "U tělesného postižení a rychlé únavy ruky při psaní je nejpřesnější:",
         "options": [
-          "Přísně sankcionovat nepřesné splnění úkolu, aby byl nucen více se soustředit na verbální zadání.",
-          "Instrukce členit, zpřístupňovat, ověřovat porozumění a poskytovat přiměřenou oporu.",
-          "Nahradit většinu samostatné práce opisem z tabule, aby se omezil význam instrukční části.",
-          "Přenést interpretaci každého zadání na spolužáka, který bude určovat, co má žák udělat."
+          "Zachovat stejný objem ručního psaní, protože jen tak lze výkon spravedlivě porovnat. v tomto pojetí.",
+          "Snížit automaticky všechny obsahové požadavky, protože motorická únava znamená i nižší porozumění.",
+          "Přesunout veškeré psaní na domácí přípravu bez úprav práce ve škole. v dané situaci. podle tohoto přístupu.",
+          "Řešit ergonomii, délku zápisu a alternativní formu záznamu místo prostého tlaku na tempo ručního psaní."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 18,
+        "text": "Který postup je při volbě podpory nejméně funkční?",
+        "options": [
+          "Vyjít z toho, kde přesně vzniká bariéra v konkrétním úkolu a situaci. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
+          "Vybrat podporu hlavně podle názvu diagnózy a předpokládat, že u všech žáků se stejným označením bude fungovat stejně.",
+          "Porovnat, zda zvolená podpora mění přístup k úkolu, nebo už mění i jeho cíl. v tomto typu úkolu. bez dalšího rozlišení.",
+          "Ověřovat po zavedení podpory, zda skutečně zlepšuje výkon a participaci. v daném rámci práce. v tomto pojetí."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 19,
-        "text": "Který princip je nejdůležitější při plánování podpory u kombinovaného postižení?",
+        "text": "Které rozlišení reedukace a kompenzace je nejpřesnější?",
         "options": [
-          "Vybrat jednu vedoucí diagnózu a podle ní převzít standardní soubor opatření pro celou kategorii.",
-          "Rozlišit, který z problémů se jeví při prvním dojmu jako nejzávažnější, a ostatní řešit až později.",
-          "Sledovat funkční dopad obtíží v reálných činnostech a podle něj kombinovat potřebné způsoby podpory.",
-          "Soustředit se hlavně na to, aby se podpora v jednotlivých prostředích co nejméně měnila."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 20,
-        "text": "Které opatření je nejvhodnější u nevidomého žáka při práci s učebními materiály?",
-        "options": [
-          "Ponechat vizuální materiály v běžné podobě, aby měl stejné zadání jako ostatní žáci.",
-          "Opřít výuku jen o ústní výklad a rezignovat na aktivní práci žáka s materiálem.",
-          "Vést žáka k tomu, aby si informace zprostředkovával hlavně od spolužáků během hodin.",
-          "Zajistit přístupné formáty a pomůcky odpovídající tomu, jak žák informace reálně přijímá a zpracovává."
+          "Reedukace i kompenzace znamenají totéž; rozdíl je jen v délce trvání podpory. v tomto pojetí. v dané situaci.",
+          "Reedukace vždy patří do zdravotnictví a kompenzace výhradně do školy. podle tohoto přístupu. v tomto typu úkolu.",
+          "Kompenzace je vhodná jen dočasně a reedukace jen u dospělých klientů. bez dalšího rozlišení. v daném rámci práce.",
+          "Reedukace směřuje k rozvoji oslabené funkce, kompenzace k dosažení cíle jinou cestou navzdory trvající bariéře."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 21,
-        "text": "Který závěr o AAK je nejpřesnější?",
+        "number": 20,
+        "text": "Kdy je prodloužený čas metodicky nejlépe odůvodněn?",
         "options": [
-          "AAK může řeč doplňovat i nahrazovat; neznamená automaticky rezignaci na komunikaci ani na porozumění.",
-          "AAK se zavádí až tehdy, když se prokáže, že člověk nebude nikdy schopen použít žádný hlasový projev.",
-          "AAK je vhodná hlavně pro terapeutickou místnost, zatímco v běžné komunikaci spíše ruší kontakt s okolím.",
-          "AAK má být co nejjednotnější pro všechny uživatele, aby okolí nemuselo měnit komunikační styl."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 22,
-        "text": "Žák se sluchovým postižením při výuce dobře odezírá, ale hluk a vzdálenost od učitele výrazně snižují dostupnost informací. Které opatření je nejvhodnější?",
-        "options": [
-          "Rozšířit písemné testování a frontální výklad ponechat beze změny, aby se nároky nesnižovaly.",
-          "Upravit komunikační podmínky, místo v lavici a podle potřeby využít technickou poslechovou podporu.",
-          "Nahradit většinu výkladu samostatným opisem z tabule bez ověřování porozumění mluvené řeči.",
-          "Přenést hlavní tok informací na spolužáka, který bude během výuky shrnovat důležité body."
+          "Když chce škola zmírnit stres ze zkoušení bez vazby na konkrétní bariéru v úkolu. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
+          "Když časový tlak zkresluje výsledek kvůli bariéře ve formě výkonu nebo přístupu, ne kvůli samotnému neznalostnímu deficitu.",
+          "Když je cílem nahradit systematickou podporu jednorázovou výhodou u testu. v tomto typu úkolu. bez dalšího rozlišení.",
+          "Když chce učitel vyrovnat rozdíly ve motivaci mezi žáky. v daném rámci práce. v tomto pojetí. v dané situaci. podle tohoto přístupu."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 23,
-        "text": "Který postup je nejvhodnější při podpoře žáka s těžším tělesným postižením, který se bez úprav obtížně zapojuje do běžné školní práce?",
+        "number": 21,
+        "text": "Které hodnocení je nejpřesnější u žáka s NKS, pokud cílem úkolu není artikulační výkon?",
         "options": [
-          "Předpokládat, že se postupně přizpůsobí běžnému uspořádání třídy bez cílených změn prostředí.",
-          "Zaměřit se hlavně na snížení vzdělávacích cílů bez práce s přístupností a organizací činností.",
-          "Upravit přístupnost pracovního místa, manipulaci s materiály, tempo činností a míru samostatné aktivity.",
-          "Přesunout podstatnou část úkolů na asistenta, aby se omezilo riziko únavy a neúspěchu žáka."
+          "Snížit známku vždy, když je řeč méně srozumitelná, bez ohledu na obsah. v tomto pojetí. v dané situaci.",
+          "Vyhnout se úplně ústním odpovědím, protože obsah z nich nelze nikdy spolehlivě zjistit. podle tohoto přístupu.",
+          "Posuzovat především obsah odpovědi a nenechat artikulační obtíž automaticky zastínit věcnou správnost.",
+          "Považovat artikulační obtíž automaticky za důkaz slabého porozumění tématu. v tomto typu úkolu."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 24,
-        "text": "Který přístup je při plánování podpory nejméně vhodný?",
+        "number": 22,
+        "text": "Kdy je vhodné změnit formu odpovědi, nikoli cíl úkolu?",
         "options": [
-          "Průběžně sledovat, zda zvolená opatření skutečně snižují bariéry v učení a zapojení.",
-          "Vycházet z toho, jak se obtíž promítá do konkrétních činností a školních situací.",
-          "Zvažovat silné stránky žáka vedle oblastí, kde potřebuje větší oporu a úpravu podmínek.",
-          "Převzít jednou nastavenou podporu bez dalšího vyhodnocování, pokud odpovídá názvu diagnózy."
+          "Když chceme žáka odměnit za snahu bez ohledu na to, co úkol sleduje. v tomto pojetí. v dané situaci.",
+          "Když je jednodušší změnit požadovaný obsah než hledat přístupnou formu výkonu. podle tohoto přístupu.",
+          "Když má učitel dojem, že alternativní forma je vždy lehčí než původní zadání. v tomto typu úkolu.",
+          "Když bariéra leží ve způsobu projevu či záznamu, ale cíl úkolu zůstává stejný."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 25,
-        "text": "Které intervenční těžiště nejlépe odpovídá žákovi, který rozumí učivu, ale kvůli artikulační a mluvní nesrozumitelnosti bývá podhodnocen při ústním zkoušení?",
+        "number": 23,
+        "text": "U žáka s kombinovaným postižením bývá první intervenční prioritou často:",
         "options": [
-          "Umožnit alternativní formy odpovědi a neztotožňovat srozumitelnost mluvy se znalostí obsahu.",
-          "Vyžadovat běžnou ústní odpověď, aby bylo hodnocení stejné jako u ostatních žáků ve třídě.",
-          "Přesunout veškeré zkoušení na domovskou přípravu a školní hodnocení omezit na minimum.",
-          "Snížit očekávání v předmětu, protože nesrozumitelná řeč nutně omezuje i porozumění učivu."
+          "Oddálit podporu, dokud nebude přesně popsána každá jednotlivá diagnóza zvlášť. v tomto pojetí. v dané situaci.",
+          "Zajistit spolehlivý přístupový a komunikační kanál, bez nějž nelze dobře ověřovat ani rozvíjet další oblasti.",
+          "Začít výhradně nácvikem školních znalostí a komunikační bariéru řešit až později. podle tohoto přístupu.",
+          "Preferovat vždy motorický trénink, protože bývá nápadný na první pohled. v tomto typu úkolu. bez dalšího rozlišení."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 24,
+        "text": "Co nejlépe vystihuje funkční volbu pomůcky?",
+        "options": [
+          "Pomůcka má být co nejpokročilejší, i když ji uživatel v běžném režimu nepoužívá. v tomto pojetí.",
+          "Pomůcka má být stejná pro všechny žáky se stejnou diagnózou kvůli jednotnosti postupu.",
+          "Pomůcka má odpovídat tomu, co má uživatel v konkrétním prostředí a úkolu skutečně zvládnout.",
+          "Pomůcka má nahrazovat práci dospělých, aby nebylo nutné měnit prostředí nebo instrukce."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 25,
+        "text": "Kdy má AAK největší efekt?",
+        "options": [
+          "Když je používána napříč aktivitami a komunikační partneři s ní pracují konzistentně, ne jen občasně v terapii.",
+          "Když je vyhrazena jen pro krizové situace a běžná komunikace se odkládá. v tomto pojetí. v dané situaci.",
+          "Když je omezena na jednu místnost, aby se systém zbytečně nerozšiřoval. podle tohoto přístupu. v tomto typu úkolu.",
+          "Když ji používá pouze odborník a ostatní komunikující se přizpůsobit nemusí. bez dalšího rozlišení. v daném rámci práce."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 26,
-        "text": "Který postup nejlépe odpovídá žákovi, který používá eye-tracking nebo spínač k ovládání digitálního prostředí?",
+        "text": "Co je slabinou přístupu „stačí pořídit pomůcku“?",
         "options": [
-          "Považovat technologii jen za pomocnou pomůcku pro volný čas, ne za legitimní cestu školního výkonu.",
-          "Uznat alternativní ovládání jako funkční cestu k samostatné práci a podle něj upravit způsob činností.",
-          "Nahradit aktivní práci žáka hotovými výstupy asistenta, aby byla práce časově efektivnější.",
-          "Omezit použití technologie jen na domácí prostředí a ve škole trvat na běžném psaní rukou."
+          "Pomůcka sama o sobě obvykle automaticky vyřeší i všechny procesní a vztahové bariéry. v tomto pojetí.",
+          "Jakmile je pomůcka pořízena, není už vhodné měnit způsob instrukcí ani organizaci práce. v dané situaci.",
+          "Při zavedení pomůcky je nejlepší vyčkat bez další podpory, aby si žák zvykl sám. podle tohoto přístupu.",
+          "Bez nácviku používání, úprav prostředí a komunikační podpory bývá efekt pomůcky omezený nebo krátkodobý."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 27,
-        "text": "Který přístup nejlépe odpovídá situaci, kdy žák se specifickými obtížemi potřebuje podporu učebního stylu a pravidelný nácvik ve škole?",
+        "text": "Žák řeší úlohy správně ústně, ale ztrácí se v přehuštěném pracovním listu. Které opatření míří nejpřesněji na bariéru?",
         "options": [
-          "Vyčkat na výrazný propad prospěchu a do té doby ponechat domácí přípravu bez další podpory.",
-          "Převést veškerý nácvik na rodinu, aby škola mohla zachovat běžný režim bez úprav.",
-          "Zařadit cílenou pedagogickou intervenci zaměřenou na oslabené oblasti, pracovní návyky a učební strategii.",
-          "Zvolit jednorázovou kontrolu výsledků bez průběžné zpětné vazby a bez proměny způsobu práce."
+          "Zpřehlednit grafickou podobu zadání a organizaci stránky, protože problém leží v přístupu k vizuálně podané informaci.",
+          "Převést všechny úlohy na jednodušší obsah, protože výkon ukazuje na slabé matematické myšlení. v tomto pojetí.",
+          "Zakázat ústní řešení, aby se posílila samostatnost bez kompenzace. v dané situaci. podle tohoto přístupu. v tomto typu úkolu.",
+          "Nechat pracovní list beze změny a prodloužit pouze čas bez úpravy vizuálního vstupu. bez dalšího rozlišení. v daném rámci práce."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 28,
-        "text": "Které tvrzení nejlépe odpovídá zásadě práce s rodinou při nastavování podpory?",
+        "text": "Žák se spasticitou dokáže úkol vyřešit, ale rukopis je extrémně pomalý. Které čtení je nejpřesnější?",
         "options": [
-          "Rodina má být informována až po úplném dokončení podpůrného plánu, aby nevznikaly zbytečné požadavky.",
-          "Spolupráce s rodinou je důležitá hlavně u sociálních služeb, nikoli při školní práci a komunikaci.",
-          "Rodina má převzít hlavní odpovědnost za realizaci podpůrných opatření, škola zůstává spíše v pozadí.",
-          "Spolupráce s rodinou pomáhá sjednocovat očekávání, komunikační strategie a přenos funkčních dovedností."
+          "Pomalý rukopis spolehlivě ukazuje nízkou úroveň vědomostí v daném předmětu. v tomto pojetí.",
+          "Spasticita u psaní znamená, že je vhodné vzdát se všech náročnějších úloh. v dané situaci.",
+          "U takového výkonu je nejpřesnější hodnotit hlavně rychlost zápisu, protože je objektivní.",
+          "Bariéra leží ve formě motorického výstupu, ne nutně ve znalosti úkolu."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 29,
-        "text": "Který prostředek nejlépe odpovídá situaci, kdy žák se sluchovým postižením potřebuje ve třídě zlepšit dostupnost mluvené řeči konkrétního mluvčího?",
+        "text": "Který postup má kompenzační charakter?",
         "options": [
-          "FM systém nebo obdobná technická podpora zaměřená na přenos hlasu učitele v akusticky náročném prostředí.",
-          "Bílá hůl využívaná k bezpečnému pohybu v interiéru i exteriéru podle zvolených tras.",
-          "Komunikační kniha se symboly určená hlavně pro uživatele AAK s omezenou řečí.",
-          "Optická lupa či kamerová lupa určená k práci s vizuálním textem a detaily."
+          "Systematický nácvik fonologického uvědomování u oslabeného čtenáře. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
+          "Postupné procvičování jemnomotorických tahů při psaní. v tomto typu úkolu. bez dalšího rozlišení. v daném rámci práce.",
+          "Použití předčítání nebo převodu textu do audio podoby tam, kde cílem není samostatné dekódování tiskového textu.",
+          "Cvičení orientace v řazení kroků při plánování úkolu. v tomto pojetí. v dané situaci. podle tohoto přístupu."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
         "number": 30,
-        "text": "Který prostředek nejlépe odpovídá člověku, který potřebuje náhradní či doplňující způsob vyjadřování při těžce omezené řeči?",
+        "text": "Který postup má reedukační charakter?",
         "options": [
-          "Běžný diktátový sešit určený hlavně pro nácvik pravopisu ve škole.",
-          "Komunikační tabulka, kniha nebo elektronický AAK systém podle možností uživatele.",
-          "Braillský řádek určený primárně pro přístup k textu u nevidomých uživatelů.",
-          "FM přijímač určený ke zlepšení poslechových podmínek při mluvené výuce."
+          "Nahrazení bariéry pomůckou bez očekávání přímého posílení oslabené funkce. v tomto pojetí.",
+          "Systematický nácvik oslabené dovednosti s gradovanou obtížností a zpětnou vazbou k výkonu.",
+          "Jednorázové snížení požadavku, aby byl úkol rychle splnitelný. v dané situaci. podle tohoto přístupu.",
+          "Přesun podpory pouze na členy rodiny bez práce se samotnou dovedností. v tomto typu úkolu."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 31,
-        "text": "Který přístup je nejvhodnější u žáka, který při změně činnosti bez varování reaguje zmatkem a výrazným napětím, ale při jasném režimu spolupracuje dobře?",
+        "text": "Co je nejpřesnější další krok, když zvolená podpora nevede k zamýšlenému efektu?",
         "options": [
-          "Považovat reakci hlavně za neposlušnost a posílit sankce bez změny organizace dne.",
-          "Zvyšovat počet improvizovaných změn, aby si rychleji zvykl na běžnou nepředvídatelnost školy.",
-          "Předvídat změny, vizuálně je označit a držet srozumitelnou strukturu činností i přechodů.",
-          "Omezit školní podporu na individuální rozbor emocí po situaci a vlastní režim ponechat stejný."
+          "Držet stejnou podporu co nejdéle bez ohledu na výsledek, aby se předešlo změnám. v tomto pojetí.",
+          "Podporu úplně zrušit, protože neúčinnost prvního kroku znamená neřešitelný problém. v dané situaci.",
+          "Znovu vyhodnotit, kde přesně bariéra vzniká, a upravit podporu podle skutečného dopadu v praxi.",
+          "Přidat náhodně další opatření bez ověření, co z původní podpory fungovalo a co ne. podle tohoto přístupu."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 32,
-        "text": "Který přístup nejlépe odpovídá žákovi, který má kvůli kombinaci obtíží omezenou možnost volby a komunikace, ale reaguje na konkrétní a opakující se zkušenost?",
+        "text": "U žáka s exekutivními obtížemi je nejfunkčnější:",
         "options": [
-          "Směřovat podporu hlavně k abstraktnímu školnímu obsahu, aby se co nejdříve srovnal s vrstevníky.",
-          "Upřednostnit dlouhé verbální instrukce, aby si rozšířil porozumění bez dalších opor.",
-          "Ponechat velkou část dne bez struktury a sledovat, jaké dovednosti se objeví spontánně.",
-          "Budovat komunikaci, volbu a orientaci přes konkrétní, rytmické a opakující se podněty a zkušenosti."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 33,
-        "text": "Který závěr o podpůrných opatřeních je nejpřesnější?",
-        "options": [
-          "Nejsou totéž co diagnóza; mají reagovat na to, jak se obtíž promítá do učení a zapojení.",
-          "Jsou v podstatě synonymem pro jakékoli snížení nároků, aby dítě zažívalo méně neúspěchu.",
-          "Představují hlavně soubor speciálních pomůcek, zatímco metody a hodnocení zůstávají stejné.",
-          "Mají smysl až tehdy, když běžná výuka selže ve všech předmětech a situacích bez výjimky."
+          "Rozdělit úkol do kroků a jasně vymezit, co je teď cílem a co následuje.",
+          "Nechat instrukce co nejotevřenější, aby si žák musel plán vytvořit bez vnější opory.",
+          "Předkládat více neukotvených úkolů najednou, aby si žák zvykl na vyšší kognitivní tlak.",
+          "Vynechat průběžnou zpětnou vazbu, protože by narušovala samostatnost. v tomto pojetí."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 34,
-        "text": "Který postup je nejméně vhodný při zavádění AAK?",
+        "number": 33,
+        "text": "Který postup nejlépe reaguje na senzorické přetížení?",
         "options": [
-          "Zapojovat do používání systému i lidi, kteří s uživatelem běžně komunikují doma i ve škole.",
-          "Odkládat AAK jen proto, že by si dítě mohlo na jiný způsob komunikace příliš zvyknout.",
-          "Volit systém s ohledem na motoriku, porozumění, komunikační záměr i prostředí použití.",
-          "Vnímat AAK jako cestu k rozšíření dorozumění a účasti, nikoli jako zbytečnou náhradu."
+          "Ponechat zátěž beze změny, aby si žák na podněty postupně zvykl bez opor. v tomto pojetí. v dané situaci.",
+          "Vykládat přetížení hlavně jako záměrné vyhýbání se práci a přidat tlak na výkon. podle tohoto přístupu.",
+          "Pracovat s množstvím podnětů, předvídatelností a možnostmi regulace, ne jen s výzvou „musíš to vydržet“.",
+          "Úplně odstranit všechny nároky, protože přetížení vylučuje jakýkoli rozvoj. v tomto typu úkolu. bez dalšího rozlišení."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 34,
+        "text": "Které tvrzení o odezírání je nejpřesnější?",
+        "options": [
+          "Odezírání je plnohodnotnou náhradou dostupné komunikace ve všech školních situacích.",
+          "Odezírání může pomoci, ale samo o sobě nezajišťuje plný a spolehlivý přístup ke všemu sdělení.",
+          "Jakmile žák odezírá, není třeba řešit akustické ani vizuální podmínky výuky.",
+          "Odezírání funguje stejně spolehlivě bez ohledu na tempo řeči, osvětlení a uspořádání prostoru."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 35,
-        "text": "Který přístup nejlépe odpovídá hodnocení žáka, u něhož zrakové nebo motorické omezení zkresluje běžný výkon v jedné formě práce?",
+        "text": "Které řešení je nejvhodnější při práci s mapou u nevidomého žáka?",
         "options": [
-          "Zachovat stejnou formu ověřování, aby se předešlo zvýhodnění oproti třídě.",
-          "Snížit obsah učiva plošně, protože zhoršený výkon v jedné formě dokládá nižší vzdělávací možnosti.",
-          "Volit přístupnější způsob prezentace nebo odpovědi tak, aby se lépe posuzoval skutečný obsah znalostí.",
-          "Hodnocení odsunout na okraj, protože u žáků s omezením je důležitější především účast ve výuce."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 36,
-        "text": "Které opatření je nejvhodnější u žáka, který zvládá obsah, ale při práci se rychle ztrácí v organizaci více kroků a potřebuje oporu v čase?",
-        "options": [
-          "Přenechat rozvržení úkolu spolužákovi a sledovat jen konečný výsledek práce.",
-          "Prodlužovat zadání o další informace, aby si žák zvykl na složitější pracovní režim.",
-          "Hodnotit hlavně samostatné zvládnutí celé sekvence bez průběžných opor a mezikroků.",
-          "Rozčlenit činnost, zviditelnit kroky, udržet přehled o čase a průběžně ověřovat orientaci v úkolu."
+          "Nechat běžnou barevnou mapu a předpokládat, že si žák vše doplní z krátké nápovědy.",
+          "Mapa se má z výuky vždy vyřadit, protože je nevyhnutelně vizuální. v tomto pojetí.",
+          "Stačí říct finální správnou odpověď bez práce s prostorovou reprezentací. v dané situaci.",
+          "Zvolit taktilní mapu nebo systematický slovní popis prostorových vztahů podle cíle úkolu."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 37,
-        "text": "Který přístup nejlépe odpovídá využití zbytků zraku ve vzdělávání?",
+        "number": 36,
+        "text": "U závažných grafomotorických obtíží je funkční:",
         "options": [
-          "Upravit podmínky tak, aby žák mohl funkčně využít to, co zrakově skutečně zvládá, místo mechanického zařazení do jedné kategorie.",
-          "Předpokládat, že jakékoli zrakové oslabení automaticky znamená potřebu nahradit vidění hmatem.",
-          "Vycházet hlavně z názvu oční diagnózy a méně sledovat, jak žák informace skutečně přijímá při práci.",
-          "Ponechat materiály ve stejné podobě a hodnotit, zda si na ně žák časem sám nevytvoří strategii."
+          "Hodnotit primárně rychlost a úhlednost zápisu i v úkolech zaměřených na obsah. v tomto pojetí.",
+          "Zrušit všechny písemné činnosti bez rozlišení, co je cílem daného úkolu. v dané situaci.",
+          "Umožnit takový způsob záznamu, který nebrání projevit obsah, pokud rukopis není cílem úkolu.",
+          "Trvat na identické podobě výkonu za každou cenu, protože jen ta je spravedlivá. podle tohoto přístupu."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 37,
+        "text": "Který princip je chybou při plánování intervence?",
+        "options": [
+          "Sledovat, co v konkrétním prostředí bariéru zesiluje a co ji naopak tlumí. v tomto pojetí. v dané situaci.",
+          "Porovnat, zda zvolený postup cílí na přístup, dovednost, regulaci nebo formu výkonu. podle tohoto přístupu.",
+          "Po zavedení podpory ověřit, zda se mění skutečná participace a ne jen dojem z práce. v tomto typu úkolu.",
+          "Přenést postup z jiného žáka jen podle diagnózy, bez ověření funkční podobnosti situace."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 38,
-        "text": "Který postup je nejvhodnější u žáka, který se po získaném postižení učí znovu zvládat běžné denní činnosti a potřebuje zvýšit soběstačnost?",
+        "text": "Co nejlépe vystihuje volbu asistivní technologie?",
         "options": [
-          "Soustředit se převážně na teoretické poučení bez nácviku v reálných situacích.",
-          "Zařadit systematickou podporu funkční samostatnosti a praktický nácvik v každodenních činnostech.",
-          "Považovat každodenní fungování za druhotné a vrátit se nejprve výhradně k akademickému výkonu.",
-          "Omezit podporu na jednorázové doporučení pomůcky bez sledování jejího skutečného využití."
+          "Nejlepší je vždy nejkomplexnější zařízení, protože nabízí nejvíce funkcí. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
+          "Jednodušší a spolehlivě používané řešení může být funkčně vhodnější než technicky vyspělejší, ale nepoužívané zařízení.",
+          "Technologie se vybírá hlavně podle ceny a prestiže, ne podle každodenní použitelnosti. v tomto typu úkolu. bez dalšího rozlišení.",
+          "Jakmile je zařízení moderní, není třeba řešit nácvik a zapojení do běžného režimu. v daném rámci práce. v tomto pojetí."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 39,
-        "text": "Které opatření nejlépe odpovídá situaci, kdy žák s PAS dobře reaguje na jasné vizuální informace, ale verbálně podané změny často přehlédne?",
+        "text": "U vývojové jazykové poruchy je intervenční těžiště nejpřesněji:",
         "options": [
-          "Přidat více verbálních vysvětlení a předpokládat, že opakováním se problém postupně vyřeší.",
-          "Omezit vizuální opory, aby se žák nevázal na jeden typ podpory déle, než je nezbytné.",
-          "Zvýšit dostupnost změn a očekávání vizuálně, předem a v co nejpředvídatelnější podobě.",
-          "Ponechat změny bez přípravy a soustředit se hlavně na rozbor nevhodných reakcí až po situaci."
+          "V systematickém rozvoji porozumění a jazykové produkce, ne jen v mechanickém opakování bez vazby na funkční komunikaci.",
+          "V čekání, až se jazyk upraví spontánně při běžném zrání bez cílené podpory. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
+          "V trvalém přesunu komunikace na druhé osoby bez podpory vlastního vyjadřování klienta. v tomto typu úkolu. bez dalšího rozlišení.",
+          "V posuzování jazykových potíží výhradně podle výslovnosti jednotlivých hlásek. v daném rámci práce. v tomto pojetí."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 40,
-        "text": "Který přístup je nejvhodnější u žáka, který potřebuje podporu v komunikaci i orientaci během náročných školních přechodů?",
+        "text": "Které opatření mění hlavně přístup k zadání, ne vzdělávací cíl?",
         "options": [
-          "Řešit komunikaci a orientaci odděleně, aby se do jedné situace nespojovalo více opor najednou.",
-          "Upřednostnit jen akademický cíl hodiny a praktické fungování během přesunů ponechat bez úprav.",
-          "Sledovat hlavně to, zda je žák při přesunu klidný, a menší nesnáze s porozuměním neřešit.",
-          "Propojit komunikační opory, orientaci v čase a prostoru a jasnou organizaci přechodových situací."
+          "Nahrazení všech náročnějších pojmů jednoduššími bez ohledu na cíl výuky. v tomto pojetí.",
+          "Vynechání celé části učiva, kterou ostatní žáci plní. v dané situaci. podle tohoto přístupu.",
+          "Snížení požadované úrovně porozumění, aby byl výkon rychlejší. v tomto typu úkolu.",
+          "Zvětšení písma, úprava kontrastu nebo jiná přístupná forma prezentace téhož obsahu."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 41,
-        "text": "Který závěr o práci asistenta pedagoga je nejpřesnější?",
+        "text": "U žáka využívajícího český znakový jazyk je ve výuce nejdůležitější:",
         "options": [
-          "Asistent má podporovat samostatnost a aktivní účast žáka, ne dlouhodobě nahrazovat jeho vlastní výkon.",
-          "Asistent je určen hlavně k tomu, aby za žáka přebíral náročnější učební i komunikační situace.",
-          "Asistent rozhoduje o úpravách vzdělávacího obsahu, zatímco učitel se soustředí na třídu jako celek.",
-          "Asistent je nejvhodnější tehdy, když žák pracuje odděleně od hlavního dění třídy po většinu výuky."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 42,
-        "text": "Který postup nejlépe odpovídá situaci, kdy je hlavní bariérou únavnost a pomalejší tempo při práci, nikoli neporozumění učivu?",
-        "options": [
-          "Plošně zmenšit obsah vzdělávání, protože pomalejší tempo vždy ukazuje na nižší vzdělávací úroveň.",
-          "Upravit organizaci práce, tempo a délku činnosti tak, aby se lépe oddělila únava od skutečných znalostí.",
-          "Ponechat nároky na tempo stejné a pomoc poskytnout až při výrazném dlouhodobém selhávání v předmětu.",
-          "Přesunout náročnější části práce na spolužáka, aby se výkon třídy časově nesnižoval."
+          "Mluvit co nejrychleji, aby se tempo výuky nelišilo od běžné třídy. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
+          "Zajistit vizuálně dostupnou komunikaci a organizovat situaci tak, aby mohl sledovat sdělení bez zbytečných bariér.",
+          "Střídat zdroje sdělení bez upozornění, aby se žák cvičil v pohotové orientaci. v tomto typu úkolu. bez dalšího rozlišení.",
+          "Předpokládat, že psaný zápis vždy plně nahradí průběžnou komunikaci během hodiny. v daném rámci práce. v tomto pojetí."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 43,
-        "text": "Který prostředek nejlépe odpovídá člověku, který potřebuje bezpečný pohyb a orientaci v prostoru kvůli těžkému zrakovému postižení?",
+        "number": 42,
+        "text": "Co nejpřesněji vystihuje pedagogickou intervenci?",
         "options": [
-          "FM systém určený ke zlepšení dostupnosti mluvené řeči ve výuce.",
-          "Komunikační software s hlasovým výstupem určený primárně k AAK při omezené řeči.",
-          "Bílá hůl a nácvik orientačních strategií jako součást samostatného pohybu v prostoru.",
-          "Kamerová lupa určená hlavně pro čtení a zvětšení drobných vizuálních detailů na blízko."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 44,
-        "text": "Který postup je nejméně vhodný u žáka, který používá kompenzační technologii k samostatné práci?",
-        "options": [
-          "Zařadit pomůcku přímo do běžné práce tak, aby nebyla jen formální součástí podpory.",
-          "Počítat s tím, že ovládání pomůcky může vyžadovat jiný čas a organizaci práce než běžný postup.",
-          "Průběžně sledovat, zda technologie skutečně rozšiřuje možnosti žákova samostatného výkonu.",
-          "Omezit použití technologie jen na výjimečné situace, aby si žák nezvykl na jinou cestu práce."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 45,
-        "text": "Který princip nejlépe odpovídá práci s bazální stimulací?",
-        "options": [
-          "Podporovat základní tělesné vnímání, kontakt, orientaci a elementární zapojení člověka.",
-          "Směřovat podporu hlavně k abstraktnímu školnímu obsahu bez ohledu na senzorické a vztahové potřeby.",
-          "Nahrazovat jí všechny ostatní formy podpory, jakmile má člověk výraznější kombinované postižení.",
-          "Využívat ji pouze jako krátkou relaxační vložku bez vazby na kontakt, komunikaci a orientaci."
+          "Cílenou podporu dovedností a strategií spojených s edukací, která navazuje na konkrétní potřebu ve vzdělávání.",
+          "Jednorázové zjednodušení práce bez vztahu k tomu, co má žák dlouhodobě rozvíjet. v tomto pojetí. v dané situaci.",
+          "Obecné uklidnění před výkonem bez vazby na učební cíl nebo bariéru. podle tohoto přístupu. v tomto typu úkolu.",
+          "Přesun odpovědnosti za učení výhradně na rodinu mimo školní prostředí. bez dalšího rozlišení. v daném rámci práce."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 46,
-        "text": "Který přístup je nejvhodnější při volbě podpory, když žák v jedné situaci komunikuje lépe gestem, jinde symbolem a jinde hlasem?",
+        "number": 43,
+        "text": "Které tvrzení o multisenzorické podpoře je nejpřesnější?",
         "options": [
-          "Vybrat jednu formu komunikace a ostatní zakázat, aby okolí nebylo zatěžováno různými režimy.",
-          "Připustit kombinaci funkčních cest, pokud podporují srozumitelné dorozumění v různých situacích.",
-          "Trvat na jediné verbální podobě komunikace, protože jen ta má ve škole plnou hodnotu odpovědi.",
-          "Ponechat výběr komunikační cesty zcela náhodně bez vedení a bez zapojení komunikačních partnerů."
+          "Čím více současných podnětů, tím automaticky kvalitnější podpora v každé situaci. v tomto pojetí. v dané situaci.",
+          "Více modalit dává smysl tehdy, když zvyšují čitelnost úkolu; samo množství podnětů ještě neznamená lepší podporu.",
+          "Multisenzorická podpora je vhodná jen u dětí bez jakéhokoli znevýhodnění. podle tohoto přístupu. v tomto typu úkolu.",
+          "Použití více modalit vždy nahrazuje potřebu strukturovat instrukci. bez dalšího rozlišení. v daném rámci práce."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 44,
+        "text": "Jaká otázka má při volbě podpory přijít jako první?",
+        "options": [
+          "Co přesně v této situaci a v tomto úkolu tvoří hlavní bariéru výkonu nebo participace?",
+          "Které opatření zní nejodborněji a bude působit nejsilnějším dojmem na okolí. v tomto pojetí.",
+          "Jak zařídit, aby podpora vyžadovala co nejméně změn ve výuce bez ohledu na efekt.",
+          "Jak rychle převzít řešení z jiného případu se stejnou diagnózou. v dané situaci."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 45,
+        "text": "Kdy má smysl volba odpovědi pohledem nebo systémem ano/ne?",
+        "options": [
+          "Jen tehdy, když uživatel zvládne plnou mluvenou řeč, jinak by systém neměl význam. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
+          "Pouze jako nouzové řešení bez možnosti použít ho při učení nebo rozhodování. v tomto typu úkolu. bez dalšího rozlišení.",
+          "Tehdy, když chceme urychlit testování bez ohledu na to, zda je tento kanál pro člověka stabilní. v daném rámci práce. v tomto pojetí.",
+          "Když jde o spolehlivý a ověřený způsob volního vyjádření u člověka, jehož hlavní bariéra leží v motorické nebo řečové produkci."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 46,
+        "text": "Který postup už mění konstrukt hodnocení, ne jen formu výkonu?",
+        "options": [
+          "Umožnit místo ručního zápisu odpověď na klávesnici, pokud cíl úkolu zůstává stejný. v tomto pojetí.",
+          "Snížit náročnost samotného požadovaného obsahu tam, kde cílem bylo původně ověřit plný věcný rozsah učiva.",
+          "Předložit zadání v přístupnější vizuální podobě bez změny toho, co se ověřuje. v dané situaci. podle tohoto přístupu.",
+          "Prodlužit čas tam, kde bariéra leží v přístupu nebo formě výkonu. v tomto typu úkolu. bez dalšího rozlišení."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 47,
-        "text": "Které opatření nejlépe odpovídá situaci, kdy žák se zrakovým postižením potřebuje pracovat s textem samostatně, ne jen poslouchat cizí předčítání?",
+        "text": "U čtenářského úkolu je vhodné oddělit dekódování od porozumění tehdy, když:",
         "options": [
-          "Zachovat vizuální text v běžné podobě a spolehnout se na to, že si žák najde vlastní způsob práce.",
-          "Omezit práci s materiálem na ústní výklad, aby se snížila potřeba speciálních úprav a pomůcek.",
-          "Zprostředkovat text v přístupném formátu a umožnit aktivní práci odpovídající způsobu čtení uživatele.",
-          "Přenechat čtení spolužákovi a soustředit se jen na následnou reprodukci obsahu z poslechu."
+          "Chceme žákovi úplně odstranit kontakt s textem bez ohledu na cíl diagnostiky nebo podpory.",
+          "Potřebujeme urychlit hodnocení a nezajímá nás, kde přesně problém vzniká. v tomto pojetí.",
+          "Potřebujeme zjistit, zda bariéra leží v samotném čtení textu, nebo až v práci s významem obsahu.",
+          "Považujeme dekódování a porozumění za totožný proces, který nelze smysluplně rozlišit. v dané situaci."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 48,
-        "text": "Který postup je nejméně vhodný u žáka, který se kvůli jazykové či komunikační bariéře hůře orientuje v zadání, ale obsahově má potenciál učivo zvládat?",
+        "text": "Co je předpoklad účinné jemnomotorické práce u žáka s posturální nestabilitou?",
         "options": [
-          "Zjednodušit komunikační formu zadání a ověřovat, zda opravdu porozuměl tomu, co se po něm chce.",
-          "Oddělit podle možností obsah výkonu od bariéry, která ztěžuje běžné vyjádření nebo porozumění.",
-          "Průběžně sledovat, zda zvolená úprava skutečně zlepšuje možnost zapojení do práce ve třídě.",
-          "Vyvozovat z komunikační bariéry automaticky nižší intelektový potenciál a podle toho plošně snižovat cíle."
+          "Začít co nejjemnějšími úkoly bez řešení polohy, aby si žák postupně zvykl. v tomto pojetí. v dané situaci.",
+          "Soustředit se pouze na rychlost úchopu a posturu považovat za vedlejší. podle tohoto přístupu. v tomto typu úkolu.",
+          "Nejprve prodloužit čas a ostatní podmínky ponechat beze změny. bez dalšího rozlišení. v daném rámci práce.",
+          "Stabilní poloha a vhodné nastavení těla a pomůcek, teprve na tomto základě lze dobře chtít přesný výkon ruky."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 49,
-        "text": "Které tvrzení nejlépe vystihuje rozdíl mezi nápravou oslabené funkce a pouhým odstraněním projevu problému?",
+        "text": "Který postup je při zavádění náročné elektronické AAK nejpřesnější?",
         "options": [
-          "Smysluplná intervence sleduje, zda se zlepšuje funkční využitelnost dovednosti, ne jen okamžitý vzhled výkonu.",
-          "Hlavním cílem je hlavně to, aby výkon vypadal podobně jako u ostatních, bez ohledu na cestu a námahu.",
-          "Rozhodující je především to, aby podpůrná opatření byla co nejméně viditelná v běžném školním provozu.",
-          "Nejdůležitější je zachovat stejnou formu výkonu, i kdyby bariéra zcela překrývala skutečné znalosti."
+          "Nasadit co nejširší slovník hned na začátku a trvat na plném využití bez podpory okolí. v tomto pojetí.",
+          "Omezit zařízení jen na jednu izolovanou aktivitu, aby se zabránilo záměně významů. v dané situaci. podle tohoto přístupu.",
+          "Postupovat od funkčně zvládnutelného nastavení, ověřovat užívání v běžných situacích a systém průběžně ladit.",
+          "Vyčkat s používáním do doby, než bude systém technicky zcela dokonalý. v tomto typu úkolu. bez dalšího rozlišení."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 50,
+        "text": "Který princip nejlépe vystihuje kvalitní intervenci napříč oblastmi?",
+        "options": [
+          "Podpora má působit co nejodborněji, i když není zřejmé, jak se projeví v běžném fungování. v tomto pojetí.",
+          "Podpora má být stejná pro všechny podobné případy, aby byla metodicky čistá. v dané situaci. podle tohoto přístupu.",
+          "Podpora je kvalitní tehdy, když se po jejím zavedení už nikdy neupravuje. v tomto typu úkolu. bez dalšího rozlišení.",
+          "Podpora má být funkčně odůvodněná, ověřitelná v praxi a navázaná na skutečnou bariéru konkrétního člověka."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      }
+    ],
+    "validation": {
+      "answerDistribution": {
+        "A": 13,
+        "C": 12,
+        "B": 13,
+        "D": 12
+      },
+      "distributionTarget": "13/13/12/12",
+      "distributionBalanced": true,
+      "distractorAudit": {
+        "strictLongestCorrectCount": 0,
+        "strictShortestCorrectCount": 8,
+        "averageOptionLengthSpread": 13.12,
+        "maxOptionLengthSpread": 24
+      }
+    }
+  },
+  {
+    "id": 4,
+    "label": "Baterie 4",
+    "title": "Komunikace jako profesní kompetence – tvrdá diferenciace",
+    "subtitle": "Přístupnost sdělení, AAK, aktivní naslouchání, týmová a rodičovská komunikace bez návodného klíče.",
+    "purpose": "Ověřit, zda uchazeč rozliší mezi obecně přijatelným a profesně přesným komunikačním postupem v kontaktu s klientem, rodinou, školou i týmem; těžiště leží v přístupnosti sdělení, práci s porozuměním, AAK, hranicích rolí a v komunikačních krocích, které mají skutečný dopad na podporu.",
+    "difficulty": "velmi vysoká",
+    "dominant": [
+      "aktivní naslouchání a průběžné shrnování",
+      "AAK, komunikátory a funkční komunikace",
+      "přístupnost sdělení u PAS, sluchového a zrakového postižení",
+      "komunikace s rodinou v plain language",
+      "zpětná vazba učiteli a týmová komunikace",
+      "hranice rolí, citlivý obsah a realistické nastavování očekávání",
+      "deeskalace a komunikace při vysoké zátěži",
+      "ověřování porozumění a akční uzavírání rozhovoru"
+    ],
+    "breakdown": [
+      "10× přesné rozlišení komunikační techniky a formulace",
+      "8× AAK, tlumočení a funkční komunikace",
+      "8× komunikace s rodinou a srozumitelnost odborného sdělení",
+      "8× škola, učitel a implementace podpory v komunikaci",
+      "8× tým, role, hranice a dokumentace",
+      "8× deeskalace, citlivé sdělování a ověřování porozumění"
+    ],
+    "tags": [
+      "hard mode",
+      "komunikace",
+      "poradenství",
+      "AAK",
+      "škola a rodina",
+      "tým a role",
+      "UPOL"
+    ],
+    "durationMinutes": 30,
+    "questionCount": 50,
+    "questions": [
+      {
+        "number": 1,
+        "text": "U žáka s PAS je potřeba oznámit změnu běžného postupu. Která formulace je komunikačně nejpřesnější?",
+        "options": [
+          "Nejprve stručně pojmenuje změnu, potom řekne konkrétní sled kroků a nakonec ověří, zda žák ví, co bude následovat.",
+          "Změnu oznámí co nejkratší větou a další průběh nechá vyplynout z toho, jak se situace vyvine, a spoléhá na to, že to bude stačit.",
+          "Změnu představí až ve chvíli, kdy nastane, aby žák nebyl předem zbytečně ve stresu.",
+          "Změnu vysvětlí hlavně obecnou větou, že v životě bývá potřeba improvizovat."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 2,
+        "text": "Která reakce nejlépe odpovídá reflektivnímu naslouchání v poradenském rozhovoru?",
+        "options": [
+          "„Dobře, tomu rozumím, teď už ale pojďme rychle k řešení.“",
+          "„Jestli vám rozumím správně, nejvíc vás vyčerpávají ranní přechody a nejistota, co se ve škole ten den stane.“",
+          "„Tohle rodiče říkají často, bývá to u těchto obtíží obvyklé.“",
+          "„Kdybyste nastavili pevnější režim doma, nejspíš by se to rychle upravilo a nemuseli bychom se u toho déle zůstávat.“"
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 3,
+        "text": "Které tvrzení o AAK je ve školní a poradenské komunikaci nejpřesnější?",
+        "options": [
+          "AAK je vhodná hlavně tehdy, když už bylo definitivně prokázáno, že se řeč nikdy nerozvine.",
+          "AAK má smysl spíše mimo školu, protože ve výuce dítě odvádí od přirozené komunikace.",
+          "AAK může komunikaci doplňovat nebo nahrazovat; jejím cílem je funkční dorozumění, ne čekání na „dost dobrou řeč“.",
+          "AAK je přechodná nouzová pomůcka, kterou je vhodné používat co nejméně, aby si dítě nezvyklo, a další upřesnění už nepřidává."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 4,
+        "text": "Při rozhovoru s adolescentem, který přišel s rodičem, je profesně nejvhodnější začít tak, že speciální pedagog",
+        "options": [
+          "vede hlavní část rozhovoru jen s rodičem, protože ten je za situaci odpovědný a zná ji lépe.",
+          "nejprve získá co nejvíc informací od rodiče a adolescenta zapojí až na závěr, aby nebrzdil průběh.",
+          "ponechá rozhodnutí, zda adolescent promluví, výhradně na rodiči, protože ten nejlépe odhadne jeho možnosti, protože takový postup pokládá za dostačující.",
+          "osloví i samotného adolescenta, stručně vyjasní cíl setkání a průběžně drží prostor jak pro něj, tak pro rodiče."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 5,
+        "text": "Klient používá komunikační zařízení s hlasovým výstupem. Který postup je profesně nejvhodnější?",
+        "options": [
+          "Dává klientovi čas dokončit sdělení přes zařízení a průběžně komunikuje přímo s ním, ne s doprovodem.",
+          "Po několika sekundách nabídne, že větu rychle dopoví za klienta, aby rozhovor neztratil tempo.",
+          "Většinu dotazů směřuje na doprovod, protože komunikace přes zařízení bývá pro odborný rozhovor nepraktická.",
+          "Požádá klienta, aby zařízení používal jen na klíčová slova a zbytek vysvětlil doprovod."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 6,
+        "text": "Která formulace nejlépe odpovídá profesně použitelné zpětné vazbě učiteli?",
+        "options": [
+          "„Myslím, že byste měl mluvit trochu citlivěji, to by situaci zřejmě vyřešilo a rozhovor by byl pro žáka přijatelnější i bez další změny struktury zadání.“",
+          "„Všiml jsem si, že při delším ústním zadání žák po druhém kroku ztrácí orientaci; pomohlo by členit instrukci na kratší celky.“",
+          "„Je vidět, že vaše komunikace žákovi nesedí, chce to zkusit úplně jinak.“",
+          "„Největší problém je, že žák vaše pokyny asi dost nerespektuje a bude potřeba na tom trvat důsledněji.“"
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 7,
+        "text": "Při vysvětlování závěru rodině s omezenou orientací v odborných termínech je komunikačně nejvhodnější, když odborník",
+        "options": [
+          "ponechá odborné názvy v původní podobě, aby výklad zůstal terminologicky přesný a jednotný.",
+          "vynechá termíny úplně, protože rodině by mohly znít příliš odborně a zbytečně zatěžovat rozhovor, protože tím chce udržet běžné tempo práce.",
+          "používá srozumitelný jazyk, klíčové termíny krátce překládá do běžné řeči a ověřuje, co si rodina z vysvětlení odnáší.",
+          "pošle na konci schůzky rodině text doporučení a podrobné vysvětlení už při setkání neotevírá."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 8,
+        "text": "Které jednání je při komunikaci s neslyšícím klientem a tlumočníkem českého znakového jazyka nejvhodnější?",
+        "options": [
+          "Směřuje většinu sdělení k tlumočníkovi, protože ten zajišťuje odbornou přesnost překladu.",
+          "Klientovi klade jen krátké kontrolní otázky a obsah rozhovoru řeší převážně s tlumočníkem, aby se ušetřil čas, a další upřesnění už nepřidává.",
+          "Průběh setkání přizpůsobí tlumočníkovi natolik, že klienta oslovuje jen výjimečně a nepřímo.",
+          "Mluví přímo ke klientovi, drží přirozené tempo a tlumočníka chápe jako komunikační most, ne jako hlavního adresáta."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 9,
+        "text": "Která otázka je nejvhodnější pro otevření tématu bez předčasného podsunutí interpretace?",
+        "options": [
+          "„V jakých situacích si obtíží všímáte nejvíc a co v nich bývá nejtěžší?“",
+          "„Je to hlavně tím, že dítě nezvládá změny a rychle se zablokuje, takže asi nemá smysl otevírat širší popis situací.“",
+          "„Myslíte, že problém vzniká hlavně doma, nebo spíš ve škole?“",
+          "„Souhlasíte, že největší potíž je zřejmě v pozornosti?“"
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 10,
+        "text": "Žák se zrakovým postižením pracuje ve třídě s materiálem, který učitel zároveň promítá na tabuli. Který komunikační postup je nejvhodnější?",
+        "options": [
+          "Zachovat běžný výklad a spolehnout se, že žák si klíčové body doplní z poznámek spolužáka.",
+          "Průběžně verbalizovat, co je na tabuli důležité, a zajistit dostupnou podobu obsahu v použitelné formě.",
+          "Výklad zkrátit na minimum, aby se žák nemusel orientovat v příliš velkém množství informací, a tím považuje situaci za vyřešenou.",
+          "Nechat žáka soustředit jen na slovní komentář a práci s obsahem na tabuli zcela vynechat."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 11,
+        "text": "Které shrnutí po poradenském setkání je profesně nejpoužitelnější?",
+        "options": [
+          "Zrekapituluje hlavně průběh diskuse, aby bylo jasné, jak se k závěru postupně dospělo.",
+          "Zakončí setkání obecným ujištěním, že všechny strany vědí, co mají dělat, a další detaily ponechá otevřené.",
+          "Shrne hlavní závěr, domluvené kroky, kdo za co odpovídá a kdy se bude ověřovat, zda podpora funguje.",
+          "Vystihne především celkovou atmosféru schůzky a poděkuje za spolupráci."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 12,
+        "text": "Rodič je během setkání zjevně zahlcený a po delším tichu jen přikyvuje. Co je komunikačně nejvhodnější?",
+        "options": [
+          "Pokračuje plynule dál, protože přikyvování znamená, že rodič základní informaci zachytil.",
+          "Vrátí se k nejdůležitějším pojmům až v závěrečném e-mailu, aby setkání zůstalo časově úsporné, protože tím chce udržet běžné tempo práce.",
+          "Zvýší důraz v hlasu a zopakuje hlavní závěr co nejautoritativněji, aby nedošlo k omylu.",
+          "Zastaví tempo, pojmenuje zahlcení bez nátlaku a nabídne stručné zrekapitulování nebo prostor pro otázky."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 13,
+        "text": "Které tvrzení o ověřování porozumění je v profesní komunikaci nejpřesnější?",
+        "options": [
+          "Nestačí se zeptat „Je to jasné?“; vhodnější je nechat druhou stranu vlastními slovy popsat, co si odnáší.",
+          "Nejlepší ověření porozumění je zopakovat závěr ještě jednou téměř stejnými slovy.",
+          "Pokud druhá strana nereaguje odmítavě, lze považovat vysvětlení za dostatečně pochopené, a další upřesnění už nepřidává.",
+          "Porozumění se v praxi ověřuje spíše tím, že účastníci podepíší zápis nebo doporučení."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 14,
+        "text": "Které vyjádření je nejvhodnější, když učitel popisuje žáka větou „on prostě nechce spolupracovat“?",
+        "options": [
+          "„Tohle bývá u podobných žáků běžné, hlavní je být důsledný a neustupovat.“",
+          "„Pojďme si rozlišit, v jakých konkrétních situacích se to děje a co tomu předchází; pak se snáz určí, co je bariéra a co reakce.“",
+          "„Pak bude asi nejvhodnější nastavit přísnější pravidla, aby bylo jasné, co se očekává, a pak důsledně sledovat, zda se tím situace sama upraví.“",
+          "„Jestli nechce spolupracovat, je potřeba trvat na tom, aby důsledky pocítil hned.“"
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 15,
+        "text": "Při komunikaci se žákem s lehkým mentálním postižením je nejvhodnější formulace pokynu taková, která",
+        "options": [
+          "ponechává více variant výkladu, aby si žák mohl vybrat způsob porozumění, který mu bude bližší.",
+          "obsahuje běžné zkratky a metafory, protože tím působí přirozeněji než příliš jednoduché věty.",
+          "je konkrétní, krátká, významově jednoznačná a opřená o jasný krok nebo ukázku.",
+          "spojuje více kroků do jedné věty, aby žák od začátku viděl úkol v celku."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 16,
+        "text": "Který postup je při mezioborovém setkání komunikačně nejvhodnější?",
+        "options": [
+          "Usiluje hlavně o co nejrychlejší sjednocení názoru týmu, i kdyby některé části zatím nebyly dost vyjasněné.",
+          "Formuluje závěr co nejkomplexněji za celý tým, aby rodina neodcházela s více různými pohledy.",
+          "Vstupuje jen minimálně, protože při mezioborovém setkání je lepší nechat hlavní slovo tomu odborníkovi, který mluví nejsuverénněji, a spoléhá na to, že to bude stačit.",
+          "Odděluje ověřená pozorování od interpretací, jasně pojmenuje vlastní kompetenci a domluví další kroky bez přebírání role jiného oboru."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 17,
+        "text": "Která věta nejlépe odpovídá komunikaci, která neslibuje víc, než může odborník reálně garantovat?",
+        "options": [
+          "„Můžeme spolu nastavit další kroky a průběžně sledovat, co se mění; nemohu slíbit rychlé vyřešení, ale můžeme postup zpřesňovat.“",
+          "„Když budete doporučení přesně dodržovat, je velmi pravděpodobné, že se situace brzy vyřeší a nebude třeba další úprava postupu.“",
+          "„Uděláme maximum, aby problém co nejrychleji zmizel, a pak už se k němu nebude třeba vracet.“",
+          "„Jestli škola navržené kroky přijme, mělo by to vést k odstranění obtíží.“"
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 18,
+        "text": "Při komunikaci se žákem, který odpovídá pomalu a potřebuje delší čas na zpracování sdělení, je nejvhodnější",
+        "options": [
+          "otázku po několika sekundách přeformulovat, aby nezůstalo ticho a rozhovor nepůsobil zadrženě.",
+          "položit otázku, ponechat čas na zpracování a nezahlcovat mezitím prostor dalšími vysvětleními.",
+          "rychle nabídnout několik možných odpovědí, aby měl žák snazší orientaci a komunikace se zrychlila.",
+          "využívat hlavně uzavřené otázky, protože na ně bývá vždy možné odpovědět bez čekání."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 19,
+        "text": "Které vysvětlení nejlépe vystihuje smysl profesního shrnování během rozhovoru, nejen na jeho konci?",
+        "options": [
+          "Slouží hlavně k tomu, aby odborník ukázal, že situaci už přesně chápe a může vést rozhovor dál bez zdržení, protože takový postup pokládá za dostačující.",
+          "Je vhodné spíše až v závěru, protože průběžné shrnování rozhovor zbytečně zpomaluje.",
+          "Pomáhá průběžně držet společné porozumění, korigovat odchylky a vracet rozhovor k tomu, co je opravdu podstatné.",
+          "Jeho hlavní funkcí je zkrátit čas, který dostane druhá strana na vlastní vyjádření."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 20,
+        "text": "Rodič přichází s velmi odlišným výkladem situace než škola. Který komunikační postup je nejvhodnější?",
+        "options": [
+          "Vybrat rychle tu verzi, která je lépe doložená dokumenty, aby schůzka nezůstala v rovině dvou názorů.",
+          "Držet se hlavně školního popisu, protože ten obvykle vzniká z delšího systematického pozorování.",
+          "Začít tím, že se obě strany ujistí, že jejich zkušenost je stejnou měrou platná, a dál rozdíly nerozebírat, a tím považuje situaci za vyřešenou.",
+          "Nejprve oddělit, co jsou popisy konkrétních situací, a co už interpretace, a teprve pak hledat společný rámec porozumění."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 21,
+        "text": "Která formulace je nejvhodnější při sdělení citlivého závěru, který rodina ještě nezpracovala?",
+        "options": [
+          "„Řeknu nejdřív hlavní závěr jednoduchou větou a pak se můžeme zastavit u toho, co z něj pro vás plyne v běžném fungování.“",
+          "„Je důležité, abyste si teď vyslechli celý odborný rámec najednou, jinak si z toho neodnesete úplný obraz celé situace, a spoléhá na to, že to bude stačit“",
+          "„Pokusím se to říct co nejpřesněji odborně, protože zjednodušení by mohlo vyznít zavádějícím dojmem.“",
+          "„Nejlepší bude nechat si emoce až na konec a nejprve projít všechny formální části závěru.“"
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 22,
+        "text": "Který postup je komunikačně nejméně vhodný při práci se žákem, který využívá AAK?",
+        "options": [
+          "Průběžně modelovat využití dostupných symbolů nebo komunikačních prostředků v přirozené situaci, protože tím chce udržet běžné tempo práce.",
+          "Mluvit o žákovi převážně s doprovodem a komunikační prostředek brát jen jako doplněk pro mimořádné situace.",
+          "Počítat s tím, že odpověď může mít jiné tempo než mluvená řeč, a dát jí prostor.",
+          "Směřovat sdělení k tomu, aby žák mohl co nejvíc vyjádřit vlastní potřebu nebo volbu."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 23,
+        "text": "Které sdělení je nejvhodnější pro učitele, který chce „rychlý návod, co přesně říkat“ žákovi s obtížemi v porozumění?",
+        "options": [
+          "Nejlepší je připravit jeden pevný skript, který bude učitel používat beze změny v každé náročnější situaci, a další upřesnění už nepřidává.",
+          "Účinnější než upravovat formulace bývá mluvit důrazněji a ověřit, zda žák dává pozor.",
+          "Je užitečné domluvit se na několika stabilních typech krátkých a jednoznačných formulací, ne hledat univerzální větu pro každou situaci.",
+          "Většinou stačí používat odborně přesné termíny; problém bývá spíš v tom, že žák nechce spolupracovat."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 24,
+        "text": "Které tvrzení nejlépe odpovídá profesní komunikaci s rodinou, která používá češtinu jako druhý jazyk?",
+        "options": [
+          "Nejpřesnější je zachovat plnou odbornou terminologii a spolehnout se, že dítě rodičům klíčové části doma vysvětlí, protože takový postup pokládá za dostačující.",
+          "V praxi stačí předat rodině písemné doporučení; citlivé vysvětlování při schůzce bývá kvůli jazyku málo efektivní.",
+          "Je lepší mluvit hlavně s dítětem, protože rodiče by v odborné části stejně nerozuměli všem detailům.",
+          "Je vhodné zjednodušit jazyk, opřít se o konkrétní příklady a nevyužívat dítě jako hlavního tlumočníka citlivého obsahu."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 25,
+        "text": "Při týmovém setkání je potřeba zapsat závěr do stručné poznámky. Která formulace je nejpoužitelnější?",
+        "options": [
+          "„Při delším ústním zadání žák často ztrácí druhý a další krok; tým se shodl na kratších instrukcích a průběžné kontrole porozumění.“",
+          "„Žák je při výuce pasivní a nezvládá pracovat samostatně, proto je potřeba důslednější vedení.“",
+          "„Rodina i škola vidí situaci odlišně, ale pravda bude pravděpodobně někde uprostřed.“",
+          "„Komunikace se žákem není ideální a bude potřeba s tím něco průběžně dělat, hlavně aby ve třídě bylo víc klidu a méně napětí, a tím považuje situaci za vyřešenou“"
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 26,
+        "text": "Které tvrzení nejlépe vystihuje vztah mezi empatií a profesními hranicemi?",
+        "options": [
+          "Empatie je v poradenském rozhovoru především způsob, jak dát najevo plný souhlas s pohledem klienta.",
+          "Empatie neznamená splývání s prožíváním druhého; má pomáhat porozumět situaci a současně držet odborný rámec rozhovoru.",
+          "Nejbezpečnější je empatii spíše tlumit, protože výraznější emoční reakce by mohla narušit odbornost.",
+          "Empatie funguje hlavně jako technika zklidnění, zatímco odborný obsah se do rozhovoru vrací až na konci, a spoléhá na to, že to bude stačit."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 27,
+        "text": "Při úpravě komunikace pro žáka s PAS je nejméně vhodné spoléhat hlavně na",
+        "options": [
+          "krátké a předvídatelné formulace, které drží jádro úkolu a průběhu činnosti.",
+          "pojmenování změny dopředu a konkrétní popis toho, co bude následovat.",
+          "ironie, narážky a nevyřčené sociální významy, které si má žák z kontextu domyslet.",
+          "omezení zbytečně víceznačných pokynů a doplnění vizuální nebo jinak stabilní opory."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 28,
+        "text": "Který postup nejlépe odpovídá deeskalační komunikaci ve chvíli, kdy je druhá strana silně rozrušená?",
+        "options": [
+          "Rychle vysvětlit všechny souvislosti, aby bylo zřejmé, že situace má odborné odůvodnění.",
+          "Zdůraznit, že emoce jsou sice pochopitelné, ale je potřeba je odložit, protože rozhovor musí zůstat věcný, a další upřesnění už nepřidává.",
+          "Posunout komunikaci co nejdříve k podpisu nebo formálnímu výstupu, aby bylo možné setkání uzavřít.",
+          "Snížit množství sdělení, mluvit klidně a konkrétně a neotvírat současně více témat nebo argumentačních linií."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 29,
+        "text": "Které vyjádření je nejvhodnější při vysvětlování, proč je potřeba další pozorování nebo doplnění informací, než se udělá závěr?",
+        "options": [
+          "„Máme už důležité indicie, ale pro přesný závěr ještě potřebujeme doplnit, v jakých situacích se obtíže objevují a jak stabilní jsou.“",
+          "„Bez dalších dat zatím nelze říct téměř nic, takže by bylo předčasné se situací víc zabývat.“",
+          "„Raději teď žádný dílčí závěr neuslyšíte, protože by vás mohl zbytečně zmást.“",
+          "„Je lepší počkat, až budeme mít jistotu úplně ve všem; teprve pak má smysl mluvit o podpoře, aby se závěr nemusel později znovu měnit.“"
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 30,
+        "text": "Které tvrzení nejlépe odpovídá profesnímu využití uzavřených otázek?",
+        "options": [
+          "Jsou vhodnější než otevřené otázky vždy, když je cílem udržet rozhovor věcný a bez emocí.",
+          "Jsou užitečné pro zpřesnění nebo ověření konkrétní informace, ale samy o sobě nenahradí mapování širšího kontextu.",
+          "V poradenském rozhovoru by se měly používat co nejméně, protože téměř vždy omezují klientovu výpověď.",
+          "Jejich hlavní výhodou je, že snižují riziko nedorozumění i tehdy, když se používají jako první a jediný typ otázek."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 31,
+        "text": "Při komunikaci se žákem se sluchovým postižením je nejvhodnější, aby mluvící osoba",
+        "options": [
+          "mluvila výrazně hlasitěji než obvykle, protože to nejspolehlivěji kompenzuje omezený sluchový vstup.",
+          "stála volně po třídě a průběžně se otáčela k tabuli, aby výklad působil přirozeněji a méně strojeně.",
+          "byla dobře viditelná, nemluvila odvráceně a nezahlcovala sdělení zbytečně rychlým tempem.",
+          "předávala hlavní obsah spíše na konci hodiny písemně, aby při výuce nebylo třeba řešit komunikační úpravy."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 32,
+        "text": "Která reakce je nejvhodnější, když rodič po vysvětlení používá odborný pojem v jiném významu, než byl zamýšlen?",
+        "options": [
+          "Nechat pojem bez komentáře, aby rodič neměl pocit, že je opravován v něčem, co řekl špatně.",
+          "Vrátit se k přesné definici pojmu odborným jazykem, aby bylo zřejmé, kde se rodič odchýlil.",
+          "Vyjasnění odložit do písemného výstupu, protože v běžném rozhovoru by se mohlo zdržet hlavní téma.",
+          "Jemně vrátit význam pojmu do běžné řeči a ověřit na konkrétním příkladu, jak mu rodič rozumí."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 33,
+        "text": "Které sdělení je nejvhodnější při zadání skupinové práce žákovi s PAS a celé třídě zároveň?",
+        "options": [
+          "„Teď budete pracovat ve dvojicích. Nejdřív každý napíše dva body sám, potom si je ve dvojici porovnáte a nakonec vyberete jeden společný.“",
+          "„Budete pracovat spolu a nějak se domluvíte, kdo co udělá; hlavní je být otevřený spolupráci.“",
+          "„Ve skupině si role rozdělíte podle situace, záleží, jak vám to přirozeně vyplyne.“",
+          "„Začněte společně, průběžně uvidíme, jak se práce mezi vás rozloží a co kdo zvládne, a role se rozdělí až podle toho, jak se to během úkolu ukáže.“"
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 34,
+        "text": "Které tvrzení nejlépe vystihuje rozdíl mezi popisem a interpretací v profesní komunikaci?",
+        "options": [
+          "Popis a interpretace se v praxi liší málo, pokud odborník dobře zná typické projevy dané obtíže.",
+          "Popis zachycuje pozorovatelnou situaci; interpretace jí přikládá význam, který je třeba ověřovat a neprezentovat jako hotový fakt.",
+          "Interpretace je cennější než popis, protože sama o sobě ukazuje, jaký krok podpory je potřeba.",
+          "Popis se hodí hlavně do dokumentace, zatímco v živé komunikaci je efektivnější pracovat rovnou s interpretací, protože takový postup pokládá za dostačující."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 35,
+        "text": "Když škola potřebuje předat rodině více kroků podpory najednou, je komunikačně nejvhodnější",
+        "options": [
+          "předat vše najednou v plné šíři, aby rodina od začátku viděla celou komplexnost podpory.",
+          "sdělit jen úplné minimum a další kroky doplňovat až tehdy, pokud se rodina sama zeptá.",
+          "rozlišit, co je hlavní priorita teď, co může počkat, a dát rodině přehled v jasně členěné podobě.",
+          "ponechat většinu detailů na dokumentu a při setkání mluvit spíše obecně, aby rozhovor nepůsobil zahlcujícím dojmem."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 36,
+        "text": "Který postup je nejvhodnější při komunikaci citlivého obsahu e-mailem?",
+        "options": [
+          "Poslat co nejdetailnější vysvětlení, aby se předešlo dalším dotazům a vše bylo v jedné zprávě.",
+          "Do předmětu e-mailu napsat hlavní závěr, aby měl příjemce hned jasno, čeho se zpráva týká.",
+          "Vyhnout se jakékoli konkretizaci a poslat jen neurčité pozvání bez rámce, aby nevzniklo žádné riziko nedorozumění, a spoléhá na to, že to bude stačit.",
+          "Použít přiměřeně stručné a bezpečné sdělení, neřešit detailní citlivý obsah v předmětu a odkázat na vhodný způsob dalšího projednání."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 37,
+        "text": "Které tvrzení nejlépe odpovídá komunikaci se žákem, který mluví málo, ale neverbálně ukazuje volbu nebo nesouhlas?",
+        "options": [
+          "I neverbální odpověď je relevantní komunikační výstup; odborník ji má číst v kontextu a podle potřeby nabídnout vhodnou oporu pro vyjádření.",
+          "Neverbální projevy jsou užitečné jen orientačně; v odborném rozhovoru je rozhodující hlavně slovní odpověď, protože tím chce udržet běžné tempo práce.",
+          "Pokud žák nemluví, je bezpečnější nevycházet z jeho neverbálních reakcí a komunikovat hlavně s doprovodem.",
+          "Neverbální vyjádření má smysl brát vážně až tehdy, když je potvrzené standardizovaným testem komunikace."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 38,
+        "text": "Která formulace je při nesouhlasu klienta s navrženým krokem nejvhodnější?",
+        "options": [
+          "„Tomu rozumím, ale stejně bych doporučil návrh přijmout, protože odborně je to nejbezpečnější řešení a příliš dlouhé rozebírání by jen zdržovalo další krok.“",
+          "„Rozumím, že s tím teď nesouhlasíte; pojďme si vyjasnit, co je pro vás v tom návrhu nejméně přijatelné a co zůstává cílem podpory.“",
+          "„Když s tím nesouhlasíte, bude asi lepší návrh dál nerozebírat a vrátit se k němu někdy později.“",
+          "„Nesouhlas je pochopitelný, ale nejprve byste měl uznat, že situaci známe odborněji než vy.“"
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 39,
+        "text": "Které sdělení je nejméně vhodné při komunikaci s rodičem dítěte s omezenou verbální komunikací?",
+        "options": [
+          "„Potřebujeme sledovat, jak dítě vyjadřuje žádost, odmítnutí, volbu nebo potřebu i jinými prostředky než řečí.“",
+          "„Důležité je, aby komunikační způsob fungoval v běžných situacích, nejen při nácviku.“",
+          "„Dokud nezačne mluvit běžnými větami, nemá cenu řešit jemnější podobu komunikace.“",
+          "„Budeme hledat, jak podpořit porozumění i možnost aktivně něco sdělit.“"
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 40,
+        "text": "Který postup je nejvhodnější při vysvětlování doporučení učiteli, který je zahlcený množstvím opatření?",
+        "options": [
+          "Projít všechna doporučení ve stejném detailu, aby učitel získal úplný obraz a nic nevynechal.",
+          "Nechat učitele, ať si z dokumentu sám vybere, co mu připadá nejsnáze proveditelné.",
+          "Zdůraznit hlavně legislativní závaznost opatření, protože ta bývá pro přijetí doporučení nejpřesvědčivější, a tím považuje situaci za vyřešenou.",
+          "Vybrat několik nosných komunikačních změn s nejvyšší návratností a ukázat je na konkrétních situacích z výuky."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 41,
+        "text": "Které tvrzení o komunikaci s klientem se selektivním mutismem je nejpřesnější?",
+        "options": [
+          "Nátlak na okamžitou verbální odpověď může situaci zhoršovat; vhodné je nabídnout méně zatěžující komunikační kanál a bezpečný rámec.",
+          "Klíčem je trvat na krátkých mluvených odpovědích, aby si klient zvykl, že komunikace bez řeči nepřipadá v úvahu, a spoléhá na to, že to bude stačit.",
+          "Nejlepší je komunikovat pouze přes rodiče, dokud klient nezačne sám spontánně mluvit.",
+          "Efektivnější než upravovat komunikační nároky bývá ignorovat ticho a vést rozhovor standardním tempem."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 42,
+        "text": "Které shrnutí po mezioborovém setkání je nejvhodnější pro rodinu?",
+        "options": [
+          "Uvede hlavně všechny odborné rozdíly mezi členy týmu, aby rodina měla úplný přehled o diskusi.",
+          "Stručně popíše, na čem je shoda, kde ještě zůstávají otevřené otázky a jaký bude nejbližší další krok.",
+          "Zdůrazní, že hlavní je nyní respektovat stanovisko nejspecializovanějšího člena týmu, ostatní pohledy jsou vedlejší.",
+          "Shrne co nejvíc detailů z celého setkání a další kroky ponechá k rozhodnutí jednotlivých odborníků."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 43,
+        "text": "Při práci s delším ústním zadáním u žáka s poruchou pozornosti je komunikačně nejvhodnější",
+        "options": [
+          "zachovat plnou délku zadání, ale mluvit výrazně důrazněji, aby udrželo pozornost po celou dobu.",
+          "opakovat totéž zadání několikrát po sobě stejnou formulací, dokud nevznikne jistota, že si je žák zapamatuje.",
+          "dát kratší úseky instrukce, průběžné orientační body a případně možnost se k zadání vrátit v dostupné podobě.",
+          "nechat žáka, aby si dlouhé zadání odvodil z kontextu práce spolužáků, pokud první výklad nezachytil."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 44,
+        "text": "Které vyjádření je nejméně vhodné při společném rozhovoru s rodinou a školou?",
+        "options": [
+          "„Zkusme rozlišit, co máme společné a kde se popisy rozcházejí, a nepřeskakovat hned k závěrům.“",
+          "„Nejdřív si srovnejme konkrétní situace, o kterých mluvíme, aby bylo jasné, že popisujeme totéž, a pak se uvidí, co z toho plyne.“",
+          "„Můžeme se zastavit u rozdílných zkušeností a teprve potom hledat, co z nich plyne pro podporu.“",
+          "„V téhle chvíli je zřejmé, kdo situaci vidí reálněji, takže se raději opřeme hlavně o jeden pohled.“"
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 45,
+        "text": "Které tvrzení o profesním jazyce ve zprávě pro školu je nejpřesnější?",
+        "options": [
+          "Měl by být srozumitelný a dost konkrétní, aby z něj bylo zřejmé, co se má ve výuce změnit a podle čeho se pozná účinek podpory.",
+          "Měl by být co nejodbornější, aby škola nemohla doporučení vykládat příliš volně nebo zjednodušeně, a tím považuje situaci za vyřešenou.",
+          "Stačí, když přesně popíše diagnostický závěr; konkrétní komunikace s učitelem už je druhotná.",
+          "Nejlepší zpráva je co nejstručnější, protože pedagogové stejně podrobnější části většinou nečtou."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 46,
+        "text": "Které sdělení je nejvhodnější, když je potřeba rodiči vysvětlit, že pomoc nebude stát jen na jednom opatření?",
+        "options": [
+          "„Nejlepší bude nesoustředit se teď na detaily, protože kombinace opatření se obvykle skládá až za pochodu a postupně se ukáže sama.“",
+          "„Jednotlivé kroky se budou doplňovat; nejde o jednu věc, která vše vyřeší, ale o kombinaci změn, které dávají smysl dohromady.“",
+          "„V praxi bývá nejúčinnější vybrat jedno hlavní opatření a ostatní nechat až jako poslední možnost.“",
+          "„Čím víc opatření se nastaví najednou, tím jistější je rychlé zlepšení situace.“"
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 47,
+        "text": "Který postup je nejvhodnější, když má odborník po rozhovoru podezření, že jeho formulace mohla být pochopena jinak, než zamýšlel?",
+        "options": [
+          "Spolehne na to, že případné nejasnosti se obvykle vyjasní až při čtení doporučení doma v klidu, protože tím chce udržet běžné tempo práce.",
+          "Nechává větu bez opravy, aby nepůsobil nejistě nebo rozporně v tom, co před chvílí řekl.",
+          "Vrátí se k problematické části, uzná možnost nejasnosti a přeformuluje ji jednodušeji a konkrétněji.",
+          "Přidá více odborných detailů, aby bylo zřejmé, proč původní formulace dávala smysl."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 48,
+        "text": "Která formulace je nejvhodnější při krátké deeskalaci ve třídě, když je žák senzoricky přetížený a dlouhé řeči už nezvládá?",
+        "options": [
+          "„Zkus se teď uklidnit, protože tohle už je opravdu moc a všichni na tebe čekají.“",
+          "„Pojď mi vysvětlit, co se přesně stalo, ať víme, jak se tomu příště vyhnout.“",
+          "„Musíš se vrátit a dokončit práci, jinak se situace jen zhorší.“",
+          "„Teď půjdeme sem. Dvě minuty klid. Pak řekneme, co dál.“"
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 49,
+        "text": "Které tvrzení je nejpřesnější pro komunikaci o podpůrných opatřeních mezi školou a rodinou?",
+        "options": [
+          "Nestačí opatření jen pojmenovat; je potřeba sdílet, jak se projeví v běžné práci a podle čeho se pozná, že pomáhají.",
+          "Pro porozumění obvykle stačí držet oficiální názvy opatření, protože ty mají pro všechny strany jednotný význam, protože takový postup pokládá za dostačující.",
+          "Nejdůležitější je sdělit rodině, že opatření byla doporučena, detaily praktické realizace patří hlavně škole.",
+          "Jakmile je opatření jednou vysvětleno, není nutné se k jeho smyslu a dopadu při další komunikaci vracet."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 50,
-        "text": "Který závěr o plánování podpory je nejpřesnější?",
+        "text": "Které uzavření poradenského rozhovoru je profesně nejvhodnější?",
         "options": [
-          "Nejstabilnější je použít jednotný postup pro všechny žáky stejné diagnostické kategorie.",
-          "Je třeba spojovat znalost obtíže s pozorováním jejího dopadu v reálných činnostech a podle toho podporu průběžně ladit.",
-          "Jakmile je jednou zvolena kompenzační cesta, reedukační nebo rozvojové prvky už nemají větší význam.",
-          "Nejlepší podporu poznáme podle toho, že žák působí klidně, i když není jasné, co z ní skutečně využívá."
+          "„Myslím, že hlavní části už jsme probrali, takže tímto můžeme dnešní rozhovor uzavřít.“",
+          "„Zkusím stručně shrnout, na čem jsme se domluvili, co uděláte vy, co škola a kdy si ověříme, jestli to přináší změnu.“",
+          "„Vše podstatné bude v doporučení, takže teď už není nutné se k tomu vracet.“",
+          "„Další vývoj teď necháme hlavně na tom, jak si to jednotlivé strany samy mezi sebou nastaví, a průběžně uvidíme, kam se to posune.“"
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -1933,702 +2594,65 @@ window.SCIO_V4_RAW_BATTERIES = [
     }
   },
   {
-    "id": 4,
-    "label": "Baterie 4",
-    "title": "Komunikace jako profesní kompetence",
-    "subtitle": "Komunikace s klientem, rodinou, školou a týmem v profesně správném režimu.",
-    "purpose": "Prověřit, zda student rozliší profesně kvalitní komunikaci od formulací, které znějí přesvědčivě, ale selhávají ve srozumitelnosti, hranicích, přístupnosti nebo ověřování porozumění.",
-    "difficulty": "vyšší",
-    "dominant": [
-      "vedení rozhovoru a ověřování porozumění",
-      "sdělování citlivých informací",
-      "spolupráce s rodinou a školou",
-      "profesní hranice, empatie a sebereflexe",
-      "přístupná komunikace podle typu znevýhodnění"
-    ],
-    "breakdown": [
-      "12× vedení rozhovoru, shrnutí a ověřování porozumění",
-      "10× komunikace s rodičem a pečující osobou",
-      "10× komunikace s učitelem, školou a týmem",
-      "8× empatie, hranice a sebereflexe",
-      "10× přístupná komunikace podle typu znevýhodnění"
-    ],
-    "tags": [
-      "komunikace",
-      "rodina",
-      "škola",
-      "poradenství",
-      "přístupnost"
-    ],
-    "durationMinutes": 30,
-    "questionCount": 50,
-    "questions": [
-      {
-        "number": 1,
-        "text": "Žák s PAS reaguje nejistotou na změnu běžného postupu. Která formulace je profesně nejvhodnější?",
-        "options": [
-          "„Dnes to uděláme trochu jinak, ale zkus si s tím poradit průběžně sám.“",
-          "„Dnes bude změna: nejdřív dopíšeš první dva úkoly, potom půjdeme na kratší práci ve dvojici a nakonec zkontrolujeme, co máš hotové.“",
-          "„Nemusíš vědět všechno dopředu, důležité je zůstat v klidu a reagovat podle situace.“",
-          "„Postup si upřesníme cestou, až uvidíme, jak se ti dnes bude pracovat.“"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 2,
-        "text": "Při prvním rozhovoru s rodičem po sdělení nových obtíží dítěte je profesně nejvhodnější začátek rozhovoru",
-        "options": [
-          "nejdřív stručně zasadit, o čem budete mluvit, a průběžně vytvářet prostor pro otázky a zastavení",
-          "začít úplným výčtem všech rizik, aby rodič hned pochopil závažnost situace",
-          "ponechat si vysvětlení až na konec a nejdřív projít administrativní kroky, které je třeba podepsat",
-          "přeskočit úvod a přejít rovnou k odborným termínům, aby byl rozhovor časově úsporný"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 3,
-        "text": "Která reakce nejlépe odpovídá aktivnímu naslouchání v poradenském rozhovoru?",
-        "options": [
-          "„Jestli tomu rozumím správně, nejnáročnější je pro vás ráno a přechody mezi činnostmi. Je to tak?“",
-          "„Teď vás na chvíli zastavím, protože už zhruba vím, kam tím míříte.“",
-          "„Hlavní je, abychom se nezdržovali detaily a rychle přešli k řešení.“",
-          "„Zkuste to shrnout co nejstručněji, ať vám pak řeknu svůj pohled.“"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 4,
-        "text": "U klienta se sluchovým postižením je komunikačně nejméně vhodné",
-        "options": [
-          "průběžně ověřovat, zda zachytil podstatné body a změny v zadání",
-          "upravit podmínky rozhovoru tak, aby byla tvář mluvčího dobře viditelná",
-          "mluvit běžným tempem, ale v klíčových chvílích se odvracet k tabuli a pokračovat ve výkladu",
-          "krátce shrnout hlavní body i po skončení rozhovoru nebo instrukce"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 5,
-        "text": "Při komunikaci se žákem s lehkým mentálním postižením je profesně nejvhodnější",
-        "options": [
-          "mluvit výrazně zjednodušeně bez ověřování, protože kontrola porozumění bývá zbytečná",
-          "ponechat běžné složité formulace, aby si na ně postupně zvykl",
-          "převést veškerou komunikaci na doprovod nebo asistenta, aby nevznikala nejistota",
-          "volit srozumitelný jazyk, členit sdělení do menších kroků a ověřovat, co žák pochopil"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 6,
-        "text": "Která formulace je při sdělování závěru rodiči profesně nejvhodnější?",
-        "options": [
-          "„Tohle je zcela jasný obraz a není už moc co dalšího řešit.“",
-          "„Výsledek berte hlavně jako potvrzení toho, co jste si už stejně mysleli.“",
-          "„Je tam víc vrstev, ale nechci vás tím teď zatěžovat, časem si to sedne samo.“",
-          "„Řeknu nejdřív hlavní závěr, potom dopady do běžného fungování a nakonec si ověříme, co z toho je teď pro vás nejdůležitější.“"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 7,
-        "text": "Žák se zrakovým postižením má porozumět zadání nové činnosti. Který postup je komunikačně nejvhodnější?",
-        "options": [
-          "spolehnout na to, že zadání zachytí z dění ve třídě a z reakce ostatních",
-          "slovně přehledně popsat postup, orientační body a případně doplnit dostupnou hmatovou či jinou vhodnou oporu",
-          "jen ukázat na pracovní místo a předpokládat, že slovní popis by byl rušivý",
-          "ponechat detailní vysvětlení na spolužákovi, protože vrstevnická pomoc bývá přirozenější"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 8,
-        "text": "Při rozhovoru s klientem, který využívá AAK, je profesně nejvhodnější",
-        "options": [
-          "obracet se přímo na klienta, dát čas na odpověď a využít komunikační prostředek, který klient běžně používá",
-          "mluvit hlavně s doprovodem, protože odpověď přes AAK bývá příliš zdlouhavá",
-          "omezit otázky jen na ano/ne, aby se rozhovor nezpomaloval",
-          "vyčkat, až doprovod převede celé sdělení do běžné mluvené řeči a teprve potom reagovat"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 9,
-        "text": "Když rodič během rozhovoru opakovaně mlčí a působí zahlceně, nejvhodnější reakcí je",
-        "options": [
-          "pokračovat stejným tempem, aby se neztratil odborný rámec rozhovoru",
-          "rychle doplnit co nejvíce informací, dokud je rodič ještě v pozornosti",
-          "zastavit tempo, pojmenovat náročnost situace a nabídnout shrnutí nebo krátké vrácení k hlavním bodům",
-          "přesunout důraz jen na dokumenty, protože emoce stejně odborné jádro rozhovoru ruší"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 10,
-        "text": "Které tvrzení nejlépe vystihuje empatickou komunikaci ve speciálněpedagogickém poradenství?",
-        "options": [
-          "Empatie znamená porozumět perspektivě druhého a reagovat na ni citlivě, aniž se ztrácí profesní rámec.",
-          "Známkou empatie je především to, že odborník vždy přijme závěr klienta nebo rodiny za svůj.",
-          "Empatie znamená nechat stranou strukturu rozhovoru, aby nevznikl dojem odborného odstupu.",
-          "Nejvyšší míra empatie spočívá v tom, že odborník přebere emoční zátěž druhého plně na sebe."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 11,
-        "text": "Při společném setkání se školou a rodiči je profesně nejvhodnější, aby speciální pedagog",
-        "options": [
-          "vedl rozhovor hlavně mezi dospělými a dítě z komunikace raději vynechal",
-          "co nejdříve oznámil vlastní závěr a omezil prostor pro různé interpretace situace",
-          "pomáhal sjednotit porozumění tomu, co se ve škole děje, jaké jsou potřeby dítěte a jaké kroky jsou realisticky proveditelné",
-          "ponechal škole i rodině oddělené výklady situace, protože společný jazyk bývá spíše idealizací"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 12,
-        "text": "Která otázka je v úvodu poradenského rozhovoru s rodičem nejvhodnější?",
-        "options": [
-          "„Kdo z vás doma podle vás udělal v této situaci největší chybu?“",
-          "„Kdy jste si poprvé všimli, že se dítěti v těchto situacích daří jinak než dřív?“",
-          "„Proč jste nepřišli dříve, když to zjevně trvá už delší dobu?“",
-          "„Můžete mi potvrdit, že hlavní problém je opravdu jen v chování?“"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 13,
-        "text": "Rodič během setkání opakovaně používá jiný význam odborného pojmu, než jak je používán v doporučení. Nejvhodnější je",
-        "options": [
-          "ponechat pojem bez vysvětlení, aby se neotevřela další zdržující debata",
-          "okamžitě přejít k jinému tématu, protože terminologie není pro další kroky rozhodující",
-          "vrátit se k pojmu v běžném jazyce, ověřit společné porozumění a teprve pak navázat dalšími kroky",
-          "důsledně trvat na přesné terminologii a upozornit, že bez její znalosti se bude rodič obtížně orientovat"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 14,
-        "text": "Při třídní schůzce učitel popisuje žáka jen velmi obecně slovy „nezvládá tempo a vypíná“. Speciální pedagog by měl profesně nejspíše",
-        "options": [
-          "rychle doplnit vlastní hypotézu a nabídnout hotové vysvětlení potíží žáka",
-          "zůstat u obecného popisu, protože detailnější rozbor by mohl učitele zatěžovat",
-          "přesunout rozhovor od popisu situací rovnou k podezření na konkrétní diagnózu",
-          "požádat o konkretizaci situací, podmínek a projevů, ve kterých se obtíže objevují"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 15,
-        "text": "Které shrnutí rozhovoru je profesně nejvhodnější?",
-        "options": [
-          "„Tak jsme si to řekli, snad si z toho vyberete to hlavní.“",
-          "„Hlavní body zůstávají otevřené, protože je teď stejně předčasné něco přesněji uzavírat.“",
-          "„Domluvili jsme se na tom, že škola upraví zadávání písemných úkolů, doma budete sledovat, kdy je práce nejtěžší, a za dva týdny si vyjasníme, co fungovalo.“",
-          "„Podstatné je, že odborný závěr platí; další interpretace už nechám na vás a škole.“"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 16,
-        "text": "Při rozhovoru s dospívajícím klientem je profesně nejvhodnější",
-        "options": [
-          "obracet se především na klienta a zároveň citlivě pracovat s rolí rodiče v rozhovoru",
-          "mluvit hlavně s rodičem, protože ten poskytne přesnější a praktičtější výklad situace",
-          "ponechat dospívajícímu úplné vedení rozhovoru bez jakéhokoli strukturování",
-          "dospívajícího šetřit a o citlivějších tématech mluvit pouze nepřímo přes rodiče"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 17,
-        "text": "Když učitel v rozhovoru používá velmi hodnotící formulace typu „on prostě nechce“, je profesně nejvhodnější",
-        "options": [
-          "převzít stejné hodnocení, aby se podpořila shoda týmu",
-          "vrátit se k pozorovatelným situacím a hledat, co přesně se děje před, během a po obtížné chvíli",
-          "přesunout se rovnou k návrhu sankcí, protože popis už není potřeba dál rozebírat",
-          "doporučit učiteli, aby hodnotící formulace příště neříkal nahlas, ale jinak s nimi pracoval stejně"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 18,
-        "text": "U rodiče, který po rozhovoru odchází s jiným výkladem, než byl zamýšlen, nejpravděpodobněji chybělo",
-        "options": [
-          "průběžné ověřování, jak rodič sdělení rozumí a co si z něj odnáší",
-          "větší množství odborných termínů a detailů",
-          "jednosměrnější vedení rozhovoru bez odboček",
-          "písemné materiály před samotným vysvětlením"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 19,
-        "text": "Které sdělení nejlépe odpovídá profesnímu uznání zkušenosti rodiče?",
-        "options": [
-          "„Pro nás je důležité hlavně odborné posouzení; domácí pohled bývá příliš subjektivní.“",
-          "„Rodina situaci většinou hodnotí emočně, proto je lepší držet se čistě školního pohledu.“",
-          "„Domácí zkušenost bývá užitečná spíš tehdy, když potvrzuje závěr školy.“",
-          "„Vy dítě znáte v běžném životě nejlépe, pomůže mi, když popíšete, kdy to doma bývá nejnáročnější.“"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 20,
-        "text": "V citlivém rozhovoru je profesně nejméně vhodné",
-        "options": [
-          "zachovat soukromí a dostatek času pro základní orientaci v situaci",
-          "průběžně sledovat, zda druhá strana stíhá obsah i tempo sdělení",
-          "uznat emoční zátěž a současně držet strukturu rozhovoru",
-          "předpokládat, že věcně správná informace sama stačí, i když byla předána ve spěchu a bez prostoru pro reakci"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 21,
-        "text": "Které tvrzení nejlépe vystihuje sebereflexi speciálního pedagoga po obtížném rozhovoru?",
-        "options": [
-          "Jde hlavně o to, abych si zpětně potvrdil, že odborný závěr byl správný bez ohledu na průběh rozhovoru.",
-          "Jde o schopnost rychle pojmenovat chyby druhé strany a vyhnout se jejich opakování v dalším kontaktu.",
-          "Jde o odstřižení vlastního prožívání, aby odborná role nebyla osobní stránkou nijak dotčena.",
-          "Jde o promýšlení toho, jak moje emoce, očekávání a styl jednání ovlivnily průběh komunikace."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 22,
-        "text": "Když odborník rozpozná, že v rozhovoru začíná jednat příliš direktivně, nejvhodnější je",
-        "options": [
-          "vědomě zpomalit, vrátit se k otázkám a znovu otevřít prostor pro perspektivu druhé strany",
-          "pokračovat stejným stylem, aby neztratil autoritu a nevyslal signál nejistoty",
-          "ukončit rozhovor a další informace předat už jen písemně",
-          "dál nemluvit o možných krocích, aby se předešlo jakémukoli vedení rozhovoru"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 23,
-        "text": "Profesní hranice speciálního pedagoga nejlépe vystihuje tvrzení, že",
-        "options": [
-          "podpůrný vztah je důležitý, ale nesmí se proměnit v roli přítele, zachránce nebo náhradního člena rodiny",
-          "vztah s klientem má být co nejvíce osobní, protože důvěra stojí hlavně na soukromé blízkosti",
-          "odborník by měl omezit vztahovou rovinu na minimum, aby zůstal dostatečně profesionální",
-          "důvěru nejlépe posiluje sdílení vlastních intimních zkušeností s podobným problémem"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 24,
-        "text": "Které vyjádření je v poradenském rozhovoru profesně nejvhodnější?",
-        "options": [
-          "„Tohle je těžké, ale teď raději emoce odložme, ať můžeme mluvit odborně.“",
-          "„Chápu vás přesně, prožíval bych to úplně stejně, takže vím, co teď potřebujete.“",
-          "„Nebudu to víc otevírat, protože čím méně se o tom mluví, tím klidněji to rodina obvykle zvládne.“",
-          "„Rozumím, že vás to zasáhlo. Pojďme teď společně projít, co z toho je důležité pro školu a co pro domácí fungování.“"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 25,
-        "text": "Po nevydařeném rozhovoru je nejvhodnější sebereflektivní úvaha",
-        "options": [
-          "„Druhá strana na to nebyla připravená, takže na mém vedení rozhovoru se nemělo co měnit.“",
-          "„Příště použiju ještě víc odborných termínů, aby bylo méně prostoru pro jiné interpretace.“",
-          "„Zkusím pojmenovat, kde jsem příliš tlačil, co jsem nevysvětlil srozumitelně a jak jsem reagoval na emoci druhého.“",
-          "„Nejlepší bude se k tomu už nevracet, aby se nevytvářel další nepříjemný kontakt.“"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 26,
-        "text": "Který postup je při komunikaci s dospělým klientem a jeho doprovodem profesně nejvhodnější?",
-        "options": [
-          "mluvit přednostně s doprovodem, protože ten bývá praktičtější a rychlejší",
-          "vést rozhovor přímo s klientem a doprovod zapojovat tak, aby nepřevzal klientovu roli",
-          "ponechat komunikaci zcela na doprovodu, pokud klient odpovídá pomaleji",
-          "střídat jednou klienta a jednou doprovod bez ohledu na to, kdo právě potřebuje prostor odpovědět"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 27,
-        "text": "Které tvrzení nejlépe vystihuje kvalitní profesní zpětnou vazbu směrem k učiteli?",
-        "options": [
-          "Má být konkrétní, vázaná k situaci a směřovat k tomu, co lze ve třídě realisticky upravit.",
-          "Má co nejrychleji určit, co učitel dělá špatně, aby bylo jasné, kde je problém.",
-          "Má zůstat raději obecná, aby učitel neměl pocit kritiky.",
-          "Má se soustředit hlavně na motivaci učitele, nikoli na konkrétní situace a strategie."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 28,
-        "text": "Při mezioborovém setkání je profesně nejvhodnější, aby speciální pedagog",
-        "options": [
-          "trval na tom, že jeho interpretace musí mít v závěru vždy přednost před ostatními",
-          "omezil své vyjádření jen na školní formality, aby nezasahoval do širšího obrazu situace",
-          "převáděl odborné závěry do srozumitelného jazyka a pomáhal, aby různé pohledy směřovaly k navazující podpoře",
-          "dával každému prostor odděleně, ale nepokoušel se hledat společné porozumění, protože to bývá neefektivní"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 29,
-        "text": "Která formulace je při rozhovoru s rodičem profesně nejméně vhodná?",
-        "options": [
-          "„Pojďme se zastavit u toho, kdy bývají obtíže doma nejsilnější a co jim naopak pomáhá.“",
-          "„Nejdřív si ujasníme, co už o situaci víte, a na to navážeme dalšími kroky.“",
-          "„To, co popisujete, zkusíme propojit s tím, co pozoruje škola, a hledat společný obraz situace.“",
-          "„Z vašeho popisu je vidět, že doma jste to zatím pravděpodobně nastavili spíš nevhodně.“"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 30,
-        "text": "Která věta nejlépe odpovídá profesnímu uzavření rozhovoru?",
-        "options": [
-          "„Asi jsme probrali všechno podstatné, další už se ukáže samo.“",
-          "„Shrnu teď hlavní body, na čem jsme se shodli, a domluvíme si, co kdo udělá jako další krok.“",
-          "„Závěr je jasný, proto už nemá smysl vracet se k tomu, co z dneška bylo pro vás nejobtížnější.“",
-          "„Dokumenty vám předám, a když bude potřeba, škola si z nich vezme, co uzná za vhodné.“"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 31,
-        "text": "U žáka s PAS je při zadávání nového úkolu komunikačně nejméně vhodné",
-        "options": [
-          "předem pojmenovat změnu a zařadit ji do předvídatelného rámce hodiny",
-          "podpořit instrukci stručnou vizuální oporou nebo jasně vyznačenou posloupností kroků",
-          "použít ironii nebo víceznačnou narážku, aby se odlehčila atmosféra při zadání",
-          "vymezit začátek a konec úkolu a říci, co bude následovat potom"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 32,
-        "text": "Při rozhovoru se žákem, který odpovídá pomalu a potřebuje delší čas na zpracování sdělení, je nejvhodnější",
-        "options": [
-          "položit více otázek za sebou, aby si z nich mohl vybrat tu nejsnazší",
-          "rychle odpovědět za něj a nechat ho jen potvrdit, že to tak myslel",
-          "doplnit jeho větu dříve, než ji dokončí, aby rozhovor neztrácel tempo",
-          "zachovat otázku, dát přiměřený čas na odpověď a netlačit okamžitým doplňováním"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 33,
-        "text": "Které jednání je při komunikaci se žákem se sluchovým postižením profesně nejvhodnější?",
-        "options": [
-          "výrazně přehánět artikulaci, i když to mění přirozený tvar úst a rytmus sdělení",
-          "mluvit co nejhlasitěji bez ohledu na akustiku a okolní hluk",
-          "omezit komunikaci jen na písemné pokyny, aby odpadl problém s porozuměním řeči",
-          "zachovat přirozený hlas, zajistit vizuální dostupnost a ověřovat porozumění hlavním bodům"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 34,
-        "text": "Který postup je při komunikaci se žákem se zrakovým postižením profesně nejvhodnější?",
-        "options": [
-          "ponechat orientaci v úkolu na spolužácích, protože přímý popis bývá zdlouhavý",
-          "jen ukázat na potřebné místo v materiálu a předpokládat, že se z kontextu zorientuje",
-          "slovně pojmenovat, kde se v materiálu nacházíte, co je cílem úkolu a jaké jsou další kroky",
-          "dát žákovi stejnou instrukci jako ostatním bez úprav, aby nedošlo k nadměrné podpoře"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 35,
-        "text": "Při komunikaci s rodičem dítěte s omezenou verbální komunikací je profesně nejméně vhodné",
-        "options": [
-          "zjišťovat, jak dítě doma nejlépe dává najevo souhlas, nesouhlas nebo potřebu pomoci",
-          "ptát se, v jakých situacích se komunikační možnosti dítěte mění nebo zhoršují",
-          "uvažovat o tom, jaké komunikační prostředky jsou dítěti nejbližší a jak na ně navázat ve škole",
-          "předpokládat, že bez plynulé mluvené řeči nemá smysl s dítětem přímo komunikovat"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 36,
-        "text": "Které vyjádření vůči učiteli je profesně nejvhodnější, když speciální pedagog doporučuje úpravu komunikace ve třídě?",
-        "options": [
-          "„Zkuste sledovat, v jakých momentech se žák ztrácí, a upravit hlavně formulaci zadání a navazující kontrolu porozumění.“",
-          "„Bude nejlepší, když budete říkat všechno ještě jednou a pomaleji, tím se většina obtíží vyřeší.“",
-          "„Komunikační potíže bývají hlavně v samotném žákovi, takže vaše vedení hodiny v tom nehraje velkou roli.“",
-          "„Nejdůležitější je zůstat důsledný; konkrétní způsob zadávání není až tak podstatný.“"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 37,
-        "text": "Když rodič v rozhovoru popisuje školní zkušenost výrazně odlišně od školy, je profesně nejvhodnější",
-        "options": [
-          "rychle rozhodnout, která strana má věrohodnější výklad, a na tom dále stavět",
-          "oddělit obě perspektivy tak, aby se vzájemně nekřížily, a nepokoušet se je propojovat",
-          "mapovat, v čem se popisy liší, v čem se překrývají a které situace je potřeba konkretizovat",
-          "doporučit rodiči, aby se držel školního pohledu, protože ten bývá objektivnější"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 38,
-        "text": "Která formulace je pro rozhovor s rodičem profesně nejvhodnější, když škola navrhuje změnu podpory?",
-        "options": [
-          "„Škola to nastaví podle svého a doma se tomu pak budete muset jen přizpůsobit.“",
-          "„Nejdřív si řekneme, co se ve škole mění, proč se to navrhuje a co z toho bude potřeba sladit i doma.“",
-          "„Je lepší to moc nerozebírat, aby změna nepůsobila větší nejistotu.“",
-          "„Hlavní je teď přijmout návrh školy; význam změny pochopíte postupně až z praxe.“"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 39,
-        "text": "Při rozhovoru s klientem s úzkostí je profesně nejvhodnější",
-        "options": [
-          "ponechat si jasnou strukturu, mluvit srozumitelně a nezahlcovat klienta více sděleními najednou",
-          "přesunout těžiště rozhovoru jen na rychlé ujišťování, že se nic vážného neděje",
-          "vyhnout se konkretizaci dalších kroků, aby klient neměl pocit tlaku",
-          "dát co nejvíce různých možností najednou, aby si klient mohl vybrat tu nejbezpečnější"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 40,
-        "text": "Které tvrzení nejlépe vystihuje ověřování porozumění v profesním rozhovoru?",
-        "options": [
-          "Je potřebné hlavně tehdy, když druhá strana působí nejistě nebo má zjevné jazykové potíže.",
-          "Je to přirozená součást kvalitního rozhovoru i tehdy, když druhá strana působí, že všemu rozumí bez obtíží.",
-          "Je vhodné až na samotném konci, aby se zbytečně nerozbíjel tok odborného výkladu.",
-          "Je užitečné jen tehdy, když chceme mít jistotu, že druhá strana přijala náš závěr bez výhrad."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 41,
-        "text": "Která otázka je při rozboru školní situace s učitelem nejvhodnější?",
-        "options": [
-          "„Ve které části hodiny bývá přerušování nejčastější a co mu obvykle předchází?“",
-          "„Nemyslíte, že je hlavní problém prostě v tom, že žák nechce spolupracovat?“",
-          "„Souhlasil byste, že sankce jsou teď jediné realistické řešení?“",
-          "„Kterou z možných diagnóz byste za tím tipoval vy sám?“"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 42,
-        "text": "Když rodič v rozhovoru opakovaně skáče k dalším tématům a ztrácí hlavní linii, je profesně nejvhodnější",
-        "options": [
-          "nechat rozhovor zcela volně plynout, aby rodič neměl pocit, že je korigován",
-          "vstoupit do řeči a okamžitě přejít k závěru, aby se čas neztrácel",
-          "citlivě vracet rozhovor k hlavním bodům a průběžně shrnovat, co už bylo řečeno",
-          "dát rodiči seznam témat na papír a další rozhovor už vést jen písemně"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 43,
-        "text": "Ve třídě je potřeba zadat skupinovou práci žákovi s PAS i spolužákům. Které sdělení je profesně nejvhodnější?",
-        "options": [
-          "„Uděláte to spolu nějak podle sebe a pak uvidíme, jak vám to šlo.“",
-          "„Každá skupina má stejný cíl. Ty teď nejdřív zapíšeš dvě informace z textu, potom je přečteš dvojici a nakonec společně vyberete výsledek.“",
-          "„Neboj, když se v tom ztratíš, někdo tě průběžně opraví.“",
-          "„Pro skupinu je nejdůležitější improvizace a rychlá domluva, tak se snaž co nejvíc přizpůsobit ostatním.“"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 44,
-        "text": "Které vyjádření je při poradenském rozhovoru s učitelem profesně nejméně vhodné?",
-        "options": [
-          "„Pojďme odlišit, co souvisí s porozuměním zadání, co s tempem práce a co s jinými faktory.“",
-          "„Zkusme najít, které úpravy ve třídě jsou reálně proveditelné už od příštího týdne.“",
-          "„Nejdřív si popíšeme, v jakých situacích je obtíž nejvýraznější a kdy se naopak zmírňuje.“",
-          "„Z toho, co říkáte, je vidět, že zdroj problému je hlavně ve vašem vedení třídy.“"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 45,
-        "text": "Při vysvětlování podpůrných kroků rodině je profesně nejvhodnější",
-        "options": [
-          "předat co nejúplnější seznam všech možností najednou, aby nic nechybělo",
-          "vybrat to, co je pro aktuální situaci nejdůležitější, vysvětlit proč a zasadit to do běžného fungování dítěte",
-          "zůstat jen u názvů opatření, protože konkrétní dopad si rodina spojí sama",
-          "doporučit rodině, aby se držela výhradně písemného dokumentu bez dalšího vysvětlení"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 46,
-        "text": "Který postup je při komunikaci s klientem profesně nejvhodnější, když klient nesouhlasí s navrženým krokem?",
-        "options": [
-          "přesvědčit ho co nejrychleji, aby nezůstával v neproduktivním odporu",
-          "ukončit diskusi a přesunout rozhodnutí na rodinu nebo instituci",
-          "zjistit, čemu klient na návrhu rozumí, co v něm vyvolává nesouhlas a kde je potřeba dovysvětlit význam nebo dopad",
-          "dát najevo, že nesouhlas vychází hlavně z nepochopení odborné úrovně problému"
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 47,
-        "text": "Které tvrzení nejlépe vystihuje kvalitní profesní komunikaci ve škole?",
-        "options": [
-          "Je to hlavně schopnost mluvit srozumitelně; vztahová rovina je až druhotná.",
-          "Je to hlavně schopnost vytvářet dobrý dojem; konkrétní obsah sdělení může zůstat volnější.",
-          "Je to spojení srozumitelnosti, respektu, struktury a průběžného ověřování, jak druhá strana sdělení chápe.",
-          "Je to schopnost udržet odborný odstup tak, aby emoce ani otázky druhé strany neovlivňovaly tok sdělení."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 48,
-        "text": "Při rozhovoru s rodičem je profesně nejvhodnější, když speciální pedagog",
-        "options": [
-          "pracuje s odbornými termíny jen tam, kde pomáhají, a jinak je převádí do běžného a přesného jazyka",
-          "užívá odborné termíny důsledně bez převodu, protože to chrání přesnost sdělení",
-          "vynechává odborné pojmy úplně, aby rozhovor nepůsobil příliš těžce",
-          "střídá odborný a běžný jazyk náhodně podle toho, jak rodič právě reaguje"
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 49,
-        "text": "Která reakce nejlépe odpovídá situaci, kdy učitel žádá okamžitý „návod, co přesně říkat“ žákovi s obtížemi v porozumění?",
-        "options": [
-          "nabídnout jednu obecnou větu, která by měla fungovat ve všech předmětech a situacích",
-          "nejprve se doptat, v jakých konkrétních situacích se porozumění láme, a teprve podle toho navrhnout typ formulace a kontroly porozumění",
-          "říci, že způsob formulace není podstatný, pokud je učitel dostatečně důsledný",
-          "doporučit, aby se komunikace zjednodušila na co nejméně slov bez ohledu na obsah úkolu"
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 50,
-        "text": "Které uzavření mezioborového setkání je profesně nejvhodnější?",
-        "options": [
-          "„Každý z nás vidí situaci trochu jinak, takže bude nejlepší ponechat závěry odděleně bez dalšího sjednocování.“",
-          "„Hlavní je, že máme dost různých pohledů; konkrétní další kroky není potřeba hned uzavírat.“",
-          "„Já pošlu svůj odborný závěr a ostatní si k němu případně doplní své části samostatně.“",
-          "„Shrňme, na čem se shodujeme, co z toho plyne pro školu, rodinu a další služby, a kdo za co v nejbližší době odpovídá.“"
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      }
-    ],
-    "validation": {
-      "answerDistribution": {
-        "B": 11,
-        "A": 13,
-        "C": 13,
-        "D": 13
-      },
-      "distributionTarget": "12–13 správných odpovědí na každé písmeno",
-      "distributionBalanced": true
-    }
-  },
-  {
     "id": 5,
     "label": "Baterie 5",
-    "title": "Školské poradenství a školský poradenský systém",
-    "subtitle": "ŠPP, ŠPZ, PPP, SPC, SVP, PLPP, IVP, zpráva, doporučení a logika podpory ve školství.",
-    "purpose": "Převést systém školského poradenství z pouhých názvů institucí do přesného rozlišení rolí, dokumentů, procesu a odpovědnosti školy.",
-    "difficulty": "vyšší",
+    "title": "Školní podpora, ŠPZ a proces – tvrdá diferenciace",
+    "subtitle": "Škola, ŠPP, ŠPZ, PPP, SPC, dokumenty podpory a procesně správný další krok bez návodného klíče.",
+    "purpose": "Ověřit, zda uchazeč v systému školního poradenství rozliší role školy, školního poradenského pracoviště a školských poradenských zařízení, správně čte funkci dokumentů a dovede volit procesně přesný další krok od první školní podpory až po převod doporučení do každodenní praxe.",
+    "difficulty": "vysoká",
     "dominant": [
-      "škola a školní poradenské pracoviště",
-      "školská poradenská zařízení",
-      "PPP a SPC",
-      "SVP a preventivně-výchovná péče",
-      "školní poradenské role",
-      "PLPP a IVP",
-      "zpráva a doporučení",
-      "převod odborného závěru do podpory ve škole"
+      "hranice školy, ŠPP a ŠPZ",
+      "PPP × SPC × SVP",
+      "PLPP, IVP, zpráva a doporučení",
+      "první školní podpora a vyhodnocování účinku",
+      "škola po doporučení a převod podpory do praxe",
+      "role školního poradenského pracoviště",
+      "mimořádné nadání v poradenském rámci"
     ],
     "breakdown": [
-      "12× instituce a role v systému",
-      "12× poradenský proces a návaznost podpory",
-      "12× dokumenty a výstupy",
-      "8× školní poradenské pracoviště a jeho členové",
-      "6× jemné záměny mezi školou, ŠPZ, SVP a dalšími službami"
+      "8× hranice systému: škola × ŠPP × ŠPZ × SVP",
+      "8× volba partnera: PPP × SPC",
+      "8× PLPP, IVP a školní dokumenty",
+      "7× zpráva, doporučení a dokument v procesu",
+      "7× první školní podpora a procesní další krok",
+      "6× škola po doporučení a převod závěru do praxe",
+      "6× role školního poradenského pracoviště",
+      "6× mimořádné nadání a široký poradenský rámec"
     ],
     "tags": [
-      "PPP/SPC",
-      "ŠPP/ŠPZ",
-      "PLPP/IVP",
-      "zpráva/doporučení",
-      "MŠMT"
+      "hard mode",
+      "školské poradenství",
+      "ŠPP",
+      "ŠPZ",
+      "PPP",
+      "SPC",
+      "PLPP",
+      "IVP",
+      "UPOL"
     ],
     "durationMinutes": 30,
     "questionCount": 50,
     "questions": [
       {
         "number": 1,
-        "text": "Které vymezení nejpřesněji rozlišuje školní poradenské pracoviště a školské poradenské zařízení?",
+        "text": "Které shrnutí nejpřesněji vymezuje vztah školy, ŠPP a ŠPZ?",
         "options": [
-          "ŠPP je součást školy, zatímco PPP a SPC jsou samostatná školská poradenská zařízení.",
-          "ŠPP je externí regionální zařízení, zatímco PPP a SPC jsou vnitřní týmy konkrétní školy.",
-          "ŠPP i ŠPZ označují totéž; rozdíl je jen v tom, zda jde o základní nebo střední školu.",
-          "ŠPP patří do sociálních služeb, zatímco ŠPZ do zdravotnictví; škola je jen přebírá."
+          "ŠPP je poradenský rámec uvnitř školy, zatímco ŠPZ označuje externí poradenská zařízení typu PPP a SPC.",
+          "ŠPP i ŠPZ označují stejný typ zařízení; rozdíl je jen v tom, zda působí na ZŠ nebo SŠ.",
+          "ŠPP patří do sociálních služeb, kdežto ŠPZ do zdravotnictví; škola je jen přebírá v rámci školní praxe.",
+          "ŠPP je krajské zařízení a ŠPZ je jeho školní pobočka pro konkrétní budovu podle této logiky procesu."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 2,
-        "text": "Kdy bývá pro školu typicky vhodnějším partnerem SPC než PPP?",
+        "text": "Kdy je pro školu typicky procesně přesnější obrátit se na SPC než na PPP?",
         "options": [
-          "Když škola řeší jen běžné administrativní úkony spojené s klasifikací a evidencí žáka.",
-          "Když je potřeba specializovaná podpora navázaná na konkrétní druh postižení nebo kombinované postižení.",
-          "Když jde výhradně o rozpis třídnických hodin, dozorů a běžné organizace provozu školy.",
-          "Když škola potřebuje pouze schválit změnu učebnice bez širší vazby na vzdělávací potřeby žáka."
+          "Když škola potřebuje obecně prověřit širší studijní obtíže bez zřejmé vazby na konkrétní postižení.",
+          "Když je potřeba specializovaná podpora navázaná na konkrétní druh postižení nebo kombinovaný profil.",
+          "Když jde hlavně o běžné rozvrhové a organizační otázky uvnitř školy podle této logiky procesu.",
+          "Když škola potřebuje jen potvrdit klasifikaci bez širší vazby na potřeby žáka v běžném poradenském režimu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -2637,574 +2661,574 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 3,
         "text": "Které tvrzení o SVP je v systému nejpřesnější?",
         "options": [
-          "SVP je souhrnný název pro všechna SPC v kraji a slouží hlavně k jejich administrativní koordinaci.",
-          "SVP je povinná školní role obdobná výchovnému poradci a je součástí každé základní školy.",
-          "SVP není školské poradenské zařízení typu PPP nebo SPC, ale zařízení preventivně-výchovné péče.",
-          "SVP je dokument školy, kterým se nahrazuje program poradenských služeb ve škole."
+          "SVP je souhrnné označení pro všechna SPC v kraji.",
+          "SVP je povinná školní role obdobná výchovnému poradci na každé škole.",
+          "SVP je zařízení preventivně-výchovné péče; nejde o PPP ani SPC.",
+          "SVP je interní školní dokument, kterým se nahrazuje program poradenských služeb."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 4,
-        "text": "Které vyjádření nejlépe vystihuje odpovědnost školy po vydání doporučení ŠPZ?",
+        "text": "Který dokument školy rámuje, jak škola organizuje vlastní poradenské služby?",
         "options": [
-          "Škola už do podpory nevstupuje, protože další práci přebírá výhradně externí zařízení.",
-          "Škola smí doporučení pouze založit do spisu; jakékoli změny v práci s žákem by byly nepřípustné.",
-          "Škola odpovídá jen za formální podpis dokumentu, nikoli za skutečnou realizaci podpory ve výuce.",
-          "Škola doporučená podpůrná opatření ve vzdělávání prakticky realizuje a průběžně sleduje jejich fungování."
+          "IVP pro konkrétního žáka podle této logiky procesu.",
+          "PLPP pro první stupeň podpory.",
+          "Doporučení vystavené ŠPZ.",
+          "Program poradenských služeb ve škole."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 5,
-        "text": "Který krok ve školním poradenském procesu bývá typicky nejdřívější?",
+        "text": "Které přiřazení pracovníka a působiště je systémově správné?",
         "options": [
-          "Pedagogické zachycení obtíží ve škole a pokus o smysluplnou přímou podporu v běžném vzdělávání.",
-          "Okamžité vystavení doporučení vyšších stupňů podpory bez práce školy a bez odborného posouzení.",
-          "Automatické předání každé nejistoty do SPC bez pedagogického pozorování a bez rozlišení zakázky.",
-          "Zařazení žáka do odděleného režimu vzdělávání hned po prvním neúspěchu ve třídě."
+          "Školní psycholog působí ve škole, zatímco psycholog PPP působí v rámci školského poradenského zařízení.",
+          "Školní psycholog je standardně pracovník PPP trvale vyslaný do školy, takže jde o tutéž roli v běžném školním provozu.",
+          "Psycholog PPP je člen školního poradenského pracoviště a školní psycholog je externí konzultant kraje.",
+          "Obě role patří do sociálních služeb; školství je využívá jen metodicky v tomto výkladu postupu."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 6,
-        "text": "Kdy je přechod školy ke školskému poradenskému zařízení nejlépe odůvodněný?",
+        "text": "Co nejpřesněji vystihuje hlavní funkci PLPP?",
         "options": [
-          "Když si škola chce pouze potvrdit správnost třídní knihy a uzavřené klasifikace za pololetí.",
-          "Když běžná školní podpora nestačí a je potřeba odborné posouzení vzdělávacích potřeb a návrhu dalších opatření.",
-          "Když učitel potřebuje vyměnit pomůcky ve třídě bez návaznosti na konkrétního žáka a jeho bariéry.",
-          "Když rodiče žádají rychlejší známkování, ale nejsou popsány žádné vzdělávací obtíže."
+          "Je to externí závěr ŠPZ, který škola pouze archivuje bez vlastní úpravy.",
+          "Je to školní pracovní nástroj pro plánování a vyhodnocování podpory prvního stupně.",
+          "Je to dokument určený jen pro mimořádně nadané žáky a nelze jej použít u obtíží ve vzdělávání.",
+          "Je to formulář kraje, kterým se škole přiděluje personální podpora."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 7,
-        "text": "Kterou dvojici výstupů standardně vydává školské poradenské zařízení po odborném posouzení žáka?",
+        "text": "Učitel opakovaně pozoruje, že žák selhává hlavně při dlouhých verbálních instrukcích. Který první krok školy je nejpřesnější?",
         "options": [
-          "PLPP a program poradenských služeb ve škole.",
-          "IVP a preventivní program školy.",
-          "Zprávu a doporučení ke vzdělávání žáka.",
-          "Vysvědčení a rozhodnutí o změně vzdělávací dráhy."
+          "Ihned vyžádat externí vyšetření a do té doby ve výuce nic neměnit.",
+          "Rovnou sepsat IVP, aby bylo zřejmé, že škola situaci bere vážně v tomto výkladu postupu.",
+          "Zachytit konkrétní situace, upravit zadávání a sledovat, co výkon zlepšuje.",
+          "Požádat spolužáky, aby za žáka průběžně dovysvětlovali každé zadání."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 8,
-        "text": "Které rozlišení zprávy a doporučení je nejpřesnější?",
+        "text": "Co v poradenském procesu nejpřesněji představuje doporučení ŠPZ?",
         "options": [
-          "Zpráva je interní poznámka školy a doporučení slouží pouze soudu nebo OSPOD.",
-          "Oba dokumenty mají stejnou funkci; liší se jen délkou a grafickým uspořádáním textu.",
-          "Doporučení popisuje jen anamnézu, zatímco zpráva nastavuje konkrétní organizaci podpory ve škole.",
-          "Zpráva shrnuje odborná zjištění, zatímco doporučení je převádí do konkrétní vzdělávací podpory."
+          "Obecný popis klimatu školy bez vazby na konkrétního žáka v tomto výkladu postupu.",
+          "Interní školní dokument, kterým si škola sama schvaluje další postup.",
+          "Souhrn neověřených pozorování učitele před prvním kontaktem s rodinou.",
+          "Výstup, který navrhuje podpůrná opatření a podmínky vzdělávání pro školní praxi."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 9,
-        "text": "Co nejpřesněji vystihuje PLPP?",
+        "text": "Které shrnutí správně odlišuje zprávu a doporučení ŠPZ?",
         "options": [
-          "Jde o školní plán podpory používaný zejména při podpůrných opatřeních prvního stupně.",
-          "Jde o odborný výstup ŠPZ, kterým se škole přiznávají vyšší stupně podpory.",
-          "Jde o zdravotnický plán léčby a rehabilitace vedený mimo vzdělávací systém.",
-          "Jde o souhrnnou závěrečnou zprávu z preventivně-výchovného pobytu v SVP."
+          "Zpráva popisuje zjištění a jejich interpretaci, kdežto doporučení převádí závěr do návrhu podpory pro školu.",
+          "Zpráva je školní dokument a doporučení je jen neformální poznámka poradce pro rodiče podle této logiky procesu.",
+          "Zpráva i doporučení jsou dvě názvy pro tentýž dokument bez odlišné funkce v běžném poradenském režimu.",
+          "Doporučení slouží jen k archivaci, zatímco zpráva sama stanovuje závazný školní postup."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 10,
-        "text": "Které vymezení IVP je nejpřesnější?",
+        "text": "Které vymezení IVP je v systému nejpřesnější?",
         "options": [
-          "IVP je povinný dokument každého žáka, který jednou navštívil školní poradenské pracoviště.",
-          "IVP je individuální vzdělávací plán školy, který konkretizuje podmínky vzdělávání konkrétního žáka.",
-          "IVP je odborná zpráva PPP nebo SPC, kterou škola nesmí nijak vztáhnout ke své praxi.",
-          "IVP je dokument určený výhradně pro pobytové zařízení a ve škole se neuplatňuje."
+          "Je to povinný dokument každého žáka, který jednou navštívil školní poradenské pracoviště.",
+          "Je to školní dokument, který konkretizuje vzdělávací podmínky konkrétního žáka.",
+          "Je to odborná zpráva z PPP nebo SPC, kterou škola nesmí nijak převést do své praxe.",
+          "Je to souhrnný dokument školy pro organizaci všech poradenských služeb během roku."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 11,
-        "text": "Který dokument školy zachycuje celkový rámec poradenských služeb poskytovaných ve škole?",
+        "text": "Škola už několik týdnů cíleně upravuje zadávání i organizaci práce, ale efekt je jen částečný napříč předměty. Jaký další krok je nejpřesnější?",
         "options": [
-          "Doporučení ŠPZ pro konkrétního žáka.",
-          "Žádost rodiče o vyšetření v PPP nebo SPC.",
-          "Program poradenských služeb ve škole.",
-          "Zpráva z preventivně-výchovného pobytu v SVP."
+          "Vyčkat bez další práce do dalšího pololetí, aby se ukázalo, zda se potíže samy neupraví.",
+          "Zrušit všechny dosavadní úpravy, protože bez ŠPZ stejně nemají smysl v běžném školním provozu.",
+          "Na základě záznamů a vyhodnocené podpory otevřít s rodinou krok k odbornému posouzení v ŠPZ.",
+          "Přenechat řešení výhradně třídě, aby spolužáci žáka více tahali výkonem nahoru."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 12,
-        "text": "Která skupina nejlépe odpovídá typickému personálnímu jádru školního poradenského pracoviště?",
+        "text": "Co je nejpřesnější role školy po převzetí doporučení ŠPZ?",
         "options": [
-          "Pediatr, pracovník OSPOD, kurátor pro mládež a soudní znalec jako standardní školní tým.",
-          "Třídní učitel, osobní asistent a pracovník sociální služby jako povinné poradenské jádro každé školy.",
-          "Pracovník PPP, pracovník SPC a ředitel školy jako stálí zaměstnanci školního poradenského pracoviště.",
-          "Výchovný poradce, školní metodik prevence a podle podmínek školy také školní psycholog nebo speciální pedagog."
+          "Dokument pouze založit do spisu a další rozhodování ponechat výhradně rodině.",
+          "Vnímat doporučení hlavně jako kontrolní podklad pro případ inspekce v daném pojetí systému.",
+          "Předat text doporučení učiteli bez dalšího plánování a bez sledování dopadu v tomto výkladu postupu.",
+          "Převést doporučení do konkrétní podpory, rozdělit odpovědnosti a průběžně vyhodnocovat účinek."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 13,
-        "text": "Které těžiště práce nejlépe odpovídá výchovnému poradci?",
+        "text": "Co samo o sobě ještě nepředstavuje systematicky nastavenou první školní podporu?",
         "options": [
-          "Podpora žáků a školy zejména v oblasti vzdělávací dráhy, orientace v systému podpory a návazných poradenských kroků.",
-          "Vystavování doporučení vyšších stupňů podpůrných opatření namísto PPP nebo SPC.",
-          "Léčba psychických poruch a vedení zdravotnické dokumentace žáků ve škole.",
-          "Zajišťování sociálních dávek a právního zastupování rodiny mimo školský systém."
+          "Obecný slovní komentář, že je potřeba být na žáka citlivější.",
+          "Záznam konkrétních obtíží a zvolených úprav ve výuce.",
+          "Průběžné sledování, zda zkoušené kroky opravdu pomáhají.",
+          "Promyšlené nastavení podpory tak, aby se dalo dále vyhodnocovat."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 14,
-        "text": "Které těžiště práce nejlépe odpovídá školnímu metodikovi prevence?",
+        "text": "Škola řeší žáka s významným sluchovým postižením a potřebuje přesnější oporu pro komunikaci, pomůcky a vzdělávací podmínky. Který partner je typicky nejpřesnější?",
         "options": [
-          "Odborné vydávání doporučení k podpůrným opatřením vyšších stupňů.",
-          "Prevence rizikového chování a související metodická podpora školy v této oblasti.",
-          "Diagnostika specifického druhu postižení jménem SPC jako hlavní náplň jeho práce.",
-          "Vedení zdravotnické intervence a farmakologického režimu žáků ve škole."
+          "PPP, protože sluchové postižení spadá vždy do obecného poradenského režimu bez specializace.",
+          "SPC orientované na daný druh postižení.",
+          "Pouze školní poradenské pracoviště bez jakékoli externí součinnosti.",
+          "SVP, protože jakákoli náročná situace ve škole patří preventivně-výchovné péči."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 15,
-        "text": "Které vyjádření nejlépe odlišuje školního speciálního pedagoga od speciálního pedagoga v SPC?",
+        "text": "Který výrok nejpřesněji odlišuje PLPP od IVP?",
         "options": [
-          "První patří do zdravotnictví a druhý do školství.",
-          "První automaticky vydává doporučení jménem SPC, druhý je pouze konzultant bez poradenských výstupů.",
-          "První působí uvnitř školy, druhý v samostatném školském poradenském zařízení.",
-          "Rozdíl je jen v tom, že jeden pracuje s mladšími a druhý se staršími žáky."
+          "PLPP vytváří jen ŠPZ, kdežto IVP vytváří jen rodič v rámci školní praxe a běžného poradenského režimu.",
+          "PLPP i IVP označují stejný dokument, liší se pouze délkou formuláře podle této logiky procesu a navazujícího školního nastavení.",
+          "PLPP je školní nástroj první úrovně podpory, zatímco IVP konkretizuje vzdělávací podmínky konkrétního žáka v jiném režimu podpory.",
+          "IVP je vždy externí diagnostický závěr a PLPP je jen interní poznámka učitele v běžném školním provozu a každodenní organizaci školy."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 16,
-        "text": "Co je nejpřesnějším jádrem práce školního psychologa ve škole?",
+        "text": "Který z následujících výstupů nevzniká jako interní školní dokument?",
         "options": [
-          "Automatické nahrazení PPP ve všech diagnostických a poradenských výstupech vůči škole.",
-          "Výhradně administrativní kontrola školní dokumentace bez práce se žáky a pedagogy.",
-          "Poskytování zdravotnické péče a rozhodování o medikaci žáků.",
-          "Psychologická podpora v kontextu školního fungování, spolupráce s učiteli a podpora žáků v prostředí školy."
+          "Program poradenských služeb ve škole.",
+          "PLPP používaný při první školní podpoře.",
+          "IVP vytvářený školou pro konkrétního žáka.",
+          "Doporučení ŠPZ."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 17,
-        "text": "Která dvojice je v systému přiřazena správně?",
+        "text": "Které tvrzení nejlépe vystihuje, proč nelze ŠPP a ŠPZ zaměňovat?",
         "options": [
-          "Asistent pedagoga – pedagogický pracovník školy; osobní asistent – pracovník sociální služby.",
-          "Asistent pedagoga – pracovník sociální služby; osobní asistent – pedagogický pracovník školy.",
-          "Asistent pedagoga i osobní asistent jsou totožné školní role se stejnou právní pozicí.",
-          "Osobní asistent je povinnou součástí každého ŠPP, zatímco asistent pedagoga patří do zdravotnictví."
+          "Jedno označuje poradenské zajištění uvnitř školy, druhé externí zařízení s vlastní odbornou agendou.",
+          "ŠPP i ŠPZ jsou dvě názvoslovné varianty pro stejný tým pracovníků v jedné škole v běžném školním provozu.",
+          "Rozdíl mezi nimi je jen geografický: ŠPP působí ve městě a ŠPZ na venkově v daném pojetí systému.",
+          "ŠPP řeší jen prospěch a ŠPZ jen docházku; oba pracují bez vazby na podporu ve vzdělávání."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 18,
-        "text": "Které tvrzení o sociálním pedagogovi ve škole je nejpřesnější?",
+        "text": "Ve které situaci je typickým partnerem spíše PPP než SPC?",
         "options": [
-          "Jde o pracovníka, který ze zákona vždy vydává doporučení ke vzdělávání místo ŠPZ.",
-          "Dle podmínek školy může být součástí školních poradenských služeb, ale nenahrazuje PPP ani SPC.",
-          "Bývá automaticky členem každého SPC a pracuje výhradně mimo školu v terénu.",
-          "Patří výhradně do zdravotnického resortu, takže ve škole nemá žádné místo."
+          "Když je jádrem situace speciálněpedagogická podpora navázaná na konkrétní smyslové či kombinované postižení.",
+          "Když škola potřebuje posoudit širší vzdělávací a vývojové obtíže bez zřejmé vazby na konkrétní druh postižení.",
+          "Když škola potřebuje vyměnit školní dokument za nový formulář kraje v tomto výkladu postupu a návazné školní praxi.",
+          "Když jde o běžné rozdělení služeb třídního učitele v rámci ročníku v rámci školní praxe a běžného poradenského režimu."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 19,
-        "text": "Které tvrzení o pracovnících PPP a SPC je nejpřesnější?",
+        "text": "Co je v první školní fázi podpory procesně nejdůležitější?",
         "options": [
-          "Jde o povinné členy každého školního poradenského pracoviště bez ohledu na typ školy.",
-          "Jsou to pracovníci sociálních služeb, kteří vstupují do školy jen při řešení dávek a rodinné situace.",
-          "Jsou to pracovníci samostatných školských poradenských zařízení, nikoli standardní zaměstnanci každé školy.",
-          "Patří do zdravotnictví a škola je může využít jen při lékařském vyšetření."
+          "Co nejrychleji převést situaci mimo školu, aby škola nenesla odpovědnost za první kroky.",
+          "Sepsat co nejvíce obecných poznámek bez vazby na to, jaké úpravy byly vyzkoušeny.",
+          "Propojit pozorování, konkrétní úpravy výuky a jejich průběžné vyhodnocování.",
+          "Vyčkat na jedno definitivní vysvětlení potíží dříve, než se ve výuce něco změní."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 20,
-        "text": "Které tvrzení nejlépe vystihuje kvalitní spolupráci školy a ŠPZ po vydání doporučení?",
+        "text": "Které shrnutí nejlépe vystihuje kvalitní spolupráci školy a ŠPZ po vydání doporučení?",
         "options": [
-          "Po vydání doporučení má být kontakt školy a ŠPZ omezen, aby se nezasahovalo do autonomie školy.",
-          "Spolupráce už spočívá jen v kontrole, zda škola doslova opsala text doporučení do svých dokumentů.",
-          "Další komunikace není vhodná, protože doporučení je jednorázový uzavřený akt bez potřeby sledování účinnosti.",
-          "Důležitá je průběžná vazba o tom, jak se podpora ve škole daří realizovat a jaký má dopad."
+          "Kontakt školy a ŠPZ má po vydání doporučení skončit, aby se role zbytečně nemísily.",
+          "Stačí jednorázově opsat text doporučení do dokumentace bez další komunikace.",
+          "Důležité je hlavně uložit závěr do spisu; účinek podpory se vyhodnotí jen při kontrole.",
+          "Průběžná zpětná vazba o tom, jak se podpora daří realizovat a jaký má dopad."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 21,
-        "text": "Který závěr je poradensky nejpřesnější, mají-li dva žáci stejnou diagnózu, ale ve škole selhávají z odlišných důvodů?",
+        "text": "Která role v rámci ŠPP má nejpřesnější těžiště v prevenci a práci s rizikovým chováním?",
         "options": [
-          "Je nutné převést obtíže do konkrétních funkčních dopadů a podle nich navrhnout odlišnou podporu.",
-          "Podpora má být v zásadě stejná, protože rozhodující je název diagnózy uvedený v dokumentaci.",
-          "Rozdílný průběh znamená, že jeden z žáků pravděpodobně diagnózu ve skutečnosti nemá.",
-          "Škola smí při plánování podpory vycházet jen z oficiálního označení poruchy, nikoli z popisu fungování."
+          "Školní metodik prevence.",
+          "Výchovný poradce jako jediný garant všech preventivních programů školy.",
+          "Pracovník SPC docházející do školy v externím režimu.",
+          "Třídní učitel bez jakékoli další poradenské vazby."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 22,
-        "text": "Které vyjádření nejlépe vystihuje roli rodiny v poradenském procesu?",
+        "text": "Když škola potřebuje z externího výstupu převzít konkrétní návrh podpůrných opatření, opírá se především o:",
         "options": [
-          "Rodina je důležitá hlavně jako formální zdroj podpisu; další obsah podpory už je čistě věcí odborníků.",
-          "Rodina je partnerem, jehož porozumění a spolupráce ovlivňují, zda bude podpora ve škole i doma fungovat.",
-          "Rodina do poradenského procesu vstupuje až po uzavření odborného posouzení, nikoli během něj.",
-          "Rodina by neměla dostávat srozumitelné vysvětlení závěrů, aby nebyl narušen odborný charakter služby."
+          "zprávu ze ŠPZ bez ohledu na její odlišnou funkci.",
+          "doporučení ŠPZ.",
+          "program poradenských služeb ve škole.",
+          "běžný zápis z pedagogické rady."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 23,
-        "text": "Který znak nejlépe ukazuje, že poradenský případ není uzavřen kvalitně?",
+        "text": "Která položka typicky nepatří mezi vnitřní zajištění poradenských služeb školy?",
         "options": [
-          "Rodiče při závěrečném rozhovoru kladou doplňující otázky a chtějí si ověřit porozumění doporučení.",
-          "Součástí práce bylo více zdrojů informací a odborník si průběžně ověřoval, jak závěr vyloží škole.",
-          "Škola a rodina nevědí, co z odborného závěru plyne pro další konkrétní podporu žáka.",
-          "Dokumentace byla vedena věcně a některé kroky bylo třeba časově uspořádat podle situace školy."
+          "Školní poradenské pracoviště.",
+          "Školní psycholog nebo školní speciální pedagog, pokud je škola má k dispozici.",
+          "PPP jako samostatné školské poradenské zařízení.",
+          "Výchovný poradce a školní metodik prevence v rámci školy."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 24,
-        "text": "Které tvrzení o vyšších stupních podpůrných opatření je nejpřesnější?",
+        "text": "Který dokument je nejvíce spojen se školním plánováním a vyhodnocováním podpory prvního stupně?",
         "options": [
-          "Vyšší stupně podpory stanovuje škola sama, pokud už vyčerpala první stupeň a rodiče souhlasí.",
-          "Vyšší stupně podpory se týkají jen žáků mimo běžné školy, nikoli podpory v hlavním vzdělávacím proudu.",
-          "Jakmile jsou jednou doporučeny, není už třeba sledovat, zda jsou pro žáka funkční.",
-          "Jejich doporučení vychází z odborného posouzení ŠPZ a škola je následně realizuje ve vzdělávání."
+          "Doporučení ŠPZ.",
+          "Zpráva ze ŠPZ.",
+          "Program poradenských služeb ve škole.",
+          "PLPP."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 25,
-        "text": "Které tvrzení o návrhu doporučených podpůrných opatření je nejpřesnější?",
+        "text": "Co škola po převzetí doporučení ŠPZ nemá dělat jako hlavní postup?",
         "options": [
-          "Před vydáním doporučení je třeba návrh opatření projednat se školou a se žákem nebo zákonným zástupcem.",
-          "Návrh opatření se zásadně nesmí se školou probírat, protože by to narušilo odbornou nezávislost ŠPZ.",
-          "Opatření se projednávají až po ukončení platnosti doporučení, nikoli před jeho vydáním.",
-          "Škola může být s návrhem seznámena jen tehdy, pokud sama předem sepíše text budoucího doporučení."
+          "Uložit dokument do spisu a považovat podpůrný proces za uzavřený.",
+          "Rozdělit odpovědnosti a převést doporučení do každodenní práce.",
+          "Sledovat, zda se opatření ve škole opravdu daří naplňovat v rámci školní praxe.",
+          "V případě potřeby průběžně komunikovat o realizaci podpory."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 26,
-        "text": "Které tvrzení nejlépe vystihuje, co není hlavní rolí PPP nebo SPC?",
+        "text": "Kdy je partnerství se SPC procesně přesnější než s PPP, i když škola už podpůrné kroky zahájila?",
         "options": [
-          "Poskytovat odborné posouzení a metodickou podporu v systému školství.",
-          "Převzít místo školy každodenní vedení výuky a hodnocení žáka.",
-          "Spolupracovat se školou při hledání podpůrných opatření pro vzdělávání žáka.",
-          "Být odborným partnerem při interpretaci vzdělávacích potřeb a funkčních dopadů obtíží."
+          "Když se ve škole jen střídají různé formy domácí přípravy bez širší speciálněpedagogické otázky.",
+          "Když se ukazuje potřeba specializovaného vedení vázaného na konkrétní postižení nebo jeho kombinaci.",
+          "Když škola potřebuje schválit rozvrh podpory bez odborného posouzení žáka podle této logiky procesu.",
+          "Když je cílem nahradit průběžné sledování účinku podpory jednorázovým administrativním krokem."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 27,
-        "text": "Které tvrzení o základních zjištěních ŠPZ je nejpřesnější?",
+        "text": "Jaké shrnutí nejlépe vystihuje smysl první školní podpory před případným krokem k ŠPZ?",
         "options": [
-          "Pro zásadní závěr o vzdělávacích potřebách postačuje jediný rychlý test, pokud je standardizovaný.",
-          "Nejspolehlivější je založit rozhodnutí jen na názoru školy, protože dítě funguje hlavně ve třídě.",
-          "Zásadní zjištění vztahující se ke vzdělávacím potřebám mají vycházet z více postupů a zdrojů informací.",
-          "Pokud je k dispozici lékařská zpráva, není už nutné žádné další odborné posuzování ve vzdělávací oblasti."
+          "Uzavřít situaci bez dalšího sledování, pokud se alespoň něco krátkodobě zlepší.",
+          "Nahradit veškeré další odborné rozhodování, aby už nebylo nutné nic konzultovat.",
+          "Zpřesnit obraz obtíží, ověřit účinek úprav a vytvořit podklad pro další rozhodování.",
+          "Hlavně vytvořit rozsáhlý text, který bude působit odborně bez vazby na realitu výuky."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 28,
-        "text": "Kdy je pro školu poradensky nepřesné chápat doporučení jen jako text k mechanickému opsání do dokumentace?",
+        "text": "Škola zjistí, že navržený způsob podpory je třeba v praxi upřesnit vzhledem k reálným podmínkám. Který postup je nejpřesnější?",
         "options": [
-          "Jen tehdy, když škola nemá k dispozici školního psychologa ani speciálního pedagoga.",
-          "Pouze tehdy, pokud rodiče výslovně požadují vlastní slovní přeformulování doporučení.",
-          "Nikdy; přesné opsání je samo o sobě dostačující realizací podpůrných opatření.",
-          "Vždy, protože smyslem doporučení je převést odborný závěr do funkční podpory v reálné školní praxi."
+          "Doporučení ponechat beze změny na papíře a ve výuce jej využívat jen symbolicky podle této logiky procesu.",
+          "Realizaci podpory odložit do konce platnosti dokumentu, aby se vše řešilo naráz.",
+          "Přenést odpovědnost za celou úpravu výhradně na rodinu v běžném školním provozu.",
+          "Komunikovat se ŠPZ a hledat procesně správné nastavení místo tichého ignorování doporučení."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 29,
-        "text": "Která situace spíše ukazuje na potřebu kontaktu se SVP než s PPP kvůli běžné vzdělávací diagnostice?",
+        "text": "Které vymezení nejlépe odpovídá roli výchovného poradce v rámci školní podpory?",
         "options": [
-          "Situace zaměřená hlavně na preventivně-výchovnou péči při výrazných výchovných a behaviorálních obtížích.",
-          "Potřeba odborně posoudit vzdělávací obtíže a navrhnout podporu ve škole v rámci ŠPZ.",
-          "Potřeba specializované podpory navázané na konkrétní druh postižení v rámci SPC.",
-          "Potřeba vytvořit školní PLPP pro první stupeň podpory v běžné třídě."
+          "Koordinuje poradenské a vzdělávací otázky školy, komunikuje s partnery a pomáhá orientovat další postup.",
+          "Je to pracovník externího SPC, který přebírá řízení veškeré podpory místo školy v běžném školním provozu.",
+          "Jeho role se omezuje jen na zápis známek a vedení klasifikačních listů v daném pojetí systému.",
+          "Nemá žádnou vazbu na poradenský proces a působí pouze při mimoškolních akcích v tomto výkladu postupu."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 30,
-        "text": "Které tvrzení o spolupráci ŠPZ se školou při nastavování podpory je nejpřesnější?",
+        "text": "Který dokument škola vytváří tehdy, když potřebuje převést doporučené podmínky vzdělávání do vlastního interního nastavení pro konkrétního žáka?",
         "options": [
-          "ŠPZ nemá zjišťovat podmínky školy, protože doporučení musí být zcela oddělené od školní reality.",
-          "ŠPZ má při návrhu podpůrných opatření ověřovat i to, zda je škola dokáže v reálných podmínkách zajistit a uskutečnit.",
-          "Doporučení se má nastavovat bez ohledu na školní podmínky; odpovědnost za proveditelnost nese jen rodina žáka.",
-          "Podmínky školy se zjišťují až po skončení platnosti doporučení, nikoli při jeho nastavování."
+          "Zprávu ze ŠPZ.",
+          "IVP.",
+          "Program poradenských služeb ve škole.",
+          "Krajské rozhodnutí o financování podpory."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 31,
-        "text": "Které rozlišení dokumentů školy a ŠPZ je správné?",
+        "text": "Které tvrzení nejlépe odlišuje školu od ŠPZ v odpovědnosti za každodenní podporu žáka?",
         "options": [
-          "PLPP i doporučení jsou totéž; liší se jen názvem podle typu školy.",
-          "IVP je odborná zpráva ŠPZ a zpráva je individuální plán, podle kterého škola vyučuje.",
-          "PLPP a IVP jsou školní nástroje podpory, zatímco zpráva a doporučení jsou odborné výstupy ŠPZ.",
-          "Zpráva a doporučení jsou školní dokumenty, zatímco PLPP a IVP tvoří výhradně PPP nebo SPC."
+          "Škola jen přebírá hotová rozhodnutí, ale sama žádnou podpůrnou práci nevykonává.",
+          "ŠPZ přebírá průběžnou výuku žáka a škola zůstává jen administrativním místem evidence.",
+          "ŠPZ navrhuje a odborně rámuje podporu, škola ji každodenně uskutečňuje a sleduje.",
+          "Obě strany mají v denní realizaci stejné úkoly, takže není nutné jejich role rozlišovat."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 32,
-        "text": "Které tvrzení o PLPP je nejpřesnější?",
+        "text": "Co nejlépe uzavírá kvalitní školní poradenský cyklus po zavedení podpory?",
         "options": [
-          "PLPP je dokument, kterým ŠPZ přiznává asistenta pedagoga a další vyšší stupně podpory.",
-          "PLPP se vytváří jen tehdy, když už byl schválen IVP a doporučení z externího zařízení.",
-          "PLPP slouží primárně k evidenci rodinné sociální situace mimo vzdělávání.",
-          "PLPP pomáhá škole plánovat a sledovat podporu žáka v rámci prvního stupně podpůrných opatření."
+          "Formálně podepsat dokumenty a tím poradenskou práci považovat za splněnou.",
+          "Ponechat zvolený režim beze změn, aby se nenarušila jednou nastavená pravidla.",
+          "Soustředit se hlavně na to, aby text dokumentace vypadal odborně.",
+          "Vyhodnotit účinek podpory a podle výsledků upravit další postup."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 33,
-        "text": "Které tvrzení o IVP je nejpřesnější?",
+        "text": "Které vymezení nejlépe odpovídá roli školního speciálního pedagoga?",
         "options": [
-          "IVP konkretizuje vzdělávací podmínky žáka ve škole a navazuje na jeho vzdělávací potřeby.",
-          "IVP je odborný posudek ŠPZ, který škola pouze archivuje a nesmí s ním dál pracovat.",
-          "IVP je dokument určený jen pro pobytová zařízení a v běžné škole se nepoužívá.",
-          "IVP nahrazuje komunikaci učitelů s rodinou, takže další domluva o podpoře už není nutná."
+          "Odborně podporuje nastavení vzdělávání žáků se speciálními vzdělávacími potřebami a pomáhá převádět potřeby do školní praxe.",
+          "Je to externí pracovník ŠPZ, který automaticky nahrazuje všechnu podporu ve škole podle této logiky procesu.",
+          "Jeho práce se omezuje jen na administraci přijímacích testů a maturitních úprav v běžném poradenském režimu.",
+          "Jde hlavně o roli zaměřenou na požární ochranu a bezpečnostní dokumentaci školy v běžném školním provozu a každodenní organizaci školy."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 34,
-        "text": "Které tvrzení o žádosti zákonného zástupce o vyšetření je nejpřesnější?",
+        "text": "Škola řeší výrazné potíže ve čtení, psaní a pracovním tempu, ale bez vazby na specifické smyslové či tělesné postižení. Který externí partner bývá typicky přesnější?",
         "options": [
-          "Jde o totéž co doporučení ke vzdělávání, jen před vydáním finální zprávy.",
-          "Nejde o odborný výstup ŠPZ, ale o podnět či zahájení cesty k poradenskému posouzení.",
-          "Jde o školní dokument, kterým se automaticky přiznávají vyšší stupně podpory.",
-          "Jde o závěrečný dokument, který už nahrazuje další odborné posouzení žáka."
+          "SPC zaměřené na smyslové postižení, protože každá výrazná obtíž patří automaticky tam.",
+          "PPP.",
+          "SVP, protože každé dlouhodobé školní selhávání je primárně preventivně-výchovný problém.",
+          "Pouze ředitel školy bez jakékoli další poradenské součinnosti."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 35,
-        "text": "Které tvrzení nejlépe odlišuje program poradenských služeb ve škole od PLPP?",
+        "text": "Který výstup je pro školu klíčový ve chvíli, kdy potřebuje převzít návrh podpůrných opatření z odborného posouzení?",
         "options": [
-          "PLPP je obecný školní dokument a program poradenských služeb je výstup ŠPZ pro jednoho žáka.",
-          "Oba dokumenty mají stejnou funkci; jeden se používá jen na 1. stupni a druhý na 2. stupni školy.",
-          "Program poradenských služeb řeší rámec poradenské práce školy, kdežto PLPP se vztahuje ke konkrétní podpoře konkrétního žáka.",
-          "Program poradenských služeb je zdravotnický dokument a PLPP slouží jen sociálním službám."
+          "Zpráva ze ŠPZ bez ohledu na její odlišnou funkci.",
+          "Program poradenských služeb ve škole.",
+          "Doporučení ŠPZ.",
+          "Rozvrh vyučovacích hodin."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 36,
-        "text": "Které tvrzení o dokumentaci školy a ŠPZ je nejpřesnější?",
+        "text": "Co má škola v první fázi podpory potřebovat zachytit co nejpřesněji?",
         "options": [
-          "Škola i ŠPZ vedou zcela totožné dokumenty, aby se předešlo rozdílům v terminologii a odpovědnosti.",
-          "Ve škole se vede pouze klasifikace, zatímco veškerá poradenská dokumentace patří bez výjimky do ŠPZ.",
-          "Zpráva a doporučení jsou dokumenty školy, zatímco PLPP a IVP vždy vytváří výhradně ŠPZ.",
-          "Dokumentace se liší podle role subjektu: škola vede své školní dokumenty a ŠPZ své odborné výstupy."
+          "Jen obecný dojem, že žák asi potřebuje více času, bez vazby na konkrétní situace.",
+          "Především to, jak by situaci jednou mohlo pojmenovat externí pracoviště.",
+          "Hlavně to, zda text záznamu působí dostatečně odborným stylem v tomto výkladu postupu.",
+          "V jakých situacích se obtíže objevují, jaké úpravy škola zkouší a s jakým efektem."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 37,
-        "text": "Které vyjádření o doporučení ke vzdělávání žáka je nejpřesnější?",
+        "text": "Které shrnutí nejpřesněji vystihuje, co škola dělá s odborným závěrem v každodenní praxi?",
         "options": [
-          "Doporučení má směřovat k tomu, jaké podpůrné kroky mají být ve vzdělávání žáka uplatněny.",
-          "Doporučení slouží hlavně jako interní deník školy a nemá mít vazbu na konkrétní podporu.",
-          "Doporučení má pouze zopakovat anamnézu; převod do praxe je věcí školy bez další vazby na dokument.",
-          "Doporučení je totéž co vysvědčení se slovním komentářem k žákovu fungování."
+          "Převádí jej do konkrétních vzdělávacích kroků, rolí a organizace podpory.",
+          "Považuje jej za čistě externí materiál, který se do výuky nepřenáší.",
+          "Využívá jej jen při ročním hodnocení, ale ne během běžného učení.",
+          "Nahrazuje jím veškeré průběžné pedagogické rozhodování bez ohledu na realitu třídy."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 38,
-        "text": "Které vyjádření o zprávě z vyšetření je nejpřesnější?",
+        "text": "Které tvrzení o mimořádném nadání je v systému nejpřesnější?",
         "options": [
-          "Zpráva je interní školní plán, kterým se stanovuje rozvrh podpory v jednotlivých předmětech.",
-          "Zpráva obsahuje odborná zjištění a jejich zdůvodnění ve vztahu ke vzdělávacím potřebám žáka.",
-          "Zpráva slouží jen pro přidělení známky z chování a další školní klasifikaci.",
-          "Zpráva je náhradním názvem pro PLPP používaným v poradnách a centrech."
+          "Mimořádné nadání se poradenského systému netýká, protože nejde o speciální vzdělávací potřebu ve školním smyslu.",
+          "I u mimořádně nadaného žáka může být na místě poradenské posouzení a promyšlené podpůrné nastavení školy.",
+          "U nadání postačí jen slovní pochvala; dokumenty a plánování podpory jsou systémově nevhodné.",
+          "Jakmile se objeví nadání, škola už nesmí sledovat žádné obtíže nebo nerovnoměrný profil výkonu."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 39,
-        "text": "Které tvrzení o vztahu doporučení a IVP je nejpřesnější?",
+        "text": "Který dokument neurčuje podporu jednoho konkrétního žáka, ale rámuje poradenské služby školy jako celku?",
         "options": [
-          "IVP je nadřazen doporučení a může zcela ignorovat odborný závěr ŠPZ.",
-          "Doporučení i IVP vydává tentýž pracovník ŠPZ ve stejné podobě a se stejnou funkcí.",
-          "Doporučení poskytuje odborný rámec podpory a IVP jej může školně konkretizovat do vzdělávací praxe.",
-          "IVP je pouze přepis doporučení bez vazby na konkrétní školní podmínky."
+          "PLPP pro konkrétní první úroveň podpory.",
+          "IVP pro konkrétního žáka.",
+          "Program poradenských služeb ve škole.",
+          "Doporučení ŠPZ vztažené k jednomu případu."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 40,
-        "text": "Které tvrzení je nejpřesnější k tomu, co samo o sobě ještě není PLPP ani IVP?",
+        "text": "Které vymezení nejlépe odpovídá roli školního psychologa uvnitř školy?",
         "options": [
-          "Školní dokument, který konkrétně plánuje a sleduje podporu žáka v rámci prvního stupně.",
-          "Individuální vzdělávací plán školy, který konkretizuje vzdělávací podmínky žáka.",
-          "Odborné doporučení ŠPZ převáděné školou do konkrétního nastavení podpory.",
-          "Pouhý obecný slovní komentář učitele bez systematického nastavení podpory a sledování jejího průběhu."
+          "Jde jen o jiný název pro psychologa PPP, pokud do školy někdy dochází podle této logiky procesu.",
+          "Jeho role spočívá výhradně v klasifikaci žáků a neváže se na poradenské služby školy.",
+          "Patří primárně do zdravotnictví, takže do školního poradenského systému nespadá.",
+          "Podílí se na školních poradenských službách uvnitř školy; není totéž co psycholog PPP."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 41,
-        "text": "Které vyjádření nejlépe vystihuje rozdíl mezi školním psychologem a psychologem v PPP?",
+        "text": "Žák dosahuje v části činností mimořádných výkonů, ale v jiné části výrazně selhává. Které shrnutí je procesně nejpřesnější?",
         "options": [
-          "První působí jako školní poradenská role uvnitř školy, druhý je pracovníkem samostatného školského poradenského zařízení.",
-          "Rozdíl je jen v názvu pracovního místa; kompetence, výstupy i institucionální postavení jsou totožné.",
-          "Psycholog v PPP patří do zdravotnictví, zatímco školní psycholog do sociálních služeb.",
-          "Školní psycholog automaticky vydává doporučení jménem PPP, pokud pracuje na škole s žáky se SVP."
+          "Nesnažit se unáhleně vybrat jedinou hypotézu, ale sledovat silné i slabé stránky a podle toho volit další poradenský krok.",
+          "Předem rozhodnout, že u nadaného žáka nemůže být žádná bariéra ve vzdělávání v běžném školním provozu a každodenní organizaci školy.",
+          "Předem rozhodnout, že vysoký výkon automaticky vylučuje potřebu jakékoli podpory v daném pojetí systému.",
+          "Vyčkat bez úprav, aby škola neovlivnila případné budoucí posouzení v tomto výkladu postupu a návazné školní praxi."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 42,
-        "text": "Která situace typicky ukazuje spíše na zakázku pro PPP než pro SPC?",
+        "text": "Který externí partner bývá typičtější, když škola potřebuje posoudit široký studijní profil včetně nadání a učení, nikoli specializaci na konkrétní postižení?",
         "options": [
-          "Potřeba specializované podpory pro žáka se zrakovým postižením a úprav přístupu ke zrakovým informacím.",
-          "Širší vzdělávací obtíže a školní neúspěšnost bez vazby na jedno konkrétní smyslové či tělesné postižení.",
-          "Potřeba specializované podpory navázané na sluchové postižení a dostupnost komunikace.",
-          "Situace výrazně spojená s kombinovaným postižením vyžadujícím specializovaný rámec podpory."
+          "SPC, protože širší studijní profil vždy spadá pod specializaci na konkrétní postižení.",
+          "PPP.",
+          "SVP, protože nadání se v systému řeší hlavně preventivně-výchovnou cestou.",
+          "Pouze školní metodik prevence bez dalšího poradenského partnera."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 43,
-        "text": "Které tvrzení o spolupráci ŠPZ s dalšími systémy je nejpřesnější?",
+        "text": "Které tvrzení nejlépe vystihuje rozdíl mezi „odborným popisem zjištění“ a „návrhem podpory pro školu“?",
         "options": [
-          "ŠPZ nesmí spolupracovat s jinými systémy, aby neporušilo čistě školský charakter služby.",
-          "ŠPZ předává případ jiným resortům vždy a automaticky, i když to se vzděláváním žáka nesouvisí.",
-          "ŠPZ může spolupracovat také se sociální oblastí a poskytovateli zdravotních služeb, když je to pro podporu žáka potřebné.",
-          "Spolupráce s dalšími systémy je možná jen tehdy, když škola už ztratila veškerou odpovědnost za podporu."
+          "Obě funkce plní vždy jen program poradenských služeb ve škole.",
+          "První funkci plní doporučení a druhou neformální poznámka třídního učitele.",
+          "První funkci plní zpráva, druhou doporučení.",
+          "Jde o dvě shodná označení téhož výstupu bez rozdílu funkce."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 44,
-        "text": "Které tvrzení nejlépe vystihuje rozdíl mezi diagnostickým závěrem a poradenským převodem do podpory?",
+        "text": "Co je procesně nejméně správné po ukončení vyšetření v ŠPZ?",
         "options": [
-          "Diagnostický závěr i převod do podpory mají stejnou funkci; liší se jen tím, komu se dokument předá.",
-          "Poradenský převod do podpory je méně důležitý než diagnóza, protože škola potřebuje hlavně název obtíže.",
-          "Jakmile je určena diagnóza, poradenský převod do podpory už není potřeba dále řešit.",
-          "Diagnostický závěr shrnuje odborné poznatky, ale poradenská práce je musí přeložit do konkrétních kroků pro školu a rodinu."
+          "Převést závěr do konkrétního školního postupu v tomto výkladu postupu.",
+          "Sledovat, jak se navržená podpora daří v běžné výuce v rámci školní praxe.",
+          "V případě potřeby dále komunikovat o realizaci podpory.",
+          "Považovat práci školy za hotovou jen proto, že externí krok už proběhl."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 45,
-        "text": "Které tvrzení o mimořádném nadání ve vztahu k poradenskému systému je nejpřesnější?",
+        "text": "Které přiřazení je v systému MŠMT nejpřesnější?",
         "options": [
-          "Školské poradenství se nevztahuje jen na obtíže, ale i na posouzení a podporu mimořádného nadání ve vzdělávání.",
-          "Poradenský systém ve školství řeší jen postižení a poruchy; nadání do něj vůbec nepatří.",
-          "Nadaný žák může být řešen jen v rámci školního známkování, nikoli přes poradenské služby.",
-          "Podpora nadání je výhradně věcí mimoškolních aktivit a poradenský systém do ní nevstupuje."
+          "PPP a SPC patří mezi školská poradenská zařízení, zatímco ŠPP je poradenský rámec školy.",
+          "PPP a SPC tvoří dohromady ŠPP a škola je jejich administrativní pobočkou.",
+          "ŠPP, PPP i SPC jsou synonyma pro tentýž druh služby, liší se jen zkratkou.",
+          "ŠPP patří do zdravotnictví, PPP do sociální oblasti a SPC do školství v běžném školním provozu."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 46,
-        "text": "Která formulace nejlépe vystihuje první stupeň podpůrných opatření?",
+        "text": "Škola potřebuje řešit vzdělávání žáka se souběhem zrakového a motorického omezení. Který externí partner je typicky nejpřesnější?",
         "options": [
-          "Jde o režim, který může vzniknout jen na základě doporučení SPC po komplexním vyšetření.",
-          "Jde o podporu, kterou škola nastavuje a realizuje ve svém běžném vzdělávacím provozu, případně s využitím PLPP.",
-          "Jde o označení pro všechny případy, kdy už byl vytvořen IVP a přiznán asistent pedagoga.",
-          "Jde o fázi, ve které škola zatím nesmí upravit výuku, hodnocení ani organizaci práce se žákem."
+          "PPP, protože kombinovaný profil nikdy nevyžaduje specializovanou vazbu na konkrétní postižení.",
+          "SPC.",
+          "Program poradenských služeb ve škole, protože externí partner už není potřeba.",
+          "Školní metodik prevence, protože jde hlavně o otázku organizace třídy."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 47,
-        "text": "Které tvrzení o vydávání doporučení je nejpřesnější?",
+        "text": "Které tvrzení nejlépe vystihuje týmový smysl školního poradenského pracoviště?",
         "options": [
-          "Doporučení vydává třídní učitel a ŠPZ je může pouze potvrdit razítkem po formální kontrole.",
-          "Škola a ŠPZ vydávají každý svou polovinu doporučení a teprve jejich spojením vzniká platný dokument.",
-          "Doporučení ke vzdělávání žáka vydává školské poradenské zařízení, nikoli běžná škola.",
-          "Doporučení je interní dokument školy a externí zařízení do něj nesmí zasahovat."
+          "Nahrazuje všechny učitele v práci s podporou, takže běžná pedagogická praxe už není důležitá.",
+          "Slouží hlavně k tomu, aby škola nemusela komunikovat s rodinou ani s externími partnery.",
+          "Propojuje školní role tak, aby se poradenská práce nerozpadla do izolovaných jednotlivců a náhodných kroků.",
+          "Má jen archivní funkci a jeho hlavní úkol je ukládat dokumenty bez vazby na proces v tomto výkladu postupu."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 48,
-        "text": "Které tvrzení je nejpřesnější k tomu, co sama škola bez ŠPZ udělat může a nemůže?",
+        "text": "Které shrnutí je nejpřesnější pro práci školy s mimořádným nadáním?",
         "options": [
-          "Může bez dalšího přiznat vyšší stupně podpory, pokud se na tom shodne třídní učitel s vedením školy.",
-          "Nesmí před kontaktem se ŠPZ udělat žádnou úpravu ve výuce, hodnocení ani organizaci práce se žákem.",
-          "Může nahradit celé odborné posouzení, pokud si škola povede dostatečně podrobnou interní dokumentaci.",
-          "Může pedagogicky podporovat, pozorovat a vyhodnocovat žákovo fungování, ale odborné doporučení vyšších stupňů podpory sama nevydává."
+          "Jakmile škola rozpozná nadání, další poradenské uvažování už není vhodné v běžném školním provozu a každodenní organizaci školy.",
+          "Nadání se řeší jen neformálně, protože školní dokumenty jsou určeny výhradně pro obtíže v daném pojetí systému.",
+          "Stačí jednorázově zvýšit náročnost práce a není třeba sledovat, jak toto nastavení funguje v tomto výkladu postupu.",
+          "Nestačí jen pojmenovat silnou stránku; škola má promyslet i konkrétní vzdělávací podmínky a průběžně je vyhodnocovat."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 49,
-        "text": "Které vyjádření nejlépe vystihuje roli školy při vyhodnocování podpory?",
+        "text": "Které tvrzení nejpřesněji zachycuje vztah mezi nadáním a poradenským systémem?",
         "options": [
-          "Škola sleduje, jak se podpora v každodenním vzdělávání daří a jaký má dopad na fungování žáka.",
-          "Vyhodnocování podpory je čistě věcí ŠPZ; škola poskytuje jen prostor a technické podmínky pro výuku.",
-          "Jakmile je jednou podpora nastavena, škola už její dopad nesleduje, aby žáka zbytečně nestigmatizovala.",
-          "Škola sleduje jen to, zda žák formálně plní docházku; účinnost podpůrných opatření do její role nepatří."
+          "Poradenský systém se nevztahuje jen na bariéry; může podporovat i žáky mimořádně nadané.",
+          "Poradenský systém řeší výhradně zdravotní znevýhodnění a nadání je z něj vyloučeno.",
+          "Nadání se týká jen soutěží a rozšířených úkolů, nikoli školních poradenských služeb.",
+          "Jakmile se objeví nadání, škola už nemá sledovat, jaké vzdělávací podmínky žák skutečně potřebuje."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 50,
-        "text": "Která dvojice je přiřazena správně podle role v systému?",
+        "text": "Které shrnutí nejlépe vystihuje procesně správné rozhodování školy v oblasti školského poradenství?",
         "options": [
-          "SVP – školské poradenské zařízení; OSPOD – člen školního poradenského pracoviště.",
-          "Školní psycholog – škola; psycholog v PPP – školské poradenské zařízení.",
-          "Osobní asistent – škola; asistent pedagoga – sociální služba.",
-          "Program poradenských služeb ve škole – výstup ŠPZ; doporučení – interní dokument školy."
+          "Začíná co nejrychlejším předáním situace mimo školu a končí archivací externího závěru v tomto výkladu postupu a návazné školní praxi.",
+          "Začíná přesným zachycením obtíží ve škole, pokračuje volbou odpovídajícího partnera a nekončí převzetím dokumentu, ale jeho převedením do praxe a vyhodnocováním.",
+          "Začíná vyplněním co nejobsáhlejší dokumentace a konkrétní práci s podporou nechává až na později podle této logiky procesu a navazujícího školního nastavení.",
+          "Začíná až v okamžiku, kdy je k dispozici definitivní odborný závěr, aby škola nic nepředbíhala a mohla celý postup řešit teprve následně v běžném poradenském režimu a navazující dokumentaci."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3217,1286 +3241,1276 @@ window.SCIO_V4_RAW_BATTERIES = [
         "C": 12,
         "D": 12
       },
-      "distributionTarget": "12–13 správných odpovědí na každé písmeno",
+      "distributionTarget": "13/13/12/12 nebo jiná vyvážená distribuce bez převažujícího písmene",
       "distributionBalanced": true
     }
   },
   {
     "id": 6,
     "label": "Baterie 6",
-    "title": "Sociální poradenství, sociální služby a zdravotnický resort",
-    "subtitle": "Sociální služby, raná péče, OSPOD a hranice mezi školstvím, sociální oblastí a zdravotnictvím.",
-    "purpose": "Prověřit, zda student rozliší logiku sociálních služeb, meziresortní hranice a návaznost podpory tak, aby nevolil pomoc podle známého názvu, ale podle skutečné potřeby dítěte, rodiny nebo dospělého klienta.",
-    "difficulty": "střední až vyšší",
+    "title": "Sociální a zdravotní přesah – tvrdá meziresortní diferenciace",
+    "subtitle": "Sociální služby, OSPOD, zdravotnictví a hranice podpory mimo školu bez návodných mikrokazuistik.",
+    "purpose": "Ověřit, zda uchazeč přesně rozliší, co patří škole, co sociální službě, co zdravotnictví a kdy je ve hře sociálně-právní ochrana dítěte. Baterie je méně kazuistická, více hranicová a staví na přesném meziresortním úsudku.",
+    "difficulty": "vysoká",
     "dominant": [
-      "sociální poradenství",
-      "sociální služby a jejich členění",
-      "raná péče",
-      "osobní asistence a odlehčovací služby",
-      "OSPOD a sociálně-právní ochrana",
-      "školství × sociální oblast × zdravotnictví",
-      "klinický logoped × školský logoped"
+      "sociální služby v konkrétní potřebě",
+      "škola × sociální oblast",
+      "škola × zdravotnictví",
+      "OSPOD a práh ohrožení dítěte",
+      "raná péče a podpora rodiny",
+      "komunikace a role specialisty",
+      "meziresortní koordinace"
     ],
     "breakdown": [
-      "10× logika sociálních služeb a jejich členění",
-      "8× raná péče a včasná podpora rodiny",
-      "8× osobní asistence, pečovatelská a odlehčovací služba",
-      "10× rozlišení školství × sociální oblast × zdravotnictví",
-      "14× aplikační situace a meziresortní rozhodování"
+      "10× sociální služby a jejich přesné vymezení",
+      "8× škola × sociální oblast",
+      "12× škola × zdravotnictví",
+      "8× OSPOD a práh ohrožení",
+      "12× meziresortní koordinace a syntéza"
     ],
     "tags": [
-      "MPSV",
+      "hard mode",
+      "sociální služby",
+      "zdravotnictví",
+      "OSPOD",
       "meziresortní orientace",
-      "raná péče",
-      "zdravotnictví"
+      "koordinace"
     ],
     "durationMinutes": 30,
     "questionCount": 50,
-    "validation": {
-      "answerDistribution": {
-        "A": 13,
-        "B": 13,
-        "C": 12,
-        "D": 12
-      },
-      "distributionTarget": "12–13 správných odpovědí na každé písmeno",
-      "distributionBalanced": true,
-      "averageOptionLengthSpread": 26.1,
-      "maxOptionLengthSpread": 72
-    },
     "questions": [
       {
         "number": 1,
-        "text": "Které tvrzení nejpřesněji vystihuje sociální poradenství v systému sociálních služeb?",
+        "text": "Které vymezení je nejpřesnější pro potřebu podpory, která zjevně přesahuje rámec školy do běžného života?",
         "options": [
-          "Zahrnuje základní i odborné sociální poradenství jako dvě uznané roviny podpory.",
-          "Je určeno jen rodinám dětí se zdravotním postižením a systémově se nevztahuje na jiné osoby.",
-          "Patří do školského poradenství a mimo školský systém se s ním nepočítá.",
-          "Je to souhrnný název pro všechny pobytové sociální služby bez dalšího členění."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 2,
-        "text": "Které tvrzení nejlépe charakterizuje základní sociální poradenství?",
-        "options": [
-          "Je poskytováno jen specializovanými poradnami po doporučení sociálního odboru.",
-          "Patří k základním činnostem při poskytování všech druhů sociálních služeb.",
-          "Je určeno pouze zákonným zástupcům nezletilých klientů sociálních služeb.",
-          "Nahrazuje odborné sociální poradenství, pokud rodina žádá jen orientační informace."
+          "Jakmile je dítě žákem školy, má mít přednost vždy školský režim bez hledání sociální služby.",
+          "Pokud potřeba trvá i mimo vyučování a v přirozeném prostředí, nelze ji automaticky řešit jen školní podporou.",
+          "Co se objeví během školního roku, patří výhradně do kompetence školy bez dalšího rozlišení situace.",
+          "Podpora mimo vyučování se má odložit, dokud škola nevypotřebuje všechny své interní možnosti."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 3,
-        "text": "Do které skupiny sociálních služeb se řadí raná péče?",
+        "number": 2,
+        "text": "Která služba nejlépe odpovídá podpoře člověka, který potřebuje průběžnou pomoc napříč běžnými činnostmi v přirozeném prostředí?",
         "options": [
-          "Do služeb sociální péče, protože těžištěm je dlouhodobé přebírání každodenní péče o dítě.",
-          "Do sociálního poradenství, protože jejím hlavním výstupem je informování o dávkách a nárocích.",
-          "Do služeb sociální prevence, protože včas podporuje dítě a rodinu v nepříznivé situaci.",
-          "Do zdravotních služeb, protože je navázána na diagnostiku a léčbu vývojových obtíží."
+          "Pečovatelská služba je nejpřesnější vždy, když se potřeba týká i pohybu mimo domácnost.",
+          "Asistent pedagoga je nejpřesnější řešení i tehdy, když se potřeba odehrává převážně mimo vzdělávání.",
+          "Zdravotní služba je nejpřesnější pokaždé, když je přítomna potřeba doprovodu a fyzické pomoci.",
+          "Osobní asistence je nejpřesnější tam, kde podpora probíhá napříč každodenními situacemi a není vázána jen na školu."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 3,
+        "text": "Které vymezení nejpřesněji vystihuje jádro odlehčovací služby?",
+        "options": [
+          "Odlehčovací služba je především školské opatření, které nahrazuje běžnou výuku při rodinné zátěži.",
+          "Odlehčovací služba je hlavně léčebný režim určený pro akutní zdravotní stavy v domácím prostředí.",
+          "Odlehčovací služba je zejména dlouhodobý nácvik dovedností směřující k pracovnímu uplatnění klienta.",
+          "Odlehčovací služba míří na situaci, kdy je třeba dočasně převzít péči a snížit zátěž pečujících."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 4,
-        "text": "Které vymezení nejlépe odpovídá osobní asistenci?",
+        "text": "Které shrnutí nejpřesněji vystihuje, proč bývá raná péče prvním vhodným partnerem rodiny malého dítěte s postižením nebo ohroženým vývojem?",
         "options": [
-          "Ambulantní poradenská služba zaměřená hlavně na orientaci v dávkách a nárocích rodiny.",
-          "Školská podpůrná role realizovaná v průběhu vyučování podle vzdělávacích cílů školy.",
-          "Zdravotnická domácí péče určená především k provádění léčebných výkonů v domácnosti.",
-          "Terénní sociální služba poskytovaná v přirozeném prostředí při činnostech, které osoba potřebuje."
+          "Raná péče je především školské zařízení, které přebírá vzdělávání dítěte před vstupem do MŠ.",
+          "Raná péče je hlavně zdravotnická léčba v domácnosti, která nahrazuje sociální i poradenskou linku.",
+          "Raná péče slouží především k rozhodování o dávkách, nikoli k podpoře dítěte a rodiny v běžném životě.",
+          "Raná péče spojuje podporu vývoje dítěte, práci s rodinou a orientaci v návaznosti služeb v přirozeném prostředí."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 5,
-        "text": "Která služba je nejvíce spojena s tím, aby pečující osoba získala čas k odpočinku nebo vyřízení nezbytných záležitostí?",
+        "text": "Které rozlišení základního a odborného sociálního poradenství je nejpřesnější?",
         "options": [
-          "Odlehčovací služba.",
-          "Sociální rehabilitace.",
-          "Raná péče.",
-          "Pedagogická intervence školy."
+          "Základní sociální poradenství dává orientaci v možnostech řešení, zatímco odborné pracuje hlouběji s konkrétní nepříznivou situací.",
+          "Základní sociální poradenství patří škole a odborné výhradně zdravotnictví, proto se nesmějí překrývat.",
+          "Základní sociální poradenství řeší dávky a odborné výhradně reedukaci poruch učení v rodině.",
+          "Rozdíl mezi základním a odborným sociálním poradenstvím spočívá hlavně ve věku klienta, nikoli v charakteru potřeby."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 6,
-        "text": "Které tvrzení nejlépe rozlišuje osobní asistenci a pečovatelskou službu?",
+        "text": "Kdy je nejpřesnější uvažovat o sociální rehabilitaci?",
         "options": [
-          "Osobní asistence patří do školství, pečovatelská služba do sociálních služeb.",
-          "Osobní asistence se poskytuje bez časového omezení v přirozeném prostředí, pečovatelská služba typicky ve vymezeném čase.",
-          "Pečovatelská služba je určena jen seniorům, zatímco osobní asistence výhradně dětem a mladistvým.",
-          "Jde o dva odlišné názvy pro stejnou službu s totožným právním i praktickým rámcem."
+          "Když je cílem dočasně ulevit rodině tím, že někdo na chvíli převezme péči o člena domácnosti.",
+          "Když je cílem posílit samostatnost, orientaci v běžném životě a reálné zapojení do společnosti.",
+          "Když je cílem nahradit školní podporu ve výuce bez ohledu na širší fungování člověka v běžném životě.",
+          "Když je cílem výhradně medicínská léčba nebo úprava farmakoterapie po získaném onemocnění."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 7,
-        "text": "Které tvrzení nejpřesněji vystihuje logiku služeb sociální péče?",
+        "text": "Rodina se neptá na výuku ani na léčbu, ale na nároky, služby, finance a orientaci v systému. Co je v jádru této potřeby?",
         "options": [
-          "Jsou určeny hlavně k vydávání odborných doporučení škole a nastavování podpůrných opatření.",
-          "Slouží především k řešení trestněprávních nebo opatrovnických sporů v rodině.",
-          "Směřují k podpoře soběstačnosti, zachování důstojnosti a zvládání běžného života osoby.",
-          "Jsou zaměřeny hlavně na léčebné výkony a zdravotnickou rehabilitaci hrazenou pojišťovnou."
+          "Jde automaticky o důvod k zahájení řízení OSPOD, protože rodina sama zatím neví, kam se obrátit.",
+          "Jde automaticky o školský problém, protože jakákoli nejistota rodiny se má nejprve řešit ve škole.",
+          "Jde především o poradenskou orientaci v sociální oblasti, teprve potom lze rozlišovat další návazné kroky.",
+          "Jde především o zdravotnickou potřebu, protože nároky a pomůcky se vždy odvíjejí od medicínské diagnózy."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 8,
-        "text": "Která z následujících činností nepatří primárně do systému sociálních služeb?",
+        "text": "Které čtení vztahu mezi ranou péčí a zdravotnictvím je nejpřesnější?",
         "options": [
-          "Raná péče poskytovaná rodině malého dítěte v nepříznivé situaci.",
-          "Odborné sociální poradenství při orientaci v nárocích a službách.",
-          "Odlehčovací služba využívaná rodinou při dlouhodobé pečovatelské zátěži.",
-          "Doporučení školského poradenského zařízení ke vzdělávání žáka."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 9,
-        "text": "Které tvrzení nejlépe vystihuje služby sociální prevence?",
-        "options": [
-          "Směřují k překonání nepříznivé sociální situace a k prevenci sociálního vyloučení či nežádoucích jevů.",
-          "Jsou určeny především k trvalému zajištění ubytování a celodenní péče v pobytových službách.",
-          "Patří výhradně do systému nemocnic a odborných ambulancí.",
-          "Slouží hlavně k vydávání závazných doporučení pro školní hodnocení žáka."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 10,
-        "text": "Které tvrzení nejlépe vystihuje formy poskytování sociálních služeb?",
-        "options": [
-          "Terénní služba je vždy spojena s ubytováním klienta v zařízení, ambulantní nikoli.",
-          "Sociální služby mohou být terénní, ambulantní nebo pobytové podle místa a způsobu poskytování.",
-          "Ambulantní a pobytová forma se používají jen ve zdravotnictví, ne v sociálních službách.",
-          "Forma poskytování se určuje výhradně podle věku klienta, nikoli podle charakteru podpory."
+          "Raná péče nahrazuje zdravotnictví, pokud už byla stanovena diagnóza a rodina je v domácím prostředí.",
+          "Zdravotnictví řeší diagnostiku a léčbu, zatímco raná péče doplňuje podporu dítěte a rodiny v běžném fungování.",
+          "Jakmile vstoupí do situace zdravotník, nemá už sociální služba včasné podpory žádný samostatný význam.",
+          "Raná péče je vhodná jen tehdy, když se rodina rozhodne nevyužívat zdravotní služby nebo odmítá diagnózu."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 11,
-        "text": "Které tvrzení nejlépe vystihuje ranou péči jako službu pro rodinu malého dítěte?",
+        "number": 9,
+        "text": "Které vymezení hranice role asistenta pedagoga je nejpřesnější?",
         "options": [
-          "Je určena primárně škole a učitelům, aby mohli připravit IVP ještě před nástupem dítěte.",
-          "Nahrazuje SPC, PPP i zdravotnické ambulance a sjednocuje jejich kompetence do jedné služby.",
-          "Pracuje s dítětem i rodinou a podporuje vývoj dítěte v přirozeném prostředí.",
-          "Je určena až po nástupu dítěte do školy, kdy se projeví trvalá školní neúspěšnost."
+          "Asistent pedagoga má být první volbou i pro doprovod, hygienu a volný čas mimo školu, pokud dítě chodí do školy.",
+          "Asistent pedagoga je vázán na podporu vzdělávání; potřeby mimo tento rámec mohou vyžadovat jiný typ služby.",
+          "Asistent pedagoga je sociální služba školy, a proto automaticky pokrývá i domácí a komunitní fungování žáka.",
+          "Asistent pedagoga nahrazuje osobní asistenci všude tam, kde má žák potvrzené zdravotní postižení."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
-        "number": 12,
-        "text": "Které tvrzení o formě poskytování rané péče je nejpřesnější?",
+        "number": 10,
+        "text": "Kdy je nejpřesnější uvažovat o vstupu OSPOD?",
         "options": [
-          "Jde výhradně o ambulantní službu v zařízení, protože domácí prostředí neumožňuje odbornou práci.",
-          "Jde o pobytovou službu, která rodině dočasně nahrazuje každodenní péči o dítě.",
-          "Jde o službu čistě online, protože včasná podpora je založena hlavně na poradenství na dálku.",
-          "Jde o terénní, případně ambulantní službu, přičemž těžištěm je přirozené prostředí dítěte a rodiny."
+          "Tehdy, když je ve hře ohrožení dítěte, jeho práv, bezpečí nebo závažně narušené fungování rodiny.",
+          "Tehdy, když si rodiče nejsou jistí, na které sociální služby a dávky by se mohli ptát.",
+          "Tehdy, když škola potřebuje rychleji vyřídit doporučení k podpůrným opatřením pro žáka.",
+          "Tehdy, když je třeba zajistit běžnou pomoc s pohybem, dopravou a mimoškolní aktivitou dítěte."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 11,
+        "text": "Rodina je velmi přetížená, ale popis situace zatím neukazuje na přímé ohrožení dítěte. Co je nejpřesnější první čtení?",
+        "options": [
+          "U silné pečující zátěže je nejpřesnější vždy rovnou zahájit linii sociálně-právní ochrany dítěte.",
+          "Jakmile rodina popíše únavu a přetížení, odpovědnost přechází hlavně na školu a její vnitřní poradenský rámec.",
+          "Pokud není přítomna akutní medicínská komplikace, není na místě hledat žádnou vnější podporu rodině.",
+          "Nejprve je třeba zvažovat podpůrné sociální služby a úlevu rodině, ne automaticky vyvozovat vstup OSPOD."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 13,
-        "text": "Rodiče dvouletého dítěte po čerstvě sdělené diagnóze tápou, jak doma podporovat vývoj, jaké pomůcky zkoušet a na jaké další služby se obracet. Která volba je jako první opora nejpřiměřenější?",
+        "number": 12,
+        "text": "Které shrnutí nejlépe vystihuje vztah MŠ a návazných služeb u malého dítěte s postižením?",
         "options": [
-          "Raná péče, protože kombinuje podporu dítěte a rodiny s orientací v návazné pomoci.",
-          "OSPOD, protože každá nově sdělená diagnóza automaticky spadá do sociálně-právní ochrany.",
-          "PPP, protože hlavním úkolem je co nejdříve posoudit budoucí školní výkon dítěte.",
-          "Pobytová odlehčovací služba, protože rodina si má nejdříve od péče zcela odpočinout."
+          "Jakmile dítě nastoupí do MŠ, sociální služba rané péče ztrácí smysl a škola přebírá všechnu podporu.",
+          "Mateřská škola řeší vzdělávací rámec, ale rodina může zároveň potřebovat jinou podporu mimo školu; nejde o vztah buď–anebo.",
+          "Pokud dítě navštěvuje MŠ, má se odložit jakákoli další koordinace, dokud se neukáže školní neúspěch.",
+          "MŠ je v těchto situacích jen přechodná forma péče, a proto nemá vlastní vzdělávací ani poradenskou roli."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 13,
+        "text": "Které čtení je nejpřesnější, když je školní výkon stabilní, ale hlavní obtíž se týká fungování mimo školu?",
+        "options": [
+          "Těžiště podpory se může přesouvat k sociální službě, protože popsaný problém neleží primárně ve vzdělávání.",
+          "Stabilní školní výkon znamená, že žádná další služba už není věcně potřebná ani smysluplná.",
+          "Jakákoli obtíž dítěte je nejpřesněji řešena školou, pokud se projevuje v období povinné školní docházky.",
+          "Pokud se potíže objevují hlavně odpoledne, je nejpřesnější hledat jejich původ jen v nedostatečné motivaci rodiny."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 14,
-        "text": "Která charakteristika nejlépe odlišuje ranou péči od školského poradenského zařízení?",
+        "text": "Které rozlišení organizace vzdělávání a mimoškolní podpory je nejpřesnější?",
         "options": [
-          "Raná péče i ŠPZ jsou totožné typy zařízení, liší se jen názvem poskytovatele.",
-          "Raná péče je sociální služba včasné podpory rodiny a dítěte, zatímco ŠPZ patří do systému školství.",
-          "Raná péče je zdravotnická služba a ŠPZ sociální služba, obě ale pracují se stejným výstupem.",
-          "Raná péče je určena dospělým pečujícím osobám, zatímco ŠPZ pouze samotným dětem."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 15,
-        "text": "Které tvrzení o věkovém vymezení rané péče je nejpřesnější?",
-        "options": [
-          "Je vázána na povinnou školní docházku, proto se využívá hlavně po zahájení školní docházky.",
-          "Je určena bez věkového omezení každé rodině, která pečuje o dítě s postižením.",
-          "Je poskytována dítěti a rodičům dítěte do sedmi let věku.",
-          "Je určena výhradně kojencům a batolatům do tří let věku."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 16,
-        "text": "Které tvrzení nejlépe vystihuje zaměření rané péče na rodinu?",
-        "options": [
-          "Rodina je v rané péči spíše pasivním příjemcem pokynů, protože odborník přebírá hlavní odpovědnost za rozvoj dítěte.",
-          "Rodina do rané péče vstupuje jen kvůli administrativnímu podpisu a odborná práce se děje bez ní.",
-          "Raná péče je zaměřena jen na dítě, protože zapojení rodiny by mohlo oslabit odbornou neutralitu služby.",
-          "Rodina je aktivním partnerem podpory, protože změny se mají promítat do každodenního fungování doma."
+          "Jakmile škola upraví vzdělávání, zaniká potřeba rozlišovat, co se děje ve škole a co v přirozeném prostředí.",
+          "Organizace vzdělávání je podřízená sociálním službám, protože ty rozhodují o celém denním režimu dítěte.",
+          "Mimoškolní podpora je jen doplňková a nemá být zvažována, pokud škola vytvořila jakékoli podpůrné opatření.",
+          "Škola organizuje podporu ve vzdělávání, ale tím sama nepokrývá všechny potřeby života mimo školu."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 17,
-        "text": "Která z následujících situací nejlépe odpovídá logice rané péče?",
+        "number": 15,
+        "text": "Které vymezení role školy vůči sociální agendě rodiny je nejpřesnější?",
         "options": [
-          "Rodiče předškoláka potřebují podporu v tom, jak doma rozvíjet komunikaci, hru a orientaci dítěte v běžných situacích.",
-          "Škola potřebuje závazné doporučení pro úpravu hodnocení žáka se speciálními vzdělávacími potřebami.",
-          "Rodina žádá klinickou diagnostiku a léčbu poruchy polykání v ambulanci.",
-          "U dítěte vzniklo podezření na zanedbávání péče a je třeba řešit právní ochranu dítěte."
+          "Škola má být prvním rozhodujícím místem pro určení sociálních dávek a druhu sociální služby rodiny.",
+          "Škola do sociální oblasti vůbec nevstupuje; jakákoli rodinná zátěž je mimo její odborný zájem a komunikaci.",
+          "Škola přebírá sociální agendu rodiny vždy, když se rodinná situace začne promítat do docházky žáka.",
+          "Škola může potřebu zachytit a spolupracovat, ale sama není orgánem pro rozhodování o sociálních nárocích rodiny."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 16,
+        "text": "Které čtení vztahu zdravotnictví a školy při vzdělávacím dopadu zdravotního stavu je nejpřesnější?",
+        "options": [
+          "Jakmile existuje zdravotnická zpráva, škola už jen čeká na přesný návod a sama organizačně nerozhoduje.",
+          "Pokud je obtíž zdravotně podmíněná, je školní úprava nevhodná, dokud neskončí léčba nebo rehabilitace.",
+          "Zdravotnictví popisuje a léčí stav, ale škola musí samostatně řešit jeho dopad do organizace vzdělávání.",
+          "Zdravotnický závěr automaticky určuje i všechny pedagogické metody, hodnocení a podobu školního režimu."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 17,
+        "text": "Které rozlišení léčebné rehabilitace a školní organizace práce je nejpřesnější?",
+        "options": [
+          "Pokud dítě dochází na rehabilitaci, škola by neměla měnit pracovní tempo ani podmínky vzdělávání.",
+          "Úprava školní organizace práce je vhodná až po ukončení rehabilitace, aby se role systémů nepletly.",
+          "Rehabilitace a školní organizace práce se nevylučují; léčba běží jinde, škola řeší svůj vlastní funkční dopad.",
+          "Rehabilitace sama nahrazuje potřebu pedagogicky promýšlet tempo, zátěž a praktické uspořádání školního dne."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 18,
+        "text": "Které shrnutí je nejpřesnější pro vztah lékařské zprávy a školního rozhodování?",
+        "options": [
+          "Lékařská zpráva je důležitý vstup, ale sama za školu nerozhoduje o konkrétní podobě vzdělávací podpory.",
+          "Lékařská zpráva je pro školu závazný pedagogický plán, který se přebírá bez dalšího odborného rozlišení.",
+          "Škola má lékařskou zprávu ignorovat, aby nezasahovala do oblasti zdravotnictví ani do komunikace s rodinou.",
+          "Jakmile rodina předloží lékařskou zprávu, veškerá další koordinace přechází výhradně na zdravotnické pracoviště."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 18,
-        "text": "Které tvrzení nejlépe vystihuje vztah rané péče a zdravotnictví?",
-        "options": [
-          "Raná péče nahrazuje zdravotnickou diagnostiku a léčbu, pokud je dítě ještě předškolní.",
-          "Raná péče a zdravotnictví mohou na sebe navazovat, ale jejich role a výstupy nejsou totožné.",
-          "Raná péče je jen administrativní most k přijetí dítěte do nemocnice nebo ambulance.",
-          "Raná péče se využívá jen tehdy, když zdravotnictví už nemá pro rodinu žádný význam."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
         "number": 19,
-        "text": "Které tvrzení o načasování rané péče je nejpřesnější?",
+        "text": "Které rozlišení klinického logopeda a školní podpory komunikace je nejpřesnější?",
         "options": [
-          "Je vhodná hlavně po několika letech neúspěšné školní docházky, kdy se ukáže potřeba systémové podpory.",
-          "Má smysl až po vydání doporučení ŠPZ, protože bez školského podkladu nelze rodinu vést.",
-          "Je postavena na logice včasné intervence, tedy podpory co nejdříve po zjištění potřeby.",
-          "Patří až do období adolescence, kdy se začínají řešit sociální služby a tranzice."
+          "Pokud dítě dochází ke klinickému logopedovi, škola už nemá důvod upravovat komunikaci, instrukce ani režim práce.",
+          "Školní podpora komunikace nahrazuje klinickou logopedii, pokud dítě tráví většinu dne ve škole nebo v družině.",
+          "Rozdíl mezi klinickým logopedem a školou je hlavně administrativní; obsah podpory je ve skutečnosti tentýž.",
+          "Klinický logoped řeší terapeutickou linku, zatímco škola musí současně řešit dopad komunikační obtíže do učení a účasti."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 20,
-        "text": "Která z uvedených služeb patří mezi služby sociální péče?",
+        "text": "Na co má škola u chronického onemocnění reagovat nejpřesněji?",
         "options": [
-          "Odborné sociální poradenství.",
-          "Raná péče.",
-          "Osobní asistence.",
-          "Sociálně aktivizační služba pro rodiny s dětmi."
+          "Na konkrétní funkční dopad do učení, tempa, výdrže a bezpečné organizace dne, ne jen na název diagnózy.",
+          "Na název diagnózy samotný, protože ten vždy určuje stejný školní režim bez ohledu na individuální dopad.",
+          "Na doporučení rodiny samotné, protože u chronického onemocnění je role školy pouze vykonávací a neodlišuje potřeby.",
+          "Na to, zda již byla ukončena zdravotnická péče; do té doby nemá škola na funkční dopad situace reagovat."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 21,
-        "text": "Které tvrzení nejlépe vystihuje odlehčovací služby?",
+        "text": "Které vymezení vztahu probíhající léčby a odpovědnosti školy je nejpřesnější?",
         "options": [
-          "Jsou určeny jen pro dobu vyučování a navazují na práci asistenta pedagoga ve třídě.",
-          "Doplňují péči o osobu tak, aby pečující mohl nezbytně odpočinout nebo vyřídit své záležitosti.",
-          "Jejich cílem je převzít péči natrvalo a ukončit roli rodiny v každodenním fungování klienta.",
-          "Nahrazují zdravotnické výkony v domácí péči o dítě s postižením nebo chronickým onemocněním."
+          "Po dobu léčby má škola vyčkat a nepřijímat žádná opatření, aby se odborné role systémů nepřekrývaly.",
+          "Léčba přebírá i oblast vzdělávání, pokud se obtíž týká zdravotního stavu a ne jen školního výkonu.",
+          "Škola má během léčby sledovat jen docházku; ostatní dopady do práce a hodnocení řeší až po jejím ukončení.",
+          "To, že probíhá léčba, nepozastavuje povinnost školy reagovat na vzdělávací a organizační dopad situace."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 22,
-        "text": "Které tvrzení nejlépe vystihuje sociální rehabilitaci?",
+        "text": "Které čtení krátkodobého zdravotního stavu ve škole je nejpřesnější?",
         "options": [
-          "Jejím cílem je vydat škole doporučení pro vyšší stupně podpůrných opatření.",
-          "Je zaměřena hlavně na léčebné výkony a zdravotnickou rehabilitaci hrazenou pojišťovnou.",
-          "Podporuje nácvik a rozvoj dovedností vedoucích k samostatnému fungování a začlenění do běžného života.",
-          "Jde o pobytovou službu, která dočasně nahrazuje rodinnou péči v době krize."
+          "Krátkodobý stav se ve škole zásadně neřeší, protože systém podpory je určen jen pro dlouhodobé diagnózy.",
+          "Krátkodobý stav se má řešit výhradně přes zdravotnictví; škola nemá sama měnit praktické podmínky výuky.",
+          "I krátkodobý stav může vyžadovat školní úpravu, pokud aktuálně mění funkční podmínky vzdělávání.",
+          "U krátkodobého stavu stačí sledovat omluvenky; organizace práce a bezpečnostní režim školy se tím nemění."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 23,
-        "text": "Které tvrzení nejlépe vystihuje sociálně aktivizační služby pro rodiny s dětmi?",
+        "text": "Které vymezení je nejpřesnější, když zdravotní obtíž vyžaduje ve škole bezpečný režim a citlivou organizaci dne?",
         "options": [
-          "Jsou to služby určené pouze pro rodiny, které už mají soudní rozhodnutí o odebrání dítěte.",
-          "Jsou určeny jen pro jednorázové právní poradenství při rozvodu rodičů.",
-          "Nahrazují klinickou diagnostiku a léčbu vývojových obtíží dítěte.",
-          "Směřují k posílení fungování rodiny, rodičovských kompetencí a prevenci dalšího prohlubování obtíží."
+          "Jde primárně o léčebnou otázku, proto je nevhodné měnit školní režim, dokud nepřijde nový lékařský závěr.",
+          "Škola neřeší léčbu, ale musí řešit vlastní organizační vrstvu bezpečí a předvídatelnosti.",
+          "Pokud existuje zdravotní obtíž, školní režim má zůstat standardní, aby se dítě nepřetěžovalo dalšími změnami.",
+          "Jakýkoli režimový zásah ve škole by znamenal vstup do zdravotnictví, proto jej má škola zásadně odmítat."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 24,
-        "text": "Které tvrzení nejlépe vystihuje vztah sociální služby a dávky?",
+        "text": "Rodina má lékařskou zprávu, ale hlavní problém popisuje v dopravě, domácím režimu a koordinaci pomoci. Co je nejpřesnější?",
         "options": [
-          "Sociální služba je konkrétní forma podpory nebo pomoci, zatímco dávka je finanční nástroj a sama službu nenahrazuje.",
-          "Jakmile rodina pobírá příspěvek nebo jinou dávku, využívání sociální služby už systémově ztrácí smysl.",
-          "Poskytovatel sociální služby zároveň vždy rozhoduje o přiznání dávek, protože jde o jednu agendu.",
-          "Rozdíl je jen v účetním způsobu financování; z hlediska účelu podpory jsou oba nástroje prakticky totožné."
+          "Vedle zdravotnické informace může být výrazně přítomna i sociální potřeba, protože jádro je praktická a organizační zátěž rodiny.",
+          "Jakmile rodina přinese lékařskou zprávu, je nejpřesnější držet situaci už jen ve zdravotnické linii bez dalšího rozlišení.",
+          "Praktická zátěž rodiny je vedle medicínského nálezu druhořadá, protože pro systémovou volbu podpory není podstatná.",
+          "Pokud je obtíž organizační, má ji řešit pouze škola, protože koordinace rodinného režimu je vždy školská agenda."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 25,
-        "text": "Které tvrzení nejlépe odlišuje osobního asistenta od asistenta pedagoga?",
+        "text": "Které rozlišení specialisty a metodiky výuky je nejpřesnější?",
         "options": [
-          "Osobní asistent je zdravotnický pracovník, asistent pedagoga sociální pracovník školy.",
-          "Asistent pedagoga je pracovník ve vzdělávání, osobní asistent pracovník sociální služby.",
-          "Obě role jsou součástí téže služby, jen jedna se používá ve škole a druhá doma.",
-          "Osobní asistent může pracovat jen s dospělými, asistent pedagoga jen s dětmi do 15 let."
+          "Specialista, který zná diagnózu, automaticky určuje i didaktické vedení výuky bez další pedagogické úvahy.",
+          "Specialista může být důležitý vstup, ale za metodiku výuky a organizaci práce odpovídá škola.",
+          "Pokud do situace vstoupí specialista, škola má metodiku výuky co nejvíc zjednodušit a vyčkat na jeho přímé pokyny.",
+          "Metodiku výuky škola neřeší, protože u zdravotně podmíněných obtíží rozhoduje o školní práci hlavně terapeut."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 26,
-        "text": "Která z následujících situací nejvíce odpovídá využití osobní asistence?",
+        "text": "Které vymezení meziresortní koordinace je nejpřesnější?",
         "options": [
-          "Škola potřebuje odborné doporučení pro úpravu výuky žáka se speciálními vzdělávacími potřebami.",
-          "Rodina žádá ambulantní léčbu poruch komunikace vedenou klinickým logopedem.",
-          "Dospívající s těžkým tělesným postižením potřebuje podporu při pohybu, hygieně a běžných denních činnostech doma i venku.",
-          "Rodiče chtějí získat první orientaci v systému sociálních služeb a dostupných dávkách."
+          "Nejpřesnější koordinace vzniká tehdy, když se celá situace převede pod jediný systém a ostatní ustoupí.",
+          "Meziresortní koordinace znamená, že jeden partner přebírá odpovědnost i za úkoly, které patří jiným resortům.",
+          "Různé vrstvy potřeby mohou vyžadovat různé partnery; přesná koordinace není totéž jako hledání jedné všeřešící instituce.",
+          "Koordinace je vhodná jen tehdy, pokud se partneři shodnou, že problém nepatří ani škole, ani rodině."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 27,
-        "text": "Která činnost patří primárně do zdravotnictví, nikoli do školství nebo systému sociálních služeb?",
+        "text": "Které čtení organizace péče mimo školu je nejpřesnější?",
         "options": [
-          "Ambulantní diagnostika a léčba poruch komunikace vedená klinickým logopedem.",
-          "Metodická podpora učitele při úpravě instrukcí pro žáka s PAS ve výuce.",
-          "Základní orientace rodiny v dostupných sociálních službách a návazné pomoci.",
-          "Koordinace podpory žáka při zavádění doporučených úprav do vzdělávání."
+          "Péče a doprovod mimo rámec vzdělávání nelze automaticky připsat škole jen proto, že dítě je žákem.",
+          "Jakmile je dítě žákem, je nejpřesnější očekávat, že škola bude organizovat i jeho mimoškolní péči a doprovod.",
+          "Organizace péče mimo školu je druhořadá a systémově bez významu, pokud je ve škole nastavený funkční režim.",
+          "Pokud má rodina obtíže s organizací péče, má se nejprve stáhnout z aktivit mimo školu a další podporu nehledat."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 28,
-        "text": "Které tvrzení nejlépe vystihuje školského logopeda?",
+        "text": "Které vymezení role školy při výběru sociální služby je nejpřesnější?",
         "options": [
-          "Je zdravotnickým pracovníkem, který stanovuje diagnózu a léčebný postup poruch řeči.",
-          "Patří do školství a jeho činnost se váže k podpoře komunikace a vzdělávání, nikoli k plné zdravotnické péči.",
-          "Je pracovníkem OSPOD a řeší sociálně-právní ochranu dětí s narušenou komunikační schopností.",
-          "Jeho hlavním úkolem je zajišťovat dávky a registraci sociálních služeb pro rodinu."
+          "Škola může zachytit potřebu a podpořit orientaci, ale není sama rozhodujícím orgánem pro výběr sociální služby.",
+          "Škola má být hlavním rozhodovatelem o tom, kterou sociální službu bude rodina využívat a v jakém rozsahu.",
+          "Pokud škola rozpozná sociální potřebu, je nejpřesnější rodinu už dál neinformovat a nekomunikovat s ní o návaznosti.",
+          "Škola může zvažovat sociální službu jen tehdy, když má od OSPOD písemný pokyn k výběru konkrétního poskytovatele."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 29,
-        "text": "Které tvrzení nejlépe vystihuje OSPOD v kontextu speciálněpedagogické praxe?",
+        "text": "Které čtení vztahu sociální zátěže rodiny a školního dopadu je nejpřesnější?",
         "options": [
-          "Jde o typ školského poradenského zařízení pro děti se speciálními vzdělávacími potřebami.",
-          "Jde o sociální službu rané péče poskytovanou rodinám malých dětí s postižením.",
-          "Jde o orgán sociálně-právní ochrany dětí, který se uplatňuje při ohrožení dítěte a ochraně jeho zájmů.",
-          "Jde o zdravotnické pracoviště, které přebírá léčbu a diagnostiku závažných vývojových poruch."
+          "Jakmile se rodinná zátěž projeví ve škole, přestává být sociální oblast relevantní a vše přechází na školu.",
+          "Sociální zátěž rodiny se školy odborně netýká, protože škola sleduje jen výkon a docházku bez širšího kontextu.",
+          "Sociální zátěž rodiny může výrazně dopadat do školy, ale neznamená to, že se z ní tím stává čistě školní problém.",
+          "Školní dopad rodinné zátěže je vždy důkazem ohrožení dítěte a automatickým důvodem pro vstup OSPOD."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 30,
-        "text": "Která situace nejspíše ukazuje na potřebu zapojení OSPOD?",
+        "text": "Jaký postup uvažování je v meziresortně složité situaci nejpřesnější?",
         "options": [
-          "Škola potřebuje metodiku pro úpravu výuky žáka se sluchovým postižením.",
-          "Rodina hledá návaznou sociální službu po sdělení diagnózy malého dítěte.",
-          "Klient potřebuje podporu při hygieně a pohybu v domácnosti.",
-          "Vzniká podezření na zanedbávání péče, ohrožení dítěte nebo závažné narušení rodinného fungování."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 31,
-        "text": "Které tvrzení nejlépe odlišuje školní podporu od sociální služby?",
-        "options": [
-          "Školní podpora je navázaná na vzdělávání, zatímco sociální služba na pomoc v běžném životě a nepříznivé sociální situaci.",
-          "Školní podpora je vždy ambulantní a sociální služba vždy pobytová.",
-          "Školní podpora je bezplatná, sociální služba vždy placená bez výjimky.",
-          "Školní podpora smí pracovat jen s dítětem, sociální služba jen s rodičem."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 32,
-        "text": "Které tvrzení nejlépe vystihuje vztah sociálních služeb a školy?",
-        "options": [
-          "Sociální služby nahrazují školu vždy, když má dítě výraznější speciální vzdělávací potřeby.",
-          "Jde o odlišné systémy, které se mohou doplňovat, ale nemají stejné kompetence ani stejné výstupy.",
-          "Škola nesmí se sociálními službami spolupracovat, aby nezasahovala do soukromí rodiny.",
-          "Jakmile rodina využívá sociální službu, škola už nemusí upravovat své pedagogické postupy."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 33,
-        "text": "Které tvrzení nejlépe vystihuje klinického logopeda?",
-        "options": [
-          "Jde o člena školního poradenského pracoviště, který ve škole vydává doporučení pro podpůrná opatření.",
-          "Jeho hlavní role spočívá v organizaci sociálních služeb a koordinaci rodiny v systému MPSV.",
-          "Jde o zdravotnického pracovníka v oblasti diagnostiky, léčby a rehabilitace poruch komunikace.",
-          "Patří výhradně do systému sociálně-právní ochrany dětí a pracuje jen na OSPOD."
+          "Nejprve vybrat nejsilnější instituci a teprve podle ní zpětně vyložit, jaké potřeby v situaci vlastně jsou.",
+          "Nejprve určit, kdo je za situaci formálně odpovědný, a ostatní vrstvy potřeby ponechat až na závěrečné doplnění.",
+          "Nejprve rozlišit vrstvy potřeby, a teprve potom přiřazovat vhodné partnery a další kroky.",
+          "Nejprve zjistit, kde je klient právě evidován, protože to samo určuje i správné čtení celé situace."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 34,
-        "text": "Které tvrzení nejlépe vystihuje meziresortní spolupráci kolem dítěte s postižením?",
+        "number": 31,
+        "text": "Které shrnutí nejpřesněji vystihuje logiku návaznosti služeb?",
         "options": [
-          "Jeden systém by měl převzít všechny potřeby rodiny, aby nevznikalo riziko překryvu kompetencí.",
-          "Nejdřív se má vždy čekat, který resort se ozve jako první, a teprve potom hledat návaznost.",
-          "Smysluplná je jen spolupráce mezi školou a zdravotnictvím; sociální oblast se zapojuje až při odebrání dítěte.",
-          "Různé systémy mohou řešit odlišné části potřeb dítěte a rodiny, pokud jsou jejich role jasně odlišeny."
+          "Návaznost znamená, že se po prvním kontaktu všechna další podpora přesune pod jedinou centrální instituci.",
+          "Návaznost je hlavně administrativní pojem; pro skutečné rozhodování o potřebě klienta nemá větší význam.",
+          "Návaznost znamená, že různé části situace mohou řešit různí partneři v souběhu nebo po sobě.",
+          "Návaznost je vhodná jen tehdy, když jedna služba selže a druhá ji úplně nahradí v celém rozsahu podpory."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
-        "number": 35,
-        "text": "Dítě s těžším postižením přechází z domácí podpory do mateřské školy a rodina současně využívá sociální službu i zdravotnickou péči. Který přístup je nejpřesnější?",
+        "number": 32,
+        "text": "Které vymezení je nejpřesnější pro práci s různými partnery v jedné situaci?",
         "options": [
-          "Je vhodné koordinovat návaznost jednotlivých podpor tak, aby si systémy nepřekážely a reagovaly na různé potřeby dítěte a rodiny.",
-          "S nástupem do MŠ má sociální služba automaticky skončit, protože školství přebírá všechny oblasti podpory.",
-          "Jakmile je zapojeno zdravotnictví, škola už nemá vlastní prostor pro úpravu podmínek vzdělávání.",
-          "Nejvhodnější je ponechat systémy odděleně bez sdílení informací, aby nedocházelo ke zmatku kompetencí."
+          "Je odborně v pořádku, když různé vrstvy potřeby drží různí partneři, pokud jsou role srozumitelně rozlišené.",
+          "Odborně přesné je vždy zvolit jednoho partnera a ostatní odsunout, aby nedocházelo k roztříštění podpory.",
+          "Různí partneři znamenají nejasnost v systému; správný postup je proto vyčkat, kdo se ujme situace jako první.",
+          "Jakmile je potřeba více partnerů, ukazuje to na chybnou diagnostiku nebo na nedostatečnou motivaci rodiny."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 36,
-        "text": "Rodina dítěte s těžším tělesným postižením potřebuje dlouhodobou pomoc v domácím prostředí při běžných denních činnostech. Která služba je nejrelevantnější jako první úvaha?",
+        "number": 33,
+        "text": "Která strategie prvního čtení zadání je v B6 nejpřesnější?",
         "options": [
-          "PPP, protože jde hlavně o budoucí vzdělávací výkon dítěte.",
-          "Osobní asistence jako terénní sociální služba podporující člověka v potřebných činnostech.",
-          "SPC, protože jeho úkolem je převzít veškerou domácí péči v rodině.",
-          "Školní speciální pedagog, protože primárně zajišťuje pomoc v domácnosti."
+          "Nejprve pojmenovat hlavní potřebu a její dopad, ne se chytit první známé instituce nebo zkratky.",
+          "Nejprve vyhledat jakoukoli známou instituci v zadání, protože ta obvykle přímo prozrazuje správnou odpověď.",
+          "Nejprve si všimnout diagnózy a podle ní rovnou vybrat systém, aniž by se četl funkční dopad situace.",
+          "Nejprve rozhodnout, zda je situace školní nebo sociální; zdravotnická vrstva se zvažuje až na úplném konci."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 34,
+        "text": "Které vymezení hranice koordinace školy je nejpřesnější?",
+        "options": [
+          "Škola může koordinovat spolupráci kolem vzdělávacího dopadu, ale nepřebírá tím cizí resortní kompetence.",
+          "Škola má při koordinaci převzít i rozhodování o sociálních službách a zdravotnických postupech, aby byl systém jednotný.",
+          "Pokud se v situaci objeví jiný resort, škola už nemá koordinovat nic a má zůstat jen pasivním příjemcem závěrů.",
+          "Koordinace školy je vhodná jen tehdy, když se ostatní partneři vzdají samostatné komunikace s rodinou."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 35,
+        "text": "Kdy není souběh podpory duplicitou?",
+        "options": [
+          "Když totéž dělají dva partneři současně, protože vyšší počet služeb vždy zvyšuje jistotu výsledku.",
+          "Když jednotliví partneři drží odlišné, jasně vymezené vrstvy potřeby a navzájem se nepřepisují.",
+          "Když škola převezme i sociální a zdravotnickou linku, aby klient nemusel komunikovat s více místy.",
+          "Když se jeden partner vzdá své odbornosti a připojí se jen formálně, aby bylo možné vykázat spolupráci."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 36,
+        "text": "Které shrnutí nejlépe vystihuje, co v B6 signalizuje práh pro uvažování o OSPOD?",
+        "options": [
+          "Jakmile je situace dlouhodobá, je práh OSPOD naplněn automaticky bez ohledu na povahu problému.",
+          "Nejde o každou náročnou situaci, ale o situaci, kde je třeba chránit práva, bezpečí nebo řádný vývoj dítěte.",
+          "Práh OSPOD je naplněn vždy, když rodina čerpá sociální službu nebo má doloženou diagnózu dítěte.",
+          "Do úvahy o OSPOD vstupuje hlavně to, zda škola nebo rodina stihla vyřídit všechny dokumenty včas."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 37,
-        "text": "Rodina hledá především orientaci v dostupných službách, nárocích a možnostech návazné podpory, zatímco dítě zatím nevyžaduje intenzivní každodenní pomoc. Která volba je nejpřiměřenější?",
+        "text": "Co je nejpřesnější těžiště podpory, když je problémem hlavně zátěž pečujícího a nikoli ohrožení dítěte?",
         "options": [
-          "Osobní asistence.",
-          "Odlehčovací služba.",
-          "Klinická logopedie.",
-          "Sociální poradenství."
+          "Těžiště leží v tom, aby škola převzala mimoškolní péči, protože jde o dítě školního věku.",
+          "Těžiště leží v zahájení OSPOD, protože přetížení pečujícího samo o sobě vždy znamená ohrožení dítěte.",
+          "Těžiště leží v tom, aby se rodina stáhla z aktivit a snížila nároky, místo hledání vnější podpory.",
+          "Těžiště leží v podpoře a úlevě rodině, typicky přes sociální služby, ne v automatickém přechodu do ochranné linie."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 38,
-        "text": "Škola řeší žáka se závažnými obtížemi v komunikaci. Rodina zároveň žádá léčebnou péči, škola potřebuje podporu pro vzdělávání. Které řešení nejlépe respektuje hranice resortů?",
+        "text": "Které čtení je nejpřesnější, když rodina potřebuje hlavně zorientovat praktické fungování a návaznost podpory?",
         "options": [
-          "Léčebná péče může probíhat ve zdravotnictví, zatímco škola nastavuje vlastní vzdělávací podporu a spolupracuje s příslušnými školskými službami.",
-          "Vše má převzít škola, protože jakmile jde o dítě, jiné resorty už nejsou potřebné.",
-          "Vše má převzít klinický logoped, protože ten nese odpovědnost i za úpravu výuky a školních postupů.",
-          "Rodina má využít jen sociální poradenství, protože to dokáže nahradit školu i zdravotnictví."
+          "Nejpřesnější je rovnou doporučit konkrétní školské opatření, protože praktické fungování rodiny se tím obvykle srovná.",
+          "Nejpřesnější je čekat na další zhoršení, protože orientace v systému bez akutního tlaku bývá předčasná.",
+          "Nejprve je na místě kvalitní poradenská orientace a rozpad situace na řešitelné kroky, ne skok do jedné známé instituce.",
+          "Nejpřesnější je vybrat jedinou službu a ostatní vrstvy situace odložit, aby rodina nebyla zahlcená informacemi."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
         "number": 39,
-        "text": "Která z následujících možností nejlépe odpovídá situaci, kdy škola pomáhá rodině zorientovat se v systému, ale sama nenahrazuje sociální službu?",
+        "text": "Které vymezení praktické pomoci mimo školu je nejpřesnější?",
         "options": [
-          "Jakákoli orientace rodiny v systému už je sociální služba, a proto škola nesmí poskytovat ani základní podporu.",
-          "Škola může rodině pomoci s orientací a navázáním kontaktu, ale přímou sociální službu tím nenahrazuje.",
-          "Škola může místo sociální služby sama zajišťovat dlouhodobou osobní asistenci v domácím prostředí.",
-          "Jakmile škola rodinu informuje o službě, automaticky tím přebírá odpovědnost za její poskytování."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 40,
-        "text": "Která situace nejlépe ukazuje potřebu odlehčovací služby, nikoli osobní asistence?",
-        "options": [
-          "Dítě potřebuje každodenní pomoc při běžných úkonech doma i při pohybu venku.",
-          "Rodina potřebuje orientaci v systému dávek a služeb po nové diagnóze dítěte.",
-          "Škola řeší potřebu podpůrných opatření při vzdělávání žáka s postižením.",
-          "Pečující osoba je dlouhodobě přetížená a potřebuje dočasně ulevit od péče nebo si vyřídit nezbytné záležitosti."
+          "Praktická pomoc mimo školu je vedlejší a systémově se neřeší, pokud škola funguje bez větších problémů.",
+          "Praktická pomoc mimo školu je nejpřesněji chápána jako rozšířená pedagogická práce školy v odpoledních hodinách.",
+          "Praktická pomoc mimo školu je znakem, že by rodina měla nejprve změnit vzdělávací zařízení nebo školní režim dítěte.",
+          "Jde o oblast, kde často vstupují sociální služby, protože těžiště podpory leží v běžném životě, ne ve výuce."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 41,
-        "text": "Které tvrzení nejlépe vystihuje vztah školy a OSPOD při podezření na ohrožení dítěte?",
+        "number": 40,
+        "text": "Které vymezení vztahu soucitu a odpovědnosti školy je nejpřesnější?",
         "options": [
-          "Škola situaci vždy uzavírá uvnitř školy, protože rodinné poměry jsou mimo její rámec.",
-          "Škola může vyhodnotit závažnost situace a při podezření na ohrožení dítěte zvažovat kontakt s OSPOD.",
-          "OSPOD vstupuje do situace teprve tehdy, když škola sama vyčerpá všechny vzdělávací prostředky a selže v reedukaci.",
-          "OSPOD je poradenská služba školy a přebírá vedení pedagogické dokumentace žáka."
+          "Silná empatická reakce školy je důvodem, aby dočasně převzala i rodinné a sociální povinnosti mimo vzdělávání.",
+          "Empatie je důležitá, ale nesmí vést k tomu, že škola začne přebírat úkoly, které jí systémově nepatří.",
+          "Pokud škola zachytí rodinnou zátěž, má se emočně distancovat a omezit komunikaci jen na známky a docházku.",
+          "Škola projeví empatii nejlépe tím, že přestane rozlišovat mezi pedagogickou podporou, sociální službou a ochranou dítěte."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 41,
+        "text": "Které shrnutí návratu dítěte po hospitalizaci do školy je nejpřesnější?",
+        "options": [
+          "Po hospitalizaci je nejpřesnější ponechat veškeré rozhodování zdravotnictví a školu zapojit až po plném zotavení.",
+          "Návrat po hospitalizaci je vícevrstvá situace: zdravotní péče pokračuje, ale škola zároveň řeší vlastní organizační a vzdělávací dopad.",
+          "Po hospitalizaci je hlavním cílem rychlý návrat k původnímu režimu, aby se systémy zbytečně nepropojovaly.",
+          "Po hospitalizaci má škola řešit jen omluvenou absenci; širší organizační a rodinný dopad do její odborné role nespadá."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 42,
-        "text": "Rodiče chtějí, aby někdo dlouhodobě pracoval s dítětem doma na rozvoji komunikace, hry a každodenních strategií, a současně potřebují průběžnou oporu pro sebe. Která možnost je nejpřesnější?",
+        "text": "Kdy je v B6 nejpřesnější říci „ještě ne OSPOD“?",
         "options": [
-          "Pečovatelská služba, protože primárně rozvíjí komunikaci a hru dítěte v rodinném prostředí.",
-          "Klinická logopedie, protože nahradí i širší práci s rodinou a návazné sociální služby.",
-          "Raná péče, protože spojuje podporu vývoje dítěte s oporou pro rodinu v přirozeném prostředí.",
-          "OSPOD, protože hlavním úkolem je koordinovat každodenní rozvoj dítěte doma."
+          "Když škola situaci předá sociální službě, protože tím automaticky zaniká možnost uvažovat o právech dítěte.",
+          "Jakmile rodina popisuje dlouhodobou únavu, protože délka trvání sama o sobě nahrazuje posouzení míry ohrožení.",
+          "Když je situace náročná, ale popis zatím ukazuje spíš na potřebu podpory a orientace než na ochranný zásah.",
+          "Když existuje lékařská zpráva, protože u zdravotně podmíněných situací OSPOD do úvahy vůbec nevstupuje."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 43,
-        "text": "Která formulace nejlépe vystihuje rozdíl mezi sociální službou a orgánem veřejné moci?",
+        "text": "Které uvažování je u komplexní situace nejpřesnější?",
         "options": [
-          "Sociální služba je zaměřena na podporu a pomoc, zatímco orgán veřejné moci může mít ochranné či rozhodovací kompetence.",
-          "Sociální služba i orgán veřejné moci mají stejnou roli; liší se jen tím, zda jsou terénní nebo ambulantní.",
-          "Orgán veřejné moci pracuje hlavně s léčbou, zatímco sociální služba s výchovou a vzděláváním.",
-          "Rozdíl je jen v tom, že sociální služba pracuje s dětmi a orgán veřejné moci s dospělými."
+          "Nejprve zvolit nejvýraznější emoci v zadání a podle ní přiřadit hlavní instituci i další krok bez další analýzy.",
+          "Nejpřesnější je hledat jeden dominantní pojem, kterému podřídíme všechny ostatní vrstvy situace i role partnerů.",
+          "Přesně oddělit, co je vzdělávací dopad, co je sociální zátěž a co je zdravotnická linka; teprve pak spojovat plán podpory.",
+          "Stačí rozlišit, zda je problém dítěte nebo rodiny; jemnější vrstevnatost už je pro praxi zbytečně akademická."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
         "number": 44,
-        "text": "Dvanáctiletý žák má ve škole asistenta pedagoga, ale rodina současně potřebuje pomoc po vyučování a při doprovodu na mimoškolní aktivity. Která úvaha je nejpřesnější?",
+        "text": "Co je v B6 nejpřesnější podobou poradenského úsudku?",
         "options": [
-          "Asistent pedagoga by měl automaticky pokrýt i veškeré potřeby dítěte mimo školu, protože podpora má být jednotná.",
-          "Jakmile má žák asistenta pedagoga, další pomoc už systémově nepřipadá v úvahu.",
-          "Nejprve je nutné převést celou podporu do zdravotnictví, aby se role školy a sociální oblasti nemíchaly.",
-          "Vedle školní podpory může být relevantní i sociální služba, například osobní asistence, pokud potřeba přesahuje školu."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 45,
-        "text": "Která situace nejlépe ukazuje, že nestačí jen školská podpora a je vhodné uvažovat i o sociální službě pro rodinu?",
-        "options": [
-          "Rodina dlouhodobě nezvládá každodenní péči a potřebuje podporu v běžném fungování mimo školu.",
-          "Učitel potřebuje metodickou radu, jak psát kratší instrukce pro žáka s PAS.",
-          "Škola potřebuje doporučení, zda může upravit hodnocení a organizaci výuky.",
-          "Žák potřebuje jiný formát pracovních listů kvůli zrakové vadě."
+          "Volit partnera a krok podle hlavní potřeby a jejího dopadu, ne podle jediné nálepky, zkratky nebo diagnózy.",
+          "Volit partnera vždy podle toho, který systém je v zadání zmíněn jako první, aby byla práce rychlá a konzistentní.",
+          "Volit partnera podle nejzávažněji znějícího pojmu v zadání, i kdyby neodpovídal hlavnímu funkčnímu dopadu situace.",
+          "Volit partnera tak, aby počet zapojených služeb byl co nejmenší, i za cenu ztráty přesnosti čtení potřeby."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 46,
-        "text": "Rodiče dítěte s postižením se ptají, zda může jedna služba nahradit školu, zdravotnictví i sociální oblast. Která odpověď je nejpřesnější?",
+        "number": 45,
+        "text": "Které vymezení je nejpřesnější, když má rodinná situace dopad do vzdělávání?",
         "options": [
-          "Ano, k tomu slouží raná péče, která po dobu dětství přebírá všechny kompetence ostatních systémů.",
-          "Ano, pokud se zapojí OSPOD, automaticky koordinuje a nahrazuje všechny ostatní články podpory.",
-          "Ne, protože jediný legitimní systém podpory dítěte je škola a ostatní oblasti jsou jen doplňkové.",
-          "Ne, jednotlivé systémy mají odlišné role a mohou se doplňovat, ale nejsou zaměnitelné."
+          "Škola má vyčkat na stabilizaci rodiny, protože jinak by předčasně zasahovala do sociální oblasti.",
+          "Jakmile se ukáže rodinná zátěž, je nejpřesnější školní podporu zastavit a situaci plně předat ven.",
+          "Škola nesmí čekat, až se rodinná situace vyřeší jinde; svůj vzdělávací dopad musí řešit průběžně.",
+          "Vzdělávací dopad rodinné zátěže se řeší až ve chvíli, kdy sociální služba potvrdí, že už rodina spolupracuje."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 46,
+        "text": "Které rozlišení klinického logopeda a školní podpory komunikace je nejpřesnější pro porozumění instrukcím a účast ve výuce?",
+        "options": [
+          "Porozumění instrukcím ve škole je výhradně otázkou klinické logopedie, nikoli organizace výuky a komunikace učitele.",
+          "Jakmile žák dochází na logopedii, není už vhodné ve škole měnit podobu instrukcí ani způsob ověřování porozumění.",
+          "Školní podpora komunikace je náhradou klinické logopedie, proto terapeutická péče není v takové situaci potřebná.",
+          "Terapeutická linka může běžet mimo školu, ale škola současně odpovídá za komunikační přístupnost vlastních situací."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 47,
-        "text": "Které tvrzení nejlépe vystihuje úlohu speciálního pedagoga v meziresortně složité situaci rodiny?",
+        "text": "Které shrnutí nejlépe vystihuje vztah čekání na nový odborný závěr a školní reakce?",
         "options": [
-          "Má pomoci převést odborné poznání do vzdělávacích a životních podmínek dítěte, rozlišit hranice kompetencí a orientovat rodinu v návazné podpoře.",
-          "Má převzít roli sociálního pracovníka, klinika i OSPOD, aby rodina nemusela jednat s více systémy.",
-          "Má se držet výhradně své úzké disciplíny a nezajímat se o návazné služby, protože to už není speciální pedagogika.",
-          "Má rozhodnout o přiznání sociální dávky, protože nejlépe zná funkční dopady postižení."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 48,
-        "text": "Které tvrzení nejlépe vystihuje, kdy je vhodné přemýšlet o sociální službě i u dítěte, které zatím ještě není ve škole?",
-        "options": [
-          "Až když dítě nastoupí do školy, protože dříve se řeší jen zdravotnictví.",
-          "Jen tehdy, pokud škola předem vydá doporučení pro využití sociální služby.",
-          "Pouze při soudním rozhodnutí, jinak do situace sociální služby nevstupují.",
-          "Už tehdy, když potřeba podpory zasahuje každodenní fungování dítěte a rodiny mimo školní rámec."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 49,
-        "text": "Které tvrzení nejlépe vystihuje rozdíl mezi tím, že rodina potřebuje 'orientaci v systému', a tím, že potřebuje 'přímou službu'?",
-        "options": [
-          "Orientace v systému je vždy úkolem školy a přímá služba vždy úkolem zdravotnictví.",
-          "Orientace v systému znamená hlavně informace a nasměrování, přímá služba pak konkrétní podporu nebo pomoc v životní situaci.",
-          "Jde jen o rozdíl v intenzitě, nikoli v typu potřeby.",
-          "Přímá služba je jen administrativní výstup a orientace v systému znamená dlouhodobou každodenní péči."
+          "Dokud nepřijde nový odborný závěr, je nejpřesnější školní režim vůbec neměnit, aby byl formálně čistý.",
+          "Když je funkční dopad zjevný, škola nemá rezignovat na vlastní průběžnou reakci jen proto, že čeká na další dokument.",
+          "Nový odborný závěr má přednost před jakýmkoli pozorováním školy, proto je průběžná školní reakce spíš nežádoucí.",
+          "Čekání na nový závěr je vhodné hlavně proto, aby rodina sama převzala odpovědnost za veškeré dopady do školy."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 50,
-        "text": "Které shrnutí je pro Baterii 6 nejpřesnější?",
+        "number": 48,
+        "text": "Které vymezení hranice školsky orientované logopedické podpory je nejpřesnější?",
         "options": [
-          "Nejdůležitější je zapamatovat si izolované definice a neřešit, jak služby a instituce navazují v reálném životě.",
-          "Klíčem je poznat, které možnosti zní odborněji než ostatní, protože právě ty bývají správně.",
-          "Hlavním cílem je rozlišit, jaký typ potřeby je v zadání popsán, a podle toho volit odpovídající systém nebo službu.",
-          "Hlavním cílem je naučit se, že sociální oblast má vždy přednost před školou i zdravotnictvím."
+          "Školsky orientovaná logopedická podpora má být úplnou náhradou zdravotnické terapie, pokud je dítě ve školním věku.",
+          "Ve škole jde hlavně o dopad komunikace do učení a účasti; terapeutická zdravotnická linka tím není zrušena ani pohlcena.",
+          "Školsky orientovaná logopedická podpora je vhodná jen pro administrativní přepis závěrů klinického logopeda do dokumentace.",
+          "Ve škole se komunikační obtíže neřeší, protože jakákoli logopedická práce automaticky patří mimo vzdělávání."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 49,
+        "text": "Které shrnutí je nejpřesnější pro situaci, kde současně běží léčba, rodinná zátěž i vzdělávací dopad?",
+        "options": [
+          "Nejpřesnější je vybrat jeden rozhodující systém a ostatní vrstvy dočasně ignorovat, aby byl plán podpory jednodušší.",
+          "Nejpřesnější je převést situaci do školy, protože ta má v praxi nejčastější kontakt s dítětem i rodinou.",
+          "Nejpřesnější je přenechat plán zdravotnictví, protože léčba je v takové situaci vždy nadřazená ostatním vrstvám.",
+          "Nejpřesnější je držet všechny tři vrstvy: léčba běží ve svém systému, rodina může potřebovat sociální oporu a škola řeší vzdělávací dopad."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 50,
+        "text": "Jaká řešitelská strategie je pro B6 hard nejpřesnější?",
+        "options": [
+          "Rozlišovat, co patří škole, co sociální službě, co zdravotnictví a zda je ve hře ochranná linka; až pak volit odpověď.",
+          "Řídit se tím, který systém působí v zadání lidsky nejbližší, protože v těžkých situacích bývá rozhodující empatie.",
+          "Volit vždy nejsilnější instituci v zadání, aby nevznikala roztříštěnost a potřeba jemného rozlišování kompetencí.",
+          "Nejprve hledat, zda je v zadání diagnóza; pokud ano, ostatní vrstvy situace jsou už jen doplňkové a méně důležité."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
       }
     ]
   },
   {
     "id": 7,
     "label": "Baterie 7",
-    "title": "Speciální pedagogika – poradenství jako těžiště programu",
-    "subtitle": "Poradenský proces, role poradce, etika a převod závěrů do konkrétní podpory.",
-    "purpose": "Ověřovat, zda chápeš speciální pedagogiku jako poradenský obor: od zachycení zakázky přes interpretaci potřeb a spolupráci s rodinou až po etické a právně citlivé převádění závěrů do konkrétní podpory.",
-    "difficulty": "vyšší",
+    "title": "Poradenský úsudek, etika a kvalita procesu",
+    "subtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
+    "purpose": "Ověřit, zda uchazeč uvažuje poradensky: umí vyjasnit zakázku, unést nejistotu, vytvořit kvalitní výstup, držet hranice role, metodicky vést školu a srozumitelně překládat odborný závěr rodině i žákovi.",
+    "difficulty": "vysoká",
     "dominant": [
-      "poradenský proces",
-      "interpretace potřeb klienta",
-      "převod závěrů do podpory",
-      "metodická podpora školy",
-      "spolupráce s rodinou a žákem",
+      "poradenská zakázka a proces",
+      "kvalita poradenského výstupu",
+      "interpretace bez redukce na nálepku",
       "etika a hranice kompetencí",
-      "právní a procesní rámec poradenství"
+      "metodické vedení školy",
+      "práce s rodinou a žákem",
+      "překlad závěru do podpory"
     ],
     "breakdown": [
-      "10× poradenský proces a jeho logika",
-      "8× interpretace potřeb a převod do podpory",
-      "8× rodina, žák, souhlas a meziresortní návaznost",
-      "8× metodická podpora školy a evaluace účinku",
-      "8× etika, autonomie a hranice role",
-      "8× právní a procesní rámec podpory"
+      "20× poradenský proces a kvalita zakázky",
+      "10× kvalita a forma poradenského výstupu",
+      "10× etické a kompetenční hranice",
+      "5× metodické vedení školy",
+      "5× práce s rodinou a překladem závěru"
     ],
     "tags": [
+      "hard mode",
       "poradenství",
-      "proces",
       "etika",
-      "podpora",
-      "škola–rodina–služby"
+      "kvalita procesu",
+      "výstup",
+      "škola–rodina"
     ],
     "durationMinutes": 30,
     "questionCount": 50,
     "questions": [
       {
         "number": 1,
-        "text": "Které vymezení nejlépe vystihuje poradenské těžiště práce speciálního pedagoga?",
+        "text": "Škola přichází s požadavkem „napište nám, co s ním přesně je“, ale popis obtíží je zatím velmi obecný. Jaký první krok poradce je nejpřesnější?",
         "options": [
-          "Propojuje odborné posouzení, potřeby klienta, kontext školy a rodiny a převádí je do proveditelné podpory.",
-          "Soustředí se hlavně na přesné pojmenování diagnózy, protože další kroky z ní vyplývají automaticky.",
-          "Jeho hlavním úkolem je sjednotit názor školy a rodiny, i kdyby to znamenalo potlačit rozdílné pohledy.",
-          "V první řadě zajišťuje správný administrativní tok dokumentů mezi školou a dalšími institucemi."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 2,
-        "text": "Speciální pedagog po posouzení obtíží dítěte sdělí rodičům odborný závěr. Který další krok nejlépe odpovídá kvalitní poradenské práci?",
-        "options": [
-          "Předá rodině terminologicky přesný závěr a ponechá na ní, aby si sama odvodila dopady pro školu i domov.",
-          "Závěr přeloží do srozumitelného vysvětlení dopadů a navrhne konkrétní další kroky pro rodinu i školu.",
-          "Omezí se na písemné shrnutí, protože praktický převod do podpory je výhradně věcí školy.",
-          "Doporučí nejprve vyčkat několik měsíců, aby se ukázalo, zda se obtíže nevyřeší bez další podpory."
+          "Vybrat pravděpodobnou kategorii obtíží, aby se proces rychleji zúžil.",
+          "Vyjasnit, v jakých situacích se obtíže projevují a co škola potřebuje vědět pro podporu.",
+          "Sepsat předběžný závěr, aby škola měla od začátku oporu v dokumentu.",
+          "Požádat školu, aby nejprve sama navrhla hotové řešení a poradce ho jen potvrdil."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 3,
-        "text": "Která posloupnost nejlépe odpovídá logice kvalitního speciálněpedagogického poradenství?",
+        "number": 2,
+        "text": "Které vymezení nejlépe ukazuje kvalitní poradenskou zakázku?",
         "options": [
-          "vydání doporučení – zavedení podpory – určení kategorie – kontrola dokumentace – revize",
-          "zařazení obtíží do skupiny – předání škole – formální uzavření případu – případná konzultace",
-          "zachycení zakázky a obtíží – posouzení potřeb – interpretace – návrh podpory – vyhodnocení účinku",
-          "rychlé ověření problému – sepsání závěru – informování školy – ukončení práce bez další zpětné vazby"
+          "Je formulovaná co nejširším způsobem, aby se předem nic nevyloučilo.",
+          "Je postavená hlavně na tom, jakou kategorii by bylo vhodné potvrdit.",
+          "Je správná tehdy, když ji škola a rodina formulují úplně stejně.",
+          "Je dost konkrétní pro další práci, ale nechává prostor pro ověření, co je skutečné jádro obtíží."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 3,
+        "text": "Která posloupnost nejlépe odpovídá kvalitnímu poradenskému cyklu?",
+        "options": [
+          "sběr dokumentů – předání závěru – krátká konzultace – případné doplnění později",
+          "určení kategorie – převod do opatření – informování školy – uzavření případu",
+          "vyjasnění zakázky – shromáždění relevantních informací – interpretace – návrh podpory – ověření účinku",
+          "zachycení obtíží – rychlé doporučení – formální sepsání – případná revize jen při stížnosti"
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 4,
-        "text": "Který znak nejspolehlivěji ukazuje, že poradenský proces nebyl uzavřen kvalitně?",
+        "text": "Poradce má k dispozici první pozorování, ale škola chce jedinou větu „pro spis“. Jaký postup je nejvhodnější?",
         "options": [
-          "Závěrečný rozhovor obsahoval i doplňující otázky rodičů a ověření porozumění.",
-          "Část komunikace proběhla až po vyšetřovací části, ale navazovala na její výsledky.",
-          "Závěr byl sepsán odborně přesně a současně byl nabídnut další konzultační termín.",
-          "Klient ani škola nevědí, co z odborného závěru prakticky plyne pro další podporu."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 5,
-        "text": "Škola popisuje žáka jen větou „má problémové chování“. Jaký první poradenský krok je nejvhodnější?",
-        "options": [
-          "Upřesnit, v jakých situacích, s jakými spouštěči a s jakým dopadem se obtíže konkrétně projevují.",
-          "Co nejdříve doporučit restriktivní opatření, aby se zabránilo dalšímu zhoršování chování.",
-          "Převést žáka do obecnější rizikové kategorie a od ní odvodit další postup.",
-          "Nechat školu, aby ještě několik týdnů sbírala dojmy, a poradenský vstup zatím odložit."
+          "Vrátit se k funkčnímu popisu potíží a zatím nezužovat situaci na nálepku, která by předbíhala smysl podpory.",
+          "Vyjít vstříc škole stručným označením obtíží, protože administrativní srozumitelnost má v této fázi přednost.",
+          "Omezit práci jen na to, co lze prokázat testem, aby se předešlo sporům o interpretaci.",
+          "Přerušit proces, dokud škola nepředloží detailnější interní dokumentaci."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 6,
-        "text": "Které tvrzení nejlépe vystihuje rozdíl mezi diagnostickým závěrem a poradenským výstupem?",
+        "number": 5,
+        "text": "Podpora byla zavedena, ale funguje jen v některých situacích a tým ji používá nejednotně. Co je nejpřesnější další krok?",
         "options": [
-          "Diagnostický závěr je určen hlavně pro odbornou dokumentaci, poradenský výstup pouze pro interní potřebu školy.",
-          "Diagnostický závěr shrnuje odborná zjištění, poradenský výstup je převádí do konkrétních kroků podpory.",
-          "Diagnostický závěr řeší jen popis oslabení, poradenský výstup je konečné rozhodnutí o zařazení žáka.",
-          "Diagnostický závěr bývá spíše orientační, poradenský výstup určuje závazný režim bez dalšího ověřování."
+          "Dopsat do doporučení více odborných termínů, aby působilo závazněji.",
+          "Vrátit se s týmem ke konkrétním situacím, v nichž podpora funguje a nefunguje, a podle toho ji upravit.",
+          "Vyčkat delší dobu, protože nejednotnost školy se obvykle srovná sama.",
+          "Uzavřít případ s tím, že doporučení už bylo předáno a další běh je věcí školy."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 7,
-        "text": "Který postup je při formulaci podpory po odborném zjištění nejméně vhodný?",
+        "number": 6,
+        "text": "Rodina nabízí jedno vysvětlení obtíží, škola jiné a dosavadní data nejsou dostatečná. Jaký postup poradce je nejvhodnější?",
         "options": [
-          "Rozlišit, která opatření jsou klíčová a která doplňující.",
-          "Ověřit, zda navržené kroky dávají smysl i v běžném chodu školy a domácí přípravy.",
-          "Navrhnout podporu tak obecně, že nebude jasné, kdo, kdy a v jaké situaci ji má používat.",
-          "Domluvit se, jak bude škola průběžně sledovat účinek zvolených kroků."
+          "Přiklonit se k verzi školy, protože pracuje s dítětem denně a má více pozorování.",
+          "Zvolit tu interpretaci, která povede k rychlejší organizaci podpory, i kdyby byla předběžná.",
+          "Vyhotovit kompromisní závěr, aby se obě strany v textu poznaly.",
+          "Udržet více pracovních hypotéz a cíleně doplnit informace tam, kde rozhodnutí zatím stojí na domněnce."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 7,
+        "text": "Při první konzultaci se starším žákem je patrná nejistota a stručné odpovědi. Který postup je nejpřesnější?",
+        "options": [
+          "Vyjasnit smysl setkání, vytvořit bezpečný rámec a používat otázky, které umožní žákovi popsat vlastní zkušenost bez tlaku.",
+          "Převzít hlavní komunikaci s rodičem, protože žák by mohl odpovídat nepřesně.",
+          "Soustředit se hlavně na to, aby žák potvrdil, co už uvedla škola.",
+          "Zkrátit rozhovor na minimum a vyjít z dokumentace, aby se situace zbytečně neprotahovala."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 8,
+        "text": "Který krok nejvíce oslabuje poradenský proces už v počátku?",
+        "options": [
+          "Průběžně zpřesňovat, co je otázkou školy a co je otázkou rodiny.",
+          "Rozlišovat mezi popisem potíže, její interpretací a návrhem podpory.",
+          "Formulovat závěr dřív, než je jasné, jaká otázka se vlastně řeší a k čemu má výstup sloužit.",
+          "Pracovat s konkrétními situacemi místo obecných dojmů."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 8,
-        "text": "Co nejpřesněji znamená metodická podpora školy v poradenském kontextu?",
-        "options": [
-          "Převzetí odpovědnosti za výuku žáka poradenským pracovníkem.",
-          "Jednorázové sdělení závěru bez následné možnosti upřesnění.",
-          "Kontrolu, zda škola beze změn převzala doporučené formulace do své dokumentace.",
-          "Pomoc škole porozumět potřebám žáka a volit takové postupy, které umí skutečně používat ve výuce."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
         "number": 9,
-        "text": "Která situace je nejlepším důvodem k návratu případu do vyhodnocení a úpravě postupu?",
+        "text": "Škola žádá „rychlé doporučení ještě dnes“, ale relevantních dat je málo. Co je nejpřesnější odpověď poradce?",
         "options": [
-          "Zvolená podpora se v praxi neosvědčuje nebo neodpovídá tomu, jak se obtíže skutečně projevují.",
-          "Škola by uvítala, aby doporučení byla stylisticky podobná předchozí zprávě z jiného roku.",
-          "Rodina žádá, aby byly v dokumentu použity co nejodbornější termíny.",
-          "Dokumentace je kompletní a všechny kroky byly administrativně splněny."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 10,
-        "text": "Který znak nejlépe ukazuje, že se poradenská role posouvá k paternalismu?",
-        "options": [
-          "Poradce průběžně ověřuje, zda rodina i škola rozumějí navrženým krokům stejně.",
-          "Poradce rozhoduje místo klienta a partnerů, aniž by jim srozumitelně vysvětlil varianty a důvody.",
-          "Poradce formuluje doporučení konkrétněji, aby bylo proveditelné.",
-          "Poradce připouští, že některé kroky bude nutné po čase znovu vyhodnotit."
+          "Bez odkladu vydat plný závěr, aby škola nezůstala bez opory.",
+          "Pojmenovat, co lze doporučit předběžně už teď, a zároveň jasně vymezit, co je ještě potřeba ověřit.",
+          "Doporučení odložit úplně, dokud nebude k dispozici maximální množství podkladů.",
+          "Převést rozhodnutí na rodiče, protože bez jejich preferencí nelze postup určit."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 11,
-        "text": "Které tvrzení nejlépe vystihuje poradenskou interpretaci potřeb žáka?",
+        "number": 10,
+        "text": "U dítěte se obtíže popisují jako „všude trochu jiné“. Co je pro poradenské myšlení nejpřesnější?",
         "options": [
-          "Jejím cílem je přiřadit žákovi co nejstabilnější kategorii, aby byla další práce jednotná.",
-          "Jejím cílem je shrnout veškeré obtíže do jedné dominantní příčiny bez ohledu na kontext školy.",
-          "Jejím cílem je převést zjištění do toho, co žák potřebuje v konkrétních situacích učení a komunikace.",
-          "Jejím cílem je především odlišit, které informace patří do interní a které do veřejné části spisu."
+          "Vybrat prostředí, v němž jsou obtíže nejvýraznější, a z něj odvodit celý závěr.",
+          "Sečíst dojmy z různých situací a hledat průměrný obraz dítěte.",
+          "Požádat školu o novou formalizovanou zprávu a další sběr dočasně zastavit.",
+          "Mapovat, v jakých kontextech se obtíže mění, co je spouští a co je naopak tlumí."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 11,
+        "text": "Která otázka je při následné konzultaci po zavedení podpory nejcennější?",
+        "options": [
+          "Kdo přesně opsal formulace doporučení do školní dokumentace?",
+          "Který odborný termín byl pro školu nejsrozumitelnější?",
+          "Ve kterých situacích se podpora osvědčila, kde ne a co to říká o dalším nastavení?",
+          "Jak rychle byla opatření administrativně zavedena po převzetí zprávy?"
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 12,
-        "text": "U žáka se opakovaně ukazuje, že nerozumí složitým instrukcím, přestože chce spolupracovat. Který poradenský závěr je nejpřesnější?",
+        "text": "Učitel chce „jeden univerzální tip pro všechny hodiny“, aby se nemusel vracet ke konkrétním situacím. Jaká reakce poradce je nejpřesnější?",
         "options": [
-          "Je vhodné vyčkat, zda se situace spontánně neupraví bez změny zadávání.",
-          "Nejvhodnější je okamžitě snížit náročnost veškerého učiva bez dalšího rozlišování.",
-          "Hlavní je zachovat stejný styl výuky, aby si žák postupně zvykl na běžné tempo třídy.",
-          "Doporučuje se členit zadání, používat srozumitelnější instrukce a ověřovat porozumění po jednotlivých krocích."
+          "Vysvětlit, že podpora musí vycházet z toho, v jakých typech situací se bariéra objevuje, a nelze ji nahradit jednou obecnou frází.",
+          "Vybrat nejsilnější opatření a doporučit jeho plošné použití bez dalších úprav.",
+          "Přenechat volbu učiteli, protože poradce nemá zasahovat do metodiky výuky.",
+          "Doporučit vyčkat, zda se obtíže nerozptýlí po adaptaci na ročník."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 13,
-        "text": "Žák se při hluku rychle přetěžuje a v nepřehledném prostředí ztrácí pracovní jistotu. Která formulace podpory je nejvhodnější?",
+        "text": "Které tvrzení nejlépe rozlišuje poradenskou interpretaci od pouhého popisu obtíží?",
         "options": [
-          "Je vhodné upravit předvídatelnost prostředí, strukturu činností a míru rušivých podnětů podle konkrétních situací.",
-          "Doporučuje se posuzovat jeho reakce odděleně od prostředí, aby se neprohlubovala závislost na vnějších podmínkách.",
-          "Je vhodné hlavně sledovat, zda obtíže nevymizí v dalších ročnících bez výraznějších zásahů.",
-          "Nejvhodnější je ponechat prostředí beze změny a žáka postupně otužovat."
+          "Interpretace shrnuje dojmy všech zúčastněných bez nutnosti hledat mezi nimi vztahy.",
+          "Interpretace propojuje zjištění do pracovního vysvětlení, které má smysl pro volbu podpory.",
+          "Interpretace je odbornější název pro seznam symptomů a testových výsledků.",
+          "Interpretace slouží hlavně k tomu, aby text působil přesvědčivěji."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 14,
-        "text": "Které tvrzení nejlépe ukazuje slabou poradenskou interpretaci?",
+        "text": "Rodina a škola popisují tutéž situaci odlišně. Co je pro poradce nejvhodnější?",
         "options": [
-          "Popíše, v čem se obtíže projevují při čtení, psaní nebo práci se zadáním.",
-          "Omezí se na konstatování, že žák „má speciální vzdělávací potřeby“, bez vysvětlení praktického dopadu.",
-          "Rozliší, co souvisí s učením, co s komunikací a co s organizací prostředí.",
-          "Navrhne další kroky tak, aby jim rozuměla škola i rodina."
+          "Vybrat verzi, která lépe zapadá do dosavadní dokumentace.",
+          "Předat stranám, aby si rozdíl vyjasnily samy, a zatím proces nechat stát.",
+          "Přijmout obě verze jako rovnocenné a bez další práce je zařadit do závěru.",
+          "Rozlišit, co kdo pozoruje v jakém kontextu, a hledat společný obraz relevantní pro podporu."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 15,
-        "text": "Co patří k dobrému převodu odborného zjištění do podpory ve škole?",
+        "text": "Škola chce po poradci „jasné potvrzení diagnózy, ať je ve všem pořádek“. Jaká odpověď je nejpřesnější?",
         "options": [
-          "Sepsat co nejširší seznam možných opatření bez rozlišení priority a proveditelnosti.",
-          "Převzít formulaci z předchozího případu, aby škola pracovala s jednotným stylem doporučení.",
-          "Vybrat a odůvodnit takové kroky, které odpovídají jádru obtíže a lze je průběžně sledovat v reálné výuce.",
-          "Ponechat převod hlavně na třídním učiteli, protože poradenský pracovník nemá zasahovat do organizace výuky."
+          "Vymezit, co je smyslem poradenské služby, vrátit se k funkčním dopadům a neplést kategorii s plánem podpory.",
+          "Vyjít škole vstříc alespoň pracovním označením, které zrychlí organizační rozhodnutí.",
+          "Odkázat školu jen na lékařský resort a poradenskou práci tím uzavřít.",
+          "Přestat se školou sdílet průběžné úvahy, aby nevznikal tlak na závěr."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 16,
-        "text": "Které doporučení je při převodu zjištění do školní podpory nejslabší?",
+        "text": "Výrazný testový výsledek neodpovídá tomu, jak dítě funguje ve třídě. Jaký závěr je nejpřesnější?",
         "options": [
-          "Domluvte se, které situace jsou pro žáka nejnáročnější a jak v nich zadání upravíte.",
-          "Ověřujte, zda navržený postup funguje i při samostatné práci a domácí přípravě.",
-          "Sledujte, zda navržené změny zvyšují porozumění a samostatnost.",
-          "Poskytujte žákovi přiměřenou podporu podle potřeby."
+          "Testový výsledek by měl mít přednost, protože je odbornější než školní pozorování.",
+          "Ve třídě je pravděpodobně chyba v pozorování, kterou není třeba dále řešit.",
+          "Je třeba zvažovat výsledek v kontextu fungování a ověřit, co přesně zachycuje a co naopak nezachycuje.",
+          "Nejvhodnější je oba zdroje údajů ve zprávě oddělit a nepropojovat."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
         "number": 17,
-        "text": "Rodina rozumí závěru jinak než škola a obě strany z něj vyvozují rozdílné kroky. Jaký poradenský postup je nejvhodnější?",
+        "text": "Dospívající žák podporu připouští, zákonný zástupce ji však zlehčuje. Jaký postup poradce je nejvhodnější?",
         "options": [
-          "Vyjasnit význam závěru, dopad do praxe a společně sladit, co z něj plyne pro školu i rodinu.",
-          "Ponechat každé straně vlastní interpretaci, aby nevznikal tlak na jednotné čtení závěru.",
-          "Upřednostnit výklad školy, protože vzdělávací kontext je v tomto případě rozhodující.",
-          "Závěr přeformulovat do co nejodbornějšího jazyka, aby nedocházelo k laickému zkreslení."
+          "Postavit další práci výhradně na stanovisku rodiče, protože nese formální odpovědnost.",
+          "Požádat školu, aby rodiče přesvědčila bez další účasti poradce.",
+          "Překlopit rozhovor do vysvětlování praktických dopadů a variant podpory tak, aby všichni rozuměli, co je skutečná potřeba.",
+          "Uzavřít situaci tím, že se do dosažení plného souhlasu nic nenavrhne."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
         "number": 18,
-        "text": "Které rozlišení je nejpřesnější?",
+        "text": "Učitel říká, že nemá čas sbírat další příklady. Co je z pohledu poradenského procesu nejpřesnější?",
         "options": [
-          "Popis oslabení a návrh podpory jsou totéž, liší se jen délkou textu.",
-          "Popis oslabení ukazuje, co je obtížné; návrh podpory říká, jak na to reagovat v praxi.",
-          "Popis oslabení patří do školy a návrh podpory do poradenské dokumentace.",
-          "Návrh podpory je správný jen tehdy, když opakuje odborné termíny z popisu oslabení beze změny."
+          "Zaměřit sběr jen na několik klíčových situací, které mohou rozhodnout o podobě podpory.",
+          "Přestat školu zatěžovat dalšími otázkami a vyjít z prvního dojmu.",
+          "Omezit práci jen na testové postupy, protože jsou méně náročné pro učitele.",
+          "Předat sběr informací plně rodině, aby se proces ve škole nezdržoval."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 19,
-        "text": "Jaká je role rodiny v kvalitním poradenském procesu?",
+        "text": "Co nejlépe ukazuje, že se poradenský proces stal administrativně správným, ale odborně slabým?",
         "options": [
-          "Je především zdrojem souhlasu a administrativních údajů potřebných pro dokumentaci.",
-          "Je vhodné ji zapojit až po dokončení odborných závěrů, aby neovlivňovala interpretaci.",
-          "Je partnerem, který pomáhá porozumět situaci a spoluutváří, zda budou navržené kroky reálně fungovat.",
-          "Jejím hlavním úkolem je potvrdit škole, že doporučené kroky bude doma důsledně vymáhat."
+          "V textu se používá více běžného jazyka a méně odborných termínů.",
+          "Škola potřebovala k zavedení podpory více než jednu konzultaci.",
+          "Rodina měla k některým navrženým krokům doplňující otázky.",
+          "Dokument je hotový, ale není zřejmé, jak konkrétně navazuje na zjištění a co má kdo dělat jinak."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 20,
-        "text": "Co v poradenské praxi nejlépe odpovídá smyslu informovaného souhlasu?",
+        "text": "Doporučení bylo převzato, ale po personální změně ve škole se podpora rozpadla. Jaký další krok je nejpřesnější?",
         "options": [
-          "Je to formální podpis, který chrání instituci pro případ pozdějšího sporu.",
-          "Je to interní dokument školy, který nahrazuje domluvu mezi poradcem a rodinou.",
-          "Je nutný jen tehdy, když poradenské zařízení předpokládá výrazně nepříznivý závěr.",
-          "Je to proces, v němž osoba rozumí, k čemu služba směřuje, jak bude probíhat a s čím souhlasí."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 21,
-        "text": "Které tvrzení nejlépe vystihuje profesně správnou práci s důvěrností informací?",
-        "options": [
-          "Je třeba předávat jen takové informace a v takovém rozsahu, který má smysl pro podporu a je profesně odůvodněný.",
-          "Informace z poradenského procesu je vhodné sdílet co nejširšímu okruhu pedagogů, aby byla zajištěna jednotnost přístupu.",
-          "Důvěrnost znamená, že poradce nesděluje nic, co by mohlo pomoci škole podpořit žáka.",
-          "Všechny informace má vždy obdržet pouze zákonný zástupce; škola s nimi nemá pracovat vůbec."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 22,
-        "text": "Jak má poradenský pracovník naložit s názorem samotného žáka na jeho vzdělávání a podporu?",
-        "options": [
-          "Má smysl až ve chvíli, kdy je žák plně zletilý a nese právní odpovědnost za svá rozhodnutí.",
-          "Je třeba k němu přihlížet s ohledem na věk a vyspělost žáka a poskytovat mu srozumitelné informace.",
-          "Je vhodné ho vyslechnout jen tehdy, když je v souladu s názorem školy a rodiny.",
-          "Je druhotný vůči odbornému závěru, proto se do poradenského procesu nezapojuje."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 23,
-        "text": "Který postup je při týmové spolupráci kolem žáka nejméně vhodný?",
-        "options": [
-          "Sdílet s týmem, co je z hlediska podpory podstatné, a současně držet profesní hranice sdílení.",
-          "Průběžně vyjasňovat, kdo za jakou část podpory odpovídá a jak se bude účinek sledovat.",
-          "Předat všem zúčastněným kompletní obsah poradenské komunikace bez rozlišení její relevance.",
-          "Pracovat s tím, že škola, rodina i další služby mohou do situace vnášet odlišné, ale důležité pohledy."
+          "Poslat stejný text znovu a předpokládat, že problém byl jen ve ztrátě dokumentu.",
+          "Uzavřít proces s tím, že odpovědnost za kontinuitu už nese škola.",
+          "Vrátit se k převodu podpory do praxe, znovu vyjasnit klíčové kroky a ověřit, jak jsou ve škole skutečně chápány.",
+          "Doporučit škole, aby počkala na další pravidelné vyšetření."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 24,
-        "text": "Škola žádá speciálního pedagoga o doporučení v oblasti, která už přesahuje jeho bezpečnou odbornost. Jaký postup je nejvhodnější?",
+        "number": 21,
+        "text": "Která podoba poradenského výstupu je nejkvalitnější?",
         "options": [
-          "Vyhnout se přiznání limitu, aby škola neztratila důvěru v poradenský proces.",
-          "Převzít odpovědnost i za tuto oblast, pokud by další doporučení proces zpomalilo.",
-          "Vydat co nejširší závěr, aby škola dostala jedno souhrnné stanovisko.",
-          "Popsat, co může poradce bezpečně nabídnout, a současně doporučit návaznou spolupráci s vhodným odborníkem."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 25,
-        "text": "Ve školní situaci se ukazuje, že hlavní obtíž dítěte souvisí primárně se zdravotním stavem a medicínskou léčbou. Jaký poradenský krok je nejpřesnější?",
-        "options": [
-          "Rozpoznat limit školské poradenské role a doporučit návaznost na příslušnou zdravotnickou péči při zachování spolupráce se školou.",
-          "Převést celý problém do pedagogické roviny, aby škola měla situaci plně ve svých rukou.",
-          "Vyčkat, zda se zdravotní obtíž sama neupraví, a do té doby žádné další služby nepropojovat.",
-          "Řešit obtíž pouze přes úpravu klasifikace, protože ta je ve škole nejrychleji proveditelná."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 26,
-        "text": "Co je nejpřesnějším cílem meziresortní spolupráce kolem dítěte s komplexními obtížemi?",
-        "options": [
-          "Udržet všechny kroky v jednom resortu, aby bylo řízení podpory přehlednější.",
-          "Sladit postup školy, rodiny a relevantních služeb tak, aby se podpora doplňovala a nenarážela do sebe.",
-          "Přenést rozhodování na instituci, která vede nejrozsáhlejší dokumentaci případu.",
-          "Omezit komunikaci mezi aktéry na předávání hotových závěrů bez průběžných upřesnění."
+          "Obsahuje co nejvíce odborných termínů, aby bylo zřejmé, že jde o specializované stanovisko.",
+          "Převádí zjištění do konkrétních kroků: kdo, kdy, v jaké situaci a s jakým cílem podporu použije.",
+          "Zachycuje co nejširší seznam možných opatření bez nutnosti stanovit priority.",
+          "Shrnuje hlavně průběh vyšetření; škola si praktické důsledky odvodí sama."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 27,
-        "text": "Které vymezení nejlépe vystihuje metodickou podporu učitele po poradenském závěru?",
+        "number": 22,
+        "text": "Která formulace nejlépe ukazuje slabý poradenský výstup?",
         "options": [
-          "Jde o soubor závazných pokynů, které učitel přebírá bez možnosti úprav podle situace ve třídě.",
-          "Jde hlavně o kontrolu, zda učitel používá stejné odborné termíny jako poradenský pracovník.",
-          "Jde o pomoc učiteli pochopit smysl doporučení a převést je do jeho konkrétní práce ve třídě.",
-          "Jde o nahrazení pedagogického rozhodování učitele poradenským pracovníkem."
+          "Žák má speciální vzdělávací potřeby, proto je třeba individuální přístup.",
+          "Při delších instrukcích potřebuje rozdělit zadání do kroků a ověřit porozumění.",
+          "Ve skupinové práci se zhoršuje přehled o úkolu, proto je vhodné předem vyjasnit roli a výstup.",
+          "Při hodnocení písemných úloh je třeba sledovat, zda obtíž neleží v porozumění zadání spíše než v samotném učivu."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 23,
+        "text": "Které rozlišení nejlépe vystihuje vztah odborného zjištění a poradenského výstupu?",
+        "options": [
+          "Odborné zjištění slouží hlavně rodičům, poradenský výstup hlavně škole.",
+          "Odborné zjištění je vždy předběžné, poradenský výstup je naopak definitivní.",
+          "Odborné zjištění má být co nejstručnější, poradenský výstup co nejobsáhlejší.",
+          "Odborné zjištění popisuje a interpretuje, poradenský výstup převádí význam zjištění do podpory a dalších kroků."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 24,
+        "text": "Který typ doporučení je poradensky nejslabší, přestože může působit odborně?",
+        "options": [
+          "Doporučení, které jasně oddělí klíčové kroky od doplňkových.",
+          "Doporučení, které používá běžný jazyk a současně drží odbornou přesnost.",
+          "Doporučení, které přináší dlouhý seznam opatření bez priorit, situací použití a odpovědnosti.",
+          "Doporučení, které uvádí, jak bude škola sledovat účinek zvolených kroků."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 25,
+        "text": "Co nejvíce zvyšuje užitečnost výstupu pro školu i rodinu?",
+        "options": [
+          "Co největší míra odborné opatrnosti, aby výstup neobsahoval žádnou konkrétní formulaci.",
+          "Rozlišení klíčových a doplňkových kroků a jazyk, kterému rozumí i neodborný čtenář.",
+          "Převaha terminologie nad příklady, aby bylo zřejmé, že text není zjednodušený.",
+          "Maximální délka textu, protože kratší doporučení mohou vypadat málo odborně."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 26,
+        "text": "Která formulace nejvíce redukuje situaci na nálepku a tím oslabuje kvalitu výstupu?",
+        "options": [
+          "Vzhledem k předpokládané diagnóze je třeba přihlížet k individuálním potřebám.",
+          "Při čtení delších zadání se ztrácí v pořadí kroků, proto potřebuje vizuální členění a kontrolu porozumění.",
+          "V přechodech mezi činnostmi potřebuje předvídatelnou strukturu a jasný signál změny.",
+          "Podpora má být nastavena podle toho, kde se bariéra prakticky objevuje, ne podle samotného označení."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 27,
+        "text": "Které doporučení pro žáka s obtížemi v práci s delším textem je nejpřesnější?",
+        "options": [
+          "Doporučuje se sledovat, zda se obtíže neupraví spontánně s věkem.",
+          "Nejvhodnější je snížit rozsah všech textů bez další analýzy situace.",
+          "Při delším zadání rozdělit text do kroků, ověřit, co žák pochopil, a teprve pak hodnotit výkon.",
+          "Podstatné je hlavně umožnit žákovi používat libovolnou kompenzační strategii bez dalšího vedení."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 28,
-        "text": "Na co se má škola a poradenský pracovník při vyhodnocování účinku podpory soustředit především?",
+        "text": "Která věta je typickým příkladem příliš širokého výstupu?",
         "options": [
-          "Zda byla všechna opatření zapsána ve stejné terminologii jako v doporučení.",
-          "Zda se počet podpůrných kroků v čase spíše zvyšuje než snižuje.",
-          "Zda škola dokázala všechny obtíže přiřadit k jediné hlavní příčině.",
-          "Zda se žákovi daří lépe fungovat v těch oblastech, na které podpora cílila, a zda jsou kroky proveditelné."
+          "Ve skupinové práci potřebuje předem vědět roli, čas a podobu výstupu.",
+          "Při rychlém tempu výuky je vhodné ověřit, zda zachytil hlavní instrukci.",
+          "Je účelné rozlišit, co je ve škole klíčové řešit hned a co může být doplňkové.",
+          "Doporučuje se ve všech oblastech zohledňovat jeho individualitu a přizpůsobovat vzdělávání podle možností školy."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 29,
-        "text": "Který postup při převodu doporučení do práce školy je nejméně vhodný?",
+        "text": "Který doplněk nejvíce pomáhá převést výstup do školní praxe?",
         "options": [
-          "Převzít text doporučení bez dalšího přemýšlení o tom, jak bude použit v konkrétních situacích.",
-          "Hledat variantu, která odpovídá doporučení a zároveň dává smysl v reálném chodu třídy.",
-          "Ověřit, zda doporučení rozumí i pedagogové, kteří se na výuce žáka střídají.",
-          "Domluvit se, jak bude škola poznávat, že zvolený postup skutečně funguje."
+          "Uvedení typických situací, v nichž má být podpora použita, a signálů, podle nichž škola pozná její účinek.",
+          "Rozšíření závěru o úplný přepis všech použitých metod.",
+          "Přesunutí odpovědnosti za převod na asistenta pedagoga bez dalšího vyjasnění.",
+          "Omezení textu jen na obecná hesla, aby si škola mohla postupy přizpůsobit sama."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 30,
-        "text": "Které doporučení pro učitele je poradensky nejsilnější?",
+        "text": "Po konzultaci škola říká: „Co z toho máme dělat zítra ráno?“ Jaká odpověď je nejpřesnější?",
         "options": [
-          "Upravujte výuku podle možností třídy a podle potřeby žáka.",
-          "Domluvte se, ve kterých situacích budete měnit délku a strukturu zadání, a průběžně ověřujte, zda to zvyšuje porozumění a samostatnost.",
-          "Dbejte, aby podpůrná opatření byla přiměřená a průběžně reflektovaná.",
-          "Sledujte, co žákovi nejvíce vyhovuje, a podle toho postupujte."
+          "Zopakovat celý odborný závěr, aby si škola sama vybrala, co považuje za důležité.",
+          "Vybrat 1–2 prioritní kroky pro konkrétní situace a domluvit, jak škola pozná, zda fungují.",
+          "Doporučit, aby se nejprve zpracovala interní dokumentace a teprve poté se začalo něco měnit.",
+          "Ponechat rozhodnutí plně na třídním učiteli, protože detailní vedení by bylo příliš direktivní."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 31,
-        "text": "Škola uvažuje o větší personální podpoře žáka. Co je z poradenského hlediska nejdůležitější posoudit jako první?",
+        "text": "Rodič žádá, aby poradce bez dalšího poslal plné poznámky z konzultací všem vyučujícím. Jaký postup je eticky nejpřesnější?",
         "options": [
-          "Zda bude personální podpora působit reprezentativně i při komunikaci s rodiči ostatních žáků.",
-          "Zda bude možné zachovat stávající rozvrh třídy beze všech dalších úprav.",
-          "Jaké konkrétní potřeby a bariéry má podpora vyrovnávat v běžném vzdělávání.",
-          "Jak rychle lze opatření zavést bez nutnosti dalšího upřesnění cíle podpory."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 32,
-        "text": "Které rozlišení nejlépe vystihuje rozdíl mezi metodickým vedením a převzetím práce za školu?",
-        "options": [
-          "Metodické vedení je jednorázové, převzetí práce za školu průběžné.",
-          "Metodické vedení je méně odborné, převzetí práce odbornější.",
-          "Metodické vedení se týká jen dokumentace, převzetí práce samotné výuky.",
-          "Metodické vedení škole pomáhá rozhodovat a jednat, převzetí práce by poradce činilo faktickým vykonavatelem školních úkolů."
+          "Vyhovět, protože rodič je zákonný zástupce a rozhoduje o rozsahu sdílení vždy sám.",
+          "Poslat plné poznámky jen třídnímu učiteli a ponechat na škole, jak je dál rozšíří.",
+          "Předat jen shrnutí bez jakékoli vazby na podporu, aby se chránilo soukromí.",
+          "Rozlišit, jaké informace jsou pro podporu ve škole skutečně potřebné, a sdílet jen tento účelný rozsah."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 33,
-        "text": "Rodina dostane písemný závěr, ale zjevně nerozumí jeho jazyku. Jaký krok je poradensky nejvhodnější?",
+        "number": 32,
+        "text": "Žák při rozhovoru zmíní citlivou rodinnou okolnost, která zřejmě není pro školní podporu rozhodující. Co je nejpřesnější?",
         "options": [
-          "Doplnit srozumitelné vysvětlení a ověřit, zda rodina rozumí významu závěru i navržených kroků.",
-          "Ponechat text beze změny, aby nedošlo k oslabení odborné přesnosti sdělení.",
-          "Požádat školu, aby rodině význam závěru převyprávěla vlastními slovy.",
-          "Doporučit rodině, aby si terminologii samostatně dohledala v dostupných zdrojích."
+          "Zahrnout ji do výstupu, protože každá citlivá informace může později získat význam.",
+          "Nejprve zvažovat její relevanci pro účel služby a chránit ji před zbytečným sdílením.",
+          "Okamžitě ji sdělit škole, aby byla v obraze i mimo poradenský rámec.",
+          "Předpokládat, že citlivé téma vždy vysvětluje školní obtíže lépe než pozorování z výuky."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 33,
+        "text": "Škola chce, aby poradce rodinu přesvědčil pro konkrétní vzdělávací cestu, protože „to bude jednodušší“. Co je nejpřesnější role poradce?",
+        "options": [
+          "Vysvětlit rodině možnosti a jejich důsledky, ale nerozhodovat za ni a netlačit ji k jediné volbě.",
+          "Převzít doporučující roli školy, protože poradce má lépe vidět systémové souvislosti.",
+          "Vyhnout se jakémukoli vedení, aby nebyl poradce obviněn z ovlivňování.",
+          "Nechat školu, aby rodinu přesvědčila sama, a pouze to doplnit do závěru."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 34,
-        "text": "Která podoba následné konzultace po zavedení podpory je nejvhodnější?",
+        "text": "Škola žádá doporučení v oblasti, která už přesahuje bezpečnou odbornost poradce. Co je nejvhodnější?",
         "options": [
-          "Konzultace je potřebná jen při výrazném zhoršení situace; jinak se doporučení považuje za uzavřené.",
-          "Má směřovat k tomu, co funguje, co nefunguje a co je třeba v podpoře upravit.",
-          "Stačí jednorázově ověřit, zda je dokumentace kompletní a založená ve spise.",
-          "Je vhodná hlavně pro kontrolu, zda škola beze změny převzala navržené formulace."
+          "Vyjádřit se obecně, aby škola nezůstala bez stanoviska.",
+          "Pojmenovat limit vlastní odbornosti, držet to, co poradce bezpečně ví, a navázat vhodného odborníka.",
+          "Vyhnout se přiznání limitu, protože by to mohlo oslabit důvěru školy.",
+          "Převzít odpovědnost za širší oblast, pokud by další spolupráce proces zdržela."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 35,
-        "text": "Který postup nejlépe odpovídá etické práci s limity vlastní odbornosti?",
+        "text": "Rodina chce, aby poradce formuloval obtíže „ostřeji“, protože škola prý reaguje jen na silná slova. Jaký postup je nejpřesnější?",
         "options": [
-          "Vyhnout se pojmenování vlastních limitů, aby škola ani rodina neztratily důvěru.",
-          "Pokračovat v práci i mimo vlastní kompetence, pokud by další doporučení proces zdrželo.",
-          "Pracovat jen s tím, co poradce bezpečně ovládá, a v případě potřeby doporučit návaznou odbornou spolupráci.",
-          "Vydat co nejširší závěr ze všech oblastí, aby klient nemusel vyhledávat další službu."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 36,
-        "text": "Škola a rodič chtějí po poradci, aby „rozhodl, kdo má pravdu“. Jaká role je nejpřesnější?",
-        "options": [
-          "Rozhodnout spor místo nich, aby další práce postupovala bez odkladu.",
-          "Upřednostnit stranu, která nese větší praktickou odpovědnost za vzdělávání dítěte.",
-          "Odmítnout komunikaci s jednou stranou, dokud druhá plně nepřijme odborný závěr.",
-          "Pomoci oběma stranám porozumět situaci, oddělit fakta, potřeby a možnosti a hledat smysluplný společný postup."
+          "Přijmout tento požadavek, pokud to zvýší šanci na podporu.",
+          "Použít odbornější jazyk, i kdyby byl pro školu méně srozumitelný.",
+          "Přesunout odpovědnost na školu, aby si sama vyžádala silnější stanovisko.",
+          "Držet profesní přesnost a popsat dopad i potřebu podpory věcně, bez strategického zveličování."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 37,
-        "text": "Která formulace ve zprávě nebo konzultaci je z etického hlediska nejméně vhodná?",
+        "number": 36,
+        "text": "Který postup nejvíce překračuje roli poradce?",
         "options": [
-          "Žák je líný a nevyužívá své možnosti, proto je třeba přitvrdit režim.",
-          "Obtíže se projevují zejména při dlouhém a nepřehledném zadání; podpůrné kroky je vhodné cílit právě tam.",
-          "Je vhodné rozlišit, co vyplývá z oslabení, co z prostředí a co z dosavadní podpory.",
-          "Navržené kroky je třeba po čase vyhodnotit, protože účinek podpory se může lišit podle situace."
+          "Pomoci škole přeložit odborný závěr do konkrétní podpory.",
+          "Domluvit s rodinou, jak budou společně sledovat, zda navržené kroky dávají smysl.",
+          "Převzít dlouhodobé řešení rodinné situace v rozsahu, který už náleží jiné službě nebo terapii.",
+          "Popsat, kde poradenská práce končí a kde začíná návazná spolupráce."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 37,
+        "text": "Který komunikační krok je eticky i odborně nejpřesnější při sdělování závěru?",
+        "options": [
+          "Přeložit odborné zjištění do srozumitelného jazyka a ověřit, zda druhá strana opravdu rozumí jeho významu.",
+          "Použít plnou odbornou terminologii, aby nedošlo ke zjednodušení obsahu.",
+          "Předat pouze psaný text, aby se předešlo možnému zkreslení rozhovorem.",
+          "Sdělit jen závěr bez vysvětlení, protože otázky mohou proces znejistit."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 38,
-        "text": "Jaký postup je nejvhodnější při časovém tlaku a nejistotě rodiny po sdělení závěru?",
+        "text": "Učitel neformálně žádá podrobnosti z rodinné situace dítěte, aby s ním „lépe pracoval“. Jaký postup je nejpřesnější?",
         "options": [
-          "Trvat na okamžitém přijetí všech kroků, aby se proces nezdržoval.",
-          "Sdělit závěr, pojmenovat jeho význam, dát prostor otázkám a domluvit návazný krok, pokud rodina potřebuje čas.",
-          "Ponechat rodinu zcela bez směrování, aby nebyla ovlivněna názorem odborníka.",
-          "Předat pouze písemný dokument a další otázky přesunout na školu."
+          "Předat vše, co by teoreticky mohlo být užitečné, protože učitel nese každodenní zátěž.",
+          "Sdílet jen to, co je pro podporu ve škole profesně odůvodněné a potřebné.",
+          "Odmítnout jakoukoli spolupráci se školou, protože rodinná témata jsou vždy mimo její roli.",
+          "Předat informace vedení školy a nechat je rozhodnout, komu budou sděleny."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 39,
-        "text": "Které tvrzení nejlépe rozlišuje podporu autonomie od paternalismu?",
+        "text": "Rodina chce, aby poradce mluvil na každém jednání za ni a rozhodoval místo ní. Co je nejvhodnější?",
         "options": [
-          "Autonomie znamená, že poradce klientovi nepředloží žádné varianty, aby za něj nerozhodoval.",
-          "Paternalismus znamená pouze důraznější styl komunikace, nikoli změnu role poradce.",
-          "Podpora autonomie pomáhá klientovi porozumět možnostem a rozhodovat se; paternalismus za něj rozhoduje.",
-          "Oba přístupy jsou v poradenské praxi rovnocenné, záleží jen na časových možnostech služby."
+          "Převzít tuto roli, pokud je rodina ve stresu a potřebuje oporu.",
+          "Ponechat rodinu zcela bez vedení, aby se posílila autonomie.",
+          "Podporovat porozumění možnostem a rozhodování rodiny, ale nepřebírat její hlas ani odpovědnost za volbu.",
+          "Přesměrovat veškerou komunikaci na školu, která je v systému nejstabilnější."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 40,
-        "text": "Který poradenský postup je z etického hlediska nejslabší?",
+        "text": "Které tvrzení nejlépe vystihuje profesní kvalitu poradce pod emočním tlakem situace?",
         "options": [
-          "Pojmenovat hranice vlastního posouzení a podle potřeby navrhnout další návaznost.",
-          "Rozlišit, co víme, co předpokládáme a co je třeba ještě ověřit.",
-          "Sdílet jen to, co má smysl pro podporu a je profesně odůvodněné.",
-          "Mluvit o závěru jako o definitivní pravdě, i když část situace zůstává nejistá nebo závislá na dalším vývoji."
+          "Empatický poradce má dát stranou hranice a držet hlavně vztah.",
+          "Nejdůležitější je rychle uzavřít spor, i kdyby závěr nebyl ještě plně dotažený.",
+          "Profesionální je zůstat neutrální tak, že poradce přestane situaci aktivně vést.",
+          "Udržet respekt, srozumitelnost i hranice role a nenechat napětí zrychlit závěr mimo dostupná data."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 41,
-        "text": "Škola, rodina a poradce mají na situaci dítěte rozdílné pohledy. Jaký postup je nejvhodnější?",
+        "text": "Škola chce, aby poradce dlouhodobě připravoval všechny individuální materiály za učitele. Co je metodicky nejvhodnější?",
         "options": [
-          "Vést dialog tak, aby bylo jasné, které části vyplývají z odborného zjištění, které z kontextu a kde je prostor pro společné rozhodování.",
-          "Zvolit pohled té strany, která situaci popisuje nejdůrazněji, aby bylo možné rychle jednat.",
-          "Nepřipouštět rozdílné pohledy, protože snižují autoritu poradenského závěru.",
-          "Oddělit školu a rodinu do samostatných komunikací bez snahy hledat společný rámec."
+          "Pomoci škole pochopit principy úpravy práce a postupně ji vést k vlastnímu zvládání podpory, ne ji trvale nahrazovat.",
+          "Převzít tuto roli alespoň na celý školní rok, aby byla zajištěna stabilita.",
+          "Odmítnout spolupráci, protože tvorba materiálů do školy nikdy nepatří.",
+          "Omezit pomoc jen na jednorázové předání textu bez společného rozboru praxe."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 42,
-        "text": "Které vymezení nejlépe vystihuje profesní hranice v pomáhajícím vztahu?",
+        "text": "Která následná konzultace s učitelem je metodicky nejcennější?",
         "options": [
-          "Pomáhající vztah je kvalitní tehdy, když poradce zůstává pro klienta k dispozici bez časového a obsahového omezení.",
-          "Hranice chrání srozumitelnost role, bezpečí a odpovědnost; neznamenají chlad, ale jasnost profesního vztahu.",
-          "Hranice mají smysl hlavně kvůli administrativě, nikoli kvůli samotné kvalitě pomoci.",
-          "Čím méně hranic, tím autentičtější a účinnější je poradenský vztah."
+          "Kontrola, zda škola doslova převzala formulace doporučení do interních dokumentů.",
+          "Společné projití několika konkrétních situací, co v nich učitel změnil a jaký to mělo efekt.",
+          "Ověření, zda se škola drží jediné zvolené strategie beze změny.",
+          "Shrnutí, které části doporučení vypadají ve spise nejpřesvědčivěji."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 43,
-        "text": "Které tvrzení o standardních poradenských službách ve školách a školských poradenských zařízeních je nejpřesnější?",
+        "text": "Škola zavedla doporučení doslova, ale bez porozumění jeho účelu. Co je nejpřesnější krok poradce?",
         "options": [
-          "Jsou bezplatné jen tehdy, pokud škola současně uhradí metodickou podporu.",
-          "Bezplatnost se vztahuje jen na první kontakt, další kroky už závisí na rozhodnutí zařízení.",
-          "Jsou poskytovány bezplatně v rozsahu stanoveném vyhláškou.",
-          "Bezplatné jsou pouze služby poskytované přímo ve škole, nikoli v PPP nebo SPC."
+          "Nechat školu postup používat dál, protože formální shoda je zatím důležitější než porozumění.",
+          "Požádat o další dokumentaci a do té doby nic nekomentovat.",
+          "Vrátit se k tomu, proč byl krok navržen, v jaké situaci má fungovat a jak jej přizpůsobit konkrétní praxi školy.",
+          "Doporučení zcela stáhnout, protože bylo použito mechanicky."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 44,
-        "text": "Komu jsou podle rámce poradenských služeb určeny poradenské služby ve školách a školských poradenských zařízeních?",
+        "text": "Učitel chce jeden sankční režim pro chování, které se objevuje hlavně při přetížení a nejasném zadání. Co je metodicky nejpřesnější?",
         "options": [
-          "Jen žákům a studentům, protože škola i zákonní zástupci jsou pouze zprostředkujícími osobami.",
-          "Jen školám a školským zařízením, protože pouze ony zavádějí podporu do praxe.",
-          "Jen zákonným zástupcům a zletilým žákům, protože škola nemůže být příjemcem poradenské služby.",
-          "Žákům, jejich zákonným zástupcům a také školám a školským zařízením."
+          "Potvrdit, že důsledná sankce je nejčistší cesta ke stabilitě.",
+          "Doporučit pouze individuální pohovor po hodině, aby se zamezilo konfliktu.",
+          "Přenechat volbu vedení školy, protože jde hlavně o kázeň.",
+          "Vrátit se k podmínkám, které chování spouštějí, a spojit vedení hranic s úpravou zadání, předvídatelnosti a podpory regulace."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 45,
-        "text": "Které tvrzení o podpůrných opatřeních prvního stupně je nejpřesnější?",
+        "text": "Který dotaz poradce vůči škole je metodický, nikoli kontrolní?",
         "options": [
-          "Navrhuje a poskytuje je škola jako součást své běžné podpory žáka.",
-          "Navrhuje je a poskytuje vždy školské poradenské zařízení po odborném vyšetření.",
-          "Jsou určena jen pro žáky se zdravotním postižením a nelze je využít u jiných vzdělávacích potřeb.",
-          "Používají se pouze tehdy, když byla předem zpracována specializovaná poradenská zpráva."
+          "Kde přesně jste změnili postup, co se tím zlepšilo a co je potřeba doladit?",
+          "Kdo nese odpovědnost, že doporučení ještě není v každé hodině stejné?",
+          "Proč škola nepoužila všechny navržené kroky beze zbytku?",
+          "Kdy bude interní dokumentace definitivně uzavřena?"
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 46,
-        "text": "Co nejlépe vystihuje význam informovaného souhlasu ve školském poradenském zařízení?",
+        "text": "Rodina slyší odborný závěr poprvé a je zjevně zahlcená. Co je nejpřesnější další krok poradce?",
         "options": [
-          "Nahrazuje celý rozhovor o zakázce a cílech služby, pokud je vyplněn správný formulář.",
-          "Slouží k tomu, aby rodina nebo zletilý klient rozuměli smyslu, průběhu a podmínkám poradenské služby, se kterou souhlasí.",
-          "Je interním kontrolním dokladem pro ministerstvo a nemusí být detailně vysvětlován klientovi.",
-          "Má význam jen u výjimečně závažných případů; u běžných poradenských služeb není podstatný."
+          "Předat jen psaný text, aby si ho mohla v klidu pročíst bez dalšího komentáře.",
+          "Zastavit se u hlavního významu závěru, přeložit dopad do běžného jazyka a domluvit nejbližší malé kroky.",
+          "Rozšířit vysvětlení o všechny odborné souvislosti, aby rodina nic neztratila.",
+          "Přesunout komunikaci na školu, která bude s rodinou v kontaktu častěji."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 47,
-        "text": "Které tvrzení o individuálním vzdělávacím plánu je v procesním kontextu nejpřesnější?",
+        "text": "Rodič se ptá: „Takže je moje dítě líné, nebo nemocné?“ Která reakce je nejpřesnější?",
         "options": [
-          "IVP je vždy automatickým výstupem každého poradenského vyšetření.",
-          "IVP je odborný dokument školského poradenského zařízení, který škola pouze zakládá do spisu.",
-          "IVP je dokument školy pro konkrétní nastavení vzdělávání; nevzniká automaticky jen tím, že proběhlo poradenské posouzení.",
-          "IVP slouží hlavně k evidenci formálních úlev, nikoli k organizaci podpory ve vzdělávání."
+          "Je vhodné vybrat bližší z těchto dvou možností, aby rodina měla jasnější rámec.",
+          "Nejprve je třeba uzavřít odbornou kategorizaci a až potom mluvit o podpoře.",
+          "Vrátit se k tomu, jaké bariéry se objevují v konkrétních situacích a co z toho plyne pro podporu, místo morálních nálepek.",
+          "Je lepší tuto otázku neotevírat, protože bývá příliš emoční."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 48,
-        "text": "Jak je z hlediska aktuálního rámce správné pracovat s vyjádřením žáka k jeho vzdělávání?",
+        "text": "Rodina i škola četly tentýž výstup, ale vyvozují z něj jinou podobu podpory. Co je nejpřesnější krok poradce?",
         "options": [
-          "Názor žáka je vhodné zaznamenat, ale nemá mít žádný vliv na poradenský postup.",
-          "Názor žáka se bere v úvahu jen tehdy, když je v souladu s názorem zákonného zástupce.",
-          "Vyjádření žáka je z právního hlediska relevantní jen u plnoletých studentů.",
-          "K vyjádření žáka se přihlíží přiměřeně jeho věku a stupni vývoje a je třeba mu poskytovat srozumitelné informace."
+          "Vybrat stranu, která je systému bližší, aby se situace rychle stabilizovala.",
+          "Upravit text tak, aby byl obecnější a nechal větší prostor pro vlastní výklad.",
+          "Požádat obě strany, aby si význam textu vyjednaly samy bez dalšího vedení.",
+          "Společně přeložit závěr do několika konkrétních situací: co má kdo dělat, kdy a podle čeho pozná, že krok funguje."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 49,
-        "text": "Které tvrzení nejlépe vystihuje rozdíl mezi školní dokumentací podpory a odbornými výstupy ŠPZ?",
+        "text": "Které vysvětlení směrem k dospívajícímu žákovi nejlépe podporuje autonomii?",
         "options": [
-          "Školní dokumentace rozpracovává podporu v praxi školy, zatímco ŠPZ vytváří vlastní odborné výstupy a doporučení k podpoře.",
-          "Rozdíl je jen ve formátu; obsah i funkce jsou v systému totožné.",
-          "Školní dokumentace slouží jen třídnímu učiteli, odborné výstupy ŠPZ jen vedení školy.",
-          "Odborné výstupy ŠPZ nahrazují veškeré školní dokumenty podpory, pokud jsou formulovány dostatečně podrobně."
+          "Popisuje, co bylo pozorováno, co může pomoci, a dává prostor pro jeho otázky a preference při domlouvání podpory.",
+          "Zdůrazňuje, že rozhodující slovo mají dospělí a žák se nemá zatěžovat detaily.",
+          "Předává jen stručné ujištění, že vše vysvětlí škola rodičům.",
+          "Soustředí se hlavně na to, co žák dělal dosud špatně a co musí změnit."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 50,
-        "text": "Který krok nejlépe uzavírá kvalitní poradenský cyklus po zavedení podpory?",
+        "text": "Které uzavření konzultace je nejkvalitnější?",
         "options": [
-          "Ukončení případu ihned po předání závěru, aby se předešlo závislosti školy na poradci.",
-          "Průběžné vyhodnocení účinku podpory a případná úprava postupu podle toho, co se v praxi ukázalo.",
-          "Archivace dokumentů a ponechání dalšího vývoje plně na třídním učiteli.",
-          "Doplnění dalších odborných termínů do závěru, aby byl proces pro budoucnost přesnější."
+          "Rodina i škola dostanou doporučení e-mailem a případ se ponechá otevřený bez dalšího upřesnění.",
+          "Shrnout, na čem je shoda, kdo udělá jaký krok a kdy se ověří, zda navržená podpora skutečně pomáhá.",
+          "Uzavřít setkání obecným ujištěním, že situace bude sledována průběžně.",
+          "Zakončit rozhovor doplněním dalších odborných termínů, aby výstup působil úplně."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4509,642 +4523,642 @@ window.SCIO_V4_RAW_BATTERIES = [
         "C": 12,
         "D": 12
       },
-      "distributionTarget": "12–13 správných odpovědí na každé písmeno",
-      "distributionBalanced": true,
-      "styleParityReviewedManually": true
+      "distributionTarget": "13/13/12/12 nebo jiná vyvážená distribuce bez převažujícího písmene",
+      "distributionBalanced": true
     }
   },
   {
     "id": 8,
     "label": "Baterie 8",
-    "title": "Finální syntetická nejtěžší baterie",
-    "subtitle": "Hard mode: otázky propojující disciplínu, funkční dopad, podporu, systém, komunikaci a proces.",
-    "purpose": "Ověřit skutečně selektivní připravenost na UPOL v hard modu: nepoznat správnou odpověď stylem, ale synteticky rozlišit jádro případu, zvolit funkční podporu a správně číst role školy, ŠPZ, rodiny, sociální a zdravotní oblasti.",
-    "difficulty": "vysoká až velmi vysoká",
+    "title": "Finální nejtěžší selekční baterie",
+    "subtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
+    "purpose": "Ověřit skutečně selektivní připravenost na UPOL v pokročilé vrstvě: odlišit blízké pojmy, správně číst dokumenty a role systému, orientovat se v aktuální legislativní logice a u krátkých situací zvolit nejpřesnější odborný závěr bez stylistických vodítek.",
+    "difficulty": "velmi vysoká",
     "dominant": [
-      "syntetická kazuistika",
-      "funkční dopad a volba podpory",
-      "školské poradenství a proces",
-      "komunikace a etika",
-      "meziresortní orientace",
-      "legislativně-systémové minimum"
+      "jemné pojmové rozlišení",
+      "dokumenty, role a institucionální hranice",
+      "aktuální školské a poradenské minimum",
+      "komunikace a profesní etika",
+      "krátká aplikace bez dominující kazuistiky",
+      "finální syntetické rozhodování"
     ],
     "breakdown": [
-      "38× syntetická případová otázka",
-      "6× procesní a dokumentační rozlišení",
-      "4× meziresortní a legislativní rozlišení",
-      "2× finální vícevrstevná rozhodovací kazuistika"
+      "16× přesné pojmové a disciplinární rozlišení",
+      "12× dokumenty, role a systém zařízení",
+      "10× komunikace, etika a profesní kompetence",
+      "8× aktuální legislativně-procesní rozlišení",
+      "4× krátká aplikovaná syntéza"
     ],
     "tags": [
       "hard mode",
-      "syntéza",
+      "B8 revize",
       "UPOL",
       "poradenství",
-      "škola a ŠPZ",
-      "meziresortní spolupráce"
+      "legislativa",
+      "dokumenty a role"
     ],
     "durationMinutes": 30,
     "questionCount": 50,
     "questions": [
       {
         "number": 1,
-        "text": "Žák mluví gramaticky poměrně dobře, ale v rozhovoru nerozpozná narážku, drží se doslovného významu, ztrácí se ve skupinové interakci a při změně plánu se rychle rozpadá. Jaký závěr je pro další podporu nejpřesnější?",
+        "text": "Které vymezení nejlépe odpovídá současnému pojetí speciální pedagogiky?",
         "options": [
-          "Jádro obtíží leží spíše v sociálním porozumění a flexibilitě, proto je vhodné uvažovat o PAS a o úpravě předvídatelnosti situací.",
-          "Jádro obtíží leží hlavně ve výslovnosti, proto je rozhodující nácvik artikulace bez širší změny organizace prostředí.",
-          "Jádro obtíží leží především v neochotě spolupracovat, proto je nejdůležitější nastavit přísnější behaviorální režim.",
-          "Jádro obtíží leží hlavně ve sluchové vadě, protože neporozumění v dialogu obvykle znamená nedostatečný sluch."
+          "Sleduje hlavně klasifikaci vad a z ní přímo odvozené zařazení do typu zařízení, a právě v tom vidí hlavní vysvětlení.",
+          "Sleduje vztah mezi možnostmi člověka, bariérami prostředí a podobou podpory ve vzdělávání i participaci.",
+          "Sleduje především léčbu poruch, zatímco otázky edukace stojí až na druhém místě, a tímto směrem by vedla podporu.",
+          "Sleduje především sociální dávky a správní řízení spojené s postižením, a v tom hledá klíčový znak."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 2,
-        "text": "Žák rozumí obsahu učiva, ale u delší práce s textem se zhoršuje tempo, vadí mu oslnění a drobný tisk. Při ústním zkoušení působí jistě. Který krok je nejpřesnější jako první pedagogický závěr?",
+        "text": "Které rozlišení reedukace a kompenzace je odborně nejpřesnější?",
         "options": [
-          "Zaměřit se hlavně na reedukaci čtenářské techniky, protože obtíž se projevuje primárně u psaného textu.",
-          "Uvažovat o bariéře v přístupu k vizuální informaci a upravit formát materiálů dříve, než se z výkonu vyvodí širší závěr o schopnostech.",
-          "Uzavřít situaci jako nízkou motivaci ke školní práci, protože při ústním zkoušení se žák snaží více.",
-          "Převést žáka na výhradně individuální výuku, protože skupinová práce bývá pro zrakově oslabené žáky nevhodná."
+          "Reedukace je jen domácí procvičování, kompenzace jen úprava školních pomůcek, a právě v tom vidí hlavní vysvětlení.",
+          "Reedukace se snaží oslabenou funkci rozvíjet, kompenzace hledá jinou funkční cestu k témuž cíli.",
+          "Kompenzace nastupuje až po úplném vyčerpání reedukace a oba přístupy se nesmějí kombinovat.",
+          "Oba pojmy označují ve školní praxi totéž a liší se jen oblíbeností termínu, a v tom hledá klíčový znak."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 3,
-        "text": "Dítě potřebuje názornost, opakování, modelování postupů a vedený nácvik běžných situací. V adaptivních dovednostech je méně samostatné, ale při klidném tempu spolupracuje. Které podpůrné uvažování je nejpřesnější?",
+        "text": "Které tvrzení nejpřesněji vystihuje augmentativní a alternativní komunikaci (AAK)?",
         "options": [
-          "Těžiště by mělo být v rychlém rozšiřování abstraktních úloh, aby se ověřilo, zda dítě není pouze podnětově zanedbané.",
-          "Těžiště by mělo být hlavně v korekci chování, protože potřeba vedení obvykle ukazuje na etopedický problém.",
-          "Těžiště by mělo být ve funkčním rozvoji porozumění, praktických dovedností a podpory samostatnosti, ne jen v izolovaném výkonu v testu.",
-          "Těžiště by mělo být hlavně ve zdravotnickém došetření, protože školní podpora je u podobného obrazu druhotná."
+          "Augmentativní komunikace je vždy technologická, alternativní vždy bez pomůcek, a právě v tom vidí hlavní vysvětlení.",
+          "Augmentativní komunikace řeč doplňuje, alternativní ji může nahrazovat; obě míří k funkčnímu dorozumění.",
+          "Augmentativní komunikace je určena jen pro děti, alternativní pouze pro dospělé uživatele, a tímto směrem by vedla podporu.",
+          "Oba pojmy označují nácvik správné výslovnosti při zachované běžné řeči, a v tom hledá klíčový znak."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 4,
-        "text": "Žák dobře reaguje v klidném rozhovoru tváří v tvář, ale ve skupinové práci, při výkladu z větší vzdálenosti a v hluku ztrácí obsah. Která úprava míří nejpřesněji na jádro bariéry?",
+        "text": "Které vymezení psychopedie je nejpřesnější?",
         "options": [
-          "Snížit náročnost učiva v každém předmětu, protože skupinová komunikace je pro žáka obecně příliš složitá.",
-          "Vyřadit žáka z diskusních aktivit a nahradit je samostatnou písemnou prací.",
-          "Soustředit se jen na rozšíření slovní zásoby, protože porozumění ve třídě je hlavně jazykový problém.",
-          "Upravit komunikační podmínky ve třídě, zejména vzdálenost, přehlednost mluvčího a hlukové zatížení, a teprve pak hodnotit výkon."
+          "Zabývá se edukací a podporou osob s mentálním postižením a s obtížemi v intelektovém a adaptivním fungování.",
+          "Zabývá se především léčbou duševních onemocnění bez přímé vazby na vzdělávání, a z toho odvozuje další závěr.",
+          "Zabývá se výhradně specifickými poruchami učení a grafomotorikou, a tímto směrem by vedla podporu.",
+          "Zabývá se hlavně rizikovým chováním, delikvencí a preventivně výchovnou péčí, a v tom hledá klíčový znak."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 5,
-        "text": "Žák je pomalejší při přesunech, psaní a manipulaci s pomůckami, ale při ústním vysvětlení látce rozumí a odpovídá přesně. Které vyhodnocení je nejpřesnější?",
+        "text": "Které vymezení mentálního postižení je odborně nejpřesnější?",
         "options": [
-          "Motorická a organizační bariéra nesmí být zaměněna za nižší porozumění učivu; podpora má cílit na přístup k výkonu a pracovní podmínky.",
-          "Jde hlavně o poruchu intelektového vývoje, protože pomalejší pracovní tempo je nejspolehlivější ukazatel širšího oslabení.",
-          "Jde především o problém komunikace, proto má prioritu logopedická intervence.",
-          "Jde hlavně o etopedický problém, protože pomalejší práce bývá často výrazem pasivního odporu."
+          "Jde o stav, v němž omezení intelektových schopností a adaptivního fungování zasahuje učení, samostatnost i každodenní život.",
+          "Jde o jakoukoli poruchu duševního zdraví, která se projeví ve škole sníženým výkonem, a z toho odvozuje další závěr.",
+          "Jde o izolovanou poruchu pozornosti a paměti bez širšího dopadu na adaptaci, a tímto směrem by vedla podporu.",
+          "Jde o souhrn problémů v chování, které vznikají hlavně nedůslednou výchovou, a v tom hledá klíčový znak."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 6,
-        "text": "Žák s velmi omezenou verbální řečí rozumí běžným situacím, reaguje na rutinu a pokouší se dorozumět gestem a ukazováním. Co je ve škole nejvhodnějším cílem podpory?",
+        "text": "Které tvrzení je nejpřesnější pro rozlišení PAS a čistě logopedického problému?",
         "options": [
-          "Počkat, zda se řeč nerozvine spontánně, aby zavedení náhradní komunikace žáka zbytečně nebrzdilo.",
-          "Rozšířit možnosti funkčního dorozumění pomocí AAK tak, aby žák mohl aktivně volit, odmítat, žádat a účastnit se výuky.",
-          "Vést komunikaci hlavně přes dospělého, který bude za žáka rychle formulovat potřeby a odpovědi.",
-          "Přesunout důraz pouze na nácvik artikulace jednotlivých hlásek, protože bez výslovnosti nelze školní komunikaci budovat."
+          "Jakmile je výslovnost nápadná, jde vždy především o PAS a širší komunikaci není třeba řešit, a právě v tom vidí hlavní vysvětlení.",
+          "PAS se pozná hlavně podle vadné artikulace, zatímco sociální porozumění zůstává zachované, a z toho odvozuje další závěr.",
+          "Je-li dítě slovně aktivní, PAS lze prakticky vyloučit a stačí sledovat jen mluvní tempo, a tímto směrem by vedla podporu.",
+          "U PAS může být slovní zásoba relativně dobrá, ale oslabené bývá sociální porozumění, sdílení významu a flexibilita v komunikaci."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 7,
-        "text": "Žák při nejasném zadání a veřejné opravě reaguje výbuchem, ale v předvídatelném režimu a při jasných hranicích pracuje výrazně lépe. Který závěr je nejpřesnější?",
+        "text": "Které vymezení bazální stimulace je nejpřesnější?",
         "options": [
-          "Obtíže jsou náhodné a nesouvisejí s organizací situace, takže stačí důsledněji sankcionovat projevy nevhodného chování.",
-          "Jádro potíží je v nedostatku vědomostí, protože největší problémy se objevují ve školních úkolech.",
-          "Chování je třeba číst v kontextu spouštěčů a funkce situace; podpora má měnit i podmínky a způsob vedení, ne jen důsledky.",
-          "Jádro je primárně v tělesném oslabení, protože přetížení ve třídě často vede ke ztrátě sebekontroly."
+          "Jde o logopedickou metodu zaměřenou hlavně na artikulaci izolovaných hlásek, a právě v tom vidí hlavní vysvětlení.",
+          "Jde o psychoterapeutický postup určený výhradně pro práci s traumatem a regresí, a z toho odvozuje další závěr.",
+          "Jde o ošetřovatelský koncept využívající práci se somatickými, vestibulárními a vibračními podněty k podpoře vnímání, orientace a kontaktu.",
+          "Jde o fyzioterapeutický program zaměřený výhradně na nácvik hrubé motoriky bez smyslové složky, a v tom hledá klíčový znak."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 8,
-        "text": "U dítěte se kombinuje výrazné pohybové omezení, těžká komunikační bariéra a vysoká závislost na pomoci druhých. Který cíl podpory je nejpřesnější?",
+        "text": "Které tvrzení nejlépe vystihuje současné pojetí etopedie?",
         "options": [
-          "Upřednostnit rychlé vyrovnání výkonu s běžnou třídou, aby se co nejdříve snížil rozdíl vůči vrstevníkům.",
-          "Zaměřit se výhradně na jednu oblast, například grafomotoriku, protože více cílů by zbytečně tříštilo pozornost týmu.",
-          "Přenechat stanovení cílů jen zdravotnictví, protože škola nemá u takto náročného profilu vlastní aktivní roli.",
-          "Volit funkční a dosažitelné cíle v komunikaci, orientaci, komfortu, participaci a každodenní spolupráci mezi aktéry."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 9,
-        "text": "Žák má mimořádně silné verbální myšlení a hluboký zájem o téma, zároveň ale selhává v organizaci práce, dokončování úkolů a toleranci změny. Které uvažování je nejpřesnější?",
-        "options": [
-          "Nadání nevylučuje souběžnou potřebu podpory; je třeba zachytit jak potenciál, tak oblast, která výkon a zapojení blokuje.",
-          "Vysoký potenciál automaticky potvrzuje, že obtíže jsou jen otázkou motivace a vnější disciplíny.",
-          "Při nadání není vhodné řešit podpůrná opatření, protože by žákovi snižovala nároky.",
-          "Rozhodující je pouze akcelerace učiva, protože organizační a adaptační obtíže se tím obvykle vyřeší samy."
+          "Nejde jen o sankcionování rizikového chování, ale o preventivní, výchovnou a reedukační práci v kontextu vztahů a prostředí.",
+          "Jejím hlavním cílem je nahrazovat soudní a represivní systém při práci s delikvencí, a z toho odvozuje další závěr.",
+          "Zabývá se výhradně farmakologickou léčbou poruch chování a emocí, a tímto směrem by vedla podporu.",
+          "Zabývá se především smyslovými vadami, které sekundárně vedou k poruše kázně, a v tom hledá klíčový znak."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 10,
-        "text": "Po vyšetření je třeba sdělit rodiči, že dítě potřebuje další podporu a změnu školních postupů. Která formulace je profesně nejvhodnější?",
+        "number": 9,
+        "text": "Které tvrzení je nejpřesnější pro tyflopedické uvažování o podpoře?",
         "options": [
-          "Je to jednoznačné, proto vám rovnou řeknu, co škola udělá a o čem už se nemusíme dál bavit.",
-          "Popíšu, co jsme zjistili, co z toho plyne pro vzdělávání a jaké kroky dává smysl společně domluvit se školou.",
-          "Nejdřív je lepší vyčkat, zda si škola sama nevšimne, že dítě potřebuje jiný přístup.",
-          "Důležité je hlavně rodiči vysvětlit, že problém nesmí zpochybňovat, protože odborný závěr je nadřazen jeho zkušenosti."
+          "Jakmile je přítomna oční diagnóza, lze podporu určit bez sledování reálného funkčního profilu.",
+          "Tyflopedická podpora se týká pouze Braillova písma a netýká se práce se zrakovým zbytkem, a z toho odvozuje další závěr.",
+          "Podpora se neodvíjí jen od názvu diagnózy, ale od funkčního využití zraku a způsobu přístupu k informaci.",
+          "Při oslabeném zrakovém vnímání je nejdůležitější ponechat stejné materiály jako u ostatních a měnit jen tempo."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 10,
+        "text": "Které přiřazení somatopedie a ortopedie je správné?",
+        "options": [
+          "Somatopedie je část chirurgie a ortopedie je pedagogický obor pro práci ve škole, a právě v tom vidí hlavní vysvětlení.",
+          "Somatopedie řeší edukaci a podporu osob s tělesným postižením, ortopedie je lékařský obor zaměřený na pohybový aparát.",
+          "Somatopedie i ortopedie označují totéž; liší se jen českým a latinským názvem, a tímto směrem by vedla podporu.",
+          "Somatopedie se týká jen rehabilitace po úrazech a ortopedie jen komunikačních bariér, a v tom hledá klíčový znak."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 11,
-        "text": "Učitel dlouhodobě pozoruje, že žák nerozumí složitým instrukcím, v běžné práci je nejistý a prospěch klesá. Jaká posloupnost nejlépe odpovídá logice podpory ve školství?",
+        "text": "Která reakce nejlépe odpovídá aktivnímu naslouchání v poradenském rozhovoru?",
         "options": [
-          "Nejprve vyžádat definitivní zdravotnický závěr, pak teprve ve škole zkoušet jakoukoli úpravu výuky.",
-          "Nejprve vytvořit IVP, teprve po několika měsících sledovat, zda obtíže vůbec existují.",
-          "Zachytit obtíže, poskytnout a vyhodnotit školní podporu a při potřebě odborného posouzení zapojit ŠPZ.",
-          "Předat věc sociálním službám, protože každá dlouhodobější vzdělávací obtíž přesahuje školu."
+          "Rychle nabídnout hotové řešení, aby se rozhovor zbytečně nezdržoval emocemi, a právě v tom vidí hlavní vysvětlení.",
+          "Převzít interpretaci situace za klienta a ujistit ho, že jeho pohled už není třeba rozvíjet, a z toho odvozuje další závěr.",
+          "Shrnout, co druhý říká, ověřit porozumění a ponechat prostor pro doplnění bez okamžité rady či hodnocení.",
+          "Střídat otázky s vlastními příklady z praxe, aby bylo zřejmé, že poradce ví, jak situace dopadne."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 12,
-        "text": "Které tvrzení nejpřesněji vystihuje vztah zprávy, doporučení a IVP?",
+        "text": "Co nejpřesněji vyjadřuje validace v poradenské komunikaci?",
         "options": [
-          "Všechny tři dokumenty vydává ŠPZ ve stejném režimu, liší se jen délkou textu.",
-          "Zpráva je školní dokument, doporučení je interní poznámka školy a IVP je jen dobrovolná pomůcka rodičů.",
-          "Doporučení shrnuje anamnézu a testové výsledky, zatímco zpráva už převádí závěry do podpůrných opatření ve škole.",
-          "Zpráva zachycuje odborné závěry, doporučení stanoví podpůrná opatření a IVP je školní nástroj konkretizace vzdělávací podpory."
+          "Potvrzení, že klientův pohled je vždy objektivně správný a není vhodné jej dále zkoumat, a právě v tom vidí hlavní vysvětlení.",
+          "Uznání, že prožívání druhého je vzhledem k situaci pochopitelné, aniž by poradce musel bezvýhradně souhlasit se všemi závěry.",
+          "Přesvědčení klienta, aby své emoce odložil a soustředil se jen na fakta a formuláře, a tímto směrem by vedla podporu.",
+          "Nahrazení klientovy výpovědi odborným výkladem, aby se snížila nejistota při rozhovoru, a v tom hledá klíčový znak."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 13,
-        "text": "Speciální pedagog po pozorování ve třídě ví, že část potíží žáka souvisí i s nejasnou strukturou výuky. Jaký přístup k učiteli je profesně nejvhodnější?",
+        "text": "Které vymezení sebereflexe je pro profesi speciálního pedagoga nejpřesnější?",
         "options": [
-          "Popsat konkrétní situace, pojmenovat jejich dopad na žáka a společně hledat proveditelné úpravy výuky bez obviňujícího tónu.",
-          "Sdílet učiteli pouze závěr, že chyba je v jeho stylu práce, protože otevřená kritika bývá nejrychlejší.",
-          "Vynechat téma organizace výuky, aby se nenarušily vztahy ve sboru, a zaměřit se jen na dítě.",
-          "Převzít vedení hodiny za učitele, aby bylo zajištěno, že doporučené postupy budou opravdu dodrženy."
+          "Promýšlení vlastních postojů, myšlenek a emocí a jejich vlivu na odborné jednání i rozhodování.",
+          "Shromažďování zpětné vazby od klienta bez vztahu k tomu, jak s ní odborník pracuje.",
+          "Vedení vnitřního dialogu klienta při skupinové práci s rodinou a učiteli, a tímto směrem by vedla podporu.",
+          "Snaha co nejvíce potlačit osobní reakce tak, aby se do odborné práce nedostalo žádné vlastní zaujetí."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 14,
-        "text": "Rodič se po prvním rozhovoru ptá, zda popsané projevy „znamenají autismus“. Která odpověď je profesně nejvhodnější?",
+        "text": "Které tvrzení nejlépe vystihuje profesní hranice v poradenské práci?",
         "options": [
-          "Ano, podobný projev vždy znamená PAS, proto není nutné zvažovat jiné souvislosti.",
-          "Některé projevy s PAS souvisejí, ale důležité je mluvit o konkrétních obtížích, jejich dopadu a o tom, jak je odborně ověřit a podpořit.",
-          "Takovou otázku je lepší zastavit, protože rodič do odborné interpretace nemá vstupovat.",
-          "Nejbezpečnější je rodiči nic neříkat, dokud se škola sama nerozhodne, zda situaci považuje za problém."
+          "Poradce má podporovat porozumění a rozhodování klienta, nemá však přebírat životní rozhodnutí ani vytvářet závislost na své osobě.",
+          "Poradce má být pro rodinu hlavním rozhodovatelem, protože nese odbornou odpovědnost za výsledek, a z toho odvozuje další závěr.",
+          "Poradce má udržovat co nejosobnější vztah, aby se posílila poslušnost vůči jeho doporučením, a tímto směrem by vedla podporu.",
+          "Poradce má zůstat zcela distancovaný a neprojevovat žádné lidské zaujetí ani podporu, a v tom hledá klíčový znak."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 15,
-        "text": "Které tvrzení nejpřesněji rozlišuje školní poradenské pracoviště a školské poradenské zařízení?",
+        "text": "Který postup je profesně nejvhodnější při sdělování závažných informací rodiči?",
         "options": [
-          "Obě označení znamenají totéž; liší se jen podle velikosti školy.",
-          "ŠPP i ŠPZ jsou části školy, ale ŠPZ má širší specializaci a vyšší počet pracovníků.",
-          "ŠPP je součást školy, zatímco PPP a SPC jsou samostatná školská poradenská zařízení s vlastní odbornou rolí.",
-          "ŠPZ patří do sociální oblasti, zatímco ŠPP do školství."
+          "Předat co nejrychleji úplný odborný výklad, aby rodič ihned pochopil celou závažnost situace, a právě v tom vidí hlavní vysvětlení.",
+          "Začít administrativou a podpisy a teprve po nich vysvětlit, co nález prakticky znamená, a z toho odvozuje další závěr.",
+          "Vyhnout se nepříjemným částem sdělení a soustředit se jen na pozitivní stránky, aby nevznikl odpor.",
+          "Strukturovat sdělení srozumitelně, dávkovat informace a průběžně vytvářet prostor pro otázky i emoční reakci."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 16,
-        "text": "Škola zachytila obtíže a chce systematicky nastavit podporu ještě před odborným doporučením vyšších stupňů. Který nástroj je pro tento okamžik nejpřesnější?",
+        "text": "Který princip je nejpřesnější při volbě komunikačního způsobu s neslyšícím klientem?",
         "options": [
-          "Zpráva ŠPZ, protože škola bez ní nesmí žádnou cílenou podporu plánovat.",
-          "Rozhodnutí OSPOD, protože vzdělávací obtíže dítěte spadají primárně do sociálně-právní ochrany.",
-          "Lékařská zpráva specialisty, protože vzdělávací kroky lze opřít jen o zdravotnický podklad.",
-          "PLPP jako školní nástroj pro popis potřeb, plán podpory a následné vyhodnocení účinku."
+          "Vždy předpokládat, že nejvhodnější je psaná čeština, protože je pro školu nejjednodušší, a právě v tom vidí hlavní vysvětlení.",
+          "Vždy komunikovat výhradně přes doprovázející osobu, aby nevznikla komunikační nejistota, a z toho odvozuje další závěr.",
+          "Předpokládat, že každý neslyšící automaticky preferuje jeden a tentýž znakový systém, a tímto směrem by vedla podporu.",
+          "Nevycházet jen z diagnózy, ale zjišťovat preferovaný a funkční komunikační způsob konkrétního člověka v dané situaci."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 17,
-        "text": "Které vymezení nejlépe vystihuje rozdíl mezi školským a klinickým logopedem?",
+        "text": "Které tvrzení nejpřesněji vystihuje rozdíl mezi PPP a SPC?",
         "options": [
-          "Školský logoped řeší dopad komunikačních obtíží do vzdělávání, klinický logoped působí ve zdravotnictví a řeší léčbu a zdravotnickou diagnostiku.",
-          "Školský logoped je administrativní pracovník školy, zatímco klinický logoped organizuje poradenský proces v ŠPZ.",
-          "Klinický logoped je součást sociálních služeb, kdežto školský logoped patří do zdravotnictví.",
-          "Obě role jsou zcela zaměnitelné, liší se jen tím, zda pracují ve škole nebo ambulanci."
+          "PPP je širší školské poradenské zařízení, zatímco SPC je více vázáno na práci se žáky s konkrétními druhy znevýhodnění.",
+          "PPP vydává jen psychologické zprávy, kdežto SPC jen sociální posudky bez vztahu ke škole, a z toho odvozuje další závěr.",
+          "PPP i SPC mají totožné cílové skupiny i postupy; rozdělení je dnes jen historický přežitek, a tímto směrem by vedla podporu.",
+          "SPC je školní pracoviště v běžné základní škole, zatímco PPP patří výhradně do zdravotnictví, a v tom hledá klíčový znak."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 18,
-        "text": "Škola ví, že rodina je přetížená péčí, dítě často přichází bez pomůcek a domácí režim podporu vzdělávání oslabuje. Jaký krok je nejvhodnější?",
+        "text": "Které tvrzení odpovídá organizaci poradenských služeb ve škole podle vyhlášky č. 72/2005 Sb.?",
         "options": [
-          "Převzít za rodinu organizaci domácí péče, protože škola nese hlavní odpovědnost za všechny oblasti fungování dítěte.",
-          "Propojit školní podporu s citlivým doporučením vhodných navazujících služeb a spoluprací s dalšími aktéry, aniž by škola opustila svou vlastní roli.",
-          "Omezit se jen na klasifikaci, protože rodinný kontext není pro vzdělávání relevantní.",
-          "Předat celou věc zdravotnictví, protože přetížení rodiny je vždy důsledkem zdravotního stavu dítěte."
+          "Poradenské služby ve škole zajišťuje výhradně externí PPP nebo SPC; škola je sama neposkytuje, a právě v tom vidí hlavní vysvětlení.",
+          "V základní a střední škole se na poradenských službách zpravidla podílejí výchovný poradce a školní metodik prevence, případně i další odborní pracovníci.",
+          "Ve škole je za poradenské služby odpovědný jen třídní učitel, pokud má pedagogickou praxi delší než pět let, a tímto směrem by vedla podporu.",
+          "Školní poradenské služby lze poskytovat jen tehdy, když škola zaměstnává současně psychologa i speciálního pedagoga, a v tom hledá klíčový znak."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 19,
-        "text": "Které pravidlo je v poradenské práci nejpřesnější při zacházení s citlivými závěry o dítěti?",
+        "text": "Které rozlišení role výchovného poradce a školního metodika prevence je nejpřesnější?",
         "options": [
-          "Hlavní je rychlost předání informací, takže čím širší okruh pracovníků má přístup k závěrům, tím lépe.",
-          "Citlivé údaje je nejlepší předat celé třídě nepřímo přes obecné poučení, aby se předešlo spekulacím.",
-          "Se závěry je třeba nakládat účelně, přiměřeně a s respektem k důstojnosti dítěte a právům zákonných zástupců.",
-          "Pokud je závěr odborný, souhlas a vysvětlení už nejsou podstatné, protože prioritu má výkon intervence."
+          "Výchovný poradce vede výhradně kázeňská řízení a školní metodik prevence rozhoduje o podpůrných opatřeních vyšších stupňů, a právě v tom vidí hlavní vysvětlení.",
+          "Obě role jsou v praxi zcela totožné a liší se jen názvem podle tradice školy, a z toho odvozuje další závěr.",
+          "Výchovný poradce řeší vzdělávací dráhu, podpůrná opatření a spolupráci se ŠPZ; školní metodik prevence se soustředí na prevenci rizikového chování.",
+          "Školní metodik prevence zajišťuje hlavně diagnostiku speciálních vzdělávacích potřeb a vydává doporučení škole, a v tom hledá klíčový znak."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 20,
-        "text": "Kdy lze nejspíš říci, že poradenský proces v praxi běží kvalitně?",
+        "text": "Které shrnutí vztahu zprávy a doporučení školského poradenského zařízení je nejpřesnější?",
         "options": [
-          "Když je vyplněna veškerá dokumentace, i když se dosud nesledovalo, zda navržená podpora pomáhá.",
-          "Když byl jednou vydán odborný závěr, protože další změny by oslabily autoritu doporučení.",
-          "Když všichni aktéři přijali stejný slovník, i když se nedaří převést závěry do běžné práce školy.",
-          "Když se závěry promítnou do podpory a ta se průběžně sleduje a upravuje podle reálného účinku na fungování žáka."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 21,
-        "text": "Které tvrzení nejpřesněji odpovídá logice zahájení poradenské služby v ŠPZ?",
-        "options": [
-          "Běžná služba se zahajuje bez zbytečného odkladu, nejpozději do zákonného limitu, zatímco krizová intervence se poskytuje bezodkladně.",
-          "Každá poradenská služba se může odložit až na konec pololetí, pokud škola dítě mezitím sleduje.",
-          "Krizová intervence má stejný časový režim jako běžné vyšetření, liší se jen druhem dokumentace.",
-          "ŠPZ zahajuje službu teprve po zpracování IVP, protože ten je podmínkou vstupu do procesu."
+          "Zpráva shrnuje odborná zjištění a jejich odůvodnění, zatímco doporučení je převádí do konkrétní vzdělávací podpory.",
+          "Zpráva je interní poznámka školy a doporučení slouží výhradně orgánům sociálně-právní ochrany, a z toho odvozuje další závěr.",
+          "Oba dokumenty mají stejnou funkci a liší se pouze rozsahem textu a grafickou podobou, a tímto směrem by vedla podporu.",
+          "Doporučení popisuje pouze anamnézu, kdežto zpráva nastavuje organizaci výuky a hodnocení ve škole, a v tom hledá klíčový znak."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 22,
-        "text": "Které tvrzení nejpřesněji vystihuje vznik IVP v návaznosti na doporučení ŠPZ?",
+        "number": 21,
+        "text": "Které vymezení IVP je nejpřesnější?",
         "options": [
-          "Stačí samotné doporučení ŠPZ; škola IVP zpracuje automaticky bez další součinnosti žáka nebo zákonného zástupce.",
-          "IVP vzniká jako školní dokument v návaznosti na doporučení a další procesní podmínky, nejde o automatický výstup ŠPZ.",
-          "IVP je vlastně alternativní název pro doporučení, takže oba dokumenty mají stejnou funkci.",
-          "IVP zpracovává výhradně PPP nebo SPC a škola jej pouze archivuje."
+          "Jde o odbornou zprávu PPP nebo SPC, kterou škola pouze archivuje bez dalšího rozpracování, a právě v tom vidí hlavní vysvětlení.",
+          "Jde o povinný dokument každého žáka, který jednou navštívil školní poradenské pracoviště, a z toho odvozuje další závěr.",
+          "Jde o zdravotnický plán léčby, který škola nesmí nijak vztáhnout ke své výuce, a tímto směrem by vedla podporu.",
+          "Jde o školní dokument, který konkretizuje podmínky vzdělávání konkrétního žáka na základě doporučení a jeho potřeb."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 22,
+        "text": "Co nejpřesněji vystihuje PLPP?",
+        "options": [
+          "Je to odborný výstup ŠPZ, kterým se škole přidělují vyšší stupně podpůrných opatření, a právě v tom vidí hlavní vysvětlení.",
+          "Je to školní plán pedagogické podpory používaný zejména při podpůrných opatřeních prvního stupně a při průběžném vyhodnocování podpory.",
+          "Je to souhrnná sociální zpráva pro OSPOD o rodinné situaci žáka, a tímto směrem by vedla podporu.",
+          "Je to závěrečná zpráva z pobytu ve středisku výchovné péče, a v tom hledá klíčový znak."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 23,
-        "text": "Rodina malého dítěte se zdravotním postižením potřebuje podporu v domácím prostředí, orientaci v možnostech péče a provázení v raném období. Která služba je typicky nejpřesnějším partnerem?",
+        "text": "Které tvrzení odpovídá § 16 školského zákona?",
         "options": [
-          "Středisko výchovné péče, protože řeší každou dlouhodobější rodinnou zátěž spojenou s dítětem.",
-          "Pečovatelská služba, protože ta je základní vstupní službou pro všechny rodiny s malými dětmi se zdravotním postižením.",
-          "Raná péče, protože propojuje podporu rodiny, orientaci v potřebách dítěte a navazující služby v raném období.",
-          "PPP, protože její hlavní rolí je dlouhodobé domácí provázení rodin od narození dítěte."
+          "Podpůrná opatření jsou bezplatná jen tehdy, pokud je škola schopna je zajistit z vlastních rezerv, a právě v tom vidí hlavní vysvětlení.",
+          "Na bezplatná podpůrná opatření mají nárok pouze žáci se zdravotním postižením, nikoli s jinou potřebou podpory, a z toho odvozuje další závěr.",
+          "Děti, žáci a studenti se speciálními vzdělávacími potřebami mají právo na bezplatné poskytování podpůrných opatření školou a školským zařízením.",
+          "Podpůrná opatření jsou nároková pouze tehdy, pokud je žák vzděláván ve škole zřízené podle § 16 odst. 9, a v tom hledá klíčový znak."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 24,
-        "text": "Kdy je zapojení OSPOD vůči škole a ŠPZ nejlépe odůvodněné?",
+        "text": "Které vymezení dítěte, žáka nebo studenta se speciálními vzdělávacími potřebami odpovídá školskému zákonu?",
         "options": [
-          "Kdykoli se objeví specifická porucha učení, protože OSPOD koordinuje všechny vzdělávací podpory.",
-          "Jakmile dítě potřebuje IVP, protože OSPOD schvaluje většinu školních dokumentů.",
-          "Když škola potřebuje metodickou podporu k práci s PAS nebo sluchovým postižením.",
-          "Když se vedle vzdělávacích potíží objevuje i ohrožení dítěte nebo závažný problém v péči a ochraně jeho práv."
+          "Jde výhradně o osobu s lékařsky potvrzeným zdravotním postižením bez ohledu na vzdělávací dopad, a právě v tom vidí hlavní vysvětlení.",
+          "Jde o osobu, která má podprůměrný prospěch alespoň ve třech povinných předmětech, a z toho odvozuje další závěr.",
+          "Jde o osobu, kterou škola dočasně označí za problémovou z výchovných důvodů, a tímto směrem by vedla podporu.",
+          "Jde o osobu, která k naplnění vzdělávacích možností nebo k uplatnění práv na rovnoprávném základě potřebuje podpůrná opatření."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 25,
-        "text": "Které vymezení nejlépe rozlišuje zdravotnickou léčbu a školskou podporu?",
+        "text": "Které tvrzení o lhůtě pro vydání zprávy a doporučení je podle vyhlášky č. 27/2016 Sb. správné?",
         "options": [
-          "Zdravotnictví řeší léčbu a zdravotní diagnostiku, zatímco škola a ŠPZ pracují s dopadem obtíže na vzdělávání a participaci ve škole.",
-          "Jakmile má dítě diagnózu, přechází veškerá odpovědnost ze školy na zdravotnictví.",
-          "Škola může léčbu nahradit, pokud má k dispozici doporučení ŠPZ a souhlas rodičů.",
-          "Zdravotnictví vstupuje jen u tělesného postižení, nikoli u komunikace, PAS nebo vývoje."
+          "Zpráva i doporučení se vydávají vždy až po skončení školního roku, aby bylo možné vyhodnotit dlouhodobý efekt podpory, a právě v tom vidí hlavní vysvětlení.",
+          "Lhůta je jednotně 30 dnů od podání žádosti bez ohledu na průběh posuzování a další podklady, a z toho odvozuje další závěr.",
+          "Vyhláška stanoví pouze tříměsíční lhůtu pro zahájení služby, nikoli pro vydání zprávy a doporučení, a tímto směrem by vedla podporu.",
+          "Zpráva a doporučení se vydávají do 30 dnů ode dne ukončení posuzování speciálních vzdělávacích potřeb, nejpozději však do 3 měsíců od přijetí žádosti."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
         "number": 26,
-        "text": "Co je v hard modu nejpřesnějším poradenským principem při volbě komunikační podpory u neslyšící nebo hluchoslepé osoby?",
+        "text": "Které tvrzení o krizové poradenské intervenci odpovídá vyhlášce č. 72/2005 Sb.?",
         "options": [
-          "Vždy trvat na jediné mluvené formě, protože více komunikačních cest by zvyšovalo závislost na okolí.",
-          "Volit takový komunikační systém nebo kombinaci systémů, která je pro konkrétní osobu funkčně dostupná a podporuje dorozumění i participaci.",
-          "Upřednostnit psaný text bez ohledu na zrakový, jazykový a situační profil uživatele.",
-          "Odložit komunikační podporu, dokud nebude dokončena kompletní zdravotnická diagnostika."
+          "Krizovou intervenci lze poskytnout až po standardním zařazení žádosti do běžné tříměsíční lhůty.",
+          "Krizová intervence se poskytuje jen tehdy, pokud před ní proběhlo komplexní psychologické vyšetření.",
+          "Krizová poradenská intervence v naléhavých ohrožujících situacích se poskytuje bezprostředně po žádosti.",
+          "Krizová intervence je vyhrazena pouze zdravotnictví a školský poradenský systém ji neposkytuje."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
         "number": 27,
-        "text": "Které tvrzení je nejpřesnější o dokumentaci školy a ŠPZ?",
+        "text": "Které tvrzení o zpracování IVP je podle vyhlášky č. 27/2016 Sb. správné?",
         "options": [
-          "Škola vede jen klasifikaci a absenci; veškerá poradenská dokumentace patří výlučně ŠPZ.",
-          "Škola i ŠPZ vedou shodné dokumenty, aby jejich závěry bylo možné kdykoli zaměnit.",
-          "Dokumentace se liší podle role subjektu: škola vede své podpůrné a poradenské záznamy, ŠPZ své odborné výstupy a procesní dokumentaci.",
-          "Jediným závazným dokumentem v systému je IVP, ostatní mají jen informativní povahu."
+          "IVP se zpracovává automaticky do 1 měsíce od první návštěvy školního poradenského pracoviště, a právě v tom vidí hlavní vysvětlení.",
+          "IVP se zpracovává nejpozději do 3 měsíců od vydání zprávy, i když škola neobdržela žádost, a z toho odvozuje další závěr.",
+          "IVP je zpracován bez zbytečného odkladu, nejpozději do 1 měsíce ode dne, kdy škola obdržela doporučení a žádost zletilého žáka nebo zákonného zástupce.",
+          "IVP se může zpracovat až po pololetním hodnocení, aby škola měla dost podkladů z výuky, a v tom hledá klíčový znak."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 28,
-        "text": "Který dokument nejlépe vystihuje celkový rámec poradenské práce školy, nikoli plán podpory jednoho konkrétního žáka?",
+        "text": "Které tvrzení odpovídá poučení u zprávy nebo doporučení školského poradenského zařízení?",
         "options": [
-          "Doporučení ŠPZ pro konkrétního žáka, protože obsahuje i obecné priority školy.",
-          "IVP, protože z něho vždy vyplývá celková koncepce školního poradenství.",
-          "Zpráva z vyšetření, protože shrnuje odborný pohled na potíže žáka ve vzdělávání.",
-          "Program poradenských služeb ve škole, případně v návaznosti na další školní preventivní dokumenty."
+          "Zpráva a doporučení jsou konečné a po převzetí již nepodléhají žádné revizi ani přezkumu.",
+          "Zletilý žák nebo zákonný zástupce může ve stanovené lhůtě požádat o revizi dokumentu.",
+          "O revizi může žádat pouze ředitel školy, protože jde o dokument sloužící výhradně škole.",
+          "Revize je možná jen tehdy, když s ní předem písemně souhlasí pracovník, který dokument vydal."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 29,
-        "text": "Rodina hledá službu, která může pomoci dítěti s postižením při sebeobsluze, přesunech a zapojení do běžných činností i mimo školu. Které řešení je typicky nejpřesnější?",
+        "text": "Které tvrzení o poskytování poradenských služeb odpovídá vyhlášce č. 72/2005 Sb.?",
         "options": [
-          "Osobní asistence, pokud je potřeba podpora při běžných úkonech a participaci v přirozeném prostředí.",
-          "PPP, protože ta zajišťuje praktickou pomoc v domácnosti a doprovod při běžných činnostech.",
-          "Školní poradenské pracoviště, protože školní pracovníci mají převzít i sociální pomoc mimo vzdělávání.",
-          "Klinická logopedie, protože omezená participace bývá nejčastěji důsledkem řečové vady."
-        ],
-        "correct": 0,
-        "correctLetter": "A"
-      },
-      {
-        "number": 30,
-        "text": "Které rozlišení nejlépe odpovídá vztahu vyhlášky 27/2016 Sb. a vyhlášky 72/2005 Sb. v přijímačkovém minimum?",
-        "options": [
-          "První upravuje jen sociální služby a druhá pouze zdravotnictví.",
-          "Jedna konkretizuje vzdělávání a podpůrná opatření žáků se SVP a nadaných, druhá poradenské služby a poradenský proces ve školách a ŠPZ.",
-          "Obě řeší totéž beze zbytku, liší se jen rokem vydání.",
-          "Vyhláška 72/2005 upravuje IVP a klasifikaci, zatímco 27/2016 se týká pouze preventivních programů školy."
+          "Podrobné poučení není nutné, pokud jde o odbornou službu poskytovanou pedagogickým pracovníkem, a právě v tom vidí hlavní vysvětlení.",
+          "Škola nebo školské poradenské zařízení musí předem srozumitelně informovat o povaze, rozsahu, přínosech, možných důsledcích i právech spojených se službou.",
+          "O rozsahu a důsledcích služby se informuje až po jejím ukončení, aby nebyl ovlivněn průběh vyšetření, a tímto směrem by vedla podporu.",
+          "Poučení se týká pouze zdravotnických výkonů; školské poradenské služby tuto povinnost nemají, a v tom hledá klíčový znak."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
-        "number": 31,
-        "text": "Student má mimořádně kvalitní ústní analýzu textu, ale ve psaném výkonu je neorganizovaný, pomalý a výstup neodpovídá tomu, co při rozhovoru skutečně ví. Jaký závěr je nejpřesnější?",
+        "number": 30,
+        "text": "Které rozlišení sociálního poradenství a speciálněpedagogického poradenství je nejpřesnější?",
         "options": [
-          "Rozhodující je jen písemný výstup, protože ten nejlépe odráží skutečnou úroveň myšlení.",
-          "Rozhodující je jen nadání, protože silný potenciál vylučuje potřebu podpory formy výkonu.",
-          "Je třeba oddělit obsah vědění od bariéry ve formě výkonu a uvažovat současně o rozvoji nadání i o cílené podpoře obtížové oblasti.",
-          "Nejpřesnější je snížit nároky ve všech oblastech, aby se předešlo frustraci z nevyrovnaného profilu."
-        ],
-        "correct": 2,
-        "correctLetter": "C"
-      },
-      {
-        "number": 32,
-        "text": "Rodič i učitel popisují problém dítěte odlišně a oba chtějí „rychlé řešení“. Jaký úvod rozhovoru je nejprofesionálnější?",
-        "options": [
-          "Vybrat hned jednu verzi příběhu, aby se proces nezdržoval rozdílnými pohledy.",
-          "Nechat konfliktní popis bez struktury plynout, protože jakékoli shrnutí by znamenalo hodnotící zásah.",
-          "Zaměřit se hned na konkrétní doporučení bez mapování toho, jak problém vzniká a kde se projevuje.",
-          "Nejprve strukturovaně vyjasnit, v čem se pohledy liší, v čem se potkávají a jaká je skutečná poradenská zakázka."
+          "Sociální poradenství řeší výhradně diagnózu a speciálněpedagogické poradenství hlavně dávky a příspěvky, a právě v tom vidí hlavní vysvětlení.",
+          "Oba typy poradenství mají stejný obsah; liší se jen názvem podle resortu, který službu zřizuje, a z toho odvozuje další závěr.",
+          "Speciálněpedagogické poradenství se omezuje jen na školní prospěch, sociální poradenství jen na zdravotnické výkony, a tímto směrem by vedla podporu.",
+          "Sociální poradenství orientuje v sociální situaci, službách a nárocích, zatímco speciálněpedagogické poradenství převádí obtíže do podpory učení, komunikace a fungování."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
-        "number": 33,
-        "text": "Žák při přesunu do jídelny, v hluku a při nečekané změně reaguje útěkem nebo odmítáním. V klidném režimu spolupracuje. Který závěr je nejpřesnější?",
+        "number": 31,
+        "text": "Které tvrzení je nejpřesnější pro vztah zdravotnického nálezu a vzdělávací podpory?",
         "options": [
-          "Je třeba uvažovat o přetížení podněty a potřebě předvídatelnosti; chování nelze číst jen jako prostou neposlušnost.",
-          "Jde hlavně o školní nekázeň, protože pravidla musí platit stejně bez ohledu na kontext situace.",
-          "Jádro je v nedostatku slovní zásoby, protože každá krizová reakce ve škole je především komunikační deficit.",
-          "Nejpřesnější je okamžitě zcela zrušit společné stravování bez hledání přiměřené podpory."
+          "Jakmile existuje lékařský nález, škola už nemusí dále zvažovat funkční dopad ani organizaci podpory, a právě v tom vidí hlavní vysvětlení.",
+          "Zdravotnický nález je pro školu nepoužitelný, protože vzdělávání a zdravotnictví se nemají propojovat, a z toho odvozuje další závěr.",
+          "Podobu vzdělávací podpory smí určovat výhradně ošetřující lékař bez účasti školy a poradenského systému, a tímto směrem by vedla podporu.",
+          "Zdravotnický nález sám neurčuje podobu školní podpory; je třeba jej převést do konkrétních vzdělávacích a funkčních důsledků."
         ],
-        "correct": 0,
-        "correctLetter": "A"
+        "correct": 3,
+        "correctLetter": "D"
       },
       {
-        "number": 34,
-        "text": "Škola zavedla zvětšené materiály, úpravu kontrastu a vhodnější pracovní místo. Co nejlépe ukáže, zda šlo o smysluplnou podporu?",
+        "number": 32,
+        "text": "Které vymezení role SPC odpovídá vyhlášce č. 72/2005 Sb. nejpřesněji?",
         "options": [
-          "Samotný fakt, že opatření působí odborně a jsou doporučována v katalogu podpůrných opatření.",
-          "Sledování, zda se změnila přístupnost úkolů, únava, tempo práce a reálné zapojení žáka při zachování nároků na obsah.",
-          "To, že žák přestal upozorňovat na potíže, protože adaptace na bariéru je vždy známkou úspěchu.",
-          "Pouze známka z jedné písemky, protože ta nejlépe shrnuje celkový efekt opatření."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 35,
-        "text": "Které vymezení nejlépe odpovídá institucionální odpovědnosti v systému podpory?",
-        "options": [
-          "Jakmile vstoupí ŠPZ, škola už jen technicky plní cizí pokyny bez vlastní odborné role.",
-          "Po vydání doporučení přechází hlavní odpovědnost za podporu výlučně na rodinu.",
-          "Odpovědnost je sdílená: škola, ŠPZ a rodina mají odlišné role, které na sebe navazují a nelze je zaměňovat.",
-          "Nejspolehlivější je, když celý proces nese jedna instituce, aby se předešlo rozdílným pohledům."
+          "SPC je určeno výhradně pro žáky se specifickými poruchami učení a chování bez dalších znevýhodnění, a právě v tom vidí hlavní vysvětlení.",
+          "SPC je zařízení pro všechny žáky bez rozdílu a nespecializuje se na žádný typ znevýhodnění, a z toho odvozuje další závěr.",
+          "SPC poskytuje poradenské služby zejména žákům s mentálním, tělesným, zrakovým nebo sluchovým postižením, vadami řeči, vícečetným postižením nebo autismem.",
+          "SPC je určeno pouze pro mimořádně nadané žáky a jejich kariérové poradenství, a v tom hledá klíčový znak."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 36,
-        "text": "Žák s mimořádným nadáním je ve výuce dlouhodobě neaktivní, protože většinu úloh zvládá okamžitě, ale při hlubší práci ožívá. Co je nejpřesnější pedagogicko-poradenský závěr?",
+        "number": 33,
+        "text": "Které tvrzení nejlépe odpovídá současnému ne-deficitnímu pohledu na podporu?",
         "options": [
-          "Nejvhodnější je ponechat výuku beze změny, aby si žák zvykl na tempo třídy a nesnažil se odlišovat.",
-          "Je vhodné snížit náročnost učiva, aby se předešlo frustraci z čekání na ostatní.",
-          "Klíčové je hlavně řešit kázeňský rozměr pasivity, protože schopnější žák má být pro třídu vzorem v poslušnosti.",
-          "Je třeba promyslet obohacení, diferenciaci nebo jinou formu podpory potenciálu, neplést nudu s nedostatkem schopností."
+          "Jakmile známe diagnózu, můžeme z ní bez dalšího odvodit přesnou školní podporu i očekávaný výkon, a právě v tom vidí hlavní vysvětlení.",
+          "Ne-deficitní přístup znamená, že diagnózy už nejsou pro odbornou práci vůbec důležité, a z toho odvozuje další závěr.",
+          "Diagnóza sama ještě nevysvětluje vzdělávací situaci; rozhoduje i prostředí, bariéry a konkrétní podoba podpory.",
+          "Současné pojetí podpory se má vyhýbat jakémukoli hodnocení funkčního dopadu, aby nebylo stigmatizující."
+        ],
+        "correct": 2,
+        "correctLetter": "C"
+      },
+      {
+        "number": 34,
+        "text": "Které tvrzení nejpřesněji vystihuje mezioborovost speciální pedagogiky?",
+        "options": [
+          "Je jen souhrnným názvem pro přebírání lékařských závěrů do školy bez vlastního oborového rámce, a právě v tom vidí hlavní vysvětlení.",
+          "Její mezioborovost znamená, že nemá vlastní předmět ani odborné metody a role speciálního pedagoga mizí, a z toho odvozuje další závěr.",
+          "Jejím hlavním cílem je sladit administrativní požadavky různých resortů, nikoli podporu člověka, a tímto směrem by vedla podporu.",
+          "Čerpá z pedagogiky, psychologie, medicíny, sociální oblasti i práva, ale zachovává vlastní fokus na vzdělávání, podporu a participaci."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 35,
+        "text": "Který závěr je nejpřesnější pro speciálněpedagogické uvažování o stejné diagnóze u dvou žáků?",
+        "options": [
+          "Stejná diagnóza je dostatečný podklad pro stejný plán podpory bez dalšího sledování průběhu práce, a právě v tom vidí hlavní vysvětlení.",
+          "Stejná diagnóza ještě neznamená stejnou podporu, protože rozhoduje i funkční profil a podmínky, ve kterých žák pracuje.",
+          "Pokud mají žáci stejnou diagnózu, je nevhodné sledovat individuální rozdíly, aby byla podpora spravedlivá, a tímto směrem by vedla podporu.",
+          "Rozdíly mezi dvěma žáky se stejnou diagnózou jsou jen motivační a nemají mít vliv na pedagogické závěry, a v tom hledá klíčový znak."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 36,
+        "text": "Učitel říká: „Máme doporučení, takže už není třeba nic dalšího rozpracovávat.“ Která korekce je nejpřesnější?",
+        "options": [
+          "Doporučení má význam hlavně pro archivaci a při běžné výuce už na něm nezáleží, a právě v tom vidí hlavní vysvětlení.",
+          "Doporučení nahrazuje všechny školní dokumenty i individuální pedagogické rozhodování během roku, a z toho odvozuje další závěr.",
+          "Doporučení je závazné jen pro rodiče; škola je může sledovat spíše informativně, a tímto směrem by vedla podporu.",
+          "Doporučení samo nenahrazuje každodenní školní realizaci podpory v organizaci, metodách, zadávání ani hodnocení."
         ],
         "correct": 3,
         "correctLetter": "D"
       },
       {
         "number": 37,
-        "text": "Který princip je nejpřesnější při podpoře osoby s hluchoslepotou?",
+        "text": "Žák při individuálním hovoru rozumí dobře, ale při výkladu z větší vzdálenosti a v hluku ztrácí obsah. Jaký závěr je nejpřesnější?",
         "options": [
-          "Podpora musí vycházet z individuálně dostupných komunikačních a orientačních kanálů, nikoli z představy jedné univerzální formy.",
-          "Nejlepší je vždy mluvená řeč doplněná běžným tiskem, protože zachovává standardní vzdělávací režim.",
-          "Klíčové je omezit počet podnětů na minimum a rezignovat na aktivní participaci osoby.",
-          "Rozhodující je vyčkat na jednotné doporučení zdravotnictví a do té doby podporu nebudovat."
+          "Nejpřesnější je uzavřít věc jako oslabení obecných rozumových schopností, protože se potíž objevuje ve více předmětech.",
+          "Nejdůležitější je rozšířit slovní zásobu, protože problém se projevuje během vyučování v jazyce, a z toho odvozuje další závěr.",
+          "Nejpřesnější je převést žáka na trvale individuální práci, aby se odstranily všechny situační vlivy.",
+          "Nejprve je třeba upravit podmínky přístupu k mluvené informaci a teprve poté posuzovat skutečný rozsah obtíží."
+        ],
+        "correct": 3,
+        "correctLetter": "D"
+      },
+      {
+        "number": 38,
+        "text": "Žák při práci s textem výrazně zpomaluje, vadí mu oslnění a drobný tisk, ale při ústním zkoušení působí jistě. Který závěr je nejpřesnější?",
+        "options": [
+          "Je třeba řešit přístup k vizuální informaci a formát materiálů, ne automaticky uzavírat problém jako slabé porozumění učivu.",
+          "Nejpřesnější je soustředit se hlavně na reedukaci čtenářské techniky, protože obtíž se projevuje u textu, a z toho odvozuje další závěr.",
+          "Jádro obtíží je nejspíš v nízké vytrvalosti, protože ústní výkon bývá pro žáky přirozeně snazší, a tímto směrem by vedla podporu.",
+          "Nejpřesnější je nahradit ústní zkoušení písemným, aby bylo možné lépe odlišit výkon od dojmu, a v tom hledá klíčový znak."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 38,
-        "text": "Které tvrzení nejlépe odpovídá vztahu diagnózy a speciálních vzdělávacích potřeb?",
-        "options": [
-          "Diagnóza automaticky a bez dalšího určuje konkrétní podobu školní podpory ve všech situacích.",
-          "Diagnóza může být důležitým vodítkem, ale pro školu je rozhodující, jak se obtíž promítá do vzdělávání a jakou podporu žák skutečně potřebuje.",
-          "Speciální vzdělávací potřeby lze posuzovat zcela bez ohledu na funkční dopad obtíže nebo kontext výuky.",
-          "SVP jsou jen jiný název pro zdravotní stav dítěte."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
         "number": 39,
-        "text": "Žák je dlouhodobě neúspěšný, vyhýbá se zadání, provokuje spolužáky a ve třídě usiluje o pozornost. Který závěr je nejpřesnější?",
+        "text": "Žák má těžce omezenou srozumitelnost řeči, ale zřetelný komunikační záměr. Který postup je nejpřesnější?",
         "options": [
-          "Nejpřesnější je chápat problém výhradně jako poruchu chování bez vztahu ke školnímu selhávání.",
-          "Nejpřesnější je vyčkat, zda obtíže samy nepřejdou s věkem, aby se dítě zbytečně neetiketizovalo.",
-          "Je třeba zvažovat propojení školního neúspěchu, vztahové dynamiky a možné funkce chování; podpora nemá být jen sankční.",
-          "Nejpřesnější je okamžitě převést žáka mimo běžnou třídu bez pokusu o analýzu situace."
+          "Trvat výhradně na mluvené řeči, aby se dítě nenaučilo na pomůckách záviset, a právě v tom vidí hlavní vysvětlení.",
+          "Odložit podporu komunikace do doby, než bude jisté, že běžná řeč už nemá šanci se rozvinout.",
+          "Zavést jinou funkční cestu sdělení, například AAK, místo čekání, až bude mluvená řeč dostatečně „čistá“.",
+          "Zúžit komunikaci jen na terapeutickou místnost, aby se žák v běžném prostředí nepřetěžoval, a v tom hledá klíčový znak."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 40,
-        "text": "Co nejlépe vystihuje roli školy po obdržení odborného doporučení?",
+        "text": "Žák reaguje výbuchem hlavně při nejasném zadání a veřejné opravě, ale v předvídatelném režimu a s neveřejnou zpětnou vazbou pracuje výrazně lépe. Který závěr je nejpřesnější?",
         "options": [
-          "Doporučení se pouze archivuje, protože odborná část procesu už byla ukončena mimo školu.",
-          "Škola nemá doporučení interpretovat ani převádět do praxe, aby nezasahovala do odborné kompetence ŠPZ.",
-          "Škola smí realizovat jen to, co je popsáno doslovně po jednotlivých větách, bez vlastního pedagogického uvažování.",
-          "Škola má doporučení převést do reálné organizace vzdělávání, sledovat účinek podpory a v případě potřeby komunikovat další kroky."
+          "Jádro obtíží je hlavně v nedostatku učiva, protože problém se projevuje při plnění školních úkolů.",
+          "Nejpřesnější je zpřísnit sankční režim, protože veřejná oprava má posílit respekt k autoritě, a z toho odvozuje další závěr.",
+          "Chování je třeba číst v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
+          "Jádro obtíží leží hlavně v tělesném oslabení, protože přetížení ve třídě bývá vždy somatického původu."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 2,
+        "correctLetter": "C"
       },
       {
         "number": 41,
-        "text": "Student s vysokým zájmem o fyziku podává špičkové výkony v úzkém tématu, ale v běžné třídní komunikaci je doslovný, nečte sociální narážky, při skupinové práci se přetíží a výbuchy přicházejí hlavně při změně zadání. Který postup je nejpřesnější?",
+        "text": "Žák má nestabilní domácí podmínky a dlouhodobě kolísá ve výkonu. Který závěr je nejpřesnější?",
         "options": [
-          "Současně uvažovat o vysokém potenciálu i o podpoře v oblasti sociálního porozumění a předvídatelnosti; nejde ani o čistou kázeň, ani o pouhé „rozmazlení talentu“.",
-          "Upřednostnit jen rozvoj nadání a nevšímat si adaptačních potíží, protože ty u mimořádně chytrých studentů časem samy odezní.",
-          "Řešit situaci výhradně sankčně, aby se student naučil fungovat v běžné sociální normě bez úprav prostředí.",
-          "Převést studenta z běžné třídy bez dalšího posouzení, protože talent a sociální obtíže se v jednom vzdělávacím prostředí neslučují."
+          "Podpůrná opatření se nevážou jen ke zdravotnímu stavu; mohou reagovat i na kulturní prostředí nebo jiné životní podmínky žáka.",
+          "Bez zdravotní diagnózy nelze ve školství o podpůrných opatřeních vůbec uvažovat, a z toho odvozuje další závěr.",
+          "Kolísání výkonu v takové situaci je čistě kázeňská otázka a nepatří do poradenského rámce, a tímto směrem by vedla podporu.",
+          "Škola má v podobné situaci sledovat jen prospěch, protože rodinné podmínky do podpory nepatří, a v tom hledá klíčový znak."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 42,
-        "text": "U žákyně se po přechodu na druhý stupeň zhoršil písemný výkon. Učitelé zvažují širší závěr o schopnostech, ale současně se ukazuje potíž s drobným tiskem, orientací v husté stránce a únavou při vizuální práci. Který poradenský závěr je nejpřesnější?",
+        "text": "Žák s tělesným postižením pracuje pomalu rukou, ale v rozhovoru přesně chápe souvislosti a učivo. Který závěr je nejpřesnější?",
         "options": [
-          "Nejdřív je vhodné upravit klasifikaci, protože známka nejlépe vyřeší napětí mezi výkonem a nároky.",
-          "Dříve než se uzavře závěr o schopnostech, je nutné prověřit dostupnost vizuální informace a případně promítnout zjištění do podpory a hodnocení.",
-          "Situace ukazuje hlavně na nízkou pracovní morálku, protože ústní výkon bývá u podobných žáků často zkreslen.",
-          "Jde především o problém rodiny, protože potíž se projevila až při změně školy."
-        ],
-        "correct": 1,
-        "correctLetter": "B"
-      },
-      {
-        "number": 43,
-        "text": "Rodina dítěte s postižením je dlouhodobě přetížená péčí, škola vidí dopad do přípravy a docházky, ale samotné vzdělávací podpory ve třídě se daří. Který postup je nejpřesnější?",
-        "options": [
-          "Škola má převzít i sociální případové vedení rodiny, protože jako hlavní instituce musí vyřešit všechny oblasti.",
-          "Nejlepší je téma rodinné zátěže neotvírat, aby škola nezasahovala do soukromí.",
-          "Zachovat školní podporu ve vlastní kompetenci a současně citlivě propojit rodinu s vhodnou sociální pomocí nebo poradenstvím.",
-          "Předat celou věc ŠPZ a pozastavit školní podporu, dokud nebude situace v rodině plně stabilní."
+          "Pomalé pracovní tempo u žáka s tělesným postižením obvykle ukazuje na globálně nižší úroveň myšlení, a právě v tom vidí hlavní vysvětlení.",
+          "Nejpřesnější je převést žáka na jednodušší kurikulum, protože rychlost práce je rozhodující ukazatel schopností, a z toho odvozuje další závěr.",
+          "Je třeba oddělit motorické omezení od závěrů o kognitivní úrovni a upravit způsob výstupu, ne automaticky snižovat obsahové nároky.",
+          "Tělesné postižení je ve škole hlavně zdravotnická otázka, takže pedagogické úpravy výstupu nejsou podstatné, a v tom hledá klíčový znak."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
-        "number": 44,
-        "text": "Žák při individuálním hovoru reaguje dobře, ale při frontálním výkladu z větší vzdálenosti, v ruchu třídy a při rychlém střídání mluvčích ztrácí obsah. Které řešení je nejpřesnější?",
+        "number": 43,
+        "text": "Dítě vyslovuje několik hlásek nepřesně, ale dobře rozumí, reaguje v běžném tempu komunikace a ve třídě se neztrácí v obsahu. Který závěr je nejpřesnější?",
         "options": [
-          "Rozhodující je jen rozšíření slovní zásoby, protože problém se projevuje v jazyce.",
-          "Nejpřesnější je dlouhodobě nahradit všechny skupinové aktivity individuální prací.",
-          "Stačí zvýšit počet písemných testů, protože ty eliminují komunikační zatížení.",
-          "Zaměřit podporu na komunikační podmínky výuky a až podle jejich úpravy posuzovat skutečný vzdělávací výkon."
-        ],
-        "correct": 3,
-        "correctLetter": "D"
-      },
-      {
-        "number": 45,
-        "text": "Škola několik týdnů cíleně podporovala žáka, ale efekt je omezený a ukazuje se potřeba odbornějšího posouzení. Které shrnutí procesu je nejpřesnější?",
-        "options": [
-          "Školní podpora a její vyhodnocení mohou být podkladem pro další krok k ŠPZ; dokumenty a role jednotlivých aktérů se v tomto procesu nesmějí směšovat.",
-          "Jediným správným krokem je okamžitě ukončit školní podporu, protože bez doporučení ŠPZ je neplatná.",
-          "Pokud škola jednou použila PLPP, už nesmí žádné další kroky měnit ani doplňovat.",
-          "Po odeslání do ŠPZ už škola nemá důvod sledovat průběžně fungování žáka."
+          "Těžiště obtíže je spíše v produkci řeči, nikoli v širším přístupu k obsahu sdělení nebo v celkové intelektové úrovni.",
+          "Jde nejspíše o mentální postižení, protože chyba ve výslovnosti bývá projevem celkově nižších schopností.",
+          "Jde nejspíše o sluchové postižení, protože nepřesná výslovnost vždy znamená ztrátu porozumění řeči, a tímto směrem by vedla podporu.",
+          "Jde nejspíše o etopedický problém, protože nápadná řeč bývá důsledkem nedostatečné sebekázně, a v tom hledá klíčový znak."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
-        "number": 46,
-        "text": "Dítě s omezenou verbální řečí používá několik znaků a obrázků, ale dospělí často mluví za něj, aby „to bylo rychlejší“. Co je v poradenské logice nejpřesnější?",
+        "number": 44,
+        "text": "Rodina potřebuje hlavně orientaci v síti sociálních služeb, příspěvcích a návazných možnostech podpory mimo školu. Který rámec je nejpřesnější?",
         "options": [
-          "Je vhodné ponechat komunikaci dospělým, protože tím dítě získá jistotu a předejde se chybám.",
-          "Podpora má směřovat k tomu, aby dítě mělo vlastní funkční prostředky vyjádření a nebylo trvale odkázáno na mluvení druhých za sebe.",
-          "AAK je vhodná jen jako krátkodobý mezikrok, který je nutné rychle odstranit, aby nevznikla závislost.",
-          "Nejvhodnější je soustředit se jen na nácvik jednotlivých hlásek bez budování alternativní komunikace."
+          "Těžiště podpory se zde posouvá do sociálního poradenství a orientace v návazné síti služeb.",
+          "Jde především o tvorbu IVP, protože jakákoli mimoškolní pomoc musí vycházet z dokumentu školy.",
+          "Jde především o klinickou diagnostiku, protože dávky a služby se řeší až po psychologickém závěru.",
+          "Jde výhradně o školní metodickou podporu učitelům, protože rodině se tento typ informací běžně neposkytuje."
+        ],
+        "correct": 0,
+        "correctLetter": "A"
+      },
+      {
+        "number": 45,
+        "text": "Které vymezení střediska výchovné péče (SVP) je nejpřesnější?",
+        "options": [
+          "Jde o pracoviště, které vydává doporučení ke všem podpůrným opatřením místo školského poradenského zařízení, a právě v tom vidí hlavní vysvětlení.",
+          "Jde o školské zařízení zaměřené na preventivně výchovnou péči a práci s problémy v chování, nikoli o náhradu PPP nebo SPC.",
+          "Jde o sociální službu určenou výhradně pro dospělé osoby v pobytové péči, a tímto směrem by vedla podporu.",
+          "Jde o zdravotnické zařízení pro diagnostiku smyslových a tělesných postižení ve škole, a v tom hledá klíčový znak."
+        ],
+        "correct": 1,
+        "correctLetter": "B"
+      },
+      {
+        "number": 46,
+        "text": "Který dokument je v příloze vyhlášky č. 27/2016 Sb. označen formulací „Pouze pro žáka nebo zákonného zástupce“?",
+        "options": [
+          "Individuální vzdělávací plán školy.",
+          "Zpráva školského poradenského zařízení.",
+          "Program poradenských služeb ve škole.",
+          "Plán pedagogické podpory, a v tom hledá klíčový znak."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 47,
-        "text": "Škola chce co nejpodrobnější informace z vyšetření, aby „všichni přesně věděli, s kým pracují“. Jaký přístup je nejpřesnější?",
+        "text": "Které tvrzení o poradenských službách ve škole je podle vyhlášky č. 72/2005 Sb. správné?",
         "options": [
-          "Poskytnout celé detaily každému pracovníkovi školy, protože čím širší sdílení, tím kvalitnější péče.",
-          "Odmítnout škole sdělit cokoli, protože spolupráce se školou je z etických důvodů vždy riziková.",
-          "Sdílet to, co je pro podporu žáka účelné a přiměřené, a současně chránit důstojnost dítěte i práva rodiny.",
-          "Nechat o rozsahu sdílení rozhodnout jen třídního učitele, protože zná dítě nejlépe."
+          "Školní psycholog a školní speciální pedagog nesmějí poskytovat poradenské služby, pokud škola nemá současně SPC, a právě v tom vidí hlavní vysvětlení.",
+          "Na poskytování poradenských služeb ve škole se mohou podílet také školní psycholog, školní speciální pedagog nebo školský logoped.",
+          "Poradenské služby ve škole mohou poskytovat jen externí pracovníci PPP, nikoli zaměstnanci školy, a tímto směrem by vedla podporu.",
+          "Školský logoped může ve škole působit jen tehdy, pokud škola vzdělává výhradně žáky s vadami řeči, a v tom hledá klíčový znak."
         ],
-        "correct": 2,
-        "correctLetter": "C"
+        "correct": 1,
+        "correctLetter": "B"
       },
       {
         "number": 48,
-        "text": "Tým kolem dítěte s těžkým kombinovaným postižením se nemůže shodnout, zda má být cílem „co nejrychlejší srovnání s vrstevníky“. Jaký závěr je nejpřesnější?",
+        "text": "Které tvrzení o individuálním vzdělávacím plánu odpovídá aktuálnímu znění vyhlášky č. 27/2016 Sb.?",
         "options": [
-          "Ano, normativní srovnání s běžnou třídou má mít vždy přednost před funkčními cíli.",
-          "Ne, škola by v takovém případě neměla stanovovat žádné cíle, protože by byly vždy jen náhradní.",
-          "Cíle má určovat pouze zdravotnictví, protože škola nemá u těžkých profilů vlastní odborné hledisko.",
-          "Cíle mají být funkční, důstojné a dosažitelné v komunikaci, orientaci, participaci a kvalitě každodenního fungování."
+          "Pokud zákonný zástupce nebo zletilý žák neposkytne informovaný souhlas s vypracovaným IVP, škola toto podpůrné opatření neposkytuje.",
+          "Škola může IVP vždy jednostranně zavést, jakmile jej doporučí ŠPZ, i bez souhlasu zletilého žáka nebo zákonného zástupce.",
+          "Nesouhlas se týká jen obsahu předmětů; forma IVP a způsob hodnocení se zavádějí automaticky, a tímto směrem by vedla podporu.",
+          "Souhlas s IVP se nevyžaduje, protože jde o interní dokument školy bez dopadu na práva žáka, a v tom hledá klíčový znak."
         ],
-        "correct": 3,
-        "correctLetter": "D"
+        "correct": 0,
+        "correctLetter": "A"
       },
       {
         "number": 49,
-        "text": "Učitel tvrdí, že bez odborného doporučení nesmí ve výuce nic cíleně měnit, protože by „porušil pravidla“. Který závěr je nejpřesnější?",
+        "text": "Která posloupnost rolí a kroků je v systému podpory nejvnitřněji konzistentní?",
         "options": [
-          "Škola může a má v rámci své role poskytovat a vyhodnocovat základní podporu; odborné doporučení je potřebné pro další kroky, ne jako podmínka každé pedagogické úpravy.",
-          "Ano, jakákoli cílenější úprava výuky je bez doporučení ŠPZ nepřípustná.",
-          "Ano, ale jen v mateřské škole; v základní škole je každá úprava výuky vázána na externí souhlas.",
-          "Učitel má pravdu jen tehdy, pokud jde o komunikační obtíže, nikoli o jiné bariéry."
+          "ŠPZ odborně posoudí potřeby a vydá doporučení, škola podporu rozpracuje a realizuje, rodina nebo zletilý žák se podílejí na rozhodování a mohou využít právo na revizi.",
+          "Škola sama stanoví diagnózu, rodič ji formálně vezme na vědomí a ŠPZ pouze doplní podpis kvůli evidenci, a z toho odvozuje další závěr.",
+          "Zdravotnické zařízení přímo určí školní organizaci výuky, škola ji pouze přepíše do třídní knihy a rodina do procesu nevstupuje, a tímto směrem by vedla podporu.",
+          "Rodina sama sepíše podpůrná opatření, škola je bez odborného posouzení převezme a ŠPZ se zapojuje jen při kontrole inspekce, a v tom hledá klíčový znak."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 50,
-        "text": "Dítě má nevyrovnaný profil: silné verbální porozumění, slabší praktickou samostatnost, citlivost na změnu, obtíž v kolektivní komunikaci a rodina je současně vyčerpaná péčí. Který závěr je nejpřesnější?",
+        "text": "Které shrnutí nejlépe vystihuje náročnost speciálněpedagogického poradenství v přijímacím stylu UPOL?",
         "options": [
-          "Je třeba vybrat jednu hlavní nálepku a ostatní souvislosti potlačit, aby podpora nebyla příliš složitá.",
-          "Je třeba pracovat s vícevrstevnou interpretací: rozlišit profil dítěte, funkční dopad obtíží, podporu ve škole a případnou návaznou pomoc rodině.",
-          "Nejpřesnější je odložit podporu, dokud nebude dokončeno úplně všechno odborné došetření ve všech resortech.",
-          "Nejlepším řešením je přesunout odpovědnost na jedinou instituci, aby nevznikaly rozdílné pohledy."
+          "Rozhodující je hlavně zapamatovat si co nejvíce izolovaných názvů zařízení, protože obsah podpory z nich plyne automaticky.",
+          "Nejtěžší otázky stojí především na rozsáhlých kazuistikách a méně na přesném rozlišování pojmů, dokumentů a rolí, a z toho odvozuje další závěr.",
+          "Pro pokročilou úroveň stačí bezpečně poznat správnou odpověď podle délky a komplexnosti formulace, a tímto směrem by vedla podporu.",
+          "Nestačí znát pojem nebo diagnózu; je nutné propojit odborný význam, funkční dopad, vhodnou podporu i správný institucionální rámec."
         ],
-        "correct": 1,
-        "correctLetter": "B"
+        "correct": 3,
+        "correctLetter": "D"
       }
     ],
     "validation": {
@@ -5154,9 +5168,11 @@ window.SCIO_V4_RAW_BATTERIES = [
         "C": 12,
         "D": 12
       },
-      "distributionTarget": "12–13 správných odpovědí na každé písmeno",
+      "distributionTarget": "13/13/12/12",
       "distributionBalanced": true,
-      "styleParityReviewedManually": true
+      "styleParityReviewedManually": true,
+      "microcaseDominanceReduced": true,
+      "distinctFromBasicByDesign": true
     }
   }
 ];
