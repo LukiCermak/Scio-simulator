@@ -1,7 +1,3 @@
-// Konsolidovaný export všech 8 hard baterií pro budoucí finální integraci.
-// Soubor je pojmenován podle zadání jako data_v4_questions.js,
-// ale zachovává ověřený runtime kontrakt hard vrstvy.
-
 window.SCIO_V4_RAW_BATTERIES_HARD = [
   {
     "id": 1,
@@ -707,7 +703,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 3,
-        "text": "Které vymezení nejlépe odlišuje **introjekci** od **identifikace**?",
+        "text": "Které vymezení nejlépe odlišuje introjekci od identifikace?",
         "options": [
           "introjekce znamená přisuzování vlastních obsahů druhým, identifikace jejich vytěsnění",
           "introjekce je přejímání obsahů do vnitřního světa, identifikace je ztotožnění se s osobou nebo jejími rysy",
@@ -755,7 +751,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 7,
-        "text": "Kdy je přesnější mluvit o **racionalizaci** než o **represe**?",
+        "text": "Kdy je přesnější mluvit o racionalizaci než o represe?",
         "options": [
           "když nepřijatelný obsah zůstává mimo vědomí bez náhradního vysvětlení",
           "když člověk nevědomě vytěsní bolestnou vzpomínku",
@@ -767,7 +763,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 8,
-        "text": "Které tvrzení nejpřesněji odlišuje **potlačení** od **represe**?",
+        "text": "Které tvrzení nejpřesněji odlišuje potlačení od represe?",
         "options": [
           "potlačení je nevědomé vytěsnění, represe vědomé odložení",
           "potlačení je vědomé sebeovládání, represe je nevědomé vytěsnění",
@@ -779,7 +775,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 9,
-        "text": "Které vymezení nejlépe odlišuje **frustraci** od **deprivace**?",
+        "text": "Které vymezení nejlépe odlišuje frustraci od deprivace?",
         "options": [
           "frustrace je dlouhodobé strádání v základních potřebách, deprivace krátké blokování cíle",
           "frustrace je konflikt hodnot, deprivace obranný mechanismus",
@@ -803,7 +799,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 11,
-        "text": "Které vymezení nejlépe vystihuje **internalizaci**?",
+        "text": "Které vymezení nejlépe vystihuje internalizaci?",
         "options": [
           "přijetí norem, pravidel nebo hodnot do vnitřní regulace jednání",
           "mechanické osvojení senzomotorické reakce",
@@ -815,7 +811,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 12,
-        "text": "Kdy je přesnější mluvit o **socializaci** než o **internalizaci**?",
+        "text": "Kdy je přesnější mluvit o socializaci než o internalizaci?",
         "options": [
           "když jde o přijetí jediné normy do svědomí",
           "když jde o širší proces začleňování do sociálních vztahů, rolí a kulturních pravidel",
@@ -827,7 +823,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 13,
-        "text": "Které vymezení nejpřesněji vystihuje **empatii** v poradenském kontaktu?",
+        "text": "Které vymezení nejpřesněji vystihuje empatii v poradenském kontaktu?",
         "options": [
           "souhlas s klientovým výkladem situace",
           "emoční ztotožnění bez odstupu",
@@ -839,7 +835,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 14,
-        "text": "Která formulace je nejbližší **parafrázi**?",
+        "text": "Která formulace je nejbližší parafrázi?",
         "options": [
           "„Myslím, že váš problém ve skutečnosti souvisí s autoritou otce.“",
           "„Jestli tomu rozumím správně, nejvíc vás teď zatěžuje nejistota po změně školy.“",
@@ -875,7 +871,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 17,
-        "text": "Který autor je nejpřesnější kotvou pro pojem **kolektivní nevědomí**?",
+        "text": "Který autor je nejpřesnější kotvou pro pojem kolektivní nevědomí?",
         "options": [
           "Sigmund Freud",
           "Erik Erikson",
@@ -983,7 +979,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 26,
-        "text": "Které tvrzení o vztahu **Freud × Adler × Jung × Rogers** je nejpřesnější?",
+        "text": "Které tvrzení o vztahu Freud × Adler × Jung × Rogers je nejpřesnější?",
         "options": [
           "Rogers je hlavní kotvou kolektivního nevědomí, Adler psychosociálních krizí",
           "Freud je hlavní kotvou obranných mechanismů, Adler individuální psychologie, Jung archetypů a Rogers klientsky orientovaného přístupu",
@@ -1007,7 +1003,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 28,
-        "text": "Které vymezení nejlépe odlišuje **zrání** od **učení**?",
+        "text": "Které vymezení nejlépe odlišuje zrání od učení?",
         "options": [
           "zrání je sociální vliv, učení biologický růst CNS",
           "zrání je vnitřně podmíněné dozrávání předpokladů, učení je změna vznikající zkušeností a činností",
@@ -1019,7 +1015,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 29,
-        "text": "Které vymezení nejlépe vystihuje **vývojovou krizi**?",
+        "text": "Které vymezení nejlépe vystihuje vývojovou krizi?",
         "options": [
           "vždy jde o psychopatologický stav vyžadující léčbu",
           "jde o normativní nebo očekávatelně vznikající napětí spojené s vývojovým přechodem a novými nároky",
@@ -1055,7 +1051,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 32,
-        "text": "Kdy je přesnější uvažovat o hranici dané spíše **zráním** než nedostatkem **učení**?",
+        "text": "Kdy je přesnější uvažovat o hranici dané spíše zráním než nedostatkem učení?",
         "options": [
           "když dítě neumí po výkladu zopakovat jednu novou informaci",
           "když se i při opakovaném vedení nedaří výkon, pro nějž ještě nejsou zralé vývojové předpoklady",
@@ -1091,7 +1087,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 35,
-        "text": "Které tvrzení nejpřesněji vystihuje vztah pojmů **forenzní psychologie** a **soudní psychologie**?",
+        "text": "Které tvrzení nejpřesněji vystihuje vztah pojmů forenzní psychologie a soudní psychologie?",
         "options": [
           "forenzní psychologie je užší část pedagogické psychologie",
           "soudní psychologie je starší název pro vývojovou psychologii",
@@ -1163,7 +1159,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 41,
-        "text": "Která formulace je nejblíže **otevřené otázce** v poradenském rozhovoru?",
+        "text": "Která formulace je nejblíže otevřené otázce v poradenském rozhovoru?",
         "options": [
           "„Takže za vaše potíže může hlavně změna školy, že?“",
           "„Kolik přesně vám bylo, když to začalo?“",
@@ -1175,7 +1171,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 42,
-        "text": "Která odpověď nejlépe odpovídá **reflektivnímu naslouchání**?",
+        "text": "Která odpověď nejlépe odpovídá reflektivnímu naslouchání?",
         "options": [
           "„Tohle jste měl řešit mnohem dřív.“",
           "„Jestli tomu rozumím správně, nejvíc vás vyčerpává, že se situace doma i ve škole táhne bez jasného řešení.“",
@@ -1187,7 +1183,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 43,
-        "text": "Které tvrzení nejlépe vystihuje rozdíl mezi **rozhovorem** a **dialogem**?",
+        "text": "Které tvrzení nejlépe vystihuje rozdíl mezi rozhovorem a dialogem?",
         "options": [
           "dialog více zdůrazňuje vzájemnost a společné vytváření porozumění, zatímco rozhovor může mít i širší či formálnější podobu",
           "dialog je vždy terapeutický, rozhovor vždy neformální",
@@ -1199,7 +1195,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 44,
-        "text": "Která odpověď nejspíše představuje **interpretaci**, nikoli parafrázi nebo čisté reflektivní shrnutí?",
+        "text": "Která odpověď nejspíše představuje interpretaci, nikoli parafrázi nebo čisté reflektivní shrnutí?",
         "options": [
           "„Slyším, že vás nejvíc zraňuje nejistota a dlouhé čekání.“",
           "„Jestli tomu rozumím správně, po přestupu jste začal ztrácet jistotu v tom, co dřív fungovalo.“",
@@ -1211,7 +1207,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 45,
-        "text": "Která formulace je nejbližší **empatickému**, ale současně profesně udrženému reagování?",
+        "text": "Která formulace je nejbližší empatickému, ale současně profesně udrženému reagování?",
         "options": [
           "„Úplně přesně vím, co prožíváte, mně se stalo totéž.“",
           "„To přejde, nesmíte si to tolik brát.“",
@@ -1223,7 +1219,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 46,
-        "text": "Který postup je v poradenské komunikaci nejméně blízký **aktivnímu naslouchání**?",
+        "text": "Který postup je v poradenské komunikaci nejméně blízký aktivnímu naslouchání?",
         "options": [
           "ověřování, zda poradce klientovi správně rozumí",
           "zachycení obsahové i emoční roviny sdělení",
@@ -1235,7 +1231,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 47,
-        "text": "Která formulace nejvíce připomíná **sugestivní** otázku?",
+        "text": "Která formulace nejvíce připomíná sugestivní otázku?",
         "options": [
           "„Jak jste té situaci tehdy rozuměl?“",
           "„Co se podle vás změnilo po přechodu do nové třídy?“",
@@ -1247,7 +1243,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 48,
-        "text": "Které vymezení nejlépe odlišuje **shrnutí** od **parafráze**?",
+        "text": "Které vymezení nejlépe odlišuje shrnutí od parafráze?",
         "options": [
           "shrnutí vybírá a spojuje více důležitých bodů do celku, parafráze vrací kratší úsek sdělení vlastními slovy",
           "shrnutí je vždy interpretace, parafráze vždy rada",
@@ -1259,7 +1255,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 49,
-        "text": "Která formulace je nejpřesnější ukázkou **shrnutí**?",
+        "text": "Která formulace je nejpřesnější ukázkou shrnutí?",
         "options": [
           "„Takže když to spojím, obtíž pro vás vznikla po změně školy, zesílila v rodině a teď nejvíc potřebujete znovu získat pocit orientace.“",
           "„To zní, jako byste byl vlastně jen přecitlivělý.“",
@@ -1363,7 +1359,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 4,
-        "text": "S okruhem **duševně úchylné děti** je v české tradici nejvíce spojován:",
+        "text": "S okruhem duševně úchylné děti je v české tradici nejvíce spojován:",
         "options": [
           "Bohumír Popelář",
           "František Čáda",
@@ -1375,7 +1371,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 5,
-        "text": "Pojem **nápravná pedagogika** je v českém vývoji nejpřesněji navázán na osobnost:",
+        "text": "Pojem nápravná pedagogika je v českém vývoji nejpřesněji navázán na osobnost:",
         "options": [
           "Jan Mauer",
           "František Štampach",
@@ -1399,7 +1395,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 7,
-        "text": "Pojem **zvláštní péče** je v české tradici nejvíce spojován s osobností:",
+        "text": "Pojem zvláštní péče je v české tradici nejvíce spojován s osobností:",
         "options": [
           "František Ludvík",
           "František Kábele",
@@ -1423,7 +1419,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 9,
-        "text": "S pojmem **defektologie** je v československém vývoji nejvíce spojován:",
+        "text": "S pojmem defektologie je v československém vývoji nejvíce spojován:",
         "options": [
           "Miloš Sovák",
           "Josef Zeman",
@@ -1435,7 +1431,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 10,
-        "text": "Která osobnost je nejpřesnější kotvou českého terminologického ukotvení pojmu **speciální pedagogika**?",
+        "text": "Která osobnost je nejpřesnější kotvou českého terminologického ukotvení pojmu speciální pedagogika?",
         "options": [
           "Bohumír Popelář",
           "Miloš Sovák",
@@ -1447,7 +1443,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 11,
-        "text": "S pojmem **integrativní speciální pedagogika** je v českém prostředí nejvíce spojována:",
+        "text": "S pojmem integrativní speciální pedagogika je v českém prostředí nejvíce spojována:",
         "options": [
           "Libuše Ludíková",
           "Marie Vítková",
@@ -1591,7 +1587,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 23,
-        "text": "Která osobnost je nejpřesnější kotvou pojmu **narušená komunikační schopnost**?",
+        "text": "Která osobnost je nejpřesnější kotvou pojmu narušená komunikační schopnost?",
         "options": [
           "Karel Neubauer",
           "Viktor Lechta",
@@ -1687,7 +1683,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 31,
-        "text": "Které vymezení nejlépe odpovídá **represivnímu pojetí** péče o osoby s postižením?",
+        "text": "Které vymezení nejlépe odpovídá represivnímu pojetí péče o osoby s postižením?",
         "options": [
           "důraz na společné vzdělávání, participaci a podporu v běžném prostředí",
           "důraz na vyloučení, odmítání nebo tvrdé omezování jedince kvůli odlišnosti",
@@ -1699,7 +1695,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 32,
-        "text": "Které vymezení nejlépe odpovídá **charitativnímu pojetí**?",
+        "text": "Které vymezení nejlépe odpovídá charitativnímu pojetí?",
         "options": [
           "převaha právního nároku na podporu a participaci v běžném prostředí",
           "důraz na humanitní pomoc a opatrování bez silného akcentu na vzdělávací emancipaci",
@@ -1711,7 +1707,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 33,
-        "text": "Který znak ukazuje spíše na **institucionální pojetí** než na pojetí integrační nebo inkluzivní?",
+        "text": "Který znak ukazuje spíše na institucionální pojetí než na pojetí integrační nebo inkluzivní?",
         "options": [
           "snaha zajistit podporu v běžném prostředí při zachování účasti",
           "přesun pomoci do specializovaných ústavů a oddělených zařízení",
@@ -1723,7 +1719,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 34,
-        "text": "Které tvrzení nejlépe vystihuje **integrační pojetí**?",
+        "text": "Které tvrzení nejlépe vystihuje integrační pojetí?",
         "options": [
           "jedinec je zcela vyloučen ze vzdělávacího a sociálního prostoru",
           "hlavním cílem je především opatrování bez nároku na vzdělávání",
@@ -1735,7 +1731,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 35,
-        "text": "Které tvrzení nejlépe vystihuje **inkluzivní pojetí**?",
+        "text": "Které tvrzení nejlépe vystihuje inkluzivní pojetí?",
         "options": [
           "odlišnost je důvodem pro oddělení do samostatné vzdělávací větve",
           "hlavním řešením je charitativní ochrana mimo běžné prostředí",
@@ -1747,7 +1743,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 36,
-        "text": "Který posun nejlépe odpovídá přechodu od **deficitního** k **funkčnímu a podpůrnému** pojetí oboru?",
+        "text": "Který posun nejlépe odpovídá přechodu od deficitního k funkčnímu a podpůrnému pojetí oboru?",
         "options": [
           "od zkoumání bariér v prostředí k silnějšímu soustředění na „vadu“ jako označení člověka",
           "od označování osoby primárně podle nedostatku k většímu důrazu na potřeby, podporu a fungování v kontextu",
@@ -1759,7 +1755,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 37,
-        "text": "Které tvrzení je o **participačním pojetí** nejpřesnější?",
+        "text": "Které tvrzení je o participačním pojetí nejpřesnější?",
         "options": [
           "akcentuje hlavně oddělenou péči ve specializovaném systému",
           "akcentuje především pasivní ochranu jedince bez důrazu na jeho roli",
@@ -1783,7 +1779,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 39,
-        "text": "Který popis je bližší **inkluzivnímu** než čistě integračnímu rámci?",
+        "text": "Který popis je bližší inkluzivnímu než čistě integračnímu rámci?",
         "options": [
           "jedinec je připojován k již hotovému systému bez výraznější změny jeho pravidel",
           "systém je upravován tak, aby bariéry nebránily účasti různorodých žáků",
@@ -1807,7 +1803,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 41,
-        "text": "Která osobnost je nejvíce spojena s budováním sítě **pomocného školství** v československém prostředí první republiky?",
+        "text": "Která osobnost je nejvíce spojena s budováním sítě pomocného školství v československém prostředí první republiky?",
         "options": [
           "Josef Zeman",
           "Marie Vítková",
@@ -1819,7 +1815,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 42,
-        "text": "Které tvrzení o **pomocném školství** je nejpřesnější v historickém kontextu české tradice?",
+        "text": "Které tvrzení o pomocném školství je nejpřesnější v historickém kontextu české tradice?",
         "options": [
           "šlo o výhradně vysokoškolskou větev podpory studentů se specifickými potřebami",
           "šlo o historicky budovanou síť speciálního školství navázanou na dobové chápání péče o děti se speciálními vzdělávacími potřebami",
@@ -1843,7 +1839,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 44,
-        "text": "Který popis je historicky bližší české tradici **pomocného školství** než novodobému inkluzivnímu rámci?",
+        "text": "Který popis je historicky bližší české tradici pomocného školství než novodobému inkluzivnímu rámci?",
         "options": [
           "jednotný důraz na participaci v běžném systému bez samostatné sítě zařízení",
           "budování specifické školské větve pro určité skupiny žáků v rámci tehdejšího chápání speciální péče",
@@ -4604,7 +4600,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 4,
-        "text": "S českým terminologickým ukotvením pojmu **speciální pedagogika** bývá nejvíce spojován:",
+        "text": "S českým terminologickým ukotvením pojmu speciální pedagogika bývá nejvíce spojován:",
         "options": [
           "Josef Zeman",
           "Ludvík Edelsberger",
@@ -4628,7 +4624,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 6,
-        "text": "Zvýšená měsíční sazba příspěvku na mobilitu **2 900 Kč** se váže zejména na osoby:",
+        "text": "Zvýšená měsíční sazba příspěvku na mobilitu 2 900 Kč se váže zejména na osoby:",
         "options": [
           "s domácí oxygenoterapií nebo domácí plicní ventilací",
           "se všemi držiteli průkazu ZTP/P bez další podmínky",
@@ -4652,7 +4648,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 8,
-        "text": "Pojem **nápravná pedagogika** bývá v českém vývoji spojován zejména s osobností:",
+        "text": "Pojem nápravná pedagogika bývá v českém vývoji spojován zejména s osobností:",
         "options": [
           "František Čáda",
           "Jan Mauer",
@@ -4712,7 +4708,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 13,
-        "text": "Pojem **defektologie** bývá v českém vývoji spojován zejména s osobností:",
+        "text": "Pojem defektologie bývá v českém vývoji spojován zejména s osobností:",
         "options": [
           "Bohumír Popelář",
           "Miloš Sovák",
@@ -4760,7 +4756,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 17,
-        "text": "**Integrativní speciální pedagogika** je v českém prostředí nejvíce spojována s osobností:",
+        "text": "Integrativní speciální pedagogika je v českém prostředí nejvíce spojována s osobností:",
         "options": [
           "Marie Vítková",
           "Libuše Ludíková",
@@ -5012,7 +5008,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 38,
-        "text": "Které tvrzení o vztahu **doporučení ŠPZ** a **konkrétní školní realizace podpory** je nejpřesnější?",
+        "text": "Které tvrzení o vztahu doporučení ŠPZ a konkrétní školní realizace podpory je nejpřesnější?",
         "options": [
           "doporučení už samo o sobě určuje přesnou každodenní podobu výuky, takže škola jen mechanicky přebírá hotový režim práce",
           "doporučení vymezuje podpůrný rámec pro vzdělávání, ale škola ještě musí tento rámec převést do konkrétních pedagogických kroků v běžné výuce",
@@ -5024,7 +5020,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 39,
-        "text": "Která situace nejspíše **neukazuje** na potřebu přechodu od školní podpory v rámci PO1 k návazné práci se ŠPZ?",
+        "text": "Která situace nejspíše neukazuje na potřebu přechodu od školní podpory v rámci PO1 k návazné práci se ŠPZ?",
         "options": [
           "škola umí přesně popsat obtíž, zavedla cílenou podporu, ale ani po jejím vyhodnocení nedochází k posunu v cílové situaci",
           "škola sice zaznamenala dílčí zlepšení v okrajové situaci, ale hlavní vzdělávací problém přetrvává v běžné výuce",
@@ -5084,7 +5080,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 44,
-        "text": "Pojem **prelingvální neslyšící** označuje nejpřesněji osobu:",
+        "text": "Pojem prelingvální neslyšící označuje nejpřesněji osobu:",
         "options": [
           "u níž ke ztrátě sluchu došlo po plném rozvoji řeči",
           "u níž sluchová ztráta vznikla před přirozeným rozvojem řeči",
@@ -5096,7 +5092,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 45,
-        "text": "S pojmem **narušená komunikační schopnost** je nejvíce spojován:",
+        "text": "S pojmem narušená komunikační schopnost je nejvíce spojován:",
         "options": [
           "Milan Valenta",
           "Karel Neubauer",
