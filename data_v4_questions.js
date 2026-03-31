@@ -3885,7 +3885,7 @@ window.SCIO_V4_RAW_BATTERIES = [
     "id": 7,
     "label": "Baterie 7",
     "title": "Poradenský úsudek, etika a kvalita procesu",
-    "subtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
+    "subtitle": "Poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
     "purpose": "Ověřit, zda uchazeč uvažuje poradensky: umí vyjasnit zakázku, unést nejistotu, vytvořit kvalitní výstup, držet hranice role, metodicky vést školu a srozumitelně překládat odborný závěr rodině i žákovi.",
     "difficulty": "vysoká",
     "dominant": [
@@ -4531,8 +4531,8 @@ window.SCIO_V4_RAW_BATTERIES = [
     "id": 8,
     "label": "Baterie 8",
     "title": "Finální nejtěžší selekční baterie",
-    "subtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
-    "purpose": "Ověřit skutečně selektivní připravenost na UPOL v pokročilé vrstvě: odlišit blízké pojmy, správně číst dokumenty a role systému, orientovat se v aktuální legislativní logice a u krátkých situací zvolit nejpřesnější odborný závěr bez stylistických vodítek.",
+    "subtitle": "Finální baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
+    "purpose": "Ověřit skutečně selektivní připravenost na UPOL: odlišit blízké pojmy, správně číst dokumenty a role systému, orientovat se v aktuální legislativní logice a u krátkých situací zvolit nejpřesnější odborný závěr bez stylistických vodítek.",
     "difficulty": "velmi vysoká",
     "dominant": [
       "jemné pojmové rozlišení",
