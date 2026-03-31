@@ -35,7 +35,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
     "questions": [
       {
         "number": 1,
-        "text": "Žák selhává stejně v ústní, písemné i názorně vedené odpovědi na totéž učivo. Co je nejméně vhodné uzavření?",
+        "text": "Žák selhává stejně v ústní, písemné i názorně vedené odpovědi na totéž učivo. Jaký závěr by zde byl nejméně přiměřený?",
         "options": [
           "Důležité je neplést modalitu výkonu s jádrem potíže.",
           "Že bariéra bude jen ve formě výstupu.",
@@ -47,7 +47,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 2,
-        "text": "V ústním zkoušení žák látku vystihne přesně, ale v ručně psané odpovědi ji nerozvine a text je sotva čitelný. Které uzavření je nejpřesnější?",
+        "text": "V ústním zkoušení žák látku vystihne přesně, ale v ručně psané odpovědi ji nerozvine a text je sotva čitelný. Které vysvětlení situace je nejpřesnější?",
         "options": [
           "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
           "Jádro leží především v celkovém neporozumění učivu, které se jen více odhalí písemně.",
@@ -131,7 +131,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 9,
-        "text": "Žák po poslechu textu odpoví věcně správně, ale z hustě sázeného materiálu s nízkým kontrastem selhává. Co je nejpřesnější?",
+        "text": "Žák po poslechu textu odpoví věcně správně, ale z hustě sázeného materiálu s nízkým kontrastem selhává. Jaké vysvětlení je nejpřesnější?",
         "options": [
           "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
           "Jádro leží v tom, že žák nerozumí stejnému obsahu bez ohledu na formu podání.",
@@ -143,7 +143,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 10,
-        "text": "Po zvětšení textu a zvýšení kontrastu se výkon v cílovém úkolu výrazně zlepší. Které uzavření je nejméně přesné?",
+        "text": "Po zvětšení textu a zvýšení kontrastu se výkon v cílovém úkolu výrazně zlepší. Který závěr by z toho byl nejméně přesný?",
         "options": [
           "Změna dostupnosti materiálu pravděpodobně zasáhla hlavní bariéru.",
           "Původní výkon nebyl nutně přímým ukazatelem obsahové neznalosti.",
@@ -167,7 +167,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 12,
-        "text": "Které uzavření je nejpřesnější, když dítě provede úkol správně po krátké demonstraci, ale samotný rychle vyslovený slovní pokyn v tělocvičně často mine?",
+        "text": "Jak nejlépe vyložit situaci, kdy dítě provede úkol správně po krátké demonstraci, ale samotný rychle vyslovený slovní pokyn v tělocvičně často mine?",
         "options": [
           "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
           "Jádro leží v celkově slabém chápání pohybového zadání bez ohledu na formu instrukce.",
@@ -179,7 +179,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 13,
-        "text": "Žák čte nahlas plynule, ale u otázek na vztahy mezi postavami a motivy jejich jednání opakovaně tápe. Co je nejpřesnější?",
+        "text": "Žák čte nahlas plynule, ale u otázek na vztahy mezi postavami a motivy jejich jednání opakovaně tápe. Co z toho plyne nejspíše?",
         "options": [
           "Selhává hlavně inferenční a vztahové porozumění textu, ne nutně samotné čtení nahlas.",
           "Selhává hlavně mluvní produkce, protože nahlas čte bez jistoty významu každého slova.",
@@ -191,7 +191,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 14,
-        "text": "Které uzavření je nejméně přesné, když dítě po názoru a rozfázování úkolu postup zvládne, ale bez této opory se ztratí už v prvních krocích?",
+        "text": "Co by v této situaci bylo nejméně přesné tvrdit, když dítě po názoru a rozfázování úkolu postup zvládne, ale bez této opory se ztratí už v prvních krocích?",
         "options": [
           "Je vhodné odlišit dostupnost a strukturu zadání od závěru o celkové nekompetenci.",
           "Potíž může ležet v pochopení a adaptivním zvládnutí úkolu, ne nutně v odporu ke spolupráci.",
@@ -227,7 +227,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 17,
-        "text": "Který podklad je nejvýnosnější, když chce učitel rozlišit přístup k informaci od jejího porozumění?",
+        "text": "Která informace nejlépe pomůže učiteli rozlišit přístup k informaci od jejího porozumění?",
         "options": [
           "Zda se výkon mění po změně podmínek podání stejného obsahu.",
           "Zda je žák celkově klidnější než na začátku pololetí.",
@@ -251,7 +251,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 19,
-        "text": "Které uzavření je nejméně přesné, když se potíž objevuje jen při rychlém tempu a po zpomalení stejného zadání mizí?",
+        "text": "Co by zde bylo nejméně přesné vyvozovat, když se potíž objevuje jen při rychlém tempu a po zpomalení stejného zadání mizí?",
         "options": [
           "Výkon je citlivý na tempo podání, ne nutně stejně oslabený ve všech podmínkách.",
           "Před závěrem o stabilní globální potíži je vhodné zohlednit roli podmínek výkonu.",
@@ -275,7 +275,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 21,
-        "text": "Žák v každém předmětu selhává až tehdy, když má odpověď zapsat vlastní rukou; ústně nebo na počítači drží obsah výrazně lépe. Co je nejpřesnější?",
+        "text": "Žák v každém předmětu selhává až tehdy, když má odpověď zapsat vlastní rukou; ústně nebo na počítači drží obsah výrazně lépe. Jaké vysvětlení je zde nejpřesnější?",
         "options": [
           "Stabilní je spíše bariéra ve specifické formě výkonu než jistě v obsahu kompetence napříč předměty.",
           "Stabilní je obsahová neznalost, která se ústně jen hůř odhaluje.",
@@ -323,7 +323,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 25,
-        "text": "Která otázka je při první konzultaci s učitelem nejvýnosnější pro další poradenský postup?",
+        "text": "Na co je při první konzultaci s učitelem nejdůležitější se zeptat pro další poradenský postup?",
         "options": [
           "Který žák ve třídě vás zatěžuje nejvíc obecně?",
           "Jakou kategorii obtíží byste od poradny potřeboval potvrdit?",
@@ -335,7 +335,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 26,
-        "text": "Škola zavede úpravu, po níž žák působí klidněji, ale v situaci, kvůli níž byla podpora nastavena, výkon zůstává beze změny. Co je nejpřesnější?",
+        "text": "Škola zavede úpravu, po níž žák působí klidněji, ale v situaci, kvůli níž byla podpora nastavena, výkon zůstává beze změny. Co z toho plyne nejpřesněji?",
         "options": [
           "Podpora pravděpodobně zasáhla vedlejší projev, ne nutně hlavní bariéru.",
           "Podpora je funkční, protože zlepšila celkovou atmosféru práce.",
@@ -347,7 +347,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 27,
-        "text": "Které uzavření je nejpřesnější, když se výkon zlepší jen při velmi silně vedené individuální opoře, ale v běžné třídní situaci se potíž vrací?",
+        "text": "Jak nejlépe vyložit situaci, kdy se výkon zlepší jen při velmi silně vedené individuální opoře, ale v běžné třídní situaci se potíž vrací?",
         "options": [
           "Opatření už prokázalo účinnost v cílové školní situaci, protože žák umí úkol s podporou zvládnout.",
           "Je třeba odlišit zlepšení v podpůrně nasycené situaci od skutečného posunu v běžné cílové situaci.",
@@ -359,7 +359,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 28,
-        "text": "Žák při diktátu selhává, ale při pomalém přečtení téhož textu s možností průběžně se vracet drží obsah i pravopis lépe. Co je nejméně přesné uzavření?",
+        "text": "Žák při diktátu selhává, ale při pomalém přečtení téhož textu s možností průběžně se vracet drží obsah i pravopis lépe. Co by z toho bylo nejméně přesné vyvozovat?",
         "options": [
           "Potíž může souviset i s tempem a podmínkami zpracování, ne jen s výsledným počtem chyb.",
           "Je vhodné odlišit výkon v jednorázově plynoucím sdělení od výkonu s možností návratu k informaci.",
@@ -419,7 +419,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 33,
-        "text": "Která interpretace je nejpřesnější, když dítě rozumí otázce při individuální práci, ale ve třídě opakovaně odpovídá mimo, protože zachytí jen část zadání?",
+        "text": "Jaké vysvětlení situace je nejpřesnější, když dítě rozumí otázce při individuální práci, ale ve třídě opakovaně odpovídá mimo, protože zachytí jen část zadání?",
         "options": [
           "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
           "Jádro leží ve stabilně slabé obsahové kompetenci bez ohledu na to, jak je sdělení podané.",
@@ -431,7 +431,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 34,
-        "text": "Žák po úpravě pracovního místa a zjednodušení vizuálního pole drží pozornost i obsah úkolu lépe, přestože předtím působil jako roztěkaný. Co je nejméně přesné?",
+        "text": "Žák po úpravě pracovního místa a zjednodušení vizuálního pole drží pozornost i obsah úkolu lépe, přestože předtím působil jako roztěkaný. Co by z toho bylo nejméně přesné vyvozovat?",
         "options": [
           "Úprava podmínek mohla zasáhnout hlavní bariéru, ne jen chování na povrchu.",
           "Je vhodné odlišit sekundární neklid od příčiny, která neklid vyvolávala.",
@@ -443,7 +443,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 35,
-        "text": "Které uzavření je nejpřesnější, když se chyba objevuje jen při delším vícefázovém zadání, ale u krátkých jednoznačných pokynů dítě postup zvládá?",
+        "text": "Co z toho plyne nejpřesněji, když se chyba objevuje jen při delším vícefázovém zadání, ale u krátkých jednoznačných pokynů dítě postup zvládá?",
         "options": [
           "Rozhodující je odlišit délku a strukturu zadání od závěru, že dítě nerozumí i jednoduchému principu.",
           "Rozhodující je uzavřít situaci jako stejné neporozumění bez ohledu na složitost instrukce.",
@@ -455,7 +455,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 36,
-        "text": "Který údaj je pro funkční čtení obtíže méně výnosný než ostatní?",
+        "text": "Který údaj má pro funkční čtení obtíže nejmenší vypovídací hodnotu?",
         "options": [
           "Přesně popsaná situace, v níž se chyba objevuje.",
           "Popis toho, co výkon zhoršuje nebo naopak zpřístupňuje.",
@@ -467,7 +467,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 37,
-        "text": "Které uzavření je nejméně vhodné, když dítě po zopakování a zpomalení stejné instrukce postup provede správně?",
+        "text": "Co by v této situaci bylo nejméně vhodné tvrdit, když dítě po zopakování a zpomalení stejné instrukce postup provede správně?",
         "options": [
           "Původní selhání nemusí automaticky znamenat, že dítě principu nerozumělo.",
           "Rozhodující může být tempo a dostupnost sdělení, ne nutně samotný obsah úkolu.",
@@ -479,7 +479,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 38,
-        "text": "Dítě v testu s výběrem možností odpovídá přesněji než v otevřené produkci, přestože typ učiva zůstává stejný. Co je nejpřesnější?",
+        "text": "Dítě v testu s výběrem možností odpovídá přesněji než v otevřené produkci, přestože typ učiva zůstává stejný. Co z toho plyne nejpřesněji?",
         "options": [
           "Rozdíl může ležet ve formě vyjádření výkonu, ne nutně v tom, že by učivo umělo jen v jedné podobě.",
           "Rozdíl dokazuje, že uzavřené úlohy nikdy nemají vypovídací hodnotu.",
@@ -491,7 +491,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 39,
-        "text": "Která interpretace je nejbližší, když se výkon po úpravě podmínek zlepšuje jen v těch úkolech, které jsou na dané podmínky citlivé, ale v ostatních zůstává stejný?",
+        "text": "Jaké vysvětlení je nejbližší, když se výkon po úpravě podmínek zlepšuje jen v těch úkolech, které jsou na dané podmínky citlivé, ale v ostatních zůstává stejný?",
         "options": [
           "Podpora pravděpodobně cílí specificky na část bariéry, která je vázaná na konkrétní podmínky úkolu.",
           "Podpora je plošně neúčinná, protože nezlepšila výkon ve všech oblastech najednou.",
@@ -503,7 +503,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 40,
-        "text": "Které uzavření je nejpřesnější, když učitel popisuje, že žák „to někdy umí a někdy ne“, ale podrobnější rozbor ukáže jasnou vazbu na hluk, vzdálenost a hustotu materiálu?",
+        "text": "Jak nejlépe vyložit situaci, kdy učitel popisuje, že žák „to někdy umí a někdy ne“, ale podrobnější rozbor ukáže jasnou vazbu na hluk, vzdálenost a hustotu materiálu?",
         "options": [
           "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
           "Kolísání výkonu je zde nejspíše náhodné a bez analytické hodnoty.",
@@ -515,7 +515,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 41,
-        "text": "Žák po vysvětlení úkolu odpoví správně, ale při samostatném převodu stejného zadání do pracovního postupu se ztratí. Které uzavření je nejbližší?",
+        "text": "Žák po vysvětlení úkolu odpoví správně, ale při samostatném převodu stejného zadání do pracovního postupu se ztratí. Které vysvětlení situace je zde nejbližší?",
         "options": [
           "Rozhodující může být přechod od porozumění k samostatnému organizačnímu zvládnutí úkolu.",
           "Rozhodující je uzavřít situaci jako jisté nepochopení už na úrovni instrukce.",
@@ -527,7 +527,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 42,
-        "text": "Které tvrzení je nejvýnosnější pro vyhodnocení, zda podpora opravdu mění jádro obtíže?",
+        "text": "Které tvrzení má největší vypovídací hodnotu pro posouzení, zda podpora opravdu mění jádro obtíže?",
         "options": [
           "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
           "Že učitel má po zavedení podpory lepší pocit z práce celé třídy.",
@@ -539,7 +539,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 43,
-        "text": "Které uzavření je nejméně vhodné, když žák při stejném obsahu selhává pouze tehdy, když musí odpověď formulovat bez nabídky opory, ale při strukturované opoře se drží věcně správně?",
+        "text": "Co by v této situaci bylo nejméně vhodné tvrdit, když žák při stejném obsahu selhává pouze tehdy, když musí odpověď formulovat bez nabídky opory, ale při strukturované opoře se drží věcně správně?",
         "options": [
           "Je vhodné odlišit náročnost samostatné produkce od závěru o úplné neznalosti.",
           "Rozdíl může ležet ve formě vybavení a uspořádání odpovědi, ne pouze v obsahu učiva.",
@@ -563,7 +563,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 45,
-        "text": "Která interpretace je nejpřesnější, když se po rozdělení úkolu na menší kroky zlepší provedení, ale ne nutně rychlost?",
+        "text": "Jaké vysvětlení je nejpřesnější, když se po rozdělení úkolu na menší kroky zlepší provedení, ale ne nutně rychlost?",
         "options": [
           "Podpora může zpřístupnit organizaci a pochopení postupu, aniž by okamžitě odstranila všechny sekundární dopady.",
           "Podpora je neúčinná, protože nevedla k celkovému zrychlení výkonu.",
@@ -575,7 +575,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 46,
-        "text": "Které uzavření je nejblíže, když dítě po přesunu blíže k učiteli a po zřetelnějším kontaktu s tváří drží obsah podstatně lépe, zatímco artikulace zůstává stejná?",
+        "text": "Jaké vysvětlení je nejbližší, když dítě po přesunu blíže k učiteli a po zřetelnějším kontaktu s tváří drží obsah podstatně lépe, zatímco artikulace zůstává stejná?",
         "options": [
           "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
           "Jádro leží spíše v artikulaci, protože pozice ve třídě mění hlavně její vnímání učitelem.",
@@ -587,7 +587,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 47,
-        "text": "Která otázka je pro první funkční zpřesnění potíže méně výnosná než ostatní?",
+        "text": "Na kterou otázku je pro první funkční zpřesnění potíže nejméně užitečné se ptát?",
         "options": [
           "Ve které konkrétní situaci se obtíž ukazuje nejzřetelněji?",
           "Co výkon zhoršuje a co jej naopak zpřístupňuje?",
@@ -599,7 +599,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 48,
-        "text": "Které uzavření je nejpřesnější, když dítě při stejné látce selhává hlavně v dlouhých souvislých instrukcích, ale nikoli v krátkých postupných krocích?",
+        "text": "Co z toho plyne nejpřesněji, když dítě při stejné látce selhává hlavně v dlouhých souvislých instrukcích, ale nikoli v krátkých postupných krocích?",
         "options": [
           "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
           "Jádro musí ležet v totálním nepochopení látky, protože dlouhé instrukce jen odhalují pravdu.",
@@ -611,7 +611,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 49,
-        "text": "Které uzavření je nejméně vhodné, když výkon po úpravě podmínek stoupne jen v některých hodinách, které sdílejí stejný typ bariéry?",
+        "text": "Co by v této situaci bylo nejméně vhodné vyvozovat, když výkon po úpravě podmínek stoupne jen v některých hodinách, které sdílejí stejný typ bariéry?",
         "options": [
           "Podpora pravděpodobně cílí na specifickou část problému, která se neprojevuje všude stejně.",
           "Je třeba rozlišit mezi přenosem podpory a jejím účinkem v přesně vymezených situacích.",
@@ -623,7 +623,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 50,
-        "text": "Který závěr je při funkčním čtení obtíže nejvýnosnější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
+        "text": "Který závěr je při funkčním čtení obtíže nejpřesvědčivější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
         "options": [
           "Že rozhodující je efekt v cílové oblasti, ne to, zda se současně proměnil i celkový dojem z chování.",
           "Že bez proměny celkového chování nelze podporu považovat za účinnou.",
@@ -691,7 +691,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 2,
-        "text": "Který proces je nejpřesnější, když nové zkušenosti vedou k přestavbě dosavadního kognitivního schématu?",
+        "text": "Jak se nazývá proces, při němž nové zkušenosti vedou k přestavbě dosavadního kognitivního schématu?",
         "options": [
           "asimilace",
           "identifikace",
@@ -727,7 +727,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 5,
-        "text": "Který obranný mechanismus je nejblíže situaci, kdy se nepřijatelný pudový tlak uplatní ve společensky ceněné činnosti?",
+        "text": "Který obranný mechanismus odpovídá situaci, kdy se nepřijatelný pudový tlak uplatní ve společensky ceněné činnosti?",
         "options": [
           "represe",
           "sublimace",
@@ -739,7 +739,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 6,
-        "text": "Který mechanismus je nejpřesnější, když se člověk v zátěži vrací k méně zralému způsobu reagování?",
+        "text": "Jak se nazývá mechanismus, kdy se člověk v zátěži vrací k méně zralému způsobu reagování?",
         "options": [
           "regrese",
           "racionalizace",
@@ -835,7 +835,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 14,
-        "text": "Která formulace je nejbližší parafrázi?",
+        "text": "Která formulace odpovídá parafrázi?",
         "options": [
           "„Myslím, že váš problém ve skutečnosti souvisí s autoritou otce.“",
           "„Jestli tomu rozumím správně, nejvíc vás teď zatěžuje nejistota po změně školy.“",
@@ -871,7 +871,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 17,
-        "text": "Který autor je nejpřesnější kotvou pro pojem kolektivní nevědomí?",
+        "text": "Se kterým autorem je nejvíce spojen pojem kolektivní nevědomí?",
         "options": [
           "Sigmund Freud",
           "Erik Erikson",
@@ -919,7 +919,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 21,
-        "text": "Který autor je nejpřesnější kotvou pro asimilaci, akomodaci a stadiální kognitivní vývoj?",
+        "text": "Se kterým autorem jsou nejvíce spojeny pojmy asimilace, akomodace a stadiální kognitivní vývoj?",
         "options": [
           "Lev Vygotskij",
           "Jean Piaget",
@@ -979,7 +979,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 26,
-        "text": "Které tvrzení o vztahu Freud × Adler × Jung × Rogers je nejpřesnější?",
+        "text": "Které tvrzení o vztahu Freud × Adler × Jung × Rogers vystihuje situaci nejlépe?",
         "options": [
           "Rogers je hlavní kotvou kolektivního nevědomí, Adler psychosociálních krizí",
           "Freud je hlavní kotvou obranných mechanismů, Adler individuální psychologie, Jung archetypů a Rogers klientsky orientovaného přístupu",
@@ -1039,7 +1039,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 31,
-        "text": "Které Piagetovo stadium je nejblíže situaci, kdy dítě už používá symboly a řeč, ale jeho myšlení je stále výrazně vázáno na názornost a egocentrismus?",
+        "text": "Ve kterém Piagetově stadiu dítě už používá symboly a řeč, ale jeho myšlení je stále výrazně vázáno na názornost a egocentrismus?",
         "options": [
           "senzomotorické",
           "formálně operační",
@@ -1063,7 +1063,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 33,
-        "text": "Které tvrzení o ontogenezi je nejpřesnější?",
+        "text": "Které tvrzení o ontogenezi vystihuje pojem nejlépe?",
         "options": [
           "ontogeneze znamená jen prenatální vývoj",
           "ontogeneze sleduje individuální vývoj jedince a vzniká v souhře zrání, učení a prostředí",
@@ -1075,7 +1075,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 34,
-        "text": "Které uzavření je nejpřesnější, když dítě dlouhodobě vyrůstá bez stabilního citového vztahu a bez dostatečně podnětného kontaktu s pečující osobou?",
+        "text": "Jak tento stav nejlépe označit, když dítě dlouhodobě vyrůstá bez stabilního citového vztahu a bez dostatečně podnětného kontaktu s pečující osobou?",
         "options": [
           "jde nejspíše o krátkodobou frustraci bez vývojového významu",
           "jde výhradně o konflikt mezi normami a impulzy",
@@ -1111,7 +1111,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 37,
-        "text": "Která oblast psychologie je nejpřesnější, když hlavním cílem je pomoci klientovi v orientaci, rozhodování, adaptaci a zvládání životní situace bez redukce jen na diagnózu?",
+        "text": "Která oblast psychologie se uplatní nejspíše tehdy, když je hlavním cílem pomoci klientovi v orientaci, rozhodování, adaptaci a zvládání životní situace bez redukce jen na diagnózu?",
         "options": [
           "patologická psychologie",
           "poradenská psychologie",
@@ -1135,7 +1135,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 39,
-        "text": "Která oblast psychologie je nejpřesnější, když se zkoumá vliv skupiny, sociální percepce, postoje nebo konformita?",
+        "text": "Do které oblasti psychologie patří nejspíše zkoumání vlivu skupiny, sociální percepce, postojů nebo konformity?",
         "options": [
           "poradenská psychologie",
           "sociální psychologie",
@@ -1159,7 +1159,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 41,
-        "text": "Která formulace je nejblíže otevřené otázce v poradenském rozhovoru?",
+        "text": "Která formulace odpovídá otevřené otázce v poradenském rozhovoru?",
         "options": [
           "„Takže za vaše potíže může hlavně změna školy, že?“",
           "„Kolik přesně vám bylo, když to začalo?“",
@@ -1207,7 +1207,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 45,
-        "text": "Která formulace je nejbližší empatickému, ale současně profesně udrženému reagování?",
+        "text": "Která formulace nejlépe odpovídá empatické, ale současně profesně udržené reakci?",
         "options": [
           "„Úplně přesně vím, co prožíváte, mně se stalo totéž.“",
           "„To přejde, nesmíte si to tolik brát.“",
@@ -1255,7 +1255,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 49,
-        "text": "Která formulace je nejpřesnější ukázkou shrnutí?",
+        "text": "Která formulace odpovídá shrnutí nejlépe?",
         "options": [
           "„Takže když to spojím, obtíž pro vás vznikla po změně školy, zesílila v rodině a teď nejvíc potřebujete znovu získat pocit orientace.“",
           "„To zní, jako byste byl vlastně jen přecitlivělý.“",
@@ -1267,7 +1267,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 50,
-        "text": "Které uzavření je při komunikaci s klientem nejpřesnější, když poradce chce zachovat porozumění, ale nepřebírat klientovu zkušenost za svou?",
+        "text": "Jaká reakce poradce je nejpřiměřenější, když chce zachovat porozumění, ale nepřebírat klientovu zkušenost za svou?",
         "options": [
           "„Vaše pocity mohu plně převzít, protože je prožívám stejně.“",
           "„Nemusíme se zdržovat emocemi, pojďme rovnou k řešení.“",
@@ -1323,7 +1323,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
     "questions": [
       {
         "number": 1,
-        "text": "Které přiřazení historického termínu a osobnosti je nejpřesnější?",
+        "text": "Které spojení historického termínu s osobností je správné?",
         "options": [
           "pedagogická patologie — Adolf Strümpell",
           "pedagogická patologie — Jan Mauer",
@@ -1335,7 +1335,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 2,
-        "text": "Které přiřazení historického termínu a osobnosti je nejpřesnější?",
+        "text": "Které přiřazení pojmu k osobnosti odpovídá historickému vývoji oboru?",
         "options": [
           "léčebná pedagogika — Josef Zeman",
           "léčebná pedagogika — Adolf Dannemann",
@@ -1347,7 +1347,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 3,
-        "text": "Které přiřazení historického termínu a osobnosti je nejpřesnější?",
+        "text": "Která dvojice termín–osobnost je doložena správně?",
         "options": [
           "pedopatologie — František Čáda",
           "pedopatologie — Jan Mauer",
@@ -1383,7 +1383,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 6,
-        "text": "Které přiřazení historického termínu a osobnosti je nejpřesnější?",
+        "text": "Které spojení termínu a osobnosti je v historickém kontextu správné?",
         "options": [
           "sociální pedagogika — Ludvík Edelsberger",
           "sociální pedagogika — František Štampach",
@@ -1431,7 +1431,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 10,
-        "text": "Která osobnost je nejpřesnější kotvou českého terminologického ukotvení pojmu speciální pedagogika?",
+        "text": "S kterou osobností je v českém prostředí nejvíce spojeno terminologické ukotvení pojmu speciální pedagogika?",
         "options": [
           "Bohumír Popelář",
           "Miloš Sovák",
@@ -1503,7 +1503,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 16,
-        "text": "Které tvrzení o historické terminologii je nejpřesnější?",
+        "text": "Které tvrzení o historické terminologii vystihuje věc nejlépe?",
         "options": [
           "výraz defektologie je v české tradici přesnější kotvou Bohumíra Popeláře než Miloše Sováka",
           "výraz speciální pedagogika defektologická se v české tradici nepojí s Ludvíkem Edelsbergerem",
@@ -1551,7 +1551,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 20,
-        "text": "Kdo je nejpřesnější historickou kotvou budování moderní československé defektologie a pomocného školství po roce 1919?",
+        "text": "Kdo je v československém kontextu po roce 1919 nejvýrazněji spojen s budováním moderní defektologie a pomocného školství?",
         "options": [
           "Josef Zeman",
           "Bohumír Popelář",
@@ -1587,7 +1587,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 23,
-        "text": "Která osobnost je nejpřesnější kotvou pojmu narušená komunikační schopnost?",
+        "text": "S kterou osobností je nejvíce spojen pojem narušená komunikační schopnost?",
         "options": [
           "Karel Neubauer",
           "Viktor Lechta",
@@ -1623,7 +1623,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 26,
-        "text": "Které tvrzení o novodobých českých osobnostech je nejpřesnější?",
+        "text": "Které tvrzení o novodobých českých osobnostech odpovídá nejlépe?",
         "options": [
           "Marie Vítková je přesnější kotvou zrakového postižení než Libuše Ludíková",
           "Josef Slowík je spojován spíše se širším a inkluzivním pojetím speciální pedagogiky než s historickou kotvou nápravné pedagogiky",
@@ -1755,7 +1755,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 37,
-        "text": "Které tvrzení je o participačním pojetí nejpřesnější?",
+        "text": "Které tvrzení nejlépe vystihuje participační pojetí?",
         "options": [
           "akcentuje hlavně oddělenou péči ve specializovaném systému",
           "akcentuje především pasivní ochranu jedince bez důrazu na jeho roli",
@@ -1767,7 +1767,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 38,
-        "text": "Které tvrzení o historické proměně oboru je nejméně přesné?",
+        "text": "Které tvrzení o historické proměně oboru je nepřesné?",
         "options": [
           "historický vývoj zahrnuje i terminologické proměny a proměny cíle oboru",
           "starší názvosloví bývá často deficitněji orientované než novější podpůrné a participační pojetí",
@@ -1815,7 +1815,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 42,
-        "text": "Které tvrzení o pomocném školství je nejpřesnější v historickém kontextu české tradice?",
+        "text": "Které tvrzení o pomocném školství odpovídá nejlépe historickému kontextu české tradice?",
         "options": [
           "šlo o výhradně vysokoškolskou větev podpory studentů se specifickými potřebami",
           "šlo o historicky budovanou síť speciálního školství navázanou na dobové chápání péče o děti se speciálními vzdělávacími potřebami",
@@ -1827,7 +1827,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 43,
-        "text": "Které spojení je nejpřesnější?",
+        "text": "Které spojení odpovídá historickému a oborovému kontextu nejlépe?",
         "options": [
           "Josef Zeman — ministerská a systémová role při rozvoji pomocného školství a defektologie",
           "Jan Mauer — hlavní kotva zrakového postižení na UPOL",
@@ -1851,7 +1851,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 45,
-        "text": "Které tvrzení je o české oborové tradici první republiky nejpřesnější?",
+        "text": "Které tvrzení nejlépe vystihuje českou oborovou tradici první republiky?",
         "options": [
           "pomocné školství a defektologie nelze spojovat s Josefem Zemanem",
           "česká oborová tradice první republiky nesouvisela s rozvojem speciálního školství",
@@ -1875,7 +1875,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 47,
-        "text": "Které tvrzení o proměně oborového jazyka je nejpřesnější?",
+        "text": "Které tvrzení nejlépe vystihuje proměnu oborového jazyka?",
         "options": [
           "novější pojetí oboru se obvykle posouvá od nálepkování člověka k jazyku podpory, potřeb a participace",
           "novější pojetí oboru se obvykle vrací k silně deficitnímu a stigmatizujícímu označování",
@@ -1899,7 +1899,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 49,
-        "text": "Které tvrzení je nejméně přesné o vztahu jazyka a cíle oboru?",
+        "text": "Které tvrzení o vztahu jazyka a cíle oboru je nepřesné?",
         "options": [
           "změna jazyka obvykle souvisí se změnou toho, co obor považuje za svůj cíl",
           "deficitně orientovaný jazyk může odrážet starší pojetí jedince jako objektu péče",
@@ -1972,7 +1972,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
     "questions": [
       {
         "number": 1,
-        "text": "Dítě zachytí, že někdo mluví, ale opakovaně zaměňuje hláskově blízké dvojice a nerozhodne mezi nimi ani v klidné individuální situaci. Který diagnostický okruh je nejvýnosnější?",
+        "text": "Dítě zachytí, že někdo mluví, ale opakovaně zaměňuje hláskově blízké dvojice a nerozhodne mezi nimi ani v klidné individuální situaci. Které vyšetření je zde nejdůležitější?",
         "options": [
           "orientační vyšetření sluchu",
           "vyšetření fonematického sluchu",
@@ -2044,7 +2044,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 7,
-        "text": "Žák při frontálním výkladu výrazně profituje z přímé zrakové opory obličeje mluvčího a při odvrácení řečníka ztrácí obsah, přestože jeho vlastní řečová produkce nepůsobí nápadně narušeně. Které uzavření je nejméně přesné?",
+        "text": "Žák při frontálním výkladu výrazně profituje z přímé zrakové opory obličeje mluvčího a při odvrácení řečníka ztrácí obsah, přestože jeho vlastní řečová produkce nepůsobí nápadně narušeně. Které vysvětlení by zde bylo nejméně přesné?",
         "options": [
           "Těžiště může ležet v dostupnosti auditivně-mluveného sdělení, ne v produkční logopedické obtíži.",
           "Důležitým vodítkem je závislost porozumění na vizuálním kontaktu s mluvčím.",
@@ -2080,7 +2080,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 10,
-        "text": "Dítě má dlouhodobě chraptivý, unavitelný hlas, ale artikulace i obsah řeči zůstávají relativně zachované. Které uzavření je nejpřesnější?",
+        "text": "Dítě má dlouhodobě chraptivý, unavitelný hlas, ale artikulace i obsah řeči zůstávají relativně zachované. Jak situaci vyložit nejpřesněji?",
         "options": [
           "Těžiště leží spíše v poruše hlasu než v poruše rezonance nebo sluchové dostupnosti.",
           "Těžiště leží spíše v prelingvální sluchové ztrátě než v poruše hlasu.",
@@ -2104,7 +2104,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 12,
-        "text": "Která úprava prostředí je nejpřesnější u světloplachosti?",
+        "text": "Která úprava prostředí je zde nejvhodnější u světloplachosti?",
         "options": [
           "zvýšit lokální přisvětlení bez další úpravy",
           "pracovat se zastíněním a omezením oslnění",
@@ -2152,7 +2152,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 16,
-        "text": "Žák po zvětšení, kontrastu a přehlednějším grafickém uspořádání drží stejný obsah výrazně lépe, zatímco změna sedu a úchopu výkon téměř neposune. Které uzavření je nejpřesnější?",
+        "text": "Žák po zvětšení, kontrastu a přehlednějším grafickém uspořádání drží stejný obsah výrazně lépe, zatímco změna sedu a úchopu výkon téměř neposune. Jaké vysvětlení je zde nejpřesnější?",
         "options": [
           "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
           "Jádro leží spíše v motorickém provedení než v přístupu k vizuální informaci.",
@@ -2164,7 +2164,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 17,
-        "text": "Které uzavření je nejméně přesné, pokud dítě dobře vizuálně orientuje text i prostor, ale dlouhodobě potřebuje úpravu polohy, úchopu a manipulace s pomůckami?",
+        "text": "Co by zde bylo nejméně přesné tvrdit, pokud dítě dobře vizuálně orientuje text i prostor, ale dlouhodobě potřebuje úpravu polohy, úchopu a manipulace s pomůckami?",
         "options": [
           "Těžiště nemusí ležet v tyflopedické dostupnosti informace.",
           "Do popředí se může dostávat somatopedický rámec formy výkonu.",
@@ -2236,7 +2236,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 23,
-        "text": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Které čtení je nejpřesnější?",
+        "text": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Jaké čtení situace je nejpřesnější?",
         "options": [
           "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
           "Čtení je bližší surdopedickému rámci než psychopedickému.",
@@ -2248,7 +2248,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 24,
-        "text": "Která otázka je nejvýnosnější pro rozlišení psychopedického a etopedického čtení situace, když dítě nápadně odmítá úkol?",
+        "text": "Na co je při rozlišení psychopedického a etopedického čtení situace nejdůležitější se zeptat, když dítě nápadně odmítá úkol?",
         "options": [
           "Co se stane s výkonem po konkrétním modelování, názoru a snížení abstrakční zátěže?",
           "Jak rychle bude možné sepsat kázeňský záznam?",
@@ -2272,7 +2272,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 26,
-        "text": "Chování se vyhrocuje hlavně po vztahovém střetu, po porušení pravidel a v situacích sociálního konfliktu, nikoli po snížení abstrakce nebo zvýšení názornosti. Které uzavření je nejpřesnější?",
+        "text": "Chování se vyhrocuje hlavně po vztahovém střetu, po porušení pravidel a v situacích sociálního konfliktu, nikoli po snížení abstrakce nebo zvýšení názornosti. Jaké vysvětlení je zde nejpřesnější?",
         "options": [
           "Do popředí se dostává spíše etopedický rámec než psychopedická potřeba názornosti.",
           "Do popředí se dostává spíše tyflopedický rámec než etopedický.",
@@ -2284,7 +2284,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 27,
-        "text": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Které čtení je nejpřesnější?",
+        "text": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Jaké čtení situace je nejpřesnější?",
         "options": [
           "Těžiště leží spíše v sociálně-pragmatickém porozumění než v prosté slovní zásobě.",
           "Těžiště leží spíše ve zrakové ostrosti než v pragmatickém porozumění.",
@@ -2332,7 +2332,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 31,
-        "text": "Které uzavření je nejméně přesné, když dítě rozumí doslovnému obsahu, ale opakovaně nezachytí, co druhý „myslel mezi řádky“?",
+        "text": "Co by zde bylo nejméně přesné vyvozovat, když dítě rozumí doslovnému obsahu, ale opakovaně nezachytí, co druhý „myslel mezi řádky“?",
         "options": [
           "Může jít o oslabené pragmatické zpracování komunikačního záměru.",
           "Může jít o bariéru v perspektivním a sociálně-kontextovém čtení sdělení.",
@@ -2356,7 +2356,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 33,
-        "text": "Ke ztrátě sluchu došlo až poté, co se řeč přirozeně rozvinula. Které označení je nejpřesnější?",
+        "text": "Ke ztrátě sluchu došlo až poté, co se řeč přirozeně rozvinula. Jak se tato situace označuje nejpřesněji?",
         "options": [
           "postlingvální sluchová ztráta",
           "prelingvální sluchová ztráta",
@@ -2404,7 +2404,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 37,
-        "text": "Které shrnutí je nejpřesnější, pokud vada vznikla prenatálně, i když se její funkční dopad plně projeví až později?",
+        "text": "Jak toto shrnout nejpřesněji, pokud vada vznikla prenatálně, i když se její funkční dopad plně projeví až později?",
         "options": [
           "Stále může jít o vadu kongenitální.",
           "Jde automaticky o vadu získanou.",
@@ -2428,7 +2428,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 39,
-        "text": "Které tvrzení o klasifikaci závažnosti poruchy intelektového vývoje je nejpřesnější?",
+        "text": "Které tvrzení o klasifikaci závažnosti poruchy intelektového vývoje vystihuje věc nejlépe?",
         "options": [
           "Klasifikace pomáhá orientačně, ale sama nevystihuje plně individuální vzdělávací potřeby.",
           "Klasifikace sama přesně určí celý vzdělávací plán bez potřeby dalšího funkčního čtení.",
@@ -2440,7 +2440,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 40,
-        "text": "Které uzavření je v psychopedickém a klasifikačním čtení situace nejméně přesné?",
+        "text": "Co by v psychopedickém a klasifikačním čtení situace bylo nejméně přesné?",
         "options": [
           "Podpůrné a vzdělávací důsledky se nesmějí odvozovat jen mechanicky od diagnostické nálepky.",
           "Důležitou roli hraje i adaptivní fungování a reálný funkční profil.",
@@ -2452,7 +2452,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 41,
-        "text": "Které srovnání Haüyho a Brailla je nejpřesnější?",
+        "text": "Jak nejlépe vystihnout rozdíl mezi Haüyem a Braillem?",
         "options": [
           "Haüy je spojen s první školou pro nevidomé, Braille s písmem pro nevidomé.",
           "Haüy je spojen s písmem pro nevidomé, Braille s první školou pro neslyšící.",
@@ -2464,7 +2464,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 42,
-        "text": "Které vymezení osobnosti Pedra Ponce de León je nejpřesnější?",
+        "text": "Jak nejpřesněji vymezit osobnost Pedra Ponce de León?",
         "options": [
           "historická kotva vzdělávání neslyšících",
           "autor písma pro nevidomé",
@@ -2500,7 +2500,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 45,
-        "text": "Které srovnání Lechty a Neubauera je nejpřesnější?",
+        "text": "Jak nejlépe vystihnout vztah Lechty a Neubauera?",
         "options": [
           "Lechta je více spojen s pojmem narušená komunikační schopnost, Neubauer s logopedickou diagnostikou a klasifikačními rámci.",
           "Lechta je více spojen s tyflopedií, Neubauer se surdopedií.",
@@ -2620,7 +2620,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
     "questions": [
       {
         "number": 1,
-        "text": "Které uzavření je nejpřesnější, když podpora míří na zlepšení právě té oslabené funkce, v níž dítě dlouhodobě selhává?",
+        "text": "Jak nejlépe vyložit situaci, když podpora míří na zlepšení právě té oslabené funkce, v níž dítě dlouhodobě selhává?",
         "options": [
           "Jde spíše o reedukační logiku než o kompenzační.",
           "Jde spíše o kompenzační logiku než o reedukační.",
@@ -2632,7 +2632,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 2,
-        "text": "Které uzavření je nejpřesnější, když podpora zachovává cíl činnosti, ale obchází oslabenou funkci jinou zachovanou cestou?",
+        "text": "Jak nejlépe vyložit situaci, když podpora zachovává cíl činnosti, ale obchází oslabenou funkci jinou zachovanou cestou?",
         "options": [
           "Jde spíše o reedukaci než o kompenzaci.",
           "Jde spíše o kompenzaci než o reedukaci.",
@@ -2692,7 +2692,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 7,
-        "text": "Kdy je nejméně přesné mluvit o reedukaci?",
+        "text": "Kdy už není přesné mluvit o reedukaci?",
         "options": [
           "když cílem je přímo posílit oslabenou funkci",
           "když se sleduje posun právě v té dovednosti, která byla oslabená",
@@ -2716,7 +2716,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 9,
-        "text": "Které uzavření je nejméně přesné, když je cílem úlohy porozumět textu a škola převede text do hlasové podoby?",
+        "text": "Co by zde bylo nejméně přesné tvrdit, když je cílem úlohy porozumět textu a škola převede text do hlasové podoby?",
         "options": [
           "Jde spíše o kompenzační zpřístupnění než o reedukační nácvik čtení.",
           "Jde spíše o zachování obsahového cíle než o přímou práci na oslabeném čtení.",
@@ -2728,7 +2728,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 10,
-        "text": "Které uzavření je nejpřesnější, když je cílem zásahu zlepšit grafomotorické vedení tahu a přesnost písemného záznamu pravidelným nácvikem?",
+        "text": "Jak situaci vyložit nejpřesněji, když je cílem zásahu zlepšit grafomotorické vedení tahu a přesnost písemného záznamu pravidelným nácvikem?",
         "options": [
           "Jde spíše o kompenzační postup.",
           "Jde spíše o reedukační postup.",
@@ -2764,7 +2764,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 13,
-        "text": "Které uzavření je nejméně přesné, když dítě píše obsahově lépe na klávesnici než rukou a cílem úkolu není grafomotorika?",
+        "text": "Co by zde bylo nejméně přesné tvrdit, když dítě píše obsahově lépe na klávesnici než rukou a cílem úkolu není grafomotorika?",
         "options": [
           "Klávesnice zde může mít kompenzační funkci.",
           "Jde o změnu cesty k zachování obsahového cíle.",
@@ -2776,7 +2776,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 14,
-        "text": "Které tvrzení o vztahu reedukace a rehabilitace je nejpřesnější?",
+        "text": "Jak nejlépe vystihnout vztah reedukace a rehabilitace?",
         "options": [
           "Reedukace může být jedním z konkrétnějších postupů uvnitř širšího rehabilitačního rámce.",
           "Rehabilitace je užší pojem a reedukace je jeho nadřazená kategorie.",
@@ -2800,7 +2800,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 16,
-        "text": "Které vymezení ergoterapie je nejpřesnější?",
+        "text": "Jak nejlépe vymezit ergoterapii?",
         "options": [
           "cílená práce s činnostmi směřující k soběstačnosti, funkčnímu výkonu a participaci",
           "cílená práce s artikulační přesností a hlasovým vedením",
@@ -2812,7 +2812,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 17,
-        "text": "Které vymezení fyzioterapie je nejpřesnější?",
+        "text": "Jak nejlépe vymezit fyzioterapii?",
         "options": [
           "práce s pohybovým systémem, motorikou a tělesnými funkcemi ve vztahu k pohybu a držení těla",
           "práce s výběrem symbolického systému AAK",
@@ -2824,7 +2824,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 18,
-        "text": "Které tvrzení o ergoterapii je nejméně přesné?",
+        "text": "Které tvrzení o ergoterapii je nepřesné?",
         "options": [
           "může pracovat s nácvikem běžných denních činností",
           "může sledovat funkční účast v reálných situacích",
@@ -2836,7 +2836,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 19,
-        "text": "Které tvrzení o fyzioterapii je nejméně přesné?",
+        "text": "Které tvrzení o fyzioterapii je nepřesné?",
         "options": [
           "může souviset s pohybovými funkcemi a motorickým systémem",
           "může mít význam pro držení těla, koordinaci nebo mobilitu",
@@ -2848,7 +2848,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 20,
-        "text": "Které vymezení bazální stimulace je nejpřesnější?",
+        "text": "Jak nejlépe vymezit bazální stimulaci?",
         "options": [
           "koncept práce s jednoduchými podněty, jistotou, orientací a kvalitou kontaktu",
           "koncept systematického nácviku oslabené čtecí dovednosti",
@@ -2860,7 +2860,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 21,
-        "text": "Které tvrzení o bazální stimulaci je nejméně přesné?",
+        "text": "Které tvrzení o bazální stimulaci je nepřesné?",
         "options": [
           "může podporovat orientaci, jistotu a kontakt",
           "bývá spojována i s pojmem bazální dialog",
@@ -2908,7 +2908,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 25,
-        "text": "Které vymezení TEACCH je nejpřesnější?",
+        "text": "Jak nejlépe vymezit TEACCH?",
         "options": [
           "strukturování prostředí, času a činností s důrazem na předvídatelnost a vizuální oporu",
           "hledání smyslu a hodnoty v prožívání a rozhodování",
@@ -2920,7 +2920,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 26,
-        "text": "Které uzavření je nejpřesnější, když dítě s PAS zvládá činnost výrazně lépe po jasném prostorovém členění, vizuálním rozvrhu a předvídatelném sledu kroků?",
+        "text": "Jak nejlépe vyložit situaci, když dítě s PAS zvládá činnost výrazně lépe po jasném prostorovém členění, vizuálním rozvrhu a předvídatelném sledu kroků?",
         "options": [
           "Situace je bližší strukturovanému učení než reedukačnímu nácviku samotné oslabené funkce.",
           "Situace je bližší logoterapii než strukturovanému učení.",
@@ -2932,7 +2932,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 27,
-        "text": "Které tvrzení o logoterapii je nejpřesnější?",
+        "text": "Které tvrzení o logoterapii vystihuje věc nejlépe?",
         "options": [
           "je nejvíce spojena s Viktorem Franklem a s důrazem na smysl",
           "je nejvíce spojena s Andreasem D. Fröhlichem a bazální stimulací",
@@ -2956,7 +2956,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 29,
-        "text": "Které uzavření je nejpřesnější, když je hlavním cílem práce otázka smyslu, osobního postoje a životní orientace člověka v těžké situaci?",
+        "text": "Jak nejlépe vyložit situaci, když je hlavním cílem práce otázka smyslu, osobního postoje a životní orientace člověka v těžké situaci?",
         "options": [
           "Je bližší logoterapeutický rámec než strukturované učení nebo reedukační trénink.",
           "Je bližší bazálně-stimulační rámec než logoterapeutický.",
@@ -2968,7 +2968,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 30,
-        "text": "Které tvrzení o AAK je nejpřesnější?",
+        "text": "Jak nejlépe vystihnout AAK?",
         "options": [
           "jde o soubor prostředků, které mohou řeč doplňovat nebo nahrazovat",
           "jde výhradně o technické komunikátory s hlasovým výstupem",
@@ -2992,7 +2992,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 32,
-        "text": "Která volba je nejpřesnější, pokud má dítě výrazně omezenou mluvenou produkci, ale potřebuje funkčně sdělovat volby a potřeby?",
+        "text": "Která volba je v této situaci nejvhodnější, pokud má dítě výrazně omezenou mluvenou produkci, ale potřebuje funkčně sdělovat volby a potřeby?",
         "options": [
           "uvažovat o AAK jako o funkční cestě ke sdělování potřeb a voleb",
           "ponechat komunikaci výhradně na odhadu okolí",
@@ -3004,7 +3004,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 33,
-        "text": "Které tvrzení o výběru AAK je nejméně přesné?",
+        "text": "Které tvrzení o výběru AAK je nepřesné?",
         "options": [
           "systém má odpovídat motorickému, zrakovému a kognitivnímu profilu uživatele",
           "důležitá je i použitelnost systému v přirozeném prostředí",
@@ -3052,7 +3052,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 37,
-        "text": "Které tvrzení o komunikačním partnerovi v AAK je nejpřesnější?",
+        "text": "Které tvrzení o komunikačním partnerovi v AAK vystihuje věc nejlépe?",
         "options": [
           "funkčnost systému závisí i na tom, zda okolí rozumí jeho použití a skutečně jej přijímá do komunikace",
           "partner má být spíše pasivní, aby nenarušoval samostatnost uživatele",
@@ -3076,7 +3076,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 39,
-        "text": "Které uzavření je nejpřesnější, když škola zavede kontrastnější materiál, zvětšení a přehlednější grafické členění, aby žák mohl pracovat se stejným obsahem?",
+        "text": "Jak nejlépe vyložit situaci, když škola zavede kontrastnější materiál, zvětšení a přehlednější grafické členění, aby žák mohl pracovat se stejným obsahem?",
         "options": [
           "Jde především o úpravu přístupnosti prostředí a materiálu.",
           "Jde především o reedukační nácvik oslabené funkce.",
@@ -3100,7 +3100,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 41,
-        "text": "Které tvrzení o úpravě prostředí je nejméně přesné?",
+        "text": "Které tvrzení o úpravě prostředí je nepřesné?",
         "options": [
           "může být klíčová tam, kde bariéra souvisí s přehledností, organizací nebo senzorickou zátěží",
           "nemusí sama o sobě přímo zlepšovat oslabenou funkci",
@@ -3124,7 +3124,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 43,
-        "text": "Kdy je úprava prostředí nejpřesnější volbou?",
+        "text": "Kdy je úprava prostředí nejvhodnější volbou?",
         "options": [
           "když hlavní bariéra souvisí s přehledností, senzorickou zátěží nebo organizací práce v daném prostředí",
           "když je cílem přímo posílit oslabenou funkci systematickým tréninkem",
@@ -3136,7 +3136,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 44,
-        "text": "Které tvrzení je nejpřesnější, když žák zvládá stejný obsah po rozdělení úkolu do kratších kroků, ale ztrácí se v jeho celku?",
+        "text": "Které tvrzení nejlépe vystihuje situaci, když žák zvládá stejný obsah po rozdělení úkolu do kratších kroků, ale ztrácí se v jeho celku?",
         "options": [
           "Rozfázování zde funguje jako metodická úprava přístupu k úkolu.",
           "Rozfázování zde dokazuje, že cíl úkolu má být trvale snížen.",
@@ -3148,7 +3148,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 45,
-        "text": "Které tvrzení o vztahu pomůcky a cíle je nejpřesnější?",
+        "text": "Jak nejlépe vystihnout vztah pomůcky a cíle?",
         "options": [
           "Vhodnost pomůcky se posuzuje podle toho, zda pomáhá dosáhnout cíle v situaci, pro kterou byla zavedena.",
           "Vhodnost pomůcky se posuzuje hlavně podle technické náročnosti.",
@@ -3184,7 +3184,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 48,
-        "text": "Které uzavření je nejméně přesné, když nová pomůcka funguje jen v jedné silně vedené ukázce, ale v běžné cílové situaci ne?",
+        "text": "Co by zde bylo nejméně přesné tvrdit, když nová pomůcka funguje jen v jedné silně vedené ukázce, ale v běžné cílové situaci ne?",
         "options": [
           "Je třeba hodnotit účinek v cílové situaci, pro kterou byla zavedena.",
           "Jedna ukázková hodina sama o sobě nestačí k potvrzení účinnosti.",
@@ -3196,7 +3196,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 49,
-        "text": "Která otázka je nejvýnosnější při rozhodování mezi reedukací a kompenzací?",
+        "text": "Na co je při rozhodování mezi reedukací a kompenzací nejdůležitější se ptát?",
         "options": [
           "Máme realisticky posilovat oslabenou funkci, nebo hledat jinou funkční cestu ke stejnému cíli?",
           "Který postup je pro tým jednodušší na zápis?",
@@ -3280,7 +3280,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 2,
-        "text": "Ve kterém případě je nejpřesnější, aby škola zůstala zatím v režimu vlastní podpory bez návazného doporučení ŠPZ?",
+        "text": "Ve kterém případě je na místě, aby škola zatím zůstala v režimu vlastní podpory bez návazného doporučení ŠPZ?",
         "options": [
           "Škola ještě neumí přesně vymezit cílovou obtíž, ale chce rovnou žádat o asistenta pedagoga.",
           "Jde o mírnou obtíž, u níž škola umí sama upravit metody, organizaci a hodnocení a průběžně sledovat efekt.",
@@ -3292,7 +3292,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 3,
-        "text": "Kdy je procesně nejpřesnější zpracovat plán pedagogické podpory?",
+        "text": "Kdy je z hlediska postupu školy na místě zpracovat plán pedagogické podpory?",
         "options": [
           "Až po vydání doporučení ŠPZ.",
           "Když samotné zohlednění individuálních vzdělávacích potřeb žáka při vzdělávání nepostačuje.",
@@ -3328,7 +3328,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 6,
-        "text": "Které tvrzení o podpůrných opatřeních prvního stupně je nejpřesnější?",
+        "text": "Které tvrzení o podpůrných opatřeních prvního stupně vystihuje situaci nejlépe?",
         "options": [
           "Jsou vždy navázána na doporučení PPP nebo SPC.",
           "Škola je poskytuje bez doporučení ŠPZ a průběžně vyhodnocuje jejich účinek.",
@@ -3364,7 +3364,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 9,
-        "text": "Pokud škola potřebuje po vyhodnocení vlastní podpory přejít k návaznému poradenskému kroku, co je procesně nejpřesnější?",
+        "text": "Pokud škola po vyhodnocení vlastní podpory přechází k dalšímu poradenskému kroku, jaký postup je nejpřiměřenější?",
         "options": [
           "bez dalšího převést žáka do školy podle § 16 odst. 9",
           "doporučit využití poradenské pomoci ŠPZ",
@@ -3412,7 +3412,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 13,
-        "text": "Které tvrzení o IVP je nejpřesnější?",
+        "text": "Které tvrzení nejlépe vystihuje roli IVP?",
         "options": [
           "IVP je automatickým výstupem každého poradenského vyšetření.",
           "IVP je dokument školy, který může vznikat v návaznosti na doporučení a vzdělávací potřeby žáka.",
@@ -3460,7 +3460,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 17,
-        "text": "Které tvrzení o SVP je nejpřesnější?",
+        "text": "Které tvrzení o SVP odpovídá nejlépe jeho postavení v systému?",
         "options": [
           "SVP je typ školského poradenského zařízení vedle PPP a SPC.",
           "SVP patří do systému preventivně-výchovné péče, nikoli mezi ŠPZ.",
@@ -3508,7 +3508,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 21,
-        "text": "Které tvrzení o škole podle § 16 odst. 9 školského zákona je nejpřesnější?",
+        "text": "Jak nejlépe vymezit školu podle § 16 odst. 9 školského zákona?",
         "options": [
           "Jde o každou školu, která vzdělává alespoň jednoho žáka s podpůrnými opatřeními.",
           "Jde o školu nebo třídu zřízenou pro žáky se speciálními vzdělávacími potřebami podle právního rámce.",
@@ -3556,7 +3556,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 25,
-        "text": "Které tvrzení o nadaném žákovi je nejpřesnější?",
+        "text": "Které tvrzení o nadaném žákovi odpovídá nejlépe?",
         "options": [
           "Nadaný žák stojí zcela mimo poradenský systém.",
           "IVP může být v právním rámci využit i u nadaného žáka.",
@@ -3640,7 +3640,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 32,
-        "text": "Která volba partnera je nejpřesnější pro žáka s těžkým zrakovým postižením a potřebou specifických kompenzačních a organizačních opatření?",
+        "text": "Které pracoviště je nejvhodnějším partnerem pro žáka s těžkým zrakovým postižením a potřebou specifických kompenzačních a organizačních opatření?",
         "options": [
           "PPP",
           "SPC",
@@ -3652,7 +3652,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 33,
-        "text": "Která volba partnera je nejpřesnější pro žáka s výraznými obtížemi ve čtení a psaní bez dominantního smyslového postižení?",
+        "text": "Které pracoviště je nejvhodnějším partnerem pro žáka s výraznými obtížemi ve čtení a psaní bez dominantního smyslového postižení?",
         "options": [
           "SPC",
           "PPP",
@@ -3664,7 +3664,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 34,
-        "text": "Které tvrzení o VŠ a školském poradenském systému je nejpřesnější?",
+        "text": "Které tvrzení o vysokých školách a školském poradenském systému odpovídá nejlépe?",
         "options": [
           "Vysoká škola standardně postupuje v režimu PO1–PO5 stejně jako ZŠ.",
           "Vysoká škola má vlastní systém podpory studentů se specifickými potřebami, nikoli školní režim PO1–PO5.",
@@ -3700,7 +3700,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 37,
-        "text": "Které tvrzení o doporučení je procesně nejpřesnější?",
+        "text": "Které tvrzení nejlépe vystihuje funkci doporučení?",
         "options": [
           "Je to dokument školy pro vedení první podpory.",
           "Je to výstup ŠPZ, který navrhuje podpůrná opatření pro vzdělávání.",
@@ -3724,7 +3724,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 39,
-        "text": "Které rozlišení je nejpřesnější, pokud škola po vyhodnocení PO1 uvažuje o dalším kroku?",
+        "text": "Jak nejlépe rozlišit další krok, pokud škola po vyhodnocení PO1 uvažuje o návazném postupu?",
         "options": [
           "Pokud se zlepší klima třídy, není třeba řešit, zda se pohnula hlavní vzdělávací obtíž.",
           "Rozhodující je, zda se posunula právě ta obtíž, na kterou škola podporu cílila.",
@@ -3772,7 +3772,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 43,
-        "text": "Které tvrzení o škole a doporučení je nejméně přesné?",
+        "text": "Co by o škole a doporučení bylo nepřesné tvrdit?",
         "options": [
           "Škola musí podporu převést do běžné pedagogické praxe.",
           "Doporučení samo neodvádí každodenní práci za školu.",
@@ -3784,7 +3784,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 44,
-        "text": "Který dokument je nejméně přesné chápat jako přímý nástroj školy pro první stupeň podpory?",
+        "text": "Který dokument nelze přesně chápat jako přímý nástroj školy pro první stupeň podpory?",
         "options": [
           "PLPP",
           "doporučení",
@@ -3832,7 +3832,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 48,
-        "text": "Která možnost je nejpřesnější pro procesně správný další krok, když škola po vyhodnocení PO1 zjistí, že podpůrná opatření nejsou dostačující?",
+        "text": "Jaký další krok je procesně správný, když škola po vyhodnocení PO1 zjistí, že podpůrná opatření nejsou dostačující?",
         "options": [
           "bezodkladně doporučit využití poradenské pomoci ŠPZ",
           "automaticky zpracovat IVP bez dalšího",
@@ -3844,7 +3844,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 49,
-        "text": "Který subjekt je nejméně přesné chápat jako hlavního partnera pro řešení preventivně-výchovných obtíží ve školském systému?",
+        "text": "Který subjekt nelze přesně považovat za hlavního partnera pro řešení preventivně-výchovných obtíží ve školském systému?",
         "options": [
           "SVP",
           "PPP",
@@ -3915,7 +3915,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
     "questions": [
       {
         "number": 1,
-        "text": "Které tvrzení o výplatě příspěvku na mobilitu je nejpřesnější?",
+        "text": "Které tvrzení o výplatě příspěvku na mobilitu odpovídá aktuální úpravě nejlépe?",
         "options": [
           "vyplácí se vždy předem na daný kalendářní měsíc",
           "vyplácí se zpětně do konce měsíce následujícího po kalendářním měsíci, za který náleží",
@@ -3927,7 +3927,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 2,
-        "text": "Které tvrzení o způsobu výplaty příspěvku na mobilitu je nejpřesnější?",
+        "text": "Jak je nejpřesněji upraven způsob výplaty příspěvku na mobilitu?",
         "options": [
           "na žádost může být vyplácen jednou splátkou vždy za 3 kalendářní měsíce, za které náležel",
           "vždy se vyplácí jen poštovní poukázkou",
@@ -3963,7 +3963,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 5,
-        "text": "Které tvrzení o zvýšené sazbě příspěvku na mobilitu je nejpřesnější?",
+        "text": "Které tvrzení o zvýšené sazbě příspěvku na mobilitu je věcně správné?",
         "options": [
           "náleží automaticky každému držiteli průkazu ZTP/P",
           "náleží při splnění zákonných podmínek osobě, která po celý kalendářní měsíc využívá domácí oxygenoterapii nebo domácí plicní ventilaci",
@@ -3975,7 +3975,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 6,
-        "text": "Které tvrzení o pomůcce v ceně nižší než 10 000 Kč je nejpřesnější?",
+        "text": "Které tvrzení o pomůcce v ceně nižší než 10 000 Kč odpovídá aktuální úpravě?",
         "options": [
           "spoluúčast činí vždy 10 % z ceny",
           "příspěvek se standardně poskytuje jen při příjmu nižším než 8násobek životního minima společně posuzovaných osob",
@@ -3987,7 +3987,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 7,
-        "text": "Které tvrzení o pomůcce do 10 000 Kč je nejpřesnější i pro hraniční situaci vyššího příjmu?",
+        "text": "Které tvrzení o pomůcce do 10 000 Kč platí i v hraniční situaci vyššího příjmu?",
         "options": [
           "při vyšším příjmu je dávka zcela vyloučena bez výjimky",
           "z důvodů hodných zvláštního zřetele může být příspěvek poskytnut i při překročení příjmového limitu",
@@ -4035,7 +4035,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 11,
-        "text": "Které tvrzení o příspěvku na pořízení motorového vozidla je nejpřesnější při příjmu vyšším než 20násobek částky životního minima?",
+        "text": "Jak se posuzuje příspěvek na pořízení motorového vozidla při příjmu vyšším než 20násobek částky životního minima?",
         "options": [
           "činí 285 000 Kč",
           "činí 245 000 Kč",
@@ -4047,7 +4047,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 12,
-        "text": "Které tvrzení o příspěvku na pořízení motorového vozidla je nejpřesnější při příjmu nižším nebo rovném 16násobku částky životního minima, nebo jde-li o nezletilou osobu?",
+        "text": "Jak se posuzuje příspěvek na pořízení motorového vozidla při příjmu nižším nebo rovném 16násobku částky životního minima, nebo jde-li o nezletilou osobu?",
         "options": [
           "činí 185 000 Kč",
           "činí 225 000 Kč",
@@ -4059,7 +4059,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 13,
-        "text": "Které tvrzení o výši příspěvku na pořízení motorového vozidla je nejpřesnější?",
+        "text": "Které tvrzení o výši příspěvku na pořízení motorového vozidla je věcně správné?",
         "options": [
           "výše je jednotná bez ohledu na příjem a věk",
           "výše se odstupňuje podle příjmových pásem a zvláštní úpravu má i nezletilá osoba",
@@ -4071,7 +4071,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 14,
-        "text": "Které tvrzení o vrácení příspěvku na zvláštní pomůcku je nejpřesnější?",
+        "text": "Které tvrzení o vrácení příspěvku na zvláštní pomůcku odpovídá nejlépe právní úpravě?",
         "options": [
           "vrací se vždy automaticky po 12 měsících",
           "osoba je povinna příspěvek nebo jeho poměrnou část vrátit mimo jiné tehdy, pokud jej nepoužila ve stanovené lhůtě na pořízení pomůcky",
@@ -4083,7 +4083,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 15,
-        "text": "Které tvrzení o průkazu TP je nejpřesnější?",
+        "text": "Které tvrzení správně vystihuje průkaz TP?",
         "options": [
           "náleží při těžkém funkčním postižení pohyblivosti nebo orientace",
           "náleží při středně těžkém funkčním postižení pohyblivosti nebo orientace",
@@ -4095,7 +4095,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 16,
-        "text": "Které tvrzení o průkazu ZTP je nejpřesnější?",
+        "text": "Které tvrzení správně vystihuje průkaz ZTP?",
         "options": [
           "náleží při těžkém funkčním postižení pohyblivosti nebo orientace",
           "náleží jen při potřebě průvodce",
@@ -4107,7 +4107,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 17,
-        "text": "Které tvrzení o průkazu ZTP/P je nejpřesnější?",
+        "text": "Které tvrzení správně vystihuje průkaz ZTP/P?",
         "options": [
           "náleží při středně těžkém postižení pohyblivosti nebo orientace",
           "náleží při zvlášť těžkém nebo úplném postižení pohyblivosti nebo orientace s potřebou průvodce",
@@ -4119,7 +4119,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 18,
-        "text": "Které tvrzení o právní povaze průkazu OZP je nejpřesnější?",
+        "text": "Jak nejlépe popsat právní povahu průkazu OZP?",
         "options": [
           "jde o školní dokument",
           "jde o veřejnou listinu",
@@ -4167,7 +4167,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 22,
-        "text": "Které tvrzení o OSPOD je nejpřesnější?",
+        "text": "Které tvrzení o OSPOD odpovídá jeho roli nejlépe?",
         "options": [
           "jde o školské poradenské zařízení",
           "jde o orgán sociálně-právní ochrany dětí",
@@ -4179,7 +4179,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 23,
-        "text": "Které tvrzení o rané péči je nejpřesnější?",
+        "text": "Jak nejlépe vymezit ranou péči?",
         "options": [
           "jde o sociální službu zaměřenou na dítě a rodinu v raném období života",
           "jde o typ diagnostického ústavu",
@@ -4191,7 +4191,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 24,
-        "text": "Které tvrzení o osobní asistenci je nejpřesnější?",
+        "text": "Jak nejlépe vymezit osobní asistenci?",
         "options": [
           "jde o sociální službu podporující člověka v běžných činnostech života",
           "jde o školské podpůrné opatření vyššího stupně",
@@ -4203,7 +4203,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 25,
-        "text": "Které tvrzení o sociální rehabilitaci je nejpřesnější?",
+        "text": "Jak nejlépe vymezit sociální rehabilitaci?",
         "options": [
           "jde o sociální službu podporující samostatnost, orientaci a začlenění do běžného života",
           "jde o druh ústavní výchovy",
@@ -4215,7 +4215,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 26,
-        "text": "Který subjekt je nejméně přesné chápat jako hlavního partnera pro řešení preventivně-výchovných obtíží ve školském systému?",
+        "text": "Který subjekt nelze přesně považovat za hlavního partnera pro řešení preventivně-výchovných obtíží ve školském systému?",
         "options": [
           "SVP",
           "PPP",
@@ -4239,7 +4239,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 28,
-        "text": "Které tvrzení o meziresortní hranici je nejpřesnější?",
+        "text": "Jak nejlépe vystihnout meziresortní hranici v této oblasti?",
         "options": [
           "školní podpora, sociální služby a dávkové rozhodování jsou různé systémové linie, které se mohou věcně dotýkat jednoho člověka",
           "sociální služba automaticky nahrazuje školní podporu",
@@ -4251,7 +4251,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 29,
-        "text": "Které tvrzení o dětském domově se školou je nejpřesnější?",
+        "text": "Které tvrzení o dětském domově se školou odpovídá nejlépe jeho postavení v systému?",
         "options": [
           "jde o sociální službu pro děti s postižením",
           "jde o školské zařízení určené pro děti s nařízenou ústavní výchovou nebo uloženou ochrannou výchovou se závažnými poruchami chování",
@@ -4263,7 +4263,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 30,
-        "text": "Které tvrzení o diagnostickém ústavu je nejpřesnější?",
+        "text": "Jak nejlépe vymezit diagnostický ústav?",
         "options": [
           "jde o školské zařízení s diagnostickou a rozmisťovací funkcí v systému ústavní nebo ochranné výchovy",
           "jde o sociální službu pro podporu rodiny v domácím prostředí",
@@ -4275,7 +4275,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 31,
-        "text": "Které tvrzení o výchovném ústavu je nejpřesnější?",
+        "text": "Jak nejlépe vymezit výchovný ústav?",
         "options": [
           "jde o školské zařízení pro výkon ústavní nebo ochranné výchovy, typicky pro starší děti se závažnými poruchami chování",
           "jde o dávkový orgán",
@@ -4287,7 +4287,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 32,
-        "text": "Které tvrzení o středisku výchovné péče je nejpřesnější?",
+        "text": "Jak nejlépe vymezit středisko výchovné péče?",
         "options": [
           "jde o školské zařízení preventivně-výchovné péče",
           "jde o dávku osobám se zdravotním postižením",
@@ -4299,7 +4299,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 33,
-        "text": "Které tvrzení o umístění dítěte do konkrétního zařízení ústavní nebo ochranné výchovy je nejpřesnější?",
+        "text": "Které tvrzení o umístění dítěte do konkrétního zařízení ústavní nebo ochranné výchovy je věcně správné?",
         "options": [
           "o umístění rozhoduje výhradně škola",
           "o umístění rozhoduje soud; jiné subjekty mohou mít v procesu jinou roli, ale nejsou rozhodujícím orgánem",
@@ -4311,7 +4311,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 34,
-        "text": "Které tvrzení o OSPOD a umístění dítěte je nejpřesnější?",
+        "text": "Jak nejlépe vystihnout roli OSPOD při umístění dítěte?",
         "options": [
           "OSPOD je v systému významný aktér, ale není tím, kdo samostatně rozhoduje o konkrétním zařízení ústavní nebo ochranné výchovy",
           "OSPOD plně nahrazuje soud",
@@ -4347,7 +4347,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 37,
-        "text": "Které tvrzení o školní pomůcce a sociální dávce je nejpřesnější?",
+        "text": "Které tvrzení nejlépe rozlišuje školní pomůcku a sociální dávku?",
         "options": [
           "školní potřeba pomůcky a dávka na zvláštní pomůcku nejsou totéž, i když se mohou týkat stejné osoby",
           "školní doporučení samo zakládá nárok na dávku",
@@ -4371,7 +4371,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 39,
-        "text": "Které tvrzení o roli školy v sociální oblasti je nejpřesnější?",
+        "text": "Jak nejlépe vystihnout roli školy v sociální oblasti?",
         "options": [
           "škola může být orientačním partnerem rodiny, ale nenahrazuje dávkový orgán ani sociální službu",
           "škola rozhoduje o přiznání průkazu OZP",
@@ -4383,7 +4383,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 40,
-        "text": "Které rozlišení je nejpřesnější, když rodina řeší automobil a současně pravidelnou dopravu?",
+        "text": "Které řešení nejlépe rozlišuje podporu při pořízení automobilu a podporu pravidelné dopravy?",
         "options": [
           "jedna věc se týká opakující se měsíční dávky, druhá zvláštní pomůcky na pořízení motorového vozidla",
           "jde stále o stejnou dávku pod dvěma názvy",
@@ -4395,7 +4395,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 41,
-        "text": "Která volba je nejpřesnější, pokud člověk potřebuje podporu v samostatném fungování v komunitě, ne pouze školní úpravu výuky?",
+        "text": "Která volba je v této situaci nejvhodnější, pokud člověk potřebuje podporu v samostatném fungování v komunitě, ne pouze školní úpravu výuky?",
         "options": [
           "sociální rehabilitace",
           "PLPP",
@@ -4407,7 +4407,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 42,
-        "text": "Která volba je nejpřesnější, pokud člověk potřebuje podporu v běžných každodenních činnostech a doprovodu, ne jen školní organizaci výuky?",
+        "text": "Která volba je v této situaci nejvhodnější, pokud člověk potřebuje podporu v běžných každodenních činnostech a doprovodu, ne jen školní organizaci výuky?",
         "options": [
           "osobní asistence",
           "školní řád",
@@ -4419,7 +4419,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 43,
-        "text": "Která volba je nejpřesnější, pokud rodina malého dítěte s postižením potřebuje dlouhodobější podporu a orientaci v raném vývoji?",
+        "text": "Která volba je v této situaci nejvhodnější, pokud rodina malého dítěte s postižením potřebuje dlouhodobější podporu a orientaci v raném vývoji?",
         "options": [
           "raná péče",
           "diagnostický ústav",
@@ -4431,7 +4431,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 44,
-        "text": "Které tvrzení o změně skutečností rozhodných pro nárok na příspěvek na mobilitu je nejpřesnější?",
+        "text": "Které tvrzení o změně skutečností rozhodných pro nárok na příspěvek na mobilitu odpovídá právní úpravě?",
         "options": [
           "dávka běží beze změny až do další žádosti",
           "změní-li se skutečnosti tak, že příspěvek nenáleží, odejme se od prvního dne kalendářního měsíce následujícího po měsíci, za který už byla dávka vyplacena",
@@ -4443,7 +4443,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 45,
-        "text": "Které tvrzení o obnově výplaty příspěvku na mobilitu po hospitalizaci je nejpřesnější?",
+        "text": "Které tvrzení o obnovení výplaty příspěvku na mobilitu po hospitalizaci je věcně správné?",
         "options": [
           "výplata se obnoví až po novém správním řízení bez vazby na kalendářní měsíc",
           "obnoví se od prvního dne kalendářního měsíce, v němž hospitalizace netrvala po celý kalendářní měsíc",
@@ -4455,7 +4455,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 46,
-        "text": "Které tvrzení o výplatě příspěvku na zvláštní pomůcku je nejpřesnější?",
+        "text": "Které tvrzení o výplatě příspěvku na zvláštní pomůcku je věcně správné?",
         "options": [
           "vyplácí se do konce kalendářního měsíce následujícího po měsíci, v němž rozhodnutí nabylo právní moci",
           "vyplácí se vždy předem na celý kalendářní rok",
@@ -4467,7 +4467,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 47,
-        "text": "Které tvrzení o mobilitě a zvláštní pomůcce je nejpřesnější?",
+        "text": "Které tvrzení nejlépe rozlišuje mobilitu a zvláštní pomůcku?",
         "options": [
           "obě dávky mají shodný účel i shodné podmínky",
           "jedna řeší pravidelnou dopravní potřebu, druhá pořízení konkrétní pomůcky",
@@ -4491,7 +4491,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 49,
-        "text": "Který subjekt je nejméně přesné chápat jako hlavního partnera pro orientaci ve veřejnosprávním dávkovém nároku?",
+        "text": "Který subjekt nelze přesně považovat za hlavního partnera pro orientaci ve veřejnosprávním dávkovém nároku?",
         "options": [
           "krajská pobočka Úřadu práce",
           "orgán veřejné správy",
@@ -4972,7 +4972,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 35,
-        "text": "Které srovnání podpory ve škole a na vysoké škole je nejpřesnější?",
+        "text": "Jak nejlépe vystihnout rozdíl mezi podporou ve škole a na vysoké škole?",
         "options": [
           "vysoká škola standardně používá stejný systém PO1–PO5 jako základní škola, jen bez PLPP",
           "vysoká škola zajišťuje podporu studentů se specifickými potřebami vlastním univerzitním systémem, nikoli režimem školních podpůrných opatření PO1–PO5",
@@ -4984,7 +4984,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 36,
-        "text": "Škola u žáka po dobu několika týdnů cíleně upravuje způsob zadávání, organizaci práce i průběžné hodnocení. Učitelé ale současně zjišťují, že bez přesnějšího vymezení vzdělávacích dopadů obtíže nedokážou rozhodnout, zda má škola dál setrvat jen u vlastní podpory, nebo už doporučit návaznost na školské poradenské zařízení. Který podklad je pro toto rozhodnutí nejvýnosnější?",
+        "text": "Škola u žáka po dobu několika týdnů cíleně upravuje způsob zadávání, organizaci práce i průběžné hodnocení. Učitelé ale současně zjišťují, že bez přesnějšího vymezení vzdělávacích dopadů obtíže nedokážou rozhodnout, zda má škola dál setrvat jen u vlastní podpory, nebo už doporučit návaznost na školské poradenské zařízení. Který podklad je pro toto rozhodnutí nejdůležitější?",
         "options": [
           "obecný dojem, že žák při individuálním vedení působí jistěji než dříve",
           "přesný popis cílové školní situace, zavedené podpory a kritéria, podle nichž bude možné posoudit její efekt",
@@ -5008,7 +5008,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 38,
-        "text": "Které tvrzení o vztahu doporučení ŠPZ a konkrétní školní realizace podpory je nejpřesnější?",
+        "text": "Které tvrzení nejlépe vystihuje vztah mezi doporučením ŠPZ a konkrétní školní realizací podpory?",
         "options": [
           "doporučení už samo o sobě určuje přesnou každodenní podobu výuky, takže škola jen mechanicky přebírá hotový režim práce",
           "doporučení vymezuje podpůrný rámec pro vzdělávání, ale škola ještě musí tento rámec převést do konkrétních pedagogických kroků v běžné výuce",
@@ -5032,7 +5032,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 40,
-        "text": "Které rozlišení je v oblasti podpůrných opatření nejpřesnější?",
+        "text": "Které rozlišení podpůrných opatření je zde věcně nejpřesnější?",
         "options": [
           "individuální vzdělávací plán je vázán jen na žáky s postižením, zatímco plán pedagogické podpory lze použít i u nadaných",
           "plán pedagogické podpory je nástrojem školy pro zachycení a sledování podpory v rámci její vlastní práce, zatímco individuální vzdělávací plán je zvláštní forma organizace vzdělávání navázaná na odlišný právní a podpůrný rámec",
