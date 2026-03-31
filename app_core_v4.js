@@ -15,21 +15,89 @@
   const ERROR_LABELS = {
     "no-answer":"Bez odpovědi",
     "missed-negation":"Přehlédnutá negace",
-    "institution-confusion":"Záměna institucí",
+    "institution-confusion":"Záměna institucí a kompetencí",
     "concept-confusion":"Záměna pojmů",
     "terminology-confusion":"Záměna terminologie",
-    "misread-question":"Odpověď na jinak pochopenou otázku",
-    "reading-misalignment":"Odpověď na jinak pochopenou otázku",
+    "misread-question":"Nepřesné přečtení zadání",
+    "reading-misalignment":"Nepřesné přečtení zadání",
     "impulsive-click":"Ukvapené rozhodnutí",
     "impulsive-decision":"Ukvapené rozhodnutí",
     "overthinking":"Překombinování",
     "time-pressure":"Tlak času",
     "false-confidence":"Falešná jistota",
-    "distractor-trap":"Past distraktoru",
+    "distractor-trap":"Svedení blízkou, ale nepřesnou možností",
     "attention-slip":"Nepozornost",
     "inattention":"Nepozornost",
     "knowledge-gap":"Obsahová slabina"
   };
+
+  const ERROR_LABEL_OVERRIDES = {
+    "output-content-confusion": "Záměna formy odpovědi a skutečné znalosti",
+    "access-content-confusion": "Záměna přístupu k informaci a porozumění",
+    "access-production-confusion": "Záměna přístupu k informaci a formy výkonu",
+    "category-before-function": "Záměna kategorie a skutečné funkce",
+    "function-vs-appearance": "Záměna podstaty obtíže a nápadného projevu",
+    "environment-vs-function": "Záměna vlivu prostředí a skutečné funkce",
+    "goal-mechanism-mixup": "Záměna cíle zásahu a jeho mechanismu",
+    "goal-route-confusion": "Záměna cíle podpory a cesty k němu",
+    "goal-domain-error": "Záměna cíle podpory a oblasti zásahu",
+    "device-vs-process": "Záměna pomůcky a postupu",
+    "document-confusion": "Záměna dokumentů",
+    "document-function-mixup": "Záměna funkce dokumentů",
+    "document-origin-confusion": "Záměna původu dokumentu",
+    "authority-mixup": "Záměna rozhodujícího orgánu",
+    "competence-mixup": "Záměna kompetencí",
+    "institution-mixup": "Záměna institucí",
+    "benefit-vs-service": "Záměna dávky a služby",
+    "decision-vs-payment-confusion": "Záměna rozhodování a výplaty",
+    "metoda-pomůcka-záměna": "Záměna metody a pomůcky",
+    "kompenzace-reedukace-záměna": "Záměna kompenzace a reedukace",
+    "augmentativní-alternativní-záměna": "Záměna augmentativní a alternativní komunikace",
+    "evaluation-confusion": "Záměna vyhodnocení a samotného zásahu",
+    "framework-confusion": "Záměna odborných rámců",
+    "historical-anchor-confusion": "Záměna historických souvislostí",
+    "authority-role-mixup": "Záměna role a rozhodovací pravomoci"
+  };
+
+  function normalizeErrorCode(code) {
+    const raw = String(code || "").trim();
+    if (!raw) return "";
+    const value = raw.toLowerCase();
+
+    if (ERROR_LABELS[value]) return value;
+    if (ERROR_LABEL_OVERRIDES[value]) return value;
+
+    if (/^(no-answer|bez-odpovedi|bez-odpovědi|unanswered)$/.test(value)) return "no-answer";
+    if (/(missed-negation|negation|negative|negativní-čtení|negative-reading)/.test(value)) return "missed-negation";
+    if (/(impulsive|fast-|hasty|ukvapen)/.test(value)) return "impulsive-decision";
+    if (/(overthinking|slow-|time-pressure|pressure|překombin)/.test(value)) return "overthinking";
+    if (/(false-confidence|high-confidence|confidence)/.test(value)) return "false-confidence";
+    if (/(attention-slip|inattention|nepozornost)/.test(value)) return "inattention";
+    if (/(distractor|trap|halo|bias|shortcut|lure|near-category)/.test(value)) return "distractor-trap";
+    if (/(misread|reading|question|first-step|formulation|superlativ|doslovnost|exception-ignorance|context-omission|administrative-reduction|abbreviation-overread|chunking-misread)/.test(value)) return "misread-question";
+
+    if (/(institution|document|clientele|facility|court|school|role|competence|kompetenc|process|sv[pbp]|špp|špz|ppp|spc|ospod|úřad|urad|soud|ředitel|reditel|rodič|rodic|client|benefit|service|payment|allowance|dávk|davk|průkaz|prukaz|ztp|mobilit|pomůc|pomuc|vozid|legal-|issuance|hospitalization|higher-ed|gifted-outside-system|inside-outside-role|cross-system|decision-vs-payment|broad-public-help|school-level|school-type|authority)/.test(value)) {
+      return "institution-confusion";
+    }
+
+    if (/(terminology|terminolog|author|personality|histor|anchor|term-|jméno|jmeno|autor|osobnost|kotv|lechta|neubauer|valenta|ludíková|ludiková|van-riper|frankl|kábele|kabele|redl|makarenko|komensk|itard|sovák|sovak)/.test(value)) {
+      return "terminology-confusion";
+    }
+
+    if (/(concept|pojem|pojmov|category|classification|classif|axis|osa|záměna|zamen|swap|mixup|confusion|blur|collapse|hierarchie|discipl|domain|framework|frame|klasifika|kategorie|oblast|preling|postling|kongenit|získan|ziskane|pas-|fm-|mkn|balbuties|tumultus|dysfonie|rinolalie|fonemat|pragmat|hlas|komunikační|komunikacni|adaptivní|adaptivni|output-content|category-before-function|function-vs-appearance|environment-vs-function|goal-|device-vs-process|metoda-|pomůcka|pomucka|reeduk|kompenz|augmentativ|alternativní|alternativni|evaluation|framework)/.test(value)) {
+      return "concept-confusion";
+    }
+
+    return "knowledge-gap";
+  }
+
+  function getErrorLabelLocal(code) {
+    const raw = String(code || "").trim();
+    const lower = raw.toLowerCase();
+    if (ERROR_LABEL_OVERRIDES[lower]) return ERROR_LABEL_OVERRIDES[lower];
+    return ERROR_LABELS[normalizeErrorCode(raw)] || "Obsahová slabina";
+  }
+
 
   const analyticsBridge = {
     normalizeProgress: typeof window.normalizeProgressV4 === "function" ? window.normalizeProgressV4 : null,
@@ -674,11 +742,11 @@ function buildSessionBattery(battery, modeConfig) {
       if(/\bv rámci\b/i.test(q.text)) { qs.autoErrorType="institution-confusion"; return; }
       
       const likely = Array.isArray(m.likelyErrorTypes) ? m.likelyErrorTypes[0] : null;
-      if (likely && likely !== "concept-confusion" && likely !== "terminology-confusion") {
-        qs.autoErrorType = likely; 
+      if (likely) {
+        qs.autoErrorType = normalizeErrorCode(likely) || "knowledge-gap";
         return;
       }
-      
+
       qs.autoErrorType="knowledge-gap";
     });
   }
@@ -694,7 +762,7 @@ function buildSessionBattery(battery, modeConfig) {
       p.subtopics[subtopic].seen++;
       if (qs.selectedAnswer === q.correct) p.subtopics[subtopic].correct++;
       else {
-        const err = qs.manualErrorType || qs.autoErrorType;
+        const err = normalizeErrorCode(qs.manualErrorType || qs.autoErrorType);
         if (err) p.errorTypes[err] = (p.errorTypes[err] || 0) + 1;
       }
     });
@@ -832,14 +900,15 @@ function startTargetedPractice(type, param) {
     filtered = allQs.filter(q => q.metadata?.discipline === param);
     title = `Disciplína: ${param}`;
   } else if (type === "error-type") {
+    const wantedError = normalizeErrorCode(param);
     filtered = allQs.filter(q => {
       const m = q.metadata || {};
-      if (param === "distractor-trap" && (m.trapPattern === "near-category" || m.trapPattern === "distractor-trap")) return true;
-      if (m.likelyErrorTypes && m.likelyErrorTypes.includes(param)) return true;
-      if (param === "missed-negation" && /\bnenì\b|\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/i.test(q.text)) return true;
+      if (wantedError === "distractor-trap" && (m.trapPattern === "near-category" || m.trapPattern === "distractor-trap")) return true;
+      if (Array.isArray(m.likelyErrorTypes) && m.likelyErrorTypes.some(code => normalizeErrorCode(code) === wantedError)) return true;
+      if (wantedError === "missed-negation" && /\bnenì\b|\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/i.test(q.text)) return true;
       return false;
     });
-    title = `Typ chyby: ${(analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(param) : (ERROR_LABELS[param] || param))}`;
+    title = `Typ chyby: ${(analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(param) : getErrorLabelLocal(param))}`;
   }
   if (filtered.length === 0) { alert("Nenalezeny žádné otázky pro tento filtr."); return; }
   const sessionQs = shuffleArray(filtered).slice(0, 20);
@@ -1761,7 +1830,13 @@ function updateMeta() {
       const status = seen < 3 ? "málo-dat" : rate >= 95 ? "zvládnuté" : rate >= 85 ? "silné" : rate < 50 ? "rizikové" : rate < 70 ? "slabé" : "stabilní";
       return { subtopic: k, seen, correct, wrong, unanswered: 0, rate, status, sessionCount: 1, trend: "stabilní", confidenceLevel: seen >= 5 ? "střední" : "nízká" };
     });
-    const topErrors = Object.keys(p.errorTypes || {}).map(k => ({ type: k, count: Number(p.errorTypes[k] || 0), label: analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(k) : (ERROR_LABELS[k] || k) })).sort((a,b)=>b.count-a.count);
+    const topErrorsMap = {};
+    Object.keys(p.errorTypes || {}).forEach(k => {
+      const normalizedKey = normalizeErrorCode(k);
+      if (!normalizedKey) return;
+      topErrorsMap[normalizedKey] = (topErrorsMap[normalizedKey] || 0) + Number(p.errorTypes[k] || 0);
+    });
+    const topErrors = Object.keys(topErrorsMap).map(k => ({ type: k, count: Number(topErrorsMap[k] || 0), label: analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(k) : getErrorLabelLocal(k) })).sort((a,b)=>b.count-a.count);
     const answered = subtopics.reduce((sum, item) => sum + item.seen, 0);
     const correct = subtopics.reduce((sum, item) => sum + item.correct, 0);
     return {
@@ -1871,7 +1946,7 @@ function updateMeta() {
       subtopics[sub].seen++;
       if (qs.selectedAnswer === q.correct) subtopics[sub].correct++;
       else {
-        const err = qs.manualErrorType || qs.autoErrorType;
+        const err = normalizeErrorCode(qs.manualErrorType || qs.autoErrorType);
         if (err) { if (!errorTypes[err]) errorTypes[err] = 0; errorTypes[err]++; }
       }
     });
@@ -1880,7 +1955,7 @@ function updateMeta() {
       .filter(x => x.rate < 80)
       .sort((a,b) => a.rate - b.rate);
     const errs = Object.keys(errorTypes)
-      .map(k => ({ type: k, count: errorTypes[k], label: ERROR_LABELS[k] || k }))
+      .map(k => ({ type: normalizeErrorCode(k), count: errorTypes[k], label: analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(k) : getErrorLabelLocal(k) }))
       .sort((a,b) => b.count - a.count);
     if (subs.length === 0 && errs.length === 0) {
       el.innerHTML = `<div class="dashboard"><h4>Tematická mapa (z tohoto testu)</h4><div class="dash-detail" style="border-color:#bfe2ca; background:#edf9f1; color:#1c6f44;">V tomto testu nemáte žádné výrazné slabiny. Cíle bylo dosaženo!</div></div>`;
@@ -2376,6 +2451,8 @@ function initApp() {
     BATTERY_MAP,
     DATASETS,
     ERROR_LABELS,
+    normalizeErrorCode,
+    getErrorLabel: getErrorLabelLocal,
     loadMetadataExport,
     loadBattery8MetadataMap,
     buildMetadataIndex,

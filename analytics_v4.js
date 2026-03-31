@@ -5,21 +5,90 @@
   const ERROR_LABELS_V4 = {
     "no-answer": "Bez odpovědi",
     "missed-negation": "Přehlédnutá negace",
-    "institution-confusion": "Záměna institucí",
+    "institution-confusion": "Záměna institucí a kompetencí",
     "concept-confusion": "Záměna pojmů",
     "terminology-confusion": "Záměna terminologie",
-    "misread-question": "Odpověď na jinak pochopenou otázku",
-    "reading-misalignment": "Odpověď na jinak pochopenou otázku",
+    "misread-question": "Nepřesné přečtení zadání",
+    "reading-misalignment": "Nepřesné přečtení zadání",
     "impulsive-click": "Ukvapené rozhodnutí",
     "impulsive-decision": "Ukvapené rozhodnutí",
     "overthinking": "Překombinování",
     "time-pressure": "Tlak času",
     "false-confidence": "Falešná jistota",
-    "distractor-trap": "Past distraktoru",
+    "distractor-trap": "Svedení blízkou, ale nepřesnou možností",
     "attention-slip": "Nepozornost",
     "inattention": "Nepozornost",
     "knowledge-gap": "Obsahová slabina"
   };
+
+  const ERROR_LABEL_OVERRIDES_V4 = {
+    "output-content-confusion": "Záměna formy odpovědi a skutečné znalosti",
+    "access-content-confusion": "Záměna přístupu k informaci a porozumění",
+    "access-production-confusion": "Záměna přístupu k informaci a formy výkonu",
+    "category-before-function": "Záměna kategorie a skutečné funkce",
+    "function-vs-appearance": "Záměna podstaty obtíže a nápadného projevu",
+    "environment-vs-function": "Záměna vlivu prostředí a skutečné funkce",
+    "goal-mechanism-mixup": "Záměna cíle zásahu a jeho mechanismu",
+    "goal-route-confusion": "Záměna cíle podpory a cesty k němu",
+    "goal-domain-error": "Záměna cíle podpory a oblasti zásahu",
+    "device-vs-process": "Záměna pomůcky a postupu",
+    "document-confusion": "Záměna dokumentů",
+    "document-function-mixup": "Záměna funkce dokumentů",
+    "document-origin-confusion": "Záměna původu dokumentu",
+    "authority-mixup": "Záměna rozhodujícího orgánu",
+    "competence-mixup": "Záměna kompetencí",
+    "institution-mixup": "Záměna institucí",
+    "benefit-vs-service": "Záměna dávky a služby",
+    "decision-vs-payment-confusion": "Záměna rozhodování a výplaty",
+    "metoda-pomůcka-záměna": "Záměna metody a pomůcky",
+    "kompenzace-reedukace-záměna": "Záměna kompenzace a reedukace",
+    "augmentativní-alternativní-záměna": "Záměna augmentativní a alternativní komunikace",
+    "evaluation-confusion": "Záměna vyhodnocení a samotného zásahu",
+    "framework-confusion": "Záměna odborných rámců",
+    "historical-anchor-confusion": "Záměna historických souvislostí",
+    "authority-role-mixup": "Záměna role a rozhodovací pravomoci"
+  };
+
+  function normalizeErrorCodeV4(code) {
+    const raw = String(code || "").trim();
+    if (!raw) return "";
+    const value = raw.toLowerCase();
+
+    if (ERROR_LABELS_V4[value]) return value;
+    if (ERROR_LABEL_OVERRIDES_V4[value]) return value;
+
+    if (/^(no-answer|bez-odpovedi|bez-odpovědi|unanswered)$/.test(value)) return "no-answer";
+    if (/(missed-negation|negation|negative|negativní-čtení|negative-reading)/.test(value)) return "missed-negation";
+    if (/(impulsive|fast-|hasty|ukvapen)/.test(value)) return "impulsive-decision";
+    if (/(overthinking|slow-|time-pressure|pressure|překombin)/.test(value)) return "overthinking";
+    if (/(false-confidence|high-confidence|confidence)/.test(value)) return "false-confidence";
+    if (/(attention-slip|inattention|nepozornost)/.test(value)) return "inattention";
+    if (/(distractor|trap|halo|bias|shortcut|lure|near-category)/.test(value)) return "distractor-trap";
+    if (/(misread|reading|question|first-step|formulation|superlativ|doslovnost|exception-ignorance|context-omission|administrative-reduction|abbreviation-overread|chunking-misread)/.test(value)) return "misread-question";
+
+    if (/(institution|document|clientele|facility|court|school|role|competence|kompetenc|process|sv[pbp]|špp|špz|ppp|spc|ospod|úřad|urad|soud|ředitel|reditel|rodič|rodic|client|benefit|service|payment|allowance|dávk|davk|průkaz|prukaz|ztp|mobilit|pomůc|pomuc|vozid|legal-|issuance|hospitalization|higher-ed|gifted-outside-system|inside-outside-role|cross-system|decision-vs-payment|broad-public-help|school-level|school-type|authority|kompetence|kompetenc)/.test(value)) {
+      return "institution-confusion";
+    }
+
+    if (/(terminology|terminolog|author|personality|histor|anchor|term-|jméno|jmeno|autor|osobnost|kotv|lechta|neubauer|valenta|ludíková|ludiková|van-riper|frankl|kábele|kabele|redl|makarenko|komensk|itard|sovák|sovak)/.test(value)) {
+      return "terminology-confusion";
+    }
+
+    if (/(concept|pojem|pojmov|category|classification|classif|axis|osa|záměna|zamen|swap|mixup|confusion|blur|collapse|hierarchie|discipl|domain|framework|frame|klasifika|kategorie|oblast|preling|postling|kongenit|získan|ziskane|pas-|fm-|mkn|balbuties|tumultus|dysfonie|rinolalie|fonemat|pragmat|hlas|komunikační|komunikacni|adaptivní|adaptivni|output-content|category-before-function|function-vs-appearance|environment-vs-function|goal-|device-vs-process|metoda-|pomůcka|pomucka|reeduk|kompenz|augmentativ|alternativní|alternativni|evaluation|framework)/.test(value)) {
+      return "concept-confusion";
+    }
+
+    return "knowledge-gap";
+  }
+
+  function resolveErrorLabelV4(code) {
+    const raw = String(code || "").trim();
+    const lower = raw.toLowerCase();
+    if (ERROR_LABEL_OVERRIDES_V4[lower]) return ERROR_LABEL_OVERRIDES_V4[lower];
+    const normalized = normalizeErrorCodeV4(raw);
+    return ERROR_LABELS_V4[normalized] || (window.SCIO_V4_SHARED?.ERROR_LABELS?.[normalized]) || "Obsahová slabina";
+  }
+
 
   const DASHBOARD_THRESHOLDS_V4 = {
     weakRate: 70,
@@ -39,7 +108,7 @@
   };
 
   function getErrorLabel(code) {
-    return ERROR_LABELS_V4[code] || (window.SCIO_V4_SHARED?.ERROR_LABELS?.[code]) || code || "—";
+    return resolveErrorLabelV4(code);
   }
   window.getErrorLabel = getErrorLabel;
 
@@ -147,6 +216,38 @@ function getQuestionProgressKey(question, session) {
     return out;
   }
 
+  function normalizeErrorRegistryObjectV4(oldObj) {
+    const out = {};
+    Object.entries(oldObj || {}).forEach(([key, value]) => {
+      const normalizedKey = normalizeErrorCodeV4(key);
+      if (!normalizedKey) return;
+      const nextEntry = normalizeRegistryEntry(value, false);
+      if (!out[normalizedKey]) {
+        out[normalizedKey] = nextEntry;
+        return;
+      }
+      const prev = out[normalizedKey];
+      out[normalizedKey] = {
+        ...prev,
+        seen: Number(prev.seen || 0) + Number(nextEntry.seen || 0),
+        correct: Number(prev.correct || 0) + Number(nextEntry.correct || 0),
+        wrong: Number(prev.wrong || 0) + Number(nextEntry.wrong || 0),
+        unanswered: Number(prev.unanswered || 0) + Number(nextEntry.unanswered || 0),
+        highConfidenceWrong: Number(prev.highConfidenceWrong || 0) + Number(nextEntry.highConfidenceWrong || 0),
+        avgTimeMs: Math.round((((Number(prev.avgTimeMs || 0) * Number(prev.seen || 0)) + (Number(nextEntry.avgTimeMs || 0) * Number(nextEntry.seen || 0))) / Math.max(1, Number(prev.seen || 0) + Number(nextEntry.seen || 0)))),
+        lastSeenAt: [prev.lastSeenAt, nextEntry.lastSeenAt].filter(Boolean).sort().slice(-1)[0] || "",
+        relatedErrors: { ...(prev.relatedErrors || {}), ...(nextEntry.relatedErrors || {}) },
+        sessionCount: Number(prev.sessionCount || 0) + Number(nextEntry.sessionCount || 0),
+        sessionsPerfect: Number(prev.sessionsPerfect || 0) + Number(nextEntry.sessionsPerfect || 0),
+        sessionsWithWrong: Number(prev.sessionsWithWrong || 0) + Number(nextEntry.sessionsWithWrong || 0),
+        lastOutcome: nextEntry.lastOutcome || prev.lastOutcome || "",
+        recentSessionRates: [...(prev.recentSessionRates || []), ...(nextEntry.recentSessionRates || [])].slice(0, DASHBOARD_THRESHOLDS_V4.historyWindow)
+      };
+      out[normalizedKey].recentSessionRates = out[normalizedKey].recentSessionRates.filter(v => Number.isFinite(Number(v))).map(Number);
+    });
+    return out;
+  }
+
   function normalizeProgressV4(progress) {
     const src = progress && typeof progress === "object" ? progress : {};
     const normalized = getEmptyProgressV4();
@@ -158,7 +259,7 @@ function getQuestionProgressKey(question, session) {
     };
     normalized.disciplines = normalizeRegistryObject(src.disciplines || {}, false);
     normalized.subtopics = normalizeRegistryObject(src.subtopics || {}, false);
-    normalized.errorTypes = normalizeRegistryObject(src.errorTypes || {}, false);
+    normalized.errorTypes = normalizeErrorRegistryObjectV4(src.errorTypes || {});
     normalized.formulations = normalizeRegistryObject(src.formulations || {}, false);
     normalized.signalPatterns = normalizeRegistryObject(src.signalPatterns || {}, false);
     normalized.trapPatterns = normalizeRegistryObject(src.trapPatterns || {}, false);
@@ -955,7 +1056,7 @@ function getMetadataCoverageCatalog() {
     const s = session || appState.currentSession; if (!s) return [];
     const map = {};
     s.questionStates.forEach(qs => {
-      const key = qs.manualErrorType || qs.autoErrorType;
+      const key = normalizeErrorCodeV4(qs.manualErrorType || qs.autoErrorType);
       if (!key) return;
       map[key] = (map[key] || 0) + 1;
     });
@@ -1062,7 +1163,7 @@ function getMetadataCoverageCatalog() {
     const totalKnownDisciplines = catalog.disciplines.size || testedDisciplineCount;
     const totalKnownSubtopics = catalog.subtopics.size || testedSubtopicCount;
     const topErrors = Object.entries(p.errorTypes || {}).map(([type, value]) => ({
-      type,
+      type: normalizeErrorCodeV4(type),
       count: value.wrong || value.seen || 0,
       label: getErrorLabel(type)
     })).sort((a,b)=>b.count-a.count).slice(0, 5);
@@ -1247,7 +1348,7 @@ function updateProgressFromSession(session) {
     const answered = qs.selectedAnswer !== null;
     const correct = answered && qs.selectedAnswer === q.correct;
     const highConfidenceWrong = answered && !correct && qs.confidence === "high";
-    const errorType = qs.manualErrorType || qs.autoErrorType;
+    const errorType = normalizeErrorCodeV4(qs.manualErrorType || qs.autoErrorType);
     const payload = { answered, correct, highConfidenceWrong, at: now, timeSpentMs: qs.timeSpentMs || 0, errorType };
     const progressKey = getQuestionProgressKey(q, s);
 
@@ -1349,7 +1450,7 @@ function questionMatchesFilters(question, qs, filterConfig) {
   const isChanged = (qs.answerChanges || 0) > 0;
   const isFlagged = !!qs.flagged || !!qs.revisitLater;
   const isHighConfidenceWrong = isWrong && qs.confidence === "high";
-  const errorType = qs.manualErrorType || qs.autoErrorType;
+  const errorType = normalizeErrorCodeV4(qs.manualErrorType || qs.autoErrorType);
   const progressKey = getQuestionProgressKey(question, appState.currentSession);
   switch (config.type || "errors") {
     case "errors": return isWrong || isUnanswered;
@@ -1364,7 +1465,10 @@ function questionMatchesFilters(question, qs, filterConfig) {
     case "revisionQueue": return !!(appState.progress?.revisionQueue?.[progressKey]);
     case "discipline": return metadata.discipline === config.discipline;
     case "subtopic": return metadata.subtopic === config.subtopic;
-    case "errorType": return errorType === config.errorType || (metadata.likelyErrorTypes || []).includes(config.errorType);
+    case "errorType": {
+      const wanted = normalizeErrorCodeV4(config.errorType);
+      return errorType === wanted || (metadata.likelyErrorTypes || []).some(type => normalizeErrorCodeV4(type) === wanted);
+    }
     case "formulation": return (metadata.formulationFlags || []).includes(config.formulation);
     case "signalPattern": return (metadata.signalPattern || []).includes(config.signalPattern);
     case "trapPattern": return metadata.trapPattern === config.trapPattern;
