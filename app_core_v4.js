@@ -49,6 +49,15 @@
   };
 
 
+  function resolveUiErrorLabel(code) {
+    const raw = String(code || "").trim();
+    if (!raw) return "";
+    if (analyticsBridge.getErrorLabel) return analyticsBridge.getErrorLabel(raw);
+    return ERROR_LABELS[raw] || ERROR_LABELS[raw.toLowerCase()] || raw;
+  }
+
+
+
 
 // ═══════════════════════════════════════════
 // 2. DATA NORMALIZATION (BASE + HARD)
@@ -62,12 +71,12 @@ function normalizeDifficultyMode(value) {
 function getDifficultyModeLabel(mode) {
   return normalizeDifficultyMode(mode) === "hard" ? "Pokročilá" : "Základní";
 }
-function loadMetadataExport(mode = "hard") {
+function loadMetadataExport(mode = "basic") {
   return normalizeDifficultyMode(mode) === "hard"
     ? (window.metadataExportHard || { schemaVersion: 0, items: [] })
     : (window.metadataExport || { schemaVersion: 0, items: [] });
 }
-function loadBattery8MetadataMap(mode = "hard") {
+function loadBattery8MetadataMap(mode = "basic") {
   return normalizeDifficultyMode(mode) === "hard"
     ? (window.battery8MapHard || { schemaVersion: 0, items: [] })
     : (window.battery8Map || { schemaVersion: 0, items: [] });
@@ -323,13 +332,13 @@ const DATASETS = {
 const BATTERIES = BASIC_BATTERIES;
 const BATTERY_MAP = BASIC_BATTERY_MAP;
 
-function getDatasetByMode(mode = "hard") {
+function getDatasetByMode(mode = "basic") {
   const key = normalizeDifficultyMode(mode);
   if (key === "hard" && DATASETS.hard.batteries.length) return DATASETS.hard;
   return DATASETS.basic;
 }
 function getActiveDifficultyMode() {
-  const preferred = appState?.settings?.difficultyMode || appState?.currentSession?.difficultyMode || "hard";
+  const preferred = appState?.settings?.difficultyMode || appState?.currentSession?.difficultyMode || "basic";
   return getDatasetByMode(preferred).key;
 }
 function getActiveDataset() { return getDatasetByMode(getActiveDifficultyMode()); }
@@ -470,7 +479,7 @@ function loadSettings() {
 function getDefaultSettings() {
   return {
     schemaVersion: SCHEMA_VERSION,
-    difficultyMode: "hard",
+    difficultyMode: "basic",
     restoreSessionOnLoad: true,
     defaultMode: "simulation",
     defaultGoal: "attention",
@@ -796,7 +805,7 @@ function renderRestorePanel() {
   panel.classList.remove("hidden");
   const status = saved.results?.finished ? "dokončeno" : "rozpracováno";
   const remaining = saved.results?.finished ? "" : ", zbývá " + formatTime(Math.max(0, Math.floor((new Date(saved.timing.endsAt).getTime() - new Date(saved.updatedAt).getTime()) / 1000)));
-  const difficultyLabel = getDifficultyModeLabel(saved.difficultyMode || "hard");
+  const difficultyLabel = getDifficultyModeLabel(saved.difficultyMode || "basic");
   panel.innerHTML = `<div class="restore-panel">
     <h4>Poslední uložená relace</h4>
     <div class="restore-info">
@@ -1568,7 +1577,7 @@ function renderHistoryPanel() {
   if (!history.length) { panel.classList.add("hidden"); return; }
   panel.classList.remove("hidden");
   const items = history.slice(0, 3).map(entry => {
-    const difficultyLabel = getDifficultyModeLabel(entry.difficultyMode || "hard");
+    const difficultyLabel = getDifficultyModeLabel(entry.difficultyMode || "basic");
     return `<div class="history-item">
       <span>${escapeHtml(entry.batteryLabel || "")} · ${escapeHtml(difficultyLabel)} · ${escapeHtml(formatModeLabel(entry.mode || "simulation"))} · ${formatDate(entry.date)}</span>
       <span class="history-score">${entry.score}/${entry.total} (${entry.percentage}%)</span>
@@ -1580,7 +1589,7 @@ function renderHistoryPanel() {
   
 function renderConfigPanel() {
   const s = appState.settings;
-  s.difficultyMode = getDatasetByMode(s.difficultyMode || "hard").key;
+  s.difficultyMode = getDatasetByMode(s.difficultyMode || "basic").key;
   if (s.defaultMode === "reading-training") s.showQuestionFirst = true;
 
   document.querySelectorAll("#configDifficulty .config-opt").forEach(btn => {
@@ -1662,7 +1671,7 @@ function updateMeta() {
   $("sidebarBatteryLabel").textContent = `Aktivní baterie: ${s.activeTest.label} – ${s.activeTest.title}`;
   $("activeBatteryPill").textContent = s.activeTest.label;
   const badgeWrap = $("sidebarModeBadge");
-  const difficultyMode = s.difficultyMode || "hard";
+  const difficultyMode = s.difficultyMode || "basic";
   badgeWrap.innerHTML = `
     <span class="mode-badge ${s.mode}">${s.mode === "reading-training" ? "trénink čtení" : s.mode === "repair" ? "opravný režim" : "simulace testu"}</span>
     <span class="mode-badge difficulty ${difficultyMode}">${formatDifficultyBadgeText(difficultyMode)}</span>
@@ -1880,7 +1889,7 @@ function updateMeta() {
       .filter(x => x.rate < 80)
       .sort((a,b) => a.rate - b.rate);
     const errs = Object.keys(errorTypes)
-      .map(k => ({ type: k, count: errorTypes[k], label: ERROR_LABELS[k] || k }))
+      .map(k => ({ type: k, count: errorTypes[k], label: resolveUiErrorLabel(k) || k }))
       .sort((a,b) => b.count - a.count);
     if (subs.length === 0 && errs.length === 0) {
       el.innerHTML = `<div class="dashboard"><h4>Tematická mapa (z tohoto testu)</h4><div class="dash-detail" style="border-color:#bfe2ca; background:#edf9f1; color:#1c6f44;">V tomto testu nemáte žádné výrazné slabiny. Cíle bylo dosaženo!</div></div>`;
@@ -1997,7 +2006,7 @@ function updateMeta() {
 
     // Diagnostic Diagnosis
     if (!isCorrect && !isUnanswered) {
-      const autoErr = qs.autoErrorType ? ERROR_LABELS[qs.autoErrorType] : "nezjištěno";
+      const autoErr = qs.autoErrorType ? (resolveUiErrorLabel(qs.autoErrorType) || "nezjištěno") : "nezjištěno";
       tabTutor += `<div class="review-explanation" style="background:#fffcf5; border-style:dashed;">`;
       tabTutor += `<strong>Diagnostika trenažéru:</strong> Pravděpodobný důvod chyby: <em>${autoErr}</em>`;
       tabTutor += `<div style="margin-top:8px;"><strong>Manuální oprava:</strong> <select class="error-type-select" data-qi="${qIndex}">${Object.entries(ERROR_LABELS).map(([k, v]) => `<option value="${k}" ${(qs.manualErrorType || qs.autoErrorType) === k ? "selected" : ""}>${v}</option>`).join("")}</select></div>`;
@@ -2050,7 +2059,7 @@ function selectBattery(id) {
 
   
 function startBattery(id, options = {}) {
-  const difficultyMode = getDatasetByMode(options.difficultyMode || appState.settings.difficultyMode || "hard").key;
+  const difficultyMode = getDatasetByMode(options.difficultyMode || appState.settings.difficultyMode || "basic").key;
   const battery = getDatasetByMode(difficultyMode).batteryMap[id];
   if (!battery) return;
   const s = appState.settings;
@@ -2080,7 +2089,7 @@ function startBattery(id, options = {}) {
 function resumeSession() {
   const saved = loadCurrentSession();
   if (!saved) return;
-  const difficultyMode = getDatasetByMode(saved.difficultyMode || "hard").key;
+  const difficultyMode = getDatasetByMode(saved.difficultyMode || "basic").key;
   appState.settings.difficultyMode = difficultyMode;
   saveSettings();
   appState.currentSession = saved;
@@ -2109,7 +2118,7 @@ function resumeSession() {
 function restartBattery() {
   const session = appState.currentSession;
   if (!session) return;
-  startBattery(session.batteryId, { difficultyMode: session.difficultyMode || appState.settings.difficultyMode || "hard" });
+  startBattery(session.batteryId, { difficultyMode: session.difficultyMode || appState.settings.difficultyMode || "basic" });
 }
 
   
@@ -2127,8 +2136,8 @@ function finishTest(timeExpired = false) {
     batteryId: s.batteryId,
     batteryLabel: s.batteryLabel,
     batteryTitle: s.batteryTitle,
-    difficultyMode: s.difficultyMode || "hard",
-    difficultyLabel: s.difficultyLabel || getDifficultyModeLabel(s.difficultyMode || "hard"),
+    difficultyMode: s.difficultyMode || "basic",
+    difficultyLabel: s.difficultyLabel || getDifficultyModeLabel(s.difficultyMode || "basic"),
     mode: s.mode,
     score: score.correct,
     total: score.total,
