@@ -15,89 +15,21 @@
   const ERROR_LABELS = {
     "no-answer":"Bez odpovědi",
     "missed-negation":"Přehlédnutá negace",
-    "institution-confusion":"Záměna institucí a kompetencí",
+    "institution-confusion":"Záměna institucí",
     "concept-confusion":"Záměna pojmů",
     "terminology-confusion":"Záměna terminologie",
-    "misread-question":"Nepřesné přečtení zadání",
-    "reading-misalignment":"Nepřesné přečtení zadání",
+    "misread-question":"Odpověď na jinak pochopenou otázku",
+    "reading-misalignment":"Odpověď na jinak pochopenou otázku",
     "impulsive-click":"Ukvapené rozhodnutí",
     "impulsive-decision":"Ukvapené rozhodnutí",
     "overthinking":"Překombinování",
     "time-pressure":"Tlak času",
     "false-confidence":"Falešná jistota",
-    "distractor-trap":"Svedení blízkou, ale nepřesnou možností",
+    "distractor-trap":"Past distraktoru",
     "attention-slip":"Nepozornost",
     "inattention":"Nepozornost",
     "knowledge-gap":"Obsahová slabina"
   };
-
-  const ERROR_LABEL_OVERRIDES = {
-    "output-content-confusion": "Záměna formy odpovědi a skutečné znalosti",
-    "access-content-confusion": "Záměna přístupu k informaci a porozumění",
-    "access-production-confusion": "Záměna přístupu k informaci a formy výkonu",
-    "category-before-function": "Záměna kategorie a skutečné funkce",
-    "function-vs-appearance": "Záměna podstaty obtíže a nápadného projevu",
-    "environment-vs-function": "Záměna vlivu prostředí a skutečné funkce",
-    "goal-mechanism-mixup": "Záměna cíle zásahu a jeho mechanismu",
-    "goal-route-confusion": "Záměna cíle podpory a cesty k němu",
-    "goal-domain-error": "Záměna cíle podpory a oblasti zásahu",
-    "device-vs-process": "Záměna pomůcky a postupu",
-    "document-confusion": "Záměna dokumentů",
-    "document-function-mixup": "Záměna funkce dokumentů",
-    "document-origin-confusion": "Záměna původu dokumentu",
-    "authority-mixup": "Záměna rozhodujícího orgánu",
-    "competence-mixup": "Záměna kompetencí",
-    "institution-mixup": "Záměna institucí",
-    "benefit-vs-service": "Záměna dávky a služby",
-    "decision-vs-payment-confusion": "Záměna rozhodování a výplaty",
-    "metoda-pomůcka-záměna": "Záměna metody a pomůcky",
-    "kompenzace-reedukace-záměna": "Záměna kompenzace a reedukace",
-    "augmentativní-alternativní-záměna": "Záměna augmentativní a alternativní komunikace",
-    "evaluation-confusion": "Záměna vyhodnocení a samotného zásahu",
-    "framework-confusion": "Záměna odborných rámců",
-    "historical-anchor-confusion": "Záměna historických souvislostí",
-    "authority-role-mixup": "Záměna role a rozhodovací pravomoci"
-  };
-
-  function normalizeErrorCode(code) {
-    const raw = String(code || "").trim();
-    if (!raw) return "";
-    const value = raw.toLowerCase();
-
-    if (ERROR_LABELS[value]) return value;
-    if (ERROR_LABEL_OVERRIDES[value]) return value;
-
-    if (/^(no-answer|bez-odpovedi|bez-odpovědi|unanswered)$/.test(value)) return "no-answer";
-    if (/(missed-negation|negation|negative|negativní-čtení|negative-reading)/.test(value)) return "missed-negation";
-    if (/(impulsive|fast-|hasty|ukvapen)/.test(value)) return "impulsive-decision";
-    if (/(overthinking|slow-|time-pressure|pressure|překombin)/.test(value)) return "overthinking";
-    if (/(false-confidence|high-confidence|confidence)/.test(value)) return "false-confidence";
-    if (/(attention-slip|inattention|nepozornost)/.test(value)) return "inattention";
-    if (/(distractor|trap|halo|bias|shortcut|lure|near-category)/.test(value)) return "distractor-trap";
-    if (/(misread|reading|question|first-step|formulation|superlativ|doslovnost|exception-ignorance|context-omission|administrative-reduction|abbreviation-overread|chunking-misread)/.test(value)) return "misread-question";
-
-    if (/(institution|document|clientele|facility|court|school|role|competence|kompetenc|process|sv[pbp]|špp|špz|ppp|spc|ospod|úřad|urad|soud|ředitel|reditel|rodič|rodic|client|benefit|service|payment|allowance|dávk|davk|průkaz|prukaz|ztp|mobilit|pomůc|pomuc|vozid|legal-|issuance|hospitalization|higher-ed|gifted-outside-system|inside-outside-role|cross-system|decision-vs-payment|broad-public-help|school-level|school-type|authority)/.test(value)) {
-      return "institution-confusion";
-    }
-
-    if (/(terminology|terminolog|author|personality|histor|anchor|term-|jméno|jmeno|autor|osobnost|kotv|lechta|neubauer|valenta|ludíková|ludiková|van-riper|frankl|kábele|kabele|redl|makarenko|komensk|itard|sovák|sovak)/.test(value)) {
-      return "terminology-confusion";
-    }
-
-    if (/(concept|pojem|pojmov|category|classification|classif|axis|osa|záměna|zamen|swap|mixup|confusion|blur|collapse|hierarchie|discipl|domain|framework|frame|klasifika|kategorie|oblast|preling|postling|kongenit|získan|ziskane|pas-|fm-|mkn|balbuties|tumultus|dysfonie|rinolalie|fonemat|pragmat|hlas|komunikační|komunikacni|adaptivní|adaptivni|output-content|category-before-function|function-vs-appearance|environment-vs-function|goal-|device-vs-process|metoda-|pomůcka|pomucka|reeduk|kompenz|augmentativ|alternativní|alternativni|evaluation|framework)/.test(value)) {
-      return "concept-confusion";
-    }
-
-    return "knowledge-gap";
-  }
-
-  function getErrorLabelLocal(code) {
-    const raw = String(code || "").trim();
-    const lower = raw.toLowerCase();
-    if (ERROR_LABEL_OVERRIDES[lower]) return ERROR_LABEL_OVERRIDES[lower];
-    return ERROR_LABELS[normalizeErrorCode(raw)] || "Obsahová slabina";
-  }
-
 
   const analyticsBridge = {
     normalizeProgress: typeof window.normalizeProgressV4 === "function" ? window.normalizeProgressV4 : null,
@@ -135,15 +67,14 @@ function loadMetadataExport(mode = "hard") {
     ? (window.metadataExportHard || { schemaVersion: 0, items: [] })
     : (window.metadataExport || { schemaVersion: 0, items: [] });
 }
-function loadBattery8MetadataMap(mode = "basic") {
+function loadBattery8MetadataMap(mode = "hard") {
   return normalizeDifficultyMode(mode) === "hard"
     ? (window.battery8MapHard || { schemaVersion: 0, items: [] })
     : (window.battery8Map || { schemaVersion: 0, items: [] });
 }
-
 function normalizeMetadataItem(item) {
   const base = item && typeof item === "object" ? item : {};
-  const normalized = {
+  return {
     globalId: String(base.globalId || "").trim(),
     batteryId: Number(base.batteryId || 0),
     batteryLabel: String(base.batteryLabel || "").trim(),
@@ -156,8 +87,6 @@ function normalizeMetadataItem(item) {
     discipline: String(base.discipline || "speciální pedagogika").trim(),
     subtopic: String(base.subtopic || "obecné téma").trim(),
     conceptTags: Array.isArray(base.conceptTags) ? base.conceptTags.map(String) : [],
-    conceptFamily: String(base.conceptFamily || "").trim(),
-    institutionDomain: String(base.institutionDomain || "").trim(),
     questionType: String(base.questionType || "general-discrimination").trim(),
     distractorType: String(base.distractorType || "general").trim(),
     trapPattern: String(base.trapPattern || "general").trim(),
@@ -187,12 +116,7 @@ function normalizeMetadataItem(item) {
     metadataConfidence: base.metadataConfidence ?? base.matchConfidence ?? 0.5,
     curationStatus: String(base.curationStatus || "auto-curated-v1").trim()
   };
-  normalized.topicArea = typeof window.getDashboardTopicAreaLabel === "function"
-    ? window.getDashboardTopicAreaLabel(normalized)
-    : (normalized.conceptFamily || normalized.subtopic || normalized.discipline || "Speciálněpedagogická orientace a poradenství");
-  return normalized;
 }
-
 function normalizeBattery8MapItem(item) {
   const base = item && typeof item === "object" ? item : {};
   const globalId = `B08Q${String(base.questionNumber || 0).padStart(2, "0")}`;
@@ -274,8 +198,6 @@ function buildReviewFallbacks(question, batteryLabel) {
     discipline: "speciální pedagogika",
     subtopic: "obecné téma",
     conceptTags: [battery],
-    conceptFamily: "",
-    institutionDomain: "",
     questionType: "general-discrimination",
     distractorType: "general",
     trapPattern: "general",
@@ -306,10 +228,7 @@ function buildReviewFallbacks(question, batteryLabel) {
     metadataOrigin: "fallback",
     metadataSourceRef: "",
     metadataConfidence: 0.2,
-    curationStatus: "fallback",
-    topicArea: typeof window.getDashboardTopicAreaLabel === "function"
-      ? window.getDashboardTopicAreaLabel({ subtopic: battery, questionText: qText })
-      : "Speciálněpedagogická orientace a poradenství"
+    curationStatus: "fallback"
   };
 }
 function resolveQuestionEffectiveCorrect(question, metadataItem) {
@@ -404,13 +323,13 @@ const DATASETS = {
 const BATTERIES = BASIC_BATTERIES;
 const BATTERY_MAP = BASIC_BATTERY_MAP;
 
-function getDatasetByMode(mode = "basic") {
+function getDatasetByMode(mode = "hard") {
   const key = normalizeDifficultyMode(mode);
   if (key === "hard" && DATASETS.hard.batteries.length) return DATASETS.hard;
   return DATASETS.basic;
 }
 function getActiveDifficultyMode() {
-  const preferred = appState?.settings?.difficultyMode || appState?.currentSession?.difficultyMode || "basic";
+  const preferred = appState?.settings?.difficultyMode || appState?.currentSession?.difficultyMode || "hard";
   return getDatasetByMode(preferred).key;
 }
 function getActiveDataset() { return getDatasetByMode(getActiveDifficultyMode()); }
@@ -551,7 +470,7 @@ function loadSettings() {
 function getDefaultSettings() {
   return {
     schemaVersion: SCHEMA_VERSION,
-    difficultyMode: "basic",
+    difficultyMode: "hard",
     restoreSessionOnLoad: true,
     defaultMode: "simulation",
     defaultGoal: "attention",
@@ -755,11 +674,11 @@ function buildSessionBattery(battery, modeConfig) {
       if(/\bv rámci\b/i.test(q.text)) { qs.autoErrorType="institution-confusion"; return; }
       
       const likely = Array.isArray(m.likelyErrorTypes) ? m.likelyErrorTypes[0] : null;
-      if (likely) {
-        qs.autoErrorType = normalizeErrorCode(likely) || "knowledge-gap";
+      if (likely && likely !== "concept-confusion" && likely !== "terminology-confusion") {
+        qs.autoErrorType = likely; 
         return;
       }
-
+      
       qs.autoErrorType="knowledge-gap";
     });
   }
@@ -775,7 +694,7 @@ function buildSessionBattery(battery, modeConfig) {
       p.subtopics[subtopic].seen++;
       if (qs.selectedAnswer === q.correct) p.subtopics[subtopic].correct++;
       else {
-        const err = normalizeErrorCode(qs.manualErrorType || qs.autoErrorType);
+        const err = qs.manualErrorType || qs.autoErrorType;
         if (err) p.errorTypes[err] = (p.errorTypes[err] || 0) + 1;
       }
     });
@@ -877,7 +796,7 @@ function renderRestorePanel() {
   panel.classList.remove("hidden");
   const status = saved.results?.finished ? "dokončeno" : "rozpracováno";
   const remaining = saved.results?.finished ? "" : ", zbývá " + formatTime(Math.max(0, Math.floor((new Date(saved.timing.endsAt).getTime() - new Date(saved.updatedAt).getTime()) / 1000)));
-  const difficultyLabel = getDifficultyModeLabel(saved.difficultyMode || "basic");
+  const difficultyLabel = getDifficultyModeLabel(saved.difficultyMode || "hard");
   panel.innerHTML = `<div class="restore-panel">
     <h4>Poslední uložená relace</h4>
     <div class="restore-info">
@@ -913,15 +832,14 @@ function startTargetedPractice(type, param) {
     filtered = allQs.filter(q => q.metadata?.discipline === param);
     title = `Disciplína: ${param}`;
   } else if (type === "error-type") {
-    const wantedError = normalizeErrorCode(param);
     filtered = allQs.filter(q => {
       const m = q.metadata || {};
-      if (wantedError === "distractor-trap" && (m.trapPattern === "near-category" || m.trapPattern === "distractor-trap")) return true;
-      if (Array.isArray(m.likelyErrorTypes) && m.likelyErrorTypes.some(code => normalizeErrorCode(code) === wantedError)) return true;
-      if (wantedError === "missed-negation" && /\bnenì\b|\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/i.test(q.text)) return true;
+      if (param === "distractor-trap" && (m.trapPattern === "near-category" || m.trapPattern === "distractor-trap")) return true;
+      if (m.likelyErrorTypes && m.likelyErrorTypes.includes(param)) return true;
+      if (param === "missed-negation" && /\bnenì\b|\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/i.test(q.text)) return true;
       return false;
     });
-    title = `Typ chyby: ${(analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(param) : getErrorLabelLocal(param))}`;
+    title = `Typ chyby: ${(analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(param) : (ERROR_LABELS[param] || param))}`;
   }
   if (filtered.length === 0) { alert("Nenalezeny žádné otázky pro tento filtr."); return; }
   const sessionQs = shuffleArray(filtered).slice(0, 20);
@@ -1650,7 +1568,7 @@ function renderHistoryPanel() {
   if (!history.length) { panel.classList.add("hidden"); return; }
   panel.classList.remove("hidden");
   const items = history.slice(0, 3).map(entry => {
-    const difficultyLabel = getDifficultyModeLabel(entry.difficultyMode || "basic");
+    const difficultyLabel = getDifficultyModeLabel(entry.difficultyMode || "hard");
     return `<div class="history-item">
       <span>${escapeHtml(entry.batteryLabel || "")} · ${escapeHtml(difficultyLabel)} · ${escapeHtml(formatModeLabel(entry.mode || "simulation"))} · ${formatDate(entry.date)}</span>
       <span class="history-score">${entry.score}/${entry.total} (${entry.percentage}%)</span>
@@ -1662,7 +1580,7 @@ function renderHistoryPanel() {
   
 function renderConfigPanel() {
   const s = appState.settings;
-  s.difficultyMode = getDatasetByMode(s.difficultyMode || "basic").key;
+  s.difficultyMode = getDatasetByMode(s.difficultyMode || "hard").key;
   if (s.defaultMode === "reading-training") s.showQuestionFirst = true;
 
   document.querySelectorAll("#configDifficulty .config-opt").forEach(btn => {
@@ -1744,7 +1662,7 @@ function updateMeta() {
   $("sidebarBatteryLabel").textContent = `Aktivní baterie: ${s.activeTest.label} – ${s.activeTest.title}`;
   $("activeBatteryPill").textContent = s.activeTest.label;
   const badgeWrap = $("sidebarModeBadge");
-  const difficultyMode = s.difficultyMode || "basic";
+  const difficultyMode = s.difficultyMode || "hard";
   badgeWrap.innerHTML = `
     <span class="mode-badge ${s.mode}">${s.mode === "reading-training" ? "trénink čtení" : s.mode === "repair" ? "opravný režim" : "simulace testu"}</span>
     <span class="mode-badge difficulty ${difficultyMode}">${formatDifficultyBadgeText(difficultyMode)}</span>
@@ -1800,57 +1718,82 @@ function updateMeta() {
     $("revisitBtn").addEventListener("click",toggleRevisitLater);
     $("clearBtn").addEventListener("click",clearAnswer);
   }
-  
-function buildWeaknessSummary() {
+  function buildWeaknessSummary() {
     if (analyticsBridge.buildStudyDashboardSummary) return analyticsBridge.buildStudyDashboardSummary();
-    if (typeof window.buildStudyDashboardSummary === "function") return window.buildStudyDashboardSummary();
-    const emptyTrend = analyticsBridge.buildTrendSummary ? analyticsBridge.buildTrendSummary() : { direction: "none", series: [] };
+    const p = appState.progress || { subtopics: {}, errorTypes: {}, testCount: 0 };
+    if (!p || Number(p.testCount || 0) === 0) {
+      return {
+        weakestSubtopics: [],
+        riskySubtopics: [],
+        strongestSubtopics: [],
+        masteredSubtopics: [],
+        undertrainedSubtopics: [],
+        weakestDisciplines: [],
+        strongestDisciplines: [],
+        masteredDisciplines: [],
+        undertrainedDisciplines: [],
+        topErrors: [],
+        topFormulations: [],
+        topInstitutionPairs: [],
+        highConfidenceWrongCount: 0,
+        overallRate: 0,
+        finishedSessions: 0,
+        answeredCount: 0,
+        correctCount: 0,
+        wrongCount: 0,
+        unansweredCount: 0,
+        testedSubtopicCount: 0,
+        totalKnownSubtopics: 0,
+        testedDisciplineCount: 0,
+        totalKnownDisciplines: 0,
+        subtopicCoverageRate: 0,
+        disciplineCoverageRate: 0,
+        thresholds: { weakRate: 70, riskyRate: 50, strongRate: 85, masteredRate: 95 },
+        trend: analyticsBridge.buildTrendSummary ? analyticsBridge.buildTrendSummary() : { direction: "none", series: [] }
+      };
+    }
+    const subtopics = Object.keys(p.subtopics || {}).map(k => {
+      const item = p.subtopics[k] || {};
+      const seen = Number(item.seen || 0);
+      const correct = Number(item.correct || 0);
+      const wrong = Math.max(0, seen - correct);
+      const rate = seen ? Math.round(correct / seen * 100) : 0;
+      const status = seen < 3 ? "málo-dat" : rate >= 95 ? "zvládnuté" : rate >= 85 ? "silné" : rate < 50 ? "rizikové" : rate < 70 ? "slabé" : "stabilní";
+      return { subtopic: k, seen, correct, wrong, unanswered: 0, rate, status, sessionCount: 1, trend: "stabilní", confidenceLevel: seen >= 5 ? "střední" : "nízká" };
+    });
+    const topErrors = Object.keys(p.errorTypes || {}).map(k => ({ type: k, count: Number(p.errorTypes[k] || 0), label: analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(k) : (ERROR_LABELS[k] || k) })).sort((a,b)=>b.count-a.count);
+    const answered = subtopics.reduce((sum, item) => sum + item.seen, 0);
+    const correct = subtopics.reduce((sum, item) => sum + item.correct, 0);
     return {
-      weakestSubtopics: [],
-      riskySubtopics: [],
-      strongestSubtopics: [],
-      masteredSubtopics: [],
-      undertrainedSubtopics: [],
+      weakestSubtopics: subtopics.filter(item => item.seen >= 3).sort((a,b)=>a.rate-b.rate).slice(0, 5),
+      riskySubtopics: subtopics.filter(item => item.seen >= 3 && item.rate < 50).sort((a,b)=>a.rate-b.rate).slice(0, 5),
+      strongestSubtopics: subtopics.filter(item => item.rate >= 85).sort((a,b)=>b.rate-a.rate).slice(0, 5),
+      masteredSubtopics: subtopics.filter(item => item.rate >= 95 && item.seen >= 5).sort((a,b)=>b.rate-a.rate).slice(0, 5),
+      undertrainedSubtopics: subtopics.filter(item => item.seen < 3).sort((a,b)=>a.seen-b.seen).slice(0, 5),
       weakestDisciplines: [],
       strongestDisciplines: [],
       masteredDisciplines: [],
       undertrainedDisciplines: [],
-      weakestTopicAreas: [],
-      strongestTopicAreas: [],
-      masteredTopicAreas: [],
-      undertrainedTopicAreas: [],
-      notSeenTopicAreas: [],
-      verifiedTopicAreas: [],
-      priorityTopicAreas: [],
-      topErrors: [],
+      topErrors: topErrors.slice(0, 4),
       topFormulations: [],
       topInstitutionPairs: [],
       highConfidenceWrongCount: 0,
-      overallRate: 0,
-      finishedSessions: 0,
-      answeredCount: 0,
-      correctCount: 0,
-      wrongCount: 0,
+      overallRate: answered ? Math.round(correct / answered * 100) : 0,
+      finishedSessions: Number(p.testCount || 0),
+      answeredCount: answered,
+      correctCount: correct,
+      wrongCount: Math.max(0, answered - correct),
       unansweredCount: 0,
-      testedSubtopicCount: 0,
-      totalKnownSubtopics: 0,
+      testedSubtopicCount: subtopics.filter(item => item.seen > 0).length,
+      totalKnownSubtopics: subtopics.filter(item => item.seen > 0).length,
       testedDisciplineCount: 0,
       totalKnownDisciplines: 0,
-      testedTopicAreaCount: 0,
-      totalKnownTopicAreas: 0,
-      verifiedTopicAreaCount: 0,
-      subtopicCoverageRate: 0,
+      subtopicCoverageRate: 100,
       disciplineCoverageRate: 0,
-      topicAreaCoverageRate: 0,
-      topicAreaVerificationRate: 0,
-      strongDomains: [],
-      studentHeadline: "Po prvním dokončeném testu se tady objeví přehled silných a slabších okruhů.",
-      coverageHeadline: "Tematické okruhy se začnou skládat po prvních výsledcích.",
       thresholds: { weakRate: 70, riskyRate: 50, strongRate: 85, masteredRate: 95 },
-      trend: emptyTrend
+      trend: analyticsBridge.buildTrendSummary ? analyticsBridge.buildTrendSummary() : { direction: "none", series: [] }
     };
   }
-
   function buildRecommendations() {
     if (analyticsBridge.buildRecommendations) return analyticsBridge.buildRecommendations();
     const summary = buildWeaknessSummary();
@@ -1928,7 +1871,7 @@ function buildWeaknessSummary() {
       subtopics[sub].seen++;
       if (qs.selectedAnswer === q.correct) subtopics[sub].correct++;
       else {
-        const err = normalizeErrorCode(qs.manualErrorType || qs.autoErrorType);
+        const err = qs.manualErrorType || qs.autoErrorType;
         if (err) { if (!errorTypes[err]) errorTypes[err] = 0; errorTypes[err]++; }
       }
     });
@@ -1937,7 +1880,7 @@ function buildWeaknessSummary() {
       .filter(x => x.rate < 80)
       .sort((a,b) => a.rate - b.rate);
     const errs = Object.keys(errorTypes)
-      .map(k => ({ type: normalizeErrorCode(k), count: errorTypes[k], label: analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(k) : getErrorLabelLocal(k) }))
+      .map(k => ({ type: k, count: errorTypes[k], label: ERROR_LABELS[k] || k }))
       .sort((a,b) => b.count - a.count);
     if (subs.length === 0 && errs.length === 0) {
       el.innerHTML = `<div class="dashboard"><h4>Tematická mapa (z tohoto testu)</h4><div class="dash-detail" style="border-color:#bfe2ca; background:#edf9f1; color:#1c6f44;">V tomto testu nemáte žádné výrazné slabiny. Cíle bylo dosaženo!</div></div>`;
@@ -2107,7 +2050,7 @@ function selectBattery(id) {
 
   
 function startBattery(id, options = {}) {
-  const difficultyMode = getDatasetByMode(options.difficultyMode || appState.settings.difficultyMode || "basic").key;
+  const difficultyMode = getDatasetByMode(options.difficultyMode || appState.settings.difficultyMode || "hard").key;
   const battery = getDatasetByMode(difficultyMode).batteryMap[id];
   if (!battery) return;
   const s = appState.settings;
@@ -2137,7 +2080,7 @@ function startBattery(id, options = {}) {
 function resumeSession() {
   const saved = loadCurrentSession();
   if (!saved) return;
-  const difficultyMode = getDatasetByMode(saved.difficultyMode || "basic").key;
+  const difficultyMode = getDatasetByMode(saved.difficultyMode || "hard").key;
   appState.settings.difficultyMode = difficultyMode;
   saveSettings();
   appState.currentSession = saved;
@@ -2166,7 +2109,7 @@ function resumeSession() {
 function restartBattery() {
   const session = appState.currentSession;
   if (!session) return;
-  startBattery(session.batteryId, { difficultyMode: session.difficultyMode || appState.settings.difficultyMode || "basic" });
+  startBattery(session.batteryId, { difficultyMode: session.difficultyMode || appState.settings.difficultyMode || "hard" });
 }
 
   
@@ -2184,8 +2127,8 @@ function finishTest(timeExpired = false) {
     batteryId: s.batteryId,
     batteryLabel: s.batteryLabel,
     batteryTitle: s.batteryTitle,
-    difficultyMode: s.difficultyMode || "basic",
-    difficultyLabel: s.difficultyLabel || getDifficultyModeLabel(s.difficultyMode || "basic"),
+    difficultyMode: s.difficultyMode || "hard",
+    difficultyLabel: s.difficultyLabel || getDifficultyModeLabel(s.difficultyMode || "hard"),
     mode: s.mode,
     score: score.correct,
     total: score.total,
@@ -2433,8 +2376,6 @@ function initApp() {
     BATTERY_MAP,
     DATASETS,
     ERROR_LABELS,
-    normalizeErrorCode,
-    getErrorLabel: getErrorLabelLocal,
     loadMetadataExport,
     loadBattery8MetadataMap,
     buildMetadataIndex,
