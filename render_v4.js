@@ -6,6 +6,26 @@
     return escapeHtml(String(value == null ? "" : value)).replace(/"/g, "&quot;");
   }
 
+
+
+function renderInsightList(items, keyName, emptyLabel, formatLabel) {
+  const safeItems = Array.isArray(items) ? items : [];
+  if (!safeItems.length) return `<li>${escapeHtml(emptyLabel)}</li>`;
+  return safeItems.map(item => {
+    const label = formatLabel ? formatLabel(item) : item?.[keyName];
+    const seen = Number(item?.seen || 0);
+    const correct = Number(item?.correct || 0);
+    const rate = Number(item?.rate || 0);
+    const meta = seen > 0 ? `${rate}% · ${correct}/${seen}` : "zatím bez otázek";
+    return `<li><strong>${escapeHtml(label || "—")}</strong> · ${escapeHtml(meta)}</li>`;
+  }).join("");
+}
+
+function renderSimpleCountList(items, keyName, emptyLabel, formatter) {
+  const safeItems = Array.isArray(items) ? items : [];
+  if (!safeItems.length) return `<li>${escapeHtml(emptyLabel)}</li>`;
+  return safeItems.map(item => `<li><strong>${escapeHtml(item?.[keyName] || "—")}</strong>${formatter ? formatter(item) : ""}</li>`).join("");
+}
   function renderTrendPanel() {
     const trend = buildTrendSummary();
     if (!trend.series.length) return `<div class="inline-muted">Trend se ukáže po dokončení více relací.</div>`;
@@ -51,26 +71,37 @@ function renderStartScreen() {
 
   window.renderStartScreen = renderStartScreen;
 
-  function renderWeaknessMap() {
+  
+function renderWeaknessMap() {
   const summary = buildWeaknessSummary();
-  const masteredTopics = summary.masteredSubtopics || [];
-  const strongestDisciplines = summary.masteredDisciplines?.length ? summary.masteredDisciplines : (summary.strongestDisciplines || []);
   const totalTests = summary.finishedSessions || 0;
-  const coverageLabel = `${summary.testedSubtopicCount || 0}/${summary.totalKnownSubtopics || 0}`;
+  const priorityTopicAreas = summary.priorityTopicAreas || [];
+  const masteredTopicAreas = summary.masteredTopicAreas || [];
+  const strongestDomains = summary.strongDomains || summary.masteredDisciplines || [];
+  const undertrainedTopicAreas = summary.undertrainedTopicAreas || [];
+  const notSeenTopicAreas = summary.notSeenTopicAreas || [];
   const diagnosticErrors = (summary.topErrors || []).filter(item => (item.count || 0) > 0);
+
+  const openedLabel = `${summary.testedTopicAreaCount || 0}/${summary.totalKnownTopicAreas || 0}`;
+  const verifiedLabel = `${summary.verifiedTopicAreaCount || 0}/${summary.totalKnownTopicAreas || 0}`;
+  const answeredBreakdown = `${summary.correctCount || 0} správně · ${summary.wrongCount || 0} chybně · ${summary.unansweredCount || 0} bez odpovědi`;
 
   return `
     <div class="summary-stack">
       <div class="summary-section">
-        <h5>Doporučený postup</h5>
+        <h5>Přehled přípravy</h5>
         <div class="start-mini-grid">
           <div class="start-mini-card"><div class="label">Dokončené testy</div><div class="value">${totalTests}</div></div>
-          <div class="start-mini-card"><div class="label">Celková úspěšnost</div><div class="value">${summary.overallRate || 0}%</div></div>
-          <div class="start-mini-card"><div class="label">Vyhodnocená témata</div><div class="value">${coverageLabel}</div></div>
-          <div class="start-mini-card"><div class="label">Jisté chybné odpovědi</div><div class="value">${summary.highConfidenceWrongCount || 0}</div></div>
+          <div class="start-mini-card"><div class="label">Úspěšnost ve zodpovězených otázkách</div><div class="value">${summary.overallRate || 0}%</div><div class="stat-sub">${escapeHtml(answeredBreakdown)}</div></div>
+          <div class="start-mini-card"><div class="label">Pokrytí hlavních okruhů</div><div class="value">${openedLabel}</div><div class="stat-sub">${summary.topicAreaCoverageRate || 0}% otevřených okruhů</div></div>
+          <div class="start-mini-card"><div class="label">Okruhy s dostatkem dat</div><div class="value">${verifiedLabel}</div><div class="stat-sub">${summary.topicAreaVerificationRate || 0}% z celé mapy</div></div>
+          <div class="start-mini-card"><div class="label">Chyby s vysokou jistotou</div><div class="value">${summary.highConfidenceWrongCount || 0}</div></div>
         </div>
         <div class="dash-detail" style="margin-top:12px;">
-          ${escapeHtml(totalTests ? `Máš za sebou ${totalTests} dokončen${totalTests === 1 ? "ý test" : totalTests >= 2 && totalTests <= 4 ? "é testy" : "ých testů"}.` : "Po prvním dokončeném testu se tady objeví dlouhodobější doporučení.")} ${escapeHtml(masteredTopics.length ? `U témat s 95 % a vyšší úspěšností už se začínají rýsovat stabilní silné stránky.` : `Silné stránky se zobrazí ve chvíli, kdy se některé téma dostane aspoň na 95 % při opakovaném ověření.`)}
+          ${escapeHtml(summary.studentHeadline || "")}
+        </div>
+        <div class="dash-detail" style="margin-top:8px;">
+          ${escapeHtml(summary.coverageHeadline || "")}
         </div>
         <div style="margin-top:12px;">
           ${renderRecommendedTraining()}
@@ -79,40 +110,57 @@ function renderStartScreen() {
 
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:14px;">
         <div class="summary-section">
-          <h5>Nejslabší témata a chyby</h5>
+          <h5>Co posílit nejdřív</h5>
           <div class="dash-detail" style="margin:0 0 12px;">
-            ${summary.weakestSubtopics.length ? `Sem spadají oblasti, které mají zatím nejnižší dlouhodobou úspěšnost.` : `Zatím se neoddělilo slabé téma s dostatkem dat.`}
+            ${priorityTopicAreas.length ? `Tady jsou okruhy, které už mají dost dat, ale zatím v nich ztrácíš nejvíc bodů.` : `Zatím se neoddělil okruh, který by už měl dost dat a současně vyžadoval prioritu.`}
           </div>
           <div style="display:grid; gap:12px;">
             <div>
-              <strong style="display:block; margin-bottom:8px; color:#183b54;">Nejslabší témata</strong>
-              <ul class="summary-list">${summary.weakestSubtopics.length ? summary.weakestSubtopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím není dost dat.</li>`}</ul>
+              <strong style="display:block; margin-bottom:8px; color:#183b54;">Okruhy k nejbližšímu posílení</strong>
+              <ul class="summary-list">${renderInsightList(priorityTopicAreas, "topicArea", "Zatím není okruh k prioritnímu posílení.")}</ul>
             </div>
             <div>
-              <strong style="display:block; margin-bottom:8px; color:#183b54;">Nejčastější diagnostikované chyby</strong>
-              <ul class="summary-list">${diagnosticErrors.length ? diagnosticErrors.map(item => `<li><strong>${escapeHtml(item.label)}</strong> · ${item.count}×</li>`).join("") : `<li>V dokončených testech se zatím neukázal opakovaný typ chyby.</li>`}</ul>
+              <strong style="display:block; margin-bottom:8px; color:#183b54;">Nejčastější typy chyb</strong>
+              <ul class="summary-list">${diagnosticErrors.length ? diagnosticErrors.map(item => `<li><strong>${escapeHtml(item.label)}</strong> · ${item.count}×</li>`).join("") : `<li>Zatím se neopakuje jeden výrazný typ chyby.</li>`}</ul>
             </div>
           </div>
         </div>
 
         <div class="summary-section">
-          <h5>Zvládnutá témata a silné stránky</h5>
+          <h5>Kde už máš dobrý základ</h5>
           <div class="dash-detail" style="margin:0 0 12px;">
-            ${masteredTopics.length ? `Tady jsou témata, která držíš na 95 % a výš.` : `Jakmile se některé téma dlouhodobě ustálí na 95 % a víc, objeví se zde.`}
+            ${masteredTopicAreas.length ? `Tyto okruhy držíš stabilně velmi dobře a můžeš je spíš průběžně udržovat.` : `Jakmile se některý okruh ustálí na vysoké úspěšnosti při opakovaném ověření, objeví se zde.`}
           </div>
           <div style="display:grid; gap:12px;">
             <div>
-              <strong style="display:block; margin-bottom:8px; color:#183b54;">Zvládnutá témata</strong>
-              <ul class="summary-list">${masteredTopics.length ? masteredTopics.map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím se ještě neukázalo stabilně zvládnuté téma.</li>`}</ul>
+              <strong style="display:block; margin-bottom:8px; color:#183b54;">Stabilně zvládnuté okruhy</strong>
+              <ul class="summary-list">${renderInsightList(masteredTopicAreas, "topicArea", "Zatím tu není stabilně zvládnutý okruh.")}</ul>
             </div>
             <div>
-              <strong style="display:block; margin-bottom:8px; color:#183b54;">Silné disciplíny</strong>
-              <ul class="summary-list">${strongestDisciplines.length ? strongestDisciplines.map(item => `<li><strong>${escapeHtml(item.discipline)}</strong> · ${item.rate}% · ${item.correct}/${item.seen}</li>`).join("") : `<li>Zatím není dost dat pro stabilně silnou disciplínu.</li>`}</ul>
+              <strong style="display:block; margin-bottom:8px; color:#183b54;">Silné širší oblasti</strong>
+              <ul class="summary-list">${renderInsightList(strongestDomains, "discipline", "Zatím není dost dat pro stabilně silnou širší oblast.", (item) => item?.discipline || item?.topicArea || "—")}</ul>
             </div>
-            <div>
-              <strong style="display:block; margin-bottom:8px; color:#183b54;">Co ještě chybí do mapy</strong>
-              <ul class="summary-list">${summary.undertrainedSubtopics.length ? summary.undertrainedSubtopics.slice(0, 4).map(item => `<li><strong>${escapeHtml(item.subtopic)}</strong> · ${item.seen === 0 ? "zatím netestováno" : `${item.seen}×`}</li>`).join("") : `<li>Pokrytí témat je zatím dobré.</li>`}</ul>
-            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-section">
+        <h5>Co zatím ještě není dobře ověřené</h5>
+        <div class="dash-detail" style="margin:0 0 12px;">
+          Tady vidíš rozdíl mezi okruhy, které jsi už jen načal(a), a okruhy, které se v testech ještě skoro neobjevily.
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px;">
+          <div>
+            <strong style="display:block; margin-bottom:8px; color:#183b54;">Zatím jen načaté okruhy</strong>
+            <ul class="summary-list">${renderSimpleCountList(undertrainedTopicAreas, "topicArea", "Zatím tu není načatý okruh s malým množstvím dat.", (item) => ` · ${item.seen}×`)}</ul>
+          </div>
+          <div>
+            <strong style="display:block; margin-bottom:8px; color:#183b54;">Ještě neprocvičené okruhy</strong>
+            <ul class="summary-list">${renderSimpleCountList(notSeenTopicAreas, "topicArea", "Už ses dotkl(a) všech hlavních okruhů v mapě.")}</ul>
+          </div>
+          <div>
+            <strong style="display:block; margin-bottom:8px; color:#183b54;">Širší oblasti už pokryté</strong>
+            <ul class="summary-list">${renderInsightList(summary.coveredDisciplines || [], "discipline", "Jakmile se začne rýsovat širší obraz podle disciplín, objeví se tady.", (item) => item?.discipline || "—")}</ul>
           </div>
         </div>
       </div>
@@ -120,6 +168,7 @@ function renderStartScreen() {
       ${renderTrendPanel()}
     </div>`;
 }
+
   window.renderWeaknessMap = renderWeaknessMap;
 
   function renderWeaknessPanel() {
@@ -140,7 +189,7 @@ function renderStartScreen() {
           <div class="action-grid">
             <div class="action-card"><h5>Spustit cílenou opravnou sadu</h5><p>Vrátí chybné a nezodpovězené otázky.</p><button class="btn btn-primary btn-sm" data-quick="errors" type="button">Spustit</button></div>
             <div class="action-card"><h5>Procvičit nejslabší disciplínu</h5><p>Vezme otázky z nejslabší dlouhodobé disciplíny.</p><button class="btn btn-primary btn-sm" data-quick="discipline" type="button">Spustit</button></div>
-            <div class="action-card"><h5>Procvičit nejslabší podtéma</h5><p>Zaměří se na jedno problémové podtéma.</p><button class="btn btn-primary btn-sm" data-quick="subtopic" type="button">Spustit</button></div>
+            <div class="action-card"><h5>Procvičit nejslabší detailní oblast</h5><p>Zaměří se na jednu konkrétní oblast, která ti teď dělá největší potíže.</p><button class="btn btn-primary btn-sm" data-quick="subtopic" type="button">Spustit</button></div>
             <div class="action-card"><h5>Procvičit negace</h5><p>Vrátí otázky s formulací negace.</p><button class="btn btn-outline btn-sm" data-quick="negace" type="button">Spustit</button></div>
             <div class="action-card"><h5>Procvičit záměny institucí</h5><p>Zaměří se na institucionální rozlišení.</p><button class="btn btn-outline btn-sm" data-quick="institution" type="button">Spustit</button></div>
             <div class="action-card"><h5>Procvičit jisté chybné odpovědi</h5><p>Vrátí otázky s falešnou jistotou.</p><button class="btn btn-outline btn-sm" data-quick="high-confidence" type="button">Spustit</button></div>

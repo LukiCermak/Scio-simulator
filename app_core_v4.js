@@ -140,9 +140,10 @@ function loadBattery8MetadataMap(mode = "basic") {
     ? (window.battery8MapHard || { schemaVersion: 0, items: [] })
     : (window.battery8Map || { schemaVersion: 0, items: [] });
 }
+
 function normalizeMetadataItem(item) {
   const base = item && typeof item === "object" ? item : {};
-  return {
+  const normalized = {
     globalId: String(base.globalId || "").trim(),
     batteryId: Number(base.batteryId || 0),
     batteryLabel: String(base.batteryLabel || "").trim(),
@@ -155,6 +156,8 @@ function normalizeMetadataItem(item) {
     discipline: String(base.discipline || "speciální pedagogika").trim(),
     subtopic: String(base.subtopic || "obecné téma").trim(),
     conceptTags: Array.isArray(base.conceptTags) ? base.conceptTags.map(String) : [],
+    conceptFamily: String(base.conceptFamily || "").trim(),
+    institutionDomain: String(base.institutionDomain || "").trim(),
     questionType: String(base.questionType || "general-discrimination").trim(),
     distractorType: String(base.distractorType || "general").trim(),
     trapPattern: String(base.trapPattern || "general").trim(),
@@ -184,7 +187,12 @@ function normalizeMetadataItem(item) {
     metadataConfidence: base.metadataConfidence ?? base.matchConfidence ?? 0.5,
     curationStatus: String(base.curationStatus || "auto-curated-v1").trim()
   };
+  normalized.topicArea = typeof window.getDashboardTopicAreaLabel === "function"
+    ? window.getDashboardTopicAreaLabel(normalized)
+    : (normalized.conceptFamily || normalized.subtopic || normalized.discipline || "Speciálněpedagogická orientace a poradenství");
+  return normalized;
 }
+
 function normalizeBattery8MapItem(item) {
   const base = item && typeof item === "object" ? item : {};
   const globalId = `B08Q${String(base.questionNumber || 0).padStart(2, "0")}`;
@@ -266,6 +274,8 @@ function buildReviewFallbacks(question, batteryLabel) {
     discipline: "speciální pedagogika",
     subtopic: "obecné téma",
     conceptTags: [battery],
+    conceptFamily: "",
+    institutionDomain: "",
     questionType: "general-discrimination",
     distractorType: "general",
     trapPattern: "general",
@@ -296,7 +306,10 @@ function buildReviewFallbacks(question, batteryLabel) {
     metadataOrigin: "fallback",
     metadataSourceRef: "",
     metadataConfidence: 0.2,
-    curationStatus: "fallback"
+    curationStatus: "fallback",
+    topicArea: typeof window.getDashboardTopicAreaLabel === "function"
+      ? window.getDashboardTopicAreaLabel({ subtopic: battery, questionText: qText })
+      : "Speciálněpedagogická orientace a poradenství"
   };
 }
 function resolveQuestionEffectiveCorrect(question, metadataItem) {
@@ -1787,88 +1800,57 @@ function updateMeta() {
     $("revisitBtn").addEventListener("click",toggleRevisitLater);
     $("clearBtn").addEventListener("click",clearAnswer);
   }
-  function buildWeaknessSummary() {
+  
+function buildWeaknessSummary() {
     if (analyticsBridge.buildStudyDashboardSummary) return analyticsBridge.buildStudyDashboardSummary();
-    const p = appState.progress || { subtopics: {}, errorTypes: {}, testCount: 0 };
-    if (!p || Number(p.testCount || 0) === 0) {
-      return {
-        weakestSubtopics: [],
-        riskySubtopics: [],
-        strongestSubtopics: [],
-        masteredSubtopics: [],
-        undertrainedSubtopics: [],
-        weakestDisciplines: [],
-        strongestDisciplines: [],
-        masteredDisciplines: [],
-        undertrainedDisciplines: [],
-        topErrors: [],
-        topFormulations: [],
-        topInstitutionPairs: [],
-        highConfidenceWrongCount: 0,
-        overallRate: 0,
-        finishedSessions: 0,
-        answeredCount: 0,
-        correctCount: 0,
-        wrongCount: 0,
-        unansweredCount: 0,
-        testedSubtopicCount: 0,
-        totalKnownSubtopics: 0,
-        testedDisciplineCount: 0,
-        totalKnownDisciplines: 0,
-        subtopicCoverageRate: 0,
-        disciplineCoverageRate: 0,
-        thresholds: { weakRate: 70, riskyRate: 50, strongRate: 85, masteredRate: 95 },
-        trend: analyticsBridge.buildTrendSummary ? analyticsBridge.buildTrendSummary() : { direction: "none", series: [] }
-      };
-    }
-    const subtopics = Object.keys(p.subtopics || {}).map(k => {
-      const item = p.subtopics[k] || {};
-      const seen = Number(item.seen || 0);
-      const correct = Number(item.correct || 0);
-      const wrong = Math.max(0, seen - correct);
-      const rate = seen ? Math.round(correct / seen * 100) : 0;
-      const status = seen < 3 ? "málo-dat" : rate >= 95 ? "zvládnuté" : rate >= 85 ? "silné" : rate < 50 ? "rizikové" : rate < 70 ? "slabé" : "stabilní";
-      return { subtopic: k, seen, correct, wrong, unanswered: 0, rate, status, sessionCount: 1, trend: "stabilní", confidenceLevel: seen >= 5 ? "střední" : "nízká" };
-    });
-    const topErrorsMap = {};
-    Object.keys(p.errorTypes || {}).forEach(k => {
-      const normalizedKey = normalizeErrorCode(k);
-      if (!normalizedKey) return;
-      topErrorsMap[normalizedKey] = (topErrorsMap[normalizedKey] || 0) + Number(p.errorTypes[k] || 0);
-    });
-    const topErrors = Object.keys(topErrorsMap).map(k => ({ type: k, count: Number(topErrorsMap[k] || 0), label: analyticsBridge.getErrorLabel ? analyticsBridge.getErrorLabel(k) : getErrorLabelLocal(k) })).sort((a,b)=>b.count-a.count);
-    const answered = subtopics.reduce((sum, item) => sum + item.seen, 0);
-    const correct = subtopics.reduce((sum, item) => sum + item.correct, 0);
+    if (typeof window.buildStudyDashboardSummary === "function") return window.buildStudyDashboardSummary();
+    const emptyTrend = analyticsBridge.buildTrendSummary ? analyticsBridge.buildTrendSummary() : { direction: "none", series: [] };
     return {
-      weakestSubtopics: subtopics.filter(item => item.seen >= 3).sort((a,b)=>a.rate-b.rate).slice(0, 5),
-      riskySubtopics: subtopics.filter(item => item.seen >= 3 && item.rate < 50).sort((a,b)=>a.rate-b.rate).slice(0, 5),
-      strongestSubtopics: subtopics.filter(item => item.rate >= 85).sort((a,b)=>b.rate-a.rate).slice(0, 5),
-      masteredSubtopics: subtopics.filter(item => item.rate >= 95 && item.seen >= 5).sort((a,b)=>b.rate-a.rate).slice(0, 5),
-      undertrainedSubtopics: subtopics.filter(item => item.seen < 3).sort((a,b)=>a.seen-b.seen).slice(0, 5),
+      weakestSubtopics: [],
+      riskySubtopics: [],
+      strongestSubtopics: [],
+      masteredSubtopics: [],
+      undertrainedSubtopics: [],
       weakestDisciplines: [],
       strongestDisciplines: [],
       masteredDisciplines: [],
       undertrainedDisciplines: [],
-      topErrors: topErrors.slice(0, 4),
+      weakestTopicAreas: [],
+      strongestTopicAreas: [],
+      masteredTopicAreas: [],
+      undertrainedTopicAreas: [],
+      notSeenTopicAreas: [],
+      verifiedTopicAreas: [],
+      priorityTopicAreas: [],
+      topErrors: [],
       topFormulations: [],
       topInstitutionPairs: [],
       highConfidenceWrongCount: 0,
-      overallRate: answered ? Math.round(correct / answered * 100) : 0,
-      finishedSessions: Number(p.testCount || 0),
-      answeredCount: answered,
-      correctCount: correct,
-      wrongCount: Math.max(0, answered - correct),
+      overallRate: 0,
+      finishedSessions: 0,
+      answeredCount: 0,
+      correctCount: 0,
+      wrongCount: 0,
       unansweredCount: 0,
-      testedSubtopicCount: subtopics.filter(item => item.seen > 0).length,
-      totalKnownSubtopics: subtopics.filter(item => item.seen > 0).length,
+      testedSubtopicCount: 0,
+      totalKnownSubtopics: 0,
       testedDisciplineCount: 0,
       totalKnownDisciplines: 0,
-      subtopicCoverageRate: 100,
+      testedTopicAreaCount: 0,
+      totalKnownTopicAreas: 0,
+      verifiedTopicAreaCount: 0,
+      subtopicCoverageRate: 0,
       disciplineCoverageRate: 0,
+      topicAreaCoverageRate: 0,
+      topicAreaVerificationRate: 0,
+      strongDomains: [],
+      studentHeadline: "Po prvním dokončeném testu se tady objeví přehled silných a slabších okruhů.",
+      coverageHeadline: "Tematické okruhy se začnou skládat po prvních výsledcích.",
       thresholds: { weakRate: 70, riskyRate: 50, strongRate: 85, masteredRate: 95 },
-      trend: analyticsBridge.buildTrendSummary ? analyticsBridge.buildTrendSummary() : { direction: "none", series: [] }
+      trend: emptyTrend
     };
   }
+
   function buildRecommendations() {
     if (analyticsBridge.buildRecommendations) return analyticsBridge.buildRecommendations();
     const summary = buildWeaknessSummary();

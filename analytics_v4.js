@@ -128,6 +128,7 @@
       },
       disciplines: {},
       subtopics: {},
+      topicAreas: {},
       errorTypes: {},
       formulations: {},
       signalPatterns: {},
@@ -259,6 +260,7 @@ function getQuestionProgressKey(question, session) {
     };
     normalized.disciplines = normalizeRegistryObject(src.disciplines || {}, false);
     normalized.subtopics = normalizeRegistryObject(src.subtopics || {}, false);
+    normalized.topicAreas = normalizeRegistryObject(src.topicAreas || {}, false);
     normalized.errorTypes = normalizeErrorRegistryObjectV4(src.errorTypes || {});
     normalized.formulations = normalizeRegistryObject(src.formulations || {}, false);
     normalized.signalPatterns = normalizeRegistryObject(src.signalPatterns || {}, false);
@@ -839,6 +841,85 @@ function buildRepairSessionFromResults(srcSession, candidateIndexes) {
   }
 
   
+
+const DASHBOARD_TOPIC_AREA_RULES_V4 = [
+  { label: "Funkční rozbor obtíže a hlavní bariéry", patterns: [/funkční\s+čtení|hlavní\s+bariér|sekundární\s+projev|forma\s+výkonu|přístup\s+k\s+informaci|porozumění|podmínky\s+výkonu|dostupnost\s+sdělení|dostupnost\s+zadání|vizuální\s+přístup|strukturace\s+zadání|strukturace\s+úkolu|stabilita\s+obtíže|prostředí\s+a\s+výkon|cílová\s+situace|podmínky\s+zpracování|porozumění\s+textu/i] },
+  { label: "Psychologie, vývoj a poradenská komunikace", patterns: [/psycholog|ontogenez|akomod|asimil|frustr|depriv|obrann|freud|jung|rogers|maslow|erikson|piaget|vygotsk|pavlov|empati|parafráz|parafraz|naslouch|dialog|rozhovor|poradenské\s+minimum|komunikace\s+a\s+poradenství|sociokulturn/i] },
+  { label: "Disciplíny a klasifikace speciální pedagogiky", patterns: [/logoped|surdoped|tyfloped|somatoped|psychoped|etoped|pedi[eií]|preling|postling|kongenit|získan|ziskane|pas\b|fonemat|balbuties|tumultus|dysfonie|rinolalie|prozo|klasifika|terminologické\s+rozlišení|disciplinární\s+rozlišení/i] },
+  { label: "Intervence, metody a podpůrné strategie", patterns: [/reeduk|kompenz|teacch|aak\b|augmentativ|alternativní\s+komunik|alternativni\s+komunik|ergoter|fyzioter|bazální|bazalni|logoter|pomůcka|pomucka|metoda|úprava\s+prostředí|uprava\s+prostredi|evaluace\s+podpory|interven|terapie|strategie\s+podpory/i] },
+  { label: "Školské poradenství, dokumenty a podpůrná opatření", patterns: [/školsk|skolsk|po1\b|plpp\b|ivp\b|špz|spc\b|ppp\b|svp\b|doporučen|zpráv|zprav|typy\s+škol|typy\s+skol|právní\s+režim|pravni\s+rezim|podpůrná\s+opatření|podpurna\s+opatreni|ředitel|reditel|škola\s+vs|adresáti\s+poradenských\s+služeb|adresati\s+poradenskych\s+sluzeb/i] },
+  { label: "Sociální systém, dávky a instituce", patterns: [/dávk|davk|ztp|průkaz|prukaz|úřad\s+práce|urad\s+prace|ospod|soud|diagnostick|dětský\s+domov|detsky\s+domov|výchovný\s+ústav|vychovny\s+ustav|služb|sluzb|veřejná\s+správa|verejna\s+sprava|mobilit|vozid|financov|orgány|organy|meziresort|veřejné\s+správy|verejne\s+spravy|sociálně-legislativní|socialne-legislativni/i] },
+  { label: "Historie oboru a osobnosti", patterns: [/histor|osobnost|autor|pedro\s+ponce|komensk|itard|haüy|braille|frankl|van\s+riper|redl|kábele|kabele|lechta|neubauer|valenta|ludíková|ludikova|matějček|matejcek|sovák|sovak|makarenko|česká\s+tradice|ceska\s+tradice|periodizace/i] }
+];
+
+function normalizeTopicAreaSourceText(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+function deriveDashboardTopicAreaV4(source) {
+  const base = source && typeof source === "object" ? source : { subtopic: source };
+  const text = [
+    base.topicArea,
+    base.conceptFamily,
+    base.subtopic,
+    base.discipline,
+    base.institutionDomain,
+    Array.isArray(base.conceptTags) ? base.conceptTags.join(" ") : "",
+    base.questionCore,
+    base.requiredDiscrimination,
+    base.questionText
+  ].filter(Boolean).join(" | ");
+  const normalized = normalizeTopicAreaSourceText(text);
+
+  for (const rule of DASHBOARD_TOPIC_AREA_RULES_V4) {
+    if (rule.patterns.some(pattern => pattern.test(normalized))) return rule.label;
+  }
+
+  if (/poraden/.test(normalized)) return "Školské poradenství, dokumenty a podpůrná opatření";
+  if (/interven|terapi|podpora/.test(normalized)) return "Intervence, metody a podpůrné strategie";
+  if (/histor|autor|osobnost/.test(normalized)) return "Historie oboru a osobnosti";
+  if (/psycholog|komunik|vyvoj|ontogen/.test(normalized)) return "Psychologie, vývoj a poradenská komunikace";
+  if (/social|davk|instituc|verejn/.test(normalized)) return "Sociální systém, dávky a instituce";
+  return "Speciálněpedagogická orientace a poradenství";
+}
+window.getDashboardTopicAreaLabel = deriveDashboardTopicAreaV4;
+
+function mergeRegistryEntriesV4(prev, next) {
+  const a = normalizeRegistryEntry(prev || {}, false);
+  const b = normalizeRegistryEntry(next || {}, false);
+  const totalSeen = Number(a.seen || 0) + Number(b.seen || 0);
+  return {
+    ...a,
+    seen: totalSeen,
+    correct: Number(a.correct || 0) + Number(b.correct || 0),
+    wrong: Number(a.wrong || 0) + Number(b.wrong || 0),
+    unanswered: Number(a.unanswered || 0) + Number(b.unanswered || 0),
+    highConfidenceWrong: Number(a.highConfidenceWrong || 0) + Number(b.highConfidenceWrong || 0),
+    avgTimeMs: totalSeen ? Math.round((((Number(a.avgTimeMs || 0) * Number(a.seen || 0)) + (Number(b.avgTimeMs || 0) * Number(b.seen || 0))) / Math.max(1, totalSeen))) : 0,
+    lastSeenAt: [a.lastSeenAt, b.lastSeenAt].filter(Boolean).sort().slice(-1)[0] || "",
+    relatedErrors: { ...(a.relatedErrors || {}), ...(b.relatedErrors || {}) },
+    sessionCount: Number(a.sessionCount || 0) + Number(b.sessionCount || 0),
+    sessionsPerfect: Number(a.sessionsPerfect || 0) + Number(b.sessionsPerfect || 0),
+    sessionsWithWrong: Number(a.sessionsWithWrong || 0) + Number(b.sessionsWithWrong || 0),
+    lastOutcome: b.lastOutcome || a.lastOutcome || "",
+    recentSessionRates: [...(a.recentSessionRates || []), ...(b.recentSessionRates || [])].slice(0, DASHBOARD_THRESHOLDS_V4.historyWindow)
+  };
+}
+
+function aggregateRegistryByClassifierV4(registry, classifier) {
+  const out = {};
+  Object.entries(registry || {}).forEach(([label, value]) => {
+    const targetLabel = classifier(label, value);
+    if (!targetLabel) return;
+    out[targetLabel] = mergeRegistryEntriesV4(out[targetLabel], value);
+  });
+  return out;
+}
+
+
 function getMetadataCoverageCatalog() {
   const exports = [
     Array.isArray(window.metadataExport?.items) ? window.metadataExport.items : [],
@@ -846,14 +927,26 @@ function getMetadataCoverageCatalog() {
   ];
   const disciplines = new Set();
   const subtopics = new Set();
+  const topicAreas = new Set();
+  const subtopicToTopicArea = {};
+  const disciplineToTopicArea = {};
   exports.flat().forEach(item => {
     const discipline = item?.discipline || item?.metadata?.discipline;
     const subtopic = item?.subtopic || item?.metadata?.subtopic;
-    if (discipline) disciplines.add(discipline);
-    if (subtopic) subtopics.add(subtopic);
+    const topicArea = deriveDashboardTopicAreaV4(item?.metadata || item || {});
+    if (discipline) {
+      disciplines.add(discipline);
+      if (topicArea && !disciplineToTopicArea[discipline]) disciplineToTopicArea[discipline] = topicArea;
+    }
+    if (subtopic) {
+      subtopics.add(subtopic);
+      if (topicArea && !subtopicToTopicArea[subtopic]) subtopicToTopicArea[subtopic] = topicArea;
+    }
+    if (topicArea) topicAreas.add(topicArea);
   });
-  return { disciplines, subtopics };
+  return { disciplines, subtopics, topicAreas, subtopicToTopicArea, disciplineToTopicArea };
 }
+
 
 
   function getEntryRecentRate(entry) {
@@ -1151,66 +1244,120 @@ function getMetadataCoverageCatalog() {
   }
   window.buildSessionDashboardSummaryFallback = buildSessionDashboardSummaryFallback;
 
-  function buildWeaknessSummary() {
-    const p = normalizeProgressV4(appState.progress || getEmptyProgressV4());
-    const totals = p.totals || {};
-    const catalog = getMetadataCoverageCatalog();
-    const disciplineInsights = buildTopicInsightList(p.disciplines || {}, "discipline", catalog.disciplines);
-    const subtopicInsights = buildTopicInsightList(p.subtopics || {}, "subtopic", catalog.subtopics);
-    const overallRate = totals.answered ? Math.round((totals.correct || 0) / totals.answered * 100) : 0;
-    const testedDisciplineCount = disciplineInsights.all.filter(item => item.seen > 0).length;
-    const testedSubtopicCount = subtopicInsights.all.filter(item => item.seen > 0).length;
-    const totalKnownDisciplines = catalog.disciplines.size || testedDisciplineCount;
-    const totalKnownSubtopics = catalog.subtopics.size || testedSubtopicCount;
-    const topErrors = Object.entries(p.errorTypes || {}).map(([type, value]) => ({
-      type: normalizeErrorCodeV4(type),
-      count: value.wrong || value.seen || 0,
-      label: getErrorLabel(type)
-    })).sort((a,b)=>b.count-a.count).slice(0, 5);
-    const topFormulations = Object.entries(p.formulations || {}).map(([flag, value]) => ({
-      flag,
-      risk: value.seen ? Math.round((value.wrong || 0) / value.seen * 100) : 0,
-      count: value.wrong || 0
-    })).filter(item => item.count > 0 || item.risk > 0).sort((a,b)=>(b.risk-a.risk) || (b.count-a.count)).slice(0, 5);
-    const topInstitutionPairs = Object.entries(p.institutionConfusions || {}).map(([pair, value]) => ({
-      pair,
-      risk: value.seen ? Math.round((value.wrong || 0) / value.seen * 100) : 0,
-      count: value.wrong || 0
-    })).filter(item => item.count > 0 || item.risk > 0).sort((a,b)=>(b.count-a.count) || (b.risk-a.risk)).slice(0, 5);
+  
+function buildWeaknessSummary() {
+  const p = normalizeProgressV4(appState.progress || getEmptyProgressV4());
+  const totals = p.totals || {};
+  const catalog = getMetadataCoverageCatalog();
 
-    return {
-      weakestDisciplines: disciplineInsights.weak.slice(0, 3),
-      weakestSubtopics: subtopicInsights.weak.slice(0, 5),
-      strongestDisciplines: disciplineInsights.strong.slice(0, 3),
-      strongestSubtopics: subtopicInsights.strong.slice(0, 5),
-      masteredDisciplines: disciplineInsights.mastered.slice(0, 5),
-      masteredSubtopics: subtopicInsights.mastered.slice(0, 8),
-      undertrainedDisciplines: disciplineInsights.undertrained.slice(0, 5),
-      undertrainedSubtopics: subtopicInsights.undertrained.slice(0, 8),
-      riskyDisciplines: disciplineInsights.risky.slice(0, 3),
-      riskySubtopics: subtopicInsights.risky.slice(0, 5),
-      disciplineInsights: disciplineInsights.all,
-      subtopicInsights: subtopicInsights.all,
-      topErrors,
-      topFormulations,
-      topInstitutionPairs,
-      highConfidenceWrongCount: totals.highConfidenceWrong || 0,
-      overallRate,
-      finishedSessions: totals.finishedSessions || p.testCount || 0,
-      answeredCount: totals.answered || 0,
-      correctCount: totals.correct || 0,
-      wrongCount: totals.wrong || 0,
-      unansweredCount: totals.unanswered || 0,
-      testedDisciplineCount,
-      testedSubtopicCount,
-      totalKnownDisciplines,
-      totalKnownSubtopics,
-      disciplineCoverageRate: totalKnownDisciplines ? Math.round(testedDisciplineCount / totalKnownDisciplines * 100) : 0,
-      subtopicCoverageRate: totalKnownSubtopics ? Math.round(testedSubtopicCount / totalKnownSubtopics * 100) : 0,
-      thresholds: { ...DASHBOARD_THRESHOLDS_V4 },
-      trend: buildTrendSummary()
-    };
-  }
+  const disciplineInsights = buildTopicInsightList(p.disciplines || {}, "discipline", catalog.disciplines);
+  const subtopicInsights = buildTopicInsightList(p.subtopics || {}, "subtopic", catalog.subtopics);
+
+  const topicAreaRegistry = Object.keys(p.topicAreas || {}).length
+    ? p.topicAreas
+    : aggregateRegistryByClassifierV4(p.subtopics || {}, (subtopicLabel) => catalog.subtopicToTopicArea[subtopicLabel] || deriveDashboardTopicAreaV4({ subtopic: subtopicLabel }));
+
+  const topicAreaInsights = buildTopicInsightList(topicAreaRegistry, "topicArea", catalog.topicAreas);
+
+  const overallRate = totals.answered ? Math.round((totals.correct || 0) / totals.answered * 100) : 0;
+  const testedDisciplineCount = disciplineInsights.all.filter(item => item.seen > 0).length;
+  const testedSubtopicCount = subtopicInsights.all.filter(item => item.seen > 0).length;
+  const testedTopicAreaCount = topicAreaInsights.all.filter(item => item.seen > 0).length;
+  const verifiedTopicAreas = topicAreaInsights.all.filter(item => item.status !== "neprocvičeno" && item.status !== "málo-dat");
+  const undertrainedSeenTopicAreas = topicAreaInsights.all.filter(item => item.status === "málo-dat");
+  const notSeenTopicAreas = topicAreaInsights.all.filter(item => item.status === "neprocvičeno");
+  const priorityTopicAreas = topicAreaInsights.all
+    .filter(item => item.status === "rizikové" || item.status === "slabé")
+    .sort((a, b) => (a.rate - b.rate) || (b.highConfidenceWrong - a.highConfidenceWrong) || (b.seen - a.seen) || String(a.topicArea).localeCompare(String(b.topicArea), "cs"));
+
+  const totalKnownDisciplines = catalog.disciplines.size || testedDisciplineCount;
+  const totalKnownSubtopics = catalog.subtopics.size || testedSubtopicCount;
+  const totalKnownTopicAreas = catalog.topicAreas.size || testedTopicAreaCount;
+
+  const topErrors = Object.entries(p.errorTypes || {}).map(([type, value]) => ({
+    type: normalizeErrorCodeV4(type),
+    count: value.wrong || value.seen || 0,
+    label: getErrorLabel(type)
+  })).sort((a,b)=>b.count-a.count).slice(0, 5);
+
+  const topFormulations = Object.entries(p.formulations || {}).map(([flag, value]) => ({
+    flag,
+    risk: value.seen ? Math.round((value.wrong || 0) / value.seen * 100) : 0,
+    count: value.wrong || 0
+  })).filter(item => item.count > 0 || item.risk > 0).sort((a,b)=>(b.risk-a.risk) || (b.count-a.count)).slice(0, 5);
+
+  const topInstitutionPairs = Object.entries(p.institutionConfusions || {}).map(([pair, value]) => ({
+    pair,
+    risk: value.seen ? Math.round((value.wrong || 0) / value.seen * 100) : 0,
+    count: value.wrong || 0
+  })).filter(item => item.count > 0 || item.risk > 0).sort((a,b)=>(b.count-a.count) || (b.risk-a.risk)).slice(0, 5);
+
+  const strongDomains = disciplineInsights.mastered.length ? disciplineInsights.mastered.slice(0, 4) : disciplineInsights.strong.slice(0, 4);
+  const studentHeadline = totals.answered
+    ? `Zodpovězeno máš ${totals.answered} otázek, z toho ${totals.correct || 0} správně, ${totals.wrong || 0} chybně a ${totals.unanswered || 0} bez odpovědi.`
+    : "Po prvním dokončeném testu se tady objeví přehled silných a slabších okruhů.";
+  const coverageHeadline = totalKnownTopicAreas
+    ? `Zatím ses dotkl(a) ${testedTopicAreaCount} z ${totalKnownTopicAreas} hlavních okruhů a u ${verifiedTopicAreas.length} z nich už je dost dat pro rozumný závěr.`
+    : "Tematické okruhy se začnou skládat po prvních výsledcích.";
+
+  const summary = {
+    weakestDisciplines: disciplineInsights.weak.slice(0, 3),
+    weakestSubtopics: subtopicInsights.weak.slice(0, 5),
+    strongestDisciplines: disciplineInsights.strong.slice(0, 3),
+    strongestSubtopics: subtopicInsights.strong.slice(0, 5),
+    masteredDisciplines: disciplineInsights.mastered.slice(0, 5),
+    masteredSubtopics: subtopicInsights.mastered.slice(0, 8),
+    undertrainedDisciplines: disciplineInsights.undertrained.slice(0, 5),
+    undertrainedSubtopics: subtopicInsights.undertrained.slice(0, 8),
+    riskyDisciplines: disciplineInsights.risky.slice(0, 3),
+    riskySubtopics: subtopicInsights.risky.slice(0, 5),
+
+    topicAreaInsights: topicAreaInsights.all,
+    weakestTopicAreas: topicAreaInsights.weak.slice(0, 4),
+    strongestTopicAreas: topicAreaInsights.strong.slice(0, 4),
+    masteredTopicAreas: topicAreaInsights.mastered.slice(0, 5),
+    undertrainedTopicAreas: undertrainedSeenTopicAreas.slice(0, 6),
+    notSeenTopicAreas: notSeenTopicAreas.slice(0, 6),
+    verifiedTopicAreas: verifiedTopicAreas,
+    priorityTopicAreas: priorityTopicAreas.slice(0, 5),
+
+    disciplineInsights: disciplineInsights.all,
+    subtopicInsights: subtopicInsights.all,
+    topErrors,
+    topFormulations,
+    topInstitutionPairs,
+    highConfidenceWrongCount: totals.highConfidenceWrong || 0,
+    overallRate,
+    finishedSessions: totals.finishedSessions || p.testCount || 0,
+    answeredCount: totals.answered || 0,
+    correctCount: totals.correct || 0,
+    wrongCount: totals.wrong || 0,
+    unansweredCount: totals.unanswered || 0,
+    testedDisciplineCount,
+    testedSubtopicCount,
+    testedTopicAreaCount,
+    verifiedTopicAreaCount: verifiedTopicAreas.length,
+    totalKnownDisciplines,
+    totalKnownSubtopics,
+    totalKnownTopicAreas,
+    disciplineCoverageRate: totalKnownDisciplines ? Math.round(testedDisciplineCount / totalKnownDisciplines * 100) : 0,
+    subtopicCoverageRate: totalKnownSubtopics ? Math.round(testedSubtopicCount / totalKnownSubtopics * 100) : 0,
+    topicAreaCoverageRate: totalKnownTopicAreas ? Math.round(testedTopicAreaCount / totalKnownTopicAreas * 100) : 0,
+    topicAreaVerificationRate: totalKnownTopicAreas ? Math.round(verifiedTopicAreas.length / totalKnownTopicAreas * 100) : 0,
+    strongDomains,
+    studentHeadline,
+    coverageHeadline,
+    thresholds: { ...DASHBOARD_THRESHOLDS_V4 },
+    trend: buildTrendSummary()
+  };
+
+  return summary;
+}
+function buildStudyDashboardSummary() {
+  return buildWeaknessSummary();
+}
+window.buildStudyDashboardSummary = buildStudyDashboardSummary;
+
   window.buildWeaknessSummary = buildWeaknessSummary;
   window.buildStudyDashboardSummary = buildWeaknessSummary;
 
@@ -1340,7 +1487,7 @@ function updateProgressFromSession(session) {
   if (s.mode === "repair") p.totals.repairSessions += 1;
   const now = new Date().toISOString();
   const errorSummary = summarizeErrorTypes(s);
-  const sessionTopicMaps = { disciplines: {}, subtopics: {} };
+  const sessionTopicMaps = { disciplines: {}, subtopics: {}, topicAreas: {} };
 
   s.questionStates.forEach((qs, idx) => {
     const q = s.activeTest.questions[idx];
@@ -1361,10 +1508,13 @@ function updateProgressFromSession(session) {
 
     const disciplineKey = metadata.discipline || "obecná disciplína";
     const subtopicKey = metadata.subtopic || "obecné téma";
+    const topicAreaKey = metadata.topicArea || deriveDashboardTopicAreaV4(metadata);
     bumpRegistry(p.disciplines, disciplineKey, payload);
     bumpRegistry(p.subtopics, subtopicKey, payload);
+    bumpRegistry(p.topicAreas, topicAreaKey, payload);
     bumpSessionRegistry(sessionTopicMaps.disciplines, disciplineKey, payload);
     bumpSessionRegistry(sessionTopicMaps.subtopics, subtopicKey, payload);
+    bumpSessionRegistry(sessionTopicMaps.topicAreas, topicAreaKey, payload);
 
     (metadata.formulationFlags || []).forEach(flag => bumpRegistry(p.formulations, flag, payload));
     (metadata.signalPattern || []).forEach(signal => bumpRegistry(p.signalPatterns, signal, payload));
@@ -1414,6 +1564,7 @@ function updateProgressFromSession(session) {
 
   applySessionStatsToRegistry(p.disciplines, sessionTopicMaps.disciplines, s.sessionId, now);
   applySessionStatsToRegistry(p.subtopics, sessionTopicMaps.subtopics, s.sessionId, now);
+  applySessionStatsToRegistry(p.topicAreas, sessionTopicMaps.topicAreas, s.sessionId, now);
 
   const score = calculateScore();
   const sessionSummary = {
