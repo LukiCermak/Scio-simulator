@@ -81,6 +81,16 @@ function loadBattery8MetadataMap(mode = "basic") {
     ? (window.battery8MapHard || { schemaVersion: 0, items: [] })
     : (window.battery8Map || { schemaVersion: 0, items: [] });
 }
+function sanitizeTutorExplanationText(text) {
+  return String(text || "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/^správně je\s+(?:možnost\s+)?[ABCD]\s*,?\s*protože\s*/i, "")
+    .replace(/^správná odpověď je\s+(?:možnost\s+)?[ABCD]\s*,?\s*protože\s*/i, "")
+    .replace(/^správně je\s+(?:možnost\s+)?[ABCD]\s*[–\-:]\s*/i, "")
+    .trim();
+}
+
 function normalizeMetadataItem(item) {
   const base = item && typeof item === "object" ? item : {};
   return {
@@ -105,7 +115,7 @@ function normalizeMetadataItem(item) {
     attentionRisk: String(base.attentionRisk || "medium").trim(),
     formulationFlags: Array.isArray(base.formulationFlags) ? base.formulationFlags.map(String) : [],
     questionCore: String(base.questionCore || "").trim(),
-    explanationCorrect: String(base.explanationCorrect || "").trim(),
+    explanationCorrect: sanitizeTutorExplanationText(base.explanationCorrect || ""),
     explanationDistractor: String(base.explanationDistractor || "").trim(),
     commonMisconception: String(base.commonMisconception || "").trim(),
     whyWrongCategory: String(base.whyWrongCategory || "").trim(),
@@ -1995,7 +2005,8 @@ function updateMeta() {
     if (m.signalHint) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Signální slovo:</strong> <span style="color:#d4820a; font-weight:700;">${escapeHtml(m.signalHint)}</span></div>`;
     
     // Why Correct / Why Distractor
-    if (m.explanationCorrect) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Proč je ${LETTERS[q.correct]} správně:</strong> ${escapeHtml(m.explanationCorrect)}</div>`;
+    const tutorExplanationCorrect = sanitizeTutorExplanationText(m.explanationCorrect || "");
+    if (tutorExplanationCorrect) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Proč je ${LETTERS[q.correct]} správně:</strong> ${escapeHtml(tutorExplanationCorrect)}</div>`;
     if (m.explanationDistractor && !isCorrect && !isUnanswered) {
       tabTutor += `<div class="review-explanation" style="margin-bottom:10px; border-color:#f3c9c9;"><strong>Lákavý distraktor:</strong> ${escapeHtml(m.explanationDistractor)}</div>`;
     }

@@ -378,6 +378,14 @@ function normalizeTutorText(text) {
   return String(text || "").replace(/\s+/g, " ").trim();
 }
 
+function stripTutorLeadingCorrectPrefix(text) {
+  return normalizeTutorText(text)
+    .replace(/^správně je\s+(?:možnost\s+)?[ABCD]\s*,?\s*protože\s*/i, "")
+    .replace(/^správná odpověď je\s+(?:možnost\s+)?[ABCD]\s*,?\s*protože\s*/i, "")
+    .replace(/^správně je\s+(?:možnost\s+)?[ABCD]\s*[–\-:]\s*/i, "")
+    .trim();
+}
+
 function pickTutorSignal(question, metadata) {
   const patterns = Array.isArray(metadata?.signalPattern) ? metadata.signalPattern.map(item => normalizeTutorText(item)).filter(Boolean) : [];
   const direct = normalizeTutorText(metadata?.signalHint || "");
@@ -392,7 +400,7 @@ function pickTutorSignal(question, metadata) {
 }
 
 function buildTutorCorrectReason(question, metadata) {
-  const explanation = normalizeTutorText(metadata?.explanationCorrect || "");
+  const explanation = stripTutorLeadingCorrectPrefix(metadata?.explanationCorrect || "");
   const discrimination = normalizeTutorText(metadata?.requiredDiscrimination || metadata?.questionCore || metadata?.distinctionAxis || "");
   if (explanation) return explanation;
   const pieces = [
