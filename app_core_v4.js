@@ -130,7 +130,7 @@ function normalizeDifficultyMode(value) {
 function getDifficultyModeLabel(mode) {
   return normalizeDifficultyMode(mode) === "hard" ? "Pokročilá" : "Základní";
 }
-function loadMetadataExport(mode = "basic") {
+function loadMetadataExport(mode = "hard") {
   return normalizeDifficultyMode(mode) === "hard"
     ? (window.metadataExportHard || { schemaVersion: 0, items: [] })
     : (window.metadataExport || { schemaVersion: 0, items: [] });
