@@ -416,6 +416,63 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   function formatTime(s) { const m=Math.floor(s/60),sec=s%60; return `${String(m).padStart(2,"0")}:${String(sec).padStart(2,"0")}`; }
   function formatDate(iso) { if(!iso) return "—"; try{const d=new Date(iso); return d.toLocaleDateString("cs-CZ",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});}catch(e){return "—";} }
   function formatModeLabel(mode) { return mode==="reading-training" ? "Trénink čtení zadání" : mode==="repair" ? "Opravná sada" : "Simulace"; }
+
+  const BATTERY_DOMINANT_LABELS = {
+    "D1":"blízká kategorie",
+    "D2":"záměna kompetence",
+    "D3":"záměna dokumentu",
+    "D4":"procesní krok nebo pořadí",
+    "D5":"hraniční podmínka nebo výjimka",
+    "D6":"lhůta nebo časový limit",
+    "D7":"terminologická blízkost",
+    "D8":"symptom, příčina, důsledek a intervence",
+    "D9":"historické a osobnostní souvislosti",
+    "D10":"resortní a systémová příslušnost",
+    "D11":"míra obecnosti",
+    "D12":"falešně přesný detail"
+  };
+
+  const BATTERY_BREAKDOWN_LABELS = {
+    "detail-discrimination":"jemné rozlišení detailu",
+    "document-discrimination":"rozlišení funkce dokumentu",
+    "condition-discrimination":"rozlišení podmínky nebo výjimky",
+    "system-discrimination":"rozlišení systému, resortu nebo instituce",
+    "symptom-profile-discrimination":"rozlišení symptomu, příčiny, důsledku a intervence",
+    "category-discrimination":"rozlišení blízkých kategorií",
+    "terminology-discrimination":"rozlišení blízkých termínů",
+    "historical-discrimination":"rozlišení historických souvislostí",
+    "generality-discrimination":"rozlišení míry obecnosti",
+    "process-discrimination":"rozlišení procesního kroku",
+    "competence-discrimination":"rozlišení kompetence a pravomoci",
+    "timeline-discrimination":"rozlišení lhůty nebo časové posloupnosti",
+    "document-function-discrimination":"rozlišení typu a funkce dokumentu",
+    "authority-discrimination":"rozlišení rozhodující autority",
+    "institution-discrimination":"rozlišení instituce nebo role",
+    "cause-consequence-discrimination":"rozlišení příčiny a důsledku",
+    "function-discrimination":"rozlišení funkce a účelu",
+    "role-discrimination":"rozlišení role a odpovědnosti",
+    "priority-discrimination":"rozlišení hlavního a vedlejšího znaku",
+    "framework-discrimination":"rozlišení odborného rámce",
+    "layer-discrimination":"rozlišení různých rovin téhož tématu"
+  };
+
+  function formatBatteryDominantItem(item) {
+    const key = String(item || "").trim();
+    return BATTERY_DOMINANT_LABELS[key] || key;
+  }
+
+  function formatBatteryBreakdownItem(item) {
+    const raw = String(item || "").trim();
+    const match = raw.match(/^(\d+)×\s*(.+)$/i);
+    const count = match ? match[1] : "";
+    const code = match ? match[2].trim() : raw;
+    const label = BATTERY_BREAKDOWN_LABELS[code] || code
+      .replace(/-/g, " ")
+      .replace(/\bdiscrimination\b/gi, "rozlišení")
+      .replace(/\s+/g, " ")
+      .trim();
+    return count ? `${count}× ${label}` : label;
+  }
   function hasConfidenceTracking(session) {
     const s = session || appState.currentSession;
     if (!s) return false;
@@ -802,8 +859,8 @@ function renderBatteryDetail(battery) {
   const detailCopy = getBatteryDetailCopy(battery);
   top.innerHTML = `<div><h3>${escapeHtml(battery.label)} – ${escapeHtml(battery.title)}</h3><p>${escapeHtml(battery.subtitle)}</p></div><span class="badge">${getBatteryDisplayBadge(battery.id)}</span>`;
   $("detailPurpose").innerHTML = `<p>${escapeHtml(detailCopy?.purposeText || battery.purpose)}</p>`;
-  $("detailDominant").innerHTML = (battery.dominant || []).map(item => `<span class="chip">${escapeHtml(item)}</span>`).join("");
-  $("detailBreakdown").innerHTML = (battery.breakdown || []).map(item => `<li>${escapeHtml(item)}</li>`).join("");
+  $("detailDominant").innerHTML = (battery.dominant || []).map(item => `<span class="chip">${escapeHtml(formatBatteryDominantItem(item))}</span>`).join("");
+  $("detailBreakdown").innerHTML = (battery.breakdown || []).map(item => `<li>${escapeHtml(formatBatteryBreakdownItem(item))}</li>`).join("");
   $("detailProfile").innerHTML = (detailCopy?.profileParagraphs || []).map(item => `<p>${escapeHtml(item)}</p>`).join("");
 }
 
