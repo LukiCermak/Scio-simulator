@@ -49,7 +49,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 2,
         "text": "V ústním zkoušení žák látku vystihne přesně, ale v ručně psané odpovědi ji nerozvine a text je sotva čitelný. Které vysvětlení situace je nejpřesnější?",
         "options": [
-          "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
+          "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
           "Jádro leží především v celkovém neporozumění učivu, které se jen více odhalí písemně.",
           "Jádro leží v nízké ochotě pracovat, protože ústně je výkon vždy snadnější.",
           "Jádro leží v tom, že žák zvládá učivo jen tehdy, když může odpovídat zkratkovitě."
@@ -88,7 +88,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Potíž se nemusí týkat obsahu učiva v té podobě, v jaké ji ukazuje diktát.",
           "Je třeba odlišit obsahovou znalost od nároků konkrétní formy výkonu.",
           "Výsledek diktátu sám o sobě nestačí k závěru, že žák látce nerozumí.",
-          "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu."
+          "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -133,7 +133,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 9,
         "text": "Žák po poslechu textu odpoví věcně správně, ale z hustě sázeného materiálu s nízkým kontrastem selhává. Jaké vysvětlení je nejpřesnější?",
         "options": [
-          "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
+          "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
           "Jádro leží v tom, že žák nerozumí stejnému obsahu bez ohledu na formu podání.",
           "Jádro leží v odporu k samostatné práci s textem, nikoli ve vizuálních podmínkách.",
           "Jádro leží v tom, že poslech vždy uměle nadhodnocuje skutečnou kompetenci."
@@ -157,7 +157,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 11,
         "text": "V tiché individuální práci žák běžné instrukci rozumí, ale ve skupinové práci v hluku opakovaně mine začátek úkolu. Která interpretace je bližší?",
         "options": [
-          "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
+          "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
           "Potíž je stejná napříč situacemi a hluk jen odkryl všeobecně slabé chápání.",
           "Potíž je především v neochotě reagovat na autoritu učitele ve skupině.",
           "Potíž je hlavně v tom, že individuální práce bývá vždy jednodušší než skupinová, bez dalšího významu."
@@ -169,7 +169,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 12,
         "text": "Jak nejlépe vyložit situaci, kdy dítě provede úkol správně po krátké demonstraci, ale samotný rychle vyslovený slovní pokyn v tělocvičně často mine?",
         "options": [
-          "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
+          "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
           "Jádro leží v celkově slabém chápání pohybového zadání bez ohledu na formu instrukce.",
           "Jádro leží v tom, že dítě v tělocvičně systematicky vzdoruje verbálním pokynům.",
           "Jádro leží v tom, že demonstrace je vždy nepřiměřenou nápovědou a výsledek proto nelze číst."
@@ -242,7 +242,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Který znak nejvíce ukazuje na stabilní jádro obtíže napříč situacemi?",
         "options": [
           "Žák selhává hlavně při jednom typu úkolu a po změně podmínek se výkon vrací.",
-          "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
+          "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
           "Obtíž se objevuje jen tehdy, když je zadání dlouhé a hlučné prostředí rušivé.",
           "Výkon kolísá podle toho, zda učitel pracuje individuálně nebo frontálně."
         ],
@@ -265,7 +265,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 20,
         "text": "Když žák chybuje stejně u tichého čtení, poslechu i praktické ukázky, který závěr je bližší?",
         "options": [
-          "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
+          "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
           "Jádro obtíže bude pravděpodobně jen ve vizuálním přístupu k informaci.",
           "Jádro obtíže bude pravděpodobně jen v produkci odpovědi, ne v porozumění.",
           "Jádro obtíže bude pravděpodobně jen v akustických podmínkách výuky."
@@ -421,7 +421,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 33,
         "text": "Jaké vysvětlení situace je nejpřesnější, když dítě rozumí otázce při individuální práci, ale ve třídě opakovaně odpovídá mimo, protože zachytí jen část zadání?",
         "options": [
-          "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
+          "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
           "Jádro leží ve stabilně slabé obsahové kompetenci bez ohledu na to, jak je sdělení podané.",
           "Jádro leží v tom, že individuální práce neukazuje skutečnou úroveň žáka.",
           "Jádro leží hlavně v neochotě sledovat výuku ve větší skupině."
@@ -529,7 +529,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 42,
         "text": "Které tvrzení má největší vypovídací hodnotu pro posouzení, zda podpora opravdu mění jádro obtíže?",
         "options": [
-          "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
+          "Nejvíc vypovídá to, že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
           "Že učitel má po zavedení podpory lepší pocit z práce celé třídy.",
           "Že žák působí s novým opatřením klidněji, i když cíl podpory mířil jinam.",
           "Že opatření lze odborně pojmenovat několika přesnými termíny."
@@ -577,7 +577,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 46,
         "text": "Jaké vysvětlení je nejbližší, když dítě po přesunu blíže k učiteli a po zřetelnějším kontaktu s tváří drží obsah podstatně lépe, zatímco artikulace zůstává stejná?",
         "options": [
-          "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
+          "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
           "Jádro leží spíše v artikulaci, protože pozice ve třídě mění hlavně její vnímání učitelem.",
           "Jádro leží spíše v tom, že dítě po přesazení více poslouchá z kázně.",
           "Jádro leží spíše v obsahu učiva, který se po přesunu blíže automaticky zjednodušil."
@@ -601,7 +601,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 48,
         "text": "Co z toho plyne nejpřesněji, když dítě při stejné látce selhává hlavně v dlouhých souvislých instrukcích, ale nikoli v krátkých postupných krocích?",
         "options": [
-          "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
+          "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
           "Jádro musí ležet v totálním nepochopení látky, protože dlouhé instrukce jen odhalují pravdu.",
           "Jádro musí ležet ve vzdoru, protože dlouhé instrukce vyžadují více sebekontroly.",
           "Jádro musí ležet v nečitelnosti materiálu, protože delší instrukce bývají graficky náročnější."

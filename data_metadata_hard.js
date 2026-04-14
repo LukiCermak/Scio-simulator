@@ -84,28 +84,28 @@ window.metadataExportHard = {
       "questionNumber": 1,
       "questionText": "Žák selhává stejně v ústní, písemné i názorně vedené odpovědi na totéž učivo. Jaký závěr by zde byl nejméně přiměřený?",
       "options": {
-        "A": "Důležité je neplést modalitu výkonu s jádrem potíže.",
+        "A": "Důležité je neplést modalitu výkonu s tím, kde je skutečný problém.",
         "B": "Že bariéra bude jen ve formě výstupu.",
         "C": "Že samotná změna výstupního kanálu problém nevyřešila.",
         "D": "Že je potřeba znovu číst, co zůstává stabilní napříč modalitami."
       },
       "correctOptionText": "Že bariéra bude jen ve formě výstupu.",
       "discipline": "speciální pedagogika / funkční diagnostika",
-      "subtopic": "forma výkonu vs jádro potíže",
+      "subtopic": "forma výkonu vs podstata potíže",
       "conceptTags": [
         "funkční čtení obtíže",
         "forma výkonu",
-        "jádro potíže",
+        "podstata potíže",
         "poradenství"
       ],
       "questionType": "interpretation-discrimination",
       "distractorType": "near-interpretation",
       "trapPattern": "output-channel-overread",
-      "requiredDiscrimination": "forma výkonu a stabilní jádro obtíže",
+      "requiredDiscrimination": "forma výkonu a stabilní podstata obtíže",
       "signalPattern": [
-        "forma výkonu vs jádro obtíže"
+        "forma výkonu vs podstata obtíže"
       ],
-      "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje forma výkonu a stabilní jádro obtíže.",
+      "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje forma výkonu a stabilní podstata obtíže.",
       "questionCore": "stejné selhávání napříč modalitami",
       "explanationCorrect": "Smyslem otázky bylo vytipovat možnost, která je v daném kontextu nejméně přesná. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: forma výkonu a to, co obtíž drží napříč situacemi. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
       "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na forma výkonu a to, co obtíž drží napříč situacemi.",
@@ -134,9 +134,9 @@ window.metadataExportHard = {
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
-      "knowledgeTarget": "forma výkonu a stabilní jádro obtíže",
+      "knowledgeTarget": "forma výkonu a stabilní podstata obtíže",
       "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-      "keyProof": "Rozhodující je forma výkonu a stabilní jádro obtíže.",
+      "keyProof": "Rozhodující je forma výkonu a stabilní podstata obtíže.",
       "legalFreshnessRequired": false,
       "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
       "formulationFlags": [],
@@ -144,17 +144,17 @@ window.metadataExportHard = {
       "knowledgeDemandLevel": "high",
       "processDemandLevel": "medium",
       "recommendedRepairFilters": [
-        "forma výkonu a stabilní jádro obtíže",
+        "forma výkonu a stabilní podstata obtíže",
         "funkční čtení obtíže",
         "forma výkonu",
-        "jádro potíže",
+        "podstata potíže",
         "poradenství"
       ],
       "revisionPriority": "high",
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B01Q01",
       "conceptFamily": "funkční čtení obtíže",
-      "distinctionAxis": "forma výkonu vs stabilní jádro",
+      "distinctionAxis": "forma výkonu vs stabilita obtíže",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "školství / poradenství",
@@ -171,12 +171,12 @@ window.metadataExportHard = {
       "questionNumber": 2,
       "questionText": "V ústním zkoušení žák látku vystihne přesně, ale v ručně psané odpovědi ji nerozvine a text je sotva čitelný. Které vysvětlení situace je nejpřesnější?",
       "options": {
-        "A": "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
-        "B": "Jádro leží především v celkovém neporozumění učivu, které se jen více odhalí písemně.",
-        "C": "Jádro leží v nízké ochotě pracovat, protože ústně je výkon vždy snadnější.",
-        "D": "Jádro leží v tom, že žák zvládá učivo jen tehdy, když může odpovídat zkratkovitě."
+        "A": "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
+        "B": "Podle této možnosti by problém spočíval především v celkovém neporozumění učivu, které se jen více odhalí písemně.",
+        "C": "Podle této možnosti by problém spočíval v nízké ochotě pracovat, protože ústně je výkon vždy snadnější.",
+        "D": "Podle této možnosti by problém spočíval v tom, že žák zvládá učivo jen tehdy, když může odpovídat zkratkovitě."
       },
-      "correctOptionText": "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
+      "correctOptionText": "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
       "discipline": "speciální pedagogika / funkční diagnostika",
       "subtopic": "písemný výstup vs obsahová znalost",
       "conceptTags": [
@@ -216,8 +216,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
-      "reviewedCorrectOptionText": "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
+      "sourceCorrectOptionText": "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
+      "reviewedCorrectOptionText": "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -437,9 +437,9 @@ window.metadataExportHard = {
         "A": "Potíž se nemusí týkat obsahu učiva v té podobě, v jaké ji ukazuje diktát.",
         "B": "Je třeba odlišit obsahovou znalost od nároků konkrétní formy výkonu.",
         "C": "Výsledek diktátu sám o sobě nestačí k závěru, že žák látce nerozumí.",
-        "D": "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu."
+        "D": "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi."
       },
-      "correctOptionText": "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu.",
+      "correctOptionText": "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi.",
       "discipline": "speciální pedagogika / funkční diagnostika",
       "subtopic": "diktát vs obsahová znalost",
       "conceptTags": [
@@ -456,7 +456,7 @@ window.metadataExportHard = {
         "výsledek diktátu vs porozumění obsahu"
       ],
       "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje výsledek diktátu vs porozumění obsahu.",
-      "questionCore": "diktát nepokrývá automaticky jádro obtíže",
+      "questionCore": "diktát sám neukazuje celou podstatu obtíže",
       "explanationCorrect": "V této úloze se nehledala nejvýstižnější varianta, ale ta, která se s popsanou situací rozchází. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: výsledek diktátu a porozumění obsahu. Interpretace přináší významový výklad toho, co klient říká nebo dělá, a proto je náročnější a rizikovější než prostá parafráze.",
       "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na výsledek diktátu a porozumění obsahu.",
       "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -479,8 +479,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "D",
       "reviewedCorrectLetter": "D",
       "effectiveCorrectLetter": "D",
-      "sourceCorrectOptionText": "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu.",
-      "reviewedCorrectOptionText": "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu.",
+      "sourceCorrectOptionText": "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi.",
+      "reviewedCorrectOptionText": "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -521,7 +521,7 @@ window.metadataExportHard = {
       "questionNumber": 6,
       "questionText": "Žák mluví srozumitelně, ale při výkladu z větší vzdálenosti bez vizuální opory ztrácí obsah. Který rámec je bližší?",
       "options": {
-        "A": "Logopedický rámec je bližší, protože jádro leží v kvalitě výslovnosti žáka.",
+        "A": "Logopedický rámec je bližší, protože hlavní obtíž spočívá v kvalitě výslovnosti žáka.",
         "B": "Surdopedický rámec dostupnosti mluvené informace je bližší než logopedický rámec produkce.",
         "C": "Psychologický rámec je bližší, protože potíž vzniká hlavně v koncentraci pozornosti bez ohledu na podmínky.",
         "D": "Sociální rámec je bližší, protože problém je především v organizaci třídy a ne v přístupu ke sdělení."
@@ -782,12 +782,12 @@ window.metadataExportHard = {
       "questionNumber": 9,
       "questionText": "Žák po poslechu textu odpoví věcně správně, ale z hustě sázeného materiálu s nízkým kontrastem selhává. Jaké vysvětlení je nejpřesnější?",
       "options": {
-        "A": "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
-        "B": "Jádro leží v tom, že žák nerozumí stejnému obsahu bez ohledu na formu podání.",
-        "C": "Jádro leží v odporu k samostatné práci s textem, nikoli ve vizuálních podmínkách.",
-        "D": "Jádro leží v tom, že poslech vždy uměle nadhodnocuje skutečnou kompetenci."
+        "A": "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
+        "B": "Podle této možnosti by problém spočíval v tom, že žák nerozumí stejnému obsahu bez ohledu na formu podání.",
+        "C": "Podle této možnosti by problém spočíval v odporu k samostatné práci s textem, nikoli ve vizuálních podmínkách.",
+        "D": "Podle této možnosti by problém spočíval v tom, že poslech vždy uměle nadhodnocuje skutečnou kompetenci."
       },
-      "correctOptionText": "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
+      "correctOptionText": "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
       "discipline": "speciální pedagogika",
       "subtopic": "vizuální přístup k informaci",
       "conceptTags": [
@@ -827,8 +827,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
-      "reviewedCorrectOptionText": "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
+      "sourceCorrectOptionText": "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
+      "reviewedCorrectOptionText": "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -956,12 +956,12 @@ window.metadataExportHard = {
       "questionNumber": 11,
       "questionText": "V tiché individuální práci žák běžné instrukci rozumí, ale ve skupinové práci v hluku opakovaně mine začátek úkolu. Která interpretace je bližší?",
       "options": {
-        "A": "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
+        "A": "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
         "B": "Potíž je stejná napříč situacemi a hluk jen odkryl všeobecně slabé chápání.",
         "C": "Potíž je především v neochotě reagovat na autoritu učitele ve skupině.",
         "D": "Potíž je hlavně v tom, že individuální práce bývá vždy jednodušší než skupinová, bez dalšího významu."
       },
-      "correctOptionText": "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
+      "correctOptionText": "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
       "discipline": "speciální pedagogika / poradenství",
       "subtopic": "hluk a dostupnost instrukce",
       "conceptTags": [
@@ -1001,8 +1001,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
-      "reviewedCorrectOptionText": "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
+      "sourceCorrectOptionText": "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
+      "reviewedCorrectOptionText": "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -1026,7 +1026,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B01Q11",
       "conceptFamily": "dostupnost sdělení",
-      "distinctionAxis": "hlukové podmínky vs jádrové neporozumění",
+      "distinctionAxis": "hlukové podmínky vs obecné neporozumění",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "školství / poradenství",
@@ -1043,12 +1043,12 @@ window.metadataExportHard = {
       "questionNumber": 12,
       "questionText": "Jak nejlépe vyložit situaci, kdy dítě provede úkol správně po krátké demonstraci, ale samotný rychle vyslovený slovní pokyn v tělocvičně často mine?",
       "options": {
-        "A": "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
-        "B": "Jádro leží v celkově slabém chápání pohybového zadání bez ohledu na formu instrukce.",
-        "C": "Jádro leží v tom, že dítě v tělocvičně systematicky vzdoruje verbálním pokynům.",
-        "D": "Jádro leží v tom, že demonstrace je vždy nepřiměřenou nápovědou a výsledek proto nelze číst."
+        "A": "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
+        "B": "Podle této možnosti by problém spočíval v celkově slabém chápání pohybového zadání bez ohledu na formu instrukce.",
+        "C": "Podle této možnosti by problém spočíval v tom, že dítě v tělocvičně systematicky vzdoruje verbálním pokynům.",
+        "D": "Podle této možnosti by problém spočíval v tom, že demonstrace je vždy nepřiměřenou nápovědou a výsledek proto nelze číst."
       },
-      "correctOptionText": "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
+      "correctOptionText": "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
       "discipline": "speciální pedagogika / poradenství",
       "subtopic": "demonstrace vs rychlý slovní pokyn",
       "conceptTags": [
@@ -1088,8 +1088,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
-      "reviewedCorrectOptionText": "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
+      "sourceCorrectOptionText": "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
+      "reviewedCorrectOptionText": "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -1569,16 +1569,16 @@ window.metadataExportHard = {
       "batteryTitle": "Funkční čtení obtíže a primární bariéra",
       "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
       "questionNumber": 18,
-      "questionText": "Který znak nejvíce ukazuje na stabilní jádro obtíže napříč situacemi?",
+      "questionText": "Který znak nejvíce ukazuje na stabilitu obtíže napříč situacemi?",
       "options": {
         "A": "Žák selhává hlavně při jednom typu úkolu a po změně podmínek se výkon vrací.",
-        "B": "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
+        "B": "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
         "C": "Obtíž se objevuje jen tehdy, když je zadání dlouhé a hlučné prostředí rušivé.",
         "D": "Výkon kolísá podle toho, zda učitel pracuje individuálně nebo frontálně."
       },
-      "correctOptionText": "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
+      "correctOptionText": "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
       "discipline": "speciální pedagogika / poradenství",
-      "subtopic": "stabilní jádro obtíže napříč situacemi",
+      "subtopic": "stabilita obtíže napříč situacemi",
       "conceptTags": [
         "stabilita obtíže",
         "modality",
@@ -1594,7 +1594,7 @@ window.metadataExportHard = {
         "stabilní chyba napříč podmínkami vs podmíněné kolísání výk"
       ],
       "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje stabilní chyba napříč podmínkami vs podmíněné kolísání výkonu.",
-      "questionCore": "signál pro stabilní jádro obtíže",
+      "questionCore": "signál pro stabilitu obtíže napříč situacemi",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
       "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí stabilní chyba napříč podmínkami a podmíněné kolísání výkonu.",
       "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -1616,8 +1616,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "B",
       "reviewedCorrectLetter": "B",
       "effectiveCorrectLetter": "B",
-      "sourceCorrectOptionText": "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
-      "reviewedCorrectOptionText": "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
+      "sourceCorrectOptionText": "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
+      "reviewedCorrectOptionText": "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -1745,28 +1745,28 @@ window.metadataExportHard = {
       "questionNumber": 20,
       "questionText": "Když žák chybuje stejně u tichého čtení, poslechu i praktické ukázky, který závěr je bližší?",
       "options": {
-        "A": "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
-        "B": "Jádro obtíže bude pravděpodobně jen ve vizuálním přístupu k informaci.",
-        "C": "Jádro obtíže bude pravděpodobně jen v produkci odpovědi, ne v porozumění.",
-        "D": "Jádro obtíže bude pravděpodobně jen v akustických podmínkách výuky."
+        "A": "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
+        "B": "Obtíž bude podle této možnosti pravděpodobně jen ve vizuálním přístupu k informaci.",
+        "C": "Obtíž bude podle této možnosti pravděpodobně jen v produkci odpovědi, ne v porozumění.",
+        "D": "Obtíž bude podle této možnosti pravděpodobně jen v akustických podmínkách výuky."
       },
-      "correctOptionText": "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
+      "correctOptionText": "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
       "discipline": "speciální pedagogika / poradenství",
       "subtopic": "stejná chyba napříč kanály podání",
       "conceptTags": [
         "modalita podání",
-        "stabilní jádro",
+        "stabilita obtíže",
         "funkční čtení obtíže",
         "poradenství"
       ],
       "questionType": "interpretation-discrimination",
       "distractorType": "near-interpretation",
       "trapPattern": "single-channel-assumption",
-      "requiredDiscrimination": "stabilní jádro vs kanálově vázaná bariéra",
+      "requiredDiscrimination": "stabilita obtíže vs bariéra vázaná na konkrétní kanál",
       "signalPattern": [
-        "stabilní jádro vs kanálově vázaná bariéra"
+        "stabilita obtíže vs bariéra vázaná na konkrétní kanál"
       ],
-      "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje stabilní jádro vs kanálově vázaná bariéra.",
+      "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje stabilita obtíže vs bariéra vázaná na konkrétní kanál.",
       "questionCore": "stejná chyba ve více kanálech",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „podstata obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
       "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí to, co se nemění a kanálově vázaná bariéra.",
@@ -1789,14 +1789,14 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
-      "reviewedCorrectOptionText": "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
+      "sourceCorrectOptionText": "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
+      "reviewedCorrectOptionText": "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
-      "knowledgeTarget": "stabilní jádro vs kanálově vázaná bariéra",
+      "knowledgeTarget": "stabilita obtíže vs bariéra vázaná na konkrétní kanál",
       "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-      "keyProof": "Rozhodující je stabilní jádro vs kanálově vázaná bariéra.",
+      "keyProof": "Rozhodující je stabilita obtíže vs bariéra vázaná na konkrétní kanál.",
       "legalFreshnessRequired": false,
       "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
       "formulationFlags": [],
@@ -1804,9 +1804,9 @@ window.metadataExportHard = {
       "knowledgeDemandLevel": "high",
       "processDemandLevel": "medium-high",
       "recommendedRepairFilters": [
-        "stabilní jádro vs kanálově vázaná bariéra",
+        "stabilita obtíže vs bariéra vázaná na konkrétní kanál",
         "modalita podání",
-        "stabilní jádro",
+        "stabilita obtíže",
         "funkční čtení obtíže",
         "poradenství"
       ],
@@ -1921,7 +1921,7 @@ window.metadataExportHard = {
         "A": "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
         "B": "Že je potřeba sledovat, které podmínky výkon zhoršují a které jej zpřístupňují.",
         "C": "Že změna prostředí může být pro čtení obtíže stejně důležitá jako změna úkolu.",
-        "D": "Že kolísání výkonu samo o sobě brání rychlému závěru o stabilním jádru napříč situacemi."
+        "D": "Že kolísání výkonu samo o sobě brání rychlému závěru o stabilitě obtíže napříč situacemi."
       },
       "correctOptionText": "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
       "discipline": "speciální pedagogika / poradenství",
@@ -1940,7 +1940,7 @@ window.metadataExportHard = {
         "kolísání podle podmínek vs nezávislá globální potíž"
       ],
       "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje kolísání podle podmínek vs nezávislá globální potíž.",
-      "questionCore": "předčasný závěr o stabilním jádru",
+      "questionCore": "předčasný závěr o stabilitě obtíže",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Že jde o potíž úplně nezávislou na podmínkách prostředí“. Interpretace přináší významový výklad toho, co klient říká nebo dělá, a proto je náročnější a rizikovější než prostá parafráze.",
       "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na kolísání podle podmínek a nezávislá globální potíž.",
       "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -2289,7 +2289,7 @@ window.metadataExportHard = {
         "zklidnění projevu a posun v cílovém výkonu"
       ],
       "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje zklidnění projevu a posun v cílovém výkonu.",
-      "questionCore": "vedlejší projev není totéž co jádro obtíže",
+      "questionCore": "vedlejší projev není totéž co podstata obtíže",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Podpora pravděpodobně zasáhla vedlejší projev, ne nutně hlavní bariéru“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
       "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí zklidnění projevu a posun v cílovém výkonu.",
       "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -2447,7 +2447,7 @@ window.metadataExportHard = {
       "options": {
         "A": "Potíž může souviset i s tempem a podmínkami zpracování, ne jen s výsledným počtem chyb.",
         "B": "Je vhodné odlišit výkon v jednorázově plynoucím sdělení od výkonu s možností návratu k informaci.",
-        "C": "Diktát sám o sobě nemusí přesně ukazovat rozsah jádra obtíže.",
+        "C": "Diktát sám o sobě nemusí přesně ukazovat celou podstatu obtíže.",
         "D": "Výsledek potvrzuje, že stejná potíž trvá beze změny bez ohledu na podmínky zpracování."
       },
       "correctOptionText": "Výsledek potvrzuje, že stejná potíž trvá beze změny bez ohledu na podmínky zpracování.",
@@ -2880,12 +2880,12 @@ window.metadataExportHard = {
       "questionNumber": 33,
       "questionText": "Jaké vysvětlení situace je nejpřesnější, když dítě rozumí otázce při individuální práci, ale ve třídě opakovaně odpovídá mimo, protože zachytí jen část zadání?",
       "options": {
-        "A": "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
-        "B": "Jádro leží ve stabilně slabé obsahové kompetenci bez ohledu na to, jak je sdělení podané.",
-        "C": "Jádro leží v tom, že individuální práce neukazuje skutečnou úroveň žáka.",
-        "D": "Jádro leží hlavně v neochotě sledovat výuku ve větší skupině."
+        "A": "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
+        "B": "Podle této možnosti by problém spočíval ve stabilně slabé obsahové kompetenci bez ohledu na to, jak je sdělení podané.",
+        "C": "Podle této možnosti by problém spočíval v tom, že individuální práce neukazuje skutečnou úroveň žáka.",
+        "D": "Podle této možnosti by problém spočíval hlavně v neochotě sledovat výuku ve větší skupině."
       },
-      "correctOptionText": "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
+      "correctOptionText": "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
       "discipline": "speciální pedagogika / poradenství",
       "subtopic": "zachytí jen část zadání",
       "conceptTags": [
@@ -2925,8 +2925,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
-      "reviewedCorrectOptionText": "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
+      "sourceCorrectOptionText": "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
+      "reviewedCorrectOptionText": "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -3494,7 +3494,7 @@ window.metadataExportHard = {
       "options": {
         "A": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
         "B": "Kolísání výkonu je zde nejspíše náhodné a bez analytické hodnoty.",
-        "C": "Kolísání výkonu je zde nejspíše potvrzením stejné jádrové poruchy bez vazby na situaci.",
+        "C": "Kolísání výkonu je zde nejspíše potvrzením stejné podoby obtíže bez vazby na situaci.",
         "D": "Kolísání výkonu je zde hlavně známkou neochoty žáka pracovat soustavně."
       },
       "correctOptionText": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
@@ -3665,16 +3665,16 @@ window.metadataExportHard = {
       "batteryTitle": "Funkční čtení obtíže a primární bariéra",
       "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
       "questionNumber": 42,
-      "questionText": "Které tvrzení má největší vypovídací hodnotu pro posouzení, zda podpora opravdu mění jádro obtíže?",
+      "questionText": "Které tvrzení má největší vypovídací hodnotu pro posouzení, zda podpora opravdu zasahuje hlavní obtíž?",
       "options": {
-        "A": "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
+        "A": "Že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
         "B": "Že učitel má po zavedení podpory lepší pocit z práce celé třídy.",
         "C": "Že žák působí s novým opatřením klidněji, i když cíl podpory mířil jinam.",
         "D": "Že opatření lze odborně pojmenovat několika přesnými termíny."
       },
-      "correctOptionText": "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
+      "correctOptionText": "Že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
       "discipline": "poradenství / evaluace podpory",
-      "subtopic": "kdy podpora mění jádro obtíže",
+      "subtopic": "kdy podpora zasahuje hlavní obtíž",
       "conceptTags": [
         "evaluace podpory",
         "cílová situace",
@@ -3712,8 +3712,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
-      "reviewedCorrectOptionText": "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
+      "sourceCorrectOptionText": "Že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
+      "reviewedCorrectOptionText": "Že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -3842,7 +3842,7 @@ window.metadataExportHard = {
       "questionText": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které čtení je přesnější?",
       "options": {
         "A": "Je vhodné hledat, které uspořádání činnosti bariéru zesiluje a které ji naopak tlumí.",
-        "B": "Je vhodné uzavřít, že jádro potíže leží mimo podmínky a rozdíl mezi hodinami nemá význam.",
+        "B": "Je předčasné uzavírat, že podstata potíže leží mimo podmínky a rozdíl mezi hodinami nemá význam.",
         "C": "Je vhodné uzavřít, že lepší výkon v jedné situaci je pouze náhodný výkyv bez diagnostické hodnoty.",
         "D": "Je vhodné číst rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
       },
@@ -4014,12 +4014,12 @@ window.metadataExportHard = {
       "questionNumber": 46,
       "questionText": "Jaké vysvětlení je nejbližší, když dítě po přesunu blíže k učiteli a po zřetelnějším kontaktu s tváří drží obsah podstatně lépe, zatímco artikulace zůstává stejná?",
       "options": {
-        "A": "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
-        "B": "Jádro leží spíše v artikulaci, protože pozice ve třídě mění hlavně její vnímání učitelem.",
-        "C": "Jádro leží spíše v tom, že dítě po přesazení více poslouchá z kázně.",
-        "D": "Jádro leží spíše v obsahu učiva, který se po přesunu blíže automaticky zjednodušil."
+        "A": "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
+        "B": "Podle této možnosti by problém spočíval spíše v artikulaci, protože pozice ve třídě mění hlavně její vnímání učitelem.",
+        "C": "Podle této možnosti by problém spočíval spíše v tom, že dítě po přesazení více poslouchá z kázně.",
+        "D": "Podle této možnosti by problém spočíval spíše v obsahu učiva, který se po přesunu blíže automaticky zjednodušil."
       },
-      "correctOptionText": "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
+      "correctOptionText": "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
       "discipline": "speciální pedagogika",
       "subtopic": "blíže k učiteli a kontakt s tváří",
       "conceptTags": [
@@ -4059,8 +4059,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
-      "reviewedCorrectOptionText": "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
+      "sourceCorrectOptionText": "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
+      "reviewedCorrectOptionText": "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -4188,12 +4188,12 @@ window.metadataExportHard = {
       "questionNumber": 48,
       "questionText": "Co z toho plyne nejpřesněji, když dítě při stejné látce selhává hlavně v dlouhých souvislých instrukcích, ale nikoli v krátkých postupných krocích?",
       "options": {
-        "A": "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
-        "B": "Jádro musí ležet v totálním nepochopení látky, protože dlouhé instrukce jen odhalují pravdu.",
-        "C": "Jádro musí ležet ve vzdoru, protože dlouhé instrukce vyžadují více sebekontroly.",
-        "D": "Jádro musí ležet v nečitelnosti materiálu, protože delší instrukce bývají graficky náročnější."
+        "A": "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
+        "B": "Podle této možnosti by problém musel spočívat v úplném nepochopení látky, protože dlouhé instrukce jen odhalují pravdu.",
+        "C": "Podle této možnosti by problém musel spočívat ve vzdoru, protože dlouhé instrukce vyžadují více sebekontroly.",
+        "D": "Podle této možnosti by problém musel spočívat v nečitelnosti materiálu, protože delší instrukce bývají graficky náročnější."
       },
-      "correctOptionText": "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
+      "correctOptionText": "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
       "discipline": "speciální pedagogika / poradenství",
       "subtopic": "dlouhé souvislé instrukce",
       "conceptTags": [
@@ -4233,8 +4233,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
-      "reviewedCorrectOptionText": "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
+      "sourceCorrectOptionText": "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
+      "reviewedCorrectOptionText": "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -7975,17 +7975,17 @@ window.metadataExportHard = {
       "questionType": "communication-technique-discrimination",
       "distractorType": "near-process",
       "trapPattern": "komunikační techniky a chyby",
-      "requiredDiscrimination": "vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva",
+      "requiredDiscrimination": "vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva",
       "signalPattern": [
-        "vrácení významu a emočního jádra sdělení vs hodnocení, rad"
+        "vrácení významu a emočního obsahu sdělení vs hodnocení, rad"
       ],
-      "signalHint": "Nechytej se jen odborně znějícího slova. Tady rozhoduje přesný definiční znak: vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva.",
+      "signalHint": "Nechytej se jen odborně znějícího slova. Tady rozhoduje přesný definiční znak: vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva.",
       "questionCore": "reflektivní naslouchání",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Jestli tomu rozumím správně, nejvíc vás vyčerpává, že se situace doma i ve škole táhne bez jasného řešení“. Reflektivní naslouchání zachycuje obsah i emoční tón sdělení a pomáhá klientovi své téma dál rozvíjet.",
-      "explanationDistractor": "Jiné reakce mohly působit profesionálně, ale měnily způsob vedení rozhovoru: některé byly příliš řídící, jiné naopak nepřinášely skutečné porozumění. Právě v tom se ukázalo, zda je odlišené vrácení významu a emočního jádra sdělení a hodnocení, rada nebo direktiva.",
+      "explanationDistractor": "Jiné reakce mohly působit profesionálně, ale měnily způsob vedení rozhovoru: některé byly příliš řídící, jiné naopak nepřinášely skutečné porozumění. Právě v tom se ukázalo, zda je odlišené vrácení významu a emočního obsahu sdělení od hodnocení, rady nebo direktivy.",
       "commonMisconception": "Častou chybou je považovat za dobrou každou laskavě znějící reakci, i když ve skutečnosti vede rozhovor jiným směrem. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
       "whyWrongCategory": "Chybná volba často naznačuje, že se nerozlišila jemná funkce jednotlivých poradenských reakcí. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
-      "microLesson": "V poradenském rozhovoru rozhodují drobné rozdíly v účinku jednotlivých reakcí. Reflektivní naslouchání zachycuje obsah i emoční tón sdělení a pomáhá klientovi své téma dál rozvíjet. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená vrácení významu a emočního jádra sdělení a hodnocení, rada nebo direktiva.",
+      "microLesson": "V poradenském rozhovoru rozhodují drobné rozdíly v účinku jednotlivých reakcí. Reflektivní naslouchání zachycuje obsah i emoční tón sdělení a pomáhá klientovi své téma dál rozvíjet. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená vrácení významu a emočního obsahu sdělení a odlišení od hodnocení, rady nebo direktivy.",
       "recommendedRecallPrompt": "Jak bys stručně vysvětlil rozdíl mezi touto reakcí a jiným blízkým způsobem vedení rozhovoru?",
       "legislationRef": "stabilní poradenské komunikační minimum",
       "likelyErrorTypes": [
@@ -8008,9 +8008,9 @@ window.metadataExportHard = {
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
-      "knowledgeTarget": "vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva",
+      "knowledgeTarget": "vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva",
       "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-      "keyProof": "Rozhodující je vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva.",
+      "keyProof": "Rozhodující je vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva.",
       "legalFreshnessRequired": false,
       "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
       "formulationFlags": [
@@ -8020,7 +8020,7 @@ window.metadataExportHard = {
       "knowledgeDemandLevel": "high",
       "processDemandLevel": "high",
       "recommendedRepairFilters": [
-        "vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva",
+        "vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva",
         "reflektivní naslouchání",
         "poradenská komunikace"
       ],
@@ -8028,7 +8028,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B02Q42",
       "conceptFamily": "komunikace a poradenské minimum",
-      "distinctionAxis": "vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva",
+      "distinctionAxis": "vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "psychologie / komunikace",
@@ -11370,7 +11370,7 @@ window.metadataExportHard = {
         "historické pojetí × definiční znak"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje historické pojetí × definiční znak.",
-      "questionCore": "rozlišení jádra represivní pojetí",
+      "questionCore": "rozlišení podstaty: represivní pojetí",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „důraz na vyloučení, odmítání nebo tvrdé omezování jedince kvůli odlišnosti“. Historické přístupy se liší tím, jak člověka s postižením chápou, jaké mu přisuzují místo ve společnosti a jaký je cíl péče nebo vzdělávání.",
       "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. Právě v tom se ukázalo, zda je odlišené historické pojetí a definiční znak.",
       "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -11459,7 +11459,7 @@ window.metadataExportHard = {
         "historické pojetí × definiční znak"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje historické pojetí × definiční znak.",
-      "questionCore": "rozlišení jádra charitativní pojetí",
+      "questionCore": "rozlišení podstaty: charitativní pojetí",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „důraz na humanitní pomoc a opatrování bez silného akcentu na vzdělávací emancipaci“. Historické přístupy se liší tím, jak člověka s postižením chápou, jaké mu přisuzují místo ve společnosti a jaký je cíl péče nebo vzdělávání.",
       "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na historické pojetí a definiční znak.",
       "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -11548,7 +11548,7 @@ window.metadataExportHard = {
         "historické pojetí × definiční znak"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje historické pojetí × definiční znak.",
-      "questionCore": "rozlišení jádra institucionální pojetí",
+      "questionCore": "rozlišení podstaty: institucionální pojetí",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „přesun pomoci do specializovaných ústavů a oddělených zařízení“. Inkluzivní pojetí nevychází primárně z přizpůsobování jedince systému, ale i z proměny prostředí a podmínek tak, aby bylo vzdělávání dostupné.",
       "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na historické pojetí a definiční znak.",
       "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -11635,7 +11635,7 @@ window.metadataExportHard = {
         "integrační × inkluzivní logika"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje integrační × inkluzivní logika.",
-      "questionCore": "rozlišení jádra integrační pojetí",
+      "questionCore": "rozlišení podstaty: integrační pojetí",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „jedinec vstupuje do běžného prostředí, ale podpora je ještě často chápána jako přidávaná k existujícímu systému“. Historické přístupy se liší tím, jak člověka s postižením chápou, jaké mu přisuzují místo ve společnosti a jaký je cíl péče nebo vzdělávání.",
       "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Právě v tom se ukázalo, zda je odlišené integrační a inkluzivní logika.",
       "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -11724,7 +11724,7 @@ window.metadataExportHard = {
         "integrační × inkluzivní logika"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje integrační × inkluzivní logika.",
-      "questionCore": "rozlišení jádra inkluzivní pojetí",
+      "questionCore": "rozlišení podstaty: inkluzivní pojetí",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „systém se má přizpůsobovat tak, aby běžné prostředí bylo dostupné i pro odlišné potřeby“. Inkluzivní pojetí nevychází primárně z přizpůsobování jedince systému, ale i z proměny prostředí a podmínek tak, aby bylo vzdělávání dostupné.",
       "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí integrační a inkluzivní logika.",
       "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -11813,7 +11813,7 @@ window.metadataExportHard = {
         "deficitní × funkční/podpůrné pojetí"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje deficitní × funkční/podpůrné pojetí.",
-      "questionCore": "rozlišení jádra přechod od deficitního k funkčnímu a podpůrnému pojetí",
+      "questionCore": "rozlišení podstaty: přechod od deficitního k funkčnímu a podpůrnému pojetí",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „od označování osoby primárně podle nedostatku k většímu důrazu na potřeby, podporu a fungování v kontextu“. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života.",
       "explanationDistractor": "Jiné možnosti zněly podobně, protože všechny mluvily o vývoji oboru, ale lišily se hodnotovým důrazem i dobovým jazykem. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na deficitní a funkční/podpůrné pojetí.",
       "commonMisconception": "Často se přehlédne, že změna názvu oboru souvisí i se změnou toho, jak o člověku a podpoře přemýšlíme. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -11902,7 +11902,7 @@ window.metadataExportHard = {
         "participace a pasivní péče"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje participace a pasivní péče.",
-      "questionCore": "rozlišení jádra participační pojetí",
+      "questionCore": "rozlišení podstaty: participační pojetí",
       "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „akcentuje účast, zapojení a odstraňování bariér, které brání plnému začlenění“. Participační pojetí zdůrazňuje aktivní zapojení člověka do vlastního života, rozhodování a běžných sociálních rolí.",
       "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na participace a pasivní péče.",
       "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -11991,7 +11991,7 @@ window.metadataExportHard = {
         "historická proměna a chybné ztotožnění"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje historická proměna a chybné ztotožnění.",
-      "questionCore": "rozlišení jádra historická proměna oboru",
+      "questionCore": "rozlišení podstaty: historická proměna oboru",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „integrační a inkluzivní pojetí jsou historicky zcela totožné a nelze je nijak rozlišit“. Inkluzivní pojetí nevychází primárně z přizpůsobování jedince systému, ale i z proměny prostředí a podmínek tak, aby bylo vzdělávání dostupné.",
       "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí historická proměna a chybné ztotožnění.",
       "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -12078,7 +12078,7 @@ window.metadataExportHard = {
         "inkluzivní × integrační logika"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje inkluzivní × integrační logika.",
-      "questionCore": "rozlišení jádra inkluzivní rámec",
+      "questionCore": "rozlišení podstaty: inkluzivní rámec",
       "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „systém je upravován tak, aby bariéry nebránily účasti různorodých žáků“. Inkluzivní pojetí nevychází primárně z přizpůsobování jedince systému, ale i z proměny prostředí a podmínek tak, aby bylo vzdělávání dostupné.",
       "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí inkluzivní a integrační logika.",
       "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -12165,7 +12165,7 @@ window.metadataExportHard = {
         "segregace × podpora účasti"
       ],
       "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje segregace × podpora účasti.",
-      "questionCore": "rozlišení jádra proměna cíle oboru",
+      "questionCore": "rozlišení podstaty: proměna cíle oboru",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „od označení a segregace směrem k podpoře fungování, vzdělávání a účasti“. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života.",
       "explanationDistractor": "Jiné možnosti zněly podobně, protože všechny mluvily o vývoji oboru, ale lišily se hodnotovým důrazem i dobovým jazykem. Právě v tom se ukázalo, zda je odlišené segregace a podpora účasti.",
       "commonMisconception": "Často se přehlédne, že změna názvu oboru souvisí i se změnou toho, jak o člověku a podpoře přemýšlíme. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -13195,7 +13195,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B04Q01",
       "conceptFamily": "logopedie, surdopedie a vnitřní termíny",
-      "distinctionAxis": "diagnostický okruh × jádro obtíže",
+      "distinctionAxis": "diagnostický okruh × hlavní oblast obtíží",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "speciální pedagogika / disciplíny",
@@ -13298,7 +13298,7 @@ window.metadataExportHard = {
       "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
       "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
       "questionNumber": 3,
-      "questionText": "Které přiřazení termínu a jádra obtíže je správné?",
+      "questionText": "Které přiřazení termínu a hlavní oblasti obtíží je správné?",
       "options": {
         "A": "balbuties — porucha plynulosti s bloky, napětím a narušeným tokem řeči",
         "B": "tumultus sermonis — úplná ztráta hlasu při zachovaném porozumění",
@@ -13317,18 +13317,18 @@ window.metadataExportHard = {
       "questionType": "term-definition-match",
       "distractorType": "near-concept",
       "trapPattern": "internal-logopedic-terms",
-      "requiredDiscrimination": "správné přiřazení termínu a jádra obtíže",
+      "requiredDiscrimination": "správné přiřazení termínu a hlavní oblasti obtíží",
       "signalPattern": [
-        "správné přiřazení termínu a jádra obtíže"
+        "správné přiřazení termínu a hlavní oblasti obtíží"
       ],
-      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje správné přiřazení termínu a jádra obtíže.",
-      "questionCore": "které přiřazení termínu a jádra obtíže je správné",
+      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje správné přiřazení termínu a hlavní oblasti obtíží.",
+      "questionCore": "které přiřazení termínu a hlavní oblasti obtíží je správné",
       "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „balbuties — porucha plynulosti s bloky, napětím a narušeným tokem řeči“. Balbuties je koktavost s narušenou plynulostí řeči, zatímco tumultus sermonis se vyznačuje překotným tempem a neuspořádaností projevu.",
-      "explanationDistractor": "Jiné pojmy byly blízko projevu, který je v zadání nápadný, ale patřily k jiné odborné oblasti nebo k jiné rovině popisu. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí správné přiřazení termínu a jádra obtíže.",
+      "explanationDistractor": "Jiné pojmy byly blízko projevu, který je v zadání nápadný, ale patřily k jiné odborné oblasti nebo k jiné rovině popisu. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí správné přiřazení termínu a hlavní oblasti obtíží.",
       "commonMisconception": "Často se plete nápadný projev s tím, jaký odborný okruh skutečně vyšetřujeme nebo popisujeme. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
       "whyWrongCategory": "Chybná volba obvykle naznačuje záměnu mezi symptomem, diagnostickou oblastí a odborným názvem poruchy. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
-      "microLesson": "V logopedii je důležité odlišit kvalitu hlasu, plynulost, artikulaci, porozumění a širší komunikační fungování. Balbuties je koktavost s narušenou plynulostí řeči, zatímco tumultus sermonis se vyznačuje překotným tempem a neuspořádaností projevu. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení termínu a jádra obtíže.",
-      "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné přiřazení termínu a jádra obtíže?",
+      "microLesson": "V logopedii je důležité odlišit kvalitu hlasu, plynulost, artikulaci, porozumění a širší komunikační fungování. Balbuties je koktavost s narušenou plynulostí řeči, zatímco tumultus sermonis se vyznačuje překotným tempem a neuspořádaností projevu. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení termínu a hlavní oblasti obtíží.",
+      "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné přiřazení termínu a hlavní oblasti obtíží?",
       "legislationRef": "oborové logopedické vymezení",
       "likelyErrorTypes": [
         "term-anchor-error",
@@ -13351,9 +13351,9 @@ window.metadataExportHard = {
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
-      "knowledgeTarget": "správné přiřazení termínu a jádra obtíže",
+      "knowledgeTarget": "správné přiřazení termínu a hlavní oblasti obtíží",
       "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-      "keyProof": "Rozhodující je správné přiřazení termínu a jádra obtíže.",
+      "keyProof": "Rozhodující je správné přiřazení termínu a hlavní oblasti obtíží.",
       "legalFreshnessRequired": false,
       "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
       "formulationFlags": [],
@@ -13361,7 +13361,7 @@ window.metadataExportHard = {
       "knowledgeDemandLevel": "high",
       "processDemandLevel": "high",
       "recommendedRepairFilters": [
-        "správné přiřazení termínu a jádra obtíže",
+        "správné přiřazení termínu a hlavní oblasti obtíží",
         "balbuties",
         "tumultus sermonis",
         "dysfonie",
@@ -13371,7 +13371,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B04Q03",
       "conceptFamily": "logopedie, surdopedie a vnitřní termíny",
-      "distinctionAxis": "termín × jádro obtíže",
+      "distinctionAxis": "termín × hlavní oblast obtíží",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "speciální pedagogika / disciplíny",
@@ -13652,9 +13652,9 @@ window.metadataExportHard = {
         "A": "Těžiště může ležet v dostupnosti auditivně-mluveného sdělení, ne v produkční logopedické obtíži.",
         "B": "Důležitým vodítkem je závislost porozumění na vizuálním kontaktu s mluvčím.",
         "C": "Situace může vyžadovat uvažování o surdopedické a komunikačně přístupové opoře.",
-        "D": "Hlavní jádro obtíže nejspíše leží v artikulační nepřesnosti samotného žáka."
+        "D": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka."
       },
-      "correctOptionText": "Hlavní jádro obtíže nejspíše leží v artikulační nepřesnosti samotného žáka.",
+      "correctOptionText": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka.",
       "discipline": "surdopedie / funkční čtení situace",
       "subtopic": "sluchová dostupnost sdělení",
       "conceptTags": [
@@ -13694,8 +13694,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "D",
       "reviewedCorrectLetter": "D",
       "effectiveCorrectLetter": "D",
-      "sourceCorrectOptionText": "Hlavní jádro obtíže nejspíše leží v artikulační nepřesnosti samotného žáka.",
-      "reviewedCorrectOptionText": "Hlavní jádro obtíže nejspíše leží v artikulační nepřesnosti samotného žáka.",
+      "sourceCorrectOptionText": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka.",
+      "reviewedCorrectOptionText": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -13821,7 +13821,7 @@ window.metadataExportHard = {
       "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
       "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
       "questionNumber": 9,
-      "questionText": "Které přiřazení diagnostické oblasti a jejího jádra je správné?",
+      "questionText": "Které přiřazení diagnostické oblasti a její hlavní náplně je správné?",
       "options": {
         "A": "impresivní složka řeči — porozumění řeči",
         "B": "expresivní složka řeči — orientační vyšetření sluchového prahu",
@@ -13840,18 +13840,18 @@ window.metadataExportHard = {
       "questionType": "domain-match",
       "distractorType": "near-domain",
       "trapPattern": "impressive-vs-expressive",
-      "requiredDiscrimination": "správné přiřazení oblasti a jejího jádra",
+      "requiredDiscrimination": "správné přiřazení oblasti a její hlavní náplně",
       "signalPattern": [
-        "správné přiřazení oblasti a jejího jádra"
+        "správné přiřazení oblasti a její hlavní náplně"
       ],
-      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje správné přiřazení oblasti a jejího jádra.",
-      "questionCore": "které přiřazení diagnostické oblasti a jejího jádra je správné",
+      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje správné přiřazení oblasti a její hlavní náplně.",
+      "questionCore": "které přiřazení diagnostické oblasti a její hlavní náplně je správné",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „impresivní složka řeči — porozumění řeči“. Impresivní složka se týká porozumění řeči, expresivní její produkce; obě oblasti se mohou oslabit společně i odděleně.",
-      "explanationDistractor": "Další volby byly blízko, ale posouvaly odpověď k jiné disciplíně nebo k vedlejšímu projevu. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Právě v tom se ukázalo, zda je odlišené správné přiřazení oblasti a jejího jádra.",
+      "explanationDistractor": "Další volby byly blízko, ale posouvaly odpověď k jiné disciplíně nebo k vedlejšímu projevu. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Právě v tom se ukázalo, zda je odlišené správné přiřazení oblasti a její hlavní náplně.",
       "commonMisconception": "Častou chybou je záměna blízkých termínů napříč disciplínami jen podle podobného znění. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
       "whyWrongCategory": "Chybná odpověď obvykle znamená posun k příbuznému termínu, nikoli k přesně odpovídající oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
-      "microLesson": "U blízkých termínů napříč speciální pedagogikou pomáhá spojit název s typickým projevem a jeho dopadem. Impresivní složka se týká porozumění řeči, expresivní její produkce; obě oblasti se mohou oslabit společně i odděleně. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení oblasti a jejího jádra.",
-      "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné přiřazení oblasti a jejího jádra?",
+      "microLesson": "U blízkých termínů napříč speciální pedagogikou pomáhá spojit název s typickým projevem a jeho dopadem. Impresivní složka se týká porozumění řeči, expresivní její produkce; obě oblasti se mohou oslabit společně i odděleně. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení oblasti a její hlavní náplně.",
+      "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné přiřazení oblasti a její hlavní náplně?",
       "legislationRef": "oborové logopedické vymezení",
       "likelyErrorTypes": [
         "impresivní-expresivní-záměna",
@@ -13873,9 +13873,9 @@ window.metadataExportHard = {
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
-      "knowledgeTarget": "správné přiřazení oblasti a jejího jádra",
+      "knowledgeTarget": "správné přiřazení oblasti a její hlavní náplně",
       "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-      "keyProof": "Rozhodující je správné přiřazení oblasti a jejího jádra.",
+      "keyProof": "Rozhodující je správné přiřazení oblasti a její hlavní náplně.",
       "legalFreshnessRequired": false,
       "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
       "formulationFlags": [],
@@ -13883,7 +13883,7 @@ window.metadataExportHard = {
       "knowledgeDemandLevel": "high",
       "processDemandLevel": "high",
       "recommendedRepairFilters": [
-        "správné přiřazení oblasti a jejího jádra",
+        "správné přiřazení oblasti a její hlavní náplně",
         "impresivní složka",
         "expresivní složka",
         "porozumění řeči",
@@ -13893,7 +13893,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B04Q09",
       "conceptFamily": "logopedie, surdopedie a vnitřní termíny",
-      "distinctionAxis": "diagnostická oblast × jádro",
+      "distinctionAxis": "diagnostická oblast × hlavní náplň",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "speciální pedagogika / disciplíny",
@@ -14436,12 +14436,12 @@ window.metadataExportHard = {
       "questionNumber": 16,
       "questionText": "Žák po zvětšení, kontrastu a přehlednějším grafickém uspořádání drží stejný obsah výrazně lépe, zatímco změna sedu a úchopu výkon téměř neposune. Jaké vysvětlení je zde nejpřesnější?",
       "options": {
-        "A": "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
-        "B": "Jádro leží spíše v motorickém provedení než v přístupu k vizuální informaci.",
-        "C": "Jádro leží spíše v poruše hlasu než ve vizuální přístupnosti.",
-        "D": "Jádro leží spíše v postkrizové regulaci chování než ve vizuálním přístupu."
+        "A": "Obtíž souvisí spíše s vizuální přístupností než s tělesnou a motorickou formou výkonu.",
+        "B": "Podle této možnosti by problém spočíval spíše v motorickém provedení než v přístupu k vizuální informaci.",
+        "C": "Podle této možnosti by problém spočíval spíše v poruše hlasu než ve vizuální přístupnosti.",
+        "D": "Podle této možnosti by problém spočíval spíše v postkrizové regulaci chování než ve vizuálním přístupu."
       },
-      "correctOptionText": "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
+      "correctOptionText": "Obtíž souvisí spíše s vizuální přístupností než s tělesnou a motorickou formou výkonu.",
       "discipline": "tyflopedie × somatopedie",
       "subtopic": "vizuální přístupnost vs forma výkonu",
       "conceptTags": [
@@ -14481,8 +14481,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
-      "reviewedCorrectOptionText": "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
+      "sourceCorrectOptionText": "Obtíž souvisí spíše s vizuální přístupností než s tělesnou a motorickou formou výkonu.",
+      "reviewedCorrectOptionText": "Obtíž souvisí spíše s vizuální přístupností než s tělesnou a motorickou formou výkonu.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -14526,9 +14526,9 @@ window.metadataExportHard = {
         "A": "Těžiště nemusí ležet v tyflopedické dostupnosti informace.",
         "B": "Do popředí se může dostávat somatopedický rámec formy výkonu.",
         "C": "Hlavní problém nemusí být v zrakové přístupnosti textu.",
-        "D": "Nejpravděpodobnější jádro obtíže leží právě ve vizuální orientaci a kontrastu."
+        "D": "Nejpravděpodobnější vysvětlení obtíže leží právě ve vizuální orientaci a kontrastu."
       },
-      "correctOptionText": "Nejpravděpodobnější jádro obtíže leží právě ve vizuální orientaci a kontrastu.",
+      "correctOptionText": "Nejpravděpodobnější vysvětlení obtíže leží právě ve vizuální orientaci a kontrastu.",
       "discipline": "somatopedie × tyflopedie",
       "subtopic": "polohování, úchop a manipulace",
       "conceptTags": [
@@ -14569,8 +14569,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "D",
       "reviewedCorrectLetter": "D",
       "effectiveCorrectLetter": "D",
-      "sourceCorrectOptionText": "Nejpravděpodobnější jádro obtíže leží právě ve vizuální orientaci a kontrastu.",
-      "reviewedCorrectOptionText": "Nejpravděpodobnější jádro obtíže leží právě ve vizuální orientaci a kontrastu.",
+      "sourceCorrectOptionText": "Nejpravděpodobnější vysvětlení obtíže leží právě ve vizuální orientaci a kontrastu.",
+      "reviewedCorrectOptionText": "Nejpravděpodobnější vysvětlení obtíže leží právě ve vizuální orientaci a kontrastu.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -15511,11 +15511,11 @@ window.metadataExportHard = {
       "questionType": "negative-discrimination",
       "distractorType": "near-framework",
       "trapPattern": "hearing-access-not-enough",
-      "requiredDiscrimination": "sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování",
+      "requiredDiscrimination": "sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování",
       "signalPattern": [
-        "sluchová dostupnost sdělení vs jádro v recipročním a pragm"
+        "sluchová dostupnost sdělení vs obtíž v recipročním a pragm"
       ],
-      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování.",
+      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování.",
       "questionCore": "který znak nejméně vysvětlí čistě sluchová nedostupnost",
       "explanationCorrect": "V této úloze se nehledala nejvýstižnější varianta, ale ta, která se s popsanou situací rozchází. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: sluchová dostupnost sdělení a podstata v recipročním a pragmatickém fungování. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu.",
       "explanationDistractor": "Jiné možnosti se vztahovaly ke komunikaci také, ale přesouvaly pozornost k jiné příčině nebo jinému typu podpory. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na sluchová dostupnost sdělení a podstata v recipročním a pragmatickém fungování.",
@@ -15544,9 +15544,9 @@ window.metadataExportHard = {
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
-      "knowledgeTarget": "sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování",
+      "knowledgeTarget": "sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování",
       "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-      "keyProof": "Rozhodující je sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování.",
+      "keyProof": "Rozhodující je sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování.",
       "legalFreshnessRequired": false,
       "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
       "formulationFlags": [],
@@ -15554,7 +15554,7 @@ window.metadataExportHard = {
       "knowledgeDemandLevel": "high",
       "processDemandLevel": "high",
       "recommendedRepairFilters": [
-        "sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování",
+        "sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování",
         "sdílená pozornost",
         "reciproční výměna",
         "komunikační záměr",
@@ -15653,7 +15653,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B04Q29",
       "conceptFamily": "PAS a sociálně-pragmatická komunikace",
-      "distinctionAxis": "typ podpory × jádro obtíže",
+      "distinctionAxis": "typ podpory × hlavní zaměření podpory",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "speciální pedagogika / disciplíny",
@@ -15840,7 +15840,7 @@ window.metadataExportHard = {
       "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
       "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
       "questionNumber": 32,
-      "questionText": "Který projev nejspíše přetrvá i po zjednodušení obsahové náročnosti instrukce, pokud je jádro obtíže v sociálně-pragmatickém fungování?",
+      "questionText": "Který projev nejspíše přetrvá i po zjednodušení obsahové náročnosti instrukce, pokud obtíž spočívá v sociálně-pragmatickém fungování?",
       "options": {
         "A": "obtíž ve změně perspektivy partnera a v recipročním navazování",
         "B": "obtíž ve čtení drobného písma na dálku",
@@ -15848,7 +15848,7 @@ window.metadataExportHard = {
         "D": "obtíž v hlasové intenzitě při fonaci"
       },
       "correctOptionText": "obtíž ve změně perspektivy partnera a v recipročním navazování",
-      "discipline": "PAS / stabilita jádra obtíže",
+      "discipline": "PAS / stabilita obtíže napříč situacemi",
       "subtopic": "co přetrvá i po zjednodušení obsahu",
       "conceptTags": [
         "změna perspektivy",
@@ -15858,12 +15858,12 @@ window.metadataExportHard = {
       "questionType": "stability-discrimination",
       "distractorType": "near-effect",
       "trapPattern": "perspective-taking-persists",
-      "requiredDiscrimination": "sociálně-pragmatické jádro vs obtíž v obsahu instrukce",
+      "requiredDiscrimination": "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce",
       "signalPattern": [
-        "sociálně-pragmatické jádro vs obtíž v obsahu instrukce"
+        "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce"
       ],
-      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje sociálně-pragmatické jádro vs obtíž v obsahu instrukce.",
-      "questionCore": "sociálně-pragmatické jádro vs obtíž v obsahu instrukce",
+      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce.",
+      "questionCore": "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce",
       "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „obtíž ve změně perspektivy partnera a v recipročním navazování“. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu.",
       "explanationDistractor": "Ostatní možnosti byly věrohodné, protože popisovaly komunikaci také, ale nevystihovaly přesně sociálně-pragmatickou rovinu problému. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Právě v tom se ukázalo, zda je odlišené sociálně-pragmatické podstata a obtíž v obsahu instrukce.",
       "commonMisconception": "Studenti často sledují formu řeči, ale méně už to, jak člověk zachází s kontextem a vztahem k partnerovi. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -15873,7 +15873,7 @@ window.metadataExportHard = {
       "legislationRef": "oborové vymezení PAS a sociálně-pragmatické komunikace",
       "likelyErrorTypes": [
         "obsah-vs-pragmatika-záměna",
-        "stabilní-jádro-obtíže"
+        "stabilita-obtíže-napříč-situacemi"
       ],
       "repairTags": [
         "změna perspektivy",
@@ -15891,9 +15891,9 @@ window.metadataExportHard = {
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
-      "knowledgeTarget": "sociálně-pragmatické jádro vs obtíž v obsahu instrukce",
+      "knowledgeTarget": "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce",
       "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-      "keyProof": "Rozhodující je sociálně-pragmatické jádro vs obtíž v obsahu instrukce.",
+      "keyProof": "Rozhodující je sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce.",
       "legalFreshnessRequired": false,
       "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
       "formulationFlags": [],
@@ -15901,7 +15901,7 @@ window.metadataExportHard = {
       "knowledgeDemandLevel": "high",
       "processDemandLevel": "high",
       "recommendedRepairFilters": [
-        "sociálně-pragmatické jádro vs obtíž v obsahu instrukce",
+        "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce",
         "změna perspektivy",
         "reciprocita",
         "zjednodušení instrukce"
@@ -15910,7 +15910,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B04Q32",
       "conceptFamily": "PAS a sociálně-pragmatická komunikace",
-      "distinctionAxis": "obsah instrukce × sociálně-pragmatické jádro",
+      "distinctionAxis": "obsah instrukce × sociálně-pragmatická podstata obtíže",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "speciální pedagogika / disciplíny",
@@ -16012,7 +16012,7 @@ window.metadataExportHard = {
       "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
       "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
       "questionNumber": 34,
-      "questionText": "Které přiřazení termínu a jádra obtíže je správné?",
+      "questionText": "Které přiřazení termínu a hlavní oblasti obtíží je správné?",
       "options": {
         "A": "dysfonie — patologická změna kvality hlasu",
         "B": "afonie — překotné tempo řeči bez bloků",
@@ -16036,7 +16036,7 @@ window.metadataExportHard = {
         "porucha kvality hlasu vs úplná ztráta hlasu, rezonance a d"
       ],
       "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje porucha kvality hlasu vs úplná ztráta hlasu, rezonance a další osy.",
-      "questionCore": "které přiřazení termínu a jádra obtíže je správné",
+      "questionCore": "které přiřazení termínu a hlavní oblasti obtíží je správné",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „dysfonie — patologická změna kvality hlasu“. Dysfonie a příbuzné pojmy se týkají kvality hlasu; neřeší tedy primárně obsah řeči, ale její hlasovou realizaci.",
       "explanationDistractor": "Jiné pojmy byly blízko projevu, který je v zadání nápadný, ale patřily k jiné odborné oblasti nebo k jiné rovině popisu. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na porucha kvality hlasu a úplná ztráta hlasu, rezonance a další osy.",
       "commonMisconception": "Často se plete nápadný projev s tím, jaký odborný okruh skutečně vyšetřujeme nebo popisujeme. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -16085,7 +16085,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B04Q34",
       "conceptFamily": "klasifikační a terminologické rozlišení",
-      "distinctionAxis": "termín × jádro obtíže",
+      "distinctionAxis": "termín × hlavní oblast obtíží",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "speciální pedagogika / disciplíny",
@@ -17605,7 +17605,7 @@ window.metadataExportHard = {
         "zachovaný cíl činnosti a změněná cesta k cíli"
       ],
       "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje zachovaný cíl činnosti a změněná cesta k cíli.",
-      "questionCore": "co je jádrem kompenzace",
+      "questionCore": "v čem spočívá kompenzace",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Jde spíše o kompenzaci než o reedukaci“. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou.",
       "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí zachovaný cíl činnosti a změněná cesta k cíli.",
       "commonMisconception": "Často se plete, zda podpora zlepšuje oslabenou funkci, nebo jen vytváří jinou cestu k výkonu. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -17912,7 +17912,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B05Q05",
       "conceptFamily": "intervenční rámce",
-      "distinctionAxis": "definiční jádro",
+      "distinctionAxis": "základní vymezení",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "speciální pedagogika / intervence",
@@ -17999,7 +17999,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B05Q06",
       "conceptFamily": "intervenční rámce",
-      "distinctionAxis": "definiční jádro",
+      "distinctionAxis": "základní vymezení",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "speciální pedagogika / intervence",
@@ -18557,17 +18557,17 @@ window.metadataExportHard = {
       "questionType": "application-discrimination",
       "distractorType": "near-process",
       "trapPattern": "keyboard-as-compensation",
-      "requiredDiscrimination": "obsahový cíl bez grafomotorického jádra a reedukační trénink psaní",
+      "requiredDiscrimination": "obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní",
       "signalPattern": [
-        "obsahový cíl bez grafomotorického jádra a reedukační tréni"
+        "obsahový cíl bez dominance grafomotorické bariéry a reedukační tréni"
       ],
-      "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje obsahový cíl bez grafomotorického jádra a reedukační trénink psaní.",
+      "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní.",
       "questionCore": "jak číst použití klávesnice",
-      "explanationCorrect": "Smyslem otázky bylo vytipovat možnost, která je v daném kontextu nejméně přesná. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: obsahový cíl bez grafomotorického jádra a reedukační trénink psaní. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou.",
-      "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí obsahový cíl bez grafomotorického jádra a reedukační trénink psaní.",
+      "explanationCorrect": "Smyslem otázky bylo vytipovat možnost, která je v daném kontextu nejméně přesná. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou.",
+      "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní.",
       "commonMisconception": "Často se plete, zda podpora zlepšuje oslabenou funkci, nebo jen vytváří jinou cestu k výkonu. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
       "whyWrongCategory": "Chybná volba zpravidla ukazuje, že se neodlišil hlavní cíl podpory. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
-      "microLesson": "U podpůrných postupů je dobré si vždy položit otázku, co je jejich hlavním cílem. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená obsahový cíl bez grafomotorického jádra a reedukační trénink psaní.",
+      "microLesson": "U podpůrných postupů je dobré si vždy položit otázku, co je jejich hlavním cílem. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní.",
       "recommendedRecallPrompt": "Jaký je hlavní cíl tohoto přístupu a čím se liší od jiné podpory, která vypadá na první pohled podobně?",
       "legislationRef": "oborové speciálněpedagogické vymezení",
       "likelyErrorTypes": [
@@ -18591,9 +18591,9 @@ window.metadataExportHard = {
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
-      "knowledgeTarget": "obsahový cíl bez grafomotorického jádra a reedukační trénink psaní",
+      "knowledgeTarget": "obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní",
       "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-      "keyProof": "Rozhodující je obsahový cíl bez grafomotorického jádra a reedukační trénink psaní.",
+      "keyProof": "Rozhodující je obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní.",
       "legalFreshnessRequired": false,
       "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
       "formulationFlags": [
@@ -18603,7 +18603,7 @@ window.metadataExportHard = {
       "knowledgeDemandLevel": "high",
       "processDemandLevel": "high",
       "recommendedRepairFilters": [
-        "obsahový cíl bez grafomotorického jádra a reedukační trénink psaní",
+        "obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní",
         "kompenzace",
         "klávesnice",
         "grafomotorika",
@@ -18988,12 +18988,12 @@ window.metadataExportHard = {
       "options": {
         "A": "může pracovat s nácvikem běžných denních činností",
         "B": "může sledovat funkční účast v reálných situacích",
-        "C": "její jádro spočívá jen v nácviku hlásek a hlasu",
+        "C": "její podstata spočívá jen v nácviku hlásek a hlasu",
         "D": "souvisí s využitím činnosti jako prostředku podpory"
       },
-      "correctOptionText": "její jádro spočívá jen v nácviku hlásek a hlasu",
+      "correctOptionText": "její podstata spočívá jen v nácviku hlásek a hlasu",
       "discipline": "intervence / terapie",
-      "subtopic": "co není jádrem ergoterapie",
+      "subtopic": "co není hlavní náplní ergoterapie",
       "conceptTags": [
         "ergoterapie",
         "běžné činnosti",
@@ -19008,7 +19008,7 @@ window.metadataExportHard = {
         "činnostní a participační rámec a artikulační rámec"
       ],
       "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje činnostní a participační rámec a artikulační rámec.",
-      "questionCore": "co nepatří do jádra ergoterapie",
+      "questionCore": "co nepatří do hlavní náplně ergoterapie",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „její podstata spočívá jen v nácviku hlásek a hlasu“. Ergoterapie podporuje soběstačnost a funkční zapojení do běžných činností; fyzioterapie se více soustředí na pohybový systém.",
       "explanationDistractor": "Ostatní přístupy jsou v praxi také používané, ale každý sleduje jiný hlavní účel a pracuje jiným způsobem. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí činnostní a participační rámec a artikulační rámec.",
       "commonMisconception": "Běžný omyl je vybírat přístup podle povědomého názvu, ne podle jeho hlavního cíle. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -19031,8 +19031,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "C",
       "reviewedCorrectLetter": "C",
       "effectiveCorrectLetter": "C",
-      "sourceCorrectOptionText": "její jádro spočívá jen v nácviku hlásek a hlasu",
-      "reviewedCorrectOptionText": "její jádro spočívá jen v nácviku hlásek a hlasu",
+      "sourceCorrectOptionText": "její podstata spočívá jen v nácviku hlásek a hlasu",
+      "reviewedCorrectOptionText": "její podstata spočívá jen v nácviku hlásek a hlasu",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -19075,12 +19075,12 @@ window.metadataExportHard = {
       "options": {
         "A": "může souviset s pohybovými funkcemi a motorickým systémem",
         "B": "může mít význam pro držení těla, koordinaci nebo mobilitu",
-        "C": "její jádro spočívá primárně v podpoře funkční komunikace a náhradě řeči",
+        "C": "její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči",
         "D": "její cíl se váže k pohybové stránce fungování"
       },
-      "correctOptionText": "její jádro spočívá primárně v podpoře funkční komunikace a náhradě řeči",
+      "correctOptionText": "její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči",
       "discipline": "intervence / terapie",
-      "subtopic": "co není jádrem fyzioterapie",
+      "subtopic": "co není hlavní náplní fyzioterapie",
       "conceptTags": [
         "fyzioterapie",
         "pohybový systém",
@@ -19095,7 +19095,7 @@ window.metadataExportHard = {
         "motorický rámec a komunikační rámec"
       ],
       "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje motorický rámec a komunikační rámec.",
-      "questionCore": "co nepatří do jádra fyzioterapie",
+      "questionCore": "co nepatří do hlavní náplně fyzioterapie",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči“. Fyzioterapie pracuje především s pohybem, držením těla a funkcí pohybového aparátu, ne s celkovou organizací denních činností.",
       "explanationDistractor": "Ostatní přístupy jsou v praxi také používané, ale každý sleduje jiný hlavní účel a pracuje jiným způsobem. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na motorický rámec a komunikační rámec.",
       "commonMisconception": "Běžný omyl je vybírat přístup podle povědomého názvu, ne podle jeho hlavního cíle. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -19118,8 +19118,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "C",
       "reviewedCorrectLetter": "C",
       "effectiveCorrectLetter": "C",
-      "sourceCorrectOptionText": "její jádro spočívá primárně v podpoře funkční komunikace a náhradě řeči",
-      "reviewedCorrectOptionText": "její jádro spočívá primárně v podpoře funkční komunikace a náhradě řeči",
+      "sourceCorrectOptionText": "její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči",
+      "reviewedCorrectOptionText": "její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -19255,9 +19255,9 @@ window.metadataExportHard = {
         "A": "může podporovat orientaci, jistotu a kontakt",
         "B": "bývá spojována i s pojmem bazální dialog",
         "C": "je nejvíce spojena s Andreasem D. Fröhlichem",
-        "D": "jejím jádrem je především náhrada řeči symbolickým systémem"
+        "D": "její hlavní funkcí je především náhrada řeči symbolickým systémem"
       },
-      "correctOptionText": "jejím jádrem je především náhrada řeči symbolickým systémem",
+      "correctOptionText": "její hlavní funkcí je především náhrada řeči symbolickým systémem",
       "discipline": "intervence / terapie",
       "subtopic": "co nepatří k bazální stimulaci",
       "conceptTags": [
@@ -19275,7 +19275,7 @@ window.metadataExportHard = {
       ],
       "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje bazální stimulace a náhrada řeči symbolickým systémem.",
       "questionCore": "co nejméně přesně patří k bazální stimulaci",
-      "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „jejím jádrem je především náhrada řeči symbolickým systémem“. Bazální stimulace využívá jednoduché smyslové a tělové podněty k podpoře vnímání, jistoty a kontaktu s okolím.",
+      "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „její hlavní funkcí je především náhrada řeči symbolickým systémem“. Bazální stimulace využívá jednoduché smyslové a tělové podněty k podpoře vnímání, jistoty a kontaktu s okolím.",
       "explanationDistractor": "Ostatní přístupy jsou v praxi také používané, ale každý sleduje jiný hlavní účel a pracuje jiným způsobem. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na bazální stimulace a náhrada řeči symbolickým systémem.",
       "commonMisconception": "Běžný omyl je vybírat přístup podle povědomého názvu, ne podle jeho hlavního cíle. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
       "whyWrongCategory": "Chybná odpověď naznačuje, že byl zvolen přístup podle názvu, ne podle jeho účelu. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
@@ -19298,8 +19298,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "D",
       "reviewedCorrectLetter": "D",
       "effectiveCorrectLetter": "D",
-      "sourceCorrectOptionText": "jejím jádrem je především náhrada řeči symbolickým systémem",
-      "reviewedCorrectOptionText": "jejím jádrem je především náhrada řeči symbolickým systémem",
+      "sourceCorrectOptionText": "její hlavní funkcí je především náhrada řeči symbolickým systémem",
+      "reviewedCorrectOptionText": "její hlavní funkcí je především náhrada řeči symbolickým systémem",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -35021,28 +35021,28 @@ window.battery1MapHard = {
         "questionNumber": 1,
         "questionText": "Žák selhává stejně v ústní, písemné i názorně vedené odpovědi na totéž učivo. Jaký závěr by zde byl nejméně přiměřený?",
         "options": {
-          "A": "Důležité je neplést modalitu výkonu s jádrem potíže.",
+          "A": "Důležité je neplést modalitu výkonu s tím, kde je skutečný problém.",
           "B": "Že bariéra bude jen ve formě výstupu.",
           "C": "Že samotná změna výstupního kanálu problém nevyřešila.",
           "D": "Že je potřeba znovu číst, co zůstává stabilní napříč modalitami."
         },
         "correctOptionText": "Že bariéra bude jen ve formě výstupu.",
         "discipline": "speciální pedagogika / funkční diagnostika",
-        "subtopic": "forma výkonu vs jádro potíže",
+        "subtopic": "forma výkonu vs podstata potíže",
         "conceptTags": [
           "funkční čtení obtíže",
           "forma výkonu",
-          "jádro potíže",
+          "podstata potíže",
           "poradenství"
         ],
         "questionType": "interpretation-discrimination",
         "distractorType": "near-interpretation",
         "trapPattern": "output-channel-overread",
-        "requiredDiscrimination": "forma výkonu a stabilní jádro obtíže",
+        "requiredDiscrimination": "forma výkonu a stabilní podstata obtíže",
         "signalPattern": [
-          "forma výkonu vs jádro obtíže"
+          "forma výkonu vs podstata obtíže"
         ],
-        "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje forma výkonu a stabilní jádro obtíže.",
+        "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje forma výkonu a stabilní podstata obtíže.",
         "questionCore": "stejné selhávání napříč modalitami",
         "explanationCorrect": "Smyslem otázky bylo vytipovat možnost, která je v daném kontextu nejméně přesná. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: forma výkonu a to, co obtíž drží napříč situacemi. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
         "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na forma výkonu a to, co obtíž drží napříč situacemi.",
@@ -35071,9 +35071,9 @@ window.battery1MapHard = {
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
-        "knowledgeTarget": "forma výkonu a stabilní jádro obtíže",
+        "knowledgeTarget": "forma výkonu a stabilní podstata obtíže",
         "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-        "keyProof": "Rozhodující je forma výkonu a stabilní jádro obtíže.",
+        "keyProof": "Rozhodující je forma výkonu a stabilní podstata obtíže.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
         "formulationFlags": [],
@@ -35081,17 +35081,17 @@ window.battery1MapHard = {
         "knowledgeDemandLevel": "high",
         "processDemandLevel": "medium",
         "recommendedRepairFilters": [
-          "forma výkonu a stabilní jádro obtíže",
+          "forma výkonu a stabilní podstata obtíže",
           "funkční čtení obtíže",
           "forma výkonu",
-          "jádro potíže",
+          "podstata potíže",
           "poradenství"
         ],
         "revisionPriority": "high",
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B01Q01",
         "conceptFamily": "funkční čtení obtíže",
-        "distinctionAxis": "forma výkonu vs stabilní jádro",
+        "distinctionAxis": "forma výkonu vs stabilita obtíže",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "školství / poradenství",
@@ -35117,12 +35117,12 @@ window.battery1MapHard = {
         "questionNumber": 2,
         "questionText": "V ústním zkoušení žák látku vystihne přesně, ale v ručně psané odpovědi ji nerozvine a text je sotva čitelný. Které vysvětlení situace je nejpřesnější?",
         "options": {
-          "A": "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
-          "B": "Jádro leží především v celkovém neporozumění učivu, které se jen více odhalí písemně.",
-          "C": "Jádro leží v nízké ochotě pracovat, protože ústně je výkon vždy snadnější.",
-          "D": "Jádro leží v tom, že žák zvládá učivo jen tehdy, když může odpovídat zkratkovitě."
+          "A": "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
+          "B": "Podle této možnosti by problém spočíval především v celkovém neporozumění učivu, které se jen více odhalí písemně.",
+          "C": "Podle této možnosti by problém spočíval v nízké ochotě pracovat, protože ústně je výkon vždy snadnější.",
+          "D": "Podle této možnosti by problém spočíval v tom, že žák zvládá učivo jen tehdy, když může odpovídat zkratkovitě."
         },
-        "correctOptionText": "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
+        "correctOptionText": "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
         "discipline": "speciální pedagogika / funkční diagnostika",
         "subtopic": "písemný výstup vs obsahová znalost",
         "conceptTags": [
@@ -35162,8 +35162,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
-        "reviewedCorrectOptionText": "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
+        "sourceCorrectOptionText": "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
+        "reviewedCorrectOptionText": "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -35410,9 +35410,9 @@ window.battery1MapHard = {
           "A": "Potíž se nemusí týkat obsahu učiva v té podobě, v jaké ji ukazuje diktát.",
           "B": "Je třeba odlišit obsahovou znalost od nároků konkrétní formy výkonu.",
           "C": "Výsledek diktátu sám o sobě nestačí k závěru, že žák látce nerozumí.",
-          "D": "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu."
+          "D": "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi."
         },
-        "correctOptionText": "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu.",
+        "correctOptionText": "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi.",
         "discipline": "speciální pedagogika / funkční diagnostika",
         "subtopic": "diktát vs obsahová znalost",
         "conceptTags": [
@@ -35429,7 +35429,7 @@ window.battery1MapHard = {
           "výsledek diktátu vs porozumění obsahu"
         ],
         "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje výsledek diktátu vs porozumění obsahu.",
-        "questionCore": "diktát nepokrývá automaticky jádro obtíže",
+        "questionCore": "diktát sám neukazuje celou podstatu obtíže",
         "explanationCorrect": "V této úloze se nehledala nejvýstižnější varianta, ale ta, která se s popsanou situací rozchází. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: výsledek diktátu a porozumění obsahu. Interpretace přináší významový výklad toho, co klient říká nebo dělá, a proto je náročnější a rizikovější než prostá parafráze.",
         "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na výsledek diktátu a porozumění obsahu.",
         "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -35452,8 +35452,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "D",
         "reviewedCorrectLetter": "D",
         "effectiveCorrectLetter": "D",
-        "sourceCorrectOptionText": "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu.",
-        "reviewedCorrectOptionText": "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu.",
+        "sourceCorrectOptionText": "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi.",
+        "reviewedCorrectOptionText": "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -35503,7 +35503,7 @@ window.battery1MapHard = {
         "questionNumber": 6,
         "questionText": "Žák mluví srozumitelně, ale při výkladu z větší vzdálenosti bez vizuální opory ztrácí obsah. Který rámec je bližší?",
         "options": {
-          "A": "Logopedický rámec je bližší, protože jádro leží v kvalitě výslovnosti žáka.",
+          "A": "Logopedický rámec je bližší, protože hlavní obtíž spočívá v kvalitě výslovnosti žáka.",
           "B": "Surdopedický rámec dostupnosti mluvené informace je bližší než logopedický rámec produkce.",
           "C": "Psychologický rámec je bližší, protože potíž vzniká hlavně v koncentraci pozornosti bez ohledu na podmínky.",
           "D": "Sociální rámec je bližší, protože problém je především v organizaci třídy a ne v přístupu ke sdělení."
@@ -35791,12 +35791,12 @@ window.battery1MapHard = {
         "questionNumber": 9,
         "questionText": "Žák po poslechu textu odpoví věcně správně, ale z hustě sázeného materiálu s nízkým kontrastem selhává. Jaké vysvětlení je nejpřesnější?",
         "options": {
-          "A": "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
-          "B": "Jádro leží v tom, že žák nerozumí stejnému obsahu bez ohledu na formu podání.",
-          "C": "Jádro leží v odporu k samostatné práci s textem, nikoli ve vizuálních podmínkách.",
-          "D": "Jádro leží v tom, že poslech vždy uměle nadhodnocuje skutečnou kompetenci."
+          "A": "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
+          "B": "Podle této možnosti by problém spočíval v tom, že žák nerozumí stejnému obsahu bez ohledu na formu podání.",
+          "C": "Podle této možnosti by problém spočíval v odporu k samostatné práci s textem, nikoli ve vizuálních podmínkách.",
+          "D": "Podle této možnosti by problém spočíval v tom, že poslech vždy uměle nadhodnocuje skutečnou kompetenci."
         },
-        "correctOptionText": "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
+        "correctOptionText": "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
         "discipline": "speciální pedagogika",
         "subtopic": "vizuální přístup k informaci",
         "conceptTags": [
@@ -35836,8 +35836,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
-        "reviewedCorrectOptionText": "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
+        "sourceCorrectOptionText": "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
+        "reviewedCorrectOptionText": "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -35983,12 +35983,12 @@ window.battery1MapHard = {
         "questionNumber": 11,
         "questionText": "V tiché individuální práci žák běžné instrukci rozumí, ale ve skupinové práci v hluku opakovaně mine začátek úkolu. Která interpretace je bližší?",
         "options": {
-          "A": "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
+          "A": "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
           "B": "Potíž je stejná napříč situacemi a hluk jen odkryl všeobecně slabé chápání.",
           "C": "Potíž je především v neochotě reagovat na autoritu učitele ve skupině.",
           "D": "Potíž je hlavně v tom, že individuální práce bývá vždy jednodušší než skupinová, bez dalšího významu."
         },
-        "correctOptionText": "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
+        "correctOptionText": "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
         "discipline": "speciální pedagogika / poradenství",
         "subtopic": "hluk a dostupnost instrukce",
         "conceptTags": [
@@ -36028,8 +36028,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
-        "reviewedCorrectOptionText": "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
+        "sourceCorrectOptionText": "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
+        "reviewedCorrectOptionText": "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -36053,7 +36053,7 @@ window.battery1MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B01Q11",
         "conceptFamily": "dostupnost sdělení",
-        "distinctionAxis": "hlukové podmínky vs jádrové neporozumění",
+        "distinctionAxis": "hlukové podmínky vs obecné neporozumění",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "školství / poradenství",
@@ -36079,12 +36079,12 @@ window.battery1MapHard = {
         "questionNumber": 12,
         "questionText": "Jak nejlépe vyložit situaci, kdy dítě provede úkol správně po krátké demonstraci, ale samotný rychle vyslovený slovní pokyn v tělocvičně často mine?",
         "options": {
-          "A": "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
-          "B": "Jádro leží v celkově slabém chápání pohybového zadání bez ohledu na formu instrukce.",
-          "C": "Jádro leží v tom, že dítě v tělocvičně systematicky vzdoruje verbálním pokynům.",
-          "D": "Jádro leží v tom, že demonstrace je vždy nepřiměřenou nápovědou a výsledek proto nelze číst."
+          "A": "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
+          "B": "Podle této možnosti by problém spočíval v celkově slabém chápání pohybového zadání bez ohledu na formu instrukce.",
+          "C": "Podle této možnosti by problém spočíval v tom, že dítě v tělocvičně systematicky vzdoruje verbálním pokynům.",
+          "D": "Podle této možnosti by problém spočíval v tom, že demonstrace je vždy nepřiměřenou nápovědou a výsledek proto nelze číst."
         },
-        "correctOptionText": "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
+        "correctOptionText": "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
         "discipline": "speciální pedagogika / poradenství",
         "subtopic": "demonstrace vs rychlý slovní pokyn",
         "conceptTags": [
@@ -36124,8 +36124,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
-        "reviewedCorrectOptionText": "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
+        "sourceCorrectOptionText": "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
+        "reviewedCorrectOptionText": "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -36659,16 +36659,16 @@ window.battery1MapHard = {
         "batteryTitle": "Funkční čtení obtíže a primární bariéra",
         "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
         "questionNumber": 18,
-        "questionText": "Který znak nejvíce ukazuje na stabilní jádro obtíže napříč situacemi?",
+        "questionText": "Který znak nejvíce ukazuje na stabilitu obtíže napříč situacemi?",
         "options": {
           "A": "Žák selhává hlavně při jednom typu úkolu a po změně podmínek se výkon vrací.",
-          "B": "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
+          "B": "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
           "C": "Obtíž se objevuje jen tehdy, když je zadání dlouhé a hlučné prostředí rušivé.",
           "D": "Výkon kolísá podle toho, zda učitel pracuje individuálně nebo frontálně."
         },
-        "correctOptionText": "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
+        "correctOptionText": "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
         "discipline": "speciální pedagogika / poradenství",
-        "subtopic": "stabilní jádro obtíže napříč situacemi",
+        "subtopic": "stabilita obtíže napříč situacemi",
         "conceptTags": [
           "stabilita obtíže",
           "modality",
@@ -36684,7 +36684,7 @@ window.battery1MapHard = {
           "stabilní chyba napříč podmínkami vs podmíněné kolísání výk"
         ],
         "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje stabilní chyba napříč podmínkami vs podmíněné kolísání výkonu.",
-        "questionCore": "signál pro stabilní jádro obtíže",
+        "questionCore": "signál pro stabilitu obtíže napříč situacemi",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
         "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí stabilní chyba napříč podmínkami a podmíněné kolísání výkonu.",
         "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -36706,8 +36706,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "B",
         "reviewedCorrectLetter": "B",
         "effectiveCorrectLetter": "B",
-        "sourceCorrectOptionText": "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
-        "reviewedCorrectOptionText": "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
+        "sourceCorrectOptionText": "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
+        "reviewedCorrectOptionText": "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -36853,28 +36853,28 @@ window.battery1MapHard = {
         "questionNumber": 20,
         "questionText": "Když žák chybuje stejně u tichého čtení, poslechu i praktické ukázky, který závěr je bližší?",
         "options": {
-          "A": "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
-          "B": "Jádro obtíže bude pravděpodobně jen ve vizuálním přístupu k informaci.",
-          "C": "Jádro obtíže bude pravděpodobně jen v produkci odpovědi, ne v porozumění.",
-          "D": "Jádro obtíže bude pravděpodobně jen v akustických podmínkách výuky."
+          "A": "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
+          "B": "Obtíž bude podle této možnosti pravděpodobně jen ve vizuálním přístupu k informaci.",
+          "C": "Obtíž bude podle této možnosti pravděpodobně jen v produkci odpovědi, ne v porozumění.",
+          "D": "Obtíž bude podle této možnosti pravděpodobně jen v akustických podmínkách výuky."
         },
-        "correctOptionText": "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
+        "correctOptionText": "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
         "discipline": "speciální pedagogika / poradenství",
         "subtopic": "stejná chyba napříč kanály podání",
         "conceptTags": [
           "modalita podání",
-          "stabilní jádro",
+          "stabilita obtíže",
           "funkční čtení obtíže",
           "poradenství"
         ],
         "questionType": "interpretation-discrimination",
         "distractorType": "near-interpretation",
         "trapPattern": "single-channel-assumption",
-        "requiredDiscrimination": "stabilní jádro vs kanálově vázaná bariéra",
+        "requiredDiscrimination": "stabilita obtíže vs bariéra vázaná na konkrétní kanál",
         "signalPattern": [
-          "stabilní jádro vs kanálově vázaná bariéra"
+          "stabilita obtíže vs bariéra vázaná na konkrétní kanál"
         ],
-        "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje stabilní jádro vs kanálově vázaná bariéra.",
+        "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje stabilita obtíže vs bariéra vázaná na konkrétní kanál.",
         "questionCore": "stejná chyba ve více kanálech",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „podstata obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
         "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí to, co se nemění a kanálově vázaná bariéra.",
@@ -36897,14 +36897,14 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
-        "reviewedCorrectOptionText": "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
+        "sourceCorrectOptionText": "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
+        "reviewedCorrectOptionText": "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
-        "knowledgeTarget": "stabilní jádro vs kanálově vázaná bariéra",
+        "knowledgeTarget": "stabilita obtíže vs bariéra vázaná na konkrétní kanál",
         "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-        "keyProof": "Rozhodující je stabilní jádro vs kanálově vázaná bariéra.",
+        "keyProof": "Rozhodující je stabilita obtíže vs bariéra vázaná na konkrétní kanál.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
         "formulationFlags": [],
@@ -36912,9 +36912,9 @@ window.battery1MapHard = {
         "knowledgeDemandLevel": "high",
         "processDemandLevel": "medium-high",
         "recommendedRepairFilters": [
-          "stabilní jádro vs kanálově vázaná bariéra",
+          "stabilita obtíže vs bariéra vázaná na konkrétní kanál",
           "modalita podání",
-          "stabilní jádro",
+          "stabilita obtíže",
           "funkční čtení obtíže",
           "poradenství"
         ],
@@ -37047,7 +37047,7 @@ window.battery1MapHard = {
           "A": "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
           "B": "Že je potřeba sledovat, které podmínky výkon zhoršují a které jej zpřístupňují.",
           "C": "Že změna prostředí může být pro čtení obtíže stejně důležitá jako změna úkolu.",
-          "D": "Že kolísání výkonu samo o sobě brání rychlému závěru o stabilním jádru napříč situacemi."
+          "D": "Že kolísání výkonu samo o sobě brání rychlému závěru o stabilitě obtíže napříč situacemi."
         },
         "correctOptionText": "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
         "discipline": "speciální pedagogika / poradenství",
@@ -37066,7 +37066,7 @@ window.battery1MapHard = {
           "kolísání podle podmínek vs nezávislá globální potíž"
         ],
         "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje kolísání podle podmínek vs nezávislá globální potíž.",
-        "questionCore": "předčasný závěr o stabilním jádru",
+        "questionCore": "předčasný závěr o stabilitě obtíže",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Že jde o potíž úplně nezávislou na podmínkách prostředí“. Interpretace přináší významový výklad toho, co klient říká nebo dělá, a proto je náročnější a rizikovější než prostá parafráze.",
         "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na kolísání podle podmínek a nezávislá globální potíž.",
         "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -37451,7 +37451,7 @@ window.battery1MapHard = {
           "zklidnění projevu a posun v cílovém výkonu"
         ],
         "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje zklidnění projevu a posun v cílovém výkonu.",
-        "questionCore": "vedlejší projev není totéž co jádro obtíže",
+        "questionCore": "vedlejší projev není totéž co podstata obtíže",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Podpora pravděpodobně zasáhla vedlejší projev, ne nutně hlavní bariéru“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
         "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí zklidnění projevu a posun v cílovém výkonu.",
         "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -37627,7 +37627,7 @@ window.battery1MapHard = {
         "options": {
           "A": "Potíž může souviset i s tempem a podmínkami zpracování, ne jen s výsledným počtem chyb.",
           "B": "Je vhodné odlišit výkon v jednorázově plynoucím sdělení od výkonu s možností návratu k informaci.",
-          "C": "Diktát sám o sobě nemusí přesně ukazovat rozsah jádra obtíže.",
+          "C": "Diktát sám o sobě nemusí přesně ukazovat celou podstatu obtíže.",
           "D": "Výsledek potvrzuje, že stejná potíž trvá beze změny bez ohledu na podmínky zpracování."
         },
         "correctOptionText": "Výsledek potvrzuje, že stejná potíž trvá beze změny bez ohledu na podmínky zpracování.",
@@ -38105,12 +38105,12 @@ window.battery1MapHard = {
         "questionNumber": 33,
         "questionText": "Jaké vysvětlení situace je nejpřesnější, když dítě rozumí otázce při individuální práci, ale ve třídě opakovaně odpovídá mimo, protože zachytí jen část zadání?",
         "options": {
-          "A": "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
-          "B": "Jádro leží ve stabilně slabé obsahové kompetenci bez ohledu na to, jak je sdělení podané.",
-          "C": "Jádro leží v tom, že individuální práce neukazuje skutečnou úroveň žáka.",
-          "D": "Jádro leží hlavně v neochotě sledovat výuku ve větší skupině."
+          "A": "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
+          "B": "Podle této možnosti by problém spočíval ve stabilně slabé obsahové kompetenci bez ohledu na to, jak je sdělení podané.",
+          "C": "Podle této možnosti by problém spočíval v tom, že individuální práce neukazuje skutečnou úroveň žáka.",
+          "D": "Podle této možnosti by problém spočíval hlavně v neochotě sledovat výuku ve větší skupině."
         },
-        "correctOptionText": "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
+        "correctOptionText": "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
         "discipline": "speciální pedagogika / poradenství",
         "subtopic": "zachytí jen část zadání",
         "conceptTags": [
@@ -38150,8 +38150,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
-        "reviewedCorrectOptionText": "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
+        "sourceCorrectOptionText": "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
+        "reviewedCorrectOptionText": "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -38782,7 +38782,7 @@ window.battery1MapHard = {
         "options": {
           "A": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
           "B": "Kolísání výkonu je zde nejspíše náhodné a bez analytické hodnoty.",
-          "C": "Kolísání výkonu je zde nejspíše potvrzením stejné jádrové poruchy bez vazby na situaci.",
+          "C": "Kolísání výkonu je zde nejspíše potvrzením stejné podoby obtíže bez vazby na situaci.",
           "D": "Kolísání výkonu je zde hlavně známkou neochoty žáka pracovat soustavně."
         },
         "correctOptionText": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
@@ -38971,16 +38971,16 @@ window.battery1MapHard = {
         "batteryTitle": "Funkční čtení obtíže a primární bariéra",
         "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
         "questionNumber": 42,
-        "questionText": "Které tvrzení má největší vypovídací hodnotu pro posouzení, zda podpora opravdu mění jádro obtíže?",
+        "questionText": "Které tvrzení má největší vypovídací hodnotu pro posouzení, zda podpora opravdu zasahuje hlavní obtíž?",
         "options": {
-          "A": "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
+          "A": "Že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
           "B": "Že učitel má po zavedení podpory lepší pocit z práce celé třídy.",
           "C": "Že žák působí s novým opatřením klidněji, i když cíl podpory mířil jinam.",
           "D": "Že opatření lze odborně pojmenovat několika přesnými termíny."
         },
-        "correctOptionText": "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
+        "correctOptionText": "Že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
         "discipline": "poradenství / evaluace podpory",
-        "subtopic": "kdy podpora mění jádro obtíže",
+        "subtopic": "kdy podpora zasahuje hlavní obtíž",
         "conceptTags": [
           "evaluace podpory",
           "cílová situace",
@@ -39018,8 +39018,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
-        "reviewedCorrectOptionText": "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
+        "sourceCorrectOptionText": "Že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
+        "reviewedCorrectOptionText": "Že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -39166,7 +39166,7 @@ window.battery1MapHard = {
         "questionText": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které čtení je přesnější?",
         "options": {
           "A": "Je vhodné hledat, které uspořádání činnosti bariéru zesiluje a které ji naopak tlumí.",
-          "B": "Je vhodné uzavřít, že jádro potíže leží mimo podmínky a rozdíl mezi hodinami nemá význam.",
+          "B": "Je předčasné uzavírat, že podstata potíže leží mimo podmínky a rozdíl mezi hodinami nemá význam.",
           "C": "Je vhodné uzavřít, že lepší výkon v jedné situaci je pouze náhodný výkyv bez diagnostické hodnoty.",
           "D": "Je vhodné číst rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
         },
@@ -39356,12 +39356,12 @@ window.battery1MapHard = {
         "questionNumber": 46,
         "questionText": "Jaké vysvětlení je nejbližší, když dítě po přesunu blíže k učiteli a po zřetelnějším kontaktu s tváří drží obsah podstatně lépe, zatímco artikulace zůstává stejná?",
         "options": {
-          "A": "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
-          "B": "Jádro leží spíše v artikulaci, protože pozice ve třídě mění hlavně její vnímání učitelem.",
-          "C": "Jádro leží spíše v tom, že dítě po přesazení více poslouchá z kázně.",
-          "D": "Jádro leží spíše v obsahu učiva, který se po přesunu blíže automaticky zjednodušil."
+          "A": "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
+          "B": "Podle této možnosti by problém spočíval spíše v artikulaci, protože pozice ve třídě mění hlavně její vnímání učitelem.",
+          "C": "Podle této možnosti by problém spočíval spíše v tom, že dítě po přesazení více poslouchá z kázně.",
+          "D": "Podle této možnosti by problém spočíval spíše v obsahu učiva, který se po přesunu blíže automaticky zjednodušil."
         },
-        "correctOptionText": "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
+        "correctOptionText": "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
         "discipline": "speciální pedagogika",
         "subtopic": "blíže k učiteli a kontakt s tváří",
         "conceptTags": [
@@ -39401,8 +39401,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
-        "reviewedCorrectOptionText": "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
+        "sourceCorrectOptionText": "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
+        "reviewedCorrectOptionText": "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -39548,12 +39548,12 @@ window.battery1MapHard = {
         "questionNumber": 48,
         "questionText": "Co z toho plyne nejpřesněji, když dítě při stejné látce selhává hlavně v dlouhých souvislých instrukcích, ale nikoli v krátkých postupných krocích?",
         "options": {
-          "A": "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
-          "B": "Jádro musí ležet v totálním nepochopení látky, protože dlouhé instrukce jen odhalují pravdu.",
-          "C": "Jádro musí ležet ve vzdoru, protože dlouhé instrukce vyžadují více sebekontroly.",
-          "D": "Jádro musí ležet v nečitelnosti materiálu, protože delší instrukce bývají graficky náročnější."
+          "A": "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
+          "B": "Podle této možnosti by problém musel spočívat v úplném nepochopení látky, protože dlouhé instrukce jen odhalují pravdu.",
+          "C": "Podle této možnosti by problém musel spočívat ve vzdoru, protože dlouhé instrukce vyžadují více sebekontroly.",
+          "D": "Podle této možnosti by problém musel spočívat v nečitelnosti materiálu, protože delší instrukce bývají graficky náročnější."
         },
-        "correctOptionText": "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
+        "correctOptionText": "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
         "discipline": "speciální pedagogika / poradenství",
         "subtopic": "dlouhé souvislé instrukce",
         "conceptTags": [
@@ -39593,8 +39593,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
-        "reviewedCorrectOptionText": "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
+        "sourceCorrectOptionText": "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
+        "reviewedCorrectOptionText": "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -43747,17 +43747,17 @@ window.battery2MapHard = {
         "questionType": "communication-technique-discrimination",
         "distractorType": "near-process",
         "trapPattern": "komunikační techniky a chyby",
-        "requiredDiscrimination": "vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva",
+        "requiredDiscrimination": "vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva",
         "signalPattern": [
-          "vrácení významu a emočního jádra sdělení vs hodnocení, rad"
+          "vrácení významu a emočního obsahu sdělení vs hodnocení, rad"
         ],
-        "signalHint": "Nechytej se jen odborně znějícího slova. Tady rozhoduje přesný definiční znak: vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva.",
+        "signalHint": "Nechytej se jen odborně znějícího slova. Tady rozhoduje přesný definiční znak: vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva.",
         "questionCore": "reflektivní naslouchání",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Jestli tomu rozumím správně, nejvíc vás vyčerpává, že se situace doma i ve škole táhne bez jasného řešení“. Reflektivní naslouchání zachycuje obsah i emoční tón sdělení a pomáhá klientovi své téma dál rozvíjet.",
-        "explanationDistractor": "Jiné reakce mohly působit profesionálně, ale měnily způsob vedení rozhovoru: některé byly příliš řídící, jiné naopak nepřinášely skutečné porozumění. Právě v tom se ukázalo, zda je odlišené vrácení významu a emočního jádra sdělení a hodnocení, rada nebo direktiva.",
+        "explanationDistractor": "Jiné reakce mohly působit profesionálně, ale měnily způsob vedení rozhovoru: některé byly příliš řídící, jiné naopak nepřinášely skutečné porozumění. Právě v tom se ukázalo, zda je odlišené vrácení významu a emočního obsahu sdělení od hodnocení, rady nebo direktivy.",
         "commonMisconception": "Častou chybou je považovat za dobrou každou laskavě znějící reakci, i když ve skutečnosti vede rozhovor jiným směrem. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
         "whyWrongCategory": "Chybná volba často naznačuje, že se nerozlišila jemná funkce jednotlivých poradenských reakcí. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
-        "microLesson": "V poradenském rozhovoru rozhodují drobné rozdíly v účinku jednotlivých reakcí. Reflektivní naslouchání zachycuje obsah i emoční tón sdělení a pomáhá klientovi své téma dál rozvíjet. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená vrácení významu a emočního jádra sdělení a hodnocení, rada nebo direktiva.",
+        "microLesson": "V poradenském rozhovoru rozhodují drobné rozdíly v účinku jednotlivých reakcí. Reflektivní naslouchání zachycuje obsah i emoční tón sdělení a pomáhá klientovi své téma dál rozvíjet. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená vrácení významu a emočního obsahu sdělení a odlišení od hodnocení, rady nebo direktivy.",
         "recommendedRecallPrompt": "Jak bys stručně vysvětlil rozdíl mezi touto reakcí a jiným blízkým způsobem vedení rozhovoru?",
         "legislationRef": "stabilní poradenské komunikační minimum",
         "likelyErrorTypes": [
@@ -43780,9 +43780,9 @@ window.battery2MapHard = {
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
-        "knowledgeTarget": "vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva",
+        "knowledgeTarget": "vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva",
         "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-        "keyProof": "Rozhodující je vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva.",
+        "keyProof": "Rozhodující je vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
         "formulationFlags": [
@@ -43792,7 +43792,7 @@ window.battery2MapHard = {
         "knowledgeDemandLevel": "high",
         "processDemandLevel": "high",
         "recommendedRepairFilters": [
-          "vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva",
+          "vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva",
           "reflektivní naslouchání",
           "poradenská komunikace"
         ],
@@ -43800,7 +43800,7 @@ window.battery2MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B02Q42",
         "conceptFamily": "komunikace a poradenské minimum",
-        "distinctionAxis": "vrácení významu a emočního jádra sdělení vs hodnocení, rada nebo direktiva",
+        "distinctionAxis": "vrácení významu a emočního obsahu sdělení vs hodnocení, rada nebo direktiva",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "psychologie / komunikace",
@@ -47509,7 +47509,7 @@ window.battery3MapHard = {
           "historické pojetí × definiční znak"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje historické pojetí × definiční znak.",
-        "questionCore": "rozlišení jádra represivní pojetí",
+        "questionCore": "rozlišení podstaty: represivní pojetí",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „důraz na vyloučení, odmítání nebo tvrdé omezování jedince kvůli odlišnosti“. Historické přístupy se liší tím, jak člověka s postižením chápou, jaké mu přisuzují místo ve společnosti a jaký je cíl péče nebo vzdělávání.",
         "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. Právě v tom se ukázalo, zda je odlišené historické pojetí a definiční znak.",
         "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -47607,7 +47607,7 @@ window.battery3MapHard = {
           "historické pojetí × definiční znak"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje historické pojetí × definiční znak.",
-        "questionCore": "rozlišení jádra charitativní pojetí",
+        "questionCore": "rozlišení podstaty: charitativní pojetí",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „důraz na humanitní pomoc a opatrování bez silného akcentu na vzdělávací emancipaci“. Historické přístupy se liší tím, jak člověka s postižením chápou, jaké mu přisuzují místo ve společnosti a jaký je cíl péče nebo vzdělávání.",
         "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na historické pojetí a definiční znak.",
         "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -47705,7 +47705,7 @@ window.battery3MapHard = {
           "historické pojetí × definiční znak"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje historické pojetí × definiční znak.",
-        "questionCore": "rozlišení jádra institucionální pojetí",
+        "questionCore": "rozlišení podstaty: institucionální pojetí",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „přesun pomoci do specializovaných ústavů a oddělených zařízení“. Inkluzivní pojetí nevychází primárně z přizpůsobování jedince systému, ale i z proměny prostředí a podmínek tak, aby bylo vzdělávání dostupné.",
         "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na historické pojetí a definiční znak.",
         "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -47801,7 +47801,7 @@ window.battery3MapHard = {
           "integrační × inkluzivní logika"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje integrační × inkluzivní logika.",
-        "questionCore": "rozlišení jádra integrační pojetí",
+        "questionCore": "rozlišení podstaty: integrační pojetí",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „jedinec vstupuje do běžného prostředí, ale podpora je ještě často chápána jako přidávaná k existujícímu systému“. Historické přístupy se liší tím, jak člověka s postižením chápou, jaké mu přisuzují místo ve společnosti a jaký je cíl péče nebo vzdělávání.",
         "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Právě v tom se ukázalo, zda je odlišené integrační a inkluzivní logika.",
         "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -47899,7 +47899,7 @@ window.battery3MapHard = {
           "integrační × inkluzivní logika"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje integrační × inkluzivní logika.",
-        "questionCore": "rozlišení jádra inkluzivní pojetí",
+        "questionCore": "rozlišení podstaty: inkluzivní pojetí",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „systém se má přizpůsobovat tak, aby běžné prostředí bylo dostupné i pro odlišné potřeby“. Inkluzivní pojetí nevychází primárně z přizpůsobování jedince systému, ale i z proměny prostředí a podmínek tak, aby bylo vzdělávání dostupné.",
         "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí integrační a inkluzivní logika.",
         "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -47997,7 +47997,7 @@ window.battery3MapHard = {
           "deficitní × funkční/podpůrné pojetí"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje deficitní × funkční/podpůrné pojetí.",
-        "questionCore": "rozlišení jádra přechod od deficitního k funkčnímu a podpůrnému pojetí",
+        "questionCore": "rozlišení podstaty: přechod od deficitního k funkčnímu a podpůrnému pojetí",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „od označování osoby primárně podle nedostatku k většímu důrazu na potřeby, podporu a fungování v kontextu“. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života.",
         "explanationDistractor": "Jiné možnosti zněly podobně, protože všechny mluvily o vývoji oboru, ale lišily se hodnotovým důrazem i dobovým jazykem. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na deficitní a funkční/podpůrné pojetí.",
         "commonMisconception": "Často se přehlédne, že změna názvu oboru souvisí i se změnou toho, jak o člověku a podpoře přemýšlíme. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -48095,7 +48095,7 @@ window.battery3MapHard = {
           "participace a pasivní péče"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje participace a pasivní péče.",
-        "questionCore": "rozlišení jádra participační pojetí",
+        "questionCore": "rozlišení podstaty: participační pojetí",
         "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „akcentuje účast, zapojení a odstraňování bariér, které brání plnému začlenění“. Participační pojetí zdůrazňuje aktivní zapojení člověka do vlastního života, rozhodování a běžných sociálních rolí.",
         "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na participace a pasivní péče.",
         "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -48193,7 +48193,7 @@ window.battery3MapHard = {
           "historická proměna a chybné ztotožnění"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje historická proměna a chybné ztotožnění.",
-        "questionCore": "rozlišení jádra historická proměna oboru",
+        "questionCore": "rozlišení podstaty: historická proměna oboru",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „integrační a inkluzivní pojetí jsou historicky zcela totožné a nelze je nijak rozlišit“. Inkluzivní pojetí nevychází primárně z přizpůsobování jedince systému, ale i z proměny prostředí a podmínek tak, aby bylo vzdělávání dostupné.",
         "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí historická proměna a chybné ztotožnění.",
         "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -48289,7 +48289,7 @@ window.battery3MapHard = {
           "inkluzivní × integrační logika"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje inkluzivní × integrační logika.",
-        "questionCore": "rozlišení jádra inkluzivní rámec",
+        "questionCore": "rozlišení podstaty: inkluzivní rámec",
         "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „systém je upravován tak, aby bariéry nebránily účasti různorodých žáků“. Inkluzivní pojetí nevychází primárně z přizpůsobování jedince systému, ale i z proměny prostředí a podmínek tak, aby bylo vzdělávání dostupné.",
         "explanationDistractor": "Ostatní volby se dotýkají dějin oboru, ale každá stojí na jiném pohledu na člověka, společnost a cíl péče. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí inkluzivní a integrační logika.",
         "commonMisconception": "Častou chybou je vnímat historické přístupy jen jako časovou osu a přehlédnout, že se liší i hodnotově a cílem péče. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -48385,7 +48385,7 @@ window.battery3MapHard = {
           "segregace × podpora účasti"
         ],
         "signalHint": "Nejdřív spoj osobnost, termín a období. Tady rozhoduje segregace × podpora účasti.",
-        "questionCore": "rozlišení jádra proměna cíle oboru",
+        "questionCore": "rozlišení podstaty: proměna cíle oboru",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „od označení a segregace směrem k podpoře fungování, vzdělávání a účasti“. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života.",
         "explanationDistractor": "Jiné možnosti zněly podobně, protože všechny mluvily o vývoji oboru, ale lišily se hodnotovým důrazem i dobovým jazykem. Právě v tom se ukázalo, zda je odlišené segregace a podpora účasti.",
         "commonMisconception": "Často se přehlédne, že změna názvu oboru souvisí i se změnou toho, jak o člověku a podpoře přemýšlíme. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -49530,7 +49530,7 @@ window.battery4MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B04Q01",
         "conceptFamily": "logopedie, surdopedie a vnitřní termíny",
-        "distinctionAxis": "diagnostický okruh × jádro obtíže",
+        "distinctionAxis": "diagnostický okruh × hlavní oblast obtíží",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "speciální pedagogika / disciplíny",
@@ -49651,7 +49651,7 @@ window.battery4MapHard = {
         "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
         "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
         "questionNumber": 3,
-        "questionText": "Které přiřazení termínu a jádra obtíže je správné?",
+        "questionText": "Které přiřazení termínu a hlavní oblasti obtíží je správné?",
         "options": {
           "A": "balbuties — porucha plynulosti s bloky, napětím a narušeným tokem řeči",
           "B": "tumultus sermonis — úplná ztráta hlasu při zachovaném porozumění",
@@ -49670,18 +49670,18 @@ window.battery4MapHard = {
         "questionType": "term-definition-match",
         "distractorType": "near-concept",
         "trapPattern": "internal-logopedic-terms",
-        "requiredDiscrimination": "správné přiřazení termínu a jádra obtíže",
+        "requiredDiscrimination": "správné přiřazení termínu a hlavní oblasti obtíží",
         "signalPattern": [
-          "správné přiřazení termínu a jádra obtíže"
+          "správné přiřazení termínu a hlavní oblasti obtíží"
         ],
-        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje správné přiřazení termínu a jádra obtíže.",
-        "questionCore": "které přiřazení termínu a jádra obtíže je správné",
+        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje správné přiřazení termínu a hlavní oblasti obtíží.",
+        "questionCore": "které přiřazení termínu a hlavní oblasti obtíží je správné",
         "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „balbuties — porucha plynulosti s bloky, napětím a narušeným tokem řeči“. Balbuties je koktavost s narušenou plynulostí řeči, zatímco tumultus sermonis se vyznačuje překotným tempem a neuspořádaností projevu.",
-        "explanationDistractor": "Jiné pojmy byly blízko projevu, který je v zadání nápadný, ale patřily k jiné odborné oblasti nebo k jiné rovině popisu. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí správné přiřazení termínu a jádra obtíže.",
+        "explanationDistractor": "Jiné pojmy byly blízko projevu, který je v zadání nápadný, ale patřily k jiné odborné oblasti nebo k jiné rovině popisu. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí správné přiřazení termínu a hlavní oblasti obtíží.",
         "commonMisconception": "Často se plete nápadný projev s tím, jaký odborný okruh skutečně vyšetřujeme nebo popisujeme. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
         "whyWrongCategory": "Chybná volba obvykle naznačuje záměnu mezi symptomem, diagnostickou oblastí a odborným názvem poruchy. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
-        "microLesson": "V logopedii je důležité odlišit kvalitu hlasu, plynulost, artikulaci, porozumění a širší komunikační fungování. Balbuties je koktavost s narušenou plynulostí řeči, zatímco tumultus sermonis se vyznačuje překotným tempem a neuspořádaností projevu. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení termínu a jádra obtíže.",
-        "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné přiřazení termínu a jádra obtíže?",
+        "microLesson": "V logopedii je důležité odlišit kvalitu hlasu, plynulost, artikulaci, porozumění a širší komunikační fungování. Balbuties je koktavost s narušenou plynulostí řeči, zatímco tumultus sermonis se vyznačuje překotným tempem a neuspořádaností projevu. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení termínu a hlavní oblasti obtíží.",
+        "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné přiřazení termínu a hlavní oblasti obtíží?",
         "legislationRef": "oborové logopedické vymezení",
         "likelyErrorTypes": [
           "term-anchor-error",
@@ -49704,9 +49704,9 @@ window.battery4MapHard = {
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
-        "knowledgeTarget": "správné přiřazení termínu a jádra obtíže",
+        "knowledgeTarget": "správné přiřazení termínu a hlavní oblasti obtíží",
         "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-        "keyProof": "Rozhodující je správné přiřazení termínu a jádra obtíže.",
+        "keyProof": "Rozhodující je správné přiřazení termínu a hlavní oblasti obtíží.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
         "formulationFlags": [],
@@ -49714,7 +49714,7 @@ window.battery4MapHard = {
         "knowledgeDemandLevel": "high",
         "processDemandLevel": "high",
         "recommendedRepairFilters": [
-          "správné přiřazení termínu a jádra obtíže",
+          "správné přiřazení termínu a hlavní oblasti obtíží",
           "balbuties",
           "tumultus sermonis",
           "dysfonie",
@@ -49724,7 +49724,7 @@ window.battery4MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B04Q03",
         "conceptFamily": "logopedie, surdopedie a vnitřní termíny",
-        "distinctionAxis": "termín × jádro obtíže",
+        "distinctionAxis": "termín × hlavní oblast obtíží",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "speciální pedagogika / disciplíny",
@@ -50041,9 +50041,9 @@ window.battery4MapHard = {
           "A": "Těžiště může ležet v dostupnosti auditivně-mluveného sdělení, ne v produkční logopedické obtíži.",
           "B": "Důležitým vodítkem je závislost porozumění na vizuálním kontaktu s mluvčím.",
           "C": "Situace může vyžadovat uvažování o surdopedické a komunikačně přístupové opoře.",
-          "D": "Hlavní jádro obtíže nejspíše leží v artikulační nepřesnosti samotného žáka."
+          "D": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka."
         },
-        "correctOptionText": "Hlavní jádro obtíže nejspíše leží v artikulační nepřesnosti samotného žáka.",
+        "correctOptionText": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka.",
         "discipline": "surdopedie / funkční čtení situace",
         "subtopic": "sluchová dostupnost sdělení",
         "conceptTags": [
@@ -50083,8 +50083,8 @@ window.battery4MapHard = {
         "sourceCorrectLetter": "D",
         "reviewedCorrectLetter": "D",
         "effectiveCorrectLetter": "D",
-        "sourceCorrectOptionText": "Hlavní jádro obtíže nejspíše leží v artikulační nepřesnosti samotného žáka.",
-        "reviewedCorrectOptionText": "Hlavní jádro obtíže nejspíše leží v artikulační nepřesnosti samotného žáka.",
+        "sourceCorrectOptionText": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka.",
+        "reviewedCorrectOptionText": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -50228,7 +50228,7 @@ window.battery4MapHard = {
         "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
         "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
         "questionNumber": 9,
-        "questionText": "Které přiřazení diagnostické oblasti a jejího jádra je správné?",
+        "questionText": "Které přiřazení diagnostické oblasti a její hlavní náplně je správné?",
         "options": {
           "A": "impresivní složka řeči — porozumění řeči",
           "B": "expresivní složka řeči — orientační vyšetření sluchového prahu",
@@ -50247,18 +50247,18 @@ window.battery4MapHard = {
         "questionType": "domain-match",
         "distractorType": "near-domain",
         "trapPattern": "impressive-vs-expressive",
-        "requiredDiscrimination": "správné přiřazení oblasti a jejího jádra",
+        "requiredDiscrimination": "správné přiřazení oblasti a její hlavní náplně",
         "signalPattern": [
-          "správné přiřazení oblasti a jejího jádra"
+          "správné přiřazení oblasti a její hlavní náplně"
         ],
-        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje správné přiřazení oblasti a jejího jádra.",
-        "questionCore": "které přiřazení diagnostické oblasti a jejího jádra je správné",
+        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje správné přiřazení oblasti a její hlavní náplně.",
+        "questionCore": "které přiřazení diagnostické oblasti a její hlavní náplně je správné",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „impresivní složka řeči — porozumění řeči“. Impresivní složka se týká porozumění řeči, expresivní její produkce; obě oblasti se mohou oslabit společně i odděleně.",
-        "explanationDistractor": "Další volby byly blízko, ale posouvaly odpověď k jiné disciplíně nebo k vedlejšímu projevu. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Právě v tom se ukázalo, zda je odlišené správné přiřazení oblasti a jejího jádra.",
+        "explanationDistractor": "Další volby byly blízko, ale posouvaly odpověď k jiné disciplíně nebo k vedlejšímu projevu. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Právě v tom se ukázalo, zda je odlišené správné přiřazení oblasti a její hlavní náplně.",
         "commonMisconception": "Častou chybou je záměna blízkých termínů napříč disciplínami jen podle podobného znění. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
         "whyWrongCategory": "Chybná odpověď obvykle znamená posun k příbuznému termínu, nikoli k přesně odpovídající oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
-        "microLesson": "U blízkých termínů napříč speciální pedagogikou pomáhá spojit název s typickým projevem a jeho dopadem. Impresivní složka se týká porozumění řeči, expresivní její produkce; obě oblasti se mohou oslabit společně i odděleně. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení oblasti a jejího jádra.",
-        "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné přiřazení oblasti a jejího jádra?",
+        "microLesson": "U blízkých termínů napříč speciální pedagogikou pomáhá spojit název s typickým projevem a jeho dopadem. Impresivní složka se týká porozumění řeči, expresivní její produkce; obě oblasti se mohou oslabit společně i odděleně. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení oblasti a její hlavní náplně.",
+        "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné přiřazení oblasti a její hlavní náplně?",
         "legislationRef": "oborové logopedické vymezení",
         "likelyErrorTypes": [
           "impresivní-expresivní-záměna",
@@ -50280,9 +50280,9 @@ window.battery4MapHard = {
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
-        "knowledgeTarget": "správné přiřazení oblasti a jejího jádra",
+        "knowledgeTarget": "správné přiřazení oblasti a její hlavní náplně",
         "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-        "keyProof": "Rozhodující je správné přiřazení oblasti a jejího jádra.",
+        "keyProof": "Rozhodující je správné přiřazení oblasti a její hlavní náplně.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
         "formulationFlags": [],
@@ -50290,7 +50290,7 @@ window.battery4MapHard = {
         "knowledgeDemandLevel": "high",
         "processDemandLevel": "high",
         "recommendedRepairFilters": [
-          "správné přiřazení oblasti a jejího jádra",
+          "správné přiřazení oblasti a její hlavní náplně",
           "impresivní složka",
           "expresivní složka",
           "porozumění řeči",
@@ -50300,7 +50300,7 @@ window.battery4MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B04Q09",
         "conceptFamily": "logopedie, surdopedie a vnitřní termíny",
-        "distinctionAxis": "diagnostická oblast × jádro",
+        "distinctionAxis": "diagnostická oblast × hlavní náplň",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "speciální pedagogika / disciplíny",
@@ -50906,12 +50906,12 @@ window.battery4MapHard = {
         "questionNumber": 16,
         "questionText": "Žák po zvětšení, kontrastu a přehlednějším grafickém uspořádání drží stejný obsah výrazně lépe, zatímco změna sedu a úchopu výkon téměř neposune. Jaké vysvětlení je zde nejpřesnější?",
         "options": {
-          "A": "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
-          "B": "Jádro leží spíše v motorickém provedení než v přístupu k vizuální informaci.",
-          "C": "Jádro leží spíše v poruše hlasu než ve vizuální přístupnosti.",
-          "D": "Jádro leží spíše v postkrizové regulaci chování než ve vizuálním přístupu."
+          "A": "Obtíž souvisí spíše s vizuální přístupností než s tělesnou a motorickou formou výkonu.",
+          "B": "Podle této možnosti by problém spočíval spíše v motorickém provedení než v přístupu k vizuální informaci.",
+          "C": "Podle této možnosti by problém spočíval spíše v poruše hlasu než ve vizuální přístupnosti.",
+          "D": "Podle této možnosti by problém spočíval spíše v postkrizové regulaci chování než ve vizuálním přístupu."
         },
-        "correctOptionText": "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
+        "correctOptionText": "Obtíž souvisí spíše s vizuální přístupností než s tělesnou a motorickou formou výkonu.",
         "discipline": "tyflopedie × somatopedie",
         "subtopic": "vizuální přístupnost vs forma výkonu",
         "conceptTags": [
@@ -50951,8 +50951,8 @@ window.battery4MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
-        "reviewedCorrectOptionText": "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
+        "sourceCorrectOptionText": "Obtíž souvisí spíše s vizuální přístupností než s tělesnou a motorickou formou výkonu.",
+        "reviewedCorrectOptionText": "Obtíž souvisí spíše s vizuální přístupností než s tělesnou a motorickou formou výkonu.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -51005,9 +51005,9 @@ window.battery4MapHard = {
           "A": "Těžiště nemusí ležet v tyflopedické dostupnosti informace.",
           "B": "Do popředí se může dostávat somatopedický rámec formy výkonu.",
           "C": "Hlavní problém nemusí být v zrakové přístupnosti textu.",
-          "D": "Nejpravděpodobnější jádro obtíže leží právě ve vizuální orientaci a kontrastu."
+          "D": "Nejpravděpodobnější vysvětlení obtíže leží právě ve vizuální orientaci a kontrastu."
         },
-        "correctOptionText": "Nejpravděpodobnější jádro obtíže leží právě ve vizuální orientaci a kontrastu.",
+        "correctOptionText": "Nejpravděpodobnější vysvětlení obtíže leží právě ve vizuální orientaci a kontrastu.",
         "discipline": "somatopedie × tyflopedie",
         "subtopic": "polohování, úchop a manipulace",
         "conceptTags": [
@@ -51048,8 +51048,8 @@ window.battery4MapHard = {
         "sourceCorrectLetter": "D",
         "reviewedCorrectLetter": "D",
         "effectiveCorrectLetter": "D",
-        "sourceCorrectOptionText": "Nejpravděpodobnější jádro obtíže leží právě ve vizuální orientaci a kontrastu.",
-        "reviewedCorrectOptionText": "Nejpravděpodobnější jádro obtíže leží právě ve vizuální orientaci a kontrastu.",
+        "sourceCorrectOptionText": "Nejpravděpodobnější vysvětlení obtíže leží právě ve vizuální orientaci a kontrastu.",
+        "reviewedCorrectOptionText": "Nejpravděpodobnější vysvětlení obtíže leží právě ve vizuální orientaci a kontrastu.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -52089,11 +52089,11 @@ window.battery4MapHard = {
         "questionType": "negative-discrimination",
         "distractorType": "near-framework",
         "trapPattern": "hearing-access-not-enough",
-        "requiredDiscrimination": "sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování",
+        "requiredDiscrimination": "sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování",
         "signalPattern": [
-          "sluchová dostupnost sdělení vs jádro v recipročním a pragm"
+          "sluchová dostupnost sdělení vs obtíž v recipročním a pragm"
         ],
-        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování.",
+        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování.",
         "questionCore": "který znak nejméně vysvětlí čistě sluchová nedostupnost",
         "explanationCorrect": "V této úloze se nehledala nejvýstižnější varianta, ale ta, která se s popsanou situací rozchází. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: sluchová dostupnost sdělení a podstata v recipročním a pragmatickém fungování. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu.",
         "explanationDistractor": "Jiné možnosti se vztahovaly ke komunikaci také, ale přesouvaly pozornost k jiné příčině nebo jinému typu podpory. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na sluchová dostupnost sdělení a podstata v recipročním a pragmatickém fungování.",
@@ -52122,9 +52122,9 @@ window.battery4MapHard = {
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
-        "knowledgeTarget": "sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování",
+        "knowledgeTarget": "sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování",
         "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-        "keyProof": "Rozhodující je sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování.",
+        "keyProof": "Rozhodující je sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
         "formulationFlags": [],
@@ -52132,7 +52132,7 @@ window.battery4MapHard = {
         "knowledgeDemandLevel": "high",
         "processDemandLevel": "high",
         "recommendedRepairFilters": [
-          "sluchová dostupnost sdělení vs jádro v recipročním a pragmatickém fungování",
+          "sluchová dostupnost sdělení vs obtíž v recipročním a pragmatickém fungování",
           "sdílená pozornost",
           "reciproční výměna",
           "komunikační záměr",
@@ -52240,7 +52240,7 @@ window.battery4MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B04Q29",
         "conceptFamily": "PAS a sociálně-pragmatická komunikace",
-        "distinctionAxis": "typ podpory × jádro obtíže",
+        "distinctionAxis": "typ podpory × hlavní zaměření podpory",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "speciální pedagogika / disciplíny",
@@ -52454,7 +52454,7 @@ window.battery4MapHard = {
         "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
         "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
         "questionNumber": 32,
-        "questionText": "Který projev nejspíše přetrvá i po zjednodušení obsahové náročnosti instrukce, pokud je jádro obtíže v sociálně-pragmatickém fungování?",
+        "questionText": "Který projev nejspíše přetrvá i po zjednodušení obsahové náročnosti instrukce, pokud obtíž spočívá v sociálně-pragmatickém fungování?",
         "options": {
           "A": "obtíž ve změně perspektivy partnera a v recipročním navazování",
           "B": "obtíž ve čtení drobného písma na dálku",
@@ -52462,7 +52462,7 @@ window.battery4MapHard = {
           "D": "obtíž v hlasové intenzitě při fonaci"
         },
         "correctOptionText": "obtíž ve změně perspektivy partnera a v recipročním navazování",
-        "discipline": "PAS / stabilita jádra obtíže",
+        "discipline": "PAS / stabilita obtíže napříč situacemi",
         "subtopic": "co přetrvá i po zjednodušení obsahu",
         "conceptTags": [
           "změna perspektivy",
@@ -52472,12 +52472,12 @@ window.battery4MapHard = {
         "questionType": "stability-discrimination",
         "distractorType": "near-effect",
         "trapPattern": "perspective-taking-persists",
-        "requiredDiscrimination": "sociálně-pragmatické jádro vs obtíž v obsahu instrukce",
+        "requiredDiscrimination": "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce",
         "signalPattern": [
-          "sociálně-pragmatické jádro vs obtíž v obsahu instrukce"
+          "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce"
         ],
-        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje sociálně-pragmatické jádro vs obtíž v obsahu instrukce.",
-        "questionCore": "sociálně-pragmatické jádro vs obtíž v obsahu instrukce",
+        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce.",
+        "questionCore": "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce",
         "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „obtíž ve změně perspektivy partnera a v recipročním navazování“. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu.",
         "explanationDistractor": "Ostatní možnosti byly věrohodné, protože popisovaly komunikaci také, ale nevystihovaly přesně sociálně-pragmatickou rovinu problému. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Právě v tom se ukázalo, zda je odlišené sociálně-pragmatické podstata a obtíž v obsahu instrukce.",
         "commonMisconception": "Studenti často sledují formu řeči, ale méně už to, jak člověk zachází s kontextem a vztahem k partnerovi. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -52487,7 +52487,7 @@ window.battery4MapHard = {
         "legislationRef": "oborové vymezení PAS a sociálně-pragmatické komunikace",
         "likelyErrorTypes": [
           "obsah-vs-pragmatika-záměna",
-          "stabilní-jádro-obtíže"
+          "stabilita-obtíže-napříč-situacemi"
         ],
         "repairTags": [
           "změna perspektivy",
@@ -52505,9 +52505,9 @@ window.battery4MapHard = {
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
-        "knowledgeTarget": "sociálně-pragmatické jádro vs obtíž v obsahu instrukce",
+        "knowledgeTarget": "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce",
         "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-        "keyProof": "Rozhodující je sociálně-pragmatické jádro vs obtíž v obsahu instrukce.",
+        "keyProof": "Rozhodující je sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
         "formulationFlags": [],
@@ -52515,7 +52515,7 @@ window.battery4MapHard = {
         "knowledgeDemandLevel": "high",
         "processDemandLevel": "high",
         "recommendedRepairFilters": [
-          "sociálně-pragmatické jádro vs obtíž v obsahu instrukce",
+          "sociálně-pragmatická podstata obtíže vs obtíž v obsahu instrukce",
           "změna perspektivy",
           "reciprocita",
           "zjednodušení instrukce"
@@ -52524,7 +52524,7 @@ window.battery4MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B04Q32",
         "conceptFamily": "PAS a sociálně-pragmatická komunikace",
-        "distinctionAxis": "obsah instrukce × sociálně-pragmatické jádro",
+        "distinctionAxis": "obsah instrukce × sociálně-pragmatická podstata obtíže",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "speciální pedagogika / disciplíny",
@@ -52644,7 +52644,7 @@ window.battery4MapHard = {
         "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
         "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
         "questionNumber": 34,
-        "questionText": "Které přiřazení termínu a jádra obtíže je správné?",
+        "questionText": "Které přiřazení termínu a hlavní oblasti obtíží je správné?",
         "options": {
           "A": "dysfonie — patologická změna kvality hlasu",
           "B": "afonie — překotné tempo řeči bez bloků",
@@ -52668,7 +52668,7 @@ window.battery4MapHard = {
           "porucha kvality hlasu vs úplná ztráta hlasu, rezonance a d"
         ],
         "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje porucha kvality hlasu vs úplná ztráta hlasu, rezonance a další osy.",
-        "questionCore": "které přiřazení termínu a jádra obtíže je správné",
+        "questionCore": "které přiřazení termínu a hlavní oblasti obtíží je správné",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „dysfonie — patologická změna kvality hlasu“. Dysfonie a příbuzné pojmy se týkají kvality hlasu; neřeší tedy primárně obsah řeči, ale její hlasovou realizaci.",
         "explanationDistractor": "Jiné pojmy byly blízko projevu, který je v zadání nápadný, ale patřily k jiné odborné oblasti nebo k jiné rovině popisu. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na porucha kvality hlasu a úplná ztráta hlasu, rezonance a další osy.",
         "commonMisconception": "Často se plete nápadný projev s tím, jaký odborný okruh skutečně vyšetřujeme nebo popisujeme. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -52717,7 +52717,7 @@ window.battery4MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B04Q34",
         "conceptFamily": "klasifikační a terminologické rozlišení",
-        "distinctionAxis": "termín × jádro obtíže",
+        "distinctionAxis": "termín × hlavní oblast obtíží",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "speciální pedagogika / disciplíny",
@@ -54415,7 +54415,7 @@ window.battery5MapHard = {
           "zachovaný cíl činnosti a změněná cesta k cíli"
         ],
         "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje zachovaný cíl činnosti a změněná cesta k cíli.",
-        "questionCore": "co je jádrem kompenzace",
+        "questionCore": "v čem spočívá kompenzace",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Jde spíše o kompenzaci než o reedukaci“. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou.",
         "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí zachovaný cíl činnosti a změněná cesta k cíli.",
         "commonMisconception": "Často se plete, zda podpora zlepšuje oslabenou funkci, nebo jen vytváří jinou cestu k výkonu. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -54749,7 +54749,7 @@ window.battery5MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B05Q05",
         "conceptFamily": "intervenční rámce",
-        "distinctionAxis": "definiční jádro",
+        "distinctionAxis": "základní vymezení",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "speciální pedagogika / intervence",
@@ -54845,7 +54845,7 @@ window.battery5MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B05Q06",
         "conceptFamily": "intervenční rámce",
-        "distinctionAxis": "definiční jádro",
+        "distinctionAxis": "základní vymezení",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "speciální pedagogika / intervence",
@@ -55466,17 +55466,17 @@ window.battery5MapHard = {
         "questionType": "application-discrimination",
         "distractorType": "near-process",
         "trapPattern": "keyboard-as-compensation",
-        "requiredDiscrimination": "obsahový cíl bez grafomotorického jádra a reedukační trénink psaní",
+        "requiredDiscrimination": "obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní",
         "signalPattern": [
-          "obsahový cíl bez grafomotorického jádra a reedukační tréni"
+          "obsahový cíl bez dominance grafomotorické bariéry a reedukační tréni"
         ],
-        "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje obsahový cíl bez grafomotorického jádra a reedukační trénink psaní.",
+        "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní.",
         "questionCore": "jak číst použití klávesnice",
-        "explanationCorrect": "Smyslem otázky bylo vytipovat možnost, která je v daném kontextu nejméně přesná. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: obsahový cíl bez grafomotorického jádra a reedukační trénink psaní. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou.",
-        "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí obsahový cíl bez grafomotorického jádra a reedukační trénink psaní.",
+        "explanationCorrect": "Smyslem otázky bylo vytipovat možnost, která je v daném kontextu nejméně přesná. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou.",
+        "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní.",
         "commonMisconception": "Často se plete, zda podpora zlepšuje oslabenou funkci, nebo jen vytváří jinou cestu k výkonu. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
         "whyWrongCategory": "Chybná volba zpravidla ukazuje, že se neodlišil hlavní cíl podpory. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
-        "microLesson": "U podpůrných postupů je dobré si vždy položit otázku, co je jejich hlavním cílem. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená obsahový cíl bez grafomotorického jádra a reedukační trénink psaní.",
+        "microLesson": "U podpůrných postupů je dobré si vždy položit otázku, co je jejich hlavním cílem. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní.",
         "recommendedRecallPrompt": "Jaký je hlavní cíl tohoto přístupu a čím se liší od jiné podpory, která vypadá na první pohled podobně?",
         "legislationRef": "oborové speciálněpedagogické vymezení",
         "likelyErrorTypes": [
@@ -55500,9 +55500,9 @@ window.battery5MapHard = {
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
-        "knowledgeTarget": "obsahový cíl bez grafomotorického jádra a reedukační trénink psaní",
+        "knowledgeTarget": "obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní",
         "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-        "keyProof": "Rozhodující je obsahový cíl bez grafomotorického jádra a reedukační trénink psaní.",
+        "keyProof": "Rozhodující je obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
         "formulationFlags": [
@@ -55512,7 +55512,7 @@ window.battery5MapHard = {
         "knowledgeDemandLevel": "high",
         "processDemandLevel": "high",
         "recommendedRepairFilters": [
-          "obsahový cíl bez grafomotorického jádra a reedukační trénink psaní",
+          "obsahový cíl bez dominance grafomotorické bariéry a reedukační trénink psaní",
           "kompenzace",
           "klávesnice",
           "grafomotorika",
@@ -55942,12 +55942,12 @@ window.battery5MapHard = {
         "options": {
           "A": "může pracovat s nácvikem běžných denních činností",
           "B": "může sledovat funkční účast v reálných situacích",
-          "C": "její jádro spočívá jen v nácviku hlásek a hlasu",
+          "C": "její podstata spočívá jen v nácviku hlásek a hlasu",
           "D": "souvisí s využitím činnosti jako prostředku podpory"
         },
-        "correctOptionText": "její jádro spočívá jen v nácviku hlásek a hlasu",
+        "correctOptionText": "její podstata spočívá jen v nácviku hlásek a hlasu",
         "discipline": "intervence / terapie",
-        "subtopic": "co není jádrem ergoterapie",
+        "subtopic": "co není hlavní náplní ergoterapie",
         "conceptTags": [
           "ergoterapie",
           "běžné činnosti",
@@ -55962,7 +55962,7 @@ window.battery5MapHard = {
           "činnostní a participační rámec a artikulační rámec"
         ],
         "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje činnostní a participační rámec a artikulační rámec.",
-        "questionCore": "co nepatří do jádra ergoterapie",
+        "questionCore": "co nepatří do hlavní náplně ergoterapie",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „její podstata spočívá jen v nácviku hlásek a hlasu“. Ergoterapie podporuje soběstačnost a funkční zapojení do běžných činností; fyzioterapie se více soustředí na pohybový systém.",
         "explanationDistractor": "Ostatní přístupy jsou v praxi také používané, ale každý sleduje jiný hlavní účel a pracuje jiným způsobem. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí činnostní a participační rámec a artikulační rámec.",
         "commonMisconception": "Běžný omyl je vybírat přístup podle povědomého názvu, ne podle jeho hlavního cíle. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -55985,8 +55985,8 @@ window.battery5MapHard = {
         "sourceCorrectLetter": "C",
         "reviewedCorrectLetter": "C",
         "effectiveCorrectLetter": "C",
-        "sourceCorrectOptionText": "její jádro spočívá jen v nácviku hlásek a hlasu",
-        "reviewedCorrectOptionText": "její jádro spočívá jen v nácviku hlásek a hlasu",
+        "sourceCorrectOptionText": "její podstata spočívá jen v nácviku hlásek a hlasu",
+        "reviewedCorrectOptionText": "její podstata spočívá jen v nácviku hlásek a hlasu",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -56038,12 +56038,12 @@ window.battery5MapHard = {
         "options": {
           "A": "může souviset s pohybovými funkcemi a motorickým systémem",
           "B": "může mít význam pro držení těla, koordinaci nebo mobilitu",
-          "C": "její jádro spočívá primárně v podpoře funkční komunikace a náhradě řeči",
+          "C": "její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči",
           "D": "její cíl se váže k pohybové stránce fungování"
         },
-        "correctOptionText": "její jádro spočívá primárně v podpoře funkční komunikace a náhradě řeči",
+        "correctOptionText": "její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči",
         "discipline": "intervence / terapie",
-        "subtopic": "co není jádrem fyzioterapie",
+        "subtopic": "co není hlavní náplní fyzioterapie",
         "conceptTags": [
           "fyzioterapie",
           "pohybový systém",
@@ -56058,7 +56058,7 @@ window.battery5MapHard = {
           "motorický rámec a komunikační rámec"
         ],
         "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje motorický rámec a komunikační rámec.",
-        "questionCore": "co nepatří do jádra fyzioterapie",
+        "questionCore": "co nepatří do hlavní náplně fyzioterapie",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči“. Fyzioterapie pracuje především s pohybem, držením těla a funkcí pohybového aparátu, ne s celkovou organizací denních činností.",
         "explanationDistractor": "Ostatní přístupy jsou v praxi také používané, ale každý sleduje jiný hlavní účel a pracuje jiným způsobem. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na motorický rámec a komunikační rámec.",
         "commonMisconception": "Běžný omyl je vybírat přístup podle povědomého názvu, ne podle jeho hlavního cíle. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -56081,8 +56081,8 @@ window.battery5MapHard = {
         "sourceCorrectLetter": "C",
         "reviewedCorrectLetter": "C",
         "effectiveCorrectLetter": "C",
-        "sourceCorrectOptionText": "její jádro spočívá primárně v podpoře funkční komunikace a náhradě řeči",
-        "reviewedCorrectOptionText": "její jádro spočívá primárně v podpoře funkční komunikace a náhradě řeči",
+        "sourceCorrectOptionText": "její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči",
+        "reviewedCorrectOptionText": "její podstata spočívá primárně v podpoře funkční komunikace a náhradě řeči",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -56236,9 +56236,9 @@ window.battery5MapHard = {
           "A": "může podporovat orientaci, jistotu a kontakt",
           "B": "bývá spojována i s pojmem bazální dialog",
           "C": "je nejvíce spojena s Andreasem D. Fröhlichem",
-          "D": "jejím jádrem je především náhrada řeči symbolickým systémem"
+          "D": "její hlavní funkcí je především náhrada řeči symbolickým systémem"
         },
-        "correctOptionText": "jejím jádrem je především náhrada řeči symbolickým systémem",
+        "correctOptionText": "její hlavní funkcí je především náhrada řeči symbolickým systémem",
         "discipline": "intervence / terapie",
         "subtopic": "co nepatří k bazální stimulaci",
         "conceptTags": [
@@ -56256,7 +56256,7 @@ window.battery5MapHard = {
         ],
         "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje bazální stimulace a náhrada řeči symbolickým systémem.",
         "questionCore": "co nejméně přesně patří k bazální stimulaci",
-        "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „jejím jádrem je především náhrada řeči symbolickým systémem“. Bazální stimulace využívá jednoduché smyslové a tělové podněty k podpoře vnímání, jistoty a kontaktu s okolím.",
+        "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „její hlavní funkcí je především náhrada řeči symbolickým systémem“. Bazální stimulace využívá jednoduché smyslové a tělové podněty k podpoře vnímání, jistoty a kontaktu s okolím.",
         "explanationDistractor": "Ostatní přístupy jsou v praxi také používané, ale každý sleduje jiný hlavní účel a pracuje jiným způsobem. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na bazální stimulace a náhrada řeči symbolickým systémem.",
         "commonMisconception": "Běžný omyl je vybírat přístup podle povědomého názvu, ne podle jeho hlavního cíle. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
         "whyWrongCategory": "Chybná odpověď naznačuje, že byl zvolen přístup podle názvu, ne podle jeho účelu. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
@@ -56279,8 +56279,8 @@ window.battery5MapHard = {
         "sourceCorrectLetter": "D",
         "reviewedCorrectLetter": "D",
         "effectiveCorrectLetter": "D",
-        "sourceCorrectOptionText": "jejím jádrem je především náhrada řeči symbolickým systémem",
-        "reviewedCorrectOptionText": "jejím jádrem je především náhrada řeči symbolickým systémem",
+        "sourceCorrectOptionText": "její hlavní funkcí je především náhrada řeči symbolickým systémem",
+        "reviewedCorrectOptionText": "její hlavní funkcí je především náhrada řeči symbolickým systémem",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
