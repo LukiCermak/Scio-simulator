@@ -2,6 +2,18 @@
 (function(){
   "use strict";
 
+  function getUiShared() { return window.SCIO_V4_SHARED || {}; }
+  function prettifyUiLabel(value) {
+    const shared = getUiShared();
+    return typeof shared.prettifyUiLabel === "function" ? shared.prettifyUiLabel(value) : String(value || "").trim();
+  }
+  function formatUserRepairFilterList(items) {
+    const shared = getUiShared();
+    return typeof shared.formatUserRepairFilterList === "function"
+      ? shared.formatUserRepairFilterList(items)
+      : (Array.isArray(items) ? items.map(v => String(v || "").trim()).filter(Boolean) : []);
+  }
+
   function escapeAttr(value) {
     return escapeHtml(String(value == null ? "" : value)).replace(/"/g, "&quot;");
   }
@@ -363,7 +375,7 @@ function renderWeaknessMap() {
     const panel = $("repairPanel");
     if (!visible.length) { panel.classList.add("hidden"); panel.innerHTML = ""; return; }
     panel.classList.remove("hidden");
-    panel.innerHTML = `<div class="dashboard"><h4>Opravné sady v4</h4><div class="action-grid">${visible.map((item, idx) => `<div class="action-card"><h5>${escapeHtml(item.label)}</h5><p>${item.count} otázek</p><button class="btn btn-primary btn-sm" data-repair-index="${idx}" type="button">Spustit opravnou sadu</button></div>`).join("")}</div></div>`;
+    panel.innerHTML = `<div class="dashboard"><h4>Doporučené opravné sady</h4><div class="action-grid">${visible.map((item, idx) => `<div class="action-card"><h5>${escapeHtml(item.label)}</h5><p>${item.count} otázek</p><button class="btn btn-primary btn-sm" data-repair-index="${idx}" type="button">Spustit opravnou sadu</button></div>`).join("")}</div></div>`;
     panel.querySelectorAll("[data-repair-index]").forEach(btn => btn.addEventListener("click", () => startRepairModeFromResults(visible[Number(btn.dataset.repairIndex)].key)));
   }
   window.renderRepairPanel = renderRepairPanel;
@@ -387,25 +399,26 @@ function stripTutorLeadingCorrectPrefix(text) {
 }
 
 function pickTutorSignal(question, metadata) {
-  const patterns = Array.isArray(metadata?.signalPattern) ? metadata.signalPattern.map(item => normalizeTutorText(item)).filter(Boolean) : [];
-  const direct = normalizeTutorText(metadata?.signalHint || "");
+  const patterns = Array.isArray(metadata?.signalPattern) ? metadata.signalPattern.map(item => prettifyUiLabel(normalizeTutorText(item))).filter(Boolean) : [];
+  const direct = prettifyUiLabel(normalizeTutorText(metadata?.signalHint || ""));
   if (patterns.length) return patterns[0];
   if (direct) {
-    const parts = direct.split(/[:;,]/).map(part => normalizeTutorText(part)).filter(Boolean);
+    const parts = direct.split(/[:;,]/).map(part => prettifyUiLabel(normalizeTutorText(part))).filter(Boolean);
     return parts.find(part => part.length <= 60) || parts[0] || direct;
   }
   const source = String(question?.text || "");
-  const match = source.match(/\b(není|nesprávně|neplatí|nejlépe|nejpřesněji|nejvhodnější|první krok|typicky|nejčastěji)\b/i);
-  return match ? match[0] : "klíčové rozlišení";
+  const match = source.match(/(není|nesprávně|neplatí|nejlépe|nejpřesněji|nejvhodnější|první krok|typicky|nejčastěji)/i);
+  return match ? `Pozor na výraz „${match[0]}“` : "Rozhoduje jemné rozlišení významu";
 }
 
 function buildTutorCorrectReason(question, metadata) {
   const explanation = stripTutorLeadingCorrectPrefix(metadata?.explanationCorrect || "");
-  const discrimination = normalizeTutorText(metadata?.requiredDiscrimination || metadata?.questionCore || metadata?.distinctionAxis || "");
+  const discrimination = prettifyUiLabel(normalizeTutorText(metadata?.requiredDiscrimination || metadata?.questionCore || metadata?.distinctionAxis || ""));
   if (explanation) return explanation;
   const pieces = [
-    discrimination ? `Rozhodující je přesně držet rozlišení ${discrimination}.` : "",
-    question?.correct != null ? `Správná možnost je ${getReviewOptionDescriptor(question, question.correct)}.` : ""
+    "Správná odpověď nejlépe odpovídá tomu, na co se otázka skutečně ptá.",
+    discrimination ? `Rozhoduje hlavně toto rozlišení: ${discrimination}.` : "",
+    question?.correct != null ? `V této otázce je správně ${getReviewOptionDescriptor(question, question.correct)}.` : ""
   ].filter(Boolean);
   return pieces.join(" ");
 }
@@ -413,25 +426,25 @@ function buildTutorCorrectReason(question, metadata) {
 function buildTutorDistractorText(question, state, metadata, isCorrect, isUnanswered) {
   const selectedLabel = state?.selectedAnswer == null ? "" : getReviewOptionDescriptor(question, state.selectedAnswer);
   const baseTrap = normalizeTutorText(metadata?.explanationDistractor || metadata?.commonMisconception || "");
-  const discrimination = normalizeTutorText(metadata?.requiredDiscrimination || metadata?.questionCore || metadata?.distinctionAxis || "");
+  const discrimination = prettifyUiLabel(normalizeTutorText(metadata?.requiredDiscrimination || metadata?.questionCore || metadata?.distinctionAxis || ""));
   if (isUnanswered) {
     return [
       "Otázka zůstala bez odpovědi.",
       baseTrap || "",
-      discrimination ? `Při návratu si hlídej hlavně rozdíl ${discrimination}.` : ""
+      discrimination ? `Při návratu si zkus nejdřív pojmenovat právě toto rozlišení: ${discrimination}.` : ""
     ].filter(Boolean).join(" ");
   }
   if (isCorrect) {
     return [
-      "Správná volba obstála i proti blízkým distraktorům.",
-      baseTrap ? `Nejčastější past v této rodině je: ${baseTrap}` : "",
-      discrimination ? `Rozhodující bylo udržet rozlišení ${discrimination}.` : ""
+      "Ostatní možnosti byly blízké, ale posouvaly význam jinam.",
+      baseTrap || "",
+      discrimination ? `Správná volba obstála hlavně proto, že drží toto rozlišení: ${discrimination}.` : ""
     ].filter(Boolean).join(" ");
   }
   return [
-    selectedLabel ? `Zvolená možnost ${selectedLabel} patří do stejné tematické rodiny, a proto působí věrohodně.` : "",
+    selectedLabel ? `Zvolená možnost ${selectedLabel} působí věrohodně, protože se drží stejného tématu.` : "",
     baseTrap || "",
-    discrimination ? `Nevystihuje ale rozhodující rozdíl ${discrimination}.` : ""
+    discrimination ? `Nestačí ale pro rozlišení, které otázka požaduje: ${discrimination}.` : ""
   ].filter(Boolean).join(" ");
 }
 
@@ -441,9 +454,9 @@ function buildTutorTheoryText(metadata) {
   const discipline = normalizeTutorText(metadata?.discipline || "");
   const subtopic = normalizeTutorText(metadata?.subtopic || "");
   const parts = [
-    lesson || "Vrať se k jádru otázky a teprve potom porovnávej možnosti.",
-    recall ? `Pro upevnění: ${recall}` : "",
-    (discipline || subtopic) ? `Okruh: ${[discipline, subtopic].filter(Boolean).join(" · ")}.` : ""
+    lesson || "Nejdřív si přesně pojmenuj, na co se otázka ptá, a teprve potom porovnávej možnosti.",
+    recall ? `Zkus si nahlas shrnout: ${recall}` : "",
+    (discipline || subtopic) ? `Téma: ${[discipline, subtopic].filter(Boolean).join(" · ")}.` : ""
   ].filter(Boolean);
   return parts.join(" ");
 }
@@ -454,12 +467,12 @@ function buildTutorDiagnostics(question, state, metadata, isCorrect, isUnanswere
   const tempoText = (state?.timeSpentMs || 0) >= 60000 ? "Rozhodování bylo pomalejší." : (state?.timeSpentMs || 0) > 0 ? "Tempo bylo v normě." : "";
   const changeText = (state?.answerChanges || 0) >= 2 ? "Odpověď se vícekrát měnila." : ((state?.answerChanges || 0) === 1 ? "Odpověď byla jednou změněna." : "");
   if (isUnanswered) {
-    return [confidenceText, tempoText, "Trenažér to bere jako neuzavřené rozhodnutí.", errorLabel ? `Nejbližší štítek chyby: ${errorLabel}.` : ""].filter(Boolean).join(" ");
+    return [confidenceText, tempoText, "Rozhodnutí zůstalo otevřené.", errorLabel ? `Tomu je nejblíž chyba typu: ${errorLabel}.` : ""].filter(Boolean).join(" ");
   }
   if (isCorrect) {
-    return [confidenceText, tempoText, changeText, "V této položce je výkon stabilní."].filter(Boolean).join(" ");
+    return [confidenceText, tempoText, changeText, "Tentokrát je výsledek stabilní."].filter(Boolean).join(" ");
   }
-  return [confidenceText, tempoText, changeText, errorLabel ? `Trenažér tuto chybu řadí jako: ${errorLabel}.` : "", normalizeTutorText(metadata?.whyWrongCategory || "")].filter(Boolean).join(" ");
+  return [confidenceText, tempoText, changeText, errorLabel ? `Nejblíž je tomu chyba typu: ${errorLabel}.` : "", normalizeTutorText(metadata?.whyWrongCategory || "")].filter(Boolean).join(" ");
 }
 
 function renderReview() {
@@ -519,12 +532,12 @@ function renderReviewExplanationTab(item) {
   return `
     <div class="review-content hidden" data-content="explanation">
       <div class="review-explainer-list">
-        <div class="review-explainer-item"><strong>Signální slovo / obrat</strong>${escapeHtml(pickTutorSignal(q, m) || "—")}</div>
+        <div class="review-explainer-item"><strong>Na co si dát pozor</strong>${escapeHtml(pickTutorSignal(q, m) || "—")}</div>
         <div class="review-explainer-item"><strong>Proč je správně</strong>${escapeHtml(buildTutorCorrectReason(q, m) || "—")}</div>
-        <div class="review-explainer-item"><strong>Lákavý distraktor</strong>${escapeHtml(buildTutorDistractorText(q, qs, m, isCorrect, isUnanswered) || "—")}</div>
-        <div class="review-explainer-item"><strong>Teoretické okénko</strong>${escapeHtml(buildTutorTheoryText(m) || "—")}</div>
-        <div class="review-explainer-item"><strong>Diagnostika trenažéru</strong>${escapeHtml(buildTutorDiagnostics(q, qs, m, isCorrect, isUnanswered) || "—")}</div>
-        <div class="review-explainer-item"><strong>Související opravný filtr</strong>${escapeHtml((m.recommendedRepairFilters || []).join(", ") || m.subtopic || "—")}</div>
+        <div class="review-explainer-item"><strong>Kde bývá nejbližší omyl</strong>${escapeHtml(buildTutorDistractorText(q, qs, m, isCorrect, isUnanswered) || "—")}</div>
+        <div class="review-explainer-item"><strong>Co si z toho odnést</strong>${escapeHtml(buildTutorTheoryText(m) || "—")}</div>
+        <div class="review-explainer-item"><strong>Jak to vyšlo tentokrát</strong>${escapeHtml(buildTutorDiagnostics(q, qs, m, isCorrect, isUnanswered) || "—")}</div>
+        <div class="review-explainer-item"><strong>Kam se vrátit</strong>${escapeHtml(formatUserRepairFilterList(m.recommendedRepairFilters || []).join(", ") || m.subtopic || "—")}</div>
       </div>
       <div class="review-actions-row">
         <button class="btn btn-outline btn-sm add-revision-btn" data-qi="${qIndex}" type="button">${qs.addedToRevision ? "Odebrat z cíleného opakování" : "Přidat do cíleného opakování"}</button>
@@ -549,7 +562,7 @@ function renderReviewItem(qIndex) {
     <div class="review-body">
       <div class="review-tabs">
         <button class="review-tab active" data-tab="result" type="button">Výsledek</button>
-        <button class="review-tab" data-tab="explanation" type="button">Výklad učitele</button>
+        <button class="review-tab" data-tab="explanation" type="button">Tutor</button>
       </div>
       ${renderReviewResultTab(data)}
       ${renderReviewExplanationTab(data)}

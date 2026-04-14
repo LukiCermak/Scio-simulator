@@ -3,16 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SCIO simulátor v4</title>
+  <title>SCIO simulátor UPOL – Speciální pedagogika – poradenství</title>
   <link rel="stylesheet" href="styles_v4.css" />
-  <script src="data_metadata.js" defer></script>
-  <script src="data_metadata_hard.js" defer></script>
-  <script src="data_v4_questions.js" defer></script>
-  <script src="data_v4_questions_hard.js" defer></script>
-  <script src="analytics_v4.js" defer></script>
-  <script src="render_v4.js" defer></script>
-  <script src="app_core_v4.js" defer></script>
-  <script src="bootstrap_v4.js" defer></script>
+
+  <script>
+    (function(){
+      const scriptGroups = [
+        ["data_metadata_normal.js", "data_metadata.js"],
+        ["data_metadata_hard.js"],
+        ["data_v4_questions_normal.js", "data_v4_questions.js"],
+        ["data_v4_questions_hard.js"],
+        ["analytics_v4.js"],
+        ["render_v4.js"],
+        ["app_core_v4.js"],
+        ["bootstrap_v4.js"]
+      ];
+
+      function loadCandidate(src) {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = src;
+          script.defer = false;
+          script.async = false;
+          script.onload = () => resolve(src);
+          script.onerror = () => {
+            script.remove();
+            reject(new Error(src));
+          };
+          document.head.appendChild(script);
+        });
+      }
+
+      async function loadGroup(group) {
+        let lastError = null;
+        for (const src of group) {
+          try {
+            await loadCandidate(src);
+            return src;
+          } catch (err) {
+            lastError = err;
+          }
+        }
+        throw lastError || new Error(group.join(", "));
+      }
+
+      async function boot() {
+        for (const group of scriptGroups) {
+          await loadGroup(group);
+        }
+      }
+
+      boot().catch((err) => {
+        console.error("Nepodařilo se načíst všechny skripty aplikace.", err);
+        document.documentElement.classList.add("app-load-failed");
+      });
+    })();
+  </script>
 </head>
 <body>
 
@@ -24,9 +70,9 @@
           <div class="sq2"></div>
           <div class="sq3"></div>
         </div>
-        <h1>SCIO simulátor <span style="font-size:14px;color:var(--blue);vertical-align:super;">v4</span></h1>
+        <h1>SCIO simulátor <span style="font-size:14px;color:var(--blue);vertical-align:super;">UPOL / nMgr. poradenství</span></h1>
       </div>
-      <p class="sub">UPOL – SPP adaptivní simulátor a cílený trénink</p>
+      <p class="sub">UPOL – Speciální pedagogika – poradenství · simulátor a cílený trénink</p>
     </div>
   </div>
 
@@ -36,7 +82,7 @@
       <div class="hero">
         <div class="hero-card panel">
           <h2>Vyber si baterii, obtížnost a spusť simulaci, trénink čtení zadání nebo cílenou opravnou sadu</h2>
-          <p>Simulátor obsahuje základní i pokročilou vrstvu. V každém režimu je 7 profilových baterií a 1 finální syntetická baterie. Každá pracuje s rámcem 50 otázek / 30 minut, ale zaměřuje se na jiný okruh, typ formulací a úroveň náročnosti.</p>
+          <p>Simulátor obsahuje režim NORMAL a HARD. V každém režimu je 7 profilových baterií a 1 finální syntetická baterie. Každá pracuje s rámcem 50 otázek / 30 minut, ale zaměřuje se na jiný okruh, typ formulací a úroveň náročnosti.</p>
           <div class="hero-note hero-note-rich">
             <div class="hero-note-head">
               <strong>Co od simulátoru čekat</strong>
@@ -47,7 +93,7 @@
                 <span class="hero-note-icon" aria-hidden="true">🧩</span>
                 <div class="hero-note-copy">
                   <strong>2 režimy · 8 baterií na režim · 800 otázek</strong>
-                  <span>Můžeš přepínat mezi základní a pokročilou vrstvou. Dashboard přitom dál sčítá výsledky napříč oběma režimy.</span>
+                  <span>Můžeš přepínat mezi režimem NORMAL a HARD. Dashboard přitom dál sčítá výsledky napříč oběma režimy.</span>
                 </div>
               </div>
               <div class="hero-note-item">
@@ -88,16 +134,16 @@
             </div>
           </div>
           <div class="stats">
-            <div class="stat-card"><div class="stat-label">Otázky v bance</div><div class="stat-value" id="statQuestions">800</div><div class="stat-sub">Souhrn všech otázek napříč základní i pokročilou vrstvou.</div></div>
+            <div class="stat-card"><div class="stat-label">Otázky v bance</div><div class="stat-value" id="statQuestions">800</div><div class="stat-sub">Souhrn všech otázek napříč režimy NORMAL a HARD.</div></div>
             <div class="stat-card"><div class="stat-label">Čas na test</div><div class="stat-value">30 min</div><div class="stat-sub">Stejný rámec jako u oficiálně popsaného testu UPOL SPP.</div></div>
             <div class="stat-card"><div class="stat-label">Režimy obtížnosti</div><div class="stat-value">2</div><div class="stat-sub">V každém režimu je 8 baterií: 7 profilových a 1 finální syntetická.</div></div>
           </div>
         </div>
         <aside class="panel detail-card" id="batteryDetail">
-          <div class="detail-top"><div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie v celé bance.</p></div><span class="badge">—</span></div>
+          <div class="detail-top"><div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel baterie, hlavní témata, rozpis typů úloh a její role v celé bance.</p></div><span class="badge">—</span></div>
           <div class="detail-block"><div class="detail-label">Účel</div><div class="detail-copy detail-purpose" id="detailPurpose"><p>Zatím není vybraná žádná baterie.</p></div></div>
-          <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips" id="detailDominant"></div></div>
-          <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list" id="detailBreakdown"></ul></div>
+          <div class="detail-block"><div class="detail-label">Převažující témata</div><div class="chips" id="detailDominant"></div></div>
+          <div class="detail-block"><div class="detail-label">Rozpis typů úloh</div><ul class="compact-list" id="detailBreakdown"></ul></div>
           <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy" id="detailProfile"></div></div>
         </aside>
       </div>
@@ -106,7 +152,7 @@
       <div class="config-panel" id="configPanel">
         <h4>Jak dnes poběžím</h4>
         <div class="config-row">
-          <div class="config-section"><div class="config-section-label">Obtížnost</div><div class="config-options" id="configDifficulty"><button class="config-opt active" data-difficulty="basic" type="button">Základní</button><button class="config-opt" data-difficulty="hard" type="button">Pokročilá</button></div><div class="config-help" id="difficultyHelp">Základní režim je výchozí. Dashboard dál agreguje výsledky napříč oběma režimy.</div></div>
+          <div class="config-section"><div class="config-section-label">Obtížnost</div><div class="config-options" id="configDifficulty"><button class="config-opt active" data-difficulty="basic" type="button">NORMAL</button><button class="config-opt" data-difficulty="hard" type="button">HARD</button></div><div class="config-help" id="difficultyHelp">NORMAL je výchozí režim. Dashboard dál agreguje výsledky napříč režimy NORMAL i HARD.</div></div>
           <div class="config-section"><div class="config-section-label">Režim práce</div><div class="config-options" id="configMode"><button class="config-opt active" data-mode="simulation" type="button">Simulace testu</button><button class="config-opt" data-mode="reading-training" type="button">Trénink čtení</button><button class="config-opt" data-mode="repair" type="button" disabled id="repairModeOpt">Opravný režim</button></div></div>
           <div class="config-section"><div class="config-section-label">Cíl</div><div class="config-options" id="configGoal"><button class="config-opt" data-goal="speed" type="button">Rychlost</button><button class="config-opt" data-goal="accuracy" type="button">Přesnost</button><button class="config-opt active" data-goal="attention" type="button">Pozornost</button></div></div>
         </div>
@@ -166,7 +212,7 @@
           <button class="btn btn-outline btn-sm" id="changeBatteryBtn" type="button">Návrat do hlavního menu</button>
           <button class="btn btn-danger btn-sm" id="finishBtn" type="button">Vyhodnotit test</button>
         </div>
-        <div class="warning" style="margin-top:10px; font-size:13px;">Klávesy: A–D odpověď · ←→ navigace · F označit · 1/2/3 jistota · R odkrýt odpovědi · Mezerník režim soustředění</div>
+        <div class="warning" style="margin-top:10px; font-size:13px;">⌨️ Klávesy: A–D odpověď · ←/→ pohyb · F označit · 1/2/3 jistota · R zobrazit možnosti · Mezerník režim soustředění</div>
       </aside>
 
       <main class="panel main">

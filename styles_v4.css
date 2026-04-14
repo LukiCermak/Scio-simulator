@@ -86,7 +86,8 @@
     /* Detail card */
     .detail-card { padding:24px; display:flex; flex-direction:column; gap:16px; background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%); }
     .detail-top { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; padding-bottom:14px; border-bottom:1px solid #e4edf3; }
-    .detail-top h3 { margin:0 0 8px; font-size:22px; line-height:1.25; font-weight:800; color:#183b54; }
+    .detail-top h3 { margin:0 0 8px; font-size:22px; line-height:1.25; font-weight:800; color:#183b54; display:flex; align-items:flex-start; gap:10px; }
+    .detail-icon { display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; flex:0 0 30px; border-radius:10px; background:#eef6fb; border:1px solid #cfe7f4; font-size:16px; }
     .detail-top p { margin:0; color:#516578; line-height:1.65; font-size:15px; }
     .badge { display:inline-flex; align-items:center; justify-content:center; min-width:42px; height:32px; padding:0 12px; border-radius:999px; background:var(--blue-soft); color:var(--blue-dark); border:1px solid #cae7f5; font-weight:800; font-size:13px; flex:0 0 auto; }
     .detail-block { display:grid; gap:10px; padding:14px 16px; border-radius:16px; border:1px solid #e2ebf2; background:#f9fbfd; }
@@ -114,7 +115,9 @@
     .battery-card.selected { background:linear-gradient(180deg,#eef8fd 0%,#e6f3fb 100%); border-color:#5daed6; box-shadow:0 14px 30px rgba(23,89,122,0.12); transform:translateY(-1px); }
     .battery-card.selected::before { background:linear-gradient(90deg,#2b92c9 0%,#6cc0e6 100%); }
     .battery-card-head { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:10px; }
-    .battery-label { font-size:18px; line-height:1.28; font-weight:800; color:#183b54; }
+    .battery-label { display:flex; align-items:flex-start; gap:10px; font-size:18px; line-height:1.28; font-weight:800; color:#183b54; }
+    .battery-icon { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; flex:0 0 28px; border-radius:10px; background:#eef6fb; border:1px solid #cfe7f4; font-size:15px; }
+    .battery-card.selected .battery-icon { background:#ffffff; border-color:#b9dbed; }
     .battery-badge { display:inline-flex; align-items:center; justify-content:center; min-width:36px; height:30px; padding:0 10px; border-radius:999px; background:#edf6fb; color:var(--blue-dark); font-size:12px; font-weight:800; border:1px solid #cfe7f4; box-shadow:inset 0 1px 0 rgba(255,255,255,0.7); }
     .battery-card.selected .battery-badge { background:#2b92c9; color:white; border-color:#2b92c9; }
     .battery-subtitle { margin:0 0 14px; color:#516578; line-height:1.58; min-height:44px; font-size:14px; }
@@ -123,7 +126,7 @@
     .battery-meta { display:flex; flex-wrap:wrap; gap:8px; }
     .start-actions { display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap; margin-top:4px; }
     .selection-note { padding:13px 14px; border-radius:14px; border:1px solid #dfe7ee; background:#f8fafc; color:#46556a; line-height:1.45; flex:1 1 400px; min-width:280px; }
-    .warning { padding:14px 15px; border-radius:14px; background:var(--amber-soft); border:1px solid #f0d78f; color:#6c5608; line-height:1.5; font-size:14px; }
+    .warning { padding:14px 15px; border-radius:14px; background:var(--amber-soft); border:1px solid #f0d78f; color:#6c5608; line-height:1.55; font-size:14px; display:flex; align-items:center; gap:10px; }
 
     /* ── Config panel (NEW) ── */
     .config-panel { margin-top:20px; padding:20px; border-radius:16px; border:1px solid #e2ebf2; background:#f9fbfd; display:grid; gap:16px; }
@@ -345,8 +348,14 @@
 .review-kv { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:14px; }
 .review-kv .review-meta-item { min-height:72px; }
 .review-explainer-list { display:grid; gap:10px; margin-top:12px; }
-.review-explainer-item { border:1px solid #e2ebf2; border-radius:12px; padding:12px; background:#fff; }
-.review-explainer-item strong { display:block; margin-bottom:6px; color:#183b54; }
+.review-explainer-item { border:1px solid #e2ebf2; border-radius:12px; padding:12px; background:#fff; box-shadow:0 1px 0 rgba(255,255,255,0.9) inset; }
+.review-explainer-item:nth-child(1) { background:#f8fbfe; }
+.review-explainer-item:nth-child(2) { background:#f7fcf8; }
+.review-explainer-item:nth-child(3) { background:#fffaf4; }
+.review-explainer-item:nth-child(4) { background:#f8f7ff; }
+.review-explainer-item:nth-child(5) { background:#fbfbfd; }
+.review-explainer-item:nth-child(6) { background:#f8fbfd; }
+.review-explainer-item strong { display:block; margin-bottom:6px; color:#183b54; font-size:12px; letter-spacing:0.03em; text-transform:uppercase; }
 .start-mini-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:12px; }
 .start-mini-card { border:1px solid #dbe5ec; border-radius:14px; padding:12px; background:#fff; }
 .start-mini-card .label { font-size:12px; color:#64748b; margin-bottom:6px; }
