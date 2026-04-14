@@ -166,30 +166,49 @@
     <section class="app hidden" id="testScreen">
       <aside class="panel sidebar" id="sidebar">
         <div class="sidebar-head">
-          <h2>Testovací panel</h2>
+          <h2 id="sidebarTitle">Testovací panel</h2>
           <div class="sidebar-battery" id="sidebarBatteryLabel">Aktivní baterie: —</div>
           <div id="sidebarModeBadge"></div>
         </div>
-        <div class="meta">
-          <div class="meta-box"><strong>Počet otázek:</strong> <span id="metaCount">50</span></div>
-          <div class="meta-box"><div><strong>Časový limit:</strong></div><div class="timer" id="timer">30:00</div></div>
-          <div class="meta-box"><strong>Zodpovězeno:</strong> <span id="answeredCount">0</span> / <span id="answeredTotal">50</span></div>
+
+        <!-- STAV TEST -->
+        <div id="testSidebarContent">
+          <div class="meta">
+            <div class="meta-box"><strong>Počet otázek:</strong> <span id="metaCount">50</span></div>
+            <div class="meta-box"><div><strong>Časový limit:</strong></div><div class="timer" id="timer">30:00</div></div>
+            <div class="meta-box"><strong>Zodpovězeno:</strong> <span id="answeredCount">0</span> / <span id="answeredTotal">50</span></div>
+          </div>
+          <div class="legend">
+            <div class="legend-item"><span class="legend-box curr"></span> aktuální otázka</div>
+            <div class="legend-item"><span class="legend-box ans"></span> zodpovězená</div>
+            <div class="legend-item"><span class="legend-box flag"></span> označená</div>
+            <div class="legend-item"><span class="legend-box slow-q"></span> pomalá</div>
+            <div class="legend-item"><span class="legend-box guess-q"></span> tip</div>
+            <div class="legend-item"><span class="legend-box"></span> nezodpovězená</div>
+          </div>
+          <div class="side-actions">
+            <button class="btn btn-light btn-sm" id="focusModeBtn" type="button">⊞ Režim soustředění</button>
+            <button class="btn btn-outline btn-sm" id="changeBatteryBtn" type="button">Návrat do hlavního menu</button>
+            <button class="btn btn-danger btn-sm" id="finishBtn" type="button">Vyhodnotit test</button>
+          </div>
         </div>
-        <div class="legend">
-          <div class="legend-item"><span class="legend-box curr"></span> aktuální otázka</div>
-          <div class="legend-item"><span class="legend-box ans"></span> zodpovězená</div>
-          <div class="legend-item"><span class="legend-box flag"></span> označená</div>
-          <div class="legend-item"><span class="legend-box slow-q"></span> pomalá</div>
-          <div class="legend-item"><span class="legend-box guess-q"></span> tip</div>
-          <div class="legend-item"><span class="legend-box"></span> nezodpovězená</div>
+
+        <!-- STAV VÝSLEDKY -->
+        <div id="resultsSidebarContent" class="hidden">
+           <div class="sidebar-results-summary">
+              <div class="res-score-big" id="sideScoreBig">0%</div>
+              <div class="res-score-sub" id="sideScoreSub">0 z 50 bodů</div>
+           </div>
+           <div class="side-actions">
+              <button class="btn btn-primary btn-sm" id="restartBtn" type="button">Restartovat test</button>
+              <button class="btn btn-outline btn-sm" id="backToSelectionBtn" type="button">Zpět k výběru baterií</button>
+              <button class="btn btn-light btn-sm" id="clearSessionBtn" type="button">Vymazat uloženou relaci</button>
+              <button class="btn btn-outline btn-sm" id="repairBtn" type="button">Spustit opravnou sadu</button>
+           </div>
         </div>
-        <div class="question-grid" id="questionGrid"></div>
-        <div class="side-actions">
-          <button class="btn btn-light btn-sm" id="focusModeBtn" type="button">⊞ Režim soustředění</button>
-          <button class="btn btn-outline btn-sm" id="changeBatteryBtn" type="button">Návrat do hlavního menu</button>
-          <button class="btn btn-danger btn-sm" id="finishBtn" type="button">Vyhodnotit test</button>
-        </div>
-        <div class="warning" style="margin-top:10px; font-size:13px;">Klávesy: A–D odpověď · ←→ navigace · F označit · 1/2/3 jistota · R odkrýt odpovědi · Mezerník režim soustředění</div>
+
+        <div class="question-grid" id="questionGrid" style="margin-top:16px;"></div>
+        <div class="warning" id="sidebarWarning" style="margin-top:10px; font-size:13px;">Klávesy: A–D odpověď · ←→ navigace · F označit · 1/2/3 jistota · R odkrýt odpovědi · Mezerník režim soustředění</div>
       </aside>
 
       <main class="panel main">
@@ -266,13 +285,9 @@
             <details class="accordion-panel">
               <summary class="accordion-summary">Rozbor otázek</summary>
               <div class="accordion-content">
-                <div class="result-actions" id="resultActions" style="margin-bottom:20px;">
-                  <button class="btn btn-light" id="showReviewBtn">Zobrazit rozbor</button>
-                  <button class="btn btn-primary hidden" id="hideReviewBtn">Skrýt rozbor</button>
-                  <button class="btn btn-purple" id="repairBtn">Spustit opravný režim celkového testu</button>
-                  <button class="btn btn-light" id="restartBtn">Restartovat baterii</button>
-                  <button class="btn btn-outline" id="backToSelectionBtn">Zpět na výběr baterií</button>
-                  <button class="btn btn-outline btn-sm" id="clearSessionBtn">Vymazat uloženou relaci</button>
+                <div class="result-actions" id="resultActions" style="margin-bottom:20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+                  <button class="btn btn-primary" id="showReviewBtn">Zobrazit detailní rozbor otázek</button>
+                  <button class="btn btn-outline hidden" id="hideReviewBtn">Skrýt rozbor</button>
                 </div>
                 <div id="reviewWrap" class="hidden"></div>
               </div>

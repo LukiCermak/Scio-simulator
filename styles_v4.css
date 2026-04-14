@@ -280,7 +280,21 @@
     .q-nav.answered-flagged::after { content:""; position:absolute; top:3px; right:3px; width:6px; height:6px; border-radius:50%; background:#2d8b57; }
     .q-nav.slow { border-color:var(--amber-line); }
     .q-nav.low-confidence { border-color:var(--purple-line); }
-    .side-actions { display:grid; gap:10px; }
+    .side-actions { display:grid; gap:12px; margin-top:12px; }
+    .side-actions .btn { width: 100%; justify-content: center; display: flex; align-items: center; }
+
+    /* Results sidebar specifics */
+    .sidebar-results-summary {
+        background: linear-gradient(135deg, var(--blue-dark) 0%, #0f3d55 100%);
+        padding: 24px 20px;
+        border-radius: 16px;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(15, 59, 82, 0.15);
+    }
+    .res-score-big { font-size: 38px; font-weight: 800; line-height: 1; margin-bottom: 6px; }
+    .res-score-sub { font-size: 13px; opacity: 0.85; font-weight: 600; }
 
     /* ── Main question area ── */
     .main { padding:22px; min-height:700px; }

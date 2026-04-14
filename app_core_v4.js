@@ -756,12 +756,38 @@ function buildSessionBattery(battery, modeConfig) {
     return safe;
   }
   function setAppMode(mode) {
-    appState.appMode=mode;
-    const ss=$("startScreen"), ts=$("testScreen"), tp=$("testPane"), rp=$("resultsPane");
-    if(mode==="start"){ss.classList.remove("hidden");ts.classList.add("hidden");}
-    else{ss.classList.add("hidden");ts.classList.remove("hidden");}
-    if(mode==="test"){tp.classList.remove("hidden");rp.classList.add("hidden");}
-    if(mode==="results"){tp.classList.add("hidden");rp.classList.remove("hidden");}
+    appState.appMode = mode;
+    const ss = $("startScreen"), ts = $("testScreen"), tp = $("testPane"), rp = $("resultsPane");
+    const testSide = $("testSidebarContent"), resSide = $("resultsSidebarContent"), sideTitle = $("sidebarTitle");
+    const sideWarn = $("sidebarWarning");
+
+    if (mode === "start") {
+      ss.classList.remove("hidden");
+      ts.classList.add("hidden");
+    } else {
+      ss.classList.add("hidden");
+      ts.classList.remove("hidden");
+    }
+
+    if (mode === "test") {
+      tp.classList.remove("hidden"); 
+      rp.classList.add("hidden");
+      if (testSide) testSide.classList.remove("hidden");
+      if (resSide) resSide.classList.add("hidden");
+      if (sideTitle) sideTitle.textContent = "Testovací panel";
+      if (sideWarn) sideWarn.classList.remove("hidden");
+    } 
+    if (mode === "results") {
+      tp.classList.add("hidden"); 
+      rp.classList.remove("hidden");
+      if (testSide) testSide.classList.add("hidden");
+      if (resSide) resSide.classList.remove("hidden");
+      if (sideTitle) sideTitle.textContent = "Výsledky a akce";
+      if (sideWarn) sideWarn.classList.add("hidden");
+      
+      // Safety: scroll results to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
   
 function renderBatteryCards() {
@@ -1959,6 +1985,12 @@ function updateMeta() {
     try { renderRecommendationsPanel(); } catch (err) { console.error("SCIO v4: chyba v renderRecommendationsPanel.", err); $("recommendationsPanel").innerHTML = `<div class="dashboard" style="background:#f4fafd; border-color:#d5e7f2;"><h4 style="color:#17597a; margin-bottom:8px;">Doporučení pro další postup</h4><div class="dash-detail">Doporučení se teď nepodařilo dopočítat. Výsledek testu je ale zapsaný.</div></div>`; }
     try { renderRepairPanel(); } catch (err) { console.error("SCIO v4: chyba v renderRepairPanel.", err); $("repairPanel")?.classList.add("hidden"); }
 
+    // Populate Sidebar Stats
+    const sideScoreBig = $("sideScoreBig");
+    const sideScoreSub = $("sideScoreSub");
+    if (sideScoreBig) sideScoreBig.textContent = `${score.percentage}%`;
+    if (sideScoreSub) sideScoreSub.textContent = `${score.correct} z ${score.total} bodů`;
+
     saveCurrentSession();
   }
   function renderPerformanceSummary(score,metrics) {
@@ -2405,6 +2437,19 @@ function hideReview() {
   $("startTestBtn")?.addEventListener("click",()=>{if(appState.selectedBatteryId) startBattery(appState.selectedBatteryId);});
   $("prevBtn")?.addEventListener("click",goPrev);
   $("nextBtn")?.addEventListener("click",goNext);
+
+  // Results Sidebar Listeners
+  if ($("restartBtn")) $("restartBtn").onclick = restartBattery;
+  if ($("backToSelectionBtn")) $("backToSelectionBtn").onclick = backToSelection;
+  if ($("clearSessionBtn")) $("clearSessionBtn").onclick = function() {
+      if (confirm("Opravdu vymazat historii této relace?")) {
+          clearCurrentSession();
+          backToSelection();
+      }
+  };
+  if ($("repairBtn")) $("repairBtn").onclick = function() {
+      if (typeof startRepairModeFromResults === "function") startRepairModeFromResults("all");
+  };
   $("changeBatteryBtn")?.addEventListener("click",backToSelection);
   $("finishBtn")?.addEventListener("click",()=>{
     const s=appState.currentSession; if(!s||s.results.finished) return;
