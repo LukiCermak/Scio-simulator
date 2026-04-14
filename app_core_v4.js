@@ -1675,7 +1675,6 @@ function renderConfigPanel() {
       saveSettings();
       renderConfigPanel();
       renderBatteryCards();
-      renderBatteryDetail(appState.selectedBatteryId ? getActiveBatteryMap()[appState.selectedBatteryId] : null);
       updateSelectionState();
     };
   });
@@ -2127,7 +2126,6 @@ function selectBattery(id) {
   const battery = getActiveBatteryMap()[id] || null;
   updateSelectionState();
   renderBatteryCards();
-  renderBatteryDetail(battery);
 }
 
   
