@@ -789,7 +789,15 @@ function renderBatteryCards() {
       </div>`;
   }).join("");
   grid.querySelectorAll(".battery-card").forEach(card => {
-    card.onclick = () => selectBattery(Number(card.dataset.battery));
+    const bid = Number(card.dataset.battery);
+    card.onclick = () => {
+        if (appState.selectedBatteryId === bid) {
+            closeBatteryDetail(bid);
+        } else {
+            selectBattery(bid);
+        }
+    };
+    card.ondblclick = () => closeBatteryDetail(bid);
   });
   
   if (appState.selectedBatteryId) {
@@ -804,7 +812,6 @@ function selectBattery(id) {
   const battery = activeMap[id];
   if (!battery) return;
 
-  const prevId = appState.selectedBatteryId;
   appState.selectedBatteryId = id;
 
   // Update UI classes
@@ -820,27 +827,68 @@ function selectBattery(id) {
     
     // Smooth scroll to the expanded card
     setTimeout(() => {
-        wrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 100);
+        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 150);
   }
 
   if (typeof updateSelectionState === "function") updateSelectionState();
 }
+
+function closeBatteryDetail(id) {
+    if (appState.selectedBatteryId === id) {
+        appState.selectedBatteryId = null;
+        const wrapper = document.getElementById(`battery-wrapper-${id}`);
+        if (wrapper) wrapper.classList.remove("expanded");
+        const card = wrapper?.querySelector(".battery-card");
+        if (card) card.classList.remove("selected");
+        if (typeof updateSelectionState === "function") updateSelectionState();
+    }
+}
+window.closeBatteryDetail = closeBatteryDetail;
 
 function populateInlineDetail(battery) {
   const container = document.getElementById(`battery-detail-${battery.id}`);
   if (!container) return;
 
   const detailCopy = getBatteryDetailCopy(battery);
+  const wrapper = document.getElementById(`battery-wrapper-${battery.id}`);
+  
+  // Add Close Button to wrapper if not exists
+  if (wrapper && !wrapper.querySelector(".btn-close-detail")) {
+      const closeBtn = document.createElement("button");
+      closeBtn.className = "btn-close-detail";
+      closeBtn.innerHTML = "&times;";
+      closeBtn.title = "Zavřít detail";
+      closeBtn.onclick = (e) => {
+          e.stopPropagation();
+          closeBatteryDetail(battery.id);
+      };
+      wrapper.appendChild(closeBtn);
+  }
+
   container.innerHTML = `
-    <div class="detail-card inline-detail-layout" style="border:none; background:transparent; padding: 10px 18px 20px;">
-      <div class="detail-block"><div class="detail-label">Účel</div><div class="detail-copy detail-purpose"><p>${escapeHtml(detailCopy?.purposeText || battery.purpose)}</p></div></div>
-      <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips">${(battery.dominant || []).map(item => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div></div>
-      <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list">${(battery.breakdown || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
-      <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy">${(detailCopy?.profileParagraphs || []).map(item => `<p>${escapeHtml(item)}</p>`).join("")}</div></div>
+    <div class="inline-detail-header">
+        <h3>Detail: ${escapeHtml(battery.label)}</h3>
+        <p>${escapeHtml(battery.subtitle)}</p>
+    </div>
+    <div class="inline-detail-grid">
+      <div class="detail-main-col">
+          <div class="detail-block"><div class="detail-label">Účel baterie</div><div class="detail-copy detail-purpose"><p>${escapeHtml(detailCopy?.purposeText || battery.purpose)}</p></div></div>
+          <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy">${(detailCopy?.profileParagraphs || []).map(item => `<p>${escapeHtml(item)}</p>`).join("")}</div></div>
+      </div>
       
-      <div class="start-actions" style="margin-top: 16px; border-top: 1px solid #e2ebf2; padding-top: 16px; justify-content: center;">
-        <button class="btn btn-primary" onclick="startBattery(${battery.id})" style="width: 100%; justify-content: center; font-size: 16px; padding: 14px;">Spustit tuto baterii</button>
+      <div class="detail-side-col">
+          <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips">${(battery.dominant || []).map(item => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div></div>
+          <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list">${(battery.breakdown || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
+      </div>
+      
+      <div class="detail-full-col">
+        <div class="start-actions" style="justify-content: center; gap: 20px;">
+          <div style="text-align: center; max-width: 500px;">
+            <p style="font-size: 13px; color: #64748b; margin-bottom: 12px;">Při spuštění testu budou použity aktuální volby z levého panelu (obtížnost, režim, cíl).</p>
+            <button class="btn btn-primary" onclick="startBattery(${battery.id})" style="width: 100%; min-width: 300px; justify-content: center; font-size: 16px; padding: 16px 24px; box-shadow: 0 4px 12px rgba(43,146,201,0.3);">Spustit tuto simulaci</button>
+          </div>
+        </div>
       </div>
     </div>`;
 }
