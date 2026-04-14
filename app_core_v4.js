@@ -69,7 +69,7 @@ function normalizeDifficultyMode(value) {
   return String(value || "").trim().toLowerCase() === "hard" ? "hard" : "basic";
 }
 function getDifficultyModeLabel(mode) {
-  return normalizeDifficultyMode(mode) === "hard" ? "HARD" : "NORMAL";
+  return normalizeDifficultyMode(mode) === "hard" ? "Pokročilá" : "Základní";
 }
 function loadMetadataExport(mode = "basic") {
   return normalizeDifficultyMode(mode) === "hard"
@@ -357,130 +357,8 @@ function getActiveBatteryMap() { return getActiveDataset().batteryMap; }
 function getAllDatasetsQuestionCount() {
   return Object.values(DATASETS).reduce((sum, dataset) => sum + dataset.batteries.reduce((acc, battery) => acc + battery.questions.length, 0), 0);
 }
-function getBatteryDisplayBadge(batteryId) { return batteryId === 8 ? "Finále" : String(batteryId); }
+function getBatteryDisplayBadge(batteryId) { return batteryId === 8 ? "+1" : batteryId; }
 function formatDifficultyBadgeText(mode) { return `obtížnost: ${getDifficultyModeLabel(mode)}`; }
-
-const BATTERY_ICON_MAP = {
-  basic: { 1:"🧠", 2:"🔎", 3:"🛠️", 4:"💬", 5:"📄", 6:"🏛️", 7:"🧭", 8:"🎓" },
-  hard:  { 1:"🧩", 2:"🧠", 3:"🛠️", 4:"🤝", 5:"📑", 6:"⚖️", 7:"🧭", 8:"🎯" }
-};
-
-const DISTRACTOR_FAMILY_LABELS = {
-  D1: "Blízké kategorie",
-  D2: "Kompetence a pravomoci",
-  D3: "Dokumenty a jejich funkce",
-  D4: "Procesní krok",
-  D5: "Hraniční podmínka",
-  D6: "Lhůta nebo časový limit",
-  D7: "Terminologicky blízké pojmy",
-  D8: "Symptom × příčina × důsledek × intervence",
-  D9: "Historické souvislosti a osobnosti",
-  D10: "Resortní a systémová příslušnost",
-  D11: "Míra obecnosti",
-  D12: "Falešně přesný detail"
-};
-
-const QUESTION_TYPE_LABELS = {
-  "terminology-discrimination": "Terminologické rozlišení",
-  "generality-discrimination": "Rozlišení míry obecnosti",
-  "detail-discrimination": "Rozlišení podle detailu",
-  "historical-discrimination": "Historické souvislosti",
-  "category-discrimination": "Rozlišení kategorií",
-  "document-discrimination": "Rozlišení dokumentů",
-  "condition-discrimination": "Rozlišení podle podmínky",
-  "system-discrimination": "Rozlišení systému a kompetencí",
-  "symptom-profile-discrimination": "Rozlišení podle profilu obtíží",
-  "process-discrimination": "Rozlišení procesního kroku",
-  "competence-discrimination": "Rozlišení kompetencí",
-  "method-discrimination": "Rozlišení metody a postupu",
-  "role-discrimination": "Rozlišení rolí",
-  "precision-discrimination": "Rozlišení přesnosti formulace",
-  "scenario-discrimination": "Rozlišení podle situace",
-  "function-discrimination": "Rozlišení podle funkce"
-};
-
-const UI_LABEL_OVERRIDES = {
-  "basic": "NORMAL",
-  "hard": "HARD",
-  "reading-training": "Trénink čtení zadání",
-  "simulation": "Simulace testu",
-  "repair": "Opravná sada",
-  "superlativní přesnost": "Otázka vyžaduje nejpřesnější volbu",
-  "negace": "Pozor na negaci",
-  "první krok": "Rozhoduje první krok",
-  "systémová hranice": "Rozhoduje hranice systému",
-  "odpovědnost role": "Rozhoduje role a odpovědnost",
-  "funkce dokumentu": "Rozhoduje funkce dokumentu",
-  "typičnost": "Rozhoduje typický případ",
-  "PLPP vs IVP": "PLPP a IVP",
-  "PPP vs SPC": "PPP a SPC",
-  "ŠPZ vs škola": "ŠPZ a škola",
-  "ŠPP vs ŠPZ": "ŠPP a ŠPZ",
-  "škola vs rodina": "škola a rodina",
-  "škola vs sociální služba": "škola a sociální služba",
-  "škola vs zdravotnické zařízení": "škola a zdravotnické zařízení",
-  "klinický logoped vs školská podpora": "klinický logoped a školská podpora",
-  "SVP vs PPP": "SVP a PPP",
-  "SPC vs běžná školní podpora": "SPC a běžná školní podpora",
-  "zpráva vs doporučení": "zpráva a doporučení",
-  "diagnostika vs realizace podpory": "diagnostika a realizace podpory",
-  "odborné posouzení vs každodenní odpovědnost školy": "odborné posouzení a každodenní odpovědnost školy",
-  "školství vs zdravotnictví vs sociální oblast": "školství, zdravotnictví a sociální oblast",
-  "MŠMT vs MPSV": "MŠMT a MPSV"
-};
-
-function prettifyUiLabel(value) {
-  const raw = String(value || "").trim();
-  if (!raw) return "";
-  if (DISTRACTOR_FAMILY_LABELS[raw]) return DISTRACTOR_FAMILY_LABELS[raw];
-  if (QUESTION_TYPE_LABELS[raw]) return QUESTION_TYPE_LABELS[raw];
-  if (UI_LABEL_OVERRIDES[raw]) return UI_LABEL_OVERRIDES[raw];
-  const breakdownMatch = raw.match(/^(\d+×)\s+(.+)$/);
-  if (breakdownMatch) {
-    const amount = breakdownMatch[1];
-    const rest = prettifyUiLabel(breakdownMatch[2]) || breakdownMatch[2];
-    return `${amount} ${rest}`;
-  }
-  return raw
-    .replace(/-/g, " ")
-    .replace(/\bvs\b/g, "a")
-    .replace(/\s+/g, " ")
-    .replace(/^./, m => m.toUpperCase());
-}
-
-function formatBatteryDifficulty(value) {
-  const raw = String(value || "").trim();
-  if (!raw) return "náročnost neuvedena";
-  if (/^[0-9]+(?:[.,][0-9]+)?(?:–|-)[0-9]+(?:[.,][0-9]+)?$/.test(raw)) return `náročnost ${raw} / 10`;
-  return raw;
-}
-
-function getBatteryIcon(battery) {
-  const mode = normalizeDifficultyMode(battery?.datasetKey || getActiveDifficultyMode());
-  const map = BATTERY_ICON_MAP[mode] || BATTERY_ICON_MAP.basic;
-  return map[Number(battery?.id || 0)] || "📘";
-}
-
-function formatDetailDominantItems(items) {
-  const safe = Array.isArray(items) ? items : [];
-  return safe.map(item => prettifyUiLabel(item)).filter(Boolean);
-}
-
-function formatDetailBreakdownItems(items) {
-  const safe = Array.isArray(items) ? items : [];
-  return safe.map(item => prettifyUiLabel(item)).filter(Boolean);
-}
-
-function formatUserRepairFilterLabel(value) {
-  const raw = String(value || "").trim();
-  if (!raw) return "";
-  return prettifyUiLabel(raw);
-}
-
-function formatUserRepairFilterList(items) {
-  const safe = Array.isArray(items) ? items : [];
-  return safe.map(formatUserRepairFilterLabel).filter(Boolean);
-}
 
   const BATTERY_DETAIL_COPY = {
     1:{purposeText:"Baterie buduje pevnou orientaci v klasickém disciplinárním členění speciální pedagogiky a v současném širším rámci oboru.",profileParagraphs:["V celé bance funguje jako vstupní základ. Kdo tady chybuje v rozlišení psychopedie, somatopedie, tyflopedie, surdopedie, etopedie a logopedie, přenáší tyto chyby i do intervencí, poradenství a komunikace.","Smyslem není encyklopedie názvů, ale stabilní oborová orientace."]},
@@ -537,7 +415,7 @@ function updateSelectionState() {
 function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
   function formatTime(s) { const m=Math.floor(s/60),sec=s%60; return `${String(m).padStart(2,"0")}:${String(sec).padStart(2,"0")}`; }
   function formatDate(iso) { if(!iso) return "—"; try{const d=new Date(iso); return d.toLocaleDateString("cs-CZ",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});}catch(e){return "—";} }
-  function formatModeLabel(mode) { return mode==="reading-training" ? "Trénink čtení zadání" : mode==="repair" ? "Opravná sada" : "Simulace testu"; }
+  function formatModeLabel(mode) { return mode==="reading-training" ? "Trénink čtení zadání" : mode==="repair" ? "Opravná sada" : "Simulace"; }
   function hasConfidenceTracking(session) {
     const s = session || appState.currentSession;
     if (!s) return false;
@@ -891,17 +769,16 @@ function renderBatteryCards() {
   const batteries = getActiveBatteries();
   grid.innerHTML = batteries.map(b => {
     const sel = b.id === appState.selectedBatteryId ? "selected" : "";
-    const icon = getBatteryIcon(b);
     return `<button type="button" class="battery-card ${sel}" data-battery="${b.id}">
       <div class="battery-card-head">
-        <span class="battery-label"><span class="battery-icon" aria-hidden="true">${escapeHtml(icon)}</span>${escapeHtml(b.label)} – ${escapeHtml(b.title)}</span>
+        <span class="battery-label">${escapeHtml(b.label)} – ${escapeHtml(b.title)}</span>
         <span class="battery-badge">${getBatteryDisplayBadge(b.id)}</span>
       </div>
       <p class="battery-subtitle">${escapeHtml(b.subtitle)}</p>
       <div class="battery-meta">
         <span class="chip">${b.questionCount} otázek</span>
         <span class="chip">${b.durationMinutes} minut</span>
-        <span class="chip">${escapeHtml(formatBatteryDifficulty(b.difficulty))}</span>
+        <span class="chip">${escapeHtml(b.difficulty)}</span>
         <span class="chip ${b.datasetKey === "hard" ? "warn" : "ok"}">${escapeHtml(getDifficultyModeLabel(b.datasetKey))}</span>
       </div>
     </button>`;
@@ -915,7 +792,7 @@ function renderBatteryCards() {
 function renderBatteryDetail(battery) {
   const top = $("batteryDetail").querySelector(".detail-top");
   if (!battery) {
-    top.innerHTML = '<div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel baterie, hlavní témata, rozpis typů úloh a její role.</p></div><span class="badge">—</span>';
+    top.innerHTML = '<div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie.</p></div><span class="badge">—</span>';
     $("detailPurpose").innerHTML = "<p>Zatím není vybraná žádná baterie.</p>";
     $("detailDominant").innerHTML = "";
     $("detailBreakdown").innerHTML = "";
@@ -923,17 +800,10 @@ function renderBatteryDetail(battery) {
     return;
   }
   const detailCopy = getBatteryDetailCopy(battery);
-  const icon = getBatteryIcon(battery);
-  const dominantItems = formatDetailDominantItems(battery.dominant || []);
-  const breakdownItems = formatDetailBreakdownItems(battery.breakdown || []);
-  top.innerHTML = `<div><h3><span class="detail-icon" aria-hidden="true">${escapeHtml(icon)}</span>${escapeHtml(battery.label)} – ${escapeHtml(battery.title)}</h3><p>${escapeHtml(battery.subtitle)}</p></div><span class="badge">${getBatteryDisplayBadge(battery.id)}</span>`;
+  top.innerHTML = `<div><h3>${escapeHtml(battery.label)} – ${escapeHtml(battery.title)}</h3><p>${escapeHtml(battery.subtitle)}</p></div><span class="badge">${getBatteryDisplayBadge(battery.id)}</span>`;
   $("detailPurpose").innerHTML = `<p>${escapeHtml(detailCopy?.purposeText || battery.purpose)}</p>`;
-  $("detailDominant").innerHTML = dominantItems.length
-    ? dominantItems.map(item => `<span class="chip">${escapeHtml(item)}</span>`).join("")
-    : '<span class="chip">Témata budou doplněna podle dat baterie.</span>';
-  $("detailBreakdown").innerHTML = breakdownItems.length
-    ? breakdownItems.map(item => `<li>${escapeHtml(item)}</li>`).join("")
-    : "<li>Rozpis typů úloh není u této baterie vyplněný.</li>";
+  $("detailDominant").innerHTML = (battery.dominant || []).map(item => `<span class="chip">${escapeHtml(item)}</span>`).join("");
+  $("detailBreakdown").innerHTML = (battery.breakdown || []).map(item => `<li>${escapeHtml(item)}</li>`).join("");
   $("detailProfile").innerHTML = (detailCopy?.profileParagraphs || []).map(item => `<p>${escapeHtml(item)}</p>`).join("");
 }
 
@@ -2050,7 +1920,7 @@ function updateMeta() {
     }
     const knowledgeGaps = wrong.filter(qs => qs.autoErrorType === "knowledge-gap" || qs.confidence === "high").length;
     if (knowledgeGaps > 3) {
-      recs.push(`Udělal(a) jsi ${knowledgeGaps} chyb u otázek, kde sis byl(a) relativně jistý(á). U těchto otázek si po testu vždy pečlivě projdi <em>Tutor</em> v sekci rozbor.`);
+      recs.push(`Udělal(a) jsi ${knowledgeGaps} chyb u otázek, kde sis byl(a) relativně jistý(á). U těchto otázek si po testu vždy pečlivě projdi <em>Výklad učitele</em> v sekci rozbor.`);
     } else if (wrong.length === 0 && metrics.revisits > 3 && metrics.avgTime < 45000) {
       recs.push("Výborný výsledek! Dobré tempo a vysoká přesnost. Zkus pro příště <strong>zkrátit časový záměr</strong> a test si projet pod tlakem.");
     } else if (wrong.length > 0) {
@@ -2098,8 +1968,8 @@ function updateMeta() {
     // TAB BUTTONS
     const tabs = `
       <div class="review-tabs">
-        <button class="review-tab active" data-tab="qa" type="button">Výsledek</button>
-        <button class="review-tab" data-tab="tutor" type="button">Tutor</button>
+        <button class="review-tab active" data-tab="qa" type="button">Zadání a odpověď</button>
+        <button class="review-tab" data-tab="tutor" type="button">Výklad učitele (Tutor)</button>
       </div>
     `;
 
@@ -2117,12 +1987,11 @@ function updateMeta() {
       tabQA += `<div class="${cls}"><strong>${LETTERS[oi]})</strong> ${escapeHtml(opt)}${extra}</div>`;
     });
     tabQA += `</div>`;
-    const confidenceLabel = qs.confidence === "high" ? "Jistá odpověď" : qs.confidence === "medium" ? "Spíše jistá odpověď" : qs.confidence === "guess" ? "Tip" : "—";
     tabQA += `<div class="review-meta-grid" style="margin-top:12px;">
-      <div class="review-meta-item"><strong>Tvá odpověď</strong>${isUnanswered ? "—" : getReviewOptionDescriptor(q, qs.selectedAnswer)}</div>
-      <div class="review-meta-item"><strong>Správná odpověď</strong>${getReviewOptionDescriptor(q, q.correct)}</div>
-      <div class="review-meta-item"><strong>Čas</strong>${(qs.timeSpentMs / 1000).toFixed(1)} s</div>
-      <div class="review-meta-item"><strong>Jistota</strong>${confidenceLabel}</div>
+      <div class="review-meta-item"><strong>Tvá volba</strong>${isUnanswered ? "—" : LETTERS[qs.selectedAnswer]}</div>
+      <div class="review-meta-item"><strong>Správně</strong>${LETTERS[q.correct]}</div>
+      <div class="review-meta-item"><strong>Čas</strong>${(qs.timeSpentMs / 1000).toFixed(1)}s</div>
+      <div class="review-meta-item"><strong>Jistota</strong>${qs.confidence || "—"}</div>
     </div>`;
     tabQA += `</div>`;
 
@@ -2132,29 +2001,25 @@ function updateMeta() {
     const m = q.metadata || {};
     
     // Core & Signal
-    const tutorCore = m.explanationCore || m.questionCore || "";
-    if (tutorCore) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Podstata otázky:</strong> ${escapeHtml(prettifyUiLabel(tutorCore))}</div>`;
-    if (m.signalHint) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Na co si dát pozor:</strong> <span style="color:#d4820a; font-weight:700;">${escapeHtml(prettifyUiLabel(m.signalHint))}</span></div>`;
+    if (m.explanationCore) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Podstata otázky:</strong> ${escapeHtml(m.explanationCore)}</div>`;
+    if (m.signalHint) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Signální slovo:</strong> <span style="color:#d4820a; font-weight:700;">${escapeHtml(m.signalHint)}</span></div>`;
     
     // Why Correct / Why Distractor
     const tutorExplanationCorrect = sanitizeTutorExplanationText(m.explanationCorrect || "");
-    if (tutorExplanationCorrect) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Proč je správně:</strong> ${escapeHtml(tutorExplanationCorrect)}</div>`;
+    if (tutorExplanationCorrect) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Proč je ${LETTERS[q.correct]} správně:</strong> ${escapeHtml(tutorExplanationCorrect)}</div>`;
     if (m.explanationDistractor && !isCorrect && !isUnanswered) {
-      tabTutor += `<div class="review-explanation" style="margin-bottom:10px; border-color:#f3c9c9;"><strong>Nejbližší omyl:</strong> ${escapeHtml(m.explanationDistractor)}</div>`;
+      tabTutor += `<div class="review-explanation" style="margin-bottom:10px; border-color:#f3c9c9;"><strong>Lákavý distraktor:</strong> ${escapeHtml(m.explanationDistractor)}</div>`;
     }
 
     // Micro-lesson & Recall
-    if (m.microLesson) tabTutor += `<div class="review-explanation tutor-lesson" style="margin-bottom:10px;"><strong>Co si z toho odnést:</strong> ${escapeHtml(m.microLesson)}</div>`;
-    const recallPrompt = m.recommendedRecallPrompt || m.recallPrompt || "";
-    if (recallPrompt) tabTutor += `<div class="review-explanation tutor-recall" style="margin-bottom:10px;"><strong>Otázka k zapamatování:</strong> ${escapeHtml(recallPrompt)}</div>`;
-    const repairFilters = formatUserRepairFilterList(m.recommendedRepairFilters || []);
-    if (repairFilters.length) tabTutor += `<div class="review-explanation" style="margin-bottom:10px;"><strong>Kam se vrátit:</strong> ${escapeHtml(repairFilters.join(", "))}</div>`;
+    if (m.microLesson) tabTutor += `<div class="review-explanation tutor-lesson" style="margin-bottom:10px;"><strong>Teoretické okénko:</strong> ${escapeHtml(m.microLesson)}</div>`;
+    if (m.recallPrompt) tabTutor += `<div class="review-explanation tutor-recall" style="margin-bottom:10px;"><strong>Otázka k zapamatování:</strong> ${escapeHtml(m.recallPrompt)}</div>`;
 
     // Diagnostic Diagnosis
     if (!isCorrect && !isUnanswered) {
       const autoErr = qs.autoErrorType ? (resolveUiErrorLabel(qs.autoErrorType) || "nezjištěno") : "nezjištěno";
       tabTutor += `<div class="review-explanation" style="background:#fffcf5; border-style:dashed;">`;
-      tabTutor += `<strong>Jak to vyšlo tentokrát:</strong> Téhle chybě je nejblíž: <em>${autoErr}</em>`;
+      tabTutor += `<strong>Diagnostika trenažéru:</strong> Pravděpodobný důvod chyby: <em>${autoErr}</em>`;
       tabTutor += `<div style="margin-top:8px;"><strong>Manuální oprava:</strong> <select class="error-type-select" data-qi="${qIndex}">${Object.entries(ERROR_LABELS).map(([k, v]) => `<option value="${k}" ${(qs.manualErrorType || qs.autoErrorType) === k ? "selected" : ""}>${v}</option>`).join("")}</select></div>`;
       tabTutor += `</div>`;
     }
@@ -2545,14 +2410,7 @@ function initApp() {
     getActiveBatteryMap,
     getActiveDataset,
     getDifficultyModeLabel,
-    normalizeDifficultyMode,
-    prettifyUiLabel,
-    formatUserRepairFilterLabel,
-    formatUserRepairFilterList,
-    formatDetailDominantItems,
-    formatDetailBreakdownItems,
-    getBatteryIcon,
-    formatBatteryDifficulty
+    normalizeDifficultyMode
   };
   
 function normalizeQuestion(q, qi, bId, bLabel, datasetKey) {
