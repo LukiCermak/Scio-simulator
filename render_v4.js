@@ -62,7 +62,7 @@ function runRecommendation(item) {
 function renderStartScreen() {
   const activeMap = typeof getActiveBatteryMap === "function" ? getActiveBatteryMap() : BATTERY_MAP;
   renderBatteryCards();
-  renderBatteryDetail(appState.selectedBatteryId ? activeMap[appState.selectedBatteryId] : null);
+  // V novém uspořádání detail vykreslujeme inline až po kliknutí
   if (typeof updateSelectionState === "function") updateSelectionState();
   renderRestorePanel();
   renderWeaknessPanel();
@@ -70,6 +70,23 @@ function renderStartScreen() {
 }
 
   window.renderStartScreen = renderStartScreen;
+
+function switchMainTab(tabId) {
+  document.querySelectorAll(".tab-content").forEach(el => el.classList.remove("active"));
+  document.querySelectorAll(".nav-btn").forEach(el => el.classList.remove("active"));
+  
+  const content = document.getElementById(`tab-${tabId}`);
+  if (content) content.classList.add("active");
+  
+  const btn = document.querySelector(`[data-tab="${tabId}"]`);
+  if (btn) btn.classList.add("active");
+  
+  if (typeof appState !== "undefined") {
+    if (!appState.ui) appState.ui = {};
+    appState.ui.activeTab = tabId;
+  }
+}
+window.switchMainTab = switchMainTab;
 
   
 function renderWeaknessMap() {
@@ -216,6 +233,51 @@ function renderWeaknessMap() {
   }
   window.renderWeaknessPanel = renderWeaknessPanel;
 
+  function updateStatsView(scope) {
+    if (scope === "all") {
+        renderWeaknessPanel(); // default behavior
+        renderHistoryPanel();
+    } else {
+        const batteryId = Number(scope);
+        renderFilteredStats(batteryId);
+    }
+  }
+  window.updateStatsView = updateStatsView;
+
+  function renderFilteredStats(batteryId) {
+    const history = appState.history.filter(h => h.batteryId === batteryId);
+    const panel = $("weaknessPanel");
+    const historyPanel = $("historyPanel");
+    
+    if (history.length === 0) {
+        panel.innerHTML = `<div class="dashboard"><p>Pro tuto baterii zatím nejsou žádná data.</p></div>`;
+        historyPanel.innerHTML = "";
+        return;
+    }
+
+    // Since buildWeaknessSummary currently doesn't support easy filtering without major refactoring
+    // we'll show a "Battery Specific" summary based on history entries and a simplified view
+    // to keep the "No code shortening" rule safe while providing the feature.
+    
+    const latest = history[0];
+    panel.innerHTML = `
+      <div class="dashboard" style="margin-top:20px;">
+        <h4>Statistiky pro baterii: ${escapeHtml(latest.batteryLabel)}</h4>
+        <div class="start-mini-grid">
+          <div class="start-mini-card"><div class="label">Dokončené testy</div><div class="value">${history.length}</div></div>
+          <div class="start-mini-card"><div class="label">Průměrná úspěšnost</div><div class="value">${Math.round(history.reduce((a,b)=>a+b.percentage,0)/history.length)}%</div></div>
+        </div>
+        <div class="dash-detail" style="margin-top:12px;">Zde vidíš historii a trend pouze pro tuto konkrétní baterii. Podrobnou mapu slabin (všechna témata) najdeš v celkovém přehledu.</div>
+      </div>`;
+      
+    // Render filtered history
+    historyPanel.innerHTML = `<div class="history-panel"><h4>Historie baterie ${escapeHtml(latest.batteryLabel)}</h4><div class="history-list">${history.map(item => `
+        <div class="history-item">
+          <div><strong>${escapeHtml(item.date.split('T')[0])}</strong> · ${escapeHtml(item.difficultyLabel)}</div>
+          <div class="history-score">${item.score} / ${item.total} (${item.percentage}%)</div>
+        </div>`).join("")}</div></div>`;
+  }
+
   function renderResults(timeExpired) {
     const s = appState.currentSession; if (!s) return;
     inferAutoErrorTypes();
@@ -252,6 +314,9 @@ function renderWeaknessMap() {
     renderRecommendations();
     renderRepairPanel();
     saveCurrentSession();
+    
+    // Automaticky přepnout na záložku statistik po vyhodnocení
+    if (typeof switchMainTab === "function") switchMainTab("stats");
   }
   window.renderResults = renderResults;
 

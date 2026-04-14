@@ -768,31 +768,93 @@ function renderBatteryCards() {
   const grid = $("batteryGrid");
   const batteries = getActiveBatteries();
   grid.innerHTML = batteries.map(b => {
-    const sel = b.id === appState.selectedBatteryId ? "selected" : "";
-    return `<button type="button" class="battery-card ${sel}" data-battery="${b.id}">
-      <div class="battery-card-head">
-        <span class="battery-label">${escapeHtml(b.label)} – ${escapeHtml(b.title)}</span>
-        <span class="battery-badge">${getBatteryDisplayBadge(b.id)}</span>
-      </div>
-      <p class="battery-subtitle">${escapeHtml(b.subtitle)}</p>
-      <div class="battery-meta">
-        <span class="chip">${b.questionCount} otázek</span>
-        <span class="chip">${b.durationMinutes} minut</span>
-        <span class="chip">${escapeHtml(b.difficulty)}</span>
-        <span class="chip ${b.datasetKey === "hard" ? "warn" : "ok"}">${escapeHtml(getDifficultyModeLabel(b.datasetKey))}</span>
-      </div>
-    </button>`;
+    const isSel = b.id === appState.selectedBatteryId;
+    const expandedClass = isSel ? "expanded" : "";
+    return `
+      <div class="battery-card-wrapper ${expandedClass}" id="battery-wrapper-${b.id}">
+        <button type="button" class="battery-card ${isSel ? "selected" : ""}" data-battery="${b.id}">
+          <div class="battery-card-head">
+            <span class="battery-label">${escapeHtml(b.label)} – ${escapeHtml(b.title)}</span>
+            <span class="battery-badge">${getBatteryDisplayBadge(b.id)}</span>
+          </div>
+          <p class="battery-subtitle">${escapeHtml(b.subtitle)}</p>
+          <div class="battery-meta">
+            <span class="chip">${b.questionCount} otázek</span>
+            <span class="chip">${b.durationMinutes} minut</span>
+            <span class="chip">${escapeHtml(b.difficulty)}</span>
+            <span class="chip ${b.datasetKey === "hard" ? "warn" : "ok"}">${escapeHtml(getDifficultyModeLabel(b.datasetKey))}</span>
+          </div>
+        </button>
+        <div class="battery-inline-detail" id="battery-detail-${b.id}"></div>
+      </div>`;
   }).join("");
   grid.querySelectorAll(".battery-card").forEach(card => {
     card.onclick = () => selectBattery(Number(card.dataset.battery));
   });
+  
+  if (appState.selectedBatteryId) {
+    const selectedBattery = (getActiveBatteryMap ? getActiveBatteryMap() : BATTERY_MAP)[appState.selectedBatteryId];
+    if (selectedBattery) populateInlineDetail(selectedBattery);
+  }
 }
 
   
+function selectBattery(id) {
+  const activeMap = typeof getActiveBatteryMap === "function" ? getActiveBatteryMap() : BATTERY_MAP;
+  const battery = activeMap[id];
+  if (!battery) return;
+
+  const prevId = appState.selectedBatteryId;
+  appState.selectedBatteryId = id;
+
+  // Update UI classes
+  document.querySelectorAll(".battery-card-wrapper").forEach(el => el.classList.remove("expanded"));
+  document.querySelectorAll(".battery-card").forEach(el => el.classList.remove("selected"));
+  
+  const wrapper = document.getElementById(`battery-wrapper-${id}`);
+  const card = wrapper?.querySelector(".battery-card");
+  if (wrapper) {
+    wrapper.classList.add("expanded");
+    if (card) card.classList.add("selected");
+    populateInlineDetail(battery);
+    
+    // Smooth scroll to the expanded card
+    setTimeout(() => {
+        wrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
+  }
+
+  if (typeof updateSelectionState === "function") updateSelectionState();
+}
+
+function populateInlineDetail(battery) {
+  const container = document.getElementById(`battery-detail-${battery.id}`);
+  if (!container) return;
+
+  const detailCopy = getBatteryDetailCopy(battery);
+  container.innerHTML = `
+    <div class="detail-card inline-detail-layout" style="border:none; background:transparent; padding: 10px 18px 20px;">
+      <div class="detail-block"><div class="detail-label">Účel</div><div class="detail-copy detail-purpose"><p>${escapeHtml(detailCopy?.purposeText || battery.purpose)}</p></div></div>
+      <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips">${(battery.dominant || []).map(item => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div></div>
+      <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list">${(battery.breakdown || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
+      <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy">${(detailCopy?.profileParagraphs || []).map(item => `<p>${escapeHtml(item)}</p>`).join("")}</div></div>
+      
+      <div class="start-actions" style="margin-top: 16px; border-top: 1px solid #e2ebf2; padding-top: 16px; justify-content: center;">
+        <button class="btn btn-primary" onclick="startBattery(${battery.id})" style="width: 100%; justify-content: center; font-size: 16px; padding: 14px;">Spustit tuto baterii</button>
+      </div>
+    </div>`;
+}
+
+// Preserve renderBatteryDetail for backward compatibility or other parts of the UI if any
 function renderBatteryDetail(battery) {
-  const top = $("batteryDetail").querySelector(".detail-top");
+  // If there's still a global batteryDetail element, we can update it, but principal focus is now inline
+  const detailEl = $("batteryDetail");
+  if (!detailEl) return;
+  const top = detailEl.querySelector(".detail-top");
+  if (!top) return;
+  
   if (!battery) {
-    top.innerHTML = '<div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie.</p></div><span class="badge">—</span>';
+    top.innerHTML = '<div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí profil baterie.</p></div><span class="badge">—</span>';
     $("detailPurpose").innerHTML = "<p>Zatím není vybraná žádná baterie.</p>";
     $("detailDominant").innerHTML = "";
     $("detailBreakdown").innerHTML = "";
@@ -2365,16 +2427,33 @@ function initApp() {
   if ($("statQuestions")) $("statQuestions").textContent = String(getAllDatasetsQuestionCount());
   renderConfigPanel();
   renderBatteryCards();
-  renderBatteryDetail(null);
+  // renderBatteryDetail(null); // Odstraněno - nyní inline
   updateSelectionState();
   renderRestorePanel();
   renderWeaknessPanel();
   renderHistoryPanel();
+  populateStatsFilter();
+  
   if (appState.settings.restoreSessionOnLoad) {
     const saved = loadCurrentSession();
     if (saved) { resumeSession(); return; }
   }
   setAppMode("start");
+  if (typeof switchMainTab === "function") switchMainTab("guide");
+}
+
+function populateStatsFilter() {
+    const select = $("statsBatteryFilter");
+    if (!select) return;
+    const batteries = getActiveBatteries();
+    // Keep first option "Celkový přehled"
+    select.innerHTML = '<option value="all">Celkový přehled</option>';
+    batteries.forEach(b => {
+        const opt = document.createElement("option");
+        opt.value = b.id;
+        opt.textContent = `${b.label} – ${b.title}`;
+        select.appendChild(opt);
+    });
 }
 
   window.initSCIOV4 = initApp;
