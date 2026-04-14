@@ -1689,17 +1689,17 @@ function renderConfigPanel() {
     btn.onclick = () => { s.defaultGoal = btn.dataset.goal; saveSettings(); renderConfigPanel(); };
   });
 
-  $("optShowQuestionFirst").checked = s.showQuestionFirst;
-  $("optHighlightKeywords").checked = s.showKeywordHighlights;
-  $("optRequireConfidence").checked = s.requireConfidence;
-  $("optAutoSave").checked = s.autoSave;
-  $("optRestoreSession").checked = s.restoreSessionOnLoad;
+  $("optShowQuestionFirst") && ($("optShowQuestionFirst").checked = s.showQuestionFirst);
+  $("optHighlightKeywords") && ($("optHighlightKeywords").checked = s.showKeywordHighlights);
+  $("optRequireConfidence") && ($("optRequireConfidence").checked = s.requireConfidence);
+  $("optAutoSave") && ($("optAutoSave").checked = s.autoSave);
+  $("optRestoreSession") && ($("optRestoreSession").checked = s.restoreSessionOnLoad);
 
-  $("optShowQuestionFirst").onchange = function(){ s.showQuestionFirst = this.checked; saveSettings(); };
-  $("optHighlightKeywords").onchange = function(){ s.showKeywordHighlights = this.checked; saveSettings(); };
-  $("optRequireConfidence").onchange = function(){ s.requireConfidence = this.checked; saveSettings(); };
-  $("optAutoSave").onchange = function(){ s.autoSave = this.checked; saveSettings(); };
-  $("optRestoreSession").onchange = function(){ s.restoreSessionOnLoad = this.checked; saveSettings(); };
+  if ($("optShowQuestionFirst")) $("optShowQuestionFirst").onchange = function(){ s.showQuestionFirst = this.checked; saveSettings(); };
+  if ($("optHighlightKeywords")) $("optHighlightKeywords").onchange = function(){ s.showKeywordHighlights = this.checked; saveSettings(); };
+  if ($("optRequireConfidence")) $("optRequireConfidence").onchange = function(){ s.requireConfidence = this.checked; saveSettings(); };
+  if ($("optAutoSave")) $("optAutoSave").onchange = function(){ s.autoSave = this.checked; saveSettings(); };
+  if ($("optRestoreSession")) $("optRestoreSession").onchange = function(){ s.restoreSessionOnLoad = this.checked; saveSettings(); };
 
   const repBtn = $("repairModeOpt");
   const hasCandidates = appState.history.length > 0 || loadCurrentSession()?.results?.finished;
@@ -2155,6 +2155,7 @@ function startBattery(id, options = {}) {
   applyFocusMode();
   startTimer();
 }
+window.startBattery = startBattery;
 
   
 function resumeSession() {
@@ -2353,24 +2354,24 @@ function hideReview() {
   // ═══════════════════════════════════════════
   // 11. EVENT HANDLERS
   // ═══════════════════════════════════════════
-  $("startTestBtn").addEventListener("click",()=>{if(appState.selectedBatteryId) startBattery(appState.selectedBatteryId);});
-  $("prevBtn").addEventListener("click",goPrev);
-  $("nextBtn").addEventListener("click",goNext);
-  $("changeBatteryBtn").addEventListener("click",backToSelection);
-  $("finishBtn").addEventListener("click",()=>{
+  $("startTestBtn")?.addEventListener("click",()=>{if(appState.selectedBatteryId) startBattery(appState.selectedBatteryId);});
+  $("prevBtn")?.addEventListener("click",goPrev);
+  $("nextBtn")?.addEventListener("click",goNext);
+  $("changeBatteryBtn")?.addEventListener("click",backToSelection);
+  $("finishBtn")?.addEventListener("click",()=>{
     const s=appState.currentSession; if(!s||s.results.finished) return;
     if(confirm("Opravdu chceš test vyhodnotit?")) finishTest(false);
   });
-  $("restartBtn").addEventListener("click",()=>{reviewRendered=false;restartBattery();});
-  $("backToSelectionBtn").addEventListener("click",backToSelection);
-  $("showReviewBtn").addEventListener("click",showReview);
-  $("hideReviewBtn").addEventListener("click",hideReview);
-  $("focusModeBtn").addEventListener("click",toggleFocusMode);
+  $("restartBtn")?.addEventListener("click",()=>{reviewRendered=false;restartBattery();});
+  $("backToSelectionBtn")?.addEventListener("click",backToSelection);
+  $("showReviewBtn")?.addEventListener("click",showReview);
+  $("hideReviewBtn")?.addEventListener("click",hideReview);
+  $("focusModeBtn")?.addEventListener("click",toggleFocusMode);
   $("fmChangeBatteryBtn")?.addEventListener("click",backToSelection);
   $("fmExitFocusBtn")?.addEventListener("click",toggleFocusMode);
-  $("revealOptionsBtn").addEventListener("click",revealOptions);
-  $("clearSessionBtn").addEventListener("click",()=>{clearCurrentSession();backToSelection();});
-  $("repairBtn").addEventListener("click",()=>{
+  $("revealOptionsBtn")?.addEventListener("click",revealOptions);
+  $("clearSessionBtn")?.addEventListener("click",()=>{clearCurrentSession();backToSelection();});
+  $("repairBtn")?.addEventListener("click",()=>{
     const s=appState.currentSession;
     if(!s||!s.results.finished) return;
     startRepairModeFromResults("errors");
@@ -2455,6 +2456,7 @@ function populateStatsFilter() {
 }
 
   window.initSCIOV4 = initApp;
+  window.startBattery = startBattery;
   window.getActiveBatteries = getActiveBatteries;
   window.getActiveBatteryMap = getActiveBatteryMap;
   window.getActiveDataset = getActiveDataset;
