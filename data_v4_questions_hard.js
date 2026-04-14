@@ -121,7 +121,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 10,
-        "text": "S kterou osobností je v českém prostředí nejvíce spojeno terminologické ukotvení pojmu speciální pedagogika?",
+        "text": "S kterou osobností je v českém prostředí nejvíce spojován pojem speciální pedagogika?",
         "options": [
           "Bohumír Popelář",
           "Miloš Sovák",
@@ -195,9 +195,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 16,
         "text": "Které tvrzení o historické terminologii vystihuje věc nejlépe?",
         "options": [
-          "výraz defektologie je v české tradici přesnější kotvou Bohumíra Popeláře než Miloše Sováka",
+          "výraz defektologie je v české tradici těsněji spojen s Milošem Sovákem než s Bohumírem Popelářem",
           "výraz speciální pedagogika defektologická se v české tradici nepojí s Ludvíkem Edelsbergerem",
-          "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
+          "výraz speciální pedagogika se v českém odborném prostředí pojí s Bohumírem Popelářem",
           "výraz nápravná pedagogika je v českém vývoji bližší Adolfu Dannemannovi než Janu Mauerovi"
         ],
         "correct": 2,
@@ -315,10 +315,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 26,
         "text": "Které tvrzení o novodobých českých osobnostech odpovídá nejlépe?",
         "options": [
-          "Marie Vítková je přesnější kotvou integrativní speciální pedagogiky než zrakového postižení",
+          "Marie Vítková je přesněji spojována s integrativní speciální pedagogikou než se zrakovým postižením",
           "Josef Slowík je spojován spíše s širším a inkluzivním pojetím speciální pedagogiky než s nápravnou pedagogikou",
-          "Milan Valenta je typičtější kotvou psychopedie než zrakového postižení a tyflopedie",
-          "Karel Neubauer je typičtější kotvou logopedického paradigmatu než pomocného školství a jeho tradice"
+          "Milan Valenta je typičtěji spojován s psychopedií než se zrakovým postižením a tyflopedií",
+          "Karel Neubauer je typičtěji spojován s logopedickým pojetím oboru než s pomocným školstvím a jeho tradicí"
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -520,7 +520,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které spojení odpovídá historickému a oborovému kontextu nejlépe?",
         "options": [
           "Josef Zeman – systémová role při rozvoji pomocného školství a defektologie",
-          "Jan Mauer – kotva nápravné pedagogiky, nikoli hlavní autorita zrakového postižení",
+          "Jan Mauer – výrazná osobnost nápravné pedagogiky, nikoli hlavní autorita zrakového postižení",
           "Marie Vítková – novodobá integrativní speciální pedagogika, nikoli historická léčebná pedagogika",
           "František Čáda – historická pedopatologie, nikoli strukturované učení TEACCH"
         ],
@@ -4473,7 +4473,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 4,
-        "text": "Které tvrzení o terminologickém ukotvení pojmu speciální pedagogika v českém prostředí je nejpřesnější?",
+        "text": "Které tvrzení o pojmu speciální pedagogika v českém prostředí je nejpřesnější?",
         "options": [
           "pojem je spojen hlavně s Josefem Zemanem a s pomocným školstvím první republiky",
           "pojem je spojen spíše s Ludvíkem Edelsbergerem, který prosazoval označení speciální pedagogika defektologická",
@@ -4526,7 +4526,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "pojem je spojen hlavně s Františkem Čádou a s termínem duševně úchylné děti",
           "pojem je spojen zejména s Janem Mauerem jako protiváhou pedopatologii",
           "pojem je nejvíce spojen s Milošem Sovákem a s defektologií po roce 1948",
-          "pojem je nejvíce spojen s Bohumírem Popelářem a s ukotvením termínu speciální pedagogika"
+          "pojem je nejvíce spojen s Bohumírem Popelářem a s užíváním termínu speciální pedagogika"
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4583,7 +4583,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 13,
         "text": "Které tvrzení o termínu defektologie je v českém vývoji nejpřesnější?",
         "options": [
-          "termín je spojen s Bohumírem Popelářem a s ukotvením pojmu speciální pedagogika",
+          "termín je spojen s Bohumírem Popelářem a s užíváním pojmu speciální pedagogika",
           "termín je spojen s Milošem Sovákem a s deficitněji orientovanou etapou vývoje",
           "termín je spojen s Ludvíkem Edelsbergerem a s označením speciální pedagogika defektologická",
           "termín je spojen s Janem Mauerem a s nápravnou pedagogikou"
@@ -4632,7 +4632,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení o integrativní speciální pedagogice v českém prostředí je nejpřesnější?",
         "options": [
           "bývá spojována s Marií Vítkovou a s novodobým rámcem integrativního pojetí oboru",
-          "bývá spojována s Libuší Ludíkovou jako s hlavní historickou kotvou nápravné pedagogiky",
+          "bývá spojována s Libuší Ludíkovou jako s hlavní představitelkou nápravné pedagogiky",
           "bývá spojována s Milanem Valentou jako s hlavní osobností logopedického paradigmatu",
           "bývá spojována s Josefem Slowíkem jako s autorem termínu pedagogická patologie"
         ],
@@ -4737,7 +4737,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 26,
-        "text": "Historická kotva vzdělávání neslyšících je nejvíce spojována s osobností:",
+        "text": "S počátky vzdělávání neslyšících je nejvíce spojována osobnost:",
         "options": [
           "Pedro Ponce de León",
           "Valentin Haüy",
@@ -4977,7 +4977,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 46,
-        "text": "Které historické přiřazení ukazuje na nejstarší medicínsky orientovanou terminologickou vrstvu oboru?",
+        "text": "Které historické přiřazení ukazuje na nejstarší medicínsky orientované názvosloví oboru?",
         "options": [
           "pedagogická patologie je spojována s Adolfem Strümplem",
           "léčebná pedagogika je spojována s Bohumírem Popelářem",
@@ -5025,7 +5025,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 50,
-        "text": "Které přiřazení vystihuje deficitněji orientovanou terminologickou vrstvu československého vývoje?",
+        "text": "Které přiřazení vystihuje deficitněji orientované názvosloví československého vývoje?",
         "options": [
           "defektologie je spojována s Milošem Sovákem",
           "speciální pedagogika je spojována s Janem Mauerem",
