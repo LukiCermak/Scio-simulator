@@ -93,14 +93,10 @@
             <div class="stat-card"><div class="stat-label">Režimy obtížnosti</div><div class="stat-value">2</div><div class="stat-sub">V každém režimu je 8 baterií: 7 profilových a 1 finální syntetická.</div></div>
           </div>
         </div>
-        <aside class="panel detail-card" id="batteryDetail">
-          <div class="detail-top"><div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie v celé bance.</p></div><span class="badge">—</span></div>
-          <div class="detail-block"><div class="detail-label">Účel</div><div class="detail-copy detail-purpose" id="detailPurpose"><p>Zatím není vybraná žádná baterie.</p></div></div>
-          <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips" id="detailDominant"></div></div>
-          <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list" id="detailBreakdown"></ul></div>
-          <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy" id="detailProfile"></div></div>
-        </aside>
       </div>
+
+      <div class="master-detail-layout">
+        <div class="master-col">
 
       <!-- Config panel -->
       <div class="config-panel" id="configPanel">
@@ -126,10 +122,6 @@
       <div class="battery-select-wrap" style="margin-top:20px;">
         <div class="section-title"><div><h3>Výběr baterie</h3><p>Vyber modul, zkontroluj jeho profil a spusť test.</p></div></div>
         <div class="battery-grid" id="batteryGrid"></div>
-        <div class="start-actions">
-          <div class="selection-note" id="selectionNote"><strong>Vybraná baterie:</strong> zatím není zvolena žádná varianta.</div>
-          <button class="btn btn-primary" id="startTestBtn" disabled>Spustit vybranou baterii</button>
-        </div>
       </div>
 
       <!-- Progress and Weakness Map (NEW) -->
@@ -137,6 +129,24 @@
       
       <!-- History panel -->
       <div id="historyPanel" class="hidden"></div>
+
+      </div> <!-- /master-col -->
+
+      <div class="detail-col">
+        <aside class="panel detail-card sticky-detail" id="batteryDetail">
+          <div class="detail-top"><div><h3>Vyber baterii</h3><p>Po kliknutí se zobrazí účel, dominantní obsah a profil baterie.</p></div><span class="badge">—</span></div>
+          <div class="detail-block"><div class="detail-label">Účel</div><div class="detail-copy detail-purpose" id="detailPurpose"><p>Zatím není vybraná žádná baterie.</p></div></div>
+          <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips" id="detailDominant"></div></div>
+          <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list" id="detailBreakdown"></ul></div>
+          <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy" id="detailProfile"></div></div>
+          
+          <div class="start-actions" style="margin-top: 16px; border-top: 1px solid #e2ebf2; padding-top: 16px; justify-content: center;">
+            <button class="btn btn-primary" id="startTestBtn" disabled style="width: 100%; justify-content: center; font-size: 16px; padding: 14px;">Spustit vybranou baterii</button>
+            <div class="selection-note hidden" id="selectionNote"></div> <!-- Hidden as we now use disabled state on button correctly -->
+          </div>
+        </aside>
+      </div> <!-- /detail-col -->
+    </div> <!-- /master-detail-layout -->
     </section>
 
     <!-- ════ TEST SCREEN ════ -->
@@ -209,20 +219,52 @@
             <div class="score-sub" id="scoreSub"></div>
             <div class="results-battery" id="resultsBatteryLabel"></div>
           </div>
-          <div id="performanceSummary"></div>
-          <div id="attentionDashboard"></div>
-          <div id="thematicWeaknesses"></div>
-          <div id="recommendationsPanel"></div>
-          <div id="repairPanel" class="hidden"></div>
-          <div class="result-actions" id="resultActions">
-            <button class="btn btn-light" id="showReviewBtn">Zobrazit rozbor</button>
-            <button class="btn btn-primary hidden" id="hideReviewBtn">Skrýt rozbor</button>
-            <button class="btn btn-purple" id="repairBtn">Spustit opravný režim</button>
-            <button class="btn btn-light" id="restartBtn">Restartovat baterii</button>
-            <button class="btn btn-outline" id="backToSelectionBtn">Zpět na výběr</button>
-            <button class="btn btn-outline btn-sm" id="clearSessionBtn">Vymazat uloženou relaci</button>
+          
+          <div class="results-accordion">
+            <details class="accordion-panel" open>
+              <summary class="accordion-summary">Shrnutí a doporučení</summary>
+              <div class="accordion-content">
+                <div id="performanceSummary"></div>
+                <div id="recommendationsPanel"></div>
+              </div>
+            </details>
+
+            <details class="accordion-panel">
+              <summary class="accordion-summary">Analýza témat</summary>
+              <div class="accordion-content">
+                <div id="thematicWeaknesses"></div>
+              </div>
+            </details>
+
+            <details class="accordion-panel">
+              <summary class="accordion-summary">Strategie & Pozornost</summary>
+              <div class="accordion-content">
+                <div id="attentionDashboard"></div>
+              </div>
+            </details>
+
+            <details class="accordion-panel" open>
+              <summary class="accordion-summary">Návazná práce</summary>
+              <div class="accordion-content">
+                <div id="repairPanel" class="hidden"></div>
+              </div>
+            </details>
+
+            <details class="accordion-panel">
+              <summary class="accordion-summary">Rozbor otázek</summary>
+              <div class="accordion-content">
+                <div class="result-actions" id="resultActions" style="margin-bottom:20px;">
+                  <button class="btn btn-light" id="showReviewBtn">Zobrazit rozbor</button>
+                  <button class="btn btn-primary hidden" id="hideReviewBtn">Skrýt rozbor</button>
+                  <button class="btn btn-purple" id="repairBtn">Spustit opravný režim celkového testu</button>
+                  <button class="btn btn-light" id="restartBtn">Restartovat baterii</button>
+                  <button class="btn btn-outline" id="backToSelectionBtn">Zpět na výběr baterií</button>
+                  <button class="btn btn-outline btn-sm" id="clearSessionBtn">Vymazat uloženou relaci</button>
+                </div>
+                <div id="reviewWrap" class="hidden"></div>
+              </div>
+            </details>
           </div>
-          <div id="reviewWrap" class="hidden"></div>
         </section>
       </main>
     </section>
