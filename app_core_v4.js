@@ -790,6 +790,37 @@ function buildSessionBattery(battery, modeConfig) {
     }
   }
   
+
+function syncExpandedBatteryDetailHeight(targetWrapper = null) {
+  const wrappers = targetWrapper
+    ? [targetWrapper].filter(Boolean)
+    : Array.from(document.querySelectorAll(".battery-card-wrapper.expanded"));
+
+  wrappers.forEach(wrapper => {
+    const detail = wrapper?.querySelector(".battery-inline-detail");
+    if (!detail) return;
+
+    if (!wrapper.classList.contains("expanded")) {
+      detail.style.maxHeight = "0px";
+      return;
+    }
+
+    detail.style.maxHeight = `${detail.scrollHeight}px`;
+  });
+}
+
+function queueExpandedBatteryDetailHeightSync(targetWrapper = null) {
+  requestAnimationFrame(() => {
+    syncExpandedBatteryDetailHeight(targetWrapper);
+    requestAnimationFrame(() => syncExpandedBatteryDetailHeight(targetWrapper));
+  });
+}
+
+window.addEventListener("resize", () => queueExpandedBatteryDetailHeightSync());
+window.addEventListener("orientationchange", () => {
+  window.setTimeout(() => queueExpandedBatteryDetailHeightSync(), 120);
+});
+
 function renderBatteryCards() {
   const grid = $("batteryGrid");
   const batteries = getActiveBatteries();
@@ -841,7 +872,11 @@ function selectBattery(id) {
   appState.selectedBatteryId = id;
 
   // Update UI classes
-  document.querySelectorAll(".battery-card-wrapper").forEach(el => el.classList.remove("expanded"));
+  document.querySelectorAll(".battery-card-wrapper").forEach(el => {
+    el.classList.remove("expanded");
+    const detail = el.querySelector(".battery-inline-detail");
+    if (detail) detail.style.maxHeight = "0px";
+  });
   document.querySelectorAll(".battery-card").forEach(el => el.classList.remove("selected"));
   
   const wrapper = document.getElementById(`battery-wrapper-${id}`);
@@ -864,7 +899,11 @@ function closeBatteryDetail(id) {
     if (appState.selectedBatteryId === id) {
         appState.selectedBatteryId = null;
         const wrapper = document.getElementById(`battery-wrapper-${id}`);
-        if (wrapper) wrapper.classList.remove("expanded");
+        if (wrapper) {
+            wrapper.classList.remove("expanded");
+            const detail = wrapper.querySelector(".battery-inline-detail");
+            if (detail) detail.style.maxHeight = "0px";
+        }
         const card = wrapper?.querySelector(".battery-card");
         if (card) card.classList.remove("selected");
         if (typeof updateSelectionState === "function") updateSelectionState();
@@ -917,6 +956,8 @@ function populateInlineDetail(battery) {
         </div>
       </div>
     </div>`;
+
+  queueExpandedBatteryDetailHeightSync(wrapper);
 }
 
 // Preserve renderBatteryDetail for backward compatibility or other parts of the UI if any
