@@ -38,7 +38,7 @@ window.SCIO_V4_RAW_BATTERIES = [
     "questions": [
       {
         "number": 1,
-        "text": "Žák při předčítání obsahu rozumí, ale samostatně selhává u drobného písma a hustého vizuálního rozvržení. Které jádro obtíže je nejpřesnější?",
+        "text": "Žák při předčítání obsahu rozumí, ale samostatně selhává u drobného písma a hustého vizuálního rozvržení. Co je v této situaci nejpřesnější vysvětlení?",
         "options": [
           "Hlavní bariéra leží ve slovní zásobě, protože obsah textu by jinak nezvládal ani po předčítání.",
           "Hlavní bariéra leží v motivaci, protože samostatné čtení je pro většinu žáků jen otázkou vůle.",
@@ -88,10 +88,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 5,
         "text": "Žák používá bohatou slovní zásobu, ale nerozumí narážce, doslovně čte nepřímé sdělení a v dialogu těžko pružně mění perspektivu. Co je nejpřesnější čtení?",
         "options": [
-          "Jádro obtíže může ležet spíše v technice čtení, protože doslovnost bývá hlavně důsledkem pomalé dekódace.",
-          "Jádro obtíže může ležet spíše v artikulaci, protože nepřímé významy vycházejí hlavně z přesné výslovnosti.",
-          "Jádro obtíže může ležet spíše v sociálně-pragmatickém porozumění než ve slovní zásobě nebo artikulaci.",
-          "Jádro obtíže může ležet spíše v neochotě spolupracovat, protože pružnost v dialogu je otázkou disciplíny."
+          "Potíž bude spíše v technice čtení, protože doslovnost bývá hlavně důsledkem pomalé dekódace.",
+          "Potíž bude spíše v artikulaci, protože nepřímé významy vycházejí hlavně z přesné výslovnosti.",
+          "Potíž bude spíše v sociálně-pragmatickém porozumění než ve slovní zásobě nebo artikulaci.",
+          "Potíž bude spíše v neochotě spolupracovat, protože pružnost v dialogu je otázkou disciplíny."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -100,10 +100,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 6,
         "text": "Po léčbě závažného onemocnění žák učivu rozumí, ale výrazně se unaví, hůře zvládá přesuny a odpoledne výkon prudce klesá. Které čtení je nejpřesnější?",
         "options": [
-          "Jádrem je spíše nízká studijní odolnost, protože odpolední pokles bývá hlavně otázkou vůle.",
-          "Jádrem je spíše zdravotní a fyzická zátěž měnící podmínky výkonu a participace.",
-          "Jádrem je spíše nedostatek rozumových schopností, protože únava obvykle jen odkryje slabý intelekt.",
-          "Jádrem je spíše porucha chování, protože kolísání výkonu znamená nestabilní sebekontrolu."
+          "Spíše jde o nízkou studijní odolnost, protože odpolední pokles bývá hlavně otázkou vůle.",
+          "Spíše jde o zdravotní a fyzickou zátěž, která mění podmínky výkonu a participace.",
+          "Spíše jde o nedostatek rozumových schopností, protože únava obvykle jen odkryje slabý intelekt.",
+          "Spíše jde o poruchu chování, protože kolísání výkonu znamená nestabilní sebekontrolu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -124,7 +124,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 8,
         "text": "U dítěte se objevují afekty hlavně při zahlcení řečí, změně pravidel a sociální nepředvídatelnosti. Které čtení je nejpřesnější?",
         "options": [
-          "Afekt může být spíše sekundárním projevem přetížení a regulačního selhání než samotným jádrem obtíže.",
+          "Afekt může být spíše sekundárním projevem přetížení a regulačního selhání než hlavní obtíží.",
           "Afekt bývá nejspíše hlavním znakem poruchy chování, protože intenzita projevu rozhoduje víc než kontext.",
           "Afekt bývá nejspíše důkazem nízkého intelektu, protože kognitivně silnější dítě se reguluje bez pomoci.",
           "Afekt bývá nejspíše projevem rozmazlenosti, protože změna pravidel nemá odborný význam."
@@ -184,10 +184,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 13,
         "text": "Dítě výrazně lépe chápe postup, když je názorně rozfázovaný a opřený o konkrétní situace. Při čistě abstraktním slovním výkladu rychle selhává. Co je nejpřesnější čtení?",
         "options": [
-          "Jádrem může být potřeba názorného a strukturovaného zprostředkování, proto je nejlepší rezignovat na učební cíle.",
-          "Jádrem může být potřeba názorného a strukturovaného zprostředkování, ne prostá nepozornost.",
-          "Jádrem může být potřeba názorného a strukturovaného zprostředkování, proto jde vždy hlavně o sluchovou vadu.",
-          "Jádrem může být potřeba názorného a strukturovaného zprostředkování, proto je abstraktní výklad nevhodný pro všechny žáky."
+          "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, proto je nejlepší rezignovat na učební cíle.",
+          "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, ne prostá nepozornost.",
+          "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, proto jde vždy hlavně o sluchovou vadu.",
+          "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, proto je abstraktní výklad nevhodný pro všechny žáky."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -232,10 +232,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 17,
         "text": "Dítě zapomíná delší ústní instrukce, ale podle krátkého vizuálního seznamu postup zvládá. Který závěr je nejpřesnější?",
         "options": [
-          "Jádro může ležet spíše v nízkém intelektu, protože vícekrokový úkol vždy odhalí slabé myšlení.",
-          "Jádro může ležet spíše v zatížení auditivně-sekvenčního zpracování než v úplném neporozumění úkolu.",
-          "Jádro může ležet spíše v motorice, protože seznam kompenzuje hlavně tělesné tempo.",
-          "Jádro může ležet spíše v nekázni, protože dítě by si správný postup mělo prostě pamatovat."
+          "Potíž může souviset spíše s nízkým intelektem, protože vícekrokový úkol vždy odhalí slabé myšlení.",
+          "Potíž může souviset spíše se zatížením auditivně-sekvenčního zpracování než s úplným neporozuměním úkolu.",
+          "Potíž může souviset spíše s motorikou, protože seznam kompenzuje hlavně tělesné tempo.",
+          "Potíž může souviset spíše s nekázní, protože dítě by si správný postup mělo prostě pamatovat."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -290,12 +290,12 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 22,
-        "text": "Žák slovně popíše cestu po škole, ale v novém prostoru se sám neorientuje, vyhýbá se schodištím a přechodům. Které jádro obtíže je nejpřesnější?",
+        "text": "Žák slovně popíše cestu po škole, ale v novém prostoru se sám neorientuje, vyhýbá se schodištím a přechodům. Co je v této situaci nejpřesnější vysvětlení?",
         "options": [
-          "Jádro může ležet spíše ve funkční orientaci a pohybu, proto ale není třeba řešit samostatnost v prostředí.",
-          "Jádro může ležet spíše ve funkční orientaci a bezpečném pohybu než v jazykovém popisu trasy.",
-          "Jádro může ležet spíše ve funkční orientaci a pohybu, proto jde vždy hlavně o poruchu chování.",
-          "Jádro může ležet spíše ve funkční orientaci a pohybu, proto automaticky selhává i porozumění učivu."
+          "Potíž může souviset spíše s funkční orientací a pohybem, proto ale není třeba řešit samostatnost v prostředí.",
+          "Potíž může souviset spíše s funkční orientací a bezpečným pohybem než s jazykovým popisem trasy.",
+          "Potíž může souviset spíše s funkční orientací a pohybem, proto jde vždy hlavně o poruchu chování.",
+          "Potíž může souviset spíše s funkční orientací a pohybem, proto automaticky selhává i porozumění učivu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -304,10 +304,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 23,
         "text": "Dítě používá jednoduché věty, ale největší obtíž se ukáže při sdílení pozornosti, pochopení záměru druhého a střídání témat. Co je nejpřesnější čtení?",
         "options": [
-          "Jádro může ležet spíše v sociálně-komunikačním porozumění a reciprocitě než v samotné délce vět.",
-          "Jádro může ležet spíše v sociálně-komunikačním porozumění, proto ale nejde o oblast speciálněpedagogické podpory.",
-          "Jádro může ležet spíše v sociálně-komunikačním porozumění, proto je nejlepší zaměřit se jen na artikulaci.",
-          "Jádro může ležet spíše v sociálně-komunikačním porozumění, proto se automaticky potvrzuje sluchová vada."
+          "Potíž může souviset spíše se sociálně-komunikačním porozuměním a reciprocitou než se samotnou délkou vět.",
+          "Potíž může souviset spíše se sociálně-komunikačním porozuměním, proto ale nejde o oblast speciálněpedagogické podpory.",
+          "Potíž může souviset spíše se sociálně-komunikačním porozuměním, proto je nejlepší zaměřit se jen na artikulaci.",
+          "Potíž může souviset spíše se sociálně-komunikačním porozuměním, proto se automaticky potvrzuje sluchová vada."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -434,7 +434,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 34,
-        "text": "Který znak spíše ukazuje na pragmatické jádro obtíže než na čistě artikulační problém?",
+        "text": "Který znak spíše ukazuje na pragmatickou povahu obtíže než na čistě artikulační problém?",
         "options": [
           "Nepřesná výslovnost jedné skupiny hlásek při jinak přiměřeném porozumění a kontaktu.",
           "Nepřesné čtení narážek, doslovné chápání a slabší oprava nedorozumění v dialogu.",
@@ -578,12 +578,12 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 46,
-        "text": "Dítě zvládá práci ve třídě, ale výrazně se vyhýbá chodbám, schodištím a nepřehledným přesunům. Které jádro obtíže je nejpřesnější?",
+        "text": "Dítě zvládá práci ve třídě, ale výrazně se vyhýbá chodbám, schodištím a nepřehledným přesunům. Co je v této situaci nejpřesnější vysvětlení?",
         "options": [
-          "Jádrem může být bariéra v orientaci a pohybu, proto ale nejde o oblast školní podpory.",
-          "Jádrem může být bariéra v orientaci a bezpečném pohybu v prostoru, ne v samotném učebním obsahu.",
-          "Jádrem může být bariéra v orientaci a pohybu, proto jde hlavně o poruchu chování.",
-          "Jádrem může být bariéra v orientaci a pohybu, proto se tím potvrzuje slabé čtenářské porozumění."
+          "Potíž může souviset s bariérou v orientaci a pohybu, proto ale nejde o oblast školní podpory.",
+          "Potíž může souviset s bariérou v orientaci a bezpečném pohybu v prostoru, ne v samotném učebním obsahu.",
+          "Potíž může souviset s bariérou v orientaci a pohybu, proto jde hlavně o poruchu chování.",
+          "Potíž může souviset s bariérou v orientaci a pohybu, proto se tím potvrzuje slabé čtenářské porozumění."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -2297,7 +2297,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 27,
         "text": "Při úpravě komunikace pro žáka s PAS je nejméně vhodné spoléhat hlavně na",
         "options": [
-          "krátké a předvídatelné formulace, které drží jádro úkolu a průběhu činnosti.",
+          "krátké a předvídatelné formulace, které zachovávají smysl úkolu a průběh činnosti.",
           "pojmenování změny dopředu a konkrétní popis toho, co bude následovat.",
           "ironie, narážky a nevyřčené sociální významy, které si má žák z kontextu domyslet.",
           "omezení zbytečně víceznačných pokynů a doplnění vizuální nebo jinak stabilní opory."
@@ -2841,7 +2841,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 18,
         "text": "Ve které situaci je typickým partnerem spíše PPP než SPC?",
         "options": [
-          "Když je jádrem situace speciálněpedagogická podpora navázaná na konkrétní smyslové či kombinované postižení.",
+          "Když se situace týká speciálněpedagogické podpory navázané na konkrétní smyslové či kombinované postižení.",
           "Když škola potřebuje posoudit širší vzdělávací a vývojové obtíže bez zřejmé vazby na konkrétní druh postižení.",
           "Když škola potřebuje vyměnit školní dokument za nový formulář kraje v tomto výkladu postupu a návazné školní praxi.",
           "Když jde o běžné rozdělení služeb třídního učitele v rámci ročníku v rámci školní praxe a běžného poradenského režimu."
@@ -3305,7 +3305,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 3,
-        "text": "Které vymezení nejpřesněji vystihuje jádro odlehčovací služby?",
+        "text": "Které vymezení nejpřesněji vystihuje hlavní smysl odlehčovací služby?",
         "options": [
           "Odlehčovací služba je především školské opatření, které nahrazuje běžnou výuku při rodinné zátěži.",
           "Odlehčovací služba je hlavně léčebný režim určený pro akutní zdravotní stavy v domácím prostředí.",
@@ -3353,7 +3353,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 7,
-        "text": "Rodina se neptá na výuku ani na léčbu, ale na nároky, služby, finance a orientaci v systému. Co je v jádru této potřeby?",
+        "text": "Rodina se neptá na výuku ani na léčbu, ale na nároky, služby, finance a orientaci v systému. Co je podstatou této potřeby?",
         "options": [
           "Jde automaticky o důvod k zahájení řízení OSPOD, protože rodina sama zatím neví, kam se obrátit.",
           "Jde automaticky o školský problém, protože jakákoli nejistota rodiny se má nejprve řešit ve škole.",
@@ -3559,7 +3559,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 24,
         "text": "Rodina má lékařskou zprávu, ale hlavní problém popisuje v dopravě, domácím režimu a koordinaci pomoci. Co je nejpřesnější?",
         "options": [
-          "Vedle zdravotnické informace může být výrazně přítomna i sociální potřeba, protože jádro je praktická a organizační zátěž rodiny.",
+          "Vedle zdravotnické informace může být výrazně přítomna i sociální potřeba, protože v popředí stojí praktická a organizační zátěž rodiny.",
           "Jakmile rodina přinese lékařskou zprávu, je nejpřesnější držet situaci už jen ve zdravotnické linii bez dalšího rozlišení.",
           "Praktická zátěž rodiny je vedle medicínského nálezu druhořadá, protože pro systémovou volbu podpory není podstatná.",
           "Pokud je obtíž organizační, má ji řešit pouze škola, protože koordinace rodinného režimu je vždy školská agenda."
@@ -3934,7 +3934,7 @@ window.SCIO_V4_RAW_BATTERIES = [
           "Je formulovaná co nejširším způsobem, aby se předem nic nevyloučilo.",
           "Je postavená hlavně na tom, jakou kategorii by bylo vhodné potvrdit.",
           "Je správná tehdy, když ji škola a rodina formulují úplně stejně.",
-          "Je dost konkrétní pro další práci, ale nechává prostor pro ověření, co je skutečné jádro obtíží."
+          "Je dost konkrétní pro další práci, ale nechává prostor pro ověření, co potíže skutečně způsobuje."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -5010,7 +5010,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "options": [
           "Je třeba řešit přístup k vizuální informaci a formát materiálů, ne automaticky uzavírat problém jako slabé porozumění učivu.",
           "Nejpřesnější je soustředit se hlavně na reedukaci čtenářské techniky, protože obtíž se projevuje u textu, a z toho odvozuje další závěr.",
-          "Jádro obtíží je nejspíš v nízké vytrvalosti, protože ústní výkon bývá pro žáky přirozeně snazší, a tímto směrem by vedla podporu.",
+          "Obtíže nejspíš souvisejí s nízkou vytrvalostí, protože ústní výkon bývá pro žáky přirozeně snazší, a tímto směrem by vedla podporu.",
           "Nejpřesnější je nahradit ústní zkoušení písemným, aby bylo možné lépe odlišit výkon od dojmu, a v tom hledá klíčový znak."
         ],
         "correct": 0,
@@ -5032,10 +5032,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 40,
         "text": "Žák reaguje výbuchem hlavně při nejasném zadání a veřejné opravě, ale v předvídatelném režimu a s neveřejnou zpětnou vazbou pracuje výrazně lépe. Který závěr je nejpřesnější?",
         "options": [
-          "Jádro obtíží je hlavně v nedostatku učiva, protože problém se projevuje při plnění školních úkolů.",
+          "Hlavní problém je v nedostatku učiva, protože problém se projevuje při plnění školních úkolů.",
           "Nejpřesnější je zpřísnit sankční režim, protože veřejná oprava má posílit respekt k autoritě, a z toho odvozuje další závěr.",
           "Chování je třeba číst v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
-          "Jádro obtíží leží hlavně v tělesném oslabení, protože přetížení ve třídě bývá vždy somatického původu."
+          "Hlavní problém leží v tělesném oslabení, protože přetížení ve třídě bývá vždy somatického původu."
         ],
         "correct": 2,
         "correctLetter": "C"
