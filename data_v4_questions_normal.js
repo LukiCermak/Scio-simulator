@@ -1881,12 +1881,12 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 50,
-        "text": "Které shrnutí nejlépe odpovídá logopedické logice baterie N3?",
+        "text": "Které tvrzení nejlépe vystihuje cíl logopedického působení u závažnější NKS?",
         "options": [
-          "Rozhodující je vybrat vždy nejodborněji znějící termín; tedy spíše odlišná složka téhož rámce; tedy spíše jiná systémová rovina nebo oborová část.",
-          "Rozhodující je odlišit, kde leží jádro komunikační obtíže, jak se projevuje v různých podmínkách a jaký typ podpory z toho plyne.",
-          "Rozhodující je hlavně naučit se názvy poruch a všechny je spojit s jednou metodou; tedy spíše jiná systémová rovina nebo oborová část.",
-          "Rozhodující je považovat komunikační obtíže za čistě vedlejší problém školy; tedy spíše odlišná složka téhož rámce; tedy spíše jiná systémová rovina nebo oborová část."
+          "Dosažení plně normované řeči za každou cenu; tedy spíše jednostranný znak bez širšího zhodnocení.",
+          "Maximalizace komunikační funkčnosti a využitelného potenciálu jedince, i když norma nemusí být plně dosažitelná.",
+          "Omezení podpory jen na nácvik izolované artikulace; tedy spíše jiné terminologické nebo systémové vymezení.",
+          "Přesun celé podpory výhradně do zdravotnictví bez pedagogického a sociálního přesahu; tedy spíše jiná systémová rovina nebo oborová část."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -2513,12 +2513,12 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 50,
-        "text": "Které shrnutí nejlépe odpovídá logice baterie N4?",
+        "text": "Které opatření je nejpřiměřenější, když je hlavní bariérou pomalé čtenářské dekódování, ale ne samotné porozumění obsahu?",
         "options": [
-          "Těžiště je v tom hodnotit všechny žáky stejnou cestou bez ohledu na to, co je skutečným cílem úkolu; tedy spíše odlišná složka téhož rámce.",
-          "Těžiště je v tom přeložit každý neúspěch do jedné globální diagnózy; tedy spíše jiná systémová rovina nebo oborová část; tedy spíše nepřesné systémové zařazení.",
-          "Těžiště je v tom poznat správný název poruchy a tím je práce hotová; tedy spíše jiná systémová rovina nebo oborová část; tedy spíše nepřesné systémové zařazení.",
-          "Těžiště je v odlišení jádra obtíže, podmínek výkonu, sekundárních dopadů a typu podpory, která odstraní bariéru, ne cíl učení."
+          "Snížit obsahový cíl ve všech předmětech bez dalšího rozlišení; tedy spíše odlišná složka téhož rámce.",
+          "Přeložit obtíž automaticky do globálního kognitivního oslabení; tedy spíše jiná systémová rovina nebo oborová část; tedy spíše nepřesné systémové zařazení.",
+          "Trvat na stejném tempu a stejném způsobu ověření bez úprav; tedy spíše jiná systémová rovina nebo oborová část; tedy spíše nepřesné systémové zařazení.",
+          "Upravit podmínky práce s textem a způsob ověření tak, aby bariéra nebyla zaměněna za cíl učení."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -3144,12 +3144,12 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 50,
-        "text": "Které shrnutí nejlépe vystihuje logiku baterie N5?",
+        "text": "Co je pro etopedické posouzení nejdůležitější při odlišení poruchy chování od jednorázového selhání?",
         "options": [
-          "Těžiště je v moralizujícím hodnocení dítěte a v rychlém přiřazení problému k jedné sankci; tedy spíše jiná systémová rovina nebo oborová část.",
-          "Těžiště je v rozlišování poruch chování, rizik, funkcí chování, prevence, intervence i návazností.",
-          "Těžiště je v rychlém poznání jedné instituce nebo jedné sankce bez hlubšího rozlišování kontextu; tedy spíše odlišná složka téhož rámce.",
-          "Těžiště je v tom, že každý problém má stejnou příčinu, stejnou funkci chování i stejné řešení; tedy spíše nepřesné systémové zařazení."
+          "To, zda už škola uložila sankci; tedy spíše jiná systémová rovina nebo oborová část.",
+          "Stabilita, opakování a funkční kontext chování, ne izolovaný incident.",
+          "To, zda dítě působí na první pohled neukázněně; tedy spíše odlišná složka téhož rámce.",
+          "To, zda rodiče s chováním souhlasí; tedy spíše nepřesné systémové zařazení."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3778,12 +3778,12 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 50,
-        "text": "Které shrnutí nejlépe odpovídá logice baterie N6?",
+        "text": "Které tvrzení nejlépe vystihuje roli školního poradenského pracoviště?",
         "options": [
-          "Těžiště je v tom, že jeden dokument automaticky řeší celý případ bez role rodiny a školy; tedy spíše nepřesné systémové zařazení.",
-          "Těžiště je v tom, že škola i ŠPZ dělají v zásadě totéž; tedy spíše jiná systémová rovina nebo oborová část; tedy spíše nepřesné systémové zařazení.",
-          "Těžiště je v prostém poznání zkratek a v tom, kdo zní odborněji; tedy spíše odlišná složka téhož rámce; tedy spíše jiná systémová rovina nebo oborová část.",
-          "Těžiště je v přesném rozlišování institucí, dokumentů, kompetencí, souhlasů, procesních kroků, platnosti a revize."
+          "ŠPP nahrazuje PPP a SPC a samo vydává doporučení ke vzdělávání; tedy spíše nepřesné systémové zařazení.",
+          "ŠPP je samostatné školské poradenské zařízení s vlastní územní působností; tedy spíše jiná systémová rovina nebo oborová část; tedy spíše nepřesné systémové zařazení.",
+          "ŠPP slouží hlavně jako archiv dokumentů bez vazby na každodenní podporu školy; tedy spíše odlišná složka téhož rámce; tedy spíše jiná systémová rovina nebo oborová část.",
+          "ŠPP koordinuje poradenské služby uvnitř školy, ale nepřebírá kompetence externího ŠPZ."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -4409,12 +4409,12 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 50,
-        "text": "Které shrnutí nejlépe vystihuje logiku baterie N7?",
+        "text": "Který postup odborníka je nejpřiměřenější, když psychologický výsledek a pedagogické pozorování nejdou na první pohled úplně dohromady?",
         "options": [
-          "Těžiště je v tom, že pedagogické a psychologické pojmy jsou pro speciální pedagogiku spíše zbytné; tedy spíše nepřesné systémové zařazení.",
-          "Těžiště je v propojení pedagogických a psychologických rámců s rolí odborníka a aplikačním rozlišováním bariér.",
-          "Těžiště je v odděleném memorování pojmů bez vazby na praxi, roli odborníka a školní situace; tedy spíše nepřesné systémové zařazení.",
-          "Těžiště je v tom, že všechny role ve škole i poradenském systému dělají prakticky totéž; tedy spíše jiná systémová rovina nebo oborová část."
+          "Držet se jen testového výsledku a školní kontext ignorovat; tedy spíše nepřesné systémové zařazení.",
+          "Hledat vysvětlení v kombinaci dat, situace žáka a podmínek výuky, ne v jedné izolované informaci.",
+          "Považovat rozpor automaticky za chybu školy a dál jej neověřovat; tedy spíše nepřesné systémové zařazení.",
+          "Odložit závěr, protože pedagogická data do odborného úsudku nepatří; tedy spíše jiná systémová rovina nebo oborová část."
         ],
         "correct": 1,
         "correctLetter": "B"
