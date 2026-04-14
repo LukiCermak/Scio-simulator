@@ -428,49 +428,7 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   function median(arr) { if(!arr.length) return 0; const s=[...arr].sort((a,b)=>a-b); const m=Math.floor(s.length/2); return s.length%2?s[m]:(s[m-1]+s[m])/2; }
   function safeParse(json, fb) { if(!json) return fb; try { const r = JSON.parse(json); return r!==null ? r : fb; } catch(e) { return fb; } }
   function shuffleArray(items) { const a=[...items]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
-
   function $(id) { return document.getElementById(id); }
-
-
-  function switchTab(groupId, tabId) {
-    const navId = groupId === 'start' ? 'startTabsNav' : 'resultsTabsNav';
-    const contentPrefix = groupId === 'start' ? 'tab-' : 'results-tab-';
-    
-    // Update nav buttons
-    const nav = $(navId);
-    if (nav) {
-      nav.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.tab === tabId);
-      });
-    }
-
-    // Update content visibility
-    const container = groupId === 'start' ? $('startScreen') : $('resultsPane');
-    if (container) {
-      container.querySelectorAll(`.tab-content`).forEach(content => {
-        const isTarget = content.id === `${contentPrefix}${tabId}`;
-        content.classList.toggle('active', isTarget);
-      });
-    }
-  }
-  window.switchTab = switchTab;
-
-  function toggleDrawer(open = true) {
-    const drawer = $('batteryDetail');
-    const overlay = $('drawerOverlay');
-    if (!drawer || !overlay) return;
-    
-    if (open) {
-      drawer.classList.add('active');
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Prevent scroll
-    } else {
-      drawer.classList.remove('active');
-      overlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  }
-  window.toggleDrawer = toggleDrawer;
 
   // ═══════════════════════════════════════════
   // 4. STORAGE API
@@ -797,29 +755,13 @@ function buildSessionBattery(battery, modeConfig) {
     }
     return safe;
   }
-
   function setAppMode(mode) {
-    appState.appMode = mode;
-    const ss = $("startScreen"), ts = $("testScreen"), tp = $("testPane"), rp = $("resultsPane");
-    if (mode === "start") {
-      ss.classList.remove("hidden");
-      ts.classList.add("hidden");
-      // Reset to simulation tab when returning to start
-      switchTab('start', 'simulation');
-    } else {
-      ss.classList.add("hidden");
-      ts.classList.remove("hidden");
-    }
-    if (mode === "test") {
-      tp.classList.remove("hidden");
-      rp.classList.add("hidden");
-    }
-    if (mode === "results") {
-      tp.classList.add("hidden");
-      rp.classList.remove("hidden");
-      // Default to summary tab on results
-      switchTab('results', 'summary');
-    }
+    appState.appMode=mode;
+    const ss=$("startScreen"), ts=$("testScreen"), tp=$("testPane"), rp=$("resultsPane");
+    if(mode==="start"){ss.classList.remove("hidden");ts.classList.add("hidden");}
+    else{ss.classList.add("hidden");ts.classList.remove("hidden");}
+    if(mode==="test"){tp.classList.remove("hidden");rp.classList.add("hidden");}
+    if(mode==="results"){tp.classList.add("hidden");rp.classList.remove("hidden");}
   }
   
 function renderBatteryCards() {
@@ -2118,19 +2060,12 @@ function updateMeta() {
   // 10. INTERACTIONS
   // ═══════════════════════════════════════════
   
-
 function selectBattery(id) {
-  if (appState.currentSession) {
-    if (!confirm("Máš rozpracovaný test. Chceš ho opustit a vybrat jinou baterii?")) return;
-    clearCurrentSession();
-  }
   appState.selectedBatteryId = id;
-  const activeMap = getActiveBatteryMap();
-  const battery = activeMap[id];
+  const battery = getActiveBatteryMap()[id] || null;
+  updateSelectionState();
   renderBatteryCards();
   renderBatteryDetail(battery);
-  updateSelectionState();
-  if (battery) toggleDrawer(true);
 }
 
   
@@ -2422,22 +2357,12 @@ function hideReview() {
   // 12. BOOTSTRAP
   // ═══════════════════════════════════════════
   
-
 function initApp() {
   migrateStorageIfNeeded();
   appState.settings = loadSettings();
   appState.history = loadHistory();
   appState.progress = loadProgress();
   if ($("statQuestions")) $("statQuestions").textContent = String(getAllDatasetsQuestionCount());
-  
-  // Drawer listeners
-  $("closeDrawerBtn")?.addEventListener("click", () => toggleDrawer(false));
-  $("drawerOverlay")?.addEventListener("click", () => toggleDrawer(false));
-  $("drawerStartBtn")?.addEventListener("click", () => {
-    toggleDrawer(false);
-    if (appState.selectedBatteryId) startBattery(appState.selectedBatteryId);
-  });
-
   renderConfigPanel();
   renderBatteryCards();
   renderBatteryDetail(null);

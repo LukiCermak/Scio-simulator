@@ -454,12 +454,12 @@ function buildTutorDiagnostics(question, state, metadata, isCorrect, isUnanswere
   const tempoText = (state?.timeSpentMs || 0) >= 60000 ? "Rozhodování bylo pomalejší." : (state?.timeSpentMs || 0) > 0 ? "Tempo bylo v normě." : "";
   const changeText = (state?.answerChanges || 0) >= 2 ? "Odpověď se vícekrát měnila." : ((state?.answerChanges || 0) === 1 ? "Odpověď byla jednou změněna." : "");
   if (isUnanswered) {
-    return [confidenceText, tempoText, "Otázka zůstala bez uzavřené odpovědi.", errorLabel ? `Pravděpodobný typ chyby: ${errorLabel}.` : ""].filter(Boolean).join(" ");
+    return [confidenceText, tempoText, "Trenažér to bere jako neuzavřené rozhodnutí.", errorLabel ? `Nejbližší štítek chyby: ${errorLabel}.` : ""].filter(Boolean).join(" ");
   }
   if (isCorrect) {
     return [confidenceText, tempoText, changeText, "V této položce je výkon stabilní."].filter(Boolean).join(" ");
   }
-  return [confidenceText, tempoText, changeText, errorLabel ? `Pravděpodobný typ chyby: ${errorLabel}.` : "", normalizeTutorText(metadata?.whyWrongCategory || "")].filter(Boolean).join(" ");
+  return [confidenceText, tempoText, changeText, errorLabel ? `Trenažér tuto chybu řadí jako: ${errorLabel}.` : "", normalizeTutorText(metadata?.whyWrongCategory || "")].filter(Boolean).join(" ");
 }
 
 function renderReview() {
@@ -523,7 +523,7 @@ function renderReviewExplanationTab(item) {
         <div class="review-explainer-item"><strong>Proč je správně</strong>${escapeHtml(buildTutorCorrectReason(q, m) || "—")}</div>
         <div class="review-explainer-item"><strong>Lákavý distraktor</strong>${escapeHtml(buildTutorDistractorText(q, qs, m, isCorrect, isUnanswered) || "—")}</div>
         <div class="review-explainer-item"><strong>Teoretické okénko</strong>${escapeHtml(buildTutorTheoryText(m) || "—")}</div>
-        <div class="review-explainer-item"><strong>Vyhodnocení odpovědi</strong>${escapeHtml(buildTutorDiagnostics(q, qs, m, isCorrect, isUnanswered) || "—")}</div>
+        <div class="review-explainer-item"><strong>Diagnostika trenažéru</strong>${escapeHtml(buildTutorDiagnostics(q, qs, m, isCorrect, isUnanswered) || "—")}</div>
         <div class="review-explainer-item"><strong>Související opravný filtr</strong>${escapeHtml((m.recommendedRepairFilters || []).join(", ") || m.subtopic || "—")}</div>
       </div>
       <div class="review-actions-row">

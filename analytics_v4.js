@@ -523,7 +523,7 @@ function buildRepairSessionFromResults(srcSession, candidateIndexes) {
   if (!srcSession || !indexes.length) return null;
   const srcQuestions = srcSession.activeTest.questions;
   const difficultyMode = normalizeDifficultyForProgress(srcSession.difficultyMode || srcSession.activeTest?.difficultyMode || "basic");
-  const difficultyLabel = difficultyMode === "hard" ? "HARD" : "NORMAL";
+  const difficultyLabel = difficultyMode === "hard" ? "Pokročilá" : "Základní";
   const repairQuestions = indexes.map((idx, i) => ({
     ...srcQuestions[idx],
     number: i + 1,

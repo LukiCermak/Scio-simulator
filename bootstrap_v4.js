@@ -34,7 +34,7 @@
   window.addEventListener("keydown", function(e){
     const active = document.activeElement;
     if (active && (active.tagName === "TEXTAREA" || active.tagName === "INPUT" || active.tagName === "SELECT")) return;
-    if ((e.key.toUpperCase() === "T" || e.key.toUpperCase() === "V") && appState?.currentSession?.results?.finished && !$("reviewWrap")?.classList.contains("hidden")) {
+    if (e.key.toUpperCase() === "T" && appState?.currentSession?.results?.finished && !$("reviewWrap")?.classList.contains("hidden")) {
       if (toggleReviewTabForAll()) e.preventDefault();
     }
   });

@@ -32,107 +32,112 @@
 
   <div class="container page">
     <!-- ════ START SCREEN ════ -->
-
-    <!-- ════ START SCREEN ════ -->
     <section class="panel start-screen" id="startScreen">
-      <!-- Tabs Navigation -->
-      <nav class="tabs-nav" id="startTabsNav">
-        <button class="tab-btn active" data-tab="simulation" onclick="switchTab('start', 'simulation')" type="button">Simulace</button>
-        <button class="tab-btn" data-tab="dashboard" onclick="switchTab('start', 'dashboard')" type="button">Můj pokrok</button>
-        <button class="tab-btn" data-tab="guide" onclick="switchTab('start', 'guide')" type="button">Průvodce</button>
-      </nav>
-
-      <!-- Tab: Simulation -->
-      <div id="tab-simulation" class="tab-content active">
-        <!-- Config panel -->
-        <div class="config-panel" id="configPanel">
-          <h4>Jak dnes poběžím</h4>
-          <div class="config-row">
-            <div class="config-section"><div class="config-section-label">Obtížnost</div><div class="config-options" id="configDifficulty"><button class="config-opt active" data-difficulty="basic" type="button">Základní</button><button class="config-opt" data-difficulty="hard" type="button">Pokročilá</button></div><div class="config-help" id="difficultyHelp">Základní režim je výchozí. Dashboard dál agreguje výsledky napříč oběma režimy.</div></div>
-            <div class="config-section"><div class="config-section-label">Režim práce</div><div class="config-options" id="configMode"><button class="config-opt active" data-mode="simulation" type="button">Simulace testu</button><button class="config-opt" data-mode="reading-training" type="button">Trénink čtení</button><button class="config-opt" data-mode="repair" type="button" disabled id="repairModeOpt">Opravný režim</button></div></div>
-            <div class="config-section"><div class="config-section-label">Cíl</div><div class="config-options" id="configGoal"><button class="config-opt" data-goal="speed" type="button">Rychlost</button><button class="config-opt" data-goal="accuracy" type="button">Přesnost</button><button class="config-opt active" data-goal="attention" type="button">Pozornost</button></div></div>
-          </div>
-          <div class="config-checks" id="configChecks">
-            <label class="config-check"><input type="checkbox" id="optShowQuestionFirst"> zobrazit nejprve jen zadání</label>
-            <label class="config-check"><input type="checkbox" id="optHighlightKeywords"> zvýrazňovat riziková slova</label>
-            <label class="config-check"><input type="checkbox" id="optRequireConfidence"> po odpovědi vyžadovat jistotu</label>
-            <label class="config-check"><input type="checkbox" id="optAutoSave" checked> automaticky ukládat stav</label>
-            <label class="config-check"><input type="checkbox" id="optRestoreSession" checked> při návratu obnovit relaci</label>
-          </div>
-        </div>
-
-        <!-- Restore panel -->
-        <div id="restorePanel" class="hidden"></div>
-
-        <!-- Battery selection -->
-        <div class="battery-select-wrap" style="margin-top:20px;">
-          <div class="section-title"><div><h3>Výběr baterie</h3><p>Vyber modul, zkontroluj jeho profil a spusť test.</p></div></div>
-          <div class="battery-grid" id="batteryGrid"></div>
-          <div class="start-actions">
-            <div class="selection-note" id="selectionNote"><strong>Vybraná baterie:</strong> zatím není zvolena žádná varianta.</div>
-            <button class="btn btn-primary" id="startTestBtn" disabled>Spustit vybranou baterii</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tab: Dashboard -->
-      <div id="tab-dashboard" class="tab-content">
-        <div id="weaknessPanel"></div>
-        <div id="historyPanel"></div>
-      </div>
-
-      <!-- Tab: Guide -->
-      <div id="tab-guide" class="tab-content">
-        <div class="hero-compact">
-          <div class="hero-card panel">
-            <h2>Vyber si baterii, obtížnost a spusť simulaci</h2>
-            <p>Simulátor obsahuje základní i pokročilou vrstvu. Každá pracuje s rámcem 50 otázek / 30 minut, ale zaměřuje se na jiný okruh.</p>
-            <div class="hero-note hero-note-rich">
-              <div class="hero-note-head">
-                <strong>Co od simulátoru čekat</strong>
-                <p>Nejde jen o počítání bodů. Simulátor tě vede od prvního průchodu bateriemi až k cílenému dopracování chyb.</p>
-              </div>
-              <div class="hero-note-list">
-                <div class="hero-note-item">
-                  <span class="hero-note-icon" aria-hidden="true">🧩</span>
-                  <div class="hero-note-copy">
-                    <strong>2 režimy · 800 otázek</strong>
-                    <span>Předpřipravené baterie rozdělené na základní a pokročilou úroveň.</span>
-                  </div>
+      <div class="hero">
+        <div class="hero-card panel">
+          <h2>Vyber si baterii, obtížnost a spusť simulaci, trénink čtení zadání nebo cílenou opravnou sadu</h2>
+          <p>Simulátor obsahuje základní i pokročilou vrstvu. V každém režimu je 7 profilových baterií a 1 finální syntetická baterie. Každá pracuje s rámcem 50 otázek / 30 minut, ale zaměřuje se na jiný okruh, typ formulací a úroveň náročnosti.</p>
+          <div class="hero-note hero-note-rich">
+            <div class="hero-note-head">
+              <strong>Co od simulátoru čekat</strong>
+              <p>Nejde jen o počítání bodů. Simulátor tě vede od prvního průchodu bateriemi až k cílenému dopracování chyb, slabších témat a rozhodnutí, která tě v testu zbytečně stojí body.</p>
+            </div>
+            <div class="hero-note-list">
+              <div class="hero-note-item">
+                <span class="hero-note-icon" aria-hidden="true">🧩</span>
+                <div class="hero-note-copy">
+                  <strong>2 režimy · 8 baterií na režim · 800 otázek</strong>
+                  <span>Můžeš přepínat mezi základní a pokročilou vrstvou. Dashboard přitom dál sčítá výsledky napříč oběma režimy.</span>
                 </div>
-                <div class="hero-note-item">
-                  <span class="hero-note-icon" aria-hidden="true">🎯</span>
-                  <div class="hero-note-copy">
-                    <strong>Tři režimy práce</strong>
-                    <span>Simulace, Trénink čtení nebo Opravná sada.</span>
-                  </div>
+              </div>
+              <div class="hero-note-item">
+                <span class="hero-note-icon" aria-hidden="true">🎯</span>
+                <div class="hero-note-copy">
+                  <strong>Tři režimy práce</strong>
+                  <span>Můžeš jet ostrou simulaci, trénink čtení zadání nebo navazující opravnou sadu podle toho, co teď potřebuješ posílit.</span>
+                </div>
+              </div>
+              <div class="hero-note-item">
+                <span class="hero-note-icon" aria-hidden="true">🧭</span>
+                <div class="hero-note-copy">
+                  <strong>Studijní dashboard</strong>
+                  <span>Na hlavní stránce uvidíš dlouhodobý přehled silných a slabších témat, trend posledních testů a doporučení, a to souhrnně napříč všemi bateriemi i oběma módy obtížnosti.</span>
+                </div>
+              </div>
+              <div class="hero-note-item">
+                <span class="hero-note-icon" aria-hidden="true">📘</span>
+                <div class="hero-note-copy">
+                  <strong>Rozbor po otázkách a výklad učitele</strong>
+                  <span>Po testu dostaneš přehled výsledku i rozbor jednotlivých otázek, aby bylo jasné, kde šlo o nepozornost, záměnu nebo skutečnou mezeru v tématu.</span>
+                </div>
+              </div>
+              <div class="hero-note-item">
+                <span class="hero-note-icon" aria-hidden="true">💾</span>
+                <div class="hero-note-copy">
+                  <strong>Průběžné uložení postupu</strong>
+                  <span>Aplikace si v prohlížeči pamatuje rozepsanou relaci, takže se můžeš vrátit tam, kde jsi skončil(a), bez ztráty průběžné práce.</span>
+                </div>
+              </div>
+              <div class="hero-note-item">
+                <span class="hero-note-icon" aria-hidden="true">📌</span>
+                <div class="hero-note-copy">
+                  <strong>Cílené procvičování dál</strong>
+                  <span>Na základě výsledků můžeš navázat opravnou sadou nebo se vracet k tématům, která ještě nemáš dostatečně upevněná.</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="stats">
-            <div class="stat-card"><div class="stat-label">Otázky v bance</div><div class="stat-value" id="statQuestions">800</div></div>
-            <div class="stat-card"><div class="stat-label">Čas na test</div><div class="stat-value">30 min</div></div>
-            <div class="stat-card"><div class="stat-label">Obtížnosti</div><div class="stat-value">2</div></div>
+            <div class="stat-card"><div class="stat-label">Otázky v bance</div><div class="stat-value" id="statQuestions">800</div><div class="stat-sub">Souhrn všech otázek napříč základní i pokročilou vrstvou.</div></div>
+            <div class="stat-card"><div class="stat-label">Čas na test</div><div class="stat-value">30 min</div><div class="stat-sub">Stejný rámec jako u oficiálně popsaného testu UPOL SPP.</div></div>
+            <div class="stat-card"><div class="stat-label">Režimy obtížnosti</div><div class="stat-value">2</div><div class="stat-sub">V každém režimu je 8 baterií: 7 profilových a 1 finální syntetická.</div></div>
           </div>
+        </div>
+        <aside class="panel detail-card" id="batteryDetail">
+          <div class="detail-top"><div><h3>Vyber baterii</h3><p>Po kliknutí se tady zobrazí účel, dominantní obsah, tematický rozpis a role baterie v celé bance.</p></div><span class="badge">—</span></div>
+          <div class="detail-block"><div class="detail-label">Účel</div><div class="detail-copy detail-purpose" id="detailPurpose"><p>Zatím není vybraná žádná baterie.</p></div></div>
+          <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips" id="detailDominant"></div></div>
+          <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list" id="detailBreakdown"></ul></div>
+          <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy" id="detailProfile"></div></div>
+        </aside>
+      </div>
+
+      <!-- Config panel -->
+      <div class="config-panel" id="configPanel">
+        <h4>Jak dnes poběžím</h4>
+        <div class="config-row">
+          <div class="config-section"><div class="config-section-label">Obtížnost</div><div class="config-options" id="configDifficulty"><button class="config-opt active" data-difficulty="basic" type="button">Základní</button><button class="config-opt" data-difficulty="hard" type="button">Pokročilá</button></div><div class="config-help" id="difficultyHelp">Základní režim je výchozí. Dashboard dál agreguje výsledky napříč oběma režimy.</div></div>
+          <div class="config-section"><div class="config-section-label">Režim práce</div><div class="config-options" id="configMode"><button class="config-opt active" data-mode="simulation" type="button">Simulace testu</button><button class="config-opt" data-mode="reading-training" type="button">Trénink čtení</button><button class="config-opt" data-mode="repair" type="button" disabled id="repairModeOpt">Opravný režim</button></div></div>
+          <div class="config-section"><div class="config-section-label">Cíl</div><div class="config-options" id="configGoal"><button class="config-opt" data-goal="speed" type="button">Rychlost</button><button class="config-opt" data-goal="accuracy" type="button">Přesnost</button><button class="config-opt active" data-goal="attention" type="button">Pozornost</button></div></div>
+        </div>
+        <div class="config-checks" id="configChecks">
+          <label class="config-check"><input type="checkbox" id="optShowQuestionFirst"> zobrazit nejprve jen zadání</label>
+          <label class="config-check"><input type="checkbox" id="optHighlightKeywords"> zvýrazňovat riziková slova</label>
+          <label class="config-check"><input type="checkbox" id="optRequireConfidence"> po odpovědi vyžadovat jistotu</label>
+          <label class="config-check"><input type="checkbox" id="optAutoSave" checked> automaticky ukládat stav</label>
+          <label class="config-check"><input type="checkbox" id="optRestoreSession" checked> při návratu obnovit relaci</label>
         </div>
       </div>
 
-      <!-- Battery Detail Side Drawer -->
-      <div class="drawer-overlay" id="drawerOverlay"></div>
-      <aside class="panel detail-card drawer" id="batteryDetail">
-        <button class="drawer-close-btn" id="closeDrawerBtn" title="Zavřít detail">×</button>
-        <div class="detail-top"><div><h3>Vyber baterii</h3><p>Účel, dominantní obsah a tematický rozpis baterie.</p></div><span class="badge">—</span></div>
-        <div class="detail-block"><div class="detail-label">Účel</div><div class="detail-copy detail-purpose" id="detailPurpose"><p>Zatím není vybraná žádná baterie.</p></div></div>
-        <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips" id="detailDominant"></div></div>
-        <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list" id="detailBreakdown"></ul></div>
-        <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy" id="detailProfile"></div></div>
-        <div style="margin-top:20px;">
-          <button class="btn btn-primary" style="width:100%;" id="drawerStartBtn" disabled title="Baterii můžeš spustit po zavření detailu v hlavní mřížce">Zavřít a spustit</button>
-        </div>
-      </aside>
-    </section>
+      <!-- Restore panel (conditionally populated by JS) -->
+      <div id="restorePanel" class="hidden"></div>
 
+      <!-- Battery selection -->
+      <div class="battery-select-wrap" style="margin-top:20px;">
+        <div class="section-title"><div><h3>Výběr baterie</h3><p>Vyber modul, zkontroluj jeho profil a spusť test.</p></div></div>
+        <div class="battery-grid" id="batteryGrid"></div>
+        <div class="start-actions">
+          <div class="selection-note" id="selectionNote"><strong>Vybraná baterie:</strong> zatím není zvolena žádná varianta.</div>
+          <button class="btn btn-primary" id="startTestBtn" disabled>Spustit vybranou baterii</button>
+        </div>
+      </div>
+
+      <!-- Progress and Weakness Map (NEW) -->
+      <div id="weaknessPanel" class="hidden"></div>
+      
+      <!-- History panel -->
+      <div id="historyPanel" class="hidden"></div>
+    </section>
 
     <!-- ════ TEST SCREEN ════ -->
     <section class="app hidden" id="testScreen">
@@ -198,59 +203,27 @@
           </div>
         </section>
 
-
         <section id="resultsPane" class="results hidden">
           <div class="score-box">
             <div class="score-main" id="scoreMain"></div>
             <div class="score-sub" id="scoreSub"></div>
             <div class="results-battery" id="resultsBatteryLabel"></div>
           </div>
-
-          <!-- Results Sub-Tabs Navigation -->
-
-          <nav class="results-tabs" id="resultsTabsNav">
-            <button class="tab-btn active" data-tab="summary" onclick="switchTab('results', 'summary')" type="button">Shrnutí</button>
-            <button class="tab-btn" data-tab="thematic" onclick="switchTab('results', 'thematic')" type="button">Analýza témat</button>
-            <button class="tab-btn" data-tab="strategy" onclick="switchTab('results', 'strategy')" type="button">Strategie & Pozornost</button>
-            <button class="tab-btn" data-tab="repair" onclick="switchTab('results', 'repair')" type="button">Návazná práce</button>
-            <button class="tab-btn" data-tab="review" onclick="switchTab('results', 'review')" type="button">Rozbor otázek</button>
-          </nav>
-
-          <!-- Results Tab: Summary -->
-          <div id="results-tab-summary" class="tab-content active">
-            <div id="performanceSummary"></div>
-            <div id="recommendationsPanel"></div>
+          <div id="performanceSummary"></div>
+          <div id="attentionDashboard"></div>
+          <div id="thematicWeaknesses"></div>
+          <div id="recommendationsPanel"></div>
+          <div id="repairPanel" class="hidden"></div>
+          <div class="result-actions" id="resultActions">
+            <button class="btn btn-light" id="showReviewBtn">Zobrazit rozbor</button>
+            <button class="btn btn-primary hidden" id="hideReviewBtn">Skrýt rozbor</button>
+            <button class="btn btn-purple" id="repairBtn">Spustit opravný režim</button>
+            <button class="btn btn-light" id="restartBtn">Restartovat baterii</button>
+            <button class="btn btn-outline" id="backToSelectionBtn">Zpět na výběr</button>
+            <button class="btn btn-outline btn-sm" id="clearSessionBtn">Vymazat uloženou relaci</button>
           </div>
-
-          <!-- Results Tab: Thematic Analysis -->
-          <div id="results-tab-thematic" class="tab-content">
-            <div id="thematicWeaknesses"></div>
-          </div>
-
-          <!-- Results Tab: Strategy & Attention -->
-          <div id="results-tab-strategy" class="tab-content">
-            <div id="attentionDashboard"></div>
-          </div>
-
-          <!-- Results Tab: Repair & Next Steps -->
-          <div id="results-tab-repair" class="tab-content">
-            <div id="repairPanel" class="hidden"></div>
-          </div>
-
-          <!-- Results Tab: Question Review -->
-          <div id="results-tab-review" class="tab-content">
-            <div class="result-actions" id="resultActions" style="margin-bottom: 20px;">
-              <button class="btn btn-light" id="showReviewBtn">Načíst a zobrazit rozbor</button>
-              <button class="btn btn-primary hidden" id="hideReviewBtn">Skrýt rozbor</button>
-              <button class="btn btn-purple" id="repairBtn">Spustit opravný režim celého testu</button>
-              <button class="btn btn-light" id="restartBtn">Restartovat baterii</button>
-              <button class="btn btn-outline" id="backToSelectionBtn">Zpět na výběr</button>
-              <button class="btn btn-outline btn-sm" id="clearSessionBtn">Vymazat uloženou relaci</button>
-            </div>
-            <div id="reviewWrap" class="hidden"></div>
-          </div>
+          <div id="reviewWrap" class="hidden"></div>
         </section>
-
       </main>
     </section>
   </div>
