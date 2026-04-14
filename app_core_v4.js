@@ -73,13 +73,13 @@ function getDifficultyModeLabel(mode) {
 }
 function loadMetadataExport(mode = "basic") {
   return normalizeDifficultyMode(mode) === "hard"
-    ? (window.metadataExportHard || window.metadataExport || { schemaVersion: 0, items: [] })
-    : (window.metadataExportNormal || window.metadataExport || { schemaVersion: 0, items: [] });
+    ? (window.metadataExportHard || { schemaVersion: 0, items: [] })
+    : (window.metadataExport || { schemaVersion: 0, items: [] });
 }
 function loadBattery8MetadataMap(mode = "basic") {
   return normalizeDifficultyMode(mode) === "hard"
-    ? (window.battery8MapHard || window.battery8Map || { schemaVersion: 0, items: [] })
-    : (window.battery8MapNormal || window.battery8Map || { schemaVersion: 0, items: [] });
+    ? (window.battery8MapHard || { schemaVersion: 0, items: [] })
+    : (window.battery8Map || { schemaVersion: 0, items: [] });
 }
 function sanitizeTutorExplanationText(text) {
   return String(text || "")
@@ -416,63 +416,6 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   function formatTime(s) { const m=Math.floor(s/60),sec=s%60; return `${String(m).padStart(2,"0")}:${String(sec).padStart(2,"0")}`; }
   function formatDate(iso) { if(!iso) return "—"; try{const d=new Date(iso); return d.toLocaleDateString("cs-CZ",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});}catch(e){return "—";} }
   function formatModeLabel(mode) { return mode==="reading-training" ? "Trénink čtení zadání" : mode==="repair" ? "Opravná sada" : "Simulace"; }
-
-  const BATTERY_DOMINANT_LABELS = {
-    "D1":"blízká kategorie",
-    "D2":"záměna kompetence",
-    "D3":"záměna dokumentu",
-    "D4":"procesní krok nebo pořadí",
-    "D5":"hraniční podmínka nebo výjimka",
-    "D6":"lhůta nebo časový limit",
-    "D7":"terminologická blízkost",
-    "D8":"symptom, příčina, důsledek a intervence",
-    "D9":"historické a osobnostní souvislosti",
-    "D10":"resortní a systémová příslušnost",
-    "D11":"míra obecnosti",
-    "D12":"falešně přesný detail"
-  };
-
-  const BATTERY_BREAKDOWN_LABELS = {
-    "detail-discrimination":"jemné rozlišení detailu",
-    "document-discrimination":"rozlišení funkce dokumentu",
-    "condition-discrimination":"rozlišení podmínky nebo výjimky",
-    "system-discrimination":"rozlišení systému, resortu nebo instituce",
-    "symptom-profile-discrimination":"rozlišení symptomu, příčiny, důsledku a intervence",
-    "category-discrimination":"rozlišení blízkých kategorií",
-    "terminology-discrimination":"rozlišení blízkých termínů",
-    "historical-discrimination":"rozlišení historických souvislostí",
-    "generality-discrimination":"rozlišení míry obecnosti",
-    "process-discrimination":"rozlišení procesního kroku",
-    "competence-discrimination":"rozlišení kompetence a pravomoci",
-    "timeline-discrimination":"rozlišení lhůty nebo časové posloupnosti",
-    "document-function-discrimination":"rozlišení typu a funkce dokumentu",
-    "authority-discrimination":"rozlišení rozhodující autority",
-    "institution-discrimination":"rozlišení instituce nebo role",
-    "cause-consequence-discrimination":"rozlišení příčiny a důsledku",
-    "function-discrimination":"rozlišení funkce a účelu",
-    "role-discrimination":"rozlišení role a odpovědnosti",
-    "priority-discrimination":"rozlišení hlavního a vedlejšího znaku",
-    "framework-discrimination":"rozlišení odborného rámce",
-    "layer-discrimination":"rozlišení různých rovin téhož tématu"
-  };
-
-  function formatBatteryDominantItem(item) {
-    const key = String(item || "").trim();
-    return BATTERY_DOMINANT_LABELS[key] || key;
-  }
-
-  function formatBatteryBreakdownItem(item) {
-    const raw = String(item || "").trim();
-    const match = raw.match(/^(\d+)×\s*(.+)$/i);
-    const count = match ? match[1] : "";
-    const code = match ? match[2].trim() : raw;
-    const label = BATTERY_BREAKDOWN_LABELS[code] || code
-      .replace(/-/g, " ")
-      .replace(/\bdiscrimination\b/gi, "rozlišení")
-      .replace(/\s+/g, " ")
-      .trim();
-    return count ? `${count}× ${label}` : label;
-  }
   function hasConfidenceTracking(session) {
     const s = session || appState.currentSession;
     if (!s) return false;
@@ -485,7 +428,49 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
   function median(arr) { if(!arr.length) return 0; const s=[...arr].sort((a,b)=>a-b); const m=Math.floor(s.length/2); return s.length%2?s[m]:(s[m-1]+s[m])/2; }
   function safeParse(json, fb) { if(!json) return fb; try { const r = JSON.parse(json); return r!==null ? r : fb; } catch(e) { return fb; } }
   function shuffleArray(items) { const a=[...items]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+
   function $(id) { return document.getElementById(id); }
+
+
+  function switchTab(groupId, tabId) {
+    const navId = groupId === 'start' ? 'startTabsNav' : 'resultsTabsNav';
+    const contentPrefix = groupId === 'start' ? 'tab-' : 'results-tab-';
+    
+    // Update nav buttons
+    const nav = $(navId);
+    if (nav) {
+      nav.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === tabId);
+      });
+    }
+
+    // Update content visibility
+    const container = groupId === 'start' ? $('startScreen') : $('resultsPane');
+    if (container) {
+      container.querySelectorAll(`.tab-content`).forEach(content => {
+        const isTarget = content.id === `${contentPrefix}${tabId}`;
+        content.classList.toggle('active', isTarget);
+      });
+    }
+  }
+  window.switchTab = switchTab;
+
+  function toggleDrawer(open = true) {
+    const drawer = $('batteryDetail');
+    const overlay = $('drawerOverlay');
+    if (!drawer || !overlay) return;
+    
+    if (open) {
+      drawer.classList.add('active');
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent scroll
+    } else {
+      drawer.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  window.toggleDrawer = toggleDrawer;
 
   // ═══════════════════════════════════════════
   // 4. STORAGE API
@@ -812,13 +797,29 @@ function buildSessionBattery(battery, modeConfig) {
     }
     return safe;
   }
+
   function setAppMode(mode) {
-    appState.appMode=mode;
-    const ss=$("startScreen"), ts=$("testScreen"), tp=$("testPane"), rp=$("resultsPane");
-    if(mode==="start"){ss.classList.remove("hidden");ts.classList.add("hidden");}
-    else{ss.classList.add("hidden");ts.classList.remove("hidden");}
-    if(mode==="test"){tp.classList.remove("hidden");rp.classList.add("hidden");}
-    if(mode==="results"){tp.classList.add("hidden");rp.classList.remove("hidden");}
+    appState.appMode = mode;
+    const ss = $("startScreen"), ts = $("testScreen"), tp = $("testPane"), rp = $("resultsPane");
+    if (mode === "start") {
+      ss.classList.remove("hidden");
+      ts.classList.add("hidden");
+      // Reset to simulation tab when returning to start
+      switchTab('start', 'simulation');
+    } else {
+      ss.classList.add("hidden");
+      ts.classList.remove("hidden");
+    }
+    if (mode === "test") {
+      tp.classList.remove("hidden");
+      rp.classList.add("hidden");
+    }
+    if (mode === "results") {
+      tp.classList.add("hidden");
+      rp.classList.remove("hidden");
+      // Default to summary tab on results
+      switchTab('results', 'summary');
+    }
   }
   
 function renderBatteryCards() {
@@ -859,8 +860,8 @@ function renderBatteryDetail(battery) {
   const detailCopy = getBatteryDetailCopy(battery);
   top.innerHTML = `<div><h3>${escapeHtml(battery.label)} – ${escapeHtml(battery.title)}</h3><p>${escapeHtml(battery.subtitle)}</p></div><span class="badge">${getBatteryDisplayBadge(battery.id)}</span>`;
   $("detailPurpose").innerHTML = `<p>${escapeHtml(detailCopy?.purposeText || battery.purpose)}</p>`;
-  $("detailDominant").innerHTML = (battery.dominant || []).map(item => `<span class="chip">${escapeHtml(formatBatteryDominantItem(item))}</span>`).join("");
-  $("detailBreakdown").innerHTML = (battery.breakdown || []).map(item => `<li>${escapeHtml(formatBatteryBreakdownItem(item))}</li>`).join("");
+  $("detailDominant").innerHTML = (battery.dominant || []).map(item => `<span class="chip">${escapeHtml(item)}</span>`).join("");
+  $("detailBreakdown").innerHTML = (battery.breakdown || []).map(item => `<li>${escapeHtml(item)}</li>`).join("");
   $("detailProfile").innerHTML = (detailCopy?.profileParagraphs || []).map(item => `<p>${escapeHtml(item)}</p>`).join("");
 }
 
@@ -2117,12 +2118,19 @@ function updateMeta() {
   // 10. INTERACTIONS
   // ═══════════════════════════════════════════
   
+
 function selectBattery(id) {
+  if (appState.currentSession) {
+    if (!confirm("Máš rozpracovaný test. Chceš ho opustit a vybrat jinou baterii?")) return;
+    clearCurrentSession();
+  }
   appState.selectedBatteryId = id;
-  const battery = getActiveBatteryMap()[id] || null;
-  updateSelectionState();
+  const activeMap = getActiveBatteryMap();
+  const battery = activeMap[id];
   renderBatteryCards();
   renderBatteryDetail(battery);
+  updateSelectionState();
+  if (battery) toggleDrawer(true);
 }
 
   
@@ -2414,12 +2422,22 @@ function hideReview() {
   // 12. BOOTSTRAP
   // ═══════════════════════════════════════════
   
+
 function initApp() {
   migrateStorageIfNeeded();
   appState.settings = loadSettings();
   appState.history = loadHistory();
   appState.progress = loadProgress();
   if ($("statQuestions")) $("statQuestions").textContent = String(getAllDatasetsQuestionCount());
+  
+  // Drawer listeners
+  $("closeDrawerBtn")?.addEventListener("click", () => toggleDrawer(false));
+  $("drawerOverlay")?.addEventListener("click", () => toggleDrawer(false));
+  $("drawerStartBtn")?.addEventListener("click", () => {
+    toggleDrawer(false);
+    if (appState.selectedBatteryId) startBattery(appState.selectedBatteryId);
+  });
+
   renderConfigPanel();
   renderBatteryCards();
   renderBatteryDetail(null);
