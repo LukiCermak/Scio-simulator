@@ -421,35 +421,6 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     if (!s) return false;
     return !!(s.ui?.requireConfidence || s.questionStates?.some(q => q.confidence !== null));
   }
-  function shouldShowConfidenceIndicator(session) {
-    const s = session || appState.currentSession;
-    return !!(s && s.ui?.requireConfidence);
-  }
-  function shouldShowSlowIndicator(session) {
-    const s = session || appState.currentSession;
-    return !!(s && s.goal === "speed");
-  }
-  function shouldShowQuestionActions(session) {
-    const s = session || appState.currentSession;
-    return !!(s && (s.mode === "reading-training" || s.mode === "repair"));
-  }
-  function updateTestLegendVisibility(session) {
-    const s = session || appState.currentSession;
-    const legend = document.querySelector("#testSidebarContent .legend");
-    if (!legend) return;
-    const showFlag = shouldShowQuestionActions(s);
-    const showSlow = shouldShowSlowIndicator(s);
-    const showGuess = shouldShowConfidenceIndicator(s);
-    legend.querySelectorAll(".legend-item").forEach(item => {
-      const box = item.querySelector(".legend-box");
-      if (!box) return;
-      let visible = true;
-      if (box.classList.contains("flag")) visible = showFlag;
-      if (box.classList.contains("slow-q")) visible = showSlow;
-      if (box.classList.contains("guess-q")) visible = showGuess;
-      item.classList.toggle("hidden", !visible);
-    });
-  }
   function renderMiniQuestionBadges(indexes, emptyLabel = "—") {
     if (!Array.isArray(indexes) || indexes.length === 0) return `<span>${escapeHtml(emptyLabel)}</span>`;
     return `<span class="mini-q-badge-list">${indexes.map(idx => `<span class="mini-q-badge" title="Otázka ${idx + 1}">${idx + 1}</span>`).join("")}</span>`;
@@ -862,6 +833,26 @@ function renderBatteryCards() {
 }
 
   
+function setInlineBatteryDetailHeight(id) {
+  const container = document.getElementById(`battery-detail-${id}`);
+  const wrapper = document.getElementById(`battery-wrapper-${id}`);
+  if (!container || !wrapper) return;
+  if (!wrapper.classList.contains("expanded")) {
+    container.style.maxHeight = "0px";
+    return;
+  }
+  const applyHeight = () => {
+    container.style.maxHeight = `${container.scrollHeight}px`;
+  };
+  requestAnimationFrame(() => requestAnimationFrame(applyHeight));
+}
+
+function refreshExpandedBatteryDetailHeight() {
+  const selectedId = appState.selectedBatteryId;
+  if (!selectedId) return;
+  setInlineBatteryDetailHeight(selectedId);
+}
+
 function selectBattery(id) {
   const activeMap = typeof getActiveBatteryMap === "function" ? getActiveBatteryMap() : BATTERY_MAP;
   const battery = activeMap[id];
@@ -872,14 +863,16 @@ function selectBattery(id) {
   // Update UI classes
   document.querySelectorAll(".battery-card-wrapper").forEach(el => el.classList.remove("expanded"));
   document.querySelectorAll(".battery-card").forEach(el => el.classList.remove("selected"));
-  
+  document.querySelectorAll(".battery-inline-detail").forEach(el => { el.style.maxHeight = "0px"; });
+
   const wrapper = document.getElementById(`battery-wrapper-${id}`);
   const card = wrapper?.querySelector(".battery-card");
   if (wrapper) {
     wrapper.classList.add("expanded");
     if (card) card.classList.add("selected");
     populateInlineDetail(battery);
-    
+    setInlineBatteryDetailHeight(id);
+
     // Smooth scroll to the expanded card
     setTimeout(() => {
         wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -893,6 +886,8 @@ function closeBatteryDetail(id) {
     if (appState.selectedBatteryId === id) {
         appState.selectedBatteryId = null;
         const wrapper = document.getElementById(`battery-wrapper-${id}`);
+        const container = document.getElementById(`battery-detail-${id}`);
+        if (container) container.style.maxHeight = "0px";
         if (wrapper) wrapper.classList.remove("expanded");
         const card = wrapper?.querySelector(".battery-card");
         if (card) card.classList.remove("selected");
@@ -900,6 +895,8 @@ function closeBatteryDetail(id) {
     }
 }
 window.closeBatteryDetail = closeBatteryDetail;
+window.addEventListener("resize", refreshExpandedBatteryDetailHeight);
+window.addEventListener("orientationchange", () => setTimeout(refreshExpandedBatteryDetailHeight, 120));
 
 function populateInlineDetail(battery) {
   const container = document.getElementById(`battery-detail-${battery.id}`);
@@ -907,7 +904,7 @@ function populateInlineDetail(battery) {
 
   const detailCopy = getBatteryDetailCopy(battery);
   const wrapper = document.getElementById(`battery-wrapper-${battery.id}`);
-  
+
   // Add Close Button to wrapper if not exists
   if (wrapper && !wrapper.querySelector(".btn-close-detail")) {
       const closeBtn = document.createElement("button");
@@ -931,12 +928,12 @@ function populateInlineDetail(battery) {
           <div class="detail-block"><div class="detail-label">Účel baterie</div><div class="detail-copy detail-purpose"><p>${escapeHtml(detailCopy?.purposeText || battery.purpose)}</p></div></div>
           <div class="detail-block"><div class="detail-label">Profil baterie</div><div class="detail-copy">${(detailCopy?.profileParagraphs || []).map(item => `<p>${escapeHtml(item)}</p>`).join("")}</div></div>
       </div>
-      
+
       <div class="detail-side-col">
           <div class="detail-block"><div class="detail-label">Dominantní obsah</div><div class="chips">${(battery.dominant || []).map(item => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div></div>
           <div class="detail-block"><div class="detail-label">Tematický rozpis</div><ul class="compact-list">${(battery.breakdown || []).map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
       </div>
-      
+
       <div class="detail-full-col">
         <div class="start-actions" style="justify-content: center; gap: 20px;">
           <div style="text-align: center; max-width: 500px;">
@@ -946,6 +943,8 @@ function populateInlineDetail(battery) {
         </div>
       </div>
     </div>`;
+
+  setInlineBatteryDetailHeight(battery.id);
 }
 
 // Preserve renderBatteryDetail for backward compatibility or other parts of the UI if any
@@ -1825,20 +1824,16 @@ function renderConfigPanel() {
   function refreshQuestionGrid() {
     const s=appState.currentSession; if(!s) return;
     const ci=s.ui.currentQuestionIndex;
-    const showActions = shouldShowQuestionActions(s);
-    const showSlow = shouldShowSlowIndicator(s);
-    const showGuess = shouldShowConfidenceIndicator(s);
     $("questionGrid").querySelectorAll(".q-nav").forEach((b,i)=>{
       const qs=s.questionStates[i];
       b.className="q-nav";
       if(i===ci) b.classList.add("current");
-      if(qs.selectedAnswer!==null && showActions && qs.flagged) b.classList.add("answered-flagged");
-      else if(showActions && qs.flagged) b.classList.add("flagged");
+      if(qs.selectedAnswer!==null&&qs.flagged) b.classList.add("answered-flagged");
+      else if(qs.flagged) b.classList.add("flagged");
       else if(qs.selectedAnswer!==null) b.classList.add("answered");
-      if(showSlow && qs.timeSpentMs>=SLOW_THRESHOLD_MS) b.classList.add("slow");
-      if(showGuess && qs.confidence==="guess") b.classList.add("low-confidence");
+      if(qs.timeSpentMs>=SLOW_THRESHOLD_MS) b.classList.add("slow");
+      if(qs.confidence==="guess") b.classList.add("low-confidence");
     });
-    updateTestLegendVisibility(s);
   }
   
 function updateMeta() {
@@ -1854,7 +1849,6 @@ function updateMeta() {
     <span class="mode-badge ${s.mode}">${s.mode === "reading-training" ? "trénink čtení" : s.mode === "repair" ? "opravný režim" : "simulace testu"}</span>
     <span class="mode-badge difficulty ${difficultyMode}">${formatDifficultyBadgeText(difficultyMode)}</span>
   `;
-  updateTestLegendVisibility(s);
 }
 
   function renderQuestion() {
@@ -1900,14 +1894,7 @@ function updateMeta() {
     cw.querySelectorAll(".conf-btn").forEach(b=>{b.addEventListener("click",()=>setConfidence(b.dataset.conf));});
   }
   function renderQuickActions(qs,ci) {
-    const s=appState.currentSession; if(!s) return;
     const qa=$("quickActionsWrap");
-    if(!shouldShowQuestionActions(s)){
-      qa.innerHTML="";
-      qa.classList.add("hidden");
-      return;
-    }
-    qa.classList.remove("hidden");
     qa.innerHTML=`<button class="action-btn ${qs.flagged?"is-active":""}" id="flagBtn" type="button">${qs.flagged?"★ Označeno":"☆ Označit"}</button><button class="action-btn ${qs.revisitLater?"is-active":""}" id="revisitBtn" type="button">${qs.revisitLater?"↻ Vrátit se":"↻ Vrátit se později"}</button><button class="action-btn" id="clearBtn" type="button">✕ Smazat odpověď</button>`;
     $("flagBtn").addEventListener("click",toggleFlag);
     $("revisitBtn").addEventListener("click",toggleRevisitLater);
