@@ -157,9 +157,9 @@
       overflow: hidden; 
       transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease; 
       background: #fbfdff; 
-      will-change: max-height;
     }
     .battery-card-wrapper.expanded .battery-inline-detail { 
+      max-height: 1200px; 
       padding: 0; 
       border-top: 1px solid #eef3f7; 
     }
@@ -206,18 +206,6 @@
     .inline-detail-header { padding: 18px 24px; background: #f4f9fc; border-bottom: 1px solid #eef3f7; }
     .inline-detail-header h3 { margin: 0; font-size: 20px; color: #183b54; }
     .inline-detail-header p { margin: 4px 0 0; font-size: 14px; color: #516578; }
-
-    @media (max-width: 760px) {
-      .inline-detail-grid { gap: 16px; padding: 16px; }
-      .inline-detail-header { padding: 16px; }
-      .detail-block { padding: 12px 14px; }
-      .detail-full-col { padding-top: 16px; margin-top: 4px; }
-      .battery-card-wrapper { overflow: visible; }
-      .battery-card-wrapper.expanded { margin-bottom: 16px; }
-      .battery-inline-detail .start-actions { gap: 12px !important; }
-      .battery-inline-detail .start-actions > div { width: 100%; max-width: none !important; }
-      .battery-inline-detail .btn.btn-primary { min-width: 0 !important; width: 100% !important; }
-    }
 
     /* ── Stats Tab Styles ── */
     .stats-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; gap: 16px; flex-wrap: wrap; }
@@ -277,8 +265,8 @@
     .legend-item { display:flex; align-items:center; gap:8px; }
     .legend-box { width:16px; height:16px; border-radius:5px; border:1px solid #c5d2dd; background:white; flex:0 0 auto; }
     .legend-box.curr { background:#d8eef9; border-color:var(--blue); }
-    .legend-box.ans { background:#e7f6ed; border-color:#6cbc89; }
-    .legend-box.flag { background:#fff1f1; border-color:#e6a3a3; }
+    .legend-box.ans { background:var(--green-soft); border-color:var(--green-line); }
+    .legend-box.flag { background:var(--orange-soft); border-color:var(--orange-line); }
     .legend-box.slow-q { background:var(--amber-soft); border-color:var(--amber-line); }
     .legend-box.guess-q { background:var(--purple-soft); border-color:var(--purple-line); }
 
@@ -286,9 +274,9 @@
     .question-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px; margin-bottom:16px; }
     .q-nav { border:1px solid #cfdae4; background:white; min-height:42px; border-radius:10px; font-weight:700; color:#475569; cursor:pointer; transition:0.12s ease; position:relative; }
     .q-nav.current { background:#dff1fb; border-color:var(--blue); color:var(--blue-dark); }
-    .q-nav.answered { background:#ebf8ef; border-color:#82c39a; color:#225c3a; }
-    .q-nav.flagged { background:#fff1f1; border-color:#e6a3a3; color:#9a2f2f; }
-    .q-nav.answered-flagged { background:#fff1f1; border-color:#e6a3a3; color:#9a2f2f; }
+    .q-nav.answered { background:var(--green-soft); border-color:var(--green-line); color:#1c6f44; }
+    .q-nav.flagged { background:var(--orange-soft); border-color:var(--orange-line); color:#8a5600; }
+    .q-nav.answered-flagged { background:var(--orange-soft); border-color:var(--orange-line); color:#8a5600; }
     .q-nav.answered-flagged::after { content:""; position:absolute; top:3px; right:3px; width:6px; height:6px; border-radius:50%; background:#2d8b57; }
     .q-nav.slow { border-color:var(--amber-line); }
     .q-nav.low-confidence { border-color:var(--purple-line); }

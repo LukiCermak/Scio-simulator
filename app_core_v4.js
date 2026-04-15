@@ -421,6 +421,35 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     if (!s) return false;
     return !!(s.ui?.requireConfidence || s.questionStates?.some(q => q.confidence !== null));
   }
+  function shouldShowConfidenceIndicator(session) {
+    const s = session || appState.currentSession;
+    return !!(s && s.ui?.requireConfidence);
+  }
+  function shouldShowSlowIndicator(session) {
+    const s = session || appState.currentSession;
+    return !!(s && s.goal === "speed");
+  }
+  function shouldShowQuestionActions(session) {
+    const s = session || appState.currentSession;
+    return !!(s && (s.mode === "reading-training" || s.mode === "repair"));
+  }
+  function updateTestLegendVisibility(session) {
+    const s = session || appState.currentSession;
+    const legend = document.querySelector("#testSidebarContent .legend");
+    if (!legend) return;
+    const showFlag = shouldShowQuestionActions(s);
+    const showSlow = shouldShowSlowIndicator(s);
+    const showGuess = shouldShowConfidenceIndicator(s);
+    legend.querySelectorAll(".legend-item").forEach(item => {
+      const box = item.querySelector(".legend-box");
+      if (!box) return;
+      let visible = true;
+      if (box.classList.contains("flag")) visible = showFlag;
+      if (box.classList.contains("slow-q")) visible = showSlow;
+      if (box.classList.contains("guess-q")) visible = showGuess;
+      item.classList.toggle("hidden", !visible);
+    });
+  }
   function renderMiniQuestionBadges(indexes, emptyLabel = "—") {
     if (!Array.isArray(indexes) || indexes.length === 0) return `<span>${escapeHtml(emptyLabel)}</span>`;
     return `<span class="mini-q-badge-list">${indexes.map(idx => `<span class="mini-q-badge" title="Otázka ${idx + 1}">${idx + 1}</span>`).join("")}</span>`;
@@ -790,37 +819,6 @@ function buildSessionBattery(battery, modeConfig) {
     }
   }
   
-
-function syncExpandedBatteryDetailHeight(targetWrapper = null) {
-  const wrappers = targetWrapper
-    ? [targetWrapper].filter(Boolean)
-    : Array.from(document.querySelectorAll(".battery-card-wrapper.expanded"));
-
-  wrappers.forEach(wrapper => {
-    const detail = wrapper?.querySelector(".battery-inline-detail");
-    if (!detail) return;
-
-    if (!wrapper.classList.contains("expanded")) {
-      detail.style.maxHeight = "0px";
-      return;
-    }
-
-    detail.style.maxHeight = `${detail.scrollHeight}px`;
-  });
-}
-
-function queueExpandedBatteryDetailHeightSync(targetWrapper = null) {
-  requestAnimationFrame(() => {
-    syncExpandedBatteryDetailHeight(targetWrapper);
-    requestAnimationFrame(() => syncExpandedBatteryDetailHeight(targetWrapper));
-  });
-}
-
-window.addEventListener("resize", () => queueExpandedBatteryDetailHeightSync());
-window.addEventListener("orientationchange", () => {
-  window.setTimeout(() => queueExpandedBatteryDetailHeightSync(), 120);
-});
-
 function renderBatteryCards() {
   const grid = $("batteryGrid");
   const batteries = getActiveBatteries();
@@ -872,11 +870,7 @@ function selectBattery(id) {
   appState.selectedBatteryId = id;
 
   // Update UI classes
-  document.querySelectorAll(".battery-card-wrapper").forEach(el => {
-    el.classList.remove("expanded");
-    const detail = el.querySelector(".battery-inline-detail");
-    if (detail) detail.style.maxHeight = "0px";
-  });
+  document.querySelectorAll(".battery-card-wrapper").forEach(el => el.classList.remove("expanded"));
   document.querySelectorAll(".battery-card").forEach(el => el.classList.remove("selected"));
   
   const wrapper = document.getElementById(`battery-wrapper-${id}`);
@@ -899,11 +893,7 @@ function closeBatteryDetail(id) {
     if (appState.selectedBatteryId === id) {
         appState.selectedBatteryId = null;
         const wrapper = document.getElementById(`battery-wrapper-${id}`);
-        if (wrapper) {
-            wrapper.classList.remove("expanded");
-            const detail = wrapper.querySelector(".battery-inline-detail");
-            if (detail) detail.style.maxHeight = "0px";
-        }
+        if (wrapper) wrapper.classList.remove("expanded");
         const card = wrapper?.querySelector(".battery-card");
         if (card) card.classList.remove("selected");
         if (typeof updateSelectionState === "function") updateSelectionState();
@@ -956,8 +946,6 @@ function populateInlineDetail(battery) {
         </div>
       </div>
     </div>`;
-
-  queueExpandedBatteryDetailHeightSync(wrapper);
 }
 
 // Preserve renderBatteryDetail for backward compatibility or other parts of the UI if any
@@ -1837,16 +1825,20 @@ function renderConfigPanel() {
   function refreshQuestionGrid() {
     const s=appState.currentSession; if(!s) return;
     const ci=s.ui.currentQuestionIndex;
+    const showActions = shouldShowQuestionActions(s);
+    const showSlow = shouldShowSlowIndicator(s);
+    const showGuess = shouldShowConfidenceIndicator(s);
     $("questionGrid").querySelectorAll(".q-nav").forEach((b,i)=>{
       const qs=s.questionStates[i];
       b.className="q-nav";
       if(i===ci) b.classList.add("current");
-      if(qs.selectedAnswer!==null&&qs.flagged) b.classList.add("answered-flagged");
-      else if(qs.flagged) b.classList.add("flagged");
+      if(qs.selectedAnswer!==null && showActions && qs.flagged) b.classList.add("answered-flagged");
+      else if(showActions && qs.flagged) b.classList.add("flagged");
       else if(qs.selectedAnswer!==null) b.classList.add("answered");
-      if(qs.timeSpentMs>=SLOW_THRESHOLD_MS) b.classList.add("slow");
-      if(qs.confidence==="guess") b.classList.add("low-confidence");
+      if(showSlow && qs.timeSpentMs>=SLOW_THRESHOLD_MS) b.classList.add("slow");
+      if(showGuess && qs.confidence==="guess") b.classList.add("low-confidence");
     });
+    updateTestLegendVisibility(s);
   }
   
 function updateMeta() {
@@ -1862,6 +1854,7 @@ function updateMeta() {
     <span class="mode-badge ${s.mode}">${s.mode === "reading-training" ? "trénink čtení" : s.mode === "repair" ? "opravný režim" : "simulace testu"}</span>
     <span class="mode-badge difficulty ${difficultyMode}">${formatDifficultyBadgeText(difficultyMode)}</span>
   `;
+  updateTestLegendVisibility(s);
 }
 
   function renderQuestion() {
@@ -1907,7 +1900,14 @@ function updateMeta() {
     cw.querySelectorAll(".conf-btn").forEach(b=>{b.addEventListener("click",()=>setConfidence(b.dataset.conf));});
   }
   function renderQuickActions(qs,ci) {
+    const s=appState.currentSession; if(!s) return;
     const qa=$("quickActionsWrap");
+    if(!shouldShowQuestionActions(s)){
+      qa.innerHTML="";
+      qa.classList.add("hidden");
+      return;
+    }
+    qa.classList.remove("hidden");
     qa.innerHTML=`<button class="action-btn ${qs.flagged?"is-active":""}" id="flagBtn" type="button">${qs.flagged?"★ Označeno":"☆ Označit"}</button><button class="action-btn ${qs.revisitLater?"is-active":""}" id="revisitBtn" type="button">${qs.revisitLater?"↻ Vrátit se":"↻ Vrátit se později"}</button><button class="action-btn" id="clearBtn" type="button">✕ Smazat odpověď</button>`;
     $("flagBtn").addEventListener("click",toggleFlag);
     $("revisitBtn").addEventListener("click",toggleRevisitLater);
