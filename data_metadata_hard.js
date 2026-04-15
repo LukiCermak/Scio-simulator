@@ -5758,7 +5758,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
       "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Adler spojoval vývoj osobnosti s pocity méněcennosti, kompenzací a se sociálním zájmem. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -5845,7 +5845,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
       "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Jung pracoval s kolektivním nevědomím, archetypy a s představou individuace jako zrání osobnosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -5932,7 +5932,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Rogers je spojen s klientsky orientovaným přístupem, bezpodmínečným přijetím a přesnou empatií. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -6019,7 +6019,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
       "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Maslow bývá připomínán hlavně hierarchií potřeb a důrazem na seberealizaci. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -6106,7 +6106,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Erikson popsal psychosociální vývoj jako řadu konfliktů, které se v různých etapách života řeší odlišně. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -6195,7 +6195,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Piaget sledoval proměny dětského myšlení a rozlišoval například asimilaci, akomodaci a vývojová stádia. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -6282,7 +6282,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Vygotskij zdůrazňoval sociální podmíněnost učení, jazyk a zónu nejbližšího vývoje. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -6371,7 +6371,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Pavlov je spojen s klasickým podmiňováním a učením na základě spojování podnětů. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -6458,7 +6458,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Matějček výrazně přispěl k tématu psychické deprivace a k pochopení významu raných vztahů pro vývoj dítěte. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -6545,7 +6545,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba obvykle znamená, že se vybavil správný okruh, ale neudržela se přesná definice pojmu. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
       "microLesson": "U psychologických pojmů pomáhá nevšímat si jen slov, ale sledovat přesný proces, který je v zadání popsán. U psychologických pojmů nestačí poznat, že všechny možnosti patří do stejné oblasti. Důležité je vědět, jaký proces nebo mechanismus přesně popisuje dané zadání a jak se liší od blízkých termínů. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná autor–teorie vazba uvnitř blízké rodiny významných psychologů.",
       "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná autor–teorie vazba uvnitř blízké rodiny významných psychologů?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -6632,7 +6632,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba obvykle znamená, že se vybavil správný okruh, ale neudržela se přesná definice pojmu. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U psychologických pojmů pomáhá nevšímat si jen slov, ale sledovat přesný proces, který je v zadání popsán. U psychologických pojmů nestačí poznat, že všechny možnosti patří do stejné oblasti. Důležité je vědět, jaký proces nebo mechanismus přesně popisuje dané zadání a jak se liší od blízkých termínů. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená síť více autor–směr kotev bez záměny.",
       "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená síť více autor–směr kotev bez záměny?",
-      "legislationRef": "stabilní autorské kotvy psychologického minima",
+      "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
       "likelyErrorTypes": [
         "autor-pojem-záměna",
         "síťová-záměna-autoru"
@@ -8756,10 +8756,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné spojení historického termínu s osobností“.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Označení pedagogická patologie patří ke starší terminologii a odráží dobu, kdy se odchylka chápala výrazně deficitněji než dnes. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „pedagogická patologie“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "pedagogická patologie",
@@ -8843,10 +8843,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Léčebná pedagogika patří k historickým označením oboru a připomíná těsnější vazbu na léčebný a nápravný rámec minulosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „léčebná pedagogika“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "léčebná pedagogika",
@@ -8930,10 +8930,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné spojení historického termínu s osobností“.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Pedopatologie je starší termín, který ukazuje na dřívější důraz na patologii dítěte spíše než na podpůrné vzdělávací pojetí. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „pedopatologie“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "pedopatologie",
@@ -9017,10 +9017,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
       "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost.",
       "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "duševně úchylné děti",
@@ -9104,10 +9104,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Nápravná pedagogika je historické označení spojené s představou nápravy odchylky; dnešní jazyk oboru je v tomto směru citlivější a přesnější. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Jan Mauer“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "nápravná pedagogika",
@@ -9193,10 +9193,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou“.",
       "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou.",
       "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "sociální pedagogika",
@@ -9280,10 +9280,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správná vazba mezi historickým termínem a jeho příslušná osobnost“.",
       "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost.",
       "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "zvláštní péče",
@@ -9367,10 +9367,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Toto označení patří k historickému vývoji pojmosloví a připomíná, jak dlouho v oboru přežíval deficitní jazyk. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné spojení historického termínu s osobností?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "speciální pedagogika defektologická",
@@ -9454,10 +9454,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Miloš Sovák patří k nejvýznamnějším osobnostem české speciální pedagogiky a logopedie. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Miloš Sovák“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "defektologie",
@@ -9510,7 +9510,7 @@ window.metadataExportHard = {
       "batteryTitle": "Historie speciální pedagogiky, terminologický vývoj a české osobnosti",
       "batterySubtitle": "Krátké diferenční položky na přiřazení termínu k autorovi, vývoj oborového jazyka, periodizaci a českou tradici speciální pedagogiky.",
       "questionNumber": 10,
-      "questionText": "S kterou osobností je v českém prostředí nejvíce spojeno terminologické ukotvení pojmu speciální pedagogika?",
+      "questionText": "S kterou osobností je v českém prostředí nejvíce spojeno označení speciální pedagogika?",
       "options": {
         "A": "Bohumír Popelář",
         "B": "Miloš Sovák",
@@ -9541,10 +9541,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou“.",
       "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou.",
       "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "speciální pedagogika",
@@ -9628,10 +9628,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Marie Vítková patří k novodobým osobnostem české speciální pedagogiky. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Marie Vítková“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "integrativní speciální pedagogika",
@@ -9715,10 +9715,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Nápravná pedagogika je historické označení spojené s představou nápravy odchylky; dnešní jazyk oboru je v tomto směru citlivější a přesnější. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „nápravná pedagogika“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "nápravná pedagogika",
@@ -9802,10 +9802,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost.",
       "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "zvláštní péče",
@@ -9890,7 +9890,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Označení pedagogická patologie patří ke starší terminologii a odráží dobu, kdy se odchylka chápala výrazně deficitněji než dnes. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Strümpell“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru",
+      "legislationRef": "historicko-terminologické vazby oboru",
       "likelyErrorTypes": [
         "síťová-záměna-kotev",
         "vícečetné-přeházení-vazeb"
@@ -9980,10 +9980,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné spojení historického termínu s osobností“.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Léčebná pedagogika patří k historickým označením oboru a připomíná těsnější vazbu na léčebný a nápravný rámec minulosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Adolf Dannemann“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "léčebná pedagogika",
@@ -10040,16 +10040,16 @@ window.metadataExportHard = {
       "options": {
         "A": "výraz defektologie je v české tradici přesnější přiřazením Bohumíra Popeláře než Miloše Sováka",
         "B": "výraz speciální pedagogika defektologická se v české tradici nepojí s Ludvíkem Edelsbergerem",
-        "C": "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
+        "C": "výraz speciální pedagogika je v českém prostředí nejvíce spojován s Bohumírem Popelářem",
         "D": "výraz nápravná pedagogika je v českém vývoji bližší Adolfu Dannemannovi než Janu Mauerovi"
       },
-      "correctOptionText": "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
+      "correctOptionText": "výraz speciální pedagogika je v českém prostředí nejvíce spojován s Bohumírem Popelářem",
       "discipline": "historie speciální pedagogiky / terminologie",
-      "subtopic": "české terminologické ukotvení pojmu speciální pedagogika",
+      "subtopic": "pojmenování speciální pedagogiky v českém prostředí",
       "conceptTags": [
         "speciální pedagogika",
         "Bohumír Popelář",
-        "české terminologické ukotvení"
+        "české odborné pojmenování"
       ],
       "questionType": "statement-discrimination",
       "distractorType": "near-author",
@@ -10066,7 +10066,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
       "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená rozlišení přesného tvrzení o české terminologii od blízkých, ale chybných tvrzení.",
       "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená rozlišení přesného tvrzení o české terminologii od blízkých, ale chybných tvrzení?",
-      "legislationRef": "historicko-terminologické kotvy oboru",
+      "legislationRef": "historicko-terminologické vazby oboru",
       "likelyErrorTypes": [
         "tvrzení-se-záměnou-jedné-vazby",
         "přibližná-pravdivost"
@@ -10082,8 +10082,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "C",
       "reviewedCorrectLetter": "C",
       "effectiveCorrectLetter": "C",
-      "sourceCorrectOptionText": "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
-      "reviewedCorrectOptionText": "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
+      "sourceCorrectOptionText": "výraz speciální pedagogika je v českém prostředí nejvíce spojován s Bohumírem Popelářem",
+      "reviewedCorrectOptionText": "výraz speciální pedagogika je v českém prostředí nejvíce spojován s Bohumírem Popelářem",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -10102,7 +10102,7 @@ window.metadataExportHard = {
         "rozlišení přesného tvrzení o české terminologii od blízkých, ale chybných tvrzení",
         "speciální pedagogika",
         "Bohumír Popelář",
-        "české terminologické ukotvení"
+        "české odborné pojmenování"
       ],
       "revisionPriority": "high",
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
@@ -10154,10 +10154,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Léčebná pedagogika patří k historickým označením oboru a připomíná těsnější vazbu na léčebný a nápravný rámec minulosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „léčebná pedagogika“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+      "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
       "likelyErrorTypes": [
         "term-author-swap",
-        "známé-jméno-místo-přesné-kotvy"
+        "známé-jméno-místo-přesného-přiřazení"
       ],
       "repairTags": [
         "léčebná pedagogika",
@@ -10241,7 +10241,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. František Kábele je významnou osobností české speciální pedagogiky a etopedie. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
       "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „nápravná pedagogika“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-      "legislationRef": "historicko-terminologické kotvy oboru",
+      "legislationRef": "historicko-terminologické vazby oboru",
       "likelyErrorTypes": [
         "negativní-čtení",
         "osobnost-správná-termín-špatně"
@@ -14379,7 +14379,7 @@ window.metadataExportHard = {
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
       "legislationRef": "historie tyflopedie a vzdělávání nevidomých",
       "likelyErrorTypes": [
-        "historické-kotvy-záměna",
+        "historické-vazby-záměna",
         "osobnost-vs-vynález"
       ],
       "repairTags": [
@@ -16657,7 +16657,7 @@ window.metadataExportHard = {
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
       "legislationRef": "historie tyflopedie",
       "likelyErrorTypes": [
-        "osobnostní-kotvy-záměna",
+        "osobnostní-vazby-záměna",
         "škola-vs-písmo"
       ],
       "repairTags": [
@@ -16826,7 +16826,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
       "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Charles Van Riper je významnou osobností terapie koktavosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "zahraniční logopedická kotva pro balbuties",
+      "legislationRef": "zahraniční logopedické jméno spojené s balbuties",
       "likelyErrorTypes": [
         "person-method-záměna",
         "Van-Riper-záměna"
@@ -16912,10 +16912,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Adolf Meyer je spojován s psychopedií a pedagogikou osob s mentálním postižením. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "zahraniční oborová kotva s přesahem k vývojovému a psychopatologickému rámci",
+      "legislationRef": "zahraniční oborové jméno s přesahem k vývojovému a psychopatologickému rámci",
       "likelyErrorTypes": [
         "osobnostní-záměna",
-        "Meyer-vs-jiné-kotvy"
+        "Meyer-vs-jiná-přiřazení"
       ],
       "repairTags": [
         "Adolf Meyer",
@@ -17001,7 +17001,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
       "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. U podobných úloh pomáhá nejprve přesně pojmenovat, o jakou oblast jde, a až potom vybírat odpověď. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "české a středoevropské logopedické osobnostní kotvy",
+      "legislationRef": "české a středoevropské logopedické osobnosti a jejich přiřazení",
       "likelyErrorTypes": [
         "Lechta-Neubauer-záměna",
         "osobnosti-v-téže-disciplíně"
@@ -17090,10 +17090,10 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Milan Valenta je spojen se speciální pedagogikou, inkluzí a současným pojetím oboru. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "české psychopedické osobnostní kotvy",
+      "legislationRef": "české psychopedické osobnosti a jejich přiřazení",
       "likelyErrorTypes": [
         "Valenta-záměna",
-        "disciplínová-kotva-osobnosti"
+        "disciplínové-přiřazení-osobnosti"
       ],
       "repairTags": [
         "Milan Valenta",
@@ -17174,7 +17174,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
       "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Libuše Ludíková je spojována s rozvojem speciálněpedagogického myšlení a praxe v českém prostředí. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "české tyflopedické osobnostní kotvy / UPOL",
+      "legislationRef": "české tyflopedické osobnosti a jejich přiřazení / UPOL",
       "likelyErrorTypes": [
         "Ludíková-záměna",
         "osobnost-bez-štítku"
@@ -17261,7 +17261,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
       "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. František Kábele je významnou osobností české speciální pedagogiky a etopedie. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "české osobnostní kotvy speciální pedagogiky",
+      "legislationRef": "významné osobnosti speciální pedagogiky a jejich přiřazení",
       "likelyErrorTypes": [
         "Kábele-záměna",
         "osobnost-vs-cizí-metoda"
@@ -17348,7 +17348,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
       "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Fritz Redl je spojen s prací s dětmi s poruchami chování a s modelem Life Space Interview. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "zahraniční etopedická kotva",
+      "legislationRef": "zahraniční etopedické jméno",
       "likelyErrorTypes": [
         "Redl-LSI-záměna",
         "metoda-vs-obecný-rozhovor"
@@ -17436,7 +17436,7 @@ window.metadataExportHard = {
       "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
       "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Adolf Meyer je spojován s psychopedií a pedagogikou osob s mentálním postižením. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
       "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-      "legislationRef": "syntetické osobnostní kotvy napříč B4",
+      "legislationRef": "syntetické rozlišení osobností napříč B4",
       "likelyErrorTypes": [
         "pairing-error",
         "name-familiarity-bias"
@@ -30918,7 +30918,7 @@ window.metadataExportHard = {
       "batteryTitle": "Finální selekční baterie",
       "batterySubtitle": "Krátké rozlišovací položky z pojmů, institucí, dokumentů, psychologie, historie a sociálně-legislativní orientace.",
       "questionNumber": 4,
-      "questionText": "S českým terminologickým ukotvením pojmu speciální pedagogika bývá nejvíce spojován:",
+      "questionText": "S označením speciální pedagogika v českém prostředí bývá nejvíce spojován:",
       "options": {
         "A": "Josef Zeman",
         "B": "Ludvík Edelsberger",
@@ -30942,7 +30942,7 @@ window.metadataExportHard = {
         "Popelář vs jiné české osobnosti oboru"
       ],
       "signalHint": "Nejdřív si urč přesnou rovinu otázky a teprve potom porovnávej blízké možnosti. Tady rozhoduje Popelář vs jiné české osobnosti oboru.",
-      "questionCore": "terminologické ukotvení pojmu speciální pedagogika",
+      "questionCore": "pojmenování speciální pedagogiky v českém prostředí",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Bohumír Popelář“. U podobných úloh pomáhá nejprve přesně pojmenovat, o jakou oblast jde, a až potom vybírat odpověď.",
       "explanationDistractor": "Ostatní možnosti působily správně, protože zůstávaly ve stejné oblasti, ale přehlédly přesně ten detail, který rozhodoval. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Právě v tom se ukázalo, zda student správně odliší Popelář a jiné české osobnosti oboru.",
       "commonMisconception": "Častou chybou je sáhnout po možnosti, která je obecně blízká tématu, ale neodpovídá přesně položené otázce. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -41296,7 +41296,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
         "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Adler spojoval vývoj osobnosti s pocity méněcennosti, kompenzací a se sociálním zájmem. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -41392,7 +41392,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
         "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Jung pracoval s kolektivním nevědomím, archetypy a s představou individuace jako zrání osobnosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -41488,7 +41488,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Rogers je spojen s klientsky orientovaným přístupem, bezpodmínečným přijetím a přesnou empatií. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -41584,7 +41584,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
         "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Maslow bývá připomínán hlavně hierarchií potřeb a důrazem na seberealizaci. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -41680,7 +41680,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Erikson popsal psychosociální vývoj jako řadu konfliktů, které se v různých etapách života řeší odlišně. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -41778,7 +41778,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Piaget sledoval proměny dětského myšlení a rozlišoval například asimilaci, akomodaci a vývojová stádia. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -41874,7 +41874,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Vygotskij zdůrazňoval sociální podmíněnost učení, jazyk a zónu nejbližšího vývoje. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -41972,7 +41972,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Pavlov je spojen s klasickým podmiňováním a učením na základě spojování podnětů. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -42068,7 +42068,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba většinou neznamená úplnou neznalost, ale záměnu autora s jiným známým jménem ze stejné oblasti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U autorů bývá nejjistější spojit si jméno vždy s jedním nosným pojmem nebo modelem. Matějček výrazně přispěl k tématu psychické deprivace a k pochopení významu raných vztahů pro vývoj dítěte. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -42164,7 +42164,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba obvykle znamená, že se vybavil správný okruh, ale neudržela se přesná definice pojmu. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
         "microLesson": "U psychologických pojmů pomáhá nevšímat si jen slov, ale sledovat přesný proces, který je v zadání popsán. U psychologických pojmů nestačí poznat, že všechny možnosti patří do stejné oblasti. Důležité je vědět, jaký proces nebo mechanismus přesně popisuje dané zadání a jak se liší od blízkých termínů. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná autor–teorie vazba uvnitř blízké rodiny významných psychologů.",
         "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná autor–teorie vazba uvnitř blízké rodiny významných psychologů?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -42260,7 +42260,7 @@ window.battery2MapHard = {
         "whyWrongCategory": "Chybná volba obvykle znamená, že se vybavil správný okruh, ale neudržela se přesná definice pojmu. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U psychologických pojmů pomáhá nevšímat si jen slov, ale sledovat přesný proces, který je v zadání popsán. U psychologických pojmů nestačí poznat, že všechny možnosti patří do stejné oblasti. Důležité je vědět, jaký proces nebo mechanismus přesně popisuje dané zadání a jak se liší od blízkých termínů. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená síť více autor–směr kotev bez záměny.",
         "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená síť více autor–směr kotev bez záměny?",
-        "legislationRef": "stabilní autorské kotvy psychologického minima",
+        "legislationRef": "stabilní přiřazení autorů v psychologickém minimu",
         "likelyErrorTypes": [
           "autor-pojem-záměna",
           "síťová-záměna-autoru"
@@ -44625,10 +44625,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné spojení historického termínu s osobností“.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Označení pedagogická patologie patří ke starší terminologii a odráží dobu, kdy se odchylka chápala výrazně deficitněji než dnes. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „pedagogická patologie“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "pedagogická patologie",
@@ -44721,10 +44721,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Léčebná pedagogika patří k historickým označením oboru a připomíná těsnější vazbu na léčebný a nápravný rámec minulosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „léčebná pedagogika“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "léčebná pedagogika",
@@ -44817,10 +44817,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné spojení historického termínu s osobností“.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Pedopatologie je starší termín, který ukazuje na dřívější důraz na patologii dítěte spíše než na podpůrné vzdělávací pojetí. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „pedopatologie“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "pedopatologie",
@@ -44913,10 +44913,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
         "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost.",
         "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "duševně úchylné děti",
@@ -45009,10 +45009,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Nápravná pedagogika je historické označení spojené s představou nápravy odchylky; dnešní jazyk oboru je v tomto směru citlivější a přesnější. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Jan Mauer“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "nápravná pedagogika",
@@ -45107,10 +45107,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou“.",
         "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou.",
         "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "sociální pedagogika",
@@ -45203,10 +45203,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správná vazba mezi historickým termínem a jeho příslušná osobnost“.",
         "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost.",
         "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "zvláštní péče",
@@ -45299,10 +45299,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Toto označení patří k historickému vývoji pojmosloví a připomíná, jak dlouho v oboru přežíval deficitní jazyk. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správné spojení historického termínu s osobností?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "speciální pedagogika defektologická",
@@ -45395,10 +45395,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Miloš Sovák patří k nejvýznamnějším osobnostem české speciální pedagogiky a logopedie. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Miloš Sovák“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "defektologie",
@@ -45460,7 +45460,7 @@ window.battery3MapHard = {
         "batteryTitle": "Historie speciální pedagogiky, terminologický vývoj a české osobnosti",
         "batterySubtitle": "Krátké diferenční položky na přiřazení termínu k autorovi, vývoj oborového jazyka, periodizaci a českou tradici speciální pedagogiky.",
         "questionNumber": 10,
-        "questionText": "S kterou osobností je v českém prostředí nejvíce spojeno terminologické ukotvení pojmu speciální pedagogika?",
+        "questionText": "S kterou osobností je v českém prostředí nejvíce spojeno označení speciální pedagogika?",
         "options": {
           "A": "Bohumír Popelář",
           "B": "Miloš Sovák",
@@ -45491,10 +45491,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou“.",
         "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou.",
         "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho hlavní osobnostní vazbou?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "speciální pedagogika",
@@ -45587,10 +45587,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Marie Vítková patří k novodobým osobnostem české speciální pedagogiky. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Marie Vítková“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "integrativní speciální pedagogika",
@@ -45683,10 +45683,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Nápravná pedagogika je historické označení spojené s představou nápravy odchylky; dnešní jazyk oboru je v tomto směru citlivější a přesnější. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „nápravná pedagogika“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "nápravná pedagogika",
@@ -45779,10 +45779,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost.",
         "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená správná vazba mezi historickým termínem a jeho příslušná osobnost?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "zvláštní péče",
@@ -45876,7 +45876,7 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Označení pedagogická patologie patří ke starší terminologii a odráží dobu, kdy se odchylka chápala výrazně deficitněji než dnes. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Strümpell“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru",
+        "legislationRef": "historicko-terminologické vazby oboru",
         "likelyErrorTypes": [
           "síťová-záměna-kotev",
           "vícečetné-přeházení-vazeb"
@@ -45975,10 +45975,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné spojení historického termínu s osobností“.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Léčebná pedagogika patří k historickým označením oboru a připomíná těsnější vazbu na léčebný a nápravný rámec minulosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „Adolf Dannemann“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "léčebná pedagogika",
@@ -46044,16 +46044,16 @@ window.battery3MapHard = {
         "options": {
           "A": "výraz defektologie je v české tradici přesnější přiřazením Bohumíra Popeláře než Miloše Sováka",
           "B": "výraz speciální pedagogika defektologická se v české tradici nepojí s Ludvíkem Edelsbergerem",
-          "C": "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
+          "C": "výraz speciální pedagogika je v českém prostředí nejvíce spojován s Bohumírem Popelářem",
           "D": "výraz nápravná pedagogika je v českém vývoji bližší Adolfu Dannemannovi než Janu Mauerovi"
         },
-        "correctOptionText": "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
+        "correctOptionText": "výraz speciální pedagogika je v českém prostředí nejvíce spojován s Bohumírem Popelářem",
         "discipline": "historie speciální pedagogiky / terminologie",
-        "subtopic": "české terminologické ukotvení pojmu speciální pedagogika",
+        "subtopic": "pojmenování speciální pedagogiky v českém prostředí",
         "conceptTags": [
           "speciální pedagogika",
           "Bohumír Popelář",
-          "české terminologické ukotvení"
+          "české odborné pojmenování"
         ],
         "questionType": "statement-discrimination",
         "distractorType": "near-author",
@@ -46070,7 +46070,7 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná volba většinou znamená, že se přehlédl hodnotový a terminologický posun oboru. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
         "microLesson": "Proměna jazyka oboru ukazuje změnu hodnot i toho, zda se díváme hlavně na vadu, nebo na podporu člověka. Proměna jazyka oboru není jen kosmetická. Odráží změnu hodnot, cílů i toho, zda se díváme hlavně na vadu, nebo na podporu člověka a jeho zapojení do života. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená rozlišení přesného tvrzení o české terminologii od blízkých, ale chybných tvrzení.",
         "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená rozlišení přesného tvrzení o české terminologii od blízkých, ale chybných tvrzení?",
-        "legislationRef": "historicko-terminologické kotvy oboru",
+        "legislationRef": "historicko-terminologické vazby oboru",
         "likelyErrorTypes": [
           "tvrzení-se-záměnou-jedné-vazby",
           "přibližná-pravdivost"
@@ -46086,8 +46086,8 @@ window.battery3MapHard = {
         "sourceCorrectLetter": "C",
         "reviewedCorrectLetter": "C",
         "effectiveCorrectLetter": "C",
-        "sourceCorrectOptionText": "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
-        "reviewedCorrectOptionText": "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
+        "sourceCorrectOptionText": "výraz speciální pedagogika je v českém prostředí nejvíce spojován s Bohumírem Popelářem",
+        "reviewedCorrectOptionText": "výraz speciální pedagogika je v českém prostředí nejvíce spojován s Bohumírem Popelářem",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -46106,7 +46106,7 @@ window.battery3MapHard = {
           "rozlišení přesného tvrzení o české terminologii od blízkých, ale chybných tvrzení",
           "speciální pedagogika",
           "Bohumír Popelář",
-          "české terminologické ukotvení"
+          "české odborné pojmenování"
         ],
         "revisionPriority": "high",
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
@@ -46167,10 +46167,10 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. Léčebná pedagogika patří k historickým označením oboru a připomíná těsnější vazbu na léčebný a nápravný rámec minulosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „léčebná pedagogika“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru; stabilní faktografická oblast",
+        "legislationRef": "historicko-terminologické vazby oboru; stabilní faktografická oblast",
         "likelyErrorTypes": [
           "term-author-swap",
-          "známé-jméno-místo-přesné-kotvy"
+          "známé-jméno-místo-přesného-přiřazení"
         ],
         "repairTags": [
           "léčebná pedagogika",
@@ -46263,7 +46263,7 @@ window.battery3MapHard = {
         "whyWrongCategory": "Chybná odpověď obvykle ukazuje na nepřesně uloženou historickou dvojici termínu a osobnosti. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "Historické názvy oboru nevznikaly náhodně; odrážely dobové chápání postižení, výchovy i podpory. František Kábele je významnou osobností české speciální pedagogiky a etopedie. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné spojení historického termínu s osobností.",
         "recommendedRecallPrompt": "S jakou osobností nebo etapou vývoje oboru je pojem „nápravná pedagogika“ spojen a co ti pomůže tuto vazbu neplést s jinými názvy?",
-        "legislationRef": "historicko-terminologické kotvy oboru",
+        "legislationRef": "historicko-terminologické vazby oboru",
         "likelyErrorTypes": [
           "negativní-čtení",
           "osobnost-správná-termín-špatně"
@@ -50840,7 +50840,7 @@ window.battery4MapHard = {
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
         "legislationRef": "historie tyflopedie a vzdělávání nevidomých",
         "likelyErrorTypes": [
-          "historické-kotvy-záměna",
+          "historické-vazby-záměna",
           "osobnost-vs-vynález"
         ],
         "repairTags": [
@@ -53352,7 +53352,7 @@ window.battery4MapHard = {
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
         "legislationRef": "historie tyflopedie",
         "likelyErrorTypes": [
-          "osobnostní-kotvy-záměna",
+          "osobnostní-vazby-záměna",
           "škola-vs-písmo"
         ],
         "repairTags": [
@@ -53539,7 +53539,7 @@ window.battery4MapHard = {
         "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
         "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Charles Van Riper je významnou osobností terapie koktavosti. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "zahraniční logopedická kotva pro balbuties",
+        "legislationRef": "zahraniční logopedické jméno spojené s balbuties",
         "likelyErrorTypes": [
           "person-method-záměna",
           "Van-Riper-záměna"
@@ -53634,10 +53634,10 @@ window.battery4MapHard = {
         "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Adolf Meyer je spojován s psychopedií a pedagogikou osob s mentálním postižením. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "zahraniční oborová kotva s přesahem k vývojovému a psychopatologickému rámci",
+        "legislationRef": "zahraniční oborové jméno s přesahem k vývojovému a psychopatologickému rámci",
         "likelyErrorTypes": [
           "osobnostní-záměna",
-          "Meyer-vs-jiné-kotvy"
+          "Meyer-vs-jiná-přiřazení"
         ],
         "repairTags": [
           "Adolf Meyer",
@@ -53732,7 +53732,7 @@ window.battery4MapHard = {
         "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
         "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. U podobných úloh pomáhá nejprve přesně pojmenovat, o jakou oblast jde, a až potom vybírat odpověď. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "české a středoevropské logopedické osobnostní kotvy",
+        "legislationRef": "české a středoevropské logopedické osobnosti a jejich přiřazení",
         "likelyErrorTypes": [
           "Lechta-Neubauer-záměna",
           "osobnosti-v-téže-disciplíně"
@@ -53830,10 +53830,10 @@ window.battery4MapHard = {
         "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Milan Valenta je spojen se speciální pedagogikou, inkluzí a současným pojetím oboru. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "české psychopedické osobnostní kotvy",
+        "legislationRef": "české psychopedické osobnosti a jejich přiřazení",
         "likelyErrorTypes": [
           "Valenta-záměna",
-          "disciplínová-kotva-osobnosti"
+          "disciplínové-přiřazení-osobnosti"
         ],
         "repairTags": [
           "Milan Valenta",
@@ -53923,7 +53923,7 @@ window.battery4MapHard = {
         "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
         "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Libuše Ludíková je spojována s rozvojem speciálněpedagogického myšlení a praxe v českém prostředí. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "české tyflopedické osobnostní kotvy / UPOL",
+        "legislationRef": "české tyflopedické osobnosti a jejich přiřazení / UPOL",
         "likelyErrorTypes": [
           "Ludíková-záměna",
           "osobnost-bez-štítku"
@@ -54019,7 +54019,7 @@ window.battery4MapHard = {
         "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
         "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. František Kábele je významnou osobností české speciální pedagogiky a etopedie. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "české osobnostní kotvy speciální pedagogiky",
+        "legislationRef": "významné osobnosti speciální pedagogiky a jejich přiřazení",
         "likelyErrorTypes": [
           "Kábele-záměna",
           "osobnost-vs-cizí-metoda"
@@ -54115,7 +54115,7 @@ window.battery4MapHard = {
         "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti“.",
         "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Fritz Redl je spojen s prací s dětmi s poruchami chování a s modelem Life Space Interview. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "zahraniční etopedická kotva",
+        "legislationRef": "zahraniční etopedické jméno",
         "likelyErrorTypes": [
           "Redl-LSI-záměna",
           "metoda-vs-obecný-rozhovor"
@@ -54212,7 +54212,7 @@ window.battery4MapHard = {
         "whyWrongCategory": "Chybná odpověď většinou ukazuje na záměnu osobností, které do oboru patří, ale reprezentují jinou oblast nebo jiný historický význam. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
         "microLesson": "U osobností oboru nebo příbuzných disciplín je nejjistější pamatovat si jméno spolu s konkrétní oblastí, s níž je spojeno. Adolf Meyer je spojován s psychopedií a pedagogikou osob s mentálním postižením. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená správné přiřazení autora nebo osobnosti k pojmu, směru nebo oblasti.",
         "recommendedRecallPrompt": "S jakým pojmem, směrem nebo oblastí je tato osobnost spojena a podle čeho ji nepleteš s jinými jmény?",
-        "legislationRef": "syntetické osobnostní kotvy napříč B4",
+        "legislationRef": "syntetické rozlišení osobností napříč B4",
         "likelyErrorTypes": [
           "pairing-error",
           "name-familiarity-bias"
@@ -69144,7 +69144,7 @@ window.battery8MapHard = {
         "batteryTitle": "Finální selekční baterie",
         "batterySubtitle": "Krátké rozlišovací položky z pojmů, institucí, dokumentů, psychologie, historie a sociálně-legislativní orientace.",
         "questionNumber": 4,
-        "questionText": "S českým terminologickým ukotvením pojmu speciální pedagogika bývá nejvíce spojován:",
+        "questionText": "S označením speciální pedagogika v českém prostředí bývá nejvíce spojován:",
         "options": {
           "A": "Josef Zeman",
           "B": "Ludvík Edelsberger",
@@ -69168,7 +69168,7 @@ window.battery8MapHard = {
           "Popelář vs jiné české osobnosti oboru"
         ],
         "signalHint": "Nejdřív si urč přesnou rovinu otázky a teprve potom porovnávej blízké možnosti. Tady rozhoduje Popelář vs jiné české osobnosti oboru.",
-        "questionCore": "terminologické ukotvení pojmu speciální pedagogika",
+        "questionCore": "pojmenování speciální pedagogiky v českém prostředí",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Bohumír Popelář“. U podobných úloh pomáhá nejprve přesně pojmenovat, o jakou oblast jde, a až potom vybírat odpověď.",
         "explanationDistractor": "Ostatní možnosti působily správně, protože zůstávaly ve stejné oblasti, ale přehlédly přesně ten detail, který rozhodoval. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Právě v tom se ukázalo, zda student správně odliší Popelář a jiné české osobnosti oboru.",
         "commonMisconception": "Častou chybou je sáhnout po možnosti, která je obecně blízká tématu, ale neodpovídá přesně položené otázce. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
