@@ -652,7 +652,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
     "label": "Baterie 2",
     "title": "Psychologie, ontogeneze, komunikace a poradenské minimum",
     "subtitle": "Krátké diferenční položky na psychologické pojmy, autory, ontogenezi, aplikované oblasti psychologie a komunikaci v poradenském kontextu.",
-    "purpose": "Ověřit, zda uchazeč přesně rozliší psychologické pojmy, autorské kotvy, vývojové souvislosti, aplikované psychologické oblasti a komunikační techniky relevantní pro poradenský a speciálněpedagogický rámec přijímacího testu.",
+    "purpose": "Ověřit, zda uchazeč přesně rozliší psychologické pojmy, přiřazení autorů k pojmům, vývojové souvislosti, aplikované psychologické oblasti a komunikační techniky relevantní pro poradenský a speciálněpedagogický rámec přijímacího testu.",
     "difficulty": "velmi vysoká",
     "dominant": [
       "psychologické pojmy a jemné pojmové rozdíly",
@@ -983,9 +983,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 26,
         "text": "Které tvrzení o vztahu Freud × Adler × Jung × Rogers vystihuje situaci nejlépe?",
         "options": [
-          "Rogers je hlavní kotvou kolektivního nevědomí, Adler psychosociálních krizí, a právě v tomto směru by se měla hledat hlavní příčina. Právě toto hledisko je zde rozhodující.",
-          "Freud je hlavní kotvou obranných mechanismů, Adler individuální psychologie, Jung archetypů a Rogers klientsky orientovaného přístupu",
-          "Freud je hlavní kotvou sociokulturního vývoje, Jung podmíněných reflexů, Adler seberealizace a Rogers psychické deprivace, a právě tato rovina by měla být považována za rozhodující.",
+          "Rogers je nejvíce spojován s kolektivním nevědomím, Adler s psychosociálními krizemi, a právě v tomto směru by se měla hledat hlavní příčina. Právě toto hledisko je zde rozhodující.",
+          "Freud je nejvíce spojován s obrannými mechanismy, Adler s individuální psychologií, Jung s archetypy a Rogers s klientsky orientovaným přístupem",
+          "Freud je nejvíce spojován se sociokulturním vývojem, Jung s podmíněnými reflexy, Adler se seberealizací a Rogers s psychickou deprivací, a právě tato rovina by měla být považována za rozhodující.",
           "Freud, Adler, Jung a Rogers zastupují v této otázce tentýž teoretický směr, a právě tento znak by měl nést hlavní interpretační váhu. Právě toto hledisko je zde rozhodující."
         ],
         "correct": 1,
@@ -1297,11 +1297,11 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
     "id": 3,
     "label": "Baterie 3",
     "title": "Historie speciální pedagogiky, terminologický vývoj a české osobnosti",
-    "subtitle": "Krátké diferenční položky na termín–autor kotvy, vývoj oborového jazyka, periodizaci a českou tradici speciální pedagogiky.",
+    "subtitle": "Krátké diferenční položky na přiřazení termínů k autorům, vývoj oborového jazyka, periodizaci a českou tradici speciální pedagogiky.",
     "purpose": "Ověřit, zda uchazeč přesně rozliší historické a terminologické souvislosti oboru, významné české a evropské osobnosti, vývojové etapy a proměny jazyka speciální pedagogiky bez sklouzávání k obecným nebo encyklopedickým poučkám.",
     "difficulty": "velmi vysoká",
     "dominant": [
-      "termín–autor kotvy v dějinách oboru",
+      "přiřazení termínů k autorům v dějinách oboru",
       "české osobnosti a jejich oblasti",
       "historické přístupy a periodizace",
       "proměna oborového jazyka",
@@ -1435,7 +1435,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 10,
-        "text": "S kterou osobností je v českém prostředí nejvíce spojeno terminologické ukotvení pojmu speciální pedagogika?",
+        "text": "S kterou osobností je v českém prostředí nejvíce spojován pojem speciální pedagogika?",
         "options": [
           "Bohumír Popelář",
           "Miloš Sovák",
@@ -1509,9 +1509,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 16,
         "text": "Které tvrzení o historické terminologii vystihuje věc nejlépe?",
         "options": [
-          "výraz defektologie je v české tradici přesnější kotvou Bohumíra Popeláře než Miloše Sováka",
+          "výraz defektologie je v české tradici přesněji spojen s Bohumírem Popelářem než s Milošem Sovákem",
           "výraz speciální pedagogika defektologická se v české tradici nepojí s Ludvíkem Edelsbergerem",
-          "výraz speciální pedagogika se v českém terminologickém ukotvení pojí s Bohumírem Popelářem",
+          "výraz speciální pedagogika se v české terminologii pojí s Bohumírem Popelářem",
           "výraz nápravná pedagogika je v českém vývoji bližší Adolfu Dannemannovi než Janu Mauerovi"
         ],
         "correct": 2,
@@ -1629,10 +1629,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 26,
         "text": "Které tvrzení o novodobých českých osobnostech odpovídá nejlépe?",
         "options": [
-          "Marie Vítková je přesnější kotvou zrakového postižení než Libuše Ludíková, a právě na tomto vysvětlení by měla stát celá interpretace.",
-          "Josef Slowík je spojován spíše se širším a inkluzivním pojetím speciální pedagogiky než s historickou kotvou nápravné pedagogiky",
-          "Milan Valenta je typičtější kotvou pro zrakové postižení než pro psychopedii, a právě tento znak by měl nést hlavní interpretační váhu.",
-          "Karel Neubauer je typičtější kotvou pro pomocné školství než pro logopedické paradigma, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
+          "Marie Vítková je přesněji spojována se zrakovým postižením než Libuše Ludíková, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Josef Slowík je spojován spíše se širším a inkluzivním pojetím speciální pedagogiky než s historickým pojmem nápravná pedagogika",
+          "Milan Valenta je typičtěji spojován se zrakovým postižením než s psychopedií, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Karel Neubauer je typičtěji spojován s pomocným školstvím než s logopedickým paradigmatem, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -1954,7 +1954,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       "PAS a sociálně-pragmatická komunikace",
       "kongenitální a získané vady",
       "prelingvální a postlingvální rozlišení",
-      "osobnostní a metodické kotvy uvnitř jednotlivých pedií"
+      "významné osobnosti a metody uvnitř jednotlivých pedií"
     ],
     "breakdown": [
       "10× logopedie × surdopedie × interní termíny",
@@ -2518,7 +2518,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 46,
-        "text": "Která osobnost je v českém prostředí nejvíce spojena s psychopedií jako teoretickou a oborovou kotvou?",
+        "text": "Která osobnost je v českém prostředí nejvíce spojena s psychopedií jako teoreticky a oborově významná osobnost?",
         "options": [
           "Milan Valenta",
           "Libuše Ludíková",
@@ -2566,7 +2566,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 50,
-        "text": "Které přiřazení osoby a její nejtypičtější oborové kotvy je správné?",
+        "text": "Které přiřazení osoby a jejího nejtypičtějšího oborového spojení je správné?",
         "options": [
           "Adolf Meyer — psychobiologický přístup s důrazem na životní historii a prostředí",
           "Charles Van Riper — první škola pro nevidomé, a právě tato rovina by měla být považována za rozhodující.",
@@ -3137,7 +3137,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "když hlavní bariéra souvisí s přehledností, senzorickou zátěží nebo organizací práce v daném prostředí",
           "když je cílem přímo posílit oslabenou funkci systematickým tréninkem",
           "když má být hlavním výsledkem zlepšení artikulace",
-          "když je cílem určit osobnostní kotvu metody"
+          "když je cílem určit hlavní osobnost spojenou s metodou"
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -4611,7 +4611,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 4,
-        "text": "S českým terminologickým ukotvením pojmu speciální pedagogika bývá nejvíce spojován:",
+        "text": "S pojmem speciální pedagogika bývá v českém prostředí nejvíce spojován:",
         "options": [
           "Josef Zeman",
           "Ludvík Edelsberger",
