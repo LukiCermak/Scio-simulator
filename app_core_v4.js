@@ -433,21 +433,31 @@ function escapeAttr(v) { return String(v ?? "").replace(/&/g, "&amp;").replace(/
     const s = session || appState.currentSession;
     return !!(s && (s.mode === "reading-training" || s.mode === "repair"));
   }
-  function updateTestLegendVisibility(session) {
+  
+function updateTestLegendVisibility(session) {
     const s = session || appState.currentSession;
-    const legend = document.querySelector("#testSidebarContent .legend");
-    if (!legend) return;
     const showFlag = shouldShowQuestionActions(s);
     const showSlow = shouldShowSlowIndicator(s);
     const showGuess = shouldShowConfidenceIndicator(s);
-    legend.querySelectorAll(".legend-item").forEach(item => {
-      const box = item.querySelector(".legend-box");
-      if (!box) return;
-      let visible = true;
-      if (box.classList.contains("flag")) visible = showFlag;
-      if (box.classList.contains("slow-q")) visible = showSlow;
-      if (box.classList.contains("guess-q")) visible = showGuess;
-      item.classList.toggle("hidden", !visible);
+
+    document.querySelectorAll("#testSidebarContent, .sidebar, #testScreen").forEach(node => {
+      if (!node) return;
+      node.dataset.showFlag = showFlag ? "1" : "0";
+      node.dataset.showSlow = showSlow ? "1" : "0";
+      node.dataset.showGuess = showGuess ? "1" : "0";
+    });
+
+    document.querySelectorAll(".legend").forEach(legend => {
+      legend.querySelectorAll(".legend-item").forEach(item => {
+        const box = item.querySelector(".legend-box");
+        if (!box) return;
+        let visible = true;
+        if (box.classList.contains("flag")) visible = showFlag;
+        if (box.classList.contains("slow-q")) visible = showSlow;
+        if (box.classList.contains("guess-q")) visible = showGuess;
+        item.classList.toggle("hidden", !visible);
+        item.setAttribute("aria-hidden", visible ? "false" : "true");
+      });
     });
   }
   function renderMiniQuestionBadges(indexes, emptyLabel = "—") {
@@ -805,6 +815,7 @@ function buildSessionBattery(battery, modeConfig) {
       if (resSide) resSide.classList.add("hidden");
       if (sideTitle) sideTitle.textContent = "Testovací panel";
       if (sideWarn) sideWarn.classList.remove("hidden");
+      updateTestLegendVisibility(appState.currentSession);
     } 
     if (mode === "results") {
       tp.classList.add("hidden"); 
@@ -819,6 +830,39 @@ function buildSessionBattery(battery, modeConfig) {
     }
   }
   
+
+function syncExpandedBatteryDetailHeight(targetWrapper = null) {
+  const wrappers = targetWrapper
+    ? [targetWrapper].filter(Boolean)
+    : Array.from(document.querySelectorAll(".battery-card-wrapper.expanded"));
+
+  wrappers.forEach(wrapper => {
+    const detail = wrapper?.querySelector(".battery-inline-detail");
+    if (!detail) return;
+
+    if (!wrapper.classList.contains("expanded")) {
+      detail.style.maxHeight = "0px";
+      return;
+    }
+
+    detail.style.maxHeight = "none";
+    const targetHeight = Math.ceil(detail.scrollHeight);
+    detail.style.maxHeight = `${targetHeight}px`;
+  });
+}
+
+function queueExpandedBatteryDetailHeightSync(targetWrapper = null) {
+  requestAnimationFrame(() => {
+    syncExpandedBatteryDetailHeight(targetWrapper);
+    requestAnimationFrame(() => syncExpandedBatteryDetailHeight(targetWrapper));
+  });
+}
+
+window.addEventListener("resize", () => queueExpandedBatteryDetailHeightSync());
+window.addEventListener("orientationchange", () => {
+  window.setTimeout(() => queueExpandedBatteryDetailHeightSync(), 140);
+});
+
 function renderBatteryCards() {
   const grid = $("batteryGrid");
   const batteries = getActiveBatteries();
@@ -857,11 +901,16 @@ function renderBatteryCards() {
   
   if (appState.selectedBatteryId) {
     const selectedBattery = (getActiveBatteryMap ? getActiveBatteryMap() : BATTERY_MAP)[appState.selectedBatteryId];
-    if (selectedBattery) populateInlineDetail(selectedBattery);
+    if (selectedBattery) {
+      populateInlineDetail(selectedBattery);
+      const wrapper = document.getElementById(`battery-wrapper-${appState.selectedBatteryId}`);
+      queueExpandedBatteryDetailHeightSync(wrapper);
+    }
   }
 }
 
   
+
 function selectBattery(id) {
   const activeMap = typeof getActiveBatteryMap === "function" ? getActiveBatteryMap() : BATTERY_MAP;
   const battery = activeMap[id];
@@ -869,20 +918,23 @@ function selectBattery(id) {
 
   appState.selectedBatteryId = id;
 
-  // Update UI classes
-  document.querySelectorAll(".battery-card-wrapper").forEach(el => el.classList.remove("expanded"));
+  document.querySelectorAll(".battery-card-wrapper").forEach(el => {
+    el.classList.remove("expanded");
+    const detail = el.querySelector(".battery-inline-detail");
+    if (detail) detail.style.maxHeight = "0px";
+  });
   document.querySelectorAll(".battery-card").forEach(el => el.classList.remove("selected"));
-  
+
   const wrapper = document.getElementById(`battery-wrapper-${id}`);
   const card = wrapper?.querySelector(".battery-card");
   if (wrapper) {
     wrapper.classList.add("expanded");
     if (card) card.classList.add("selected");
     populateInlineDetail(battery);
-    
-    // Smooth scroll to the expanded card
+    queueExpandedBatteryDetailHeightSync(wrapper);
+
     setTimeout(() => {
-        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      wrapper.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 150);
   }
 
@@ -890,14 +942,18 @@ function selectBattery(id) {
 }
 
 function closeBatteryDetail(id) {
-    if (appState.selectedBatteryId === id) {
-        appState.selectedBatteryId = null;
-        const wrapper = document.getElementById(`battery-wrapper-${id}`);
-        if (wrapper) wrapper.classList.remove("expanded");
-        const card = wrapper?.querySelector(".battery-card");
-        if (card) card.classList.remove("selected");
-        if (typeof updateSelectionState === "function") updateSelectionState();
+  if (appState.selectedBatteryId === id) {
+    appState.selectedBatteryId = null;
+    const wrapper = document.getElementById(`battery-wrapper-${id}`);
+    if (wrapper) {
+      wrapper.classList.remove("expanded");
+      const detail = wrapper.querySelector(".battery-inline-detail");
+      if (detail) detail.style.maxHeight = "0px";
     }
+    const card = wrapper?.querySelector(".battery-card");
+    if (card) card.classList.remove("selected");
+    if (typeof updateSelectionState === "function") updateSelectionState();
+  }
 }
 window.closeBatteryDetail = closeBatteryDetail;
 
@@ -938,14 +994,16 @@ function populateInlineDetail(battery) {
       </div>
       
       <div class="detail-full-col">
-        <div class="start-actions" style="justify-content: center; gap: 20px;">
-          <div style="text-align: center; max-width: 500px;">
-            <p style="font-size: 13px; color: #64748b; margin-bottom: 12px;">Při spuštění testu budou použity aktuální volby z levého panelu (obtížnost, režim, cíl).</p>
-            <button class="btn btn-primary" onclick="startBattery(${battery.id})" style="width: 100%; min-width: 300px; justify-content: center; font-size: 16px; padding: 16px 24px; box-shadow: 0 4px 12px rgba(43,146,201,0.3);">Spustit tuto simulaci</button>
+        <div class="start-actions start-actions-inline">
+          <div class="battery-start-copy">
+            <p class="battery-start-note">Při spuštění testu budou použity aktuální volby z levého panelu (obtížnost, režim, cíl).</p>
+            <button class="btn btn-primary battery-start-btn" onclick="startBattery(${battery.id})">Spustit tuto simulaci</button>
           </div>
         </div>
       </div>
     </div>`;
+
+  queueExpandedBatteryDetailHeightSync(wrapper);
 }
 
 // Preserve renderBatteryDetail for backward compatibility or other parts of the UI if any
@@ -1899,19 +1957,25 @@ function updateMeta() {
     cw.innerHTML=`<div class="confidence-wrap"><div class="conf-label">Jak si jistý odpovědí?</div><div class="confidence-btns">${levels.map(l=>`<button class="conf-btn ${qs.confidence===l.key?"active-"+l.key:""}" data-conf="${l.key}" type="button">${l.label}</button>`).join("")}</div></div>`;
     cw.querySelectorAll(".conf-btn").forEach(b=>{b.addEventListener("click",()=>setConfidence(b.dataset.conf));});
   }
-  function renderQuickActions(qs,ci) {
+  
+function renderQuickActions(qs,ci) {
     const s=appState.currentSession; if(!s) return;
     const qa=$("quickActionsWrap");
+    if(!qa) return;
     if(!shouldShowQuestionActions(s)){
       qa.innerHTML="";
       qa.classList.add("hidden");
+      qa.style.display="none";
+      qa.setAttribute("aria-hidden","true");
       return;
     }
     qa.classList.remove("hidden");
+    qa.style.display="";
+    qa.setAttribute("aria-hidden","false");
     qa.innerHTML=`<button class="action-btn ${qs.flagged?"is-active":""}" id="flagBtn" type="button">${qs.flagged?"★ Označeno":"☆ Označit"}</button><button class="action-btn ${qs.revisitLater?"is-active":""}" id="revisitBtn" type="button">${qs.revisitLater?"↻ Vrátit se":"↻ Vrátit se později"}</button><button class="action-btn" id="clearBtn" type="button">✕ Smazat odpověď</button>`;
-    $("flagBtn").addEventListener("click",toggleFlag);
-    $("revisitBtn").addEventListener("click",toggleRevisitLater);
-    $("clearBtn").addEventListener("click",clearAnswer);
+    $("flagBtn")?.addEventListener("click",toggleFlag);
+    $("revisitBtn")?.addEventListener("click",toggleRevisitLater);
+    $("clearBtn")?.addEventListener("click",clearAnswer);
   }
   function buildWeaknessSummary() {
     if (analyticsBridge.buildStudyDashboardSummary) return analyticsBridge.buildStudyDashboardSummary();

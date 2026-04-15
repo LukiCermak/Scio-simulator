@@ -138,6 +138,12 @@
     .selection-note { padding:13px 14px; border-radius:14px; border:1px solid #dfe7ee; background:#f8fafc; color:#46556a; line-height:1.45; flex:1 1 400px; min-width:280px; }
     .warning { padding:14px 15px; border-radius:14px; background:var(--amber-soft); border:1px solid #f0d78f; color:#6c5608; line-height:1.5; font-size:14px; }
 
+    .start-actions-inline { justify-content:center; gap:20px; }
+    .battery-start-copy { width:100%; max-width:min(500px, 100%); text-align:center; margin:0 auto; }
+    .battery-start-note { font-size:13px; color:#64748b; margin:0 0 12px; }
+    .battery-start-btn { width:100%; min-width:0; max-width:100%; display:inline-flex; align-items:center; justify-content:center; font-size:clamp(14px, 1.1vw + 11px, 16px); padding:clamp(12px, 2.2vw, 16px) clamp(14px, 3vw, 24px); box-shadow:0 4px 12px rgba(43,146,201,0.3); }
+
+
     /* ── Simulator Tab Layout ── */
     .simulator-layout { display:grid; grid-template-columns:350px minmax(0,1fr); gap:24px; align-items:start; }
     @media (max-width: 980px) { .simulator-layout { grid-template-columns: 1fr; } }
@@ -157,9 +163,9 @@
       overflow: hidden; 
       transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease; 
       background: #fbfdff; 
+      will-change: max-height; 
     }
     .battery-card-wrapper.expanded .battery-inline-detail { 
-      max-height: 1200px; 
       padding: 0; 
       border-top: 1px solid #eef3f7; 
     }
@@ -326,9 +332,12 @@
 
     /* ── Quick actions (NEW) ── */
     .quick-actions { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+    #quickActionsWrap.hidden,
+    .quick-actions.hidden { display:none !important; }
+    .legend-item.hidden { display:none !important; }
     .action-btn { padding:7px 12px; border-radius:10px; border:1px solid #dbe5ec; background:white; color:#475569; font-size:13px; font-weight:600; cursor:pointer; transition:0.14s ease; }
     .action-btn:hover { border-color:#a5cfe6; background:#fbfeff; }
-    .action-btn.is-active { background:var(--red-soft); border-color:var(--red-line); color:#9a2f2f; }
+    .action-btn.is-active { background:var(--orange-soft); border-color:var(--orange-line); color:#8a5600; }
 
     /* ── Question note (NEW) ── */
     .note-wrap { margin-top:12px; }
@@ -422,6 +431,19 @@
       .question-grid { grid-template-columns:repeat(5,minmax(0,1fr)); }
       .config-row { flex-direction:column; }
       .dash-grid { grid-template-columns:1fr 1fr; }
+      .inline-detail-grid { gap:16px; padding:16px; }
+      .inline-detail-header { padding:16px; }
+      .detail-block { padding:12px 14px; }
+      .detail-full-col { padding-top:16px; margin-top:4px; }
+      .battery-card-wrapper { overflow:visible; }
+      .battery-card-wrapper.expanded { margin-bottom:16px; }
+      .battery-start-copy { max-width:none; }
+      .battery-start-note { font-size:12px; line-height:1.45; margin-bottom:10px; }
+      .battery-start-btn { width:100%; font-size:clamp(13px, 3.7vw, 15px); padding:12px 14px; border-radius:11px; }
+      .legend { font-size:13px; gap:7px; }
+      .legend-item { min-height:20px; }
+      .quick-actions { gap:6px; }
+      .action-btn { width:100%; font-size:12px; padding:9px 10px; }
     }
   
 
