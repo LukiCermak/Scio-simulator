@@ -40,7 +40,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Důležité je neplést modalitu výkonu s jádrem potíže.",
           "Že bariéra bude jen ve formě výstupu.",
           "Že samotná změna výstupního kanálu problém nevyřešila.",
-          "Že je potřeba znovu posoudit, co zůstává stabilní napříč modalitami."
+          "Že je potřeba znovu číst, co zůstává stabilní napříč modalitami."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -62,9 +62,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Žák při práci s pomůckami a při ústním vedení postup chápe, ale v rychle vyplňovaném pracovním listu se ztrácí. Co z toho plyne nejpřesněji?",
         "options": [
           "Že se ukazuje spíše rozdíl mezi podmínkami a formou výkonu než jistý důkaz nepochopení principu.",
-          "Že je nejpravděpodobnější globální rozumové oslabení bez ohledu na formu úkolu.",
-          "Že je vhodné uzavřít situaci primárně jako problém motivace k samostatné práci.",
-          "Že je rozhodující zejména to, že pomůcky úkol zjednodušují bez vztahu ke skutečné kompetenci."
+          "Že je nejpravděpodobnější globální rozumové oslabení bez ohledu na formu úkolu, a právě tato rovina by měla být považována za rozhodující.",
+          "Že je vhodné uzavřít situaci primárně jako problém motivace k samostatné práci, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Že je rozhodující zejména to, že pomůcky úkol zjednodušují bez vztahu ke skutečné kompetenci, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -73,10 +73,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 4,
         "text": "Který znak nejvíce ukazuje, že změna výstupního kanálu opravdu zasáhla hlavní bariéru?",
         "options": [
-          "Že výkon se zlepší jen v jedné mimořádně podpůrné hodině.",
+          "Že výkon se zlepší jen v jedné mimořádně podpůrné hodině, a právě tato rovina by měla být považována za rozhodující.",
           "Že po změně formy odpovědi se posune výkon právě v cílové situaci, kde žák dříve selhával.",
-          "Že učitel získá lepší dojem ze spolupráce žáka než předtím.",
-          "Že nová forma výkonu působí odborněji a je snazší ji administrativně popsat."
+          "Že učitel získá lepší dojem ze spolupráce žáka než předtím, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Že nová forma výkonu působí odborněji a je snazší ji administrativně popsat, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -85,9 +85,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 5,
         "text": "Žák při diktátu zřetelně zaostává, ale při ústním převyprávění a při výběru správného řešení z možností drží obsah přesně. Která interpretace je nejméně přesná?",
         "options": [
-          "Potíž se nemusí týkat obsahu učiva v té podobě, v jaké ji ukazuje diktát.",
-          "Je třeba odlišit obsahovou znalost od nároků konkrétní formy výkonu.",
-          "Výsledek diktátu sám o sobě nestačí k závěru, že žák látce nerozumí.",
+          "Potíž se nemusí týkat obsahu učiva v té podobě, v jaké ji ukazuje diktát, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Je třeba odlišit obsahovou znalost od nároků konkrétní formy výkonu, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Výsledek diktátu sám o sobě nestačí k závěru, že žák látce nerozumí, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu."
         ],
         "correct": 3,
@@ -97,7 +97,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 6,
         "text": "Žák mluví srozumitelně, ale při výkladu z větší vzdálenosti bez vizuální opory ztrácí obsah. Který rámec je bližší?",
         "options": [
-          "Logopedický rámec je bližší, protože jádro leží v kvalitě výslovnosti žáka.",
+          "Logopedický rámec je bližší, protože jádro leží v kvalitě výslovnosti žáka, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Surdopedický rámec dostupnosti mluvené informace je bližší než logopedický rámec produkce.",
           "Psychologický rámec je bližší, protože potíž vzniká hlavně v koncentraci pozornosti bez ohledu na podmínky.",
           "Sociální rámec je bližší, protože problém je především v organizaci třídy a ne v přístupu ke sdělení."
@@ -107,11 +107,11 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 7,
-        "text": "Kdy je nepřesné vykládat situaci primárně logopedicky?",
+        "text": "Kdy je nepřesné číst situaci primárně logopedicky?",
         "options": [
-          "Když se deformace hlásek objevuje stabilně i v klidu a při zachovaném porozumění.",
-          "Když je řeč málo plynulá a dítě potřebuje práci s komunikační produkcí.",
-          "Když přetrvává nápadná artikulační nepřesnost bez vazby na hluk nebo vzdálenost.",
+          "Když se deformace hlásek objevuje stabilně i v klidu a při zachovaném porozumění, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Když je řeč málo plynulá a dítě potřebuje práci s komunikační produkcí, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Když přetrvává nápadná artikulační nepřesnost bez vazby na hluk nebo vzdálenost, a právě tato rovina by měla být považována za rozhodující.",
           "Když se obsah rozpadá hlavně v hluku, na vzdálenost a bez vizuální opory, přestože výslovnost je funkční."
         ],
         "correct": 3,
@@ -121,10 +121,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 8,
         "text": "Který znak ukazuje spíše k dostupnosti sdělení než k poruše samotné mluvní produkce?",
         "options": [
-          "Výslovnost je stabilně nepřesná i v klidném individuálním rozhovoru.",
+          "Výslovnost je stabilně nepřesná i v klidném individuálním rozhovoru, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Obsah se rozpadá zejména tehdy, když je sdělení rychlé, vzdálené nebo bez vizuální opory.",
-          "Řeč je dlouhodobě neplynulá bez zjevné vazby na komunikační podmínky.",
-          "Chyby ve hláskách se objevují i při pomalém opakování po učiteli."
+          "Řeč je dlouhodobě neplynulá bez zjevné vazby na komunikační podmínky, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Chyby ve hláskách se objevují i při pomalém opakování po učiteli, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -134,9 +134,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Žák po poslechu textu odpoví věcně správně, ale z hustě sázeného materiálu s nízkým kontrastem selhává. Jaké vysvětlení je nejpřesnější?",
         "options": [
           "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
-          "Jádro leží v tom, že žák nerozumí stejnému obsahu bez ohledu na formu podání.",
-          "Jádro leží v odporu k samostatné práci s textem, nikoli ve vizuálních podmínkách.",
-          "Jádro leží v tom, že poslech vždy uměle nadhodnocuje skutečnou kompetenci."
+          "Jádro leží v tom, že žák nerozumí stejnému obsahu bez ohledu na formu podání, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Jádro leží v odporu k samostatné práci s textem, nikoli ve vizuálních podmínkách, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Jádro leží v tom, že poslech vždy uměle nadhodnocuje skutečnou kompetenci, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -145,8 +145,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 10,
         "text": "Po zvětšení textu a zvýšení kontrastu se výkon v cílovém úkolu výrazně zlepší. Který závěr by z toho byl nejméně přesný?",
         "options": [
-          "Změna dostupnosti materiálu pravděpodobně zasáhla hlavní bariéru.",
-          "Původní výkon nebyl nutně přímým ukazatelem obsahové neznalosti.",
+          "Změna dostupnosti materiálu pravděpodobně zasáhla hlavní bariéru, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Původní výkon nebyl nutně přímým ukazatelem obsahové neznalosti, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Jde nejspíše o důkaz, že žák bez podpory textu nerozumí bez ohledu na podobu podání.",
           "Je vhodné odlišit bariéru ve vizuálním přístupu od závěru o celkové úrovni znalosti."
         ],
@@ -158,8 +158,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "V tiché individuální práci žák běžné instrukci rozumí, ale ve skupinové práci v hluku opakovaně mine začátek úkolu. Která interpretace je bližší?",
         "options": [
           "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
-          "Potíž je stejná napříč situacemi a hluk jen odkryl všeobecně slabé chápání.",
-          "Potíž je především v neochotě reagovat na autoritu učitele ve skupině.",
+          "Potíž je stejná napříč situacemi a hluk jen odkryl všeobecně slabé chápání, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Potíž je především v neochotě reagovat na autoritu učitele ve skupině, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Potíž je hlavně v tom, že individuální práce bývá vždy jednodušší než skupinová, bez dalšího významu."
         ],
         "correct": 0,
@@ -170,9 +170,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jak nejlépe vyložit situaci, kdy dítě provede úkol správně po krátké demonstraci, ale samotný rychle vyslovený slovní pokyn v tělocvičně často mine?",
         "options": [
           "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
-          "Jádro leží v celkově slabém chápání pohybového zadání bez ohledu na formu instrukce.",
-          "Jádro leží v tom, že dítě v tělocvičně systematicky vzdoruje verbálním pokynům.",
-          "Jádro leží v tom, že demonstrace je vždy nepřiměřenou nápovědou a výsledek proto nelze spolehlivě hodnotit."
+          "Jádro leží v celkově slabém chápání pohybového zadání bez ohledu na formu instrukce, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Jádro leží v tom, že dítě v tělocvičně systematicky vzdoruje verbálním pokynům, a právě tato rovina by měla být považována za rozhodující.",
+          "Jádro leží v tom, že demonstrace je vždy nepřiměřenou nápovědou a výsledek proto nelze číst, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -193,9 +193,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 14,
         "text": "Co by v této situaci bylo nejméně přesné tvrdit, když dítě po názoru a rozfázování úkolu postup zvládne, ale bez této opory se ztratí už v prvních krocích?",
         "options": [
-          "Je vhodné odlišit dostupnost a strukturu zadání od závěru o celkové nekompetenci.",
+          "Je vhodné odlišit dostupnost a strukturu zadání od závěru o celkové nekompetenci, a právě tato rovina by měla být považována za rozhodující.",
           "Potíž může ležet v pochopení a adaptivním zvládnutí úkolu, ne nutně v odporu ke spolupráci.",
-          "Podpůrná struktura mění podmínky výkonu a ukazuje, co je pro dítě rozhodující.",
+          "Podpůrná struktura mění podmínky výkonu a ukazuje, co je pro dítě rozhodující, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Jde především o důkaz, že dítě problém zvládá zcela bez obtíží a podpora je zbytečná."
         ],
         "correct": 3,
@@ -203,12 +203,12 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 15,
-        "text": "Dítě rozumí doslovnému obsahu, ale selhává v narážce, ironii a změně perspektivy partnera. Které vysvětlení je bližší?",
+        "text": "Dítě rozumí doslovnému obsahu, ale selhává v narážce, ironii a změně perspektivy partnera. Které čtení je bližší?",
         "options": [
           "Jde spíše o sociálně-pragmatické porozumění než o pouhý deficit ve slyšení nebo artikulaci.",
-          "Jde spíše o potíž ve výslovnosti, protože význam narážky závisí hlavně na mluvní produkci.",
+          "Jde spíše o potíž ve výslovnosti, protože význam narážky závisí hlavně na mluvní produkci, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Jde spíše o vizuální bariéru, protože změna perspektivy bývá založena na čtení neverbálních znaků.",
-          "Jde spíše o nízkou ochotu spolupracovat, protože dítě doslovný obsah chápe."
+          "Jde spíše o nízkou ochotu spolupracovat, protože dítě doslovný obsah chápe, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -218,9 +218,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Žák chápe princip příkladu, když je zadání rozfázované a zvýrazněné, ale v kompaktně zapsaném bloku instrukcí opakovaně vynechá rozhodující krok. Co z toho plyne nejpřesněji?",
         "options": [
           "Problém leží spíše v přístupu ke struktuře zadání než jistě v nepochopení matematického principu.",
-          "Problém leží jistě v tom, že žák nerozumí postupu a podpora jen zakrývá skutečný deficit.",
-          "Problém leží hlavně v nízké sebekontrole při práci s písemným materiálem.",
-          "Problém leží v tom, že kompaktně zapsané zadání má vždy vyšší obsahovou náročnost."
+          "Problém leží jistě v tom, že žák nerozumí postupu a podpora jen zakrývá skutečný deficit, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Problém leží hlavně v nízké sebekontrole při práci s písemným materiálem, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Problém leží v tom, že kompaktně zapsané zadání má vždy vyšší obsahovou náročnost, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -230,9 +230,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Která informace nejlépe pomůže učiteli rozlišit přístup k informaci od jejího porozumění?",
         "options": [
           "Zda se výkon mění po změně podmínek podání stejného obsahu.",
-          "Zda je žák celkově klidnější než na začátku pololetí.",
+          "Zda je žák celkově klidnější než na začátku pololetí, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Zda se obtíž objevila i v jiném předmětu bez bližšího popisu situace.",
-          "Zda rodič považuje domácí přípravu za dostatečnou."
+          "Zda rodič považuje domácí přípravu za dostatečnou, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -244,7 +244,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Žák selhává hlavně při jednom typu úkolu a po změně podmínek se výkon vrací.",
           "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
           "Obtíž se objevuje jen tehdy, když je zadání dlouhé a hlučné prostředí rušivé.",
-          "Výkon kolísá podle toho, zda učitel pracuje individuálně nebo frontálně."
+          "Výkon kolísá podle toho, zda učitel pracuje individuálně nebo frontálně, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -256,7 +256,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Výkon je citlivý na tempo podání, ne nutně stejně oslabený ve všech podmínkách.",
           "Před závěrem o stabilní globální potíži je vhodné zohlednit roli podmínek výkonu.",
           "Jde o potvrzení, že stejná bariéra přetrvává bez ohledu na podobu zadání.",
-          "Tempo může fungovat jako rozhodující podmínka dostupnosti úkolu."
+          "Tempo může fungovat jako rozhodující podmínka dostupnosti úkolu, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -266,9 +266,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Když žák chybuje stejně u tichého čtení, poslechu i praktické ukázky, který závěr je bližší?",
         "options": [
           "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
-          "Jádro obtíže bude pravděpodobně jen ve vizuálním přístupu k informaci.",
-          "Jádro obtíže bude pravděpodobně jen v produkci odpovědi, ne v porozumění.",
-          "Jádro obtíže bude pravděpodobně jen v akustických podmínkách výuky."
+          "Jádro obtíže bude pravděpodobně jen ve vizuálním přístupu k informaci, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Jádro obtíže bude pravděpodobně jen v produkci odpovědi, ne v porozumění, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Jádro obtíže bude pravděpodobně jen v akustických podmínkách výuky, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -278,9 +278,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Žák v každém předmětu selhává až tehdy, když má odpověď zapsat vlastní rukou; ústně nebo na počítači drží obsah výrazně lépe. Jaké vysvětlení je zde nejpřesnější?",
         "options": [
           "Stabilní je spíše bariéra ve specifické formě výkonu než jistě v obsahu kompetence napříč předměty.",
-          "Stabilní je obsahová neznalost, která se ústně jen hůř odhaluje.",
-          "Stabilní je porucha porozumění zadání bez ohledu na způsob odpovědi.",
-          "Stabilní je hlavně motivační odmítání školní práce jako takové."
+          "Stabilní je obsahová neznalost, která se ústně jen hůř odhaluje, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Stabilní je porucha porozumění zadání bez ohledu na způsob odpovědi, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Stabilní je hlavně motivační odmítání školní práce jako takové, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -291,7 +291,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
           "Že je potřeba sledovat, které podmínky výkon zhoršují a které jej zpřístupňují.",
-          "Že změna prostředí může být pro posouzení obtíže stejně důležitá jako změna úkolu.",
+          "Že změna prostředí může být pro čtení obtíže stejně důležitá jako změna úkolu.",
           "Že kolísání výkonu samo o sobě brání rychlému závěru o stabilním jádru napříč situacemi."
         ],
         "correct": 0,
@@ -301,10 +301,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 23,
         "text": "Který indikátor nejvíc svědčí pro to, že opatření míří mimo hlavní bariéru?",
         "options": [
-          "Že vyžaduje od týmu krátké zaučení před zavedením.",
+          "Že vyžaduje od týmu krátké zaučení před zavedením, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Že mění něco nápadného, ale výkon se v cílové situaci téměř neposouvá.",
-          "Že je potřeba ho popsat konkrétněji než obecnou větou.",
-          "Že se jeho účinek musí sledovat v čase, ne jen po jedné hodině."
+          "Že je potřeba ho popsat konkrétněji než obecnou větou, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Že se jeho účinek musí sledovat v čase, ne jen po jedné hodině, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -313,8 +313,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 24,
         "text": "Který ukazatel nejlépe umožní vyhodnotit, zda navržená podpora opravdu funguje?",
         "options": [
-          "Že škola hodnotí spolupráci rodiny jako lepší než dřív.",
-          "Že výstup odborně zní a obsahuje přesnou terminologii.",
+          "Že škola hodnotí spolupráci rodiny jako lepší než dřív, a právě tato rovina by měla být považována za rozhodující.",
+          "Že výstup odborně zní a obsahuje přesnou terminologii, a právě tento znak by měl nést hlavní interpretační váhu.",
           "Že je předem jasné, v jaké situaci a podle čeho se změna pozná.",
           "Že se po předání zprávy už nikdo nevrací s doplňujícími dotazy."
         ],
@@ -338,9 +338,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Škola zavede úpravu, po níž žák působí klidněji, ale v situaci, kvůli níž byla podpora nastavena, výkon zůstává beze změny. Co z toho plyne nejpřesněji?",
         "options": [
           "Podpora pravděpodobně zasáhla vedlejší projev, ne nutně hlavní bariéru.",
-          "Podpora je funkční, protože zlepšila celkovou atmosféru práce.",
+          "Podpora je funkční, protože zlepšila celkovou atmosféru práce, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Podpora je jistě nefunkční, protože každá účinná změna musí odstranit obtíž úplně.",
-          "Podpora je dostačující, pokud učitel subjektivně cítí menší zátěž."
+          "Podpora je dostačující, pokud učitel subjektivně cítí menší zátěž, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -351,8 +351,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Opatření už prokázalo účinnost v cílové školní situaci, protože žák umí úkol s podporou zvládnout.",
           "Je třeba odlišit zlepšení v podpůrně nasycené situaci od skutečného posunu v běžné cílové situaci.",
-          "Zlepšení v individuální situaci stačí k závěru, že hlavní bariéra byla odstraněna.",
-          "Pokud se výkon zlepší někde, není už důvod sledovat, kde se potíž vrací."
+          "Zlepšení v individuální situaci stačí k závěru, že hlavní bariéra byla odstraněna, a právě tato rovina by měla být považována za rozhodující.",
+          "Pokud se výkon zlepší někde, není už důvod sledovat, kde se potíž vrací, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -363,7 +363,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Potíž může souviset i s tempem a podmínkami zpracování, ne jen s výsledným počtem chyb.",
           "Je vhodné odlišit výkon v jednorázově plynoucím sdělení od výkonu s možností návratu k informaci.",
-          "Diktát sám o sobě nemusí přesně ukazovat rozsah jádra obtíže.",
+          "Diktát sám o sobě nemusí přesně ukazovat rozsah jádra obtíže, a právě tento znak by měl nést hlavní interpretační váhu.",
           "Výsledek potvrzuje, že stejná potíž trvá beze změny bez ohledu na podmínky zpracování."
         ],
         "correct": 3,
@@ -374,9 +374,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Dítě při samostatném řešení působí jako nepozorné, ale po rozfázování úkolu a konkrétní opoře se ukáže, že hlavní bariéra byla v pochopení a adaptivním zvládání kroku. Co je přesnější?",
         "options": [
           "Přesnější je rychlé etopedické uzavření, protože nápadný projev bývá hlavním odborným signálem.",
-          "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
-          "Přesnější je uzavřít situaci jako čistě motivační problém, protože po opoře se dítě uklidnilo.",
-          "Přesnější je hledat hlavně školní nekázeň, protože úkol působil na dítě náročně."
+          "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+          "Přesnější je uzavřít situaci jako čistě motivační problém, protože po opoře se dítě uklidnilo, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Přesnější je hledat hlavně školní nekázeň, protože úkol působil na dítě náročně, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -386,20 +386,20 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Při stejné instrukci dítě potřebuje konkrétní názornost, více času a podporu v běžných adaptivních krocích; problém nespočívá hlavně ve vzdoru. Co je bližší?",
         "options": [
           "Bližší je etopedický rámec, protože potřeba času obvykle kryje problém v regulaci chování.",
-          "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
+          "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
           "Bližší je logopedický rámec, protože názornost kompenzuje hlavně řečovou produkci.",
-          "Bližší je sociální rámec, protože jde především o podporu rodiny mimo školu."
+          "Bližší je sociální rámec, protože jde především o podporu rodiny mimo školu, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 1,
         "correctLetter": "B"
       },
       {
         "number": 31,
-        "text": "Kdy je nepřesné vykládat situaci primárně tyflopedicky?",
+        "text": "Kdy je nepřesné číst situaci primárně tyflopedicky?",
         "options": [
-          "Když dítě potřebuje kontrast, zvětšení a přesnější orientaci v ploše textu.",
-          "Když výkon kolísá podle vizuální vzdálenosti a kvality zobrazení.",
-          "Když textový obsah po zpřístupnění drží, ale bariéra zůstává ve vizuálním přístupu.",
+          "Když dítě potřebuje kontrast, zvětšení a přesnější orientaci v ploše textu, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Když výkon kolísá podle vizuální vzdálenosti a kvality zobrazení, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Když textový obsah po zpřístupnění drží, ale bariéra zůstává ve vizuálním přístupu, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Když hlavní bariéra leží v poloze, úchopu, manipulaci a motorickém provedení, ne ve vizuálním přístupu."
         ],
         "correct": 3,
@@ -409,10 +409,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 32,
         "text": "Kdy je chyba vyvodit z pomalého zápisu zrakovou bariéru?",
         "options": [
-          "Když je přítomné i zhoršení v kontrastu, v dálce a ve sledování řádků.",
+          "Když je přítomné i zhoršení v kontrastu, v dálce a ve sledování řádků, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Když po zvětšení a kontrastu stále přetrvává hlavní bariéra ve fyzickém provedení a vytrvalosti ruky.",
-          "Když dítě používá vizuální orientační body a pomůcky pro čtení.",
-          "Když je potřeba upravit vizuální přístup k materiálu."
+          "Když dítě používá vizuální orientační body a pomůcky pro čtení, a právě tato rovina by měla být považována za rozhodující.",
+          "Když je potřeba upravit vizuální přístup k materiálu, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -422,9 +422,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jaké vysvětlení situace je nejpřesnější, když dítě rozumí otázce při individuální práci, ale ve třídě opakovaně odpovídá mimo, protože zachytí jen část zadání?",
         "options": [
           "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
-          "Jádro leží ve stabilně slabé obsahové kompetenci bez ohledu na to, jak je sdělení podané.",
-          "Jádro leží v tom, že individuální práce neukazuje skutečnou úroveň žáka.",
-          "Jádro leží hlavně v neochotě sledovat výuku ve větší skupině."
+          "Jádro leží ve stabilně slabé obsahové kompetenci bez ohledu na to, jak je sdělení podané, a právě tato rovina by měla být považována za rozhodující.",
+          "Jádro leží v tom, že individuální práce neukazuje skutečnou úroveň žáka, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Jádro leží hlavně v neochotě sledovat výuku ve větší skupině, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -433,9 +433,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 34,
         "text": "Žák po úpravě pracovního místa a zjednodušení vizuálního pole drží pozornost i obsah úkolu lépe, přestože předtím působil jako roztěkaný. Co by z toho bylo nejméně přesné vyvozovat?",
         "options": [
-          "Úprava podmínek mohla zasáhnout hlavní bariéru, ne jen chování na povrchu.",
-          "Je vhodné odlišit sekundární neklid od příčiny, která neklid vyvolávala.",
-          "Zlepšení po úpravě podmínek svědčí proti rychlému moralizujícímu uzavření.",
+          "Úprava podmínek mohla zasáhnout hlavní bariéru, ne jen chování na povrchu, a právě tato rovina by měla být považována za rozhodující.",
+          "Je vhodné odlišit sekundární neklid od příčiny, která neklid vyvolávala, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Zlepšení po úpravě podmínek svědčí proti rychlému moralizujícímu uzavření, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Jde především o potvrzení, že původní problém byl v osobnostním nastavení a úprava prostředí je vedlejší."
         ],
         "correct": 3,
@@ -446,21 +446,21 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Co z toho plyne nejpřesněji, když se chyba objevuje jen při delším vícefázovém zadání, ale u krátkých jednoznačných pokynů dítě postup zvládá?",
         "options": [
           "Rozhodující je odlišit délku a strukturu zadání od závěru, že dítě nerozumí i jednoduchému principu.",
-          "Rozhodující je uzavřít situaci jako stejné neporozumění bez ohledu na složitost instrukce.",
-          "Rozhodující je vykládat potíž především jako nezájem o náročnější úkoly.",
-          "Rozhodující je předpokládat, že delší zadání jen více odhalilo problém chování."
+          "Rozhodující je uzavřít situaci jako stejné neporozumění bez ohledu na složitost instrukce, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Rozhodující je číst potíž především jako nezájem o náročnější úkoly, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Rozhodující je předpokládat, že delší zadání jen více odhalilo problém chování, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 36,
-        "text": "Který údaj má pro funkční posouzení obtíže nejmenší vypovídací hodnotu?",
+        "text": "Který údaj má pro funkční čtení obtíže nejmenší vypovídací hodnotu?",
         "options": [
-          "Přesně popsaná situace, v níž se chyba objevuje.",
-          "Popis toho, co výkon zhoršuje nebo naopak zpřístupňuje.",
+          "Přesně popsaná situace, v níž se chyba objevuje, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Popis toho, co výkon zhoršuje nebo naopak zpřístupňuje, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Obecné označení, že žák je dlouhodobě problémový bez vazby na konkrétní úkol.",
-          "Srovnání výkonu při odlišných podmínkách téhož úkolu."
+          "Srovnání výkonu při odlišných podmínkách téhož úkolu, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -469,7 +469,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 37,
         "text": "Co by v této situaci bylo nejméně vhodné tvrdit, když dítě po zopakování a zpomalení stejné instrukce postup provede správně?",
         "options": [
-          "Původní selhání nemusí automaticky znamenat, že dítě principu nerozumělo.",
+          "Původní selhání nemusí automaticky znamenat, že dítě principu nerozumělo, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Rozhodující může být tempo a dostupnost sdělení, ne nutně samotný obsah úkolu.",
           "Je vhodné sledovat, zda se zlepšení objeví i v běžné rychlosti a bez dodatečné opory.",
           "Jde o jasný důkaz, že podmínky nejsou pro výkon důležité a chyba byla náhodná."
@@ -482,9 +482,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Dítě v testu s výběrem možností odpovídá přesněji než v otevřené produkci, přestože typ učiva zůstává stejný. Co z toho plyne nejpřesněji?",
         "options": [
           "Rozdíl může ležet ve formě vyjádření výkonu, ne nutně v tom, že by učivo umělo jen v jedné podobě.",
-          "Rozdíl dokazuje, že uzavřené úlohy nikdy nemají vypovídací hodnotu.",
-          "Rozdíl ukazuje, že otevřená produkce je jediným spolehlivým zdrojem o skutečné znalosti.",
-          "Rozdíl automaticky potvrzuje, že žák nerozumí, jen náhodně poznává správné možnosti."
+          "Rozdíl dokazuje, že uzavřené úlohy nikdy nemají vypovídací hodnotu, a právě tato rovina by měla být považována za rozhodující.",
+          "Rozdíl ukazuje, že otevřená produkce je jediným spolehlivým zdrojem o skutečné znalosti, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Rozdíl automaticky potvrzuje, že žák nerozumí, jen náhodně poznává správné možnosti, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -494,9 +494,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jaké vysvětlení je nejbližší, když se výkon po úpravě podmínek zlepšuje jen v těch úkolech, které jsou na dané podmínky citlivé, ale v ostatních zůstává stejný?",
         "options": [
           "Podpora pravděpodobně cílí specificky na část bariéry, která je vázaná na konkrétní podmínky úkolu.",
-          "Podpora je plošně neúčinná, protože nezlepšila výkon ve všech oblastech najednou.",
-          "Podpora je zbytečná, protože některé výkony byly uspokojivé i bez ní.",
-          "Podpora dokazuje, že hlavní bariéra byla čistě obsahová a podmínky s ní nesouvisejí."
+          "Podpora je plošně neúčinná, protože nezlepšila výkon ve všech oblastech najednou, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Podpora je zbytečná, protože některé výkony byly uspokojivé i bez ní, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Podpora dokazuje, že hlavní bariéra byla čistě obsahová a podmínky s ní nesouvisejí, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -505,10 +505,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 40,
         "text": "Jak nejlépe vyložit situaci, kdy učitel popisuje, že žák „to někdy umí a někdy ne“, ale podrobnější rozbor ukáže jasnou vazbu na hluk, vzdálenost a hustotu materiálu?",
         "options": [
-          "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
-          "Kolísání výkonu je zde nejspíše náhodné a bez analytické hodnoty.",
-          "Kolísání výkonu je zde nejspíše potvrzením stejné jádrové poruchy bez vazby na situaci.",
-          "Kolísání výkonu je zde hlavně známkou neochoty žáka pracovat soustavně."
+          "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+          "Kolísání výkonu je zde nejspíše náhodné a bez analytické hodnoty, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Kolísání výkonu je zde nejspíše potvrzením stejné jádrové poruchy bez vazby na situaci, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Kolísání výkonu je zde hlavně známkou neochoty žáka pracovat soustavně, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -518,8 +518,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Žák po vysvětlení úkolu odpoví správně, ale při samostatném převodu stejného zadání do pracovního postupu se ztratí. Které vysvětlení situace je zde nejbližší?",
         "options": [
           "Rozhodující může být přechod od porozumění k samostatnému organizačnímu zvládnutí úkolu.",
-          "Rozhodující je uzavřít situaci jako jisté nepochopení už na úrovni instrukce.",
-          "Rozhodující je hledat hlavně poruchu chování, protože při samostatnosti chyba narůstá.",
+          "Rozhodující je uzavřít situaci jako jisté nepochopení už na úrovni instrukce, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Rozhodující je hledat hlavně poruchu chování, protože při samostatnosti chyba narůstá, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Rozhodující je to, že učitel při vysvětlení úkol mimoděk zjednodušil do nepoužitelné podoby."
         ],
         "correct": 0,
@@ -530,9 +530,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení má největší vypovídací hodnotu pro posouzení, zda podpora opravdu mění jádro obtíže?",
         "options": [
           "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
-          "Že učitel má po zavedení podpory lepší pocit z práce celé třídy.",
-          "Že žák působí s novým opatřením klidněji, i když cíl podpory mířil jinam.",
-          "Že opatření lze odborně pojmenovat několika přesnými termíny."
+          "Že učitel má po zavedení podpory lepší pocit z práce celé třídy, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Že žák působí s novým opatřením klidněji, i když cíl podpory mířil jinam, a právě tato rovina by měla být považována za rozhodující.",
+          "Že opatření lze odborně pojmenovat několika přesnými termíny, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -544,19 +544,19 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Je vhodné odlišit náročnost samostatné produkce od závěru o úplné neznalosti.",
           "Rozdíl může ležet ve formě vybavení a uspořádání odpovědi, ne pouze v obsahu učiva.",
           "Jde o potvrzení, že žák stejný obsah ve skutečnosti nezvládá ani s oporou.",
-          "Je třeba sledovat, zda se podpora přenáší i do méně vedených situací."
+          "Je třeba sledovat, zda se podpora přenáší i do méně vedených situací, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 44,
-        "text": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které vysvětlení je přesnější?",
+        "text": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které čtení je přesnější?",
         "options": [
           "Je vhodné hledat, které uspořádání činnosti bariéru zesiluje a které ji naopak tlumí.",
           "Je vhodné uzavřít, že jádro potíže leží mimo podmínky a rozdíl mezi hodinami nemá význam.",
           "Je vhodné uzavřít, že lepší výkon v jedné situaci je pouze náhodný výkyv bez diagnostické hodnoty.",
-          "Je vhodné vykládat rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
+          "Je vhodné číst rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -566,9 +566,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jaké vysvětlení je nejpřesnější, když se po rozdělení úkolu na menší kroky zlepší provedení, ale ne nutně rychlost?",
         "options": [
           "Podpora může zpřístupnit organizaci a pochopení postupu, aniž by okamžitě odstranila všechny sekundární dopady.",
-          "Podpora je neúčinná, protože nevedla k celkovému zrychlení výkonu.",
-          "Podpora je účinná jen tehdy, když se současně zlepší i chování, tempo a samostatnost bez výjimky.",
-          "Podpora potvrzuje, že původní problém byl pouze v nedostatku snahy."
+          "Podpora je neúčinná, protože nevedla k celkovému zrychlení výkonu, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Podpora je účinná jen tehdy, když se současně zlepší i chování, tempo a samostatnost bez výjimky, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Podpora potvrzuje, že původní problém byl pouze v nedostatku snahy, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -579,8 +579,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
           "Jádro leží spíše v artikulaci, protože pozice ve třídě mění hlavně její vnímání učitelem.",
-          "Jádro leží spíše v tom, že dítě po přesazení více poslouchá z kázně.",
-          "Jádro leží spíše v obsahu učiva, který se po přesunu blíže automaticky zjednodušil."
+          "Jádro leží spíše v tom, že dítě po přesazení více poslouchá z kázně, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Jádro leží spíše v obsahu učiva, který se po přesunu blíže automaticky zjednodušil, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -602,9 +602,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Co z toho plyne nejpřesněji, když dítě při stejné látce selhává hlavně v dlouhých souvislých instrukcích, ale nikoli v krátkých postupných krocích?",
         "options": [
           "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
-          "Jádro musí ležet v totálním nepochopení látky, protože dlouhé instrukce jen odhalují pravdu.",
-          "Jádro musí ležet ve vzdoru, protože dlouhé instrukce vyžadují více sebekontroly.",
-          "Jádro musí ležet v nečitelnosti materiálu, protože delší instrukce bývají graficky náročnější."
+          "Jádro musí ležet v totálním nepochopení látky, protože dlouhé instrukce jen odhalují pravdu, a právě tato rovina by měla být považována za rozhodující.",
+          "Jádro musí ležet ve vzdoru, protože dlouhé instrukce vyžadují více sebekontroly, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Jádro musí ležet v nečitelnosti materiálu, protože delší instrukce bývají graficky náročnější, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -623,12 +623,12 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 50,
-        "text": "Který závěr je při funkčním posouzení obtíže nejpřesvědčivější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
+        "text": "Který závěr je při funkčním čtení obtíže nejpřesvědčivější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
         "options": [
           "Že rozhodující je efekt v cílové oblasti, ne to, zda se současně proměnil i celkový dojem z chování.",
-          "Že bez proměny celkového chování nelze podporu považovat za účinnou.",
-          "Že změna v cílové oblasti je vedlejší, pokud se současně nezmění i všechny ostatní projevy.",
-          "Že účinek podpory lze hodnotit až tehdy, když se zlepší klima celé třídy."
+          "Že bez proměny celkového chování nelze podporu považovat za účinnou, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Že změna v cílové oblasti je vedlejší, pokud se současně nezmění i všechny ostatní projevy, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Že účinek podpory lze hodnotit až tehdy, když se zlepší klima celé třídy, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -983,10 +983,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 26,
         "text": "Které tvrzení o vztahu Freud × Adler × Jung × Rogers vystihuje situaci nejlépe?",
         "options": [
-          "Rogers je hlavní kotvou kolektivního nevědomí, Adler psychosociálních krizí",
+          "Rogers je hlavní kotvou kolektivního nevědomí, Adler psychosociálních krizí, a právě v tomto směru by se měla hledat hlavní příčina. Právě tato osa by zde měla mít rozhodující význam.",
           "Freud je hlavní kotvou obranných mechanismů, Adler individuální psychologie, Jung archetypů a Rogers klientsky orientovaného přístupu",
-          "Freud je hlavní kotvou sociokulturního vývoje, Jung podmíněných reflexů, Adler seberealizace a Rogers psychické deprivace",
-          "Freud, Adler, Jung a Rogers zastupují v této otázce tutéž teoretickou osu"
+          "Freud je hlavní kotvou sociokulturního vývoje, Jung podmíněných reflexů, Adler seberealizace a Rogers psychické deprivace, a právě tato rovina by měla být považována za rozhodující.",
+          "Freud, Adler, Jung a Rogers zastupují v této otázce tutéž teoretickou osu, a právě tento znak by měl nést hlavní interpretační váhu. Právě tato osa by zde měla mít rozhodující význam."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -1486,7 +1486,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Která čtveřice obsahuje pouze správné historické vazby?",
         "options": [
           "Strümpell — pedagogická patologie; Mauer — nápravná pedagogika; Popelář — speciální pedagogika; Sovák — defektologie",
-          "Strümpell — léčebná pedagogika; Mauer — defektologie; Popelář — nápravná pedagogika; Sovák — speciální pedagogika",
+          "Strümpell — léčebná pedagogika; Mauer — defektologie; Popelář — nápravná pedagogika; Sovák — speciální pedagogika, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Strümpell — sociální pedagogika; Mauer — speciální pedagogika defektologická; Popelář — defektologie; Sovák — pedopatologie",
           "Strümpell — integrativní speciální pedagogika; Mauer — pedagogická patologie; Popelář — léčebná pedagogika; Sovák — sociální pedagogika"
         ],
@@ -1618,9 +1618,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Která dvojice je přiřazena správně?",
         "options": [
           "J. Jesenský — školská integrace a její české souvislosti",
-          "Josef Slowík — první české pomocné školství",
+          "Josef Slowík — první české pomocné školství, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Libuše Ludíková — defektologie",
-          "Miloš Sovák — integrativní speciální pedagogika"
+          "Miloš Sovák — integrativní speciální pedagogika, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -1629,10 +1629,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 26,
         "text": "Které tvrzení o novodobých českých osobnostech odpovídá nejlépe?",
         "options": [
-          "Marie Vítková je přesnější kotvou zrakového postižení než Libuše Ludíková",
+          "Marie Vítková je přesnější kotvou zrakového postižení než Libuše Ludíková, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Josef Slowík je spojován spíše se širším a inkluzivním pojetím speciální pedagogiky než s historickou kotvou nápravné pedagogiky",
-          "Milan Valenta je typičtější kotvou pro zrakové postižení než pro psychopedii",
-          "Karel Neubauer je typičtější kotvou pro pomocné školství než pro logopedické paradigma"
+          "Milan Valenta je typičtější kotvou pro zrakové postižení než pro psychopedii, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Karel Neubauer je typičtější kotvou pro pomocné školství než pro logopedické paradigma, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -1776,7 +1776,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "historický vývoj zahrnuje i terminologické proměny a proměny cíle oboru",
           "starší názvosloví bývá často deficitněji orientované než novější podpůrné a participační pojetí",
           "integrační a inkluzivní pojetí jsou historicky zcela totožné a nelze je nijak rozlišit",
-          "vývoj oboru nelze vykládat jen přes jednotlivé osobnosti, ale i přes proměnu zařízení, jazyka a cílů"
+          "vývoj oboru nelze číst jen přes jednotlivé osobnosti, ale i přes proměnu zařízení, jazyka a cílů"
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -1834,9 +1834,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které spojení odpovídá historickému a oborovému kontextu nejlépe?",
         "options": [
           "Josef Zeman — ministerská a systémová role při rozvoji pomocného školství a defektologie",
-          "Jan Mauer — hlavní kotva zrakového postižení na UPOL",
-          "Marie Vítková — historická léčebná pedagogika",
-          "František Čáda — strukturované učení TEACCH"
+          "Jan Mauer — hlavní kotva zrakového postižení na UPOL, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Marie Vítková — historická léčebná pedagogika, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "František Čáda — strukturované učení TEACCH, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2017,9 +2017,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které srovnání nejpřesněji odlišuje balbuties od tumultus sermonis?",
         "options": [
           "Balbuties bývá spojena s bloky a napětím, zatímco tumultus sermonis spíše s překotným a málo kontrolovaným tempem řeči.",
-          "Balbuties je porucha hlasu, zatímco tumultus sermonis je porucha rezonance.",
-          "Balbuties zasahuje jen psaný projev, zatímco tumultus sermonis jen mluvené porozumění.",
-          "Balbuties je výlučně symptomatická porucha řeči, zatímco tumultus sermonis výlučně sluchová porucha."
+          "Balbuties je porucha hlasu, zatímco tumultus sermonis je porucha rezonance, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Balbuties zasahuje jen psaný projev, zatímco tumultus sermonis jen mluvené porozumění, a právě tato rovina by měla být považována za rozhodující.",
+          "Balbuties je výlučně symptomatická porucha řeči, zatímco tumultus sermonis výlučně sluchová porucha, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2089,9 +2089,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Dítě má dlouhodobě chraptivý, unavitelný hlas, ale artikulace i obsah řeči zůstávají relativně zachované. Jak situaci vyložit nejpřesněji?",
         "options": [
           "Těžiště leží spíše v poruše hlasu než v poruše rezonance nebo sluchové dostupnosti.",
-          "Těžiště leží spíše v prelingvální sluchové ztrátě než v poruše hlasu.",
-          "Těžiště leží spíše v expresivně jazykové rovině než ve fonaci.",
-          "Těžiště leží spíše v symptomatické NKS než v hlasové oblasti."
+          "Těžiště leží spíše v prelingvální sluchové ztrátě než v poruše hlasu, a právě tato rovina by měla být považována za rozhodující.",
+          "Těžiště leží spíše v expresivně jazykové rovině než ve fonaci, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Těžiště leží spíše v symptomatické NKS než v hlasové oblasti, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2149,9 +2149,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které srovnání nejpřesněji vystihuje rozdíl mezi Haüyem a Braillem?",
         "options": [
           "Haüy je spojen s novodobým školským vzděláváním nevidomých, Braille s písmem pro nevidomé.",
-          "Haüy je spojen s oralismem neslyšících, Braille s krizovým rozhovorem.",
-          "Haüy je spojen s logopedickou diagnostikou, Braille s indukční smyčkou.",
-          "Haüy je spojen s psychopedií, Braille se sociálně-pragmatickou komunikací."
+          "Haüy je spojen s oralismem neslyšících, Braille s krizovým rozhovorem, a právě tato rovina by měla být považována za rozhodující.",
+          "Haüy je spojen s logopedickou diagnostikou, Braille s indukční smyčkou, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Haüy je spojen s psychopedií, Braille se sociálně-pragmatickou komunikací, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2161,9 +2161,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Žák po zvětšení, kontrastu a přehlednějším grafickém uspořádání drží stejný obsah výrazně lépe, zatímco změna sedu a úchopu výkon téměř neposune. Jaké vysvětlení je zde nejpřesnější?",
         "options": [
           "Jádro leží spíše ve vizuální přístupnosti než v tělesné a motorické formě výkonu.",
-          "Jádro leží spíše v motorickém provedení než v přístupu k vizuální informaci.",
-          "Jádro leží spíše v poruše hlasu než ve vizuální přístupnosti.",
-          "Jádro leží spíše v postkrizové regulaci chování než ve vizuálním přístupu."
+          "Jádro leží spíše v motorickém provedení než v přístupu k vizuální informaci, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Jádro leží spíše v poruše hlasu než ve vizuální přístupnosti, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Jádro leží spíše v postkrizové regulaci chování než ve vizuálním přístupu, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2172,9 +2172,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 17,
         "text": "Co by zde bylo nejméně přesné tvrdit, pokud dítě dobře vizuálně orientuje text i prostor, ale dlouhodobě potřebuje úpravu polohy, úchopu a manipulace s pomůckami?",
         "options": [
-          "Těžiště nemusí ležet v tyflopedické dostupnosti informace.",
-          "Do popředí se může dostávat somatopedický rámec formy výkonu.",
-          "Hlavní problém nemusí být v zrakové přístupnosti textu.",
+          "Těžiště nemusí ležet v tyflopedické dostupnosti informace, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Do popředí se může dostávat somatopedický rámec formy výkonu, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Hlavní problém nemusí být v zrakové přístupnosti textu, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Nejpravděpodobnější jádro obtíže leží právě ve vizuální orientaci a kontrastu."
         ],
         "correct": 3,
@@ -2197,9 +2197,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení nejpřesněji vystihuje posun od MKN-10 k MKN-11 v oblasti mentálního postižení / poruchy intelektového vývoje?",
         "options": [
           "Novější přístup více zdůrazňuje adaptivní fungování a neopírá se jen o starší terminologii mentální retardace.",
-          "Novější přístup ruší potřebu rozlišovat závažnost a ponechává jen globální popis bez funkčních dopadů.",
-          "Novější přístup nahrazuje edukativní hledisko čistě psychiatrickým bez vazby na podporu.",
-          "Novější přístup chápe intelektový vývoj výhradně jako otázku školního prospěchu."
+          "Novější přístup ruší potřebu rozlišovat závažnost a ponechává jen globální popis bez funkčních dopadů, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Novější přístup nahrazuje edukativní hledisko čistě psychiatrickým bez vazby na podporu, a právě tato rovina by měla být považována za rozhodující.",
+          "Novější přístup chápe intelektový vývoj výhradně jako otázku školního prospěchu, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2242,19 +2242,19 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 23,
-        "text": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Jaké vysvětlení situace je nejpřesnější?",
+        "text": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Jaké čtení situace je nejpřesnější?",
         "options": [
-          "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
-          "Bližší je surdopedický rámec než psychopedický.",
-          "Bližší je tyflopedický rámec než psychopedický.",
-          "Bližší je hlasová porucha než psychopedický rámec."
+          "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
+          "Čtení je bližší surdopedickému rámci než psychopedickému, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Čtení je bližší tyflopedickému rámci než psychopedickému, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Čtení je bližší hlasové poruše než psychopedickému rámci, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 24,
-        "text": "Na co je při rozlišení psychopedického a etopedického výkladu situace nejdůležitější se zeptat, když dítě nápadně odmítá úkol?",
+        "text": "Na co je při rozlišení psychopedického a etopedického čtení situace nejdůležitější se zeptat, když dítě nápadně odmítá úkol?",
         "options": [
           "Co se stane s výkonem po konkrétním modelování, názoru a snížení abstrakční zátěže?",
           "Jak rychle bude možné sepsat kázeňský záznam?",
@@ -2268,7 +2268,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 25,
         "text": "Které shrnutí nejpřesněji vystihuje etopedický postkrizový rámec práce?",
         "options": [
-          "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
+          "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
           "převést každou obtíž přímo na stupeň intelektového vývoje",
           "uzavřít každou konfliktovou situaci jako důkaz zrakové bariéry",
           "soustředit se výhradně na artikulační přesnost bez práce s událostí"
@@ -2281,21 +2281,21 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Chování se vyhrocuje hlavně po vztahovém střetu, po porušení pravidel a v situacích sociálního konfliktu, nikoli po snížení abstrakce nebo zvýšení názornosti. Jaké vysvětlení je zde nejpřesnější?",
         "options": [
           "Do popředí se dostává spíše etopedický rámec než psychopedická potřeba názornosti.",
-          "Do popředí se dostává spíše tyflopedický rámec než etopedický.",
-          "Do popředí se dostává spíše surdopedický rámec než etopedický.",
-          "Do popředí se dostává spíše porucha hlasu než etopedický rámec."
+          "Do popředí se dostává spíše tyflopedický rámec než etopedický, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Do popředí se dostává spíše surdopedický rámec než etopedický, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Do popředí se dostává spíše porucha hlasu než etopedický rámec, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 27,
-        "text": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Jaké vysvětlení situace je nejpřesnější?",
+        "text": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Jaké čtení situace je nejpřesnější?",
         "options": [
           "Těžiště leží spíše v sociálně-pragmatickém porozumění než v prosté slovní zásobě.",
-          "Těžiště leží spíše ve zrakové ostrosti než v pragmatickém porozumění.",
-          "Těžiště leží spíše v poruše hlasu než v sociálně-pragmatickém porozumění.",
-          "Těžiště leží spíše v grafomotorice než v sociálně-pragmatickém porozumění."
+          "Těžiště leží spíše ve zrakové ostrosti než v pragmatickém porozumění, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Těžiště leží spíše v poruše hlasu než v sociálně-pragmatickém porozumění, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Těžiště leží spíše v grafomotorice než v sociálně-pragmatickém porozumění, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2304,7 +2304,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 28,
         "text": "Který znak je nejméně přesně vysvětlitelný čistě sluchovou nedostupností sdělení?",
         "options": [
-          "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
+          "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
           "ztráta části obsahu při větší vzdálenosti mluvčího a bez vizuální opory",
           "výrazná závislost porozumění na přímém pohledu na mluvčího",
           "rozpad obsahu při akusticky náročném frontálním výkladu"
@@ -2330,7 +2330,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "formálně plynulá řeč bez recipročního přizpůsobení partnerovi a bez práce s perspektivou druhého",
           "stabilní sigmatická odchylka při zachovaném dialogickém ladění",
-          "chraptivý hlas při zachovaném porozumění komunikační situaci",
+          "chraptivý hlas při zachovaném čtení komunikační situace",
           "nosovost řeči při jinak přiměřené reciprocitě"
         ],
         "correct": 0,
@@ -2340,9 +2340,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 31,
         "text": "Co by zde bylo nejméně přesné vyvozovat, když dítě rozumí doslovnému obsahu, ale opakovaně nezachytí, co druhý „myslel mezi řádky“?",
         "options": [
-          "Může jít o oslabené pragmatické zpracování komunikačního záměru.",
-          "Může jít o bariéru v perspektivním a sociálně-kontextovém porozumění sdělení.",
-          "Může jít o obtíž, která přesahuje pouhou slovní zásobu.",
+          "Může jít o oslabené pragmatické zpracování komunikačního záměru, a právě tato rovina by měla být považována za rozhodující.",
+          "Může jít o bariéru v perspektivním a sociálně-kontextovém čtení sdělení.",
+          "Může jít o obtíž, která přesahuje pouhou slovní zásobu, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Nejspíše jde primárně o artikulační odchylku jednotlivých hlásek."
         ],
         "correct": 3,
@@ -2413,7 +2413,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jak toto shrnout nejpřesněji, pokud vada vznikla prenatálně, i když se její funkční dopad plně projeví až později?",
         "options": [
           "Stále může jít o vadu kongenitální.",
-          "Jde automaticky o vadu získanou.",
+          "Jde automaticky o vadu získanou, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Jde automaticky o vadu postlingvální.",
           "Jde automaticky o symptomatickou poruchu řeči."
         ],
@@ -2437,21 +2437,21 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení o klasifikaci závažnosti poruchy intelektového vývoje vystihuje věc nejlépe?",
         "options": [
           "Klasifikace pomáhá orientačně, ale sama nevystihuje plně individuální vzdělávací potřeby.",
-          "Klasifikace sama přesně určí celý vzdělávací plán bez potřeby dalšího funkčního posouzení.",
-          "Klasifikace je v edukaci bezcenná a nemá žádný orientační význam.",
-          "Klasifikace se týká jen medicíny a v psychopedii se neuvažuje."
+          "Klasifikace sama přesně určí celý vzdělávací plán bez potřeby dalšího funkčního čtení, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Klasifikace je v edukaci bezcenná a nemá žádný orientační význam, a právě tato rovina by měla být považována za rozhodující.",
+          "Klasifikace se týká jen medicíny a v psychopedii se neuvažuje, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 40,
-        "text": "Co by v psychopedickém a klasifikačním posouzení situace bylo nejméně přesné?",
+        "text": "Co by v psychopedickém a klasifikačním čtení situace bylo nejméně přesné?",
         "options": [
           "Podpůrné a vzdělávací důsledky se nesmějí odvozovat jen mechanicky od diagnostické nálepky.",
-          "Důležitou roli hraje i adaptivní fungování a reálný funkční profil.",
-          "Rozhodující může být vztah mezi stupněm obtíže a konkrétní podporou v běžném životě.",
-          "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení."
+          "Důležitou roli hraje i adaptivní fungování a reálný funkční profil, a právě tato rovina by měla být považována za rozhodující.",
+          "Rozhodující může být vztah mezi stupněm obtíže a konkrétní podporou v běžném životě, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -2462,8 +2462,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Haüy je spojen s první školou pro nevidomé, Braille s písmem pro nevidomé.",
           "Haüy je spojen s písmem pro nevidomé, Braille s první školou pro neslyšící.",
-          "Haüy je spojen s FM systémem, Braille s logopedickou diagnostikou.",
-          "Haüy je spojen s bazální stimulací, Braille s krizovým rozhovorem."
+          "Haüy je spojen s FM systémem, Braille s logopedickou diagnostikou, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Haüy je spojen s bazální stimulací, Braille s krizovým rozhovorem, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2509,9 +2509,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jak nejlépe vystihnout vztah Lechty a Neubauera?",
         "options": [
           "Lechta je více spojen s pojmem narušená komunikační schopnost, Neubauer s logopedickou diagnostikou a klasifikačními rámci.",
-          "Lechta je více spojen s tyflopedií, Neubauer se surdopedií.",
-          "Lechta je více spojen s defektologií, Neubauer s etopedií.",
-          "Lechta je více spojen s bazální stimulací, Neubauer s logoterapií."
+          "Lechta je více spojen s tyflopedií, Neubauer se surdopedií, a právě tato rovina by měla být považována za rozhodující. Právě odtud by se proto mělo dále vycházet.",
+          "Lechta je více spojen s defektologií, Neubauer s etopedií, a právě tento znak by měl nést hlavní interpretační váhu. Právě tento závěr by pak měl být považován za určující.",
+          "Lechta je více spojen s bazální stimulací, Neubauer s logoterapií, a právě odtud by bylo vhodné vyvozovat hlavní závěr. Právě tato osa by zde měla mít rozhodující význam."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2569,9 +2569,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které přiřazení osoby a její nejtypičtější oborové kotvy je správné?",
         "options": [
           "Adolf Meyer — psychobiologický přístup s důrazem na životní historii a prostředí",
-          "Charles Van Riper — první škola pro nevidomé",
+          "Charles Van Riper — první škola pro nevidomé, a právě tato rovina by měla být považována za rozhodující.",
           "Libuše Ludíková — logoterapie",
-          "Milan Valenta — vzdělávání neslyšících v klášterní tradici"
+          "Milan Valenta — vzdělávání neslyšících v klášterní tradici, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2656,8 +2656,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Sleduje, zda oslabená funkce sama vykazuje postupný výkonový posun.",
           "Sleduje, zda je možné oslabenou funkci stabilně obcházet jiným kanálem.",
-          "Sleduje, zda se snižuje nárok cílové činnosti.",
-          "Sleduje, zda se zvyšuje dopomoc okolí."
+          "Sleduje, zda se snižuje nárok cílové činnosti, a právě tato rovina by měla být považována za rozhodující.",
+          "Sleduje, zda se zvyšuje dopomoc okolí, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2666,10 +2666,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 4,
         "text": "Který znak nejvíce ukazuje, že zvolený zásah je kompenzační?",
         "options": [
-          "Posuzuje, zda oslabená funkce sama vykazuje růst po nácviku.",
+          "Posuzuje, zda oslabená funkce sama vykazuje růst po nácviku, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Posuzuje, zda je cílová činnost zvládnutelná díky jiné zachované cestě.",
-          "Posuzuje, zda dítě vydrží delší výkonové drily.",
-          "Posuzuje, zda se mění tempo nácviku oslabené dovednosti."
+          "Posuzuje, zda dítě vydrží delší výkonové drily, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Posuzuje, zda se mění tempo nácviku oslabené dovednosti, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -2715,9 +2715,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení nejpřesněji rozlišuje kompenzaci a prosté zjednodušení?",
         "options": [
           "Kompenzace zachovává cíl, ale mění cestu; prosté zjednodušení může změnit i samotný výkonový cíl.",
-          "Kompenzace i zjednodušení vždy mění cíl činnosti.",
-          "Kompenzace je vždy dočasná, zjednodušení vždy trvalé.",
-          "Kompenzace je odborná, zjednodušení neodborné."
+          "Kompenzace i zjednodušení vždy mění cíl činnosti, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Kompenzace je vždy dočasná, zjednodušení vždy trvalé, a právě tato rovina by měla být považována za rozhodující.",
+          "Kompenzace je odborná, zjednodušení neodborné, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2726,9 +2726,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 9,
         "text": "Co by zde bylo nejméně přesné tvrdit, když je cílem úlohy porozumět textu a škola převede text do hlasové podoby?",
         "options": [
-          "Jde spíše o kompenzační zpřístupnění než o reedukační nácvik čtení.",
+          "Jde spíše o kompenzační zpřístupnění než o reedukační nácvik čtení, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Jde spíše o zachování obsahového cíle než o přímou práci na oslabeném čtení.",
-          "Jde spíše o změnu cesty k cíli než o změnu cíle samotného.",
+          "Jde spíše o změnu cesty k cíli než o změnu cíle samotného, a právě tento znak by měl nést hlavní interpretační váhu.",
           "Jde spíše o reedukační nácvik čtenářské techniky než o kompenzační podporu."
         ],
         "correct": 3,
@@ -2750,10 +2750,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 11,
         "text": "Který ukazatel nejlépe ukazuje, že postup je kompenzační, ne reedukační?",
         "options": [
-          "Zlepšuje se přímo ta oslabená dovednost, která byla cílem nácviku.",
+          "Zlepšuje se přímo ta oslabená dovednost, která byla cílem nácviku, a právě tento znak by měl nést hlavní interpretační váhu.",
           "Cílová činnost je funkčně zvládnutelná i bez přímého posunu v oslabené funkci.",
-          "Snižuje se počet kroků v reedukačním cvičení.",
-          "Dítě vydrží delší trénink oslabené funkce."
+          "Snižuje se počet kroků v reedukačním cvičení, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Dítě vydrží delší trénink oslabené funkce, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -2763,9 +2763,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Který ukazatel nejlépe ukazuje, že postup je reedukační, ne kompenzační?",
         "options": [
           "Oslabená funkce sama vykazuje zlepšení v úloze, na kterou zásah mířil.",
-          "Výkon je možný jen po zavedení jiné zachované cesty.",
-          "Zátěž činnosti se přesunula na pomůcku nebo na doprovod.",
-          "Dítě lépe snáší situaci, ale oslabená funkce se nemění."
+          "Výkon je možný jen po zavedení jiné zachované cesty, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Zátěž činnosti se přesunula na pomůcku nebo na doprovod, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Dítě lépe snáší situaci, ale oslabená funkce se nemění, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2774,9 +2774,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 13,
         "text": "Co by zde bylo nejméně přesné tvrdit, když dítě píše obsahově lépe na klávesnici než rukou a cílem úkolu není grafomotorika?",
         "options": [
-          "Klávesnice zde může mít kompenzační funkci.",
-          "Jde o změnu cesty k zachování obsahového cíle.",
-          "Nejde nutně o přímou práci na zlepšení grafomotoriky.",
+          "Klávesnice zde může mít kompenzační funkci, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Jde o změnu cesty k zachování obsahového cíle, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Nejde nutně o přímou práci na zlepšení grafomotoriky, a právě tato rovina by měla být považována za rozhodující.",
           "Jde především o reedukační nácvik rukopisné složky výkonu."
         ],
         "correct": 3,
@@ -2787,9 +2787,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jak nejlépe vystihnout vztah reedukace a rehabilitace?",
         "options": [
           "Reedukace může být jedním z konkrétnějších postupů uvnitř širšího rehabilitačního rámce.",
-          "Rehabilitace je užší pojem a reedukace je jeho nadřazená kategorie.",
-          "Oba pojmy jsou v odborném použití plně zaměnitelné.",
-          "Rehabilitace patří jen zdravotnictví, reedukace jen školství."
+          "Rehabilitace je užší pojem a reedukace je jeho nadřazená kategorie, a právě tato rovina by měla být považována za rozhodující.",
+          "Oba pojmy jsou v odborném použití plně zaměnitelné, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Rehabilitace patří jen zdravotnictví, reedukace jen školství, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2931,9 +2931,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jak nejlépe vyložit situaci, když dítě s PAS zvládá činnost výrazně lépe po jasném prostorovém členění, vizuálním rozvrhu a předvídatelném sledu kroků?",
         "options": [
           "Situace je bližší strukturovanému učení než reedukačnímu nácviku samotné oslabené funkce.",
-          "Situace je bližší logoterapii než strukturovanému učení.",
-          "Situace je bližší bazální stimulaci než strukturovanému učení.",
-          "Situace je bližší substituci řeči než práci s prostředím."
+          "Situace je bližší logoterapii než strukturovanému učení, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Situace je bližší bazální stimulaci než strukturovanému učení, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Situace je bližší substituci řeči než práci s prostředím, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -2967,9 +2967,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jak nejlépe vyložit situaci, když je hlavním cílem práce otázka smyslu, osobního postoje a životní orientace člověka v těžké situaci?",
         "options": [
           "Je bližší logoterapeutický rámec než strukturované učení nebo reedukační trénink.",
-          "Je bližší bazálně-stimulační rámec než logoterapeutický.",
-          "Je bližší AAK než logoterapeutický rámec.",
-          "Je bližší reedukaci pravopisu než logoterapeutickému rámci."
+          "Je bližší bazálně-stimulační rámec než logoterapeutický, a právě tato rovina by měla být považována za rozhodující.",
+          "Je bližší AAK než logoterapeutický rámec, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Je bližší reedukaci pravopisu než logoterapeutickému rámci, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -3087,9 +3087,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jak nejlépe vyložit situaci, když škola zavede kontrastnější materiál, zvětšení a přehlednější grafické členění, aby žák mohl pracovat se stejným obsahem?",
         "options": [
           "Jde především o úpravu přístupnosti prostředí a materiálu.",
-          "Jde především o reedukační nácvik oslabené funkce.",
-          "Jde především o bazální stimulaci.",
-          "Jde především o logoterapeutický zásah."
+          "Jde především o reedukační nácvik oslabené funkce, a právě tato rovina by měla být považována za rozhodující.",
+          "Jde především o bazální stimulaci, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Jde především o logoterapeutický zásah, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -3099,9 +3099,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení nejpřesněji rozlišuje pomůcku a metodu?",
         "options": [
           "Pomůcka je prostředek nebo nástroj, metoda je způsob práce s úkolem nebo učením.",
-          "Pomůcka i metoda jsou v odborné praxi plně zaměnitelné.",
-          "Pomůcka je vždy odborný postup a metoda vždy technické zařízení.",
-          "Pomůcka se týká jen kompenzace, metoda jen reedukace."
+          "Pomůcka i metoda jsou v odborné praxi plně zaměnitelné, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Pomůcka je vždy odborný postup a metoda vždy technické zařízení, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Pomůcka se týká jen kompenzace, metoda jen reedukace, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -3147,8 +3147,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení nejlépe vystihuje situaci, když žák zvládá stejný obsah po rozdělení úkolu do kratších kroků, ale ztrácí se v jeho celku?",
         "options": [
           "Rozfázování zde funguje jako metodická úprava přístupu k úkolu.",
-          "Rozfázování zde dokazuje, že cíl úkolu má být trvale snížen.",
-          "Rozfázování zde představuje kompenzační pomůcku.",
+          "Rozfázování zde dokazuje, že cíl úkolu má být trvale snížen, a právě tato rovina by měla být považována za rozhodující.",
+          "Rozfázování zde představuje kompenzační pomůcku, a právě tento znak by měl nést hlavní interpretační váhu.",
           "Rozfázování zde znamená, že hlavní bariéra leží v obsahu samotném."
         ],
         "correct": 0,
@@ -3159,9 +3159,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jak nejlépe vystihnout vztah pomůcky a cíle?",
         "options": [
           "Vhodnost pomůcky se posuzuje podle toho, zda pomáhá dosáhnout cíle v situaci, pro kterou byla zavedena.",
-          "Vhodnost pomůcky se posuzuje hlavně podle technické náročnosti.",
-          "Vhodnost pomůcky se posuzuje podle toho, zda zní odborněji než metoda.",
-          "Vhodnost pomůcky se posuzuje hlavně podle toho, zda snižuje obtížnost bez dalšího."
+          "Vhodnost pomůcky se posuzuje hlavně podle technické náročnosti, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Vhodnost pomůcky se posuzuje podle toho, zda zní odborněji než metoda, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Vhodnost pomůcky se posuzuje hlavně podle toho, zda snižuje obtížnost bez dalšího, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -3194,9 +3194,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 48,
         "text": "Co by zde bylo nejméně přesné tvrdit, když nová pomůcka funguje jen v jedné silně vedené ukázce, ale v běžné cílové situaci ne?",
         "options": [
-          "Je třeba hodnotit účinek v cílové situaci, pro kterou byla zavedena.",
-          "Jedna ukázková hodina sama o sobě nestačí k potvrzení účinnosti.",
-          "Zatím není jisté, že pomůcka plní svou funkci v běžném provozu.",
+          "Je třeba hodnotit účinek v cílové situaci, pro kterou byla zavedena, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Jedna ukázková hodina sama o sobě nestačí k potvrzení účinnosti, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Zatím není jisté, že pomůcka plní svou funkci v běžném provozu, a právě tato rovina by měla být považována za rozhodující.",
           "Pomůcka je tímto spolehlivě ověřena jako funkční pro běžné používání."
         ],
         "correct": 3,
@@ -3219,9 +3219,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Který znak nejvíce ukazuje, že zvolená terapie, pomůcka nebo metoda míří mimo hlavní cíl?",
         "options": [
           "Posun se ukazuje jen v okrajových situacích, ale ne tam, kde měla podpora primárně fungovat.",
-          "Postup vyžaduje opakované používání v čase.",
-          "Postup má více než jednu složku.",
-          "Postup pracuje i s přirozeným prostředím dítěte."
+          "Postup vyžaduje opakované používání v čase, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Postup má více než jednu složku, a právě odtud by bylo vhodné vyvozovat hlavní závěr. Právě tento závěr by pak měl být považován za určující.",
+          "Postup pracuje i s přirozeným prostředím dítěte, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -3292,9 +3292,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 2,
         "text": "Ve kterém případě je na místě, aby škola zatím zůstala v režimu vlastní podpory bez návazného doporučení ŠPZ?",
         "options": [
-          "Škola ještě neumí přesně vymezit cílovou obtíž, ale chce rovnou žádat o asistenta pedagoga.",
+          "Škola ještě neumí přesně vymezit cílovou obtíž, ale chce rovnou žádat o asistenta pedagoga, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Jde o mírnou obtíž, u níž škola umí sama upravit metody, organizaci a hodnocení a průběžně sledovat efekt.",
-          "Škola chce co nejrychleji získat formální dokument pro rodiče bez vlastní práce s podporou.",
+          "Škola chce co nejrychleji získat formální dokument pro rodiče bez vlastní práce s podporou, a právě tato rovina by měla být považována za rozhodující.",
           "Potíž od začátku vyžaduje tlumočníka českého znakového jazyka a specializované podpůrné opatření vyššího stupně."
         ],
         "correct": 1,
@@ -3304,10 +3304,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 3,
         "text": "Kdy je z hlediska postupu školy na místě zpracovat plán pedagogické podpory?",
         "options": [
-          "Až po vydání doporučení ŠPZ.",
+          "Až po vydání doporučení ŠPZ, a právě na tomto vysvětlení by měla stát celá interpretace. Právě tento závěr by pak měl být považován za určující.",
           "Když samotné zohlednění individuálních vzdělávacích potřeb žáka při vzdělávání nepostačuje.",
-          "Jen tehdy, když škola současně připravuje IVP.",
-          "Pouze u žáků podle § 16 odst. 9 školského zákona."
+          "Jen tehdy, když škola současně připravuje IVP, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Pouze u žáků podle § 16 odst. 9 školského zákona, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3316,10 +3316,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 4,
         "text": "Které tvrzení nejpřesněji rozlišuje zprávu a doporučení?",
         "options": [
-          "Zpráva i doporučení mají pro školu stejnou funkci; liší se jen délkou textu.",
+          "Zpráva i doporučení mají pro školu stejnou funkci; liší se jen délkou textu, a právě tato rovina by měla být považována za rozhodující.",
           "Zpráva popisuje odborná zjištění a jejich interpretaci, doporučení převádí závěry do podpůrných opatření pro vzdělávání.",
-          "Zpráva je dokument školy a doporučení dokument ŠPZ.",
-          "Doporučení slouží hlavně rodičům, zatímco zpráva je určena pouze zřizovateli."
+          "Zpráva je dokument školy a doporučení dokument ŠPZ, a právě odtud by bylo vhodné vyvozovat hlavní závěr. Právě tento závěr by pak měl být považován za určující.",
+          "Doporučení slouží hlavně rodičům, zatímco zpráva je určena pouze zřizovateli, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3340,10 +3340,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 6,
         "text": "Které tvrzení o podpůrných opatřeních prvního stupně vystihuje situaci nejlépe?",
         "options": [
-          "Jsou vždy navázána na doporučení PPP nebo SPC.",
+          "Jsou vždy navázána na doporučení PPP nebo SPC, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Škola je poskytuje bez doporučení ŠPZ a průběžně vyhodnocuje jejich účinek.",
-          "Jsou vyhrazena pouze nadaným žákům.",
-          "Slouží jen jako předstupeň převedení do školy podle § 16 odst. 9."
+          "Jsou vyhrazena pouze nadaným žákům, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Slouží jen jako předstupeň převedení do školy podle § 16 odst. 9, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3388,10 +3388,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 10,
         "text": "Které tvrzení nejlépe vystihuje rozdíl mezi PPP a SPC?",
         "options": [
-          "PPP je školské poradenské zařízení, SPC je orgán veřejné správy.",
+          "PPP je školské poradenské zařízení, SPC je orgán veřejné správy, a právě tento znak by měl nést hlavní interpretační váhu.",
           "PPP i SPC jsou ŠPZ, ale SPC je více navázáno na specializovanou podporu konkrétních typů postižení.",
-          "PPP je určeno jen pro nadané, SPC jen pro žáky s poruchami chování.",
-          "PPP vydává doporučení, SPC pouze zprávu."
+          "PPP je určeno jen pro nadané, SPC jen pro žáky s poruchami chování, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "PPP vydává doporučení, SPC pouze zprávu, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3400,10 +3400,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 11,
         "text": "Která možnost nejpřesněji vystihuje roli školního poradenského pracoviště?",
         "options": [
-          "Je totožné se ŠPZ, jen působí uvnitř školy.",
+          "Je totožné se ŠPZ, jen působí uvnitř školy, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Jde o školní poradenskou strukturu, nikoli o školské poradenské zařízení.",
-          "Je to správní orgán školy pro rozhodování o podpůrných opatřeních.",
-          "Funguje jen v základních školách speciálních."
+          "Je to správní orgán školy pro rozhodování o podpůrných opatřeních, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Funguje jen v základních školách speciálních, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3424,10 +3424,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 13,
         "text": "Které tvrzení nejlépe vystihuje roli IVP?",
         "options": [
-          "IVP je automatickým výstupem každého poradenského vyšetření.",
+          "IVP je automatickým výstupem každého poradenského vyšetření, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "IVP je dokument školy, který může vznikat v návaznosti na doporučení a vzdělávací potřeby žáka.",
-          "IVP vydává výhradně ŠPZ a škola jej jen archivuje.",
-          "IVP nelze využít u nadaného žáka."
+          "IVP vydává výhradně ŠPZ a škola jej jen archivuje, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "IVP nelze využít u nadaného žáka, a právě odtud by bylo vhodné vyvozovat hlavní závěr. Právě tato osa by zde měla mít rozhodující význam."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3438,7 +3438,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "PLPP — dokument školy; doporučení — výstup ŠPZ",
           "doporučení — dokument školy; PLPP — výstup ŠPZ",
-          "IVP — výstup ŠPZ; zpráva — dokument školy",
+          "IVP — výstup ŠPZ; zpráva — dokument školy, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "zpráva — dokument školy; doporučení — výstup školy"
         ],
         "correct": 0,
@@ -3448,10 +3448,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 15,
         "text": "Která situace nejpřesněji odpovídá tomu, že škola ještě neumí odborně vyhodnotit vlastní podporu?",
         "options": [
-          "Umí doložit cílovou obtíž, zvolenou podporu i kritérium efektu.",
-          "Sleduje změnu právě v situaci, pro kterou byla podpora nastavena.",
+          "Umí doložit cílovou obtíž, zvolenou podporu i kritérium efektu, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Sleduje změnu právě v situaci, pro kterou byla podpora nastavena, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Má jen obecný dojem zlepšení, ale nemá přesně určeno, co vlastně chtěla podporou ovlivnit.",
-          "V cílové situaci dochází k pozvolnému naplňování cíle."
+          "V cílové situaci dochází k pozvolnému naplňování cíle, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -3472,10 +3472,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 17,
         "text": "Které tvrzení o SVP odpovídá nejlépe jeho postavení v systému?",
         "options": [
-          "SVP je typ školského poradenského zařízení vedle PPP a SPC.",
+          "SVP je typ školského poradenského zařízení vedle PPP a SPC, a právě v tomto směru by se měla hledat hlavní příčina.",
           "SVP patří do systému preventivně-výchovné péče, nikoli mezi ŠPZ.",
-          "SVP je zvláštní typ základní školy podle § 16 odst. 9.",
-          "SVP je součást ŠPP na škole."
+          "SVP je zvláštní typ základní školy podle § 16 odst. 9, a právě tato rovina by měla být považována za rozhodující.",
+          "SVP je součást ŠPP na škole, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3484,10 +3484,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 18,
         "text": "Která situace nejpřesněji ukazuje na potřebu doporučení ŠPZ, nikoli jen na pokračování v PO1?",
         "options": [
-          "Škola má lehkou obtíž, kterou umí sama cíleně podchytit a sleduje zlepšení.",
+          "Škola má lehkou obtíž, kterou umí sama cíleně podchytit a sleduje zlepšení, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Škola po vyhodnocení vlastní podpory zjišťuje, že cíl není naplňován a další krok potřebuje odborné posouzení.",
-          "Učitel chce mít rychle formální dokument bez předchozí práce s podporou.",
-          "Rodič se ptá, jaké služby škola obecně nabízí."
+          "Učitel chce mít rychle formální dokument bez předchozí práce s podporou, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Rodič se ptá, jaké služby škola obecně nabízí, a právě odtud by bylo vhodné vyvozovat hlavní závěr. Právě tento závěr by pak měl být považován za určující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3496,10 +3496,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 19,
         "text": "Která možnost nejpřesněji vystihuje vztah školy a doporučení ŠPZ?",
         "options": [
-          "Doporučení nahrazuje pedagogické plánování školy.",
+          "Doporučení nahrazuje pedagogické plánování školy, a právě tato rovina by měla být považována za rozhodující.",
           "Doporučení vymezuje podpůrný rámec, který škola převádí do každodenní praxe.",
-          "Doporučení je interní dokument školy pro první stupeň podpory.",
-          "Doporučení má význam jen při změně školy."
+          "Doporučení je interní dokument školy pro první stupeň podpory, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Doporučení má význam jen při změně školy, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3520,10 +3520,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 21,
         "text": "Jak nejlépe vymezit školu podle § 16 odst. 9 školského zákona?",
         "options": [
-          "Jde o každou školu, která vzdělává alespoň jednoho žáka s podpůrnými opatřeními.",
+          "Jde o každou školu, která vzdělává alespoň jednoho žáka s podpůrnými opatřeními, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Jde o školu nebo třídu zřízenou pro žáky se speciálními vzdělávacími potřebami podle právního rámce.",
-          "Jde o jiný název pro základní školu speciální.",
-          "Jde o školské poradenské zařízení."
+          "Jde o jiný název pro základní školu speciální, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Jde o školské poradenské zařízení, a právě tato rovina by měla být považována za rozhodující. Právě tento závěr by pak měl být považován za určující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3532,10 +3532,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 22,
         "text": "Která možnost nejpřesněji vystihuje vztah ZŠ speciální a školy podle § 16 odst. 9?",
         "options": [
-          "Jsou to vždy zcela totožné pojmy.",
+          "Jsou to vždy zcela totožné pojmy, a právě v tomto směru by se měla hledat hlavní příčina.",
           "ZŠ speciální je konkrétní typ školy; škola podle § 16 odst. 9 je širší právní kategorie.",
-          "ZŠ speciální je zařízení preventivně-výchovné péče.",
-          "Škola podle § 16 odst. 9 je jen dočasný režim PO1."
+          "ZŠ speciální je zařízení preventivně-výchovné péče, a právě tato rovina by měla být považována za rozhodující.",
+          "Škola podle § 16 odst. 9 je jen dočasný režim PO1, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3568,9 +3568,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 25,
         "text": "Které tvrzení o nadaném žákovi odpovídá nejlépe?",
         "options": [
-          "Nadaný žák stojí zcela mimo poradenský systém.",
+          "Nadaný žák stojí zcela mimo poradenský systém, a právě tento znak by měl nést hlavní interpretační váhu.",
           "IVP může být v právním rámci využit i u nadaného žáka.",
-          "Nadaný žák nikdy nepracuje s doporučením ŠPZ.",
+          "Nadaný žák nikdy nepracuje s doporučením ŠPZ, a právě v tomto směru by se měla hledat hlavní příčina.",
           "U nadaného žáka nelze použít žádný individuální postup školy."
         ],
         "correct": 1,
@@ -3592,10 +3592,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 27,
         "text": "Která situace nejpřesněji odlišuje PLPP od IVP?",
         "options": [
-          "PLPP je dokument ŠPZ a IVP dokument školy.",
+          "PLPP je dokument ŠPZ a IVP dokument školy, a právě v tomto směru by se měla hledat hlavní příčina. Právě tento závěr by pak měl být považován za určující.",
           "PLPP patří k vlastní školní podpoře prvního stupně, IVP je odlišný dokument školy navázaný na jiný podpůrný rámec.",
-          "PLPP se používá jen u nadaných, IVP jen u žáků se smyslovým postižením.",
-          "PLPP i IVP vydává ředitel školy bez vztahu k poradenskému procesu."
+          "PLPP se používá jen u nadaných, IVP jen u žáků se smyslovým postižením, a právě tato rovina by měla být považována za rozhodující.",
+          "PLPP i IVP vydává ředitel školy bez vztahu k poradenskému procesu, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3616,10 +3616,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 29,
         "text": "Která situace nejpřesněji odpovídá tomu, že škola záměnila vedlejší efekt podpory za její hlavní účinek?",
         "options": [
-          "Žák se v cílové situaci zlepšil a škola to umí doložit předem určeným kritériem.",
+          "Žák se v cílové situaci zlepšil a škola to umí doložit předem určeným kritériem, a právě tato rovina by měla být považována za rozhodující.",
           "Učitelé popisují lepší atmosféru, ale hlavní vzdělávací problém se v běžné výuce nepohnul.",
-          "Škola přesně rozlišila cíl podpory a vedlejší změny.",
-          "Žák dosahuje stabilnějšího výkonu právě v situaci, na kterou byla podpora cílena."
+          "Škola přesně rozlišila cíl podpory a vedlejší změny, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Žák dosahuje stabilnějšího výkonu právě v situaci, na kterou byla podpora cílena, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3628,10 +3628,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 30,
         "text": "Která možnost nejpřesněji vystihuje postavení školy po doručení doporučení ŠPZ?",
         "options": [
-          "Škola už dál nic odborně neřeší, protože dokument podpory je hotový.",
+          "Škola už dál nic odborně neřeší, protože dokument podpory je hotový, a právě tento znak by měl nést hlavní interpretační váhu.",
           "Škola musí doporučení převést do konkrétních pedagogických kroků a každodenní realizace podpory.",
-          "Škola smí jen archivovat doporučení a čekat na další návštěvu ŠPZ.",
-          "Škola doporučení přebírá jen tehdy, pokud s ním souhlasí zřizovatel."
+          "Škola smí jen archivovat doporučení a čekat na další návštěvu ŠPZ, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Škola doporučení přebírá jen tehdy, pokud s ním souhlasí zřizovatel, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3640,10 +3640,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 31,
         "text": "Která možnost nejpřesněji vystihuje vztah školy a ŠPZ při vyhodnocování podpory?",
         "options": [
-          "Vyhodnocování podpory je vždy jen věcí školy.",
+          "Vyhodnocování podpory je vždy jen věcí školy, a právě odtud by bylo vhodné vyvozovat hlavní závěr. Právě tato osa by zde měla mít rozhodující význam.",
           "Škola průběžně sleduje a vyhodnocuje podporu; při doporučených opatřeních vstupuje do procesu i ŠPZ v rámci své role.",
           "Vyhodnocování provádí výhradně zřizovatel.",
-          "Vyhodnocování je jen administrativní krok bez dopadu na další podporu."
+          "Vyhodnocování je jen administrativní krok bez dopadu na další podporu, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3676,10 +3676,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 34,
         "text": "Které tvrzení o vysokých školách a školském poradenském systému odpovídá nejlépe?",
         "options": [
-          "Vysoká škola standardně postupuje v režimu PO1–PO5 stejně jako ZŠ.",
+          "Vysoká škola standardně postupuje v režimu PO1–PO5 stejně jako ZŠ, a právě tato rovina by měla být považována za rozhodující.",
           "Vysoká škola má vlastní systém podpory studentů se specifickými potřebami, nikoli školní režim PO1–PO5.",
-          "Student VŠ musí mít vždy doporučení SPC.",
-          "PLPP je základním dokumentem podpory na vysoké škole."
+          "Student VŠ musí mít vždy doporučení SPC, a právě odtud by bylo vhodné vyvozovat hlavní závěr. Právě tento závěr by pak měl být považován za určující.",
+          "PLPP je základním dokumentem podpory na vysoké škole, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3688,10 +3688,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 35,
         "text": "Která varianta nejpřesněji zachycuje hranici mezi vlastním pedagogickým zohledněním a PLPP?",
         "options": [
-          "Jakmile učitel udělá jakoukoli úpravu, musí vždy vzniknout PLPP.",
+          "Jakmile učitel udělá jakoukoli úpravu, musí vždy vzniknout PLPP, a právě tento znak by měl nést hlavní interpretační váhu.",
           "PLPP se zpracovává tehdy, když nepostačuje samotné zohlednění individuálních vzdělávacích potřeb při vzdělávání.",
-          "PLPP je třeba vždy až po vydání doporučení.",
-          "PLPP slouží jen pro vyšší stupně podpory."
+          "PLPP je třeba vždy až po vydání doporučení, a právě v tomto směru by se měla hledat hlavní příčina. Právě tato osa by zde měla mít rozhodující význam.",
+          "PLPP slouží jen pro vyšší stupně podpory, a právě na tomto vysvětlení by měla stát celá interpretace. Právě odtud by se proto mělo dále vycházet."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3700,10 +3700,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 36,
         "text": "Která možnost nejpřesněji vystihuje, proč není správné ztotožnit ŠPP a ŠPZ?",
         "options": [
-          "Protože ŠPP patří mezi orgány veřejné správy, kdežto ŠPZ nikoli.",
+          "Protože ŠPP patří mezi orgány veřejné správy, kdežto ŠPZ nikoli, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Protože ŠPP je školní poradenská struktura uvnitř školy, zatímco ŠPZ je externí školské poradenské zařízení.",
-          "Protože ŠPP může vydávat doporučení a ŠPZ nikoli.",
-          "Protože ŠPP slouží jen nadaným a ŠPZ jen žákům se SVP."
+          "Protože ŠPP může vydávat doporučení a ŠPZ nikoli, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Protože ŠPP slouží jen nadaným a ŠPZ jen žákům se SVP, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3712,10 +3712,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 37,
         "text": "Které tvrzení nejlépe vystihuje funkci doporučení?",
         "options": [
-          "Je to dokument školy pro vedení první podpory.",
+          "Je to dokument školy pro vedení první podpory, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Je to výstup ŠPZ, který navrhuje podpůrná opatření pro vzdělávání.",
-          "Jde o interní poznámku učitele po první konzultaci.",
-          "Jde o správní rozhodnutí zřizovatele."
+          "Jde o interní poznámku učitele po první konzultaci, a právě tato rovina by měla být považována za rozhodující.",
+          "Jde o správní rozhodnutí zřizovatele, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3724,10 +3724,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 38,
         "text": "Která možnost nejpřesněji vystihuje, co je na PO1 odborně nejnáročnější?",
         "options": [
-          "Naučit se používat zkratku PO1 místo slova podpora.",
+          "Naučit se používat zkratku PO1 místo slova podpora, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Přesně vymezit cílovou obtíž, nastavit školní podporu a vyhodnotit její účinek v cílové situaci.",
-          "Přesvědčit rodiče, aby souhlasili s přeřazením do jiného typu školy.",
-          "Bez další práce si připravit argumentaci pro asistenta pedagoga."
+          "Přesvědčit rodiče, aby souhlasili s přeřazením do jiného typu školy, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Bez další práce si připravit argumentaci pro asistenta pedagoga, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3738,8 +3738,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Pokud se zlepší klima třídy, není třeba řešit, zda se pohnula hlavní vzdělávací obtíž.",
           "Rozhodující je, zda se posunula právě ta obtíž, na kterou škola podporu cílila.",
-          "Jakýkoli dílčí pozitivní efekt znamená, že podpora byla dostačující.",
-          "O dalším kroku rozhoduje až zřizovatel."
+          "Jakýkoli dílčí pozitivní efekt znamená, že podpora byla dostačující, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "O dalším kroku rozhoduje až zřizovatel, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3748,7 +3748,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 40,
         "text": "Která dvojice je přiřazena správně?",
         "options": [
-          "IVP — výstup ŠPZ; doporučení — dokument školy",
+          "IVP — výstup ŠPZ; doporučení — dokument školy, a právě tento znak by měl nést hlavní interpretační váhu.",
           "PLPP — dokument školy; doporučení — výstup ŠPZ",
           "doporučení — dokument školy; zpráva — výstup zřizovatele",
           "zpráva — dokument školy; PLPP — výstup ŠPZ"
@@ -3760,10 +3760,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 41,
         "text": "Která možnost nejpřesněji vystihuje roli rodiče nebo zletilého žáka v procesu doporučení?",
         "options": [
-          "Nemá žádnou roli, protože jde výhradně o interní vztah školy a ŠPZ.",
+          "Nemá žádnou roli, protože jde výhradně o interní vztah školy a ŠPZ, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Je informován o obsahu zprávy a doporučení a poradenský proces se ho procesně týká.",
-          "Vydává souhlas místo školy s každodenní realizací výuky.",
-          "Rozhoduje místo ředitele o přijetí do ZŠ speciální."
+          "Vydává souhlas místo školy s každodenní realizací výuky, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Rozhoduje místo ředitele o přijetí do ZŠ speciální, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3772,10 +3772,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 42,
         "text": "Která dvojice je přiřazena správně?",
         "options": [
-          "PPP — specializované centrum pro žáky se zrakovým postižením; SPC — široká poradna pro školní zralost",
+          "PPP — specializované centrum pro žáky se zrakovým postižením; SPC — široká poradna pro školní zralost, a právě v tomto směru by se měla hledat hlavní příčina.",
           "PPP — širší poradenská práce včetně obtíží učení a chování; SPC — specializovaná speciálněpedagogická podpora podle typu postižení",
-          "PPP — zařízení preventivně-výchovné péče; SPC — školní poradenské pracoviště",
-          "PPP — orgán veřejné správy; SPC — sociální služba"
+          "PPP — zařízení preventivně-výchovné péče; SPC — školní poradenské pracoviště, a právě tato rovina by měla být považována za rozhodující.",
+          "PPP — orgán veřejné správy; SPC — sociální služba, a právě tento znak by měl nést hlavní interpretační váhu. Právě tento závěr by pak měl být považován za určující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3784,10 +3784,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 43,
         "text": "Co by o škole a doporučení bylo nepřesné tvrdit?",
         "options": [
-          "Škola musí podporu převést do běžné pedagogické praxe.",
-          "Doporučení samo neodvádí každodenní práci za školu.",
+          "Škola musí podporu převést do běžné pedagogické praxe, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Doporučení samo neodvádí každodenní práci za školu, a právě tato rovina by měla být považována za rozhodující.",
           "Škola po doručení doporučení už jen pasivně plní externě hotový režim bez vlastní pedagogické práce.",
-          "Škola nese odpovědnost za realizaci podpory ve výuce."
+          "Škola nese odpovědnost za realizaci podpory ve výuce, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -3808,10 +3808,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 45,
         "text": "Která možnost nejpřesněji vystihuje vztah PO1 a doporučení ŠPZ?",
         "options": [
-          "PO1 je vždy důsledkem doporučení ŠPZ.",
+          "PO1 je vždy důsledkem doporučení ŠPZ, a právě tento znak by měl nést hlavní interpretační váhu. Právě tento závěr by pak měl být považován za určující.",
           "PO1 je prostor školy pro vlastní podporu bez doporučení; doporučení je významné pro další podpůrný rámec.",
-          "PO1 i doporučení plní stejnou funkci, liší se jen názvem.",
-          "Doporučení nahrazuje vyhodnocování podpory školou."
+          "PO1 i doporučení plní stejnou funkci, liší se jen názvem, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Doporučení nahrazuje vyhodnocování podpory školou, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3820,10 +3820,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 46,
         "text": "Která varianta nejpřesněji vystihuje, proč je otázka „do jaké školy žák chodí“ sama o sobě pro poradenský krok často nedostačující?",
         "options": [
-          "Protože typ školy nikdy nemá pro podporu žádný význam.",
+          "Protože typ školy nikdy nemá pro podporu žádný význam, a právě odtud by bylo vhodné vyvozovat hlavní závěr. Právě tato osa by zde měla mít rozhodující význam.",
           "Protože bez znalosti konkrétní obtíže, podmínek jejího projevu a dosavadní podpory nelze správně určit procesní další krok.",
-          "Protože další krok určuje vždy jen zřizovatel.",
-          "Protože typ školy je důležitý jen u VŠ."
+          "Protože další krok určuje vždy jen zřizovatel, a právě na tomto vysvětlení by měla stát celá interpretace. Právě tento závěr by pak měl být považován za určující.",
+          "Protože typ školy je důležitý jen u VŠ, a právě tato rovina by měla být považována za rozhodující. Právě tato osa by zde měla mít rozhodující význam."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3832,10 +3832,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 47,
         "text": "Která možnost nejpřesněji rozlišuje školní řád a doporučení ŠPZ?",
         "options": [
-          "Oba dokumenty mají stejnou funkci, jen vznikají na jiném místě.",
+          "Oba dokumenty mají stejnou funkci, jen vznikají na jiném místě, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Školní řád upravuje vnitřní pravidla školy; doporučení je poradenský výstup k nastavení podpory ve vzdělávání.",
-          "Školní řád je dokument ŠPZ a doporučení dokument školy.",
-          "Doporučení nahrazuje školní řád u žáků se SVP."
+          "Školní řád je dokument ŠPZ a doporučení dokument školy, a právě tato rovina by měla být považována za rozhodující.",
+          "Doporučení nahrazuje školní řád u žáků se SVP, a právě tento znak by měl nést hlavní interpretační váhu. Právě odtud by se proto mělo dále vycházet."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3928,7 +3928,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "obecní úřad obce s rozšířenou působností podle místa bydliště",
           "krajská pobočka Úřadu práce ČR, v Praze pobočka pro hlavní město Prahu",
-          "Česká správa sociálního zabezpečení podle trvalého pobytu žadatele",
+          "Česká správa sociálního zabezpečení podle trvalého pobytu žadatele, a právě tato rovina by měla být považována za rozhodující.",
           "Ministerstvo práce a sociálních věcí jako dávkový orgán prvního stupně"
         ],
         "correct": 1,
@@ -3950,10 +3950,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 3,
         "text": "Které vymezení nejlépe odpovídá základním podmínkám nároku na příspěvek na mobilitu?",
         "options": [
-          "Osoba musí mít průkaz TP nebo ZTP, být starší 1 roku a doložit alespoň jednu pravidelnou cestu měsíčně.",
+          "Osoba musí mít průkaz TP nebo ZTP, být starší 1 roku a doložit alespoň jednu pravidelnou cestu měsíčně, a právě tato rovina by měla být považována za rozhodující.",
           "Osoba musí mít průkaz ZTP nebo ZTP/P, být starší 1 roku a v kalendářním měsíci se opakovaně za úhradu dopravovat nebo být dopravována.",
-          "Osoba musí mít invaliditu třetího stupně, být starší 1 roku a pravidelně využívat placenou dopravní službu.",
-          "Osoba musí mít průkaz ZTP/P, být starší 1 roku a současně pobírat příspěvek na péči alespoň ve III. stupni."
+          "Osoba musí mít invaliditu třetího stupně, být starší 1 roku a pravidelně využívat placenou dopravní službu, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Osoba musí mít průkaz ZTP/P, být starší 1 roku a současně pobírat příspěvek na péči alespoň ve III. stupni, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -3962,10 +3962,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 4,
         "text": "Které tvrzení o pobytových službách a příspěvku na mobilitu je nejpřesnější?",
         "options": [
-          "Příspěvek na mobilitu nelze přiznat osobě, která v průběhu roku kdykoli využila pobytovou sociální službu.",
-          "Příspěvek na mobilitu nelze přiznat osobě, která byla byť jen krátce hospitalizována nebo jinak mimo domácí prostředí.",
+          "Příspěvek na mobilitu nelze přiznat osobě, která v průběhu roku kdykoli využila pobytovou sociální službu, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Příspěvek na mobilitu nelze přiznat osobě, která byla byť jen krátce hospitalizována nebo jinak mimo domácí prostředí, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Příspěvek na mobilitu nelze přiznat osobě, které jsou po celý kalendářní měsíc poskytovány vymezené pobytové sociální služby nebo ústavní zdravotní péče.",
-          "Příspěvek na mobilitu nelze přiznat osobě, která vedle dopravy využívá dlouhodobě jakoukoli institucionální podporu."
+          "Příspěvek na mobilitu nelze přiznat osobě, která vedle dopravy využívá dlouhodobě jakoukoli institucionální podporu, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4010,10 +4010,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 8,
         "text": "Které tvrzení o příspěvku na zvláštní pomůcku je nejpřesnější?",
         "options": [
-          "Jde o opakující se měsíční dávku určenou na běžný provoz kompenzačních pomůcek.",
+          "Jde o opakující se měsíční dávku určenou na běžný provoz kompenzačních pomůcek, a právě tato rovina by měla být považována za rozhodující.",
           "Jde o jednorázovou dávku, která má pomoci s pořízením zvláštní pomůcky při splnění zákonných podmínek.",
-          "Jde o dávku určenou výhradně dětem se speciálními vzdělávacími potřebami.",
-          "Jde o dávku poskytovanou jen tehdy, pokud pomůcku doporučí zdravotní pojišťovna."
+          "Jde o dávku určenou výhradně dětem se speciálními vzdělávacími potřebami, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Jde o dávku poskytovanou jen tehdy, pokud pomůcku doporučí zdravotní pojišťovna, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4025,7 +4025,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Motorové vozidlo, úprava bytu i vodicí pes od 1 roku, ostatní pomůcky bez zvláštní věkové hranice.",
           "Všechny zvláštní pomůcky od 3 let, vodicí pes od 18 let a motorové vozidlo až od zahájení školní docházky.",
           "Motorové vozidlo, úprava bytu a plošiny od 3 let, vodicí pes od 15 let, ostatní pomůcky od 1 roku.",
-          "Motorové vozidlo od 15 let, vodicí pes od 3 let a úprava bytu jen u osob starších 18 let."
+          "Motorové vozidlo od 15 let, vodicí pes od 3 let a úprava bytu jen u osob starších 18 let, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4034,10 +4034,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 10,
         "text": "Které vymezení nejlépe odpovídá účelu zvláštní pomůcky pro účely dávky?",
         "options": [
-          "Pomůcka musí sloužit výhradně k léčbě zdravotního stavu a nesmí mít vztah k práci, vzdělávání ani kontaktu s okolím.",
-          "Pomůcka musí být určena hlavně pro domácí použití a jen okrajově může souviset se školou nebo zaměstnáním.",
+          "Pomůcka musí sloužit výhradně k léčbě zdravotního stavu a nesmí mít vztah k práci, vzdělávání ani kontaktu s okolím, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Pomůcka musí být určena hlavně pro domácí použití a jen okrajově může souviset se školou nebo zaměstnáním, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Pomůcka má umožnit sebeobsluhu nebo být potřebná k práci, přípravě na povolání, získávání informací, vzdělávání nebo styku s okolím.",
-          "Pomůcka je uznatelná tehdy, pokud nahrazuje sociální službu nebo snižuje potřebu podpory další osoby."
+          "Pomůcka je uznatelná tehdy, pokud nahrazuje sociální službu nebo snižuje potřebu podpory další osoby, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4047,8 +4047,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení o využitelnosti zvláštní pomůcky je správné?",
         "options": [
           "Stačí, aby byla pomůcka obecně vhodná pro daný typ postižení, i když ji konkrétní osoba využít nemůže.",
-          "Využitelnost pomůcky se zkoumá jen u dětí, nikoli u dospělých žadatelů.",
-          "Využitelnost pomůcky se neposuzuje, pokud její cena přesáhne 10 000 Kč.",
+          "Využitelnost pomůcky se zkoumá jen u dětí, nikoli u dospělých žadatelů, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Využitelnost pomůcky se neposuzuje, pokud její cena přesáhne 10 000 Kč, a právě tato rovina by měla být považována za rozhodující.",
           "Podmínkou je, že osoba může zvláštní pomůcku využívat, nikoli jen že pro ni teoreticky existuje."
         ],
         "correct": 3,
@@ -4058,9 +4058,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 12,
         "text": "Které vymezení podmínky zdravotnického prostředku je nejpřesnější?",
         "options": [
-          "Pomůcka nesmí být zdravotnickým prostředkem pořízeným mimo smluvní síť zdravotních zařízení nebo doporučeným soukromým dodavatelem.",
-          "Pomůcka nesmí být zdravotnickým prostředkem, který by se používal ve škole, v zaměstnání nebo v rámci běžného sociálního fungování.",
-          "Pomůcka nesmí být zdravotnickým prostředkem, pokud současně souvisí s úpravou bytu, pohybem v terénu nebo motorovým vozidlem.",
+          "Pomůcka nesmí být zdravotnickým prostředkem pořízeným mimo smluvní síť zdravotních zařízení nebo doporučeným soukromým dodavatelem, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Pomůcka nesmí být zdravotnickým prostředkem, který by se používal ve škole, v zaměstnání nebo v rámci běžného sociálního fungování, a právě tato rovina by měla být považována za rozhodující.",
+          "Pomůcka nesmí být zdravotnickým prostředkem, pokud současně souvisí s úpravou bytu, pohybem v terénu nebo motorovým vozidlem, a právě tento znak by měl nést hlavní interpretační váhu.",
           "Pomůcka nesmí být zdravotnickým prostředkem hrazeným z veřejného zdravotního pojištění ani prostředkem zapůjčeným zdravotní pojišťovnou."
         ],
         "correct": 3,
@@ -4070,10 +4070,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 13,
         "text": "Které tvrzení o motorovém vozidle jako zvláštní pomůcce je správné?",
         "options": [
-          "Rozhodující je pouze to, že osoba sama motorové vozidlo aktivně řídí.",
-          "Rozhodující je pouze to, že osoba vlastní řidičské oprávnění skupiny B.",
+          "Rozhodující je pouze to, že osoba sama motorové vozidlo aktivně řídí, a právě tato rovina by měla být považována za rozhodující.",
+          "Rozhodující je pouze to, že osoba vlastní řidičské oprávnění skupiny B, a právě tento znak by měl nést hlavní interpretační váhu.",
           "Podmínkou je opakované dopravování v kalendářním měsíci a schopnost vozidlo řídit nebo být jím převážena.",
-          "Podmínkou je současné přiznání příspěvku na péči alespoň ve II. stupni."
+          "Podmínkou je současné přiznání příspěvku na péči alespoň ve II. stupni, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4083,9 +4083,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení o pomůcce, která není výslovně uvedena ve vyhlášce, je nejpřesnější?",
         "options": [
           "Na takovou pomůcku lze dávku poskytnout, pokud ji krajská pobočka Úřadu práce uzná za srovnatelnou s pomůckou ve vyhlášce uvedenou.",
-          "Na takovou pomůcku nelze dávku poskytnout, protože seznam druhů a typů pomůcek je pro správní řízení uzavřený.",
-          "Na takovou pomůcku lze dávku poskytnout jen po předchozím souhlasu soudu, zdravotní pojišťovny a posudkového lékaře.",
-          "Na takovou pomůcku lze dávku poskytnout jen tehdy, když ji doporučí školské poradenské zařízení nebo odborný lékař."
+          "Na takovou pomůcku nelze dávku poskytnout, protože seznam druhů a typů pomůcek je pro správní řízení uzavřený, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Na takovou pomůcku lze dávku poskytnout jen po předchozím souhlasu soudu, zdravotní pojišťovny a posudkového lékaře, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Na takovou pomůcku lze dávku poskytnout jen tehdy, když ji doporučí školské poradenské zařízení nebo odborný lékař, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -4095,9 +4095,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Jak se stanoví spoluúčast u zvláštní pomůcky s cenou nižší než 10 000 Kč?",
         "options": [
           "Spoluúčast činí 1 000 Kč, přičemž příjmově se uplatní hranice osminásobku životního minima, s možností výjimky ze zvláštních důvodů.",
-          "Spoluúčast činí vždy 10 % z ceny pomůcky a nepřihlíží se k příjmu ani k sociální situaci žadatele.",
-          "Spoluúčast se u pomůcky do 10 000 Kč nestanoví, protože zákon počítá s plnou úhradou drobných kompenzačních pomůcek.",
-          "Spoluúčast činí 5 % z ceny pomůcky, nejvýše však 2 000 Kč při nižším příjmu společně posuzovaných osob."
+          "Spoluúčast činí vždy 10 % z ceny pomůcky a nepřihlíží se k příjmu ani k sociální situaci žadatele, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Spoluúčast se u pomůcky do 10 000 Kč nestanoví, protože zákon počítá s plnou úhradou drobných kompenzačních pomůcek, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Spoluúčast činí 5 % z ceny pomůcky, nejvýše však 2 000 Kč při nižším příjmu společně posuzovaných osob, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -4106,9 +4106,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 16,
         "text": "Jak se standardně stanoví spoluúčast u zvláštní pomůcky s cenou vyšší než 10 000 Kč?",
         "options": [
-          "Spoluúčast činí pevně 1 000 Kč bez ohledu na cenu pomůcky, její druh nebo příjmovou situaci žadatele.",
-          "Spoluúčast činí 5 % z ceny pomůcky, pokud nejde o motorové vozidlo nebo o úpravu bytu.",
-          "Spoluúčast činí 15 % z ceny pomůcky, ale u dětí a studentů může být správním orgánem zcela prominuta.",
+          "Spoluúčast činí pevně 1 000 Kč bez ohledu na cenu pomůcky, její druh nebo příjmovou situaci žadatele, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Spoluúčast činí 5 % z ceny pomůcky, pokud nejde o motorové vozidlo nebo o úpravu bytu, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Spoluúčast činí 15 % z ceny pomůcky, ale u dětí a studentů může být správním orgánem zcela prominuta, a právě tato rovina by měla být považována za rozhodující.",
           "Spoluúčast činí 10 % z předpokládané nebo již zaplacené ceny pomůcky a vychází z hodnoty konkrétní pomůcky."
         ],
         "correct": 3,
@@ -4118,7 +4118,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 17,
         "text": "Které tvrzení o snížení spoluúčasti u dražší zvláštní pomůcky je správné?",
         "options": [
-          "Spoluúčast lze snížit jen u nezletilých osob, studentů a držitelů průkazu ZTP/P.",
+          "Spoluúčast lze snížit jen u nezletilých osob, studentů a držitelů průkazu ZTP/P, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Spoluúčast lze snížit, pokud osoba nemá dostatek prostředků, nejméně však na 1 000 Kč.",
           "Spoluúčast lze snížit jen tehdy, pokud s tím vysloví souhlas soud, opatrovník nebo orgán sociálně-právní ochrany dětí.",
           "Spoluúčast nelze snížit, jakmile cena pomůcky přesáhne hranici 10 000 Kč nebo jde o pomůcku dlouhodobé povahy."
@@ -4166,9 +4166,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 21,
         "text": "Které tvrzení o příspěvku na pořízení motorového vozidla je správné při příjmu nižším nebo rovném šestnáctinásobku životního minima?",
         "options": [
-          "Výše příspěvku činí 185 000 Kč, protože jde o základní vstupní částku pro každou fyzickou osobu.",
-          "Výše příspěvku činí 225 000 Kč, protože jde o nejnižší příjmové pásmo podle zákonného členění.",
-          "Výše příspěvku činí 350 000 Kč, protože u motorového vozidla se neuplatní samostatné příjmové odstupňování.",
+          "Výše příspěvku činí 185 000 Kč, protože jde o základní vstupní částku pro každou fyzickou osobu, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Výše příspěvku činí 225 000 Kč, protože jde o nejnižší příjmové pásmo podle zákonného členění, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Výše příspěvku činí 350 000 Kč, protože u motorového vozidla se neuplatní samostatné příjmové odstupňování, a právě tato rovina by měla být považována za rozhodující.",
           "Výše příspěvku činí 285 000 Kč, přičemž stejná částka platí i pro nezletilou osobu bez příjmového posuzování."
         ],
         "correct": 3,
@@ -4178,10 +4178,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 22,
         "text": "Co platí, pokud bylo motorové vozidlo pořízeno ještě před podáním žádosti a jeho cena byla nižší než částka, která by jinak vycházela podle zákonného pásma?",
         "options": [
-          "Výše příspěvku se stanoví vždy podle zákonného pásma, protože skutečná kupní cena nemá pro správní řízení význam.",
+          "Výše příspěvku se stanoví vždy podle zákonného pásma, protože skutečná kupní cena nemá pro správní řízení význam, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Výše příspěvku se stanoví ve výši ceny, za kterou bylo vozidlo skutečně zakoupeno, i když je nižší než zákonná pásmová částka.",
-          "Výše příspěvku se v takovém případě automaticky sníží o pevnou spoluúčast ve výši dvaceti procent z ceny vozidla.",
-          "Výše příspěvku se vůbec nestanoví, protože nákup vozidla před podáním žádosti vylučuje možnost dávku přiznat."
+          "Výše příspěvku se v takovém případě automaticky sníží o pevnou spoluúčast ve výši dvaceti procent z ceny vozidla, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Výše příspěvku se vůbec nestanoví, protože nákup vozidla před podáním žádosti vylučuje možnost dávku přiznat, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4203,9 +4203,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení o předchozím souhlasu soudu u nezletilého dítěte nebo osoby s omezenou svéprávností je nejpřesnější?",
         "options": [
           "Předchozí souhlas soudu se nevyžaduje při rozhodování o nároku a výši příspěvku ani při samotném nákupu pomůcky a navazujících řízeních.",
-          "Předchozí souhlas soudu je nutný vždy, protože jde o majetkové plnění poskytované v oblasti veřejné sociální podpory.",
-          "Předchozí souhlas soudu se nevyžaduje jen u pomůcek s cenou do 10 000 Kč nebo u pomůcek pořizovaných školou.",
-          "Předchozí souhlas soudu se nevyžaduje pouze tehdy, když za osobu jedná zákonný zástupce společně s opatrovníkem."
+          "Předchozí souhlas soudu je nutný vždy, protože jde o majetkové plnění poskytované v oblasti veřejné sociální podpory, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Předchozí souhlas soudu se nevyžaduje jen u pomůcek s cenou do 10 000 Kč nebo u pomůcek pořizovaných školou, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Předchozí souhlas soudu se nevyžaduje pouze tehdy, když za osobu jedná zákonný zástupce společně s opatrovníkem, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -4214,9 +4214,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 25,
         "text": "Které vymezení nejlépe odpovídá průkazu TP?",
         "options": [
-          "Jde o průkaz pro těžké funkční postižení pohyblivosti nebo orientace.",
-          "Jde o průkaz pro zvlášť těžké nebo úplné postižení s potřebou průvodce.",
-          "Jde o průkaz určený výhradně osobám s úplnou ztrátou pohyblivosti.",
+          "Jde o průkaz pro těžké funkční postižení pohyblivosti nebo orientace, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Jde o průkaz pro zvlášť těžké nebo úplné postižení s potřebou průvodce, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Jde o průkaz určený výhradně osobám s úplnou ztrátou pohyblivosti, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Jde o průkaz pro středně těžké funkční postižení pohyblivosti nebo orientace."
         ],
         "correct": 3,
@@ -4229,7 +4229,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Jde o průkaz pro středně těžké funkční postižení pohyblivosti nebo orientace.",
           "Jde o průkaz pro těžké funkční postižení pohyblivosti nebo orientace.",
           "Jde o průkaz pro zvlášť těžké postižení s potřebou průvodce v každém případě.",
-          "Jde o průkaz, který je právně totožný s průkazem TP/P."
+          "Jde o průkaz, který je právně totožný s průkazem TP/P, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4238,10 +4238,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 27,
         "text": "Které vymezení nejlépe odpovídá průkazu ZTP/P?",
         "options": [
-          "Jde o průkaz pro těžké funkční postižení pohyblivosti nebo orientace bez dalšího rozlišení.",
-          "Jde o průkaz pro jakékoli zrakové postižení bez ohledu na funkční závažnost.",
+          "Jde o průkaz pro těžké funkční postižení pohyblivosti nebo orientace bez dalšího rozlišení, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Jde o průkaz pro jakékoli zrakové postižení bez ohledu na funkční závažnost, a právě tato rovina by měla být považována za rozhodující.",
           "Jde o průkaz pro zvlášť těžké nebo úplné postižení pohyblivosti nebo orientace s potřebou průvodce.",
-          "Jde o průkaz, který se přiznává automaticky při nároku na příspěvek na mobilitu."
+          "Jde o průkaz, který se přiznává automaticky při nároku na příspěvek na mobilitu, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4251,7 +4251,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které rozlišení průkazů TP, ZTP a ZTP/P je nejpřesnější?",
         "options": [
           "Rozlišují se podle stupně funkčního omezení pohyblivosti nebo orientace, u ZTP/P navíc s potřebou průvodce.",
-          "Rozlišují se hlavně podle věku žadatele a teprve v druhém kroku podle závažnosti zdravotního stavu.",
+          "Rozlišují se hlavně podle věku žadatele a teprve v druhém kroku podle závažnosti zdravotního stavu, a právě tento znak by měl nést hlavní interpretační váhu.",
           "Rozlišují se hlavně podle typu diagnózy a až následně podle praktického fungování v oblasti pohybu a orientace.",
           "Rozlišují se podle toho, zda osoba současně pobírá příspěvek na mobilitu, příspěvek na péči nebo obě dávky."
         ],
@@ -4262,9 +4262,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 29,
         "text": "Které tvrzení o dočasném průkazu a běžném průkazu osoby se zdravotním postižením je nejpřesnější?",
         "options": [
-          "Oba se vydávají jako polykarbonátové karty shodného charakteru.",
-          "Dočasný průkaz vydává soud a běžný průkaz Úřad práce.",
-          "Dočasný průkaz je určen pouze dětem a běžný průkaz pouze dospělým.",
+          "Oba se vydávají jako polykarbonátové karty shodného charakteru, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Dočasný průkaz vydává soud a běžný průkaz Úřad práce, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Dočasný průkaz je určen pouze dětem a běžný průkaz pouze dospělým, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Dočasný průkaz je papírová karta zatavená do fólie, běžný průkaz je polykarbonátová karta."
         ],
         "correct": 3,
@@ -4274,10 +4274,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 30,
         "text": "Které tvrzení o vztahu mezi průkazem OZP a dávkou podle zákona č. 329/2011 Sb. je nejpřesnější?",
         "options": [
-          "Průkaz OZP je dávka a příspěvek na mobilitu představuje pouze potvrzení o zdravotním stavu a dopravní potřebě.",
+          "Průkaz OZP je dávka a příspěvek na mobilitu představuje pouze potvrzení o zdravotním stavu a dopravní potřebě, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Průkaz OZP je samostatný nárokový status, zatímco příspěvek na mobilitu a příspěvek na zvláštní pomůcku jsou dávky.",
-          "Průkaz OZP vzniká jen tehdy, když osoba současně pobírá příspěvek na mobilitu i příspěvek na zvláštní pomůcku.",
-          "Průkaz OZP je jen přílohou rozhodnutí o dávce a bez přiznání peněžité dávky samostatně nevzniká."
+          "Průkaz OZP vzniká jen tehdy, když osoba současně pobírá příspěvek na mobilitu i příspěvek na zvláštní pomůcku, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "Průkaz OZP je jen přílohou rozhodnutí o dávce a bez přiznání peněžité dávky samostatně nevzniká, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4286,10 +4286,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 31,
         "text": "Které vymezení nejlépe odpovídá OSPOD?",
         "options": [
-          "Jde o školské poradenské zařízení zaměřené na poruchy chování a rodinnou spolupráci.",
-          "Jde o sociální službu určenou rodinám dětí se zdravotním postižením.",
+          "Jde o školské poradenské zařízení zaměřené na poruchy chování a rodinnou spolupráci, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Jde o sociální službu určenou rodinám dětí se zdravotním postižením, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Jde o orgán sociálně-právní ochrany dětí, nikoli o školské zařízení nebo sociální službu.",
-          "Jde o zařízení, které vykonává ústavní a ochrannou výchovu u nezletilých."
+          "Jde o zařízení, které vykonává ústavní a ochrannou výchovu u nezletilých, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4298,10 +4298,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 32,
         "text": "Které rozlišení role OSPOD a soudu je nejpřesnější?",
         "options": [
-          "OSPOD rozhoduje o ústavní výchově a soud následně jen určuje konkrétní zařízení, kde bude dítě umístěno.",
+          "OSPOD rozhoduje o ústavní výchově a soud následně jen určuje konkrétní zařízení, kde bude dítě umístěno, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "OSPOD může v ochraně dítěte významně působit a podávat návrhy, ale o ústavní či ochranné výchově rozhoduje soud.",
-          "OSPOD vede správní řízení o dávkách a soud do této oblasti standardně nevstupuje ani při ohrožení dítěte.",
-          "OSPOD i soud mají v těchto věcech stejnou rozhodovací pravomoc a liší se jen formou vedeného řízení."
+          "OSPOD vede správní řízení o dávkách a soud do této oblasti standardně nevstupuje ani při ohrožení dítěte, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "OSPOD i soud mají v těchto věcech stejnou rozhodovací pravomoc a liší se jen formou vedeného řízení, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4310,9 +4310,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 33,
         "text": "Které vymezení nejlépe odpovídá ochranné výchově?",
         "options": [
-          "Jde o opatření určené jen pro děti bez rodinného zázemí, když není k dispozici pěstounská péče.",
-          "Jde o běžnou preventivní práci školy a OSPOD bez potřeby soudního rozhodnutí.",
-          "Jde o dobrovolný pobyt ve školském zařízení na základě žádosti zákonného zástupce.",
+          "Jde o opatření určené jen pro děti bez rodinného zázemí, když není k dispozici pěstounská péče, a právě tato rovina by měla být považována za rozhodující.",
+          "Jde o běžnou preventivní práci školy a OSPOD bez potřeby soudního rozhodnutí, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Jde o dobrovolný pobyt ve školském zařízení na základě žádosti zákonného zástupce, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Jde o ochranné opatření ukládané soudem, které má jiný právní i funkční charakter než ústavní výchova."
         ],
         "correct": 3,
@@ -4322,10 +4322,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 34,
         "text": "Které vymezení nejlépe odpovídá diagnostickému ústavu?",
         "options": [
-          "Jde o dlouhodobé cílové zařízení pro děti bez poruch chování, které nemají vlastní rodinné zázemí.",
-          "Jde o školské poradenské zařízení, které vydává doporučení ke vzdělávání žáků se speciálními vzdělávacími potřebami.",
+          "Jde o dlouhodobé cílové zařízení pro děti bez poruch chování, které nemají vlastní rodinné zázemí, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Jde o školské poradenské zařízení, které vydává doporučení ke vzdělávání žáků se speciálními vzdělávacími potřebami, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Jde o vstupní a rozřazovací článek systému, kde probíhá diagnostické, výchovné, vzdělávací a sociální posouzení dítěte.",
-          "Jde o pobytovou sociální službu pro rodiny dětí s problémovým chováním a zvýšenými výchovnými obtížemi."
+          "Jde o pobytovou sociální službu pro rodiny dětí s problémovým chováním a zvýšenými výchovnými obtížemi, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4334,10 +4334,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 35,
         "text": "Které tvrzení o dětském domově je nejpřesnější?",
         "options": [
-          "Jde o zařízení primárně pro starší děti s uloženou ochrannou výchovou a výraznou agresivitou.",
-          "Jde o zařízení, které nahrazuje pedagogicko-psychologickou poradnu v obtížných rodinných případech.",
+          "Jde o zařízení primárně pro starší děti s uloženou ochrannou výchovou a výraznou agresivitou, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Jde o zařízení, které nahrazuje pedagogicko-psychologickou poradnu v obtížných rodinných případech, a právě v tomto směru by se měla hledat hlavní příčina.",
           "Jde o zařízení primárně pro děti s nařízenou ústavní výchovou, které nemají závažné poruchy chování.",
-          "Jde o druh sociální služby, který je obsahově totožný s dětským domovem se školou."
+          "Jde o druh sociální služby, který je obsahově totožný s dětským domovem se školou, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4348,8 +4348,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Jde o zařízení pro děti s nařízenou ústavní výchovou nebo uloženou ochrannou výchovou se závažnějšími poruchami chování.",
           "Jde o zařízení pro děti se smyslovým postižením, které potřebují internátní vzdělávání a trvalou speciálněpedagogickou podporu.",
-          "Jde o školské poradenské zařízení se zaměřením na poradenství v oblasti chování a spolupráci se školou.",
-          "Jde o běžný dětský domov doplněný o vlastní základní školu, aniž by se měnila cílová skupina zařízení."
+          "Jde o školské poradenské zařízení se zaměřením na poradenství v oblasti chování a spolupráci se školou, a právě tato rovina by měla být považována za rozhodující.",
+          "Jde o běžný dětský domov doplněný o vlastní základní školu, aniž by se měnila cílová skupina zařízení, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -4359,9 +4359,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení o výchovném ústavu je nejpřesnější?",
         "options": [
           "Jde o zařízení pro výkon ústavní nebo ochranné výchovy, typicky pro starší děti se závažnými poruchami chování.",
-          "Jde o vstupní diagnostické zařízení pro krátkodobé rozřazení dětí do dalších typů péče.",
-          "Jde o poradenské zařízení preventivně-výchovné péče bez pobytového režimu.",
-          "Jde o správní orgán, který rozhoduje o omezení osobní svobody dítěte."
+          "Jde o vstupní diagnostické zařízení pro krátkodobé rozřazení dětí do dalších typů péče, a právě tato rovina by měla být považována za rozhodující.",
+          "Jde o poradenské zařízení preventivně-výchovné péče bez pobytového režimu, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Jde o správní orgán, který rozhoduje o omezení osobní svobody dítěte, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -4370,10 +4370,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 38,
         "text": "Které vymezení nejlépe odpovídá středisku výchovné péče (SVP)?",
         "options": [
-          "Jde o školské poradenské zařízení téhož typu jako PPP a SPC.",
+          "Jde o školské poradenské zařízení téhož typu jako PPP a SPC, a právě tato rovina by měla být považována za rozhodující.",
           "Jde o školské zařízení preventivně-výchovné péče, které pracuje mimo rámec ústavní a ochranné výchovy.",
-          "Jde o sociální službu poskytovanou výhradně podle zákona o sociálních službách.",
-          "Jde o orgán veřejné správy, který ukládá výchovná opatření dítěti a rodině."
+          "Jde o sociální službu poskytovanou výhradně podle zákona o sociálních službách, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Jde o orgán veřejné správy, který ukládá výchovná opatření dítěti a rodině, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4394,9 +4394,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 40,
         "text": "Které rozlišení je z hlediska systému nejpřesnější?",
         "options": [
-          "PPP, SPC a SVP jsou tři rovnocenné typy školských poradenských zařízení, které se liší hlavně cílovou skupinou.",
-          "PPP je orgán veřejné správy, SPC zdravotnické zařízení a SVP sociální služba poskytovaná podle jiného zákona.",
-          "SVP je zvláštní dávkový orgán, který navazuje na OSPOD a na rozhodnutí soudu v oblasti výchovy dítěte.",
+          "PPP, SPC a SVP jsou tři rovnocenné typy školských poradenských zařízení, které se liší hlavně cílovou skupinou, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "PPP je orgán veřejné správy, SPC zdravotnické zařízení a SVP sociální služba poskytovaná podle jiného zákona, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "SVP je zvláštní dávkový orgán, který navazuje na OSPOD a na rozhodnutí soudu v oblasti výchovy dítěte, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "PPP a SPC patří mezi školská poradenská zařízení, zatímco SVP má zvláštní postavení v oblasti preventivně-výchovné práce."
         ],
         "correct": 3,
@@ -4406,10 +4406,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 41,
         "text": "Které vymezení nejlépe odpovídá službě péče o dítě v dětské skupině?",
         "options": [
-          "Jde o předškolní vzdělávání podle školského zákona realizované v menším kolektivu dětí s pružnější organizací.",
-          "Jde o sociální službu určenou primárně dětem se zdravotním postižením do sedmi let věku a jejich rodinám.",
+          "Jde o předškolní vzdělávání podle školského zákona realizované v menším kolektivu dětí s pružnější organizací, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "Jde o sociální službu určenou primárně dětem se zdravotním postižením do sedmi let věku a jejich rodinám, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Jde o neziskovou pravidelnou péči o dítě od 6 měsíců věku do zahájení povinné školní docházky, poskytovanou mimo obydlí dítěte ve skupině dětí.",
-          "Jde o neformální hlídání dítěte bez veřejnoprávního rámce a bez zákonem vymezených organizačních podmínek."
+          "Jde o neformální hlídání dítěte bez veřejnoprávního rámce a bez zákonem vymezených organizačních podmínek, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4418,10 +4418,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 42,
         "text": "Které rozlišení dětské skupiny a mateřské školy je nejpřesnější?",
         "options": [
-          "Dětská skupina je druhem mateřské školy a liší se jen menší kapacitou.",
+          "Dětská skupina je druhem mateřské školy a liší se jen menší kapacitou, a právě na tomto vysvětlení by měla stát celá interpretace.",
           "Dětská skupina je služba péče o dítě podle zvláštního zákona, nikoli škola podle školského zákona.",
-          "Mateřská škola je sociální služba a dětská skupina je školské poradenské zařízení.",
-          "Oba instituty jsou právně totožné, liší se jen zřizovatelem a názvem zařízení."
+          "Mateřská škola je sociální služba a dětská skupina je školské poradenské zařízení, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Oba instituty jsou právně totožné, liší se jen zřizovatelem a názvem zařízení, a právě odtud by bylo vhodné vyvozovat hlavní závěr."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4442,10 +4442,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 44,
         "text": "Které tvrzení o bezplatnosti standardních poradenských služeb je nejpřesnější?",
         "options": [
-          "Bezplatné jsou jen služby poskytované přímo ve škole, nikoli služby poskytované ve školském poradenském zařízení.",
-          "Bezplatné jsou jen služby určené mimořádně nadaným žákům, nikoli žákům se speciálními vzdělávacími potřebami.",
+          "Bezplatné jsou jen služby poskytované přímo ve škole, nikoli služby poskytované ve školském poradenském zařízení, a právě tento znak by měl nést hlavní interpretační váhu.",
+          "Bezplatné jsou jen služby určené mimořádně nadaným žákům, nikoli žákům se speciálními vzdělávacími potřebami, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Bezplatné jsou standardní poradenské služby v ŠPZ a ve školách zřizovaných státem, krajem, obcí nebo svazkem obcí.",
-          "Bezplatné jsou jen služby poskytované na základě soudního rozhodnutí, revize doporučení nebo krizového zásahu."
+          "Bezplatné jsou jen služby poskytované na základě soudního rozhodnutí, revize doporučení nebo krizového zásahu, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4455,9 +4455,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které rozlišení souhlasu s poradenskou službou je nejpřesnější?",
         "options": [
           "V ŠPZ je u psychologické, speciálně pedagogické nebo logopedické služby vyžadován písemný souhlas; ve škole se standardně nevyžaduje, nestanoví-li jiný právní předpis jinak.",
-          "Ve škole i v ŠPZ je vždy nutný písemný souhlas zákonného zástupce bez ohledu na druh služby a právní rámec.",
-          "Písemný souhlas se vyžaduje jen u zletilého žáka, nikoli u zákonného zástupce nezletilého dítěte nebo žáka.",
-          "Písemný souhlas se nevyžaduje nikdy, pokud škola službu považuje za potřebnou a odůvodněnou."
+          "Ve škole i v ŠPZ je vždy nutný písemný souhlas zákonného zástupce bez ohledu na druh služby a právní rámec, a právě v tomto směru by se měla hledat hlavní příčina. Právě odtud by se proto mělo dále vycházet.",
+          "Písemný souhlas se vyžaduje jen u zletilého žáka, nikoli u zákonného zástupce nezletilého dítěte nebo žáka, a právě na tomto vysvětlení by měla stát celá interpretace. Právě tento závěr by pak měl být považován za určující.",
+          "Písemný souhlas se nevyžaduje nikdy, pokud škola službu považuje za potřebnou a odůvodněnou, a právě tato rovina by měla být považována za rozhodující. Právě tato osa by zde měla mít rozhodující význam."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -4467,9 +4467,9 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení o informování žáka a zákonného zástupce před poskytnutím poradenské služby v ŠPZ je nejpřesnější?",
         "options": [
           "ŠPZ má předem srozumitelně informovat o povaze, rozsahu, trvání, cílech, postupech, očekávaném prospěchu i právech a povinnostech spojených se službou.",
-          "ŠPZ má informovat jen o době a místě vyšetření, protože ostatní náležitosti jsou součástí výsledné zprávy.",
-          "ŠPZ má informovat především školu, protože ta je hlavním adresátem navržených podpůrných opatření a doporučení.",
-          "ŠPZ má informovat jen tehdy, pokud už dříve existovalo doporučení z jiného poradenského zařízení nebo školy."
+          "ŠPZ má informovat jen o době a místě vyšetření, protože ostatní náležitosti jsou součástí výsledné zprávy, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "ŠPZ má informovat především školu, protože ta je hlavním adresátem navržených podpůrných opatření a doporučení, a právě tato rovina by měla být považována za rozhodující.",
+          "ŠPZ má informovat jen tehdy, pokud už dříve existovalo doporučení z jiného poradenského zařízení nebo školy, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -4490,10 +4490,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 48,
         "text": "Které tvrzení o krizové poradenské intervenci je nejpřesnější?",
         "options": [
-          "Zahajuje se ve stejné lhůtě jako běžná poradenská služba, tedy nejpozději do tří měsíců od přijetí žádosti.",
+          "Zahajuje se ve stejné lhůtě jako běžná poradenská služba, tedy nejpozději do tří měsíců od přijetí žádosti, a právě tato rovina by měla být považována za rozhodující.",
           "Poskytuje se bezodkladně v naléhavých ohrožujících situacích a standardní pravidlo souhlasu se zde neuplatní stejným způsobem.",
-          "Poskytuje se až po vystavení zprávy a doporučení, aby byl znám další školní i poradenský postup.",
-          "Poskytuje se jen ve škole a nelze ji poskytovat ve školském poradenském zařízení jako samostatný typ služby."
+          "Poskytuje se až po vystavení zprávy a doporučení, aby byl znám další školní i poradenský postup, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "Poskytuje se jen ve škole a nelze ji poskytovat ve školském poradenském zařízení jako samostatný typ služby, a právě v tomto směru by se měla hledat hlavní příčina."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4503,8 +4503,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které rozlišení služby, orgánu a zařízení je nejpřesnější?",
         "options": [
           "OSPOD je orgán veřejné správy, dětská skupina je služba péče o dítě a SVP je školské zařízení.",
-          "OSPOD je sociální služba, dětská skupina je orgán veřejné správy a SVP je dávkový institut.",
-          "OSPOD je školské zařízení, dětská skupina je poradenské zařízení a SVP je sociální dávka.",
+          "OSPOD je sociální služba, dětská skupina je orgán veřejné správy a SVP je dávkový institut, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
+          "OSPOD je školské zařízení, dětská skupina je poradenské zařízení a SVP je sociální dávka, a právě v tomto směru by se měla hledat hlavní příčina.",
           "OSPOD je zařízení preventivně-výchovné péče, dětská skupina je škola a SVP je soudní opatření."
         ],
         "correct": 0,
@@ -4514,10 +4514,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 50,
         "text": "Které obecné pravidlo je pro orientaci v této oblasti nejspolehlivější?",
         "options": [
-          "Rozhodující je hlavně to, zda pojem zní sociálně, školsky nebo zdravotnicky; přesná kompetence už bývá až druhotná.",
+          "Rozhodující je hlavně to, zda pojem zní sociálně, školsky nebo zdravotnicky; přesná kompetence už bývá až druhotná, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "Nejspolehlivější je vždy současně rozlišit, zda jde o dávku, průkaz, orgán veřejné správy, službu nebo zařízení, a teprve potom řešit konkrétní podmínku či limit.",
-          "U většiny položek stačí poznat, zda jde o dítě nebo dospělého; další členění systému už nebývá podstatné.",
-          "V této oblasti bývá správná ta možnost, která shrnuje co nejvíce různých institucí, dokumentů a nároků do jedné odpovědi."
+          "U většiny položek stačí poznat, zda jde o dítě nebo dospělého; další členění systému už nebývá podstatné, a právě na tomto vysvětlení by měla stát celá interpretace.",
+          "V této oblasti bývá správná ta možnost, která shrnuje co nejvíce různých institucí, dokumentů a nároků do jedné odpovědi, a právě tato rovina by měla být považována za rozhodující."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4808,7 +4808,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "zřizovatel na návrh školy",
           "rodič bez další právní vazby",
           "ředitel školy v souladu s právním rámcem a s příslušnými podklady",
-          "OSPOD po konzultaci s PPP"
+          "OSPOD po konzultaci s PPP, a právě tento znak by měl nést hlavní interpretační váhu."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -4903,8 +4903,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "IVP je vyhrazen výhradně žákům se zdravotním postižením",
           "IVP může být v právním rámci využit i u nadaného žáka",
-          "IVP nelze použít mimo druhý až pátý stupeň podpory",
-          "IVP u nadaného žáka vydává zřizovatel"
+          "IVP nelze použít mimo druhý až pátý stupeň podpory, a právě v tomto směru by se měla hledat hlavní příčina.",
+          "IVP u nadaného žáka vydává zřizovatel, a právě na tomto vysvětlení by měla stát celá interpretace."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -4962,7 +4962,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Která dvojice nejpřesněji rozlišuje dokument školy a standardní výstup školského poradenského zařízení?",
         "options": [
           "PLPP — dokument školy; doporučení — výstup ŠPZ",
-          "IVP — dokument školy; doporučení — výstup ŠPZ",
+          "IVP — dokument školy; doporučení — výstup ŠPZ, a právě odtud by bylo vhodné vyvozovat hlavní závěr.",
           "doporučení — dokument školy; PLPP — výstup ŠPZ",
           "zpráva — dokument školy; doporučení — výstup školy"
         ],
@@ -5047,8 +5047,8 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "individuální vzdělávací plán je vázán jen na žáky s postižením, zatímco plán pedagogické podpory lze použít i u nadaných",
           "plán pedagogické podpory je nástrojem školy pro zachycení a sledování podpory v rámci její vlastní práce, zatímco individuální vzdělávací plán je zvláštní forma organizace vzdělávání navázaná na odlišný právní a podpůrný rámec",
-          "IVP i PLPP jsou z hlediska školy zaměnitelné dokumenty; rozdíl je jen v tom, kdo je formálně podepisuje",
-          "PLPP se používá tehdy, když škola už má doporučení ŠPZ, zatímco IVP si škola vytváří bez poradenského vstupu"
+          "IVP i PLPP jsou z hlediska školy zaměnitelné dokumenty; rozdíl je jen v tom, kdo je formálně podepisuje, a právě tato rovina by měla být považována za rozhodující. Právě odtud by se proto mělo dále vycházet. Právě tento závěr by pak měl být považován za určující.",
+          "PLPP se používá tehdy, když škola už má doporučení ŠPZ, zatímco IVP si škola vytváří bez poradenského vstupu, a právě tento znak by měl nést hlavní interpretační váhu. Právě tento závěr by pak měl být považován za určující. Právě tato osa by zde měla mít rozhodující význam."
         ],
         "correct": 1,
         "correctLetter": "B"
