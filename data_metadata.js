@@ -81,7 +81,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 1,
       "questionText": "Žák při předčítání obsahu rozumí, ale samostatně selhává u drobného písma a hustého vizuálního rozvržení. Co je v této situaci nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Hlavní bariéra leží ve slovní zásobě, protože obsah textu by jinak nezvládal ani po předčítání, a to v uvedeném kontextu.",
+        "B": "Hlavní bariéra leží v motivaci, protože samostatné čtení je pro většinu žáků jen otázkou vůle, a to v tomto typu rozlišení.",
+        "C": "Hlavní bariéra leží v přístupu k vizuálně podanému textu, nikoli v obecném jazykovém porozumění.",
+        "D": "Hlavní bariéra leží v chování, protože potíže se samostatným čtením ukazují hlavně na nekázeň, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Hlavní bariéra leží v přístupu k vizuálně podanému textu, nikoli v obecném jazykovém porozumění.",
       "discipline": "zrakové postižení × přístup k informaci",
       "subtopic": "vizuální přístup k textu vs jazykové porozumění",
@@ -161,7 +166,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 2,
       "questionText": "V hlučné třídě žák často nereaguje na pokyny, ale při rozhovoru tváří v tvář s krátkou písemnou oporou pracuje přesně. Co je nejspíš hlavní bariéra?",
-      "options": [],
+      "options": {
+        "A": "Hlavní bariéra souvisí s nízkou ochotou spolupracovat při skupinové práci, a to v dané situaci.",
+        "B": "Hlavní bariéra souvisí s dostupností mluvené informace v akusticky náročném prostředí.",
+        "C": "Hlavní bariéra souvisí s globálně sníženým intelektem, který se při individuálním vedení lépe maskuje.",
+        "D": "Hlavní bariéra souvisí hlavně s poruchou chování, protože žák reaguje jen na část pokynů."
+      },
       "correctOptionText": "Hlavní bariéra souvisí s dostupností mluvené informace v akusticky náročném prostředí.",
       "discipline": "sluchové postižení × akustická dostupnost",
       "subtopic": "mluvená informace v hluku",
@@ -242,7 +252,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 3,
       "questionText": "Dítě komolí hlásky, ale dobře rozumí instrukcím, slyší i tišší řeč a v sociálním kontaktu reaguje přiměřeně. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Těžiště obtíže je spíše v mluvní produkci než ve sluchové dostupnosti nebo sociálním porozumění.",
+        "B": "Těžiště obtíže je spíše ve sluchové vadě, protože chybná výslovnost je jejím typickým hlavním znakem.",
+        "C": "Těžiště obtíže je spíše v PAS, protože nepřesná řeč běžně znamená oslabenou reciprocitu, a to v dané situaci.",
+        "D": "Těžiště obtíže je spíše v globálním kognitivním oslabení, protože artikulační chyby ukazují na širší deficit."
+      },
       "correctOptionText": "Těžiště obtíže je spíše v mluvní produkci než ve sluchové dostupnosti nebo sociálním porozumění.",
       "discipline": "logopedie × artikulace",
       "subtopic": "výslovnost při zachovaném sluchu a porozumění",
@@ -323,7 +338,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 4,
       "questionText": "Žák ústně vysvětluje učivo přesně, ale v písemném projevu je výkon nápadně krátký, křečovitý a nečitelný. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Výrazně oslabená může být hlavně motivace, protože kdo látce rozumí, zapíše ji bez větších obtíží.",
+        "B": "Výrazně oslabená může být hlavně slovní zásoba, protože písemný projev vždy nejlépe odráží jazykovou úroveň.",
+        "C": "Výrazně oslabená může být hlavně kázeň, protože nečitelný zápis je především důsledkem nezájmu.",
+        "D": "Výrazně oslabená může být hlavně forma grafického výstupu, ne nutně obsahové porozumění učivu."
+      },
       "correctOptionText": "Výrazně oslabená může být hlavně forma grafického výstupu, ne nutně obsahové porozumění učivu.",
       "discipline": "SPU × forma výkonu",
       "subtopic": "grafický výstup vs obsahové porozumění",
@@ -404,7 +424,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 5,
       "questionText": "Žák používá bohatou slovní zásobu, ale nerozumí narážce, doslovně chápe nepřímé sdělení a v dialogu těžko pružně mění perspektivu. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Potíž bude spíše v technice čtení, protože doslovnost bývá hlavně důsledkem pomalé dekódace.",
+        "B": "Potíž bude spíše v artikulaci, protože nepřímé významy vycházejí hlavně z přesné výslovnosti.",
+        "C": "Potíž bude spíše v sociálně-pragmatickém porozumění než ve slovní zásobě nebo artikulaci.",
+        "D": "Potíž bude spíše v neochotě spolupracovat, protože pružnost v dialogu je otázkou disciplíny."
+      },
       "correctOptionText": "Potíž bude spíše v sociálně-pragmatickém porozumění než ve slovní zásobě nebo artikulaci.",
       "discipline": "PAS × pragmatika",
       "subtopic": "doslovnost a sociálně-pragmatické porozumění",
@@ -485,7 +510,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 6,
       "questionText": "Po léčbě závažného onemocnění žák učivu rozumí, ale výrazně se unaví, hůře zvládá přesuny a odpoledne výkon prudce klesá. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Spíše jde o nízkou studijní odolnost, protože odpolední pokles bývá hlavně otázkou vůle.",
+        "B": "Spíše jde o zdravotní a fyzickou zátěž, která mění podmínky výkonu a participace.",
+        "C": "Spíše jde o nedostatek rozumových schopností, protože únava obvykle jen odkryje slabý intelekt.",
+        "D": "Spíše jde o poruchu chování, protože kolísání výkonu znamená nestabilní sebekontrolu."
+      },
       "correctOptionText": "Spíše jde o zdravotní a fyzickou zátěž, která mění podmínky výkonu a participace.",
       "discipline": "somatopedie × zdravotní oslabení",
       "subtopic": "únava a školní participace",
@@ -566,7 +596,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 7,
       "questionText": "Žák v diktátu a přepisu chybuje výrazně více než při ústním vysvětlení stejného učiva. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Výrazněji může selhávat sluch, protože pravopisné chyby většinou ukazují na nedostatečné slyšení.",
+        "B": "Výrazněji může selhávat ochota pracovat, protože ústní odpověď bývá vždy pohodlnější než písemná.",
+        "C": "Výrazněji může selhávat celkové porozumění učivu, protože pravopis je nejspolehlivější ukazatel znalosti.",
+        "D": "Výrazněji může selhávat kódování do psané formy, aniž by byl nutně slabý obsahový koncept."
+      },
       "correctOptionText": "Výrazněji může selhávat kódování do psané formy, aniž by byl nutně slabý obsahový koncept.",
       "discipline": "SPU × psaná forma",
       "subtopic": "kódování do psané podoby",
@@ -647,7 +682,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 8,
       "questionText": "U dítěte se objevují afekty hlavně při zahlcení řečí, změně pravidel a sociální nepředvídatelnosti. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Afekt může být spíše sekundárním projevem přetížení a regulačního selhání než hlavní obtíží.",
+        "B": "Afekt bývá nejspíše hlavním znakem poruchy chování, protože intenzita projevu rozhoduje víc než kontext.",
+        "C": "Afekt bývá nejspíše důkazem nízkého intelektu, protože kognitivně silnější dítě se reguluje bez pomoci.",
+        "D": "Afekt bývá nejspíše projevem rozmazlenosti, protože změna pravidel nemá odborný význam, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Afekt může být spíše sekundárním projevem přetížení a regulačního selhání než hlavní obtíží.",
       "discipline": "PAS × regulace",
       "subtopic": "sekundární behaviorální projev",
@@ -728,7 +768,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 9,
       "questionText": "Žák má výrazně omezenou jemnou motoriku a pomalé manipulační tempo, ale při rozhovoru chápe souvislosti věcně přesně. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Nápadná může být hlavně lenost, protože pomalé tempo je u školních úloh většinou motivační problém.",
+        "B": "Nápadná může být hlavně řečová porucha, protože jemná motorika obvykle souvisí s chápáním významu.",
+        "C": "Nápadná může být hlavně bariéra v motorickém provedení, nikoli automaticky v rozumovém porozumění.",
+        "D": "Nápadná může být hlavně porucha chování, protože zdržování úkolu bývá skrytou opozicí, a to v popsané situaci."
+      },
       "correctOptionText": "Nápadná může být hlavně bariéra v motorickém provedení, nikoli automaticky v rozumovém porozumění.",
       "discipline": "tělesné postižení × forma provedení",
       "subtopic": "motorické tempo vs porozumění",
@@ -809,7 +854,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 10,
       "questionText": "Žák čte technicky plynule, ale selhává v odvozování významu a v odpovědích na otázky vyžadující porozumění vztahům v textu. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Technika dekódování sama nestačí; obtíž proto určitě leží v neochotě číst delší pasáže, a to v uvedeném kontextu.",
+        "B": "Technika dekódování sama nestačí; obtíž může ležet v porozumění významu a vztahům v textu.",
+        "C": "Technika dekódování sama nestačí; obtíž proto musí ležet hlavně ve sluchu, a to právě v uvedeném rámci.",
+        "D": "Technika dekódování sama nestačí; obtíž proto musí ležet hlavně v grafomotorice, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Technika dekódování sama nestačí; obtíž může ležet v porozumění významu a vztahům v textu.",
       "discipline": "SPU × čtenářské porozumění",
       "subtopic": "plynulost čtení vs význam textu",
@@ -890,7 +940,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 11,
       "questionText": "Dva žáci mají stejnou diagnózu zrakového postižení. Jeden využívá hlavně zvětšení, druhý spíše hmatové materiály. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Název diagnózy sám neurčuje podobu podpory; rozhoduje konkrétní funkční způsob práce s informací.",
+        "B": "Název diagnózy sám neurčuje podobu podpory; proto je nejlepší dát oběma žákům stejný soubor kompenzací.",
+        "C": "Název diagnózy sám neurčuje podobu podpory; proto je vhodné podporu odložit, dokud se jejich výkon nesjednotí.",
+        "D": "Název diagnózy sám neurčuje podobu podpory; proto je nejjistější vycházet jen z preferencí rodiny."
+      },
       "correctOptionText": "Název diagnózy sám neurčuje podobu podpory; rozhoduje konkrétní funkční způsob práce s informací.",
       "discipline": "zrakové postižení × individuální funkční profil",
       "subtopic": "stejná diagnóza, odlišný přístup k informaci",
@@ -971,7 +1026,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 12,
       "questionText": "Dítě v rozhovoru často opakuje část otázky, potřebuje více času na zpracování a v klidném prostředí s vizuální oporou odpovídá přesněji. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Obtíž může souviset spíše s nízkým intelektem, protože opakování otázky bývá jeho nejjistějším znakem.",
+        "B": "Obtíž může souviset spíše s poruchou chování, protože přesnější odpověď v klidu znamená jen menší možnost odporu.",
+        "C": "Obtíž může souviset spíše s motorikou, protože zpracování otázky je hlavně otázkou tělesného tempa.",
+        "D": "Obtíž může souviset spíše se zpracováním mluvené informace a tempem porozumění než s nezájmem."
+      },
       "correctOptionText": "Obtíž může souviset spíše se zpracováním mluvené informace a tempem porozumění než s nezájmem.",
       "discipline": "sluch a jazyk × tempo porozumění",
       "subtopic": "zpracování mluvené informace",
@@ -1050,7 +1110,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 13,
       "questionText": "Dítě výrazně lépe chápe postup, když je názorně rozfázovaný a opřený o konkrétní situace. Při čistě abstraktním slovním výkladu rychle selhává. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, proto je nejlepší rezignovat na učební cíle.",
+        "B": "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, ne prostá nepozornost.",
+        "C": "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, proto jde vždy hlavně o sluchovou vadu.",
+        "D": "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, proto je abstraktní výklad nevhodný pro všechny žáky."
+      },
       "correctOptionText": "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, ne prostá nepozornost.",
       "discipline": "psychopedie × způsob zprostředkování učiva",
       "subtopic": "názornost a struktura učení",
@@ -1131,7 +1196,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 14,
       "questionText": "Žák má výbornou slovní zásobu a paměť na fakta, ale výrazně selhává v sociálním porozumění, flexibilitě a každodenním školním fungování. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Silná verbální stránka sama nevylučuje významnou bariéru, proto ale nejde o potíž hodnou podpory, a to v dané situaci.",
+        "B": "Silná verbální stránka sama nevylučuje významnou bariéru, proto je nejlepší vysvětlit vše jen jako lenost.",
+        "C": "Silná verbální stránka sama nevylučuje významnou bariéru v adaptivním a sociálně-komunikačním fungování.",
+        "D": "Silná verbální stránka sama nevylučuje významnou bariéru, proto je rozhodující sledovat jen známky z českého jazyka."
+      },
       "correctOptionText": "Silná verbální stránka sama nevylučuje významnou bariéru v adaptivním a sociálně-komunikačním fungování.",
       "discipline": "PAS × maskovaná bariéra při vysokém potenciálu",
       "subtopic": "silná stránka vs celkový funkční profil",
@@ -1212,7 +1282,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 15,
       "questionText": "Kompenzační pomůcka umožní žákovi přístup ke stejnému obsahu jinou cestou. Které tvrzení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Pomůcka může vyrovnávat bariéru přístupu, aniž by sama o sobě zjednodušovala obsah učiva.",
+        "B": "Pomůcka může vyrovnávat bariéru přístupu, ale tím vždy automaticky snižuje nároky na výkon.",
+        "C": "Pomůcka může vyrovnávat bariéru přístupu, proto je vhodná jen pro žáky s nízkou motivací.",
+        "D": "Pomůcka může vyrovnávat bariéru přístupu, proto nahrazuje potřebu pedagogického plánování."
+      },
       "correctOptionText": "Pomůcka může vyrovnávat bariéru přístupu, aniž by sama o sobě zjednodušovala obsah učiva.",
       "discipline": "kompenzační pomůcky × přístupnost",
       "subtopic": "přístupnost vs zjednodušení obsahu",
@@ -1291,7 +1366,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 16,
       "questionText": "Žák při opisování z tabule ztrácí místo a vynechává řádky, ale při práci s textem položeným blízko pracuje přesněji. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Obtíž může souviset spíše s nedostatkem motivace, protože opis z tabule je jen trénink pečlivosti, a to v uvedeném kontextu.",
+        "B": "Obtíž může souviset spíše s poruchou chování, protože vynechávání řádků znamená nedbalost, a to v tomto typu rozlišení.",
+        "C": "Obtíž může souviset spíše s nízkou jazykovou úrovní, protože přesný opis vyžaduje hlavně slovní zásobu, a to právě v uvedeném rámci.",
+        "D": "Obtíž může souviset spíše s vizuálním přístupem na vzdálenost a sledováním řádků než s neznalostí obsahu."
+      },
       "correctOptionText": "Obtíž může souviset spíše s vizuálním přístupem na vzdálenost a sledováním řádků než s neznalostí obsahu.",
       "discipline": "zrakové vnímání × organizace textu",
       "subtopic": "opis z tabule vs práce zblízka",
@@ -1372,7 +1452,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 17,
       "questionText": "Dítě zapomíná delší ústní instrukce, ale podle krátkého vizuálního seznamu postup zvládá. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Potíž může souviset spíše s nízkým intelektem, protože vícekrokový úkol vždy odhalí slabé myšlení, a to v dané situaci.",
+        "B": "Potíž může souviset spíše se zatížením auditivně-sekvenčního zpracování než s úplným neporozuměním úkolu.",
+        "C": "Potíž může souviset spíše s motorikou, protože seznam kompenzuje hlavně tělesné tempo, a to v uvedeném kontextu.",
+        "D": "Potíž může souviset spíše s nekázní, protože dítě by si správný postup mělo prostě pamatovat, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Potíž může souviset spíše se zatížením auditivně-sekvenčního zpracování než s úplným neporozuměním úkolu.",
       "discipline": "auditivně-sekvenční zátěž × instrukce",
       "subtopic": "ústní instrukce vs vizuální opora",
@@ -1453,7 +1538,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 18,
       "questionText": "V rušném prostoru s blikajícím světlem a hlukem výkon dítěte klesá, zatímco v klidném koutě se rychle stabilizuje. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Hlavním problémem může být senzorické přetížení, proto je nejlepší dítě zcela vyřadit z běžných situací, a to právě v uvedeném rámci.",
+        "B": "Hlavním problémem může být senzorické přetížení, proto jde vždy hlavně o sluchové postižení, a to i při zohlednění popsaných okolností.",
+        "C": "Hlavním problémem může být senzorické přetížení a náročnost prostředí, ne automaticky slabá schopnost učit se.",
+        "D": "Hlavním problémem může být senzorické přetížení, proto se jedná pouze o nedostatek vůle pracovat, a to v popsané situaci."
+      },
       "correctOptionText": "Hlavním problémem může být senzorické přetížení a náročnost prostředí, ne automaticky slabá schopnost učit se.",
       "discipline": "PAS × senzorická zátěž",
       "subtopic": "prostředí a přetížení",
@@ -1534,7 +1624,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 19,
       "questionText": "Žák řeší úlohy správně, ale při časovém tlaku nestihne zapsat postup ani dokončit odpověď. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Časový limit může odhalovat bariéru v tempu a formě výkonu více než v samotném pochopení úlohy.",
+        "B": "Časový limit může odhalovat bariéru v tempu a formě výkonu, proto je nejlepší rezignovat na hodnocení výsledku.",
+        "C": "Časový limit může odhalovat bariéru v tempu a formě výkonu, proto jde vždy hlavně o poruchu chování.",
+        "D": "Časový limit může odhalovat bariéru v tempu a formě výkonu, proto se tím automaticky potvrzuje nízký intelekt."
+      },
       "correctOptionText": "Časový limit může odhalovat bariéru v tempu a formě výkonu více než v samotném pochopení úlohy.",
       "discipline": "tempo výkonu × forma odpovědi",
       "subtopic": "časový tlak a výkon",
@@ -1613,7 +1708,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 20,
       "questionText": "Žák plynule přečte text, ale v otázkách opakovaně mine vztah mezi postavami, časovou posloupnost nebo vyvození implicitního významu. Co je nejpřesnější závěr?",
-      "options": [],
+      "options": {
+        "A": "Plynulost čtení nevylučuje obtíž v porozumění vztahům a inferencím, proto je hlavní problém vždy ve sluchu.",
+        "B": "Plynulost čtení nevylučuje obtíž v porozumění vztahům a inferencím, proto je nejlepší zcela vypustit práci s textem.",
+        "C": "Plynulost čtení nevylučuje obtíž v porozumění vztahům a inferencím, proto jde především o lenost.",
+        "D": "Plynulost čtení nevylučuje obtíž v porozumění vztahům a inferencím v textu."
+      },
       "correctOptionText": "Plynulost čtení nevylučuje obtíž v porozumění vztahům a inferencím v textu.",
       "discipline": "čtenářské porozumění × inference",
       "subtopic": "plynulost vs porozumění vztahům",
@@ -1692,7 +1792,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 21,
       "questionText": "Žák slyší při individuálním hovoru dobře, ale ve skupinové debatě bez vizuální opory ztrácí nit. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Náročnější může být přístup k mluvené informaci, proto ale není důvod upravovat komunikační podmínky, a to právě v uvedeném rámci.",
+        "B": "Náročnější může být přístup k mluvené informaci, proto jde jistě o problém s kázní, a to i při zohlednění popsaných okolností.",
+        "C": "Náročnější může být přístup k mluvené informaci v dynamické skupinové komunikaci, ne nutně samotné myšlení.",
+        "D": "Náročnější může být přístup k mluvené informaci, proto je nejpřesnější automaticky snížit obsah učiva, a to v popsané situaci."
+      },
       "correctOptionText": "Náročnější může být přístup k mluvené informaci v dynamické skupinové komunikaci, ne nutně samotné myšlení.",
       "discipline": "sluchové postižení × skupinová komunikace",
       "subtopic": "skupinová debata bez vizuální opory",
@@ -1771,7 +1876,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 22,
       "questionText": "Žák slovně popíše cestu po škole, ale v novém prostoru se sám neorientuje, vyhýbá se schodištím a přechodům. Co je v této situaci nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Potíž může souviset spíše s funkční orientací a pohybem, proto ale není třeba řešit samostatnost v prostředí.",
+        "B": "Potíž může souviset spíše s funkční orientací a bezpečným pohybem než s jazykovým popisem trasy.",
+        "C": "Potíž může souviset spíše s funkční orientací a pohybem, proto jde vždy hlavně o poruchu chování.",
+        "D": "Potíž může souviset spíše s funkční orientací a pohybem, proto automaticky selhává i porozumění učivu."
+      },
       "correctOptionText": "Potíž může souviset spíše s funkční orientací a bezpečným pohybem než s jazykovým popisem trasy.",
       "discipline": "zrakové postižení × orientace a mobilita",
       "subtopic": "orientace v novém prostoru",
@@ -1852,7 +1962,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 23,
       "questionText": "Dítě používá jednoduché věty, ale největší obtíž se ukáže při sdílení pozornosti, pochopení záměru druhého a střídání témat. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Potíž může souviset spíše se sociálně-komunikačním porozuměním a reciprocitou než se samotnou délkou vět.",
+        "B": "Potíž může souviset spíše se sociálně-komunikačním porozuměním, proto ale nejde o oblast speciálněpedagogické podpory.",
+        "C": "Potíž může souviset spíše se sociálně-komunikačním porozuměním, proto je nejlepší zaměřit se jen na artikulaci.",
+        "D": "Potíž může souviset spíše se sociálně-komunikačním porozuměním, proto se automaticky potvrzuje sluchová vada."
+      },
       "correctOptionText": "Potíž může souviset spíše se sociálně-komunikačním porozuměním a reciprocitou než se samotnou délkou vět.",
       "discipline": "PAS × sociální komunikace",
       "subtopic": "sdílení pozornosti a reciprocita",
@@ -1933,7 +2048,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 24,
       "questionText": "Rodič označuje žáka za líného, ale obtíže se zřetelně zhoršují po bolesti, léčbě nebo větší fyzické zátěži. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Funkční dopad zdravotního stavu může vysvětlovat kolísání výkonu, proto ale není třeba plánovat podmínky práce.",
+        "B": "Funkční dopad zdravotního stavu může vysvětlovat kolísání výkonu, proto je nejpřesnější automaticky snížit cíle o několik ročníků.",
+        "C": "Funkční dopad zdravotního stavu může vysvětlovat kolísání výkonu, proto jde hlavně o problém chování rodiny.",
+        "D": "Funkční dopad zdravotního stavu může vysvětlovat kolísání výkonu přesněji než morální soud o lenosti."
+      },
       "correctOptionText": "Funkční dopad zdravotního stavu může vysvětlovat kolísání výkonu přesněji než morální soud o lenosti.",
       "discipline": "somatopedie × zdravotní kontext výkonu",
       "subtopic": "bolest, léčba a kolísání výkonu",
@@ -2014,7 +2134,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 25,
       "questionText": "Žák výborně zvládá uzavřené úlohy, ale při otevřených sociálních situacích se ztrácí v implicitních pravidlech a rychle rigidně ustrne. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru, proto ale jde vždy hlavně o intelektový deficit.",
+        "B": "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru ve flexibilitě a sociálním porozumění.",
+        "C": "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru, proto je nejlepší vyřadit všechny otevřené úkoly.",
+        "D": "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru, proto rigidita znamená hlavně neochotu."
+      },
       "correctOptionText": "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru ve flexibilitě a sociálním porozumění.",
       "discipline": "PAS × flexibilita",
       "subtopic": "uzavřené vs otevřené situace",
@@ -2095,7 +2220,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 26,
       "questionText": "Žák pracuje v Braillově písmu pomaleji než spolužáci ve vizuálním textu, ale odpovědi mají stejnou obsahovou kvalitu. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Různá cesta k informaci neznamená automaticky nižší obsahovou úroveň, proto ale není podstatné řešit časové podmínky.",
+        "B": "Různá cesta k informaci neznamená automaticky nižší obsahovou úroveň, proto je nejlepší hodnotit jen rychlost.",
+        "C": "Různá cesta k informaci neznamená automaticky nižší obsahovou úroveň výkonu.",
+        "D": "Různá cesta k informaci neznamená automaticky nižší obsahovou úroveň, proto Braillovo písmo samo snižuje nároky učiva."
+      },
       "correctOptionText": "Různá cesta k informaci neznamená automaticky nižší obsahovou úroveň výkonu.",
       "discipline": "zrakové postižení × alternativní přístup k textu",
       "subtopic": "Braille vs obsah výkonu",
@@ -2176,7 +2306,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 27,
       "questionText": "Žák má normální sluchový nález, ale při vyprávění těžko hledá slova, staví věty nesouvisle a potřebuje více času na formulaci. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Těžiště může být spíše v jazykovém formulování, proto ale nejde o problém významný pro školní výkon.",
+        "B": "Těžiště může být spíše v jazykovém formulování, proto se tím automaticky potvrzuje PAS, a to i při zohlednění popsaných okolností.",
+        "C": "Těžiště může být spíše v jazykovém formulování, proto je hlavní obtíž určitě v kázni, a to v dané situaci.",
+        "D": "Těžiště může být spíše v jazykovém formulování a organizaci výpovědi než ve slyšení samotném."
+      },
       "correctOptionText": "Těžiště může být spíše v jazykovém formulování a organizaci výpovědi než ve slyšení samotném.",
       "discipline": "logopedie × jazykové formulování",
       "subtopic": "hledání slov při zachovaném sluchu",
@@ -2257,7 +2392,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 28,
       "questionText": "Dítě rozumí učivu, ale při komunikaci bez možnosti odezírat a bez zřetelného obrácení mluvčího na něj ztrácí část sdělení. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Podstatná může být dostupnost mluvené informace včetně vizuálních komunikačních opor, ne jen obsah učiva.",
+        "B": "Podstatná může být dostupnost mluvené informace, proto ale jde automaticky o nízký intelekt, a to v tomto typu rozlišení.",
+        "C": "Podstatná může být dostupnost mluvené informace, proto je nejpřesnější zrušit všechny ústní situace, a to právě v uvedeném rámci.",
+        "D": "Podstatná může být dostupnost mluvené informace, proto jde hlavně o neochotu dávat pozor, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Podstatná může být dostupnost mluvené informace včetně vizuálních komunikačních opor, ne jen obsah učiva.",
       "discipline": "sluchové postižení × komunikační podmínky",
       "subtopic": "odezírání a vizuální opory",
@@ -2336,7 +2476,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 29,
       "questionText": "Žák dělá mnoho pravopisných chyb, ale při ústním vysvětlení přesně popíše vztahy, důvody a pravidla. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Pravopisně nápadný výkon nemusí znamenat oslabené porozumění, proto ale pravopis není třeba nikdy hodnotit.",
+        "B": "Pravopisně nápadný výkon nemusí znamenat oslabené pojmové porozumění.",
+        "C": "Pravopisně nápadný výkon nemusí znamenat oslabené porozumění, proto je hlavní obtíž vždy ve sluchu.",
+        "D": "Pravopisně nápadný výkon nemusí znamenat oslabené porozumění, proto jde hlavně o nedbalost."
+      },
       "correctOptionText": "Pravopisně nápadný výkon nemusí znamenat oslabené pojmové porozumění.",
       "discipline": "SPU × pravopis vs koncept",
       "subtopic": "pravopisné chyby při zachovaném konceptu",
@@ -2417,7 +2562,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 30,
       "questionText": "Žák umí slovně popsat trasu, ale v neznámé budově zůstává bez doprovodu nejistý a nebezpečně váhá. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Verbální popis prostoru ještě nezaručuje orientaci, proto ale není vhodné trénovat samostatnost.",
+        "B": "Verbální popis prostoru ještě nezaručuje orientaci, proto je hlavní problém jistě v řeči.",
+        "C": "Verbální popis prostoru ještě nezaručuje funkční orientaci a bezpečný samostatný pohyb.",
+        "D": "Verbální popis prostoru ještě nezaručuje orientaci, proto jde vždy o poruchu chování, a to v popsané situaci."
+      },
       "correctOptionText": "Verbální popis prostoru ještě nezaručuje funkční orientaci a bezpečný samostatný pohyb.",
       "discipline": "orientace a mobilita × funkční samostatnost",
       "subtopic": "verbální popis vs samostatný pohyb",
@@ -2498,7 +2648,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 31,
       "questionText": "Který závěr z totožné diagnózy u dvou žáků je odborně nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Stejná diagnóza sama nestačí k odvození stejné podpory; proto je nejlepší držet jen subjektivní přání školy, a to v uvedeném kontextu.",
+        "B": "Stejná diagnóza sama nestačí k odvození stejné podpory; proto je odborně nejbezpečnější podporu neindividualizovat.",
+        "C": "Stejná diagnóza sama nestačí k odvození stejné podpory; proto diagnóza nemá pro podporu už žádný význam, a to právě v uvedeném rámci.",
+        "D": "Stejná diagnóza sama nestačí k odvození stejné podpory; rozhoduje konkrétní funkční dopad v učení a participaci."
+      },
       "correctOptionText": "Stejná diagnóza sama nestačí k odvození stejné podpory; rozhoduje konkrétní funkční dopad v učení a participaci.",
       "discipline": "funkční profil × individualizace",
       "subtopic": "diagnóza a podpůrný závěr",
@@ -2579,7 +2734,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 32,
       "questionText": "Které tvrzení nejlépe odlišuje přístupnost od obsahového zjednodušení?",
-      "options": [],
+      "options": {
+        "A": "Přístupnost mění cestu k informaci nebo formu práce, zatímco obsahové zjednodušení mění samotný rozsah či náročnost učiva.",
+        "B": "Přístupnost mění cestu k informaci nebo formu práce, proto se vždy rovná snížení cílů, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Přístupnost mění cestu k informaci nebo formu práce, proto je jen technickou záležitostí bez pedagogického významu, a to v uvedeném kontextu.",
+        "D": "Přístupnost mění cestu k informaci nebo formu práce, proto se používá jen u tělesného postižení, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Přístupnost mění cestu k informaci nebo formu práce, zatímco obsahové zjednodušení mění samotný rozsah či náročnost učiva.",
       "discipline": "přístupnost × obsah učiva",
       "subtopic": "cesta k informaci vs změna kurikula",
@@ -2660,7 +2820,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 33,
       "questionText": "Který závěr je nejpřesnější, když žák ústně prokazuje přesné porozumění, ale písemně selhává hlavně v mechanické podobě výstupu?",
-      "options": [],
+      "options": {
+        "A": "Je třeba oddělit obsahovou kompetenci od formy produkce, proto ale mechanický výstup není třeba nikdy rozvíjet, a to právě v uvedeném rámci.",
+        "B": "Je třeba oddělit obsahovou kompetenci od formy produkce, proto jde jistě o problém motivace, a to i při zohlednění popsaných okolností.",
+        "C": "Je třeba oddělit obsahovou kompetenci od formy produkce a nevyvozovat z mechanického selhání automaticky slabé porozumění.",
+        "D": "Je třeba oddělit obsahovou kompetenci od formy produkce, proto je nejsprávnější snížit obsahové cíle, a to v popsané situaci."
+      },
       "correctOptionText": "Je třeba oddělit obsahovou kompetenci od formy produkce a nevyvozovat z mechanického selhání automaticky slabé porozumění.",
       "discipline": "forma výkonu × obsahová kompetence",
       "subtopic": "mechanická podoba výstupu",
@@ -2739,8 +2904,13 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 34,
       "questionText": "Který znak spíše ukazuje na pragmatickou povahu obtíže než na čistě artikulační problém?",
-      "options": [],
-      "correctOptionText": "Nepřesné chápání narážek, doslovné chápání a slabší oprava nedorozumění v dialogu.",
+      "options": {
+        "A": "Nepřesná výslovnost jedné skupiny hlásek při jinak přiměřeném porozumění a kontaktu.",
+        "B": "Nepřesné čtení narážek, doslovné chápání a slabší oprava nedorozumění v dialogu.",
+        "C": "Nosní zabarvení hlasu při zachovaném sociálním porozumění a flexibilitě v hovoru.",
+        "D": "Kolísání hlasitosti při delším mluvení bez potíží v chápání záměru druhého, a to i při zohlednění popsaných okolností."
+      },
+      "correctOptionText": "Nepřesné čtení narážek, doslovné chápání a slabší oprava nedorozumění v dialogu.",
       "discipline": "pragmatika × artikulace",
       "subtopic": "znaky sociálně-pragmatické obtíže",
       "conceptTags": [
@@ -2789,8 +2959,8 @@ window.metadataExport = {
       "sourceCorrectLetter": "B",
       "reviewedCorrectLetter": "B",
       "effectiveCorrectLetter": "B",
-      "sourceCorrectOptionText": "Nepřesné chápání narážek, doslovné chápání a slabší oprava nedorozumění v dialogu.",
-      "reviewedCorrectOptionText": "Nepřesné chápání narážek, doslovné chápání a slabší oprava nedorozumění v dialogu.",
+      "sourceCorrectOptionText": "Nepřesné čtení narážek, doslovné chápání a slabší oprava nedorozumění v dialogu.",
+      "reviewedCorrectOptionText": "Nepřesné čtení narážek, doslovné chápání a slabší oprava nedorozumění v dialogu.",
       "answerAuditStatus": "expert-reviewed",
       "answerAuditNote": "B1 byla přepracována jako kratší a přesněji diferenční hard vrstva: méně mikrokazuistik, větší důraz na funkční rozlišení, parity distraktorů a odlišení od základní baterie.",
       "answerAuditConfidence": "high",
@@ -2820,7 +2990,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 35,
       "questionText": "Žák se zdravotním oslabením látce rozumí, ale výkon výrazně kolísá podle únavy. Který krok je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Upravit podmínky tempa a zátěže, proto ale automaticky trvale snížit všechny vzdělávací cíle.",
+        "B": "Upravit podmínky tempa a zátěže, proto ale odložit jakékoli hodnocení na neurčito, a to v popsané situaci.",
+        "C": "Upravit podmínky tempa a zátěže, proto ale předpokládat hlavně nízkou motivaci žáka, a to v uvedeném kontextu.",
+        "D": "Upravit podmínky tempa a zátěže tak, aby se posuzovalo porozumění, ne jen vyčerpanost výkonu."
+      },
       "correctOptionText": "Upravit podmínky tempa a zátěže tak, aby se posuzovalo porozumění, ne jen vyčerpanost výkonu.",
       "discipline": "somatopedie × podmínky výkonu",
       "subtopic": "úprava zátěže při zachovaném porozumění",
@@ -2901,7 +3076,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 36,
       "questionText": "Při opisu z tabule dítě chybuje, při práci z předlohy na lavici nikoli. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Potíž může být hlavně v přístupu k vizuální předloze na vzdálenost a v organizaci zrakové práce.",
+        "B": "Potíž může být hlavně v lenosti, protože opis z tabule nevyžaduje skutečné porozumění, a to i při zohlednění popsaných okolností.",
+        "C": "Potíž může být hlavně v poruše chování, protože rozdíl mezi úlohami ukazuje na selektivní odpor.",
+        "D": "Potíž může být hlavně v nízkém intelektu, protože přesný opis je základní důkaz chápání, a to v popsané situaci."
+      },
       "correctOptionText": "Potíž může být hlavně v přístupu k vizuální předloze na vzdálenost a v organizaci zrakové práce.",
       "discipline": "zrakové vnímání × vzdálená předloha",
       "subtopic": "opis z tabule",
@@ -2982,7 +3162,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 37,
       "questionText": "Žák používá znakový či symbolový systém a pomocí něj sděluje věcně přesné myšlenky. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Alternativní komunikační systém může být cestou vyjádření porozumění, proto ale brání rozvoji skutečné komunikace.",
+        "B": "Alternativní komunikační systém může být cestou vyjádření porozumění, nikoli důkazem nízkého myšlení.",
+        "C": "Alternativní komunikační systém může být cestou vyjádření porozumění, proto je vhodný jen jako krátká nouzová náhrada.",
+        "D": "Alternativní komunikační systém může být cestou vyjádření porozumění, proto automaticky snižuje jazykové nároky."
+      },
       "correctOptionText": "Alternativní komunikační systém může být cestou vyjádření porozumění, nikoli důkazem nízkého myšlení.",
       "discipline": "alternativní komunikace × vyjádření kompetence",
       "subtopic": "AAK jako kanál vyjádření",
@@ -3061,7 +3246,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 38,
       "questionText": "Dítě je stabilní v předvídatelné rutině, ale při nečekané změně plánu nebo pravidel se rychle rozpadá. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Podstatná může být bariéra ve flexibilitě a regulaci, proto ale není vhodné dítě seznamovat s jakoukoli změnou.",
+        "B": "Podstatná může být bariéra ve flexibilitě a regulaci, proto jde jistě hlavně o sluchovou vadu, a to v popsané situaci.",
+        "C": "Podstatná může být bariéra ve flexibilitě a regulaci při změně, ne pouze nedostatek disciplíny.",
+        "D": "Podstatná může být bariéra ve flexibilitě a regulaci, proto je nejlepší hodnotit jen poslušnost."
+      },
       "correctOptionText": "Podstatná může být bariéra ve flexibilitě a regulaci při změně, ne pouze nedostatek disciplíny.",
       "discipline": "PAS × předvídatelnost a změna",
       "subtopic": "změna plánu a regulace",
@@ -3142,7 +3332,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 39,
       "questionText": "Který závěr je nejpřesnější, když žák píše velmi nečitelně, ale při ústním vysvětlení přesně propojuje pojmy a příklady?",
-      "options": [],
+      "options": {
+        "A": "Nečitelný rukopis sám o sobě nedokazuje slabé porozumění, proto ale není vhodné rozvíjet psanou podobu práce.",
+        "B": "Nečitelný rukopis sám o sobě nedokazuje slabé porozumění, proto jde jistě o problém sluchu, a to i při zohlednění popsaných okolností.",
+        "C": "Nečitelný rukopis sám o sobě nedokazuje slabé porozumění, proto je nejsprávnější hodnotit jen ústní výkon.",
+        "D": "Nečitelný rukopis sám o sobě nedokazuje slabé porozumění; může jít hlavně o bariéru formy výkonu."
+      },
       "correctOptionText": "Nečitelný rukopis sám o sobě nedokazuje slabé porozumění; může jít hlavně o bariéru formy výkonu.",
       "discipline": "grafomotorika × rukopis",
       "subtopic": "rukopis vs porozumění",
@@ -3223,7 +3418,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 40,
       "questionText": "Žák působí velmi nadaně v úzké odborné oblasti, ale mimo ni selhává v organizaci, sociálním porozumění a běžném školním fungování. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Vysoce rozvinutá dílčí silná stránka může maskovat významnou bariéru v jiných funkčních oblastech.",
+        "B": "Vysoce rozvinutá dílčí silná stránka může maskovat bariéru, proto ale podpora ztrácí smysl, a to v tomto typu rozlišení.",
+        "C": "Vysoce rozvinutá dílčí silná stránka může maskovat bariéru, proto je nejlepší sledovat jen výkon v silné oblasti.",
+        "D": "Vysoce rozvinutá dílčí silná stránka může maskovat bariéru, proto jde vždy o problém motivace, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Vysoce rozvinutá dílčí silná stránka může maskovat významnou bariéru v jiných funkčních oblastech.",
       "discipline": "nadání × maskovaná bariéra",
       "subtopic": "úzká silná stránka a širší fungování",
@@ -3304,7 +3504,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 41,
       "questionText": "Dítě má nepřesnou artikulaci, ale porozumění, sociální kontakt i práce s významem jsou přiměřené. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Nápadná může být izolovanější mluvní forma, proto ale jde vždy hlavně o sluchovou vadu, a to v dané situaci, a to v popsané situaci.",
+        "B": "Nápadná může být izolovanější mluvní forma, nikoli automaticky širší sociálně-komunikační nebo kognitivní deficit.",
+        "C": "Nápadná může být izolovanější mluvní forma, proto je nejpřesnější uvažovat hlavně o PAS, a to v uvedeném kontextu.",
+        "D": "Nápadná může být izolovanější mluvní forma, proto se tím potvrzuje globální mentální oslabení, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Nápadná může být izolovanější mluvní forma, nikoli automaticky širší sociálně-komunikační nebo kognitivní deficit.",
       "discipline": "logopedie × izolovaná forma řeči",
       "subtopic": "artikulace bez širšího oslabení",
@@ -3385,7 +3590,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 42,
       "questionText": "Který princip je při plánování podpory odborně nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Podpora má vycházet z konkrétního funkčního dopadu, proto ale není třeba sledovat průběžné změny situace.",
+        "B": "Podpora má vycházet z konkrétního funkčního dopadu, proto diagnóza nemá vůbec žádný význam, a to i při zohlednění popsaných okolností.",
+        "C": "Podpora má vycházet z konkrétního funkčního dopadu obtíže v daných podmínkách, ne jen z názvu kategorie.",
+        "D": "Podpora má vycházet z konkrétního funkčního dopadu, proto je nejlepší používat u stejné kategorie stejné balíčky podpory."
+      },
       "correctOptionText": "Podpora má vycházet z konkrétního funkčního dopadu obtíže v daných podmínkách, ne jen z názvu kategorie.",
       "discipline": "speciální pedagogika × funkční plánování podpory",
       "subtopic": "funkční dopad a podpůrný princip",
@@ -3464,7 +3674,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 43,
       "questionText": "Žákův hlas se po malé zátěži rychle unaví a s delším mluvením klesá srozumitelnost, zatímco porozumění řeči zůstává dobré. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Těžiště může být ve hlasovém a produkčním výkonu, proto ale jde vždy hlavně o sluchové postižení.",
+        "B": "Těžiště může být ve hlasovém a produkčním výkonu, proto je nejlepší omezit veškerou komunikaci.",
+        "C": "Těžiště může být ve hlasovém a produkčním výkonu, proto se tím potvrzuje globální jazyková neschopnost.",
+        "D": "Těžiště může být ve hlasovém a produkčním výkonu, ne v porozumění sdělení samotnému."
+      },
       "correctOptionText": "Těžiště může být ve hlasovém a produkčním výkonu, ne v porozumění sdělení samotnému.",
       "discipline": "logopedie × hlasový výkon",
       "subtopic": "hlasová únava vs porozumění",
@@ -3545,7 +3760,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 44,
       "questionText": "Učitel mluví při psaní na tabuli zády ke třídě a žák pak ztrácí část instrukce, ačkoli v jiných situacích látce rozumí. Co je nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Problém může vznikat v komunikačních podmínkách předávání informace, ne nutně v chápání učiva.",
+        "B": "Problém může vznikat v komunikačních podmínkách, proto ale není vhodné využívat ústní instrukce vůbec.",
+        "C": "Problém může vznikat v komunikačních podmínkách, proto jde hlavně o nezájem žáka poslouchat, a to v uvedeném kontextu.",
+        "D": "Problém může vznikat v komunikačních podmínkách, proto se tím automaticky potvrzuje slabý intelekt."
+      },
       "correctOptionText": "Problém může vznikat v komunikačních podmínkách předávání informace, ne nutně v chápání učiva.",
       "discipline": "sluchové podmínky × předávání instrukce",
       "subtopic": "mluvení bez vizuální opory",
@@ -3626,7 +3846,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 45,
       "questionText": "Který závěr je nejpřesnější, když žák řeší přesně, ale potřebuje delší čas na dokončení?",
-      "options": [],
+      "options": {
+        "A": "Pomalé tempo může měnit podobu výkonu, proto ale je nejlepší hodnotit jen rychlost jako hlavní ukazatel.",
+        "B": "Pomalé tempo může měnit podobu výkonu, proto jde vždy hlavně o neochotu pracovat, a to i při zohlednění popsaných okolností.",
+        "C": "Pomalé tempo může měnit podobu výkonu, aniž by samo dokazovalo slabé porozumění nebo nízké nároky.",
+        "D": "Pomalé tempo může měnit podobu výkonu, proto se tím automaticky potvrzuje intelektový deficit, a to v popsané situaci."
+      },
       "correctOptionText": "Pomalé tempo může měnit podobu výkonu, aniž by samo dokazovalo slabé porozumění nebo nízké nároky.",
       "discipline": "tempo výkonu × přesnost řešení",
       "subtopic": "delší čas při zachované přesnosti",
@@ -3707,7 +3932,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 46,
       "questionText": "Dítě zvládá práci ve třídě, ale výrazně se vyhýbá chodbám, schodištím a nepřehledným přesunům. Co je v této situaci nejpřesnější vysvětlení?",
-      "options": [],
+      "options": {
+        "A": "Potíž může souviset s bariérou v orientaci a pohybu, proto ale nejde o oblast školní podpory, a to v uvedeném kontextu.",
+        "B": "Potíž může souviset s bariérou v orientaci a bezpečném pohybu v prostoru, ne v samotném učebním obsahu.",
+        "C": "Potíž může souviset s bariérou v orientaci a pohybu, proto jde hlavně o poruchu chování, a to právě v uvedeném rámci.",
+        "D": "Potíž může souviset s bariérou v orientaci a pohybu, proto se tím potvrzuje slabé čtenářské porozumění."
+      },
       "correctOptionText": "Potíž může souviset s bariérou v orientaci a bezpečném pohybu v prostoru, ne v samotném učebním obsahu.",
       "discipline": "orientace a mobilita × pohyb po škole",
       "subtopic": "chodby, schodiště a přesuny",
@@ -3788,7 +4018,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 47,
       "questionText": "Žák doslovně chápe instrukce, obtížně odhaduje nevyslovené sociální pravidlo a hůře opravuje komunikační nedorozumění. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Těžiště může být spíše v sociálně-pragmatickém porozumění, proto ale jde vždy hlavně o artikulační problém.",
+        "B": "Těžiště může být spíše v sociálně-pragmatickém porozumění, proto je nejlepší sledovat jen formální správnost řeči.",
+        "C": "Těžiště může být spíše v sociálně-pragmatickém porozumění, proto se automaticky potvrzuje sluchová vada.",
+        "D": "Těžiště může být spíše v sociálně-pragmatickém porozumění a flexibilitě než ve slovní zásobě samotné."
+      },
       "correctOptionText": "Těžiště může být spíše v sociálně-pragmatickém porozumění a flexibilitě než ve slovní zásobě samotné.",
       "discipline": "PAS × pragmatické porozumění",
       "subtopic": "doslovnost a implicitní pravidla",
@@ -3869,7 +4104,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 48,
       "questionText": "Vizuálně přehlcený pracovní list vede k vynechávkám a ztrátě řádku, zatímco přehledně upravená předloha výkon stabilizuje. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Náročnost může ležet v organizaci vizuálního pole a přístupu k informaci, ne v obsahu samotném.",
+        "B": "Náročnost může ležet v organizaci vizuálního pole, proto ale není vhodné pracovat s textem vůbec.",
+        "C": "Náročnost může ležet v organizaci vizuálního pole, proto jde hlavně o lenost při soustředění, a to v dané situaci.",
+        "D": "Náročnost může ležet v organizaci vizuálního pole, proto je nejpřesnější automaticky snižovat učivo."
+      },
       "correctOptionText": "Náročnost může ležet v organizaci vizuálního pole a přístupu k informaci, ne v obsahu samotném.",
       "discipline": "zrakové vnímání × organizace vizuálního pole",
       "subtopic": "přehlcený list a ztráta řádku",
@@ -3950,7 +4190,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 49,
       "questionText": "Který závěr je nejpřesnější o vztahu diagnózy a školního dopadu obtíže?",
-      "options": [],
+      "options": {
+        "A": "Školní dopad se může měnit podle úkolu, prostředí a zátěže, proto diagnóza nemá pro odborné uvažování žádný význam.",
+        "B": "Školní dopad se může měnit podle úkolu, prostředí a zátěže, proto podpora nemá vycházet jen z názvu diagnózy.",
+        "C": "Školní dopad se může měnit podle úkolu, prostředí a zátěže, proto je nejbezpečnější zachovat pro všechny stejné podmínky.",
+        "D": "Školní dopad se může měnit podle úkolu, prostředí a zátěže, proto je nejlepší sledovat jen jednorázový výkon v testu."
+      },
       "correctOptionText": "Školní dopad se může měnit podle úkolu, prostředí a zátěže, proto podpora nemá vycházet jen z názvu diagnózy.",
       "discipline": "diagnóza × funkční dopad ve škole",
       "subtopic": "úkol, prostředí a zátěž",
@@ -4032,7 +4277,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátké profily a přesná rozlišení: kanál přístupu k informaci, forma výkonu, hlavní bariéra a sekundární projevy.",
       "questionNumber": 50,
       "questionText": "Žák má velmi silné verbální uvažování, ale výrazně slabší samostatnost v praktickém a motorickém fungování. Které vysvětlení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Výrazná verbální síla sama nevylučuje podstatnou bariéru v motoricko-adaptivním fungování.",
+        "B": "Výrazná verbální síla sama nevylučuje bariéru, proto ale praktické fungování není pro podporu důležité.",
+        "C": "Výrazná verbální síla sama nevylučuje bariéru, proto je nejlepší ignorovat odlišnost mezi oblastmi výkonu.",
+        "D": "Výrazná verbální síla sama nevylučuje bariéru, proto jde jistě hlavně o neochotu být samostatný."
+      },
       "correctOptionText": "Výrazná verbální síla sama nevylučuje podstatnou bariéru v motoricko-adaptivním fungování.",
       "discipline": "adaptivní fungování × nerovnoměrný profil",
       "subtopic": "verbální síla vs praktická samostatnost",
@@ -4113,7 +4363,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 1,
       "questionText": "Žák rozumí čtenému zadání, ale při rychlé řeči z větší vzdálenosti ztrácí obsah. Co je přesnější?",
-      "options": [],
+      "options": {
+        "A": "Těžiště je spíše v artikulační nepřesnosti než v přístupu k informaci, a to v dané situaci.",
+        "B": "Těžiště je spíše v přístupu k mluvené informaci než v samotné produkci řeči.",
+        "C": "Těžiště je spíše ve slabé slovní zásobě než v komunikačních podmínkách, a to v popsané situaci.",
+        "D": "Těžiště je spíše v tempu zápisu než v auditivním vstupu, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Těžiště je spíše v přístupu k mluvené informaci než v samotné produkci řeči.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "čtené zadání vs rychlá řeč na vzdálenost",
@@ -4192,7 +4447,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 2,
       "questionText": "Dítě vynechává hlásky v řeči, ale obsahu sdělení rozumí i v běžných podmínkách. Který rámec je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je surdopedický rámec přístupu k obsahu než logopedický rámec produkce řeči.",
+        "B": "Bližší je etopedický výklad odporu k řečové zátěži než logopedický rámec produkce, a to i při zohlednění popsaných okolností.",
+        "C": "Bližší je psychopedický rámec slabšího porozumění než logopedický rámec produkce, a to v dané situaci.",
+        "D": "Bližší je logopedický rámec produkce řeči než surdopedický rámec přístupu k obsahu."
+      },
       "correctOptionText": "Bližší je logopedický rámec produkce řeči než surdopedický rámec přístupu k obsahu.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "vynechávání hlásek při zachovaném porozumění",
@@ -4271,7 +4531,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 3,
       "questionText": "Při diktátu žák selhává hlavně v zachycení slyšeného, při opisování výkon drží. Co je těžiště?",
-      "options": [],
+      "options": {
+        "A": "Těžiště je spíše v zachycení auditivně podané informace než v grafické podobě výkonu.",
+        "B": "Těžiště je spíše v jemné motorice než v zachycení auditivně podané informace, a to v daném profilu.",
+        "C": "Těžiště je spíše v artikulačním provedení než v auditivním vstupu, a to právě v uvedeném rámci.",
+        "D": "Těžiště je spíše v pravopisném pravidle než v modalitě zadání, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Těžiště je spíše v zachycení auditivně podané informace než v grafické podobě výkonu.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "diktát vs opis",
@@ -4350,7 +4615,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 4,
       "questionText": "Obtíž přetrvává i při vizuální opoře; řeč je málo srozumitelná i v klidném individuálním rozhovoru. Co je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je surdopedický rámec přístupu k výkladu než logopedický rámec produkce, a to v dané situaci.",
+        "B": "Bližší je psychopedický rámec globálního porozumění než logopedický rámec produkce, a to v tomto typu rozlišení.",
+        "C": "Bližší je logopedický rámec produkce řeči než surdopedický rámec přístupu k výkladu.",
+        "D": "Bližší je logopedický rámec dysfluence než surdopedický rámec hluku, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Bližší je logopedický rámec produkce řeči než surdopedický rámec přístupu k výkladu.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "nízká srozumitelnost i při vizuální opoře",
@@ -4429,7 +4699,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 5,
       "questionText": "Žák využívá odezírání, titulky a psanou oporu; výslovnost má přitom dobře srozumitelnou. Co je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Nejpřesnější je posuzovat situaci podle kvality artikulace, ne podle dostupnosti sdělení, a to právě v uvedeném rámci.",
+        "B": "Nejpřesnější je posuzovat situaci podle dostupnosti mluveného sdělení, ne podle kvality artikulace.",
+        "C": "Nejpřesnější je posuzovat situaci podle slovní zásoby, ne podle modality vstupu, a to v dané situaci.",
+        "D": "Nejpřesnější je posuzovat situaci podle motoriky mluvidel, ne podle komunikačních podmínek, a to v daných podmínkách."
+      },
       "correctOptionText": "Nejpřesnější je posuzovat situaci podle dostupnosti mluveného sdělení, ne podle kvality artikulace.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "odezírání a psaná opora při srozumitelné řeči",
@@ -4508,7 +4783,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 6,
       "questionText": "Který znak ukazuje spíše k logopedickému než k surdopedickému rámci?",
-      "options": [],
+      "options": {
+        "A": "Nepřesná artikulace přetrvává i tehdy, když je sdělení dobře dostupné a srozumitelně předané.",
+        "B": "Porozumění kolísá hlavně při hluku, vzdálenosti a bez vizuální opory, a to v tomto typu rozlišení.",
+        "C": "Výkon se zhoršuje zejména při rychlém výkladu z druhé strany třídy, a to právě v uvedeném rámci.",
+        "D": "Obsah se stabilizuje po zpřehlednění auditivního vstupu a po snížení hluku ve třídě, a to v uvedeném rámci."
+      },
       "correctOptionText": "Nepřesná artikulace přetrvává i tehdy, když je sdělení dobře dostupné a srozumitelně předané.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "znaky logopedického těžiště",
@@ -4587,7 +4867,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 7,
       "questionText": "Který znak ukazuje spíše k surdopedickému než k logopedickému rámci?",
-      "options": [],
+      "options": {
+        "A": "Potřeba menšího hluku a přímé vizuální opory pro porozumění sdělení.",
+        "B": "Stálé obtíže s oromotorickým nastavením hlásek při zachovaném přístupu k obsahu.",
+        "C": "Snížená plynulost řeči bez vazby na komunikační podmínky, a to v uvedeném kontextu.",
+        "D": "Nepřesná výslovnost zůstává stejná bez ohledu na hluk a vzdálenost."
+      },
       "correctOptionText": "Nepřesná výslovnost zůstává stejná bez ohledu na hluk a vzdálenost.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "znaky surdopedického těžiště",
@@ -4666,7 +4951,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 8,
       "questionText": "Dítě mluví plynule, ale v kruhu vrstevníků ztrácí tok hovoru bez vizuální opory. Co je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je logopedický rámec plynulosti než surdopedický rámec dostupnosti toku řeči.",
+        "B": "Bližší je psychopedický rámec porozumění sociálním pravidlům než problém v dostupnosti řeči.",
+        "C": "Bližší je surdopedický rámec dostupnosti toku řeči než logopedický rámec plynulosti.",
+        "D": "Bližší je etopedický výklad neochoty vstupovat do hovoru než problém v dostupnosti řeči."
+      },
       "correctOptionText": "Bližší je surdopedický rámec dostupnosti toku řeči než logopedický rámec plynulosti.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "tok hovoru ve skupině",
@@ -4745,7 +5035,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 9,
       "questionText": "Dítě má oromotorické potíže, ale na slyšené podněty reaguje přesně i v různých podmínkách. Co je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je surdopedický rámec přístupu k informaci než logopedický rámec oromotoriky, a to v popsané situaci.",
+        "B": "Bližší je logopedický rámec oromotorické produkce než surdopedický rámec přístupu k informaci.",
+        "C": "Bližší je tyflopedický rámec smyslové zátěže než logopedický rámec oromotoriky, a to právě v uvedeném rámci.",
+        "D": "Bližší je psychopedický rámec globálního oslabení než logopedický rámec oromotoriky, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Bližší je logopedický rámec oromotorické produkce než surdopedický rámec přístupu k informaci.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "oromotorika při zachovaném porozumění",
@@ -4824,7 +5119,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 10,
       "questionText": "Které pedagogické opatření je nejvíce vázáno na zpřístupnění mluvené informace, ne na nácvik výslovnosti?",
-      "options": [],
+      "options": {
+        "A": "Snížení hluku, přímý kontakt tváří a stabilní vizuální opora při instrukci.",
+        "B": "Nácvik přesného tvoření hlásek a práce s motorikou mluvidel, a to v daném profilu.",
+        "C": "Procvičování rytmu řeči a artikulačních kontrastů, a to v uvedeném kontextu.",
+        "D": "Opakování izolovaných hlásek před zrcadlem, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
+      },
       "correctOptionText": "Snížení hluku, přímý kontakt tváří a stabilní vizuální opora při instrukci.",
       "discipline": "logopedie × surdopedie × komunikační přístupnost",
       "subtopic": "opatření pro zpřístupnění mluvené informace",
@@ -4903,7 +5203,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 11,
       "questionText": "Který znak posouvá interpretaci blíže k psychopedii než k izolované školní neúspěšnosti?",
-      "options": [],
+      "options": {
+        "A": "Výraznější potíže jen v jednom školním předmětu při jinak dobrém fungování.",
+        "B": "Výraznější kolísání výkonu podle motivace a náročnosti učiva, a to i při zohlednění popsaných okolností.",
+        "C": "Výraznější obtíže pouze v psaném projevu při zachované samostatnosti.",
+        "D": "Výraznější omezení v adaptivním fungování i mimo školní výkon."
+      },
       "correctOptionText": "Výraznější omezení v adaptivním fungování i mimo školní výkon.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "adaptivní fungování mimo školu",
@@ -4982,7 +5287,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 12,
       "questionText": "Dítě má slabší školní výkon, ale v běžném fungování je samostatné, plánuje a sociálně se orientuje přiměřeně. Co je přesnější?",
-      "options": [],
+      "options": {
+        "A": "Samotný slabší školní výkon bez širšího dopadu psychopedický rámec přímo potvrzuje, a to v tomto typu rozlišení.",
+        "B": "Samotný slabší školní výkon ukazuje hlavně na surdopedický rámec, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "Samotný slabší školní výkon bez širšího adaptivního dopadu ještě psychopedický rámec nepotvrzuje.",
+        "D": "Samotný slabší školní výkon ukazuje hlavně na etopedický rámec, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Samotný slabší školní výkon bez širšího adaptivního dopadu ještě psychopedický rámec nepotvrzuje.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "školní výkon při přiměřené samostatnosti",
@@ -5061,7 +5371,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 13,
       "questionText": "Které vymezení je pro psychopedický rámec nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Rozhoduje především jedna školní známka v klíčovém předmětu a její aktuální zhoršení, a to v daných podmínkách.",
+        "B": "Rozhoduje širší obraz porozumění, úsudku a adaptivního fungování, ne jediný testový výkon.",
+        "C": "Rozhoduje především kvalita grafomotoriky v časovém tlaku a rychlost zápisu, a to v uvedeném kontextu.",
+        "D": "Rozhoduje především ochota dítěte spolupracovat v první hodině a při prvním dojmu, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Rozhoduje širší obraz porozumění, úsudku a adaptivního fungování, ne jediný testový výkon.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "co rozhoduje pro psychopedický rámec",
@@ -5140,7 +5455,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 14,
       "questionText": "Žák má v jedné úzce vymezené oblasti překvapivě dobrý výkon, ale v běžném rozhodování je velmi závislý na vedení. Co je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Ostrůvkový dobrý výkon psychopedický rámec sám o sobě nevylučuje.",
+        "B": "Ostrůvkový dobrý výkon psychopedický rámec automaticky vylučuje, a to v uvedeném rámci.",
+        "C": "Ostrůvkový dobrý výkon automaticky potvrzuje PAS, a to v dané situaci.",
+        "D": "Ostrůvkový dobrý výkon automaticky potvrzuje logopedickou obtíž, a to v popsané situaci."
+      },
       "correctOptionText": "Ostrůvkový dobrý výkon psychopedický rámec sám o sobě nevylučuje.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "ostrůvkový výkon vs závislost na vedení",
@@ -5219,7 +5539,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 15,
       "questionText": "Která situace je bližší širšímu vývojovému zpoždění bez jasného psychopedického závěru?",
-      "options": [],
+      "options": {
+        "A": "Vývoj je nerovnoměrný a každodenní samostatnost i úsudek jsou výrazně omezené, a to v uvedeném kontextu.",
+        "B": "Vývoj je nerovnoměrný a přístup k mluvenému sdělení je zřetelně zhoršený, a to v tomto typu rozlišení.",
+        "C": "Vývoj je nerovnoměrný, ale každodenní samostatnost a sociální úsudek zůstávají poměrně zachované.",
+        "D": "Vývoj je nerovnoměrný a artikulace je málo srozumitelná v individuálním hovoru, a to v popsané situaci."
+      },
       "correctOptionText": "Vývoj je nerovnoměrný, ale každodenní samostatnost a sociální úsudek zůstávají poměrně zachované.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "nerovnoměrný vývoj při zachované adaptaci",
@@ -5298,7 +5623,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 16,
       "questionText": "Když je třeba rozlišit psychopedii a jazykovou bariéru, co rozhoduje nejvíce?",
-      "options": [],
+      "options": {
+        "A": "To, zda dítě v prvních týdnech nerozumí odborným výrazům v češtině, i když jinak funguje samostatně.",
+        "B": "To, zda je ve třídě spíše tiché a méně iniciativní, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "To, zda pomaleji opisuje z tabule, a to v uvedeném kontextu, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "D": "To, zda se obtíže promítají i do širšího porozumění, úsudku a samostatnosti mimo jazykový vstup."
+      },
       "correctOptionText": "To, zda se obtíže promítají i do širšího porozumění, úsudku a samostatnosti mimo jazykový vstup.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "psychopedie vs jazyková bariéra",
@@ -5377,7 +5707,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 17,
       "questionText": "U žáka jsou výrazně slabé abstrakce, sociální úsudek i plánování běžných kroků mimo školu. Co je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je psychopedický rámec širšího fungování než výklad založený jen na izolované školní obtíži.",
+        "B": "Bližší je výklad založený jen na izolované školní obtíži než psychopedický rámec širšího fungování.",
+        "C": "Bližší je logopedický rámec výslovnosti než psychopedický rámec širšího fungování, a to v dané situaci.",
+        "D": "Bližší je tyflopedický rámec orientace než psychopedický rámec širšího fungování, a to v popsané situaci."
+      },
       "correctOptionText": "Bližší je psychopedický rámec širšího fungování než výklad založený jen na izolované školní obtíži.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "abstrakce a plánování mimo školu",
@@ -5456,7 +5791,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 18,
       "questionText": "Samotné pomalejší tempo práce bez širšího dopadu na samostatnost ukazuje spíše na co?",
-      "options": [],
+      "options": {
+        "A": "Na jistý psychopedický závěr i bez širšího obrazu adaptivního fungování, a to v daném profilu.",
+        "B": "Na potřebu další diferenciace; samo o sobě nestačí k psychopedickému uzavření.",
+        "C": "Na jistý etopedický závěr i bez dalších údajů, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Na jistý PAS závěr i bez dalších údajů, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Na potřebu další diferenciace; samo o sobě nestačí k psychopedickému uzavření.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "tempo práce bez širšího dopadu",
@@ -5535,7 +5875,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 19,
       "questionText": "Které vyjádření nejlépe rozlišuje lehké intelektové oslabení od nerovnoměrného školního výkonu?",
-      "options": [],
+      "options": {
+        "A": "Rozhodující je hlavně počet chyb v diktátu, ne širší fungování, a to v dané situaci.",
+        "B": "Rozhodující je hlavně rychlost čtení nahlas, ne širší fungování, a to v popsané situaci.",
+        "C": "Rozhodující je hlavně obliba konkrétního učitele, ne širší fungování, a to v tomto typu rozlišení.",
+        "D": "Rozhodující je širší adaptivní fungování, ne jen mapa silných a slabých předmětů."
+      },
       "correctOptionText": "Rozhodující je širší adaptivní fungování, ne jen mapa silných a slabých předmětů.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "adaptivní fungování vs mapa předmětů",
@@ -5614,7 +5959,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 20,
       "questionText": "V běžných situacích je dítě zranitelné v penězích, čase, bezpečí a samostatném rozhodování, ale v některých úlohách překvapí dobrým výkonem. Co je přesnější?",
-      "options": [],
+      "options": {
+        "A": "Přesnější je přeceňovat jednotlivé ostrůvky výkonu než širší adaptivní fungování, a to v daných podmínkách.",
+        "B": "Přesnější je uzavřít situaci jen podle výsledku posledního testu, a to i při zohlednění popsaných okolností.",
+        "C": "Přesnější je sledovat širší adaptivní fungování než přeceňovat jednotlivé ostrůvky výkonu.",
+        "D": "Přesnější je uzavřít situaci jen podle kvality rukopisu, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "Přesnější je sledovat širší adaptivní fungování než přeceňovat jednotlivé ostrůvky výkonu.",
       "discipline": "psychopedie × širší vývojový rámec",
       "subtopic": "peníze čas bezpečí a ostrůvky výkonu",
@@ -5693,7 +6043,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 21,
       "questionText": "Doslovné chápání, zátěž změnou pravidel a potřeba vysoké předvídatelnosti ukazují spíše na co?",
-      "options": [],
+      "options": {
+        "A": "Na PAS rámec kvalitativní odlišnosti sociálně-komunikačního zpracování.",
+        "B": "Na primárně etopedický rámec záměrného porušování pravidel a vědomé provokace.",
+        "C": "Na primárně logopedický rámec tvorby hlásek, a to právě v uvedeném rámci.",
+        "D": "Na primárně somatopedický rámec motorického omezení, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Na PAS rámec kvalitativní odlišnosti sociálně-komunikačního zpracování.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "doslovnost a předvídatelnost",
@@ -5772,7 +6127,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 22,
       "questionText": "Dítě komunikuje přehledně, ale při nepřesných instrukcích a chaotickém prostředí se výkon rozpadá. Co je přesnější?",
-      "options": [],
+      "options": {
+        "A": "Přesnější je automaticky uzavírat PAS než hledat bariéru v prostředí, a to v dané situaci.",
+        "B": "Přesnější je uzavírat logopedickou poruchu výslovnosti než hledat bariéru v prostředí.",
+        "C": "Přesnější je uzavírat psychopedické oslabení než hledat bariéru v prostředí, a to v uvedeném kontextu.",
+        "D": "Přesnější je hledat bariéru v nepřístupném prostředí než automaticky uzavírat PAS."
+      },
       "correctOptionText": "Přesnější je hledat bariéru v nepřístupném prostředí než automaticky uzavírat PAS.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "chaotické prostředí a nepřesné instrukce",
@@ -5851,7 +6211,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 23,
       "questionText": "Který znak sám o sobě pro PAS nestačí?",
-      "options": [],
+      "options": {
+        "A": "Současné doslovné chápání, potíž s reciproční komunikací a silná zátěž změnou, a to právě v uvedeném rámci.",
+        "B": "Samotná obliba samostatné práce bez dalších kvalitativních znaků komunikace a reciprocity.",
+        "C": "Trvalejší odlišnost v porozumění nepřímým pravidlům a neverbálním signálům, a to v dané situaci.",
+        "D": "Výrazná potřeba předvídatelnosti spolu s kvalitativními obtížemi sociální komunikace, a to v uvedeném rámci."
+      },
       "correctOptionText": "Samotná obliba samostatné práce bez dalších kvalitativních znaků komunikace a reciprocity.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "co samo o sobě nestačí pro PAS",
@@ -5930,7 +6295,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 24,
       "questionText": "Když vizualizace a jasná struktura výrazně stabilizují výkon, co je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Ukazuje to hlavně na jistý PAS závěr bez potřeby další diferenciace, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Ukazuje to hlavně na logopedickou poruchu výslovnosti bez další diferenciace, a to v popsané situaci.",
+        "C": "Ukazuje to hlavně na význam zpřístupnění komunikace a prostředí; samo o sobě to PAS nedokazuje.",
+        "D": "Ukazuje to hlavně na psychopedický závěr bez potřeby širšího obrazu, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Ukazuje to hlavně na význam zpřístupnění komunikace a prostředí; samo o sobě to PAS nedokazuje.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "efekt vizualizace a struktury",
@@ -6009,7 +6379,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 25,
       "questionText": "Rigidita se objevila až po období dlouhého stresu, dříve bez nápadných kvalitativních zvláštností komunikace. Co je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je posuzovat současný stav přes stresovou a situační zátěž než automaticky přes PAS.",
+        "B": "Bližší je posuzovat současný stav automaticky přes PAS než přes stresovou zátěž, a to v popsané situaci.",
+        "C": "Bližší je posuzovat současný stav automaticky přes logopedii než přes stresovou zátěž, a to v uvedeném kontextu.",
+        "D": "Bližší je posuzovat současný stav automaticky přes surdopedii než přes stresovou zátěž, a to v daném profilu."
+      },
       "correctOptionText": "Bližší je posuzovat současný stav přes stresovou a situační zátěž než automaticky přes PAS.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "rigidita po dlouhém stresu",
@@ -6088,7 +6463,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 26,
       "questionText": "Která kombinace znaků ukazuje k PAS přesněji než k pouhé nepřístupnosti prostředí?",
-      "options": [],
+      "options": {
+        "A": "Chaotická třída, rychlé instrukce a malá vizuální opora v jedné konkrétní hodině, a to v tomto typu rozlišení.",
+        "B": "Doslovnost, slabší porozumění nepřímým pravidlům a obtíž reciproční komunikace napříč situacemi.",
+        "C": "Vyšší hluk ve třídě a delší výklad od tabule v jedné hodině, a to v dané situaci, a to v popsané situaci.",
+        "D": "Jednorázové přetížení po změně rozvrhu bez dalšího vzorce, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "Doslovnost, slabší porozumění nepřímým pravidlům a obtíž reciproční komunikace napříč situacemi.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "kombinace znaků napříč situacemi",
@@ -6167,7 +6547,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 27,
       "questionText": "Opakované konflikty v kolektivu vznikají hlavně z doslovného chápání ironie a nepřímých pravidel. Co je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je etopedický výklad úmyslné provokace než sociálně-komunikační rámec PAS.",
+        "B": "Bližší je logopedický rámec výslovnosti než sociálně-komunikační rámec PAS, a to v tomto typu rozlišení.",
+        "C": "Bližší je somatopedický rámec motoriky než sociálně-komunikační rámec PAS, a to právě v uvedeném rámci.",
+        "D": "Bližší je sociálně-komunikační rámec PAS než etopedický výklad úmyslné provokace."
+      },
       "correctOptionText": "Bližší je sociálně-komunikační rámec PAS než etopedický výklad úmyslné provokace.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "ironie a nepřímá pravidla",
@@ -6246,7 +6631,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 28,
       "questionText": "Zhoršení při hluku a více mluvčích může u PAS souviset nejvíce s čím?",
-      "options": [],
+      "options": {
+        "A": "S jistou poruchou výslovnosti bez další souvislosti, a to v daných podmínkách.",
+        "B": "S jistou poruchou motoriky bez další souvislosti, a to v popsané situaci.",
+        "C": "S nárokem na zpracování více současných sociálně-komunikačních podnětů.",
+        "D": "S jistou zrakovou vadou bez další souvislosti, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "S nárokem na zpracování více současných sociálně-komunikačních podnětů.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "hluk a více mluvčích",
@@ -6325,7 +6715,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 29,
       "questionText": "Která podpora je diagnosticky nejméně specifická pro PAS, protože pomáhá i v jiných rámcích?",
-      "options": [],
+      "options": {
+        "A": "Rozlišení reciprocity a nepřímých pravidel v sociální komunikaci.",
+        "B": "Zpřehlednění instrukce a vizuální struktura prostředí.",
+        "C": "Mapování doslovného porozumění a reakce na změnu pravidel.",
+        "D": "Sledování kvalitativního průběhu sociální komunikace napříč situacemi."
+      },
       "correctOptionText": "Zpřehlednění instrukce a vizuální struktura prostředí.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "co není diagnosticky specifické",
@@ -6404,7 +6799,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 30,
       "questionText": "Když po zpřehlednění prostředí mizí většina problémů, co je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Je vhodné nejdřív hledat velký podíl bariéry v prostředí a komunikaci, ne spěchat k uzavření diagnózy.",
+        "B": "Je vhodné spěchat k uzavření diagnózy a pominout, že po zpřehlednění prostředí potíže slábnou, a to v uvedeném rámci.",
+        "C": "Je vhodné uzavřít logopedický rámec a prostředí neřešit, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Je vhodné uzavřít psychopedický rámec a prostředí neřešit, a to i při zohlednění popsaných okolností, a to v dané situaci."
+      },
       "correctOptionText": "Je vhodné nejdřív hledat velký podíl bariéry v prostředí a komunikaci, ne spěchat k uzavření diagnózy.",
       "discipline": "PAS × nepřístupná komunikace a prostředí",
       "subtopic": "úleva po zpřehlednění prostředí",
@@ -6483,7 +6883,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 31,
       "questionText": "Opakované odmítání práce po letech neúspěchu a veřejného zahanbování vyžaduje rozlišit hlavně co?",
-      "options": [],
+      "options": {
+        "A": "Primární etopedické uzavření od jakékoli školní podpory a od kontextu selhávání.",
+        "B": "Primární logopedické uzavření od sekundární obranné reakce, a to v popsané situaci.",
+        "C": "Primární surdopedické uzavření od sekundární obranné reakce, a to v uvedeném kontextu.",
+        "D": "Sekundární obrannou reakci na selhávání od primárního etopedického uzavření."
+      },
       "correctOptionText": "Sekundární obrannou reakci na selhávání od primárního etopedického uzavření.",
       "discipline": "etopedie × sekundární reakce na dlouhodobé selhávání",
       "subtopic": "obranná reakce po selhávání",
@@ -6562,7 +6967,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 32,
       "questionText": "Který znak svědčí více pro etopedický rámec než pro jednorázovou situační reakci?",
-      "options": [],
+      "options": {
+        "A": "Izolovaný konflikt po jedné mimořádně náročné události, a to právě v uvedeném rámci.",
+        "B": "Jednorázové odmítnutí úkolu po veřejném zahanbení, a to i při zohlednění popsaných okolností.",
+        "C": "Stabilnější vzorec porušování norem napříč prostředími a delším časem.",
+        "D": "Krátké zhoršení po změně režimu v jinak stabilním profilu, a to v popsané situaci."
+      },
       "correctOptionText": "Stabilnější vzorec porušování norem napříč prostředími a delším časem.",
       "discipline": "etopedie × sekundární reakce na dlouhodobé selhávání",
       "subtopic": "napříč prostředími a časem",
@@ -6641,7 +7051,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 33,
       "questionText": "Vzdor se objevuje hlavně v úlohách s vysokou pravděpodobností neúspěchu. Co je přesnější?",
-      "options": [],
+      "options": {
+        "A": "Přesnější je vykládat chování jako reakci na očekávané selhání než jako jistou disocialitu.",
+        "B": "Přesnější je vykládat chování jako jistou disocialitu než jako reakci na selhání, a to v tomto typu rozlišení.",
+        "C": "Přesnější je vykládat chování jako jistou poruchu sluchu než jako reakci na selhání, a to v daném profilu.",
+        "D": "Přesnější je vykládat chování jako jistou zrakovou vadu než jako reakci na selhání, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Přesnější je vykládat chování jako reakci na očekávané selhání než jako jistou disocialitu.",
       "discipline": "etopedie × sekundární reakce na dlouhodobé selhávání",
       "subtopic": "vzdor při očekávaném neúspěchu",
@@ -6720,7 +7135,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 34,
       "questionText": "Samotné porušení pravidla bez širšího kontextu neumožňuje co?",
-      "options": [],
+      "options": {
+        "A": "Neumožňuje odpovědně uzavřít surdopedický rámec bez další diferenciace.",
+        "B": "Neumožňuje odpovědně uzavřít etopedický rámec bez další diferenciace.",
+        "C": "Neumožňuje odpovědně uzavřít tyflopedický rámec bez další diferenciace.",
+        "D": "Neumožňuje odpovědně uzavřít logopedický rámec bez další diferenciace."
+      },
       "correctOptionText": "Neumožňuje odpovědně uzavřít etopedický rámec bez další diferenciace.",
       "discipline": "etopedie × sekundární reakce na dlouhodobé selhávání",
       "subtopic": "význam kontextu porušení pravidla",
@@ -6799,7 +7219,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 35,
       "questionText": "V bezpečném vztahu a předvídatelném režimu problémové chování výrazně slábne. Co je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Přesnější je vykládat chování jako neměnný rys a vztah neřešit, a to právě v uvedeném rámci.",
+        "B": "Přesnější je vykládat chování jako poruchu výslovnosti a vztah neřešit, a to v tomto typu rozlišení.",
+        "C": "Přesnější je sledovat podíl vztahu a prostředí než vykládat chování jako neměnný rys.",
+        "D": "Přesnější je vykládat chování jako zrakovou bariéru a vztah neřešit, a to v popsané situaci."
+      },
       "correctOptionText": "Přesnější je sledovat podíl vztahu a prostředí než vykládat chování jako neměnný rys.",
       "discipline": "etopedie × sekundární reakce na dlouhodobé selhávání",
       "subtopic": "vliv bezpečného vztahu a režimu",
@@ -6878,7 +7303,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 36,
       "questionText": "Na co je v etopedickém rámci nejdůležitější se zaměřit?",
-      "options": [],
+      "options": {
+        "A": "Jen počet přestupků bez ohledu na kontext a funkci chování, a to v daných podmínkách.",
+        "B": "Jen hlasitost projevu bez ohledu na kontext a trvání, a to v tomto typu rozlišení.",
+        "C": "Jen poslední konflikt bez ohledu na předchozí vývoj, a to právě v uvedeném rámci.",
+        "D": "Funkci chování, jeho trvání, kontext a odpověď na změnu podmínek."
+      },
       "correctOptionText": "Funkci chování, jeho trvání, kontext a odpověď na změnu podmínek.",
       "discipline": "etopedie × sekundární reakce na dlouhodobé selhávání",
       "subtopic": "co sledovat v etopedickém čtení",
@@ -6957,7 +7387,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 37,
       "questionText": "Po náhlé rodinné krizi se rychle objevují konflikty, dříve bez nápadných obtíží. Co je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je jisté etopedické uzavření než situační a zátěžová reakce.",
+        "B": "Bližší je situační a zátěžová reakce než jisté etopedické uzavření.",
+        "C": "Bližší je jisté PAS uzavření než situační a zátěžová reakce, a to v uvedeném kontextu.",
+        "D": "Bližší je jisté logopedické uzavření než situační a zátěžová reakce."
+      },
       "correctOptionText": "Bližší je situační a zátěžová reakce než jisté etopedické uzavření.",
       "discipline": "etopedie × sekundární reakce na dlouhodobé selhávání",
       "subtopic": "náhlá rodinná krize",
@@ -7036,7 +7471,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 38,
       "questionText": "Který znak posouvá výklad blíže k dlouhodobému etopedickému rámci?",
-      "options": [],
+      "options": {
+        "A": "Problémové chování je stabilní napříč situacemi a jen málo reaguje na změnu podpory.",
+        "B": "Problémové chování vzniká hlavně v jedné zátěžové hodině a jinde mizí, a to i při zohlednění popsaných okolností.",
+        "C": "Problémové chování souvisí hlavně s nejasnou instrukcí a po zpřehlednění slábne, a to v uvedeném rámci.",
+        "D": "Problémové chování vzniká jen při úlohách s drobnou artikulační zátěží, a to v popsané situaci."
+      },
       "correctOptionText": "Problémové chování je stabilní napříč situacemi a jen málo reaguje na změnu podpory.",
       "discipline": "etopedie × sekundární reakce na dlouhodobé selhávání",
       "subtopic": "stabilita napříč situacemi",
@@ -7115,7 +7555,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 39,
       "questionText": "Když problémové chování ustupuje po odstranění přetížení a po jasném vedení, co je přesnější?",
-      "options": [],
+      "options": {
+        "A": "Přesnější je spěchat k pevnému etopedickému závěru než zohlednit podíl situace, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Přesnější je spěchat k pevnému surdopedickému závěru a pominout podíl situace a regulace, a to v popsané situaci.",
+        "C": "Přesnější je zohlednit velký podíl situačního a regulačního faktoru než spěchat k pevnému etopedickému závěru.",
+        "D": "Přesnější je spěchat k pevnému tyflopedickému závěru než zohlednit podíl situace, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Přesnější je zohlednit velký podíl situačního a regulačního faktoru než spěchat k pevnému etopedickému závěru.",
       "discipline": "etopedie × sekundární reakce na dlouhodobé selhávání",
       "subtopic": "ústup po odstranění přetížení",
@@ -7194,7 +7639,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 40,
       "questionText": "Při rozlišení etopedie a PAS v sociálních konfliktech rozhoduje nejvíce co?",
-      "options": [],
+      "options": {
+        "A": "Zda je dítě v konfliktu spíše hlasité, nebo spíše tiché a uzavřené, a to v dané situaci, a to v popsané situaci.",
+        "B": "Zda dítě zvládá lépe konflikty ráno, nebo až v odpoledním školním režimu, a to v daném profilu.",
+        "C": "Zda píše rychleji fixem, nebo tužkou a na jakém typu papíru, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Zda jde hlavně o úmyslné porušování norem, nebo o odlišné porozumění sociální komunikaci."
+      },
       "correctOptionText": "Zda jde hlavně o úmyslné porušování norem, nebo o odlišné porozumění sociální komunikaci.",
       "discipline": "etopedie × PAS × sociální konflikt",
       "subtopic": "norma vs porozumění sociální komunikaci",
@@ -7273,7 +7723,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 41,
       "questionText": "Žák naráží do překážek hlavně za šera, jemná motorika je přiměřená. Co je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je tyflopedický rámec orientace závislé na zrakových podmínkách.",
+        "B": "Bližší je somatopedický rámec jemné motoriky a polohování, a to v tomto typu rozlišení.",
+        "C": "Bližší je čistě etopedický výklad nepozornosti v prostoru, a to v dané situaci.",
+        "D": "Bližší je logopedický rámec tempa řeči, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "Bližší je tyflopedický rámec orientace závislé na zrakových podmínkách.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "orientace za šera",
@@ -7352,7 +7807,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 42,
       "questionText": "Žák chápe prostorové vztahy, ale hlavní obtíž je v přesunu, úchopu a polohování. Co je bližší?",
-      "options": [],
+      "options": {
+        "A": "Bližší je tyflopedický rámec orientace závislé na zrakové ostrosti.",
+        "B": "Bližší je somatopedický rámec motorického a posturálního omezení.",
+        "C": "Bližší je psychopedický rámec sociálního úsudku, a to právě v uvedeném rámci.",
+        "D": "Bližší je surdopedický rámec přístupu k mluvené informaci, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Bližší je somatopedický rámec motorického a posturálního omezení.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "přesun úchop a polohování",
@@ -7431,7 +7891,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 43,
       "questionText": "Přístup k informaci je převážně hmatový a současně je omezena funkce rukou. Co je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Nejpřesnější je situaci zúžit jen na tyflopedický profil, a to v dané situaci.",
+        "B": "Nejpřesnější je situaci zúžit jen na somatopedický profil, a to v daných podmínkách.",
+        "C": "Nejpřesnější je uvažovat kombinovaný tyflopedicko-somatopedický profil.",
+        "D": "Nejpřesnější je situaci zúžit jen na etopedický profil, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Nejpřesnější je uvažovat kombinovaný tyflopedicko-somatopedický profil.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "hmatový přístup a omezená funkce rukou",
@@ -7510,7 +7975,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 44,
       "questionText": "Který znak ukazuje více k somatopedickému než k tyflopedickému rámci?",
-      "options": [],
+      "options": {
+        "A": "Závislost orientace na kontrastu, osvětlení a vzdálenosti, a to právě v uvedeném rámci.",
+        "B": "Závislost orientace na kontrastu, osvětlení a vzdálenosti při pohybu i čtení, a to v uvedeném rámci.",
+        "C": "Nejistota v prostoru hlavně při šeru a oslnění, a to v dané situaci, a to v popsané situaci.",
+        "D": "Zachovaný vizuální přístup k informaci při výrazné obtíži v polohování a manipulaci."
+      },
       "correctOptionText": "Zachovaný vizuální přístup k informaci při výrazné obtíži v polohování a manipulaci.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "somatopedický signál",
@@ -7589,7 +8059,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 45,
       "questionText": "Který znak ukazuje více k tyflopedickému než k somatopedickému rámci?",
-      "options": [],
+      "options": {
+        "A": "Závislost manipulace na držení těla, postuře a rozsahu pohybu, a to v uvedeném kontextu.",
+        "B": "Závislost orientace a čtení na osvětlení, kontrastu a vzdálenosti.",
+        "C": "Závislost přesunu na stabilitě sedu a motorickém plánování těla, a to v popsané situaci.",
+        "D": "Závislost úchopu na posturální opoře a nastavení pomůcek, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Závislost orientace a čtení na osvětlení, kontrastu a vzdálenosti.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "tyflopedický signál",
@@ -7668,7 +8143,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 46,
       "questionText": "Potřeba zvětšení, kontrastu a kontroly osvětlení ukazuje primárně na co?",
-      "options": [],
+      "options": {
+        "A": "Na tyflopedické řešení přístupu k vizuálně podané informaci.",
+        "B": "Na somatopedické řešení polohování a přesunu, a to v daném profilu.",
+        "C": "Na etopedické řešení pravidel a sankcí, a to v uvedeném kontextu.",
+        "D": "Na logopedické řešení tvorby hlásek, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Na tyflopedické řešení přístupu k vizuálně podané informaci.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "zvětšení kontrast a osvětlení",
@@ -7747,7 +8227,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 47,
       "questionText": "Potřeba stabilizace sedu, polohy a přesunu při zachovaném vizuálním přístupu ukazuje primárně na co?",
-      "options": [],
+      "options": {
+        "A": "Na tyflopedický rámec kontrastu a osvětlení, a to v tomto typu rozlišení.",
+        "B": "Na surdopedický rámec auditivního vstupu, a to i při zohlednění popsaných okolností.",
+        "C": "Na PAS rámec reciprocity a doslovnosti, a to v dané situaci.",
+        "D": "Na somatopedický rámec motorického a posturálního fungování."
+      },
       "correctOptionText": "Na somatopedický rámec motorického a posturálního fungování.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "stabilizace sedu a přesunu",
@@ -7826,7 +8311,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 48,
       "questionText": "Prostorová orientace kolísá podle světla a současně je manipulace zpomalená kvůli hybnosti rukou. Co je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Nejpřesnější je uzavřít jen tyflopedický rámec a motoriku neřešit, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Nejpřesnější je uzavřít jen somatopedický rámec a zrakové podmínky neřešit, a to v daných podmínkách.",
+        "C": "Nejpřesnější je chápat situaci jako propojený kombinovaný profil, ne uzavřít jen jeden rámec.",
+        "D": "Nejpřesnější je uzavřít jen etopedický rámec a přístup k informaci neřešit, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Nejpřesnější je chápat situaci jako propojený kombinovaný profil, ne uzavřít jen jeden rámec.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "světlo a hybnost rukou",
@@ -7905,7 +8395,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 49,
       "questionText": "Samotná únava při delším psaní bez zrakově podmíněné orientační bariéry míří spíše k čemu?",
-      "options": [],
+      "options": {
+        "A": "Spíše k somatopedickému nebo motorickému rámci než k tyflopedickému rámci orientace.",
+        "B": "Spíše k tyflopedickému rámci orientace než k somatopedickému nebo motorickému rámci.",
+        "C": "Spíše k PAS rámci reciprocity než k motorickému rámci, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Spíše k surdopedickému rámci hluku než k motorickému rámci, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Spíše k somatopedickému nebo motorickému rámci než k tyflopedickému rámci orientace.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "únava při psaní bez zrakové bariéry",
@@ -7984,7 +8479,12 @@ window.metadataExport = {
       "batterySubtitle": "Krátká a střední zadání zaměřená na přesné rozlišení sousedních odborných rámců bez dominance mikrokazuistik.",
       "questionNumber": 50,
       "questionText": "Které vyjádření nejlépe rozlišuje tyflopedický a somatopedický rámec?",
-      "options": [],
+      "options": {
+        "A": "Tyflopedie řeší hlavně polohu a přesun těla, somatopedie hlavně osvětlení a kontrast textu, a to právě v uvedeném rámci.",
+        "B": "Tyflopedie řeší hlavně přístup k vizuální informaci a orientaci, somatopedie hlavně polohu, přesun a manipulaci.",
+        "C": "Tyflopedie řeší hlavně auditivní vstup a hluk, somatopedie hlavně tvorbu hlásek a artikulaci, a to v uvedeném rámci.",
+        "D": "Tyflopedie řeší hlavně pravidla chování a sociální normy, somatopedie hlavně reciprocitu, a to v popsané situaci."
+      },
       "correctOptionText": "Tyflopedie řeší hlavně přístup k vizuální informaci a orientaci, somatopedie hlavně polohu, přesun a manipulaci.",
       "discipline": "tyflopedie × somatopedie × kombinovaný profil",
       "subtopic": "konceptové rozlišení oborů",
@@ -8066,7 +8566,7 @@ window.metadataExport = {
       "options": {
         "A": "Cílený nácvik oslabené funkce s ověřováním, zda se výkon skutečně zlepšuje.",
         "B": "Využití jiné cesty k výsledku bez očekávání přímého posílení oslabené funkce.",
-        "C": "Soubor zdravotnických výkonů zaměřených hlavně na léčbu základní diagnózy.",
+        "C": "Soubor zdravotnických výkonů zaměřených hlavně na léčbu základní diagnózy, a to v dané situaci.",
         "D": "Obecné zjednodušení úkolu, aby byl pro žáka méně zatěžující. v tomto pojetí."
       },
       "correctOptionText": "Cílený nácvik oslabené funkce s ověřováním, zda se výkon skutečně zlepšuje.",
@@ -8153,7 +8653,7 @@ window.metadataExport = {
       "questionNumber": 2,
       "questionText": "Které vymezení nejpřesněji odpovídá kompenzaci?",
       "options": {
-        "A": "Postupné odstraňování bariéry intenzivním procvičováním oslabené funkce až do její normalizace. v tomto pojetí.",
+        "A": "Postupné odstraňování bariéry intenzivním procvičováním oslabené funkce až do její normalizace. v tomto pojetí, a to v uvedeném kontextu.",
         "B": "Jednorázové snížení náročnosti úkolu bez vztahu k tomu, co bariéru skutečně způsobuje. v dané situaci. podle tohoto přístupu.",
         "C": "Využití náhradní strategie, pomůcky nebo jiného kanálu tak, aby bylo možné dosáhnout cíle i přes trvající bariéru.",
         "D": "Převedení podpory výhradně do zdravotnické péče mimo vzdělávací situace. v tomto typu úkolu. bez dalšího rozlišení."
@@ -8244,8 +8744,8 @@ window.metadataExport = {
       "options": {
         "A": "Žák chybuje v násobilce a potřebuje postupný nácvik početních spojů. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
         "B": "Žák rozumí obsahu, ale kvůli závažné zrakové bariéře potřebuje zvětšení, kontrast nebo audio přístup k textu.",
-        "C": "Žák má oslabené fonologické uvědomování a potřebuje systematický rozvoj této dovednosti. v tomto typu úkolu.",
-        "D": "Žák si osvojuje nové grafomotorické tahy a potřebuje přesný model a opakování. bez dalšího rozlišení."
+        "C": "Žák má oslabené fonologické uvědomování a potřebuje systematický rozvoj této dovednosti. v tomto typu úkolu, a to v uvedeném kontextu.",
+        "D": "Žák si osvojuje nové grafomotorické tahy a potřebuje přesný model a opakování. bez dalšího rozlišení, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Žák rozumí obsahu, ale kvůli závažné zrakové bariéře potřebuje zvětšení, kontrast nebo audio přístup k textu.",
       "discipline": "intervence a podpůrné postupy",
@@ -8329,8 +8829,8 @@ window.metadataExport = {
       "questionNumber": 4,
       "questionText": "Žák rozumí předčítanému textu, ale selhává u hustě vysázené stránky s drobným písmem. Které opatření míří nejpřesněji na bariéru?",
       "options": {
-        "A": "Intenzivní nácvik mluvnice, protože potíž je zjevně jazyková. v tomto pojetí. v dané situaci.",
-        "B": "Snížení obsahových nároků, protože čtení je pro žáka příliš složité. podle tohoto přístupu.",
+        "A": "Intenzivní nácvik mluvnice, protože potíž je zjevně jazyková. v tomto pojetí. v dané situaci, a to právě zde.",
+        "B": "Snížení obsahových nároků, protože čtení je pro žáka příliš složité. podle tohoto přístupu, a to i při zohlednění popsaných okolností.",
         "C": "Zákaz předčítání, aby bylo jasné, co žák zvládne bez jakékoli podpory. v tomto typu úkolu. bez dalšího rozlišení.",
         "D": "Úprava vizuální podoby textu a způsobu jeho zpřístupnění, ne automatický závěr o slabém porozumění."
       },
@@ -8418,9 +8918,9 @@ window.metadataExport = {
       "questionNumber": 5,
       "questionText": "Při zjišťování znalostí z dějepisu u žáka se závažnou dysgrafií je nejpřesnější postup:",
       "options": {
-        "A": "Trvat na ručním zápisu, protože změna formy by vždy znehodnotila srovnatelnost výsledku.",
+        "A": "Trvat na ručním zápisu, protože změna formy by vždy znehodnotila srovnatelnost výsledku, a to v uvedeném kontextu.",
         "B": "Zachovat obsahový cíl a upravit formu odpovědi tak, aby rukopis nebyl hlavní bariérou výkonu.",
-        "C": "Snížit množství učiva, protože dysgrafie znamená i nižší porozumění obsahu. v tomto pojetí.",
+        "C": "Snížit množství učiva, protože dysgrafie znamená i nižší porozumění obsahu. v tomto pojetí, a to právě v uvedeném rámci.",
         "D": "Hodnotit hlavně estetiku zápisu, protože ta nejlépe ukáže úroveň zvládnutí látky. v dané situaci."
       },
       "correctOptionText": "Zachovat obsahový cíl a upravit formu odpovědi tak, aby rukopis nebyl hlavní bariérou výkonu.",
@@ -8506,8 +9006,8 @@ window.metadataExport = {
       "questionText": "U žáka bez funkční mluvené řeči, který spolehlivě rozlišuje symboly a volí mezi nimi, je nejvhodnější těžiště podpory:",
       "options": {
         "A": "Zavést a systematicky rozvíjet multimodální AAK napříč výukou i běžnými situacemi.",
-        "B": "Čekat, zda se spontánně nerozvine mluvená řeč bez jiné komunikační podpory.",
-        "C": "Omezit komunikaci jen na jednoduché pokyny, aby se žák komunikačně nepřetěžoval.",
+        "B": "Čekat, zda se spontánně nerozvine mluvená řeč bez jiné komunikační podpory, a to v popsané situaci.",
+        "C": "Omezit komunikaci jen na jednoduché pokyny, aby se žák komunikačně nepřetěžoval, a to v uvedeném kontextu.",
         "D": "Soustředit se výhradně na motorický trénink ruky a komunikaci odložit. v tomto pojetí."
       },
       "correctOptionText": "Zavést a systematicky rozvíjet multimodální AAK napříč výukou i běžnými situacemi.",
@@ -8594,8 +9094,8 @@ window.metadataExport = {
       "questionNumber": 7,
       "questionText": "Které tvrzení o AAK je nejpřesnější?",
       "options": {
-        "A": "AAK je vhodná jen tehdy, když je jisté, že se mluvená řeč už nikdy nerozvine. v tomto pojetí. v dané situaci.",
-        "B": "AAK slouží hlavně ke zjednodušení výuky pro dospělé kolem dítěte. podle tohoto přístupu. v tomto typu úkolu.",
+        "A": "AAK je vhodná jen tehdy, když je jisté, že se mluvená řeč už nikdy nerozvine. v tomto pojetí. v dané situaci, a to právě zde.",
+        "B": "AAK slouží hlavně ke zjednodušení výuky pro dospělé kolem dítěte. podle tohoto přístupu. v tomto typu úkolu, a to i při zohlednění popsaných okolností.",
         "C": "AAK není jen náhradou řeči; je to prostředek funkčního porozumění a vyjadřování podle potřeb konkrétního uživatele.",
         "D": "AAK vždy nahrazuje všechny ostatní komunikační kanály jedním univerzálním systémem. bez dalšího rozlišení. v daném rámci práce."
       },
@@ -8858,10 +9358,10 @@ window.metadataExport = {
       "questionNumber": 10,
       "questionText": "U nedoslýchavého žáka při frontálním výkladu míří nejpřesněji k bariéře:",
       "options": {
-        "A": "Dodání hotových poznámek po hodině bez úpravy živé komunikace během výuky. v tomto pojetí.",
+        "A": "Dodání hotových poznámek po hodině bez úpravy živé komunikace během výuky. v tomto pojetí, a to právě v uvedeném rámci.",
         "B": "Zlepšení akustických a vizuálních podmínek komunikace a zajištění dostupného průběžného vstupu.",
         "C": "Přesun všech úkolů na domácí samostudium, protože výklad je pro žáka vždy nevhodný. v dané situaci.",
-        "D": "Požadavek, aby si žák vždy domyslel chybějící části sdělení z kontextu. podle tohoto přístupu."
+        "D": "Požadavek, aby si žák vždy domyslel chybějící části sdělení z kontextu. podle tohoto přístupu, a to v popsané situaci."
       },
       "correctOptionText": "Zlepšení akustických a vizuálních podmínek komunikace a zajištění dostupného průběžného vstupu.",
       "discipline": "sluchové postižení a komunikace",
@@ -8949,8 +9449,8 @@ window.metadataExport = {
       "options": {
         "A": "Upravit podmínky tak, aby žák měl co nejlepší přístup k mluvenému sdělení během vyučování.",
         "B": "Spoléhat hlavně na doplnění zápisu po hodině místo dostupné komunikace v průběhu výuky.",
-        "C": "Průběžně ověřovat porozumění důležitým informacím a přechodům mezi činnostmi.",
-        "D": "Pracovat s takovým uspořádáním třídy, které usnadní vizuální sledování komunikace."
+        "C": "Průběžně ověřovat porozumění důležitým informacím a přechodům mezi činnostmi, a to právě v uvedeném rámci.",
+        "D": "Pracovat s takovým uspořádáním třídy, které usnadní vizuální sledování komunikace, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Spoléhat hlavně na doplnění zápisu po hodině místo dostupné komunikace v průběhu výuky.",
       "discipline": "sluchové postižení a komunikace",
@@ -9037,9 +9537,9 @@ window.metadataExport = {
       "questionText": "Při práci s diagramem u nevidomého žáka je nejvhodnější:",
       "options": {
         "A": "Volit taktilní nebo jinak nehledové zpřístupnění informace místo prostého odkazu na vizuální schéma.",
-        "B": "Nechat schéma beze změny a očekávat, že slovní doplnění během práce bude stačit. v tomto pojetí.",
+        "B": "Nechat schéma beze změny a očekávat, že slovní doplnění během práce bude stačit. v tomto pojetí, a to v popsané situaci.",
         "C": "Úkol vyřadit, protože graficky podaná informace nemůže být nikdy přístupná. v dané situaci. podle tohoto přístupu.",
-        "D": "Snížit obsahovou náročnost úkolu bez ohledu na to, zda jde informaci zpřístupnit jinou cestou."
+        "D": "Snížit obsahovou náročnost úkolu bez ohledu na to, zda jde informaci zpřístupnit jinou cestou, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Volit taktilní nebo jinak nehledové zpřístupnění informace místo prostého odkazu na vizuální schéma.",
       "discipline": "zrakové postižení a přístupnost",
@@ -9125,10 +9625,10 @@ window.metadataExport = {
       "questionNumber": 13,
       "questionText": "U žáka se zbytky zraku a výraznou vizuální unavitelností bývá nejpřesnější první krok:",
       "options": {
-        "A": "Ponechat materiály stejné a prodlužovat čas bez dalších úprav vizuální podoby.",
+        "A": "Ponechat materiály stejné a prodlužovat čas bez dalších úprav vizuální podoby, a to právě v uvedeném rámci.",
         "B": "Převést všechny úkoly automaticky do Braillova písma bez ověření skutečného funkčního profilu.",
         "C": "Upravit kontrast, velikost, hustotu a rozvržení materiálu podle funkčního vidění žáka.",
-        "D": "Vyřadit práci s textem, protože zraková unavitelnost znamená nemožnost číst."
+        "D": "Vyřadit práci s textem, protože zraková unavitelnost znamená nemožnost číst, a to v popsané situaci."
       },
       "correctOptionText": "Upravit kontrast, velikost, hustotu a rozvržení materiálu podle funkčního vidění žáka.",
       "discipline": "zrakové postižení a přístupnost",
@@ -9214,7 +9714,7 @@ window.metadataExport = {
       "options": {
         "A": "Zpřehlednit sled kroků, očekávaný výstup a podmínky práce tak, aby byla situace čitelná a předvídatelná.",
         "B": "Přidat co nejvíce verbálních vysvětlení najednou, aby měl žák dost podnětů ke zpracování. v tomto pojetí.",
-        "C": "Střídat pravidla podle momentální situace, aby se žák učil flexibilitě bez opory. v dané situaci.",
+        "C": "Střídat pravidla podle momentální situace, aby se žák učil flexibilitě bez opory. v dané situaci, a to právě zde.",
         "D": "Vyhýbat se vizuální opoře, protože by na ní mohl být závislý. podle tohoto přístupu. v tomto typu úkolu."
       },
       "correctOptionText": "Zpřehlednit sled kroků, očekávaný výstup a podmínky práce tak, aby byla situace čitelná a předvídatelná.",
@@ -9301,7 +9801,7 @@ window.metadataExport = {
       "questionNumber": 15,
       "questionText": "Při náročných přechodech mezi činnostmi u žáka s PAS mívá nejvyšší oporu:",
       "options": {
-        "A": "Okamžité ukončení činnosti bez přípravy, aby si žák postupně zvykl na změny. v tomto pojetí.",
+        "A": "Okamžité ukončení činnosti bez přípravy, aby si žák postupně zvykl na změny. v tomto pojetí, a to v dané situaci.",
         "B": "Ponechání zcela otevřeného času, aby si žák mohl změnu odhadnout sám. v dané situaci. podle tohoto přístupu.",
         "C": "Předvídatelné oznámení změny a jasný přechodový rámec, ne improvizované přerušení bez signálu.",
         "D": "Nahrazení všech přechodů slovní improvizací bez stálých orientačních opor. v tomto typu úkolu."
@@ -9389,7 +9889,7 @@ window.metadataExport = {
       "questionText": "Žák se při hluku rychle přetíží a přestává spolupracovat. Který další krok je nejpřesnější?",
       "options": {
         "A": "Upravit senzorickou a organizační zátěž prostředí a sledovat, zda se tím mění průběh výkonu.",
-        "B": "Vyložit situaci hlavně jako neochotu plnit pokyny a zvýšit tlak na okamžitou poslušnost.",
+        "B": "Vyložit situaci hlavně jako neochotu plnit pokyny a zvýšit tlak na okamžitou poslušnost, a to i při zohlednění popsaných okolností.",
         "C": "Přidat další podněty, aby si žák na hluk a změť vjemů postupně zvykl bez podpory. v tomto pojetí.",
         "D": "Zcela rezignovat na náročnější činnosti, protože přetížení vždy znemožní učení. v dané situaci."
       },
@@ -9475,8 +9975,8 @@ window.metadataExport = {
       "questionNumber": 17,
       "questionText": "U tělesného postižení a rychlé únavy ruky při psaní je nejpřesnější:",
       "options": {
-        "A": "Zachovat stejný objem ručního psaní, protože jen tak lze výkon spravedlivě porovnat. v tomto pojetí.",
-        "B": "Snížit automaticky všechny obsahové požadavky, protože motorická únava znamená i nižší porozumění.",
+        "A": "Zachovat stejný objem ručního psaní, protože jen tak lze výkon spravedlivě porovnat. v tomto pojetí, a to v uvedeném kontextu.",
+        "B": "Snížit automaticky všechny obsahové požadavky, protože motorická únava znamená i nižší porozumění, a to v tomto typu rozlišení.",
         "C": "Přesunout veškeré psaní na domácí přípravu bez úprav práce ve škole. v dané situaci. podle tohoto přístupu.",
         "D": "Řešit ergonomii, délku zápisu a alternativní formu záznamu místo prostého tlaku na tempo ručního psaní."
       },
@@ -9565,7 +10065,7 @@ window.metadataExport = {
         "A": "Vyjít z toho, kde přesně vzniká bariéra v konkrétním úkolu a situaci. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
         "B": "Vybrat podporu hlavně podle názvu diagnózy a předpokládat, že u všech žáků se stejným označením bude fungovat stejně.",
         "C": "Porovnat, zda zvolená podpora mění přístup k úkolu, nebo už mění i jeho cíl. v tomto typu úkolu. bez dalšího rozlišení.",
-        "D": "Ověřovat po zavedení podpory, zda skutečně zlepšuje výkon a participaci. v daném rámci práce. v tomto pojetí."
+        "D": "Ověřovat po zavedení podpory, zda skutečně zlepšuje výkon a participaci. v daném rámci práce. v tomto pojetí, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Vybrat podporu hlavně podle názvu diagnózy a předpokládat, že u všech žáků se stejným označením bude fungovat stejně.",
       "discipline": "intervence a podpůrné postupy",
@@ -9652,7 +10152,7 @@ window.metadataExport = {
       "questionNumber": 19,
       "questionText": "Které rozlišení reedukace a kompenzace je nejpřesnější?",
       "options": {
-        "A": "Reedukace i kompenzace znamenají totéž; rozdíl je jen v délce trvání podpory. v tomto pojetí. v dané situaci.",
+        "A": "Reedukace i kompenzace znamenají totéž; rozdíl je jen v délce trvání podpory. v tomto pojetí. v dané situaci, a to právě zde.",
         "B": "Reedukace vždy patří do zdravotnictví a kompenzace výhradně do školy. podle tohoto přístupu. v tomto typu úkolu.",
         "C": "Kompenzace je vhodná jen dočasně a reedukace jen u dospělých klientů. bez dalšího rozlišení. v daném rámci práce.",
         "D": "Reedukace směřuje k rozvoji oslabené funkce, kompenzace k dosažení cíle jinou cestou navzdory trvající bariéře."
@@ -9741,7 +10241,7 @@ window.metadataExport = {
       "options": {
         "A": "Když chce škola zmírnit stres ze zkoušení bez vazby na konkrétní bariéru v úkolu. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
         "B": "Když časový tlak zkresluje výsledek kvůli bariéře ve formě výkonu nebo přístupu, ne kvůli samotnému neznalostnímu deficitu.",
-        "C": "Když je cílem nahradit systematickou podporu jednorázovou výhodou u testu. v tomto typu úkolu. bez dalšího rozlišení.",
+        "C": "Když je cílem nahradit systematickou podporu jednorázovou výhodou u testu. v tomto typu úkolu. bez dalšího rozlišení, a to právě v uvedeném rámci.",
         "D": "Když chce učitel vyrovnat rozdíly ve motivaci mezi žáky. v daném rámci práce. v tomto pojetí. v dané situaci. podle tohoto přístupu."
       },
       "correctOptionText": "Když časový tlak zkresluje výsledek kvůli bariéře ve formě výkonu nebo přístupu, ne kvůli samotnému neznalostnímu deficitu.",
@@ -9831,7 +10331,7 @@ window.metadataExport = {
         "A": "Snížit známku vždy, když je řeč méně srozumitelná, bez ohledu na obsah. v tomto pojetí. v dané situaci.",
         "B": "Vyhnout se úplně ústním odpovědím, protože obsah z nich nelze nikdy spolehlivě zjistit. podle tohoto přístupu.",
         "C": "Posuzovat především obsah odpovědi a nenechat artikulační obtíž automaticky zastínit věcnou správnost.",
-        "D": "Považovat artikulační obtíž automaticky za důkaz slabého porozumění tématu. v tomto typu úkolu."
+        "D": "Považovat artikulační obtíž automaticky za důkaz slabého porozumění tématu. v tomto typu úkolu, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Posuzovat především obsah odpovědi a nenechat artikulační obtíž automaticky zastínit věcnou správnost.",
       "discipline": "logopedie a hodnocení",
@@ -10006,7 +10506,7 @@ window.metadataExport = {
       "options": {
         "A": "Oddálit podporu, dokud nebude přesně popsána každá jednotlivá diagnóza zvlášť. v tomto pojetí. v dané situaci.",
         "B": "Zajistit spolehlivý přístupový a komunikační kanál, bez nějž nelze dobře ověřovat ani rozvíjet další oblasti.",
-        "C": "Začít výhradně nácvikem školních znalostí a komunikační bariéru řešit až později. podle tohoto přístupu.",
+        "C": "Začít výhradně nácvikem školních znalostí a komunikační bariéru řešit až později. podle tohoto přístupu, a to právě v uvedeném rámci.",
         "D": "Preferovat vždy motorický trénink, protože bývá nápadný na první pohled. v tomto typu úkolu. bez dalšího rozlišení."
       },
       "correctOptionText": "Zajistit spolehlivý přístupový a komunikační kanál, bez nějž nelze dobře ověřovat ani rozvíjet další oblasti.",
@@ -10092,9 +10592,9 @@ window.metadataExport = {
       "questionText": "Co nejlépe vystihuje funkční volbu pomůcky?",
       "options": {
         "A": "Pomůcka má být co nejpokročilejší, i když ji uživatel v běžném režimu nepoužívá. v tomto pojetí.",
-        "B": "Pomůcka má být stejná pro všechny žáky se stejnou diagnózou kvůli jednotnosti postupu.",
+        "B": "Pomůcka má být stejná pro všechny žáky se stejnou diagnózou kvůli jednotnosti postupu, a to v popsané situaci.",
         "C": "Pomůcka má odpovídat tomu, co má uživatel v konkrétním prostředí a úkolu skutečně zvládnout.",
-        "D": "Pomůcka má nahrazovat práci dospělých, aby nebylo nutné měnit prostředí nebo instrukce."
+        "D": "Pomůcka má nahrazovat práci dospělých, aby nebylo nutné měnit prostředí nebo instrukce, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Pomůcka má odpovídat tomu, co má uživatel v konkrétním prostředí a úkolu skutečně zvládnout.",
       "discipline": "intervence a podpůrné postupy",
@@ -10181,7 +10681,7 @@ window.metadataExport = {
       "questionText": "Kdy má AAK největší efekt?",
       "options": {
         "A": "Když je používána napříč aktivitami a komunikační partneři s ní pracují konzistentně, ne jen občasně v terapii.",
-        "B": "Když je vyhrazena jen pro krizové situace a běžná komunikace se odkládá. v tomto pojetí. v dané situaci.",
+        "B": "Když je vyhrazena jen pro krizové situace a běžná komunikace se odkládá. v tomto pojetí. v dané situaci, a to i zde.",
         "C": "Když je omezena na jednu místnost, aby se systém zbytečně nerozšiřoval. podle tohoto přístupu. v tomto typu úkolu.",
         "D": "Když ji používá pouze odborník a ostatní komunikující se přizpůsobit nemusí. bez dalšího rozlišení. v daném rámci práce."
       },
@@ -10269,9 +10769,9 @@ window.metadataExport = {
       "questionNumber": 26,
       "questionText": "Co je slabinou přístupu „stačí pořídit pomůcku“?",
       "options": {
-        "A": "Pomůcka sama o sobě obvykle automaticky vyřeší i všechny procesní a vztahové bariéry. v tomto pojetí.",
+        "A": "Pomůcka sama o sobě obvykle automaticky vyřeší i všechny procesní a vztahové bariéry. v tomto pojetí, a to v uvedeném kontextu.",
         "B": "Jakmile je pomůcka pořízena, není už vhodné měnit způsob instrukcí ani organizaci práce. v dané situaci.",
-        "C": "Při zavedení pomůcky je nejlepší vyčkat bez další podpory, aby si žák zvykl sám. podle tohoto přístupu.",
+        "C": "Při zavedení pomůcky je nejlepší vyčkat bez další podpory, aby si žák zvykl sám. podle tohoto přístupu, a to právě v uvedeném rámci.",
         "D": "Bez nácviku používání, úprav prostředí a komunikační podpory bývá efekt pomůcky omezený nebo krátkodobý."
       },
       "correctOptionText": "Bez nácviku používání, úprav prostředí a komunikační podpory bývá efekt pomůcky omezený nebo krátkodobý.",
@@ -10359,7 +10859,7 @@ window.metadataExport = {
       "questionText": "Žák řeší úlohy správně ústně, ale ztrácí se v přehuštěném pracovním listu. Které opatření míří nejpřesněji na bariéru?",
       "options": {
         "A": "Zpřehlednit grafickou podobu zadání a organizaci stránky, protože problém leží v přístupu k vizuálně podané informaci.",
-        "B": "Převést všechny úlohy na jednodušší obsah, protože výkon ukazuje na slabé matematické myšlení. v tomto pojetí.",
+        "B": "Převést všechny úlohy na jednodušší obsah, protože výkon ukazuje na slabé matematické myšlení. v tomto pojetí, a to v popsané situaci.",
         "C": "Zakázat ústní řešení, aby se posílila samostatnost bez kompenzace. v dané situaci. podle tohoto přístupu. v tomto typu úkolu.",
         "D": "Nechat pracovní list beze změny a prodloužit pouze čas bez úpravy vizuálního vstupu. bez dalšího rozlišení. v daném rámci práce."
       },
@@ -10537,7 +11037,7 @@ window.metadataExport = {
         "A": "Systematický nácvik fonologického uvědomování u oslabeného čtenáře. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
         "B": "Postupné procvičování jemnomotorických tahů při psaní. v tomto typu úkolu. bez dalšího rozlišení. v daném rámci práce.",
         "C": "Použití předčítání nebo převodu textu do audio podoby tam, kde cílem není samostatné dekódování tiskového textu.",
-        "D": "Cvičení orientace v řazení kroků při plánování úkolu. v tomto pojetí. v dané situaci. podle tohoto přístupu."
+        "D": "Cvičení orientace v řazení kroků při plánování úkolu. v tomto pojetí. v dané situaci. podle tohoto přístupu, a to i zde."
       },
       "correctOptionText": "Použití předčítání nebo převodu textu do audio podoby tam, kde cílem není samostatné dekódování tiskového textu.",
       "discipline": "intervence a podpůrné postupy",
@@ -10892,7 +11392,7 @@ window.metadataExport = {
       "questionText": "Který postup nejlépe reaguje na senzorické přetížení?",
       "options": {
         "A": "Ponechat zátěž beze změny, aby si žák na podněty postupně zvykl bez opor. v tomto pojetí. v dané situaci.",
-        "B": "Vykládat přetížení hlavně jako záměrné vyhýbání se práci a přidat tlak na výkon. podle tohoto přístupu.",
+        "B": "Vykládat přetížení hlavně jako záměrné vyhýbání se práci a přidat tlak na výkon. podle tohoto přístupu, a to v popsané situaci.",
         "C": "Pracovat s množstvím podnětů, předvídatelností a možnostmi regulace, ne jen s výzvou „musíš to vydržet“.",
         "D": "Úplně odstranit všechny nároky, protože přetížení vylučuje jakýkoli rozvoj. v tomto typu úkolu. bez dalšího rozlišení."
       },
@@ -10980,9 +11480,9 @@ window.metadataExport = {
       "questionNumber": 34,
       "questionText": "Které tvrzení o odezírání je nejpřesnější?",
       "options": {
-        "A": "Odezírání je plnohodnotnou náhradou dostupné komunikace ve všech školních situacích.",
+        "A": "Odezírání je plnohodnotnou náhradou dostupné komunikace ve všech školních situacích, a to právě v uvedeném rámci.",
         "B": "Odezírání může pomoci, ale samo o sobě nezajišťuje plný a spolehlivý přístup ke všemu sdělení.",
-        "C": "Jakmile žák odezírá, není třeba řešit akustické ani vizuální podmínky výuky.",
+        "C": "Jakmile žák odezírá, není třeba řešit akustické ani vizuální podmínky výuky, a to v dané situaci.",
         "D": "Odezírání funguje stejně spolehlivě bez ohledu na tempo řeči, osvětlení a uspořádání prostoru."
       },
       "correctOptionText": "Odezírání může pomoci, ale samo o sobě nezajišťuje plný a spolehlivý přístup ke všemu sdělení.",
@@ -11067,8 +11567,8 @@ window.metadataExport = {
       "questionNumber": 35,
       "questionText": "Které řešení je nejvhodnější při práci s mapou u nevidomého žáka?",
       "options": {
-        "A": "Nechat běžnou barevnou mapu a předpokládat, že si žák vše doplní z krátké nápovědy.",
-        "B": "Mapa se má z výuky vždy vyřadit, protože je nevyhnutelně vizuální. v tomto pojetí.",
+        "A": "Nechat běžnou barevnou mapu a předpokládat, že si žák vše doplní z krátké nápovědy, a to v uvedeném kontextu.",
+        "B": "Mapa se má z výuky vždy vyřadit, protože je nevyhnutelně vizuální. v tomto pojetí, a to v tomto typu rozlišení.",
         "C": "Stačí říct finální správnou odpověď bez práce s prostorovou reprezentací. v dané situaci.",
         "D": "Zvolit taktilní mapu nebo systematický slovní popis prostorových vztahů podle cíle úkolu."
       },
@@ -11157,7 +11657,7 @@ window.metadataExport = {
       "questionText": "U závažných grafomotorických obtíží je funkční:",
       "options": {
         "A": "Hodnotit primárně rychlost a úhlednost zápisu i v úkolech zaměřených na obsah. v tomto pojetí.",
-        "B": "Zrušit všechny písemné činnosti bez rozlišení, co je cílem daného úkolu. v dané situaci.",
+        "B": "Zrušit všechny písemné činnosti bez rozlišení, co je cílem daného úkolu. v dané situaci, a to právě zde.",
         "C": "Umožnit takový způsob záznamu, který nebrání projevit obsah, pokud rukopis není cílem úkolu.",
         "D": "Trvat na identické podobě výkonu za každou cenu, protože jen ta je spravedlivá. podle tohoto přístupu."
       },
@@ -11422,7 +11922,7 @@ window.metadataExport = {
         "A": "V systematickém rozvoji porozumění a jazykové produkce, ne jen v mechanickém opakování bez vazby na funkční komunikaci.",
         "B": "V čekání, až se jazyk upraví spontánně při běžném zrání bez cílené podpory. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
         "C": "V trvalém přesunu komunikace na druhé osoby bez podpory vlastního vyjadřování klienta. v tomto typu úkolu. bez dalšího rozlišení.",
-        "D": "V posuzování jazykových potíží výhradně podle výslovnosti jednotlivých hlásek. v daném rámci práce. v tomto pojetí."
+        "D": "V posuzování jazykových potíží výhradně podle výslovnosti jednotlivých hlásek. v daném rámci práce. v tomto pojetí, a to v tomto typu rozlišení."
       },
       "correctOptionText": "V systematickém rozvoji porozumění a jazykové produkce, ne jen v mechanickém opakování bez vazby na funkční komunikaci.",
       "discipline": "logopedie a jazykový rozvoj",
@@ -11510,7 +12010,7 @@ window.metadataExport = {
       "options": {
         "A": "Nahrazení všech náročnějších pojmů jednoduššími bez ohledu na cíl výuky. v tomto pojetí.",
         "B": "Vynechání celé části učiva, kterou ostatní žáci plní. v dané situaci. podle tohoto přístupu.",
-        "C": "Snížení požadované úrovně porozumění, aby byl výkon rychlejší. v tomto typu úkolu.",
+        "C": "Snížení požadované úrovně porozumění, aby byl výkon rychlejší. v tomto typu úkolu, a to v dané situaci.",
         "D": "Zvětšení písma, úprava kontrastu nebo jiná přístupná forma prezentace téhož obsahu."
       },
       "correctOptionText": "Zvětšení písma, úprava kontrastu nebo jiná přístupná forma prezentace téhož obsahu.",
@@ -11777,7 +12277,7 @@ window.metadataExport = {
         "A": "Čím více současných podnětů, tím automaticky kvalitnější podpora v každé situaci. v tomto pojetí. v dané situaci.",
         "B": "Více modalit dává smysl tehdy, když zvyšují čitelnost úkolu; samo množství podnětů ještě neznamená lepší podporu.",
         "C": "Multisenzorická podpora je vhodná jen u dětí bez jakéhokoli znevýhodnění. podle tohoto přístupu. v tomto typu úkolu.",
-        "D": "Použití více modalit vždy nahrazuje potřebu strukturovat instrukci. bez dalšího rozlišení. v daném rámci práce."
+        "D": "Použití více modalit vždy nahrazuje potřebu strukturovat instrukci. bez dalšího rozlišení. v daném rámci práce, a to v popsané situaci."
       },
       "correctOptionText": "Více modalit dává smysl tehdy, když zvyšují čitelnost úkolu; samo množství podnětů ještě neznamená lepší podporu.",
       "discipline": "intervence a podpůrné postupy",
@@ -11863,8 +12363,8 @@ window.metadataExport = {
       "options": {
         "A": "Co přesně v této situaci a v tomto úkolu tvoří hlavní bariéru výkonu nebo participace?",
         "B": "Které opatření zní nejodborněji a bude působit nejsilnějším dojmem na okolí. v tomto pojetí.",
-        "C": "Jak zařídit, aby podpora vyžadovala co nejméně změn ve výuce bez ohledu na efekt.",
-        "D": "Jak rychle převzít řešení z jiného případu se stejnou diagnózou. v dané situaci."
+        "C": "Jak zařídit, aby podpora vyžadovala co nejméně změn ve výuce bez ohledu na efekt, a to právě v uvedeném rámci.",
+        "D": "Jak rychle převzít řešení z jiného případu se stejnou diagnózou. v dané situaci, a to i zde."
       },
       "correctOptionText": "Co přesně v této situaci a v tomto úkolu tvoří hlavní bariéru výkonu nebo participace?",
       "discipline": "intervence a podpůrné postupy",
@@ -11951,7 +12451,7 @@ window.metadataExport = {
       "questionText": "Kdy má smysl volba odpovědi pohledem nebo systémem ano/ne?",
       "options": {
         "A": "Jen tehdy, když uživatel zvládne plnou mluvenou řeč, jinak by systém neměl význam. v tomto pojetí. v dané situaci. podle tohoto přístupu.",
-        "B": "Pouze jako nouzové řešení bez možnosti použít ho při učení nebo rozhodování. v tomto typu úkolu. bez dalšího rozlišení.",
+        "B": "Pouze jako nouzové řešení bez možnosti použít ho při učení nebo rozhodování. v tomto typu úkolu. bez dalšího rozlišení, a to v popsané situaci.",
         "C": "Tehdy, když chceme urychlit testování bez ohledu na to, zda je tento kanál pro člověka stabilní. v daném rámci práce. v tomto pojetí.",
         "D": "Když jde o spolehlivý a ověřený způsob volního vyjádření u člověka, jehož hlavní bariéra leží v motorické nebo řečové produkci."
       },
@@ -12039,7 +12539,7 @@ window.metadataExport = {
       "questionNumber": 46,
       "questionText": "Který postup už mění konstrukt hodnocení, ne jen formu výkonu?",
       "options": {
-        "A": "Umožnit místo ručního zápisu odpověď na klávesnici, pokud cíl úkolu zůstává stejný. v tomto pojetí.",
+        "A": "Umožnit místo ručního zápisu odpověď na klávesnici, pokud cíl úkolu zůstává stejný. v tomto pojetí, a to právě v uvedeném rámci.",
         "B": "Snížit náročnost samotného požadovaného obsahu tam, kde cílem bylo původně ověřit plný věcný rozsah učiva.",
         "C": "Předložit zadání v přístupnější vizuální podobě bez změny toho, co se ověřuje. v dané situaci. podle tohoto přístupu.",
         "D": "Prodlužit čas tam, kde bariéra leží v přístupu nebo formě výkonu. v tomto typu úkolu. bez dalšího rozlišení."
@@ -12128,8 +12628,8 @@ window.metadataExport = {
       "questionNumber": 47,
       "questionText": "U čtenářského úkolu je vhodné oddělit dekódování od porozumění tehdy, když:",
       "options": {
-        "A": "Chceme žákovi úplně odstranit kontakt s textem bez ohledu na cíl diagnostiky nebo podpory.",
-        "B": "Potřebujeme urychlit hodnocení a nezajímá nás, kde přesně problém vzniká. v tomto pojetí.",
+        "A": "Chceme žákovi úplně odstranit kontakt s textem bez ohledu na cíl diagnostiky nebo podpory, a to v uvedeném kontextu.",
+        "B": "Potřebujeme urychlit hodnocení a nezajímá nás, kde přesně problém vzniká. v tomto pojetí, a to v tomto typu rozlišení.",
         "C": "Potřebujeme zjistit, zda bariéra leží v samotném čtení textu, nebo až v práci s významem obsahu.",
         "D": "Považujeme dekódování a porozumění za totožný proces, který nelze smysluplně rozlišit. v dané situaci."
       },
@@ -12215,9 +12715,9 @@ window.metadataExport = {
       "questionNumber": 48,
       "questionText": "Co je předpoklad účinné jemnomotorické práce u žáka s posturální nestabilitou?",
       "options": {
-        "A": "Začít co nejjemnějšími úkoly bez řešení polohy, aby si žák postupně zvykl. v tomto pojetí. v dané situaci.",
+        "A": "Začít co nejjemnějšími úkoly bez řešení polohy, aby si žák postupně zvykl. v tomto pojetí. v dané situaci, a to zde.",
         "B": "Soustředit se pouze na rychlost úchopu a posturu považovat za vedlejší. podle tohoto přístupu. v tomto typu úkolu.",
-        "C": "Nejprve prodloužit čas a ostatní podmínky ponechat beze změny. bez dalšího rozlišení. v daném rámci práce.",
+        "C": "Nejprve prodloužit čas a ostatní podmínky ponechat beze změny. bez dalšího rozlišení. v daném rámci práce, a to v uvedeném kontextu.",
         "D": "Stabilní poloha a vhodné nastavení těla a pomůcek, teprve na tomto základě lze dobře chtít přesný výkon ruky."
       },
       "correctOptionText": "Stabilní poloha a vhodné nastavení těla a pomůcek, teprve na tomto základě lze dobře chtít přesný výkon ruky.",
@@ -12304,7 +12804,7 @@ window.metadataExport = {
       "questionNumber": 49,
       "questionText": "Který postup je při zavádění náročné elektronické AAK nejpřesnější?",
       "options": {
-        "A": "Nasadit co nejširší slovník hned na začátku a trvat na plném využití bez podpory okolí. v tomto pojetí.",
+        "A": "Nasadit co nejširší slovník hned na začátku a trvat na plném využití bez podpory okolí. v tomto pojetí, a to právě v uvedeném rámci.",
         "B": "Omezit zařízení jen na jednu izolovanou aktivitu, aby se zabránilo záměně významů. v dané situaci. podle tohoto přístupu.",
         "C": "Postupovat od funkčně zvládnutelného nastavení, ověřovat užívání v běžných situacích a systém průběžně ladit.",
         "D": "Vyčkat s používáním do doby, než bude systém technicky zcela dokonalý. v tomto typu úkolu. bez dalšího rozlišení."
@@ -12482,8 +12982,8 @@ window.metadataExport = {
       "options": {
         "A": "Nejprve stručně pojmenuje změnu, potom řekne konkrétní sled kroků a nakonec ověří, zda žák ví, co bude následovat.",
         "B": "Změnu oznámí co nejkratší větou a další průběh nechá vyplynout z toho, jak se situace vyvine, a spoléhá na to, že to bude stačit.",
-        "C": "Změnu představí až ve chvíli, kdy nastane, aby žák nebyl předem zbytečně ve stresu.",
-        "D": "Změnu vysvětlí hlavně obecnou větou, že v životě bývá potřeba improvizovat."
+        "C": "Změnu představí až ve chvíli, kdy nastane, aby žák nebyl předem zbytečně ve stresu, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Změnu vysvětlí hlavně obecnou větou, že v životě bývá potřeba improvizovat, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Nejprve stručně pojmenuje změnu, potom řekne konkrétní sled kroků a nakonec ověří, zda žák ví, co bude následovat.",
       "discipline": "komunikace jako profesní kompetence",
@@ -12571,9 +13071,9 @@ window.metadataExport = {
       "questionNumber": 2,
       "questionText": "Která reakce nejlépe odpovídá reflektivnímu naslouchání v poradenském rozhovoru?",
       "options": {
-        "A": "„Dobře, tomu rozumím, teď už ale pojďme rychle k řešení.“",
+        "A": "„Dobře, tomu rozumím, teď už ale pojďme rychle k řešení.“, a to v dané situaci, a to v popsané situaci, a to v uvedeném kontextu.",
         "B": "„Jestli vám rozumím správně, nejvíc vás vyčerpávají ranní přechody a nejistota, co se ve škole ten den stane.“",
-        "C": "„Tohle rodiče říkají často, bývá to u těchto obtíží obvyklé.“",
+        "C": "„Tohle rodiče říkají často, bývá to u těchto obtíží obvyklé.“, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
         "D": "„Kdybyste nastavili pevnější režim doma, nejspíš by se to rychle upravilo a nemuseli bychom se u toho déle zůstávat.“"
       },
       "correctOptionText": "„Jestli vám rozumím správně, nejvíc vás vyčerpávají ranní přechody a nejistota, co se ve škole ten den stane.“",
@@ -12661,8 +13161,8 @@ window.metadataExport = {
       "questionNumber": 3,
       "questionText": "Které tvrzení o AAK je ve školní a poradenské komunikaci nejpřesnější?",
       "options": {
-        "A": "AAK je vhodná hlavně tehdy, když už bylo definitivně prokázáno, že se řeč nikdy nerozvine.",
-        "B": "AAK má smysl spíše mimo školu, protože ve výuce dítě odvádí od přirozené komunikace.",
+        "A": "AAK je vhodná hlavně tehdy, když už bylo definitivně prokázáno, že se řeč nikdy nerozvine, a to právě v uvedeném rámci.",
+        "B": "AAK má smysl spíše mimo školu, protože ve výuce dítě odvádí od přirozené komunikace, a to i při zohlednění popsaných okolností.",
         "C": "AAK může komunikaci doplňovat nebo nahrazovat; jejím cílem je funkční dorozumění, ne čekání na „dost dobrou řeč“.",
         "D": "AAK je přechodná nouzová pomůcka, kterou je vhodné používat co nejméně, aby si dítě nezvyklo, a další upřesnění už nepřidává."
       },
@@ -12753,8 +13253,8 @@ window.metadataExport = {
       "questionNumber": 4,
       "questionText": "Při rozhovoru s adolescentem, který přišel s rodičem, je profesně nejvhodnější začít tak, že speciální pedagog",
       "options": {
-        "A": "vede hlavní část rozhovoru jen s rodičem, protože ten je za situaci odpovědný a zná ji lépe.",
-        "B": "nejprve získá co nejvíc informací od rodiče a adolescenta zapojí až na závěr, aby nebrzdil průběh.",
+        "A": "vede hlavní část rozhovoru jen s rodičem, protože ten je za situaci odpovědný a zná ji lépe, a to v uvedeném kontextu.",
+        "B": "nejprve získá co nejvíc informací od rodiče a adolescenta zapojí až na závěr, aby nebrzdil průběh, a to v tomto typu rozlišení.",
         "C": "ponechá rozhodnutí, zda adolescent promluví, výhradně na rodiči, protože ten nejlépe odhadne jeho možnosti, protože takový postup pokládá za dostačující.",
         "D": "osloví i samotného adolescenta, stručně vyjasní cíl setkání a průběžně drží prostor jak pro něj, tak pro rodiče."
       },
@@ -12845,9 +13345,9 @@ window.metadataExport = {
       "questionText": "Klient používá komunikační zařízení s hlasovým výstupem. Který postup je profesně nejvhodnější?",
       "options": {
         "A": "Dává klientovi čas dokončit sdělení přes zařízení a průběžně komunikuje přímo s ním, ne s doprovodem.",
-        "B": "Po několika sekundách nabídne, že větu rychle dopoví za klienta, aby rozhovor neztratil tempo.",
+        "B": "Po několika sekundách nabídne, že větu rychle dopoví za klienta, aby rozhovor neztratil tempo, a to v popsané situaci.",
         "C": "Většinu dotazů směřuje na doprovod, protože komunikace přes zařízení bývá pro odborný rozhovor nepraktická.",
-        "D": "Požádá klienta, aby zařízení používal jen na klíčová slova a zbytek vysvětlil doprovod."
+        "D": "Požádá klienta, aby zařízení používal jen na klíčová slova a zbytek vysvětlil doprovod, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Dává klientovi čas dokončit sdělení přes zařízení a průběžně komunikuje přímo s ním, ne s doprovodem.",
       "discipline": "komunikace jako profesní kompetence",
@@ -12936,8 +13436,8 @@ window.metadataExport = {
       "options": {
         "A": "„Myslím, že byste měl mluvit trochu citlivěji, to by situaci zřejmě vyřešilo a rozhovor by byl pro žáka přijatelnější i bez další změny struktury zadání.“",
         "B": "„Všiml jsem si, že při delším ústním zadání žák po druhém kroku ztrácí orientaci; pomohlo by členit instrukci na kratší celky.“",
-        "C": "„Je vidět, že vaše komunikace žákovi nesedí, chce to zkusit úplně jinak.“",
-        "D": "„Největší problém je, že žák vaše pokyny asi dost nerespektuje a bude potřeba na tom trvat důsledněji.“"
+        "C": "„Je vidět, že vaše komunikace žákovi nesedí, chce to zkusit úplně jinak.“, a to v dané situaci, a to v popsané situaci, a to v uvedeném kontextu.",
+        "D": "„Největší problém je, že žák vaše pokyny asi dost nerespektuje a bude potřeba na tom trvat důsledněji.“, a to v popsané situaci."
       },
       "correctOptionText": "„Všiml jsem si, že při delším ústním zadání žák po druhém kroku ztrácí orientaci; pomohlo by členit instrukci na kratší celky.“",
       "discipline": "komunikace jako profesní kompetence",
@@ -13026,10 +13526,10 @@ window.metadataExport = {
       "questionNumber": 7,
       "questionText": "Při vysvětlování závěru rodině s omezenou orientací v odborných termínech je komunikačně nejvhodnější, když odborník",
       "options": {
-        "A": "ponechá odborné názvy v původní podobě, aby výklad zůstal terminologicky přesný a jednotný.",
+        "A": "ponechá odborné názvy v původní podobě, aby výklad zůstal terminologicky přesný a jednotný, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
         "B": "vynechá termíny úplně, protože rodině by mohly znít příliš odborně a zbytečně zatěžovat rozhovor, protože tím chce udržet běžné tempo práce.",
         "C": "používá srozumitelný jazyk, klíčové termíny krátce překládá do běžné řeči a ověřuje, co si rodina z vysvětlení odnáší.",
-        "D": "pošle na konci schůzky rodině text doporučení a podrobné vysvětlení už při setkání neotevírá."
+        "D": "pošle na konci schůzky rodině text doporučení a podrobné vysvětlení už při setkání neotevírá, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "používá srozumitelný jazyk, klíčové termíny krátce překládá do běžné řeči a ověřuje, co si rodina z vysvětlení odnáší.",
       "discipline": "komunikace jako profesní kompetence",
@@ -13117,9 +13617,9 @@ window.metadataExport = {
       "questionNumber": 8,
       "questionText": "Které jednání je při komunikaci s neslyšícím klientem a tlumočníkem českého znakového jazyka nejvhodnější?",
       "options": {
-        "A": "Směřuje většinu sdělení k tlumočníkovi, protože ten zajišťuje odbornou přesnost překladu.",
+        "A": "Směřuje většinu sdělení k tlumočníkovi, protože ten zajišťuje odbornou přesnost překladu, a to v dané situaci, a to v popsané situaci.",
         "B": "Klientovi klade jen krátké kontrolní otázky a obsah rozhovoru řeší převážně s tlumočníkem, aby se ušetřil čas, a další upřesnění už nepřidává.",
-        "C": "Průběh setkání přizpůsobí tlumočníkovi natolik, že klienta oslovuje jen výjimečně a nepřímo.",
+        "C": "Průběh setkání přizpůsobí tlumočníkovi natolik, že klienta oslovuje jen výjimečně a nepřímo, a to v uvedeném kontextu.",
         "D": "Mluví přímo ke klientovi, drží přirozené tempo a tlumočníka chápe jako komunikační most, ne jako hlavního adresáta."
       },
       "correctOptionText": "Mluví přímo ke klientovi, drží přirozené tempo a tlumočníka chápe jako komunikační most, ne jako hlavního adresáta.",
@@ -13210,8 +13710,8 @@ window.metadataExport = {
       "options": {
         "A": "„V jakých situacích si obtíží všímáte nejvíc a co v nich bývá nejtěžší?“",
         "B": "„Je to hlavně tím, že dítě nezvládá změny a rychle se zablokuje, takže asi nemá smysl otevírat širší popis situací.“",
-        "C": "„Myslíte, že problém vzniká hlavně doma, nebo spíš ve škole?“",
-        "D": "„Souhlasíte, že největší potíž je zřejmě v pozornosti?“"
+        "C": "„Myslíte, že problém vzniká hlavně doma, nebo spíš ve škole?“, a to v dané situaci.",
+        "D": "„Souhlasíte, že největší potíž je zřejmě v pozornosti?“, a to v popsané situaci."
       },
       "correctOptionText": "„V jakých situacích si obtíží všímáte nejvíc a co v nich bývá nejtěžší?“",
       "discipline": "komunikace jako profesní kompetence",
@@ -13297,10 +13797,10 @@ window.metadataExport = {
       "questionNumber": 10,
       "questionText": "Žák se zrakovým postižením pracuje ve třídě s materiálem, který učitel zároveň promítá na tabuli. Který komunikační postup je nejvhodnější?",
       "options": {
-        "A": "Zachovat běžný výklad a spolehnout se, že žák si klíčové body doplní z poznámek spolužáka.",
+        "A": "Zachovat běžný výklad a spolehnout se, že žák si klíčové body doplní z poznámek spolužáka, a to v uvedeném kontextu.",
         "B": "Průběžně verbalizovat, co je na tabuli důležité, a zajistit dostupnou podobu obsahu v použitelné formě.",
         "C": "Výklad zkrátit na minimum, aby se žák nemusel orientovat v příliš velkém množství informací, a tím považuje situaci za vyřešenou.",
-        "D": "Nechat žáka soustředit jen na slovní komentář a práci s obsahem na tabuli zcela vynechat."
+        "D": "Nechat žáka soustředit jen na slovní komentář a práci s obsahem na tabuli zcela vynechat, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Průběžně verbalizovat, co je na tabuli důležité, a zajistit dostupnou podobu obsahu v použitelné formě.",
       "discipline": "komunikace jako profesní kompetence",
@@ -13388,10 +13888,10 @@ window.metadataExport = {
       "questionNumber": 11,
       "questionText": "Které shrnutí po poradenském setkání je profesně nejpoužitelnější?",
       "options": {
-        "A": "Zrekapituluje hlavně průběh diskuse, aby bylo jasné, jak se k závěru postupně dospělo.",
+        "A": "Zrekapituluje hlavně průběh diskuse, aby bylo jasné, jak se k závěru postupně dospělo, a to v dané situaci.",
         "B": "Zakončí setkání obecným ujištěním, že všechny strany vědí, co mají dělat, a další detaily ponechá otevřené.",
         "C": "Shrne hlavní závěr, domluvené kroky, kdo za co odpovídá a kdy se bude ověřovat, zda podpora funguje.",
-        "D": "Vystihne především celkovou atmosféru schůzky a poděkuje za spolupráci."
+        "D": "Vystihne především celkovou atmosféru schůzky a poděkuje za spolupráci, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Shrne hlavní závěr, domluvené kroky, kdo za co odpovídá a kdy se bude ověřovat, zda podpora funguje.",
       "discipline": "komunikace jako profesní kompetence",
@@ -13475,9 +13975,9 @@ window.metadataExport = {
       "questionNumber": 12,
       "questionText": "Rodič je během setkání zjevně zahlcený a po delším tichu jen přikyvuje. Co je komunikačně nejvhodnější?",
       "options": {
-        "A": "Pokračuje plynule dál, protože přikyvování znamená, že rodič základní informaci zachytil.",
+        "A": "Pokračuje plynule dál, protože přikyvování znamená, že rodič základní informaci zachytil, a to právě v uvedeném rámci.",
         "B": "Vrátí se k nejdůležitějším pojmům až v závěrečném e-mailu, aby setkání zůstalo časově úsporné, protože tím chce udržet běžné tempo práce.",
-        "C": "Zvýší důraz v hlasu a zopakuje hlavní závěr co nejautoritativněji, aby nedošlo k omylu.",
+        "C": "Zvýší důraz v hlasu a zopakuje hlavní závěr co nejautoritativněji, aby nedošlo k omylu, a to v dané situaci.",
         "D": "Zastaví tempo, pojmenuje zahlcení bez nátlaku a nabídne stručné zrekapitulování nebo prostor pro otázky."
       },
       "correctOptionText": "Zastaví tempo, pojmenuje zahlcení bez nátlaku a nabídne stručné zrekapitulování nebo prostor pro otázky.",
@@ -13567,9 +14067,9 @@ window.metadataExport = {
       "questionText": "Které tvrzení o ověřování porozumění je v profesní komunikaci nejpřesnější?",
       "options": {
         "A": "Nestačí se zeptat „Je to jasné?“; vhodnější je nechat druhou stranu vlastními slovy popsat, co si odnáší.",
-        "B": "Nejlepší ověření porozumění je zopakovat závěr ještě jednou téměř stejnými slovy.",
+        "B": "Nejlepší ověření porozumění je zopakovat závěr ještě jednou téměř stejnými slovy, a to v tomto typu rozlišení.",
         "C": "Pokud druhá strana nereaguje odmítavě, lze považovat vysvětlení za dostatečně pochopené, a další upřesnění už nepřidává.",
-        "D": "Porozumění se v praxi ověřuje spíše tím, že účastníci podepíší zápis nebo doporučení."
+        "D": "Porozumění se v praxi ověřuje spíše tím, že účastníci podepíší zápis nebo doporučení, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Nestačí se zeptat „Je to jasné?“; vhodnější je nechat druhou stranu vlastními slovy popsat, co si odnáší.",
       "discipline": "komunikace jako profesní kompetence",
@@ -13655,10 +14155,10 @@ window.metadataExport = {
       "questionNumber": 14,
       "questionText": "Které vyjádření je nejvhodnější, když učitel popisuje žáka větou „on prostě nechce spolupracovat“?",
       "options": {
-        "A": "„Tohle bývá u podobných žáků běžné, hlavní je být důsledný a neustupovat.“",
+        "A": "„Tohle bývá u podobných žáků běžné, hlavní je být důsledný a neustupovat.“, a to v dané situaci, a to v popsané situaci, a to v uvedeném kontextu.",
         "B": "„Pojďme si rozlišit, v jakých konkrétních situacích se to děje a co tomu předchází; pak se snáz určí, co je bariéra a co reakce.“",
         "C": "„Pak bude asi nejvhodnější nastavit přísnější pravidla, aby bylo jasné, co se očekává, a pak důsledně sledovat, zda se tím situace sama upraví.“",
-        "D": "„Jestli nechce spolupracovat, je potřeba trvat na tom, aby důsledky pocítil hned.“"
+        "D": "„Jestli nechce spolupracovat, je potřeba trvat na tom, aby důsledky pocítil hned.“, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
       },
       "correctOptionText": "„Pojďme si rozlišit, v jakých konkrétních situacích se to děje a co tomu předchází; pak se snáz určí, co je bariéra a co reakce.“",
       "discipline": "komunikace jako profesní kompetence",
@@ -13750,7 +14250,7 @@ window.metadataExport = {
         "A": "ponechává více variant výkladu, aby si žák mohl vybrat způsob porozumění, který mu bude bližší.",
         "B": "obsahuje běžné zkratky a metafory, protože tím působí přirozeněji než příliš jednoduché věty.",
         "C": "je konkrétní, krátká, významově jednoznačná a opřená o jasný krok nebo ukázku.",
-        "D": "spojuje více kroků do jedné věty, aby žák od začátku viděl úkol v celku."
+        "D": "spojuje více kroků do jedné věty, aby žák od začátku viděl úkol v celku, a to v popsané situaci."
       },
       "correctOptionText": "je konkrétní, krátká, významově jednoznačná a opřená o jasný krok nebo ukázku.",
       "discipline": "komunikace jako profesní kompetence",
@@ -13836,8 +14336,8 @@ window.metadataExport = {
       "questionNumber": 16,
       "questionText": "Který postup je při mezioborovém setkání komunikačně nejvhodnější?",
       "options": {
-        "A": "Usiluje hlavně o co nejrychlejší sjednocení názoru týmu, i kdyby některé části zatím nebyly dost vyjasněné.",
-        "B": "Formuluje závěr co nejkomplexněji za celý tým, aby rodina neodcházela s více různými pohledy.",
+        "A": "Usiluje hlavně o co nejrychlejší sjednocení názoru týmu, i kdyby některé části zatím nebyly dost vyjasněné, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Formuluje závěr co nejkomplexněji za celý tým, aby rodina neodcházela s více různými pohledy, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
         "C": "Vstupuje jen minimálně, protože při mezioborovém setkání je lepší nechat hlavní slovo tomu odborníkovi, který mluví nejsuverénněji, a spoléhá na to, že to bude stačit.",
         "D": "Odděluje ověřená pozorování od interpretací, jasně pojmenuje vlastní kompetenci a domluví další kroky bez přebírání role jiného oboru."
       },
@@ -13930,8 +14430,8 @@ window.metadataExport = {
       "options": {
         "A": "„Můžeme spolu nastavit další kroky a průběžně sledovat, co se mění; nemohu slíbit rychlé vyřešení, ale můžeme postup zpřesňovat.“",
         "B": "„Když budete doporučení přesně dodržovat, je velmi pravděpodobné, že se situace brzy vyřeší a nebude třeba další úprava postupu.“",
-        "C": "„Uděláme maximum, aby problém co nejrychleji zmizel, a pak už se k němu nebude třeba vracet.“",
-        "D": "„Jestli škola navržené kroky přijme, mělo by to vést k odstranění obtíží.“"
+        "C": "„Uděláme maximum, aby problém co nejrychleji zmizel, a pak už se k němu nebude třeba vracet.“, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "„Jestli škola navržené kroky přijme, mělo by to vést k odstranění obtíží.“, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
       },
       "correctOptionText": "„Můžeme spolu nastavit další kroky a průběžně sledovat, co se mění; nemohu slíbit rychlé vyřešení, ale můžeme postup zpřesňovat.“",
       "discipline": "komunikace jako profesní kompetence",
@@ -14019,7 +14519,7 @@ window.metadataExport = {
         "A": "otázku po několika sekundách přeformulovat, aby nezůstalo ticho a rozhovor nepůsobil zadrženě.",
         "B": "položit otázku, ponechat čas na zpracování a nezahlcovat mezitím prostor dalšími vysvětleními.",
         "C": "rychle nabídnout několik možných odpovědí, aby měl žák snazší orientaci a komunikace se zrychlila.",
-        "D": "využívat hlavně uzavřené otázky, protože na ně bývá vždy možné odpovědět bez čekání."
+        "D": "využívat hlavně uzavřené otázky, protože na ně bývá vždy možné odpovědět bez čekání, a to v popsané situaci."
       },
       "correctOptionText": "položit otázku, ponechat čas na zpracování a nezahlcovat mezitím prostor dalšími vysvětleními.",
       "discipline": "komunikace jako profesní kompetence",
@@ -14106,9 +14606,9 @@ window.metadataExport = {
       "questionText": "Které vysvětlení nejlépe vystihuje smysl profesního shrnování během rozhovoru, nejen na jeho konci?",
       "options": {
         "A": "Slouží hlavně k tomu, aby odborník ukázal, že situaci už přesně chápe a může vést rozhovor dál bez zdržení, protože takový postup pokládá za dostačující.",
-        "B": "Je vhodné spíše až v závěru, protože průběžné shrnování rozhovor zbytečně zpomaluje.",
+        "B": "Je vhodné spíše až v závěru, protože průběžné shrnování rozhovor zbytečně zpomaluje, a to v tomto typu rozlišení.",
         "C": "Pomáhá průběžně držet společné porozumění, korigovat odchylky a vracet rozhovor k tomu, co je opravdu podstatné.",
-        "D": "Jeho hlavní funkcí je zkrátit čas, který dostane druhá strana na vlastní vyjádření."
+        "D": "Jeho hlavní funkcí je zkrátit čas, který dostane druhá strana na vlastní vyjádření, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Pomáhá průběžně držet společné porozumění, korigovat odchylky a vracet rozhovor k tomu, co je opravdu podstatné.",
       "discipline": "komunikace jako profesní kompetence",
@@ -14193,8 +14693,8 @@ window.metadataExport = {
       "questionNumber": 20,
       "questionText": "Rodič přichází s velmi odlišným výkladem situace než škola. Který komunikační postup je nejvhodnější?",
       "options": {
-        "A": "Vybrat rychle tu verzi, která je lépe doložená dokumenty, aby schůzka nezůstala v rovině dvou názorů.",
-        "B": "Držet se hlavně školního popisu, protože ten obvykle vzniká z delšího systematického pozorování.",
+        "A": "Vybrat rychle tu verzi, která je lépe doložená dokumenty, aby schůzka nezůstala v rovině dvou názorů, a to v dané situaci.",
+        "B": "Držet se hlavně školního popisu, protože ten obvykle vzniká z delšího systematického pozorování, a to v popsané situaci, a to v uvedeném kontextu.",
         "C": "Začít tím, že se obě strany ujistí, že jejich zkušenost je stejnou měrou platná, a dál rozdíly nerozebírat, a tím považuje situaci za vyřešenou.",
         "D": "Nejprve oddělit, co jsou popisy konkrétních situací, a co už interpretace, a teprve pak hledat společný rámec porozumění."
       },
@@ -14286,8 +14786,8 @@ window.metadataExport = {
       "options": {
         "A": "„Řeknu nejdřív hlavní závěr jednoduchou větou a pak se můžeme zastavit u toho, co z něj pro vás plyne v běžném fungování.“",
         "B": "„Je důležité, abyste si teď vyslechli celý odborný rámec najednou, jinak si z toho neodnesete úplný obraz celé situace, a spoléhá na to, že to bude stačit“",
-        "C": "„Pokusím se to říct co nejpřesněji odborně, protože zjednodušení by mohlo vyznít zavádějícím dojmem.“",
-        "D": "„Nejlepší bude nechat si emoce až na konec a nejprve projít všechny formální části závěru.“"
+        "C": "„Pokusím se to říct co nejpřesněji odborně, protože zjednodušení by mohlo vyznít zavádějícím dojmem.“, a to v dané situaci.",
+        "D": "„Nejlepší bude nechat si emoce až na konec a nejprve projít všechny formální části závěru.“, a to v popsané situaci, a to v uvedeném kontextu."
       },
       "correctOptionText": "„Řeknu nejdřív hlavní závěr jednoduchou větou a pak se můžeme zastavit u toho, co z něj pro vás plyne v běžném fungování.“",
       "discipline": "komunikace jako profesní kompetence",
@@ -14378,8 +14878,8 @@ window.metadataExport = {
       "options": {
         "A": "Průběžně modelovat využití dostupných symbolů nebo komunikačních prostředků v přirozené situaci, protože tím chce udržet běžné tempo práce.",
         "B": "Mluvit o žákovi převážně s doprovodem a komunikační prostředek brát jen jako doplněk pro mimořádné situace.",
-        "C": "Počítat s tím, že odpověď může mít jiné tempo než mluvená řeč, a dát jí prostor.",
-        "D": "Směřovat sdělení k tomu, aby žák mohl co nejvíc vyjádřit vlastní potřebu nebo volbu."
+        "C": "Počítat s tím, že odpověď může mít jiné tempo než mluvená řeč, a dát jí prostor, a to právě v uvedeném rámci.",
+        "D": "Směřovat sdělení k tomu, aby žák mohl co nejvíc vyjádřit vlastní potřebu nebo volbu, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Mluvit o žákovi převážně s doprovodem a komunikační prostředek brát jen jako doplněk pro mimořádné situace.",
       "discipline": "komunikace jako profesní kompetence",
@@ -14466,9 +14966,9 @@ window.metadataExport = {
       "questionText": "Které sdělení je nejvhodnější pro učitele, který chce „rychlý návod, co přesně říkat“ žákovi s obtížemi v porozumění?",
       "options": {
         "A": "Nejlepší je připravit jeden pevný skript, který bude učitel používat beze změny v každé náročnější situaci, a další upřesnění už nepřidává.",
-        "B": "Účinnější než upravovat formulace bývá mluvit důrazněji a ověřit, zda žák dává pozor.",
+        "B": "Účinnější než upravovat formulace bývá mluvit důrazněji a ověřit, zda žák dává pozor, a to v popsané situaci, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
         "C": "Je užitečné domluvit se na několika stabilních typech krátkých a jednoznačných formulací, ne hledat univerzální větu pro každou situaci.",
-        "D": "Většinou stačí používat odborně přesné termíny; problém bývá spíš v tom, že žák nechce spolupracovat."
+        "D": "Většinou stačí používat odborně přesné termíny; problém bývá spíš v tom, že žák nechce spolupracovat, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
       },
       "correctOptionText": "Je užitečné domluvit se na několika stabilních typech krátkých a jednoznačných formulací, ne hledat univerzální větu pro každou situaci.",
       "discipline": "komunikace jako profesní kompetence",
@@ -14558,8 +15058,8 @@ window.metadataExport = {
       "questionText": "Které tvrzení nejlépe odpovídá profesní komunikaci s rodinou, která používá češtinu jako druhý jazyk?",
       "options": {
         "A": "Nejpřesnější je zachovat plnou odbornou terminologii a spolehnout se, že dítě rodičům klíčové části doma vysvětlí, protože takový postup pokládá za dostačující.",
-        "B": "V praxi stačí předat rodině písemné doporučení; citlivé vysvětlování při schůzce bývá kvůli jazyku málo efektivní.",
-        "C": "Je lepší mluvit hlavně s dítětem, protože rodiče by v odborné části stejně nerozuměli všem detailům.",
+        "B": "V praxi stačí předat rodině písemné doporučení; citlivé vysvětlování při schůzce bývá kvůli jazyku málo efektivní, a to i při zohlednění popsaných okolností.",
+        "C": "Je lepší mluvit hlavně s dítětem, protože rodiče by v odborné části stejně nerozuměli všem detailům, a to v dané situaci.",
         "D": "Je vhodné zjednodušit jazyk, opřít se o konkrétní příklady a nevyužívat dítě jako hlavního tlumočníka citlivého obsahu."
       },
       "correctOptionText": "Je vhodné zjednodušit jazyk, opřít se o konkrétní příklady a nevyužívat dítě jako hlavního tlumočníka citlivého obsahu.",
@@ -14650,8 +15150,8 @@ window.metadataExport = {
       "questionText": "Při týmovém setkání je potřeba zapsat závěr do stručné poznámky. Která formulace je nejpoužitelnější?",
       "options": {
         "A": "„Při delším ústním zadání žák často ztrácí druhý a další krok; tým se shodl na kratších instrukcích a průběžné kontrole porozumění.“",
-        "B": "„Žák je při výuce pasivní a nezvládá pracovat samostatně, proto je potřeba důslednější vedení.“",
-        "C": "„Rodina i škola vidí situaci odlišně, ale pravda bude pravděpodobně někde uprostřed.“",
+        "B": "„Žák je při výuce pasivní a nezvládá pracovat samostatně, proto je potřeba důslednější vedení.“, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "„Rodina i škola vidí situaci odlišně, ale pravda bude pravděpodobně někde uprostřed.“, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
         "D": "„Komunikace se žákem není ideální a bude potřeba s tím něco průběžně dělat, hlavně aby ve třídě bylo víc klidu a méně napětí, a tím považuje situaci za vyřešenou“"
       },
       "correctOptionText": "„Při delším ústním zadání žák často ztrácí druhý a další krok; tým se shodl na kratších instrukcích a průběžné kontrole porozumění.“",
@@ -14740,9 +15240,9 @@ window.metadataExport = {
       "questionNumber": 26,
       "questionText": "Které tvrzení nejlépe vystihuje vztah mezi empatií a profesními hranicemi?",
       "options": {
-        "A": "Empatie je v poradenském rozhovoru především způsob, jak dát najevo plný souhlas s pohledem klienta.",
+        "A": "Empatie je v poradenském rozhovoru především způsob, jak dát najevo plný souhlas s pohledem klienta, a to v dané situaci.",
         "B": "Empatie neznamená splývání s prožíváním druhého; má pomáhat porozumět situaci a současně držet odborný rámec rozhovoru.",
-        "C": "Nejbezpečnější je empatii spíše tlumit, protože výraznější emoční reakce by mohla narušit odbornost.",
+        "C": "Nejbezpečnější je empatii spíše tlumit, protože výraznější emoční reakce by mohla narušit odbornost, a to v uvedeném kontextu.",
         "D": "Empatie funguje hlavně jako technika zklidnění, zatímco odborný obsah se do rozhovoru vrací až na konci, a spoléhá na to, že to bude stačit."
       },
       "correctOptionText": "Empatie neznamená splývání s prožíváním druhého; má pomáhat porozumět situaci a současně držet odborný rámec rozhovoru.",
@@ -14830,8 +15330,8 @@ window.metadataExport = {
       "questionNumber": 27,
       "questionText": "Při úpravě komunikace pro žáka s PAS je nejméně vhodné spoléhat hlavně na",
       "options": {
-        "A": "krátké a předvídatelné formulace, které drží podstata úkolu a průběhu činnosti.",
-        "B": "pojmenování změny dopředu a konkrétní popis toho, co bude následovat.",
+        "A": "krátké a předvídatelné formulace, které zachovávají smysl úkolu a průběh činnosti.",
+        "B": "pojmenování změny dopředu a konkrétní popis toho, co bude následovat, a to i při zohlednění popsaných okolností.",
         "C": "ironie, narážky a nevyřčené sociální významy, které si má žák z kontextu domyslet.",
         "D": "omezení zbytečně víceznačných pokynů a doplnění vizuální nebo jinak stabilní opory."
       },
@@ -14920,9 +15420,9 @@ window.metadataExport = {
       "questionNumber": 28,
       "questionText": "Který postup nejlépe odpovídá deeskalační komunikaci ve chvíli, kdy je druhá strana silně rozrušená?",
       "options": {
-        "A": "Rychle vysvětlit všechny souvislosti, aby bylo zřejmé, že situace má odborné odůvodnění.",
+        "A": "Rychle vysvětlit všechny souvislosti, aby bylo zřejmé, že situace má odborné odůvodnění, a to v uvedeném kontextu.",
         "B": "Zdůraznit, že emoce jsou sice pochopitelné, ale je potřeba je odložit, protože rozhovor musí zůstat věcný, a další upřesnění už nepřidává.",
-        "C": "Posunout komunikaci co nejdříve k podpisu nebo formálnímu výstupu, aby bylo možné setkání uzavřít.",
+        "C": "Posunout komunikaci co nejdříve k podpisu nebo formálnímu výstupu, aby bylo možné setkání uzavřít, a to právě v uvedeném rámci.",
         "D": "Snížit množství sdělení, mluvit klidně a konkrétně a neotvírat současně více témat nebo argumentačních linií."
       },
       "correctOptionText": "Snížit množství sdělení, mluvit klidně a konkrétně a neotvírat současně více témat nebo argumentačních linií.",
@@ -15010,8 +15510,8 @@ window.metadataExport = {
       "questionText": "Které vyjádření je nejvhodnější při vysvětlování, proč je potřeba další pozorování nebo doplnění informací, než se udělá závěr?",
       "options": {
         "A": "„Máme už důležité indicie, ale pro přesný závěr ještě potřebujeme doplnit, v jakých situacích se obtíže objevují a jak stabilní jsou.“",
-        "B": "„Bez dalších dat zatím nelze říct téměř nic, takže by bylo předčasné se situací víc zabývat.“",
-        "C": "„Raději teď žádný dílčí závěr neuslyšíte, protože by vás mohl zbytečně zmást.“",
+        "B": "„Bez dalších dat zatím nelze říct téměř nic, takže by bylo předčasné se situací víc zabývat.“, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "„Raději teď žádný dílčí závěr neuslyšíte, protože by vás mohl zbytečně zmást.“, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
         "D": "„Je lepší počkat, až budeme mít jistotu úplně ve všem; teprve pak má smysl mluvit o podpoře, aby se závěr nemusel později znovu měnit.“"
       },
       "correctOptionText": "„Máme už důležité indicie, ale pro přesný závěr ještě potřebujeme doplnit, v jakých situacích se obtíže objevují a jak stabilní jsou.“",
@@ -15097,9 +15597,9 @@ window.metadataExport = {
       "questionNumber": 30,
       "questionText": "Které tvrzení nejlépe odpovídá profesnímu využití uzavřených otázek?",
       "options": {
-        "A": "Jsou vhodnější než otevřené otázky vždy, když je cílem udržet rozhovor věcný a bez emocí.",
+        "A": "Jsou vhodnější než otevřené otázky vždy, když je cílem udržet rozhovor věcný a bez emocí, a to právě v uvedeném rámci.",
         "B": "Jsou užitečné pro zpřesnění nebo ověření konkrétní informace, ale samy o sobě nenahradí mapování širšího kontextu.",
-        "C": "V poradenském rozhovoru by se měly používat co nejméně, protože téměř vždy omezují klientovu výpověď.",
+        "C": "V poradenském rozhovoru by se měly používat co nejméně, protože téměř vždy omezují klientovu výpověď, a to v dané situaci.",
         "D": "Jejich hlavní výhodou je, že snižují riziko nedorozumění i tehdy, když se používají jako první a jediný typ otázek."
       },
       "correctOptionText": "Jsou užitečné pro zpřesnění nebo ověření konkrétní informace, ale samy o sobě nenahradí mapování širšího kontextu.",
@@ -15275,8 +15775,8 @@ window.metadataExport = {
       "questionNumber": 32,
       "questionText": "Která reakce je nejvhodnější, když rodič po vysvětlení používá odborný pojem v jiném významu, než byl zamýšlen?",
       "options": {
-        "A": "Nechat pojem bez komentáře, aby rodič neměl pocit, že je opravován v něčem, co řekl špatně.",
-        "B": "Vrátit se k přesné definici pojmu odborným jazykem, aby bylo zřejmé, kde se rodič odchýlil.",
+        "A": "Nechat pojem bez komentáře, aby rodič neměl pocit, že je opravován v něčem, co řekl špatně, a to v dané situaci.",
+        "B": "Vrátit se k přesné definici pojmu odborným jazykem, aby bylo zřejmé, kde se rodič odchýlil, a to v popsané situaci.",
         "C": "Vyjasnění odložit do písemného výstupu, protože v běžném rozhovoru by se mohlo zdržet hlavní téma.",
         "D": "Jemně vrátit význam pojmu do běžné řeči a ověřit na konkrétním příkladu, jak mu rodič rozumí."
       },
@@ -15367,8 +15867,8 @@ window.metadataExport = {
       "questionText": "Které sdělení je nejvhodnější při zadání skupinové práce žákovi s PAS a celé třídě zároveň?",
       "options": {
         "A": "„Teď budete pracovat ve dvojicích. Nejdřív každý napíše dva body sám, potom si je ve dvojici porovnáte a nakonec vyberete jeden společný.“",
-        "B": "„Budete pracovat spolu a nějak se domluvíte, kdo co udělá; hlavní je být otevřený spolupráci.“",
-        "C": "„Ve skupině si role rozdělíte podle situace, záleží, jak vám to přirozeně vyplyne.“",
+        "B": "„Budete pracovat spolu a nějak se domluvíte, kdo co udělá; hlavní je být otevřený spolupráci.“, a to i při zohlednění popsaných okolností.",
+        "C": "„Ve skupině si role rozdělíte podle situace, záleží, jak vám to přirozeně vyplyne.“, a to v dané situaci, a to v popsané situaci, a to v uvedeném kontextu.",
         "D": "„Začněte společně, průběžně uvidíme, jak se práce mezi vás rozloží a co kdo zvládne, a role se rozdělí až podle toho, jak se to během úkolu ukáže.“"
       },
       "correctOptionText": "„Teď budete pracovat ve dvojicích. Nejdřív každý napíše dva body sám, potom si je ve dvojici porovnáte a nakonec vyberete jeden společný.“",
@@ -15455,9 +15955,9 @@ window.metadataExport = {
       "questionNumber": 34,
       "questionText": "Které tvrzení nejlépe vystihuje rozdíl mezi popisem a interpretací v profesní komunikaci?",
       "options": {
-        "A": "Popis a interpretace se v praxi liší málo, pokud odborník dobře zná typické projevy dané obtíže.",
+        "A": "Popis a interpretace se v praxi liší málo, pokud odborník dobře zná typické projevy dané obtíže, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
         "B": "Popis zachycuje pozorovatelnou situaci; interpretace jí přikládá význam, který je třeba ověřovat a neprezentovat jako hotový fakt.",
-        "C": "Interpretace je cennější než popis, protože sama o sobě ukazuje, jaký krok podpory je potřeba.",
+        "C": "Interpretace je cennější než popis, protože sama o sobě ukazuje, jaký krok podpory je potřeba, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
         "D": "Popis se hodí hlavně do dokumentace, zatímco v živé komunikaci je efektivnější pracovat rovnou s interpretací, protože takový postup pokládá za dostačující."
       },
       "correctOptionText": "Popis zachycuje pozorovatelnou situaci; interpretace jí přikládá význam, který je třeba ověřovat a neprezentovat jako hotový fakt.",
@@ -15544,8 +16044,8 @@ window.metadataExport = {
       "questionNumber": 35,
       "questionText": "Když škola potřebuje předat rodině více kroků podpory najednou, je komunikačně nejvhodnější",
       "options": {
-        "A": "předat vše najednou v plné šíři, aby rodina od začátku viděla celou komplexnost podpory.",
-        "B": "sdělit jen úplné minimum a další kroky doplňovat až tehdy, pokud se rodina sama zeptá.",
+        "A": "předat vše najednou v plné šíři, aby rodina od začátku viděla celou komplexnost podpory, a to v dané situaci.",
+        "B": "sdělit jen úplné minimum a další kroky doplňovat až tehdy, pokud se rodina sama zeptá, a to v popsané situaci.",
         "C": "rozlišit, co je hlavní priorita teď, co může počkat, a dát rodině přehled v jasně členěné podobě.",
         "D": "ponechat většinu detailů na dokumentu a při setkání mluvit spíše obecně, aby rozhovor nepůsobil zahlcujícím dojmem."
       },
@@ -15634,8 +16134,8 @@ window.metadataExport = {
       "questionNumber": 36,
       "questionText": "Který postup je nejvhodnější při komunikaci citlivého obsahu e-mailem?",
       "options": {
-        "A": "Poslat co nejdetailnější vysvětlení, aby se předešlo dalším dotazům a vše bylo v jedné zprávě.",
-        "B": "Do předmětu e-mailu napsat hlavní závěr, aby měl příjemce hned jasno, čeho se zpráva týká.",
+        "A": "Poslat co nejdetailnější vysvětlení, aby se předešlo dalším dotazům a vše bylo v jedné zprávě, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "B": "Do předmětu e-mailu napsat hlavní závěr, aby měl příjemce hned jasno, čeho se zpráva týká, a to i při zohlednění popsaných okolností.",
         "C": "Vyhnout se jakékoli konkretizaci a poslat jen neurčité pozvání bez rámce, aby nevzniklo žádné riziko nedorozumění, a spoléhá na to, že to bude stačit.",
         "D": "Použít přiměřeně stručné a bezpečné sdělení, neřešit detailní citlivý obsah v předmětu a odkázat na vhodný způsob dalšího projednání."
       },
@@ -15724,10 +16224,10 @@ window.metadataExport = {
       "questionNumber": 37,
       "questionText": "Které tvrzení nejlépe odpovídá komunikaci se žákem, který mluví málo, ale neverbálně ukazuje volbu nebo nesouhlas?",
       "options": {
-        "A": "I neverbální odpověď je relevantní komunikační výstup; odborník ji má číst v kontextu a podle potřeby nabídnout vhodnou oporu pro vyjádření.",
+        "A": "I neverbální odpověď je relevantní komunikační výstup; odborník ji má vyhodnotit v kontextu a podle potřeby nabídnout vhodnou oporu pro vyjádření.",
         "B": "Neverbální projevy jsou užitečné jen orientačně; v odborném rozhovoru je rozhodující hlavně slovní odpověď, protože tím chce udržet běžné tempo práce.",
-        "C": "Pokud žák nemluví, je bezpečnější nevycházet z jeho neverbálních reakcí a komunikovat hlavně s doprovodem.",
-        "D": "Neverbální vyjádření má smysl brát vážně až tehdy, když je potvrzené standardizovaným testem komunikace."
+        "C": "Pokud žák nemluví, je bezpečnější nevycházet z jeho neverbálních reakcí a komunikovat hlavně s doprovodem, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Neverbální vyjádření má smysl brát vážně až tehdy, když je potvrzené standardizovaným testem komunikace, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "I neverbální odpověď je relevantní komunikační výstup; odborník ji má vyhodnotit v kontextu a podle potřeby nabídnout vhodnou oporu pro vyjádření.",
       "discipline": "komunikace jako profesní kompetence",
@@ -15816,8 +16316,8 @@ window.metadataExport = {
       "options": {
         "A": "„Tomu rozumím, ale stejně bych doporučil návrh přijmout, protože odborně je to nejbezpečnější řešení a příliš dlouhé rozebírání by jen zdržovalo další krok.“",
         "B": "„Rozumím, že s tím teď nesouhlasíte; pojďme si vyjasnit, co je pro vás v tom návrhu nejméně přijatelné a co zůstává cílem podpory.“",
-        "C": "„Když s tím nesouhlasíte, bude asi lepší návrh dál nerozebírat a vrátit se k němu někdy později.“",
-        "D": "„Nesouhlas je pochopitelný, ale nejprve byste měl uznat, že situaci známe odborněji než vy.“"
+        "C": "„Když s tím nesouhlasíte, bude asi lepší návrh dál nerozebírat a vrátit se k němu někdy později.“, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "„Nesouhlas je pochopitelný, ale nejprve byste měl uznat, že situaci známe odborněji než vy.“, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
       },
       "correctOptionText": "„Rozumím, že s tím teď nesouhlasíte; pojďme si vyjasnit, co je pro vás v tom návrhu nejméně přijatelné a co zůstává cílem podpory.“",
       "discipline": "komunikace jako profesní kompetence",
@@ -15906,7 +16406,7 @@ window.metadataExport = {
         "A": "„Potřebujeme sledovat, jak dítě vyjadřuje žádost, odmítnutí, volbu nebo potřebu i jinými prostředky než řečí.“",
         "B": "„Důležité je, aby komunikační způsob fungoval v běžných situacích, nejen při nácviku.“",
         "C": "„Dokud nezačne mluvit běžnými větami, nemá cenu řešit jemnější podobu komunikace.“",
-        "D": "„Budeme hledat, jak podpořit porozumění i možnost aktivně něco sdělit.“"
+        "D": "„Budeme hledat, jak podpořit porozumění i možnost aktivně něco sdělit.“, a to v popsané situaci."
       },
       "correctOptionText": "„Dokud nezačne mluvit běžnými větami, nemá cenu řešit jemnější podobu komunikace.“",
       "discipline": "komunikace jako profesní kompetence",
@@ -15995,8 +16495,8 @@ window.metadataExport = {
       "questionNumber": 40,
       "questionText": "Který postup je nejvhodnější při vysvětlování doporučení učiteli, který je zahlcený množstvím opatření?",
       "options": {
-        "A": "Projít všechna doporučení ve stejném detailu, aby učitel získal úplný obraz a nic nevynechal.",
-        "B": "Nechat učitele, ať si z dokumentu sám vybere, co mu připadá nejsnáze proveditelné.",
+        "A": "Projít všechna doporučení ve stejném detailu, aby učitel získal úplný obraz a nic nevynechal, a to v uvedeném kontextu.",
+        "B": "Nechat učitele, ať si z dokumentu sám vybere, co mu připadá nejsnáze proveditelné, a to v tomto typu rozlišení.",
         "C": "Zdůraznit hlavně legislativní závaznost opatření, protože ta bývá pro přijetí doporučení nejpřesvědčivější, a tím považuje situaci za vyřešenou.",
         "D": "Vybrat několik nosných komunikačních změn s nejvyšší návratností a ukázat je na konkrétních situacích z výuky."
       },
@@ -16089,8 +16589,8 @@ window.metadataExport = {
       "options": {
         "A": "Nátlak na okamžitou verbální odpověď může situaci zhoršovat; vhodné je nabídnout méně zatěžující komunikační kanál a bezpečný rámec.",
         "B": "Klíčem je trvat na krátkých mluvených odpovědích, aby si klient zvykl, že komunikace bez řeči nepřipadá v úvahu, a spoléhá na to, že to bude stačit.",
-        "C": "Nejlepší je komunikovat pouze přes rodiče, dokud klient nezačne sám spontánně mluvit.",
-        "D": "Efektivnější než upravovat komunikační nároky bývá ignorovat ticho a vést rozhovor standardním tempem."
+        "C": "Nejlepší je komunikovat pouze přes rodiče, dokud klient nezačne sám spontánně mluvit, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Efektivnější než upravovat komunikační nároky bývá ignorovat ticho a vést rozhovor standardním tempem, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
       },
       "correctOptionText": "Nátlak na okamžitou verbální odpověď může situaci zhoršovat; vhodné je nabídnout méně zatěžující komunikační kanál a bezpečný rámec.",
       "discipline": "komunikace jako profesní kompetence",
@@ -16176,10 +16676,10 @@ window.metadataExport = {
       "questionNumber": 42,
       "questionText": "Které shrnutí po mezioborovém setkání je nejvhodnější pro rodinu?",
       "options": {
-        "A": "Uvede hlavně všechny odborné rozdíly mezi členy týmu, aby rodina měla úplný přehled o diskusi.",
+        "A": "Uvede hlavně všechny odborné rozdíly mezi členy týmu, aby rodina měla úplný přehled o diskusi, a to právě v uvedeném rámci.",
         "B": "Stručně popíše, na čem je shoda, kde ještě zůstávají otevřené otázky a jaký bude nejbližší další krok.",
         "C": "Zdůrazní, že hlavní je nyní respektovat stanovisko nejspecializovanějšího člena týmu, ostatní pohledy jsou vedlejší.",
-        "D": "Shrne co nejvíc detailů z celého setkání a další kroky ponechá k rozhodnutí jednotlivých odborníků."
+        "D": "Shrne co nejvíc detailů z celého setkání a další kroky ponechá k rozhodnutí jednotlivých odborníků, a to v popsané situaci."
       },
       "correctOptionText": "Stručně popíše, na čem je shoda, kde ještě zůstávají otevřené otázky a jaký bude nejbližší další krok.",
       "discipline": "komunikace jako profesní kompetence",
@@ -16267,10 +16767,10 @@ window.metadataExport = {
       "questionNumber": 43,
       "questionText": "Při práci s delším ústním zadáním u žáka s poruchou pozornosti je komunikačně nejvhodnější",
       "options": {
-        "A": "zachovat plnou délku zadání, ale mluvit výrazně důrazněji, aby udrželo pozornost po celou dobu.",
+        "A": "zachovat plnou délku zadání, ale mluvit výrazně důrazněji, aby udrželo pozornost po celou dobu, a to v uvedeném kontextu.",
         "B": "opakovat totéž zadání několikrát po sobě stejnou formulací, dokud nevznikne jistota, že si je žák zapamatuje.",
         "C": "dát kratší úseky instrukce, průběžné orientační body a případně možnost se k zadání vrátit v dostupné podobě.",
-        "D": "nechat žáka, aby si dlouhé zadání odvodil z kontextu práce spolužáků, pokud první výklad nezachytil."
+        "D": "nechat žáka, aby si dlouhé zadání odvodil z kontextu práce spolužáků, pokud první výklad nezachytil, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "dát kratší úseky instrukce, průběžné orientační body a případně možnost se k zadání vrátit v dostupné podobě.",
       "discipline": "komunikace jako profesní kompetence",
@@ -16356,9 +16856,9 @@ window.metadataExport = {
       "questionNumber": 44,
       "questionText": "Které vyjádření je nejméně vhodné při společném rozhovoru s rodinou a školou?",
       "options": {
-        "A": "„Zkusme rozlišit, co máme společné a kde se popisy rozcházejí, a nepřeskakovat hned k závěrům.“",
+        "A": "„Zkusme rozlišit, co máme společné a kde se popisy rozcházejí, a nepřeskakovat hned k závěrům.“, a to v dané situaci.",
         "B": "„Nejdřív si srovnejme konkrétní situace, o kterých mluvíme, aby bylo jasné, že popisujeme totéž, a pak se uvidí, co z toho plyne.“",
-        "C": "„Můžeme se zastavit u rozdílných zkušeností a teprve potom hledat, co z nich plyne pro podporu.“",
+        "C": "„Můžeme se zastavit u rozdílných zkušeností a teprve potom hledat, co z nich plyne pro podporu.“, a to v uvedeném kontextu.",
         "D": "„V téhle chvíli je zřejmé, kdo situaci vidí reálněji, takže se raději opřeme hlavně o jeden pohled.“"
       },
       "correctOptionText": "„V téhle chvíli je zřejmé, kdo situaci vidí reálněji, takže se raději opřeme hlavně o jeden pohled.“",
@@ -16450,8 +16950,8 @@ window.metadataExport = {
       "options": {
         "A": "Měl by být srozumitelný a dost konkrétní, aby z něj bylo zřejmé, co se má ve výuce změnit a podle čeho se pozná účinek podpory.",
         "B": "Měl by být co nejodbornější, aby škola nemohla doporučení vykládat příliš volně nebo zjednodušeně, a tím považuje situaci za vyřešenou.",
-        "C": "Stačí, když přesně popíše diagnostický závěr; konkrétní komunikace s učitelem už je druhotná.",
-        "D": "Nejlepší zpráva je co nejstručnější, protože pedagogové stejně podrobnější části většinou nečtou."
+        "C": "Stačí, když přesně popíše diagnostický závěr; konkrétní komunikace s učitelem už je druhotná, a to v dané situaci, a to v popsané situaci.",
+        "D": "Nejlepší zpráva je co nejstručnější, protože pedagogové stejně podrobnější části většinou nečtou, a to v popsané situaci, a to v uvedeném kontextu."
       },
       "correctOptionText": "Měl by být srozumitelný a dost konkrétní, aby z něj bylo zřejmé, co se má ve výuce změnit a podle čeho se pozná účinek podpory.",
       "discipline": "komunikace jako profesní kompetence",
@@ -16541,8 +17041,8 @@ window.metadataExport = {
       "options": {
         "A": "„Nejlepší bude nesoustředit se teď na detaily, protože kombinace opatření se obvykle skládá až za pochodu a postupně se ukáže sama.“",
         "B": "„Jednotlivé kroky se budou doplňovat; nejde o jednu věc, která vše vyřeší, ale o kombinaci změn, které dávají smysl dohromady.“",
-        "C": "„V praxi bývá nejúčinnější vybrat jedno hlavní opatření a ostatní nechat až jako poslední možnost.“",
-        "D": "„Čím víc opatření se nastaví najednou, tím jistější je rychlé zlepšení situace.“"
+        "C": "„V praxi bývá nejúčinnější vybrat jedno hlavní opatření a ostatní nechat až jako poslední možnost.“, a to právě v uvedeném rámci.",
+        "D": "„Čím víc opatření se nastaví najednou, tím jistější je rychlé zlepšení situace.“, a to i při zohlednění popsaných okolností, a to v dané situaci."
       },
       "correctOptionText": "„Jednotlivé kroky se budou doplňovat; nejde o jednu věc, která vše vyřeší, ale o kombinaci změn, které dávají smysl dohromady.“",
       "discipline": "komunikace jako profesní kompetence",
@@ -16630,9 +17130,9 @@ window.metadataExport = {
       "questionText": "Který postup je nejvhodnější, když má odborník po rozhovoru podezření, že jeho formulace mohla být pochopena jinak, než zamýšlel?",
       "options": {
         "A": "Spolehne na to, že případné nejasnosti se obvykle vyjasní až při čtení doporučení doma v klidu, protože tím chce udržet běžné tempo práce.",
-        "B": "Nechává větu bez opravy, aby nepůsobil nejistě nebo rozporně v tom, co před chvílí řekl.",
+        "B": "Nechává větu bez opravy, aby nepůsobil nejistě nebo rozporně v tom, co před chvílí řekl, a to v popsané situaci.",
         "C": "Vrátí se k problematické části, uzná možnost nejasnosti a přeformuluje ji jednodušeji a konkrétněji.",
-        "D": "Přidá více odborných detailů, aby bylo zřejmé, proč původní formulace dávala smysl."
+        "D": "Přidá více odborných detailů, aby bylo zřejmé, proč původní formulace dávala smysl, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Vrátí se k problematické části, uzná možnost nejasnosti a přeformuluje ji jednodušeji a konkrétněji.",
       "discipline": "komunikace jako profesní kompetence",
@@ -16810,8 +17310,8 @@ window.metadataExport = {
       "options": {
         "A": "Nestačí opatření jen pojmenovat; je potřeba sdílet, jak se projeví v běžné práci a podle čeho se pozná, že pomáhají.",
         "B": "Pro porozumění obvykle stačí držet oficiální názvy opatření, protože ty mají pro všechny strany jednotný význam, protože takový postup pokládá za dostačující.",
-        "C": "Nejdůležitější je sdělit rodině, že opatření byla doporučena, detaily praktické realizace patří hlavně škole.",
-        "D": "Jakmile je opatření jednou vysvětleno, není nutné se k jeho smyslu a dopadu při další komunikaci vracet."
+        "C": "Nejdůležitější je sdělit rodině, že opatření byla doporučena, detaily praktické realizace patří hlavně škole, a to právě v uvedeném rámci.",
+        "D": "Jakmile je opatření jednou vysvětleno, není nutné se k jeho smyslu a dopadu při další komunikaci vracet, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Nestačí opatření jen pojmenovat; je potřeba sdílet, jak se projeví v běžné práci a podle čeho se pozná, že pomáhají.",
       "discipline": "komunikace jako profesní kompetence",
@@ -16900,9 +17400,9 @@ window.metadataExport = {
       "questionNumber": 50,
       "questionText": "Které uzavření poradenského rozhovoru je profesně nejvhodnější?",
       "options": {
-        "A": "„Myslím, že hlavní části už jsme probrali, takže tímto můžeme dnešní rozhovor uzavřít.“",
+        "A": "„Myslím, že hlavní části už jsme probrali, takže tímto můžeme dnešní rozhovor uzavřít.“, a to v dané situaci, a to v popsané situaci.",
         "B": "„Zkusím stručně shrnout, na čem jsme se domluvili, co uděláte vy, co škola a kdy si ověříme, jestli to přináší změnu.“",
-        "C": "„Vše podstatné bude v doporučení, takže teď už není nutné se k tomu vracet.“",
+        "C": "„Vše podstatné bude v doporučení, takže teď už není nutné se k tomu vracet.“, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
         "D": "„Další vývoj teď necháme hlavně na tom, jak si to jednotlivé strany samy mezi sebou nastaví, a průběžně uvidíme, kam se to posune.“"
       },
       "correctOptionText": "„Zkusím stručně shrnout, na čem jsme se domluvili, co uděláte vy, co škola a kdy si ověříme, jestli to přináší změnu.“",
@@ -16989,9 +17489,9 @@ window.metadataExport = {
       "questionText": "Které shrnutí nejpřesněji vymezuje vztah školy, ŠPP a ŠPZ?",
       "options": {
         "A": "ŠPP je poradenský rámec uvnitř školy, zatímco ŠPZ označuje externí poradenská zařízení typu PPP a SPC.",
-        "B": "ŠPP i ŠPZ označují stejný typ zařízení; rozdíl je jen v tom, zda působí na ZŠ nebo SŠ.",
+        "B": "ŠPP i ŠPZ označují stejný typ zařízení; rozdíl je jen v tom, zda působí na ZŠ nebo SŠ, a to v popsané situaci.",
         "C": "ŠPP patří do sociálních služeb, kdežto ŠPZ do zdravotnictví; škola je jen přebírá v rámci školní praxe.",
-        "D": "ŠPP je krajské zařízení a ŠPZ je jeho školní pobočka pro konkrétní budovu podle této logiky procesu."
+        "D": "ŠPP je krajské zařízení a ŠPZ je jeho školní pobočka pro konkrétní budovu podle této logiky procesu, a to v tomto typu rozlišení."
       },
       "correctOptionText": "ŠPP je poradenský rámec uvnitř školy, zatímco ŠPZ označuje externí poradenská zařízení typu PPP a SPC.",
       "discipline": "školské poradenství",
@@ -17078,9 +17578,9 @@ window.metadataExport = {
       "questionNumber": 2,
       "questionText": "Kdy je pro školu typicky procesně přesnější obrátit se na SPC než na PPP?",
       "options": {
-        "A": "Když škola potřebuje obecně prověřit širší studijní obtíže bez zřejmé vazby na konkrétní postižení.",
+        "A": "Když škola potřebuje obecně prověřit širší studijní obtíže bez zřejmé vazby na konkrétní postižení, a to právě v uvedeném rámci.",
         "B": "Když je potřeba specializovaná podpora navázaná na konkrétní druh postižení nebo kombinovaný profil.",
-        "C": "Když jde hlavně o běžné rozvrhové a organizační otázky uvnitř školy podle této logiky procesu.",
+        "C": "Když jde hlavně o běžné rozvrhové a organizační otázky uvnitř školy podle této logiky procesu, a to v dané situaci.",
         "D": "Když škola potřebuje jen potvrdit klasifikaci bez širší vazby na potřeby žáka v běžném poradenském režimu."
       },
       "correctOptionText": "Když je potřeba specializovaná podpora navázaná na konkrétní druh postižení nebo kombinovaný profil.",
@@ -17168,7 +17668,7 @@ window.metadataExport = {
       "questionNumber": 3,
       "questionText": "Které tvrzení o SVP je v systému nejpřesnější?",
       "options": {
-        "A": "SVP je souhrnné označení pro všechna SPC v kraji.",
+        "A": "SVP je souhrnné označení pro všechna SPC v kraji, a to v uvedeném kontextu.",
         "B": "SVP je povinná školní role obdobná výchovnému poradci na každé škole.",
         "C": "SVP je zařízení preventivně-výchovné péče; nejde o PPP ani SPC.",
         "D": "SVP je interní školní dokument, kterým se nahrazuje program poradenských služeb."
@@ -17259,8 +17759,8 @@ window.metadataExport = {
       "questionText": "Který dokument školy rámuje, jak škola organizuje vlastní poradenské služby?",
       "options": {
         "A": "IVP pro konkrétního žáka podle této logiky procesu.",
-        "B": "PLPP pro první stupeň podpory.",
-        "C": "Doporučení vystavené ŠPZ.",
+        "B": "PLPP pro první stupeň podpory, a to v popsané situaci.",
+        "C": "Doporučení vystavené ŠPZ, a to v uvedeném kontextu.",
         "D": "Program poradenských služeb ve škole."
       },
       "correctOptionText": "Program poradenských služeb ve škole.",
@@ -17350,8 +17850,8 @@ window.metadataExport = {
       "options": {
         "A": "Školní psycholog působí ve škole, zatímco psycholog PPP působí v rámci školského poradenského zařízení.",
         "B": "Školní psycholog je standardně pracovník PPP trvale vyslaný do školy, takže jde o tutéž roli v běžném školním provozu.",
-        "C": "Psycholog PPP je člen školního poradenského pracoviště a školní psycholog je externí konzultant kraje.",
-        "D": "Obě role patří do sociálních služeb; školství je využívá jen metodicky v tomto výkladu postupu."
+        "C": "Psycholog PPP je člen školního poradenského pracoviště a školní psycholog je externí konzultant kraje, a to v dané situaci.",
+        "D": "Obě role patří do sociálních služeb; školství je využívá jen metodicky v tomto výkladu postupu, a to v popsané situaci."
       },
       "correctOptionText": "Školní psycholog působí ve škole, zatímco psycholog PPP působí v rámci školského poradenského zařízení.",
       "discipline": "školské poradenství",
@@ -17436,10 +17936,10 @@ window.metadataExport = {
       "questionNumber": 6,
       "questionText": "Co nejpřesněji vystihuje hlavní funkci PLPP?",
       "options": {
-        "A": "Je to externí závěr ŠPZ, který škola pouze archivuje bez vlastní úpravy.",
+        "A": "Je to externí závěr ŠPZ, který škola pouze archivuje bez vlastní úpravy, a to v uvedeném kontextu.",
         "B": "Je to školní pracovní nástroj pro plánování a vyhodnocování podpory prvního stupně.",
         "C": "Je to dokument určený jen pro mimořádně nadané žáky a nelze jej použít u obtíží ve vzdělávání.",
-        "D": "Je to formulář kraje, kterým se škole přiděluje personální podpora."
+        "D": "Je to formulář kraje, kterým se škole přiděluje personální podpora, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Je to školní pracovní nástroj pro plánování a vyhodnocování podpory prvního stupně.",
       "discipline": "školské poradenství",
@@ -17526,10 +18026,10 @@ window.metadataExport = {
       "questionNumber": 7,
       "questionText": "Učitel opakovaně pozoruje, že žák selhává hlavně při dlouhých verbálních instrukcích. Který první krok školy je nejpřesnější?",
       "options": {
-        "A": "Ihned vyžádat externí vyšetření a do té doby ve výuce nic neměnit.",
+        "A": "Ihned vyžádat externí vyšetření a do té doby ve výuce nic neměnit, a to v dané situaci.",
         "B": "Rovnou sepsat IVP, aby bylo zřejmé, že škola situaci bere vážně v tomto výkladu postupu.",
         "C": "Zachytit konkrétní situace, upravit zadávání a sledovat, co výkon zlepšuje.",
-        "D": "Požádat spolužáky, aby za žáka průběžně dovysvětlovali každé zadání."
+        "D": "Požádat spolužáky, aby za žáka průběžně dovysvětlovali každé zadání, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Zachytit konkrétní situace, upravit zadávání a sledovat, co výkon zlepšuje.",
       "discipline": "školské poradenství",
@@ -17618,8 +18118,8 @@ window.metadataExport = {
       "questionText": "Co v poradenském procesu nejpřesněji představuje doporučení ŠPZ?",
       "options": {
         "A": "Obecný popis klimatu školy bez vazby na konkrétního žáka v tomto výkladu postupu.",
-        "B": "Interní školní dokument, kterým si škola sama schvaluje další postup.",
-        "C": "Souhrn neověřených pozorování učitele před prvním kontaktem s rodinou.",
+        "B": "Interní školní dokument, kterým si škola sama schvaluje další postup, a to i při zohlednění popsaných okolností.",
+        "C": "Souhrn neověřených pozorování učitele před prvním kontaktem s rodinou, a to v dané situaci.",
         "D": "Výstup, který navrhuje podpůrná opatření a podmínky vzdělávání pro školní praxi."
       },
       "correctOptionText": "Výstup, který navrhuje podpůrná opatření a podmínky vzdělávání pro školní praxi.",
@@ -17710,8 +18210,8 @@ window.metadataExport = {
       "options": {
         "A": "Zpráva popisuje zjištění a jejich interpretaci, kdežto doporučení převádí závěr do návrhu podpory pro školu.",
         "B": "Zpráva je školní dokument a doporučení je jen neformální poznámka poradce pro rodiče podle této logiky procesu.",
-        "C": "Zpráva i doporučení jsou dvě názvy pro tentýž dokument bez odlišné funkce v běžném poradenském režimu.",
-        "D": "Doporučení slouží jen k archivaci, zatímco zpráva sama stanovuje závazný školní postup."
+        "C": "Zpráva i doporučení jsou dvě názvy pro tentýž dokument bez odlišné funkce v běžném poradenském režimu, a to právě v uvedeném rámci.",
+        "D": "Doporučení slouží jen k archivaci, zatímco zpráva sama stanovuje závazný školní postup, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Zpráva popisuje zjištění a jejich interpretaci, kdežto doporučení převádí závěr do návrhu podpory pro školu.",
       "discipline": "školské poradenství",
@@ -17886,10 +18386,10 @@ window.metadataExport = {
       "questionNumber": 11,
       "questionText": "Škola už několik týdnů cíleně upravuje zadávání i organizaci práce, ale efekt je jen částečný napříč předměty. Jaký další krok je nejpřesnější?",
       "options": {
-        "A": "Vyčkat bez další práce do dalšího pololetí, aby se ukázalo, zda se potíže samy neupraví.",
+        "A": "Vyčkat bez další práce do dalšího pololetí, aby se ukázalo, zda se potíže samy neupraví, a to právě v uvedeném rámci.",
         "B": "Zrušit všechny dosavadní úpravy, protože bez ŠPZ stejně nemají smysl v běžném školním provozu.",
         "C": "Na základě záznamů a vyhodnocené podpory otevřít s rodinou krok k odbornému posouzení v ŠPZ.",
-        "D": "Přenechat řešení výhradně třídě, aby spolužáci žáka více tahali výkonem nahoru."
+        "D": "Přenechat řešení výhradně třídě, aby spolužáci žáka více tahali výkonem nahoru, a to v popsané situaci."
       },
       "correctOptionText": "Na základě záznamů a vyhodnocené podpory otevřít s rodinou krok k odbornému posouzení v ŠPZ.",
       "discipline": "školské poradenství",
@@ -17977,8 +18477,8 @@ window.metadataExport = {
       "questionNumber": 12,
       "questionText": "Co je nejpřesnější role školy po převzetí doporučení ŠPZ?",
       "options": {
-        "A": "Dokument pouze založit do spisu a další rozhodování ponechat výhradně rodině.",
-        "B": "Vnímat doporučení hlavně jako kontrolní podklad pro případ inspekce v daném pojetí systému.",
+        "A": "Dokument pouze založit do spisu a další rozhodování ponechat výhradně rodině, a to v uvedeném kontextu.",
+        "B": "Vnímat doporučení hlavně jako kontrolní podklad pro případ inspekce v daném pojetí systému, a to v tomto typu rozlišení.",
         "C": "Předat text doporučení učiteli bez dalšího plánování a bez sledování dopadu v tomto výkladu postupu.",
         "D": "Převést doporučení do konkrétní podpory, rozdělit odpovědnosti a průběžně vyhodnocovat účinek."
       },
@@ -18068,8 +18568,8 @@ window.metadataExport = {
       "questionText": "Co samo o sobě ještě nepředstavuje systematicky nastavenou první školní podporu?",
       "options": {
         "A": "Obecný slovní komentář, že je potřeba být na žáka citlivější.",
-        "B": "Záznam konkrétních obtíží a zvolených úprav ve výuce.",
-        "C": "Průběžné sledování, zda zkoušené kroky opravdu pomáhají.",
+        "B": "Záznam konkrétních obtíží a zvolených úprav ve výuce, a to v popsané situaci.",
+        "C": "Průběžné sledování, zda zkoušené kroky opravdu pomáhají, a to v uvedeném kontextu.",
         "D": "Promyšlené nastavení podpory tak, aby se dalo dále vyhodnocovat."
       },
       "correctOptionText": "Obecný slovní komentář, že je potřeba být na žáka citlivější.",
@@ -18245,8 +18745,8 @@ window.metadataExport = {
       "questionNumber": 15,
       "questionText": "Který výrok nejpřesněji odlišuje PLPP od IVP?",
       "options": {
-        "A": "PLPP vytváří jen ŠPZ, kdežto IVP vytváří jen rodič v rámci školní praxe a běžného poradenského režimu.",
-        "B": "PLPP i IVP označují stejný dokument, liší se pouze délkou formuláře podle této logiky procesu a navazujícího školního nastavení.",
+        "A": "PLPP vytváří jen ŠPZ, kdežto IVP vytváří jen rodič v rámci školní praxe a běžného poradenského režimu, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "PLPP i IVP označují stejný dokument, liší se pouze délkou formuláře podle této logiky procesu a navazujícího školního nastavení, a to v tomto typu rozlišení.",
         "C": "PLPP je školní nástroj první úrovně podpory, zatímco IVP konkretizuje vzdělávací podmínky konkrétního žáka v jiném režimu podpory.",
         "D": "IVP je vždy externí diagnostický závěr a PLPP je jen interní poznámka učitele v běžném školním provozu a každodenní organizaci školy."
       },
@@ -18427,8 +18927,8 @@ window.metadataExport = {
       "options": {
         "A": "Jedno označuje poradenské zajištění uvnitř školy, druhé externí zařízení s vlastní odbornou agendou.",
         "B": "ŠPP i ŠPZ jsou dvě názvoslovné varianty pro stejný tým pracovníků v jedné škole v běžném školním provozu.",
-        "C": "Rozdíl mezi nimi je jen geografický: ŠPP působí ve městě a ŠPZ na venkově v daném pojetí systému.",
-        "D": "ŠPP řeší jen prospěch a ŠPZ jen docházku; oba pracují bez vazby na podporu ve vzdělávání."
+        "C": "Rozdíl mezi nimi je jen geografický: ŠPP působí ve městě a ŠPZ na venkově v daném pojetí systému, a to v dané situaci.",
+        "D": "ŠPP řeší jen prospěch a ŠPZ jen docházku; oba pracují bez vazby na podporu ve vzdělávání, a to v popsané situaci."
       },
       "correctOptionText": "Jedno označuje poradenské zajištění uvnitř školy, druhé externí zařízení s vlastní odbornou agendou.",
       "discipline": "školské poradenství",
@@ -18513,7 +19013,7 @@ window.metadataExport = {
       "questionNumber": 18,
       "questionText": "Ve které situaci je typickým partnerem spíše PPP než SPC?",
       "options": {
-        "A": "Když je hlavním problémem situace speciálněpedagogická podpora navázaná na konkrétní smyslové či kombinované postižení.",
+        "A": "Když se situace týká speciálněpedagogické podpory navázané na konkrétní smyslové či kombinované postižení, a to v uvedeném kontextu.",
         "B": "Když škola potřebuje posoudit širší vzdělávací a vývojové obtíže bez zřejmé vazby na konkrétní druh postižení.",
         "C": "Když škola potřebuje vyměnit školní dokument za nový formulář kraje v tomto výkladu postupu a návazné školní praxi.",
         "D": "Když jde o běžné rozdělení služeb třídního učitele v rámci ročníku v rámci školní praxe a běžného poradenského režimu."
@@ -18955,7 +19455,7 @@ window.metadataExport = {
       "questionNumber": 23,
       "questionText": "Která položka typicky nepatří mezi vnitřní zajištění poradenských služeb školy?",
       "options": {
-        "A": "Školní poradenské pracoviště.",
+        "A": "Školní poradenské pracoviště, a to právě v uvedeném rámci.",
         "B": "Školní psycholog nebo školní speciální pedagog, pokud je škola má k dispozici.",
         "C": "PPP jako samostatné školské poradenské zařízení.",
         "D": "Výchovný poradce a školní metodik prevence v rámci školy."
@@ -19136,9 +19636,9 @@ window.metadataExport = {
       "questionText": "Co škola po převzetí doporučení ŠPZ nemá dělat jako hlavní postup?",
       "options": {
         "A": "Uložit dokument do spisu a považovat podpůrný proces za uzavřený.",
-        "B": "Rozdělit odpovědnosti a převést doporučení do každodenní práce.",
+        "B": "Rozdělit odpovědnosti a převést doporučení do každodenní práce, a to v popsané situaci.",
         "C": "Sledovat, zda se opatření ve škole opravdu daří naplňovat v rámci školní praxe.",
-        "D": "V případě potřeby průběžně komunikovat o realizaci podpory."
+        "D": "V případě potřeby průběžně komunikovat o realizaci podpory, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Uložit dokument do spisu a považovat podpůrný proces za uzavřený.",
       "discipline": "školské poradenství",
@@ -19225,10 +19725,10 @@ window.metadataExport = {
       "questionNumber": 26,
       "questionText": "Kdy je partnerství se SPC procesně přesnější než s PPP, i když škola už podpůrné kroky zahájila?",
       "options": {
-        "A": "Když se ve škole jen střídají různé formy domácí přípravy bez širší speciálněpedagogické otázky.",
+        "A": "Když se ve škole jen střídají různé formy domácí přípravy bez širší speciálněpedagogické otázky, a to právě v uvedeném rámci.",
         "B": "Když se ukazuje potřeba specializovaného vedení vázaného na konkrétní postižení nebo jeho kombinaci.",
         "C": "Když škola potřebuje schválit rozvrh podpory bez odborného posouzení žáka podle této logiky procesu.",
-        "D": "Když je cílem nahradit průběžné sledování účinku podpory jednorázovým administrativním krokem."
+        "D": "Když je cílem nahradit průběžné sledování účinku podpory jednorázovým administrativním krokem, a to v popsané situaci."
       },
       "correctOptionText": "Když se ukazuje potřeba specializovaného vedení vázaného na konkrétní postižení nebo jeho kombinaci.",
       "discipline": "školské poradenství",
@@ -19315,8 +19815,8 @@ window.metadataExport = {
       "questionNumber": 27,
       "questionText": "Jaké shrnutí nejlépe vystihuje smysl první školní podpory před případným krokem k ŠPZ?",
       "options": {
-        "A": "Uzavřít situaci bez dalšího sledování, pokud se alespoň něco krátkodobě zlepší.",
-        "B": "Nahradit veškeré další odborné rozhodování, aby už nebylo nutné nic konzultovat.",
+        "A": "Uzavřít situaci bez dalšího sledování, pokud se alespoň něco krátkodobě zlepší, a to v uvedeném kontextu.",
+        "B": "Nahradit veškeré další odborné rozhodování, aby už nebylo nutné nic konzultovat, a to v tomto typu rozlišení.",
         "C": "Zpřesnit obraz obtíží, ověřit účinek úprav a vytvořit podklad pro další rozhodování.",
         "D": "Hlavně vytvořit rozsáhlý text, který bude působit odborně bez vazby na realitu výuky."
       },
@@ -19404,8 +19904,8 @@ window.metadataExport = {
       "questionText": "Škola zjistí, že navržený způsob podpory je třeba v praxi upřesnit vzhledem k reálným podmínkám. Který postup je nejpřesnější?",
       "options": {
         "A": "Doporučení ponechat beze změny na papíře a ve výuce jej využívat jen symbolicky podle této logiky procesu.",
-        "B": "Realizaci podpory odložit do konce platnosti dokumentu, aby se vše řešilo naráz.",
-        "C": "Přenést odpovědnost za celou úpravu výhradně na rodinu v běžném školním provozu.",
+        "B": "Realizaci podpory odložit do konce platnosti dokumentu, aby se vše řešilo naráz, a to v popsané situaci.",
+        "C": "Přenést odpovědnost za celou úpravu výhradně na rodinu v běžném školním provozu, a to v uvedeném kontextu.",
         "D": "Komunikovat se ŠPZ a hledat procesně správné nastavení místo tichého ignorování doporučení."
       },
       "correctOptionText": "Komunikovat se ŠPZ a hledat procesně správné nastavení místo tichého ignorování doporučení.",
@@ -19496,8 +19996,8 @@ window.metadataExport = {
       "options": {
         "A": "Koordinuje poradenské a vzdělávací otázky školy, komunikuje s partnery a pomáhá orientovat další postup.",
         "B": "Je to pracovník externího SPC, který přebírá řízení veškeré podpory místo školy v běžném školním provozu.",
-        "C": "Jeho role se omezuje jen na zápis známek a vedení klasifikačních listů v daném pojetí systému.",
-        "D": "Nemá žádnou vazbu na poradenský proces a působí pouze při mimoškolních akcích v tomto výkladu postupu."
+        "C": "Jeho role se omezuje jen na zápis známek a vedení klasifikačních listů v daném pojetí systému, a to v dané situaci.",
+        "D": "Nemá žádnou vazbu na poradenský proces a působí pouze při mimoškolních akcích v tomto výkladu postupu, a to v popsané situaci."
       },
       "correctOptionText": "Koordinuje poradenské a vzdělávací otázky školy, komunikuje s partnery a pomáhá orientovat další postup.",
       "discipline": "školské poradenství",
@@ -19672,7 +20172,7 @@ window.metadataExport = {
       "questionNumber": 31,
       "questionText": "Které tvrzení nejlépe odlišuje školu od ŠPZ v odpovědnosti za každodenní podporu žáka?",
       "options": {
-        "A": "Škola jen přebírá hotová rozhodnutí, ale sama žádnou podpůrnou práci nevykonává.",
+        "A": "Škola jen přebírá hotová rozhodnutí, ale sama žádnou podpůrnou práci nevykonává, a to v dané situaci.",
         "B": "ŠPZ přebírá průběžnou výuku žáka a škola zůstává jen administrativním místem evidence.",
         "C": "ŠPZ navrhuje a odborně rámuje podporu, škola ji každodenně uskutečňuje a sleduje.",
         "D": "Obě strany mají v denní realizaci stejné úkoly, takže není nutné jejich role rozlišovat."
@@ -19849,8 +20349,8 @@ window.metadataExport = {
       "questionText": "Které vymezení nejlépe odpovídá roli školního speciálního pedagoga?",
       "options": {
         "A": "Odborně podporuje nastavení vzdělávání žáků se speciálními vzdělávacími potřebami a pomáhá převádět potřeby do školní praxe.",
-        "B": "Je to externí pracovník ŠPZ, který automaticky nahrazuje všechnu podporu ve škole podle této logiky procesu.",
-        "C": "Jeho práce se omezuje jen na administraci přijímacích testů a maturitních úprav v běžném poradenském režimu.",
+        "B": "Je to externí pracovník ŠPZ, který automaticky nahrazuje všechnu podporu ve škole podle této logiky procesu, a to v tomto typu rozlišení.",
+        "C": "Jeho práce se omezuje jen na administraci přijímacích testů a maturitních úprav v běžném poradenském režimu, a to právě v uvedeném rámci.",
         "D": "Jde hlavně o roli zaměřenou na požární ochranu a bezpečnostní dokumentaci školy v běžném školním provozu a každodenní organizaci školy."
       },
       "correctOptionText": "Odborně podporuje nastavení vzdělávání žáků se speciálními vzdělávacími potřebami a pomáhá převádět potřeby do školní praxe.",
@@ -20114,8 +20614,8 @@ window.metadataExport = {
       "questionNumber": 36,
       "questionText": "Co má škola v první fázi podpory potřebovat zachytit co nejpřesněji?",
       "options": {
-        "A": "Jen obecný dojem, že žák asi potřebuje více času, bez vazby na konkrétní situace.",
-        "B": "Především to, jak by situaci jednou mohlo pojmenovat externí pracoviště.",
+        "A": "Jen obecný dojem, že žák asi potřebuje více času, bez vazby na konkrétní situace, a to v uvedeném kontextu.",
+        "B": "Především to, jak by situaci jednou mohlo pojmenovat externí pracoviště, a to v tomto typu rozlišení.",
         "C": "Hlavně to, zda text záznamu působí dostatečně odborným stylem v tomto výkladu postupu.",
         "D": "V jakých situacích se obtíže objevují, jaké úpravy škola zkouší a s jakým efektem."
       },
@@ -20205,8 +20705,8 @@ window.metadataExport = {
       "questionText": "Které shrnutí nejpřesněji vystihuje, co škola dělá s odborným závěrem v každodenní praxi?",
       "options": {
         "A": "Převádí jej do konkrétních vzdělávacích kroků, rolí a organizace podpory.",
-        "B": "Považuje jej za čistě externí materiál, který se do výuky nepřenáší.",
-        "C": "Využívá jej jen při ročním hodnocení, ale ne během běžného učení.",
+        "B": "Považuje jej za čistě externí materiál, který se do výuky nepřenáší, a to v popsané situaci.",
+        "C": "Využívá jej jen při ročním hodnocení, ale ne během běžného učení, a to v uvedeném kontextu.",
         "D": "Nahrazuje jím veškeré průběžné pedagogické rozhodování bez ohledu na realitu třídy."
       },
       "correctOptionText": "Převádí jej do konkrétních vzdělávacích kroků, rolí a organizace podpory.",
@@ -20296,8 +20796,8 @@ window.metadataExport = {
       "options": {
         "A": "Mimořádné nadání se poradenského systému netýká, protože nejde o speciální vzdělávací potřebu ve školním smyslu.",
         "B": "I u mimořádně nadaného žáka může být na místě poradenské posouzení a promyšlené podpůrné nastavení školy.",
-        "C": "U nadání postačí jen slovní pochvala; dokumenty a plánování podpory jsou systémově nevhodné.",
-        "D": "Jakmile se objeví nadání, škola už nesmí sledovat žádné obtíže nebo nerovnoměrný profil výkonu."
+        "C": "U nadání postačí jen slovní pochvala; dokumenty a plánování podpory jsou systémově nevhodné, a to v dané situaci.",
+        "D": "Jakmile se objeví nadání, škola už nesmí sledovat žádné obtíže nebo nerovnoměrný profil výkonu, a to v popsané situaci."
       },
       "correctOptionText": "I u mimořádně nadaného žáka může být na místě poradenské posouzení a promyšlené podpůrné nastavení školy.",
       "discipline": "školské poradenství",
@@ -20385,7 +20885,7 @@ window.metadataExport = {
       "questionText": "Který dokument neurčuje podporu jednoho konkrétního žáka, ale rámuje poradenské služby školy jako celku?",
       "options": {
         "A": "PLPP pro konkrétní první úroveň podpory.",
-        "B": "IVP pro konkrétního žáka.",
+        "B": "IVP pro konkrétního žáka, a to v tomto typu rozlišení.",
         "C": "Program poradenských služeb ve škole.",
         "D": "Doporučení ŠPZ vztažené k jednomu případu."
       },
@@ -20475,8 +20975,8 @@ window.metadataExport = {
       "questionText": "Které vymezení nejlépe odpovídá roli školního psychologa uvnitř školy?",
       "options": {
         "A": "Jde jen o jiný název pro psychologa PPP, pokud do školy někdy dochází podle této logiky procesu.",
-        "B": "Jeho role spočívá výhradně v klasifikaci žáků a neváže se na poradenské služby školy.",
-        "C": "Patří primárně do zdravotnictví, takže do školního poradenského systému nespadá.",
+        "B": "Jeho role spočívá výhradně v klasifikaci žáků a neváže se na poradenské služby školy, a to v popsané situaci.",
+        "C": "Patří primárně do zdravotnictví, takže do školního poradenského systému nespadá, a to v uvedeném kontextu.",
         "D": "Podílí se na školních poradenských službách uvnitř školy; není totéž co psycholog PPP."
       },
       "correctOptionText": "Podílí se na školních poradenských službách uvnitř školy; není totéž co psycholog PPP.",
@@ -20564,8 +21064,8 @@ window.metadataExport = {
       "options": {
         "A": "Nesnažit se unáhleně vybrat jedinou hypotézu, ale sledovat silné i slabé stránky a podle toho volit další poradenský krok.",
         "B": "Předem rozhodnout, že u nadaného žáka nemůže být žádná bariéra ve vzdělávání v běžném školním provozu a každodenní organizaci školy.",
-        "C": "Předem rozhodnout, že vysoký výkon automaticky vylučuje potřebu jakékoli podpory v daném pojetí systému.",
-        "D": "Vyčkat bez úprav, aby škola neovlivnila případné budoucí posouzení v tomto výkladu postupu a návazné školní praxi."
+        "C": "Předem rozhodnout, že vysoký výkon automaticky vylučuje potřebu jakékoli podpory v daném pojetí systému, a to v dané situaci.",
+        "D": "Vyčkat bez úprav, aby škola neovlivnila případné budoucí posouzení v tomto výkladu postupu a návazné školní praxi, a to v popsané situaci."
       },
       "correctOptionText": "Nesnažit se unáhleně vybrat jedinou hypotézu, ale sledovat silné i slabé stránky a podle toho volit další poradenský krok.",
       "discipline": "školské poradenství",
@@ -20828,9 +21328,9 @@ window.metadataExport = {
       "questionNumber": 44,
       "questionText": "Co je procesně nejméně správné po ukončení vyšetření v ŠPZ?",
       "options": {
-        "A": "Převést závěr do konkrétního školního postupu v tomto výkladu postupu.",
+        "A": "Převést závěr do konkrétního školního postupu v tomto výkladu postupu, a to právě v uvedeném rámci.",
         "B": "Sledovat, jak se navržená podpora daří v běžné výuce v rámci školní praxe.",
-        "C": "V případě potřeby dále komunikovat o realizaci podpory.",
+        "C": "V případě potřeby dále komunikovat o realizaci podpory, a to v dané situaci.",
         "D": "Považovat práci školy za hotovou jen proto, že externí krok už proběhl."
       },
       "correctOptionText": "Považovat práci školy za hotovou jen proto, že externí krok už proběhl.",
@@ -20919,8 +21419,8 @@ window.metadataExport = {
       "questionText": "Které přiřazení je v systému MŠMT nejpřesnější?",
       "options": {
         "A": "PPP a SPC patří mezi školská poradenská zařízení, zatímco ŠPP je poradenský rámec školy.",
-        "B": "PPP a SPC tvoří dohromady ŠPP a škola je jejich administrativní pobočkou.",
-        "C": "ŠPP, PPP i SPC jsou synonyma pro tentýž druh služby, liší se jen zkratkou.",
+        "B": "PPP a SPC tvoří dohromady ŠPP a škola je jejich administrativní pobočkou, a to v tomto typu rozlišení.",
+        "C": "ŠPP, PPP i SPC jsou synonyma pro tentýž druh služby, liší se jen zkratkou, a to právě v uvedeném rámci.",
         "D": "ŠPP patří do zdravotnictví, PPP do sociální oblasti a SPC do školství v běžném školním provozu."
       },
       "correctOptionText": "PPP a SPC patří mezi školská poradenská zařízení, zatímco ŠPP je poradenský rámec školy.",
@@ -21098,8 +21598,8 @@ window.metadataExport = {
       "questionNumber": 47,
       "questionText": "Které tvrzení nejlépe vystihuje týmový smysl školního poradenského pracoviště?",
       "options": {
-        "A": "Nahrazuje všechny učitele v práci s podporou, takže běžná pedagogická praxe už není důležitá.",
-        "B": "Slouží hlavně k tomu, aby škola nemusela komunikovat s rodinou ani s externími partnery.",
+        "A": "Nahrazuje všechny učitele v práci s podporou, takže běžná pedagogická praxe už není důležitá, a to právě v uvedeném rámci.",
+        "B": "Slouží hlavně k tomu, aby škola nemusela komunikovat s rodinou ani s externími partnery, a to i při zohlednění popsaných okolností.",
         "C": "Propojuje školní role tak, aby se poradenská práce nerozpadla do izolovaných jednotlivců a náhodných kroků.",
         "D": "Má jen archivní funkci a jeho hlavní úkol je ukládat dokumenty bez vazby na proces v tomto výkladu postupu."
       },
@@ -21187,8 +21687,8 @@ window.metadataExport = {
       "questionText": "Které shrnutí je nejpřesnější pro práci školy s mimořádným nadáním?",
       "options": {
         "A": "Jakmile škola rozpozná nadání, další poradenské uvažování už není vhodné v běžném školním provozu a každodenní organizaci školy.",
-        "B": "Nadání se řeší jen neformálně, protože školní dokumenty jsou určeny výhradně pro obtíže v daném pojetí systému.",
-        "C": "Stačí jednorázově zvýšit náročnost práce a není třeba sledovat, jak toto nastavení funguje v tomto výkladu postupu.",
+        "B": "Nadání se řeší jen neformálně, protože školní dokumenty jsou určeny výhradně pro obtíže v daném pojetí systému, a to v tomto typu rozlišení.",
+        "C": "Stačí jednorázově zvýšit náročnost práce a není třeba sledovat, jak toto nastavení funguje v tomto výkladu postupu, a to právě v uvedeném rámci.",
         "D": "Nestačí jen pojmenovat silnou stránku; škola má promyslet i konkrétní vzdělávací podmínky a průběžně je vyhodnocovat."
       },
       "correctOptionText": "Nestačí jen pojmenovat silnou stránku; škola má promyslet i konkrétní vzdělávací podmínky a průběžně je vyhodnocovat.",
@@ -21277,8 +21777,8 @@ window.metadataExport = {
       "questionText": "Které tvrzení nejpřesněji zachycuje vztah mezi nadáním a poradenským systémem?",
       "options": {
         "A": "Poradenský systém se nevztahuje jen na bariéry; může podporovat i žáky mimořádně nadané.",
-        "B": "Poradenský systém řeší výhradně zdravotní znevýhodnění a nadání je z něj vyloučeno.",
-        "C": "Nadání se týká jen soutěží a rozšířených úkolů, nikoli školních poradenských služeb.",
+        "B": "Poradenský systém řeší výhradně zdravotní znevýhodnění a nadání je z něj vyloučeno, a to v popsané situaci.",
+        "C": "Nadání se týká jen soutěží a rozšířených úkolů, nikoli školních poradenských služeb, a to v uvedeném kontextu.",
         "D": "Jakmile se objeví nadání, škola už nemá sledovat, jaké vzdělávací podmínky žák skutečně potřebuje."
       },
       "correctOptionText": "Poradenský systém se nevztahuje jen na bariéry; může podporovat i žáky mimořádně nadané.",
@@ -21366,9 +21866,9 @@ window.metadataExport = {
       "questionNumber": 50,
       "questionText": "Které shrnutí nejlépe vystihuje procesně správné rozhodování školy v oblasti školského poradenství?",
       "options": {
-        "A": "Začíná co nejrychlejším předáním situace mimo školu a končí archivací externího závěru v tomto výkladu postupu a návazné školní praxi.",
+        "A": "Začíná co nejrychlejším předáním situace mimo školu a končí archivací externího závěru v tomto výkladu postupu a návazné školní praxi, a to právě v uvedeném rámci.",
         "B": "Začíná přesným zachycením obtíží ve škole, pokračuje volbou odpovídajícího partnera a nekončí převzetím dokumentu, ale jeho převedením do praxe a vyhodnocováním.",
-        "C": "Začíná vyplněním co nejobsáhlejší dokumentace a konkrétní práci s podporou nechává až na později podle této logiky procesu a navazujícího školního nastavení.",
+        "C": "Začíná vyplněním co nejobsáhlejší dokumentace a konkrétní práci s podporou nechává až na později podle této logiky procesu a navazujícího školního nastavení, a to v dané situaci.",
         "D": "Začíná až v okamžiku, kdy je k dispozici definitivní odborný závěr, aby škola nic nepředbíhala a mohla celý postup řešit teprve následně v běžném poradenském režimu a navazující dokumentaci."
       },
       "correctOptionText": "Začíná přesným zachycením obtíží ve škole, pokračuje volbou odpovídajícího partnera a nekončí převzetím dokumentu, ale jeho převedením do praxe a vyhodnocováním.",
@@ -21456,10 +21956,10 @@ window.metadataExport = {
       "questionNumber": 1,
       "questionText": "Které vymezení je nejpřesnější pro potřebu podpory, která zjevně přesahuje rámec školy do běžného života?",
       "options": {
-        "A": "Jakmile je dítě žákem školy, má mít přednost vždy školský režim bez hledání sociální služby.",
+        "A": "Jakmile je dítě žákem školy, má mít přednost vždy školský režim bez hledání sociální služby, a to právě v uvedeném rámci.",
         "B": "Pokud potřeba trvá i mimo vyučování a v přirozeném prostředí, nelze ji automaticky řešit jen školní podporou.",
-        "C": "Co se objeví během školního roku, patří výhradně do kompetence školy bez dalšího rozlišení situace.",
-        "D": "Podpora mimo vyučování se má odložit, dokud škola nevypotřebuje všechny své interní možnosti."
+        "C": "Co se objeví během školního roku, patří výhradně do kompetence školy bez dalšího rozlišení situace, a to v dané situaci.",
+        "D": "Podpora mimo vyučování se má odložit, dokud škola nevypotřebuje všechny své interní možnosti, a to v popsané situaci."
       },
       "correctOptionText": "Pokud potřeba trvá i mimo vyučování a v přirozeném prostředí, nelze ji automaticky řešit jen školní podporou.",
       "discipline": "sociální služby",
@@ -21543,9 +22043,9 @@ window.metadataExport = {
       "questionNumber": 2,
       "questionText": "Která služba nejlépe odpovídá podpoře člověka, který potřebuje průběžnou pomoc napříč běžnými činnostmi v přirozeném prostředí?",
       "options": {
-        "A": "Pečovatelská služba je nejpřesnější vždy, když se potřeba týká i pohybu mimo domácnost.",
-        "B": "Asistent pedagoga je nejpřesnější řešení i tehdy, když se potřeba odehrává převážně mimo vzdělávání.",
-        "C": "Zdravotní služba je nejpřesnější pokaždé, když je přítomna potřeba doprovodu a fyzické pomoci.",
+        "A": "Pečovatelská služba je nejpřesnější vždy, když se potřeba týká i pohybu mimo domácnost, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Asistent pedagoga je nejpřesnější řešení i tehdy, když se potřeba odehrává převážně mimo vzdělávání, a to v tomto typu rozlišení.",
+        "C": "Zdravotní služba je nejpřesnější pokaždé, když je přítomna potřeba doprovodu a fyzické pomoci, a to právě v uvedeném rámci.",
         "D": "Osobní asistence je nejpřesnější tam, kde podpora probíhá napříč každodenními situacemi a není vázána jen na školu."
       },
       "correctOptionText": "Osobní asistence je nejpřesnější tam, kde podpora probíhá napříč každodenními situacemi a není vázána jen na školu.",
@@ -21716,9 +22216,9 @@ window.metadataExport = {
       "questionNumber": 4,
       "questionText": "Které shrnutí nejpřesněji vystihuje, proč bývá raná péče prvním vhodným partnerem rodiny malého dítěte s postižením nebo ohroženým vývojem?",
       "options": {
-        "A": "Raná péče je především školské zařízení, které přebírá vzdělávání dítěte před vstupem do MŠ.",
-        "B": "Raná péče je hlavně zdravotnická léčba v domácnosti, která nahrazuje sociální i poradenskou linku.",
-        "C": "Raná péče slouží především k rozhodování o dávkách, nikoli k podpoře dítěte a rodiny v běžném životě.",
+        "A": "Raná péče je především školské zařízení, které přebírá vzdělávání dítěte před vstupem do MŠ, a to právě v uvedeném rámci.",
+        "B": "Raná péče je hlavně zdravotnická léčba v domácnosti, která nahrazuje sociální i poradenskou linku, a to i při zohlednění popsaných okolností.",
+        "C": "Raná péče slouží především k rozhodování o dávkách, nikoli k podpoře dítěte a rodiny v běžném životě, a to v dané situaci.",
         "D": "Raná péče spojuje podporu vývoje dítěte, práci s rodinou a orientaci v návaznosti služeb v přirozeném prostředí."
       },
       "correctOptionText": "Raná péče spojuje podporu vývoje dítěte, práci s rodinou a orientaci v návaznosti služeb v přirozeném prostředí.",
@@ -21803,9 +22303,9 @@ window.metadataExport = {
       "questionText": "Které rozlišení základního a odborného sociálního poradenství je nejpřesnější?",
       "options": {
         "A": "Základní sociální poradenství dává orientaci v možnostech řešení, zatímco odborné pracuje hlouběji s konkrétní nepříznivou situací.",
-        "B": "Základní sociální poradenství patří škole a odborné výhradně zdravotnictví, proto se nesmějí překrývat.",
-        "C": "Základní sociální poradenství řeší dávky a odborné výhradně reedukaci poruch učení v rodině.",
-        "D": "Rozdíl mezi základním a odborným sociálním poradenstvím spočívá hlavně ve věku klienta, nikoli v charakteru potřeby."
+        "B": "Základní sociální poradenství patří škole a odborné výhradně zdravotnictví, proto se nesmějí překrývat, a to v tomto typu rozlišení.",
+        "C": "Základní sociální poradenství řeší dávky a odborné výhradně reedukaci poruch učení v rodině, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Rozdíl mezi základním a odborným sociálním poradenstvím spočívá hlavně ve věku klienta, nikoli v charakteru potřeby, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Základní sociální poradenství dává orientaci v možnostech řešení, zatímco odborné pracuje hlouběji s konkrétní nepříznivou situací.",
       "discipline": "sociální poradenství",
@@ -21889,10 +22389,10 @@ window.metadataExport = {
       "questionNumber": 6,
       "questionText": "Kdy je nejpřesnější uvažovat o sociální rehabilitaci?",
       "options": {
-        "A": "Když je cílem dočasně ulevit rodině tím, že někdo na chvíli převezme péči o člena domácnosti.",
+        "A": "Když je cílem dočasně ulevit rodině tím, že někdo na chvíli převezme péči o člena domácnosti, a to v dané situaci.",
         "B": "Když je cílem posílit samostatnost, orientaci v běžném životě a reálné zapojení do společnosti.",
         "C": "Když je cílem nahradit školní podporu ve výuce bez ohledu na širší fungování člověka v běžném životě.",
-        "D": "Když je cílem výhradně medicínská léčba nebo úprava farmakoterapie po získaném onemocnění."
+        "D": "Když je cílem výhradně medicínská léčba nebo úprava farmakoterapie po získaném onemocnění, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Když je cílem posílit samostatnost, orientaci v běžném životě a reálné zapojení do společnosti.",
       "discipline": "sociální služby",
@@ -21977,10 +22477,10 @@ window.metadataExport = {
       "questionNumber": 7,
       "questionText": "Rodina se neptá na výuku ani na léčbu, ale na nároky, služby, finance a orientaci v systému. Co je podstatou této potřeby?",
       "options": {
-        "A": "Jde automaticky o důvod k zahájení řízení OSPOD, protože rodina sama zatím neví, kam se obrátit.",
-        "B": "Jde automaticky o školský problém, protože jakákoli nejistota rodiny se má nejprve řešit ve škole.",
+        "A": "Jde automaticky o důvod k zahájení řízení OSPOD, protože rodina sama zatím neví, kam se obrátit, a to právě v uvedeném rámci.",
+        "B": "Jde automaticky o školský problém, protože jakákoli nejistota rodiny se má nejprve řešit ve škole, a to i při zohlednění popsaných okolností.",
         "C": "Jde především o poradenskou orientaci v sociální oblasti, teprve potom lze rozlišovat další návazné kroky.",
-        "D": "Jde především o zdravotnickou potřebu, protože nároky a pomůcky se vždy odvíjejí od medicínské diagnózy."
+        "D": "Jde především o zdravotnickou potřebu, protože nároky a pomůcky se vždy odvíjejí od medicínské diagnózy, a to v popsané situaci."
       },
       "correctOptionText": "Jde především o poradenskou orientaci v sociální oblasti, teprve potom lze rozlišovat další návazné kroky.",
       "discipline": "sociální poradenství",
@@ -22064,10 +22564,10 @@ window.metadataExport = {
       "questionNumber": 8,
       "questionText": "Které vysvětlení vztahu mezi ranou péčí a zdravotnictvím je nejpřesnější?",
       "options": {
-        "A": "Raná péče nahrazuje zdravotnictví, pokud už byla stanovena diagnóza a rodina je v domácím prostředí.",
+        "A": "Raná péče nahrazuje zdravotnictví, pokud už byla stanovena diagnóza a rodina je v domácím prostředí, a to v uvedeném kontextu.",
         "B": "Zdravotnictví řeší diagnostiku a léčbu, zatímco raná péče doplňuje podporu dítěte a rodiny v běžném fungování.",
-        "C": "Jakmile vstoupí do situace zdravotník, nemá už sociální služba včasné podpory žádný samostatný význam.",
-        "D": "Raná péče je vhodná jen tehdy, když se rodina rozhodne nevyužívat zdravotní služby nebo odmítá diagnózu."
+        "C": "Jakmile vstoupí do situace zdravotník, nemá už sociální služba včasné podpory žádný samostatný význam, a to právě v uvedeném rámci.",
+        "D": "Raná péče je vhodná jen tehdy, když se rodina rozhodne nevyužívat zdravotní služby nebo odmítá diagnózu, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Zdravotnictví řeší diagnostiku a léčbu, zatímco raná péče doplňuje podporu dítěte a rodiny v běžném fungování.",
       "discipline": "sociální služby a meziresortní orientace",
@@ -22155,7 +22655,7 @@ window.metadataExport = {
         "A": "Asistent pedagoga má být první volbou i pro doprovod, hygienu a volný čas mimo školu, pokud dítě chodí do školy.",
         "B": "Asistent pedagoga je vázán na podporu vzdělávání; potřeby mimo tento rámec mohou vyžadovat jiný typ služby.",
         "C": "Asistent pedagoga je sociální služba školy, a proto automaticky pokrývá i domácí a komunitní fungování žáka.",
-        "D": "Asistent pedagoga nahrazuje osobní asistenci všude tam, kde má žák potvrzené zdravotní postižení."
+        "D": "Asistent pedagoga nahrazuje osobní asistenci všude tam, kde má žák potvrzené zdravotní postižení, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Asistent pedagoga je vázán na podporu vzdělávání; potřeby mimo tento rámec mohou vyžadovat jiný typ služby.",
       "discipline": "škola × sociální oblast",
@@ -22240,9 +22740,9 @@ window.metadataExport = {
       "questionText": "Kdy je nejpřesnější uvažovat o vstupu OSPOD?",
       "options": {
         "A": "Tehdy, když je ve hře ohrožení dítěte, jeho práv, bezpečí nebo závažně narušené fungování rodiny.",
-        "B": "Tehdy, když si rodiče nejsou jistí, na které sociální služby a dávky by se mohli ptát.",
-        "C": "Tehdy, když škola potřebuje rychleji vyřídit doporučení k podpůrným opatřením pro žáka.",
-        "D": "Tehdy, když je třeba zajistit běžnou pomoc s pohybem, dopravou a mimoškolní aktivitou dítěte."
+        "B": "Tehdy, když si rodiče nejsou jistí, na které sociální služby a dávky by se mohli ptát, a to i při zohlednění popsaných okolností.",
+        "C": "Tehdy, když škola potřebuje rychleji vyřídit doporučení k podpůrným opatřením pro žáka, a to v dané situaci.",
+        "D": "Tehdy, když je třeba zajistit běžnou pomoc s pohybem, dopravou a mimoškolní aktivitou dítěte, a to v popsané situaci."
       },
       "correctOptionText": "Tehdy, když je ve hře ohrožení dítěte, jeho práv, bezpečí nebo závažně narušené fungování rodiny.",
       "discipline": "OSPOD a sociálně-právní ochrana dětí",
@@ -22325,11 +22825,11 @@ window.metadataExport = {
       "batteryTitle": "Sociální a zdravotní přesah – tvrdá meziresortní diferenciace",
       "batterySubtitle": "Sociální služby, OSPOD, zdravotnictví a hranice podpory mimo školu bez návodných mikrokazuistik.",
       "questionNumber": 11,
-      "questionText": "Rodina je velmi přetížená, ale popis situace zatím neukazuje na přímé ohrožení dítěte. Co je nejpřesnější první posouzení?",
+      "questionText": "Rodina je velmi přetížená, ale popis situace zatím neukazuje na přímé ohrožení dítěte. Co je nejpřesnější první čtení?",
       "options": {
-        "A": "U silné pečující zátěže je nejpřesnější vždy rovnou zahájit linii sociálně-právní ochrany dítěte.",
+        "A": "U silné pečující zátěže je nejpřesnější vždy rovnou zahájit linii sociálně-právní ochrany dítěte, a to v uvedeném kontextu.",
         "B": "Jakmile rodina popíše únavu a přetížení, odpovědnost přechází hlavně na školu a její vnitřní poradenský rámec.",
-        "C": "Pokud není přítomna akutní medicínská komplikace, není na místě hledat žádnou vnější podporu rodině.",
+        "C": "Pokud není přítomna akutní medicínská komplikace, není na místě hledat žádnou vnější podporu rodině, a to právě v uvedeném rámci.",
         "D": "Nejprve je třeba zvažovat podpůrné sociální služby a úlevu rodině, ne automaticky vyvozovat vstup OSPOD."
       },
       "correctOptionText": "Nejprve je třeba zvažovat podpůrné sociální služby a úlevu rodině, ne automaticky vyvozovat vstup OSPOD.",
@@ -22415,10 +22915,10 @@ window.metadataExport = {
       "questionNumber": 12,
       "questionText": "Které shrnutí nejlépe vystihuje vztah MŠ a návazných služeb u malého dítěte s postižením?",
       "options": {
-        "A": "Jakmile dítě nastoupí do MŠ, sociální služba rané péče ztrácí smysl a škola přebírá všechnu podporu.",
+        "A": "Jakmile dítě nastoupí do MŠ, sociální služba rané péče ztrácí smysl a škola přebírá všechnu podporu, a to v dané situaci, a to v popsané situaci.",
         "B": "Mateřská škola řeší vzdělávací rámec, ale rodina může zároveň potřebovat jinou podporu mimo školu; nejde o vztah buď–anebo.",
-        "C": "Pokud dítě navštěvuje MŠ, má se odložit jakákoli další koordinace, dokud se neukáže školní neúspěch.",
-        "D": "MŠ je v těchto situacích jen přechodná forma péče, a proto nemá vlastní vzdělávací ani poradenskou roli."
+        "C": "Pokud dítě navštěvuje MŠ, má se odložit jakákoli další koordinace, dokud se neukáže školní neúspěch, a to v uvedeném kontextu.",
+        "D": "MŠ je v těchto situacích jen přechodná forma péče, a proto nemá vlastní vzdělávací ani poradenskou roli, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Mateřská škola řeší vzdělávací rámec, ale rodina může zároveň potřebovat jinou podporu mimo školu; nejde o vztah buď–anebo.",
       "discipline": "škola × sociální oblast",
@@ -22503,8 +23003,8 @@ window.metadataExport = {
       "questionText": "Které vysvětlení je nejpřesnější, když je školní výkon stabilní, ale hlavní obtíž se týká fungování mimo školu?",
       "options": {
         "A": "Těžiště podpory se může přesouvat k sociální službě, protože popsaný problém neleží primárně ve vzdělávání.",
-        "B": "Stabilní školní výkon znamená, že žádná další služba už není věcně potřebná ani smysluplná.",
-        "C": "Jakákoli obtíž dítěte je nejpřesněji řešena školou, pokud se projevuje v období povinné školní docházky.",
+        "B": "Stabilní školní výkon znamená, že žádná další služba už není věcně potřebná ani smysluplná, a to i při zohlednění popsaných okolností.",
+        "C": "Jakákoli obtíž dítěte je nejpřesněji řešena školou, pokud se projevuje v období povinné školní docházky, a to v dané situaci.",
         "D": "Pokud se potíže objevují hlavně odpoledne, je nejpřesnější hledat jejich původ jen v nedostatečné motivaci rodiny."
       },
       "correctOptionText": "Těžiště podpory se může přesouvat k sociální službě, protože popsaný problém neleží primárně ve vzdělávání.",
@@ -22677,9 +23177,9 @@ window.metadataExport = {
       "questionNumber": 15,
       "questionText": "Které vymezení role školy vůči sociální agendě rodiny je nejpřesnější?",
       "options": {
-        "A": "Škola má být prvním rozhodujícím místem pro určení sociálních dávek a druhu sociální služby rodiny.",
-        "B": "Škola do sociální oblasti vůbec nevstupuje; jakákoli rodinná zátěž je mimo její odborný zájem a komunikaci.",
-        "C": "Škola přebírá sociální agendu rodiny vždy, když se rodinná situace začne promítat do docházky žáka.",
+        "A": "Škola má být prvním rozhodujícím místem pro určení sociálních dávek a druhu sociální služby rodiny, a to v dané situaci.",
+        "B": "Škola do sociální oblasti vůbec nevstupuje; jakákoli rodinná zátěž je mimo její odborný zájem a komunikaci, a to v popsané situaci.",
+        "C": "Škola přebírá sociální agendu rodiny vždy, když se rodinná situace začne promítat do docházky žáka, a to v uvedeném kontextu.",
         "D": "Škola může potřebu zachytit a spolupracovat, ale sama není orgánem pro rozhodování o sociálních nárocích rodiny."
       },
       "correctOptionText": "Škola může potřebu zachytit a spolupracovat, ale sama není orgánem pro rozhodování o sociálních nárocích rodiny.",
@@ -22764,10 +23264,10 @@ window.metadataExport = {
       "questionNumber": 16,
       "questionText": "Které vysvětlení vztahu zdravotnictví a školy při vzdělávacím dopadu zdravotního stavu je nejpřesnější?",
       "options": {
-        "A": "Jakmile existuje zdravotnická zpráva, škola už jen čeká na přesný návod a sama organizačně nerozhoduje.",
-        "B": "Pokud je obtíž zdravotně podmíněná, je školní úprava nevhodná, dokud neskončí léčba nebo rehabilitace.",
+        "A": "Jakmile existuje zdravotnická zpráva, škola už jen čeká na přesný návod a sama organizačně nerozhoduje, a to právě v uvedeném rámci.",
+        "B": "Pokud je obtíž zdravotně podmíněná, je školní úprava nevhodná, dokud neskončí léčba nebo rehabilitace, a to i při zohlednění popsaných okolností.",
         "C": "Zdravotnictví popisuje a léčí stav, ale škola musí samostatně řešit jeho dopad do organizace vzdělávání.",
-        "D": "Zdravotnický závěr automaticky určuje i všechny pedagogické metody, hodnocení a podobu školního režimu."
+        "D": "Zdravotnický závěr automaticky určuje i všechny pedagogické metody, hodnocení a podobu školního režimu, a to v popsané situaci."
       },
       "correctOptionText": "Zdravotnictví popisuje a léčí stav, ale škola musí samostatně řešit jeho dopad do organizace vzdělávání.",
       "discipline": "škola × zdravotnictví",
@@ -22852,10 +23352,10 @@ window.metadataExport = {
       "questionNumber": 17,
       "questionText": "Které rozlišení léčebné rehabilitace a školní organizace práce je nejpřesnější?",
       "options": {
-        "A": "Pokud dítě dochází na rehabilitaci, škola by neměla měnit pracovní tempo ani podmínky vzdělávání.",
-        "B": "Úprava školní organizace práce je vhodná až po ukončení rehabilitace, aby se role systémů nepletly.",
+        "A": "Pokud dítě dochází na rehabilitaci, škola by neměla měnit pracovní tempo ani podmínky vzdělávání, a to v uvedeném kontextu.",
+        "B": "Úprava školní organizace práce je vhodná až po ukončení rehabilitace, aby se role systémů nepletly, a to v tomto typu rozlišení.",
         "C": "Rehabilitace a školní organizace práce se nevylučují; léčba běží jinde, škola řeší svůj vlastní funkční dopad.",
-        "D": "Rehabilitace sama nahrazuje potřebu pedagogicky promýšlet tempo, zátěž a praktické uspořádání školního dne."
+        "D": "Rehabilitace sama nahrazuje potřebu pedagogicky promýšlet tempo, zátěž a praktické uspořádání školního dne, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Rehabilitace a školní organizace práce se nevylučují; léčba běží jinde, škola řeší svůj vlastní funkční dopad.",
       "discipline": "škola × zdravotnictví",
@@ -23026,9 +23526,9 @@ window.metadataExport = {
       "questionNumber": 19,
       "questionText": "Které rozlišení klinického logopeda a školní podpory komunikace je nejpřesnější?",
       "options": {
-        "A": "Pokud dítě dochází ke klinickému logopedovi, škola už nemá důvod upravovat komunikaci, instrukce ani režim práce.",
-        "B": "Školní podpora komunikace nahrazuje klinickou logopedii, pokud dítě tráví většinu dne ve škole nebo v družině.",
-        "C": "Rozdíl mezi klinickým logopedem a školou je hlavně administrativní; obsah podpory je ve skutečnosti tentýž.",
+        "A": "Pokud dítě dochází ke klinickému logopedovi, škola už nemá důvod upravovat komunikaci, instrukce ani režim práce, a to právě v uvedeném rámci.",
+        "B": "Školní podpora komunikace nahrazuje klinickou logopedii, pokud dítě tráví většinu dne ve škole nebo v družině, a to i při zohlednění popsaných okolností.",
+        "C": "Rozdíl mezi klinickým logopedem a školou je hlavně administrativní; obsah podpory je ve skutečnosti tentýž, a to v dané situaci.",
         "D": "Klinický logoped řeší terapeutickou linku, zatímco škola musí současně řešit dopad komunikační obtíže do učení a účasti."
       },
       "correctOptionText": "Klinický logoped řeší terapeutickou linku, zatímco škola musí současně řešit dopad komunikační obtíže do učení a účasti.",
@@ -23199,8 +23699,8 @@ window.metadataExport = {
       "questionNumber": 21,
       "questionText": "Které vymezení vztahu probíhající léčby a odpovědnosti školy je nejpřesnější?",
       "options": {
-        "A": "Po dobu léčby má škola vyčkat a nepřijímat žádná opatření, aby se odborné role systémů nepřekrývaly.",
-        "B": "Léčba přebírá i oblast vzdělávání, pokud se obtíž týká zdravotního stavu a ne jen školního výkonu.",
+        "A": "Po dobu léčby má škola vyčkat a nepřijímat žádná opatření, aby se odborné role systémů nepřekrývaly, a to v dané situaci.",
+        "B": "Léčba přebírá i oblast vzdělávání, pokud se obtíž týká zdravotního stavu a ne jen školního výkonu, a to v popsané situaci.",
         "C": "Škola má během léčby sledovat jen docházku; ostatní dopady do práce a hodnocení řeší až po jejím ukončení.",
         "D": "To, že probíhá léčba, nepozastavuje povinnost školy reagovat na vzdělávací a organizační dopad situace."
       },
@@ -23462,10 +23962,10 @@ window.metadataExport = {
       "questionNumber": 24,
       "questionText": "Rodina má lékařskou zprávu, ale hlavní problém popisuje v dopravě, domácím režimu a koordinaci pomoci. Co je nejpřesnější?",
       "options": {
-        "A": "Vedle zdravotnické informace může být výrazně přítomna i sociální potřeba, protože podstata je praktická a organizační zátěž rodiny.",
-        "B": "Jakmile rodina přinese lékařskou zprávu, je nejpřesnější držet situaci už jen ve zdravotnické linii bez dalšího rozlišení.",
-        "C": "Praktická zátěž rodiny je vedle medicínského nálezu druhořadá, protože pro systémovou volbu podpory není podstatná.",
-        "D": "Pokud je obtíž organizační, má ji řešit pouze škola, protože koordinace rodinného režimu je vždy školská agenda."
+        "A": "Vedle zdravotnické informace může být výrazně přítomna i sociální potřeba, protože v popředí stojí praktická a organizační zátěž rodiny.",
+        "B": "Jakmile rodina přinese lékařskou zprávu, je nejpřesnější držet situaci už jen ve zdravotnické linii bez dalšího rozlišení, a to v popsané situaci.",
+        "C": "Praktická zátěž rodiny je vedle medicínského nálezu druhořadá, protože pro systémovou volbu podpory není podstatná, a to v uvedeném kontextu.",
+        "D": "Pokud je obtíž organizační, má ji řešit pouze škola, protože koordinace rodinného režimu je vždy školská agenda, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Vedle zdravotnické informace může být výrazně přítomna i sociální potřeba, protože v popředí stojí praktická a organizační zátěž rodiny.",
       "discipline": "meziresortní orientace",
@@ -23637,10 +24137,10 @@ window.metadataExport = {
       "questionNumber": 26,
       "questionText": "Které vymezení meziresortní koordinace je nejpřesnější?",
       "options": {
-        "A": "Nejpřesnější koordinace vzniká tehdy, když se celá situace převede pod jediný systém a ostatní ustoupí.",
-        "B": "Meziresortní koordinace znamená, že jeden partner přebírá odpovědnost i za úkoly, které patří jiným resortům.",
+        "A": "Nejpřesnější koordinace vzniká tehdy, když se celá situace převede pod jediný systém a ostatní ustoupí, a to v uvedeném kontextu.",
+        "B": "Meziresortní koordinace znamená, že jeden partner přebírá odpovědnost i za úkoly, které patří jiným resortům, a to v tomto typu rozlišení.",
         "C": "Různé vrstvy potřeby mohou vyžadovat různé partnery; přesná koordinace není totéž jako hledání jedné všeřešící instituce.",
-        "D": "Koordinace je vhodná jen tehdy, pokud se partneři shodnou, že problém nepatří ani škole, ani rodině."
+        "D": "Koordinace je vhodná jen tehdy, pokud se partneři shodnou, že problém nepatří ani škole, ani rodině, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Různé vrstvy potřeby mohou vyžadovat různé partnery; přesná koordinace není totéž jako hledání jedné všeřešící instituce.",
       "discipline": "meziresortní orientace",
@@ -23813,7 +24313,7 @@ window.metadataExport = {
       "questionText": "Které vymezení role školy při výběru sociální služby je nejpřesnější?",
       "options": {
         "A": "Škola může zachytit potřebu a podpořit orientaci, ale není sama rozhodujícím orgánem pro výběr sociální služby.",
-        "B": "Škola má být hlavním rozhodovatelem o tom, kterou sociální službu bude rodina využívat a v jakém rozsahu.",
+        "B": "Škola má být hlavním rozhodovatelem o tom, kterou sociální službu bude rodina využívat a v jakém rozsahu, a to i při zohlednění popsaných okolností.",
         "C": "Pokud škola rozpozná sociální potřebu, je nejpřesnější rodinu už dál neinformovat a nekomunikovat s ní o návaznosti.",
         "D": "Škola může zvažovat sociální službu jen tehdy, když má od OSPOD písemný pokyn k výběru konkrétního poskytovatele."
       },
@@ -23899,10 +24399,10 @@ window.metadataExport = {
       "questionNumber": 29,
       "questionText": "Které vysvětlení vztahu sociální zátěže rodiny a školního dopadu je nejpřesnější?",
       "options": {
-        "A": "Jakmile se rodinná zátěž projeví ve škole, přestává být sociální oblast relevantní a vše přechází na školu.",
-        "B": "Sociální zátěž rodiny se školy odborně netýká, protože škola sleduje jen výkon a docházku bez širšího kontextu.",
+        "A": "Jakmile se rodinná zátěž projeví ve škole, přestává být sociální oblast relevantní a vše přechází na školu, a to v uvedeném kontextu.",
+        "B": "Sociální zátěž rodiny se školy odborně netýká, protože škola sleduje jen výkon a docházku bez širšího kontextu, a to v tomto typu rozlišení.",
         "C": "Sociální zátěž rodiny může výrazně dopadat do školy, ale neznamená to, že se z ní tím stává čistě školní problém.",
-        "D": "Školní dopad rodinné zátěže je vždy důkazem ohrožení dítěte a automatickým důvodem pro vstup OSPOD."
+        "D": "Školní dopad rodinné zátěže je vždy důkazem ohrožení dítěte a automatickým důvodem pro vstup OSPOD, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Sociální zátěž rodiny může výrazně dopadat do školy, ale neznamená to, že se z ní tím stává čistě školní problém.",
       "discipline": "meziresortní orientace",
@@ -23990,7 +24490,7 @@ window.metadataExport = {
         "A": "Nejprve vybrat nejsilnější instituci a teprve podle ní zpětně vyložit, jaké potřeby v situaci vlastně jsou.",
         "B": "Nejprve určit, kdo je za situaci formálně odpovědný, a ostatní vrstvy potřeby ponechat až na závěrečné doplnění.",
         "C": "Nejprve rozlišit vrstvy potřeby, a teprve potom přiřazovat vhodné partnery a další kroky.",
-        "D": "Nejprve zjistit, kde je klient právě evidován, protože to samo určuje i správné čtení celé situace."
+        "D": "Nejprve zjistit, kde je klient právě evidován, protože to samo určuje i správné vyhodnocení celé situace."
       },
       "correctOptionText": "Nejprve rozlišit vrstvy potřeby, a teprve potom přiřazovat vhodné partnery a další kroky.",
       "discipline": "meziresortní orientace",
@@ -24161,9 +24661,9 @@ window.metadataExport = {
       "questionText": "Které vymezení je nejpřesnější pro práci s různými partnery v jedné situaci?",
       "options": {
         "A": "Je odborně v pořádku, když různé vrstvy potřeby drží různí partneři, pokud jsou role srozumitelně rozlišené.",
-        "B": "Odborně přesné je vždy zvolit jednoho partnera a ostatní odsunout, aby nedocházelo k roztříštění podpory.",
+        "B": "Odborně přesné je vždy zvolit jednoho partnera a ostatní odsunout, aby nedocházelo k roztříštění podpory, a to v tomto typu rozlišení.",
         "C": "Různí partneři znamenají nejasnost v systému; správný postup je proto vyčkat, kdo se ujme situace jako první.",
-        "D": "Jakmile je potřeba více partnerů, ukazuje to na chybnou diagnostiku nebo na nedostatečnou motivaci rodiny."
+        "D": "Jakmile je potřeba více partnerů, ukazuje to na chybnou diagnostiku nebo na nedostatečnou motivaci rodiny, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Je odborně v pořádku, když různé vrstvy potřeby drží různí partneři, pokud jsou role srozumitelně rozlišené.",
       "discipline": "meziresortní orientace",
@@ -24245,7 +24745,7 @@ window.metadataExport = {
       "batteryTitle": "Sociální a zdravotní přesah – tvrdá meziresortní diferenciace",
       "batterySubtitle": "Sociální služby, OSPOD, zdravotnictví a hranice podpory mimo školu bez návodných mikrokazuistik.",
       "questionNumber": 33,
-      "questionText": "Která strategie prvního posouzení zadání je v B6 nejpřesnější?",
+      "questionText": "Která strategie prvního čtení zadání je v B6 nejpřesnější?",
       "options": {
         "A": "Nejprve pojmenovat hlavní potřebu a její dopad, ne se chytit první známé instituce nebo zkratky.",
         "B": "Nejprve vyhledat jakoukoli známou instituci v zadání, protože ta obvykle přímo prozrazuje správnou odpověď.",
@@ -24335,7 +24835,7 @@ window.metadataExport = {
         "A": "Škola může koordinovat spolupráci kolem vzdělávacího dopadu, ale nepřebírá tím cizí resortní kompetence.",
         "B": "Škola má při koordinaci převzít i rozhodování o sociálních službách a zdravotnických postupech, aby byl systém jednotný.",
         "C": "Pokud se v situaci objeví jiný resort, škola už nemá koordinovat nic a má zůstat jen pasivním příjemcem závěrů.",
-        "D": "Koordinace školy je vhodná jen tehdy, když se ostatní partneři vzdají samostatné komunikace s rodinou."
+        "D": "Koordinace školy je vhodná jen tehdy, když se ostatní partneři vzdají samostatné komunikace s rodinou, a to v popsané situaci."
       },
       "correctOptionText": "Škola může koordinovat spolupráci kolem vzdělávacího dopadu, ale nepřebírá tím cizí resortní kompetence.",
       "discipline": "škola × sociální oblast × zdravotnictví",
@@ -24505,10 +25005,10 @@ window.metadataExport = {
       "questionNumber": 36,
       "questionText": "Které shrnutí nejlépe vystihuje, co v B6 signalizuje práh pro uvažování o OSPOD?",
       "options": {
-        "A": "Jakmile je situace dlouhodobá, je práh OSPOD naplněn automaticky bez ohledu na povahu problému.",
+        "A": "Jakmile je situace dlouhodobá, je práh OSPOD naplněn automaticky bez ohledu na povahu problému, a to v dané situaci.",
         "B": "Nejde o každou náročnou situaci, ale o situaci, kde je třeba chránit práva, bezpečí nebo řádný vývoj dítěte.",
-        "C": "Práh OSPOD je naplněn vždy, když rodina čerpá sociální službu nebo má doloženou diagnózu dítěte.",
-        "D": "Do úvahy o OSPOD vstupuje hlavně to, zda škola nebo rodina stihla vyřídit všechny dokumenty včas."
+        "C": "Práh OSPOD je naplněn vždy, když rodina čerpá sociální službu nebo má doloženou diagnózu dítěte, a to v uvedeném kontextu.",
+        "D": "Do úvahy o OSPOD vstupuje hlavně to, zda škola nebo rodina stihla vyřídit všechny dokumenty včas, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Nejde o každou náročnou situaci, ale o situaci, kde je třeba chránit práva, bezpečí nebo řádný vývoj dítěte.",
       "discipline": "OSPOD a sociálně-právní ochrana dětí",
@@ -24592,9 +25092,9 @@ window.metadataExport = {
       "questionNumber": 37,
       "questionText": "Co je nejpřesnější těžiště podpory, když je problémem hlavně zátěž pečujícího a nikoli ohrožení dítěte?",
       "options": {
-        "A": "Těžiště leží v tom, aby škola převzala mimoškolní péči, protože jde o dítě školního věku.",
-        "B": "Těžiště leží v zahájení OSPOD, protože přetížení pečujícího samo o sobě vždy znamená ohrožení dítěte.",
-        "C": "Těžiště leží v tom, aby se rodina stáhla z aktivit a snížila nároky, místo hledání vnější podpory.",
+        "A": "Těžiště leží v tom, aby škola převzala mimoškolní péči, protože jde o dítě školního věku, a to právě v uvedeném rámci.",
+        "B": "Těžiště leží v zahájení OSPOD, protože přetížení pečujícího samo o sobě vždy znamená ohrožení dítěte, a to i při zohlednění popsaných okolností.",
+        "C": "Těžiště leží v tom, aby se rodina stáhla z aktivit a snížila nároky, místo hledání vnější podpory, a to v dané situaci.",
         "D": "Těžiště leží v podpoře a úlevě rodině, typicky přes sociální služby, ne v automatickém přechodu do ochranné linie."
       },
       "correctOptionText": "Těžiště leží v podpoře a úlevě rodině, typicky přes sociální služby, ne v automatickém přechodu do ochranné linie.",
@@ -24680,10 +25180,10 @@ window.metadataExport = {
       "questionNumber": 38,
       "questionText": "Které vysvětlení je nejpřesnější, když rodina potřebuje hlavně zorientovat praktické fungování a návaznost podpory?",
       "options": {
-        "A": "Nejpřesnější je rovnou doporučit konkrétní školské opatření, protože praktické fungování rodiny se tím obvykle srovná.",
-        "B": "Nejpřesnější je čekat na další zhoršení, protože orientace v systému bez akutního tlaku bývá předčasná.",
+        "A": "Nejpřesnější je rovnou doporučit konkrétní školské opatření, protože praktické fungování rodiny se tím obvykle srovná, a to v uvedeném kontextu.",
+        "B": "Nejpřesnější je čekat na další zhoršení, protože orientace v systému bez akutního tlaku bývá předčasná, a to v tomto typu rozlišení.",
         "C": "Nejprve je na místě kvalitní poradenská orientace a rozpad situace na řešitelné kroky, ne skok do jedné známé instituce.",
-        "D": "Nejpřesnější je vybrat jedinou službu a ostatní vrstvy situace odložit, aby rodina nebyla zahlcená informacemi."
+        "D": "Nejpřesnější je vybrat jedinou službu a ostatní vrstvy situace odložit, aby rodina nebyla zahlcená informacemi, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Nejprve je na místě kvalitní poradenská orientace a rozpad situace na řešitelné kroky, ne skok do jedné známé instituce.",
       "discipline": "sociální poradenství",
@@ -24768,7 +25268,7 @@ window.metadataExport = {
       "questionNumber": 39,
       "questionText": "Které vymezení praktické pomoci mimo školu je nejpřesnější?",
       "options": {
-        "A": "Praktická pomoc mimo školu je vedlejší a systémově se neřeší, pokud škola funguje bez větších problémů.",
+        "A": "Praktická pomoc mimo školu je vedlejší a systémově se neřeší, pokud škola funguje bez větších problémů, a to v dané situaci.",
         "B": "Praktická pomoc mimo školu je nejpřesněji chápána jako rozšířená pedagogická práce školy v odpoledních hodinách.",
         "C": "Praktická pomoc mimo školu je znakem, že by rodina měla nejprve změnit vzdělávací zařízení nebo školní režim dítěte.",
         "D": "Jde o oblast, kde často vstupují sociální služby, protože těžiště podpory leží v běžném životě, ne ve výuce."
@@ -24942,10 +25442,10 @@ window.metadataExport = {
       "questionNumber": 41,
       "questionText": "Které shrnutí návratu dítěte po hospitalizaci do školy je nejpřesnější?",
       "options": {
-        "A": "Po hospitalizaci je nejpřesnější ponechat veškeré rozhodování zdravotnictví a školu zapojit až po plném zotavení.",
+        "A": "Po hospitalizaci je nejpřesnější ponechat veškeré rozhodování zdravotnictví a školu zapojit až po plném zotavení, a to v uvedeném kontextu.",
         "B": "Návrat po hospitalizaci je vícevrstvá situace: zdravotní péče pokračuje, ale škola zároveň řeší vlastní organizační a vzdělávací dopad.",
-        "C": "Po hospitalizaci je hlavním cílem rychlý návrat k původnímu režimu, aby se systémy zbytečně nepropojovaly.",
-        "D": "Po hospitalizaci má škola řešit jen omluvenou absenci; širší organizační a rodinný dopad do její odborné role nespadá."
+        "C": "Po hospitalizaci je hlavním cílem rychlý návrat k původnímu režimu, aby se systémy zbytečně nepropojovaly, a to právě v uvedeném rámci.",
+        "D": "Po hospitalizaci má škola řešit jen omluvenou absenci; širší organizační a rodinný dopad do její odborné role nespadá, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Návrat po hospitalizaci je vícevrstvá situace: zdravotní péče pokračuje, ale škola zároveň řeší vlastní organizační a vzdělávací dopad.",
       "discipline": "meziresortní orientace",
@@ -25032,7 +25532,7 @@ window.metadataExport = {
         "A": "Když škola situaci předá sociální službě, protože tím automaticky zaniká možnost uvažovat o právech dítěte.",
         "B": "Jakmile rodina popisuje dlouhodobou únavu, protože délka trvání sama o sobě nahrazuje posouzení míry ohrožení.",
         "C": "Když je situace náročná, ale popis zatím ukazuje spíš na potřebu podpory a orientace než na ochranný zásah.",
-        "D": "Když existuje lékařská zpráva, protože u zdravotně podmíněných situací OSPOD do úvahy vůbec nevstupuje."
+        "D": "Když existuje lékařská zpráva, protože u zdravotně podmíněných situací OSPOD do úvahy vůbec nevstupuje, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Když je situace náročná, ale popis zatím ukazuje spíš na potřebu podpory a orientace než na ochranný zásah.",
       "discipline": "OSPOD a sociálně-právní ochrana dětí",
@@ -25117,10 +25617,10 @@ window.metadataExport = {
       "questionNumber": 43,
       "questionText": "Které uvažování je u komplexní situace nejpřesnější?",
       "options": {
-        "A": "Nejprve zvolit nejvýraznější emoci v zadání a podle ní přiřadit hlavní instituci i další krok bez další analýzy.",
-        "B": "Nejpřesnější je hledat jeden dominantní pojem, kterému podřídíme všechny ostatní vrstvy situace i role partnerů.",
+        "A": "Nejprve zvolit nejvýraznější emoci v zadání a podle ní přiřadit hlavní instituci i další krok bez další analýzy, a to právě v uvedeném rámci.",
+        "B": "Nejpřesnější je hledat jeden dominantní pojem, kterému podřídíme všechny ostatní vrstvy situace i role partnerů, a to i při zohlednění popsaných okolností.",
         "C": "Přesně oddělit, co je vzdělávací dopad, co je sociální zátěž a co je zdravotnická linka; teprve pak spojovat plán podpory.",
-        "D": "Stačí rozlišit, zda je problém dítěte nebo rodiny; jemnější vrstevnatost už je pro praxi zbytečně akademická."
+        "D": "Stačí rozlišit, zda je problém dítěte nebo rodiny; jemnější vrstevnatost už je pro praxi zbytečně akademická, a to v popsané situaci."
       },
       "correctOptionText": "Přesně oddělit, co je vzdělávací dopad, co je sociální zátěž a co je zdravotnická linka; teprve pak spojovat plán podpory.",
       "discipline": "meziresortní orientace",
@@ -25206,7 +25706,7 @@ window.metadataExport = {
         "A": "Volit partnera a krok podle hlavní potřeby a jejího dopadu, ne podle jediné nálepky, zkratky nebo diagnózy.",
         "B": "Volit partnera vždy podle toho, který systém je v zadání zmíněn jako první, aby byla práce rychlá a konzistentní.",
         "C": "Volit partnera podle nejzávažněji znějícího pojmu v zadání, i kdyby neodpovídal hlavnímu funkčnímu dopadu situace.",
-        "D": "Volit partnera tak, aby počet zapojených služeb byl co nejmenší, i za cenu ztráty přesnosti čtení potřeby."
+        "D": "Volit partnera tak, aby počet zapojených služeb byl co nejmenší, i za cenu ztráty přesnosti při vyhodnocení potřeby."
       },
       "correctOptionText": "Volit partnera a krok podle hlavní potřeby a jejího dopadu, ne podle jediné nálepky, zkratky nebo diagnózy.",
       "discipline": "meziresortní orientace",
@@ -25379,8 +25879,8 @@ window.metadataExport = {
       "questionText": "Které rozlišení klinického logopeda a školní podpory komunikace je nejpřesnější pro porozumění instrukcím a účast ve výuce?",
       "options": {
         "A": "Porozumění instrukcím ve škole je výhradně otázkou klinické logopedie, nikoli organizace výuky a komunikace učitele.",
-        "B": "Jakmile žák dochází na logopedii, není už vhodné ve škole měnit podobu instrukcí ani způsob ověřování porozumění.",
-        "C": "Školní podpora komunikace je náhradou klinické logopedie, proto terapeutická péče není v takové situaci potřebná.",
+        "B": "Jakmile žák dochází na logopedii, není už vhodné ve škole měnit podobu instrukcí ani způsob ověřování porozumění, a to i při zohlednění popsaných okolností.",
+        "C": "Školní podpora komunikace je náhradou klinické logopedie, proto terapeutická péče není v takové situaci potřebná, a to v dané situaci.",
         "D": "Terapeutická linka může běžet mimo školu, ale škola současně odpovídá za komunikační přístupnost vlastních situací."
       },
       "correctOptionText": "Terapeutická linka může běžet mimo školu, ale škola současně odpovídá za komunikační přístupnost vlastních situací.",
@@ -25465,10 +25965,10 @@ window.metadataExport = {
       "questionNumber": 47,
       "questionText": "Které shrnutí nejlépe vystihuje vztah čekání na nový odborný závěr a školní reakce?",
       "options": {
-        "A": "Dokud nepřijde nový odborný závěr, je nejpřesnější školní režim vůbec neměnit, aby byl formálně čistý.",
+        "A": "Dokud nepřijde nový odborný závěr, je nejpřesnější školní režim vůbec neměnit, aby byl formálně čistý, a to v uvedeném kontextu.",
         "B": "Když je funkční dopad zjevný, škola nemá rezignovat na vlastní průběžnou reakci jen proto, že čeká na další dokument.",
-        "C": "Nový odborný závěr má přednost před jakýmkoli pozorováním školy, proto je průběžná školní reakce spíš nežádoucí.",
-        "D": "Čekání na nový závěr je vhodné hlavně proto, aby rodina sama převzala odpovědnost za veškeré dopady do školy."
+        "C": "Nový odborný závěr má přednost před jakýmkoli pozorováním školy, proto je průběžná školní reakce spíš nežádoucí, a to právě v uvedeném rámci.",
+        "D": "Čekání na nový závěr je vhodné hlavně proto, aby rodina sama převzala odpovědnost za veškeré dopady do školy, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Když je funkční dopad zjevný, škola nemá rezignovat na vlastní průběžnou reakci jen proto, že čeká na další dokument.",
       "discipline": "škola × zdravotnictví",
@@ -25552,10 +26052,10 @@ window.metadataExport = {
       "questionNumber": 48,
       "questionText": "Které vymezení hranice školsky orientované logopedické podpory je nejpřesnější?",
       "options": {
-        "A": "Školsky orientovaná logopedická podpora má být úplnou náhradou zdravotnické terapie, pokud je dítě ve školním věku.",
+        "A": "Školsky orientovaná logopedická podpora má být úplnou náhradou zdravotnické terapie, pokud je dítě ve školním věku, a to v dané situaci.",
         "B": "Ve škole jde hlavně o dopad komunikace do učení a účasti; terapeutická zdravotnická linka tím není zrušena ani pohlcena.",
         "C": "Školsky orientovaná logopedická podpora je vhodná jen pro administrativní přepis závěrů klinického logopeda do dokumentace.",
-        "D": "Ve škole se komunikační obtíže neřeší, protože jakákoli logopedická práce automaticky patří mimo vzdělávání."
+        "D": "Ve škole se komunikační obtíže neřeší, protože jakákoli logopedická práce automaticky patří mimo vzdělávání, a to v tomto typu rozlišení."
       },
       "correctOptionText": "Ve škole jde hlavně o dopad komunikace do učení a účasti; terapeutická zdravotnická linka tím není zrušena ani pohlcena.",
       "discipline": "škola × zdravotnictví",
@@ -25639,9 +26139,9 @@ window.metadataExport = {
       "questionNumber": 49,
       "questionText": "Které shrnutí je nejpřesnější pro situaci, kde současně běží léčba, rodinná zátěž i vzdělávací dopad?",
       "options": {
-        "A": "Nejpřesnější je vybrat jeden rozhodující systém a ostatní vrstvy dočasně ignorovat, aby byl plán podpory jednodušší.",
-        "B": "Nejpřesnější je převést situaci do školy, protože ta má v praxi nejčastější kontakt s dítětem i rodinou.",
-        "C": "Nejpřesnější je přenechat plán zdravotnictví, protože léčba je v takové situaci vždy nadřazená ostatním vrstvám.",
+        "A": "Nejpřesnější je vybrat jeden rozhodující systém a ostatní vrstvy dočasně ignorovat, aby byl plán podpory jednodušší, a to právě v uvedeném rámci.",
+        "B": "Nejpřesnější je převést situaci do školy, protože ta má v praxi nejčastější kontakt s dítětem i rodinou, a to i při zohlednění popsaných okolností.",
+        "C": "Nejpřesnější je přenechat plán zdravotnictví, protože léčba je v takové situaci vždy nadřazená ostatním vrstvám, a to v dané situaci, a to v popsané situaci.",
         "D": "Nejpřesnější je držet všechny tři vrstvy: léčba běží ve svém systému, rodina může potřebovat sociální oporu a škola řeší vzdělávací dopad."
       },
       "correctOptionText": "Nejpřesnější je držet všechny tři vrstvy: léčba běží ve svém systému, rodina může potřebovat sociální oporu a škola řeší vzdělávací dopad.",
@@ -25727,9 +26227,9 @@ window.metadataExport = {
       "questionText": "Jaká řešitelská strategie je pro B6 hard nejpřesnější?",
       "options": {
         "A": "Rozlišovat, co patří škole, co sociální službě, co zdravotnictví a zda je ve hře ochranná linka; až pak volit odpověď.",
-        "B": "Řídit se tím, který systém působí v zadání lidsky nejbližší, protože v těžkých situacích bývá rozhodující empatie.",
-        "C": "Volit vždy nejsilnější instituci v zadání, aby nevznikala roztříštěnost a potřeba jemného rozlišování kompetencí.",
-        "D": "Nejprve hledat, zda je v zadání diagnóza; pokud ano, ostatní vrstvy situace jsou už jen doplňkové a méně důležité."
+        "B": "Řídit se tím, který systém působí v zadání lidsky nejbližší, protože v těžkých situacích bývá rozhodující empatie, a to v tomto typu rozlišení.",
+        "C": "Volit vždy nejsilnější instituci v zadání, aby nevznikala roztříštěnost a potřeba jemného rozlišování kompetencí, a to právě v uvedeném rámci.",
+        "D": "Nejprve hledat, zda je v zadání diagnóza; pokud ano, ostatní vrstvy situace jsou už jen doplňkové a méně důležité, a to i při zohlednění popsaných okolností."
       },
       "correctOptionText": "Rozlišovat, co patří škole, co sociální službě, co zdravotnictví a zda je ve hře ochranná linka; až pak volit odpověď.",
       "discipline": "meziresortní orientace",
@@ -25810,7 +26310,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 1,
       "questionText": "Škola přichází s požadavkem „napište nám, co s ním přesně je“, ale popis obtíží je zatím velmi obecný. Jaký první krok poradce je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Vybrat pravděpodobnou kategorii obtíží, aby se proces rychleji zúžil, a to v uvedeném kontextu.",
+        "B": "Vyjasnit, v jakých situacích se obtíže projevují a co škola potřebuje vědět pro podporu.",
+        "C": "Sepsat předběžný závěr, aby škola měla od začátku oporu v dokumentu, a to právě v uvedeném rámci.",
+        "D": "Požádat školu, aby nejprve sama navrhla hotové řešení a poradce ho jen potvrdil, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Vyjasnit, v jakých situacích se obtíže projevují a co škola potřebuje vědět pro podporu.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "zakázka a její vyjasnění",
@@ -25893,7 +26398,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 2,
       "questionText": "Které vymezení nejlépe ukazuje kvalitní poradenskou zakázku?",
-      "options": [],
+      "options": {
+        "A": "Je formulovaná co nejširším způsobem, aby se předem nic nevyloučilo, a to v dané situaci, a to v popsané situaci.",
+        "B": "Je postavená hlavně na tom, jakou kategorii by bylo vhodné potvrdit, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Je správná tehdy, když ji škola a rodina formulují úplně stejně, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Je dost konkrétní pro další práci, ale nechává prostor pro ověření, co potíže skutečně způsobuje."
+      },
       "correctOptionText": "Je dost konkrétní pro další práci, ale nechává prostor pro ověření, co potíže skutečně způsobuje.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "kvalita zakázky",
@@ -25975,7 +26485,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 3,
       "questionText": "Která posloupnost nejlépe odpovídá kvalitnímu poradenskému cyklu?",
-      "options": [],
+      "options": {
+        "A": "sběr dokumentů – předání závěru – krátká konzultace – případné doplnění později, a to právě v uvedeném rámci.",
+        "B": "určení kategorie – převod do opatření – informování školy – uzavření případu, a to i při zohlednění popsaných okolností.",
+        "C": "vyjasnění zakázky – shromáždění relevantních informací – interpretace – návrh podpory – ověření účinku",
+        "D": "zachycení obtíží – rychlé doporučení – formální sepsání – případná revize jen při stížnosti, a to v popsané situaci."
+      },
       "correctOptionText": "vyjasnění zakázky – shromáždění relevantních informací – interpretace – návrh podpory – ověření účinku",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "logika procesu",
@@ -26057,7 +26572,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 4,
       "questionText": "Poradce má k dispozici první pozorování, ale škola chce jedinou větu „pro spis“. Jaký postup je nejvhodnější?",
-      "options": [],
+      "options": {
+        "A": "Vrátit se k funkčnímu popisu potíží a zatím nezužovat situaci na nálepku, která by předbíhala smysl podpory.",
+        "B": "Vyjít vstříc škole stručným označením obtíží, protože administrativní srozumitelnost má v této fázi přednost.",
+        "C": "Omezit práci jen na to, co lze prokázat testem, aby se předešlo sporům o interpretaci, a to právě v uvedeném rámci.",
+        "D": "Přerušit proces, dokud škola nepředloží detailnější interní dokumentaci, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Vrátit se k funkčnímu popisu potíží a zatím nezužovat situaci na nálepku, která by předbíhala smysl podpory.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "interpretace zakázky bez nálepky",
@@ -26139,7 +26659,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 5,
       "questionText": "Podpora byla zavedena, ale funguje jen v některých situacích a tým ji používá nejednotně. Co je nejpřesnější další krok?",
-      "options": [],
+      "options": {
+        "A": "Dopsat do doporučení více odborných termínů, aby působilo závazněji, a to v dané situaci, a to v popsané situaci.",
+        "B": "Vrátit se s týmem ke konkrétním situacím, v nichž podpora funguje a nefunguje, a podle toho ji upravit.",
+        "C": "Vyčkat delší dobu, protože nejednotnost školy se obvykle srovná sama, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Uzavřít případ s tím, že doporučení už bylo předáno a další běh je věcí školy, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Vrátit se s týmem ke konkrétním situacím, v nichž podpora funguje a nefunguje, a podle toho ji upravit.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "evaluace účinku a revize",
@@ -26223,7 +26748,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 6,
       "questionText": "Rodina nabízí jedno vysvětlení obtíží, škola jiné a dosavadní data nejsou dostatečná. Jaký postup poradce je nejvhodnější?",
-      "options": [],
+      "options": {
+        "A": "Přiklonit se k verzi školy, protože pracuje s dítětem denně a má více pozorování, a to právě v uvedeném rámci.",
+        "B": "Zvolit tu interpretaci, která povede k rychlejší organizaci podpory, i kdyby byla předběžná, a to i při zohlednění popsaných okolností.",
+        "C": "Vyhotovit kompromisní závěr, aby se obě strany v textu poznaly, a to v dané situaci, a to v popsané situaci.",
+        "D": "Udržet více pracovních hypotéz a cíleně doplnit informace tam, kde rozhodnutí zatím stojí na domněnce."
+      },
       "correctOptionText": "Udržet více pracovních hypotéz a cíleně doplnit informace tam, kde rozhodnutí zatím stojí na domněnce.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "práce s nejistotou",
@@ -26305,7 +26835,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 7,
       "questionText": "Při první konzultaci se starším žákem je patrná nejistota a stručné odpovědi. Který postup je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Vyjasnit smysl setkání, vytvořit bezpečný rámec a používat otázky, které umožní žákovi popsat vlastní zkušenost bez tlaku.",
+        "B": "Převzít hlavní komunikaci s rodičem, protože žák by mohl odpovídat nepřesně, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "Soustředit se hlavně na to, aby žák potvrdil, co už uvedla škola, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Zkrátit rozhovor na minimum a vyjít z dokumentace, aby se situace zbytečně neprotahovala, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Vyjasnit smysl setkání, vytvořit bezpečný rámec a používat otázky, které umožní žákovi popsat vlastní zkušenost bez tlaku.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "práce se žákem v zakázce",
@@ -26388,7 +26923,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 8,
       "questionText": "Který krok nejvíce oslabuje poradenský proces už v počátku?",
-      "options": [],
+      "options": {
+        "A": "Průběžně zpřesňovat, co je otázkou školy a co je otázkou rodiny, a to v dané situaci, a to v popsané situaci.",
+        "B": "Rozlišovat mezi popisem potíže, její interpretací a návrhem podpory, a to v popsané situaci.",
+        "C": "Formulovat závěr dřív, než je jasné, jaká otázka se vlastně řeší a k čemu má výstup sloužit.",
+        "D": "Pracovat s konkrétními situacemi místo obecných dojmů, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
+      },
       "correctOptionText": "Formulovat závěr dřív, než je jasné, jaká otázka se vlastně řeší a k čemu má výstup sloužit.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "chyby v poradenském cyklu",
@@ -26470,7 +27010,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 9,
       "questionText": "Škola žádá „rychlé doporučení ještě dnes“, ale relevantních dat je málo. Co je nejpřesnější odpověď poradce?",
-      "options": [],
+      "options": {
+        "A": "Bez odkladu vydat plný závěr, aby škola nezůstala bez opory, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "B": "Pojmenovat, co lze doporučit předběžně už teď, a zároveň jasně vymezit, co je ještě potřeba ověřit.",
+        "C": "Doporučení odložit úplně, dokud nebude k dispozici maximální množství podkladů, a to v dané situaci.",
+        "D": "Převést rozhodnutí na rodiče, protože bez jejich preferencí nelze postup určit, a to v popsané situaci."
+      },
       "correctOptionText": "Pojmenovat, co lze doporučit předběžně už teď, a zároveň jasně vymezit, co je ještě potřeba ověřit.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "předběžný krok a další ověřování",
@@ -26553,7 +27098,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 10,
       "questionText": "U dítěte se obtíže popisují jako „všude trochu jiné“. Co je pro poradenské myšlení nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Vybrat prostředí, v němž jsou obtíže nejvýraznější, a z něj odvodit celý závěr, a to v uvedeném kontextu.",
+        "B": "Sečíst dojmy z různých situací a hledat průměrný obraz dítěte, a to v tomto typu rozlišení.",
+        "C": "Požádat školu o novou formalizovanou zprávu a další sběr dočasně zastavit, a to právě v uvedeném rámci.",
+        "D": "Mapovat, v jakých kontextech se obtíže mění, co je spouští a co je naopak tlumí."
+      },
       "correctOptionText": "Mapovat, v jakých kontextech se obtíže mění, co je spouští a co je naopak tlumí.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "kontextualizace projevu",
@@ -26636,7 +27186,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 11,
       "questionText": "Která otázka je při následné konzultaci po zavedení podpory nejcennější?",
-      "options": [],
+      "options": {
+        "A": "Kdo přesně opsal formulace doporučení do školní dokumentace?, a to v dané situaci.",
+        "B": "Který odborný termín byl pro školu nejsrozumitelnější?, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Ve kterých situacích se podpora osvědčila, kde ne a co to říká o dalším nastavení?",
+        "D": "Jak rychle byla opatření administrativně zavedena po převzetí zprávy?, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Ve kterých situacích se podpora osvědčila, kde ne a co to říká o dalším nastavení?",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "follow-up a evaluace",
@@ -26718,7 +27273,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 12,
       "questionText": "Učitel chce „jeden univerzální tip pro všechny hodiny“, aby se nemusel vracet ke konkrétním situacím. Jaká reakce poradce je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Vysvětlit, že podpora musí vycházet z toho, v jakých typech situací se bariéra objevuje, a nelze ji nahradit jednou obecnou frází.",
+        "B": "Vybrat nejsilnější opatření a doporučit jeho plošné použití bez dalších úprav, a to i při zohlednění popsaných okolností, a to v dané situaci.",
+        "C": "Přenechat volbu učiteli, protože poradce nemá zasahovat do metodiky výuky, a to v dané situaci, a to v popsané situaci, a to v uvedeném kontextu.",
+        "D": "Doporučit vyčkat, zda se obtíže nerozptýlí po adaptaci na ročník, a to v popsané situaci, a to v uvedeném kontextu, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Vysvětlit, že podpora musí vycházet z toho, v jakých typech situací se bariéra objevuje, a nelze ji nahradit jednou obecnou frází.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "volba podpory podle situace",
@@ -26800,7 +27360,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 13,
       "questionText": "Které tvrzení nejlépe rozlišuje poradenskou interpretaci od pouhého popisu obtíží?",
-      "options": [],
+      "options": {
+        "A": "Interpretace shrnuje dojmy všech zúčastněných bez nutnosti hledat mezi nimi vztahy, a to v uvedeném kontextu.",
+        "B": "Interpretace propojuje zjištění do pracovního vysvětlení, které má smysl pro volbu podpory.",
+        "C": "Interpretace je odbornější název pro seznam symptomů a testových výsledků, a to právě v uvedeném rámci.",
+        "D": "Interpretace slouží hlavně k tomu, aby text působil přesvědčivěji, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Interpretace propojuje zjištění do pracovního vysvětlení, které má smysl pro volbu podpory.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "interpretace zjištění",
@@ -26882,7 +27447,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 14,
       "questionText": "Rodina a škola popisují tutéž situaci odlišně. Co je pro poradce nejvhodnější?",
-      "options": [],
+      "options": {
+        "A": "Vybrat verzi, která lépe zapadá do dosavadní dokumentace, a to v dané situaci, a to v popsané situaci.",
+        "B": "Předat stranám, aby si rozdíl vyjasnily samy, a zatím proces nechat stát, a to v popsané situaci.",
+        "C": "Přijmout obě verze jako rovnocenné a bez další práce je zařadit do závěru, a to v uvedeném kontextu.",
+        "D": "Rozlišit, co kdo pozoruje v jakém kontextu, a hledat společný obraz relevantní pro podporu."
+      },
       "correctOptionText": "Rozlišit, co kdo pozoruje v jakém kontextu, a hledat společný obraz relevantní pro podporu.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "více perspektiv v poradenském procesu",
@@ -26965,7 +27535,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 15,
       "questionText": "Škola chce po poradci „jasné potvrzení diagnózy, ať je ve všem pořádek“. Jaká odpověď je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Vymezit, co je smyslem poradenské služby, vrátit se k funkčním dopadům a neplést kategorii s plánem podpory.",
+        "B": "Vyjít škole vstříc alespoň pracovním označením, které zrychlí organizační rozhodnutí, a to i při zohlednění popsaných okolností.",
+        "C": "Odkázat školu jen na lékařský resort a poradenskou práci tím uzavřít, a to v dané situaci, a to v popsané situaci.",
+        "D": "Přestat se školou sdílet průběžné úvahy, aby nevznikal tlak na závěr, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "Vymezit, co je smyslem poradenské služby, vrátit se k funkčním dopadům a neplést kategorii s plánem podpory.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "kategorie vs podpora",
@@ -27047,7 +27622,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 16,
       "questionText": "Výrazný testový výsledek neodpovídá tomu, jak dítě funguje ve třídě. Jaký závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Testový výsledek by měl mít přednost, protože je odbornější než školní pozorování, a to v uvedeném kontextu.",
+        "B": "Ve třídě je pravděpodobně chyba v pozorování, kterou není třeba dále řešit, a to v tomto typu rozlišení.",
+        "C": "Je třeba zvažovat výsledek v kontextu fungování a ověřit, co přesně zachycuje a co naopak nezachycuje.",
+        "D": "Nejvhodnější je oba zdroje údajů ve zprávě oddělit a nepropojovat, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Je třeba zvažovat výsledek v kontextu fungování a ověřit, co přesně zachycuje a co naopak nezachycuje.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "integrace zdrojů informací",
@@ -27129,7 +27709,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 17,
       "questionText": "Dospívající žák podporu připouští, zákonný zástupce ji však zlehčuje. Jaký postup poradce je nejvhodnější?",
-      "options": [],
+      "options": {
+        "A": "Postavit další práci výhradně na stanovisku rodiče, protože nese formální odpovědnost, a to v dané situaci, a to v popsané situaci.",
+        "B": "Požádat školu, aby rodiče přesvědčila bez další účasti poradce, a to v popsané situaci, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "C": "Překlopit rozhovor do vysvětlování praktických dopadů a variant podpory tak, aby všichni rozuměli, co je skutečná potřeba.",
+        "D": "Uzavřít situaci tím, že se do dosažení plného souhlasu nic nenavrhne, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
+      },
       "correctOptionText": "Překlopit rozhovor do vysvětlování praktických dopadů a variant podpory tak, aby všichni rozuměli, co je skutečná potřeba.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "nesoulad perspektiv a překlad potřeby",
@@ -27211,7 +27796,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 18,
       "questionText": "Učitel říká, že nemá čas sbírat další příklady. Co je z pohledu poradenského procesu nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Zaměřit sběr jen na několik klíčových situací, které mohou rozhodnout o podobě podpory.",
+        "B": "Přestat školu zatěžovat dalšími otázkami a vyjít z prvního dojmu, a to i při zohlednění popsaných okolností.",
+        "C": "Omezit práci jen na testové postupy, protože jsou méně náročné pro učitele, a to v dané situaci.",
+        "D": "Předat sběr informací plně rodině, aby se proces ve škole nezdržoval, a to v popsané situaci."
+      },
       "correctOptionText": "Zaměřit sběr jen na několik klíčových situací, které mohou rozhodnout o podobě podpory.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "cílený sběr relevantních dat",
@@ -27294,7 +27884,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 19,
       "questionText": "Co nejlépe ukazuje, že se poradenský proces stal administrativně správným, ale odborně slabým?",
-      "options": [],
+      "options": {
+        "A": "V textu se používá více běžného jazyka a méně odborných termínů, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Škola potřebovala k zavedení podpory více než jednu konzultaci, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "Rodina měla k některým navrženým krokům doplňující otázky, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Dokument je hotový, ale není zřejmé, jak konkrétně navazuje na zjištění a co má kdo dělat jinak."
+      },
       "correctOptionText": "Dokument je hotový, ale není zřejmé, jak konkrétně navazuje na zjištění a co má kdo dělat jinak.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "administrativní správnost vs odborná užitečnost",
@@ -27376,7 +27971,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 20,
       "questionText": "Doporučení bylo převzato, ale po personální změně ve škole se podpora rozpadla. Jaký další krok je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Poslat stejný text znovu a předpokládat, že problém byl jen ve ztrátě dokumentu, a to v dané situaci, a to v popsané situaci.",
+        "B": "Uzavřít proces s tím, že odpovědnost za kontinuitu už nese škola, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Vrátit se k převodu podpory do praxe, znovu vyjasnit klíčové kroky a ověřit, jak jsou ve škole skutečně chápány.",
+        "D": "Doporučit škole, aby počkala na další pravidelné vyšetření, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
+      },
       "correctOptionText": "Vrátit se k převodu podpory do praxe, znovu vyjasnit klíčové kroky a ověřit, jak jsou ve škole skutečně chápány.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "přenos závěru do praxe",
@@ -27459,7 +28059,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 21,
       "questionText": "Která podoba poradenského výstupu je nejkvalitnější?",
-      "options": [],
+      "options": {
+        "A": "Obsahuje co nejvíce odborných termínů, aby bylo zřejmé, že jde o specializované stanovisko, a to právě v uvedeném rámci.",
+        "B": "Převádí zjištění do konkrétních kroků: kdo, kdy, v jaké situaci a s jakým cílem podporu použije.",
+        "C": "Zachycuje co nejširší seznam možných opatření bez nutnosti stanovit priority, a to v dané situaci.",
+        "D": "Shrnuje hlavně průběh vyšetření; škola si praktické důsledky odvodí sama, a to v popsané situaci."
+      },
       "correctOptionText": "Převádí zjištění do konkrétních kroků: kdo, kdy, v jaké situaci a s jakým cílem podporu použije.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "převod závěru do podpory",
@@ -27541,7 +28146,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 22,
       "questionText": "Která formulace nejlépe ukazuje slabý poradenský výstup?",
-      "options": [],
+      "options": {
+        "A": "Žák má speciální vzdělávací potřeby, proto je třeba individuální přístup.",
+        "B": "Při delších instrukcích potřebuje rozdělit zadání do kroků a ověřit porozumění.",
+        "C": "Ve skupinové práci se zhoršuje přehled o úkolu, proto je vhodné předem vyjasnit roli a výstup.",
+        "D": "Při hodnocení písemných úloh je třeba sledovat, zda obtíž neleží v porozumění zadání spíše než v samotném učivu."
+      },
       "correctOptionText": "Žák má speciální vzdělávací potřeby, proto je třeba individuální přístup.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "vágnost výstupu",
@@ -27623,7 +28233,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 23,
       "questionText": "Které rozlišení nejlépe vystihuje vztah odborného zjištění a poradenského výstupu?",
-      "options": [],
+      "options": {
+        "A": "Odborné zjištění slouží hlavně rodičům, poradenský výstup hlavně škole, a to v dané situaci, a to v popsané situaci.",
+        "B": "Odborné zjištění je vždy předběžné, poradenský výstup je naopak definitivní, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Odborné zjištění má být co nejstručnější, poradenský výstup co nejobsáhlejší, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Odborné zjištění popisuje a interpretuje, poradenský výstup převádí význam zjištění do podpory a dalších kroků."
+      },
       "correctOptionText": "Odborné zjištění popisuje a interpretuje, poradenský výstup převádí význam zjištění do podpory a dalších kroků.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "zjištění vs výstup",
@@ -27705,7 +28320,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 24,
       "questionText": "Který typ doporučení je poradensky nejslabší, přestože může působit odborně?",
-      "options": [],
+      "options": {
+        "A": "Doporučení, které jasně oddělí klíčové kroky od doplňkových, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "B": "Doporučení, které používá běžný jazyk a současně drží odbornou přesnost, a to i při zohlednění popsaných okolností.",
+        "C": "Doporučení, které přináší dlouhý seznam opatření bez priorit, situací použití a odpovědnosti.",
+        "D": "Doporučení, které uvádí, jak bude škola sledovat účinek zvolených kroků, a to v popsané situaci."
+      },
       "correctOptionText": "Doporučení, které přináší dlouhý seznam opatření bez priorit, situací použití a odpovědnosti.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "prioritizace a proveditelnost",
@@ -27787,7 +28407,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 25,
       "questionText": "Co nejvíce zvyšuje užitečnost výstupu pro školu i rodinu?",
-      "options": [],
+      "options": {
+        "A": "Co největší míra odborné opatrnosti, aby výstup neobsahoval žádnou konkrétní formulaci.",
+        "B": "Rozlišení klíčových a doplňkových kroků a jazyk, kterému rozumí i neodborný čtenář.",
+        "C": "Převaha terminologie nad příklady, aby bylo zřejmé, že text není zjednodušený, a to právě v uvedeném rámci.",
+        "D": "Maximální délka textu, protože kratší doporučení mohou vypadat málo odborně, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Rozlišení klíčových a doplňkových kroků a jazyk, kterému rozumí i neodborný čtenář.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "srozumitelnost a priorita",
@@ -27869,7 +28494,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 26,
       "questionText": "Která formulace nejvíce redukuje situaci na nálepku a tím oslabuje kvalitu výstupu?",
-      "options": [],
+      "options": {
+        "A": "Vzhledem k předpokládané diagnóze je třeba přihlížet k individuálním potřebám.",
+        "B": "Při čtení delších zadání se ztrácí v pořadí kroků, proto potřebuje vizuální členění a kontrolu porozumění.",
+        "C": "V přechodech mezi činnostmi potřebuje předvídatelnou strukturu a jasný signál změny.",
+        "D": "Podpora má být nastavena podle toho, kde se bariéra prakticky objevuje, ne podle samotného označení."
+      },
       "correctOptionText": "Vzhledem k předpokládané diagnóze je třeba přihlížet k individuálním potřebám.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "nálepka vs funkční formulace",
@@ -27951,7 +28581,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 27,
       "questionText": "Které doporučení pro žáka s obtížemi v práci s delším textem je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Doporučuje se sledovat, zda se obtíže neupraví spontánně s věkem, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "B": "Nejvhodnější je snížit rozsah všech textů bez další analýzy situace, a to i při zohlednění popsaných okolností.",
+        "C": "Při delším zadání rozdělit text do kroků, ověřit, co žák pochopil, a teprve pak hodnotit výkon.",
+        "D": "Podstatné je hlavně umožnit žákovi používat libovolnou kompenzační strategii bez dalšího vedení."
+      },
       "correctOptionText": "Při delším zadání rozdělit text do kroků, ověřit, co žák pochopil, a teprve pak hodnotit výkon.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "formulace konkrétní podpory",
@@ -28033,7 +28668,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 28,
       "questionText": "Která věta je typickým příkladem příliš širokého výstupu?",
-      "options": [],
+      "options": {
+        "A": "Ve skupinové práci potřebuje předem vědět roli, čas a podobu výstupu, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Při rychlém tempu výuky je vhodné ověřit, zda zachytil hlavní instrukci, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "Je účelné rozlišit, co je ve škole klíčové řešit hned a co může být doplňkové, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Doporučuje se ve všech oblastech zohledňovat jeho individualitu a přizpůsobovat vzdělávání podle možností školy."
+      },
       "correctOptionText": "Doporučuje se ve všech oblastech zohledňovat jeho individualitu a přizpůsobovat vzdělávání podle možností školy.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "příliš široké formulace",
@@ -28115,7 +28755,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 29,
       "questionText": "Který doplněk nejvíce pomáhá převést výstup do školní praxe?",
-      "options": [],
+      "options": {
+        "A": "Uvedení typických situací, v nichž má být podpora použita, a signálů, podle nichž škola pozná její účinek.",
+        "B": "Rozšíření závěru o úplný přepis všech použitých metod, a to v popsané situaci, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "C": "Přesunutí odpovědnosti za převod na asistenta pedagoga bez dalšího vyjasnění, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Omezení textu jen na obecná hesla, aby si škola mohla postupy přizpůsobit sama, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Uvedení typických situací, v nichž má být podpora použita, a signálů, podle nichž škola pozná její účinek.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "implementace ve škole",
@@ -28197,7 +28842,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 30,
       "questionText": "Po konzultaci škola říká: „Co z toho máme dělat zítra ráno?“ Jaká odpověď je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Zopakovat celý odborný závěr, aby si škola sama vybrala, co považuje za důležité, a to právě v uvedeném rámci.",
+        "B": "Vybrat 1–2 prioritní kroky pro konkrétní situace a domluvit, jak škola pozná, zda fungují.",
+        "C": "Doporučit, aby se nejprve zpracovala interní dokumentace a teprve poté se začalo něco měnit.",
+        "D": "Ponechat rozhodnutí plně na třídním učiteli, protože detailní vedení by bylo příliš direktivní."
+      },
       "correctOptionText": "Vybrat 1–2 prioritní kroky pro konkrétní situace a domluvit, jak škola pozná, zda fungují.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "prioritní převod do praxe",
@@ -28279,7 +28929,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 31,
       "questionText": "Rodič žádá, aby poradce bez dalšího poslal plné poznámky z konzultací všem vyučujícím. Jaký postup je eticky nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Vyhovět, protože rodič je zákonný zástupce a rozhoduje o rozsahu sdílení vždy sám, a to v uvedeném kontextu.",
+        "B": "Poslat plné poznámky jen třídnímu učiteli a ponechat na škole, jak je dál rozšíří, a to v tomto typu rozlišení.",
+        "C": "Předat jen shrnutí bez jakékoli vazby na podporu, aby se chránilo soukromí, a to právě v uvedeném rámci.",
+        "D": "Rozlišit, jaké informace jsou pro podporu ve škole skutečně potřebné, a sdílet jen tento účelný rozsah."
+      },
       "correctOptionText": "Rozlišit, jaké informace jsou pro podporu ve škole skutečně potřebné, a sdílet jen tento účelný rozsah.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "sdílení informací a důvěrnost",
@@ -28361,7 +29016,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 32,
       "questionText": "Žák při rozhovoru zmíní citlivou rodinnou okolnost, která zřejmě není pro školní podporu rozhodující. Co je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Zahrnout ji do výstupu, protože každá citlivá informace může později získat význam, a to v dané situaci.",
+        "B": "Nejprve zvažovat její relevanci pro účel služby a chránit ji před zbytečným sdílením.",
+        "C": "Okamžitě ji sdělit škole, aby byla v obraze i mimo poradenský rámec, a to v uvedeném kontextu.",
+        "D": "Předpokládat, že citlivé téma vždy vysvětluje školní obtíže lépe než pozorování z výuky."
+      },
       "correctOptionText": "Nejprve zvažovat její relevanci pro účel služby a chránit ji před zbytečným sdílením.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "citlivé informace a relevance",
@@ -28444,7 +29104,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 33,
       "questionText": "Škola chce, aby poradce rodinu přesvědčil pro konkrétní vzdělávací cestu, protože „to bude jednodušší“. Co je nejpřesnější role poradce?",
-      "options": [],
+      "options": {
+        "A": "Vysvětlit rodině možnosti a jejich důsledky, ale nerozhodovat za ni a netlačit ji k jediné volbě.",
+        "B": "Převzít doporučující roli školy, protože poradce má lépe vidět systémové souvislosti, a to i při zohlednění popsaných okolností.",
+        "C": "Vyhnout se jakémukoli vedení, aby nebyl poradce obviněn z ovlivňování, a to v dané situaci, a to v popsané situaci.",
+        "D": "Nechat školu, aby rodinu přesvědčila sama, a pouze to doplnit do závěru, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "Vysvětlit rodině možnosti a jejich důsledky, ale nerozhodovat za ni a netlačit ji k jediné volbě.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "partnerství s rodinou vs paternalismus",
@@ -28527,7 +29192,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 34,
       "questionText": "Škola žádá doporučení v oblasti, která už přesahuje bezpečnou odbornost poradce. Co je nejvhodnější?",
-      "options": [],
+      "options": {
+        "A": "Vyjádřit se obecně, aby škola nezůstala bez stanoviska, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Pojmenovat limit vlastní odbornosti, držet to, co poradce bezpečně ví, a navázat vhodného odborníka.",
+        "C": "Vyhnout se přiznání limitu, protože by to mohlo oslabit důvěru školy, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Převzít odpovědnost za širší oblast, pokud by další spolupráce proces zdržela, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Pojmenovat limit vlastní odbornosti, držet to, co poradce bezpečně ví, a navázat vhodného odborníka.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "limity odbornosti",
@@ -28610,7 +29280,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 35,
       "questionText": "Rodina chce, aby poradce formuloval obtíže „ostřeji“, protože škola prý reaguje jen na silná slova. Jaký postup je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Přijmout tento požadavek, pokud to zvýší šanci na podporu, a to v dané situaci, a to v popsané situaci.",
+        "B": "Použít odbornější jazyk, i kdyby byl pro školu méně srozumitelný, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Přesunout odpovědnost na školu, aby si sama vyžádala silnější stanovisko, a to v uvedeném kontextu.",
+        "D": "Držet profesní přesnost a popsat dopad i potřebu podpory věcně, bez strategického zveličování."
+      },
       "correctOptionText": "Držet profesní přesnost a popsat dopad i potřebu podpory věcně, bez strategického zveličování.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "profesní přesnost",
@@ -28692,7 +29367,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 36,
       "questionText": "Který postup nejvíce překračuje roli poradce?",
-      "options": [],
+      "options": {
+        "A": "Pomoci škole přeložit odborný závěr do konkrétní podpory, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "B": "Domluvit s rodinou, jak budou společně sledovat, zda navržené kroky dávají smysl, a to i při zohlednění popsaných okolností.",
+        "C": "Převzít dlouhodobé řešení rodinné situace v rozsahu, který už náleží jiné službě nebo terapii.",
+        "D": "Popsat, kde poradenská práce končí a kde začíná návazná spolupráce, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "Převzít dlouhodobé řešení rodinné situace v rozsahu, který už náleží jiné službě nebo terapii.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "hranice role a návaznost služeb",
@@ -28774,7 +29454,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 37,
       "questionText": "Který komunikační krok je eticky i odborně nejpřesnější při sdělování závěru?",
-      "options": [],
+      "options": {
+        "A": "Přeložit odborné zjištění do srozumitelného jazyka a ověřit, zda druhá strana opravdu rozumí jeho významu.",
+        "B": "Použít plnou odbornou terminologii, aby nedošlo ke zjednodušení obsahu, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "Předat pouze psaný text, aby se předešlo možnému zkreslení rozhovorem, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Sdělit jen závěr bez vysvětlení, protože otázky mohou proces znejistit, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Přeložit odborné zjištění do srozumitelného jazyka a ověřit, zda druhá strana opravdu rozumí jeho významu.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "srozumitelné sdělení závěru",
@@ -28856,7 +29541,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 38,
       "questionText": "Učitel neformálně žádá podrobnosti z rodinné situace dítěte, aby s ním „lépe pracoval“. Jaký postup je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Předat vše, co by teoreticky mohlo být užitečné, protože učitel nese každodenní zátěž.",
+        "B": "Sdílet jen to, co je pro podporu ve škole profesně odůvodněné a potřebné.",
+        "C": "Odmítnout jakoukoli spolupráci se školou, protože rodinná témata jsou vždy mimo její roli.",
+        "D": "Předat informace vedení školy a nechat je rozhodnout, komu budou sděleny."
+      },
       "correctOptionText": "Sdílet jen to, co je pro podporu ve škole profesně odůvodněné a potřebné.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "důvěrnost vůči škole",
@@ -28938,7 +29628,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 39,
       "questionText": "Rodina chce, aby poradce mluvil na každém jednání za ni a rozhodoval místo ní. Co je nejvhodnější?",
-      "options": [],
+      "options": {
+        "A": "Převzít tuto roli, pokud je rodina ve stresu a potřebuje oporu, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "B": "Ponechat rodinu zcela bez vedení, aby se posílila autonomie, a to i při zohlednění popsaných okolností, a to v dané situaci.",
+        "C": "Podporovat porozumění možnostem a rozhodování rodiny, ale nepřebírat její hlas ani odpovědnost za volbu.",
+        "D": "Přesměrovat veškerou komunikaci na školu, která je v systému nejstabilnější, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "Podporovat porozumění možnostem a rozhodování rodiny, ale nepřebírat její hlas ani odpovědnost za volbu.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "autonomie klienta",
@@ -29021,7 +29716,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 40,
       "questionText": "Které tvrzení nejlépe vystihuje profesní kvalitu poradce pod emočním tlakem situace?",
-      "options": [],
+      "options": {
+        "A": "Empatický poradce má dát stranou hranice a držet hlavně vztah, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Nejdůležitější je rychle uzavřít spor, i kdyby závěr nebyl ještě plně dotažený, a to v tomto typu rozlišení.",
+        "C": "Profesionální je zůstat neutrální tak, že poradce přestane situaci aktivně vést, a to právě v uvedeném rámci.",
+        "D": "Udržet respekt, srozumitelnost i hranice role a nenechat napětí zrychlit závěr mimo dostupná data."
+      },
       "correctOptionText": "Udržet respekt, srozumitelnost i hranice role a nenechat napětí zrychlit závěr mimo dostupná data.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "profesionalita v zátěži",
@@ -29103,7 +29803,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 41,
       "questionText": "Škola chce, aby poradce dlouhodobě připravoval všechny individuální materiály za učitele. Co je metodicky nejvhodnější?",
-      "options": [],
+      "options": {
+        "A": "Pomoci škole pochopit principy úpravy práce a postupně ji vést k vlastnímu zvládání podpory, ne ji trvale nahrazovat.",
+        "B": "Převzít tuto roli alespoň na celý školní rok, aby byla zajištěna stabilita, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Odmítnout spolupráci, protože tvorba materiálů do školy nikdy nepatří, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Omezit pomoc jen na jednorázové předání textu bez společného rozboru praxe, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
+      },
       "correctOptionText": "Pomoci škole pochopit principy úpravy práce a postupně ji vést k vlastnímu zvládání podpory, ne ji trvale nahrazovat.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "metodická podpora vs převzetí role",
@@ -29186,7 +29891,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 42,
       "questionText": "Která následná konzultace s učitelem je metodicky nejcennější?",
-      "options": [],
+      "options": {
+        "A": "Kontrola, zda škola doslova převzala formulace doporučení do interních dokumentů, a to právě v uvedeném rámci.",
+        "B": "Společné projití několika konkrétních situací, co v nich učitel změnil a jaký to mělo efekt.",
+        "C": "Ověření, zda se škola drží jediné zvolené strategie beze změny, a to v dané situaci, a to v popsané situaci.",
+        "D": "Shrnutí, které části doporučení vypadají ve spise nejpřesvědčivěji, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "Společné projití několika konkrétních situací, co v nich učitel změnil a jaký to mělo efekt.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "follow-up s učitelem",
@@ -29268,7 +29978,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 43,
       "questionText": "Škola zavedla doporučení doslova, ale bez porozumění jeho účelu. Co je nejpřesnější krok poradce?",
-      "options": [],
+      "options": {
+        "A": "Nechat školu postup používat dál, protože formální shoda je zatím důležitější než porozumění, a to v uvedeném kontextu.",
+        "B": "Požádat o další dokumentaci a do té doby nic nekomentovat, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "Vrátit se k tomu, proč byl krok navržen, v jaké situaci má fungovat a jak jej přizpůsobit konkrétní praxi školy.",
+        "D": "Doporučení zcela stáhnout, protože bylo použito mechanicky, a to i při zohlednění popsaných okolností, a to v dané situaci."
+      },
       "correctOptionText": "Vrátit se k tomu, proč byl krok navržen, v jaké situaci má fungovat a jak jej přizpůsobit konkrétní praxi školy.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "účel podpory a její implementace",
@@ -29351,7 +30066,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 44,
       "questionText": "Učitel chce jeden sankční režim pro chování, které se objevuje hlavně při přetížení a nejasném zadání. Co je metodicky nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Potvrdit, že důsledná sankce je nejčistší cesta ke stabilitě, a to v dané situaci, a to v popsané situaci, a to v uvedeném kontextu.",
+        "B": "Doporučit pouze individuální pohovor po hodině, aby se zamezilo konfliktu, a to v popsané situaci, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "C": "Přenechat volbu vedení školy, protože jde hlavně o kázeň, a to v uvedeném kontextu, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "D": "Vrátit se k podmínkám, které chování spouštějí, a spojit vedení hranic s úpravou zadání, předvídatelnosti a podpory regulace."
+      },
       "correctOptionText": "Vrátit se k podmínkám, které chování spouštějí, a spojit vedení hranic s úpravou zadání, předvídatelnosti a podpory regulace.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "spouštěče a vedení chování",
@@ -29434,7 +30154,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 45,
       "questionText": "Který dotaz poradce vůči škole je metodický, nikoli kontrolní?",
-      "options": [],
+      "options": {
+        "A": "Kde přesně jste změnili postup, co se tím zlepšilo a co je potřeba doladit?",
+        "B": "Kdo nese odpovědnost, že doporučení ještě není v každé hodině stejné?, a to i při zohlednění popsaných okolností.",
+        "C": "Proč škola nepoužila všechny navržené kroky beze zbytku?, a to v dané situaci.",
+        "D": "Kdy bude interní dokumentace definitivně uzavřena?, a to v popsané situaci."
+      },
       "correctOptionText": "Kde přesně jste změnili postup, co se tím zlepšilo a co je potřeba doladit?",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "metodický follow-up",
@@ -29516,7 +30241,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 46,
       "questionText": "Rodina slyší odborný závěr poprvé a je zjevně zahlcená. Co je nejpřesnější další krok poradce?",
-      "options": [],
+      "options": {
+        "A": "Předat jen psaný text, aby si ho mohla v klidu pročíst bez dalšího komentáře, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Zastavit se u hlavního významu závěru, přeložit dopad do běžného jazyka a domluvit nejbližší malé kroky.",
+        "C": "Rozšířit vysvětlení o všechny odborné souvislosti, aby rodina nic neztratila, a to právě v uvedeném rámci.",
+        "D": "Přesunout komunikaci na školu, která bude s rodinou v kontaktu častěji, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Zastavit se u hlavního významu závěru, přeložit dopad do běžného jazyka a domluvit nejbližší malé kroky.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "sdělení závěru rodině",
@@ -29600,7 +30330,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 47,
       "questionText": "Rodič se ptá: „Takže je moje dítě líné, nebo nemocné?“ Která reakce je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Je vhodné vybrat bližší z těchto dvou možností, aby rodina měla jasnější rámec, a to v dané situaci, a to v popsané situaci.",
+        "B": "Nejprve je třeba uzavřít odbornou kategorizaci a až potom mluvit o podpoře, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Vrátit se k tomu, jaké bariéry se objevují v konkrétních situacích a co z toho plyne pro podporu, místo morálních nálepek.",
+        "D": "Je lepší tuto otázku neotevírat, protože bývá příliš emoční, a to v tomto typu rozlišení, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Vrátit se k tomu, jaké bariéry se objevují v konkrétních situacích a co z toho plyne pro podporu, místo morálních nálepek.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "nálepka vs funkční vysvětlení",
@@ -29683,7 +30418,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 48,
       "questionText": "Rodina i škola četly tentýž výstup, ale vyvozují z něj jinou podobu podpory. Co je nejpřesnější krok poradce?",
-      "options": [],
+      "options": {
+        "A": "Vybrat stranu, která je systému bližší, aby se situace rychle stabilizovala, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "B": "Upravit text tak, aby byl obecnější a nechal větší prostor pro vlastní výklad, a to i při zohlednění popsaných okolností.",
+        "C": "Požádat obě strany, aby si význam textu vyjednaly samy bez dalšího vedení, a to v dané situaci, a to v popsané situaci.",
+        "D": "Společně přeložit závěr do několika konkrétních situací: co má kdo dělat, kdy a podle čeho pozná, že krok funguje."
+      },
       "correctOptionText": "Společně přeložit závěr do několika konkrétních situací: co má kdo dělat, kdy a podle čeho pozná, že krok funguje.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "společný překlad do praxe",
@@ -29766,7 +30506,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 49,
       "questionText": "Které vysvětlení směrem k dospívajícímu žákovi nejlépe podporuje autonomii?",
-      "options": [],
+      "options": {
+        "A": "Popisuje, co bylo pozorováno, co může pomoci, a dává prostor pro jeho otázky a preference při domlouvání podpory.",
+        "B": "Zdůrazňuje, že rozhodující slovo mají dospělí a žák se nemá zatěžovat detaily, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "Předává jen stručné ujištění, že vše vysvětlí škola rodičům, a to právě v uvedeném rámci, a to i při zohlednění popsaných okolností.",
+        "D": "Soustředí se hlavně na to, co žák dělal dosud špatně a co musí změnit, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Popisuje, co bylo pozorováno, co může pomoci, a dává prostor pro jeho otázky a preference při domlouvání podpory.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "žák a autonomie",
@@ -29848,7 +30593,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: poradenská zakázka, kvalita výstupu, hranice role a převod závěrů do proveditelné podpory.",
       "questionNumber": 50,
       "questionText": "Které uzavření konzultace je nejkvalitnější?",
-      "options": [],
+      "options": {
+        "A": "Rodina i škola dostanou doporučení e-mailem a případ se ponechá otevřený bez dalšího upřesnění, a to v dané situaci.",
+        "B": "Shrnout, na čem je shoda, kdo udělá jaký krok a kdy se ověří, zda navržená podpora skutečně pomáhá.",
+        "C": "Uzavřít setkání obecným ujištěním, že situace bude sledována průběžně, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Zakončit rozhovor doplněním dalších odborných termínů, aby výstup působil úplně, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Shrnout, na čem je shoda, kdo udělá jaký krok a kdy se ověří, zda navržená podpora skutečně pomáhá.",
       "discipline": "speciálněpedagogické poradenství",
       "subtopic": "uzavření poradenské konzultace",
@@ -29930,7 +30680,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 1,
       "questionText": "Které vymezení nejlépe odpovídá současnému pojetí speciální pedagogiky?",
-      "options": [],
+      "options": {
+        "A": "Sleduje hlavně klasifikaci vad a z ní přímo odvozené zařazení do typu zařízení, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Sleduje vztah mezi možnostmi člověka, bariérami prostředí a podobou podpory ve vzdělávání i participaci.",
+        "C": "Sleduje především léčbu poruch, zatímco otázky edukace stojí až na druhém místě, a tímto směrem by vedla podporu.",
+        "D": "Sleduje především sociální dávky a správní řízení spojené s postižením, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Sleduje vztah mezi možnostmi člověka, bariérami prostředí a podobou podpory ve vzdělávání i participaci.",
       "discipline": "speciální pedagogika",
       "subtopic": "současné pojetí oboru",
@@ -30008,7 +30763,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 2,
       "questionText": "Které rozlišení reedukace a kompenzace je odborně nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Reedukace je jen domácí procvičování, kompenzace jen úprava školních pomůcek, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Reedukace se snaží oslabenou funkci rozvíjet, kompenzace hledá jinou funkční cestu k témuž cíli.",
+        "C": "Kompenzace nastupuje až po úplném vyčerpání reedukace a oba přístupy se nesmějí kombinovat, a to v dané situaci.",
+        "D": "Oba pojmy označují ve školní praxi totéž a liší se jen oblíbeností termínu, a v tom hledá klíčový znak."
+      },
       "correctOptionText": "Reedukace se snaží oslabenou funkci rozvíjet, kompenzace hledá jinou funkční cestu k témuž cíli.",
       "discipline": "speciální pedagogika",
       "subtopic": "reedukace × kompenzace",
@@ -30086,7 +30846,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 3,
       "questionText": "Které tvrzení nejpřesněji vystihuje augmentativní a alternativní komunikaci (AAK)?",
-      "options": [],
+      "options": {
+        "A": "Augmentativní komunikace je vždy technologická, alternativní vždy bez pomůcek, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Augmentativní komunikace řeč doplňuje, alternativní ji může nahrazovat; obě míří k funkčnímu dorozumění.",
+        "C": "Augmentativní komunikace je určena jen pro děti, alternativní pouze pro dospělé uživatele, a tímto směrem by vedla podporu.",
+        "D": "Oba pojmy označují nácvik správné výslovnosti při zachované běžné řeči, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Augmentativní komunikace řeč doplňuje, alternativní ji může nahrazovat; obě míří k funkčnímu dorozumění.",
       "discipline": "logopedie / speciální pedagogika",
       "subtopic": "AAK",
@@ -30163,7 +30928,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 4,
       "questionText": "Které vymezení psychopedie je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Zabývá se edukací a podporou osob s mentálním postižením a s obtížemi v intelektovém a adaptivním fungování.",
+        "B": "Zabývá se především léčbou duševních onemocnění bez přímé vazby na vzdělávání, a z toho odvozuje další závěr.",
+        "C": "Zabývá se výhradně specifickými poruchami učení a grafomotorikou, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+        "D": "Zabývá se hlavně rizikovým chováním, delikvencí a preventivně výchovnou péčí, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Zabývá se edukací a podporou osob s mentálním postižením a s obtížemi v intelektovém a adaptivním fungování.",
       "discipline": "psychopedie",
       "subtopic": "vymezení disciplíny",
@@ -30238,7 +31008,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 5,
       "questionText": "Které vymezení mentálního postižení je odborně nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Jde o stav, v němž omezení intelektových schopností a adaptivního fungování zasahuje učení, samostatnost i každodenní život.",
+        "B": "Jde o jakoukoli poruchu duševního zdraví, která se projeví ve škole sníženým výkonem, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "Jde o izolovanou poruchu pozornosti a paměti bez širšího dopadu na adaptaci, a tímto směrem by vedla podporu, a to v dané situaci.",
+        "D": "Jde o souhrn problémů v chování, které vznikají hlavně nedůslednou výchovou, a v tom hledá klíčový znak, a to v popsané situaci."
+      },
       "correctOptionText": "Jde o stav, v němž omezení intelektových schopností a adaptivního fungování zasahuje učení, samostatnost i každodenní život.",
       "discipline": "psychopedie",
       "subtopic": "mentální postižení",
@@ -30312,7 +31087,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 6,
       "questionText": "Které tvrzení je nejpřesnější pro rozlišení PAS a čistě logopedického problému?",
-      "options": [],
+      "options": {
+        "A": "Jakmile je výslovnost nápadná, jde vždy především o PAS a širší komunikaci není třeba řešit, a právě v tom vidí hlavní vysvětlení.",
+        "B": "PAS se pozná hlavně podle vadné artikulace, zatímco sociální porozumění zůstává zachované, a z toho odvozuje další závěr, a to v tomto typu rozlišení.",
+        "C": "Je-li dítě slovně aktivní, PAS lze prakticky vyloučit a stačí sledovat jen mluvní tempo, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "U PAS může být slovní zásoba relativně dobrá, ale oslabené bývá sociální porozumění, sdílení významu a flexibilita v komunikaci."
+      },
       "correctOptionText": "U PAS může být slovní zásoba relativně dobrá, ale oslabené bývá sociální porozumění, sdílení významu a flexibilita v komunikaci.",
       "discipline": "PAS / komunikace",
       "subtopic": "PAS × logopedické rozlišení",
@@ -30390,7 +31170,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 7,
       "questionText": "Které vymezení bazální stimulace je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Jde o logopedickou metodu zaměřenou hlavně na artikulaci izolovaných hlásek, a právě v tom vidí hlavní vysvětlení, a to v dané situaci, a to v popsané situaci.",
+        "B": "Jde o psychoterapeutický postup určený výhradně pro práci s traumatem a regresí, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Jde o ošetřovatelský koncept využívající práci se somatickými, vestibulárními a vibračními podněty k podpoře vnímání, orientace a kontaktu.",
+        "D": "Jde o fyzioterapeutický program zaměřený výhradně na nácvik hrubé motoriky bez smyslové složky, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Jde o ošetřovatelský koncept využívající práci se somatickými, vestibulárními a vibračními podněty k podpoře vnímání, orientace a kontaktu.",
       "discipline": "somatopedie / péče",
       "subtopic": "bazální stimulace",
@@ -30467,7 +31252,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 8,
       "questionText": "Které tvrzení nejlépe vystihuje současné pojetí etopedie?",
-      "options": [],
+      "options": {
+        "A": "Nejde jen o sankcionování rizikového chování, ale o preventivní, výchovnou a reedukační práci v kontextu vztahů a prostředí.",
+        "B": "Jejím hlavním cílem je nahrazovat soudní a represivní systém při práci s delikvencí, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "Zabývá se výhradně farmakologickou léčbou poruch chování a emocí, a tímto směrem by vedla podporu, a to v dané situaci, a to v popsané situaci.",
+        "D": "Zabývá se především smyslovými vadami, které sekundárně vedou k poruše kázně, a v tom hledá klíčový znak, a to v popsané situaci."
+      },
       "correctOptionText": "Nejde jen o sankcionování rizikového chování, ale o preventivní, výchovnou a reedukační práci v kontextu vztahů a prostředí.",
       "discipline": "etopedie",
       "subtopic": "současné pojetí etopedie",
@@ -30545,7 +31335,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 9,
       "questionText": "Které tvrzení je nejpřesnější pro tyflopedické uvažování o podpoře?",
-      "options": [],
+      "options": {
+        "A": "Jakmile je přítomna oční diagnóza, lze podporu určit bez sledování reálného funkčního profilu, a to v uvedeném kontextu.",
+        "B": "Tyflopedická podpora se týká pouze Braillova písma a netýká se práce se zrakovým zbytkem, a z toho odvozuje další závěr.",
+        "C": "Podpora se neodvíjí jen od názvu diagnózy, ale od funkčního využití zraku a způsobu přístupu k informaci.",
+        "D": "Při oslabeném zrakovém vnímání je nejdůležitější ponechat stejné materiály jako u ostatních a měnit jen tempo."
+      },
       "correctOptionText": "Podpora se neodvíjí jen od názvu diagnózy, ale od funkčního využití zraku a způsobu přístupu k informaci.",
       "discipline": "tyflopedie",
       "subtopic": "funkční profil zrakového postižení",
@@ -30622,7 +31417,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 10,
       "questionText": "Které přiřazení somatopedie a ortopedie je správné?",
-      "options": [],
+      "options": {
+        "A": "Somatopedie je část chirurgie a ortopedie je pedagogický obor pro práci ve škole, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Somatopedie řeší edukaci a podporu osob s tělesným postižením, ortopedie je lékařský obor zaměřený na pohybový aparát.",
+        "C": "Somatopedie i ortopedie označují totéž; liší se jen českým a latinským názvem, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+        "D": "Somatopedie se týká jen rehabilitace po úrazech a ortopedie jen komunikačních bariér, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Somatopedie řeší edukaci a podporu osob s tělesným postižením, ortopedie je lékařský obor zaměřený na pohybový aparát.",
       "discipline": "somatopedie",
       "subtopic": "somatopedie × ortopedie",
@@ -30699,7 +31499,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 11,
       "questionText": "Která reakce nejlépe odpovídá aktivnímu naslouchání v poradenském rozhovoru?",
-      "options": [],
+      "options": {
+        "A": "Rychle nabídnout hotové řešení, aby se rozhovor zbytečně nezdržoval emocemi, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Převzít interpretaci situace za klienta a ujistit ho, že jeho pohled už není třeba rozvíjet, a z toho odvozuje další závěr.",
+        "C": "Shrnout, co druhý říká, ověřit porozumění a ponechat prostor pro doplnění bez okamžité rady či hodnocení.",
+        "D": "Střídat otázky s vlastními příklady z praxe, aby bylo zřejmé, že poradce ví, jak situace dopadne, a to v popsané situaci."
+      },
       "correctOptionText": "Shrnout, co druhý říká, ověřit porozumění a ponechat prostor pro doplnění bez okamžité rady či hodnocení.",
       "discipline": "poradenská komunikace",
       "subtopic": "aktivní naslouchání",
@@ -30776,7 +31581,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 12,
       "questionText": "Co nejpřesněji vyjadřuje validace v poradenské komunikaci?",
-      "options": [],
+      "options": {
+        "A": "Potvrzení, že klientův pohled je vždy objektivně správný a není vhodné jej dále zkoumat, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Uznání, že prožívání druhého je vzhledem k situaci pochopitelné, aniž by poradce musel bezvýhradně souhlasit se všemi závěry.",
+        "C": "Přesvědčení klienta, aby své emoce odložil a soustředil se jen na fakta a formuláře, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Nahrazení klientovy výpovědi odborným výkladem, aby se snížila nejistota při rozhovoru, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Uznání, že prožívání druhého je vzhledem k situaci pochopitelné, aniž by poradce musel bezvýhradně souhlasit se všemi závěry.",
       "discipline": "poradenská komunikace",
       "subtopic": "validace",
@@ -30855,7 +31665,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 13,
       "questionText": "Které vymezení sebereflexe je pro profesi speciálního pedagoga nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Promýšlení vlastních postojů, myšlenek a emocí a jejich vlivu na odborné jednání i rozhodování.",
+        "B": "Shromažďování zpětné vazby od klienta bez vztahu k tomu, jak s ní odborník pracuje, a to v popsané situaci.",
+        "C": "Vedení vnitřního dialogu klienta při skupinové práci s rodinou a učiteli, a tímto směrem by vedla podporu.",
+        "D": "Snaha co nejvíce potlačit osobní reakce tak, aby se do odborné práce nedostalo žádné vlastní zaujetí."
+      },
       "correctOptionText": "Promýšlení vlastních postojů, myšlenek a emocí a jejich vlivu na odborné jednání i rozhodování.",
       "discipline": "poradenská komunikace",
       "subtopic": "sebereflexe",
@@ -30934,7 +31749,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 14,
       "questionText": "Které tvrzení nejlépe vystihuje profesní hranice v poradenské práci?",
-      "options": [],
+      "options": {
+        "A": "Poradce má podporovat porozumění a rozhodování klienta, nemá však přebírat životní rozhodnutí ani vytvářet závislost na své osobě.",
+        "B": "Poradce má být pro rodinu hlavním rozhodovatelem, protože nese odbornou odpovědnost za výsledek, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "Poradce má udržovat co nejosobnější vztah, aby se posílila poslušnost vůči jeho doporučením, a tímto směrem by vedla podporu, a to v dané situaci.",
+        "D": "Poradce má zůstat zcela distancovaný a neprojevovat žádné lidské zaujetí ani podporu, a v tom hledá klíčový znak, a to v popsané situaci."
+      },
       "correctOptionText": "Poradce má podporovat porozumění a rozhodování klienta, nemá však přebírat životní rozhodnutí ani vytvářet závislost na své osobě.",
       "discipline": "poradenská etika",
       "subtopic": "profesní hranice",
@@ -31013,7 +31833,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 15,
       "questionText": "Který postup je profesně nejvhodnější při sdělování závažných informací rodiči?",
-      "options": [],
+      "options": {
+        "A": "Předat co nejrychleji úplný odborný výklad, aby rodič ihned pochopil celou závažnost situace, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Začít administrativou a podpisy a teprve po nich vysvětlit, co nález prakticky znamená, a z toho odvozuje další závěr.",
+        "C": "Vyhnout se nepříjemným částem sdělení a soustředit se jen na pozitivní stránky, aby nevznikl odpor, a to právě v uvedeném rámci.",
+        "D": "Strukturovat sdělení srozumitelně, dávkovat informace a průběžně vytvářet prostor pro otázky i emoční reakci."
+      },
       "correctOptionText": "Strukturovat sdělení srozumitelně, dávkovat informace a průběžně vytvářet prostor pro otázky i emoční reakci.",
       "discipline": "poradenská komunikace",
       "subtopic": "sdělování citlivých informací",
@@ -31093,7 +31918,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 16,
       "questionText": "Který princip je nejpřesnější při volbě komunikačního způsobu s neslyšícím klientem?",
-      "options": [],
+      "options": {
+        "A": "Vždy předpokládat, že nejvhodnější je psaná čeština, protože je pro školu nejjednodušší, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Vždy komunikovat výhradně přes doprovázející osobu, aby nevznikla komunikační nejistota, a z toho odvozuje další závěr.",
+        "C": "Předpokládat, že každý neslyšící automaticky preferuje jeden a tentýž znakový systém, a tímto směrem by vedla podporu.",
+        "D": "Nevycházet jen z diagnózy, ale zjišťovat preferovaný a funkční komunikační způsob konkrétního člověka v dané situaci."
+      },
       "correctOptionText": "Nevycházet jen z diagnózy, ale zjišťovat preferovaný a funkční komunikační způsob konkrétního člověka v dané situaci.",
       "discipline": "komunikace při sluchovém postižení",
       "subtopic": "volba komunikační cesty",
@@ -31171,7 +32001,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 17,
       "questionText": "Které tvrzení nejpřesněji vystihuje rozdíl mezi PPP a SPC?",
-      "options": [],
+      "options": {
+        "A": "PPP je širší školské poradenské zařízení, zatímco SPC je více vázáno na práci se žáky s konkrétními druhy znevýhodnění.",
+        "B": "PPP vydává jen psychologické zprávy, kdežto SPC jen sociální posudky bez vztahu ke škole, a z toho odvozuje další závěr.",
+        "C": "PPP i SPC mají totožné cílové skupiny i postupy; rozdělení je dnes jen historický přežitek, a tímto směrem by vedla podporu.",
+        "D": "SPC je školní pracoviště v běžné základní škole, zatímco PPP patří výhradně do zdravotnictví, a v tom hledá klíčový znak."
+      },
       "correctOptionText": "PPP je širší školské poradenské zařízení, zatímco SPC je více vázáno na práci se žáky s konkrétními druhy znevýhodnění.",
       "discipline": "školské poradenství",
       "subtopic": "PPP × SPC",
@@ -31252,7 +32087,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 18,
       "questionText": "Které tvrzení odpovídá organizaci poradenských služeb ve škole podle vyhlášky č. 72/2005 Sb.?",
-      "options": [],
+      "options": {
+        "A": "Poradenské služby ve škole zajišťuje výhradně externí PPP nebo SPC; škola je sama neposkytuje, a právě v tom vidí hlavní vysvětlení, a to v uvedeném kontextu.",
+        "B": "V základní a střední škole se na poradenských službách zpravidla podílejí výchovný poradce a školní metodik prevence, případně i další odborní pracovníci.",
+        "C": "Ve škole je za poradenské služby odpovědný jen třídní učitel, pokud má pedagogickou praxi delší než pět let, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Školní poradenské služby lze poskytovat jen tehdy, když škola zaměstnává současně psychologa i speciálního pedagoga, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "V základní a střední škole se na poradenských službách zpravidla podílejí výchovný poradce a školní metodik prevence, případně i další odborní pracovníci.",
       "discipline": "školské poradenství",
       "subtopic": "školní poradenské pracoviště",
@@ -31333,7 +32173,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 19,
       "questionText": "Které rozlišení role výchovného poradce a školního metodika prevence je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Výchovný poradce vede výhradně kázeňská řízení a školní metodik prevence rozhoduje o podpůrných opatřeních vyšších stupňů, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Obě role jsou v praxi zcela totožné a liší se jen názvem podle tradice školy, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Výchovný poradce řeší vzdělávací dráhu, podpůrná opatření a spolupráci se ŠPZ; školní metodik prevence se soustředí na prevenci rizikového chování.",
+        "D": "Školní metodik prevence zajišťuje hlavně diagnostiku speciálních vzdělávacích potřeb a vydává doporučení škole, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Výchovný poradce řeší vzdělávací dráhu, podpůrná opatření a spolupráci se ŠPZ; školní metodik prevence se soustředí na prevenci rizikového chování.",
       "discipline": "školské poradenství",
       "subtopic": "výchovný poradce × školní metodik prevence",
@@ -31414,7 +32259,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 20,
       "questionText": "Které shrnutí vztahu zprávy a doporučení školského poradenského zařízení je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Zpráva shrnuje odborná zjištění a jejich odůvodnění, zatímco doporučení je převádí do konkrétní vzdělávací podpory.",
+        "B": "Zpráva je interní poznámka školy a doporučení slouží výhradně orgánům sociálně-právní ochrany, a z toho odvozuje další závěr.",
+        "C": "Oba dokumenty mají stejnou funkci a liší se pouze rozsahem textu a grafickou podobou, a tímto směrem by vedla podporu.",
+        "D": "Doporučení popisuje pouze anamnézu, kdežto zpráva nastavuje organizaci výuky a hodnocení ve škole, a v tom hledá klíčový znak."
+      },
       "correctOptionText": "Zpráva shrnuje odborná zjištění a jejich odůvodnění, zatímco doporučení je převádí do konkrétní vzdělávací podpory.",
       "discipline": "školské poradenství",
       "subtopic": "zpráva × doporučení",
@@ -31495,7 +32345,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 21,
       "questionText": "Které vymezení IVP je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Jde o odbornou zprávu PPP nebo SPC, kterou škola pouze archivuje bez dalšího rozpracování, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Jde o povinný dokument každého žáka, který jednou navštívil školní poradenské pracoviště, a z toho odvozuje další závěr.",
+        "C": "Jde o zdravotnický plán léčby, který škola nesmí nijak vztáhnout ke své výuce, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Jde o školní dokument, který konkretizuje podmínky vzdělávání konkrétního žáka na základě doporučení a jeho potřeb."
+      },
       "correctOptionText": "Jde o školní dokument, který konkretizuje podmínky vzdělávání konkrétního žáka na základě doporučení a jeho potřeb.",
       "discipline": "školské poradenství",
       "subtopic": "IVP",
@@ -31575,7 +32430,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 22,
       "questionText": "Co nejpřesněji vystihuje PLPP?",
-      "options": [],
+      "options": {
+        "A": "Je to odborný výstup ŠPZ, kterým se škole přidělují vyšší stupně podpůrných opatření, a právě v tom vidí hlavní vysvětlení, a to v dané situaci.",
+        "B": "Je to školní plán pedagogické podpory používaný zejména při podpůrných opatřeních prvního stupně a při průběžném vyhodnocování podpory.",
+        "C": "Je to souhrnná sociální zpráva pro OSPOD o rodinné situaci žáka, a tímto směrem by vedla podporu, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Je to závěrečná zpráva z pobytu ve středisku výchovné péče, a v tom hledá klíčový znak, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
+      },
       "correctOptionText": "Je to školní plán pedagogické podpory používaný zejména při podpůrných opatřeních prvního stupně a při průběžném vyhodnocování podpory.",
       "discipline": "školské poradenství",
       "subtopic": "PLPP",
@@ -31655,7 +32515,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 23,
       "questionText": "Které tvrzení odpovídá § 16 školského zákona?",
-      "options": [],
+      "options": {
+        "A": "Podpůrná opatření jsou bezplatná jen tehdy, pokud je škola schopna je zajistit z vlastních rezerv, a právě v tom vidí hlavní vysvětlení, a to právě v uvedeném rámci.",
+        "B": "Na bezplatná podpůrná opatření mají nárok pouze žáci se zdravotním postižením, nikoli s jinou potřebou podpory, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "Děti, žáci a studenti se speciálními vzdělávacími potřebami mají právo na bezplatné poskytování podpůrných opatření školou a školským zařízením.",
+        "D": "Podpůrná opatření jsou nároková pouze tehdy, pokud je žák vzděláván ve škole zřízené podle § 16 odst. 9, a v tom hledá klíčový znak, a to v popsané situaci."
+      },
       "correctOptionText": "Děti, žáci a studenti se speciálními vzdělávacími potřebami mají právo na bezplatné poskytování podpůrných opatření školou a školským zařízením.",
       "discipline": "legislativa / školské poradenství",
       "subtopic": "právo na podpůrná opatření",
@@ -31735,7 +32600,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 24,
       "questionText": "Které vymezení dítěte, žáka nebo studenta se speciálními vzdělávacími potřebami odpovídá školskému zákonu?",
-      "options": [],
+      "options": {
+        "A": "Jde výhradně o osobu s lékařsky potvrzeným zdravotním postižením bez ohledu na vzdělávací dopad, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Jde o osobu, která má podprůměrný prospěch alespoň ve třech povinných předmětech, a z toho odvozuje další závěr, a to v tomto typu rozlišení.",
+        "C": "Jde o osobu, kterou škola dočasně označí za problémovou z výchovných důvodů, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Jde o osobu, která k naplnění vzdělávacích možností nebo k uplatnění práv na rovnoprávném základě potřebuje podpůrná opatření."
+      },
       "correctOptionText": "Jde o osobu, která k naplnění vzdělávacích možností nebo k uplatnění práv na rovnoprávném základě potřebuje podpůrná opatření.",
       "discipline": "legislativa / školské poradenství",
       "subtopic": "vymezení SVP",
@@ -31814,7 +32684,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 25,
       "questionText": "Které tvrzení o lhůtě pro vydání zprávy a doporučení je podle vyhlášky č. 27/2016 Sb. správné?",
-      "options": [],
+      "options": {
+        "A": "Zpráva i doporučení se vydávají vždy až po skončení školního roku, aby bylo možné vyhodnotit dlouhodobý efekt podpory, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Lhůta je jednotně 30 dnů od podání žádosti bez ohledu na průběh posuzování a další podklady, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Vyhláška stanoví pouze tříměsíční lhůtu pro zahájení služby, nikoli pro vydání zprávy a doporučení, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+        "D": "Zpráva a doporučení se vydávají do 30 dnů ode dne ukončení posuzování speciálních vzdělávacích potřeb, nejpozději však do 3 měsíců od přijetí žádosti."
+      },
       "correctOptionText": "Zpráva a doporučení se vydávají do 30 dnů ode dne ukončení posuzování speciálních vzdělávacích potřeb, nejpozději však do 3 měsíců od přijetí žádosti.",
       "discipline": "legislativa / školské poradenství",
       "subtopic": "lhůta pro zprávu a doporučení",
@@ -31894,7 +32769,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 26,
       "questionText": "Které tvrzení o krizové poradenské intervenci odpovídá vyhlášce č. 72/2005 Sb.?",
-      "options": [],
+      "options": {
+        "A": "Krizovou intervenci lze poskytnout až po standardním zařazení žádosti do běžné tříměsíční lhůty, a to právě v uvedeném rámci.",
+        "B": "Krizová intervence se poskytuje jen tehdy, pokud před ní proběhlo komplexní psychologické vyšetření, a to i při zohlednění popsaných okolností.",
+        "C": "Krizová poradenská intervence v naléhavých ohrožujících situacích se poskytuje bezprostředně po žádosti.",
+        "D": "Krizová intervence je vyhrazena pouze zdravotnictví a školský poradenský systém ji neposkytuje, a to v popsané situaci."
+      },
       "correctOptionText": "Krizová poradenská intervence v naléhavých ohrožujících situacích se poskytuje bezprostředně po žádosti.",
       "discipline": "legislativa / školské poradenství",
       "subtopic": "krizová poradenská intervence",
@@ -31974,7 +32854,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 27,
       "questionText": "Které tvrzení o zpracování IVP je podle vyhlášky č. 27/2016 Sb. správné?",
-      "options": [],
+      "options": {
+        "A": "IVP se zpracovává automaticky do 1 měsíce od první návštěvy školního poradenského pracoviště, a právě v tom vidí hlavní vysvětlení, a to v uvedeném kontextu.",
+        "B": "IVP se zpracovává nejpozději do 3 měsíců od vydání zprávy, i když škola neobdržela žádost, a z toho odvozuje další závěr, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "IVP je zpracován bez zbytečného odkladu, nejpozději do 1 měsíce ode dne, kdy škola obdržela doporučení a žádost zletilého žáka nebo zákonného zástupce.",
+        "D": "IVP se může zpracovat až po pololetním hodnocení, aby škola měla dost podkladů z výuky, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "IVP je zpracován bez zbytečného odkladu, nejpozději do 1 měsíce ode dne, kdy škola obdržela doporučení a žádost zletilého žáka nebo zákonného zástupce.",
       "discipline": "legislativa / školské poradenství",
       "subtopic": "lhůta pro IVP",
@@ -32054,7 +32939,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 28,
       "questionText": "Které tvrzení odpovídá poučení u zprávy nebo doporučení školského poradenského zařízení?",
-      "options": [],
+      "options": {
+        "A": "Zpráva a doporučení jsou konečné a po převzetí již nepodléhají žádné revizi ani přezkumu.",
+        "B": "Zletilý žák nebo zákonný zástupce může ve stanovené lhůtě požádat o revizi dokumentu.",
+        "C": "O revizi může žádat pouze ředitel školy, protože jde o dokument sloužící výhradně škole.",
+        "D": "Revize je možná jen tehdy, když s ní předem písemně souhlasí pracovník, který dokument vydal."
+      },
       "correctOptionText": "Zletilý žák nebo zákonný zástupce může ve stanovené lhůtě požádat o revizi dokumentu.",
       "discipline": "legislativa / školské poradenství",
       "subtopic": "revize zprávy a doporučení",
@@ -32134,7 +33024,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 29,
       "questionText": "Které tvrzení o poskytování poradenských služeb odpovídá vyhlášce č. 72/2005 Sb.?",
-      "options": [],
+      "options": {
+        "A": "Podrobné poučení není nutné, pokud jde o odbornou službu poskytovanou pedagogickým pracovníkem, a právě v tom vidí hlavní vysvětlení, a to právě v uvedeném rámci.",
+        "B": "Škola nebo školské poradenské zařízení musí předem srozumitelně informovat o povaze, rozsahu, přínosech, možných důsledcích i právech spojených se službou.",
+        "C": "O rozsahu a důsledcích služby se informuje až po jejím ukončení, aby nebyl ovlivněn průběh vyšetření, a tímto směrem by vedla podporu, a to v dané situaci.",
+        "D": "Poučení se týká pouze zdravotnických výkonů; školské poradenské služby tuto povinnost nemají, a v tom hledá klíčový znak, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "Škola nebo školské poradenské zařízení musí předem srozumitelně informovat o povaze, rozsahu, přínosech, možných důsledcích i právech spojených se službou.",
       "discipline": "legislativa / poradenská etika",
       "subtopic": "informovaný vstup do poradenské služby",
@@ -32214,7 +33109,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 30,
       "questionText": "Které rozlišení sociálního poradenství a speciálněpedagogického poradenství je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Sociální poradenství řeší výhradně diagnózu a speciálněpedagogické poradenství hlavně dávky a příspěvky, a právě v tom vidí hlavní vysvětlení, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Oba typy poradenství mají stejný obsah; liší se jen názvem podle resortu, který službu zřizuje, a z toho odvozuje další závěr, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "Speciálněpedagogické poradenství se omezuje jen na školní prospěch, sociální poradenství jen na zdravotnické výkony, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Sociální poradenství orientuje v sociální situaci, službách a nárocích, zatímco speciálněpedagogické poradenství převádí obtíže do podpory učení, komunikace a fungování."
+      },
       "correctOptionText": "Sociální poradenství orientuje v sociální situaci, službách a nárocích, zatímco speciálněpedagogické poradenství převádí obtíže do podpory učení, komunikace a fungování.",
       "discipline": "poradenství",
       "subtopic": "sociální × speciálněpedagogické poradenství",
@@ -32292,7 +33192,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 31,
       "questionText": "Které tvrzení je nejpřesnější pro vztah zdravotnického nálezu a vzdělávací podpory?",
-      "options": [],
+      "options": {
+        "A": "Jakmile existuje lékařský nález, škola už nemusí dále zvažovat funkční dopad ani organizaci podpory, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Zdravotnický nález je pro školu nepoužitelný, protože vzdělávání a zdravotnictví se nemají propojovat, a z toho odvozuje další závěr.",
+        "C": "Podobu vzdělávací podpory smí určovat výhradně ošetřující lékař bez účasti školy a poradenského systému, a tímto směrem by vedla podporu.",
+        "D": "Zdravotnický nález sám neurčuje podobu školní podpory; je třeba jej převést do konkrétních vzdělávacích a funkčních důsledků."
+      },
       "correctOptionText": "Zdravotnický nález sám neurčuje podobu školní podpory; je třeba jej převést do konkrétních vzdělávacích a funkčních důsledků.",
       "discipline": "mezioborová spolupráce",
       "subtopic": "zdravotnický nález × vzdělávací podpora",
@@ -32371,7 +33276,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 32,
       "questionText": "Které vymezení role SPC odpovídá vyhlášce č. 72/2005 Sb. nejpřesněji?",
-      "options": [],
+      "options": {
+        "A": "SPC je určeno výhradně pro žáky se specifickými poruchami učení a chování bez dalších znevýhodnění, a právě v tom vidí hlavní vysvětlení, a to právě v uvedeném rámci.",
+        "B": "SPC je zařízení pro všechny žáky bez rozdílu a nespecializuje se na žádný typ znevýhodnění, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "SPC poskytuje poradenské služby zejména žákům s mentálním, tělesným, zrakovým nebo sluchovým postižením, vadami řeči, vícečetným postižením nebo autismem.",
+        "D": "SPC je určeno pouze pro mimořádně nadané žáky a jejich kariérové poradenství, a v tom hledá klíčový znak, a to v popsané situaci, a to v uvedeném kontextu."
+      },
       "correctOptionText": "SPC poskytuje poradenské služby zejména žákům s mentálním, tělesným, zrakovým nebo sluchovým postižením, vadami řeči, vícečetným postižením nebo autismem.",
       "discipline": "školské poradenství",
       "subtopic": "cílová skupina SPC",
@@ -32452,7 +33362,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 33,
       "questionText": "Které tvrzení nejlépe odpovídá současnému ne-deficitnímu pohledu na podporu?",
-      "options": [],
+      "options": {
+        "A": "Jakmile známe diagnózu, můžeme z ní bez dalšího odvodit přesnou školní podporu i očekávaný výkon, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Ne-deficitní přístup znamená, že diagnózy už nejsou pro odbornou práci vůbec důležité, a z toho odvozuje další závěr.",
+        "C": "Diagnóza sama ještě nevysvětluje vzdělávací situaci; rozhoduje i prostředí, bariéry a konkrétní podoba podpory.",
+        "D": "Současné pojetí podpory se má vyhýbat jakémukoli hodnocení funkčního dopadu, aby nebylo stigmatizující, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Diagnóza sama ještě nevysvětluje vzdělávací situaci; rozhoduje i prostředí, bariéry a konkrétní podoba podpory.",
       "discipline": "speciální pedagogika",
       "subtopic": "diagnóza × prostředí × podpora",
@@ -32530,7 +33445,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 34,
       "questionText": "Které tvrzení nejpřesněji vystihuje mezioborovost speciální pedagogiky?",
-      "options": [],
+      "options": {
+        "A": "Je jen souhrnným názvem pro přebírání lékařských závěrů do školy bez vlastního oborového rámce, a právě v tom vidí hlavní vysvětlení, a to v dané situaci.",
+        "B": "Její mezioborovost znamená, že nemá vlastní předmět ani odborné metody a role speciálního pedagoga mizí, a z toho odvozuje další závěr.",
+        "C": "Jejím hlavním cílem je sladit administrativní požadavky různých resortů, nikoli podporu člověka, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+        "D": "Čerpá z pedagogiky, psychologie, medicíny, sociální oblasti i práva, ale zachovává vlastní fokus na vzdělávání, podporu a participaci."
+      },
       "correctOptionText": "Čerpá z pedagogiky, psychologie, medicíny, sociální oblasti i práva, ale zachovává vlastní fokus na vzdělávání, podporu a participaci.",
       "discipline": "speciální pedagogika",
       "subtopic": "mezioborovost oboru",
@@ -32610,7 +33530,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 35,
       "questionText": "Který závěr je nejpřesnější pro speciálněpedagogické uvažování o stejné diagnóze u dvou žáků?",
-      "options": [],
+      "options": {
+        "A": "Stejná diagnóza je dostatečný podklad pro stejný plán podpory bez dalšího sledování průběhu práce, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Stejná diagnóza ještě neznamená stejnou podporu, protože rozhoduje i funkční profil a podmínky, ve kterých žák pracuje.",
+        "C": "Pokud mají žáci stejnou diagnózu, je nevhodné sledovat individuální rozdíly, aby byla podpora spravedlivá, a tímto směrem by vedla podporu.",
+        "D": "Rozdíly mezi dvěma žáky se stejnou diagnózou jsou jen motivační a nemají mít vliv na pedagogické závěry, a v tom hledá klíčový znak."
+      },
       "correctOptionText": "Stejná diagnóza ještě neznamená stejnou podporu, protože rozhoduje i funkční profil a podmínky, ve kterých žák pracuje.",
       "discipline": "speciální pedagogika",
       "subtopic": "stejná diagnóza × odlišný funkční profil",
@@ -32688,7 +33613,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 36,
       "questionText": "Učitel říká: „Máme doporučení, takže už není třeba nic dalšího rozpracovávat.“ Která korekce je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Doporučení má význam hlavně pro archivaci a při běžné výuce už na něm nezáleží, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Doporučení nahrazuje všechny školní dokumenty i individuální pedagogické rozhodování během roku, a z toho odvozuje další závěr.",
+        "C": "Doporučení je závazné jen pro rodiče; škola je může sledovat spíše informativně, a tímto směrem by vedla podporu.",
+        "D": "Doporučení samo nenahrazuje každodenní školní realizaci podpory v organizaci, metodách, zadávání ani hodnocení."
+      },
       "correctOptionText": "Doporučení samo nenahrazuje každodenní školní realizaci podpory v organizaci, metodách, zadávání ani hodnocení.",
       "discipline": "školské poradenství",
       "subtopic": "doporučení × realizace podpory",
@@ -32767,7 +33697,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 37,
       "questionText": "Žák při individuálním hovoru rozumí dobře, ale při výkladu z větší vzdálenosti a v hluku ztrácí obsah. Jaký závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Nejpřesnější je uzavřít věc jako oslabení obecných rozumových schopností, protože se potíž objevuje ve více předmětech.",
+        "B": "Nejdůležitější je rozšířit slovní zásobu, protože problém se projevuje během vyučování v jazyce, a z toho odvozuje další závěr.",
+        "C": "Nejpřesnější je převést žáka na trvale individuální práci, aby se odstranily všechny situační vlivy, a to v uvedeném kontextu.",
+        "D": "Nejprve je třeba upravit podmínky přístupu k mluvené informaci a teprve poté posuzovat skutečný rozsah obtíží."
+      },
       "correctOptionText": "Nejprve je třeba upravit podmínky přístupu k mluvené informaci a teprve poté posuzovat skutečný rozsah obtíží.",
       "discipline": "surdopedie / komunikace",
       "subtopic": "přístup k mluvené informaci",
@@ -32847,7 +33782,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 38,
       "questionText": "Žák při práci s textem výrazně zpomaluje, vadí mu oslnění a drobný tisk, ale při ústním zkoušení působí jistě. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Je třeba řešit přístup k vizuální informaci a formát materiálů, ne automaticky uzavírat problém jako slabé porozumění učivu.",
+        "B": "Nejpřesnější je soustředit se hlavně na reedukaci čtenářské techniky, protože obtíž se projevuje u textu, a z toho odvozuje další závěr.",
+        "C": "Obtíže nejspíš souvisejí s nízkou vytrvalostí, protože ústní výkon bývá pro žáky přirozeně snazší, a tímto směrem by vedla podporu.",
+        "D": "Nejpřesnější je nahradit ústní zkoušení písemným, aby bylo možné lépe odlišit výkon od dojmu, a v tom hledá klíčový znak, a to v popsané situaci."
+      },
       "correctOptionText": "Je třeba řešit přístup k vizuální informaci a formát materiálů, ne automaticky uzavírat problém jako slabé porozumění učivu.",
       "discipline": "tyflopedie / přístupnost",
       "subtopic": "vizuální přístup k informaci",
@@ -32927,7 +33867,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 39,
       "questionText": "Žák má těžce omezenou srozumitelnost řeči, ale zřetelný komunikační záměr. Který postup je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Trvat výhradně na mluvené řeči, aby se dítě nenaučilo na pomůckách záviset, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Odložit podporu komunikace do doby, než bude jisté, že běžná řeč už nemá šanci se rozvinout, a to v tomto typu rozlišení.",
+        "C": "Zavést jinou funkční cestu sdělení, například AAK, místo čekání, až bude mluvená řeč dostatečně „čistá“.",
+        "D": "Zúžit komunikaci jen na terapeutickou místnost, aby se žák v běžném prostředí nepřetěžoval, a v tom hledá klíčový znak."
+      },
       "correctOptionText": "Zavést jinou funkční cestu sdělení, například AAK, místo čekání, až bude mluvená řeč dostatečně „čistá“.",
       "discipline": "logopedie / AAK",
       "subtopic": "těžce omezená mluvená řeč",
@@ -33005,7 +33950,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 40,
       "questionText": "Žák reaguje výbuchem hlavně při nejasném zadání a veřejné opravě, ale v předvídatelném režimu a s neveřejnou zpětnou vazbou pracuje výrazně lépe. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Hlavní problém je v nedostatku učiva, protože problém se projevuje při plnění školních úkolů, a to v dané situaci, a to v popsané situaci.",
+        "B": "Nejpřesnější je zpřísnit sankční režim, protože veřejná oprava má posílit respekt k autoritě, a z toho odvozuje další závěr.",
+        "C": "Chování je třeba vyhodnocovat v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
+        "D": "Hlavní problém leží v tělesném oslabení, protože přetížení ve třídě bývá vždy somatického původu, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "Chování je třeba vyhodnocovat v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
       "discipline": "etopedie / školní klima",
       "subtopic": "spouštěče chování",
@@ -33085,7 +34035,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 41,
       "questionText": "Žák má nestabilní domácí podmínky a dlouhodobě kolísá ve výkonu. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Podpůrná opatření se nevážou jen ke zdravotnímu stavu; mohou reagovat i na kulturní prostředí nebo jiné životní podmínky žáka.",
+        "B": "Bez zdravotní diagnózy nelze ve školství o podpůrných opatřeních vůbec uvažovat, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "Kolísání výkonu v takové situaci je čistě kázeňská otázka a nepatří do poradenského rámce, a tímto směrem by vedla podporu, a to v dané situaci.",
+        "D": "Škola má v podobné situaci sledovat jen prospěch, protože rodinné podmínky do podpory nepatří, a v tom hledá klíčový znak, a to v popsané situaci."
+      },
       "correctOptionText": "Podpůrná opatření se nevážou jen ke zdravotnímu stavu; mohou reagovat i na kulturní prostředí nebo jiné životní podmínky žáka.",
       "discipline": "legislativa / inkluzivní vzdělávání",
       "subtopic": "jiné životní podmínky a podpora",
@@ -33166,7 +34121,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 42,
       "questionText": "Žák s tělesným postižením pracuje pomalu rukou, ale v rozhovoru přesně chápe souvislosti a učivo. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Pomalé pracovní tempo u žáka s tělesným postižením obvykle ukazuje na globálně nižší úroveň myšlení, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Nejpřesnější je převést žáka na jednodušší kurikulum, protože rychlost práce je rozhodující ukazatel schopností, a z toho odvozuje další závěr.",
+        "C": "Je třeba oddělit motorické omezení od závěrů o kognitivní úrovni a upravit způsob výstupu, ne automaticky snižovat obsahové nároky.",
+        "D": "Tělesné postižení je ve škole hlavně zdravotnická otázka, takže pedagogické úpravy výstupu nejsou podstatné, a v tom hledá klíčový znak."
+      },
       "correctOptionText": "Je třeba oddělit motorické omezení od závěrů o kognitivní úrovni a upravit způsob výstupu, ne automaticky snižovat obsahové nároky.",
       "discipline": "somatopedie",
       "subtopic": "motorické omezení × kognitivní závěr",
@@ -33246,7 +34206,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 43,
       "questionText": "Dítě vyslovuje několik hlásek nepřesně, ale dobře rozumí, reaguje v běžném tempu komunikace a ve třídě se neztrácí v obsahu. Který závěr je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Těžiště obtíže je spíše v produkci řeči, nikoli v širším přístupu k obsahu sdělení nebo v celkové intelektové úrovni.",
+        "B": "Jde nejspíše o mentální postižení, protože chyba ve výslovnosti bývá projevem celkově nižších schopností, a to v popsané situaci.",
+        "C": "Jde nejspíše o sluchové postižení, protože nepřesná výslovnost vždy znamená ztrátu porozumění řeči, a tímto směrem by vedla podporu.",
+        "D": "Jde nejspíše o etopedický problém, protože nápadná řeč bývá důsledkem nedostatečné sebekázně, a v tom hledá klíčový znak."
+      },
       "correctOptionText": "Těžiště obtíže je spíše v produkci řeči, nikoli v širším přístupu k obsahu sdělení nebo v celkové intelektové úrovni.",
       "discipline": "logopedie",
       "subtopic": "produkce řeči × širší porozumění",
@@ -33324,7 +34289,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 44,
       "questionText": "Rodina potřebuje hlavně orientaci v síti sociálních služeb, příspěvcích a návazných možnostech podpory mimo školu. Který rámec je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Těžiště podpory se zde posouvá do sociálního poradenství a orientace v návazné síti služeb.",
+        "B": "Jde především o tvorbu IVP, protože jakákoli mimoškolní pomoc musí vycházet z dokumentu školy.",
+        "C": "Jde především o klinickou diagnostiku, protože dávky a služby se řeší až po psychologickém závěru.",
+        "D": "Jde výhradně o školní metodickou podporu učitelům, protože rodině se tento typ informací běžně neposkytuje."
+      },
       "correctOptionText": "Těžiště podpory se zde posouvá do sociálního poradenství a orientace v návazné síti služeb.",
       "discipline": "poradenství",
       "subtopic": "sociální síť služeb",
@@ -33404,7 +34374,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 45,
       "questionText": "Které vymezení střediska výchovné péče (SVP) je nejpřesnější?",
-      "options": [],
+      "options": {
+        "A": "Jde o pracoviště, které vydává doporučení ke všem podpůrným opatřením místo školského poradenského zařízení, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Jde o školské zařízení zaměřené na preventivně výchovnou péči a práci s problémy v chování, nikoli o náhradu PPP nebo SPC.",
+        "C": "Jde o sociální službu určenou výhradně pro dospělé osoby v pobytové péči, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Jde o zdravotnické zařízení pro diagnostiku smyslových a tělesných postižení ve škole, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Jde o školské zařízení zaměřené na preventivně výchovnou péči a práci s problémy v chování, nikoli o náhradu PPP nebo SPC.",
       "discipline": "etopedie / systém zařízení",
       "subtopic": "SVP",
@@ -33482,7 +34457,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 46,
       "questionText": "Který dokument je v příloze vyhlášky č. 27/2016 Sb. označen formulací „Pouze pro žáka nebo zákonného zástupce“?",
-      "options": [],
+      "options": {
+        "A": "Individuální vzdělávací plán školy.",
+        "B": "Zpráva školského poradenského zařízení.",
+        "C": "Program poradenských služeb ve škole.",
+        "D": "Plán pedagogické podpory, a v tom hledá klíčový znak."
+      },
       "correctOptionText": "Zpráva školského poradenského zařízení.",
       "discipline": "legislativa / dokumentace",
       "subtopic": "zpráva ŠPZ",
@@ -33560,7 +34540,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 47,
       "questionText": "Které tvrzení o poradenských službách ve škole je podle vyhlášky č. 72/2005 Sb. správné?",
-      "options": [],
+      "options": {
+        "A": "Školní psycholog a školní speciální pedagog nesmějí poskytovat poradenské služby, pokud škola nemá současně SPC, a právě v tom vidí hlavní vysvětlení.",
+        "B": "Na poskytování poradenských služeb ve škole se mohou podílet také školní psycholog, školní speciální pedagog nebo školský logoped.",
+        "C": "Poradenské služby ve škole mohou poskytovat jen externí pracovníci PPP, nikoli zaměstnanci školy, a tímto směrem by vedla podporu.",
+        "D": "Školský logoped může ve škole působit jen tehdy, pokud škola vzdělává výhradně žáky s vadami řeči, a v tom hledá klíčový znak, a to v popsané situaci."
+      },
       "correctOptionText": "Na poskytování poradenských služeb ve škole se mohou podílet také školní psycholog, školní speciální pedagog nebo školský logoped.",
       "discipline": "školské poradenství",
       "subtopic": "další odborní pracovníci ve škole",
@@ -33641,7 +34626,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 48,
       "questionText": "Které tvrzení o individuálním vzdělávacím plánu odpovídá aktuálnímu znění vyhlášky č. 27/2016 Sb.?",
-      "options": [],
+      "options": {
+        "A": "Pokud zákonný zástupce nebo zletilý žák neposkytne informovaný souhlas s vypracovaným IVP, škola toto podpůrné opatření neposkytuje.",
+        "B": "Škola může IVP vždy jednostranně zavést, jakmile jej doporučí ŠPZ, i bez souhlasu zletilého žáka nebo zákonného zástupce, a to v tomto typu rozlišení.",
+        "C": "Nesouhlas se týká jen obsahu předmětů; forma IVP a způsob hodnocení se zavádějí automaticky, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Souhlas s IVP se nevyžaduje, protože jde o interní dokument školy bez dopadu na práva žáka, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+      },
       "correctOptionText": "Pokud zákonný zástupce nebo zletilý žák neposkytne informovaný souhlas s vypracovaným IVP, škola toto podpůrné opatření neposkytuje.",
       "discipline": "legislativa / dokumentace",
       "subtopic": "informovaný souhlas s IVP",
@@ -33722,7 +34712,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 49,
       "questionText": "Která posloupnost rolí a kroků je v systému podpory nejvnitřněji konzistentní?",
-      "options": [],
+      "options": {
+        "A": "ŠPZ odborně posoudí potřeby a vydá doporučení, škola podporu rozpracuje a realizuje, rodina nebo zletilý žák se podílejí na rozhodování a mohou využít právo na revizi.",
+        "B": "Škola sama stanoví diagnózu, rodič ji formálně vezme na vědomí a ŠPZ pouze doplní podpis kvůli evidenci, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Zdravotnické zařízení přímo určí školní organizaci výuky, škola ji pouze přepíše do třídní knihy a rodina do procesu nevstupuje, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+        "D": "Rodina sama sepíše podpůrná opatření, škola je bez odborného posouzení převezme a ŠPZ se zapojuje jen při kontrole inspekce, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+      },
       "correctOptionText": "ŠPZ odborně posoudí potřeby a vydá doporučení, škola podporu rozpracuje a realizuje, rodina nebo zletilý žák se podílejí na rozhodování a mohou využít právo na revizi.",
       "discipline": "finální syntéza",
       "subtopic": "role systému podpory",
@@ -33805,7 +34800,12 @@ window.metadataExport = {
       "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
       "questionNumber": 50,
       "questionText": "Které shrnutí nejlépe vystihuje náročnost speciálněpedagogického poradenství v přijímacím stylu UPOL?",
-      "options": [],
+      "options": {
+        "A": "Rozhodující je hlavně zapamatovat si co nejvíce izolovaných názvů zařízení, protože obsah podpory z nich plyne automaticky, a to právě v uvedeném rámci.",
+        "B": "Nejtěžší otázky stojí především na rozsáhlých kazuistikách a méně na přesném rozlišování pojmů, dokumentů a rolí, a z toho odvozuje další závěr.",
+        "C": "Pro pokročilou úroveň stačí bezpečně poznat správnou odpověď podle délky a komplexnosti formulace, a tímto směrem by vedla podporu.",
+        "D": "Nestačí znát pojem nebo diagnózu; je nutné propojit odborný význam, funkční dopad, vhodnou podporu i správný institucionální rámec."
+      },
       "correctOptionText": "Nestačí znát pojem nebo diagnózu; je nutné propojit odborný význam, funkční dopad, vhodnou podporu i správný institucionální rámec.",
       "discipline": "finální syntéza",
       "subtopic": "selektivní poradenské myšlení",
@@ -33908,7 +34908,7 @@ window.battery8Map = {
         "A": "Sleduje hlavně klasifikaci vad a z ní přímo odvozené zařazení do typu zařízení, a právě v tom vidí hlavní vysvětlení.",
         "B": "Sleduje vztah mezi možnostmi člověka, bariérami prostředí a podobou podpory ve vzdělávání i participaci.",
         "C": "Sleduje především léčbu poruch, zatímco otázky edukace stojí až na druhém místě, a tímto směrem by vedla podporu.",
-        "D": "Sleduje především sociální dávky a správní řízení spojené s postižením, a v tom hledá klíčový znak."
+        "D": "Sleduje především sociální dávky a správní řízení spojené s postižením, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
       },
       "correctLetter": "B",
       "correctOptionText": "Sleduje vztah mezi možnostmi člověka, bariérami prostředí a podobou podpory ve vzdělávání i participaci.",
@@ -33930,7 +34930,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 1,
         "questionText": "Které vymezení nejlépe odpovídá současnému pojetí speciální pedagogiky?",
-        "options": [],
+        "options": {
+          "A": "Sleduje hlavně klasifikaci vad a z ní přímo odvozené zařazení do typu zařízení, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Sleduje vztah mezi možnostmi člověka, bariérami prostředí a podobou podpory ve vzdělávání i participaci.",
+          "C": "Sleduje především léčbu poruch, zatímco otázky edukace stojí až na druhém místě, a tímto směrem by vedla podporu.",
+          "D": "Sleduje především sociální dávky a správní řízení spojené s postižením, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+        },
         "correctOptionText": "Sleduje vztah mezi možnostmi člověka, bariérami prostředí a podobou podpory ve vzdělávání i participaci.",
         "discipline": "speciální pedagogika",
         "subtopic": "současné pojetí oboru",
@@ -34010,7 +35015,7 @@ window.battery8Map = {
       "options": {
         "A": "Reedukace je jen domácí procvičování, kompenzace jen úprava školních pomůcek, a právě v tom vidí hlavní vysvětlení.",
         "B": "Reedukace se snaží oslabenou funkci rozvíjet, kompenzace hledá jinou funkční cestu k témuž cíli.",
-        "C": "Kompenzace nastupuje až po úplném vyčerpání reedukace a oba přístupy se nesmějí kombinovat.",
+        "C": "Kompenzace nastupuje až po úplném vyčerpání reedukace a oba přístupy se nesmějí kombinovat, a to v dané situaci.",
         "D": "Oba pojmy označují ve školní praxi totéž a liší se jen oblíbeností termínu, a v tom hledá klíčový znak."
       },
       "correctLetter": "B",
@@ -34033,7 +35038,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 2,
         "questionText": "Které rozlišení reedukace a kompenzace je odborně nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Reedukace je jen domácí procvičování, kompenzace jen úprava školních pomůcek, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Reedukace se snaží oslabenou funkci rozvíjet, kompenzace hledá jinou funkční cestu k témuž cíli.",
+          "C": "Kompenzace nastupuje až po úplném vyčerpání reedukace a oba přístupy se nesmějí kombinovat, a to v dané situaci.",
+          "D": "Oba pojmy označují ve školní praxi totéž a liší se jen oblíbeností termínu, a v tom hledá klíčový znak."
+        },
         "correctOptionText": "Reedukace se snaží oslabenou funkci rozvíjet, kompenzace hledá jinou funkční cestu k témuž cíli.",
         "discipline": "speciální pedagogika",
         "subtopic": "reedukace × kompenzace",
@@ -34114,7 +35124,7 @@ window.battery8Map = {
         "A": "Augmentativní komunikace je vždy technologická, alternativní vždy bez pomůcek, a právě v tom vidí hlavní vysvětlení.",
         "B": "Augmentativní komunikace řeč doplňuje, alternativní ji může nahrazovat; obě míří k funkčnímu dorozumění.",
         "C": "Augmentativní komunikace je určena jen pro děti, alternativní pouze pro dospělé uživatele, a tímto směrem by vedla podporu.",
-        "D": "Oba pojmy označují nácvik správné výslovnosti při zachované běžné řeči, a v tom hledá klíčový znak."
+        "D": "Oba pojmy označují nácvik správné výslovnosti při zachované běžné řeči, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
       },
       "correctLetter": "B",
       "correctOptionText": "Augmentativní komunikace řeč doplňuje, alternativní ji může nahrazovat; obě míří k funkčnímu dorozumění.",
@@ -34136,7 +35146,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 3,
         "questionText": "Které tvrzení nejpřesněji vystihuje augmentativní a alternativní komunikaci (AAK)?",
-        "options": [],
+        "options": {
+          "A": "Augmentativní komunikace je vždy technologická, alternativní vždy bez pomůcek, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Augmentativní komunikace řeč doplňuje, alternativní ji může nahrazovat; obě míří k funkčnímu dorozumění.",
+          "C": "Augmentativní komunikace je určena jen pro děti, alternativní pouze pro dospělé uživatele, a tímto směrem by vedla podporu.",
+          "D": "Oba pojmy označují nácvik správné výslovnosti při zachované běžné řeči, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+        },
         "correctOptionText": "Augmentativní komunikace řeč doplňuje, alternativní ji může nahrazovat; obě míří k funkčnímu dorozumění.",
         "discipline": "logopedie / speciální pedagogika",
         "subtopic": "AAK",
@@ -34215,8 +35230,8 @@ window.battery8Map = {
       "options": {
         "A": "Zabývá se edukací a podporou osob s mentálním postižením a s obtížemi v intelektovém a adaptivním fungování.",
         "B": "Zabývá se především léčbou duševních onemocnění bez přímé vazby na vzdělávání, a z toho odvozuje další závěr.",
-        "C": "Zabývá se výhradně specifickými poruchami učení a grafomotorikou, a tímto směrem by vedla podporu.",
-        "D": "Zabývá se hlavně rizikovým chováním, delikvencí a preventivně výchovnou péčí, a v tom hledá klíčový znak."
+        "C": "Zabývá se výhradně specifickými poruchami učení a grafomotorikou, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+        "D": "Zabývá se hlavně rizikovým chováním, delikvencí a preventivně výchovnou péčí, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
       },
       "correctLetter": "A",
       "correctOptionText": "Zabývá se edukací a podporou osob s mentálním postižením a s obtížemi v intelektovém a adaptivním fungování.",
@@ -34238,7 +35253,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 4,
         "questionText": "Které vymezení psychopedie je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Zabývá se edukací a podporou osob s mentálním postižením a s obtížemi v intelektovém a adaptivním fungování.",
+          "B": "Zabývá se především léčbou duševních onemocnění bez přímé vazby na vzdělávání, a z toho odvozuje další závěr.",
+          "C": "Zabývá se výhradně specifickými poruchami učení a grafomotorikou, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+          "D": "Zabývá se hlavně rizikovým chováním, delikvencí a preventivně výchovnou péčí, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+        },
         "correctOptionText": "Zabývá se edukací a podporou osob s mentálním postižením a s obtížemi v intelektovém a adaptivním fungování.",
         "discipline": "psychopedie",
         "subtopic": "vymezení disciplíny",
@@ -34314,9 +35334,9 @@ window.battery8Map = {
       "questionText": "Které vymezení mentálního postižení je odborně nejpřesnější?",
       "options": {
         "A": "Jde o stav, v němž omezení intelektových schopností a adaptivního fungování zasahuje učení, samostatnost i každodenní život.",
-        "B": "Jde o jakoukoli poruchu duševního zdraví, která se projeví ve škole sníženým výkonem, a z toho odvozuje další závěr.",
-        "C": "Jde o izolovanou poruchu pozornosti a paměti bez širšího dopadu na adaptaci, a tímto směrem by vedla podporu.",
-        "D": "Jde o souhrn problémů v chování, které vznikají hlavně nedůslednou výchovou, a v tom hledá klíčový znak."
+        "B": "Jde o jakoukoli poruchu duševního zdraví, která se projeví ve škole sníženým výkonem, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "Jde o izolovanou poruchu pozornosti a paměti bez širšího dopadu na adaptaci, a tímto směrem by vedla podporu, a to v dané situaci.",
+        "D": "Jde o souhrn problémů v chování, které vznikají hlavně nedůslednou výchovou, a v tom hledá klíčový znak, a to v popsané situaci."
       },
       "correctLetter": "A",
       "correctOptionText": "Jde o stav, v němž omezení intelektových schopností a adaptivního fungování zasahuje učení, samostatnost i každodenní život.",
@@ -34338,7 +35358,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 5,
         "questionText": "Které vymezení mentálního postižení je odborně nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Jde o stav, v němž omezení intelektových schopností a adaptivního fungování zasahuje učení, samostatnost i každodenní život.",
+          "B": "Jde o jakoukoli poruchu duševního zdraví, která se projeví ve škole sníženým výkonem, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+          "C": "Jde o izolovanou poruchu pozornosti a paměti bez širšího dopadu na adaptaci, a tímto směrem by vedla podporu, a to v dané situaci.",
+          "D": "Jde o souhrn problémů v chování, které vznikají hlavně nedůslednou výchovou, a v tom hledá klíčový znak, a to v popsané situaci."
+        },
         "correctOptionText": "Jde o stav, v němž omezení intelektových schopností a adaptivního fungování zasahuje učení, samostatnost i každodenní život.",
         "discipline": "psychopedie",
         "subtopic": "mentální postižení",
@@ -34413,8 +35438,8 @@ window.battery8Map = {
       "questionText": "Které tvrzení je nejpřesnější pro rozlišení PAS a čistě logopedického problému?",
       "options": {
         "A": "Jakmile je výslovnost nápadná, jde vždy především o PAS a širší komunikaci není třeba řešit, a právě v tom vidí hlavní vysvětlení.",
-        "B": "PAS se pozná hlavně podle vadné artikulace, zatímco sociální porozumění zůstává zachované, a z toho odvozuje další závěr.",
-        "C": "Je-li dítě slovně aktivní, PAS lze prakticky vyloučit a stačí sledovat jen mluvní tempo, a tímto směrem by vedla podporu.",
+        "B": "PAS se pozná hlavně podle vadné artikulace, zatímco sociální porozumění zůstává zachované, a z toho odvozuje další závěr, a to v tomto typu rozlišení.",
+        "C": "Je-li dítě slovně aktivní, PAS lze prakticky vyloučit a stačí sledovat jen mluvní tempo, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
         "D": "U PAS může být slovní zásoba relativně dobrá, ale oslabené bývá sociální porozumění, sdílení významu a flexibilita v komunikaci."
       },
       "correctLetter": "D",
@@ -34437,7 +35462,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 6,
         "questionText": "Které tvrzení je nejpřesnější pro rozlišení PAS a čistě logopedického problému?",
-        "options": [],
+        "options": {
+          "A": "Jakmile je výslovnost nápadná, jde vždy především o PAS a širší komunikaci není třeba řešit, a právě v tom vidí hlavní vysvětlení.",
+          "B": "PAS se pozná hlavně podle vadné artikulace, zatímco sociální porozumění zůstává zachované, a z toho odvozuje další závěr, a to v tomto typu rozlišení.",
+          "C": "Je-li dítě slovně aktivní, PAS lze prakticky vyloučit a stačí sledovat jen mluvní tempo, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+          "D": "U PAS může být slovní zásoba relativně dobrá, ale oslabené bývá sociální porozumění, sdílení významu a flexibilita v komunikaci."
+        },
         "correctOptionText": "U PAS může být slovní zásoba relativně dobrá, ale oslabené bývá sociální porozumění, sdílení významu a flexibilita v komunikaci.",
         "discipline": "PAS / komunikace",
         "subtopic": "PAS × logopedické rozlišení",
@@ -34515,10 +35545,10 @@ window.battery8Map = {
       "questionNumber": 7,
       "questionText": "Které vymezení bazální stimulace je nejpřesnější?",
       "options": {
-        "A": "Jde o logopedickou metodu zaměřenou hlavně na artikulaci izolovaných hlásek, a právě v tom vidí hlavní vysvětlení.",
-        "B": "Jde o psychoterapeutický postup určený výhradně pro práci s traumatem a regresí, a z toho odvozuje další závěr.",
+        "A": "Jde o logopedickou metodu zaměřenou hlavně na artikulaci izolovaných hlásek, a právě v tom vidí hlavní vysvětlení, a to v dané situaci, a to v popsané situaci.",
+        "B": "Jde o psychoterapeutický postup určený výhradně pro práci s traumatem a regresí, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
         "C": "Jde o ošetřovatelský koncept využívající práci se somatickými, vestibulárními a vibračními podněty k podpoře vnímání, orientace a kontaktu.",
-        "D": "Jde o fyzioterapeutický program zaměřený výhradně na nácvik hrubé motoriky bez smyslové složky, a v tom hledá klíčový znak."
+        "D": "Jde o fyzioterapeutický program zaměřený výhradně na nácvik hrubé motoriky bez smyslové složky, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
       },
       "correctLetter": "C",
       "correctOptionText": "Jde o ošetřovatelský koncept využívající práci se somatickými, vestibulárními a vibračními podněty k podpoře vnímání, orientace a kontaktu.",
@@ -34540,7 +35570,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 7,
         "questionText": "Které vymezení bazální stimulace je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Jde o logopedickou metodu zaměřenou hlavně na artikulaci izolovaných hlásek, a právě v tom vidí hlavní vysvětlení, a to v dané situaci, a to v popsané situaci.",
+          "B": "Jde o psychoterapeutický postup určený výhradně pro práci s traumatem a regresí, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+          "C": "Jde o ošetřovatelský koncept využívající práci se somatickými, vestibulárními a vibračními podněty k podpoře vnímání, orientace a kontaktu.",
+          "D": "Jde o fyzioterapeutický program zaměřený výhradně na nácvik hrubé motoriky bez smyslové složky, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+        },
         "correctOptionText": "Jde o ošetřovatelský koncept využívající práci se somatickými, vestibulárními a vibračními podněty k podpoře vnímání, orientace a kontaktu.",
         "discipline": "somatopedie / péče",
         "subtopic": "bazální stimulace",
@@ -34618,9 +35653,9 @@ window.battery8Map = {
       "questionText": "Které tvrzení nejlépe vystihuje současné pojetí etopedie?",
       "options": {
         "A": "Nejde jen o sankcionování rizikového chování, ale o preventivní, výchovnou a reedukační práci v kontextu vztahů a prostředí.",
-        "B": "Jejím hlavním cílem je nahrazovat soudní a represivní systém při práci s delikvencí, a z toho odvozuje další závěr.",
-        "C": "Zabývá se výhradně farmakologickou léčbou poruch chování a emocí, a tímto směrem by vedla podporu.",
-        "D": "Zabývá se především smyslovými vadami, které sekundárně vedou k poruše kázně, a v tom hledá klíčový znak."
+        "B": "Jejím hlavním cílem je nahrazovat soudní a represivní systém při práci s delikvencí, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "Zabývá se výhradně farmakologickou léčbou poruch chování a emocí, a tímto směrem by vedla podporu, a to v dané situaci, a to v popsané situaci.",
+        "D": "Zabývá se především smyslovými vadami, které sekundárně vedou k poruše kázně, a v tom hledá klíčový znak, a to v popsané situaci."
       },
       "correctLetter": "A",
       "correctOptionText": "Nejde jen o sankcionování rizikového chování, ale o preventivní, výchovnou a reedukační práci v kontextu vztahů a prostředí.",
@@ -34642,7 +35677,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 8,
         "questionText": "Které tvrzení nejlépe vystihuje současné pojetí etopedie?",
-        "options": [],
+        "options": {
+          "A": "Nejde jen o sankcionování rizikového chování, ale o preventivní, výchovnou a reedukační práci v kontextu vztahů a prostředí.",
+          "B": "Jejím hlavním cílem je nahrazovat soudní a represivní systém při práci s delikvencí, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+          "C": "Zabývá se výhradně farmakologickou léčbou poruch chování a emocí, a tímto směrem by vedla podporu, a to v dané situaci, a to v popsané situaci.",
+          "D": "Zabývá se především smyslovými vadami, které sekundárně vedou k poruše kázně, a v tom hledá klíčový znak, a to v popsané situaci."
+        },
         "correctOptionText": "Nejde jen o sankcionování rizikového chování, ale o preventivní, výchovnou a reedukační práci v kontextu vztahů a prostředí.",
         "discipline": "etopedie",
         "subtopic": "současné pojetí etopedie",
@@ -34720,7 +35760,7 @@ window.battery8Map = {
       "questionNumber": 9,
       "questionText": "Které tvrzení je nejpřesnější pro tyflopedické uvažování o podpoře?",
       "options": {
-        "A": "Jakmile je přítomna oční diagnóza, lze podporu určit bez sledování reálného funkčního profilu.",
+        "A": "Jakmile je přítomna oční diagnóza, lze podporu určit bez sledování reálného funkčního profilu, a to v uvedeném kontextu.",
         "B": "Tyflopedická podpora se týká pouze Braillova písma a netýká se práce se zrakovým zbytkem, a z toho odvozuje další závěr.",
         "C": "Podpora se neodvíjí jen od názvu diagnózy, ale od funkčního využití zraku a způsobu přístupu k informaci.",
         "D": "Při oslabeném zrakovém vnímání je nejdůležitější ponechat stejné materiály jako u ostatních a měnit jen tempo."
@@ -34745,7 +35785,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 9,
         "questionText": "Které tvrzení je nejpřesnější pro tyflopedické uvažování o podpoře?",
-        "options": [],
+        "options": {
+          "A": "Jakmile je přítomna oční diagnóza, lze podporu určit bez sledování reálného funkčního profilu, a to v uvedeném kontextu.",
+          "B": "Tyflopedická podpora se týká pouze Braillova písma a netýká se práce se zrakovým zbytkem, a z toho odvozuje další závěr.",
+          "C": "Podpora se neodvíjí jen od názvu diagnózy, ale od funkčního využití zraku a způsobu přístupu k informaci.",
+          "D": "Při oslabeném zrakovém vnímání je nejdůležitější ponechat stejné materiály jako u ostatních a měnit jen tempo."
+        },
         "correctOptionText": "Podpora se neodvíjí jen od názvu diagnózy, ale od funkčního využití zraku a způsobu přístupu k informaci.",
         "discipline": "tyflopedie",
         "subtopic": "funkční profil zrakového postižení",
@@ -34824,8 +35869,8 @@ window.battery8Map = {
       "options": {
         "A": "Somatopedie je část chirurgie a ortopedie je pedagogický obor pro práci ve škole, a právě v tom vidí hlavní vysvětlení.",
         "B": "Somatopedie řeší edukaci a podporu osob s tělesným postižením, ortopedie je lékařský obor zaměřený na pohybový aparát.",
-        "C": "Somatopedie i ortopedie označují totéž; liší se jen českým a latinským názvem, a tímto směrem by vedla podporu.",
-        "D": "Somatopedie se týká jen rehabilitace po úrazech a ortopedie jen komunikačních bariér, a v tom hledá klíčový znak."
+        "C": "Somatopedie i ortopedie označují totéž; liší se jen českým a latinským názvem, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+        "D": "Somatopedie se týká jen rehabilitace po úrazech a ortopedie jen komunikačních bariér, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
       },
       "correctLetter": "B",
       "correctOptionText": "Somatopedie řeší edukaci a podporu osob s tělesným postižením, ortopedie je lékařský obor zaměřený na pohybový aparát.",
@@ -34847,7 +35892,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 10,
         "questionText": "Které přiřazení somatopedie a ortopedie je správné?",
-        "options": [],
+        "options": {
+          "A": "Somatopedie je část chirurgie a ortopedie je pedagogický obor pro práci ve škole, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Somatopedie řeší edukaci a podporu osob s tělesným postižením, ortopedie je lékařský obor zaměřený na pohybový aparát.",
+          "C": "Somatopedie i ortopedie označují totéž; liší se jen českým a latinským názvem, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+          "D": "Somatopedie se týká jen rehabilitace po úrazech a ortopedie jen komunikačních bariér, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+        },
         "correctOptionText": "Somatopedie řeší edukaci a podporu osob s tělesným postižením, ortopedie je lékařský obor zaměřený na pohybový aparát.",
         "discipline": "somatopedie",
         "subtopic": "somatopedie × ortopedie",
@@ -34927,7 +35977,7 @@ window.battery8Map = {
         "A": "Rychle nabídnout hotové řešení, aby se rozhovor zbytečně nezdržoval emocemi, a právě v tom vidí hlavní vysvětlení.",
         "B": "Převzít interpretaci situace za klienta a ujistit ho, že jeho pohled už není třeba rozvíjet, a z toho odvozuje další závěr.",
         "C": "Shrnout, co druhý říká, ověřit porozumění a ponechat prostor pro doplnění bez okamžité rady či hodnocení.",
-        "D": "Střídat otázky s vlastními příklady z praxe, aby bylo zřejmé, že poradce ví, jak situace dopadne."
+        "D": "Střídat otázky s vlastními příklady z praxe, aby bylo zřejmé, že poradce ví, jak situace dopadne, a to v popsané situaci."
       },
       "correctLetter": "C",
       "correctOptionText": "Shrnout, co druhý říká, ověřit porozumění a ponechat prostor pro doplnění bez okamžité rady či hodnocení.",
@@ -34949,7 +35999,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 11,
         "questionText": "Která reakce nejlépe odpovídá aktivnímu naslouchání v poradenském rozhovoru?",
-        "options": [],
+        "options": {
+          "A": "Rychle nabídnout hotové řešení, aby se rozhovor zbytečně nezdržoval emocemi, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Převzít interpretaci situace za klienta a ujistit ho, že jeho pohled už není třeba rozvíjet, a z toho odvozuje další závěr.",
+          "C": "Shrnout, co druhý říká, ověřit porozumění a ponechat prostor pro doplnění bez okamžité rady či hodnocení.",
+          "D": "Střídat otázky s vlastními příklady z praxe, aby bylo zřejmé, že poradce ví, jak situace dopadne, a to v popsané situaci."
+        },
         "correctOptionText": "Shrnout, co druhý říká, ověřit porozumění a ponechat prostor pro doplnění bez okamžité rady či hodnocení.",
         "discipline": "poradenská komunikace",
         "subtopic": "aktivní naslouchání",
@@ -35028,8 +36083,8 @@ window.battery8Map = {
       "options": {
         "A": "Potvrzení, že klientův pohled je vždy objektivně správný a není vhodné jej dále zkoumat, a právě v tom vidí hlavní vysvětlení.",
         "B": "Uznání, že prožívání druhého je vzhledem k situaci pochopitelné, aniž by poradce musel bezvýhradně souhlasit se všemi závěry.",
-        "C": "Přesvědčení klienta, aby své emoce odložil a soustředil se jen na fakta a formuláře, a tímto směrem by vedla podporu.",
-        "D": "Nahrazení klientovy výpovědi odborným výkladem, aby se snížila nejistota při rozhovoru, a v tom hledá klíčový znak."
+        "C": "Přesvědčení klienta, aby své emoce odložil a soustředil se jen na fakta a formuláře, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Nahrazení klientovy výpovědi odborným výkladem, aby se snížila nejistota při rozhovoru, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
       },
       "correctLetter": "B",
       "correctOptionText": "Uznání, že prožívání druhého je vzhledem k situaci pochopitelné, aniž by poradce musel bezvýhradně souhlasit se všemi závěry.",
@@ -35051,7 +36106,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 12,
         "questionText": "Co nejpřesněji vyjadřuje validace v poradenské komunikaci?",
-        "options": [],
+        "options": {
+          "A": "Potvrzení, že klientův pohled je vždy objektivně správný a není vhodné jej dále zkoumat, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Uznání, že prožívání druhého je vzhledem k situaci pochopitelné, aniž by poradce musel bezvýhradně souhlasit se všemi závěry.",
+          "C": "Přesvědčení klienta, aby své emoce odložil a soustředil se jen na fakta a formuláře, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+          "D": "Nahrazení klientovy výpovědi odborným výkladem, aby se snížila nejistota při rozhovoru, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+        },
         "correctOptionText": "Uznání, že prožívání druhého je vzhledem k situaci pochopitelné, aniž by poradce musel bezvýhradně souhlasit se všemi závěry.",
         "discipline": "poradenská komunikace",
         "subtopic": "validace",
@@ -35131,7 +36191,7 @@ window.battery8Map = {
       "questionText": "Které vymezení sebereflexe je pro profesi speciálního pedagoga nejpřesnější?",
       "options": {
         "A": "Promýšlení vlastních postojů, myšlenek a emocí a jejich vlivu na odborné jednání i rozhodování.",
-        "B": "Shromažďování zpětné vazby od klienta bez vztahu k tomu, jak s ní odborník pracuje.",
+        "B": "Shromažďování zpětné vazby od klienta bez vztahu k tomu, jak s ní odborník pracuje, a to v popsané situaci.",
         "C": "Vedení vnitřního dialogu klienta při skupinové práci s rodinou a učiteli, a tímto směrem by vedla podporu.",
         "D": "Snaha co nejvíce potlačit osobní reakce tak, aby se do odborné práce nedostalo žádné vlastní zaujetí."
       },
@@ -35155,7 +36215,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 13,
         "questionText": "Které vymezení sebereflexe je pro profesi speciálního pedagoga nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Promýšlení vlastních postojů, myšlenek a emocí a jejich vlivu na odborné jednání i rozhodování.",
+          "B": "Shromažďování zpětné vazby od klienta bez vztahu k tomu, jak s ní odborník pracuje, a to v popsané situaci.",
+          "C": "Vedení vnitřního dialogu klienta při skupinové práci s rodinou a učiteli, a tímto směrem by vedla podporu.",
+          "D": "Snaha co nejvíce potlačit osobní reakce tak, aby se do odborné práce nedostalo žádné vlastní zaujetí."
+        },
         "correctOptionText": "Promýšlení vlastních postojů, myšlenek a emocí a jejich vlivu na odborné jednání i rozhodování.",
         "discipline": "poradenská komunikace",
         "subtopic": "sebereflexe",
@@ -35235,9 +36300,9 @@ window.battery8Map = {
       "questionText": "Které tvrzení nejlépe vystihuje profesní hranice v poradenské práci?",
       "options": {
         "A": "Poradce má podporovat porozumění a rozhodování klienta, nemá však přebírat životní rozhodnutí ani vytvářet závislost na své osobě.",
-        "B": "Poradce má být pro rodinu hlavním rozhodovatelem, protože nese odbornou odpovědnost za výsledek, a z toho odvozuje další závěr.",
-        "C": "Poradce má udržovat co nejosobnější vztah, aby se posílila poslušnost vůči jeho doporučením, a tímto směrem by vedla podporu.",
-        "D": "Poradce má zůstat zcela distancovaný a neprojevovat žádné lidské zaujetí ani podporu, a v tom hledá klíčový znak."
+        "B": "Poradce má být pro rodinu hlavním rozhodovatelem, protože nese odbornou odpovědnost za výsledek, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "Poradce má udržovat co nejosobnější vztah, aby se posílila poslušnost vůči jeho doporučením, a tímto směrem by vedla podporu, a to v dané situaci.",
+        "D": "Poradce má zůstat zcela distancovaný a neprojevovat žádné lidské zaujetí ani podporu, a v tom hledá klíčový znak, a to v popsané situaci."
       },
       "correctLetter": "A",
       "correctOptionText": "Poradce má podporovat porozumění a rozhodování klienta, nemá však přebírat životní rozhodnutí ani vytvářet závislost na své osobě.",
@@ -35259,7 +36324,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 14,
         "questionText": "Které tvrzení nejlépe vystihuje profesní hranice v poradenské práci?",
-        "options": [],
+        "options": {
+          "A": "Poradce má podporovat porozumění a rozhodování klienta, nemá však přebírat životní rozhodnutí ani vytvářet závislost na své osobě.",
+          "B": "Poradce má být pro rodinu hlavním rozhodovatelem, protože nese odbornou odpovědnost za výsledek, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+          "C": "Poradce má udržovat co nejosobnější vztah, aby se posílila poslušnost vůči jeho doporučením, a tímto směrem by vedla podporu, a to v dané situaci.",
+          "D": "Poradce má zůstat zcela distancovaný a neprojevovat žádné lidské zaujetí ani podporu, a v tom hledá klíčový znak, a to v popsané situaci."
+        },
         "correctOptionText": "Poradce má podporovat porozumění a rozhodování klienta, nemá však přebírat životní rozhodnutí ani vytvářet závislost na své osobě.",
         "discipline": "poradenská etika",
         "subtopic": "profesní hranice",
@@ -35340,7 +36410,7 @@ window.battery8Map = {
       "options": {
         "A": "Předat co nejrychleji úplný odborný výklad, aby rodič ihned pochopil celou závažnost situace, a právě v tom vidí hlavní vysvětlení.",
         "B": "Začít administrativou a podpisy a teprve po nich vysvětlit, co nález prakticky znamená, a z toho odvozuje další závěr.",
-        "C": "Vyhnout se nepříjemným částem sdělení a soustředit se jen na pozitivní stránky, aby nevznikl odpor.",
+        "C": "Vyhnout se nepříjemným částem sdělení a soustředit se jen na pozitivní stránky, aby nevznikl odpor, a to právě v uvedeném rámci.",
         "D": "Strukturovat sdělení srozumitelně, dávkovat informace a průběžně vytvářet prostor pro otázky i emoční reakci."
       },
       "correctLetter": "D",
@@ -35363,7 +36433,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 15,
         "questionText": "Který postup je profesně nejvhodnější při sdělování závažných informací rodiči?",
-        "options": [],
+        "options": {
+          "A": "Předat co nejrychleji úplný odborný výklad, aby rodič ihned pochopil celou závažnost situace, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Začít administrativou a podpisy a teprve po nich vysvětlit, co nález prakticky znamená, a z toho odvozuje další závěr.",
+          "C": "Vyhnout se nepříjemným částem sdělení a soustředit se jen na pozitivní stránky, aby nevznikl odpor, a to právě v uvedeném rámci.",
+          "D": "Strukturovat sdělení srozumitelně, dávkovat informace a průběžně vytvářet prostor pro otázky i emoční reakci."
+        },
         "correctOptionText": "Strukturovat sdělení srozumitelně, dávkovat informace a průběžně vytvářet prostor pro otázky i emoční reakci.",
         "discipline": "poradenská komunikace",
         "subtopic": "sdělování citlivých informací",
@@ -35468,7 +36543,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 16,
         "questionText": "Který princip je nejpřesnější při volbě komunikačního způsobu s neslyšícím klientem?",
-        "options": [],
+        "options": {
+          "A": "Vždy předpokládat, že nejvhodnější je psaná čeština, protože je pro školu nejjednodušší, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Vždy komunikovat výhradně přes doprovázející osobu, aby nevznikla komunikační nejistota, a z toho odvozuje další závěr.",
+          "C": "Předpokládat, že každý neslyšící automaticky preferuje jeden a tentýž znakový systém, a tímto směrem by vedla podporu.",
+          "D": "Nevycházet jen z diagnózy, ale zjišťovat preferovaný a funkční komunikační způsob konkrétního člověka v dané situaci."
+        },
         "correctOptionText": "Nevycházet jen z diagnózy, ale zjišťovat preferovaný a funkční komunikační způsob konkrétního člověka v dané situaci.",
         "discipline": "komunikace při sluchovém postižení",
         "subtopic": "volba komunikační cesty",
@@ -35571,7 +36651,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 17,
         "questionText": "Které tvrzení nejpřesněji vystihuje rozdíl mezi PPP a SPC?",
-        "options": [],
+        "options": {
+          "A": "PPP je širší školské poradenské zařízení, zatímco SPC je více vázáno na práci se žáky s konkrétními druhy znevýhodnění.",
+          "B": "PPP vydává jen psychologické zprávy, kdežto SPC jen sociální posudky bez vztahu ke škole, a z toho odvozuje další závěr.",
+          "C": "PPP i SPC mají totožné cílové skupiny i postupy; rozdělení je dnes jen historický přežitek, a tímto směrem by vedla podporu.",
+          "D": "SPC je školní pracoviště v běžné základní škole, zatímco PPP patří výhradně do zdravotnictví, a v tom hledá klíčový znak."
+        },
         "correctOptionText": "PPP je širší školské poradenské zařízení, zatímco SPC je více vázáno na práci se žáky s konkrétními druhy znevýhodnění.",
         "discipline": "školské poradenství",
         "subtopic": "PPP × SPC",
@@ -35652,10 +36737,10 @@ window.battery8Map = {
       "questionNumber": 18,
       "questionText": "Které tvrzení odpovídá organizaci poradenských služeb ve škole podle vyhlášky č. 72/2005 Sb.?",
       "options": {
-        "A": "Poradenské služby ve škole zajišťuje výhradně externí PPP nebo SPC; škola je sama neposkytuje, a právě v tom vidí hlavní vysvětlení.",
+        "A": "Poradenské služby ve škole zajišťuje výhradně externí PPP nebo SPC; škola je sama neposkytuje, a právě v tom vidí hlavní vysvětlení, a to v uvedeném kontextu.",
         "B": "V základní a střední škole se na poradenských službách zpravidla podílejí výchovný poradce a školní metodik prevence, případně i další odborní pracovníci.",
-        "C": "Ve škole je za poradenské služby odpovědný jen třídní učitel, pokud má pedagogickou praxi delší než pět let, a tímto směrem by vedla podporu.",
-        "D": "Školní poradenské služby lze poskytovat jen tehdy, když škola zaměstnává současně psychologa i speciálního pedagoga, a v tom hledá klíčový znak."
+        "C": "Ve škole je za poradenské služby odpovědný jen třídní učitel, pokud má pedagogickou praxi delší než pět let, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Školní poradenské služby lze poskytovat jen tehdy, když škola zaměstnává současně psychologa i speciálního pedagoga, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
       },
       "correctLetter": "B",
       "correctOptionText": "V základní a střední škole se na poradenských službách zpravidla podílejí výchovný poradce a školní metodik prevence, případně i další odborní pracovníci.",
@@ -35677,7 +36762,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 18,
         "questionText": "Které tvrzení odpovídá organizaci poradenských služeb ve škole podle vyhlášky č. 72/2005 Sb.?",
-        "options": [],
+        "options": {
+          "A": "Poradenské služby ve škole zajišťuje výhradně externí PPP nebo SPC; škola je sama neposkytuje, a právě v tom vidí hlavní vysvětlení, a to v uvedeném kontextu.",
+          "B": "V základní a střední škole se na poradenských službách zpravidla podílejí výchovný poradce a školní metodik prevence, případně i další odborní pracovníci.",
+          "C": "Ve škole je za poradenské služby odpovědný jen třídní učitel, pokud má pedagogickou praxi delší než pět let, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+          "D": "Školní poradenské služby lze poskytovat jen tehdy, když škola zaměstnává současně psychologa i speciálního pedagoga, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+        },
         "correctOptionText": "V základní a střední škole se na poradenských službách zpravidla podílejí výchovný poradce a školní metodik prevence, případně i další odborní pracovníci.",
         "discipline": "školské poradenství",
         "subtopic": "školní poradenské pracoviště",
@@ -35759,9 +36849,9 @@ window.battery8Map = {
       "questionText": "Které rozlišení role výchovného poradce a školního metodika prevence je nejpřesnější?",
       "options": {
         "A": "Výchovný poradce vede výhradně kázeňská řízení a školní metodik prevence rozhoduje o podpůrných opatřeních vyšších stupňů, a právě v tom vidí hlavní vysvětlení.",
-        "B": "Obě role jsou v praxi zcela totožné a liší se jen názvem podle tradice školy, a z toho odvozuje další závěr.",
+        "B": "Obě role jsou v praxi zcela totožné a liší se jen názvem podle tradice školy, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
         "C": "Výchovný poradce řeší vzdělávací dráhu, podpůrná opatření a spolupráci se ŠPZ; školní metodik prevence se soustředí na prevenci rizikového chování.",
-        "D": "Školní metodik prevence zajišťuje hlavně diagnostiku speciálních vzdělávacích potřeb a vydává doporučení škole, a v tom hledá klíčový znak."
+        "D": "Školní metodik prevence zajišťuje hlavně diagnostiku speciálních vzdělávacích potřeb a vydává doporučení škole, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
       },
       "correctLetter": "C",
       "correctOptionText": "Výchovný poradce řeší vzdělávací dráhu, podpůrná opatření a spolupráci se ŠPZ; školní metodik prevence se soustředí na prevenci rizikového chování.",
@@ -35783,7 +36873,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 19,
         "questionText": "Které rozlišení role výchovného poradce a školního metodika prevence je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Výchovný poradce vede výhradně kázeňská řízení a školní metodik prevence rozhoduje o podpůrných opatřeních vyšších stupňů, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Obě role jsou v praxi zcela totožné a liší se jen názvem podle tradice školy, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+          "C": "Výchovný poradce řeší vzdělávací dráhu, podpůrná opatření a spolupráci se ŠPZ; školní metodik prevence se soustředí na prevenci rizikového chování.",
+          "D": "Školní metodik prevence zajišťuje hlavně diagnostiku speciálních vzdělávacích potřeb a vydává doporučení škole, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+        },
         "correctOptionText": "Výchovný poradce řeší vzdělávací dráhu, podpůrná opatření a spolupráci se ŠPZ; školní metodik prevence se soustředí na prevenci rizikového chování.",
         "discipline": "školské poradenství",
         "subtopic": "výchovný poradce × školní metodik prevence",
@@ -35889,7 +36984,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 20,
         "questionText": "Které shrnutí vztahu zprávy a doporučení školského poradenského zařízení je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Zpráva shrnuje odborná zjištění a jejich odůvodnění, zatímco doporučení je převádí do konkrétní vzdělávací podpory.",
+          "B": "Zpráva je interní poznámka školy a doporučení slouží výhradně orgánům sociálně-právní ochrany, a z toho odvozuje další závěr.",
+          "C": "Oba dokumenty mají stejnou funkci a liší se pouze rozsahem textu a grafickou podobou, a tímto směrem by vedla podporu.",
+          "D": "Doporučení popisuje pouze anamnézu, kdežto zpráva nastavuje organizaci výuky a hodnocení ve škole, a v tom hledá klíčový znak."
+        },
         "correctOptionText": "Zpráva shrnuje odborná zjištění a jejich odůvodnění, zatímco doporučení je převádí do konkrétní vzdělávací podpory.",
         "discipline": "školské poradenství",
         "subtopic": "zpráva × doporučení",
@@ -35972,7 +37072,7 @@ window.battery8Map = {
       "options": {
         "A": "Jde o odbornou zprávu PPP nebo SPC, kterou škola pouze archivuje bez dalšího rozpracování, a právě v tom vidí hlavní vysvětlení.",
         "B": "Jde o povinný dokument každého žáka, který jednou navštívil školní poradenské pracoviště, a z toho odvozuje další závěr.",
-        "C": "Jde o zdravotnický plán léčby, který škola nesmí nijak vztáhnout ke své výuce, a tímto směrem by vedla podporu.",
+        "C": "Jde o zdravotnický plán léčby, který škola nesmí nijak vztáhnout ke své výuce, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
         "D": "Jde o školní dokument, který konkretizuje podmínky vzdělávání konkrétního žáka na základě doporučení a jeho potřeb."
       },
       "correctLetter": "D",
@@ -35995,7 +37095,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 21,
         "questionText": "Které vymezení IVP je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Jde o odbornou zprávu PPP nebo SPC, kterou škola pouze archivuje bez dalšího rozpracování, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Jde o povinný dokument každého žáka, který jednou navštívil školní poradenské pracoviště, a z toho odvozuje další závěr.",
+          "C": "Jde o zdravotnický plán léčby, který škola nesmí nijak vztáhnout ke své výuce, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+          "D": "Jde o školní dokument, který konkretizuje podmínky vzdělávání konkrétního žáka na základě doporučení a jeho potřeb."
+        },
         "correctOptionText": "Jde o školní dokument, který konkretizuje podmínky vzdělávání konkrétního žáka na základě doporučení a jeho potřeb.",
         "discipline": "školské poradenství",
         "subtopic": "IVP",
@@ -36075,10 +37180,10 @@ window.battery8Map = {
       "questionNumber": 22,
       "questionText": "Co nejpřesněji vystihuje PLPP?",
       "options": {
-        "A": "Je to odborný výstup ŠPZ, kterým se škole přidělují vyšší stupně podpůrných opatření, a právě v tom vidí hlavní vysvětlení.",
+        "A": "Je to odborný výstup ŠPZ, kterým se škole přidělují vyšší stupně podpůrných opatření, a právě v tom vidí hlavní vysvětlení, a to v dané situaci.",
         "B": "Je to školní plán pedagogické podpory používaný zejména při podpůrných opatřeních prvního stupně a při průběžném vyhodnocování podpory.",
-        "C": "Je to souhrnná sociální zpráva pro OSPOD o rodinné situaci žáka, a tímto směrem by vedla podporu.",
-        "D": "Je to závěrečná zpráva z pobytu ve středisku výchovné péče, a v tom hledá klíčový znak."
+        "C": "Je to souhrnná sociální zpráva pro OSPOD o rodinné situaci žáka, a tímto směrem by vedla podporu, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "D": "Je to závěrečná zpráva z pobytu ve středisku výchovné péče, a v tom hledá klíčový znak, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
       },
       "correctLetter": "B",
       "correctOptionText": "Je to školní plán pedagogické podpory používaný zejména při podpůrných opatřeních prvního stupně a při průběžném vyhodnocování podpory.",
@@ -36100,7 +37205,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 22,
         "questionText": "Co nejpřesněji vystihuje PLPP?",
-        "options": [],
+        "options": {
+          "A": "Je to odborný výstup ŠPZ, kterým se škole přidělují vyšší stupně podpůrných opatření, a právě v tom vidí hlavní vysvětlení, a to v dané situaci.",
+          "B": "Je to školní plán pedagogické podpory používaný zejména při podpůrných opatřeních prvního stupně a při průběžném vyhodnocování podpory.",
+          "C": "Je to souhrnná sociální zpráva pro OSPOD o rodinné situaci žáka, a tímto směrem by vedla podporu, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+          "D": "Je to závěrečná zpráva z pobytu ve středisku výchovné péče, a v tom hledá klíčový znak, a to v tomto typu rozlišení, a to právě v uvedeném rámci."
+        },
         "correctOptionText": "Je to školní plán pedagogické podpory používaný zejména při podpůrných opatřeních prvního stupně a při průběžném vyhodnocování podpory.",
         "discipline": "školské poradenství",
         "subtopic": "PLPP",
@@ -36180,10 +37290,10 @@ window.battery8Map = {
       "questionNumber": 23,
       "questionText": "Které tvrzení odpovídá § 16 školského zákona?",
       "options": {
-        "A": "Podpůrná opatření jsou bezplatná jen tehdy, pokud je škola schopna je zajistit z vlastních rezerv, a právě v tom vidí hlavní vysvětlení.",
-        "B": "Na bezplatná podpůrná opatření mají nárok pouze žáci se zdravotním postižením, nikoli s jinou potřebou podpory, a z toho odvozuje další závěr.",
+        "A": "Podpůrná opatření jsou bezplatná jen tehdy, pokud je škola schopna je zajistit z vlastních rezerv, a právě v tom vidí hlavní vysvětlení, a to právě v uvedeném rámci.",
+        "B": "Na bezplatná podpůrná opatření mají nárok pouze žáci se zdravotním postižením, nikoli s jinou potřebou podpory, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
         "C": "Děti, žáci a studenti se speciálními vzdělávacími potřebami mají právo na bezplatné poskytování podpůrných opatření školou a školským zařízením.",
-        "D": "Podpůrná opatření jsou nároková pouze tehdy, pokud je žák vzděláván ve škole zřízené podle § 16 odst. 9, a v tom hledá klíčový znak."
+        "D": "Podpůrná opatření jsou nároková pouze tehdy, pokud je žák vzděláván ve škole zřízené podle § 16 odst. 9, a v tom hledá klíčový znak, a to v popsané situaci."
       },
       "correctLetter": "C",
       "correctOptionText": "Děti, žáci a studenti se speciálními vzdělávacími potřebami mají právo na bezplatné poskytování podpůrných opatření školou a školským zařízením.",
@@ -36205,7 +37315,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 23,
         "questionText": "Které tvrzení odpovídá § 16 školského zákona?",
-        "options": [],
+        "options": {
+          "A": "Podpůrná opatření jsou bezplatná jen tehdy, pokud je škola schopna je zajistit z vlastních rezerv, a právě v tom vidí hlavní vysvětlení, a to právě v uvedeném rámci.",
+          "B": "Na bezplatná podpůrná opatření mají nárok pouze žáci se zdravotním postižením, nikoli s jinou potřebou podpory, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+          "C": "Děti, žáci a studenti se speciálními vzdělávacími potřebami mají právo na bezplatné poskytování podpůrných opatření školou a školským zařízením.",
+          "D": "Podpůrná opatření jsou nároková pouze tehdy, pokud je žák vzděláván ve škole zřízené podle § 16 odst. 9, a v tom hledá klíčový znak, a to v popsané situaci."
+        },
         "correctOptionText": "Děti, žáci a studenti se speciálními vzdělávacími potřebami mají právo na bezplatné poskytování podpůrných opatření školou a školským zařízením.",
         "discipline": "legislativa / školské poradenství",
         "subtopic": "právo na podpůrná opatření",
@@ -36286,8 +37401,8 @@ window.battery8Map = {
       "questionText": "Které vymezení dítěte, žáka nebo studenta se speciálními vzdělávacími potřebami odpovídá školskému zákonu?",
       "options": {
         "A": "Jde výhradně o osobu s lékařsky potvrzeným zdravotním postižením bez ohledu na vzdělávací dopad, a právě v tom vidí hlavní vysvětlení.",
-        "B": "Jde o osobu, která má podprůměrný prospěch alespoň ve třech povinných předmětech, a z toho odvozuje další závěr.",
-        "C": "Jde o osobu, kterou škola dočasně označí za problémovou z výchovných důvodů, a tímto směrem by vedla podporu.",
+        "B": "Jde o osobu, která má podprůměrný prospěch alespoň ve třech povinných předmětech, a z toho odvozuje další závěr, a to v tomto typu rozlišení.",
+        "C": "Jde o osobu, kterou škola dočasně označí za problémovou z výchovných důvodů, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
         "D": "Jde o osobu, která k naplnění vzdělávacích možností nebo k uplatnění práv na rovnoprávném základě potřebuje podpůrná opatření."
       },
       "correctLetter": "D",
@@ -36310,7 +37425,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 24,
         "questionText": "Které vymezení dítěte, žáka nebo studenta se speciálními vzdělávacími potřebami odpovídá školskému zákonu?",
-        "options": [],
+        "options": {
+          "A": "Jde výhradně o osobu s lékařsky potvrzeným zdravotním postižením bez ohledu na vzdělávací dopad, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Jde o osobu, která má podprůměrný prospěch alespoň ve třech povinných předmětech, a z toho odvozuje další závěr, a to v tomto typu rozlišení.",
+          "C": "Jde o osobu, kterou škola dočasně označí za problémovou z výchovných důvodů, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+          "D": "Jde o osobu, která k naplnění vzdělávacích možností nebo k uplatnění práv na rovnoprávném základě potřebuje podpůrná opatření."
+        },
         "correctOptionText": "Jde o osobu, která k naplnění vzdělávacích možností nebo k uplatnění práv na rovnoprávném základě potřebuje podpůrná opatření.",
         "discipline": "legislativa / školské poradenství",
         "subtopic": "vymezení SVP",
@@ -36390,8 +37510,8 @@ window.battery8Map = {
       "questionText": "Které tvrzení o lhůtě pro vydání zprávy a doporučení je podle vyhlášky č. 27/2016 Sb. správné?",
       "options": {
         "A": "Zpráva i doporučení se vydávají vždy až po skončení školního roku, aby bylo možné vyhodnotit dlouhodobý efekt podpory, a právě v tom vidí hlavní vysvětlení.",
-        "B": "Lhůta je jednotně 30 dnů od podání žádosti bez ohledu na průběh posuzování a další podklady, a z toho odvozuje další závěr.",
-        "C": "Vyhláška stanoví pouze tříměsíční lhůtu pro zahájení služby, nikoli pro vydání zprávy a doporučení, a tímto směrem by vedla podporu.",
+        "B": "Lhůta je jednotně 30 dnů od podání žádosti bez ohledu na průběh posuzování a další podklady, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Vyhláška stanoví pouze tříměsíční lhůtu pro zahájení služby, nikoli pro vydání zprávy a doporučení, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
         "D": "Zpráva a doporučení se vydávají do 30 dnů ode dne ukončení posuzování speciálních vzdělávacích potřeb, nejpozději však do 3 měsíců od přijetí žádosti."
       },
       "correctLetter": "D",
@@ -36414,7 +37534,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 25,
         "questionText": "Které tvrzení o lhůtě pro vydání zprávy a doporučení je podle vyhlášky č. 27/2016 Sb. správné?",
-        "options": [],
+        "options": {
+          "A": "Zpráva i doporučení se vydávají vždy až po skončení školního roku, aby bylo možné vyhodnotit dlouhodobý efekt podpory, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Lhůta je jednotně 30 dnů od podání žádosti bez ohledu na průběh posuzování a další podklady, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+          "C": "Vyhláška stanoví pouze tříměsíční lhůtu pro zahájení služby, nikoli pro vydání zprávy a doporučení, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+          "D": "Zpráva a doporučení se vydávají do 30 dnů ode dne ukončení posuzování speciálních vzdělávacích potřeb, nejpozději však do 3 měsíců od přijetí žádosti."
+        },
         "correctOptionText": "Zpráva a doporučení se vydávají do 30 dnů ode dne ukončení posuzování speciálních vzdělávacích potřeb, nejpozději však do 3 měsíců od přijetí žádosti.",
         "discipline": "legislativa / školské poradenství",
         "subtopic": "lhůta pro zprávu a doporučení",
@@ -36494,10 +37619,10 @@ window.battery8Map = {
       "questionNumber": 26,
       "questionText": "Které tvrzení o krizové poradenské intervenci odpovídá vyhlášce č. 72/2005 Sb.?",
       "options": {
-        "A": "Krizovou intervenci lze poskytnout až po standardním zařazení žádosti do běžné tříměsíční lhůty.",
-        "B": "Krizová intervence se poskytuje jen tehdy, pokud před ní proběhlo komplexní psychologické vyšetření.",
+        "A": "Krizovou intervenci lze poskytnout až po standardním zařazení žádosti do běžné tříměsíční lhůty, a to právě v uvedeném rámci.",
+        "B": "Krizová intervence se poskytuje jen tehdy, pokud před ní proběhlo komplexní psychologické vyšetření, a to i při zohlednění popsaných okolností.",
         "C": "Krizová poradenská intervence v naléhavých ohrožujících situacích se poskytuje bezprostředně po žádosti.",
-        "D": "Krizová intervence je vyhrazena pouze zdravotnictví a školský poradenský systém ji neposkytuje."
+        "D": "Krizová intervence je vyhrazena pouze zdravotnictví a školský poradenský systém ji neposkytuje, a to v popsané situaci."
       },
       "correctLetter": "C",
       "correctOptionText": "Krizová poradenská intervence v naléhavých ohrožujících situacích se poskytuje bezprostředně po žádosti.",
@@ -36519,7 +37644,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 26,
         "questionText": "Které tvrzení o krizové poradenské intervenci odpovídá vyhlášce č. 72/2005 Sb.?",
-        "options": [],
+        "options": {
+          "A": "Krizovou intervenci lze poskytnout až po standardním zařazení žádosti do běžné tříměsíční lhůty, a to právě v uvedeném rámci.",
+          "B": "Krizová intervence se poskytuje jen tehdy, pokud před ní proběhlo komplexní psychologické vyšetření, a to i při zohlednění popsaných okolností.",
+          "C": "Krizová poradenská intervence v naléhavých ohrožujících situacích se poskytuje bezprostředně po žádosti.",
+          "D": "Krizová intervence je vyhrazena pouze zdravotnictví a školský poradenský systém ji neposkytuje, a to v popsané situaci."
+        },
         "correctOptionText": "Krizová poradenská intervence v naléhavých ohrožujících situacích se poskytuje bezprostředně po žádosti.",
         "discipline": "legislativa / školské poradenství",
         "subtopic": "krizová poradenská intervence",
@@ -36599,10 +37729,10 @@ window.battery8Map = {
       "questionNumber": 27,
       "questionText": "Které tvrzení o zpracování IVP je podle vyhlášky č. 27/2016 Sb. správné?",
       "options": {
-        "A": "IVP se zpracovává automaticky do 1 měsíce od první návštěvy školního poradenského pracoviště, a právě v tom vidí hlavní vysvětlení.",
-        "B": "IVP se zpracovává nejpozději do 3 měsíců od vydání zprávy, i když škola neobdržela žádost, a z toho odvozuje další závěr.",
+        "A": "IVP se zpracovává automaticky do 1 měsíce od první návštěvy školního poradenského pracoviště, a právě v tom vidí hlavní vysvětlení, a to v uvedeném kontextu.",
+        "B": "IVP se zpracovává nejpozději do 3 měsíců od vydání zprávy, i když škola neobdržela žádost, a z toho odvozuje další závěr, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
         "C": "IVP je zpracován bez zbytečného odkladu, nejpozději do 1 měsíce ode dne, kdy škola obdržela doporučení a žádost zletilého žáka nebo zákonného zástupce.",
-        "D": "IVP se může zpracovat až po pololetním hodnocení, aby škola měla dost podkladů z výuky, a v tom hledá klíčový znak."
+        "D": "IVP se může zpracovat až po pololetním hodnocení, aby škola měla dost podkladů z výuky, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
       },
       "correctLetter": "C",
       "correctOptionText": "IVP je zpracován bez zbytečného odkladu, nejpozději do 1 měsíce ode dne, kdy škola obdržela doporučení a žádost zletilého žáka nebo zákonného zástupce.",
@@ -36624,7 +37754,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 27,
         "questionText": "Které tvrzení o zpracování IVP je podle vyhlášky č. 27/2016 Sb. správné?",
-        "options": [],
+        "options": {
+          "A": "IVP se zpracovává automaticky do 1 měsíce od první návštěvy školního poradenského pracoviště, a právě v tom vidí hlavní vysvětlení, a to v uvedeném kontextu.",
+          "B": "IVP se zpracovává nejpozději do 3 měsíců od vydání zprávy, i když škola neobdržela žádost, a z toho odvozuje další závěr, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+          "C": "IVP je zpracován bez zbytečného odkladu, nejpozději do 1 měsíce ode dne, kdy škola obdržela doporučení a žádost zletilého žáka nebo zákonného zástupce.",
+          "D": "IVP se může zpracovat až po pololetním hodnocení, aby škola měla dost podkladů z výuky, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+        },
         "correctOptionText": "IVP je zpracován bez zbytečného odkladu, nejpozději do 1 měsíce ode dne, kdy škola obdržela doporučení a žádost zletilého žáka nebo zákonného zástupce.",
         "discipline": "legislativa / školské poradenství",
         "subtopic": "lhůta pro IVP",
@@ -36729,7 +37864,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 28,
         "questionText": "Které tvrzení odpovídá poučení u zprávy nebo doporučení školského poradenského zařízení?",
-        "options": [],
+        "options": {
+          "A": "Zpráva a doporučení jsou konečné a po převzetí již nepodléhají žádné revizi ani přezkumu.",
+          "B": "Zletilý žák nebo zákonný zástupce může ve stanovené lhůtě požádat o revizi dokumentu.",
+          "C": "O revizi může žádat pouze ředitel školy, protože jde o dokument sloužící výhradně škole.",
+          "D": "Revize je možná jen tehdy, když s ní předem písemně souhlasí pracovník, který dokument vydal."
+        },
         "correctOptionText": "Zletilý žák nebo zákonný zástupce může ve stanovené lhůtě požádat o revizi dokumentu.",
         "discipline": "legislativa / školské poradenství",
         "subtopic": "revize zprávy a doporučení",
@@ -36809,10 +37949,10 @@ window.battery8Map = {
       "questionNumber": 29,
       "questionText": "Které tvrzení o poskytování poradenských služeb odpovídá vyhlášce č. 72/2005 Sb.?",
       "options": {
-        "A": "Podrobné poučení není nutné, pokud jde o odbornou službu poskytovanou pedagogickým pracovníkem, a právě v tom vidí hlavní vysvětlení.",
+        "A": "Podrobné poučení není nutné, pokud jde o odbornou službu poskytovanou pedagogickým pracovníkem, a právě v tom vidí hlavní vysvětlení, a to právě v uvedeném rámci.",
         "B": "Škola nebo školské poradenské zařízení musí předem srozumitelně informovat o povaze, rozsahu, přínosech, možných důsledcích i právech spojených se službou.",
-        "C": "O rozsahu a důsledcích služby se informuje až po jejím ukončení, aby nebyl ovlivněn průběh vyšetření, a tímto směrem by vedla podporu.",
-        "D": "Poučení se týká pouze zdravotnických výkonů; školské poradenské služby tuto povinnost nemají, a v tom hledá klíčový znak."
+        "C": "O rozsahu a důsledcích služby se informuje až po jejím ukončení, aby nebyl ovlivněn průběh vyšetření, a tímto směrem by vedla podporu, a to v dané situaci.",
+        "D": "Poučení se týká pouze zdravotnických výkonů; školské poradenské služby tuto povinnost nemají, a v tom hledá klíčový znak, a to v popsané situaci, a to v uvedeném kontextu."
       },
       "correctLetter": "B",
       "correctOptionText": "Škola nebo školské poradenské zařízení musí předem srozumitelně informovat o povaze, rozsahu, přínosech, možných důsledcích i právech spojených se službou.",
@@ -36834,7 +37974,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 29,
         "questionText": "Které tvrzení o poskytování poradenských služeb odpovídá vyhlášce č. 72/2005 Sb.?",
-        "options": [],
+        "options": {
+          "A": "Podrobné poučení není nutné, pokud jde o odbornou službu poskytovanou pedagogickým pracovníkem, a právě v tom vidí hlavní vysvětlení, a to právě v uvedeném rámci.",
+          "B": "Škola nebo školské poradenské zařízení musí předem srozumitelně informovat o povaze, rozsahu, přínosech, možných důsledcích i právech spojených se službou.",
+          "C": "O rozsahu a důsledcích služby se informuje až po jejím ukončení, aby nebyl ovlivněn průběh vyšetření, a tímto směrem by vedla podporu, a to v dané situaci.",
+          "D": "Poučení se týká pouze zdravotnických výkonů; školské poradenské služby tuto povinnost nemají, a v tom hledá klíčový znak, a to v popsané situaci, a to v uvedeném kontextu."
+        },
         "correctOptionText": "Škola nebo školské poradenské zařízení musí předem srozumitelně informovat o povaze, rozsahu, přínosech, možných důsledcích i právech spojených se službou.",
         "discipline": "legislativa / poradenská etika",
         "subtopic": "informovaný vstup do poradenské služby",
@@ -36914,9 +38059,9 @@ window.battery8Map = {
       "questionNumber": 30,
       "questionText": "Které rozlišení sociálního poradenství a speciálněpedagogického poradenství je nejpřesnější?",
       "options": {
-        "A": "Sociální poradenství řeší výhradně diagnózu a speciálněpedagogické poradenství hlavně dávky a příspěvky, a právě v tom vidí hlavní vysvětlení.",
-        "B": "Oba typy poradenství mají stejný obsah; liší se jen názvem podle resortu, který službu zřizuje, a z toho odvozuje další závěr.",
-        "C": "Speciálněpedagogické poradenství se omezuje jen na školní prospěch, sociální poradenství jen na zdravotnické výkony, a tímto směrem by vedla podporu.",
+        "A": "Sociální poradenství řeší výhradně diagnózu a speciálněpedagogické poradenství hlavně dávky a příspěvky, a právě v tom vidí hlavní vysvětlení, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+        "B": "Oba typy poradenství mají stejný obsah; liší se jen názvem podle resortu, který službu zřizuje, a z toho odvozuje další závěr, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+        "C": "Speciálněpedagogické poradenství se omezuje jen na školní prospěch, sociální poradenství jen na zdravotnické výkony, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
         "D": "Sociální poradenství orientuje v sociální situaci, službách a nárocích, zatímco speciálněpedagogické poradenství převádí obtíže do podpory učení, komunikace a fungování."
       },
       "correctLetter": "D",
@@ -36939,7 +38084,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 30,
         "questionText": "Které rozlišení sociálního poradenství a speciálněpedagogického poradenství je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Sociální poradenství řeší výhradně diagnózu a speciálněpedagogické poradenství hlavně dávky a příspěvky, a právě v tom vidí hlavní vysvětlení, a to v uvedeném kontextu, a to v tomto typu rozlišení.",
+          "B": "Oba typy poradenství mají stejný obsah; liší se jen názvem podle resortu, který službu zřizuje, a z toho odvozuje další závěr, a to v tomto typu rozlišení, a to právě v uvedeném rámci.",
+          "C": "Speciálněpedagogické poradenství se omezuje jen na školní prospěch, sociální poradenství jen na zdravotnické výkony, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+          "D": "Sociální poradenství orientuje v sociální situaci, službách a nárocích, zatímco speciálněpedagogické poradenství převádí obtíže do podpory učení, komunikace a fungování."
+        },
         "correctOptionText": "Sociální poradenství orientuje v sociální situaci, službách a nárocích, zatímco speciálněpedagogické poradenství převádí obtíže do podpory učení, komunikace a fungování.",
         "discipline": "poradenství",
         "subtopic": "sociální × speciálněpedagogické poradenství",
@@ -37042,7 +38192,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 31,
         "questionText": "Které tvrzení je nejpřesnější pro vztah zdravotnického nálezu a vzdělávací podpory?",
-        "options": [],
+        "options": {
+          "A": "Jakmile existuje lékařský nález, škola už nemusí dále zvažovat funkční dopad ani organizaci podpory, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Zdravotnický nález je pro školu nepoužitelný, protože vzdělávání a zdravotnictví se nemají propojovat, a z toho odvozuje další závěr.",
+          "C": "Podobu vzdělávací podpory smí určovat výhradně ošetřující lékař bez účasti školy a poradenského systému, a tímto směrem by vedla podporu.",
+          "D": "Zdravotnický nález sám neurčuje podobu školní podpory; je třeba jej převést do konkrétních vzdělávacích a funkčních důsledků."
+        },
         "correctOptionText": "Zdravotnický nález sám neurčuje podobu školní podpory; je třeba jej převést do konkrétních vzdělávacích a funkčních důsledků.",
         "discipline": "mezioborová spolupráce",
         "subtopic": "zdravotnický nález × vzdělávací podpora",
@@ -37121,10 +38276,10 @@ window.battery8Map = {
       "questionNumber": 32,
       "questionText": "Které vymezení role SPC odpovídá vyhlášce č. 72/2005 Sb. nejpřesněji?",
       "options": {
-        "A": "SPC je určeno výhradně pro žáky se specifickými poruchami učení a chování bez dalších znevýhodnění, a právě v tom vidí hlavní vysvětlení.",
-        "B": "SPC je zařízení pro všechny žáky bez rozdílu a nespecializuje se na žádný typ znevýhodnění, a z toho odvozuje další závěr.",
+        "A": "SPC je určeno výhradně pro žáky se specifickými poruchami učení a chování bez dalších znevýhodnění, a právě v tom vidí hlavní vysvětlení, a to právě v uvedeném rámci.",
+        "B": "SPC je zařízení pro všechny žáky bez rozdílu a nespecializuje se na žádný typ znevýhodnění, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
         "C": "SPC poskytuje poradenské služby zejména žákům s mentálním, tělesným, zrakovým nebo sluchovým postižením, vadami řeči, vícečetným postižením nebo autismem.",
-        "D": "SPC je určeno pouze pro mimořádně nadané žáky a jejich kariérové poradenství, a v tom hledá klíčový znak."
+        "D": "SPC je určeno pouze pro mimořádně nadané žáky a jejich kariérové poradenství, a v tom hledá klíčový znak, a to v popsané situaci, a to v uvedeném kontextu."
       },
       "correctLetter": "C",
       "correctOptionText": "SPC poskytuje poradenské služby zejména žákům s mentálním, tělesným, zrakovým nebo sluchovým postižením, vadami řeči, vícečetným postižením nebo autismem.",
@@ -37146,7 +38301,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 32,
         "questionText": "Které vymezení role SPC odpovídá vyhlášce č. 72/2005 Sb. nejpřesněji?",
-        "options": [],
+        "options": {
+          "A": "SPC je určeno výhradně pro žáky se specifickými poruchami učení a chování bez dalších znevýhodnění, a právě v tom vidí hlavní vysvětlení, a to právě v uvedeném rámci.",
+          "B": "SPC je zařízení pro všechny žáky bez rozdílu a nespecializuje se na žádný typ znevýhodnění, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+          "C": "SPC poskytuje poradenské služby zejména žákům s mentálním, tělesným, zrakovým nebo sluchovým postižením, vadami řeči, vícečetným postižením nebo autismem.",
+          "D": "SPC je určeno pouze pro mimořádně nadané žáky a jejich kariérové poradenství, a v tom hledá klíčový znak, a to v popsané situaci, a to v uvedeném kontextu."
+        },
         "correctOptionText": "SPC poskytuje poradenské služby zejména žákům s mentálním, tělesným, zrakovým nebo sluchovým postižením, vadami řeči, vícečetným postižením nebo autismem.",
         "discipline": "školské poradenství",
         "subtopic": "cílová skupina SPC",
@@ -37230,7 +38390,7 @@ window.battery8Map = {
         "A": "Jakmile známe diagnózu, můžeme z ní bez dalšího odvodit přesnou školní podporu i očekávaný výkon, a právě v tom vidí hlavní vysvětlení.",
         "B": "Ne-deficitní přístup znamená, že diagnózy už nejsou pro odbornou práci vůbec důležité, a z toho odvozuje další závěr.",
         "C": "Diagnóza sama ještě nevysvětluje vzdělávací situaci; rozhoduje i prostředí, bariéry a konkrétní podoba podpory.",
-        "D": "Současné pojetí podpory se má vyhýbat jakémukoli hodnocení funkčního dopadu, aby nebylo stigmatizující."
+        "D": "Současné pojetí podpory se má vyhýbat jakémukoli hodnocení funkčního dopadu, aby nebylo stigmatizující, a to i při zohlednění popsaných okolností."
       },
       "correctLetter": "C",
       "correctOptionText": "Diagnóza sama ještě nevysvětluje vzdělávací situaci; rozhoduje i prostředí, bariéry a konkrétní podoba podpory.",
@@ -37252,7 +38412,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 33,
         "questionText": "Které tvrzení nejlépe odpovídá současnému ne-deficitnímu pohledu na podporu?",
-        "options": [],
+        "options": {
+          "A": "Jakmile známe diagnózu, můžeme z ní bez dalšího odvodit přesnou školní podporu i očekávaný výkon, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Ne-deficitní přístup znamená, že diagnózy už nejsou pro odbornou práci vůbec důležité, a z toho odvozuje další závěr.",
+          "C": "Diagnóza sama ještě nevysvětluje vzdělávací situaci; rozhoduje i prostředí, bariéry a konkrétní podoba podpory.",
+          "D": "Současné pojetí podpory se má vyhýbat jakémukoli hodnocení funkčního dopadu, aby nebylo stigmatizující, a to i při zohlednění popsaných okolností."
+        },
         "correctOptionText": "Diagnóza sama ještě nevysvětluje vzdělávací situaci; rozhoduje i prostředí, bariéry a konkrétní podoba podpory.",
         "discipline": "speciální pedagogika",
         "subtopic": "diagnóza × prostředí × podpora",
@@ -37330,9 +38495,9 @@ window.battery8Map = {
       "questionNumber": 34,
       "questionText": "Které tvrzení nejpřesněji vystihuje mezioborovost speciální pedagogiky?",
       "options": {
-        "A": "Je jen souhrnným názvem pro přebírání lékařských závěrů do školy bez vlastního oborového rámce, a právě v tom vidí hlavní vysvětlení.",
+        "A": "Je jen souhrnným názvem pro přebírání lékařských závěrů do školy bez vlastního oborového rámce, a právě v tom vidí hlavní vysvětlení, a to v dané situaci.",
         "B": "Její mezioborovost znamená, že nemá vlastní předmět ani odborné metody a role speciálního pedagoga mizí, a z toho odvozuje další závěr.",
-        "C": "Jejím hlavním cílem je sladit administrativní požadavky různých resortů, nikoli podporu člověka, a tímto směrem by vedla podporu.",
+        "C": "Jejím hlavním cílem je sladit administrativní požadavky různých resortů, nikoli podporu člověka, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
         "D": "Čerpá z pedagogiky, psychologie, medicíny, sociální oblasti i práva, ale zachovává vlastní fokus na vzdělávání, podporu a participaci."
       },
       "correctLetter": "D",
@@ -37355,7 +38520,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 34,
         "questionText": "Které tvrzení nejpřesněji vystihuje mezioborovost speciální pedagogiky?",
-        "options": [],
+        "options": {
+          "A": "Je jen souhrnným názvem pro přebírání lékařských závěrů do školy bez vlastního oborového rámce, a právě v tom vidí hlavní vysvětlení, a to v dané situaci.",
+          "B": "Její mezioborovost znamená, že nemá vlastní předmět ani odborné metody a role speciálního pedagoga mizí, a z toho odvozuje další závěr.",
+          "C": "Jejím hlavním cílem je sladit administrativní požadavky různých resortů, nikoli podporu člověka, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+          "D": "Čerpá z pedagogiky, psychologie, medicíny, sociální oblasti i práva, ale zachovává vlastní fokus na vzdělávání, podporu a participaci."
+        },
         "correctOptionText": "Čerpá z pedagogiky, psychologie, medicíny, sociální oblasti i práva, ale zachovává vlastní fokus na vzdělávání, podporu a participaci.",
         "discipline": "speciální pedagogika",
         "subtopic": "mezioborovost oboru",
@@ -37460,7 +38630,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 35,
         "questionText": "Který závěr je nejpřesnější pro speciálněpedagogické uvažování o stejné diagnóze u dvou žáků?",
-        "options": [],
+        "options": {
+          "A": "Stejná diagnóza je dostatečný podklad pro stejný plán podpory bez dalšího sledování průběhu práce, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Stejná diagnóza ještě neznamená stejnou podporu, protože rozhoduje i funkční profil a podmínky, ve kterých žák pracuje.",
+          "C": "Pokud mají žáci stejnou diagnózu, je nevhodné sledovat individuální rozdíly, aby byla podpora spravedlivá, a tímto směrem by vedla podporu.",
+          "D": "Rozdíly mezi dvěma žáky se stejnou diagnózou jsou jen motivační a nemají mít vliv na pedagogické závěry, a v tom hledá klíčový znak."
+        },
         "correctOptionText": "Stejná diagnóza ještě neznamená stejnou podporu, protože rozhoduje i funkční profil a podmínky, ve kterých žák pracuje.",
         "discipline": "speciální pedagogika",
         "subtopic": "stejná diagnóza × odlišný funkční profil",
@@ -37563,7 +38738,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 36,
         "questionText": "Učitel říká: „Máme doporučení, takže už není třeba nic dalšího rozpracovávat.“ Která korekce je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Doporučení má význam hlavně pro archivaci a při běžné výuce už na něm nezáleží, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Doporučení nahrazuje všechny školní dokumenty i individuální pedagogické rozhodování během roku, a z toho odvozuje další závěr.",
+          "C": "Doporučení je závazné jen pro rodiče; škola je může sledovat spíše informativně, a tímto směrem by vedla podporu.",
+          "D": "Doporučení samo nenahrazuje každodenní školní realizaci podpory v organizaci, metodách, zadávání ani hodnocení."
+        },
         "correctOptionText": "Doporučení samo nenahrazuje každodenní školní realizaci podpory v organizaci, metodách, zadávání ani hodnocení.",
         "discipline": "školské poradenství",
         "subtopic": "doporučení × realizace podpory",
@@ -37644,7 +38824,7 @@ window.battery8Map = {
       "options": {
         "A": "Nejpřesnější je uzavřít věc jako oslabení obecných rozumových schopností, protože se potíž objevuje ve více předmětech.",
         "B": "Nejdůležitější je rozšířit slovní zásobu, protože problém se projevuje během vyučování v jazyce, a z toho odvozuje další závěr.",
-        "C": "Nejpřesnější je převést žáka na trvale individuální práci, aby se odstranily všechny situační vlivy.",
+        "C": "Nejpřesnější je převést žáka na trvale individuální práci, aby se odstranily všechny situační vlivy, a to v uvedeném kontextu.",
         "D": "Nejprve je třeba upravit podmínky přístupu k mluvené informaci a teprve poté posuzovat skutečný rozsah obtíží."
       },
       "correctLetter": "D",
@@ -37667,7 +38847,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 37,
         "questionText": "Žák při individuálním hovoru rozumí dobře, ale při výkladu z větší vzdálenosti a v hluku ztrácí obsah. Jaký závěr je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Nejpřesnější je uzavřít věc jako oslabení obecných rozumových schopností, protože se potíž objevuje ve více předmětech.",
+          "B": "Nejdůležitější je rozšířit slovní zásobu, protože problém se projevuje během vyučování v jazyce, a z toho odvozuje další závěr.",
+          "C": "Nejpřesnější je převést žáka na trvale individuální práci, aby se odstranily všechny situační vlivy, a to v uvedeném kontextu.",
+          "D": "Nejprve je třeba upravit podmínky přístupu k mluvené informaci a teprve poté posuzovat skutečný rozsah obtíží."
+        },
         "correctOptionText": "Nejprve je třeba upravit podmínky přístupu k mluvené informaci a teprve poté posuzovat skutečný rozsah obtíží.",
         "discipline": "surdopedie / komunikace",
         "subtopic": "přístup k mluvené informaci",
@@ -37749,8 +38934,8 @@ window.battery8Map = {
       "options": {
         "A": "Je třeba řešit přístup k vizuální informaci a formát materiálů, ne automaticky uzavírat problém jako slabé porozumění učivu.",
         "B": "Nejpřesnější je soustředit se hlavně na reedukaci čtenářské techniky, protože obtíž se projevuje u textu, a z toho odvozuje další závěr.",
-        "C": "Podstata obtíží je nejspíš v nízké vytrvalosti, protože ústní výkon bývá pro žáky přirozeně snazší, a tímto směrem by vedla podporu.",
-        "D": "Nejpřesnější je nahradit ústní zkoušení písemným, aby bylo možné lépe odlišit výkon od dojmu, a v tom hledá klíčový znak."
+        "C": "Obtíže nejspíš souvisejí s nízkou vytrvalostí, protože ústní výkon bývá pro žáky přirozeně snazší, a tímto směrem by vedla podporu.",
+        "D": "Nejpřesnější je nahradit ústní zkoušení písemným, aby bylo možné lépe odlišit výkon od dojmu, a v tom hledá klíčový znak, a to v popsané situaci."
       },
       "correctLetter": "A",
       "correctOptionText": "Je třeba řešit přístup k vizuální informaci a formát materiálů, ne automaticky uzavírat problém jako slabé porozumění učivu.",
@@ -37772,7 +38957,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 38,
         "questionText": "Žák při práci s textem výrazně zpomaluje, vadí mu oslnění a drobný tisk, ale při ústním zkoušení působí jistě. Který závěr je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Je třeba řešit přístup k vizuální informaci a formát materiálů, ne automaticky uzavírat problém jako slabé porozumění učivu.",
+          "B": "Nejpřesnější je soustředit se hlavně na reedukaci čtenářské techniky, protože obtíž se projevuje u textu, a z toho odvozuje další závěr.",
+          "C": "Obtíže nejspíš souvisejí s nízkou vytrvalostí, protože ústní výkon bývá pro žáky přirozeně snazší, a tímto směrem by vedla podporu.",
+          "D": "Nejpřesnější je nahradit ústní zkoušení písemným, aby bylo možné lépe odlišit výkon od dojmu, a v tom hledá klíčový znak, a to v popsané situaci."
+        },
         "correctOptionText": "Je třeba řešit přístup k vizuální informaci a formát materiálů, ne automaticky uzavírat problém jako slabé porozumění učivu.",
         "discipline": "tyflopedie / přístupnost",
         "subtopic": "vizuální přístup k informaci",
@@ -37853,7 +39043,7 @@ window.battery8Map = {
       "questionText": "Žák má těžce omezenou srozumitelnost řeči, ale zřetelný komunikační záměr. Který postup je nejpřesnější?",
       "options": {
         "A": "Trvat výhradně na mluvené řeči, aby se dítě nenaučilo na pomůckách záviset, a právě v tom vidí hlavní vysvětlení.",
-        "B": "Odložit podporu komunikace do doby, než bude jisté, že běžná řeč už nemá šanci se rozvinout.",
+        "B": "Odložit podporu komunikace do doby, než bude jisté, že běžná řeč už nemá šanci se rozvinout, a to v tomto typu rozlišení.",
         "C": "Zavést jinou funkční cestu sdělení, například AAK, místo čekání, až bude mluvená řeč dostatečně „čistá“.",
         "D": "Zúžit komunikaci jen na terapeutickou místnost, aby se žák v běžném prostředí nepřetěžoval, a v tom hledá klíčový znak."
       },
@@ -37877,7 +39067,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 39,
         "questionText": "Žák má těžce omezenou srozumitelnost řeči, ale zřetelný komunikační záměr. Který postup je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Trvat výhradně na mluvené řeči, aby se dítě nenaučilo na pomůckách záviset, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Odložit podporu komunikace do doby, než bude jisté, že běžná řeč už nemá šanci se rozvinout, a to v tomto typu rozlišení.",
+          "C": "Zavést jinou funkční cestu sdělení, například AAK, místo čekání, až bude mluvená řeč dostatečně „čistá“.",
+          "D": "Zúžit komunikaci jen na terapeutickou místnost, aby se žák v běžném prostředí nepřetěžoval, a v tom hledá klíčový znak."
+        },
         "correctOptionText": "Zavést jinou funkční cestu sdělení, například AAK, místo čekání, až bude mluvená řeč dostatečně „čistá“.",
         "discipline": "logopedie / AAK",
         "subtopic": "těžce omezená mluvená řeč",
@@ -37955,10 +39150,10 @@ window.battery8Map = {
       "questionNumber": 40,
       "questionText": "Žák reaguje výbuchem hlavně při nejasném zadání a veřejné opravě, ale v předvídatelném režimu a s neveřejnou zpětnou vazbou pracuje výrazně lépe. Který závěr je nejpřesnější?",
       "options": {
-        "A": "Podstata obtíží je hlavně v nedostatku učiva, protože problém se projevuje při plnění školních úkolů.",
+        "A": "Hlavní problém je v nedostatku učiva, protože problém se projevuje při plnění školních úkolů, a to v dané situaci, a to v popsané situaci.",
         "B": "Nejpřesnější je zpřísnit sankční režim, protože veřejná oprava má posílit respekt k autoritě, a z toho odvozuje další závěr.",
-        "C": "Chování je třeba číst v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
-        "D": "Podstata obtíží leží hlavně v tělesném oslabení, protože přetížení ve třídě bývá vždy somatického původu."
+        "C": "Chování je třeba vyhodnocovat v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
+        "D": "Hlavní problém leží v tělesném oslabení, protože přetížení ve třídě bývá vždy somatického původu, a to v tomto typu rozlišení."
       },
       "correctLetter": "C",
       "correctOptionText": "Chování je třeba vyhodnocovat v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
@@ -37980,8 +39175,13 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 40,
         "questionText": "Žák reaguje výbuchem hlavně při nejasném zadání a veřejné opravě, ale v předvídatelném režimu a s neveřejnou zpětnou vazbou pracuje výrazně lépe. Který závěr je nejpřesnější?",
-        "options": [],
-        "correctOptionText": "Chování je třeba číst v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
+        "options": {
+          "A": "Hlavní problém je v nedostatku učiva, protože problém se projevuje při plnění školních úkolů, a to v dané situaci, a to v popsané situaci.",
+          "B": "Nejpřesnější je zpřísnit sankční režim, protože veřejná oprava má posílit respekt k autoritě, a z toho odvozuje další závěr.",
+          "C": "Chování je třeba vyhodnocovat v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
+          "D": "Hlavní problém leží v tělesném oslabení, protože přetížení ve třídě bývá vždy somatického původu, a to v tomto typu rozlišení."
+        },
+        "correctOptionText": "Chování je třeba vyhodnocovat v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
         "discipline": "etopedie / školní klima",
         "subtopic": "spouštěče chování",
         "conceptTags": [
@@ -38028,8 +39228,8 @@ window.battery8Map = {
         "sourceCorrectLetter": "C",
         "reviewedCorrectLetter": "C",
         "effectiveCorrectLetter": "C",
-        "sourceCorrectOptionText": "Chování je třeba číst v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
-        "reviewedCorrectOptionText": "Chování je třeba číst v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
+        "sourceCorrectOptionText": "Chování je třeba vyhodnocovat v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
+        "reviewedCorrectOptionText": "Chování je třeba vyhodnocovat v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
         "answerAuditStatus": "expert-reviewed",
         "answerAuditNote": "B8 byla přepracována jako finální selekční baterie: menší podíl mikrokazuistik, větší důraz na přesné rozlišování pojmů, dokumentů, rolí a aktuálního systému.",
         "answerAuditConfidence": "high",
@@ -38061,9 +39261,9 @@ window.battery8Map = {
       "questionText": "Žák má nestabilní domácí podmínky a dlouhodobě kolísá ve výkonu. Který závěr je nejpřesnější?",
       "options": {
         "A": "Podpůrná opatření se nevážou jen ke zdravotnímu stavu; mohou reagovat i na kulturní prostředí nebo jiné životní podmínky žáka.",
-        "B": "Bez zdravotní diagnózy nelze ve školství o podpůrných opatřeních vůbec uvažovat, a z toho odvozuje další závěr.",
-        "C": "Kolísání výkonu v takové situaci je čistě kázeňská otázka a nepatří do poradenského rámce, a tímto směrem by vedla podporu.",
-        "D": "Škola má v podobné situaci sledovat jen prospěch, protože rodinné podmínky do podpory nepatří, a v tom hledá klíčový znak."
+        "B": "Bez zdravotní diagnózy nelze ve školství o podpůrných opatřeních vůbec uvažovat, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+        "C": "Kolísání výkonu v takové situaci je čistě kázeňská otázka a nepatří do poradenského rámce, a tímto směrem by vedla podporu, a to v dané situaci.",
+        "D": "Škola má v podobné situaci sledovat jen prospěch, protože rodinné podmínky do podpory nepatří, a v tom hledá klíčový znak, a to v popsané situaci."
       },
       "correctLetter": "A",
       "correctOptionText": "Podpůrná opatření se nevážou jen ke zdravotnímu stavu; mohou reagovat i na kulturní prostředí nebo jiné životní podmínky žáka.",
@@ -38085,7 +39285,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 41,
         "questionText": "Žák má nestabilní domácí podmínky a dlouhodobě kolísá ve výkonu. Který závěr je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Podpůrná opatření se nevážou jen ke zdravotnímu stavu; mohou reagovat i na kulturní prostředí nebo jiné životní podmínky žáka.",
+          "B": "Bez zdravotní diagnózy nelze ve školství o podpůrných opatřeních vůbec uvažovat, a z toho odvozuje další závěr, a to i při zohlednění popsaných okolností.",
+          "C": "Kolísání výkonu v takové situaci je čistě kázeňská otázka a nepatří do poradenského rámce, a tímto směrem by vedla podporu, a to v dané situaci.",
+          "D": "Škola má v podobné situaci sledovat jen prospěch, protože rodinné podmínky do podpory nepatří, a v tom hledá klíčový znak, a to v popsané situaci."
+        },
         "correctOptionText": "Podpůrná opatření se nevážou jen ke zdravotnímu stavu; mohou reagovat i na kulturní prostředí nebo jiné životní podmínky žáka.",
         "discipline": "legislativa / inkluzivní vzdělávání",
         "subtopic": "jiné životní podmínky a podpora",
@@ -38191,7 +39396,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 42,
         "questionText": "Žák s tělesným postižením pracuje pomalu rukou, ale v rozhovoru přesně chápe souvislosti a učivo. Který závěr je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Pomalé pracovní tempo u žáka s tělesným postižením obvykle ukazuje na globálně nižší úroveň myšlení, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Nejpřesnější je převést žáka na jednodušší kurikulum, protože rychlost práce je rozhodující ukazatel schopností, a z toho odvozuje další závěr.",
+          "C": "Je třeba oddělit motorické omezení od závěrů o kognitivní úrovni a upravit způsob výstupu, ne automaticky snižovat obsahové nároky.",
+          "D": "Tělesné postižení je ve škole hlavně zdravotnická otázka, takže pedagogické úpravy výstupu nejsou podstatné, a v tom hledá klíčový znak."
+        },
         "correctOptionText": "Je třeba oddělit motorické omezení od závěrů o kognitivní úrovni a upravit způsob výstupu, ne automaticky snižovat obsahové nároky.",
         "discipline": "somatopedie",
         "subtopic": "motorické omezení × kognitivní závěr",
@@ -38272,7 +39482,7 @@ window.battery8Map = {
       "questionText": "Dítě vyslovuje několik hlásek nepřesně, ale dobře rozumí, reaguje v běžném tempu komunikace a ve třídě se neztrácí v obsahu. Který závěr je nejpřesnější?",
       "options": {
         "A": "Těžiště obtíže je spíše v produkci řeči, nikoli v širším přístupu k obsahu sdělení nebo v celkové intelektové úrovni.",
-        "B": "Jde nejspíše o mentální postižení, protože chyba ve výslovnosti bývá projevem celkově nižších schopností.",
+        "B": "Jde nejspíše o mentální postižení, protože chyba ve výslovnosti bývá projevem celkově nižších schopností, a to v popsané situaci.",
         "C": "Jde nejspíše o sluchové postižení, protože nepřesná výslovnost vždy znamená ztrátu porozumění řeči, a tímto směrem by vedla podporu.",
         "D": "Jde nejspíše o etopedický problém, protože nápadná řeč bývá důsledkem nedostatečné sebekázně, a v tom hledá klíčový znak."
       },
@@ -38296,7 +39506,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 43,
         "questionText": "Dítě vyslovuje několik hlásek nepřesně, ale dobře rozumí, reaguje v běžném tempu komunikace a ve třídě se neztrácí v obsahu. Který závěr je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Těžiště obtíže je spíše v produkci řeči, nikoli v širším přístupu k obsahu sdělení nebo v celkové intelektové úrovni.",
+          "B": "Jde nejspíše o mentální postižení, protože chyba ve výslovnosti bývá projevem celkově nižších schopností, a to v popsané situaci.",
+          "C": "Jde nejspíše o sluchové postižení, protože nepřesná výslovnost vždy znamená ztrátu porozumění řeči, a tímto směrem by vedla podporu.",
+          "D": "Jde nejspíše o etopedický problém, protože nápadná řeč bývá důsledkem nedostatečné sebekázně, a v tom hledá klíčový znak."
+        },
         "correctOptionText": "Těžiště obtíže je spíše v produkci řeči, nikoli v širším přístupu k obsahu sdělení nebo v celkové intelektové úrovni.",
         "discipline": "logopedie",
         "subtopic": "produkce řeči × širší porozumění",
@@ -38399,7 +39614,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 44,
         "questionText": "Rodina potřebuje hlavně orientaci v síti sociálních služeb, příspěvcích a návazných možnostech podpory mimo školu. Který rámec je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Těžiště podpory se zde posouvá do sociálního poradenství a orientace v návazné síti služeb.",
+          "B": "Jde především o tvorbu IVP, protože jakákoli mimoškolní pomoc musí vycházet z dokumentu školy.",
+          "C": "Jde především o klinickou diagnostiku, protože dávky a služby se řeší až po psychologickém závěru.",
+          "D": "Jde výhradně o školní metodickou podporu učitelům, protože rodině se tento typ informací běžně neposkytuje."
+        },
         "correctOptionText": "Těžiště podpory se zde posouvá do sociálního poradenství a orientace v návazné síti služeb.",
         "discipline": "poradenství",
         "subtopic": "sociální síť služeb",
@@ -38481,8 +39701,8 @@ window.battery8Map = {
       "options": {
         "A": "Jde o pracoviště, které vydává doporučení ke všem podpůrným opatřením místo školského poradenského zařízení, a právě v tom vidí hlavní vysvětlení.",
         "B": "Jde o školské zařízení zaměřené na preventivně výchovnou péči a práci s problémy v chování, nikoli o náhradu PPP nebo SPC.",
-        "C": "Jde o sociální službu určenou výhradně pro dospělé osoby v pobytové péči, a tímto směrem by vedla podporu.",
-        "D": "Jde o zdravotnické zařízení pro diagnostiku smyslových a tělesných postižení ve škole, a v tom hledá klíčový znak."
+        "C": "Jde o sociální službu určenou výhradně pro dospělé osoby v pobytové péči, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Jde o zdravotnické zařízení pro diagnostiku smyslových a tělesných postižení ve škole, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
       },
       "correctLetter": "B",
       "correctOptionText": "Jde o školské zařízení zaměřené na preventivně výchovnou péči a práci s problémy v chování, nikoli o náhradu PPP nebo SPC.",
@@ -38504,7 +39724,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 45,
         "questionText": "Které vymezení střediska výchovné péče (SVP) je nejpřesnější?",
-        "options": [],
+        "options": {
+          "A": "Jde o pracoviště, které vydává doporučení ke všem podpůrným opatřením místo školského poradenského zařízení, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Jde o školské zařízení zaměřené na preventivně výchovnou péči a práci s problémy v chování, nikoli o náhradu PPP nebo SPC.",
+          "C": "Jde o sociální službu určenou výhradně pro dospělé osoby v pobytové péči, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+          "D": "Jde o zdravotnické zařízení pro diagnostiku smyslových a tělesných postižení ve škole, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+        },
         "correctOptionText": "Jde o školské zařízení zaměřené na preventivně výchovnou péči a práci s problémy v chování, nikoli o náhradu PPP nebo SPC.",
         "discipline": "etopedie / systém zařízení",
         "subtopic": "SVP",
@@ -38607,7 +39832,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 46,
         "questionText": "Který dokument je v příloze vyhlášky č. 27/2016 Sb. označen formulací „Pouze pro žáka nebo zákonného zástupce“?",
-        "options": [],
+        "options": {
+          "A": "Individuální vzdělávací plán školy.",
+          "B": "Zpráva školského poradenského zařízení.",
+          "C": "Program poradenských služeb ve škole.",
+          "D": "Plán pedagogické podpory, a v tom hledá klíčový znak."
+        },
         "correctOptionText": "Zpráva školského poradenského zařízení.",
         "discipline": "legislativa / dokumentace",
         "subtopic": "zpráva ŠPZ",
@@ -38688,7 +39918,7 @@ window.battery8Map = {
         "A": "Školní psycholog a školní speciální pedagog nesmějí poskytovat poradenské služby, pokud škola nemá současně SPC, a právě v tom vidí hlavní vysvětlení.",
         "B": "Na poskytování poradenských služeb ve škole se mohou podílet také školní psycholog, školní speciální pedagog nebo školský logoped.",
         "C": "Poradenské služby ve škole mohou poskytovat jen externí pracovníci PPP, nikoli zaměstnanci školy, a tímto směrem by vedla podporu.",
-        "D": "Školský logoped může ve škole působit jen tehdy, pokud škola vzdělává výhradně žáky s vadami řeči, a v tom hledá klíčový znak."
+        "D": "Školský logoped může ve škole působit jen tehdy, pokud škola vzdělává výhradně žáky s vadami řeči, a v tom hledá klíčový znak, a to v popsané situaci."
       },
       "correctLetter": "B",
       "correctOptionText": "Na poskytování poradenských služeb ve škole se mohou podílet také školní psycholog, školní speciální pedagog nebo školský logoped.",
@@ -38710,7 +39940,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 47,
         "questionText": "Které tvrzení o poradenských službách ve škole je podle vyhlášky č. 72/2005 Sb. správné?",
-        "options": [],
+        "options": {
+          "A": "Školní psycholog a školní speciální pedagog nesmějí poskytovat poradenské služby, pokud škola nemá současně SPC, a právě v tom vidí hlavní vysvětlení.",
+          "B": "Na poskytování poradenských služeb ve škole se mohou podílet také školní psycholog, školní speciální pedagog nebo školský logoped.",
+          "C": "Poradenské služby ve škole mohou poskytovat jen externí pracovníci PPP, nikoli zaměstnanci školy, a tímto směrem by vedla podporu.",
+          "D": "Školský logoped může ve škole působit jen tehdy, pokud škola vzdělává výhradně žáky s vadami řeči, a v tom hledá klíčový znak, a to v popsané situaci."
+        },
         "correctOptionText": "Na poskytování poradenských služeb ve škole se mohou podílet také školní psycholog, školní speciální pedagog nebo školský logoped.",
         "discipline": "školské poradenství",
         "subtopic": "další odborní pracovníci ve škole",
@@ -38792,9 +40027,9 @@ window.battery8Map = {
       "questionText": "Které tvrzení o individuálním vzdělávacím plánu odpovídá aktuálnímu znění vyhlášky č. 27/2016 Sb.?",
       "options": {
         "A": "Pokud zákonný zástupce nebo zletilý žák neposkytne informovaný souhlas s vypracovaným IVP, škola toto podpůrné opatření neposkytuje.",
-        "B": "Škola může IVP vždy jednostranně zavést, jakmile jej doporučí ŠPZ, i bez souhlasu zletilého žáka nebo zákonného zástupce.",
-        "C": "Nesouhlas se týká jen obsahu předmětů; forma IVP a způsob hodnocení se zavádějí automaticky, a tímto směrem by vedla podporu.",
-        "D": "Souhlas s IVP se nevyžaduje, protože jde o interní dokument školy bez dopadu na práva žáka, a v tom hledá klíčový znak."
+        "B": "Škola může IVP vždy jednostranně zavést, jakmile jej doporučí ŠPZ, i bez souhlasu zletilého žáka nebo zákonného zástupce, a to v tomto typu rozlišení.",
+        "C": "Nesouhlas se týká jen obsahu předmětů; forma IVP a způsob hodnocení se zavádějí automaticky, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+        "D": "Souhlas s IVP se nevyžaduje, protože jde o interní dokument školy bez dopadu na práva žáka, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
       },
       "correctLetter": "A",
       "correctOptionText": "Pokud zákonný zástupce nebo zletilý žák neposkytne informovaný souhlas s vypracovaným IVP, škola toto podpůrné opatření neposkytuje.",
@@ -38816,7 +40051,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 48,
         "questionText": "Které tvrzení o individuálním vzdělávacím plánu odpovídá aktuálnímu znění vyhlášky č. 27/2016 Sb.?",
-        "options": [],
+        "options": {
+          "A": "Pokud zákonný zástupce nebo zletilý žák neposkytne informovaný souhlas s vypracovaným IVP, škola toto podpůrné opatření neposkytuje.",
+          "B": "Škola může IVP vždy jednostranně zavést, jakmile jej doporučí ŠPZ, i bez souhlasu zletilého žáka nebo zákonného zástupce, a to v tomto typu rozlišení.",
+          "C": "Nesouhlas se týká jen obsahu předmětů; forma IVP a způsob hodnocení se zavádějí automaticky, a tímto směrem by vedla podporu, a to právě v uvedeném rámci.",
+          "D": "Souhlas s IVP se nevyžaduje, protože jde o interní dokument školy bez dopadu na práva žáka, a v tom hledá klíčový znak, a to i při zohlednění popsaných okolností."
+        },
         "correctOptionText": "Pokud zákonný zástupce nebo zletilý žák neposkytne informovaný souhlas s vypracovaným IVP, škola toto podpůrné opatření neposkytuje.",
         "discipline": "legislativa / dokumentace",
         "subtopic": "informovaný souhlas s IVP",
@@ -38898,9 +40138,9 @@ window.battery8Map = {
       "questionText": "Která posloupnost rolí a kroků je v systému podpory nejvnitřněji konzistentní?",
       "options": {
         "A": "ŠPZ odborně posoudí potřeby a vydá doporučení, škola podporu rozpracuje a realizuje, rodina nebo zletilý žák se podílejí na rozhodování a mohou využít právo na revizi.",
-        "B": "Škola sama stanoví diagnózu, rodič ji formálně vezme na vědomí a ŠPZ pouze doplní podpis kvůli evidenci, a z toho odvozuje další závěr.",
-        "C": "Zdravotnické zařízení přímo určí školní organizaci výuky, škola ji pouze přepíše do třídní knihy a rodina do procesu nevstupuje, a tímto směrem by vedla podporu.",
-        "D": "Rodina sama sepíše podpůrná opatření, škola je bez odborného posouzení převezme a ŠPZ se zapojuje jen při kontrole inspekce, a v tom hledá klíčový znak."
+        "B": "Škola sama stanoví diagnózu, rodič ji formálně vezme na vědomí a ŠPZ pouze doplní podpis kvůli evidenci, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+        "C": "Zdravotnické zařízení přímo určí školní organizaci výuky, škola ji pouze přepíše do třídní knihy a rodina do procesu nevstupuje, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+        "D": "Rodina sama sepíše podpůrná opatření, škola je bez odborného posouzení převezme a ŠPZ se zapojuje jen při kontrole inspekce, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
       },
       "correctLetter": "A",
       "correctOptionText": "ŠPZ odborně posoudí potřeby a vydá doporučení, škola podporu rozpracuje a realizuje, rodina nebo zletilý žák se podílejí na rozhodování a mohou využít právo na revizi.",
@@ -38922,7 +40162,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 49,
         "questionText": "Která posloupnost rolí a kroků je v systému podpory nejvnitřněji konzistentní?",
-        "options": [],
+        "options": {
+          "A": "ŠPZ odborně posoudí potřeby a vydá doporučení, škola podporu rozpracuje a realizuje, rodina nebo zletilý žák se podílejí na rozhodování a mohou využít právo na revizi.",
+          "B": "Škola sama stanoví diagnózu, rodič ji formálně vezme na vědomí a ŠPZ pouze doplní podpis kvůli evidenci, a z toho odvozuje další závěr, a to v popsané situaci, a to v uvedeném kontextu.",
+          "C": "Zdravotnické zařízení přímo určí školní organizaci výuky, škola ji pouze přepíše do třídní knihy a rodina do procesu nevstupuje, a tímto směrem by vedla podporu, a to v uvedeném kontextu.",
+          "D": "Rodina sama sepíše podpůrná opatření, škola je bez odborného posouzení převezme a ŠPZ se zapojuje jen při kontrole inspekce, a v tom hledá klíčový znak, a to v tomto typu rozlišení."
+        },
         "correctOptionText": "ŠPZ odborně posoudí potřeby a vydá doporučení, škola podporu rozpracuje a realizuje, rodina nebo zletilý žák se podílejí na rozhodování a mohou využít právo na revizi.",
         "discipline": "finální syntéza",
         "subtopic": "role systému podpory",
@@ -39005,7 +40250,7 @@ window.battery8Map = {
       "questionNumber": 50,
       "questionText": "Které shrnutí nejlépe vystihuje náročnost speciálněpedagogického poradenství v přijímacím stylu UPOL?",
       "options": {
-        "A": "Rozhodující je hlavně zapamatovat si co nejvíce izolovaných názvů zařízení, protože obsah podpory z nich plyne automaticky.",
+        "A": "Rozhodující je hlavně zapamatovat si co nejvíce izolovaných názvů zařízení, protože obsah podpory z nich plyne automaticky, a to právě v uvedeném rámci.",
         "B": "Nejtěžší otázky stojí především na rozsáhlých kazuistikách a méně na přesném rozlišování pojmů, dokumentů a rolí, a z toho odvozuje další závěr.",
         "C": "Pro pokročilou úroveň stačí bezpečně poznat správnou odpověď podle délky a komplexnosti formulace, a tímto směrem by vedla podporu.",
         "D": "Nestačí znát pojem nebo diagnózu; je nutné propojit odborný význam, funkční dopad, vhodnou podporu i správný institucionální rámec."
@@ -39030,7 +40275,12 @@ window.battery8Map = {
         "batterySubtitle": "Hard mode: finální paralelní baterie postavená na přesném rozlišování pojmů, dokumentů, rolí, legislativy a krátké aplikaci bez dominance mikrokazuistik.",
         "questionNumber": 50,
         "questionText": "Které shrnutí nejlépe vystihuje náročnost speciálněpedagogického poradenství v přijímacím stylu UPOL?",
-        "options": [],
+        "options": {
+          "A": "Rozhodující je hlavně zapamatovat si co nejvíce izolovaných názvů zařízení, protože obsah podpory z nich plyne automaticky, a to právě v uvedeném rámci.",
+          "B": "Nejtěžší otázky stojí především na rozsáhlých kazuistikách a méně na přesném rozlišování pojmů, dokumentů a rolí, a z toho odvozuje další závěr.",
+          "C": "Pro pokročilou úroveň stačí bezpečně poznat správnou odpověď podle délky a komplexnosti formulace, a tímto směrem by vedla podporu.",
+          "D": "Nestačí znát pojem nebo diagnózu; je nutné propojit odborný význam, funkční dopad, vhodnou podporu i správný institucionální rámec."
+        },
         "correctOptionText": "Nestačí znát pojem nebo diagnózu; je nutné propojit odborný význam, funkční dopad, vhodnou podporu i správný institucionální rámec.",
         "discipline": "finální syntéza",
         "subtopic": "selektivní poradenské myšlení",
