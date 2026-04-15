@@ -62,7 +62,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 3,
-        "text": "Dítě komolí hlásky, ale dobře rozumí instrukcím, slyší i tišší řeč a v sociálním kontaktu reaguje přiměřeně. Které čtení je nejpřesnější?",
+        "text": "Dítě komolí hlásky, ale dobře rozumí instrukcím, slyší i tišší řeč a v sociálním kontaktu reaguje přiměřeně. Které vysvětlení je nejpřesnější?",
         "options": [
           "Těžiště obtíže je spíše v mluvní produkci než ve sluchové dostupnosti nebo sociálním porozumění.",
           "Těžiště obtíže je spíše ve sluchové vadě, protože chybná výslovnost je jejím typickým hlavním znakem.",
@@ -86,7 +86,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 5,
-        "text": "Žák používá bohatou slovní zásobu, ale nerozumí narážce, doslovně čte nepřímé sdělení a v dialogu těžko pružně mění perspektivu. Co je nejpřesnější čtení?",
+        "text": "Žák používá bohatou slovní zásobu, ale nerozumí narážce, doslovně chápe nepřímé sdělení a v dialogu těžko pružně mění perspektivu. Co je nejpřesnější vysvětlení?",
         "options": [
           "Potíž bude spíše v technice čtení, protože doslovnost bývá hlavně důsledkem pomalé dekódace.",
           "Potíž bude spíše v artikulaci, protože nepřímé významy vycházejí hlavně z přesné výslovnosti.",
@@ -98,7 +98,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 6,
-        "text": "Po léčbě závažného onemocnění žák učivu rozumí, ale výrazně se unaví, hůře zvládá přesuny a odpoledne výkon prudce klesá. Které čtení je nejpřesnější?",
+        "text": "Po léčbě závažného onemocnění žák učivu rozumí, ale výrazně se unaví, hůře zvládá přesuny a odpoledne výkon prudce klesá. Které vysvětlení je nejpřesnější?",
         "options": [
           "Spíše jde o nízkou studijní odolnost, protože odpolední pokles bývá hlavně otázkou vůle.",
           "Spíše jde o zdravotní a fyzickou zátěž, která mění podmínky výkonu a participace.",
@@ -122,7 +122,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 8,
-        "text": "U dítěte se objevují afekty hlavně při zahlcení řečí, změně pravidel a sociální nepředvídatelnosti. Které čtení je nejpřesnější?",
+        "text": "U dítěte se objevují afekty hlavně při zahlcení řečí, změně pravidel a sociální nepředvídatelnosti. Které vysvětlení je nejpřesnější?",
         "options": [
           "Afekt může být spíše sekundárním projevem přetížení a regulačního selhání než hlavní obtíží.",
           "Afekt bývá nejspíše hlavním znakem poruchy chování, protože intenzita projevu rozhoduje víc než kontext.",
@@ -146,7 +146,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 10,
-        "text": "Žák čte technicky plynule, ale selhává v odvozování významu a v odpovědích na otázky vyžadující porozumění vztahům v textu. Co je nejpřesnější čtení?",
+        "text": "Žák čte technicky plynule, ale selhává v odvozování významu a v odpovědích na otázky vyžadující porozumění vztahům v textu. Co je nejpřesnější vysvětlení?",
         "options": [
           "Technika dekódování sama nestačí; obtíž proto určitě leží v neochotě číst delší pasáže.",
           "Technika dekódování sama nestačí; obtíž může ležet v porozumění významu a vztahům v textu.",
@@ -170,7 +170,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 12,
-        "text": "Dítě v rozhovoru často opakuje část otázky, potřebuje více času na zpracování a v klidném prostředí s vizuální oporou odpovídá přesněji. Které čtení je nejpřesnější?",
+        "text": "Dítě v rozhovoru často opakuje část otázky, potřebuje více času na zpracování a v klidném prostředí s vizuální oporou odpovídá přesněji. Které vysvětlení je nejpřesnější?",
         "options": [
           "Obtíž může souviset spíše s nízkým intelektem, protože opakování otázky bývá jeho nejjistějším znakem.",
           "Obtíž může souviset spíše s poruchou chování, protože přesnější odpověď v klidu znamená jen menší možnost odporu.",
@@ -182,7 +182,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 13,
-        "text": "Dítě výrazně lépe chápe postup, když je názorně rozfázovaný a opřený o konkrétní situace. Při čistě abstraktním slovním výkladu rychle selhává. Co je nejpřesnější čtení?",
+        "text": "Dítě výrazně lépe chápe postup, když je názorně rozfázovaný a opřený o konkrétní situace. Při čistě abstraktním slovním výkladu rychle selhává. Co je nejpřesnější vysvětlení?",
         "options": [
           "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, proto je nejlepší rezignovat na učební cíle.",
           "Potíž může souviset s potřebou názorného a strukturovaného zprostředkování, ne prostá nepozornost.",
@@ -218,7 +218,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 16,
-        "text": "Žák při opisování z tabule ztrácí místo a vynechává řádky, ale při práci s textem položeným blízko pracuje přesněji. Které čtení je nejpřesnější?",
+        "text": "Žák při opisování z tabule ztrácí místo a vynechává řádky, ale při práci s textem položeným blízko pracuje přesněji. Které vysvětlení je nejpřesnější?",
         "options": [
           "Obtíž může souviset spíše s nedostatkem motivace, protože opis z tabule je jen trénink pečlivosti.",
           "Obtíž může souviset spíše s poruchou chování, protože vynechávání řádků znamená nedbalost.",
@@ -242,7 +242,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 18,
-        "text": "V rušném prostoru s blikajícím světlem a hlukem výkon dítěte klesá, zatímco v klidném koutě se rychle stabilizuje. Co je nejpřesnější čtení?",
+        "text": "V rušném prostoru s blikajícím světlem a hlukem výkon dítěte klesá, zatímco v klidném koutě se rychle stabilizuje. Co je nejpřesnější vysvětlení?",
         "options": [
           "Hlavním problémem může být senzorické přetížení, proto je nejlepší dítě zcela vyřadit z běžných situací.",
           "Hlavním problémem může být senzorické přetížení, proto jde vždy hlavně o sluchové postižení.",
@@ -278,7 +278,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 21,
-        "text": "Žák slyší při individuálním hovoru dobře, ale ve skupinové debatě bez vizuální opory ztrácí nit. Které čtení je nejpřesnější?",
+        "text": "Žák slyší při individuálním hovoru dobře, ale ve skupinové debatě bez vizuální opory ztrácí nit. Které vysvětlení je nejpřesnější?",
         "options": [
           "Náročnější může být přístup k mluvené informaci, proto ale není důvod upravovat komunikační podmínky.",
           "Náročnější může být přístup k mluvené informaci, proto jde jistě o problém s kázní.",
@@ -302,7 +302,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 23,
-        "text": "Dítě používá jednoduché věty, ale největší obtíž se ukáže při sdílení pozornosti, pochopení záměru druhého a střídání témat. Co je nejpřesnější čtení?",
+        "text": "Dítě používá jednoduché věty, ale největší obtíž se ukáže při sdílení pozornosti, pochopení záměru druhého a střídání témat. Co je nejpřesnější vysvětlení?",
         "options": [
           "Potíž může souviset spíše se sociálně-komunikačním porozuměním a reciprocitou než se samotnou délkou vět.",
           "Potíž může souviset spíše se sociálně-komunikačním porozuměním, proto ale nejde o oblast speciálněpedagogické podpory.",
@@ -326,7 +326,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 25,
-        "text": "Žák výborně zvládá uzavřené úlohy, ale při otevřených sociálních situacích se ztrácí v implicitních pravidlech a rychle rigidně ustrne. Co je nejpřesnější čtení?",
+        "text": "Žák výborně zvládá uzavřené úlohy, ale při otevřených sociálních situacích se ztrácí v implicitních pravidlech a rychle rigidně ustrne. Co je nejpřesnější vysvětlení?",
         "options": [
           "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru, proto ale jde vždy hlavně o intelektový deficit.",
           "Silný výkon v jednoznačně strukturované úloze nevylučuje bariéru ve flexibilitě a sociálním porozumění.",
@@ -362,7 +362,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 28,
-        "text": "Dítě rozumí učivu, ale při komunikaci bez možnosti odezírat a bez zřetelného obrácení mluvčího na něj ztrácí část sdělení. Které čtení je nejpřesnější?",
+        "text": "Dítě rozumí učivu, ale při komunikaci bez možnosti odezírat a bez zřetelného obrácení mluvčího na něj ztrácí část sdělení. Které vysvětlení je nejpřesnější?",
         "options": [
           "Podstatná může být dostupnost mluvené informace včetně vizuálních komunikačních opor, ne jen obsah učiva.",
           "Podstatná může být dostupnost mluvené informace, proto ale jde automaticky o nízký intelekt.",
@@ -374,7 +374,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 29,
-        "text": "Žák dělá mnoho pravopisných chyb, ale při ústním vysvětlení přesně popíše vztahy, důvody a pravidla. Co je nejpřesnější čtení?",
+        "text": "Žák dělá mnoho pravopisných chyb, ale při ústním vysvětlení přesně popíše vztahy, důvody a pravidla. Co je nejpřesnější vysvětlení?",
         "options": [
           "Pravopisně nápadný výkon nemusí znamenat oslabené porozumění, proto ale pravopis není třeba nikdy hodnotit.",
           "Pravopisně nápadný výkon nemusí znamenat oslabené pojmové porozumění.",
@@ -458,7 +458,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 36,
-        "text": "Při opisu z tabule dítě chybuje, při práci z předlohy na lavici nikoli. Co je nejpřesnější čtení?",
+        "text": "Při opisu z tabule dítě chybuje, při práci z předlohy na lavici nikoli. Co je nejpřesnější vysvětlení?",
         "options": [
           "Potíž může být hlavně v přístupu k vizuální předloze na vzdálenost a v organizaci zrakové práce.",
           "Potíž může být hlavně v lenosti, protože opis z tabule nevyžaduje skutečné porozumění.",
@@ -482,7 +482,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 38,
-        "text": "Dítě je stabilní v předvídatelné rutině, ale při nečekané změně plánu nebo pravidel se rychle rozpadá. Co je nejpřesnější čtení?",
+        "text": "Dítě je stabilní v předvídatelné rutině, ale při nečekané změně plánu nebo pravidel se rychle rozpadá. Co je nejpřesnější vysvětlení?",
         "options": [
           "Podstatná může být bariéra ve flexibilitě a regulaci, proto ale není vhodné dítě seznamovat s jakoukoli změnou.",
           "Podstatná může být bariéra ve flexibilitě a regulaci, proto jde jistě hlavně o sluchovou vadu.",
@@ -506,7 +506,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 40,
-        "text": "Žák působí velmi nadaně v úzké odborné oblasti, ale mimo ni selhává v organizaci, sociálním porozumění a běžném školním fungování. Které čtení je nejpřesnější?",
+        "text": "Žák působí velmi nadaně v úzké odborné oblasti, ale mimo ni selhává v organizaci, sociálním porozumění a běžném školním fungování. Které vysvětlení je nejpřesnější?",
         "options": [
           "Vysoce rozvinutá dílčí silná stránka může maskovat významnou bariéru v jiných funkčních oblastech.",
           "Vysoce rozvinutá dílčí silná stránka může maskovat bariéru, proto ale podpora ztrácí smysl.",
@@ -542,7 +542,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 43,
-        "text": "Žákův hlas se po malé zátěži rychle unaví a s delším mluvením klesá srozumitelnost, zatímco porozumění řeči zůstává dobré. Které čtení je nejpřesnější?",
+        "text": "Žákův hlas se po malé zátěži rychle unaví a s delším mluvením klesá srozumitelnost, zatímco porozumění řeči zůstává dobré. Které vysvětlení je nejpřesnější?",
         "options": [
           "Těžiště může být ve hlasovém a produkčním výkonu, proto ale jde vždy hlavně o sluchové postižení.",
           "Těžiště může být ve hlasovém a produkčním výkonu, proto je nejlepší omezit veškerou komunikaci.",
@@ -554,7 +554,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 44,
-        "text": "Učitel mluví při psaní na tabuli zády ke třídě a žák pak ztrácí část instrukce, ačkoli v jiných situacích látce rozumí. Co je nejpřesnější čtení?",
+        "text": "Učitel mluví při psaní na tabuli zády ke třídě a žák pak ztrácí část instrukce, ačkoli v jiných situacích látce rozumí. Co je nejpřesnější vysvětlení?",
         "options": [
           "Problém může vznikat v komunikačních podmínkách předávání informace, ne nutně v chápání učiva.",
           "Problém může vznikat v komunikačních podmínkách, proto ale není vhodné využívat ústní instrukce vůbec.",
@@ -590,7 +590,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 47,
-        "text": "Žák doslovně chápe instrukce, obtížně odhaduje nevyslovené sociální pravidlo a hůře opravuje komunikační nedorozumění. Které čtení je nejpřesnější?",
+        "text": "Žák doslovně chápe instrukce, obtížně odhaduje nevyslovené sociální pravidlo a hůře opravuje komunikační nedorozumění. Které vysvětlení je nejpřesnější?",
         "options": [
           "Těžiště může být spíše v sociálně-pragmatickém porozumění, proto ale jde vždy hlavně o artikulační problém.",
           "Těžiště může být spíše v sociálně-pragmatickém porozumění, proto je nejlepší sledovat jen formální správnost řeči.",
@@ -602,7 +602,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 48,
-        "text": "Vizuálně přehlcený pracovní list vede k vynechávkám a ztrátě řádku, zatímco přehledně upravená předloha výkon stabilizuje. Které čtení je nejpřesnější?",
+        "text": "Vizuálně přehlcený pracovní list vede k vynechávkám a ztrátě řádku, zatímco přehledně upravená předloha výkon stabilizuje. Které vysvětlení je nejpřesnější?",
         "options": [
           "Náročnost může ležet v organizaci vizuálního pole a přístupu k informaci, ne v obsahu samotném.",
           "Náročnost může ležet v organizaci vizuálního pole, proto ale není vhodné pracovat s textem vůbec.",
@@ -626,7 +626,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 50,
-        "text": "Žák má velmi silné verbální uvažování, ale výrazně slabší samostatnost v praktickém a motorickém fungování. Které čtení je nejpřesnější?",
+        "text": "Žák má velmi silné verbální uvažování, ale výrazně slabší samostatnost v praktickém a motorickém fungování. Které vysvětlení je nejpřesnější?",
         "options": [
           "Výrazná verbální síla sama nevylučuje podstatnou bariéru v motoricko-adaptivním fungování.",
           "Výrazná verbální síla sama nevylučuje bariéru, proto ale praktické fungování není pro podporu důležité.",
@@ -687,10 +687,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 2,
         "text": "Dítě vynechává hlásky v řeči, ale obsahu sdělení rozumí i v běžných podmínkách. Který rámec je bližší?",
         "options": [
-          "Bližší je surdopedické čtení přístupu k obsahu než logopedické čtení produkce řeči.",
-          "Bližší je etopedické čtení odporu k řečové zátěži než logopedické čtení produkce.",
-          "Bližší je psychopedické čtení slabšího porozumění než logopedické čtení produkce.",
-          "Bližší je logopedické čtení produkce řeči než surdopedické čtení přístupu k obsahu."
+          "Bližší je surdopedický rámec přístupu k obsahu než logopedický rámec produkce řeči.",
+          "Bližší je etopedický výklad odporu k řečové zátěži než logopedický rámec produkce.",
+          "Bližší je psychopedický rámec slabšího porozumění než logopedický rámec produkce.",
+          "Bližší je logopedický rámec produkce řeči než surdopedický rámec přístupu k obsahu."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -723,10 +723,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 5,
         "text": "Žák využívá odezírání, titulky a psanou oporu; výslovnost má přitom dobře srozumitelnou. Co je nejpřesnější?",
         "options": [
-          "Nejpřesnější je číst situaci přes kvalitu artikulace, ne přes dostupnost sdělení.",
-          "Nejpřesnější je číst situaci přes dostupnost mluveného sdělení, ne přes kvalitu artikulace.",
-          "Nejpřesnější je číst situaci přes slovní zásobu, ne přes modalitu vstupu.",
-          "Nejpřesnější je číst situaci přes motoriku mluvidel, ne přes komunikační podmínky, a to v daných podmínkách."
+          "Nejpřesnější je posuzovat situaci podle kvality artikulace, ne podle dostupnosti sdělení.",
+          "Nejpřesnější je posuzovat situaci podle dostupnosti mluveného sdělení, ne podle kvality artikulace.",
+          "Nejpřesnější je posuzovat situaci podle slovní zásoby, ne podle modality vstupu.",
+          "Nejpřesnější je posuzovat situaci podle motoriky mluvidel, ne podle komunikačních podmínek, a to v daných podmínkách."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -759,10 +759,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 8,
         "text": "Dítě mluví plynule, ale v kruhu vrstevníků ztrácí tok hovoru bez vizuální opory. Co je bližší?",
         "options": [
-          "Bližší je logopedické čtení plynulosti než surdopedické čtení dostupnosti toku řeči.",
-          "Bližší je psychopedické čtení porozumění sociálním pravidlům než dostupnosti řeči.",
-          "Bližší je surdopedické čtení dostupnosti toku řeči než logopedické čtení plynulosti.",
-          "Bližší je etopedické čtení neochoty vstupovat do hovoru než dostupnosti řeči."
+          "Bližší je logopedický rámec plynulosti než surdopedický rámec dostupnosti toku řeči.",
+          "Bližší je psychopedický rámec porozumění sociálním pravidlům než problém v dostupnosti řeči.",
+          "Bližší je surdopedický rámec dostupnosti toku řeči než logopedický rámec plynulosti.",
+          "Bližší je etopedický výklad neochoty vstupovat do hovoru než problém v dostupnosti řeči."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -771,10 +771,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 9,
         "text": "Dítě má oromotorické potíže, ale na slyšené podněty reaguje přesně i v různých podmínkách. Co je bližší?",
         "options": [
-          "Bližší je surdopedické čtení přístupu k informaci než logopedické čtení oromotoriky, a to v popsané situaci.",
-          "Bližší je logopedické čtení oromotorické produkce než surdopedické čtení přístupu k informaci.",
-          "Bližší je tyflopedické čtení smyslové zátěže než logopedické čtení oromotoriky.",
-          "Bližší je psychopedické čtení globálního oslabení než logopedické čtení oromotoriky."
+          "Bližší je surdopedický rámec přístupu k informaci než logopedický rámec oromotoriky, a to v popsané situaci.",
+          "Bližší je logopedický rámec oromotorické produkce než surdopedický rámec přístupu k informaci.",
+          "Bližší je tyflopedický rámec smyslové zátěže než logopedický rámec oromotoriky.",
+          "Bližší je psychopedický rámec globálního oslabení než logopedický rámec oromotoriky."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -867,10 +867,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 17,
         "text": "U žáka jsou výrazně slabé abstrakce, sociální úsudek i plánování běžných kroků mimo školu. Co je bližší?",
         "options": [
-          "Bližší je psychopedické čtení širšího fungování než čtení izolované školní obtíže.",
-          "Bližší je čtení izolované školní obtíže než psychopedické čtení širšího fungování.",
-          "Bližší je logopedické čtení výslovnosti než psychopedické čtení širšího fungování.",
-          "Bližší je tyflopedické čtení orientace než psychopedické čtení širšího fungování."
+          "Bližší je psychopedický rámec širšího fungování než výklad založený jen na izolované školní obtíži.",
+          "Bližší je výklad založený jen na izolované školní obtíži než psychopedický rámec širšího fungování.",
+          "Bližší je logopedický rámec výslovnosti než psychopedický rámec širšího fungování.",
+          "Bližší je tyflopedický rámec orientace než psychopedický rámec širšího fungování."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -927,10 +927,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 22,
         "text": "Dítě komunikuje přehledně, ale při nepřesných instrukcích a chaotickém prostředí se výkon rozpadá. Co je přesnější?",
         "options": [
-          "Přesnější je automaticky uzavírat PAS než číst bariéru v prostředí.",
-          "Přesnější je uzavírat logopedickou poruchu výslovnosti než číst bariéru v prostředí.",
-          "Přesnější je uzavírat psychopedické oslabení než číst bariéru v prostředí.",
-          "Přesnější je číst bariéru v nepřístupném prostředí než automaticky uzavírat PAS."
+          "Přesnější je automaticky uzavírat PAS než hledat bariéru v prostředí.",
+          "Přesnější je uzavírat logopedickou poruchu výslovnosti než hledat bariéru v prostředí.",
+          "Přesnější je uzavírat psychopedické oslabení než hledat bariéru v prostředí.",
+          "Přesnější je hledat bariéru v nepřístupném prostředí než automaticky uzavírat PAS."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -963,10 +963,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 25,
         "text": "Rigidita se objevila až po období dlouhého stresu, dříve bez nápadných kvalitativních zvláštností komunikace. Co je bližší?",
         "options": [
-          "Bližší je číst současný stav přes stresovou a situační zátěž než automaticky přes PAS.",
-          "Bližší je číst současný stav automaticky přes PAS než přes stresovou zátěž.",
-          "Bližší je číst současný stav automaticky přes logopedii než přes stresovou zátěž.",
-          "Bližší je číst současný stav automaticky přes surdopedii než přes stresovou zátěž, a to v daném profilu."
+          "Bližší je posuzovat současný stav přes stresovou a situační zátěž než automaticky přes PAS.",
+          "Bližší je posuzovat současný stav automaticky přes PAS než přes stresovou zátěž.",
+          "Bližší je posuzovat současný stav automaticky přes logopedii než přes stresovou zátěž.",
+          "Bližší je posuzovat současný stav automaticky přes surdopedii než přes stresovou zátěž, a to v daném profilu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -976,7 +976,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "text": "Která kombinace znaků ukazuje k PAS přesněji než k pouhé nepřístupnosti prostředí?",
         "options": [
           "Chaotická třída, rychlé instrukce a malá vizuální opora v jedné konkrétní hodině, a to v tomto typu rozlišení.",
-          "Doslovnost, slabší čtení nepřímých pravidel a obtíž reciproční komunikace napříč situacemi.",
+          "Doslovnost, slabší porozumění nepřímým pravidlům a obtíž reciproční komunikace napříč situacemi.",
           "Vyšší hluk ve třídě a delší výklad od tabule v jedné hodině.",
           "Jednorázové přetížení po změně rozvrhu bez dalšího vzorce."
         ],
@@ -985,12 +985,12 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 27,
-        "text": "Opakované konflikty v kolektivu vznikají hlavně z doslovného čtení ironie a nepřímých pravidel. Co je bližší?",
+        "text": "Opakované konflikty v kolektivu vznikají hlavně z doslovného chápání ironie a nepřímých pravidel. Co je bližší?",
         "options": [
-          "Bližší je etopedické čtení úmyslné provokace než sociálně-komunikační rámec PAS.",
-          "Bližší je logopedické čtení výslovnosti než sociálně-komunikační rámec PAS.",
-          "Bližší je somatopedické čtení motoriky než sociálně-komunikační rámec PAS.",
-          "Bližší je sociálně-komunikační rámec PAS než etopedické čtení úmyslné provokace."
+          "Bližší je etopedický výklad úmyslné provokace než sociálně-komunikační rámec PAS.",
+          "Bližší je logopedický rámec výslovnosti než sociálně-komunikační rámec PAS.",
+          "Bližší je somatopedický rámec motoriky než sociálně-komunikační rámec PAS.",
+          "Bližší je sociálně-komunikační rámec PAS než etopedický výklad úmyslné provokace."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -1023,7 +1023,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 30,
         "text": "Když po zpřehlednění prostředí mizí většina problémů, co je nejpřesnější?",
         "options": [
-          "Je vhodné nejdřív číst velký podíl bariéry v prostředí a komunikaci, ne spěchat k uzavření diagnózy.",
+          "Je vhodné nejdřív hledat velký podíl bariéry v prostředí a komunikaci, ne spěchat k uzavření diagnózy.",
           "Je vhodné spěchat k uzavření diagnózy a pominout, že po zpřehlednění prostředí potíže slábnou, a to v uvedeném rámci.",
           "Je vhodné uzavřít logopedický rámec a prostředí neřešit.",
           "Je vhodné uzavřít psychopedický rámec a prostředí neřešit."
@@ -1059,10 +1059,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 33,
         "text": "Vzdor se objevuje hlavně v úlohách s vysokou pravděpodobností neúspěchu. Co je přesnější?",
         "options": [
-          "Přesnější je číst chování jako reakci na očekávané selhání než jako jistou disocialitu.",
-          "Přesnější je číst chování jako jistou disocialitu než jako reakci na selhání.",
-          "Přesnější je číst chování jako jistou poruchu sluchu než jako reakci na selhání, a to v daném profilu.",
-          "Přesnější je číst chování jako jistou zrakovou vadu než jako reakci na selhání."
+          "Přesnější je vykládat chování jako reakci na očekávané selhání než jako jistou disocialitu.",
+          "Přesnější je vykládat chování jako jistou disocialitu než jako reakci na selhání.",
+          "Přesnější je vykládat chování jako jistou poruchu sluchu než jako reakci na selhání, a to v daném profilu.",
+          "Přesnější je vykládat chování jako jistou zrakovou vadu než jako reakci na selhání."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -1083,17 +1083,17 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 35,
         "text": "V bezpečném vztahu a předvídatelném režimu problémové chování výrazně slábne. Co je nejpřesnější?",
         "options": [
-          "Přesnější je číst chování jako neměnný rys a vztah neřešit.",
-          "Přesnější je číst chování jako poruchu výslovnosti a vztah neřešit, a to v tomto typu rozlišení.",
-          "Přesnější je sledovat podíl vztahu a prostředí než chování číst jako neměnný rys.",
-          "Přesnější je číst chování jako zrakovou bariéru a vztah neřešit."
+          "Přesnější je vykládat chování jako neměnný rys a vztah neřešit.",
+          "Přesnější je vykládat chování jako poruchu výslovnosti a vztah neřešit, a to v tomto typu rozlišení.",
+          "Přesnější je sledovat podíl vztahu a prostředí než vykládat chování jako neměnný rys.",
+          "Přesnější je vykládat chování jako zrakovou bariéru a vztah neřešit."
         ],
         "correct": 2,
         "correctLetter": "C"
       },
       {
         "number": 36,
-        "text": "Pro etopedické čtení je nejdůležitější sledovat co?",
+        "text": "Na co je v etopedickém rámci nejdůležitější se zaměřit?",
         "options": [
           "Jen počet přestupků bez ohledu na kontext a funkci chování, a to v daných podmínkách.",
           "Jen hlasitost projevu bez ohledu na kontext a trvání.",
@@ -1131,10 +1131,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 39,
         "text": "Když problémové chování ustupuje po odstranění přetížení a po jasném vedení, co je přesnější?",
         "options": [
-          "Přesnější je spěchat k pevnému etopedickému závěru než číst podíl situace.",
+          "Přesnější je spěchat k pevnému etopedickému závěru než zohlednit podíl situace.",
           "Přesnější je spěchat k pevnému surdopedickému závěru a pominout podíl situace a regulace, a to v popsané situaci.",
-          "Přesnější je číst velký podíl situačního a regulačního faktoru než spěchat k pevnému etopedickému závěru.",
-          "Přesnější je spěchat k pevnému tyflopedickému závěru než číst podíl situace."
+          "Přesnější je zohlednit velký podíl situačního a regulačního faktoru než spěchat k pevnému etopedickému závěru.",
+          "Přesnější je spěchat k pevnému tyflopedickému závěru než zohlednit podíl situace."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -1155,10 +1155,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 41,
         "text": "Žák naráží do překážek hlavně za šera, jemná motorika je přiměřená. Co je bližší?",
         "options": [
-          "Bližší je tyflopedické čtení orientace závislé na zrakových podmínkách.",
-          "Bližší je somatopedické čtení jemné motoriky a polohování, a to v tomto typu rozlišení.",
-          "Bližší je čistě etopedické čtení nepozornosti v prostoru.",
-          "Bližší je logopedické čtení tempa řeči."
+          "Bližší je tyflopedický rámec orientace závislé na zrakových podmínkách.",
+          "Bližší je somatopedický rámec jemné motoriky a polohování, a to v tomto typu rozlišení.",
+          "Bližší je čistě etopedický výklad nepozornosti v prostoru.",
+          "Bližší je logopedický rámec tempa řeči."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -1167,10 +1167,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 42,
         "text": "Žák chápe prostorové vztahy, ale hlavní obtíž je v přesunu, úchopu a polohování. Co je bližší?",
         "options": [
-          "Bližší je tyflopedické čtení orientace závislé na zrakové ostrosti.",
-          "Bližší je somatopedické čtení motorického a posturálního omezení.",
-          "Bližší je psychopedické čtení sociálního úsudku.",
-          "Bližší je surdopedické čtení přístupu k mluvené informaci."
+          "Bližší je tyflopedický rámec orientace závislé na zrakové ostrosti.",
+          "Bližší je somatopedický rámec motorického a posturálního omezení.",
+          "Bližší je psychopedický rámec sociálního úsudku.",
+          "Bližší je surdopedický rámec přístupu k mluvené informaci."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -1227,10 +1227,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 47,
         "text": "Potřeba stabilizace sedu, polohy a přesunu při zachovaném vizuálním přístupu ukazuje primárně na co?",
         "options": [
-          "Na tyflopedické čtení kontrastu a osvětlení, a to v tomto typu rozlišení.",
-          "Na surdopedické čtení auditivního vstupu.",
-          "Na PAS čtení reciprocity a doslovnosti.",
-          "Na somatopedické čtení motorického a posturálního fungování."
+          "Na tyflopedický rámec kontrastu a osvětlení, a to v tomto typu rozlišení.",
+          "Na surdopedický rámec auditivního vstupu.",
+          "Na PAS rámec reciprocity a doslovnosti.",
+          "Na somatopedický rámec motorického a posturálního fungování."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -1241,7 +1241,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "options": [
           "Nejpřesnější je uzavřít jen tyflopedický rámec a motoriku neřešit.",
           "Nejpřesnější je uzavřít jen somatopedický rámec a zrakové podmínky neřešit, a to v daných podmínkách.",
-          "Nejpřesnější je číst propojený kombinovaný profil, ne uzavřít jen jeden rámec.",
+          "Nejpřesnější je chápat situaci jako propojený kombinovaný profil, ne uzavřít jen jeden rámec.",
           "Nejpřesnější je uzavřít jen etopedický rámec a přístup k informaci neřešit."
         ],
         "correct": 2,
@@ -1251,10 +1251,10 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 49,
         "text": "Samotná únava při delším psaní bez zrakově podmíněné orientační bariéry míří spíše k čemu?",
         "options": [
-          "Spíše k somatopedickému nebo motorickému čtení než k tyflopedickému čtení orientace.",
-          "Spíše k tyflopedickému čtení orientace než k somatopedickému nebo motorickému čtení.",
-          "Spíše k PAS čtení reciprocity než k motorickému čtení.",
-          "Spíše k surdopedickému čtení hluku než k motorickému čtení."
+          "Spíše k somatopedickému nebo motorickému rámci než k tyflopedickému rámci orientace.",
+          "Spíše k tyflopedickému rámci orientace než k somatopedickému nebo motorickému rámci.",
+          "Spíše k PAS rámci reciprocity než k motorickému rámci.",
+          "Spíše k surdopedickému rámci hluku než k motorickému rámci."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -1652,7 +1652,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 28,
-        "text": "Žák se spasticitou dokáže úkol vyřešit, ale rukopis je extrémně pomalý. Které čtení je nejpřesnější?",
+        "text": "Žák se spasticitou dokáže úkol vyřešit, ale rukopis je extrémně pomalý. Které vysvětlení je nejpřesnější?",
         "options": [
           "Pomalý rukopis spolehlivě ukazuje nízkou úroveň vědomostí v daném předmětu. v tomto pojetí.",
           "Spasticita u psaní znamená, že je vhodné vzdát se všech náročnějších úloh. v dané situaci.",
@@ -2417,7 +2417,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "number": 37,
         "text": "Které tvrzení nejlépe odpovídá komunikaci se žákem, který mluví málo, ale neverbálně ukazuje volbu nebo nesouhlas?",
         "options": [
-          "I neverbální odpověď je relevantní komunikační výstup; odborník ji má číst v kontextu a podle potřeby nabídnout vhodnou oporu pro vyjádření.",
+          "I neverbální odpověď je relevantní komunikační výstup; odborník ji má vyhodnotit v kontextu a podle potřeby nabídnout vhodnou oporu pro vyjádření.",
           "Neverbální projevy jsou užitečné jen orientačně; v odborném rozhovoru je rozhodující hlavně slovní odpověď, protože tím chce udržet běžné tempo práce.",
           "Pokud žák nemluví, je bezpečnější nevycházet z jeho neverbálních reakcí a komunikovat hlavně s doprovodem.",
           "Neverbální vyjádření má smysl brát vážně až tehdy, když je potvrzené standardizovaným testem komunikace."
@@ -3365,7 +3365,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 8,
-        "text": "Které čtení vztahu mezi ranou péčí a zdravotnictvím je nejpřesnější?",
+        "text": "Které vysvětlení vztahu mezi ranou péčí a zdravotnictvím je nejpřesnější?",
         "options": [
           "Raná péče nahrazuje zdravotnictví, pokud už byla stanovena diagnóza a rodina je v domácím prostředí.",
           "Zdravotnictví řeší diagnostiku a léčbu, zatímco raná péče doplňuje podporu dítěte a rodiny v běžném fungování.",
@@ -3425,7 +3425,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 13,
-        "text": "Které čtení je nejpřesnější, když je školní výkon stabilní, ale hlavní obtíž se týká fungování mimo školu?",
+        "text": "Které vysvětlení je nejpřesnější, když je školní výkon stabilní, ale hlavní obtíž se týká fungování mimo školu?",
         "options": [
           "Těžiště podpory se může přesouvat k sociální službě, protože popsaný problém neleží primárně ve vzdělávání.",
           "Stabilní školní výkon znamená, že žádná další služba už není věcně potřebná ani smysluplná.",
@@ -3461,7 +3461,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 16,
-        "text": "Které čtení vztahu zdravotnictví a školy při vzdělávacím dopadu zdravotního stavu je nejpřesnější?",
+        "text": "Které vysvětlení vztahu zdravotnictví a školy při vzdělávacím dopadu zdravotního stavu je nejpřesnější?",
         "options": [
           "Jakmile existuje zdravotnická zpráva, škola už jen čeká na přesný návod a sama organizačně nerozhoduje.",
           "Pokud je obtíž zdravotně podmíněná, je školní úprava nevhodná, dokud neskončí léčba nebo rehabilitace.",
@@ -3533,7 +3533,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 22,
-        "text": "Které čtení krátkodobého zdravotního stavu ve škole je nejpřesnější?",
+        "text": "Které vysvětlení krátkodobého zdravotního stavu ve škole je nejpřesnější?",
         "options": [
           "Krátkodobý stav se ve škole zásadně neřeší, protože systém podpory je určen jen pro dlouhodobé diagnózy.",
           "Krátkodobý stav se má řešit výhradně přes zdravotnictví; škola nemá sama měnit praktické podmínky výuky.",
@@ -3593,7 +3593,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 27,
-        "text": "Které čtení organizace péče mimo školu je nejpřesnější?",
+        "text": "Které vysvětlení organizace péče mimo školu je nejpřesnější?",
         "options": [
           "Péče a doprovod mimo rámec vzdělávání nelze automaticky připsat škole jen proto, že dítě je žákem.",
           "Jakmile je dítě žákem, je nejpřesnější očekávat, že škola bude organizovat i jeho mimoškolní péči a doprovod.",
@@ -3617,7 +3617,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 29,
-        "text": "Které čtení vztahu sociální zátěže rodiny a školního dopadu je nejpřesnější?",
+        "text": "Které vysvětlení vztahu sociální zátěže rodiny a školního dopadu je nejpřesnější?",
         "options": [
           "Jakmile se rodinná zátěž projeví ve škole, přestává být sociální oblast relevantní a vše přechází na školu.",
           "Sociální zátěž rodiny se školy odborně netýká, protože škola sleduje jen výkon a docházku bez širšího kontextu.",
@@ -3634,7 +3634,7 @@ window.SCIO_V4_RAW_BATTERIES = [
           "Nejprve vybrat nejsilnější instituci a teprve podle ní zpětně vyložit, jaké potřeby v situaci vlastně jsou.",
           "Nejprve určit, kdo je za situaci formálně odpovědný, a ostatní vrstvy potřeby ponechat až na závěrečné doplnění.",
           "Nejprve rozlišit vrstvy potřeby, a teprve potom přiřazovat vhodné partnery a další kroky.",
-          "Nejprve zjistit, kde je klient právě evidován, protože to samo určuje i správné čtení celé situace."
+          "Nejprve zjistit, kde je klient právě evidován, protože to samo určuje i správné vyhodnocení celé situace."
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -3725,7 +3725,7 @@ window.SCIO_V4_RAW_BATTERIES = [
       },
       {
         "number": 38,
-        "text": "Které čtení je nejpřesnější, když rodina potřebuje hlavně zorientovat praktické fungování a návaznost podpory?",
+        "text": "Které vysvětlení je nejpřesnější, když rodina potřebuje hlavně zorientovat praktické fungování a návaznost podpory?",
         "options": [
           "Nejpřesnější je rovnou doporučit konkrétní školské opatření, protože praktické fungování rodiny se tím obvykle srovná.",
           "Nejpřesnější je čekat na další zhoršení, protože orientace v systému bez akutního tlaku bývá předčasná.",
@@ -3802,7 +3802,7 @@ window.SCIO_V4_RAW_BATTERIES = [
           "Volit partnera a krok podle hlavní potřeby a jejího dopadu, ne podle jediné nálepky, zkratky nebo diagnózy.",
           "Volit partnera vždy podle toho, který systém je v zadání zmíněn jako první, aby byla práce rychlá a konzistentní.",
           "Volit partnera podle nejzávažněji znějícího pojmu v zadání, i kdyby neodpovídal hlavnímu funkčnímu dopadu situace.",
-          "Volit partnera tak, aby počet zapojených služeb byl co nejmenší, i za cenu ztráty přesnosti čtení potřeby."
+          "Volit partnera tak, aby počet zapojených služeb byl co nejmenší, i za cenu ztráty přesnosti při vyhodnocení potřeby."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -5034,7 +5034,7 @@ window.SCIO_V4_RAW_BATTERIES = [
         "options": [
           "Hlavní problém je v nedostatku učiva, protože problém se projevuje při plnění školních úkolů.",
           "Nejpřesnější je zpřísnit sankční režim, protože veřejná oprava má posílit respekt k autoritě, a z toho odvozuje další závěr.",
-          "Chování je třeba číst v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
+          "Chování je třeba vyhodnocovat v kontextu spouštěčů a měnit i podmínky situace, nejen zesilovat důsledky po selhání.",
           "Hlavní problém leží v tělesném oslabení, protože přetížení ve třídě bývá vždy somatického původu."
         ],
         "correct": 2,
