@@ -40,7 +40,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Důležité je neplést modalitu výkonu s jádrem potíže.",
           "Že bariéra bude jen ve formě výstupu.",
           "Že samotná změna výstupního kanálu problém nevyřešila.",
-          "Že je potřeba znovu číst, co zůstává stabilní napříč modalitami."
+          "Že je potřeba znovu posoudit, co zůstává stabilní napříč modalitami."
         ],
         "correct": 1,
         "correctLetter": "B"
@@ -49,7 +49,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 2,
         "text": "V ústním zkoušení žák látku vystihne přesně, ale v ručně psané odpovědi ji nerozvine a text je sotva čitelný. Které vysvětlení situace je nejpřesnější?",
         "options": [
-          "Obtíž se zde ukazuje hlavně v písemném vyjádření, ne nutně v samotné znalosti učiva.",
+          "Jádro leží spíše ve formě písemného výstupu než nutně v obsahu znalosti.",
           "Jádro leží především v celkovém neporozumění učivu, které se jen více odhalí písemně.",
           "Jádro leží v nízké ochotě pracovat, protože ústně je výkon vždy snadnější.",
           "Jádro leží v tom, že žák zvládá učivo jen tehdy, když může odpovídat zkratkovitě."
@@ -88,7 +88,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "Potíž se nemusí týkat obsahu učiva v té podobě, v jaké ji ukazuje diktát.",
           "Je třeba odlišit obsahovou znalost od nároků konkrétní formy výkonu.",
           "Výsledek diktátu sám o sobě nestačí k závěru, že žák látce nerozumí.",
-          "Diktát tu nejspíš ukazuje stejný problém jako všechny ostatní formy odpovědi."
+          "Diktát tu pravděpodobně odhaluje stejnou jádrovou potíž jako všechny ostatní formy výkonu."
         ],
         "correct": 3,
         "correctLetter": "D"
@@ -107,7 +107,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 7,
-        "text": "Kdy je nepřesné číst situaci primárně logopedicky?",
+        "text": "Kdy je nepřesné vykládat situaci primárně logopedicky?",
         "options": [
           "Když se deformace hlásek objevuje stabilně i v klidu a při zachovaném porozumění.",
           "Když je řeč málo plynulá a dítě potřebuje práci s komunikační produkcí.",
@@ -133,7 +133,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 9,
         "text": "Žák po poslechu textu odpoví věcně správně, ale z hustě sázeného materiálu s nízkým kontrastem selhává. Jaké vysvětlení je nejpřesnější?",
         "options": [
-          "Obtíž je spíše v přístupu k vizuálně podanému textu než v celkovém porozumění obsahu.",
+          "Jádro leží spíše v přístupu k vizuálně podané informaci než v obecném porozumění textu.",
           "Jádro leží v tom, že žák nerozumí stejnému obsahu bez ohledu na formu podání.",
           "Jádro leží v odporu k samostatné práci s textem, nikoli ve vizuálních podmínkách.",
           "Jádro leží v tom, že poslech vždy uměle nadhodnocuje skutečnou kompetenci."
@@ -157,7 +157,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 11,
         "text": "V tiché individuální práci žák běžné instrukci rozumí, ale ve skupinové práci v hluku opakovaně mine začátek úkolu. Která interpretace je bližší?",
         "options": [
-          "Potíž souvisí spíše s tím, jak je zadání v hluku slyšet a zachytit, než s obecným neporozuměním instrukci.",
+          "Potíž je v dostupnosti sdělení v náročných podmínkách více než v jádrovém neporozumění zadání.",
           "Potíž je stejná napříč situacemi a hluk jen odkryl všeobecně slabé chápání.",
           "Potíž je především v neochotě reagovat na autoritu učitele ve skupině.",
           "Potíž je hlavně v tom, že individuální práce bývá vždy jednodušší než skupinová, bez dalšího významu."
@@ -169,10 +169,10 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 12,
         "text": "Jak nejlépe vyložit situaci, kdy dítě provede úkol správně po krátké demonstraci, ale samotný rychle vyslovený slovní pokyn v tělocvičně často mine?",
         "options": [
-          "Obtíž souvisí spíše s tím, jak je instrukce podaná a zachycená, než se samotným pochopením pohybového úkolu.",
+          "Jádro leží spíše v dostupnosti a formě podání instrukce než v samotném pohybovém principu úkolu.",
           "Jádro leží v celkově slabém chápání pohybového zadání bez ohledu na formu instrukce.",
           "Jádro leží v tom, že dítě v tělocvičně systematicky vzdoruje verbálním pokynům.",
-          "Jádro leží v tom, že demonstrace je vždy nepřiměřenou nápovědou a výsledek proto nelze číst."
+          "Jádro leží v tom, že demonstrace je vždy nepřiměřenou nápovědou a výsledek proto nelze spolehlivě hodnotit."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -203,7 +203,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 15,
-        "text": "Dítě rozumí doslovnému obsahu, ale selhává v narážce, ironii a změně perspektivy partnera. Které čtení je bližší?",
+        "text": "Dítě rozumí doslovnému obsahu, ale selhává v narážce, ironii a změně perspektivy partnera. Které vysvětlení je bližší?",
         "options": [
           "Jde spíše o sociálně-pragmatické porozumění než o pouhý deficit ve slyšení nebo artikulaci.",
           "Jde spíše o potíž ve výslovnosti, protože význam narážky závisí hlavně na mluvní produkci.",
@@ -242,7 +242,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Který znak nejvíce ukazuje na stabilní jádro obtíže napříč situacemi?",
         "options": [
           "Žák selhává hlavně při jednom typu úkolu a po změně podmínek se výkon vrací.",
-          "Stejný typ chyby zůstává i tehdy, když se změní forma odpovědi, tempo i míra podpory.",
+          "Stejný typ chyby přetrvává i po změně formy odpovědi, tempa i míry názoru.",
           "Obtíž se objevuje jen tehdy, když je zadání dlouhé a hlučné prostředí rušivé.",
           "Výkon kolísá podle toho, zda učitel pracuje individuálně nebo frontálně."
         ],
@@ -265,7 +265,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 20,
         "text": "Když žák chybuje stejně u tichého čtení, poslechu i praktické ukázky, který závěr je bližší?",
         "options": [
-          "Obtíž bude pravděpodobně podobná napříč situacemi a nebude vázaná jen na jeden způsob zadání.",
+          "Jádro obtíže bude pravděpodobně stabilnější a méně vázané na konkrétní kanál podání.",
           "Jádro obtíže bude pravděpodobně jen ve vizuálním přístupu k informaci.",
           "Jádro obtíže bude pravděpodobně jen v produkci odpovědi, ne v porozumění.",
           "Jádro obtíže bude pravděpodobně jen v akustických podmínkách výuky."
@@ -291,7 +291,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
           "Že je potřeba sledovat, které podmínky výkon zhoršují a které jej zpřístupňují.",
-          "Že změna prostředí může být pro čtení obtíže stejně důležitá jako změna úkolu.",
+          "Že změna prostředí může být pro posouzení obtíže stejně důležitá jako změna úkolu.",
           "Že kolísání výkonu samo o sobě brání rychlému závěru o stabilním jádru napříč situacemi."
         ],
         "correct": 0,
@@ -374,7 +374,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Dítě při samostatném řešení působí jako nepozorné, ale po rozfázování úkolu a konkrétní opoře se ukáže, že hlavní bariéra byla v pochopení a adaptivním zvládání kroku. Co je přesnější?",
         "options": [
           "Přesnější je rychlé etopedické uzavření, protože nápadný projev bývá hlavním odborným signálem.",
-          "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+          "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
           "Přesnější je uzavřít situaci jako čistě motivační problém, protože po opoře se dítě uklidnilo.",
           "Přesnější je hledat hlavně školní nekázeň, protože úkol působil na dítě náročně."
         ],
@@ -386,7 +386,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Při stejné instrukci dítě potřebuje konkrétní názornost, více času a podporu v běžných adaptivních krocích; problém nespočívá hlavně ve vzdoru. Co je bližší?",
         "options": [
           "Bližší je etopedický rámec, protože potřeba času obvykle kryje problém v regulaci chování.",
-          "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
+          "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
           "Bližší je logopedický rámec, protože názornost kompenzuje hlavně řečovou produkci.",
           "Bližší je sociální rámec, protože jde především o podporu rodiny mimo školu."
         ],
@@ -395,7 +395,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 31,
-        "text": "Kdy je nepřesné číst situaci primárně tyflopedicky?",
+        "text": "Kdy je nepřesné vykládat situaci primárně tyflopedicky?",
         "options": [
           "Když dítě potřebuje kontrast, zvětšení a přesnější orientaci v ploše textu.",
           "Když výkon kolísá podle vizuální vzdálenosti a kvality zobrazení.",
@@ -421,7 +421,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 33,
         "text": "Jaké vysvětlení situace je nejpřesnější, když dítě rozumí otázce při individuální práci, ale ve třídě opakovaně odpovídá mimo, protože zachytí jen část zadání?",
         "options": [
-          "Potíž souvisí spíše s tím, jak je zadání v daných podmínkách zachyceno, než s tím, že by dítě otázce obecně nerozumělo.",
+          "Jádro leží spíše v dostupnosti zadání v konkrétních podmínkách než nutně ve stejném neporozumění v každé situaci.",
           "Jádro leží ve stabilně slabé obsahové kompetenci bez ohledu na to, jak je sdělení podané.",
           "Jádro leží v tom, že individuální práce neukazuje skutečnou úroveň žáka.",
           "Jádro leží hlavně v neochotě sledovat výuku ve větší skupině."
@@ -447,7 +447,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "Rozhodující je odlišit délku a strukturu zadání od závěru, že dítě nerozumí i jednoduchému principu.",
           "Rozhodující je uzavřít situaci jako stejné neporozumění bez ohledu na složitost instrukce.",
-          "Rozhodující je číst potíž především jako nezájem o náročnější úkoly.",
+          "Rozhodující je vykládat potíž především jako nezájem o náročnější úkoly.",
           "Rozhodující je předpokládat, že delší zadání jen více odhalilo problém chování."
         ],
         "correct": 0,
@@ -455,7 +455,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 36,
-        "text": "Který údaj má pro funkční čtení obtíže nejmenší vypovídací hodnotu?",
+        "text": "Který údaj má pro funkční posouzení obtíže nejmenší vypovídací hodnotu?",
         "options": [
           "Přesně popsaná situace, v níž se chyba objevuje.",
           "Popis toho, co výkon zhoršuje nebo naopak zpřístupňuje.",
@@ -505,7 +505,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 40,
         "text": "Jak nejlépe vyložit situaci, kdy učitel popisuje, že žák „to někdy umí a někdy ne“, ale podrobnější rozbor ukáže jasnou vazbu na hluk, vzdálenost a hustotu materiálu?",
         "options": [
-          "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+          "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
           "Kolísání výkonu je zde nejspíše náhodné a bez analytické hodnoty.",
           "Kolísání výkonu je zde nejspíše potvrzením stejné jádrové poruchy bez vazby na situaci.",
           "Kolísání výkonu je zde hlavně známkou neochoty žáka pracovat soustavně."
@@ -529,7 +529,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 42,
         "text": "Které tvrzení má největší vypovídací hodnotu pro posouzení, zda podpora opravdu mění jádro obtíže?",
         "options": [
-          "Nejvíc vypovídá to, že je předem jasné, kde se má výkon zlepšit, a zlepšení se opravdu objeví právě tam.",
+          "Že je popsáno, v jaké konkrétní situaci se měl výkon posunout, a právě tam se skutečně posunul.",
           "Že učitel má po zavedení podpory lepší pocit z práce celé třídy.",
           "Že žák působí s novým opatřením klidněji, i když cíl podpory mířil jinam.",
           "Že opatření lze odborně pojmenovat několika přesnými termíny."
@@ -551,12 +551,12 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 44,
-        "text": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které čtení je přesnější?",
+        "text": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které vysvětlení je přesnější?",
         "options": [
           "Je vhodné hledat, které uspořádání činnosti bariéru zesiluje a které ji naopak tlumí.",
           "Je vhodné uzavřít, že jádro potíže leží mimo podmínky a rozdíl mezi hodinami nemá význam.",
           "Je vhodné uzavřít, že lepší výkon v jedné situaci je pouze náhodný výkyv bez diagnostické hodnoty.",
-          "Je vhodné číst rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
+          "Je vhodné vykládat rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
         ],
         "correct": 0,
         "correctLetter": "A"
@@ -577,7 +577,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 46,
         "text": "Jaké vysvětlení je nejbližší, když dítě po přesunu blíže k učiteli a po zřetelnějším kontaktu s tváří drží obsah podstatně lépe, zatímco artikulace zůstává stejná?",
         "options": [
-          "Potíž souvisí spíše s dostupností sdělení než se samotnou kvalitou žákovy výslovnosti.",
+          "Jádro leží spíše v dostupnosti sdělení než v samotné kvalitě mluvní produkce dítěte.",
           "Jádro leží spíše v artikulaci, protože pozice ve třídě mění hlavně její vnímání učitelem.",
           "Jádro leží spíše v tom, že dítě po přesazení více poslouchá z kázně.",
           "Jádro leží spíše v obsahu učiva, který se po přesunu blíže automaticky zjednodušil."
@@ -601,7 +601,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 48,
         "text": "Co z toho plyne nejpřesněji, když dítě při stejné látce selhává hlavně v dlouhých souvislých instrukcích, ale nikoli v krátkých postupných krocích?",
         "options": [
-          "Obtíž může souviset se zpracováním delších a složitěji stavěných instrukcí, ne s úplným neporozuměním učivu.",
+          "Jádro může ležet ve zpracování struktury a délky zadání, ne nutně v tom, že dítě látce nerozumí vůbec.",
           "Jádro musí ležet v totálním nepochopení látky, protože dlouhé instrukce jen odhalují pravdu.",
           "Jádro musí ležet ve vzdoru, protože dlouhé instrukce vyžadují více sebekontroly.",
           "Jádro musí ležet v nečitelnosti materiálu, protože delší instrukce bývají graficky náročnější."
@@ -623,7 +623,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 50,
-        "text": "Který závěr je při funkčním čtení obtíže nejpřesvědčivější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
+        "text": "Který závěr je při funkčním posouzení obtíže nejpřesvědčivější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
         "options": [
           "Že rozhodující je efekt v cílové oblasti, ne to, zda se současně proměnil i celkový dojem z chování.",
           "Že bez proměny celkového chování nelze podporu považovat za účinnou.",
@@ -1776,7 +1776,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
           "historický vývoj zahrnuje i terminologické proměny a proměny cíle oboru",
           "starší názvosloví bývá často deficitněji orientované než novější podpůrné a participační pojetí",
           "integrační a inkluzivní pojetí jsou historicky zcela totožné a nelze je nijak rozlišit",
-          "vývoj oboru nelze číst jen přes jednotlivé osobnosti, ale i přes proměnu zařízení, jazyka a cílů"
+          "vývoj oboru nelze vykládat jen přes jednotlivé osobnosti, ale i přes proměnu zařízení, jazyka a cílů"
         ],
         "correct": 2,
         "correctLetter": "C"
@@ -2242,19 +2242,19 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 23,
-        "text": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Jaké čtení situace je nejpřesnější?",
+        "text": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Jaké vysvětlení situace je nejpřesnější?",
         "options": [
-          "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
-          "Čtení je bližší surdopedickému rámci než psychopedickému.",
-          "Čtení je bližší tyflopedickému rámci než psychopedickému.",
-          "Čtení je bližší hlasové poruše než psychopedickému rámci."
+          "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
+          "Bližší je surdopedický rámec než psychopedický.",
+          "Bližší je tyflopedický rámec než psychopedický.",
+          "Bližší je hlasová porucha než psychopedický rámec."
         ],
         "correct": 0,
         "correctLetter": "A"
       },
       {
         "number": 24,
-        "text": "Na co je při rozlišení psychopedického a etopedického čtení situace nejdůležitější se zeptat, když dítě nápadně odmítá úkol?",
+        "text": "Na co je při rozlišení psychopedického a etopedického výkladu situace nejdůležitější se zeptat, když dítě nápadně odmítá úkol?",
         "options": [
           "Co se stane s výkonem po konkrétním modelování, názoru a snížení abstrakční zátěže?",
           "Jak rychle bude možné sepsat kázeňský záznam?",
@@ -2268,7 +2268,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 25,
         "text": "Které shrnutí nejpřesněji vystihuje etopedický postkrizový rámec práce?",
         "options": [
-          "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
+          "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
           "převést každou obtíž přímo na stupeň intelektového vývoje",
           "uzavřít každou konfliktovou situaci jako důkaz zrakové bariéry",
           "soustředit se výhradně na artikulační přesnost bez práce s událostí"
@@ -2290,7 +2290,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 27,
-        "text": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Jaké čtení situace je nejpřesnější?",
+        "text": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Jaké vysvětlení situace je nejpřesnější?",
         "options": [
           "Těžiště leží spíše v sociálně-pragmatickém porozumění než v prosté slovní zásobě.",
           "Těžiště leží spíše ve zrakové ostrosti než v pragmatickém porozumění.",
@@ -2304,7 +2304,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "number": 28,
         "text": "Který znak je nejméně přesně vysvětlitelný čistě sluchovou nedostupností sdělení?",
         "options": [
-          "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
+          "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
           "ztráta části obsahu při větší vzdálenosti mluvčího a bez vizuální opory",
           "výrazná závislost porozumění na přímém pohledu na mluvčího",
           "rozpad obsahu při akusticky náročném frontálním výkladu"
@@ -2330,7 +2330,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "options": [
           "formálně plynulá řeč bez recipročního přizpůsobení partnerovi a bez práce s perspektivou druhého",
           "stabilní sigmatická odchylka při zachovaném dialogickém ladění",
-          "chraptivý hlas při zachovaném čtení komunikační situace",
+          "chraptivý hlas při zachovaném porozumění komunikační situaci",
           "nosovost řeči při jinak přiměřené reciprocitě"
         ],
         "correct": 0,
@@ -2341,7 +2341,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Co by zde bylo nejméně přesné vyvozovat, když dítě rozumí doslovnému obsahu, ale opakovaně nezachytí, co druhý „myslel mezi řádky“?",
         "options": [
           "Může jít o oslabené pragmatické zpracování komunikačního záměru.",
-          "Může jít o bariéru v perspektivním a sociálně-kontextovém čtení sdělení.",
+          "Může jít o bariéru v perspektivním a sociálně-kontextovém porozumění sdělení.",
           "Může jít o obtíž, která přesahuje pouhou slovní zásobu.",
           "Nejspíše jde primárně o artikulační odchylku jednotlivých hlásek."
         ],
@@ -2437,7 +2437,7 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
         "text": "Které tvrzení o klasifikaci závažnosti poruchy intelektového vývoje vystihuje věc nejlépe?",
         "options": [
           "Klasifikace pomáhá orientačně, ale sama nevystihuje plně individuální vzdělávací potřeby.",
-          "Klasifikace sama přesně určí celý vzdělávací plán bez potřeby dalšího funkčního čtení.",
+          "Klasifikace sama přesně určí celý vzdělávací plán bez potřeby dalšího funkčního posouzení.",
           "Klasifikace je v edukaci bezcenná a nemá žádný orientační význam.",
           "Klasifikace se týká jen medicíny a v psychopedii se neuvažuje."
         ],
@@ -2446,12 +2446,12 @@ window.SCIO_V4_RAW_BATTERIES_HARD = [
       },
       {
         "number": 40,
-        "text": "Co by v psychopedickém a klasifikačním čtení situace bylo nejméně přesné?",
+        "text": "Co by v psychopedickém a klasifikačním posouzení situace bylo nejméně přesné?",
         "options": [
           "Podpůrné a vzdělávací důsledky se nesmějí odvozovat jen mechanicky od diagnostické nálepky.",
           "Důležitou roli hraje i adaptivní fungování a reálný funkční profil.",
           "Rozhodující může být vztah mezi stupněm obtíže a konkrétní podporou v běžném životě.",
-          "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení."
+          "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení."
         ],
         "correct": 3,
         "correctLetter": "D"

@@ -87,7 +87,7 @@ window.metadataExportHard = {
         "A": "Důležité je neplést modalitu výkonu s tím, kde je skutečný problém.",
         "B": "Že bariéra bude jen ve formě výstupu.",
         "C": "Že samotná změna výstupního kanálu problém nevyřešila.",
-        "D": "Že je potřeba znovu číst, co zůstává stabilní napříč modalitami."
+        "D": "Že je potřeba znovu posoudit, co zůstává stabilní napříč modalitami."
       },
       "correctOptionText": "Že bariéra bude jen ve formě výstupu.",
       "discipline": "speciální pedagogika / funkční diagnostika",
@@ -606,7 +606,7 @@ window.metadataExportHard = {
       "batteryTitle": "Funkční čtení obtíže a primární bariéra",
       "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
       "questionNumber": 7,
-      "questionText": "Kdy je nepřesné číst situaci primárně logopedicky?",
+      "questionText": "Kdy je nepřesné vykládat situaci primárně logopedicky?",
       "options": {
         "A": "Když se deformace hlásek objevuje stabilně i v klidu a při zachovaném porozumění.",
         "B": "Když je řeč málo plynulá a dítě potřebuje práci s komunikační produkcí.",
@@ -615,7 +615,7 @@ window.metadataExportHard = {
       },
       "correctOptionText": "Když se obsah rozpadá hlavně v hluku, na vzdálenost a bez vizuální opory, přestože výslovnost je funkční.",
       "discipline": "speciální pedagogika",
-      "subtopic": "kdy nečíst situaci logopedicky",
+      "subtopic": "kdy je nepřesné vykládat situaci logopedicky",
       "conceptTags": [
         "logopedie",
         "surdopedie",
@@ -1304,7 +1304,7 @@ window.metadataExportHard = {
       "batteryTitle": "Funkční čtení obtíže a primární bariéra",
       "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
       "questionNumber": 15,
-      "questionText": "Dítě rozumí doslovnému obsahu, ale selhává v narážce, ironii a změně perspektivy partnera. Které čtení je bližší?",
+      "questionText": "Dítě rozumí doslovnému obsahu, ale selhává v narážce, ironii a změně perspektivy partnera. Které vysvětlení je bližší?",
       "options": {
         "A": "Jde spíše o sociálně-pragmatické porozumění než o pouhý deficit ve slyšení nebo artikulaci.",
         "B": "Jde spíše o potíž ve výslovnosti, protože význam narážky závisí hlavně na mluvní produkci.",
@@ -1920,7 +1920,7 @@ window.metadataExportHard = {
       "options": {
         "A": "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
         "B": "Že je potřeba sledovat, které podmínky výkon zhoršují a které jej zpřístupňují.",
-        "C": "Že změna prostředí může být pro čtení obtíže stejně důležitá jako změna úkolu.",
+        "C": "Že změna prostředí může být pro posouzení obtíže stejně důležitá jako změna úkolu.",
         "D": "Že kolísání výkonu samo o sobě brání rychlému závěru o stabilitě obtíže napříč situacemi."
       },
       "correctOptionText": "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
@@ -2533,11 +2533,11 @@ window.metadataExportHard = {
       "questionText": "Dítě při samostatném řešení působí jako nepozorné, ale po rozfázování úkolu a konkrétní opoře se ukáže, že hlavní bariéra byla v pochopení a adaptivním zvládání kroku. Co je přesnější?",
       "options": {
         "A": "Přesnější je rychlé etopedické uzavření, protože nápadný projev bývá hlavním odborným signálem.",
-        "B": "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+        "B": "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
         "C": "Přesnější je uzavřít situaci jako čistě motivační problém, protože po opoře se dítě uklidnilo.",
         "D": "Přesnější je hledat hlavně školní nekázeň, protože úkol působil na dítě náročně."
       },
-      "correctOptionText": "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+      "correctOptionText": "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
       "discipline": "speciální pedagogika / poradenství",
       "subtopic": "sekundární nepozornost vs pochopení kroku",
       "conceptTags": [
@@ -2555,7 +2555,7 @@ window.metadataExportHard = {
       ],
       "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje viditelná nepozornost vs funkční bariéra v pochopení a adaptaci kroku.",
       "questionCore": "sekundární projev není hlavní bariéra",
-      "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
+      "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
       "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí viditelná nepozornost a funkční bariéra v pochopení a adaptaci kroku.",
       "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
       "whyWrongCategory": "Chybná odpověď většinou ukazuje, že student sledoval hlavně povrchový výkon a méně už strukturu situace a účinek změny podmínek. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
@@ -2577,8 +2577,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "B",
       "reviewedCorrectLetter": "B",
       "effectiveCorrectLetter": "B",
-      "sourceCorrectOptionText": "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
-      "reviewedCorrectOptionText": "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+      "sourceCorrectOptionText": "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+      "reviewedCorrectOptionText": "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -2620,11 +2620,11 @@ window.metadataExportHard = {
       "questionText": "Při stejné instrukci dítě potřebuje konkrétní názornost, více času a podporu v běžných adaptivních krocích; problém nespočívá hlavně ve vzdoru. Co je bližší?",
       "options": {
         "A": "Bližší je etopedický rámec, protože potřeba času obvykle kryje problém v regulaci chování.",
-        "B": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
+        "B": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
         "C": "Bližší je logopedický rámec, protože názornost kompenzuje hlavně řečovou produkci.",
         "D": "Bližší je sociální rámec, protože jde především o podporu rodiny mimo školu."
       },
-      "correctOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
+      "correctOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
       "discipline": "speciální pedagogika / poradenství",
       "subtopic": "psychopedický vs rychle etopedický rámec",
       "conceptTags": [
@@ -2642,7 +2642,7 @@ window.metadataExportHard = {
       ],
       "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje vývojový/psychopedický rámec vs rychlé etopedické uzavření.",
       "questionCore": "ne každá náročnost je problém chování",
-      "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
+      "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
       "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na vývojový/psychopedický rámec a rychlé etopedické uzavření.",
       "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
       "whyWrongCategory": "Chybná odpověď většinou ukazuje, že student sledoval hlavně povrchový výkon a méně už strukturu situace a účinek změny podmínek. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
@@ -2664,8 +2664,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "B",
       "reviewedCorrectLetter": "B",
       "effectiveCorrectLetter": "B",
-      "sourceCorrectOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
-      "reviewedCorrectOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
+      "sourceCorrectOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
+      "reviewedCorrectOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -2688,7 +2688,7 @@ window.metadataExportHard = {
       "revisionPriority": "high",
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B01Q30",
-      "conceptFamily": "funkční čtení rámce",
+      "conceptFamily": "funkční posouzení rámce",
       "distinctionAxis": "psychopedický/vývojový rámec vs etopedické čtení",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
@@ -2704,7 +2704,7 @@ window.metadataExportHard = {
       "batteryTitle": "Funkční čtení obtíže a primární bariéra",
       "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
       "questionNumber": 31,
-      "questionText": "Kdy je nepřesné číst situaci primárně tyflopedicky?",
+      "questionText": "Kdy je nepřesné vykládat situaci primárně tyflopedicky?",
       "options": {
         "A": "Když dítě potřebuje kontrast, zvětšení a přesnější orientaci v ploše textu.",
         "B": "Když výkon kolísá podle vizuální vzdálenosti a kvality zobrazení.",
@@ -3056,7 +3056,7 @@ window.metadataExportHard = {
       "options": {
         "A": "Rozhodující je odlišit délku a strukturu zadání od závěru, že dítě nerozumí i jednoduchému principu.",
         "B": "Rozhodující je uzavřít situaci jako stejné neporozumění bez ohledu na složitost instrukce.",
-        "C": "Rozhodující je číst potíž především jako nezájem o náročnější úkoly.",
+        "C": "Rozhodující je vykládat potíž především jako nezájem o náročnější úkoly.",
         "D": "Rozhodující je předpokládat, že delší zadání jen více odhalilo problém chování."
       },
       "correctOptionText": "Rozhodující je odlišit délku a strukturu zadání od závěru, že dítě nerozumí i jednoduchému principu.",
@@ -3141,7 +3141,7 @@ window.metadataExportHard = {
       "batteryTitle": "Funkční čtení obtíže a primární bariéra",
       "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
       "questionNumber": 36,
-      "questionText": "Který údaj má pro funkční čtení obtíže nejmenší vypovídací hodnotu?",
+      "questionText": "Který údaj má pro funkční posouzení obtíže nejmenší vypovídací hodnotu?",
       "options": {
         "A": "Přesně popsaná situace, v níž se chyba objevuje.",
         "B": "Popis toho, co výkon zhoršuje nebo naopak zpřístupňuje.",
@@ -3492,12 +3492,12 @@ window.metadataExportHard = {
       "questionNumber": 40,
       "questionText": "Jak nejlépe vyložit situaci, kdy učitel popisuje, že žák „to někdy umí a někdy ne“, ale podrobnější rozbor ukáže jasnou vazbu na hluk, vzdálenost a hustotu materiálu?",
       "options": {
-        "A": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+        "A": "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
         "B": "Kolísání výkonu je zde nejspíše náhodné a bez analytické hodnoty.",
         "C": "Kolísání výkonu je zde nejspíše potvrzením stejné podoby obtíže bez vazby na situaci.",
         "D": "Kolísání výkonu je zde hlavně známkou neochoty žáka pracovat soustavně."
       },
-      "correctOptionText": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+      "correctOptionText": "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
       "discipline": "poradenství / funkční rozbor",
       "subtopic": "kolísání výkonu a podmínky",
       "conceptTags": [
@@ -3515,7 +3515,7 @@ window.metadataExportHard = {
       ],
       "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje kolísání podle podmínek a nevyzpytatelná kompetence.",
       "questionCore": "kolísání výkonu může být funkčně čitelné",
-      "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
+      "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
       "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na kolísání podle podmínek a nevyzpytatelná kompetence.",
       "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
       "whyWrongCategory": "Chybná odpověď většinou ukazuje, že student sledoval hlavně povrchový výkon a méně už strukturu situace a účinek změny podmínek. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
@@ -3536,8 +3536,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
-      "reviewedCorrectOptionText": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+      "sourceCorrectOptionText": "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+      "reviewedCorrectOptionText": "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -3839,12 +3839,12 @@ window.metadataExportHard = {
       "batteryTitle": "Funkční čtení obtíže a primární bariéra",
       "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
       "questionNumber": 44,
-      "questionText": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které čtení je přesnější?",
+      "questionText": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které vysvětlení je přesnější?",
       "options": {
         "A": "Je vhodné hledat, které uspořádání činnosti bariéru zesiluje a které ji naopak tlumí.",
         "B": "Je předčasné uzavírat, že podstata potíže leží mimo podmínky a rozdíl mezi hodinami nemá význam.",
         "C": "Je vhodné uzavřít, že lepší výkon v jedné situaci je pouze náhodný výkyv bez diagnostické hodnoty.",
-        "D": "Je vhodné číst rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
+        "D": "Je vhodné vykládat rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
       },
       "correctOptionText": "Je vhodné hledat, které uspořádání činnosti bariéru zesiluje a které ji naopak tlumí.",
       "discipline": "poradenství / funkční rozbor",
@@ -4362,7 +4362,7 @@ window.metadataExportHard = {
       "batteryTitle": "Funkční čtení obtíže a primární bariéra",
       "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
       "questionNumber": 50,
-      "questionText": "Který závěr je při funkčním čtení obtíže nejpřesvědčivější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
+      "questionText": "Který závěr je při funkčním posouzení obtíže nejpřesvědčivější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
       "options": {
         "A": "Že rozhodující je efekt v cílové oblasti, ne to, zda se současně proměnil i celkový dojem z chování.",
         "B": "Že bez proměny celkového chování nelze podporu považovat za účinnou.",
@@ -11972,7 +11972,7 @@ window.metadataExportHard = {
         "A": "historický vývoj zahrnuje i terminologické proměny a proměny cíle oboru",
         "B": "starší názvosloví bývá často deficitněji orientované než novější podpůrné a participační pojetí",
         "C": "integrační a inkluzivní pojetí jsou historicky zcela totožné a nelze je nijak rozlišit",
-        "D": "vývoj oboru nelze číst jen přes jednotlivé osobnosti, ale i přes proměnu zařízení, jazyka a cílů"
+        "D": "vývoj oboru nelze vykládat jen přes jednotlivé osobnosti, ale i přes proměnu zařízení, jazyka a cílů"
       },
       "correctOptionText": "integrační a inkluzivní pojetí jsou historicky zcela totožné a nelze je nijak rozlišit",
       "discipline": "historie speciální pedagogiky / periodizace",
@@ -13655,7 +13655,7 @@ window.metadataExportHard = {
         "D": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka."
       },
       "correctOptionText": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka.",
-      "discipline": "surdopedie / funkční čtení situace",
+      "discipline": "surdopedie / funkční posouzení situace",
       "subtopic": "sluchová dostupnost sdělení",
       "conceptTags": [
         "sluchová dostupnost",
@@ -15050,14 +15050,14 @@ window.metadataExportHard = {
       "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
       "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
       "questionNumber": 23,
-      "questionText": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Jaké čtení situace je nejpřesnější?",
+      "questionText": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Jaké vysvětlení situace je nejpřesnější?",
       "options": {
-        "A": "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
-        "B": "Čtení je bližší surdopedickému rámci než psychopedickému.",
-        "C": "Čtení je bližší tyflopedickému rámci než psychopedickému.",
-        "D": "Čtení je bližší hlasové poruše než psychopedickému rámci."
+        "A": "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
+        "B": "Bližší je surdopedický rámec než psychopedický.",
+        "C": "Bližší je tyflopedický rámec než psychopedický.",
+        "D": "Bližší je hlasová porucha než psychopedický rámec."
       },
-      "correctOptionText": "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
+      "correctOptionText": "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
       "discipline": "psychopedie × etopedie",
       "subtopic": "názornost a realistické cíle",
       "conceptTags": [
@@ -15075,8 +15075,8 @@ window.metadataExportHard = {
         "potřeba názornosti a snížené abstrakce"
       ],
       "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje potřeba názornosti a snížené abstrakce a chování čtené jako vztahově-konfliktní.",
-      "questionCore": "jaké čtení je nejpřesnější při potřebě názornosti a realistických cílů",
-      "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření“. U psychopedie a klasifikačních otázek nestačí jeden nápadný znak. Rozhodující je funkční dopad, adaptivní fungování a celkový obraz, ne izolovaný školní výkon.",
+      "questionCore": "jaké vysvětlení je nejpřesnější při potřebě názornosti a realistických cílů",
+      "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Bližší je psychopedický rámec než rychlé etopedické uzavření“. U psychopedie a klasifikačních otázek nestačí jeden nápadný znak. Rozhodující je funkční dopad, adaptivní fungování a celkový obraz, ne izolovaný školní výkon.",
       "explanationDistractor": "Jiné volby pracovaly s podobným obrazem oslabení, ale méně přesně vystihovaly jeho rozsah a funkční dopad. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na potřeba názornosti a snížené abstrakce a chování čtené jako vztahově-konfliktní.",
       "commonMisconception": "Běžný omyl je stavět závěr na jednom projevu a ne na širším funkčním obrazu. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
       "whyWrongCategory": "Chybná odpověď naznačuje, že se přecenil izolovaný znak a podcenil se širší funkční obraz. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „potřeba názornosti a snížené abstrakce a chování čtené jako vztahově-konfliktní“.",
@@ -15098,8 +15098,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
-      "reviewedCorrectOptionText": "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
+      "sourceCorrectOptionText": "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
+      "reviewedCorrectOptionText": "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -15139,7 +15139,7 @@ window.metadataExportHard = {
       "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
       "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
       "questionNumber": 24,
-      "questionText": "Na co je při rozlišení psychopedického a etopedického čtení situace nejdůležitější se zeptat, když dítě nápadně odmítá úkol?",
+      "questionText": "Na co je při rozlišení psychopedického a etopedického výkladu situace nejdůležitější se zeptat, když dítě nápadně odmítá úkol?",
       "options": {
         "A": "Co se stane s výkonem po konkrétním modelování, názoru a snížení abstrakční zátěže?",
         "B": "Jak rychle bude možné sepsat kázeňský záznam?",
@@ -15230,12 +15230,12 @@ window.metadataExportHard = {
       "questionNumber": 25,
       "questionText": "Které shrnutí nejpřesněji vystihuje etopedický postkrizový rámec práce?",
       "options": {
-        "A": "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
+        "A": "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
         "B": "převést každou obtíž přímo na stupeň intelektového vývoje",
         "C": "uzavřít každou konfliktovou situaci jako důkaz zrakové bariéry",
         "D": "soustředit se výhradně na artikulační přesnost bez práce s událostí"
       },
-      "correctOptionText": "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
+      "correctOptionText": "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
       "discipline": "etopedie / postkrizová práce",
       "subtopic": "postkrizový rámec",
       "conceptTags": [
@@ -15253,7 +15253,7 @@ window.metadataExportHard = {
       ],
       "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje bezprostřední práce s událostí vs převod na jiný diagnostický rámec.",
       "questionCore": "co nejpřesněji vystihuje etopedický postkrizový rámec práce",
-      "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy“. Shrnutí sbírá hlavní body delšího sdělení a pomáhá uzavřít úsek rozhovoru nebo přejít k dalšímu kroku.",
+      "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy“. Shrnutí sbírá hlavní body delšího sdělení a pomáhá uzavřít úsek rozhovoru nebo přejít k dalšímu kroku.",
       "explanationDistractor": "Jiné volby pracovaly s podobným obrazem oslabení, ale méně přesně vystihovaly jeho rozsah a funkční dopad. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na bezprostřední práce s událostí a převod na jiný diagnostický rámec.",
       "commonMisconception": "Běžný omyl je stavět závěr na jednom projevu a ne na širším funkčním obrazu. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
       "whyWrongCategory": "Chybná odpověď naznačuje, že se přecenil izolovaný znak a podcenil se širší funkční obraz. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
@@ -15276,8 +15276,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
-      "reviewedCorrectOptionText": "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
+      "sourceCorrectOptionText": "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
+      "reviewedCorrectOptionText": "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -15405,7 +15405,7 @@ window.metadataExportHard = {
       "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
       "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
       "questionNumber": 27,
-      "questionText": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Jaké čtení situace je nejpřesnější?",
+      "questionText": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Jaké vysvětlení situace je nejpřesnější?",
       "options": {
         "A": "Těžiště leží spíše v sociálně-pragmatickém porozumění než v prosté slovní zásobě.",
         "B": "Těžiště leží spíše ve zrakové ostrosti než v pragmatickém porozumění.",
@@ -15424,18 +15424,18 @@ window.metadataExportHard = {
       "questionType": "functional-interpretation",
       "distractorType": "near-framework",
       "trapPattern": "pragmatics-vs-vocabulary",
-      "requiredDiscrimination": "doslovné porozumění a čtení komunikačního záměru",
+      "requiredDiscrimination": "doslovné porozumění a porozumění komunikačnímu záměru",
       "signalPattern": [
-        "doslovné porozumění a čtení komunikačního záměru"
+        "doslovné porozumění a porozumění komunikačnímu záměru"
       ],
-      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje doslovné porozumění a čtení komunikačního záměru.",
+      "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje doslovné porozumění a porozumění komunikačnímu záměru.",
       "questionCore": "jak číst dítě, které míjí nepřímou prosbu a ironii",
       "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „Těžiště leží spíše v sociálně-pragmatickém porozumění než v prosté slovní zásobě“. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu.",
-      "explanationDistractor": "Ostatní možnosti byly věrohodné, protože popisovaly komunikaci také, ale nevystihovaly přesně sociálně-pragmatickou rovinu problému. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí doslovné porozumění a čtení komunikačního záměru.",
+      "explanationDistractor": "Ostatní možnosti byly věrohodné, protože popisovaly komunikaci také, ale nevystihovaly přesně sociálně-pragmatickou rovinu problému. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí doslovné porozumění a porozumění komunikačnímu záměru.",
       "commonMisconception": "Studenti často sledují formu řeči, ale méně už to, jak člověk zachází s kontextem a vztahem k partnerovi. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
-      "whyWrongCategory": "Chybná volba ukazuje, že se nerozlišilo mezi formou řeči a jejím sociálním používáním. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „doslovné porozumění a čtení komunikačního záměru“.",
-      "microLesson": "U sociálně-pragmatických obtíží se význam často láme na kontextu, recipročním ladění a komunikačním záměru. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená doslovné porozumění a čtení komunikačního záměru.",
-      "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená doslovné porozumění a čtení komunikačního záměru?",
+      "whyWrongCategory": "Chybná volba ukazuje, že se nerozlišilo mezi formou řeči a jejím sociálním používáním. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „doslovné porozumění a porozumění komunikačnímu záměru“.",
+      "microLesson": "U sociálně-pragmatických obtíží se význam často láme na kontextu, recipročním ladění a komunikačním záměru. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená doslovné porozumění a porozumění komunikačnímu záměru.",
+      "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená doslovné porozumění a porozumění komunikačnímu záměru?",
       "legislationRef": "oborové vymezení PAS a sociálně-pragmatické komunikace",
       "likelyErrorTypes": [
         "pragmatika-vs-slovní-zásoba",
@@ -15457,9 +15457,9 @@ window.metadataExportHard = {
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
-      "knowledgeTarget": "doslovné porozumění a čtení komunikačního záměru",
+      "knowledgeTarget": "doslovné porozumění a porozumění komunikačnímu záměru",
       "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-      "keyProof": "Rozhodující je doslovné porozumění a čtení komunikačního záměru.",
+      "keyProof": "Rozhodující je doslovné porozumění a porozumění komunikačnímu záměru.",
       "legalFreshnessRequired": false,
       "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
       "formulationFlags": [],
@@ -15467,7 +15467,7 @@ window.metadataExportHard = {
       "knowledgeDemandLevel": "high",
       "processDemandLevel": "high",
       "recommendedRepairFilters": [
-        "doslovné porozumění a čtení komunikačního záměru",
+        "doslovné porozumění a porozumění komunikačnímu záměru",
         "sociálně-pragmatické porozumění",
         "nepřímá prosba",
         "ironie",
@@ -15494,12 +15494,12 @@ window.metadataExportHard = {
       "questionNumber": 28,
       "questionText": "Který znak je nejméně přesně vysvětlitelný čistě sluchovou nedostupností sdělení?",
       "options": {
-        "A": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
+        "A": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
         "B": "ztráta části obsahu při větší vzdálenosti mluvčího a bez vizuální opory",
         "C": "výrazná závislost porozumění na přímém pohledu na mluvčího",
         "D": "rozpad obsahu při akusticky náročném frontálním výkladu"
       },
-      "correctOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
+      "correctOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
       "discipline": "PAS / diferenciální čtení",
       "subtopic": "co nevysvětlí čistě sluchová nedostupnost",
       "conceptTags": [
@@ -15539,8 +15539,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "A",
       "reviewedCorrectLetter": "A",
       "effectiveCorrectLetter": "A",
-      "sourceCorrectOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
-      "reviewedCorrectOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
+      "sourceCorrectOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
+      "reviewedCorrectOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -15672,7 +15672,7 @@ window.metadataExportHard = {
       "options": {
         "A": "formálně plynulá řeč bez recipročního přizpůsobení partnerovi a bez práce s perspektivou druhého",
         "B": "stabilní sigmatická odchylka při zachovaném dialogickém ladění",
-        "C": "chraptivý hlas při zachovaném čtení komunikační situace",
+        "C": "chraptivý hlas při zachovaném porozumění komunikační situaci",
         "D": "nosovost řeči při jinak přiměřené reciprocitě"
       },
       "correctOptionText": "formálně plynulá řeč bez recipročního přizpůsobení partnerovi a bez práce s perspektivou druhého",
@@ -15758,7 +15758,7 @@ window.metadataExportHard = {
       "questionText": "Co by zde bylo nejméně přesné vyvozovat, když dítě rozumí doslovnému obsahu, ale opakovaně nezachytí, co druhý „myslel mezi řádky“?",
       "options": {
         "A": "Může jít o oslabené pragmatické zpracování komunikačního záměru.",
-        "B": "Může jít o bariéru v perspektivním a sociálně-kontextovém čtení sdělení.",
+        "B": "Může jít o bariéru v perspektivním a sociálně-kontextovém porozumění sdělení.",
         "C": "Může jít o obtíž, která přesahuje pouhou slovní zásobu.",
         "D": "Nejspíše jde primárně o artikulační odchylku jednotlivých hlásek."
       },
@@ -16454,7 +16454,7 @@ window.metadataExportHard = {
       "questionText": "Které tvrzení o klasifikaci závažnosti poruchy intelektového vývoje vystihuje věc nejlépe?",
       "options": {
         "A": "Klasifikace pomáhá orientačně, ale sama nevystihuje plně individuální vzdělávací potřeby.",
-        "B": "Klasifikace sama přesně určí celý vzdělávací plán bez potřeby dalšího funkčního čtení.",
+        "B": "Klasifikace sama přesně určí celý vzdělávací plán bez potřeby dalšího funkčního posouzení.",
         "C": "Klasifikace je v edukaci bezcenná a nemá žádný orientační význam.",
         "D": "Klasifikace se týká jen medicíny a v psychopedii se neuvažuje."
       },
@@ -16540,16 +16540,16 @@ window.metadataExportHard = {
       "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
       "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
       "questionNumber": 40,
-      "questionText": "Co by v psychopedickém a klasifikačním čtení situace bylo nejméně přesné?",
+      "questionText": "Co by v psychopedickém a klasifikačním posouzení situace bylo nejméně přesné?",
       "options": {
         "A": "Podpůrné a vzdělávací důsledky se nesmějí odvozovat jen mechanicky od diagnostické nálepky.",
         "B": "Důležitou roli hraje i adaptivní fungování a reálný funkční profil.",
         "C": "Rozhodující může být vztah mezi stupněm obtíže a konkrétní podporou v běžném životě.",
-        "D": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení."
+        "D": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení."
       },
-      "correctOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení.",
-      "discipline": "psychopedie / funkční čtení klasifikace",
-      "subtopic": "diagnostický štítek vs funkční čtení",
+      "correctOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení.",
+      "discipline": "psychopedie / funkční posouzení klasifikace",
+      "subtopic": "diagnostický štítek vs funkční posouzení",
       "conceptTags": [
         "diagnostický štítek",
         "funkční profil",
@@ -16563,7 +16563,7 @@ window.metadataExportHard = {
         "mechanické odvození vzdělávacího závěru od štítku a funkčn"
       ],
       "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje mechanické odvození vzdělávacího závěru od štítku a funkční a adaptivní čtení.",
-      "questionCore": "které závěr je nejméně přesné v psychopedickém a klasifikačním čtení situace",
+      "questionCore": "který závěr je nejméně přesný v psychopedickém a klasifikačním posouzení situace",
       "explanationCorrect": "Smyslem otázky bylo vytipovat možnost, která je v daném kontextu nejméně přesná. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: mechanické odvození vzdělávacího závěru od štítku a funkční a adaptivní čtení. Diagnostický ústav je vstupní článek systému, který dítě přijímá, posuzuje a navrhuje další umístění.",
       "explanationDistractor": "Jiné volby pracovaly s podobným obrazem oslabení, ale méně přesně vystihovaly jeho rozsah a funkční dopad. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na mechanické odvození vzdělávacího závěru od štítku a funkční a adaptivní čtení.",
       "commonMisconception": "Běžný omyl je stavět závěr na jednom projevu a ne na širším funkčním obrazu. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -16586,8 +16586,8 @@ window.metadataExportHard = {
       "sourceCorrectLetter": "D",
       "reviewedCorrectLetter": "D",
       "effectiveCorrectLetter": "D",
-      "sourceCorrectOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení.",
-      "reviewedCorrectOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení.",
+      "sourceCorrectOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení.",
+      "reviewedCorrectOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení.",
       "answerAuditStatus": "revidováno-pro-tutor",
       "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
       "answerAuditConfidence": "vysoká",
@@ -16610,7 +16610,7 @@ window.metadataExportHard = {
       "metadataOrigin": "hard-metadata-revision-2026-04-01",
       "metadataSourceRef": "B04Q40",
       "conceptFamily": "klasifikační a terminologické rozlišení",
-      "distinctionAxis": "štítek × funkční čtení",
+      "distinctionAxis": "štítek × funkční posouzení",
       "timeSensitivity": "stable",
       "schoolLevelMatrix": "MŠ–SŠ / průřezově",
       "institutionDomain": "speciální pedagogika / disciplíny",
@@ -19706,7 +19706,7 @@ window.metadataExportHard = {
         "strukturovaná podpora prostředí a jiné rámce"
       ],
       "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje strukturovaná podpora prostředí a jiné rámce.",
-      "questionCore": "jak číst situaci s PAS a strukturací",
+      "questionCore": "jak vyložit situaci s PAS a strukturací",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Situace je bližší strukturovanému učení než reedukačnímu nácviku samotné oslabené funkce“. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu.",
       "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí strukturovaná podpora prostředí a jiné rámce.",
       "commonMisconception": "Často se plete, zda podpora zlepšuje oslabenou funkci, nebo jen vytváří jinou cestu k výkonu. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -19965,7 +19965,7 @@ window.metadataExportHard = {
         "existenciální a smyslový rámec a jiné podpůrné mechanismy"
       ],
       "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje existenciální a smyslový rámec a jiné podpůrné mechanismy.",
-      "questionCore": "jak číst situaci zaměřenou na smysl",
+      "questionCore": "jak vyložit situaci zaměřenou na smysl",
       "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Je bližší logoterapeutický rámec než strukturované učení nebo reedukační trénink“. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou.",
       "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na existenciální a smyslový rámec a jiné podpůrné mechanismy.",
       "commonMisconception": "Často se plete, zda podpora zlepšuje oslabenou funkci, nebo jen vytváří jinou cestu k výkonu. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -20232,7 +20232,7 @@ window.metadataExportHard = {
         "funkční komunikační cesta a odklad komunikace nebo nerelev"
       ],
       "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje funkční komunikační cesta a odklad komunikace nebo nerelevantní výkon.",
-      "questionCore": "jak číst situaci s omezenou mluvenou produkcí",
+      "questionCore": "jak vyložit situaci s omezenou mluvenou produkcí",
       "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „uvažovat o AAK jako o funkční cestě ke sdělování potřeb a voleb“. AAK rozšiřuje nebo nahrazuje mluvenou řeč tak, aby člověk mohl funkčně sdělovat potřeby, volby, postoje i složitější obsah.",
       "explanationDistractor": "Jiné možnosti vypadaly užitečně, ale neřešily přímo funkční komunikaci nebo nebyly zvolené v souladu s potřebami uživatele. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Právě v tom se ukázalo, zda je odlišené funkční komunikační cesta a odklad komunikace nebo nerelevantní výkon.",
       "commonMisconception": "Častou chybou je soustředit se na pomůcku samotnou a zapomenout na reálné používání v běžných situacích. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
@@ -35024,7 +35024,7 @@ window.battery1MapHard = {
           "A": "Důležité je neplést modalitu výkonu s tím, kde je skutečný problém.",
           "B": "Že bariéra bude jen ve formě výstupu.",
           "C": "Že samotná změna výstupního kanálu problém nevyřešila.",
-          "D": "Že je potřeba znovu číst, co zůstává stabilní napříč modalitami."
+          "D": "Že je potřeba znovu posoudit, co zůstává stabilní napříč modalitami."
         },
         "correctOptionText": "Že bariéra bude jen ve formě výstupu.",
         "discipline": "speciální pedagogika / funkční diagnostika",
@@ -35597,7 +35597,7 @@ window.battery1MapHard = {
         "batteryTitle": "Funkční čtení obtíže a primární bariéra",
         "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
         "questionNumber": 7,
-        "questionText": "Kdy je nepřesné číst situaci primárně logopedicky?",
+        "questionText": "Kdy je nepřesné vykládat situaci primárně logopedicky?",
         "options": {
           "A": "Když se deformace hlásek objevuje stabilně i v klidu a při zachovaném porozumění.",
           "B": "Když je řeč málo plynulá a dítě potřebuje práci s komunikační produkcí.",
@@ -35606,7 +35606,7 @@ window.battery1MapHard = {
         },
         "correctOptionText": "Když se obsah rozpadá hlavně v hluku, na vzdálenost a bez vizuální opory, přestože výslovnost je funkční.",
         "discipline": "speciální pedagogika",
-        "subtopic": "kdy nečíst situaci logopedicky",
+        "subtopic": "kdy je nepřesné vykládat situaci logopedicky",
         "conceptTags": [
           "logopedie",
           "surdopedie",
@@ -36367,7 +36367,7 @@ window.battery1MapHard = {
         "batteryTitle": "Funkční čtení obtíže a primární bariéra",
         "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
         "questionNumber": 15,
-        "questionText": "Dítě rozumí doslovnému obsahu, ale selhává v narážce, ironii a změně perspektivy partnera. Které čtení je bližší?",
+        "questionText": "Dítě rozumí doslovnému obsahu, ale selhává v narážce, ironii a změně perspektivy partnera. Které vysvětlení je bližší?",
         "options": {
           "A": "Jde spíše o sociálně-pragmatické porozumění než o pouhý deficit ve slyšení nebo artikulaci.",
           "B": "Jde spíše o potíž ve výslovnosti, protože význam narážky závisí hlavně na mluvní produkci.",
@@ -37046,7 +37046,7 @@ window.battery1MapHard = {
         "options": {
           "A": "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
           "B": "Že je potřeba sledovat, které podmínky výkon zhoršují a které jej zpřístupňují.",
-          "C": "Že změna prostředí může být pro čtení obtíže stejně důležitá jako změna úkolu.",
+          "C": "Že změna prostředí může být pro posouzení obtíže stejně důležitá jako změna úkolu.",
           "D": "Že kolísání výkonu samo o sobě brání rychlému závěru o stabilitě obtíže napříč situacemi."
         },
         "correctOptionText": "Že jde o potíž úplně nezávislou na podmínkách prostředí.",
@@ -37722,11 +37722,11 @@ window.battery1MapHard = {
         "questionText": "Dítě při samostatném řešení působí jako nepozorné, ale po rozfázování úkolu a konkrétní opoře se ukáže, že hlavní bariéra byla v pochopení a adaptivním zvládání kroku. Co je přesnější?",
         "options": {
           "A": "Přesnější je rychlé etopedické uzavření, protože nápadný projev bývá hlavním odborným signálem.",
-          "B": "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+          "B": "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
           "C": "Přesnější je uzavřít situaci jako čistě motivační problém, protože po opoře se dítě uklidnilo.",
           "D": "Přesnější je hledat hlavně školní nekázeň, protože úkol působil na dítě náročně."
         },
-        "correctOptionText": "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+        "correctOptionText": "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
         "discipline": "speciální pedagogika / poradenství",
         "subtopic": "sekundární nepozornost vs pochopení kroku",
         "conceptTags": [
@@ -37744,7 +37744,7 @@ window.battery1MapHard = {
         ],
         "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje viditelná nepozornost vs funkční bariéra v pochopení a adaptaci kroku.",
         "questionCore": "sekundární projev není hlavní bariéra",
-        "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
+        "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
         "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí viditelná nepozornost a funkční bariéra v pochopení a adaptaci kroku.",
         "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
         "whyWrongCategory": "Chybná odpověď většinou ukazuje, že student sledoval hlavně povrchový výkon a méně už strukturu situace a účinek změny podmínek. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
@@ -37766,8 +37766,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "B",
         "reviewedCorrectLetter": "B",
         "effectiveCorrectLetter": "B",
-        "sourceCorrectOptionText": "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
-        "reviewedCorrectOptionText": "Přesnější je číst obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+        "sourceCorrectOptionText": "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
+        "reviewedCorrectOptionText": "Přesnější je vykládat obtíž vývojově a funkčně, ne vycházet jen z viditelného sekundárního projevu.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -37818,11 +37818,11 @@ window.battery1MapHard = {
         "questionText": "Při stejné instrukci dítě potřebuje konkrétní názornost, více času a podporu v běžných adaptivních krocích; problém nespočívá hlavně ve vzdoru. Co je bližší?",
         "options": {
           "A": "Bližší je etopedický rámec, protože potřeba času obvykle kryje problém v regulaci chování.",
-          "B": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
+          "B": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
           "C": "Bližší je logopedický rámec, protože názornost kompenzuje hlavně řečovou produkci.",
           "D": "Bližší je sociální rámec, protože jde především o podporu rodiny mimo školu."
         },
-        "correctOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
+        "correctOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
         "discipline": "speciální pedagogika / poradenství",
         "subtopic": "psychopedický vs rychle etopedický rámec",
         "conceptTags": [
@@ -37840,7 +37840,7 @@ window.battery1MapHard = {
         ],
         "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje vývojový/psychopedický rámec vs rychlé etopedické uzavření.",
         "questionCore": "ne každá náročnost je problém chování",
-        "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
+        "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
         "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na vývojový/psychopedický rámec a rychlé etopedické uzavření.",
         "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
         "whyWrongCategory": "Chybná odpověď většinou ukazuje, že student sledoval hlavně povrchový výkon a méně už strukturu situace a účinek změny podmínek. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
@@ -37862,8 +37862,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "B",
         "reviewedCorrectLetter": "B",
         "effectiveCorrectLetter": "B",
-        "sourceCorrectOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
-        "reviewedCorrectOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické čtení.",
+        "sourceCorrectOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
+        "reviewedCorrectOptionText": "Bližší je psychopedický nebo širší vývojový rámec než rychlé etopedické uzavření.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -37886,7 +37886,7 @@ window.battery1MapHard = {
         "revisionPriority": "high",
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B01Q30",
-        "conceptFamily": "funkční čtení rámce",
+        "conceptFamily": "funkční posouzení rámce",
         "distinctionAxis": "psychopedický/vývojový rámec vs etopedické čtení",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
@@ -37911,7 +37911,7 @@ window.battery1MapHard = {
         "batteryTitle": "Funkční čtení obtíže a primární bariéra",
         "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
         "questionNumber": 31,
-        "questionText": "Kdy je nepřesné číst situaci primárně tyflopedicky?",
+        "questionText": "Kdy je nepřesné vykládat situaci primárně tyflopedicky?",
         "options": {
           "A": "Když dítě potřebuje kontrast, zvětšení a přesnější orientaci v ploše textu.",
           "B": "Když výkon kolísá podle vizuální vzdálenosti a kvality zobrazení.",
@@ -38299,7 +38299,7 @@ window.battery1MapHard = {
         "options": {
           "A": "Rozhodující je odlišit délku a strukturu zadání od závěru, že dítě nerozumí i jednoduchému principu.",
           "B": "Rozhodující je uzavřít situaci jako stejné neporozumění bez ohledu na složitost instrukce.",
-          "C": "Rozhodující je číst potíž především jako nezájem o náročnější úkoly.",
+          "C": "Rozhodující je vykládat potíž především jako nezájem o náročnější úkoly.",
           "D": "Rozhodující je předpokládat, že delší zadání jen více odhalilo problém chování."
         },
         "correctOptionText": "Rozhodující je odlišit délku a strukturu zadání od závěru, že dítě nerozumí i jednoduchému principu.",
@@ -38393,7 +38393,7 @@ window.battery1MapHard = {
         "batteryTitle": "Funkční čtení obtíže a primární bariéra",
         "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
         "questionNumber": 36,
-        "questionText": "Který údaj má pro funkční čtení obtíže nejmenší vypovídací hodnotu?",
+        "questionText": "Který údaj má pro funkční posouzení obtíže nejmenší vypovídací hodnotu?",
         "options": {
           "A": "Přesně popsaná situace, v níž se chyba objevuje.",
           "B": "Popis toho, co výkon zhoršuje nebo naopak zpřístupňuje.",
@@ -38780,12 +38780,12 @@ window.battery1MapHard = {
         "questionNumber": 40,
         "questionText": "Jak nejlépe vyložit situaci, kdy učitel popisuje, že žák „to někdy umí a někdy ne“, ale podrobnější rozbor ukáže jasnou vazbu na hluk, vzdálenost a hustotu materiálu?",
         "options": {
-          "A": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+          "A": "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
           "B": "Kolísání výkonu je zde nejspíše náhodné a bez analytické hodnoty.",
           "C": "Kolísání výkonu je zde nejspíše potvrzením stejné podoby obtíže bez vazby na situaci.",
           "D": "Kolísání výkonu je zde hlavně známkou neochoty žáka pracovat soustavně."
         },
-        "correctOptionText": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+        "correctOptionText": "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
         "discipline": "poradenství / funkční rozbor",
         "subtopic": "kolísání výkonu a podmínky",
         "conceptTags": [
@@ -38803,7 +38803,7 @@ window.battery1MapHard = {
         ],
         "signalHint": "Nejdřív si ujasni, zda zadání míří na bariéru přístupu k informaci, formu výkonu nebo skutečné porozumění. Tady rozhoduje kolísání podle podmínek a nevyzpytatelná kompetence.",
         "questionCore": "kolísání výkonu může být funkčně čitelné",
-        "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
+        "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence“. U podobných situací je potřeba porovnat, co se změní po úpravě podmínek a co zůstává stejné. Teprve z toho lze usuzovat, jestli je problém v přístupu k informaci, ve formě výkonu, v organizaci postupu nebo v porozumění.",
         "explanationDistractor": "Jiné možnosti sváděly hlavně tím, že se opíraly o nápadný projev, ale méně sledovaly strukturu situace a účinek změny podmínek. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na kolísání podle podmínek a nevyzpytatelná kompetence.",
         "commonMisconception": "Častý omyl je vyvozovat závěr z prvního nápadného projevu místo z porovnání podmínek, v nichž výkon selhává nebo se zlepšuje. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
         "whyWrongCategory": "Chybná odpověď většinou ukazuje, že student sledoval hlavně povrchový výkon a méně už strukturu situace a účinek změny podmínek. Nejčastěji nejde o úplnou neznalost tématu, ale o nepřesné rozlišení blízkých možností.",
@@ -38824,8 +38824,8 @@ window.battery1MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
-        "reviewedCorrectOptionText": "Kolísání výkonu je zde lépe číst podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+        "sourceCorrectOptionText": "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
+        "reviewedCorrectOptionText": "Kolísání výkonu je zde vhodnější vykládat podle podmínek než jako důkaz zcela nevyzpytatelné kompetence.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -39163,12 +39163,12 @@ window.battery1MapHard = {
         "batteryTitle": "Funkční čtení obtíže a primární bariéra",
         "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
         "questionNumber": 44,
-        "questionText": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které čtení je přesnější?",
+        "questionText": "V jednom typu hodin žák působí neobratně a zpomaleně, ale při stejné obsahové náročnosti v jiném uspořádání činnosti drží výkon výrazně lépe. Které vysvětlení je přesnější?",
         "options": {
           "A": "Je vhodné hledat, které uspořádání činnosti bariéru zesiluje a které ji naopak tlumí.",
           "B": "Je předčasné uzavírat, že podstata potíže leží mimo podmínky a rozdíl mezi hodinami nemá význam.",
           "C": "Je vhodné uzavřít, že lepší výkon v jedné situaci je pouze náhodný výkyv bez diagnostické hodnoty.",
-          "D": "Je vhodné číst rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
+          "D": "Je vhodné vykládat rozdíl hlavně jako důsledek vztahu žáka k vyučujícímu, bez zkoumání úkolu."
         },
         "correctOptionText": "Je vhodné hledat, které uspořádání činnosti bariéru zesiluje a které ji naopak tlumí.",
         "discipline": "poradenství / funkční rozbor",
@@ -39740,7 +39740,7 @@ window.battery1MapHard = {
         "batteryTitle": "Funkční čtení obtíže a primární bariéra",
         "batterySubtitle": "Krátké diferenční položky na přístup k informaci, formu výkonu, podmínky prostředí a funkční dopad.",
         "questionNumber": 50,
-        "questionText": "Který závěr je při funkčním čtení obtíže nejpřesvědčivější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
+        "questionText": "Který závěr je při funkčním posouzení obtíže nejpřesvědčivější, když se po změně podmínek nezmění celkový dojem z žákova chování, ale změní se přesně ten výkon, na který byla podpora zaměřena?",
         "options": {
           "A": "Že rozhodující je efekt v cílové oblasti, ne to, zda se současně proměnil i celkový dojem z chování.",
           "B": "Že bez proměny celkového chování nelze podporu považovat za účinnou.",
@@ -48174,7 +48174,7 @@ window.battery3MapHard = {
           "A": "historický vývoj zahrnuje i terminologické proměny a proměny cíle oboru",
           "B": "starší názvosloví bývá často deficitněji orientované než novější podpůrné a participační pojetí",
           "C": "integrační a inkluzivní pojetí jsou historicky zcela totožné a nelze je nijak rozlišit",
-          "D": "vývoj oboru nelze číst jen přes jednotlivé osobnosti, ale i přes proměnu zařízení, jazyka a cílů"
+          "D": "vývoj oboru nelze vykládat jen přes jednotlivé osobnosti, ale i přes proměnu zařízení, jazyka a cílů"
         },
         "correctOptionText": "integrační a inkluzivní pojetí jsou historicky zcela totožné a nelze je nijak rozlišit",
         "discipline": "historie speciální pedagogiky / periodizace",
@@ -50044,7 +50044,7 @@ window.battery4MapHard = {
           "D": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka."
         },
         "correctOptionText": "Hlavní obtíž nejspíše spočívá v artikulační nepřesnosti samotného žáka.",
-        "discipline": "surdopedie / funkční čtení situace",
+        "discipline": "surdopedie / funkční posouzení situace",
         "subtopic": "sluchová dostupnost sdělení",
         "conceptTags": [
           "sluchová dostupnost",
@@ -51583,14 +51583,14 @@ window.battery4MapHard = {
         "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
         "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
         "questionNumber": 23,
-        "questionText": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Jaké čtení situace je nejpřesnější?",
+        "questionText": "Dítě potřebuje výraznou názornost, opakování, konkrétní návaznost na běžný život a realistické vzdělávací cíle. Jaké vysvětlení situace je nejpřesnější?",
         "options": {
-          "A": "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
-          "B": "Čtení je bližší surdopedickému rámci než psychopedickému.",
-          "C": "Čtení je bližší tyflopedickému rámci než psychopedickému.",
-          "D": "Čtení je bližší hlasové poruše než psychopedickému rámci."
+          "A": "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
+          "B": "Bližší je surdopedický rámec než psychopedický.",
+          "C": "Bližší je tyflopedický rámec než psychopedický.",
+          "D": "Bližší je hlasová porucha než psychopedický rámec."
         },
-        "correctOptionText": "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
+        "correctOptionText": "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
         "discipline": "psychopedie × etopedie",
         "subtopic": "názornost a realistické cíle",
         "conceptTags": [
@@ -51608,8 +51608,8 @@ window.battery4MapHard = {
           "potřeba názornosti a snížené abstrakce"
         ],
         "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje potřeba názornosti a snížené abstrakce a chování čtené jako vztahově-konfliktní.",
-        "questionCore": "jaké čtení je nejpřesnější při potřebě názornosti a realistických cílů",
-        "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření“. U psychopedie a klasifikačních otázek nestačí jeden nápadný znak. Rozhodující je funkční dopad, adaptivní fungování a celkový obraz, ne izolovaný školní výkon.",
+        "questionCore": "jaké vysvětlení je nejpřesnější při potřebě názornosti a realistických cílů",
+        "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Bližší je psychopedický rámec než rychlé etopedické uzavření“. U psychopedie a klasifikačních otázek nestačí jeden nápadný znak. Rozhodující je funkční dopad, adaptivní fungování a celkový obraz, ne izolovaný školní výkon.",
         "explanationDistractor": "Jiné volby pracovaly s podobným obrazem oslabení, ale méně přesně vystihovaly jeho rozsah a funkční dopad. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na potřeba názornosti a snížené abstrakce a chování čtené jako vztahově-konfliktní.",
         "commonMisconception": "Běžný omyl je stavět závěr na jednom projevu a ne na širším funkčním obrazu. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
         "whyWrongCategory": "Chybná odpověď naznačuje, že se přecenil izolovaný znak a podcenil se širší funkční obraz. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „potřeba názornosti a snížené abstrakce a chování čtené jako vztahově-konfliktní“.",
@@ -51631,8 +51631,8 @@ window.battery4MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
-        "reviewedCorrectOptionText": "Čtení je bližší psychopedickému rámci než rychlému etopedickému uzavření.",
+        "sourceCorrectOptionText": "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
+        "reviewedCorrectOptionText": "Bližší je psychopedický rámec než rychlé etopedické uzavření.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -51681,7 +51681,7 @@ window.battery4MapHard = {
         "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
         "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
         "questionNumber": 24,
-        "questionText": "Na co je při rozlišení psychopedického a etopedického čtení situace nejdůležitější se zeptat, když dítě nápadně odmítá úkol?",
+        "questionText": "Na co je při rozlišení psychopedického a etopedického výkladu situace nejdůležitější se zeptat, když dítě nápadně odmítá úkol?",
         "options": {
           "A": "Co se stane s výkonem po konkrétním modelování, názoru a snížení abstrakční zátěže?",
           "B": "Jak rychle bude možné sepsat kázeňský záznam?",
@@ -51781,12 +51781,12 @@ window.battery4MapHard = {
         "questionNumber": 25,
         "questionText": "Které shrnutí nejpřesněji vystihuje etopedický postkrizový rámec práce?",
         "options": {
-          "A": "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
+          "A": "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
           "B": "převést každou obtíž přímo na stupeň intelektového vývoje",
           "C": "uzavřít každou konfliktovou situaci jako důkaz zrakové bariéry",
           "D": "soustředit se výhradně na artikulační přesnost bez práce s událostí"
         },
-        "correctOptionText": "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
+        "correctOptionText": "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
         "discipline": "etopedie / postkrizová práce",
         "subtopic": "postkrizový rámec",
         "conceptTags": [
@@ -51804,7 +51804,7 @@ window.battery4MapHard = {
         ],
         "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje bezprostřední práce s událostí vs převod na jiný diagnostický rámec.",
         "questionCore": "co nejpřesněji vystihuje etopedický postkrizový rámec práce",
-        "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy“. Shrnutí sbírá hlavní body delšího sdělení a pomáhá uzavřít úsek rozhovoru nebo přejít k dalšímu kroku.",
+        "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy“. Shrnutí sbírá hlavní body delšího sdělení a pomáhá uzavřít úsek rozhovoru nebo přejít k dalšímu kroku.",
         "explanationDistractor": "Jiné volby pracovaly s podobným obrazem oslabení, ale méně přesně vystihovaly jeho rozsah a funkční dopad. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na bezprostřední práce s událostí a převod na jiný diagnostický rámec.",
         "commonMisconception": "Běžný omyl je stavět závěr na jednom projevu a ne na širším funkčním obrazu. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
         "whyWrongCategory": "Chybná odpověď naznačuje, že se přecenil izolovaný znak a podcenil se širší funkční obraz. Taková chyba bývá signálem, že je potřeba zpřesnit pojmy a pořadí uvažování.",
@@ -51827,8 +51827,8 @@ window.battery4MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
-        "reviewedCorrectOptionText": "zkoumat bezprostřední situaci, dětské čtení události, dopad na druhé a možnosti opravy",
+        "sourceCorrectOptionText": "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
+        "reviewedCorrectOptionText": "zkoumat bezprostřední situaci, dětské porozumění události, dopad na druhé a možnosti opravy",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -51974,7 +51974,7 @@ window.battery4MapHard = {
         "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
         "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
         "questionNumber": 27,
-        "questionText": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Jaké čtení situace je nejpřesnější?",
+        "questionText": "Dítě rozumí slovům doslovně, ale opakovaně mine komunikační záměr nepřímé prosby nebo ironie. Jaké vysvětlení situace je nejpřesnější?",
         "options": {
           "A": "Těžiště leží spíše v sociálně-pragmatickém porozumění než v prosté slovní zásobě.",
           "B": "Těžiště leží spíše ve zrakové ostrosti než v pragmatickém porozumění.",
@@ -51993,18 +51993,18 @@ window.battery4MapHard = {
         "questionType": "functional-interpretation",
         "distractorType": "near-framework",
         "trapPattern": "pragmatics-vs-vocabulary",
-        "requiredDiscrimination": "doslovné porozumění a čtení komunikačního záměru",
+        "requiredDiscrimination": "doslovné porozumění a porozumění komunikačnímu záměru",
         "signalPattern": [
-          "doslovné porozumění a čtení komunikačního záměru"
+          "doslovné porozumění a porozumění komunikačnímu záměru"
         ],
-        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje doslovné porozumění a čtení komunikačního záměru.",
+        "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje doslovné porozumění a porozumění komunikačnímu záměru.",
         "questionCore": "jak číst dítě, které míjí nepřímou prosbu a ironii",
         "explanationCorrect": "Vybraná možnost je správně, protože nejlépe vystihuje podstatu problému nebo pojmu. V daném kontextu nejlépe odpovídá vyjádření „Těžiště leží spíše v sociálně-pragmatickém porozumění než v prosté slovní zásobě“. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu.",
-        "explanationDistractor": "Ostatní možnosti byly věrohodné, protože popisovaly komunikaci také, ale nevystihovaly přesně sociálně-pragmatickou rovinu problému. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí doslovné porozumění a čtení komunikačního záměru.",
+        "explanationDistractor": "Ostatní možnosti byly věrohodné, protože popisovaly komunikaci také, ale nevystihovaly přesně sociálně-pragmatickou rovinu problému. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí doslovné porozumění a porozumění komunikačnímu záměru.",
         "commonMisconception": "Studenti často sledují formu řeči, ale méně už to, jak člověk zachází s kontextem a vztahem k partnerovi. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
-        "whyWrongCategory": "Chybná volba ukazuje, že se nerozlišilo mezi formou řeči a jejím sociálním používáním. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „doslovné porozumění a čtení komunikačního záměru“.",
-        "microLesson": "U sociálně-pragmatických obtíží se význam často láme na kontextu, recipročním ladění a komunikačním záměru. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená doslovné porozumění a čtení komunikačního záměru.",
-        "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená doslovné porozumění a čtení komunikačního záměru?",
+        "whyWrongCategory": "Chybná volba ukazuje, že se nerozlišilo mezi formou řeči a jejím sociálním používáním. Typicky se v takové chybě ztratí přesné oddělení toho, co shrnuje výraz „doslovné porozumění a porozumění komunikačnímu záměru“.",
+        "microLesson": "U sociálně-pragmatických obtíží se význam často láme na kontextu, recipročním ladění a komunikačním záměru. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu. Při opakování si proto zkus znovu vlastními slovy vysvětlit, co přesně znamená doslovné porozumění a porozumění komunikačnímu záměru.",
+        "recommendedRecallPrompt": "Jak bys bez opisování odpovědí vysvětlil, co přesně znamená doslovné porozumění a porozumění komunikačnímu záměru?",
         "legislationRef": "oborové vymezení PAS a sociálně-pragmatické komunikace",
         "likelyErrorTypes": [
           "pragmatika-vs-slovní-zásoba",
@@ -52026,9 +52026,9 @@ window.battery4MapHard = {
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
-        "knowledgeTarget": "doslovné porozumění a čtení komunikačního záměru",
+        "knowledgeTarget": "doslovné porozumění a porozumění komunikačnímu záměru",
         "styleParityCheck": "Všechny možnosti zůstávají tematicky blízko; rozhodnout musí přesné obsahové rozlišení, ne délka nebo tón formulace.",
-        "keyProof": "Rozhodující je doslovné porozumění a čtení komunikačního záměru.",
+        "keyProof": "Rozhodující je doslovné porozumění a porozumění komunikačnímu záměru.",
         "legalFreshnessRequired": false,
         "authoringVersion": "2026-04-01-hard-metadata-tutor-revision-v1",
         "formulationFlags": [],
@@ -52036,7 +52036,7 @@ window.battery4MapHard = {
         "knowledgeDemandLevel": "high",
         "processDemandLevel": "high",
         "recommendedRepairFilters": [
-          "doslovné porozumění a čtení komunikačního záměru",
+          "doslovné porozumění a porozumění komunikačnímu záměru",
           "sociálně-pragmatické porozumění",
           "nepřímá prosba",
           "ironie",
@@ -52072,12 +52072,12 @@ window.battery4MapHard = {
         "questionNumber": 28,
         "questionText": "Který znak je nejméně přesně vysvětlitelný čistě sluchovou nedostupností sdělení?",
         "options": {
-          "A": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
+          "A": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
           "B": "ztráta části obsahu při větší vzdálenosti mluvčího a bez vizuální opory",
           "C": "výrazná závislost porozumění na přímém pohledu na mluvčího",
           "D": "rozpad obsahu při akusticky náročném frontálním výkladu"
         },
-        "correctOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
+        "correctOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
         "discipline": "PAS / diferenciální čtení",
         "subtopic": "co nevysvětlí čistě sluchová nedostupnost",
         "conceptTags": [
@@ -52117,8 +52117,8 @@ window.battery4MapHard = {
         "sourceCorrectLetter": "A",
         "reviewedCorrectLetter": "A",
         "effectiveCorrectLetter": "A",
-        "sourceCorrectOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
-        "reviewedCorrectOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a čtení komunikačního záměru i v klidném kontaktu",
+        "sourceCorrectOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
+        "reviewedCorrectOptionText": "stabilní selhávání ve sdílené pozornosti, reciproční výměně a porozumění komunikačnímu záměru i v klidném kontaktu",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -52268,7 +52268,7 @@ window.battery4MapHard = {
         "options": {
           "A": "formálně plynulá řeč bez recipročního přizpůsobení partnerovi a bez práce s perspektivou druhého",
           "B": "stabilní sigmatická odchylka při zachovaném dialogickém ladění",
-          "C": "chraptivý hlas při zachovaném čtení komunikační situace",
+          "C": "chraptivý hlas při zachovaném porozumění komunikační situaci",
           "D": "nosovost řeči při jinak přiměřené reciprocitě"
         },
         "correctOptionText": "formálně plynulá řeč bez recipročního přizpůsobení partnerovi a bez práce s perspektivou druhého",
@@ -52363,7 +52363,7 @@ window.battery4MapHard = {
         "questionText": "Co by zde bylo nejméně přesné vyvozovat, když dítě rozumí doslovnému obsahu, ale opakovaně nezachytí, co druhý „myslel mezi řádky“?",
         "options": {
           "A": "Může jít o oslabené pragmatické zpracování komunikačního záměru.",
-          "B": "Může jít o bariéru v perspektivním a sociálně-kontextovém čtení sdělení.",
+          "B": "Může jít o bariéru v perspektivním a sociálně-kontextovém porozumění sdělení.",
           "C": "Může jít o obtíž, která přesahuje pouhou slovní zásobu.",
           "D": "Nejspíše jde primárně o artikulační odchylku jednotlivých hlásek."
         },
@@ -53131,7 +53131,7 @@ window.battery4MapHard = {
         "questionText": "Které tvrzení o klasifikaci závažnosti poruchy intelektového vývoje vystihuje věc nejlépe?",
         "options": {
           "A": "Klasifikace pomáhá orientačně, ale sama nevystihuje plně individuální vzdělávací potřeby.",
-          "B": "Klasifikace sama přesně určí celý vzdělávací plán bez potřeby dalšího funkčního čtení.",
+          "B": "Klasifikace sama přesně určí celý vzdělávací plán bez potřeby dalšího funkčního posouzení.",
           "C": "Klasifikace je v edukaci bezcenná a nemá žádný orientační význam.",
           "D": "Klasifikace se týká jen medicíny a v psychopedii se neuvažuje."
         },
@@ -53226,16 +53226,16 @@ window.battery4MapHard = {
         "batteryTitle": "Disciplíny speciální pedagogiky, vnitřní termíny a klasifikační rozlišení",
         "batterySubtitle": "Krátké diferenční položky na vnitřní terminologii, klasifikační osy, diagnostické znaky a osobnostní kotvy uvnitř speciálněpedagogických disciplín.",
         "questionNumber": 40,
-        "questionText": "Co by v psychopedickém a klasifikačním čtení situace bylo nejméně přesné?",
+        "questionText": "Co by v psychopedickém a klasifikačním posouzení situace bylo nejméně přesné?",
         "options": {
           "A": "Podpůrné a vzdělávací důsledky se nesmějí odvozovat jen mechanicky od diagnostické nálepky.",
           "B": "Důležitou roli hraje i adaptivní fungování a reálný funkční profil.",
           "C": "Rozhodující může být vztah mezi stupněm obtíže a konkrétní podporou v běžném životě.",
-          "D": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení."
+          "D": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení."
         },
-        "correctOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení.",
-        "discipline": "psychopedie / funkční čtení klasifikace",
-        "subtopic": "diagnostický štítek vs funkční čtení",
+        "correctOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení.",
+        "discipline": "psychopedie / funkční posouzení klasifikace",
+        "subtopic": "diagnostický štítek vs funkční posouzení",
         "conceptTags": [
           "diagnostický štítek",
           "funkční profil",
@@ -53249,7 +53249,7 @@ window.battery4MapHard = {
           "mechanické odvození vzdělávacího závěru od štítku a funkčn"
         ],
         "signalHint": "Nejdřív rozliš, zda jde o symptom, diagnózu, disciplínu nebo metodu. Tady rozhoduje mechanické odvození vzdělávacího závěru od štítku a funkční a adaptivní čtení.",
-        "questionCore": "které závěr je nejméně přesné v psychopedickém a klasifikačním čtení situace",
+        "questionCore": "který závěr je nejméně přesný v psychopedickém a klasifikačním posouzení situace",
         "explanationCorrect": "Smyslem otázky bylo vytipovat možnost, která je v daném kontextu nejméně přesná. Správně označená je proto, že přehlíží to, co bylo potřeba přesně oddělit: mechanické odvození vzdělávacího závěru od štítku a funkční a adaptivní čtení. Diagnostický ústav je vstupní článek systému, který dítě přijímá, posuzuje a navrhuje další umístění.",
         "explanationDistractor": "Jiné volby pracovaly s podobným obrazem oslabení, ale méně přesně vystihovaly jeho rozsah a funkční dopad. Snadno se proto vybírá možnost, která je tématu blízko, ale neposouvá odpověď tam, kam otázka skutečně míří. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na mechanické odvození vzdělávacího závěru od štítku a funkční a adaptivní čtení.",
         "commonMisconception": "Běžný omyl je stavět závěr na jednom projevu a ne na širším funkčním obrazu. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -53272,8 +53272,8 @@ window.battery4MapHard = {
         "sourceCorrectLetter": "D",
         "reviewedCorrectLetter": "D",
         "effectiveCorrectLetter": "D",
-        "sourceCorrectOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení.",
-        "reviewedCorrectOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního čtení.",
+        "sourceCorrectOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení.",
+        "reviewedCorrectOptionText": "Pro vzdělávací závěr plně stačí samotný diagnostický štítek bez dalšího funkčního posouzení.",
         "answerAuditStatus": "revidováno-pro-tutor",
         "answerAuditNote": "Texty pro Tutor byly přepracovány bez explicitních písmen odpovědí a položka byla sladěna se skutečnou hard otázkou.",
         "answerAuditConfidence": "vysoká",
@@ -53296,7 +53296,7 @@ window.battery4MapHard = {
         "metadataOrigin": "hard-metadata-revision-2026-04-01",
         "metadataSourceRef": "B04Q40",
         "conceptFamily": "klasifikační a terminologické rozlišení",
-        "distinctionAxis": "štítek × funkční čtení",
+        "distinctionAxis": "štítek × funkční posouzení",
         "timeSensitivity": "stable",
         "schoolLevelMatrix": "MŠ–SŠ / průřezově",
         "institutionDomain": "speciální pedagogika / disciplíny",
@@ -56732,7 +56732,7 @@ window.battery5MapHard = {
           "strukturovaná podpora prostředí a jiné rámce"
         ],
         "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje strukturovaná podpora prostředí a jiné rámce.",
-        "questionCore": "jak číst situaci s PAS a strukturací",
+        "questionCore": "jak vyložit situaci s PAS a strukturací",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „Situace je bližší strukturovanému učení než reedukačnímu nácviku samotné oslabené funkce“. U autismu a sociálně-pragmatických obtíží nebývá problém jen ve slovech samotných, ale v nevyřčeném významu, recipročním ladění a kontextu.",
         "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Odpověď bylo potřeba vybírat podle toho, zda student přesně oddělí strukturovaná podpora prostředí a jiné rámce.",
         "commonMisconception": "Často se plete, zda podpora zlepšuje oslabenou funkci, nebo jen vytváří jinou cestu k výkonu. Právě tady se ukazuje, že nestačí poznat téma obecně, ale je potřeba udržet jeho přesné vymezení.",
@@ -57018,7 +57018,7 @@ window.battery5MapHard = {
           "existenciální a smyslový rámec a jiné podpůrné mechanismy"
         ],
         "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje existenciální a smyslový rámec a jiné podpůrné mechanismy.",
-        "questionCore": "jak číst situaci zaměřenou na smysl",
+        "questionCore": "jak vyložit situaci zaměřenou na smysl",
         "explanationCorrect": "Správná možnost odpovídá přesně tomu, co je v zadání opravdu důležité. V daném kontextu nejlépe odpovídá vyjádření „Je bližší logoterapeutický rámec než strukturované učení nebo reedukační trénink“. Reedukace usiluje o posílení nebo zlepšení oslabené funkce; neslouží jen k obcházení potíže jinou cestou.",
         "explanationDistractor": "Jiné možnosti mohly vypadat stejně podpůrně, ale mířily na jiný cíl zásahu než ten, který zadání vyžadovalo. Rozhodující nebylo, co zní obecně odborně, ale co přesně sedí na existenciální a smyslový rámec a jiné podpůrné mechanismy.",
         "commonMisconception": "Často se plete, zda podpora zlepšuje oslabenou funkci, nebo jen vytváří jinou cestu k výkonu. Když si student neověří, co je v otázce skutečně klíčové, snadno sáhne po variantě, která je jen zdánlivě blízko.",
@@ -57312,7 +57312,7 @@ window.battery5MapHard = {
           "funkční komunikační cesta a odklad komunikace nebo nerelev"
         ],
         "signalHint": "Nejdřív si řekni, jaký je cíl podpory a jakým mechanismem má působit. Tady rozhoduje funkční komunikační cesta a odklad komunikace nebo nerelevantní výkon.",
-        "questionCore": "jak číst situaci s omezenou mluvenou produkcí",
+        "questionCore": "jak vyložit situaci s omezenou mluvenou produkcí",
         "explanationCorrect": "Tato varianta sedí, protože zachycuje rozhodující znak popsané situace. V daném kontextu nejlépe odpovídá vyjádření „uvažovat o AAK jako o funkční cestě ke sdělování potřeb a voleb“. AAK rozšiřuje nebo nahrazuje mluvenou řeč tak, aby člověk mohl funkčně sdělovat potřeby, volby, postoje i složitější obsah.",
         "explanationDistractor": "Jiné možnosti vypadaly užitečně, ale neřešily přímo funkční komunikaci nebo nebyly zvolené v souladu s potřebami uživatele. U podobných položek bývá lákavá odpověď, která je jen částečně pravdivá nebo patří do stejné oblasti. Právě v tom se ukázalo, zda je odlišené funkční komunikační cesta a odklad komunikace nebo nerelevantní výkon.",
         "commonMisconception": "Častou chybou je soustředit se na pomůcku samotnou a zapomenout na reálné používání v běžných situacích. Pomáhá proto nevycházet jen z povědomého slova nebo nápadného detailu, ale z celé logiky situace.",
