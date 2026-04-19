@@ -2316,6 +2316,8 @@ function selectBattery(id) {
 
   
 function startBattery(id, options = {}) {
+  reviewRendered = false;
+  if (typeof hideReview === "function") hideReview();
   const difficultyMode = getDatasetByMode(options.difficultyMode || appState.settings.difficultyMode || "basic").key;
   const battery = getDatasetByMode(difficultyMode).batteryMap[id];
   if (!battery) return;
@@ -2387,6 +2389,10 @@ function finishTest(timeExpired = false) {
   s.results.timeExpired = timeExpired;
   s.timing.finishedAt = new Date().toISOString();
   stopTimer();
+  
+  reviewRendered = false;
+  if (typeof hideReview === "function") hideReview();
+
   const score = calculateScore();
   addHistoryEntry({
     sessionId: s.sessionId,
