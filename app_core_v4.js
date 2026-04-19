@@ -381,7 +381,8 @@ const BATTERY_DETAIL_COPY_HARD = {
   5:{purposeText:"Baterie míří na školský systém, podpůrná opatření a práci s dokumenty.",profileParagraphs:["Rozhoduje orientace v tom, kdo co ve škole a ve školských poradenských zařízeních navrhuje, vytváří, realizuje a vyhodnocuje.","Silně je zastoupena procesní logika PO1, PLPP, IVP a hranice mezi školou, ŠPP a ŠPZ."]},
   6:{purposeText:"Baterie rozšiřuje přípravu o sociální a zdravotní přesah.",profileParagraphs:["Položky rozlišují dávky, průkazy OZP, sociální služby, OSPOD a hranice mezi školstvím, sociální oblastí a zdravotnictvím.","Častou chybou bývá záměna podobně znějících nároků nebo služeb s odlišným účelem."]},
   7:{purposeText:"Baterie prověřuje poradenský úsudek, etiku a kvalitu procesu.",profileParagraphs:["Těžiště je ve vyjasnění zakázky, interpretaci dat bez redukce na nálepku, respektu ke kompetencím a převodu závěru do podpory.","Silná odpověď drží poradenskou logiku od prvního kontaktu až po vyhodnocení účinku podpory."]},
-  8:{purposeText:"Finální baterie slouží jako nejtvrdší syntetická simulace přijímacího testu.",profileParagraphs:["Soustreďuje krátké rozlišovací položky z pojmů, institucí, dokumentů, psychologie, historie oboru i sociálně-legislativní orientace.","Rozhoduje přesnost, stabilní terminologie a schopnost nenechat se stáhnout distraktorem k blízké, ale nepřesné možnosti."]}
+  8:{purposeText:"Finální baterie slouží jako nejtvrdší syntetická simulace přijímacího testu.",profileParagraphs:["Soustreďuje krátké rozlišovací položky z pojmů, institucí, dokumentů, psychologie, historie oboru i sociálně-legislativní orientace.","Rozhoduje přesnost, stabilní terminologie a schopnost nenechat se stáhnout distraktorem k blízké, ale nepřesné možnosti."]},
+  9:{purposeText:"Baterie se zaměřuje na historii oboru, vzdělávání dospělých a seniorů, nadání a tyflopedickou podporu.",profileParagraphs:["Ověřuje orientaci v historickém vývoji speciální pedagogiky, v pojetí celoživotní edukace (andragogika, gerontagogika), v problematice nadání a v systému podpory osob se zrakovým postižením.","Klíčové je přesné rozlišení historických milníků, rolí školských poradenských zařízení a specifických tyflopedických pomůcek a služeb."]}
 };
 
 function getBatteryDetailCopy(battery) {
@@ -528,7 +529,7 @@ function loadSettings() {
 function getDefaultSettings() {
   return {
     schemaVersion: SCHEMA_VERSION,
-    difficultyMode: "basic",
+    difficultyMode: "hard",
     restoreSessionOnLoad: true,
     defaultMode: "simulation",
     defaultGoal: "attention",
@@ -2631,10 +2632,7 @@ function initApp() {
   renderHistoryPanel();
   populateStatsFilter();
   
-  if (appState.settings.restoreSessionOnLoad) {
-    const saved = loadCurrentSession();
-    if (saved) { resumeSession(); return; }
-  }
+
   setAppMode("start");
   if (typeof switchMainTab === "function") switchMainTab("guide");
 }
