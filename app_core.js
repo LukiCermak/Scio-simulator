@@ -32,7 +32,7 @@
   };
 
   const analyticsBridge = {
-    normalizeProgress: typeof window.normalizeProgressV4 === "function" ? window.normalizeProgressV4 : null,
+    normalizeProgress: typeof window.normalizeProgress === "function" ? window.normalizeProgress : null,
     buildStudyDashboardSummary: typeof window.buildStudyDashboardSummary === "function" ? window.buildStudyDashboardSummary : (typeof window.buildWeaknessSummary === "function" ? window.buildWeaknessSummary : null),
     buildRecommendations: typeof window.buildRecommendations === "function" ? window.buildRecommendations : null,
     updateProgressFromSession: typeof window.updateProgressFromSession === "function" ? window.updateProgressFromSession : null,
@@ -62,8 +62,8 @@
 // ═══════════════════════════════════════════
 // 2. DATA NORMALIZATION (BASE + HARD)
 // ═══════════════════════════════════════════
-const RAW_BATTERIES_BASE = Array.isArray(window.SCIO_V4_RAW_BATTERIES) ? window.SCIO_V4_RAW_BATTERIES : [];
-const RAW_BATTERIES_HARD = Array.isArray(window.SCIO_V4_RAW_BATTERIES_HARD) ? window.SCIO_V4_RAW_BATTERIES_HARD : [];
+const RAW_BATTERIES_BASE = Array.isArray(window.SCIO_RAW_BATTERIES) ? window.SCIO_RAW_BATTERIES : [];
+const RAW_BATTERIES_HARD = Array.isArray(window.SCIO_RAW_BATTERIES_HARD) ? window.SCIO_RAW_BATTERIES_HARD : [];
 
 function normalizeDifficultyMode(value) {
   return String(value || "").trim().toLowerCase() === "hard" ? "hard" : "basic";
@@ -73,13 +73,8 @@ function getDifficultyModeLabel(mode) {
 }
 function loadMetadataExport(mode = "basic") {
   return normalizeDifficultyMode(mode) === "hard"
-    ? (window.metadataExportHard || { schemaVersion: 0, items: [] })
-    : (window.metadataExport || { schemaVersion: 0, items: [] });
-}
-function loadBattery8MetadataMap(mode = "basic") {
-  return normalizeDifficultyMode(mode) === "hard"
-    ? (window.battery8MapHard || { schemaVersion: 0, items: [] })
-    : (window.battery8Map || { schemaVersion: 0, items: [] });
+    ? (window.SCIO_METADATA_HARD || { schemaVersion: 0, items: [] })
+    : (window.SCIO_METADATA_BASIC || { schemaVersion: 0, items: [] });
 }
 function sanitizeTutorExplanationText(text) {
   return String(text || "")
@@ -136,26 +131,6 @@ function normalizeMetadataItem(item) {
     curationStatus: String(base.curationStatus || "auto-curated-v1").trim()
   };
 }
-function normalizeBattery8MapItem(item) {
-  const base = item && typeof item === "object" ? item : {};
-  const globalId = `B08Q${String(base.questionNumber || 0).padStart(2, "0")}`;
-  const resolved = normalizeMetadataItem({
-    globalId,
-    batteryId: 8,
-    batteryLabel: base.batteryLabel || "Baterie 8",
-    batteryTitle: base.batteryTitle || "",
-    questionNumber: base.questionNumber || 0,
-    sourceCorrectLetter: base.correctLetter || "",
-    reviewedCorrectLetter: base.correctLetter || "",
-    effectiveCorrectLetter: base.correctLetter || "",
-    metadataOrigin: base.metadataOrigin || "battery8-bridge",
-    metadataSourceRef: base.metadataSourceRef || base.primarySourceGlobalId || globalId,
-    metadataConfidence: base.matchConfidence ?? 0.5,
-    curationStatus: (base.resolvedMetadata && base.resolvedMetadata.curationStatus) || base.curationStatus || "battery8-derived-v1",
-    ...(base.resolvedMetadata || {})
-  });
-  return { ...base, globalId, resolvedMetadata: resolved };
-}
 function buildMetadataIndex(metadataExport) {
   const index = {};
   const items = Array.isArray(metadataExport?.items) ? metadataExport.items : [];
@@ -165,25 +140,12 @@ function buildMetadataIndex(metadataExport) {
   });
   return index;
 }
-function buildBattery8MapIndex(battery8Map) {
-  const index = {};
-  const items = Array.isArray(battery8Map?.items) ? battery8Map.items : [];
-  items.forEach(item => {
-    const normalized = normalizeBattery8MapItem(item);
-    if (normalized.globalId) index[normalized.globalId] = normalized;
-  });
-  return index;
-}
 
 const METADATA_EXPORT_BASE = loadMetadataExport("basic");
 const METADATA_EXPORT_HARD = loadMetadataExport("hard");
-const BATTERY8_EXPORT_BASE = loadBattery8MetadataMap("basic");
-const BATTERY8_EXPORT_HARD = loadBattery8MetadataMap("hard");
 
 const METADATA_INDEX_BASE = buildMetadataIndex(METADATA_EXPORT_BASE);
 const METADATA_INDEX_HARD = buildMetadataIndex(METADATA_EXPORT_HARD);
-const BATTERY8_MAP_BASE = buildBattery8MapIndex(BATTERY8_EXPORT_BASE);
-const BATTERY8_MAP_HARD = buildBattery8MapIndex(BATTERY8_EXPORT_HARD);
 
 function inferFormulationFlagsFromText(text) {
   const src = String(text || "").toLowerCase();
@@ -257,15 +219,14 @@ function resolveQuestionEffectiveCorrect(question, metadataItem) {
 }
 function getMetadataIndexes(datasetKey = "basic") {
   return normalizeDifficultyMode(datasetKey) === "hard"
-    ? { metadataIndex: METADATA_INDEX_HARD, battery8Map: BATTERY8_MAP_HARD }
-    : { metadataIndex: METADATA_INDEX_BASE, battery8Map: BATTERY8_MAP_BASE };
+    ? { metadataIndex: METADATA_INDEX_HARD }
+    : { metadataIndex: METADATA_INDEX_BASE };
 }
 function normalizeQuestionMetadata(question, context) {
   const { batteryId, batteryLabel, questionNumber, globalId, datasetKey } = context;
   const indexes = getMetadataIndexes(datasetKey);
   let metadataItem = null;
-  if (batteryId === 8 && indexes.battery8Map[globalId]) metadataItem = indexes.battery8Map[globalId].resolvedMetadata;
-  else if (indexes.metadataIndex[globalId]) metadataItem = indexes.metadataIndex[globalId];
+  if (indexes.metadataIndex[globalId]) metadataItem = indexes.metadataIndex[globalId];
   const fallback = buildReviewFallbacks(question, batteryLabel);
   const merged = { ...fallback, ...(metadataItem || {}) };
   merged.globalId = merged.globalId || globalId;
@@ -326,16 +287,14 @@ const DATASETS = {
     label: getDifficultyModeLabel("basic"),
     batteries: BASIC_BATTERIES,
     batteryMap: BASIC_BATTERY_MAP,
-    metadataExport: METADATA_EXPORT_BASE,
-    battery8Map: BATTERY8_EXPORT_BASE
+    metadataExport: METADATA_EXPORT_BASE
   },
   hard: {
     key: "hard",
     label: getDifficultyModeLabel("hard"),
     batteries: HARD_BATTERIES,
     batteryMap: HARD_BATTERY_MAP,
-    metadataExport: METADATA_EXPORT_HARD,
-    battery8Map: BATTERY8_EXPORT_HARD
+    metadataExport: METADATA_EXPORT_HARD
   }
 };
 
@@ -1576,7 +1535,7 @@ function runDashboardPracticeAction(kind, value) {
         summary = normalizeDashboardSummary((analyticsBridge.buildStudyDashboardSummary || buildWeaknessSummary)());
         totalSessions = Number(summary.finishedSessions || appState.progress?.testCount || 0);
       } catch (err) {
-        console.error("SCIO v4: nepodařilo se obnovit progress pro dashboard.", err);
+        console.error("SCIO: nepodařilo se obnovit progress pro dashboard.", err);
       }
     }
 
@@ -1588,7 +1547,7 @@ function runDashboardPracticeAction(kind, value) {
           totalSessions = Number(summary.finishedSessions || 0);
         }
       } catch (err) {
-        console.error("SCIO v4: nepodařilo se sestavit fallback dashboard z aktuální relace.", err);
+        console.error("SCIO: nepodařilo se sestavit fallback dashboard z aktuální relace.", err);
       }
     }
 
@@ -1608,7 +1567,7 @@ function runDashboardPracticeAction(kind, value) {
     try {
       summary = resolveDashboardSummaryForStart();
     } catch (err) {
-      console.error("SCIO v4: chyba při přípravě dashboard summary.", err);
+      console.error("SCIO: chyba při přípravě dashboard summary.", err);
       summary = normalizeDashboardSummary({});
     }
 
@@ -1766,7 +1725,7 @@ function runDashboardPracticeAction(kind, value) {
         btn.addEventListener("click", () => runDashboardPracticeAction(btn.dataset.kind, btn.dataset.value));
       });
     } catch (err) {
-      console.error("SCIO v4: chyba v renderWeaknessPanel.", err);
+      console.error("SCIO: chyba v renderWeaknessPanel.", err);
       const weakTopics = (summary.riskySubtopics && summary.riskySubtopics.length ? summary.riskySubtopics : summary.weakestSubtopics || []).slice(0, 5);
       const strongTopics = (summary.masteredSubtopics && summary.masteredSubtopics.length ? summary.masteredSubtopics : summary.strongestSubtopics || []).slice(0, 5);
       const topErrors = (summary.topErrors || []).slice(0, 3);
@@ -2082,14 +2041,14 @@ function renderQuickActions(qs,ci) {
       inferAutoErrorTypes();
       updateProgressFromSession();
     } catch (err) {
-      console.error("SCIO v4: chyba při zápisu progressu.", err);
+      console.error("SCIO: chyba při zápisu progressu.", err);
     }
 
-    try { renderPerformanceSummary(score,metrics); } catch (err) { console.error("SCIO v4: chyba v renderPerformanceSummary.", err); }
-    try { renderAttentionDashboard(metrics); } catch (err) { console.error("SCIO v4: chyba v renderAttentionDashboard.", err); }
-    try { renderThematicWeaknesses(); } catch (err) { console.error("SCIO v4: chyba v renderThematicWeaknesses.", err); $("thematicWeaknesses").innerHTML = `<div class="dashboard"><h4>Tematická mapa (z tohoto testu)</h4><div class="dash-detail">Tematický rozbor se teď nepodařilo načíst, ale výsledek testu je uložený správně.</div></div>`; }
-    try { renderRecommendationsPanel(); } catch (err) { console.error("SCIO v4: chyba v renderRecommendationsPanel.", err); $("recommendationsPanel").innerHTML = `<div class="dashboard" style="background:#f4fafd; border-color:#d5e7f2;"><h4 style="color:#17597a; margin-bottom:8px;">Doporučení pro další postup</h4><div class="dash-detail">Doporučení se teď nepodařilo dopočítat. Výsledek testu je ale zapsaný.</div></div>`; }
-    try { renderRepairPanel(); } catch (err) { console.error("SCIO v4: chyba v renderRepairPanel.", err); $("repairPanel")?.classList.add("hidden"); }
+    try { renderPerformanceSummary(score,metrics); } catch (err) { console.error("SCIO: chyba v renderPerformanceSummary.", err); }
+    try { renderAttentionDashboard(metrics); } catch (err) { console.error("SCIO: chyba v renderAttentionDashboard.", err); }
+    try { renderThematicWeaknesses(); } catch (err) { console.error("SCIO: chyba v renderThematicWeaknesses.", err); $("thematicWeaknesses").innerHTML = `<div class="dashboard"><h4>Tematická mapa (z tohoto testu)</h4><div class="dash-detail">Tematický rozbor se teď nepodařilo načíst, ale výsledek testu je uložený správně.</div></div>`; }
+    try { renderRecommendationsPanel(); } catch (err) { console.error("SCIO: chyba v renderRecommendationsPanel.", err); $("recommendationsPanel").innerHTML = `<div class="dashboard" style="background:#f4fafd; border-color:#d5e7f2;"><h4 style="color:#17597a; margin-bottom:8px;">Doporučení pro další postup</h4><div class="dash-detail">Doporučení se teď nepodařilo dopočítat. Výsledek testu je ale zapsaný.</div></div>`; }
+    try { renderRepairPanel(); } catch (err) { console.error("SCIO: chyba v renderRepairPanel.", err); $("repairPanel")?.classList.add("hidden"); }
 
     // Populate Sidebar Stats
     const sideScoreBig = $("sideScoreBig");
@@ -2657,14 +2616,14 @@ function populateStatsFilter() {
     });
 }
 
-  window.initSCIOV4 = initApp;
+  window.initSCIO = initApp;
   window.startBattery = startBattery;
   window.getActiveBatteries = getActiveBatteries;
   window.getActiveBatteryMap = getActiveBatteryMap;
   window.getActiveDataset = getActiveDataset;
   window.getDifficultyModeLabel = getDifficultyModeLabel;
   window.normalizeDifficultyMode = normalizeDifficultyMode;
-  window.SCIO_V4_SHARED = {
+  window.SCIO_SHARED = {
     LETTERS,
     STORAGE_KEYS,
     LEGACY_STORAGE_KEYS,
@@ -2678,11 +2637,8 @@ function populateStatsFilter() {
     DATASETS,
     ERROR_LABELS,
     loadMetadataExport,
-    loadBattery8MetadataMap,
     buildMetadataIndex,
-    buildBattery8MapIndex,
     normalizeMetadataItem,
-    normalizeBattery8MapItem,
     normalizeQuestionMetadata,
     buildReviewFallbacks,
     attachMetadataToBatteryQuestions,

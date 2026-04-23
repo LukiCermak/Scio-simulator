@@ -428,7 +428,7 @@ function renderWeaknessMap() {
     const panel = $("repairPanel");
     if (!visible.length) { panel.classList.add("hidden"); panel.innerHTML = ""; return; }
     panel.classList.remove("hidden");
-    panel.innerHTML = `<div class="dashboard"><h4>Opravné sady v4</h4><div class="action-grid">${visible.map((item, idx) => `<div class="action-card"><h5>${escapeHtml(item.label)}</h5><p>${item.count} otázek</p><button class="btn btn-primary btn-sm" data-repair-index="${idx}" type="button">Spustit opravnou sadu</button></div>`).join("")}</div></div>`;
+    panel.innerHTML = `<div class="dashboard"><h4>Opravné sady</h4><div class="action-grid">${visible.map((item, idx) => `<div class="action-card"><h5>${escapeHtml(item.label)}</h5><p>${item.count} otázek</p><button class="btn btn-primary btn-sm" data-repair-index="${idx}" type="button">Spustit opravnou sadu</button></div>`).join("")}</div></div>`;
     panel.querySelectorAll("[data-repair-index]").forEach(btn => btn.addEventListener("click", () => startRepairModeFromResults(visible[Number(btn.dataset.repairIndex)].key)));
   }
   window.renderRepairPanel = renderRepairPanel;

@@ -40,9 +40,10 @@
   });
 
   function bootApp() {
-    if (booted || typeof window.initSCIOV4 !== "function") return;
+    const init = typeof window.initSCIO === "function" ? window.initSCIO : null;
+    if (booted || typeof init !== "function") return;
     booted = true;
-    window.initSCIOV4();
+    init();
   }
 
   if (document.readyState === "loading") {

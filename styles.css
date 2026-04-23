@@ -458,7 +458,7 @@
     }
   
 
-/* v4 additions */
+/* App additions */
 .review-reflection { width:100%; min-height:86px; border:1px solid var(--line); border-radius:12px; padding:10px 12px; background:#fff; color:var(--text); }
 .review-actions-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
 .pill.warn { background:var(--amber-soft); color:#8a5d02; }

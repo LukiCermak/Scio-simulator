@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-04-23T13:48:31.380Z",
+  "runtime": {
+    "basic": {
+      "batteryCount": 8,
+      "metadataCount": 400
+    },
+    "hard": {
+      "batteryCount": 9,
+      "metadataCount": 450
+    }
+  },
+  "runtimeMetadataKeys": [
+    "globalId",
+    "batteryId",
+    "questionNumber",
+    "sourceCorrectLetter",
+    "reviewedCorrectLetter",
+    "effectiveCorrectLetter",
+    "discipline",
+    "subtopic",
+    "conceptTags",
+    "questionType",
+    "distractorType",
+    "trapPattern",
+    "requiredDiscrimination",
+    "signalPattern",
+    "signalHint",
+    "attentionRisk",
+    "formulationFlags",
+    "questionCore",
+    "explanationCorrect",
+    "explanationDistractor",
+    "commonMisconception",
+    "whyWrongCategory",
+    "microLesson",
+    "recommendedRecallPrompt",
+    "likelyErrorTypes",
+    "repairTags",
+    "institutionPair",
+    "recommendedRepairFilters",
+    "revisionPriority",
+    "distinctionAxis"
+  ]
+}

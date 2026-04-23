@@ -1,96 +1,96 @@
-
+﻿
 (function(){
   "use strict";
 
-  const ERROR_LABELS_V4 = {
-    "no-answer": "Bez odpovědi",
-    "missed-negation": "Přehlédnutá negace",
-    "institution-confusion": "Záměna institucí a kompetencí",
-    "concept-confusion": "Záměna pojmů",
-    "terminology-confusion": "Záměna terminologie",
-    "misread-question": "Nepřesné přečtení zadání",
-    "reading-misalignment": "Nepřesné přečtení zadání",
-    "impulsive-click": "Ukvapené rozhodnutí",
-    "impulsive-decision": "Ukvapené rozhodnutí",
-    "overthinking": "Překombinování",
-    "time-pressure": "Tlak času",
-    "false-confidence": "Falešná jistota",
-    "distractor-trap": "Svedení blízkou, ale nepřesnou možností",
+  const ERROR_LABELS_MAP = {
+    "no-answer": "Bez odpovÄ›di",
+    "missed-negation": "PĹ™ehlĂ©dnutĂˇ negace",
+    "institution-confusion": "ZĂˇmÄ›na institucĂ­ a kompetencĂ­",
+    "concept-confusion": "ZĂˇmÄ›na pojmĹŻ",
+    "terminology-confusion": "ZĂˇmÄ›na terminologie",
+    "misread-question": "NepĹ™esnĂ© pĹ™eÄŤtenĂ­ zadĂˇnĂ­",
+    "reading-misalignment": "NepĹ™esnĂ© pĹ™eÄŤtenĂ­ zadĂˇnĂ­",
+    "impulsive-click": "UkvapenĂ© rozhodnutĂ­",
+    "impulsive-decision": "UkvapenĂ© rozhodnutĂ­",
+    "overthinking": "PĹ™ekombinovĂˇnĂ­",
+    "time-pressure": "Tlak ÄŤasu",
+    "false-confidence": "FaleĹˇnĂˇ jistota",
+    "distractor-trap": "SvedenĂ­ blĂ­zkou, ale nepĹ™esnou moĹľnostĂ­",
     "attention-slip": "Nepozornost",
     "inattention": "Nepozornost",
-    "knowledge-gap": "Obsahová slabina"
+    "knowledge-gap": "ObsahovĂˇ slabina"
   };
 
-  const ERROR_LABEL_OVERRIDES_V4 = {
-    "output-content-confusion": "Záměna formy odpovědi a skutečné znalosti",
-    "access-content-confusion": "Záměna přístupu k informaci a porozumění",
-    "access-production-confusion": "Záměna přístupu k informaci a formy výkonu",
-    "category-before-function": "Záměna kategorie a skutečné funkce",
-    "function-vs-appearance": "Záměna podstaty obtíže a nápadného projevu",
-    "environment-vs-function": "Záměna vlivu prostředí a skutečné funkce",
-    "goal-mechanism-mixup": "Záměna cíle zásahu a jeho mechanismu",
-    "goal-route-confusion": "Záměna cíle podpory a cesty k němu",
-    "goal-domain-error": "Záměna cíle podpory a oblasti zásahu",
-    "device-vs-process": "Záměna pomůcky a postupu",
-    "document-confusion": "Záměna dokumentů",
-    "document-function-mixup": "Záměna funkce dokumentů",
-    "document-origin-confusion": "Záměna původu dokumentu",
-    "authority-mixup": "Záměna rozhodujícího orgánu",
-    "competence-mixup": "Záměna kompetencí",
-    "institution-mixup": "Záměna institucí",
-    "benefit-vs-service": "Záměna dávky a služby",
-    "decision-vs-payment-confusion": "Záměna rozhodování a výplaty",
-    "metoda-pomůcka-záměna": "Záměna metody a pomůcky",
-    "kompenzace-reedukace-záměna": "Záměna kompenzace a reedukace",
-    "augmentativní-alternativní-záměna": "Záměna augmentativní a alternativní komunikace",
-    "evaluation-confusion": "Záměna vyhodnocení a samotného zásahu",
-    "framework-confusion": "Záměna odborných rámců",
-    "historical-anchor-confusion": "Záměna historických souvislostí",
-    "authority-role-mixup": "Záměna role a rozhodovací pravomoci"
+  const ERROR_LABEL_OVERRIDES = {
+    "output-content-confusion": "ZĂˇmÄ›na formy odpovÄ›di a skuteÄŤnĂ© znalosti",
+    "access-content-confusion": "ZĂˇmÄ›na pĹ™Ă­stupu k informaci a porozumÄ›nĂ­",
+    "access-production-confusion": "ZĂˇmÄ›na pĹ™Ă­stupu k informaci a formy vĂ˝konu",
+    "category-before-function": "ZĂˇmÄ›na kategorie a skuteÄŤnĂ© funkce",
+    "function-vs-appearance": "ZĂˇmÄ›na podstaty obtĂ­Ĺľe a nĂˇpadnĂ©ho projevu",
+    "environment-vs-function": "ZĂˇmÄ›na vlivu prostĹ™edĂ­ a skuteÄŤnĂ© funkce",
+    "goal-mechanism-mixup": "ZĂˇmÄ›na cĂ­le zĂˇsahu a jeho mechanismu",
+    "goal-route-confusion": "ZĂˇmÄ›na cĂ­le podpory a cesty k nÄ›mu",
+    "goal-domain-error": "ZĂˇmÄ›na cĂ­le podpory a oblasti zĂˇsahu",
+    "device-vs-process": "ZĂˇmÄ›na pomĹŻcky a postupu",
+    "document-confusion": "ZĂˇmÄ›na dokumentĹŻ",
+    "document-function-mixup": "ZĂˇmÄ›na funkce dokumentĹŻ",
+    "document-origin-confusion": "ZĂˇmÄ›na pĹŻvodu dokumentu",
+    "authority-mixup": "ZĂˇmÄ›na rozhodujĂ­cĂ­ho orgĂˇnu",
+    "competence-mixup": "ZĂˇmÄ›na kompetencĂ­",
+    "institution-mixup": "ZĂˇmÄ›na institucĂ­",
+    "benefit-vs-service": "ZĂˇmÄ›na dĂˇvky a sluĹľby",
+    "decision-vs-payment-confusion": "ZĂˇmÄ›na rozhodovĂˇnĂ­ a vĂ˝platy",
+    "metoda-pomĹŻcka-zĂˇmÄ›na": "ZĂˇmÄ›na metody a pomĹŻcky",
+    "kompenzace-reedukace-zĂˇmÄ›na": "ZĂˇmÄ›na kompenzace a reedukace",
+    "augmentativnĂ­-alternativnĂ­-zĂˇmÄ›na": "ZĂˇmÄ›na augmentativnĂ­ a alternativnĂ­ komunikace",
+    "evaluation-confusion": "ZĂˇmÄ›na vyhodnocenĂ­ a samotnĂ©ho zĂˇsahu",
+    "framework-confusion": "ZĂˇmÄ›na odbornĂ˝ch rĂˇmcĹŻ",
+    "historical-anchor-confusion": "ZĂˇmÄ›na historickĂ˝ch souvislostĂ­",
+    "authority-role-mixup": "ZĂˇmÄ›na role a rozhodovacĂ­ pravomoci"
   };
 
-  function normalizeErrorCodeV4(code) {
+  function normalizeErrorCode(code) {
     const raw = String(code || "").trim();
     if (!raw) return "";
     const value = raw.toLowerCase();
 
-    if (ERROR_LABELS_V4[value]) return value;
-    if (ERROR_LABEL_OVERRIDES_V4[value]) return value;
+    if (ERROR_LABELS_MAP[value]) return value;
+    if (ERROR_LABEL_OVERRIDES[value]) return value;
 
-    if (/^(no-answer|bez-odpovedi|bez-odpovědi|unanswered)$/.test(value)) return "no-answer";
-    if (/(missed-negation|negation|negative|negativní-čtení|negative-reading)/.test(value)) return "missed-negation";
+    if (/^(no-answer|bez-odpovedi|bez-odpovÄ›di|unanswered)$/.test(value)) return "no-answer";
+    if (/(missed-negation|negation|negative|negativnĂ­-ÄŤtenĂ­|negative-reading)/.test(value)) return "missed-negation";
     if (/(impulsive|fast-|hasty|ukvapen)/.test(value)) return "impulsive-decision";
-    if (/(overthinking|slow-|time-pressure|pressure|překombin)/.test(value)) return "overthinking";
+    if (/(overthinking|slow-|time-pressure|pressure|pĹ™ekombin)/.test(value)) return "overthinking";
     if (/(false-confidence|high-confidence|confidence)/.test(value)) return "false-confidence";
     if (/(attention-slip|inattention|nepozornost)/.test(value)) return "inattention";
     if (/(distractor|trap|halo|bias|shortcut|lure|near-category)/.test(value)) return "distractor-trap";
     if (/(misread|reading|question|first-step|formulation|superlativ|doslovnost|exception-ignorance|context-omission|administrative-reduction|abbreviation-overread|chunking-misread)/.test(value)) return "misread-question";
 
-    if (/(institution|document|clientele|facility|court|school|role|competence|kompetenc|process|sv[pbp]|špp|špz|ppp|spc|ospod|úřad|urad|soud|ředitel|reditel|rodič|rodic|client|benefit|service|payment|allowance|dávk|davk|průkaz|prukaz|ztp|mobilit|pomůc|pomuc|vozid|legal-|issuance|hospitalization|higher-ed|gifted-outside-system|inside-outside-role|cross-system|decision-vs-payment|broad-public-help|school-level|school-type|authority|kompetence|kompetenc)/.test(value)) {
+    if (/(institution|document|clientele|facility|court|school|role|competence|kompetenc|process|sv[pbp]|Ĺˇpp|Ĺˇpz|ppp|spc|ospod|ĂşĹ™ad|urad|soud|Ĺ™editel|reditel|rodiÄŤ|rodic|client|benefit|service|payment|allowance|dĂˇvk|davk|prĹŻkaz|prukaz|ztp|mobilit|pomĹŻc|pomuc|vozid|legal-|issuance|hospitalization|higher-ed|gifted-outside-system|inside-outside-role|cross-system|decision-vs-payment|broad-public-help|school-level|school-type|authority|kompetence|kompetenc)/.test(value)) {
       return "institution-confusion";
     }
 
-    if (/(terminology|terminolog|author|personality|histor|anchor|term-|jméno|jmeno|autor|osobnost|kotv|lechta|neubauer|valenta|ludíková|ludiková|van-riper|frankl|kábele|kabele|redl|makarenko|komensk|itard|sovák|sovak)/.test(value)) {
+    if (/(terminology|terminolog|author|personality|histor|anchor|term-|jmĂ©no|jmeno|autor|osobnost|kotv|lechta|neubauer|valenta|ludĂ­kovĂˇ|ludikovĂˇ|van-riper|frankl|kĂˇbele|kabele|redl|makarenko|komensk|itard|sovĂˇk|sovak)/.test(value)) {
       return "terminology-confusion";
     }
 
-    if (/(concept|pojem|pojmov|category|classification|classif|axis|osa|záměna|zamen|swap|mixup|confusion|blur|collapse|hierarchie|discipl|domain|framework|frame|klasifika|kategorie|oblast|preling|postling|kongenit|získan|ziskane|pas-|fm-|mkn|balbuties|tumultus|dysfonie|rinolalie|fonemat|pragmat|hlas|komunikační|komunikacni|adaptivní|adaptivni|output-content|category-before-function|function-vs-appearance|environment-vs-function|goal-|device-vs-process|metoda-|pomůcka|pomucka|reeduk|kompenz|augmentativ|alternativní|alternativni|evaluation|framework)/.test(value)) {
+    if (/(concept|pojem|pojmov|category|classification|classif|axis|osa|zĂˇmÄ›na|zamen|swap|mixup|confusion|blur|collapse|hierarchie|discipl|domain|framework|frame|klasifika|kategorie|oblast|preling|postling|kongenit|zĂ­skan|ziskane|pas-|fm-|mkn|balbuties|tumultus|dysfonie|rinolalie|fonemat|pragmat|hlas|komunikaÄŤnĂ­|komunikacni|adaptivnĂ­|adaptivni|output-content|category-before-function|function-vs-appearance|environment-vs-function|goal-|device-vs-process|metoda-|pomĹŻcka|pomucka|reeduk|kompenz|augmentativ|alternativnĂ­|alternativni|evaluation|framework)/.test(value)) {
       return "concept-confusion";
     }
 
     return "knowledge-gap";
   }
 
-  function resolveErrorLabelV4(code) {
+  function resolveErrorLabel(code) {
     const raw = String(code || "").trim();
     const lower = raw.toLowerCase();
-    if (ERROR_LABEL_OVERRIDES_V4[lower]) return ERROR_LABEL_OVERRIDES_V4[lower];
-    const normalized = normalizeErrorCodeV4(raw);
-    return ERROR_LABELS_V4[normalized] || (window.SCIO_V4_SHARED?.ERROR_LABELS?.[normalized]) || "Obsahová slabina";
+    if (ERROR_LABEL_OVERRIDES[lower]) return ERROR_LABEL_OVERRIDES[lower];
+    const normalized = normalizeErrorCode(raw);
+    return ERROR_LABELS_MAP[normalized] || (window.SCIO_SHARED?.ERROR_LABELS?.[normalized]) || "ObsahovĂˇ slabina";
   }
 
 
-  const DASHBOARD_THRESHOLDS_V4 = {
+  const DASHBOARD_THRESHOLDS = {
     weakRate: 70,
     riskyRate: 50,
     strongRate: 85,
@@ -108,11 +108,11 @@
   };
 
   function getErrorLabel(code) {
-    return resolveErrorLabelV4(code);
+    return resolveErrorLabel(code);
   }
   window.getErrorLabel = getErrorLabel;
 
-  function getEmptyProgressV4() {
+  function getEmptyProgress() {
     return {
       schemaVersion: 4,
       testCount: 0,
@@ -143,7 +143,7 @@
       trends: { recentSessions: [] }
     };
   }
-  window.getEmptyProgressV4 = getEmptyProgressV4;
+  window.getEmptyProgress = getEmptyProgress;
 
 function normalizeDifficultyForProgress(value) {
   return String(value || "").trim().toLowerCase() === "hard" ? "hard" : "basic";
@@ -196,7 +196,7 @@ function getQuestionProgressKey(question, session) {
         sessionsPerfect: Number(value.sessionsPerfect || 0),
         sessionsWithWrong: Number(value.sessionsWithWrong || 0),
         lastOutcome: value.lastOutcome || "",
-        recentSessionRates: Array.isArray(value.recentSessionRates) ? safeClone(value.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS_V4.historyWindow), []) : []
+        recentSessionRates: Array.isArray(value.recentSessionRates) ? safeClone(value.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS.historyWindow), []) : []
       };
     }
     const seen = Number(value || 0);
@@ -217,10 +217,10 @@ function getQuestionProgressKey(question, session) {
     return out;
   }
 
-  function normalizeErrorRegistryObjectV4(oldObj) {
+  function normalizeErrorRegistryObject(oldObj) {
     const out = {};
     Object.entries(oldObj || {}).forEach(([key, value]) => {
-      const normalizedKey = normalizeErrorCodeV4(key);
+      const normalizedKey = normalizeErrorCode(key);
       if (!normalizedKey) return;
       const nextEntry = normalizeRegistryEntry(value, false);
       if (!out[normalizedKey]) {
@@ -242,16 +242,16 @@ function getQuestionProgressKey(question, session) {
         sessionsPerfect: Number(prev.sessionsPerfect || 0) + Number(nextEntry.sessionsPerfect || 0),
         sessionsWithWrong: Number(prev.sessionsWithWrong || 0) + Number(nextEntry.sessionsWithWrong || 0),
         lastOutcome: nextEntry.lastOutcome || prev.lastOutcome || "",
-        recentSessionRates: [...(prev.recentSessionRates || []), ...(nextEntry.recentSessionRates || [])].slice(0, DASHBOARD_THRESHOLDS_V4.historyWindow)
+        recentSessionRates: [...(prev.recentSessionRates || []), ...(nextEntry.recentSessionRates || [])].slice(0, DASHBOARD_THRESHOLDS.historyWindow)
       };
       out[normalizedKey].recentSessionRates = out[normalizedKey].recentSessionRates.filter(v => Number.isFinite(Number(v))).map(Number);
     });
     return out;
   }
 
-  function normalizeProgressV4(progress) {
+  function normalizeProgress(progress) {
     const src = progress && typeof progress === "object" ? progress : {};
-    const normalized = getEmptyProgressV4();
+    const normalized = getEmptyProgress();
     normalized.schemaVersion = 4;
     normalized.testCount = Number(src.testCount || src.totals?.finishedSessions || 0);
     normalized.totals = {
@@ -261,7 +261,7 @@ function getQuestionProgressKey(question, session) {
     normalized.disciplines = normalizeRegistryObject(src.disciplines || {}, false);
     normalized.subtopics = normalizeRegistryObject(src.subtopics || {}, false);
     normalized.topicAreas = normalizeRegistryObject(src.topicAreas || {}, false);
-    normalized.errorTypes = normalizeErrorRegistryObjectV4(src.errorTypes || {});
+    normalized.errorTypes = normalizeErrorRegistryObject(src.errorTypes || {});
     normalized.formulations = normalizeRegistryObject(src.formulations || {}, false);
     normalized.signalPatterns = normalizeRegistryObject(src.signalPatterns || {}, false);
     normalized.trapPatterns = normalizeRegistryObject(src.trapPatterns || {}, false);
@@ -277,23 +277,23 @@ function getQuestionProgressKey(question, session) {
     };
     return normalized;
   }
-  window.normalizeProgressV4 = normalizeProgressV4;
+  window.normalizeProgress = normalizeProgress;
 
   function migrateRegistryObject(oldObj, treatAsCorrectRate) {
     return normalizeRegistryObject(oldObj, treatAsCorrectRate);
   }
 
-  function migrateProgressV3ToV4(oldProgress) {
-    const migrated = getEmptyProgressV4();
+  function migrateLegacyProgress(oldProgress) {
+    const migrated = getEmptyProgress();
     const src = oldProgress && typeof oldProgress === "object" ? oldProgress : {};
     migrated.testCount = Number(src.testCount || src.totals?.finishedSessions || 0);
     migrated.totals.finishedSessions = migrated.testCount;
     migrated.subtopics = migrateRegistryObject(src.subtopics || {}, true);
     migrated.errorTypes = migrateRegistryObject(src.errorTypes || {}, false);
     if (src.totals && typeof src.totals === "object") migrated.totals = { ...migrated.totals, ...src.totals, finishedSessions: migrated.testCount };
-    return normalizeProgressV4(migrated);
+    return normalizeProgress(migrated);
   }
-  window.migrateProgressV3ToV4 = migrateProgressV3ToV4;
+  window.migrateLegacyProgress = migrateLegacyProgress;
 
   function loadSettings() {
     const raw = localStorage.getItem(STORAGE_KEYS.SETTINGS);
@@ -339,7 +339,7 @@ function getQuestionProgressKey(question, session) {
         learningNeed: null,
         addedToRevision: false,
         userReflection: "",
-        revisitReason: qs.revisitLater ? "Vrátit se později" : "",
+        revisitReason: qs.revisitLater ? "VrĂˇtit se pozdÄ›ji" : "",
         revisionPriority: "medium",
         ...qs,
         questionIndex: Number(qs.questionIndex ?? idx)
@@ -369,14 +369,14 @@ function getQuestionProgressKey(question, session) {
   function loadProgress() {
     const raw = localStorage.getItem(STORAGE_KEYS.PROGRESS);
     const parsed = safeParse(raw, null);
-    if (!parsed) return getEmptyProgressV4();
-    if (parsed.schemaVersion === 4) return normalizeProgressV4(parsed);
-    return migrateProgressV3ToV4(parsed);
+    if (!parsed) return getEmptyProgress();
+    if (parsed.schemaVersion === 4) return normalizeProgress(parsed);
+    return migrateLegacyProgress(parsed);
   }
   window.loadProgress = loadProgress;
 
   function saveProgress() {
-    try { localStorage.setItem(STORAGE_KEYS.PROGRESS, JSON.stringify(appState.progress || getEmptyProgressV4())); } catch(e) {}
+    try { localStorage.setItem(STORAGE_KEYS.PROGRESS, JSON.stringify(appState.progress || getEmptyProgress())); } catch(e) {}
   }
   window.saveProgress = saveProgress;
 
@@ -523,7 +523,7 @@ function buildRepairSessionFromResults(srcSession, candidateIndexes) {
   if (!srcSession || !indexes.length) return null;
   const srcQuestions = srcSession.activeTest.questions;
   const difficultyMode = normalizeDifficultyForProgress(srcSession.difficultyMode || srcSession.activeTest?.difficultyMode || "basic");
-  const difficultyLabel = difficultyMode === "hard" ? "Pokročilá" : "Základní";
+  const difficultyLabel = difficultyMode === "hard" ? "PokroÄŤilĂˇ" : "ZĂˇkladnĂ­";
   const repairQuestions = indexes.map((idx, i) => ({
     ...srcQuestions[idx],
     number: i + 1,
@@ -546,11 +546,11 @@ function buildRepairSessionFromResults(srcSession, candidateIndexes) {
     difficultyLabel,
     batteryId: srcSession.batteryId,
     batteryLabel: srcSession.batteryLabel,
-    batteryTitle: `Opravná sada – ${srcSession.batteryLabel}`,
+    batteryTitle: `OpravnĂˇ sada â€“ ${srcSession.batteryLabel}`,
     activeTest: {
       id: srcSession.batteryId,
       label: srcSession.batteryLabel,
-      title: `Opravná sada (${repairQuestions.length} otázek)`,
+      title: `OpravnĂˇ sada (${repairQuestions.length} otĂˇzek)`,
       durationMinutes,
       questions: repairQuestions,
       difficultyMode,
@@ -681,12 +681,12 @@ function buildRepairSessionFromResults(srcSession, candidateIndexes) {
     const timeSpent = questionState?.timeSpentMs || 0;
     const isWrong = questionState?.selectedAnswer !== null && questionState?.selectedAnswer !== question?.correct;
     return {
-      hasNegation: formulationFlags.includes("negace") || /\bnení\b|\bnesprávně\b|\bneplatí\b|\bneodpovídá\b/i.test(text),
-      hasSuperlative: formulationFlags.includes("superlativní přesnost") || /\bnejpřesněji\b|\bnejlépe\b|\bnejvhodnější\b/i.test(text),
-      systemBoundarySignal: formulationFlags.includes("systémová hranice") || /\bv rámci školství\b|\bv rámci zdravotnictví\b|\bv rámci sociální oblasti\b/i.test(text),
-      firstStepSignal: formulationFlags.includes("první krok") || /\bprvní krok\b/i.test(text),
-      documentSignal: formulationFlags.includes("funkce dokumentu") || /\bzpráva\b|\bdoporučen|\bplpp\b|\bivp\b/i.test(text),
-      roleSignal: formulationFlags.includes("odpovědnost role") || /\bkdo\b.*\bodpovídá\b|\brole\b/i.test(text),
+      hasNegation: formulationFlags.includes("negace") || /\bnenĂ­\b|\bnesprĂˇvnÄ›\b|\bneplatĂ­\b|\bneodpovĂ­dĂˇ\b/i.test(text),
+      hasSuperlative: formulationFlags.includes("superlativnĂ­ pĹ™esnost") || /\bnejpĹ™esnÄ›ji\b|\bnejlĂ©pe\b|\bnejvhodnÄ›jĹˇĂ­\b/i.test(text),
+      systemBoundarySignal: formulationFlags.includes("systĂ©movĂˇ hranice") || /\bv rĂˇmci ĹˇkolstvĂ­\b|\bv rĂˇmci zdravotnictvĂ­\b|\bv rĂˇmci sociĂˇlnĂ­ oblasti\b/i.test(text),
+      firstStepSignal: formulationFlags.includes("prvnĂ­ krok") || /\bprvnĂ­ krok\b/i.test(text),
+      documentSignal: formulationFlags.includes("funkce dokumentu") || /\bzprĂˇva\b|\bdoporuÄŤen|\bplpp\b|\bivp\b/i.test(text),
+      roleSignal: formulationFlags.includes("odpovÄ›dnost role") || /\bkdo\b.*\bodpovĂ­dĂˇ\b|\brole\b/i.test(text),
       institutionPair: metadata.institutionPair || "",
       fastWrong: isWrong && timeSpent > 0 && timeSpent < FAST_THRESHOLD_MS,
       slowOverthink: isWrong && timeSpent >= SLOW_THRESHOLD_MS && ((questionState?.answerChanges || 0) > 0 || (questionState?.viewCount || 0) > 1),
@@ -836,20 +836,20 @@ function buildRepairSessionFromResults(srcSession, candidateIndexes) {
         unanswered: Number(stats.unanswered || 0),
         rate: stats.seen ? Math.round((stats.correct || 0) / stats.seen * 100) : 0
       });
-      entry.recentSessionRates = entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS_V4.historyWindow);
+      entry.recentSessionRates = entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS.historyWindow);
     });
   }
 
   
 
-const DASHBOARD_TOPIC_AREA_RULES_V4 = [
-  { label: "Funkční rozbor obtíže a hlavní bariéry", patterns: [/funkční\s+čtení|hlavní\s+bariér|sekundární\s+projev|forma\s+výkonu|přístup\s+k\s+informaci|porozumění|podmínky\s+výkonu|dostupnost\s+sdělení|dostupnost\s+zadání|vizuální\s+přístup|strukturace\s+zadání|strukturace\s+úkolu|stabilita\s+obtíže|prostředí\s+a\s+výkon|cílová\s+situace|podmínky\s+zpracování|porozumění\s+textu/i] },
-  { label: "Psychologie, vývoj a poradenská komunikace", patterns: [/psycholog|ontogenez|akomod|asimil|frustr|depriv|obrann|freud|jung|rogers|maslow|erikson|piaget|vygotsk|pavlov|empati|parafráz|parafraz|naslouch|dialog|rozhovor|poradenské\s+minimum|komunikace\s+a\s+poradenství|sociokulturn/i] },
-  { label: "Disciplíny a klasifikace speciální pedagogiky", patterns: [/logoped|surdoped|tyfloped|somatoped|psychoped|etoped|pedi[eií]|preling|postling|kongenit|získan|ziskane|pas\b|fonemat|balbuties|tumultus|dysfonie|rinolalie|prozo|klasifika|terminologické\s+rozlišení|disciplinární\s+rozlišení/i] },
-  { label: "Intervence, metody a podpůrné strategie", patterns: [/reeduk|kompenz|teacch|aak\b|augmentativ|alternativní\s+komunik|alternativni\s+komunik|ergoter|fyzioter|bazální|bazalni|logoter|pomůcka|pomucka|metoda|úprava\s+prostředí|uprava\s+prostredi|evaluace\s+podpory|interven|terapie|strategie\s+podpory/i] },
-  { label: "Školské poradenství, dokumenty a podpůrná opatření", patterns: [/školsk|skolsk|po1\b|plpp\b|ivp\b|špz|spc\b|ppp\b|svp\b|doporučen|zpráv|zprav|typy\s+škol|typy\s+skol|právní\s+režim|pravni\s+rezim|podpůrná\s+opatření|podpurna\s+opatreni|ředitel|reditel|škola\s+vs|adresáti\s+poradenských\s+služeb|adresati\s+poradenskych\s+sluzeb/i] },
-  { label: "Sociální systém, dávky a instituce", patterns: [/dávk|davk|ztp|průkaz|prukaz|úřad\s+práce|urad\s+prace|ospod|soud|diagnostick|dětský\s+domov|detsky\s+domov|výchovný\s+ústav|vychovny\s+ustav|služb|sluzb|veřejná\s+správa|verejna\s+sprava|mobilit|vozid|financov|orgány|organy|meziresort|veřejné\s+správy|verejne\s+spravy|sociálně-legislativní|socialne-legislativni/i] },
-  { label: "Historie oboru a osobnosti", patterns: [/histor|osobnost|autor|pedro\s+ponce|komensk|itard|haüy|braille|frankl|van\s+riper|redl|kábele|kabele|lechta|neubauer|valenta|ludíková|ludikova|matějček|matejcek|sovák|sovak|makarenko|česká\s+tradice|ceska\s+tradice|periodizace/i] }
+const DASHBOARD_TOPIC_AREA_RULES = [
+  { label: "FunkÄŤnĂ­ rozbor obtĂ­Ĺľe a hlavnĂ­ bariĂ©ry", patterns: [/funkÄŤnĂ­\s+ÄŤtenĂ­|hlavnĂ­\s+bariĂ©r|sekundĂˇrnĂ­\s+projev|forma\s+vĂ˝konu|pĹ™Ă­stup\s+k\s+informaci|porozumÄ›nĂ­|podmĂ­nky\s+vĂ˝konu|dostupnost\s+sdÄ›lenĂ­|dostupnost\s+zadĂˇnĂ­|vizuĂˇlnĂ­\s+pĹ™Ă­stup|strukturace\s+zadĂˇnĂ­|strukturace\s+Ăşkolu|stabilita\s+obtĂ­Ĺľe|prostĹ™edĂ­\s+a\s+vĂ˝kon|cĂ­lovĂˇ\s+situace|podmĂ­nky\s+zpracovĂˇnĂ­|porozumÄ›nĂ­\s+textu/i] },
+  { label: "Psychologie, vĂ˝voj a poradenskĂˇ komunikace", patterns: [/psycholog|ontogenez|akomod|asimil|frustr|depriv|obrann|freud|jung|rogers|maslow|erikson|piaget|vygotsk|pavlov|empati|parafrĂˇz|parafraz|naslouch|dialog|rozhovor|poradenskĂ©\s+minimum|komunikace\s+a\s+poradenstvĂ­|sociokulturn/i] },
+  { label: "DisciplĂ­ny a klasifikace speciĂˇlnĂ­ pedagogiky", patterns: [/logoped|surdoped|tyfloped|somatoped|psychoped|etoped|pedi[eiĂ­]|preling|postling|kongenit|zĂ­skan|ziskane|pas\b|fonemat|balbuties|tumultus|dysfonie|rinolalie|prozo|klasifika|terminologickĂ©\s+rozliĹˇenĂ­|disciplinĂˇrnĂ­\s+rozliĹˇenĂ­/i] },
+  { label: "Intervence, metody a podpĹŻrnĂ© strategie", patterns: [/reeduk|kompenz|teacch|aak\b|augmentativ|alternativnĂ­\s+komunik|alternativni\s+komunik|ergoter|fyzioter|bazĂˇlnĂ­|bazalni|logoter|pomĹŻcka|pomucka|metoda|Ăşprava\s+prostĹ™edĂ­|uprava\s+prostredi|evaluace\s+podpory|interven|terapie|strategie\s+podpory/i] },
+  { label: "Ĺ kolskĂ© poradenstvĂ­, dokumenty a podpĹŻrnĂˇ opatĹ™enĂ­", patterns: [/Ĺˇkolsk|skolsk|po1\b|plpp\b|ivp\b|Ĺˇpz|spc\b|ppp\b|svp\b|doporuÄŤen|zprĂˇv|zprav|typy\s+Ĺˇkol|typy\s+skol|prĂˇvnĂ­\s+reĹľim|pravni\s+rezim|podpĹŻrnĂˇ\s+opatĹ™enĂ­|podpurna\s+opatreni|Ĺ™editel|reditel|Ĺˇkola\s+vs|adresĂˇti\s+poradenskĂ˝ch\s+sluĹľeb|adresati\s+poradenskych\s+sluzeb/i] },
+  { label: "SociĂˇlnĂ­ systĂ©m, dĂˇvky a instituce", patterns: [/dĂˇvk|davk|ztp|prĹŻkaz|prukaz|ĂşĹ™ad\s+prĂˇce|urad\s+prace|ospod|soud|diagnostick|dÄ›tskĂ˝\s+domov|detsky\s+domov|vĂ˝chovnĂ˝\s+Ăşstav|vychovny\s+ustav|sluĹľb|sluzb|veĹ™ejnĂˇ\s+sprĂˇva|verejna\s+sprava|mobilit|vozid|financov|orgĂˇny|organy|meziresort|veĹ™ejnĂ©\s+sprĂˇvy|verejne\s+spravy|sociĂˇlnÄ›-legislativnĂ­|socialne-legislativni/i] },
+  { label: "Historie oboru a osobnosti", patterns: [/histor|osobnost|autor|pedro\s+ponce|komensk|itard|haĂĽy|braille|frankl|van\s+riper|redl|kĂˇbele|kabele|lechta|neubauer|valenta|ludĂ­kovĂˇ|ludikova|matÄ›jÄŤek|matejcek|sovĂˇk|sovak|makarenko|ÄŤeskĂˇ\s+tradice|ceska\s+tradice|periodizace/i] }
 ];
 
 function normalizeTopicAreaSourceText(value) {
@@ -859,7 +859,7 @@ function normalizeTopicAreaSourceText(value) {
     .toLowerCase();
 }
 
-function deriveDashboardTopicAreaV4(source) {
+function deriveDashboardTopicArea(source) {
   const base = source && typeof source === "object" ? source : { subtopic: source };
   const text = [
     base.topicArea,
@@ -874,20 +874,20 @@ function deriveDashboardTopicAreaV4(source) {
   ].filter(Boolean).join(" | ");
   const normalized = normalizeTopicAreaSourceText(text);
 
-  for (const rule of DASHBOARD_TOPIC_AREA_RULES_V4) {
+  for (const rule of DASHBOARD_TOPIC_AREA_RULES) {
     if (rule.patterns.some(pattern => pattern.test(normalized))) return rule.label;
   }
 
-  if (/poraden/.test(normalized)) return "Školské poradenství, dokumenty a podpůrná opatření";
-  if (/interven|terapi|podpora/.test(normalized)) return "Intervence, metody a podpůrné strategie";
+  if (/poraden/.test(normalized)) return "Ĺ kolskĂ© poradenstvĂ­, dokumenty a podpĹŻrnĂˇ opatĹ™enĂ­";
+  if (/interven|terapi|podpora/.test(normalized)) return "Intervence, metody a podpĹŻrnĂ© strategie";
   if (/histor|autor|osobnost/.test(normalized)) return "Historie oboru a osobnosti";
-  if (/psycholog|komunik|vyvoj|ontogen/.test(normalized)) return "Psychologie, vývoj a poradenská komunikace";
-  if (/social|davk|instituc|verejn/.test(normalized)) return "Sociální systém, dávky a instituce";
-  return "Speciálněpedagogická orientace a poradenství";
+  if (/psycholog|komunik|vyvoj|ontogen/.test(normalized)) return "Psychologie, vĂ˝voj a poradenskĂˇ komunikace";
+  if (/social|davk|instituc|verejn/.test(normalized)) return "SociĂˇlnĂ­ systĂ©m, dĂˇvky a instituce";
+  return "SpeciĂˇlnÄ›pedagogickĂˇ orientace a poradenstvĂ­";
 }
-window.getDashboardTopicAreaLabel = deriveDashboardTopicAreaV4;
+window.getDashboardTopicAreaLabel = deriveDashboardTopicArea;
 
-function mergeRegistryEntriesV4(prev, next) {
+function mergeRegistryEntries(prev, next) {
   const a = normalizeRegistryEntry(prev || {}, false);
   const b = normalizeRegistryEntry(next || {}, false);
   const totalSeen = Number(a.seen || 0) + Number(b.seen || 0);
@@ -905,16 +905,16 @@ function mergeRegistryEntriesV4(prev, next) {
     sessionsPerfect: Number(a.sessionsPerfect || 0) + Number(b.sessionsPerfect || 0),
     sessionsWithWrong: Number(a.sessionsWithWrong || 0) + Number(b.sessionsWithWrong || 0),
     lastOutcome: b.lastOutcome || a.lastOutcome || "",
-    recentSessionRates: [...(a.recentSessionRates || []), ...(b.recentSessionRates || [])].slice(0, DASHBOARD_THRESHOLDS_V4.historyWindow)
+    recentSessionRates: [...(a.recentSessionRates || []), ...(b.recentSessionRates || [])].slice(0, DASHBOARD_THRESHOLDS.historyWindow)
   };
 }
 
-function aggregateRegistryByClassifierV4(registry, classifier) {
+function aggregateRegistryByClassifier(registry, classifier) {
   const out = {};
   Object.entries(registry || {}).forEach(([label, value]) => {
     const targetLabel = classifier(label, value);
     if (!targetLabel) return;
-    out[targetLabel] = mergeRegistryEntriesV4(out[targetLabel], value);
+    out[targetLabel] = mergeRegistryEntries(out[targetLabel], value);
   });
   return out;
 }
@@ -922,8 +922,8 @@ function aggregateRegistryByClassifierV4(registry, classifier) {
 
 function getMetadataCoverageCatalog() {
   const exports = [
-    Array.isArray(window.metadataExport?.items) ? window.metadataExport.items : [],
-    Array.isArray(window.metadataExportHard?.items) ? window.metadataExportHard.items : []
+    Array.isArray(window.SCIO_METADATA_BASIC?.items) ? window.SCIO_METADATA_BASIC.items : [],
+    Array.isArray(window.SCIO_METADATA_HARD?.items) ? window.SCIO_METADATA_HARD.items : []
   ];
   const disciplines = new Set();
   const subtopics = new Set();
@@ -933,7 +933,7 @@ function getMetadataCoverageCatalog() {
   exports.flat().forEach(item => {
     const discipline = item?.discipline || item?.metadata?.discipline;
     const subtopic = item?.subtopic || item?.metadata?.subtopic;
-    const topicArea = deriveDashboardTopicAreaV4(item?.metadata || item || {});
+    const topicArea = deriveDashboardTopicArea(item?.metadata || item || {});
     if (discipline) {
       disciplines.add(discipline);
       if (topicArea && !disciplineToTopicArea[discipline]) disciplineToTopicArea[discipline] = topicArea;
@@ -950,7 +950,7 @@ function getMetadataCoverageCatalog() {
 
 
   function getEntryRecentRate(entry) {
-    const history = Array.isArray(entry?.recentSessionRates) ? entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS_V4.recentWindow) : [];
+    const history = Array.isArray(entry?.recentSessionRates) ? entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS.recentWindow) : [];
     if (!history.length) return entry?.seen ? Math.round((entry.correct || 0) / entry.seen * 100) : 0;
     const totalSeen = history.reduce((sum, item) => sum + Number(item.seen || 0), 0);
     const totalCorrect = history.reduce((sum, item) => sum + Number(item.correct || 0), 0);
@@ -958,36 +958,36 @@ function getMetadataCoverageCatalog() {
   }
 
   function getEntryTrend(entry) {
-    const history = Array.isArray(entry?.recentSessionRates) ? entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS_V4.recentWindow).reverse() : [];
-    if (history.length < 2) return "stabilní";
+    const history = Array.isArray(entry?.recentSessionRates) ? entry.recentSessionRates.slice(0, DASHBOARD_THRESHOLDS.recentWindow).reverse() : [];
+    if (history.length < 2) return "stabilnĂ­";
     const deltas = [];
     for (let i = 1; i < history.length; i++) deltas.push((history[i].rate || 0) - (history[i - 1].rate || 0));
     const avgDelta = deltas.length ? deltas.reduce((sum, value) => sum + value, 0) / deltas.length : 0;
     if (avgDelta >= 4) return "roste";
-    if (avgDelta <= -4) return "klesá";
-    if (deltas.some(value => value > 0) && deltas.some(value => value < 0)) return "kolísá";
-    return "stabilní";
+    if (avgDelta <= -4) return "klesĂˇ";
+    if (deltas.some(value => value > 0) && deltas.some(value => value < 0)) return "kolĂ­sĂˇ";
+    return "stabilnĂ­";
   }
 
   function getEntryConfidenceLevel(entry) {
     const seen = Number(entry?.seen || 0);
     const sessions = Number(entry?.sessionCount || 0);
-    if (seen >= DASHBOARD_THRESHOLDS_V4.minSeenMastered && sessions >= DASHBOARD_THRESHOLDS_V4.minSessionMastered) return "vysoká";
-    if (seen >= DASHBOARD_THRESHOLDS_V4.minSeenStrong && sessions >= 1) return "střední";
-    return "nízká";
+    if (seen >= DASHBOARD_THRESHOLDS.minSeenMastered && sessions >= DASHBOARD_THRESHOLDS.minSessionMastered) return "vysokĂˇ";
+    if (seen >= DASHBOARD_THRESHOLDS.minSeenStrong && sessions >= 1) return "stĹ™ednĂ­";
+    return "nĂ­zkĂˇ";
   }
 
   function classifyTopicEntry(entry) {
     const seen = Number(entry?.seen || 0);
     const rate = seen ? Math.round((entry.correct || 0) / seen * 100) : 0;
     const sessionCount = Number(entry?.sessionCount || 0);
-    if (seen === 0) return "neprocvičeno";
-    if (seen < DASHBOARD_THRESHOLDS_V4.undertrainedSeen || sessionCount < DASHBOARD_THRESHOLDS_V4.undertrainedSessions) return "málo-dat";
-    if (rate >= DASHBOARD_THRESHOLDS_V4.masteredRate && seen >= DASHBOARD_THRESHOLDS_V4.minSeenMastered && sessionCount >= DASHBOARD_THRESHOLDS_V4.minSessionMastered) return "zvládnuté";
-    if (rate >= DASHBOARD_THRESHOLDS_V4.strongRate && seen >= DASHBOARD_THRESHOLDS_V4.minSeenStrong) return "silné";
-    if (rate < DASHBOARD_THRESHOLDS_V4.riskyRate && seen >= DASHBOARD_THRESHOLDS_V4.minSeenRisky) return "rizikové";
-    if (rate < DASHBOARD_THRESHOLDS_V4.weakRate && seen >= DASHBOARD_THRESHOLDS_V4.minSeenWeak) return "slabé";
-    return "stabilní";
+    if (seen === 0) return "neprocviÄŤeno";
+    if (seen < DASHBOARD_THRESHOLDS.undertrainedSeen || sessionCount < DASHBOARD_THRESHOLDS.undertrainedSessions) return "mĂˇlo-dat";
+    if (rate >= DASHBOARD_THRESHOLDS.masteredRate && seen >= DASHBOARD_THRESHOLDS.minSeenMastered && sessionCount >= DASHBOARD_THRESHOLDS.minSessionMastered) return "zvlĂˇdnutĂ©";
+    if (rate >= DASHBOARD_THRESHOLDS.strongRate && seen >= DASHBOARD_THRESHOLDS.minSeenStrong) return "silnĂ©";
+    if (rate < DASHBOARD_THRESHOLDS.riskyRate && seen >= DASHBOARD_THRESHOLDS.minSeenRisky) return "rizikovĂ©";
+    if (rate < DASHBOARD_THRESHOLDS.weakRate && seen >= DASHBOARD_THRESHOLDS.minSeenWeak) return "slabĂ©";
+    return "stabilnĂ­";
   }
 
   function buildTopicInsightList(registry, labelKey, knownSet) {
@@ -1037,9 +1037,9 @@ function getMetadataCoverageCatalog() {
             sessionsWithWrong: 0,
             highConfidenceWrong: 0,
             avgTimeMs: 0,
-            confidenceLevel: "nízká",
-            trend: "stabilní",
-            status: "neprocvičeno",
+            confidenceLevel: "nĂ­zkĂˇ",
+            trend: "stabilnĂ­",
+            status: "neprocviÄŤeno",
             lastSeenAt: "",
             isKnown: true
           });
@@ -1056,11 +1056,11 @@ function getMetadataCoverageCatalog() {
     };
     return {
       all: out.slice().sort((a, b) => String(a.key).localeCompare(String(b.key), "cs")),
-      weak: onlySeen.filter(item => item.status === "slabé" || item.status === "rizikové").sort(sortWeak),
-      risky: onlySeen.filter(item => item.status === "rizikové").sort(sortWeak),
-      strong: onlySeen.filter(item => item.status === "silné" || item.status === "zvládnuté").sort(sortStrong),
-      mastered: onlySeen.filter(item => item.status === "zvládnuté").sort(sortStrong),
-      undertrained: out.filter(item => item.status === "málo-dat" || item.status === "neprocvičeno").sort(sortUndertrained)
+      weak: onlySeen.filter(item => item.status === "slabĂ©" || item.status === "rizikovĂ©").sort(sortWeak),
+      risky: onlySeen.filter(item => item.status === "rizikovĂ©").sort(sortWeak),
+      strong: onlySeen.filter(item => item.status === "silnĂ©" || item.status === "zvlĂˇdnutĂ©").sort(sortStrong),
+      mastered: onlySeen.filter(item => item.status === "zvlĂˇdnutĂ©").sort(sortStrong),
+      undertrained: out.filter(item => item.status === "mĂˇlo-dat" || item.status === "neprocviÄŤeno").sort(sortUndertrained)
     };
   }
 
@@ -1068,7 +1068,7 @@ function getMetadataCoverageCatalog() {
     const s = session || appState.currentSession; if (!s) return [];
     const map = {};
     s.questionStates.forEach((qs, idx) => {
-      const discipline = s.activeTest.questions[idx].metadata?.discipline || "obecná disciplína";
+      const discipline = s.activeTest.questions[idx].metadata?.discipline || "obecnĂˇ disciplĂ­na";
       if (!map[discipline]) map[discipline] = { discipline, seen:0, correct:0, wrong:0, rate:0 };
       map[discipline].seen += 1;
       if (qs.selectedAnswer === s.activeTest.questions[idx].correct) map[discipline].correct += 1;
@@ -1082,7 +1082,7 @@ function getMetadataCoverageCatalog() {
     const s = session || appState.currentSession; if (!s) return [];
     const map = {};
     s.questionStates.forEach((qs, idx) => {
-      const subtopic = s.activeTest.questions[idx].metadata?.subtopic || "obecné téma";
+      const subtopic = s.activeTest.questions[idx].metadata?.subtopic || "obecnĂ© tĂ©ma";
       if (!map[subtopic]) map[subtopic] = { subtopic, seen:0, correct:0, wrong:0, rate:0 };
       map[subtopic].seen += 1;
       if (qs.selectedAnswer === s.activeTest.questions[idx].correct) map[subtopic].correct += 1;
@@ -1134,9 +1134,9 @@ function getMetadataCoverageCatalog() {
     for (let i = 1; i < series.length; i++) deltas.push(series[i].percentage - series[i-1].percentage);
     const avgDelta = deltas.length ? deltas.reduce((a,b)=>a+b,0) / deltas.length : 0;
     let direction = "stagnace";
-    if (avgDelta >= 4) direction = "zlepšení";
-    else if (avgDelta <= -4) direction = "zhoršení";
-    else if (deltas.some(d=>d>0) && deltas.some(d=>d<0)) direction = "kolísání";
+    if (avgDelta >= 4) direction = "zlepĹˇenĂ­";
+    else if (avgDelta <= -4) direction = "zhorĹˇenĂ­";
+    else if (deltas.some(d=>d>0) && deltas.some(d=>d<0)) direction = "kolĂ­sĂˇnĂ­";
     return {
       direction,
       series: recent,
@@ -1149,7 +1149,7 @@ function getMetadataCoverageCatalog() {
     const s = session || appState.currentSession; if (!s) return [];
     const map = {};
     s.questionStates.forEach(qs => {
-      const key = normalizeErrorCodeV4(qs.manualErrorType || qs.autoErrorType);
+      const key = normalizeErrorCode(qs.manualErrorType || qs.autoErrorType);
       if (!key) return;
       map[key] = (map[key] || 0) + 1;
     });
@@ -1161,7 +1161,7 @@ function getMetadataCoverageCatalog() {
     const s = session || appState.currentSession;
     if (!s || !Array.isArray(s.questionStates) || !s.activeTest?.questions) return null;
 
-    const thresholds = { ...DASHBOARD_THRESHOLDS_V4 };
+    const thresholds = { ...DASHBOARD_THRESHOLDS };
     const catalog = getMetadataCoverageCatalog();
     const score = typeof calculateScore === "function" ? calculateScore() : { correct: 0, total: s.questionStates.length || 0, answered: 0, percentage: 0 };
     const disciplineRows = buildDisciplineBreakdown(s);
@@ -1171,19 +1171,19 @@ function getMetadataCoverageCatalog() {
     const topInstitutionPairs = buildInstitutionRiskSummary(s).slice(0, 5);
 
     function mapRow(row, labelKey) {
-      const label = String(row?.[labelKey] || row?.key || "obecné téma");
+      const label = String(row?.[labelKey] || row?.key || "obecnĂ© tĂ©ma");
       const seen = Number(row?.seen || 0);
       const correct = Number(row?.correct || 0);
       const wrong = Number(row?.wrong || Math.max(0, seen - correct));
       const rate = seen ? Math.round(correct / seen * 100) : 0;
       const masteredReady = seen >= thresholds.minSeenMastered && 1 >= thresholds.minSessionMastered;
       const strongReady = seen >= thresholds.minSeenStrong && 1 >= thresholds.minSessionStrong;
-      let status = "málo-dat";
-      if (seen === 0) status = "neprocvičeno";
-      else if (rate < thresholds.riskyRate && seen >= thresholds.minSeenRisky) status = "rizikové";
-      else if (rate < thresholds.weakRate && seen >= thresholds.minSeenWeak) status = "slabé";
-      else if (rate >= thresholds.masteredRate && masteredReady) status = "zvládnuté";
-      else if (rate >= thresholds.strongRate && strongReady) status = "silné";
+      let status = "mĂˇlo-dat";
+      if (seen === 0) status = "neprocviÄŤeno";
+      else if (rate < thresholds.riskyRate && seen >= thresholds.minSeenRisky) status = "rizikovĂ©";
+      else if (rate < thresholds.weakRate && seen >= thresholds.minSeenWeak) status = "slabĂ©";
+      else if (rate >= thresholds.masteredRate && masteredReady) status = "zvlĂˇdnutĂ©";
+      else if (rate >= thresholds.strongRate && strongReady) status = "silnĂ©";
       return {
         key: label,
         [labelKey]: label,
@@ -1198,8 +1198,8 @@ function getMetadataCoverageCatalog() {
         sessionsWithWrong: wrong > 0 ? 1 : 0,
         highConfidenceWrong: 0,
         avgTimeMs: 0,
-        confidenceLevel: "nízká",
-        trend: "stabilní",
+        confidenceLevel: "nĂ­zkĂˇ",
+        trend: "stabilnĂ­",
         status,
         lastSeenAt: s.updatedAt || s.timing?.finishedAt || new Date().toISOString()
       };
@@ -1246,7 +1246,7 @@ function getMetadataCoverageCatalog() {
 
   
 function buildWeaknessSummary() {
-  const p = normalizeProgressV4(appState.progress || getEmptyProgressV4());
+  const p = normalizeProgress(appState.progress || getEmptyProgress());
   const totals = p.totals || {};
   const catalog = getMetadataCoverageCatalog();
 
@@ -1255,7 +1255,7 @@ function buildWeaknessSummary() {
 
   const topicAreaRegistry = Object.keys(p.topicAreas || {}).length
     ? p.topicAreas
-    : aggregateRegistryByClassifierV4(p.subtopics || {}, (subtopicLabel) => catalog.subtopicToTopicArea[subtopicLabel] || deriveDashboardTopicAreaV4({ subtopic: subtopicLabel }));
+    : aggregateRegistryByClassifier(p.subtopics || {}, (subtopicLabel) => catalog.subtopicToTopicArea[subtopicLabel] || deriveDashboardTopicArea({ subtopic: subtopicLabel }));
 
   const topicAreaInsights = buildTopicInsightList(topicAreaRegistry, "topicArea", catalog.topicAreas);
 
@@ -1263,11 +1263,11 @@ function buildWeaknessSummary() {
   const testedDisciplineCount = disciplineInsights.all.filter(item => item.seen > 0).length;
   const testedSubtopicCount = subtopicInsights.all.filter(item => item.seen > 0).length;
   const testedTopicAreaCount = topicAreaInsights.all.filter(item => item.seen > 0).length;
-  const verifiedTopicAreas = topicAreaInsights.all.filter(item => item.status !== "neprocvičeno" && item.status !== "málo-dat");
-  const undertrainedSeenTopicAreas = topicAreaInsights.all.filter(item => item.status === "málo-dat");
-  const notSeenTopicAreas = topicAreaInsights.all.filter(item => item.status === "neprocvičeno");
+  const verifiedTopicAreas = topicAreaInsights.all.filter(item => item.status !== "neprocviÄŤeno" && item.status !== "mĂˇlo-dat");
+  const undertrainedSeenTopicAreas = topicAreaInsights.all.filter(item => item.status === "mĂˇlo-dat");
+  const notSeenTopicAreas = topicAreaInsights.all.filter(item => item.status === "neprocviÄŤeno");
   const priorityTopicAreas = topicAreaInsights.all
-    .filter(item => item.status === "rizikové" || item.status === "slabé")
+    .filter(item => item.status === "rizikovĂ©" || item.status === "slabĂ©")
     .sort((a, b) => (a.rate - b.rate) || (b.highConfidenceWrong - a.highConfidenceWrong) || (b.seen - a.seen) || String(a.topicArea).localeCompare(String(b.topicArea), "cs"));
 
   const totalKnownDisciplines = catalog.disciplines.size || testedDisciplineCount;
@@ -1275,7 +1275,7 @@ function buildWeaknessSummary() {
   const totalKnownTopicAreas = catalog.topicAreas.size || testedTopicAreaCount;
 
   const topErrors = Object.entries(p.errorTypes || {}).map(([type, value]) => ({
-    type: normalizeErrorCodeV4(type),
+    type: normalizeErrorCode(type),
     count: value.wrong || value.seen || 0,
     label: getErrorLabel(type)
   })).sort((a,b)=>b.count-a.count).slice(0, 5);
@@ -1294,11 +1294,11 @@ function buildWeaknessSummary() {
 
   const strongDomains = disciplineInsights.mastered.length ? disciplineInsights.mastered.slice(0, 4) : disciplineInsights.strong.slice(0, 4);
   const studentHeadline = totals.answered
-    ? `Zodpovězeno máš ${totals.answered} otázek, z toho ${totals.correct || 0} správně, ${totals.wrong || 0} chybně a ${totals.unanswered || 0} bez odpovědi.`
-    : "Po prvním dokončeném testu se tady objeví přehled silných a slabších okruhů.";
+    ? `ZodpovÄ›zeno mĂˇĹˇ ${totals.answered} otĂˇzek, z toho ${totals.correct || 0} sprĂˇvnÄ›, ${totals.wrong || 0} chybnÄ› a ${totals.unanswered || 0} bez odpovÄ›di.`
+    : "Po prvnĂ­m dokonÄŤenĂ©m testu se tady objevĂ­ pĹ™ehled silnĂ˝ch a slabĹˇĂ­ch okruhĹŻ.";
   const coverageHeadline = totalKnownTopicAreas
-    ? `Zatím ses dotkl(a) ${testedTopicAreaCount} z ${totalKnownTopicAreas} hlavních okruhů a u ${verifiedTopicAreas.length} z nich už je dost dat pro rozumný závěr.`
-    : "Tematické okruhy se začnou skládat po prvních výsledcích.";
+    ? `ZatĂ­m ses dotkl(a) ${testedTopicAreaCount} z ${totalKnownTopicAreas} hlavnĂ­ch okruhĹŻ a u ${verifiedTopicAreas.length} z nich uĹľ je dost dat pro rozumnĂ˝ zĂˇvÄ›r.`
+    : "TematickĂ© okruhy se zaÄŤnou sklĂˇdat po prvnĂ­ch vĂ˝sledcĂ­ch.";
 
   const summary = {
     weakestDisciplines: disciplineInsights.weak.slice(0, 3),
@@ -1347,7 +1347,7 @@ function buildWeaknessSummary() {
     strongDomains,
     studentHeadline,
     coverageHeadline,
-    thresholds: { ...DASHBOARD_THRESHOLDS_V4 },
+    thresholds: { ...DASHBOARD_THRESHOLDS },
     trend: buildTrendSummary()
   };
 
@@ -1372,9 +1372,9 @@ window.buildStudyDashboardSummary = buildStudyDashboardSummary;
         type: "subtopic-drill",
         priority: "high",
         bucket: "repair",
-        title: "Zpevni rizikové téma",
-        message: `Začni tématem ${weakness.riskySubtopics[0].subtopic}.`,
-        reason: `V tomto tématu máš zatím jen ${weakness.riskySubtopics[0].rate} % a už dost dat pro spolehlivé hodnocení.`,
+        title: "Zpevni rizikovĂ© tĂ©ma",
+        message: `ZaÄŤni tĂ©matem ${weakness.riskySubtopics[0].subtopic}.`,
+        reason: `V tomto tĂ©matu mĂˇĹˇ zatĂ­m jen ${weakness.riskySubtopics[0].rate} % a uĹľ dost dat pro spolehlivĂ© hodnocenĂ­.`,
         filters: { subtopic: weakness.riskySubtopics[0].subtopic }
       });
     } else if (weakness.weakestSubtopics[0]) {
@@ -1382,9 +1382,9 @@ window.buildStudyDashboardSummary = buildStudyDashboardSummary;
         type: "subtopic-drill",
         priority: "high",
         bucket: "repair",
-        title: "Procvič nejslabší téma",
-        message: `Dnes procvič hlavně téma ${weakness.weakestSubtopics[0].subtopic}.`,
-        reason: `Dlouhodobě máš v tomto tématu úspěšnost ${weakness.weakestSubtopics[0].rate} %.`,
+        title: "ProcviÄŤ nejslabĹˇĂ­ tĂ©ma",
+        message: `Dnes procviÄŤ hlavnÄ› tĂ©ma ${weakness.weakestSubtopics[0].subtopic}.`,
+        reason: `DlouhodobÄ› mĂˇĹˇ v tomto tĂ©matu ĂşspÄ›Ĺˇnost ${weakness.weakestSubtopics[0].rate} %.`,
         filters: { subtopic: weakness.weakestSubtopics[0].subtopic }
       });
     }
@@ -1394,9 +1394,9 @@ window.buildStudyDashboardSummary = buildStudyDashboardSummary;
         type: "coverage-drill",
         priority: "medium",
         bucket: "coverage",
-        title: "Doplň málo procvičené téma",
-        message: `Ještě si potvrď téma ${weakness.undertrainedSubtopics[0].subtopic}.`,
-        reason: "Zatím je o něm málo dat, takže profil není stabilní.",
+        title: "DoplĹ mĂˇlo procviÄŤenĂ© tĂ©ma",
+        message: `JeĹˇtÄ› si potvrÄŹ tĂ©ma ${weakness.undertrainedSubtopics[0].subtopic}.`,
+        reason: "ZatĂ­m je o nÄ›m mĂˇlo dat, takĹľe profil nenĂ­ stabilnĂ­.",
         filters: { subtopic: weakness.undertrainedSubtopics[0].subtopic }
       });
     }
@@ -1406,9 +1406,9 @@ window.buildStudyDashboardSummary = buildStudyDashboardSummary;
         type: "formulation-drill",
         priority: "medium",
         bucket: "repair",
-        title: "Procvič rizikové formulace",
-        message: `Zaměř se na formulaci ${weakness.topFormulations[0].flag}.`,
-        reason: "Právě tato formulace ti dlouhodobě dělá největší potíže.",
+        title: "ProcviÄŤ rizikovĂ© formulace",
+        message: `ZamÄ›Ĺ™ se na formulaci ${weakness.topFormulations[0].flag}.`,
+        reason: "PrĂˇvÄ› tato formulace ti dlouhodobÄ› dÄ›lĂˇ nejvÄ›tĹˇĂ­ potĂ­Ĺľe.",
         filters: { formulation: weakness.topFormulations[0].flag }
       });
     }
@@ -1418,9 +1418,9 @@ window.buildStudyDashboardSummary = buildStudyDashboardSummary;
         type: "false-confidence-drill",
         priority: "high",
         bucket: "repair",
-        title: "Vrať se k jistým chybným odpovědím",
-        message: "Projdi otázky, kde jsi chyboval(a) s vysokou jistotou.",
-        reason: `V historii máš ${weakness.highConfidenceWrongCount} jistých chybných odpovědí.`,
+        title: "VraĹĄ se k jistĂ˝m chybnĂ˝m odpovÄ›dĂ­m",
+        message: "Projdi otĂˇzky, kde jsi chyboval(a) s vysokou jistotou.",
+        reason: `V historii mĂˇĹˇ ${weakness.highConfidenceWrongCount} jistĂ˝ch chybnĂ˝ch odpovÄ›dĂ­.`,
         filters: { highConfidenceWrong: true }
       });
     }
@@ -1430,9 +1430,9 @@ window.buildStudyDashboardSummary = buildStudyDashboardSummary;
         type: "maintenance",
         priority: "low",
         bucket: "maintain",
-        title: "Udrž silné téma aktivní",
-        message: `Téma ${weakness.masteredSubtopics[0].subtopic} už držíš velmi dobře.`,
-        reason: "Stačí ho průběžně potvrzovat lehčím návratem.",
+        title: "UdrĹľ silnĂ© tĂ©ma aktivnĂ­",
+        message: `TĂ©ma ${weakness.masteredSubtopics[0].subtopic} uĹľ drĹľĂ­Ĺˇ velmi dobĹ™e.`,
+        reason: "StaÄŤĂ­ ho prĹŻbÄ›ĹľnÄ› potvrzovat lehÄŤĂ­m nĂˇvratem.",
         filters: { subtopic: weakness.masteredSubtopics[0].subtopic }
       });
     }
@@ -1442,21 +1442,21 @@ window.buildStudyDashboardSummary = buildStudyDashboardSummary;
         type: "institution-drill",
         priority: "medium",
         bucket: "repair",
-        title: "Procvič záměny institucí",
-        message: `Procvič ${session.results.diagnosticSummary.topInstitutionConfusion}.`,
-        reason: "V poslední relaci se opakovala záměna institucí.",
+        title: "ProcviÄŤ zĂˇmÄ›ny institucĂ­",
+        message: `ProcviÄŤ ${session.results.diagnosticSummary.topInstitutionConfusion}.`,
+        reason: "V poslednĂ­ relaci se opakovala zĂˇmÄ›na institucĂ­.",
         filters: { institutionPair: session.results.diagnosticSummary.topInstitutionConfusion }
       });
     }
 
-    if (trend.direction === "zhoršení") {
+    if (trend.direction === "zhorĹˇenĂ­") {
       recs.push({
         type: "stabilization",
         priority: "medium",
         bucket: "stabilize",
-        title: "Zpomal a stabilizuj výkon",
-        message: "V dalších dvou relacích upřednostni přesnost před tempem.",
-        reason: "Trend posledních pokusů je klesající.",
+        title: "Zpomal a stabilizuj vĂ˝kon",
+        message: "V dalĹˇĂ­ch dvou relacĂ­ch upĹ™ednostni pĹ™esnost pĹ™ed tempem.",
+        reason: "Trend poslednĂ­ch pokusĹŻ je klesajĂ­cĂ­.",
         filters: { mode: "reading-training" }
       });
     }
@@ -1466,9 +1466,9 @@ window.buildStudyDashboardSummary = buildStudyDashboardSummary;
         type: "process-fix",
         priority: "medium",
         bucket: "repair",
-        title: "Oprav procesní chybu",
-        message: `Největší procesní problém relace: ${getErrorLabel(session.results.diagnosticSummary.dominantProcessWeakness)}.`,
-        reason: "Vyplatí se nejdřív stabilizovat způsob čtení a rozhodování.",
+        title: "Oprav procesnĂ­ chybu",
+        message: `NejvÄ›tĹˇĂ­ procesnĂ­ problĂ©m relace: ${getErrorLabel(session.results.diagnosticSummary.dominantProcessWeakness)}.`,
+        reason: "VyplatĂ­ se nejdĹ™Ă­v stabilizovat zpĹŻsob ÄŤtenĂ­ a rozhodovĂˇnĂ­.",
         filters: { errorType: session.results.diagnosticSummary.dominantProcessWeakness }
       });
     }
@@ -1481,7 +1481,7 @@ window.buildStudyDashboardSummary = buildStudyDashboardSummary;
 function updateProgressFromSession(session) {
   const s = session || appState.currentSession; if (!s || s.results?.progressCommitted) return;
   inferAutoErrorTypes();
-  const p = normalizeProgressV4(appState.progress || getEmptyProgressV4());
+  const p = normalizeProgress(appState.progress || getEmptyProgress());
   p.testCount = Number(p.testCount || 0) + 1;
   p.totals.finishedSessions += 1;
   if (s.mode === "repair") p.totals.repairSessions += 1;
@@ -1495,7 +1495,7 @@ function updateProgressFromSession(session) {
     const answered = qs.selectedAnswer !== null;
     const correct = answered && qs.selectedAnswer === q.correct;
     const highConfidenceWrong = answered && !correct && qs.confidence === "high";
-    const errorType = normalizeErrorCodeV4(qs.manualErrorType || qs.autoErrorType);
+    const errorType = normalizeErrorCode(qs.manualErrorType || qs.autoErrorType);
     const payload = { answered, correct, highConfidenceWrong, at: now, timeSpentMs: qs.timeSpentMs || 0, errorType };
     const progressKey = getQuestionProgressKey(q, s);
 
@@ -1506,9 +1506,9 @@ function updateProgressFromSession(session) {
     else if (answered) p.totals.wrong += 1;
     if (highConfidenceWrong) p.totals.highConfidenceWrong += 1;
 
-    const disciplineKey = metadata.discipline || "obecná disciplína";
-    const subtopicKey = metadata.subtopic || "obecné téma";
-    const topicAreaKey = metadata.topicArea || deriveDashboardTopicAreaV4(metadata);
+    const disciplineKey = metadata.discipline || "obecnĂˇ disciplĂ­na";
+    const subtopicKey = metadata.subtopic || "obecnĂ© tĂ©ma";
+    const topicAreaKey = metadata.topicArea || deriveDashboardTopicArea(metadata);
     bumpRegistry(p.disciplines, disciplineKey, payload);
     bumpRegistry(p.subtopics, subtopicKey, payload);
     bumpRegistry(p.topicAreas, topicAreaKey, payload);
@@ -1524,7 +1524,7 @@ function updateProgressFromSession(session) {
     if (metadata.institutionPair) bumpRegistry(p.institutionConfusions, metadata.institutionPair, payload);
     if (errorType) bumpRegistry(p.errorTypes, errorType, payload);
 
-    const confidenceKey = metadata.subtopic || metadata.discipline || "obecné téma";
+    const confidenceKey = metadata.subtopic || metadata.discipline || "obecnĂ© tĂ©ma";
     if (!p.timingByTopic[confidenceKey]) p.timingByTopic[confidenceKey] = { seen:0, totalMs:0, slowCount:0 };
     p.timingByTopic[confidenceKey].seen += 1;
     p.timingByTopic[confidenceKey].totalMs += (qs.timeSpentMs || 0);
@@ -1601,7 +1601,7 @@ function questionMatchesFilters(question, qs, filterConfig) {
   const isChanged = (qs.answerChanges || 0) > 0;
   const isFlagged = !!qs.flagged || !!qs.revisitLater;
   const isHighConfidenceWrong = isWrong && qs.confidence === "high";
-  const errorType = normalizeErrorCodeV4(qs.manualErrorType || qs.autoErrorType);
+  const errorType = normalizeErrorCode(qs.manualErrorType || qs.autoErrorType);
   const progressKey = getQuestionProgressKey(question, appState.currentSession);
   switch (config.type || "errors") {
     case "errors": return isWrong || isUnanswered;
@@ -1617,8 +1617,8 @@ function questionMatchesFilters(question, qs, filterConfig) {
     case "discipline": return metadata.discipline === config.discipline;
     case "subtopic": return metadata.subtopic === config.subtopic;
     case "errorType": {
-      const wanted = normalizeErrorCodeV4(config.errorType);
-      return errorType === wanted || (metadata.likelyErrorTypes || []).some(type => normalizeErrorCodeV4(type) === wanted);
+      const wanted = normalizeErrorCode(config.errorType);
+      return errorType === wanted || (metadata.likelyErrorTypes || []).some(type => normalizeErrorCode(type) === wanted);
     }
     case "formulation": return (metadata.formulationFlags || []).includes(config.formulation);
     case "signalPattern": return (metadata.signalPattern || []).includes(config.signalPattern);
@@ -1645,7 +1645,7 @@ function questionMatchesFilters(question, qs, filterConfig) {
   function startRepairModeFromResults(filterConfig) {
     const s = appState.currentSession; if (!s) return;
     const candidates = buildRepairCandidateIndexes(filterConfig || "errors");
-    if (!candidates.length) { alert("Pro tuto opravnou sadu teď nejsou žádné otázky."); return; }
+    if (!candidates.length) { alert("Pro tuto opravnou sadu teÄŹ nejsou ĹľĂˇdnĂ© otĂˇzky."); return; }
     const repairSession = buildRepairSessionFromResults(s, candidates);
     if (!repairSession) return;
     appState.currentSession = repairSession;
@@ -1702,3 +1702,4 @@ function questionMatchesFilters(question, qs, filterConfig) {
   window.addQuestionToRevision = addQuestionToRevision;
   window.setUserReflection = setUserReflection;
 })();
+
