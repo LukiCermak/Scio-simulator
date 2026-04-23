@@ -1,45 +1,45 @@
-# SCIO simulator
+# SCIO simulátor
 
-## Prehled
-Tento projekt je ciste klientska webova aplikace pro simulaci testu, detailni rozbor odpovedi, Tutor vyklad, dlouhodobe statistiky a navazujici opravne procvicovani.
+## Přehled
+Tento projekt je čistě klientská webová aplikace pro simulaci testu, detailní rozbor odpovědí, Tutor výklad, dlouhodobé statistiky a navazující opravné procvičování.
 
-## Hlavni struktura
-- `index.html`: vstupni stranka aplikace
+## Hlavní struktura
+- `index.html`: vstupní stránka aplikace
 - `styles.css`: styly aplikace
-- `analytics.js`: progress, diagnostika, doporuceni a repair logika
-- `render.js`: render vysledku, review a dashboardu
-- `app_core.js`: session, test flow, normalizace dat a hlavni orchestracni logika
-- `bootstrap.js`: start aplikace a globalni klavesove ovladani review
+- `analytics.js`: progress, diagnostika, doporučení a repair logika
+- `render.js`: render výsledků, review a dashboardu
+- `app_core.js`: session, test flow, normalizace dat a hlavní orchestrační logika
+- `bootstrap.js`: start aplikace a globální klávesové ovládání review
 
 ## Data
-- `data/basic`: runtime data pro zakladni rezim
-- `data/hard`: runtime data pro pokrocily rezim
-- `data_source`: plna kuratorska metadata mimo runtime vrstvu
+- `data/basic`: runtime data pro základní režim
+- `data/hard`: runtime data pro pokročilý režim
+- `data_source`: plná kurátorská metadata mimo runtime vrstvu
 
-Kazdy rezim ma:
-- samostatne soubory otazek po bateriich
-- samostatne runtime metadata po bateriich
-- vlastni `index.js`, ktery sklada dataset do jednotneho runtime exportu
+Každý režim má:
+- samostatné soubory otázek po bateriích
+- samostatná runtime metadata po bateriích
+- vlastní `index.js`, který skládá dataset do jednotného runtime exportu
 
-## Zasady aktualni architektury
-- Runtime vrstva obsahuje jen pole potrebna pro UI, review, Tutor, analytics a repair flow.
-- Student-facing obsah nebyl pri optimalizaci menen.
-- Baterie 8 funguje stejne jako ostatni baterie a nema specialni runtime vetve.
-- Velke puvodni monoliticke datove soubory byly odstraneny.
+## Zásady aktuální architektury
+- Runtime vrstva obsahuje jen pole potřebná pro UI, review, Tutor, analytics a repair flow.
+- Student-facing obsah nebyl při optimalizaci měněn.
+- Baterie 8 funguje stejně jako ostatní baterie a nemá speciální runtime větve.
+- Velké původní monolitické datové soubory byly odstraněny.
 
 ## Kompatibilita
-- Aplikace zachovava kompatibilitu se stavajicimi `localStorage` daty.
-- V kodu zustavaji jen minimalni legacy aliasy tam, kde jsou potreba pro bezpecny prechod.
-- Nove nazvy souboru a projektova struktura uz nejsou verzovane.
+- Aplikace zachovává kompatibilitu se stávajícími `localStorage` daty.
+- V kódu zůstávají jen minimální legacy aliasy tam, kde jsou potřeba pro bezpečný přechod.
+- Nové názvy souborů a projektová struktura už nejsou verzované.
 
-## Dokumentace pro dalsi upravy
+## Dokumentace pro další úpravy
 - `OPTIMIZATION_MASTER_PLAN.md`
 - `METADATA_AUDIT.md`
 - `DATASET_SCHEMA.md`
 - `OPTIMIZATION_CHECKLIST.md`
 - `VALIDATION_CHECKLIST.md`
 
-## Doporuceny postup dalsich uprav
-- Men baterie upravovat lokalne jen v odpovidajicich souborech v `data/` a `data_source/`.
-- Technicke refaktory oddelovat od zmen Tutor obsahu a textu pro studenta.
-- Pred vetsi zmenou projit `VALIDATION_CHECKLIST.md`.
+## Doporučený postup dalších úprav
+- Menší úpravy baterií dělat lokálně jen v odpovídajících souborech v `data/` a `data_source/`.
+- Technické refaktory oddělovat od změn Tutor obsahu a textů pro studenta.
+- Před větší změnou projít `VALIDATION_CHECKLIST.md`.
