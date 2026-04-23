@@ -743,9 +743,9 @@
       "questionText": "O revizi doporučení školského poradenského zařízení může požádat",
       "options": {
         "A": "zletilý žák nebo zákonný zástupce, ale také škola, školské zařízení nebo orgán veřejné moci, pokud to zákon připouští",
-        "B": "pouze škola nebo školské zařízení, pokud mají za to, že doporučení neodpovídá možnostem vzdělávání",
-        "C": "pouze orgán veřejné moci, pokud už dříve rozhodl o povinnosti využít poradenskou pomoc",
-        "D": "pouze zletilý žák nebo zákonný zástupce žáka, nikoli škola ani školské zařízení"
+        "B": "pouze škola nebo školské zařízení, a to jen tehdy, pokud z doporučení bezprostředně vyplývá změna organizace vzdělávání",
+        "C": "pouze orgán veřejné moci, jestliže si revizi vyžádá v řízení vedeném podle zvláštního právního předpisu",
+        "D": "pouze zletilý žák nebo zákonný zástupce žáka, zatímco škola může podat jen podnět, nikoli žádost o revizi"
       },
       "correctOptionText": "zletilý žák nebo zákonný zástupce, ale také škola, školské zařízení nebo orgán veřejné moci, pokud to zákon připouští",
       "discipline": "školská legislativa / revize doporučení",
@@ -2571,9 +2571,9 @@
       "questionText": "Nejpozději do 1 roku od vydání doporučení se vyhodnocuje poskytování",
       "options": {
         "A": "asistenta pedagoga, dalšího pedagogického pracovníka, tlumočníka českého znakového jazyka, přepisovatele pro neslyšící a obdobných podpůrných osob",
-        "B": "pouze těch podpůrných opatření, která byla doporučena na dobu delší než 12 měsíců",
-        "C": "všech podpůrných opatření s normovanou finanční náročností bez ohledu na jejich druh",
-        "D": "pouze asistenta pedagoga a dalšího pedagogického pracovníka, nikoli však tlumočníka nebo přepisovatele"
+        "B": "pouze těch podpůrných opatření, která byla doporučena na dobu delší než 12 měsíců a současně mají personální charakter",
+        "C": "všech podpůrných opatření s normovanou finanční náročností bez ohledu na jejich druh, rozsah nebo dobu doporučení",
+        "D": "pouze asistenta pedagoga a dalšího pedagogického pracovníka, zatímco tlumočník a přepisovatel se vyhodnocují až při skončení platnosti doporučení"
       },
       "correctOptionText": "asistenta pedagoga, dalšího pedagogického pracovníka, tlumočníka českého znakového jazyka, přepisovatele pro neslyšící a obdobných podpůrných osob",
       "discipline": "školská legislativa / vyhodnocování PO",
@@ -3119,10 +3119,10 @@
       "questionNumber": 35,
       "questionText": "Ve škole, třídě, oddělení nebo studijní skupině zřízené podle § 16 odst. 9 zákona nelze standardně poskytovat",
       "options": {
-        "A": "poradenskou pomoc školy a školského poradenského zařízení",
-        "B": "úpravu metod výuky a individualizaci vzdělávacího procesu",
+        "A": "poradenskou pomoc školy a školského poradenského zařízení, pokud byla žákovi doporučena v rámci stejného stupně podpory",
+        "B": "úpravu metod výuky a individualizaci vzdělávacího procesu podle aktuálních vzdělávacích potřeb konkrétního žáka",
         "C": "předmět speciálně pedagogické péče, není-li dán jiný druh znevýhodnění než ten, pro který byla tato forma zřízena",
-        "D": "průběžné a formativní hodnocení přizpůsobené vzdělávacím potřebám žáka"
+        "D": "průběžné a formativní hodnocení přizpůsobené vzdělávacím potřebám žáka a nastaveným vzdělávacím cílům"
       },
       "correctOptionText": "předmět speciálně pedagogické péče, není-li dán jiný druh znevýhodnění než ten, pro který byla tato forma zřízena",
       "discipline": "školská legislativa / §16 odst. 9",
@@ -3485,10 +3485,10 @@
       "questionNumber": 39,
       "questionText": "Ve třetím stupni podpory může být asistent pedagoga v některých variantách nastaven tak, že",
       "options": {
-        "A": "je přítomen pouze při nepedagogických činnostech a nevstupuje do přímé výuky žáka",
-        "B": "může být využíván i pro další žáky, ale pouze tehdy, mají-li stejný druh znevýhodnění",
+        "A": "je přítomen pouze při organizačních a nepedagogických činnostech a do přímé pedagogické práce se žákem standardně nevstupuje",
+        "B": "může být využíván i pro další žáky, ale pouze tehdy, mají-li stejný druh znevýhodnění a stejné doporučení ŠPZ",
         "C": "nemusí být přítomen po celou dobu vyučování a může být využíván i pro další žáky s obdobnou potřebou",
-        "D": "je přítomen po celou dobu vyučování a pracuje výhradně s jedním konkrétním žákem"
+        "D": "je přítomen po celou dobu vyučování a pracuje výhradně s jedním konkrétním žákem podle individuálního rozvrhu podpory"
       },
       "correctOptionText": "nemusí být přítomen po celou dobu vyučování a může být využíván i pro další žáky s obdobnou potřebou",
       "discipline": "školská legislativa / asistent pedagoga",
@@ -4035,9 +4035,9 @@
       "questionText": "Které tvrzení o vyšším stupni podpůrného opatření je správné",
       "options": {
         "A": "Vyšší stupeň zahrnuje opatření stejného druhu z nižších stupňů jen v případech uvedených v části A a u poradenské pomoci, metod či hodnocení",
-        "B": "Vyšší stupeň vždy automaticky zahrnuje všechna opatření nižších stupňů bez výjimky",
-        "C": "Vyšší stupeň zahrnuje nižší stupeň pouze u pomůcek a personálních podpůrných opatření",
-        "D": "Vyšší stupeň zahrnuje nižší stupeň pouze u organizace výuky a prodloužení vzdělávání"
+        "B": "Vyšší stupeň vždy automaticky zahrnuje všechna opatření nižších stupňů bez výjimky, jakmile jsou uvedena v jednom doporučení",
+        "C": "Vyšší stupeň zahrnuje nižší stupeň pouze u pomůcek a personálních podpůrných opatření, nikoli u metod, hodnocení nebo poradenské pomoci",
+        "D": "Vyšší stupeň zahrnuje nižší stupeň pouze u organizace výuky a prodloužení vzdělávání, ostatní druhy podpory se posuzují vždy samostatně"
       },
       "correctOptionText": "Vyšší stupeň zahrnuje opatření stejného druhu z nižších stupňů jen v případech uvedených v části A a u poradenské pomoci, metod či hodnocení",
       "discipline": "školská legislativa / konstrukce vyššího stupně PO",
@@ -4401,9 +4401,9 @@
       "questionText": "Pro čtvrtý stupeň podpůrných opatření je typické, že",
       "options": {
         "A": "jde o významné úpravy průběhu vzdělávání, zpravidla podložené diagnostikou a případně i úpravou výstupů",
-        "B": "postačují jen minimální úpravy metod a hodnocení bez zásahu do organizace vzdělávání",
-        "C": "jde pouze o posílení personální podpory bez možnosti prodloužení délky vzdělávání",
-        "D": "jde výhradně o kompenzační pomůcky bez vazby na diagnostiku a úpravu výstupů"
+        "B": "postačují jen minimální úpravy metod a hodnocení bez zásahu do organizace vzdělávání nebo vzdělávacích výstupů žáka",
+        "C": "jde pouze o posílení personální podpory bez možnosti prodloužení délky vzdělávání nebo úpravy očekávaných výstupů",
+        "D": "jde výhradně o kompenzační pomůcky bez vazby na diagnostiku, úpravu výstupů nebo významnější zásahy do průběhu vzdělávání"
       },
       "correctOptionText": "jde o významné úpravy průběhu vzdělávání, zpravidla podložené diagnostikou a případně i úpravou výstupů",
       "discipline": "školská legislativa / 4. stupeň podpory",
@@ -4488,7 +4488,7 @@
       "batteryTitle": "Legislativa, osobnosti a dějiny oboru",
       "batterySubtitle": "Přesně rozlišovací baterie zaměřená na školskou legislativu, dějiny speciální pedagogiky, logopedii, surdopedii, tyflopedii a diagnostické autory.",
       "questionNumber": 50,
-      "questionText": "Která autorka je spojena s testem zrakového vnímání využívaným zejména u dětí s poruchami učení a obtížemi ve vizuálně-percepční oblasti?",
+      "questionText": "Která autorka je spojena s jedním z často využívaných diagnostických nástrojů pro zrakové vnímání u dětí s poruchami učení a obtížemi ve vizuálně-percepční oblasti?",
       "options": {
         "A": "Nancy Bayley",
         "B": "Marianne Frostig",

@@ -136,9 +136,9 @@
       "text": "O revizi doporučení školského poradenského zařízení může požádat",
       "options": [
         "zletilý žák nebo zákonný zástupce, ale také škola, školské zařízení nebo orgán veřejné moci, pokud to zákon připouští",
-        "pouze škola nebo školské zařízení, pokud mají za to, že doporučení neodpovídá možnostem vzdělávání",
-        "pouze orgán veřejné moci, pokud už dříve rozhodl o povinnosti využít poradenskou pomoc",
-        "pouze zletilý žák nebo zákonný zástupce žáka, nikoli škola ani školské zařízení"
+        "pouze škola nebo školské zařízení, a to jen tehdy, pokud z doporučení bezprostředně vyplývá změna organizace vzdělávání",
+        "pouze orgán veřejné moci, jestliže si revizi vyžádá v řízení vedeném podle zvláštního právního předpisu",
+        "pouze zletilý žák nebo zákonný zástupce žáka, zatímco škola může podat jen podnět, nikoli žádost o revizi"
       ],
       "correct": 0,
       "correctLetter": "A"
@@ -376,9 +376,9 @@
       "text": "Nejpozději do 1 roku od vydání doporučení se vyhodnocuje poskytování",
       "options": [
         "asistenta pedagoga, dalšího pedagogického pracovníka, tlumočníka českého znakového jazyka, přepisovatele pro neslyšící a obdobných podpůrných osob",
-        "pouze těch podpůrných opatření, která byla doporučena na dobu delší než 12 měsíců",
-        "všech podpůrných opatření s normovanou finanční náročností bez ohledu na jejich druh",
-        "pouze asistenta pedagoga a dalšího pedagogického pracovníka, nikoli však tlumočníka nebo přepisovatele"
+        "pouze těch podpůrných opatření, která byla doporučena na dobu delší než 12 měsíců a současně mají personální charakter",
+        "všech podpůrných opatření s normovanou finanční náročností bez ohledu na jejich druh, rozsah nebo dobu doporučení",
+        "pouze asistenta pedagoga a dalšího pedagogického pracovníka, zatímco tlumočník a přepisovatel se vyhodnocují až při skončení platnosti doporučení"
       ],
       "correct": 0,
       "correctLetter": "A"
@@ -447,10 +447,10 @@
       "number": 35,
       "text": "Ve škole, třídě, oddělení nebo studijní skupině zřízené podle § 16 odst. 9 zákona nelze standardně poskytovat",
       "options": [
-        "poradenskou pomoc školy a školského poradenského zařízení",
-        "úpravu metod výuky a individualizaci vzdělávacího procesu",
+        "poradenskou pomoc školy a školského poradenského zařízení, pokud byla žákovi doporučena v rámci stejného stupně podpory",
+        "úpravu metod výuky a individualizaci vzdělávacího procesu podle aktuálních vzdělávacích potřeb konkrétního žáka",
         "předmět speciálně pedagogické péče, není-li dán jiný druh znevýhodnění než ten, pro který byla tato forma zřízena",
-        "průběžné a formativní hodnocení přizpůsobené vzdělávacím potřebám žáka"
+        "průběžné a formativní hodnocení přizpůsobené vzdělávacím potřebám žáka a nastaveným vzdělávacím cílům"
       ],
       "correct": 2,
       "correctLetter": "C"
@@ -495,10 +495,10 @@
       "number": 39,
       "text": "Ve třetím stupni podpory může být asistent pedagoga v některých variantách nastaven tak, že",
       "options": [
-        "je přítomen pouze při nepedagogických činnostech a nevstupuje do přímé výuky žáka",
-        "může být využíván i pro další žáky, ale pouze tehdy, mají-li stejný druh znevýhodnění",
+        "je přítomen pouze při organizačních a nepedagogických činnostech a do přímé pedagogické práce se žákem standardně nevstupuje",
+        "může být využíván i pro další žáky, ale pouze tehdy, mají-li stejný druh znevýhodnění a stejné doporučení ŠPZ",
         "nemusí být přítomen po celou dobu vyučování a může být využíván i pro další žáky s obdobnou potřebou",
-        "je přítomen po celou dobu vyučování a pracuje výhradně s jedním konkrétním žákem"
+        "je přítomen po celou dobu vyučování a pracuje výhradně s jedním konkrétním žákem podle individuálního rozvrhu podpory"
       ],
       "correct": 2,
       "correctLetter": "C"
@@ -568,9 +568,9 @@
       "text": "Které tvrzení o vyšším stupni podpůrného opatření je správné",
       "options": [
         "Vyšší stupeň zahrnuje opatření stejného druhu z nižších stupňů jen v případech uvedených v části A a u poradenské pomoci, metod či hodnocení",
-        "Vyšší stupeň vždy automaticky zahrnuje všechna opatření nižších stupňů bez výjimky",
-        "Vyšší stupeň zahrnuje nižší stupeň pouze u pomůcek a personálních podpůrných opatření",
-        "Vyšší stupeň zahrnuje nižší stupeň pouze u organizace výuky a prodloužení vzdělávání"
+        "Vyšší stupeň vždy automaticky zahrnuje všechna opatření nižších stupňů bez výjimky, jakmile jsou uvedena v jednom doporučení",
+        "Vyšší stupeň zahrnuje nižší stupeň pouze u pomůcek a personálních podpůrných opatření, nikoli u metod, hodnocení nebo poradenské pomoci",
+        "Vyšší stupeň zahrnuje nižší stupeň pouze u organizace výuky a prodloužení vzdělávání, ostatní druhy podpory se posuzují vždy samostatně"
       ],
       "correct": 0,
       "correctLetter": "A"
@@ -616,16 +616,16 @@
       "text": "Pro čtvrtý stupeň podpůrných opatření je typické, že",
       "options": [
         "jde o významné úpravy průběhu vzdělávání, zpravidla podložené diagnostikou a případně i úpravou výstupů",
-        "postačují jen minimální úpravy metod a hodnocení bez zásahu do organizace vzdělávání",
-        "jde pouze o posílení personální podpory bez možnosti prodloužení délky vzdělávání",
-        "jde výhradně o kompenzační pomůcky bez vazby na diagnostiku a úpravu výstupů"
+        "postačují jen minimální úpravy metod a hodnocení bez zásahu do organizace vzdělávání nebo vzdělávacích výstupů žáka",
+        "jde pouze o posílení personální podpory bez možnosti prodloužení délky vzdělávání nebo úpravy očekávaných výstupů",
+        "jde výhradně o kompenzační pomůcky bez vazby na diagnostiku, úpravu výstupů nebo významnější zásahy do průběhu vzdělávání"
       ],
       "correct": 0,
       "correctLetter": "A"
     },
     {
       "number": 50,
-      "text": "Která autorka je spojena s testem zrakového vnímání využívaným zejména u dětí s poruchami učení a obtížemi ve vizuálně-percepční oblasti?",
+      "text": "Která autorka je spojena s jedním z často využívaných diagnostických nástrojů pro zrakové vnímání u dětí s poruchami učení a obtížemi ve vizuálně-percepční oblasti?",
       "options": [
         "Nancy Bayley",
         "Marianne Frostig",
