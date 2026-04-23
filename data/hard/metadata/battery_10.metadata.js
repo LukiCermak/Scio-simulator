@@ -2774,10 +2774,10 @@
     "reviewedCorrectLetter": "B",
     "effectiveCorrectLetter": "B",
     "discipline": "speciálněpedagogická diagnostika / zrakové vnímání",
-    "subtopic": "Frostig test zrakového vnímání",
+    "subtopic": "Test zrakového vnímání",
     "conceptTags": [
       "diagnostické nástroje a autorky testů",
-      "Frostig test zrakového vnímání",
+      "Test zrakového vnímání",
       "speciálněpedagogická diagnostika / zrakové vnímání",
       "hard mode",
       "baterie 10"
@@ -2789,13 +2789,13 @@
     "signalPattern": [
       "Marianne Frostig",
       "diagnostika vizuálně-percepčních obtíží",
-      "Frostig test zrakového vnímání",
+      "Test zrakového vnímání",
       "diagnostické nástroje a autorky testů"
     ],
     "signalHint": "Nestačí poznat známé jméno. Rozhodující je přesně přiřadit osobnost, směr nebo historickou kotvu k tomu, co je pro ni skutečně typické.",
     "attentionRisk": "medium-high",
     "formulationFlags": [],
-    "questionCore": "Frostig test zrakového vnímání",
+    "questionCore": "Test zrakového vnímání",
     "explanationCorrect": "Správná možnost odpovídá tomu, že Marianne Frostig. Rozhodující bylo přesně přiřadit osobnost, směr nebo historickou kotvu k tomu, co je pro ni typické.",
     "explanationDistractor": "Distraktory pracují s reálnými jmény, směry nebo mezníky ze stejného okruhu. Past vzniká tehdy, když je téma povědomé, ale chybí přesné přiřazení.",
     "commonMisconception": "Častou chybou je vybavit si správný okruh, ale už ne přesnou osobnost, rok nebo směr, a proto zaměnit dvě blízké historické kotvy.",
@@ -2809,7 +2809,7 @@
     ],
     "repairTags": [
       "diagnostické nástroje a autorky testů",
-      "Frostig test zrakového vnímání",
+      "Test zrakového vnímání",
       "Marianne Frostig",
       "diagnostika vizuálně-percepčních obtíží",
       "speciálněpedagogická diagnostika / zrakové vnímání",
@@ -2818,7 +2818,7 @@
     "institutionPair": "",
     "recommendedRepairFilters": [
       "diagnostické nástroje a autorky testů",
-      "Frostig test zrakového vnímání",
+      "Test zrakového vnímání",
       "test-author-discrimination"
     ],
     "revisionPriority": "high",
