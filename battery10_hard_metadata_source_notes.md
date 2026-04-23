@@ -1,22 +1,22 @@
-﻿# battery10_hard_metadata_source_notes
+# battery10_hard_metadata_source_notes
 
 ## Stav souboru
-- status: pracovnĂ­ osnova pĹ™ipravenĂˇ pro autorovĂˇnĂ­ metadat Baterie 10
+- status: pracovní osnova připravená pro autorování metadat Baterie 10
 - batteryId: 10
 - batteryLabel: Baterie 10
-- batteryTitle: FinĂˇlnĂ­ nejtÄ›ĹľĹˇĂ­ vrstva â€“ legislativa, osobnosti a historickĂ© kotvy
-- batterySubtitle: PĹ™esnĂˇ diferenÄŤnĂ­ vrstva na Ĺˇkolskou legislativu, dÄ›jiny speciĂˇlnĂ­ pedagogiky, logopedie, surdopedie, tyflopedie a diagnostickĂ© autory.
-- purpose: PĹ™ipravit zdrojovou a autorovacĂ­ mezivrstvu pro budoucĂ­ rozĹˇĂ­Ĺ™enĂ­ hard metadat o Baterii 10 bez pĹ™Ă­mĂ©ho zĂˇpisu do produkÄŤnĂ­ho JS exportu.
-- sourceDataset: FinĂˇlnĂ­ nejtÄ›ĹľĹˇĂ­ test 50 otĂˇzek
+- batteryTitle: Finální nejtěžší vrstva – legislativa, osobnosti a historické kotvy
+- batterySubtitle: Přesná diferenční vrstva na školskou legislativu, dějiny speciální pedagogiky, logopedie, surdopedie, tyflopedie a diagnostické autory.
+- purpose: Připravit zdrojovou a autorovací mezivrstvu pro budoucí rozšíření hard metadat o Baterii 10 bez přímého zápisu do produkčního JS exportu.
+- sourceDataset: Finální nejtěžší test 50 otázek
 - sourceQuestionCount: 50
-- scope: osnova + pĹ™edvyplnÄ›nĂ© zdrojovĂ© a klasifikaÄŤnĂ­ kotvy + mĂ­sta pro tutorovou vrstvu
+- scope: osnova + předvyplněné zdrojové a klasifikační kotvy + místa pro tutorovou vrstvu
 
 ## Jak s osnovou pracovat
-1. U kaĹľdĂ© poloĹľky nejdĹ™Ă­v ovÄ›Ĺ™ `primarySourceSuggested` a doplĹ pĹ™esnĂ˝ paragraf / pĹ™esnou osobnostnĂ­ kotvu.
-2. Potom doplĹ tutorovou vrstvu: `requiredDiscrimination`, `signalHint`, `explanationCorrect`, `explanationDistractor`, `commonMisconception`, `microLesson`.
-3. AĹľ po answer-auditu pĹ™evĂˇdÄ›j poloĹľku do `data_source/hard/metadata/battery_10.source.json`.
+1. U každé položky nejdřív ověř `primarySourceSuggested` a doplň přesný paragraf / přesnou osobnostní kotvu.
+2. Potom doplň tutorovou vrstvu: `requiredDiscrimination`, `signalHint`, `explanationCorrect`, `explanationDistractor`, `commonMisconception`, `microLesson`.
+3. Až po answer-auditu převáděj položku do `data_source/hard/metadata/battery_10.source.json`.
 
-## DoporuÄŤenĂˇ minimĂˇlnĂ­ pole pro finĂˇlnĂ­ metadata
+## Doporučená minimální pole pro finální metadata
 - globalId
 - batteryId
 - batteryLabel
@@ -49,7 +49,7 @@
 - recommendedRecallPrompt
 - metadataSourceRef
 
-## SpoleÄŤnĂ© TODO pro vĹˇechny poloĹľky
+## Společné TODO pro všechny položky
 - doplnit `requiredDiscrimination`
 - doplnit `signalPattern`
 - doplnit `signalHint`
@@ -60,23 +60,23 @@
 - doplnit `microLesson`
 - doplnit `recommendedRecallPrompt`
 - doplnit `repairTags`
-- ovÄ›Ĺ™it `trapPattern` proti finĂˇlnĂ­ formulaci distraktorĹŻ
-- u legislativy vypsat pĹ™esnĂ˝ paragraf / odstavec / pĹ™Ă­lohu
-- u osobnostĂ­ doplnit struÄŤnĂ© zdĹŻvodnÄ›nĂ­, proÄŤ je sprĂˇvnĂˇ prĂˇvÄ› tato osoba a proÄŤ ne blĂ­zkĂ˝ distraktor
+- ověřit `trapPattern` proti finální formulaci distraktorů
+- u legislativy vypsat přesný paragraf / odstavec / přílohu
+- u osobností doplnit stručné zdůvodnění, proč je správná právě tato osoba a proč ne blízký distraktor
 
-## RychlĂˇ mapa tematickĂ˝ch blokĹŻ
-### A. LegislativnÄ›-procesnĂ­ poloĹľky
-- otĂˇzky: B10Q01, B10Q03, B10Q05, B10Q07, B10Q09, B10Q11, B10Q13, B10Q15, B10Q17, B10Q19, B10Q21, B10Q23, B10Q25, B10Q27, B10Q29, B10Q31, B10Q33, B10Q35, B10Q37, B10Q39, B10Q41, B10Q43, B10Q45, B10Q47, B10Q49
-### B. ÄŚeskĂ© a slovenskĂ© osobnosti speciĂˇlnĂ­ pedagogiky
-- otĂˇzky: B10Q02, B10Q04, B10Q06, B10Q14, B10Q16, B10Q18, B10Q48
-### C. Psychopedie a ranĂ© dÄ›jiny diagnostiky
-- otĂˇzky: B10Q08, B10Q10, B10Q12
-### D. DÄ›jiny logopedie a foniatrie
-- otĂˇzky: B10Q20, B10Q22, B10Q24, B10Q26, B10Q28, B10Q30
-### E. Surdopedie â€“ historickĂ© smÄ›ry a osobnosti
-- otĂˇzky: B10Q32, B10Q34, B10Q36, B10Q38
-### F. Tyflopedie a diagnostika zrakovĂ©ho vnĂ­mĂˇnĂ­
-- otĂˇzky: B10Q40, B10Q42, B10Q44, B10Q46, B10Q50
+## Rychlá mapa tematických bloků
+### A. Legislativně-procesní položky
+- otázky: B10Q01, B10Q03, B10Q05, B10Q07, B10Q09, B10Q11, B10Q13, B10Q15, B10Q17, B10Q19, B10Q21, B10Q23, B10Q25, B10Q27, B10Q29, B10Q31, B10Q33, B10Q35, B10Q37, B10Q39, B10Q41, B10Q43, B10Q45, B10Q47, B10Q49
+### B. České a slovenské osobnosti speciální pedagogiky
+- otázky: B10Q02, B10Q04, B10Q06, B10Q14, B10Q16, B10Q18, B10Q48
+### C. Psychopedie a rané dějiny diagnostiky
+- otázky: B10Q08, B10Q10, B10Q12
+### D. Dějiny logopedie a foniatrie
+- otázky: B10Q20, B10Q22, B10Q24, B10Q26, B10Q28, B10Q30
+### E. Surdopedie – historické směry a osobnosti
+- otázky: B10Q32, B10Q34, B10Q36, B10Q38
+### F. Tyflopedie a diagnostika zrakového vnímání
+- otázky: B10Q40, B10Q42, B10Q44, B10Q46, B10Q50
 
 ---
 ## B10Q01
@@ -84,28 +84,28 @@
 ```yaml
 globalId: B10Q01
 questionNumber: 1
-questionText: "Ĺ kola poskytuje podpĹŻrnĂˇ opatĹ™enĂ­ druhĂ©ho aĹľ pĂˇtĂ©ho stupnÄ›"
+questionText: "Škola poskytuje podpůrná opatření druhého až pátého stupně"
 options:
-  A: "po obdrĹľenĂ­ doporuÄŤenĂ­ Ĺ PZ a po udÄ›lenĂ­ pĂ­semnĂ©ho informovanĂ©ho souhlasu, a to bezodkladnÄ›"
-  B: "po doporuÄŤenĂ­ Ĺ PZ, i kdyĹľ informovanĂ˝ souhlas bude doplnÄ›n aĹľ po zahĂˇjenĂ­ podpory"
-  C: "po ĂşstnĂ­m souhlasu zĂˇkonnĂ©ho zĂˇstupce a po nĂˇslednĂ©m zĂˇznamu tĹ™Ă­dnĂ­ho uÄŤitele"
-  D: "po obdrĹľenĂ­ zprĂˇvy Ĺ PZ, i kdyĹľ jeĹˇtÄ› nebyl udÄ›len pĂ­semnĂ˝ informovanĂ˝ souhlas"
+  A: "po obdržení doporučení ŠPZ a po udělení písemného informovaného souhlasu, a to bezodkladně"
+  B: "po doporučení ŠPZ, i když informovaný souhlas bude doplněn až po zahájení podpory"
+  C: "po ústním souhlasu zákonného zástupce a po následném záznamu třídního učitele"
+  D: "po obdržení zprávy ŠPZ, i když ještě nebyl udělen písemný informovaný souhlas"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "po obdrĹľenĂ­ doporuÄŤenĂ­ Ĺ PZ a po udÄ›lenĂ­ pĂ­semnĂ©ho informovanĂ©ho souhlasu, a to bezodkladnÄ›"
-discipline: "ĹˇkolskĂˇ legislativa / podpĹŻrnĂˇ opatĹ™enĂ­"
-subtopic: "zahĂˇjenĂ­ poskytovĂˇnĂ­ PO 2.â€“5. stupnÄ›"
-conceptFamily: "podpĹŻrnĂˇ opatĹ™enĂ­ a proces jejich poskytovĂˇnĂ­"
-distinctionAxis: "doporuÄŤenĂ­ + pĂ­semnĂ˝ informovanĂ˝ souhlas vs neformĂˇlnĂ­ ÄŤi neĂşplnĂ˝ postup"
+sourceCorrectOptionText: "po obdržení doporučení ŠPZ a po udělení písemného informovaného souhlasu, a to bezodkladně"
+discipline: "školská legislativa / podpůrná opatření"
+subtopic: "zahájení poskytování PO 2.–5. stupně"
+conceptFamily: "podpůrná opatření a proces jejich poskytování"
+distinctionAxis: "doporučení + písemný informovaný souhlas vs neformální či neúplný postup"
 questionTypeSuggested: "legislation-process-discrimination"
 distractorTypeSuggested: "near-procedure"
-trapPatternSeed: "doporuÄŤenĂ­ Ă— zprĂˇva Ă— souhlas"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "doporučení × zpráva × souhlas"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. Â§ 16 odst. 1"
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. Â§ 16"
+  - "Vyhláška č. 27/2016 Sb. § 16 odst. 1"
+  - "Zákon č. 561/2004 Sb. § 16"
 secondarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -113,12 +113,12 @@ metadataSourceRef: "B10Q01"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: doporuÄŤenĂ­ + pĂ­semnĂ˝ informovanĂ˝ souhlas vs neformĂˇlnĂ­ ÄŤi neĂşplnĂ˝ postup.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: doporučení + písemný informovaný souhlas vs neformální či neúplný postup.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -138,41 +138,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q02
 questionNumber: 2
-questionText: "KterĂ˝ autor je spojen se starĹˇĂ­m, uĹľĹˇĂ­m a kategoriĂˇlnÄ› formulovanĂ˝m vymezenĂ­m speciĂˇlnĂ­ pedagogiky jako vÄ›dy o speciĂˇlnĂ­ vĂ˝chovÄ›, vyuÄŤovĂˇnĂ­ a vzdÄ›lĂˇvĂˇnĂ­ osob s postiĹľenĂ­m?"
+questionText: "Který autor je spojen se starším, užším a kategoriálně formulovaným vymezením speciální pedagogiky jako vědy o speciální výchově, vyučování a vzdělávání osob s postižením?"
 options:
-  A: "JiĹ™Ă­ Ĺ koda"
-  B: "Karel DvoĹ™Ăˇk"
-  C: "Josef SlowĂ­k"
-  D: "SlavomĂ­r Fischer"
+  A: "Jiří Škoda"
+  B: "Karel Dvořák"
+  C: "Josef Slowík"
+  D: "Slavomír Fischer"
 sourceCorrectLetter: "B"
-sourceCorrectOptionText: "Karel DvoĹ™Ăˇk"
-discipline: "historie speciĂˇlnĂ­ pedagogiky / terminologie"
-subtopic: "starĹˇĂ­ kategoriĂˇlnĂ­ vymezenĂ­ oboru"
-conceptFamily: "ÄŤeskĂ© osobnosti a vĂ˝voj definic speciĂˇlnĂ­ pedagogiky"
-distinctionAxis: "starĹˇĂ­ uĹľĹˇĂ­ kategoriĂˇlnĂ­ pojetĂ­ vs souÄŤasnĂ© ĹˇirĹˇĂ­ funkÄŤnĂ­ pojetĂ­"
+sourceCorrectOptionText: "Karel Dvořák"
+discipline: "historie speciální pedagogiky / terminologie"
+subtopic: "starší kategoriální vymezení oboru"
+conceptFamily: "české osobnosti a vývoj definic speciální pedagogiky"
+distinctionAxis: "starší užší kategoriální pojetí vs současné širší funkční pojetí"
 questionTypeSuggested: "term-author-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "historickĂˇ definice Ă— souÄŤasnĂ­ autoĹ™i"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "historická definice × současní autoři"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Karel DvoĹ™Ăˇk"
+  - "Mini-wikipedie osobností – Karel Dvořák"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "starĹˇĂ­ ÄŤeskĂ© kategoriĂˇlnĂ­ pojetĂ­ oboru"
-personalityAnchor: "Karel DvoĹ™Ăˇk"
+historicalAnchor: "starší české kategoriální pojetí oboru"
+personalityAnchor: "Karel Dvořák"
 metadataSourceRef: "B10Q02"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: starĹˇĂ­ uĹľĹˇĂ­ kategoriĂˇlnĂ­ pojetĂ­ vs souÄŤasnĂ© ĹˇirĹˇĂ­ funkÄŤnĂ­ pojetĂ­.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: starší užší kategoriální pojetí vs současné širší funkční pojetí.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -192,28 +192,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q03
 questionNumber: 3
-questionText: "Pokud Ĺˇkola nemĹŻĹľe doporuÄŤenĂ© podpĹŻrnĂ© opatĹ™enĂ­ zajistit bezodkladnÄ›, mĹŻĹľe"
+questionText: "Pokud škola nemůže doporučené podpůrné opatření zajistit bezodkladně, může"
 options:
-  A: "po schvĂˇlenĂ­ Ĺ™editelem Ĺˇkoly doÄŤasnÄ› poskytnout jakĂ©koli organizaÄŤnÄ› dosaĹľitelnĂ© opatĹ™enĂ­"
-  B: "po informovĂˇnĂ­ zĂˇkonnĂ©ho zĂˇstupce odloĹľit poskytovĂˇnĂ­ opatĹ™enĂ­ do dalĹˇĂ­ho pololetĂ­"
-  C: "po projednĂˇnĂ­ se Ĺ PZ a se souhlasem doÄŤasnÄ› poskytnout jinĂ© obdobnĂ© opatĹ™enĂ­ stejnĂ©ho stupnÄ›"
-  D: "po projednĂˇnĂ­ s poradenskĂ˝m pracovnĂ­kem Ĺˇkoly doÄŤasnÄ› poskytnout opatĹ™enĂ­ niĹľĹˇĂ­ho stupnÄ›"
+  A: "po schválení ředitelem školy dočasně poskytnout jakékoli organizačně dosažitelné opatření"
+  B: "po informování zákonného zástupce odložit poskytování opatření do dalšího pololetí"
+  C: "po projednání se ŠPZ a se souhlasem dočasně poskytnout jiné obdobné opatření stejného stupně"
+  D: "po projednání s poradenským pracovníkem školy dočasně poskytnout opatření nižšího stupně"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "po projednĂˇnĂ­ se Ĺ PZ a se souhlasem doÄŤasnÄ› poskytnout jinĂ© obdobnĂ© opatĹ™enĂ­ stejnĂ©ho stupnÄ›"
-discipline: "ĹˇkolskĂˇ legislativa / podpĹŻrnĂˇ opatĹ™enĂ­"
-subtopic: "nĂˇhradnĂ­ obdobnĂ© opatĹ™enĂ­ stejnĂ©ho stupnÄ›"
-conceptFamily: "podpĹŻrnĂˇ opatĹ™enĂ­ a proces jejich poskytovĂˇnĂ­"
-distinctionAxis: "bezodkladnost vs doÄŤasnĂ© obdobnĂ© opatĹ™enĂ­ stejnĂ©ho stupnÄ›"
+sourceCorrectOptionText: "po projednání se ŠPZ a se souhlasem dočasně poskytnout jiné obdobné opatření stejného stupně"
+discipline: "školská legislativa / podpůrná opatření"
+subtopic: "náhradní obdobné opatření stejného stupně"
+conceptFamily: "podpůrná opatření a proces jejich poskytování"
+distinctionAxis: "bezodkladnost vs dočasné obdobné opatření stejného stupně"
 questionTypeSuggested: "legislation-process-discrimination"
 distractorTypeSuggested: "near-procedure"
-trapPatternSeed: "odklad Ă— niĹľĹˇĂ­ stupeĹ Ă— stejnost stupnÄ›"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "odklad × nižší stupeň × stejnost stupně"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. Â§ 16 odst. 3"
+  - "Vyhláška č. 27/2016 Sb. § 16 odst. 3"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -221,12 +221,12 @@ metadataSourceRef: "B10Q03"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: bezodkladnost vs doÄŤasnĂ© obdobnĂ© opatĹ™enĂ­ stejnĂ©ho stupnÄ›.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: bezodkladnost vs dočasné obdobné opatření stejného stupně.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -246,41 +246,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q04
 questionNumber: 4
-questionText: "KterĂˇ autorka je v ÄŤeskĂ©m prostĹ™edĂ­ nejvĂ­ce spojovĂˇna se speciĂˇlnÄ›pedagogickou diagnostikou, funkÄŤnĂ­m posouzenĂ­m obtĂ­ĹľĂ­ a vymezovĂˇnĂ­m cĂ­lovĂ˝ch skupin speciĂˇlnĂ­ pedagogiky?"
+questionText: "Která autorka je v českém prostředí nejvíce spojována se speciálněpedagogickou diagnostikou, funkčním posouzením obtíží a vymezováním cílových skupin speciální pedagogiky?"
 options:
-  A: "Lucie ZormanovĂˇ"
-  B: "Marie VĂ­tkovĂˇ"
-  C: "Marie RenotiĂ©rovĂˇ"
-  D: "Jarmila PipekovĂˇ"
+  A: "Lucie Zormanová"
+  B: "Marie Vítková"
+  C: "Marie Renotiérová"
+  D: "Jarmila Pipeková"
 sourceCorrectLetter: "D"
-sourceCorrectOptionText: "Jarmila PipekovĂˇ"
-discipline: "speciĂˇlnĂ­ pedagogika / diagnostika"
-subtopic: "funkÄŤnĂ­ posouzenĂ­ obtĂ­ĹľĂ­ a cĂ­lovĂ© skupiny"
-conceptFamily: "ÄŤeskĂ© osobnosti diagnostiky a souÄŤasnĂ©ho vymezenĂ­ oboru"
-distinctionAxis: "diagnostickĂˇ a funkÄŤnĂ­ linie vs systematizace ÄŤi obecnÄ› inkluzivnĂ­ pojetĂ­"
+sourceCorrectOptionText: "Jarmila Pipeková"
+discipline: "speciální pedagogika / diagnostika"
+subtopic: "funkční posouzení obtíží a cílové skupiny"
+conceptFamily: "české osobnosti diagnostiky a současného vymezení oboru"
+distinctionAxis: "diagnostická a funkční linie vs systematizace či obecně inkluzivní pojetí"
 questionTypeSuggested: "term-author-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "diagnostika Ă— systematizace Ă— inkluzivnĂ­ pojetĂ­"
-institutionDomain: "dÄ›jiny oboru / diagnostika"
+trapPatternSeed: "diagnostika × systematizace × inkluzivní pojetí"
+institutionDomain: "dějiny oboru / diagnostika"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Jarmila PipekovĂˇ"
+  - "Mini-wikipedie osobností – Jarmila Pipeková"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "souÄŤasnĂˇ ÄŤeskĂˇ diagnostickĂˇ linie"
-personalityAnchor: "Jarmila PipekovĂˇ"
+historicalAnchor: "současná česká diagnostická linie"
+personalityAnchor: "Jarmila Pipeková"
 metadataSourceRef: "B10Q04"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: diagnostickĂˇ a funkÄŤnĂ­ linie vs systematizace ÄŤi obecnÄ› inkluzivnĂ­ pojetĂ­.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: diagnostická a funkční linie vs systematizace či obecně inkluzivní pojetí.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -300,28 +300,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q05
 questionNumber: 5
-questionText: "LhĹŻta 4 mÄ›sĂ­cĹŻ, po jejĂ­mĹľ uplynutĂ­ Ĺˇkola projednĂˇvĂˇ vÄ›c se Ĺ PZ, bÄ›ĹľĂ­"
+questionText: "Lhůta 4 měsíců, po jejímž uplynutí škola projednává věc se ŠPZ, běží"
 options:
-  A: "ode dne vydĂˇnĂ­ doporuÄŤenĂ­ ĹˇkolskĂ˝m poradenskĂ˝m zaĹ™Ă­zenĂ­m"
-  B: "ode dne, kdy Ĺˇkola ukonÄŤila vyhodnocenĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­ prvnĂ­ho stupnÄ›"
-  C: "ode dne, kdy bylo opatĹ™enĂ­ poprvĂ© fakticky vyuĹľito ve vĂ˝uce"
-  D: "ode dne, kdy Ĺˇkola obdrĹľela pĂ­semnĂ˝ informovanĂ˝ souhlas"
+  A: "ode dne vydání doporučení školským poradenským zařízením"
+  B: "ode dne, kdy škola ukončila vyhodnocení podpůrných opatření prvního stupně"
+  C: "ode dne, kdy bylo opatření poprvé fakticky využito ve výuce"
+  D: "ode dne, kdy škola obdržela písemný informovaný souhlas"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "ode dne vydĂˇnĂ­ doporuÄŤenĂ­ ĹˇkolskĂ˝m poradenskĂ˝m zaĹ™Ă­zenĂ­m"
-discipline: "ĹˇkolskĂˇ legislativa / podpĹŻrnĂˇ opatĹ™enĂ­"
-subtopic: "ÄŤtyĹ™mÄ›sĂ­ÄŤnĂ­ lhĹŻta pro projednĂˇnĂ­ se Ĺ PZ"
-conceptFamily: "vyhodnocovĂˇnĂ­ a implementace podpĹŻrnĂ˝ch opatĹ™enĂ­"
-distinctionAxis: "ode dne vydĂˇnĂ­ doporuÄŤenĂ­ vs jinĂ© moĹľnĂ© poÄŤĂˇtky bÄ›hu lhĹŻty"
+sourceCorrectOptionText: "ode dne vydání doporučení školským poradenským zařízením"
+discipline: "školská legislativa / podpůrná opatření"
+subtopic: "čtyřměsíční lhůta pro projednání se ŠPZ"
+conceptFamily: "vyhodnocování a implementace podpůrných opatření"
+distinctionAxis: "ode dne vydání doporučení vs jiné možné počátky běhu lhůty"
 questionTypeSuggested: "legislation-timing-discrimination"
 distractorTypeSuggested: "near-timing"
-trapPatternSeed: "vydĂˇnĂ­ doporuÄŤenĂ­ Ă— souhlas Ă— faktickĂ© zahĂˇjenĂ­"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "vydání doporučení × souhlas × faktické zahájení"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. Â§ 16 odst. 4"
+  - "Vyhláška č. 27/2016 Sb. § 16 odst. 4"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -329,12 +329,12 @@ metadataSourceRef: "B10Q05"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: ode dne vydĂˇnĂ­ doporuÄŤenĂ­ vs jinĂ© moĹľnĂ© poÄŤĂˇtky bÄ›hu lhĹŻty.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: ode dne vydání doporučení vs jiné možné počátky běhu lhůty.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -354,41 +354,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q06
 questionNumber: 6
-questionText: "KterĂ˝ slovenskĂ˝ speciĂˇlnĂ­ pedagog je spojen s komprehenzivnĂ­m a integrativnĂ­m pojetĂ­m speciĂˇlnĂ­ pedagogiky a s pĹ™esahem do tyflopedie i ĹˇkolskĂ© integrace?"
+questionText: "Který slovenský speciální pedagog je spojen s komprehenzivním a integrativním pojetím speciální pedagogiky a s přesahem do tyflopedie i školské integrace?"
 options:
   A: "Milan Valenta"
-  B: "JĂˇn JesenskĂ˝"
-  C: "Josef SlowĂ­k"
+  B: "Ján Jesenský"
+  C: "Josef Slowík"
   D: "Viktor Lechta"
 sourceCorrectLetter: "B"
-sourceCorrectOptionText: "JĂˇn JesenskĂ˝"
-discipline: "historie speciĂˇlnĂ­ pedagogiky / osobnosti"
-subtopic: "komprehenzivnĂ­ a integrativnĂ­ pojetĂ­"
-conceptFamily: "slovenskĂ© osobnosti a integrativnĂ­ pojetĂ­ oboru"
-distinctionAxis: "komprehenzivnĂ­ integrativnĂ­ pojetĂ­ vs jinĂ© souÄŤasnĂ© proudy"
+sourceCorrectOptionText: "Ján Jesenský"
+discipline: "historie speciální pedagogiky / osobnosti"
+subtopic: "komprehenzivní a integrativní pojetí"
+conceptFamily: "slovenské osobnosti a integrativní pojetí oboru"
+distinctionAxis: "komprehenzivní integrativní pojetí vs jiné současné proudy"
 questionTypeSuggested: "term-author-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "slovenskĂ˝ autor Ă— ÄŤeskĂ˝ autor Ă— oborovĂ˝ pĹ™esah"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "slovenský autor × český autor × oborový přesah"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ JĂˇn JesenskĂ˝"
+  - "Mini-wikipedie osobností – Ján Jesenský"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "komprehenzivnĂ­ a integrativnĂ­ pojetĂ­"
-personalityAnchor: "JĂˇn JesenskĂ˝"
+historicalAnchor: "komprehenzivní a integrativní pojetí"
+personalityAnchor: "Ján Jesenský"
 metadataSourceRef: "B10Q06"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: komprehenzivnĂ­ integrativnĂ­ pojetĂ­ vs jinĂ© souÄŤasnĂ© proudy.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: komprehenzivní integrativní pojetí vs jiné současné proudy.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -408,28 +408,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q07
 questionNumber: 7
-questionText: "KterĂ© tvrzenĂ­ o kombinaci podpĹŻrnĂ˝ch opatĹ™enĂ­ je sprĂˇvnĂ©"
+questionText: "Které tvrzení o kombinaci podpůrných opatření je správné"
 options:
-  A: "Lze kombinovat pouze ta opatĹ™enĂ­, kterĂˇ majĂ­ stejnou normovanou finanÄŤnĂ­ nĂˇroÄŤnost"
-  B: "Lze kombinovat pouze opatĹ™enĂ­ stejnĂ©ho stupnÄ›, pokud je schvĂˇlĂ­ Ĺ™editel Ĺˇkoly"
-  C: "Lze kombinovat rĹŻznĂ© druhy a stupnÄ› podpory, ale konkrĂ©tnĂ­ druh opatĹ™enĂ­ jen v jednom stupni"
-  D: "Lze kombinovat rĹŻznĂ© druhy podpory, ale vĹľdy jen v rĂˇmci jednoho stupnÄ› podpory"
+  A: "Lze kombinovat pouze ta opatření, která mají stejnou normovanou finanční náročnost"
+  B: "Lze kombinovat pouze opatření stejného stupně, pokud je schválí ředitel školy"
+  C: "Lze kombinovat různé druhy a stupně podpory, ale konkrétní druh opatření jen v jednom stupni"
+  D: "Lze kombinovat různé druhy podpory, ale vždy jen v rámci jednoho stupně podpory"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "Lze kombinovat rĹŻznĂ© druhy a stupnÄ› podpory, ale konkrĂ©tnĂ­ druh opatĹ™enĂ­ jen v jednom stupni"
-discipline: "ĹˇkolskĂˇ legislativa / podpĹŻrnĂˇ opatĹ™enĂ­"
-subtopic: "kombinace druhĹŻ a stupĹĹŻ podpory"
-conceptFamily: "podpĹŻrnĂˇ opatĹ™enĂ­ a jejich kombinace"
-distinctionAxis: "rĹŻznĂ© druhy a stupnÄ› vs konkrĂ©tnĂ­ druh jen v jednom stupni"
+sourceCorrectOptionText: "Lze kombinovat různé druhy a stupně podpory, ale konkrétní druh opatření jen v jednom stupni"
+discipline: "školská legislativa / podpůrná opatření"
+subtopic: "kombinace druhů a stupňů podpory"
+conceptFamily: "podpůrná opatření a jejich kombinace"
+distinctionAxis: "různé druhy a stupně vs konkrétní druh jen v jednom stupni"
 questionTypeSuggested: "legislation-structure-discrimination"
 distractorTypeSuggested: "near-rule"
-trapPatternSeed: "kombinace stupĹĹŻ Ă— kombinace druhĹŻ"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "kombinace stupňů × kombinace druhů"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. Â§ 2 odst. 4"
+  - "Vyhláška č. 27/2016 Sb. § 2 odst. 4"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -437,12 +437,12 @@ metadataSourceRef: "B10Q07"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: rĹŻznĂ© druhy a stupnÄ› vs konkrĂ©tnĂ­ druh jen v jednom stupni.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: různé druhy a stupně vs konkrétní druh jen v jednom stupni.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -462,41 +462,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q08
 questionNumber: 8
-questionText: "KterĂ˝ psychiatr vymezoval idiocii jako trvalĂ˝ stav vrozenĂ©ho nebo ÄŤasnÄ› vzniklĂ©ho nedostatku rozumovĂ˝ch schopnostĂ­ a odliĹˇoval ji od duĹˇevnĂ­ nemoci?"
+questionText: "Který psychiatr vymezoval idiocii jako trvalý stav vrozeného nebo časně vzniklého nedostatku rozumových schopností a odlišoval ji od duševní nemoci?"
 options:
   A: "Philippe Pinel"
   B: "Felix Platter"
   C: "John Langdon Down"
-  D: "Jean-Ă‰tienne Dominique Esquirol"
+  D: "Jean-Étienne Dominique Esquirol"
 sourceCorrectLetter: "D"
-sourceCorrectOptionText: "Jean-Ă‰tienne Dominique Esquirol"
-discipline: "psychopedie / dÄ›jiny terminologie"
-subtopic: "idiocie vs duĹˇevnĂ­ nemoc"
-conceptFamily: "dÄ›jiny psychopedie a lĂ©kaĹ™sko-pedagogickĂ˝ch konceptĹŻ"
-distinctionAxis: "ranĂ© psychiatrickĂ© vymezenĂ­ intelektovĂ©ho postiĹľenĂ­ vs jinĂ© historickĂ© osobnosti"
+sourceCorrectOptionText: "Jean-Étienne Dominique Esquirol"
+discipline: "psychopedie / dějiny terminologie"
+subtopic: "idiocie vs duševní nemoc"
+conceptFamily: "dějiny psychopedie a lékařsko-pedagogických konceptů"
+distinctionAxis: "rané psychiatrické vymezení intelektového postižení vs jiné historické osobnosti"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "ranĂ˝ psychiatrickĂ˝ autor Ă— jinĂ˝ oborovĂ˝ prĹŻkopnĂ­k"
-institutionDomain: "dÄ›jiny oboru / medicĂ­na"
+trapPatternSeed: "raný psychiatrický autor × jiný oborový průkopník"
+institutionDomain: "dějiny oboru / medicína"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Jean-Ă‰tienne Dominique Esquirol"
+  - "Mini-wikipedie osobností – Jean-Étienne Dominique Esquirol"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "ranĂˇ psychiatrickĂˇ klasifikace idiocie"
-personalityAnchor: "Jean-Ă‰tienne Dominique Esquirol"
+historicalAnchor: "raná psychiatrická klasifikace idiocie"
+personalityAnchor: "Jean-Étienne Dominique Esquirol"
 metadataSourceRef: "B10Q08"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: ranĂ© psychiatrickĂ© vymezenĂ­ intelektovĂ©ho postiĹľenĂ­ vs jinĂ© historickĂ© osobnosti.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: rané psychiatrické vymezení intelektového postižení vs jiné historické osobnosti.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -516,28 +516,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q09
 questionNumber: 9
-questionText: "O revizi doporuÄŤenĂ­ ĹˇkolskĂ©ho poradenskĂ©ho zaĹ™Ă­zenĂ­ mĹŻĹľe poĹľĂˇdat"
+questionText: "O revizi doporučení školského poradenského zařízení může požádat"
 options:
-  A: "zletilĂ˝ ĹľĂˇk nebo zĂˇkonnĂ˝ zĂˇstupce, ale takĂ© Ĺˇkola, ĹˇkolskĂ© zaĹ™Ă­zenĂ­ nebo orgĂˇn veĹ™ejnĂ© moci, pokud to zĂˇkon pĹ™ipouĹˇtĂ­"
-  B: "pouze Ĺˇkola nebo ĹˇkolskĂ© zaĹ™Ă­zenĂ­, pokud majĂ­ za to, Ĺľe doporuÄŤenĂ­ neodpovĂ­dĂˇ moĹľnostem vzdÄ›lĂˇvĂˇnĂ­"
-  C: "pouze orgĂˇn veĹ™ejnĂ© moci, pokud uĹľ dĹ™Ă­ve rozhodl o povinnosti vyuĹľĂ­t poradenskou pomoc"
-  D: "pouze zletilĂ˝ ĹľĂˇk nebo zĂˇkonnĂ˝ zĂˇstupce ĹľĂˇka, nikoli Ĺˇkola ani ĹˇkolskĂ© zaĹ™Ă­zenĂ­"
+  A: "zletilý žák nebo zákonný zástupce, ale také škola, školské zařízení nebo orgán veřejné moci, pokud to zákon připouští"
+  B: "pouze škola nebo školské zařízení, pokud mají za to, že doporučení neodpovídá možnostem vzdělávání"
+  C: "pouze orgán veřejné moci, pokud už dříve rozhodl o povinnosti využít poradenskou pomoc"
+  D: "pouze zletilý žák nebo zákonný zástupce žáka, nikoli škola ani školské zařízení"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "zletilĂ˝ ĹľĂˇk nebo zĂˇkonnĂ˝ zĂˇstupce, ale takĂ© Ĺˇkola, ĹˇkolskĂ© zaĹ™Ă­zenĂ­ nebo orgĂˇn veĹ™ejnĂ© moci, pokud to zĂˇkon pĹ™ipouĹˇtĂ­"
-discipline: "ĹˇkolskĂˇ legislativa / revize doporuÄŤenĂ­"
-subtopic: "oprĂˇvnÄ›nĂ© osoby k podĂˇnĂ­ ĹľĂˇdosti o revizi"
-conceptFamily: "revize doporuÄŤenĂ­ a opravnĂ© procesy"
-distinctionAxis: "okruh oprĂˇvnÄ›nĂ˝ch osob vs restriktivnÄ› zĂşĹľenĂ˝ vĂ˝klad"
+sourceCorrectOptionText: "zletilý žák nebo zákonný zástupce, ale také škola, školské zařízení nebo orgán veřejné moci, pokud to zákon připouští"
+discipline: "školská legislativa / revize doporučení"
+subtopic: "oprávněné osoby k podání žádosti o revizi"
+conceptFamily: "revize doporučení a opravné procesy"
+distinctionAxis: "okruh oprávněných osob vs restriktivně zúžený výklad"
 questionTypeSuggested: "legislation-authority-discrimination"
 distractorTypeSuggested: "authority-mixup"
-trapPatternSeed: "kdo mĹŻĹľe podat revizi"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "kdo může podat revizi"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. Â§ 16b"
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ doporuÄŤenĂ­"
+  - "Zákon č. 561/2004 Sb. § 16b"
+  - "Vyhláška č. 27/2016 Sb. – doporučení"
 secondarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -545,12 +545,12 @@ metadataSourceRef: "B10Q09"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: okruh oprĂˇvnÄ›nĂ˝ch osob vs restriktivnÄ› zĂşĹľenĂ˝ vĂ˝klad.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: okruh oprávněných osob vs restriktivně zúžený výklad.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -570,41 +570,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q10
 questionNumber: 10
-questionText: "Kdo propojil psychopedii s medicĂ­nskou diagnostikou tĂ­m, Ĺľe popsal fenylketonurii jako metabolickou pĹ™Ă­ÄŤinu mentĂˇlnĂ­ho postiĹľenĂ­?"
+questionText: "Kdo propojil psychopedii s medicínskou diagnostikou tím, že popsal fenylketonurii jako metabolickou příčinu mentálního postižení?"
 options:
   A: "John Langdon Down"
-  B: "Ivar AsbjĂ¶rn FĂ¸lling"
+  B: "Ivar Asbjörn Følling"
   C: "Samuel Torrey Orton"
   D: "Jean Demoor"
 sourceCorrectLetter: "B"
-sourceCorrectOptionText: "Ivar AsbjĂ¶rn FĂ¸lling"
-discipline: "psychopedie / dÄ›jiny medicĂ­nskĂ© diagnostiky"
-subtopic: "fenylketonurie jako metabolickĂˇ pĹ™Ă­ÄŤina mentĂˇlnĂ­ho postiĹľenĂ­"
-conceptFamily: "medicĂ­nskĂ© kotvy psychopedie"
-distinctionAxis: "metabolickĂˇ pĹ™Ă­ÄŤina mentĂˇlnĂ­ho postiĹľenĂ­ vs jinĂ© klinickĂ© ÄŤi pedagogickĂ© osobnosti"
+sourceCorrectOptionText: "Ivar Asbjörn Følling"
+discipline: "psychopedie / dějiny medicínské diagnostiky"
+subtopic: "fenylketonurie jako metabolická příčina mentálního postižení"
+conceptFamily: "medicínské kotvy psychopedie"
+distinctionAxis: "metabolická příčina mentálního postižení vs jiné klinické či pedagogické osobnosti"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "geneticko-metabolickĂˇ kotva Ă— jinĂ© znĂˇmĂ© osobnosti psychopedie"
-institutionDomain: "dÄ›jiny oboru / medicĂ­na"
+trapPatternSeed: "geneticko-metabolická kotva × jiné známé osobnosti psychopedie"
+institutionDomain: "dějiny oboru / medicína"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Ivar AsbjĂ¶rn FĂ¸lling"
+  - "Mini-wikipedie osobností – Ivar Asbjörn Følling"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
 historicalAnchor: "fenylketonurie a psychopedie"
-personalityAnchor: "Ivar AsbjĂ¶rn FĂ¸lling"
+personalityAnchor: "Ivar Asbjörn Følling"
 metadataSourceRef: "B10Q10"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: metabolickĂˇ pĹ™Ă­ÄŤina mentĂˇlnĂ­ho postiĹľenĂ­ vs jinĂ© klinickĂ© ÄŤi pedagogickĂ© osobnosti.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: metabolická příčina mentálního postižení vs jiné klinické či pedagogické osobnosti.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -624,28 +624,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q11
 questionNumber: 11
-questionText: "Ĺ˝Ăˇdost o revizi doporuÄŤenĂ­ se podĂˇvĂˇ ve lhĹŻtÄ›"
+questionText: "Žádost o revizi doporučení se podává ve lhůtě"
 options:
-  A: "do 15 dnĹŻ ode dne vyhotovenĂ­ doporuÄŤenĂ­ bez ohledu na jeho pĹ™evzetĂ­"
-  B: "do 60 dnĹŻ ode dne, kdy Ĺˇkola potvrdila pĹ™evzetĂ­ doporuÄŤenĂ­ do svĂ© dokumentace"
-  C: "do 30 dnĹŻ ode dne, kdy oprĂˇvnÄ›nĂˇ osoba doporuÄŤenĂ­ obdrĹľela"
-  D: "do 30 dnĹŻ ode dne vyhotovenĂ­ doporuÄŤenĂ­, pokud jiĹľ bylo zahĂˇjeno poskytovĂˇnĂ­ podpory"
+  A: "do 15 dnů ode dne vyhotovení doporučení bez ohledu na jeho převzetí"
+  B: "do 60 dnů ode dne, kdy škola potvrdila převzetí doporučení do své dokumentace"
+  C: "do 30 dnů ode dne, kdy oprávněná osoba doporučení obdržela"
+  D: "do 30 dnů ode dne vyhotovení doporučení, pokud již bylo zahájeno poskytování podpory"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "do 30 dnĹŻ ode dne, kdy oprĂˇvnÄ›nĂˇ osoba doporuÄŤenĂ­ obdrĹľela"
-discipline: "ĹˇkolskĂˇ legislativa / revize doporuÄŤenĂ­"
-subtopic: "lhĹŻta pro podĂˇnĂ­ ĹľĂˇdosti o revizi"
-conceptFamily: "revize doporuÄŤenĂ­ a opravnĂ© procesy"
-distinctionAxis: "30 dnĹŻ od obdrĹľenĂ­ vs jinĂ© lhĹŻty a poÄŤĂˇtky bÄ›hu"
+sourceCorrectOptionText: "do 30 dnů ode dne, kdy oprávněná osoba doporučení obdržela"
+discipline: "školská legislativa / revize doporučení"
+subtopic: "lhůta pro podání žádosti o revizi"
+conceptFamily: "revize doporučení a opravné procesy"
+distinctionAxis: "30 dnů od obdržení vs jiné lhůty a počátky běhu"
 questionTypeSuggested: "legislation-timing-discrimination"
 distractorTypeSuggested: "near-timing"
-trapPatternSeed: "obdrĹľenĂ­ Ă— vyhotovenĂ­ Ă— pĹ™evzetĂ­ Ĺˇkolou"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "obdržení × vyhotovení × převzetí školou"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. Â§ 16b"
+  - "Zákon č. 561/2004 Sb. § 16b"
 secondarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ provĂˇzĂˇnĂ­ s podpĹŻrnĂ˝mi opatĹ™enĂ­mi"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Vyhláška č. 27/2016 Sb. – provázání s podpůrnými opatřeními"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -653,12 +653,12 @@ metadataSourceRef: "B10Q11"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: 30 dnĹŻ od obdrĹľenĂ­ vs jinĂ© lhĹŻty a poÄŤĂˇtky bÄ›hu.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: 30 dnů od obdržení vs jiné lhůty a počátky běhu.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -678,7 +678,7 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q12
 questionNumber: 12
-questionText: "KterĂ˝ belgickĂ˝ lĂ©kaĹ™ a pedagog je spojovĂˇn s diagnostickĂ˝mi tĹ™Ă­dami pro ĹľĂˇky s mentĂˇlnĂ­m postiĹľenĂ­m a s ÄŤinnostnĂ­, zĂˇjmovÄ› orientovanou pedagogikou?"
+questionText: "Který belgický lékař a pedagog je spojován s diagnostickými třídami pro žáky s mentálním postižením a s činnostní, zájmově orientovanou pedagogikou?"
 options:
   A: "Rudolf Steiner"
   B: "Jean Demoor"
@@ -686,33 +686,33 @@ options:
   D: "Ovide Decroly"
 sourceCorrectLetter: "D"
 sourceCorrectOptionText: "Ovide Decroly"
-discipline: "psychopedie / dÄ›jiny pedagogiky"
-subtopic: "diagnostickĂ© tĹ™Ă­dy a ÄŤinnostnĂ­ pedagogika"
-conceptFamily: "dÄ›jiny psychopedie a speciĂˇlnĂ­ho ĹˇkolstvĂ­"
-distinctionAxis: "diagnostickĂ© tĹ™Ă­dy a zĂˇjmovÄ› orientovanĂˇ pedagogika vs jinĂ© reformnĂ­ smÄ›ry"
+discipline: "psychopedie / dějiny pedagogiky"
+subtopic: "diagnostické třídy a činnostní pedagogika"
+conceptFamily: "dějiny psychopedie a speciálního školství"
+distinctionAxis: "diagnostické třídy a zájmově orientovaná pedagogika vs jiné reformní směry"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "Decroly Ă— Demoor Ă— jinĂ© reformnĂ­ proudy"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Decroly × Demoor × jiné reformní proudy"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Jean Demoor"
+  - "Mini-wikipedie osobností – Jean Demoor"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "diagnostickĂ© tĹ™Ă­dy a ÄŤinnostnĂ­ pedagogika"
+historicalAnchor: "diagnostické třídy a činnostní pedagogika"
 personalityAnchor: "Jean Demoor"
 metadataSourceRef: "B10Q12"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: diagnostickĂ© tĹ™Ă­dy a zĂˇjmovÄ› orientovanĂˇ pedagogika vs jinĂ© reformnĂ­ smÄ›ry.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: diagnostické třídy a zájmově orientovaná pedagogika vs jiné reformní směry.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -732,28 +732,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q13
 questionNumber: 13
-questionText: "Pro vzdÄ›lĂˇvĂˇnĂ­ ĹľĂˇka lze v danĂ©m obdobĂ­ vydat"
+questionText: "Pro vzdělávání žáka lze v daném období vydat"
 options:
-  A: "pouze jedno doporuÄŤenĂ­, s vĂ˝jimkami vĂ˝slovnÄ› stanovenĂ˝mi vyhlĂˇĹˇkou"
-  B: "novĂ© doporuÄŤenĂ­ vĹľdy po uplynutĂ­ poloviny doby platnosti pĹ™edchozĂ­ho doporuÄŤenĂ­"
-  C: "dvÄ› doporuÄŤenĂ­, pokud jedno upravuje vĂ˝uku a druhĂ© pouze pomĹŻcky nebo sluĹľby"
-  D: "jedno doporuÄŤenĂ­ z PPP a jedno doporuÄŤenĂ­ ze SPC, pokud se obsahovÄ› nepĹ™ekrĂ˝vajĂ­"
+  A: "pouze jedno doporučení, s výjimkami výslovně stanovenými vyhláškou"
+  B: "nové doporučení vždy po uplynutí poloviny doby platnosti předchozího doporučení"
+  C: "dvě doporučení, pokud jedno upravuje výuku a druhé pouze pomůcky nebo služby"
+  D: "jedno doporučení z PPP a jedno doporučení ze SPC, pokud se obsahově nepřekrývají"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "pouze jedno doporuÄŤenĂ­, s vĂ˝jimkami vĂ˝slovnÄ› stanovenĂ˝mi vyhlĂˇĹˇkou"
-discipline: "ĹˇkolskĂˇ legislativa / doporuÄŤenĂ­"
-subtopic: "poÄŤet doporuÄŤenĂ­ v jednom obdobĂ­"
-conceptFamily: "doporuÄŤenĂ­ Ĺ PZ a jejich vydĂˇvĂˇnĂ­"
-distinctionAxis: "jedno doporuÄŤenĂ­ s vĂ˝jimkami vs paralelnĂ­ vĂ­ce doporuÄŤenĂ­"
+sourceCorrectOptionText: "pouze jedno doporučení, s výjimkami výslovně stanovenými vyhláškou"
+discipline: "školská legislativa / doporučení"
+subtopic: "počet doporučení v jednom období"
+conceptFamily: "doporučení ŠPZ a jejich vydávání"
+distinctionAxis: "jedno doporučení s výjimkami vs paralelní více doporučení"
 questionTypeSuggested: "legislation-document-discrimination"
 distractorTypeSuggested: "document-confusion"
-trapPatternSeed: "jedno doporuÄŤenĂ­ Ă— vĂ­ce zaĹ™Ă­zenĂ­ Ă— vĂ­ce Ĺˇkol"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "jedno doporučení × více zařízení × více škol"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. Â§ 15 odst. 4"
+  - "Vyhláška č. 27/2016 Sb. § 15 odst. 4"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -761,12 +761,12 @@ metadataSourceRef: "B10Q13"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: jedno doporuÄŤenĂ­ s vĂ˝jimkami vs paralelnĂ­ vĂ­ce doporuÄŤenĂ­.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: jedno doporučení s výjimkami vs paralelní více doporučení.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -786,41 +786,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q14
 questionNumber: 14
-questionText: "KterĂˇ ÄŤeskĂˇ osobnost je nejvĂ˝raznÄ›ji spojena s budovĂˇnĂ­m sĂ­tÄ› pomocnĂ˝ch Ĺˇkol, tvorbou osnov, pĹ™Ă­pravou uÄŤitelĹŻ a zĂˇkonnĂ˝m ukotvenĂ­m vzdÄ›lĂˇvĂˇnĂ­ ĹľĂˇkĹŻ s mentĂˇlnĂ­m postiĹľenĂ­m?"
+questionText: "Která česká osobnost je nejvýrazněji spojena s budováním sítě pomocných škol, tvorbou osnov, přípravou učitelů a zákonným ukotvením vzdělávání žáků s mentálním postižením?"
 options:
-  A: "VĂˇclav PĹ™Ă­hoda"
+  A: "Václav Příhoda"
   B: "Josef Zeman"
   C: "Milan Valenta"
-  D: "FrantiĹˇek ÄŚĂˇda"
+  D: "František Čáda"
 sourceCorrectLetter: "B"
 sourceCorrectOptionText: "Josef Zeman"
-discipline: "historie speciĂˇlnĂ­ pedagogiky / ÄŤeskĂ© osobnosti"
-subtopic: "pomocnĂ© Ĺˇkoly, osnovy a pĹ™Ă­prava uÄŤitelĹŻ"
-conceptFamily: "ÄŤeskĂ© dÄ›jiny vzdÄ›lĂˇvĂˇnĂ­ ĹľĂˇkĹŻ s mentĂˇlnĂ­m postiĹľenĂ­m"
-distinctionAxis: "institucionĂˇlnĂ­ a legislativnĂ­ budovĂˇnĂ­ pomocnĂ˝ch Ĺˇkol vs obecnĂˇ pedagogika ÄŤi novÄ›jĹˇĂ­ autoĹ™i"
+discipline: "historie speciální pedagogiky / české osobnosti"
+subtopic: "pomocné školy, osnovy a příprava učitelů"
+conceptFamily: "české dějiny vzdělávání žáků s mentálním postižením"
+distinctionAxis: "institucionální a legislativní budování pomocných škol vs obecná pedagogika či novější autoři"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "pomocnĂ© Ĺˇkoly Ă— obecnĂˇ pedagogika Ă— souÄŤasnĂ­ autoĹ™i"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "pomocné školy × obecná pedagogika × současní autoři"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Josef Zeman"
+  - "Mini-wikipedie osobností – Josef Zeman"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "budovĂˇnĂ­ pomocnĂ˝ch Ĺˇkol v ÄŤeskĂ©m prostĹ™edĂ­"
+historicalAnchor: "budování pomocných škol v českém prostředí"
 personalityAnchor: "Josef Zeman"
 metadataSourceRef: "B10Q14"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: institucionĂˇlnĂ­ a legislativnĂ­ budovĂˇnĂ­ pomocnĂ˝ch Ĺˇkol vs obecnĂˇ pedagogika ÄŤi novÄ›jĹˇĂ­ autoĹ™i.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: institucionální a legislativní budování pomocných škol vs obecná pedagogika či novější autoři.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -840,30 +840,30 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q15
 questionNumber: 15
-questionText: "ZprĂˇva a doporuÄŤenĂ­ se vydĂˇvajĂ­"
+questionText: "Zpráva a doporučení se vydávají"
 options:
-  A: "do 30 dnĹŻ od ukonÄŤenĂ­ posuzovĂˇnĂ­, nejpozdÄ›ji do 3 mÄ›sĂ­cĹŻ od pĹ™ijetĂ­ ĹľĂˇdosti"
-  B: "do 60 dnĹŻ od ukonÄŤenĂ­ posuzovĂˇnĂ­, nejpozdÄ›ji do 4 mÄ›sĂ­cĹŻ od pĹ™ijetĂ­ ĹľĂˇdosti"
-  C: "do 30 dnĹŻ od pĹ™ijetĂ­ ĹľĂˇdosti, nejpozdÄ›ji do 6 mÄ›sĂ­cĹŻ od zahĂˇjenĂ­ posuzovĂˇnĂ­"
-  D: "do 15 dnĹŻ od zahĂˇjenĂ­ posuzovĂˇnĂ­, nejpozdÄ›ji do 2 mÄ›sĂ­cĹŻ od pĹ™ijetĂ­ ĹľĂˇdosti"
+  A: "do 30 dnů od ukončení posuzování, nejpozději do 3 měsíců od přijetí žádosti"
+  B: "do 60 dnů od ukončení posuzování, nejpozději do 4 měsíců od přijetí žádosti"
+  C: "do 30 dnů od přijetí žádosti, nejpozději do 6 měsíců od zahájení posuzování"
+  D: "do 15 dnů od zahájení posuzování, nejpozději do 2 měsíců od přijetí žádosti"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "do 30 dnĹŻ od ukonÄŤenĂ­ posuzovĂˇnĂ­, nejpozdÄ›ji do 3 mÄ›sĂ­cĹŻ od pĹ™ijetĂ­ ĹľĂˇdosti"
-discipline: "ĹˇkolskĂˇ legislativa / doporuÄŤenĂ­ a zprĂˇva"
-subtopic: "lhĹŻty vydĂˇnĂ­ zprĂˇvy a doporuÄŤenĂ­"
-conceptFamily: "poradenskĂ˝ proces a vĂ˝stupy Ĺ PZ"
-distinctionAxis: "30 dnĹŻ od ukonÄŤenĂ­ posuzovĂˇnĂ­ / nejpozdÄ›ji 3 mÄ›sĂ­ce od ĹľĂˇdosti vs jinĂ© lhĹŻty"
+sourceCorrectOptionText: "do 30 dnů od ukončení posuzování, nejpozději do 3 měsíců od přijetí žádosti"
+discipline: "školská legislativa / doporučení a zpráva"
+subtopic: "lhůty vydání zprávy a doporučení"
+conceptFamily: "poradenský proces a výstupy ŠPZ"
+distinctionAxis: "30 dnů od ukončení posuzování / nejpozději 3 měsíce od žádosti vs jiné lhůty"
 questionTypeSuggested: "legislation-timing-discrimination"
 distractorTypeSuggested: "near-timing"
-trapPatternSeed: "ukonÄŤenĂ­ posuzovĂˇnĂ­ Ă— pĹ™ijetĂ­ ĹľĂˇdosti"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "ukončení posuzování × přijetí žádosti"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. â€“ lhĹŻty vĂ˝stupĹŻ poradenskĂ˝ch sluĹľeb"
-  - "VyhlĂˇĹˇka ÄŤ. 46/2025 Sb. â€“ novela vyhlĂˇĹˇky 72/2005"
+  - "Vyhláška č. 72/2005 Sb. – lhůty výstupů poradenských služeb"
+  - "Vyhláška č. 46/2025 Sb. – novela vyhlášky 72/2005"
 secondarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ provĂˇzĂˇnĂ­ s podpĹŻrnĂ˝mi opatĹ™enĂ­mi"
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Vyhláška č. 27/2016 Sb. – provázání s podpůrnými opatřeními"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -871,12 +871,12 @@ metadataSourceRef: "B10Q15"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: 30 dnĹŻ od ukonÄŤenĂ­ posuzovĂˇnĂ­ / nejpozdÄ›ji 3 mÄ›sĂ­ce od ĹľĂˇdosti vs jinĂ© lhĹŻty.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: 30 dnů od ukončení posuzování / nejpozději 3 měsíce od žádosti vs jiné lhůty.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -896,41 +896,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q16
 questionNumber: 16
-questionText: "KterĂˇ osobnost je nejĂşĹľeji spojena s rozvojem brnÄ›nskĂ© rehabilitaÄŤnĂ­ a somatopedickĂ© linie a s institucĂ­ KociĂˇnka?"
+questionText: "Která osobnost je nejúžeji spojena s rozvojem brněnské rehabilitační a somatopedické linie a s institucí Kociánka?"
 options:
   A: "Otokar Chlup"
-  B: "FrantiĹˇek KĂˇbele"
+  B: "František Kábele"
   C: "Jan Mauer"
   D: "Jan Chlup"
 sourceCorrectLetter: "D"
 sourceCorrectOptionText: "Jan Chlup"
-discipline: "somatopedie / ÄŤeskĂ© osobnosti"
-subtopic: "brnÄ›nskĂˇ rehabilitaÄŤnĂ­ linie a KociĂˇnka"
-conceptFamily: "ÄŤeskĂ© dÄ›jiny somatopedie"
-distinctionAxis: "rehabilitaÄŤnĂ­ a somatopedickĂˇ linie v BrnÄ› vs jinĂ© ÄŤeskĂ© osobnosti"
+discipline: "somatopedie / české osobnosti"
+subtopic: "brněnská rehabilitační linie a Kociánka"
+conceptFamily: "české dějiny somatopedie"
+distinctionAxis: "rehabilitační a somatopedická linie v Brně vs jiné české osobnosti"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "KociĂˇnka Ă— vysokoĹˇkolskĂˇ pĹ™Ă­prava Ă— obecnĂˇ pedagogika"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Kociánka × vysokoškolská příprava × obecná pedagogika"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Jan Chlup"
+  - "Mini-wikipedie osobností – Jan Chlup"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "brnÄ›nskĂˇ somatopedickĂˇ a rehabilitaÄŤnĂ­ linie"
+historicalAnchor: "brněnská somatopedická a rehabilitační linie"
 personalityAnchor: "Jan Chlup"
 metadataSourceRef: "B10Q16"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: rehabilitaÄŤnĂ­ a somatopedickĂˇ linie v BrnÄ› vs jinĂ© ÄŤeskĂ© osobnosti.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: rehabilitační a somatopedická linie v Brně vs jiné české osobnosti.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -950,28 +950,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q17
 questionNumber: 17
-questionText: "PĹ™i doporuÄŤovĂˇnĂ­ konkrĂ©tnĂ­ch podpĹŻrnĂ˝ch opatĹ™enĂ­ ĹˇkolskĂ© poradenskĂ© zaĹ™Ă­zenĂ­ zjiĹˇĹĄuje takĂ©"
+questionText: "Při doporučování konkrétních podpůrných opatření školské poradenské zařízení zjišťuje také"
 options:
-  A: "moĹľnost vyuĹľitĂ­ personĂˇlnĂ­ch a materiĂˇlnĂ­ch podmĂ­nek Ĺˇkoly vytvoĹ™enĂ˝ch v souvislosti s podporou jinĂ˝ch ĹľĂˇkĹŻ"
-  B: "pouze to, zda Ĺˇkola souhlasĂ­ s navrhovanĂ˝m stupnÄ›m podpory jeĹˇtÄ› pĹ™ed vydĂˇnĂ­m doporuÄŤenĂ­"
-  C: "moĹľnost vyuĹľitĂ­ pouze personĂˇlnĂ­ch podmĂ­nek Ĺˇkoly, nikoli vĹˇak materiĂˇlnĂ­ch zdrojĹŻ a pomĹŻcek"
-  D: "pouze to, zda Ĺˇkola dosud ÄŤerpala normovanou finanÄŤnĂ­ nĂˇroÄŤnost na obdobnĂˇ opatĹ™enĂ­"
+  A: "možnost využití personálních a materiálních podmínek školy vytvořených v souvislosti s podporou jiných žáků"
+  B: "pouze to, zda škola souhlasí s navrhovaným stupněm podpory ještě před vydáním doporučení"
+  C: "možnost využití pouze personálních podmínek školy, nikoli však materiálních zdrojů a pomůcek"
+  D: "pouze to, zda škola dosud čerpala normovanou finanční náročnost na obdobná opatření"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "moĹľnost vyuĹľitĂ­ personĂˇlnĂ­ch a materiĂˇlnĂ­ch podmĂ­nek Ĺˇkoly vytvoĹ™enĂ˝ch v souvislosti s podporou jinĂ˝ch ĹľĂˇkĹŻ"
-discipline: "ĹˇkolskĂˇ legislativa / doporuÄŤovĂˇnĂ­ PO"
-subtopic: "zjiĹˇĹĄovĂˇnĂ­ vyuĹľitelnosti personĂˇlnĂ­ch a materiĂˇlnĂ­ch podmĂ­nek Ĺˇkoly"
-conceptFamily: "poradenskĂ˝ proces a doporuÄŤovĂˇnĂ­ opatĹ™enĂ­"
-distinctionAxis: "personĂˇlnĂ­ i materiĂˇlnĂ­ podmĂ­nky Ĺˇkoly vs zĂşĹľenĂ© ÄŤi irelevantnĂ­ faktory"
+sourceCorrectOptionText: "možnost využití personálních a materiálních podmínek školy vytvořených v souvislosti s podporou jiných žáků"
+discipline: "školská legislativa / doporučování PO"
+subtopic: "zjišťování využitelnosti personálních a materiálních podmínek školy"
+conceptFamily: "poradenský proces a doporučování opatření"
+distinctionAxis: "personální i materiální podmínky školy vs zúžené či irelevantní faktory"
 questionTypeSuggested: "legislation-process-discrimination"
 distractorTypeSuggested: "near-procedure"
-trapPatternSeed: "reĂˇlnĂ© podmĂ­nky Ĺˇkoly Ă— souhlas Ĺˇkoly Ă— financovĂˇnĂ­"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "reálné podmínky školy × souhlas školy × financování"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ postup pĹ™i doporuÄŤovĂˇnĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­"
+  - "Vyhláška č. 27/2016 Sb. – postup při doporučování podpůrných opatření"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -979,12 +979,12 @@ metadataSourceRef: "B10Q17"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: personĂˇlnĂ­ i materiĂˇlnĂ­ podmĂ­nky Ĺˇkoly vs zĂşĹľenĂ© ÄŤi irelevantnĂ­ faktory.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: personální i materiální podmínky školy vs zúžené či irelevantní faktory.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1004,41 +1004,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q18
 questionNumber: 18
-questionText: "KterĂˇ osobnost je spojovĂˇna s rozvojem somatopedie, s vysokoĹˇkolskou pĹ™Ă­pravou speciĂˇlnĂ­ch pedagogĹŻ a s novodobĂ˝m profilovĂˇnĂ­m oboru v BrnÄ›?"
+questionText: "Která osobnost je spojována s rozvojem somatopedie, s vysokoškolskou přípravou speciálních pedagogů a s novodobým profilováním oboru v Brně?"
 options:
-  A: "Augustin BartoĹˇ"
-  B: "Lili MonatovĂˇ"
-  C: "Marie RenotiĂ©rovĂˇ"
+  A: "Augustin Bartoš"
+  B: "Lili Monatová"
+  C: "Marie Renotiérová"
   D: "Jan Chlup"
 sourceCorrectLetter: "B"
-sourceCorrectOptionText: "Lili MonatovĂˇ"
-discipline: "somatopedie / ÄŤeskĂ© osobnosti"
-subtopic: "novodobĂ© profilovĂˇnĂ­ somatopedie v BrnÄ›"
-conceptFamily: "ÄŤeskĂ© dÄ›jiny somatopedie"
-distinctionAxis: "somatopedie a vysokoĹˇkolskĂˇ pĹ™Ă­prava vs jinĂ© brnÄ›nskĂ© osobnosti"
+sourceCorrectOptionText: "Lili Monatová"
+discipline: "somatopedie / české osobnosti"
+subtopic: "novodobé profilování somatopedie v Brně"
+conceptFamily: "české dějiny somatopedie"
+distinctionAxis: "somatopedie a vysokoškolská příprava vs jiné brněnské osobnosti"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "somatopedie Ă— olomouckĂˇ linie Ă— rehabilitace"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "somatopedie × olomoucká linie × rehabilitace"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Lili MonatovĂˇ"
+  - "Mini-wikipedie osobností – Lili Monatová"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "novodobĂ© profilovĂˇnĂ­ somatopedie"
-personalityAnchor: "Lili MonatovĂˇ"
+historicalAnchor: "novodobé profilování somatopedie"
+personalityAnchor: "Lili Monatová"
 metadataSourceRef: "B10Q18"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: somatopedie a vysokoĹˇkolskĂˇ pĹ™Ă­prava vs jinĂ© brnÄ›nskĂ© osobnosti.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: somatopedie a vysokoškolská příprava vs jiné brněnské osobnosti.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1058,28 +1058,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q19
 questionNumber: 19
-questionText: "PĹ™i zjiĹˇĹĄovĂˇnĂ­ podkladĹŻ potĹ™ebnĂ˝ch pro doporuÄŤenĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­ Ĺˇkola vĹŻÄŤi Ĺ PZ"
+questionText: "Při zjišťování podkladů potřebných pro doporučení podpůrných opatření škola vůči ŠPZ"
 options:
-  A: "pouze vyÄŤkĂˇvĂˇ na finĂˇlnĂ­ doporuÄŤenĂ­ a do procesu nevstupuje, dokud nenĂ­ vyzvĂˇna Ĺ™editelem"
-  B: "nahrazuje ÄŤĂˇst diagnostiky vlastnĂ­m vyhodnocenĂ­m, pokud jde o ĹľĂˇka dlouhodobÄ› sledovanĂ©ho Ĺˇkolou"
-  C: "poskytuje ĹˇkolskĂ©mu poradenskĂ©mu zaĹ™Ă­zenĂ­ souÄŤinnost"
-  D: "vydĂˇvĂˇ vlastnĂ­ pĹ™edbÄ›ĹľnĂ© stanovisko, kterĂ© je pro ĹˇkolskĂ© poradenskĂ© zaĹ™Ă­zenĂ­ zĂˇvaznĂ©"
+  A: "pouze vyčkává na finální doporučení a do procesu nevstupuje, dokud není vyzvána ředitelem"
+  B: "nahrazuje část diagnostiky vlastním vyhodnocením, pokud jde o žáka dlouhodobě sledovaného školou"
+  C: "poskytuje školskému poradenskému zařízení součinnost"
+  D: "vydává vlastní předběžné stanovisko, které je pro školské poradenské zařízení závazné"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "poskytuje ĹˇkolskĂ©mu poradenskĂ©mu zaĹ™Ă­zenĂ­ souÄŤinnost"
-discipline: "ĹˇkolskĂˇ legislativa / souÄŤinnost Ĺˇkoly"
-subtopic: "souÄŤinnost Ĺˇkoly pĹ™i zjiĹˇĹĄovĂˇnĂ­ podkladĹŻ"
-conceptFamily: "poradenskĂ˝ proces a role Ĺˇkoly"
-distinctionAxis: "souÄŤinnost Ĺˇkoly vs nahrazovĂˇnĂ­ diagnostiky nebo zĂˇvaznĂ© stanovisko Ĺˇkoly"
+sourceCorrectOptionText: "poskytuje školskému poradenskému zařízení součinnost"
+discipline: "školská legislativa / součinnost školy"
+subtopic: "součinnost školy při zjišťování podkladů"
+conceptFamily: "poradenský proces a role školy"
+distinctionAxis: "součinnost školy vs nahrazování diagnostiky nebo závazné stanovisko školy"
 questionTypeSuggested: "legislation-role-discrimination"
 distractorTypeSuggested: "authority-mixup"
-trapPatternSeed: "souÄŤinnost Ă— nĂˇhrada diagnostiky Ă— zĂˇvaznĂ© stanovisko"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "součinnost × náhrada diagnostiky × závazné stanovisko"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ souÄŤinnost Ĺˇkoly se Ĺ PZ"
+  - "Vyhláška č. 27/2016 Sb. – součinnost školy se ŠPZ"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -1087,12 +1087,12 @@ metadataSourceRef: "B10Q19"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: souÄŤinnost Ĺˇkoly vs nahrazovĂˇnĂ­ diagnostiky nebo zĂˇvaznĂ© stanovisko Ĺˇkoly.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: součinnost školy vs nahrazování diagnostiky nebo závazné stanovisko školy.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1112,41 +1112,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q20
 questionNumber: 20
-questionText: "KterĂˇ osobnost logopedickĂ© tradice se stala symbolem cĂ­levÄ›domĂ©ho pĹ™ekonĂˇvĂˇnĂ­ Ĺ™eÄŤovĂ˝ch obtĂ­ĹľĂ­ a bĂ˝vĂˇ uvĂˇdÄ›na jako historickĂ˝ pĹ™Ă­klad intenzivnĂ­ho nĂˇcviku Ĺ™eÄŤi?"
+questionText: "Která osobnost logopedické tradice se stala symbolem cílevědomého překonávání řečových obtíží a bývá uváděna jako historický příklad intenzivního nácviku řeči?"
 options:
-  A: "AristotelĂ©s"
+  A: "Aristotelés"
   B: "Hippokrates"
-  C: "IsokratĂ©s"
-  D: "DĂ©mosthenĂ©s"
+  C: "Isokratés"
+  D: "Démosthenés"
 sourceCorrectLetter: "D"
-sourceCorrectOptionText: "DĂ©mosthenĂ©s"
-discipline: "logopedie / dÄ›jiny oboru"
-subtopic: "historickĂ˝ symbol intenzivnĂ­ho nĂˇcviku Ĺ™eÄŤi"
-conceptFamily: "dÄ›jiny logopedie a historickĂ© precedenty"
-distinctionAxis: "DĂ©mosthenĂ©s jako symbol Ĺ™eÄŤovĂ©ho trĂ©ninku vs jinĂ­ antiÄŤtĂ­ autoĹ™i"
+sourceCorrectOptionText: "Démosthenés"
+discipline: "logopedie / dějiny oboru"
+subtopic: "historický symbol intenzivního nácviku řeči"
+conceptFamily: "dějiny logopedie a historické precedenty"
+distinctionAxis: "Démosthenés jako symbol řečového tréninku vs jiní antičtí autoři"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "antiÄŤtĂ­ myslitelĂ© Ă— historickĂ˝ pĹ™Ă­klad logopedie"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "antičtí myslitelé × historický příklad logopedie"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ DĂ©mosthenĂ©s"
+  - "Mini-wikipedie osobností – Démosthenés"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "historickĂ˝ symbol pĹ™ekonĂˇvĂˇnĂ­ Ĺ™eÄŤovĂ˝ch obtĂ­ĹľĂ­"
-personalityAnchor: "DĂ©mosthenĂ©s"
+historicalAnchor: "historický symbol překonávání řečových obtíží"
+personalityAnchor: "Démosthenés"
 metadataSourceRef: "B10Q20"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: DĂ©mosthenĂ©s jako symbol Ĺ™eÄŤovĂ©ho trĂ©ninku vs jinĂ­ antiÄŤtĂ­ autoĹ™i.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: Démosthenés jako symbol řečového tréninku vs jiní antičtí autoři.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1166,28 +1166,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q21
 questionNumber: 21
-questionText: "Je-li ĹľĂˇk v pĂ©ÄŤi odbornĂ©ho lĂ©kaĹ™e nebo klinickĂ©ho psychologa, Ĺ PZ pĹ™i stanovovĂˇnĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­"
+questionText: "Je-li žák v péči odborného lékaře nebo klinického psychologa, ŠPZ při stanovování podpůrných opatření"
 options:
-  A: "pĹ™ihlĂ­ĹľĂ­ ke klinickĂ© diagnĂłze a lĂ©ÄŤebnĂ˝m opatĹ™enĂ­m odbornĂ©ho lĂ©kaĹ™e nebo klinickĂ©ho psychologa"
-  B: "pĹ™ihlĂ­ĹľĂ­ pouze ke klinickĂ© diagnĂłze, nikoli vĹˇak k lĂ©ÄŤebnĂ˝m opatĹ™enĂ­m stanovenĂ˝m odbornĂ­kem"
-  C: "pĹ™ebĂ­rĂˇ jejich zĂˇvÄ›ry v plnĂ©m rozsahu bez moĹľnosti odbornĂ©ho posouzenĂ­ vzdÄ›lĂˇvacĂ­ situace"
-  D: "pĹ™ihlĂ­ĹľĂ­ k jejich zĂˇvÄ›rĹŻm jen tehdy, pokud s nimi pĹ™edem pĂ­semnÄ› souhlasĂ­ Ĺ™editel Ĺˇkoly"
+  A: "přihlíží ke klinické diagnóze a léčebným opatřením odborného lékaře nebo klinického psychologa"
+  B: "přihlíží pouze ke klinické diagnóze, nikoli však k léčebným opatřením stanoveným odborníkem"
+  C: "přebírá jejich závěry v plném rozsahu bez možnosti odborného posouzení vzdělávací situace"
+  D: "přihlíží k jejich závěrům jen tehdy, pokud s nimi předem písemně souhlasí ředitel školy"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "pĹ™ihlĂ­ĹľĂ­ ke klinickĂ© diagnĂłze a lĂ©ÄŤebnĂ˝m opatĹ™enĂ­m odbornĂ©ho lĂ©kaĹ™e nebo klinickĂ©ho psychologa"
-discipline: "ĹˇkolskĂˇ legislativa / doporuÄŤovĂˇnĂ­ PO"
-subtopic: "pĹ™ihlĂ­ĹľenĂ­ ke klinickĂ© diagnĂłze a lĂ©ÄŤebnĂ˝m opatĹ™enĂ­m"
-conceptFamily: "poradenskĂ˝ proces a odbornĂ© podklady"
-distinctionAxis: "pĹ™ihlĂ­ĹľenĂ­ k diagnĂłze i lĂ©ÄŤebnĂ˝m opatĹ™enĂ­m vs mechanickĂ© pĹ™ebĂ­rĂˇnĂ­ zĂˇvÄ›rĹŻ nebo jejich ignorace"
+sourceCorrectOptionText: "přihlíží ke klinické diagnóze a léčebným opatřením odborného lékaře nebo klinického psychologa"
+discipline: "školská legislativa / doporučování PO"
+subtopic: "přihlížení ke klinické diagnóze a léčebným opatřením"
+conceptFamily: "poradenský proces a odborné podklady"
+distinctionAxis: "přihlížení k diagnóze i léčebným opatřením vs mechanické přebírání závěrů nebo jejich ignorace"
 questionTypeSuggested: "legislation-process-discrimination"
 distractorTypeSuggested: "near-procedure"
-trapPatternSeed: "pĹ™ihlĂ­ĹľenĂ­ Ă— pĹ™ebĂ­rĂˇnĂ­ Ă— ignorovĂˇnĂ­ klinickĂ˝ch podkladĹŻ"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­ / zdravotnictvĂ­"
+trapPatternSeed: "přihlížení × přebírání × ignorování klinických podkladů"
+institutionDomain: "školství / poradenství / zdravotnictví"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ podklady pro doporuÄŤenĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­"
+  - "Vyhláška č. 27/2016 Sb. – podklady pro doporučení podpůrných opatření"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -1195,12 +1195,12 @@ metadataSourceRef: "B10Q21"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: pĹ™ihlĂ­ĹľenĂ­ k diagnĂłze i lĂ©ÄŤebnĂ˝m opatĹ™enĂ­m vs mechanickĂ© pĹ™ebĂ­rĂˇnĂ­ zĂˇvÄ›rĹŻ nebo jejich ignorace.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: přihlížení k diagnóze i léčebným opatřením vs mechanické přebírání závěrů nebo jejich ignorace.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1220,41 +1220,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q22
 questionNumber: 22
-questionText: "Kdo bĂ˝vĂˇ oznaÄŤovĂˇn za zakladatele vÄ›decky pojatĂ© logopedie v nÄ›meckĂ©m prostĹ™edĂ­ a systematicky se vÄ›noval poruchĂˇm hlasu a Ĺ™eÄŤi?"
+questionText: "Kdo bývá označován za zakladatele vědecky pojaté logopedie v německém prostředí a systematicky se věnoval poruchám hlasu a řeči?"
 options:
   A: "Richard Luchsinger"
   B: "Hermann Gutzmann"
   C: "Charles Van Riper"
-  D: "MiloĹˇ SovĂˇk"
+  D: "Miloš Sovák"
 sourceCorrectLetter: "B"
 sourceCorrectOptionText: "Hermann Gutzmann"
-discipline: "logopedie / dÄ›jiny oboru"
-subtopic: "zakladatel vÄ›decky pojatĂ© logopedie v nÄ›meckĂ©m prostĹ™edĂ­"
-conceptFamily: "dÄ›jiny logopedie a foniatrie"
-distinctionAxis: "vÄ›deckĂˇ logopedie a poruchy hlasu/Ĺ™eÄŤi vs jinĂ­ pozdÄ›jĹˇĂ­ autoĹ™i"
+discipline: "logopedie / dějiny oboru"
+subtopic: "zakladatel vědecky pojaté logopedie v německém prostředí"
+conceptFamily: "dějiny logopedie a foniatrie"
+distinctionAxis: "vědecká logopedie a poruchy hlasu/řeči vs jiní pozdější autoři"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "zakladatel nÄ›meckĂ© logopedie Ă— modernĂ­ autoĹ™i"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "zakladatel německé logopedie × moderní autoři"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Hermann Gutzmann"
+  - "Mini-wikipedie osobností – Hermann Gutzmann"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "vÄ›decky pojatĂˇ logopedie"
+historicalAnchor: "vědecky pojatá logopedie"
 personalityAnchor: "Hermann Gutzmann"
 metadataSourceRef: "B10Q22"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: vÄ›deckĂˇ logopedie a poruchy hlasu/Ĺ™eÄŤi vs jinĂ­ pozdÄ›jĹˇĂ­ autoĹ™i.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: vědecká logopedie a poruchy hlasu/řeči vs jiní pozdější autoři.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1274,28 +1274,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q23
 questionNumber: 23
-questionText: "KterĂ˝ dokument mĂˇ obsahovat pouÄŤenĂ­ o moĹľnosti podat ĹľĂˇdost o revizi doporuÄŤenĂ­ podle Â§ 16b ĹˇkolskĂ©ho zĂˇkona"
+questionText: "Který dokument má obsahovat poučení o možnosti podat žádost o revizi doporučení podle § 16b školského zákona"
 options:
-  A: "plĂˇn pedagogickĂ© podpory, pokud pĹ™edchĂˇzel vydĂˇnĂ­ doporuÄŤenĂ­ Ĺ PZ"
-  B: "informovanĂ˝ souhlas zletilĂ©ho ĹľĂˇka nebo zĂˇkonnĂ©ho zĂˇstupce ĹľĂˇka"
-  C: "doporuÄŤenĂ­ ĹˇkolskĂ©ho poradenskĂ©ho zaĹ™Ă­zenĂ­"
-  D: "zprĂˇva z vyĹˇetĹ™enĂ­ ĹľĂˇka, nikoli doporuÄŤenĂ­ pro Ĺˇkolu"
+  A: "plán pedagogické podpory, pokud předcházel vydání doporučení ŠPZ"
+  B: "informovaný souhlas zletilého žáka nebo zákonného zástupce žáka"
+  C: "doporučení školského poradenského zařízení"
+  D: "zpráva z vyšetření žáka, nikoli doporučení pro školu"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "doporuÄŤenĂ­ ĹˇkolskĂ©ho poradenskĂ©ho zaĹ™Ă­zenĂ­"
-discipline: "ĹˇkolskĂˇ legislativa / doporuÄŤenĂ­"
-subtopic: "pouÄŤenĂ­ o moĹľnosti podat revizi"
-conceptFamily: "revize doporuÄŤenĂ­ a obsah dokumentĹŻ"
-distinctionAxis: "doporuÄŤenĂ­ vs zprĂˇva vs informovanĂ˝ souhlas vs PLPP"
+sourceCorrectOptionText: "doporučení školského poradenského zařízení"
+discipline: "školská legislativa / doporučení"
+subtopic: "poučení o možnosti podat revizi"
+conceptFamily: "revize doporučení a obsah dokumentů"
+distinctionAxis: "doporučení vs zpráva vs informovaný souhlas vs PLPP"
 questionTypeSuggested: "document-function-discrimination"
 distractorTypeSuggested: "document-confusion"
 trapPatternSeed: "funkce dokumentu"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. Â§ 16b"
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ doporuÄŤenĂ­"
+  - "Zákon č. 561/2004 Sb. § 16b"
+  - "Vyhláška č. 27/2016 Sb. – doporučení"
 secondarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -1303,12 +1303,12 @@ metadataSourceRef: "B10Q23"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: doporuÄŤenĂ­ vs zprĂˇva vs informovanĂ˝ souhlas vs PLPP.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: doporučení vs zpráva vs informovaný souhlas vs PLPP.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1328,41 +1328,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q24
 questionNumber: 24
-questionText: "KterĂˇ osobnost vedla univerzitnĂ­ hlasovou a Ĺ™eÄŤovou kliniku, spoluvytvĂˇĹ™ela ÄŤasopis Folia Phoniatrica a pĹŻsobila jako prezident mezinĂˇrodnĂ­ asociace logopedĹŻ a foniatrĹŻ?"
+questionText: "Která osobnost vedla univerzitní hlasovou a řečovou kliniku, spoluvytvářela časopis Folia Phoniatrica a působila jako prezident mezinárodní asociace logopedů a foniatrů?"
 options:
   A: "Hermann Gutzmann"
   B: "Miloslav Seeman"
-  C: "Eva Ĺ kodovĂˇ"
+  C: "Eva Škodová"
   D: "Richard Luchsinger"
 sourceCorrectLetter: "D"
 sourceCorrectOptionText: "Richard Luchsinger"
-discipline: "logopedie / dÄ›jiny oboru"
-subtopic: "Seeman, klinika a mezinĂˇrodnĂ­ foniatrie"
-conceptFamily: "dÄ›jiny ÄŤeskĂ© logopedie a foniatrie"
-distinctionAxis: "klinickĂ© a mezinĂˇrodnĂ­ foniatrickĂ© pĹŻsobenĂ­ vs jinĂ© logopedickĂ© osobnosti"
+discipline: "logopedie / dějiny oboru"
+subtopic: "Seeman, klinika a mezinárodní foniatrie"
+conceptFamily: "dějiny české logopedie a foniatrie"
+distinctionAxis: "klinické a mezinárodní foniatrické působení vs jiné logopedické osobnosti"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "Seeman Ă— Gutzmann Ă— Luchsinger"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Seeman × Gutzmann × Luchsinger"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Miloslav Seeman"
+  - "Mini-wikipedie osobností – Miloslav Seeman"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "ÄŤeskĂˇ foniatrickĂˇ a logopedickĂˇ tradice"
+historicalAnchor: "česká foniatrická a logopedická tradice"
 personalityAnchor: "Miloslav Seeman"
 metadataSourceRef: "B10Q24"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: klinickĂ© a mezinĂˇrodnĂ­ foniatrickĂ© pĹŻsobenĂ­ vs jinĂ© logopedickĂ© osobnosti.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: klinické a mezinárodní foniatrické působení vs jiné logopedické osobnosti.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1382,29 +1382,29 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q25
 questionNumber: 25
-questionText: "KterĂ˝ dokument mĂˇ obsahovat nĂˇvrh postupu pĹ™i poskytovĂˇnĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­"
+questionText: "Který dokument má obsahovat návrh postupu při poskytování podpůrných opatření"
 options:
-  A: "zĂˇznam Ĺˇkoly o vyhodnocenĂ­ poskytovanĂ˝ch podpĹŻrnĂ˝ch opatĹ™enĂ­ po uplynutĂ­ jejich ĂşÄŤinnosti"
-  B: "zprĂˇva z vyĹˇetĹ™enĂ­, protoĹľe popisuje prĹŻbÄ›h a vĂ˝sledky diagnostiky ĹľĂˇka"
-  C: "informovanĂ˝ souhlas, protoĹľe bez nÄ›ho nelze opatĹ™enĂ­ vĹŻbec konkretizovat"
-  D: "doporuÄŤenĂ­ ĹˇkolskĂ©ho poradenskĂ©ho zaĹ™Ă­zenĂ­"
+  A: "záznam školy o vyhodnocení poskytovaných podpůrných opatření po uplynutí jejich účinnosti"
+  B: "zpráva z vyšetření, protože popisuje průběh a výsledky diagnostiky žáka"
+  C: "informovaný souhlas, protože bez něho nelze opatření vůbec konkretizovat"
+  D: "doporučení školského poradenského zařízení"
 sourceCorrectLetter: "D"
-sourceCorrectOptionText: "doporuÄŤenĂ­ ĹˇkolskĂ©ho poradenskĂ©ho zaĹ™Ă­zenĂ­"
-discipline: "ĹˇkolskĂˇ legislativa / doporuÄŤenĂ­"
-subtopic: "nĂˇvrh postupu pĹ™i poskytovĂˇnĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­"
-conceptFamily: "obsah doporuÄŤenĂ­ a obsah zprĂˇvy"
-distinctionAxis: "doporuÄŤenĂ­ jako dokument pro Ĺˇkolu vs zprĂˇva jako diagnostickĂ˝ vĂ˝stup"
+sourceCorrectOptionText: "doporučení školského poradenského zařízení"
+discipline: "školská legislativa / doporučení"
+subtopic: "návrh postupu při poskytování podpůrných opatření"
+conceptFamily: "obsah doporučení a obsah zprávy"
+distinctionAxis: "doporučení jako dokument pro školu vs zpráva jako diagnostický výstup"
 questionTypeSuggested: "document-function-discrimination"
 distractorTypeSuggested: "document-confusion"
-trapPatternSeed: "zprĂˇva Ă— doporuÄŤenĂ­ Ă— informovanĂ˝ souhlas"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "zpráva × doporučení × informovaný souhlas"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ doporuÄŤenĂ­ a jeho obsah"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. â€“ vĂ˝stupy poradenskĂ© sluĹľby"
+  - "Vyhláška č. 27/2016 Sb. – doporučení a jeho obsah"
+  - "Vyhláška č. 72/2005 Sb. – výstupy poradenské služby"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -1412,12 +1412,12 @@ metadataSourceRef: "B10Q25"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: doporuÄŤenĂ­ jako dokument pro Ĺˇkolu vs zprĂˇva jako diagnostickĂ˝ vĂ˝stup.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: doporučení jako dokument pro školu vs zpráva jako diagnostický výstup.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1437,41 +1437,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q26
 questionNumber: 26
-questionText: "Kdo je autorem prvnĂ­ ÄŤeskĂ© uÄŤebnice logopedie Vady Ĺ™eÄŤi z roku 1924?"
+questionText: "Kdo je autorem první české učebnice logopedie Vady řeči z roku 1924?"
 options:
   A: "Zikmund Janke"
-  B: "Rudolf KratochvĂ­l"
-  C: "Bohuslav BlĂˇha"
-  D: "AntonĂ­n Haveroch"
+  B: "Rudolf Kratochvíl"
+  C: "Bohuslav Bláha"
+  D: "Antonín Haveroch"
 sourceCorrectLetter: "B"
-sourceCorrectOptionText: "Rudolf KratochvĂ­l"
-discipline: "logopedie / dÄ›jiny oboru"
-subtopic: "prvnĂ­ ÄŤeskĂˇ uÄŤebnice logopedie"
-conceptFamily: "dÄ›jiny ÄŤeskĂ© logopedie"
-distinctionAxis: "autor prvnĂ­ ÄŤeskĂ© uÄŤebnice logopedie vs dalĹˇĂ­ ÄŤeskĂ© logopedickĂ© osobnosti"
+sourceCorrectOptionText: "Rudolf Kratochvíl"
+discipline: "logopedie / dějiny oboru"
+subtopic: "první česká učebnice logopedie"
+conceptFamily: "dějiny české logopedie"
+distinctionAxis: "autor první české učebnice logopedie vs další české logopedické osobnosti"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "ÄŤasnĂ˝ autor uÄŤebnice Ă— pozdÄ›jĹˇĂ­ rozvoj logopedie"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "časný autor učebnice × pozdější rozvoj logopedie"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Rudolf KratochvĂ­l"
+  - "Mini-wikipedie osobností – Rudolf Kratochvíl"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "prvnĂ­ ÄŤeskĂˇ uÄŤebnice logopedie"
-personalityAnchor: "Rudolf KratochvĂ­l"
+historicalAnchor: "první česká učebnice logopedie"
+personalityAnchor: "Rudolf Kratochvíl"
 metadataSourceRef: "B10Q26"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: autor prvnĂ­ ÄŤeskĂ© uÄŤebnice logopedie vs dalĹˇĂ­ ÄŤeskĂ© logopedickĂ© osobnosti.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: autor první české učebnice logopedie vs další české logopedické osobnosti.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1491,28 +1491,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q27
 questionNumber: 27
-questionText: "Ĺ kolskĂ© poradenskĂ© zaĹ™Ă­zenĂ­ vyhodnocuje poskytovĂˇnĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­ obecnÄ›"
+questionText: "Školské poradenské zařízení vyhodnocuje poskytování podpůrných opatření obecně"
 options:
-  A: "vĹľdy jednou roÄŤnÄ›, bez vĂ˝jimky pro personĂˇlnĂ­ podpĹŻrnĂˇ opatĹ™enĂ­"
-  B: "vĹľdy po 6 mÄ›sĂ­cĂ­ch od vydĂˇnĂ­ doporuÄŤenĂ­, nenĂ­-li ve zprĂˇvÄ› uvedeno jinak"
-  C: "ve lhĹŻtÄ› pĹ™imÄ›Ĺ™enĂ© povaze speciĂˇlnĂ­ch vzdÄ›lĂˇvacĂ­ch potĹ™eb a dobÄ› platnosti doporuÄŤenĂ­"
-  D: "vĹľdy po 3 mÄ›sĂ­cĂ­ch od zahĂˇjenĂ­ poskytovĂˇnĂ­, bez ohledu na povahu potĹ™eb ĹľĂˇka"
+  A: "vždy jednou ročně, bez výjimky pro personální podpůrná opatření"
+  B: "vždy po 6 měsících od vydání doporučení, není-li ve zprávě uvedeno jinak"
+  C: "ve lhůtě přiměřené povaze speciálních vzdělávacích potřeb a době platnosti doporučení"
+  D: "vždy po 3 měsících od zahájení poskytování, bez ohledu na povahu potřeb žáka"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "ve lhĹŻtÄ› pĹ™imÄ›Ĺ™enĂ© povaze speciĂˇlnĂ­ch vzdÄ›lĂˇvacĂ­ch potĹ™eb a dobÄ› platnosti doporuÄŤenĂ­"
-discipline: "ĹˇkolskĂˇ legislativa / vyhodnocovĂˇnĂ­ PO"
-subtopic: "obecnĂˇ lhĹŻta vyhodnocovĂˇnĂ­ poskytovĂˇnĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­"
-conceptFamily: "vyhodnocovĂˇnĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­"
-distinctionAxis: "lhĹŻta pĹ™imÄ›Ĺ™enĂˇ povaze potĹ™eb a dobÄ› platnosti doporuÄŤenĂ­ vs pevnĂˇ univerzĂˇlnĂ­ lhĹŻta"
+sourceCorrectOptionText: "ve lhůtě přiměřené povaze speciálních vzdělávacích potřeb a době platnosti doporučení"
+discipline: "školská legislativa / vyhodnocování PO"
+subtopic: "obecná lhůta vyhodnocování poskytování podpůrných opatření"
+conceptFamily: "vyhodnocování podpůrných opatření"
+distinctionAxis: "lhůta přiměřená povaze potřeb a době platnosti doporučení vs pevná univerzální lhůta"
 questionTypeSuggested: "legislation-timing-discrimination"
 distractorTypeSuggested: "near-timing"
-trapPatternSeed: "pevnĂˇ lhĹŻta Ă— pĹ™imÄ›Ĺ™enĂˇ lhĹŻta"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "pevná lhůta × přiměřená lhůta"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. Â§ 16 odst. 4"
+  - "Vyhláška č. 27/2016 Sb. § 16 odst. 4"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -1520,12 +1520,12 @@ metadataSourceRef: "B10Q27"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: lhĹŻta pĹ™imÄ›Ĺ™enĂˇ povaze potĹ™eb a dobÄ› platnosti doporuÄŤenĂ­ vs pevnĂˇ univerzĂˇlnĂ­ lhĹŻta.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: lhůta přiměřená povaze potřeb a době platnosti doporučení vs pevná univerzální lhůta.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1545,41 +1545,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q28
 questionNumber: 28
-questionText: "KterĂ˝ ÄŤeskĂ˝ prĹŻkopnĂ­k logopedie je spojen zejmĂ©na s afĂˇziemi, sloĹľitÄ›jĹˇĂ­mi poruchami Ĺ™eÄŤi a takĂ© s pojmem amerisie?"
+questionText: "Který český průkopník logopedie je spojen zejména s afáziemi, složitějšími poruchami řeči a také s pojmem amerisie?"
 options:
-  A: "MiloĹˇ SovĂˇk"
+  A: "Miloš Sovák"
   B: "Karel Neubauer"
   C: "Miloslav Seeman"
-  D: "AntonĂ­n Haveroch"
+  D: "Antonín Haveroch"
 sourceCorrectLetter: "D"
-sourceCorrectOptionText: "AntonĂ­n Haveroch"
-discipline: "logopedie / dÄ›jiny oboru"
-subtopic: "afĂˇzie, sloĹľitĂ© poruchy Ĺ™eÄŤi a pojem amerisie"
-conceptFamily: "dÄ›jiny ÄŤeskĂ© logopedie"
-distinctionAxis: "specifickĂ© odbornĂ© zamÄ›Ĺ™enĂ­ autora vs obecnÄ›jĹˇĂ­ postavenĂ­ jinĂ˝ch logopedĹŻ"
+sourceCorrectOptionText: "Antonín Haveroch"
+discipline: "logopedie / dějiny oboru"
+subtopic: "afázie, složité poruchy řeči a pojem amerisie"
+conceptFamily: "dějiny české logopedie"
+distinctionAxis: "specifické odborné zaměření autora vs obecnější postavení jiných logopedů"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "afĂˇzie Ă— terĂ©nnĂ­ logopedie Ă— novodobĂˇ klinika"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "afázie × terénní logopedie × novodobá klinika"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ AntonĂ­n Haveroch"
+  - "Mini-wikipedie osobností – Antonín Haveroch"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "ÄŤeskĂˇ tradice afaziologie a logopedie"
-personalityAnchor: "AntonĂ­n Haveroch"
+historicalAnchor: "česká tradice afaziologie a logopedie"
+personalityAnchor: "Antonín Haveroch"
 metadataSourceRef: "B10Q28"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: specifickĂ© odbornĂ© zamÄ›Ĺ™enĂ­ autora vs obecnÄ›jĹˇĂ­ postavenĂ­ jinĂ˝ch logopedĹŻ.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: specifické odborné zaměření autora vs obecnější postavení jiných logopedů.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1599,28 +1599,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q29
 questionNumber: 29
-questionText: "NejpozdÄ›ji do 1 roku od vydĂˇnĂ­ doporuÄŤenĂ­ se vyhodnocuje poskytovĂˇnĂ­"
+questionText: "Nejpozději do 1 roku od vydání doporučení se vyhodnocuje poskytování"
 options:
-  A: "asistenta pedagoga, dalĹˇĂ­ho pedagogickĂ©ho pracovnĂ­ka, tlumoÄŤnĂ­ka ÄŤeskĂ©ho znakovĂ©ho jazyka, pĹ™episovatele pro neslyĹˇĂ­cĂ­ a obdobnĂ˝ch podpĹŻrnĂ˝ch osob"
-  B: "pouze tÄ›ch podpĹŻrnĂ˝ch opatĹ™enĂ­, kterĂˇ byla doporuÄŤena na dobu delĹˇĂ­ neĹľ 12 mÄ›sĂ­cĹŻ"
-  C: "vĹˇech podpĹŻrnĂ˝ch opatĹ™enĂ­ s normovanou finanÄŤnĂ­ nĂˇroÄŤnostĂ­ bez ohledu na jejich druh"
-  D: "pouze asistenta pedagoga a dalĹˇĂ­ho pedagogickĂ©ho pracovnĂ­ka, nikoli vĹˇak tlumoÄŤnĂ­ka nebo pĹ™episovatele"
+  A: "asistenta pedagoga, dalšího pedagogického pracovníka, tlumočníka českého znakového jazyka, přepisovatele pro neslyšící a obdobných podpůrných osob"
+  B: "pouze těch podpůrných opatření, která byla doporučena na dobu delší než 12 měsíců"
+  C: "všech podpůrných opatření s normovanou finanční náročností bez ohledu na jejich druh"
+  D: "pouze asistenta pedagoga a dalšího pedagogického pracovníka, nikoli však tlumočníka nebo přepisovatele"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "asistenta pedagoga, dalĹˇĂ­ho pedagogickĂ©ho pracovnĂ­ka, tlumoÄŤnĂ­ka ÄŤeskĂ©ho znakovĂ©ho jazyka, pĹ™episovatele pro neslyĹˇĂ­cĂ­ a obdobnĂ˝ch podpĹŻrnĂ˝ch osob"
-discipline: "ĹˇkolskĂˇ legislativa / vyhodnocovĂˇnĂ­ PO"
-subtopic: "jednoroÄŤnĂ­ vyhodnocenĂ­ personĂˇlnĂ­ch podpĹŻrnĂ˝ch opatĹ™enĂ­"
-conceptFamily: "vyhodnocovĂˇnĂ­ podpĹŻrnĂ˝ch opatĹ™enĂ­"
-distinctionAxis: "specifickĂˇ personĂˇlnĂ­ opatĹ™enĂ­ vs vĹˇechna opatĹ™enĂ­ obecnÄ›"
+sourceCorrectOptionText: "asistenta pedagoga, dalšího pedagogického pracovníka, tlumočníka českého znakového jazyka, přepisovatele pro neslyšící a obdobných podpůrných osob"
+discipline: "školská legislativa / vyhodnocování PO"
+subtopic: "jednoroční vyhodnocení personálních podpůrných opatření"
+conceptFamily: "vyhodnocování podpůrných opatření"
+distinctionAxis: "specifická personální opatření vs všechna opatření obecně"
 questionTypeSuggested: "legislation-timing-discrimination"
 distractorTypeSuggested: "near-rule"
-trapPatternSeed: "specifickĂˇ personĂˇlnĂ­ opatĹ™enĂ­ Ă— vĹˇechna opatĹ™enĂ­"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "specifická personální opatření × všechna opatření"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. Â§ 16 odst. 4"
+  - "Vyhláška č. 27/2016 Sb. § 16 odst. 4"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -1628,12 +1628,12 @@ metadataSourceRef: "B10Q29"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: specifickĂˇ personĂˇlnĂ­ opatĹ™enĂ­ vs vĹˇechna opatĹ™enĂ­ obecnÄ›.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: specifická personální opatření vs všechna opatření obecně.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1653,41 +1653,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q30
 questionNumber: 30
-questionText: "Kdo zaloĹľil LogopedickĂ˝ Ăşstav hlavnĂ­ho mÄ›sta Prahy, prosazoval terĂ©nnĂ­ pĂ©ÄŤi a vĂ˝znamnÄ› posĂ­lil postavenĂ­ logopedie jako samostatnĂ© disciplĂ­ny?"
+questionText: "Kdo založil Logopedický ústav hlavního města Prahy, prosazoval terénní péči a významně posílil postavení logopedie jako samostatné disciplíny?"
 options:
   A: "Karel Neubauer"
-  B: "MiloĹˇ SovĂˇk"
-  C: "Bohuslav BlĂˇha"
+  B: "Miloš Sovák"
+  C: "Bohuslav Bláha"
   D: "Miloslav Seeman"
 sourceCorrectLetter: "B"
-sourceCorrectOptionText: "MiloĹˇ SovĂˇk"
-discipline: "logopedie / dÄ›jiny oboru"
-subtopic: "LogopedickĂ˝ Ăşstav hlavnĂ­ho mÄ›sta Prahy a terĂ©nnĂ­ pĂ©ÄŤe"
-conceptFamily: "dÄ›jiny ÄŤeskĂ© logopedie"
-distinctionAxis: "institucionĂˇlnĂ­ rozvoj logopedie vs jinĂ© odbornĂ© role ÄŤeskĂ˝ch logopedĹŻ"
+sourceCorrectOptionText: "Miloš Sovák"
+discipline: "logopedie / dějiny oboru"
+subtopic: "Logopedický ústav hlavního města Prahy a terénní péče"
+conceptFamily: "dějiny české logopedie"
+distinctionAxis: "institucionální rozvoj logopedie vs jiné odborné role českých logopedů"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "MiloĹˇ SovĂˇk Ă— Seeman Ă— pozdÄ›jĹˇĂ­ logopedi"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Miloš Sovák × Seeman × pozdější logopedi"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ MiloĹˇ SovĂˇk"
+  - "Mini-wikipedie osobností – Miloš Sovák"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "institucionĂˇlnĂ­ posĂ­lenĂ­ ÄŤeskĂ© logopedie"
-personalityAnchor: "MiloĹˇ SovĂˇk"
+historicalAnchor: "institucionální posílení české logopedie"
+personalityAnchor: "Miloš Sovák"
 metadataSourceRef: "B10Q30"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: institucionĂˇlnĂ­ rozvoj logopedie vs jinĂ© odbornĂ© role ÄŤeskĂ˝ch logopedĹŻ.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: institucionální rozvoj logopedie vs jiné odborné role českých logopedů.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1707,28 +1707,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q31
 questionNumber: 31
-questionText: "Pokud ÄŤinnost Ĺˇkoly a ĹˇkolskĂ©ho zaĹ™Ă­zenĂ­ vykonĂˇvĂˇ jedna prĂˇvnickĂˇ osoba, jsou doporuÄŤenĂˇ opatĹ™enĂ­"
+questionText: "Pokud činnost školy a školského zařízení vykonává jedna právnická osoba, jsou doporučená opatření"
 options:
-  A: "uvedena v jednom doporuÄŤenĂ­ ĹˇkolskĂ©ho poradenskĂ©ho zaĹ™Ă­zenĂ­"
-  B: "uvedena v jednom doporuÄŤenĂ­ pouze tehdy, jde-li o opatĹ™enĂ­ druhĂ©ho nebo tĹ™etĂ­ho stupnÄ›"
-  C: "uvedena ve dvou doporuÄŤenĂ­ch, vĹľdy zvlĂˇĹˇĹĄ pro Ĺˇkolu a zvlĂˇĹˇĹĄ pro ĹˇkolskĂ© zaĹ™Ă­zenĂ­"
-  D: "uvedena v tolika doporuÄŤenĂ­ch, kolik druhĹŻ podpĹŻrnĂ˝ch opatĹ™enĂ­ bylo doporuÄŤeno"
+  A: "uvedena v jednom doporučení školského poradenského zařízení"
+  B: "uvedena v jednom doporučení pouze tehdy, jde-li o opatření druhého nebo třetího stupně"
+  C: "uvedena ve dvou doporučeních, vždy zvlášť pro školu a zvlášť pro školské zařízení"
+  D: "uvedena v tolika doporučeních, kolik druhů podpůrných opatření bylo doporučeno"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "uvedena v jednom doporuÄŤenĂ­ ĹˇkolskĂ©ho poradenskĂ©ho zaĹ™Ă­zenĂ­"
-discipline: "ĹˇkolskĂˇ legislativa / doporuÄŤenĂ­"
-subtopic: "jedna prĂˇvnickĂˇ osoba pro Ĺˇkolu a ĹˇkolskĂ© zaĹ™Ă­zenĂ­"
-conceptFamily: "doporuÄŤenĂ­ a jejich organizaÄŤnĂ­ uspoĹ™ĂˇdĂˇnĂ­"
-distinctionAxis: "jedno doporuÄŤenĂ­ vs oddÄ›lenĂˇ doporuÄŤenĂ­"
+sourceCorrectOptionText: "uvedena v jednom doporučení školského poradenského zařízení"
+discipline: "školská legislativa / doporučení"
+subtopic: "jedna právnická osoba pro školu a školské zařízení"
+conceptFamily: "doporučení a jejich organizační uspořádání"
+distinctionAxis: "jedno doporučení vs oddělená doporučení"
 questionTypeSuggested: "document-structure-discrimination"
 distractorTypeSuggested: "document-confusion"
-trapPatternSeed: "jedna prĂˇvnickĂˇ osoba Ă— dvÄ› entity"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "jedna právnická osoba × dvě entity"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ doporuÄŤenĂ­ pĹ™i jednĂ© prĂˇvnickĂ© osobÄ›"
+  - "Vyhláška č. 27/2016 Sb. – doporučení při jedné právnické osobě"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -1736,12 +1736,12 @@ metadataSourceRef: "B10Q31"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: jedno doporuÄŤenĂ­ vs oddÄ›lenĂˇ doporuÄŤenĂ­.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: jedno doporučení vs oddělená doporučení.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1761,41 +1761,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q32
 questionNumber: 32
-questionText: "KterĂ˝ ranĂ˝ evropskĂ˝ prĹŻkopnĂ­k vĂ˝chovy neslyĹˇĂ­cĂ­ch bĂ˝vĂˇ spojovĂˇn s nejstarĹˇĂ­ liniĂ­ vĂ˝uky odezĂ­rĂˇnĂ­, psanĂ­ a artikulovanĂ© Ĺ™eÄŤi, kterĂˇ pĹ™edchĂˇzĂ­ pozdÄ›jĹˇĂ­m systematickĂ˝m metodĂˇm?"
+questionText: "Který raný evropský průkopník výchovy neslyšících bývá spojován s nejstarší linií výuky odezírání, psaní a artikulované řeči, která předchází pozdějším systematickým metodám?"
 options:
   A: "Juan Pablo Bonet"
   B: "Johann Konrad Amman"
   C: "Samuel Heinicke"
-  D: "Pedro Ponce de LeĂłn"
+  D: "Pedro Ponce de León"
 sourceCorrectLetter: "D"
-sourceCorrectOptionText: "Pedro Ponce de LeĂłn"
-discipline: "surdopedie / dÄ›jiny oboru"
-subtopic: "nejstarĹˇĂ­ linie odezĂ­rĂˇnĂ­, psanĂ­ a artikulovanĂ© Ĺ™eÄŤi"
-conceptFamily: "dÄ›jiny vzdÄ›lĂˇvĂˇnĂ­ neslyĹˇĂ­cĂ­ch"
-distinctionAxis: "ranĂ© pĹ™edsystematickĂ© poÄŤĂˇtky orĂˇlnĂ­ vĂ˝uky vs pozdÄ›jĹˇĂ­ systematiÄŤtÄ›jĹˇĂ­ autoĹ™i"
+sourceCorrectOptionText: "Pedro Ponce de León"
+discipline: "surdopedie / dějiny oboru"
+subtopic: "nejstarší linie odezírání, psaní a artikulované řeči"
+conceptFamily: "dějiny vzdělávání neslyšících"
+distinctionAxis: "rané předsystematické počátky orální výuky vs pozdější systematičtější autoři"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "Ponce de LeĂłn Ă— Bonet Ă— Amman Ă— Heinicke"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Ponce de León × Bonet × Amman × Heinicke"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Pedro Ponce de LeĂłn"
+  - "Mini-wikipedie osobností – Pedro Ponce de León"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "ranĂ© poÄŤĂˇtky edukace neslyĹˇĂ­cĂ­ch"
-personalityAnchor: "Pedro Ponce de LeĂłn"
+historicalAnchor: "rané počátky edukace neslyšících"
+personalityAnchor: "Pedro Ponce de León"
 metadataSourceRef: "B10Q32"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: ranĂ© pĹ™edsystematickĂ© poÄŤĂˇtky orĂˇlnĂ­ vĂ˝uky vs pozdÄ›jĹˇĂ­ systematiÄŤtÄ›jĹˇĂ­ autoĹ™i.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: rané předsystematické počátky orální výuky vs pozdější systematičtější autoři.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1815,28 +1815,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q33
 questionNumber: 33
-questionText: "Pokud ÄŤinnost Ĺˇkoly a ĹˇkolskĂ©ho zaĹ™Ă­zenĂ­ vykonĂˇvajĂ­ rĹŻznĂ© prĂˇvnickĂ© osoby, pak Ĺ PZ"
+questionText: "Pokud činnost školy a školského zařízení vykonávají různé právnické osoby, pak ŠPZ"
 options:
-  A: "vydĂˇvĂˇ samostatnĂ© doporuÄŤenĂ­ pro vzdÄ›lĂˇvĂˇnĂ­ ĹľĂˇka ve ĹˇkolskĂ©m zaĹ™Ă­zenĂ­"
-  B: "nevydĂˇvĂˇ dalĹˇĂ­ doporuÄŤenĂ­, pokud jiĹľ bylo vydĂˇno doporuÄŤenĂ­ pro Ĺˇkolu"
-  C: "vydĂˇvĂˇ samostatnĂ© doporuÄŤenĂ­ jen v pĹ™Ă­padÄ›, Ĺľe jde o pĂˇtĂ˝ stupeĹ podpory"
-  D: "vydĂˇvĂˇ spoleÄŤnĂ© doporuÄŤenĂ­, ale s oddÄ›lenou pĹ™Ă­lohou pro ĹˇkolskĂ© zaĹ™Ă­zenĂ­"
+  A: "vydává samostatné doporučení pro vzdělávání žáka ve školském zařízení"
+  B: "nevydává další doporučení, pokud již bylo vydáno doporučení pro školu"
+  C: "vydává samostatné doporučení jen v případě, že jde o pátý stupeň podpory"
+  D: "vydává společné doporučení, ale s oddělenou přílohou pro školské zařízení"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "vydĂˇvĂˇ samostatnĂ© doporuÄŤenĂ­ pro vzdÄ›lĂˇvĂˇnĂ­ ĹľĂˇka ve ĹˇkolskĂ©m zaĹ™Ă­zenĂ­"
-discipline: "ĹˇkolskĂˇ legislativa / doporuÄŤenĂ­"
-subtopic: "rĹŻznĂ© prĂˇvnickĂ© osoby pro Ĺˇkolu a ĹˇkolskĂ© zaĹ™Ă­zenĂ­"
-conceptFamily: "doporuÄŤenĂ­ a jejich organizaÄŤnĂ­ uspoĹ™ĂˇdĂˇnĂ­"
-distinctionAxis: "oddÄ›lenĂˇ doporuÄŤenĂ­ pro oddÄ›lenĂ© prĂˇvnickĂ© osoby vs jednotnĂ© doporuÄŤenĂ­"
+sourceCorrectOptionText: "vydává samostatné doporučení pro vzdělávání žáka ve školském zařízení"
+discipline: "školská legislativa / doporučení"
+subtopic: "různé právnické osoby pro školu a školské zařízení"
+conceptFamily: "doporučení a jejich organizační uspořádání"
+distinctionAxis: "oddělená doporučení pro oddělené právnické osoby vs jednotné doporučení"
 questionTypeSuggested: "document-structure-discrimination"
 distractorTypeSuggested: "document-confusion"
-trapPatternSeed: "jedna vs vĂ­ce prĂˇvnickĂ˝ch osob"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "jedna vs více právnických osob"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ doporuÄŤenĂ­ pĹ™i vĂ­ce prĂˇvnickĂ˝ch osobĂˇch"
+  - "Vyhláška č. 27/2016 Sb. – doporučení při více právnických osobách"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -1844,12 +1844,12 @@ metadataSourceRef: "B10Q33"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: oddÄ›lenĂˇ doporuÄŤenĂ­ pro oddÄ›lenĂ© prĂˇvnickĂ© osoby vs jednotnĂ© doporuÄŤenĂ­.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: oddělená doporučení pro oddělené právnické osoby vs jednotné doporučení.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1869,41 +1869,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q34
 questionNumber: 34
-questionText: "KterĂ˝ ĹˇvĂ˝carskĂ˝ lĂ©kaĹ™ pĹŻsobĂ­cĂ­ v Nizozemsku je povaĹľovĂˇn za zakladatele orĂˇlnĂ­ metody a zdĹŻrazĹoval odezĂ­rĂˇnĂ­ i hlasovou produkci?"
+questionText: "Který švýcarský lékař působící v Nizozemsku je považován za zakladatele orální metody a zdůrazňoval odezírání i hlasovou produkci?"
 options:
   A: "Thomas Braidwood"
   B: "Johann Konrad Amman"
-  C: "Charles-Michel de lâ€™Ă‰pĂ©e"
+  C: "Charles-Michel de l’Épée"
   D: "Samuel Heinicke"
 sourceCorrectLetter: "B"
 sourceCorrectOptionText: "Johann Konrad Amman"
-discipline: "surdopedie / dÄ›jiny oboru"
-subtopic: "zakladatel orĂˇlnĂ­ metody"
-conceptFamily: "dÄ›jiny vzdÄ›lĂˇvĂˇnĂ­ neslyĹˇĂ­cĂ­ch"
-distinctionAxis: "Ammanova orĂˇlnĂ­ linie vs jinĂ© nĂˇrodnĂ­ tradice"
+discipline: "surdopedie / dějiny oboru"
+subtopic: "zakladatel orální metody"
+conceptFamily: "dějiny vzdělávání neslyšících"
+distinctionAxis: "Ammanova orální linie vs jiné národní tradice"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "Amman Ă— Heinicke Ă— de lâ€™Ă‰pĂ©e"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Amman × Heinicke × de l’Épée"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Johann Konrad Amman"
+  - "Mini-wikipedie osobností – Johann Konrad Amman"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "poÄŤĂˇtky orĂˇlnĂ­ metody"
+historicalAnchor: "počátky orální metody"
 personalityAnchor: "Johann Konrad Amman"
 metadataSourceRef: "B10Q34"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: Ammanova orĂˇlnĂ­ linie vs jinĂ© nĂˇrodnĂ­ tradice.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: Ammanova orální linie vs jiné národní tradice.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1923,28 +1923,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q35
 questionNumber: 35
-questionText: "Ve Ĺˇkole, tĹ™Ă­dÄ›, oddÄ›lenĂ­ nebo studijnĂ­ skupinÄ› zĹ™Ă­zenĂ© podle Â§ 16 odst. 9 zĂˇkona nelze standardnÄ› poskytovat"
+questionText: "Ve škole, třídě, oddělení nebo studijní skupině zřízené podle § 16 odst. 9 zákona nelze standardně poskytovat"
 options:
-  A: "poradenskou pomoc Ĺˇkoly a ĹˇkolskĂ©ho poradenskĂ©ho zaĹ™Ă­zenĂ­"
-  B: "Ăşpravu metod vĂ˝uky a individualizaci vzdÄ›lĂˇvacĂ­ho procesu"
-  C: "pĹ™edmÄ›t speciĂˇlnÄ› pedagogickĂ© pĂ©ÄŤe, nenĂ­-li dĂˇn jinĂ˝ druh znevĂ˝hodnÄ›nĂ­ neĹľ ten, pro kterĂ˝ byla tato forma zĹ™Ă­zena"
-  D: "prĹŻbÄ›ĹľnĂ© a formativnĂ­ hodnocenĂ­ pĹ™izpĹŻsobenĂ© vzdÄ›lĂˇvacĂ­m potĹ™ebĂˇm ĹľĂˇka"
+  A: "poradenskou pomoc školy a školského poradenského zařízení"
+  B: "úpravu metod výuky a individualizaci vzdělávacího procesu"
+  C: "předmět speciálně pedagogické péče, není-li dán jiný druh znevýhodnění než ten, pro který byla tato forma zřízena"
+  D: "průběžné a formativní hodnocení přizpůsobené vzdělávacím potřebám žáka"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "pĹ™edmÄ›t speciĂˇlnÄ› pedagogickĂ© pĂ©ÄŤe, nenĂ­-li dĂˇn jinĂ˝ druh znevĂ˝hodnÄ›nĂ­ neĹľ ten, pro kterĂ˝ byla tato forma zĹ™Ă­zena"
-discipline: "ĹˇkolskĂˇ legislativa / Â§16 odst. 9"
-subtopic: "co nelze standardnÄ› poskytovat ve speciĂˇlnĂ­ tĹ™Ă­dÄ› nebo skupinÄ›"
-conceptFamily: "vzdÄ›lĂˇvĂˇnĂ­ podle Â§ 16 odst. 9 zĂˇkona"
-distinctionAxis: "opatĹ™enĂ­ sluÄŤitelnĂˇ vs nesluÄŤitelnĂˇ se speciĂˇlnĂ­ tĹ™Ă­dou/skupinou"
+sourceCorrectOptionText: "předmět speciálně pedagogické péče, není-li dán jiný druh znevýhodnění než ten, pro který byla tato forma zřízena"
+discipline: "školská legislativa / §16 odst. 9"
+subtopic: "co nelze standardně poskytovat ve speciální třídě nebo skupině"
+conceptFamily: "vzdělávání podle § 16 odst. 9 zákona"
+distinctionAxis: "opatření slučitelná vs neslučitelná se speciální třídou/skupinou"
 questionTypeSuggested: "legislation-compatibility-discrimination"
 distractorTypeSuggested: "near-rule"
-trapPatternSeed: "co je jiĹľ obsaĹľeno v samotnĂ©m organizaÄŤnĂ­m opatĹ™enĂ­"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "co je již obsaženo v samotném organizačním opatření"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ pĹ™Ă­loha ÄŤ. 1 a pravidla PO pro Â§ 16 odst. 9"
+  - "Vyhláška č. 27/2016 Sb. – příloha č. 1 a pravidla PO pro § 16 odst. 9"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -1952,12 +1952,12 @@ metadataSourceRef: "B10Q35"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: opatĹ™enĂ­ sluÄŤitelnĂˇ vs nesluÄŤitelnĂˇ se speciĂˇlnĂ­ tĹ™Ă­dou/skupinou.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: opatření slučitelná vs neslučitelná se speciální třídou/skupinou.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -1977,41 +1977,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q36
 questionNumber: 36
-questionText: "Kdo je povaĹľovĂˇn za otce francouzskĂ© tradice vzdÄ›lĂˇvĂˇnĂ­ neslyĹˇĂ­cĂ­ch, zaloĹľil veĹ™ejnĂ˝ Ăşstav pro neslyĹˇĂ­cĂ­ v PaĹ™Ă­Ĺľi a rozvĂ­jel znakovĂ© a manuĂˇlnĂ­ vyuÄŤovĂˇnĂ­?"
+questionText: "Kdo je považován za otce francouzské tradice vzdělávání neslyšících, založil veřejný ústav pro neslyšící v Paříži a rozvíjel znakové a manuální vyučování?"
 options:
   A: "Samuel Heinicke"
-  B: "AbbĂ© Sicard"
+  B: "Abbé Sicard"
   C: "Laurent Clerc"
-  D: "Charles-Michel de lâ€™Ă‰pĂ©e"
+  D: "Charles-Michel de l’Épée"
 sourceCorrectLetter: "D"
-sourceCorrectOptionText: "Charles-Michel de lâ€™Ă‰pĂ©e"
-discipline: "surdopedie / dÄ›jiny oboru"
-subtopic: "otec francouzskĂ© znakovĂ© tradice"
-conceptFamily: "dÄ›jiny vzdÄ›lĂˇvĂˇnĂ­ neslyĹˇĂ­cĂ­ch"
-distinctionAxis: "francouzskĂˇ manuĂˇlnĂ­ tradice vs nÄ›meckĂˇ orĂˇlnĂ­ linie a jejĂ­ pokraÄŤovatelĂ©"
+sourceCorrectOptionText: "Charles-Michel de l’Épée"
+discipline: "surdopedie / dějiny oboru"
+subtopic: "otec francouzské znakové tradice"
+conceptFamily: "dějiny vzdělávání neslyšících"
+distinctionAxis: "francouzská manuální tradice vs německá orální linie a její pokračovatelé"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "de lâ€™Ă‰pĂ©e Ă— Sicard Ă— Clerc"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "de l’Épée × Sicard × Clerc"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Charles-Michel de lâ€™Ă‰pĂ©e"
+  - "Mini-wikipedie osobností – Charles-Michel de l’Épée"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "francouzskĂˇ znakovĂˇ tradice"
-personalityAnchor: "Charles-Michel de lâ€™Ă‰pĂ©e"
+historicalAnchor: "francouzská znaková tradice"
+personalityAnchor: "Charles-Michel de l’Épée"
 metadataSourceRef: "B10Q36"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: francouzskĂˇ manuĂˇlnĂ­ tradice vs nÄ›meckĂˇ orĂˇlnĂ­ linie a jejĂ­ pokraÄŤovatelĂ©.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: francouzská manuální tradice vs německá orální linie a její pokračovatelé.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2031,28 +2031,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q37
 questionNumber: 37
-questionText: "PĹ™i distanÄŤnĂ­ch prvcĂ­ch kombinovanĂ© vĂ˝uky mimo mĂ­sto vzdÄ›lĂˇvĂˇnĂ­ se podpĹŻrnĂˇ opatĹ™enĂ­ podle Â§ 16 odst. 2 pĂ­sm. g) a h)"
+questionText: "Při distančních prvcích kombinované výuky mimo místo vzdělávání se podpůrná opatření podle § 16 odst. 2 písm. g) a h)"
 options:
-  A: "neposkytujĂ­, s vĂ˝jimkou tlumoÄŤnĂ­ka ÄŤeskĂ©ho znakovĂ©ho jazyka a pĹ™episovatele pro neslyĹˇĂ­cĂ­"
-  B: "poskytujĂ­ bez omezenĂ­, pokud je jejich rozsah vĂ˝slovnÄ› uveden v doporuÄŤenĂ­ Ĺ PZ"
-  C: "poskytujĂ­ pouze ve ÄŤtvrtĂ©m a pĂˇtĂ©m stupni podpory pĹ™i dlouhodobĂ© nepĹ™Ă­tomnosti ĹľĂˇka"
-  D: "neposkytujĂ­ bez jakĂ©koli vĂ˝jimky, protoĹľe se vztahujĂ­ vĂ˝luÄŤnÄ› na prezenÄŤnĂ­ vĂ˝uku"
+  A: "neposkytují, s výjimkou tlumočníka českého znakového jazyka a přepisovatele pro neslyšící"
+  B: "poskytují bez omezení, pokud je jejich rozsah výslovně uveden v doporučení ŠPZ"
+  C: "poskytují pouze ve čtvrtém a pátém stupni podpory při dlouhodobé nepřítomnosti žáka"
+  D: "neposkytují bez jakékoli výjimky, protože se vztahují výlučně na prezenční výuku"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "neposkytujĂ­, s vĂ˝jimkou tlumoÄŤnĂ­ka ÄŤeskĂ©ho znakovĂ©ho jazyka a pĹ™episovatele pro neslyĹˇĂ­cĂ­"
-discipline: "ĹˇkolskĂˇ legislativa / distanÄŤnĂ­ prvky vĂ˝uky"
-subtopic: "neposkytovĂˇnĂ­ PO podle Â§ 16 odst. 2 pĂ­sm. g) a h) s vĂ˝jimkami"
-conceptFamily: "podpĹŻrnĂˇ opatĹ™enĂ­ pĹ™i kombinovanĂ© a distanÄŤnĂ­ vĂ˝uce"
-distinctionAxis: "vĂ˝jimka pro tlumoÄŤnĂ­ka ÄŚZJ a pĹ™episovatele vs absolutnĂ­ zĂˇkaz ÄŤi plnĂ© poskytovĂˇnĂ­"
+sourceCorrectOptionText: "neposkytují, s výjimkou tlumočníka českého znakového jazyka a přepisovatele pro neslyšící"
+discipline: "školská legislativa / distanční prvky výuky"
+subtopic: "neposkytování PO podle § 16 odst. 2 písm. g) a h) s výjimkami"
+conceptFamily: "podpůrná opatření při kombinované a distanční výuce"
+distinctionAxis: "výjimka pro tlumočníka ČZJ a přepisovatele vs absolutní zákaz či plné poskytování"
 questionTypeSuggested: "legislation-exception-discrimination"
 distractorTypeSuggested: "near-rule"
-trapPatternSeed: "zĂˇkaz s vĂ˝jimkou Ă— absolutnĂ­ zĂˇkaz Ă— plnĂ© poskytovĂˇnĂ­"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "zákaz s výjimkou × absolutní zákaz × plné poskytování"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. Â§ 16 â€“ aktuĂˇlnĂ­ znÄ›nĂ­"
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ nĂˇvaznĂˇ Ăşprava"
+  - "Zákon č. 561/2004 Sb. § 16 – aktuální znění"
+  - "Vyhláška č. 27/2016 Sb. – návazná úprava"
 secondarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -2060,12 +2060,12 @@ metadataSourceRef: "B10Q37"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: vĂ˝jimka pro tlumoÄŤnĂ­ka ÄŚZJ a pĹ™episovatele vs absolutnĂ­ zĂˇkaz ÄŤi plnĂ© poskytovĂˇnĂ­.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: výjimka pro tlumočníka ČZJ a přepisovatele vs absolutní zákaz či plné poskytování.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2085,7 +2085,7 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q38
 questionNumber: 38
-questionText: "KterĂˇ osobnost se stala hlavnĂ­ protivĂˇhou francouzskĂ© znakovĂ© tradice tĂ­m, Ĺľe rozvĂ­jela nÄ›meckou orĂˇlnĂ­ metodu a zdĹŻrazĹovala vĂ˝uku Ĺ™eÄŤi a odezĂ­rĂˇnĂ­?"
+questionText: "Která osobnost se stala hlavní protiváhou francouzské znakové tradice tím, že rozvíjela německou orální metodu a zdůrazňovala výuku řeči a odezírání?"
 options:
   A: "Johann Konrad Amman"
   B: "Samuel Heinicke"
@@ -2093,33 +2093,33 @@ options:
   D: "Thomas Hopkins Gallaudet"
 sourceCorrectLetter: "B"
 sourceCorrectOptionText: "Samuel Heinicke"
-discipline: "surdopedie / dÄ›jiny oboru"
-subtopic: "Heinicke jako protivĂˇha francouzskĂ© znakovĂ© tradice"
-conceptFamily: "dÄ›jiny vzdÄ›lĂˇvĂˇnĂ­ neslyĹˇĂ­cĂ­ch"
-distinctionAxis: "nÄ›meckĂˇ orĂˇlnĂ­ metoda vs francouzskĂˇ manuĂˇlnĂ­ tradice"
+discipline: "surdopedie / dějiny oboru"
+subtopic: "Heinicke jako protiváha francouzské znakové tradice"
+conceptFamily: "dějiny vzdělávání neslyšících"
+distinctionAxis: "německá orální metoda vs francouzská manuální tradice"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "Amman Ă— Heinicke Ă— Braidwood"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Amman × Heinicke × Braidwood"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Samuel Heinicke"
+  - "Mini-wikipedie osobností – Samuel Heinicke"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "nÄ›meckĂˇ orĂˇlnĂ­ tradice"
+historicalAnchor: "německá orální tradice"
 personalityAnchor: "Samuel Heinicke"
 metadataSourceRef: "B10Q38"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: nÄ›meckĂˇ orĂˇlnĂ­ metoda vs francouzskĂˇ manuĂˇlnĂ­ tradice.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: německá orální metoda vs francouzská manuální tradice.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2139,28 +2139,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q39
 questionNumber: 39
-questionText: "Ve tĹ™etĂ­m stupni podpory mĹŻĹľe bĂ˝t asistent pedagoga v nÄ›kterĂ˝ch variantĂˇch nastaven tak, Ĺľe"
+questionText: "Ve třetím stupni podpory může být asistent pedagoga v některých variantách nastaven tak, že"
 options:
-  A: "je pĹ™Ă­tomen pouze pĹ™i nepedagogickĂ˝ch ÄŤinnostech a nevstupuje do pĹ™Ă­mĂ© vĂ˝uky ĹľĂˇka"
-  B: "mĹŻĹľe bĂ˝t vyuĹľĂ­vĂˇn i pro dalĹˇĂ­ ĹľĂˇky, ale pouze tehdy, majĂ­-li stejnĂ˝ druh znevĂ˝hodnÄ›nĂ­"
-  C: "nemusĂ­ bĂ˝t pĹ™Ă­tomen po celou dobu vyuÄŤovĂˇnĂ­ a mĹŻĹľe bĂ˝t vyuĹľĂ­vĂˇn i pro dalĹˇĂ­ ĹľĂˇky s obdobnou potĹ™ebou"
-  D: "je pĹ™Ă­tomen po celou dobu vyuÄŤovĂˇnĂ­ a pracuje vĂ˝hradnÄ› s jednĂ­m konkrĂ©tnĂ­m ĹľĂˇkem"
+  A: "je přítomen pouze při nepedagogických činnostech a nevstupuje do přímé výuky žáka"
+  B: "může být využíván i pro další žáky, ale pouze tehdy, mají-li stejný druh znevýhodnění"
+  C: "nemusí být přítomen po celou dobu vyučování a může být využíván i pro další žáky s obdobnou potřebou"
+  D: "je přítomen po celou dobu vyučování a pracuje výhradně s jedním konkrétním žákem"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "nemusĂ­ bĂ˝t pĹ™Ă­tomen po celou dobu vyuÄŤovĂˇnĂ­ a mĹŻĹľe bĂ˝t vyuĹľĂ­vĂˇn i pro dalĹˇĂ­ ĹľĂˇky s obdobnou potĹ™ebou"
-discipline: "ĹˇkolskĂˇ legislativa / asistent pedagoga"
-subtopic: "varianty nastavenĂ­ asistenta pedagoga ve 3. stupni"
-conceptFamily: "personĂˇlnĂ­ podpĹŻrnĂˇ opatĹ™enĂ­"
-distinctionAxis: "sdĂ­lenĂ˝ a ÄŤasovÄ› omezenĂ˝ AP vs plnÄ› individuĂˇlnĂ­ celodennĂ­ pĹ™Ă­tomnost"
+sourceCorrectOptionText: "nemusí být přítomen po celou dobu vyučování a může být využíván i pro další žáky s obdobnou potřebou"
+discipline: "školská legislativa / asistent pedagoga"
+subtopic: "varianty nastavení asistenta pedagoga ve 3. stupni"
+conceptFamily: "personální podpůrná opatření"
+distinctionAxis: "sdílený a časově omezený AP vs plně individuální celodenní přítomnost"
 questionTypeSuggested: "legislation-support-variant-discrimination"
 distractorTypeSuggested: "near-rule"
-trapPatternSeed: "sdĂ­lenĂˇ podpora Ă— vĂ˝hradnĂ­ podpora"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "sdílená podpora × výhradní podpora"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ pĹ™Ă­loha ÄŤ. 1, 3. stupeĹ podpory"
+  - "Vyhláška č. 27/2016 Sb. – příloha č. 1, 3. stupeň podpory"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -2168,12 +2168,12 @@ metadataSourceRef: "B10Q39"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: sdĂ­lenĂ˝ a ÄŤasovÄ› omezenĂ˝ AP vs plnÄ› individuĂˇlnĂ­ celodennĂ­ pĹ™Ă­tomnost.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: sdílený a časově omezený AP vs plně individuální celodenní přítomnost.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2193,41 +2193,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q40
 questionNumber: 40
-questionText: "Kdo zaloĹľil v PaĹ™Ă­Ĺľi roku 1784 prvnĂ­ vĂ˝chovnÄ›-vzdÄ›lĂˇvacĂ­ Ăşstav pro nevidomĂ© na svÄ›tÄ› a pracoval s reliĂ©fnĂ­m tiskem?"
+questionText: "Kdo založil v Paříži roku 1784 první výchovně-vzdělávací ústav pro nevidomé na světě a pracoval s reliéfním tiskem?"
 options:
   A: "Johann Wilhelm Klein"
   B: "Denis Diderot"
   C: "Louis Braille"
-  D: "Valentin HaĂĽy"
+  D: "Valentin Haüy"
 sourceCorrectLetter: "D"
-sourceCorrectOptionText: "Valentin HaĂĽy"
-discipline: "tyflopedie / dÄ›jiny oboru"
-subtopic: "prvnĂ­ Ăşstav pro nevidomĂ© v PaĹ™Ă­Ĺľi"
-conceptFamily: "dÄ›jiny vzdÄ›lĂˇvĂˇnĂ­ osob se zrakovĂ˝m postiĹľenĂ­m"
-distinctionAxis: "zakladatel prvnĂ­ho Ăşstavu pro nevidomĂ© vs pozdÄ›jĹˇĂ­ vĂ˝voj pĂ­sma a edukace"
+sourceCorrectOptionText: "Valentin Haüy"
+discipline: "tyflopedie / dějiny oboru"
+subtopic: "první ústav pro nevidomé v Paříži"
+conceptFamily: "dějiny vzdělávání osob se zrakovým postižením"
+distinctionAxis: "zakladatel prvního ústavu pro nevidomé vs pozdější vývoj písma a edukace"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "HaĂĽy Ă— Braille Ă— Diderot Ă— Klein"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Haüy × Braille × Diderot × Klein"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Valentin HaĂĽy"
+  - "Mini-wikipedie osobností – Valentin Haüy"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "poÄŤĂˇtky institucionĂˇlnĂ­ tyflopedie"
-personalityAnchor: "Valentin HaĂĽy"
+historicalAnchor: "počátky institucionální tyflopedie"
+personalityAnchor: "Valentin Haüy"
 metadataSourceRef: "B10Q40"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: zakladatel prvnĂ­ho Ăşstavu pro nevidomĂ© vs pozdÄ›jĹˇĂ­ vĂ˝voj pĂ­sma a edukace.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: zakladatel prvního ústavu pro nevidomé vs pozdější vývoj písma a edukace.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2247,28 +2247,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q41
 questionNumber: 41
-questionText: "Ve tĹ™etĂ­m stupni podpĹŻrnĂ˝ch opatĹ™enĂ­ je moĹľnĂ© prodlouĹľit dĂ©lku vzdÄ›lĂˇvĂˇnĂ­"
+questionText: "Ve třetím stupni podpůrných opatření je možné prodloužit délku vzdělávání"
 options:
-  A: "nejvĂ˝Ĺˇe o 1 rok"
-  B: "nejvĂ˝Ĺˇe o 2 roky u vĹˇech ĹľĂˇkĹŻ bez rozdĂ­lu stupnÄ› vzdÄ›lĂˇvĂˇnĂ­"
-  C: "nejvĂ˝Ĺˇe o 2 roky pouze u ĹľĂˇkĹŻ vzdÄ›lĂˇvanĂ˝ch podle Â§ 16 odst. 9 zĂˇkona"
-  D: "nejvĂ˝Ĺˇe o 1 rok pouze ve stĹ™ednĂ­m a vyĹˇĹˇĂ­m odbornĂ©m vzdÄ›lĂˇvĂˇnĂ­"
+  A: "nejvýše o 1 rok"
+  B: "nejvýše o 2 roky u všech žáků bez rozdílu stupně vzdělávání"
+  C: "nejvýše o 2 roky pouze u žáků vzdělávaných podle § 16 odst. 9 zákona"
+  D: "nejvýše o 1 rok pouze ve středním a vyšším odborném vzdělávání"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "nejvĂ˝Ĺˇe o 1 rok"
-discipline: "ĹˇkolskĂˇ legislativa / dĂ©lka vzdÄ›lĂˇvĂˇnĂ­"
-subtopic: "prodlouĹľenĂ­ dĂ©lky vzdÄ›lĂˇvĂˇnĂ­ ve 3. stupni"
-conceptFamily: "stupnÄ› podpory a Ăşpravy prĹŻbÄ›hu vzdÄ›lĂˇvĂˇnĂ­"
-distinctionAxis: "nejvĂ˝Ĺˇe o 1 rok vs jinĂ© varianty prodlouĹľenĂ­"
+sourceCorrectOptionText: "nejvýše o 1 rok"
+discipline: "školská legislativa / délka vzdělávání"
+subtopic: "prodloužení délky vzdělávání ve 3. stupni"
+conceptFamily: "stupně podpory a úpravy průběhu vzdělávání"
+distinctionAxis: "nejvýše o 1 rok vs jiné varianty prodloužení"
 questionTypeSuggested: "legislation-limit-discrimination"
 distractorTypeSuggested: "near-rule"
-trapPatternSeed: "1 rok Ă— 2 roky Ă— omezenĂ­ podle typu Ĺˇkoly"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "1 rok × 2 roky × omezení podle typu školy"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ pĹ™Ă­loha ÄŤ. 1, 3. stupeĹ podpory"
+  - "Vyhláška č. 27/2016 Sb. – příloha č. 1, 3. stupeň podpory"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -2276,12 +2276,12 @@ metadataSourceRef: "B10Q41"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: nejvĂ˝Ĺˇe o 1 rok vs jinĂ© varianty prodlouĹľenĂ­.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: nejvýše o 1 rok vs jiné varianty prodloužení.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2301,7 +2301,7 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q42
 questionNumber: 42
-questionText: "KterĂ˝ autor vyvinul bodovĂ© noÄŤnĂ­ pĂ­smo, z nÄ›hoĹľ Louis Braille pozdÄ›ji vyĹˇel pĹ™i tvorbÄ› vlastnĂ­ soustavy?"
+questionText: "Který autor vyvinul bodové noční písmo, z něhož Louis Braille později vyšel při tvorbě vlastní soustavy?"
 options:
   A: "James Gall"
   B: "Josef Julius Barbier"
@@ -2309,33 +2309,33 @@ options:
   D: "Thomas Mark Lucas"
 sourceCorrectLetter: "B"
 sourceCorrectOptionText: "Josef Julius Barbier"
-discipline: "tyflopedie / dÄ›jiny pĂ­sma"
-subtopic: "bodovĂ© noÄŤnĂ­ pĂ­smo jako pĹ™edchĹŻdce Braillova pĂ­sma"
-conceptFamily: "dÄ›jiny komunikaÄŤnĂ­ch systĂ©mĹŻ pro nevidomĂ©"
-distinctionAxis: "Barbierovo noÄŤnĂ­ pĂ­smo vs jinĂ© reliĂ©fnĂ­ soustavy"
+discipline: "tyflopedie / dějiny písma"
+subtopic: "bodové noční písmo jako předchůdce Braillova písma"
+conceptFamily: "dějiny komunikačních systémů pro nevidomé"
+distinctionAxis: "Barbierovo noční písmo vs jiné reliéfní soustavy"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "Barbier Ă— Gall Ă— Moon Ă— Lucas"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Barbier × Gall × Moon × Lucas"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Josef Julius Barbier"
+  - "Mini-wikipedie osobností – Josef Julius Barbier"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "noÄŤnĂ­ pĂ­smo jako pĹ™edstupeĹ Braillovy soustavy"
+historicalAnchor: "noční písmo jako předstupeň Braillovy soustavy"
 personalityAnchor: "Josef Julius Barbier"
 metadataSourceRef: "B10Q42"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: Barbierovo noÄŤnĂ­ pĂ­smo vs jinĂ© reliĂ©fnĂ­ soustavy.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: Barbierovo noční písmo vs jiné reliéfní soustavy.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2355,28 +2355,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q43
 questionNumber: 43
-questionText: "Ve ÄŤtvrtĂ©m stupni podpĹŻrnĂ˝ch opatĹ™enĂ­ lze u ĹľĂˇkĹŻ uvedenĂ˝ch v Â§ 16 odst. 9 zĂˇkona prodlouĹľit dĂ©lku vzdÄ›lĂˇvĂˇnĂ­"
+questionText: "Ve čtvrtém stupni podpůrných opatření lze u žáků uvedených v § 16 odst. 9 zákona prodloužit délku vzdělávání"
 options:
-  A: "nejvĂ˝Ĺˇe o 3 roky, jde-li o ĹľĂˇka vzdÄ›lĂˇvanĂ©ho ve speciĂˇlnĂ­ tĹ™Ă­dÄ›"
-  B: "nelze prodluĹľovat dĂ©lku vzdÄ›lĂˇvĂˇnĂ­, ale jen mÄ›nit organizaci vĂ˝uky"
-  C: "nejvĂ˝Ĺˇe o 2 roky, jde-li o ĹľĂˇka uvedenĂ©ho v Â§ 16 odst. 9 zĂˇkona"
-  D: "nejvĂ˝Ĺˇe o 1 rok bez ohledu na typ Ĺˇkoly nebo vzdÄ›lĂˇvacĂ­ho programu"
+  A: "nejvýše o 3 roky, jde-li o žáka vzdělávaného ve speciální třídě"
+  B: "nelze prodlužovat délku vzdělávání, ale jen měnit organizaci výuky"
+  C: "nejvýše o 2 roky, jde-li o žáka uvedeného v § 16 odst. 9 zákona"
+  D: "nejvýše o 1 rok bez ohledu na typ školy nebo vzdělávacího programu"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "nejvĂ˝Ĺˇe o 2 roky, jde-li o ĹľĂˇka uvedenĂ©ho v Â§ 16 odst. 9 zĂˇkona"
-discipline: "ĹˇkolskĂˇ legislativa / dĂ©lka vzdÄ›lĂˇvĂˇnĂ­"
-subtopic: "prodlouĹľenĂ­ dĂ©lky vzdÄ›lĂˇvĂˇnĂ­ ve 4. stupni u Â§ 16 odst. 9"
-conceptFamily: "stupnÄ› podpory a Ăşpravy prĹŻbÄ›hu vzdÄ›lĂˇvĂˇnĂ­"
-distinctionAxis: "nejvĂ˝Ĺˇe o 2 roky u ĹľĂˇkĹŻ podle Â§ 16 odst. 9 vs jinĂ© limity"
+sourceCorrectOptionText: "nejvýše o 2 roky, jde-li o žáka uvedeného v § 16 odst. 9 zákona"
+discipline: "školská legislativa / délka vzdělávání"
+subtopic: "prodloužení délky vzdělávání ve 4. stupni u § 16 odst. 9"
+conceptFamily: "stupně podpory a úpravy průběhu vzdělávání"
+distinctionAxis: "nejvýše o 2 roky u žáků podle § 16 odst. 9 vs jiné limity"
 questionTypeSuggested: "legislation-limit-discrimination"
 distractorTypeSuggested: "near-rule"
-trapPatternSeed: "2 roky Ă— 3 roky Ă— 1 rok"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "2 roky × 3 roky × 1 rok"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ pĹ™Ă­loha ÄŤ. 1, 4. stupeĹ podpory"
+  - "Vyhláška č. 27/2016 Sb. – příloha č. 1, 4. stupeň podpory"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -2384,12 +2384,12 @@ metadataSourceRef: "B10Q43"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: nejvĂ˝Ĺˇe o 2 roky u ĹľĂˇkĹŻ podle Â§ 16 odst. 9 vs jinĂ© limity.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: nejvýše o 2 roky u žáků podle § 16 odst. 9 vs jiné limity.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2409,7 +2409,7 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q44
 questionNumber: 44
-questionText: "Kdo pĹ™epracoval BarbierĹŻv systĂ©m do ĹˇestibodovĂ© soustavy, kterĂˇ zĂˇsadnÄ› zmÄ›nila moĹľnosti samostatnĂ©ho ÄŤtenĂ­ a psanĂ­ nevidomĂ˝ch?"
+questionText: "Kdo přepracoval Barbierův systém do šestibodové soustavy, která zásadně změnila možnosti samostatného čtení a psaní nevidomých?"
 options:
   A: "Samuel Gridley Howe"
   B: "Oskar Picht"
@@ -2417,33 +2417,33 @@ options:
   D: "Louis Braille"
 sourceCorrectLetter: "D"
 sourceCorrectOptionText: "Louis Braille"
-discipline: "tyflopedie / dÄ›jiny pĂ­sma"
-subtopic: "Braillova ĹˇestibodovĂˇ soustava"
-conceptFamily: "dÄ›jiny komunikaÄŤnĂ­ch systĂ©mĹŻ pro nevidomĂ©"
-distinctionAxis: "pĹ™epracovĂˇnĂ­ Barbierova systĂ©mu do ĹˇestibodovĂ© soustavy vs jinĂ© tyflopedickĂ© osobnosti"
+discipline: "tyflopedie / dějiny písma"
+subtopic: "Braillova šestibodová soustava"
+conceptFamily: "dějiny komunikačních systémů pro nevidomé"
+distinctionAxis: "přepracování Barbierova systému do šestibodové soustavy vs jiné tyflopedické osobnosti"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "Braille Ă— Picht Ă— Klein Ă— Howe"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Braille × Picht × Klein × Howe"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Louis Braille"
+  - "Mini-wikipedie osobností – Louis Braille"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "vznik ĹˇestibodovĂ© soustavy"
+historicalAnchor: "vznik šestibodové soustavy"
 personalityAnchor: "Louis Braille"
 metadataSourceRef: "B10Q44"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: pĹ™epracovĂˇnĂ­ Barbierova systĂ©mu do ĹˇestibodovĂ© soustavy vs jinĂ© tyflopedickĂ© osobnosti.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: přepracování Barbierova systému do šestibodové soustavy vs jiné tyflopedické osobnosti.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2463,28 +2463,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q45
 questionNumber: 45
-questionText: "KterĂ© tvrzenĂ­ o vyĹˇĹˇĂ­m stupni podpĹŻrnĂ©ho opatĹ™enĂ­ je sprĂˇvnĂ©"
+questionText: "Které tvrzení o vyšším stupni podpůrného opatření je správné"
 options:
-  A: "VyĹˇĹˇĂ­ stupeĹ zahrnuje opatĹ™enĂ­ stejnĂ©ho druhu z niĹľĹˇĂ­ch stupĹĹŻ jen v pĹ™Ă­padech uvedenĂ˝ch v ÄŤĂˇsti A a u poradenskĂ© pomoci, metod ÄŤi hodnocenĂ­"
-  B: "VyĹˇĹˇĂ­ stupeĹ vĹľdy automaticky zahrnuje vĹˇechna opatĹ™enĂ­ niĹľĹˇĂ­ch stupĹĹŻ bez vĂ˝jimky"
-  C: "VyĹˇĹˇĂ­ stupeĹ zahrnuje niĹľĹˇĂ­ stupeĹ pouze u pomĹŻcek a personĂˇlnĂ­ch podpĹŻrnĂ˝ch opatĹ™enĂ­"
-  D: "VyĹˇĹˇĂ­ stupeĹ zahrnuje niĹľĹˇĂ­ stupeĹ pouze u organizace vĂ˝uky a prodlouĹľenĂ­ vzdÄ›lĂˇvĂˇnĂ­"
+  A: "Vyšší stupeň zahrnuje opatření stejného druhu z nižších stupňů jen v případech uvedených v části A a u poradenské pomoci, metod či hodnocení"
+  B: "Vyšší stupeň vždy automaticky zahrnuje všechna opatření nižších stupňů bez výjimky"
+  C: "Vyšší stupeň zahrnuje nižší stupeň pouze u pomůcek a personálních podpůrných opatření"
+  D: "Vyšší stupeň zahrnuje nižší stupeň pouze u organizace výuky a prodloužení vzdělávání"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "VyĹˇĹˇĂ­ stupeĹ zahrnuje opatĹ™enĂ­ stejnĂ©ho druhu z niĹľĹˇĂ­ch stupĹĹŻ jen v pĹ™Ă­padech uvedenĂ˝ch v ÄŤĂˇsti A a u poradenskĂ© pomoci, metod ÄŤi hodnocenĂ­"
-discipline: "ĹˇkolskĂˇ legislativa / konstrukce vyĹˇĹˇĂ­ho stupnÄ› PO"
-subtopic: "zahrnovĂˇnĂ­ opatĹ™enĂ­ stejnĂ©ho druhu z niĹľĹˇĂ­ch stupĹĹŻ"
-conceptFamily: "stupnÄ› podpory a logika sklĂˇdĂˇnĂ­ opatĹ™enĂ­"
-distinctionAxis: "ÄŤĂˇsteÄŤnĂ© zahrnutĂ­ niĹľĹˇĂ­ch stupĹĹŻ jen v urÄŤenĂ˝ch pĹ™Ă­padech vs automatickĂ© zahrnutĂ­ vĹˇeho"
+sourceCorrectOptionText: "Vyšší stupeň zahrnuje opatření stejného druhu z nižších stupňů jen v případech uvedených v části A a u poradenské pomoci, metod či hodnocení"
+discipline: "školská legislativa / konstrukce vyššího stupně PO"
+subtopic: "zahrnování opatření stejného druhu z nižších stupňů"
+conceptFamily: "stupně podpory a logika skládání opatření"
+distinctionAxis: "částečné zahrnutí nižších stupňů jen v určených případech vs automatické zahrnutí všeho"
 questionTypeSuggested: "legislation-structure-discrimination"
 distractorTypeSuggested: "near-rule"
-trapPatternSeed: "automatickĂ© zahrnutĂ­ Ă— omezenĂ© zahrnutĂ­"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "automatické zahrnutí × omezené zahrnutí"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ pĹ™Ă­loha ÄŤ. 1, obecnĂˇ pravidla vyĹˇĹˇĂ­ho stupnÄ›"
+  - "Vyhláška č. 27/2016 Sb. – příloha č. 1, obecná pravidla vyššího stupně"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -2492,12 +2492,12 @@ metadataSourceRef: "B10Q45"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: ÄŤĂˇsteÄŤnĂ© zahrnutĂ­ niĹľĹˇĂ­ch stupĹĹŻ jen v urÄŤenĂ˝ch pĹ™Ă­padech vs automatickĂ© zahrnutĂ­ vĹˇeho.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: částečné zahrnutí nižších stupňů jen v určených případech vs automatické zahrnutí všeho.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2517,7 +2517,7 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q46
 questionNumber: 46
-questionText: "KterĂˇ osobnost je spojena s reliĂ©fnĂ­m pĂ­smem, kterĂ© se uplatnilo zejmĂ©na u osob, jeĹľ ztratily zrak pozdÄ›ji a obtĂ­ĹľnÄ› se uÄŤily Braillovo pĂ­smo?"
+questionText: "Která osobnost je spojena s reliéfním písmem, které se uplatnilo zejména u osob, jež ztratily zrak později a obtížně se učily Braillovo písmo?"
 options:
   A: "James Gall"
   B: "William Moon"
@@ -2525,33 +2525,33 @@ options:
   D: "Louis Braille"
 sourceCorrectLetter: "B"
 sourceCorrectOptionText: "William Moon"
-discipline: "tyflopedie / dÄ›jiny pĂ­sma"
-subtopic: "Moonovo reliĂ©fnĂ­ pĂ­smo pro pozdÄ›ji osleplĂ©"
-conceptFamily: "dÄ›jiny komunikaÄŤnĂ­ch systĂ©mĹŻ pro nevidomĂ©"
-distinctionAxis: "Moonovo pĂ­smo vs Braille a jinĂ© reliĂ©fnĂ­ systĂ©my"
+discipline: "tyflopedie / dějiny písma"
+subtopic: "Moonovo reliéfní písmo pro později osleplé"
+conceptFamily: "dějiny komunikačních systémů pro nevidomé"
+distinctionAxis: "Moonovo písmo vs Braille a jiné reliéfní systémy"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "Moon Ă— Braille Ă— Picht Ă— Gall"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Moon × Braille × Picht × Gall"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ William Moon"
+  - "Mini-wikipedie osobností – William Moon"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "alternativnĂ­ reliĂ©fnĂ­ pĂ­smo pro pozdÄ›ji osleplĂ©"
+historicalAnchor: "alternativní reliéfní písmo pro později osleplé"
 personalityAnchor: "William Moon"
 metadataSourceRef: "B10Q46"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: Moonovo pĂ­smo vs Braille a jinĂ© reliĂ©fnĂ­ systĂ©my.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: Moonovo písmo vs Braille a jiné reliéfní systémy.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2571,29 +2571,29 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q47
 questionNumber: 47
-questionText: "PedagogickĂˇ intervence je podle aktuĂˇlnĂ­ prĂˇvnĂ­ Ăşpravy"
+questionText: "Pedagogická intervence je podle aktuální právní úpravy"
 options:
-  A: "typickĂ˝m podpĹŻrnĂ˝m opatĹ™enĂ­m druhĂ©ho stupnÄ› pĹ™i pĹ™echodu od PLPP k doporuÄŤenĂ­ Ĺ PZ"
-  B: "zvlĂˇĹˇtnĂ­m podpĹŻrnĂ˝m opatĹ™enĂ­m mimo systĂ©m pÄ›ti stupĹĹŻ podpory"
-  C: "podpĹŻrnĂ˝m opatĹ™enĂ­m prvnĂ­ho stupnÄ›"
-  D: "samostatnou sluĹľbou, kterĂˇ se vyuĹľĂ­vĂˇ pouze pĹ™i soubÄ›hu IVP a asistenta pedagoga"
+  A: "typickým podpůrným opatřením druhého stupně při přechodu od PLPP k doporučení ŠPZ"
+  B: "zvláštním podpůrným opatřením mimo systém pěti stupňů podpory"
+  C: "podpůrným opatřením prvního stupně"
+  D: "samostatnou službou, která se využívá pouze při souběhu IVP a asistenta pedagoga"
 sourceCorrectLetter: "C"
-sourceCorrectOptionText: "podpĹŻrnĂ˝m opatĹ™enĂ­m prvnĂ­ho stupnÄ›"
-discipline: "ĹˇkolskĂˇ legislativa / pedagogickĂˇ intervence"
-subtopic: "aktuĂˇlnĂ­ prĂˇvnĂ­ status pedagogickĂ© intervence"
-conceptFamily: "podpĹŻrnĂˇ opatĹ™enĂ­ a ĹˇkolnĂ­ podpĹŻrnĂ© ÄŤinnosti"
-distinctionAxis: "PO 1. stupnÄ› vs 2. stupeĹ nebo zvlĂˇĹˇtnĂ­ samostatnĂˇ sluĹľba"
+sourceCorrectOptionText: "podpůrným opatřením prvního stupně"
+discipline: "školská legislativa / pedagogická intervence"
+subtopic: "aktuální právní status pedagogické intervence"
+conceptFamily: "podpůrná opatření a školní podpůrné činnosti"
+distinctionAxis: "PO 1. stupně vs 2. stupeň nebo zvláštní samostatná služba"
 questionTypeSuggested: "legislation-category-discrimination"
 distractorTypeSuggested: "terminology-confusion"
-trapPatternSeed: "pedagogickĂˇ intervence Ă— podpĹŻrnĂ© opatĹ™enĂ­ Ă— samostatnĂˇ sluĹľba"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "pedagogická intervence × podpůrné opatření × samostatná služba"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ aktuĂˇlnĂ­ znÄ›nĂ­"
-  - "VyhlĂˇĹˇka ÄŤ. 46/2025 Sb. â€“ novela vyhlĂˇĹˇky 72/2005"
+  - "Vyhláška č. 27/2016 Sb. – aktuální znění"
+  - "Vyhláška č. 46/2025 Sb. – novela vyhlášky 72/2005"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -2601,12 +2601,12 @@ metadataSourceRef: "B10Q47"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: PO 1. stupnÄ› vs 2. stupeĹ nebo zvlĂˇĹˇtnĂ­ samostatnĂˇ sluĹľba.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: PO 1. stupně vs 2. stupeň nebo zvláštní samostatná služba.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2626,41 +2626,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q48
 questionNumber: 48
-questionText: "KterĂˇ ÄŤeskĂˇ osobnost je spojena se zaklĂˇdĂˇnĂ­m ĂşstavĹŻ pro vĂ˝chovu, lĂ©ÄŤenĂ­, zaopatĹ™enĂ­ a zamÄ›stnĂˇvĂˇnĂ­ nevidomĂ˝ch v Praze?"
+questionText: "Která česká osobnost je spojena se zakládáním ústavů pro výchovu, léčení, zaopatření a zaměstnávání nevidomých v Praze?"
 options:
   A: "Jan Deyl"
-  B: "VĂˇclav VejdovskĂ˝"
-  C: "DrahomĂ­r HanĂˇk"
-  D: "Alois KlĂˇr"
+  B: "Václav Vejdovský"
+  C: "Drahomír Hanák"
+  D: "Alois Klár"
 sourceCorrectLetter: "D"
-sourceCorrectOptionText: "Alois KlĂˇr"
-discipline: "tyflopedie / ÄŤeskĂ© osobnosti"
-subtopic: "zaklĂˇdĂˇnĂ­ ĂşstavĹŻ pro nevidomĂ© v Praze"
-conceptFamily: "ÄŤeskĂ© dÄ›jiny tyflopedie"
-distinctionAxis: "zakladatelskĂˇ osobnost praĹľskĂ˝ch ĂşstavĹŻ vs pozdÄ›jĹˇĂ­ odbornĂ­ci"
+sourceCorrectOptionText: "Alois Klár"
+discipline: "tyflopedie / české osobnosti"
+subtopic: "zakládání ústavů pro nevidomé v Praze"
+conceptFamily: "české dějiny tyflopedie"
+distinctionAxis: "zakladatelská osobnost pražských ústavů vs pozdější odborníci"
 questionTypeSuggested: "historical-person-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "Alois KlĂˇr Ă— Jan Deyl Ă— dalĹˇĂ­ ÄŤeskĂ© osobnosti"
-institutionDomain: "dÄ›jiny oboru"
+trapPatternSeed: "Alois Klár × Jan Deyl × další české osobnosti"
+institutionDomain: "dějiny oboru"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Alois KlĂˇr"
+  - "Mini-wikipedie osobností – Alois Klár"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "poÄŤĂˇtky ÄŤeskĂ© tyflopedie a ĂşstavnictvĂ­"
-personalityAnchor: "Alois KlĂˇr"
+historicalAnchor: "počátky české tyflopedie a ústavnictví"
+personalityAnchor: "Alois Klár"
 metadataSourceRef: "B10Q48"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: zakladatelskĂˇ osobnost praĹľskĂ˝ch ĂşstavĹŻ vs pozdÄ›jĹˇĂ­ odbornĂ­ci.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: zakladatelská osobnost pražských ústavů vs pozdější odborníci.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2680,28 +2680,28 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q49
 questionNumber: 49
-questionText: "Pro ÄŤtvrtĂ˝ stupeĹ podpĹŻrnĂ˝ch opatĹ™enĂ­ je typickĂ©, Ĺľe"
+questionText: "Pro čtvrtý stupeň podpůrných opatření je typické, že"
 options:
-  A: "jde o vĂ˝znamnĂ© Ăşpravy prĹŻbÄ›hu vzdÄ›lĂˇvĂˇnĂ­, zpravidla podloĹľenĂ© diagnostikou a pĹ™Ă­padnÄ› i Ăşpravou vĂ˝stupĹŻ"
-  B: "postaÄŤujĂ­ jen minimĂˇlnĂ­ Ăşpravy metod a hodnocenĂ­ bez zĂˇsahu do organizace vzdÄ›lĂˇvĂˇnĂ­"
-  C: "jde pouze o posĂ­lenĂ­ personĂˇlnĂ­ podpory bez moĹľnosti prodlouĹľenĂ­ dĂ©lky vzdÄ›lĂˇvĂˇnĂ­"
-  D: "jde vĂ˝hradnÄ› o kompenzaÄŤnĂ­ pomĹŻcky bez vazby na diagnostiku a Ăşpravu vĂ˝stupĹŻ"
+  A: "jde o významné úpravy průběhu vzdělávání, zpravidla podložené diagnostikou a případně i úpravou výstupů"
+  B: "postačují jen minimální úpravy metod a hodnocení bez zásahu do organizace vzdělávání"
+  C: "jde pouze o posílení personální podpory bez možnosti prodloužení délky vzdělávání"
+  D: "jde výhradně o kompenzační pomůcky bez vazby na diagnostiku a úpravu výstupů"
 sourceCorrectLetter: "A"
-sourceCorrectOptionText: "jde o vĂ˝znamnĂ© Ăşpravy prĹŻbÄ›hu vzdÄ›lĂˇvĂˇnĂ­, zpravidla podloĹľenĂ© diagnostikou a pĹ™Ă­padnÄ› i Ăşpravou vĂ˝stupĹŻ"
-discipline: "ĹˇkolskĂˇ legislativa / 4. stupeĹ podpory"
-subtopic: "charakteristika 4. stupnÄ› podpĹŻrnĂ˝ch opatĹ™enĂ­"
-conceptFamily: "stupnÄ› podpory a Ăşpravy prĹŻbÄ›hu vzdÄ›lĂˇvĂˇnĂ­"
-distinctionAxis: "vĂ˝znamnĂ© Ăşpravy prĹŻbÄ›hu vzdÄ›lĂˇvĂˇnĂ­ a pĹ™Ă­padnĂˇ Ăşprava vĂ˝stupĹŻ vs minimĂˇlnĂ­ nebo ÄŤistÄ› pomĹŻckovĂ© pojetĂ­"
+sourceCorrectOptionText: "jde o významné úpravy průběhu vzdělávání, zpravidla podložené diagnostikou a případně i úpravou výstupů"
+discipline: "školská legislativa / 4. stupeň podpory"
+subtopic: "charakteristika 4. stupně podpůrných opatření"
+conceptFamily: "stupně podpory a úpravy průběhu vzdělávání"
+distinctionAxis: "významné úpravy průběhu vzdělávání a případná úprava výstupů vs minimální nebo čistě pomůckové pojetí"
 questionTypeSuggested: "legislation-level-discrimination"
 distractorTypeSuggested: "near-rule"
-trapPatternSeed: "4. stupeĹ Ă— 1./2. stupeĹ Ă— jen pomĹŻcky"
-institutionDomain: "ĹˇkolstvĂ­ / poradenstvĂ­"
+trapPatternSeed: "4. stupeň × 1./2. stupeň × jen pomůcky"
+institutionDomain: "školství / poradenství"
 timeSensitivity: "current"
 primarySourceSuggested:
-  - "VyhlĂˇĹˇka ÄŤ. 27/2016 Sb. â€“ pĹ™Ă­loha ÄŤ. 1, 4. stupeĹ podpory"
+  - "Vyhláška č. 27/2016 Sb. – příloha č. 1, 4. stupeň podpory"
 secondarySourceSuggested:
-  - "ZĂˇkon ÄŤ. 561/2004 Sb. â€“ ĹˇkolskĂ˝ zĂˇkon"
-  - "VyhlĂˇĹˇka ÄŤ. 72/2005 Sb. / VyhlĂˇĹˇka ÄŤ. 46/2025 Sb., pokud jde o poradenskĂ˝ proces"
+  - "Zákon č. 561/2004 Sb. – školský zákon"
+  - "Vyhláška č. 72/2005 Sb. / Vyhláška č. 46/2025 Sb., pokud jde o poradenský proces"
 legislationRef: ""
 historicalAnchor: ""
 personalityAnchor: ""
@@ -2709,12 +2709,12 @@ metadataSourceRef: "B10Q49"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: vĂ˝znamnĂ© Ăşpravy prĹŻbÄ›hu vzdÄ›lĂˇvĂˇnĂ­ a pĹ™Ă­padnĂˇ Ăşprava vĂ˝stupĹŻ vs minimĂˇlnĂ­ nebo ÄŤistÄ› pomĹŻckovĂ© pojetĂ­.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: významné úpravy průběhu vzdělávání a případná úprava výstupů vs minimální nebo čistě pomůckové pojetí.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
@@ -2734,41 +2734,41 @@ authoringStatus: "outline-prepared"
 ```yaml
 globalId: B10Q50
 questionNumber: 50
-questionText: "KterĂˇ autorka je spojena s testem zrakovĂ©ho vnĂ­mĂˇnĂ­ vyuĹľĂ­vanĂ˝m zejmĂ©na u dÄ›tĂ­ s poruchami uÄŤenĂ­ a obtĂ­Ĺľemi ve vizuĂˇlnÄ›-percepÄŤnĂ­ oblasti?"
+questionText: "Která autorka je spojena s testem zrakového vnímání využívaným zejména u dětí s poruchami učení a obtížemi ve vizuálně-percepční oblasti?"
 options:
   A: "Nancy Bayley"
   B: "Marianne Frostig"
   C: "Joan Reynell"
-  D: "Lea HyvĂ¤rinen"
+  D: "Lea Hyvärinen"
 sourceCorrectLetter: "B"
 sourceCorrectOptionText: "Marianne Frostig"
-discipline: "speciĂˇlnÄ›pedagogickĂˇ diagnostika / zrakovĂ© vnĂ­mĂˇnĂ­"
-subtopic: "Frostig test zrakovĂ©ho vnĂ­mĂˇnĂ­"
-conceptFamily: "diagnostickĂ© nĂˇstroje a autorky testĹŻ"
-distinctionAxis: "test zrakovĂ©ho vnĂ­mĂˇnĂ­ vs jinĂ© vĂ˝vojovĂ© a jazykovĂ© testy"
+discipline: "speciálněpedagogická diagnostika / zrakové vnímání"
+subtopic: "Frostig test zrakového vnímání"
+conceptFamily: "diagnostické nástroje a autorky testů"
+distinctionAxis: "test zrakového vnímání vs jiné vývojové a jazykové testy"
 questionTypeSuggested: "test-author-discrimination"
 distractorTypeSuggested: "near-personality"
-trapPatternSeed: "diagnostickĂ˝ nĂˇstroj Ă— jinĂˇ autorka testu"
+trapPatternSeed: "diagnostický nástroj × jiná autorka testu"
 institutionDomain: "diagnostika"
 timeSensitivity: "stable"
 primarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ Marianne Frostig"
+  - "Mini-wikipedie osobností – Marianne Frostig"
 secondarySourceSuggested:
-  - "Mini-wikipedie osobnostĂ­ â€“ ovÄ›Ĺ™it danou osobnost a blĂ­zkĂ© distraktory"
-  - "DoplĹkovĂˇ oborovĂˇ reĹˇerĹˇe jen pokud bude potĹ™eba zpĹ™esnit historickĂ˝ detail"
+  - "Mini-wikipedie osobností – ověřit danou osobnost a blízké distraktory"
+  - "Doplňková oborová rešerše jen pokud bude potřeba zpřesnit historický detail"
 legislationRef: ""
-historicalAnchor: "diagnostika vizuĂˇlnÄ›-percepÄŤnĂ­ch obtĂ­ĹľĂ­"
+historicalAnchor: "diagnostika vizuálně-percepčních obtíží"
 personalityAnchor: "Marianne Frostig"
 metadataSourceRef: "B10Q50"
 authoringStatus: "outline-prepared"
 ```
 
-### AutorovacĂ­ poznĂˇmka
-- JĂˇdro poloĹľky: test zrakovĂ©ho vnĂ­mĂˇnĂ­ vs jinĂ© vĂ˝vojovĂ© a jazykovĂ© testy.
-- PĹ™i dopracovĂˇnĂ­ drĹľ rozliĹˇenĂ­ mezi tĂ­m, co je testovanĂ© jĂˇdro otĂˇzky, a tĂ­m, co je jen vÄ›rohodnÄ› znÄ›jĂ­cĂ­ distraktor.
-- U tĂ©to poloĹľky doplĹ struÄŤnĂ© zdĹŻvodnÄ›nĂ­ sprĂˇvnĂ© odpovÄ›di a minimĂˇlnÄ› jednu vÄ›tu ke kaĹľdĂ© rodinÄ› chybnĂ˝ch odpovÄ›dĂ­.
+### Autorovací poznámka
+- Jádro položky: test zrakového vnímání vs jiné vývojové a jazykové testy.
+- Při dopracování drž rozlišení mezi tím, co je testované jádro otázky, a tím, co je jen věrohodně znějící distraktor.
+- U této položky doplň stručné zdůvodnění správné odpovědi a minimálně jednu větu ke každé rodině chybných odpovědí.
 
-### Vyplnit pĹ™i dopracovĂˇnĂ­
+### Vyplnit při dopracování
 - requiredDiscrimination:
 - signalPattern:
 - signalHint:
