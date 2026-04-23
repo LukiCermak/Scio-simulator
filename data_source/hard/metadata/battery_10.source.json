@@ -4497,11 +4497,11 @@
       },
       "correctOptionText": "Marianne Frostig",
       "discipline": "speciálněpedagogická diagnostika / zrakové vnímání",
-      "subtopic": "Frostig test zrakového vnímání",
+      "subtopic": "Test zrakového vnímání",
       "conceptFamily": "diagnostické nástroje a autorky testů",
       "conceptTags": [
         "diagnostické nástroje a autorky testů",
-        "Frostig test zrakového vnímání",
+        "Test zrakového vnímání",
         "speciálněpedagogická diagnostika / zrakové vnímání",
         "hard mode",
         "baterie 10"
@@ -4519,7 +4519,7 @@
       "signalPattern": [
         "Marianne Frostig",
         "diagnostika vizuálně-percepčních obtíží",
-        "Frostig test zrakového vnímání",
+        "Test zrakového vnímání",
         "diagnostické nástroje a autorky testů"
       ],
       "signalHint": "Nestačí poznat známé jméno. Rozhodující je přesně přiřadit osobnost, směr nebo historickou kotvu k tomu, co je pro ni skutečně typické.",
@@ -4537,7 +4537,7 @@
       ],
       "repairTags": [
         "diagnostické nástroje a autorky testů",
-        "Frostig test zrakového vnímání",
+        "Test zrakového vnímání",
         "Marianne Frostig",
         "diagnostika vizuálně-percepčních obtíží",
         "speciálněpedagogická diagnostika / zrakové vnímání",
@@ -4565,7 +4565,7 @@
       "processDemandLevel": "high",
       "recommendedRepairFilters": [
         "diagnostické nástroje a autorky testů",
-        "Frostig test zrakového vnímání",
+        "Test zrakového vnímání",
         "test-author-discrimination"
       ],
       "revisionPriority": "high",
