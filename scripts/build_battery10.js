@@ -319,9 +319,9 @@ const questionsText = fs.readFileSync(questionPath, "utf8");
 const notesText = fs.readFileSync(notesPath, "utf8");
 
 const batteryLabel = extractHeaderValue(notesText, "batteryLabel") || "Baterie 10";
-const batteryTitle = extractHeaderValue(notesText, "batteryTitle") || "Finální nejtěžší vrstva";
-const batterySubtitle = extractHeaderValue(notesText, "batterySubtitle") || "Finální nejtěžší test s důrazem na legislativu, osobnosti a historické kotvy.";
-const batteryPurpose = "Ověřit finální výběrovou připravenost v hard režimu: přesně rozlišit blízké legislativní postupy, odborné osobnosti, historické mezníky a diagnostické kotvy bez opory ve stylu zadání.";
+const batteryTitle = extractHeaderValue(notesText, "batteryTitle") || "Legislativa, osobnosti a dějiny oboru";
+const batterySubtitle = extractHeaderValue(notesText, "batterySubtitle") || "Přesně rozlišovací baterie zaměřená na školskou legislativu, dějiny speciální pedagogiky, logopedii, surdopedii, tyflopedii a diagnostické autory.";
+const batteryPurpose = "Ověřit finální výběrovou připravenost v hard režimu: přesně rozlišit blízké legislativní postupy, odborné osobnosti, historické mezníky a diagnostické autory bez opory ve stylu zadání.";
 
 const questionMap = new Map(parseQuestions(questionsText).map((item) => [item.number, item]));
 const sectionMap = parseMetadataSections(notesText);
@@ -507,7 +507,7 @@ const batteryObject = {
     "5× tyflopedie a zraková diagnostika"
   ],
   tags: [
-    "finální nejtěžší vrstva",
+    "finální nejtěžší baterie",
     "legislativa",
     "osobnosti oboru",
     "logopedie",

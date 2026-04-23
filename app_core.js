@@ -316,7 +316,7 @@ function getActiveBatteryMap() { return getActiveDataset().batteryMap; }
 function getAllDatasetsQuestionCount() {
   return Object.values(DATASETS).reduce((sum, dataset) => sum + dataset.batteries.reduce((acc, battery) => acc + battery.questions.length, 0), 0);
 }
-function getBatteryDisplayBadge(batteryId) { return batteryId === 8 ? "+1" : batteryId; }
+function getBatteryDisplayBadge(batteryId) { return batteryId; }
 function formatDifficultyBadgeText(mode) { return `obtížnost: ${getDifficultyModeLabel(mode)}`; }
 
   const BATTERY_DETAIL_COPY = {

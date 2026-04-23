@@ -4,9 +4,9 @@
   window.__SCIO_SPLIT_RUNTIME__.hard.batteries["08"] = {
   "id": 8,
   "label": "Baterie 8",
-  "title": "Finální selekční baterie",
+  "title": "Rozlišovací baterie z pojmů, institucí a procesů",
   "subtitle": "Krátké rozlišovací položky z pojmů, institucí, dokumentů, psychologie, historie a sociálně-legislativní orientace.",
-  "purpose": "Ověřit skutečně selekční připravenost na UPOL: přesně rozlišit blízké pojmy, instituce, dokumenty, role, historické orientační body a sociálně-legislativní minimum bez stylistických vodítek.",
+  "purpose": "Ověřit pokročilou připravenost na UPOL: přesně rozlišit blízké pojmy, instituce, dokumenty, role, historické orientační body a sociálně-legislativní minimum bez stylistických vodítek.",
   "difficulty": "velmi vysoká",
   "dominant": [
     "definiční rozlišení a blízké pojmové rodiny",
@@ -27,7 +27,7 @@
     "2× krátká aplikace"
   ],
   "tags": [
-    "finální selekce",
+    "rozlišovací baterie",
     "pojmové rodiny",
     "instituce",
     "historie oboru",

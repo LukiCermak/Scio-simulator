@@ -4,9 +4,9 @@
   window.__SCIO_SPLIT_RUNTIME__.hard.batteries["10"] = {
   "id": 10,
   "label": "Baterie 10",
-  "title": "Finální nejtěžší vrstva – legislativa, osobnosti a historické kotvy",
-  "subtitle": "Přesná diferenční vrstva na školskou legislativu, dějiny speciální pedagogiky, logopedie, surdopedie, tyflopedie a diagnostické autory.",
-  "purpose": "Ověřit finální výběrovou připravenost v hard režimu: přesně rozlišit blízké legislativní postupy, odborné osobnosti, historické mezníky a diagnostické kotvy bez opory ve stylu zadání.",
+  "title": "Legislativa, osobnosti a dějiny oboru",
+  "subtitle": "Přesně rozlišovací baterie zaměřená na školskou legislativu, dějiny speciální pedagogiky, logopedii, surdopedii, tyflopedii a diagnostické autory.",
+  "purpose": "Ověřit finální výběrovou připravenost v hard režimu: přesně rozlišit blízké legislativní postupy, odborné osobnosti, historické mezníky a diagnostické autory bez opory ve stylu zadání.",
   "difficulty": "velmi vysoká",
   "dominant": [
     "školská legislativa a poradenský proces",
@@ -25,7 +25,7 @@
     "5× tyflopedie a zraková diagnostika"
   ],
   "tags": [
-    "finální nejtěžší vrstva",
+    "finální nejtěžší baterie",
     "legislativa",
     "osobnosti oboru",
     "logopedie",

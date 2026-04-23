@@ -4,8 +4,8 @@
 - status: pracovní osnova připravená pro autorování metadat Baterie 10
 - batteryId: 10
 - batteryLabel: Baterie 10
-- batteryTitle: Finální nejtěžší vrstva – legislativa, osobnosti a historické kotvy
-- batterySubtitle: Přesná diferenční vrstva na školskou legislativu, dějiny speciální pedagogiky, logopedie, surdopedie, tyflopedie a diagnostické autory.
+- batteryTitle: Legislativa, osobnosti a dějiny oboru
+- batterySubtitle: Přesně rozlišovací baterie zaměřená na školskou legislativu, dějiny speciální pedagogiky, logopedii, surdopedii, tyflopedii a diagnostické autory.
 - purpose: Připravit zdrojovou a autorovací mezivrstvu pro budoucí rozšíření hard metadat o Baterii 10 bez přímého zápisu do produkčního JS exportu.
 - sourceDataset: Finální nejtěžší test 50 otázek
 - sourceQuestionCount: 50
