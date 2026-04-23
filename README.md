@@ -38,16 +38,7 @@ Každý režim má:
 - V kódu zůstávají jen minimální legacy aliasy tam, kde jsou potřeba pro bezpečný přechod.
 - Nové názvy souborů a projektová struktura už nejsou verzované.
 
-## Dokumentace pro další úpravy
-
-- `OPTIMIZATION_MASTER_PLAN.md`
-- `METADATA_AUDIT.md`
-- `DATASET_SCHEMA.md`
-- `OPTIMIZATION_CHECKLIST.md`
-- `VALIDATION_CHECKLIST.md`
-
 ## Doporučený postup dalších úprav
 
 - Menší úpravy baterií dělat lokálně jen v odpovídajících souborech v `data/` a `data_source/`.
 - Technické refaktory oddělovat od změn Tutor obsahu a textů pro studenta.
-- Před větší změnou projít `VALIDATION_CHECKLIST.md`.
