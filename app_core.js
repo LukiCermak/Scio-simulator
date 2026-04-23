@@ -489,6 +489,7 @@ function getDefaultSettings() {
   return {
     schemaVersion: SCHEMA_VERSION,
     difficultyMode: "hard",
+    theme: "light",
     restoreSessionOnLoad: true,
     defaultMode: "simulation",
     defaultGoal: "attention",
@@ -502,6 +503,42 @@ function getDefaultSettings() {
 }
 
   const appState = { schemaVersion:SCHEMA_VERSION, appMode:"start", selectedBatteryId:null, currentSession:null, history:[], settings:null, progress:null };
+
+function getNormalizedTheme(theme) {
+  return String(theme || "").trim().toLowerCase() === "dark" ? "dark" : "light";
+}
+function updateThemeToggleButton() {
+  const btn = document.getElementById("themeToggleBtn");
+  const icon = document.getElementById("themeToggleIcon");
+  const theme = getNormalizedTheme(document.body?.dataset?.theme || appState?.settings?.theme || "light");
+  if (!btn || !icon) return;
+  const isDark = theme === "dark";
+  icon.textContent = isDark ? "☀" : "☾";
+  btn.setAttribute("aria-label", isDark ? "Přepnout na světlý režim" : "Přepnout na tmavý režim");
+  btn.setAttribute("title", isDark ? "Přepnout na světlý režim" : "Přepnout na tmavý režim");
+}
+function applyTheme(theme, persist = false) {
+  const normalized = getNormalizedTheme(theme);
+  document.body.dataset.theme = normalized;
+  document.documentElement.style.colorScheme = normalized;
+  if (appState?.settings) appState.settings.theme = normalized;
+  updateThemeToggleButton();
+  if (persist && appState?.settings) saveSettings();
+}
+function toggleTheme() {
+  const nextTheme = getNormalizedTheme(appState?.settings?.theme || document.body?.dataset?.theme || "light") === "dark" ? "light" : "dark";
+  applyTheme(nextTheme, true);
+}
+function initThemeToggle() {
+  const btn = document.getElementById("themeToggleBtn");
+  if (!btn || btn.dataset.boundThemeToggle === "true") {
+    updateThemeToggleButton();
+    return;
+  }
+  btn.dataset.boundThemeToggle = "true";
+  btn.addEventListener("click", toggleTheme);
+  updateThemeToggleButton();
+}
 
   function createQuestionState(index) {
     return { questionIndex:index, selectedAnswer:null, firstAnswer:null, confidence:null, flagged:false, revisitLater:false, note:"", viewedAtLeastOnce:false, viewCount:0, firstViewedAt:null, lastViewedAt:null, timeSpentMs:0, currentViewStartedAt:null, answerChanges:0, optionsWereInitiallyHidden:false, optionsRevealedAt:null, resolvedStatus:"unanswered", autoErrorType:null, manualErrorType:null };
@@ -2585,6 +2622,8 @@ function hideReview() {
 function initApp() {
   migrateStorageIfNeeded();
   appState.settings = loadSettings();
+  applyTheme(appState.settings.theme || "light");
+  initThemeToggle();
   appState.history = loadHistory();
   appState.progress = loadProgress();
   if ($("statQuestions")) $("statQuestions").textContent = String(getAllDatasetsQuestionCount());
